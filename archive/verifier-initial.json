@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "verified_at": "2026-10-27T07:51:36.802268+00:00",
+  "verifier": "/root/gse_archive_verify (independent Codex instance)",
+  "artifact_root": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+  "data_level": "personal",
+  "privacy_route": "same-family-exception under /Users/yjzhao/AGENTS.md section 5.4; local tools only; no external model seat, network request or upload",
+  "scope": "Current frozen archive byte integrity and media hashes; read-only browser evidence freshness; recorded reader paths; current HTML review hashes; ZIP decompression and byte fidelity; independent-review current-version and finding-closure checks.",
+  "frozen_manifest": {
+    "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/archive/files.json",
+    "bytes": 1886746,
+    "sha256": "20cd9c8ded5a5c38174f1907ed18428de5a45809d77ffba03e9507b4103ec688"
+  },
+  "verification_script": {
+    "path": "/private/tmp/gse-publication-20261027/verifier_checks.py",
+    "bytes": 10544,
+    "sha256": "4d92a6445619d98c381ea401ec3e2d181edcfc44c19929e6806907f38d35da77"
+  },
+  "checks": [
+    {
+      "name": "archive_and_ten_source_videos",
+      "status": "PASS",
+      "command": "python3 tools/verify_archive.py --media-dir /private/tmp/gse-publication-20261027/release-assets",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "status": "PASS",
+        "repository_files": 9465,
+        "media_files_checked": 10,
+        "failed": [],
+        "scope": "byte integrity only"
+      }
+    },
+    {
+      "name": "guide_browser_evidence_check",
+      "status": "PASS",
+      "command": "node tooling/learning-machine/audit-report.mjs '归档阅读与恢复.html' archive/qa/guide-browser --profile generic --check",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "name": "index_browser_evidence_check",
+      "status": "PASS",
+      "command": "node tooling/learning-machine/audit-report.mjs '生成式软件工程/课程索引.html' archive/qa/index-browser --profile generic --check",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "name": "lecture09_browser_evidence_check",
+      "status": "PASS",
+      "command": "node tooling/learning-machine/audit-report.mjs '生成式软件工程/lecture-09/课堂笔记.html' archive/qa/lecture09-browser --profile generic --check",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "name": "recorded_twenty_reader_paths",
+      "command": "python3 /private/tmp/gse-publication-20261027/verifier_checks.py",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "evidence": {
+          "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/archive/qa/reader/journey.json",
+          "bytes": 6031,
+          "sha256": "feafcca4a6bf09cbe391170279479ff5c3f282819b47eb9c85b54a45897bc5b6"
+        },
+        "recorded_paths": 20,
+        "recorded_widths": [
+          1280,
+          390
+        ],
+        "recorded_decoded_images": 944,
+        "per_width_images": 472,
+        "recorded_broken_images": 0,
+        "recorded_page_errors": 0,
+        "recorded_network_requests": 0,
+        "recorded_external_images": 0,
+        "recorded_overflow": false,
+        "evidence_kind": "Existing browser journey read back and cross-checked; browser paths were not rerun by this verifier."
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "ten_current_html_review_fingerprints",
+      "command": "python3 /private/tmp/gse-publication-20261027/verifier_checks.py",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "course_review": {
+          "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/review.json",
+          "bytes": 5349,
+          "sha256": "dca4f42d6d8bdf52b31e7e8bc19dcabf395fd53626bfe9371fc1a9ad0b18e072"
+        },
+        "html_count": 10,
+        "matching_html": [
+          {
+            "folder": "lecture-01",
+            "html": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-01/课堂笔记.html",
+              "bytes": 13103396,
+              "sha256": "67151db592f02e0fdb9889b9a79472e768d7e887a5dea9a965fa3cf2a4b62e47"
+            },
+            "course_review_sha256_match": true,
+            "individual_review_sha256_match": true,
+            "review": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-01/review.json",
+              "bytes": 4098,
+              "sha256": "1c8bae80d814f7fe2b7a8a9de5b1d82840a892905a1138c21326f8026ac975ec"
+            }
+          },
+          {
+            "folder": "lecture-02",
+            "html": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-02/课堂笔记.html",
+              "bytes": 18840725,
+              "sha256": "f063e934af755a45e5fef94ee73327ff1ebc8a6527f497089c21931a2387b269"
+            },
+            "course_review_sha256_match": true,
+            "individual_review_sha256_match": true,
+            "review": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-02/review.json",
+              "bytes": 4098,
+              "sha256": "5d24f9282c9db91d70726836a8458cc847b3c169580c03586e375124a54ee56e"
+            }
+          },
+          {
+            "folder": "lecture-03",
+            "html": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-03/课堂笔记.html",
+              "bytes": 18999799,
+              "sha256": "6b76b3a70d3c1c00d3b0840616ddb20cee79bd2384b605462dcdd913a9699df8"
+            },
+            "course_review_sha256_match": true,
+            "individual_review_sha256_match": true,
+            "review": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-03/review.json",
+              "bytes": 4098,
+              "sha256": "35037e93104ea1aa38b64c57f104843fa8fdf56b4394dce0cd9c5c5b9b97ad6f"
+            }
+          },
+          {
+            "folder": "lecture-04",
+            "html": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-04/课堂笔记.html",
+              "bytes": 4718988,
+              "sha256": "0e67d593f33b35aac8e7990afc0d9ee83777c73213dab4ada1e035a38eb865bd"
+            },
+            "course_review_sha256_match": true,
+            "individual_review_sha256_match": true,
+            "review": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-04/review.json",
+              "bytes": 4098,
+              "sha256": "b3a202601af2ef2b2ee96b77f1a51d453e00ca6121bbd963f6830bd7db73c93a"
+            }
+          },
+          {
+            "folder": "lecture-05",
+            "html": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-05/课堂笔记.html",
+              "bytes": 11160775,
+              "sha256": "87b8ef114786b34e310ebd00288827716ebeab2f15044f888a8456aad79105f4"
+            },
+            "course_review_sha256_match": true,
+            "individual_review_sha256_match": true,
+            "review": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-05/review.json",
+              "bytes": 4288,
+              "sha256": "587579e4fa1660cf6e72fdab853ec1d037f277a9282256bca1ff3856df379339"
+            }
+          },
+          {
+            "folder": "lecture-06",
+            "html": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-06/课堂笔记.html",
+              "bytes": 6969273,
+              "sha256": "a341918f8775d2b03c7c2270daf6585ab283f1a984eb17453f99da3895939dee"
+            },
+            "course_review_sha256_match": true,
+            "individual_review_sha256_match": true,
+            "review": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-06/review.json",
+              "bytes": 4092,
+              "sha256": "5c03abf5499e632da1c7facf0904959a5f108541f229c4677a3726006b151c11"
+            }
+          },
+          {
+            "folder": "lecture-07",
+            "html": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-07/课堂笔记.html",
+              "bytes": 26140545,
+              "sha256": "85980aafc6cfa2911dc2b38afce0523a9e453cded8b705eb9bc8a89e03a74cc5"
+            },
+            "course_review_sha256_match": true,
+            "individual_review_sha256_match": true,
+            "review": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-07/review.json",
+              "bytes": 4092,
+              "sha256": "429096d1371332254b87154936021fdad470a7161e4838d06165265d7d8487b3"
+            }
+          },
+          {
+            "folder": "lecture-08",
+            "html": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-08/课堂笔记.html",
+              "bytes": 9986531,
+              "sha256": "48a1278dbae1d157bd35ec4a077a3079667a6266ad110198fa8c2dbf251377d9"
+            },
+            "course_review_sha256_match": true,
+            "individual_review_sha256_match": true,
+            "review": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-08/review.json",
+              "bytes": 5876,
+              "sha256": "6238c0533eb3d014a5ea3160317609c50488b45fa5c3ebada9277dc11f249d81"
+            }
+          },
+          {
+            "folder": "lecture-09",
+            "html": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-09/课堂笔记.html",
+              "bytes": 13444202,
+              "sha256": "c53214a052ee6b68c6fe49c119c448b27084fb3dc2739dd75f49909936c9b5ab"
+            },
+            "course_review_sha256_match": true,
+            "individual_review_sha256_match": true,
+            "review": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/lecture-09/review.json",
+              "bytes": 5393,
+              "sha256": "048336366347e76fa29ca00e94c7eae5e52ab86bad645dacaed122d12a271d6a"
+            }
+          },
+          {
+            "folder": "extra-ai-slop",
+            "html": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/extra-ai-slop/课堂笔记.html",
+              "bytes": 1970979,
+              "sha256": "68fa80956bb84708b683ae88a6b24e4c406f0055b77a10e25712710a22483e68"
+            },
+            "course_review_sha256_match": true,
+            "individual_review_sha256_match": true,
+            "review": {
+              "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/extra-ai-slop/review.json",
+              "bytes": 4093,
+              "sha256": "00afba630de9bde2493bdd1cc826517b8e043d07bbaefb21ddc540d7048a6dfc"
+            }
+          }
+        ],
+        "index_sha256_matches_course_review": true,
+        "index": {
+          "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/生成式软件工程/课程索引.html",
+          "bytes": 6349,
+          "sha256": "5818d6f7204e1eae6ba20d37f3ba48abaf84576757f6269011e6b9020f2bdf57"
+        },
+        "evidence_kind": "Current bytes match historical review references; no new course semantic validation."
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "portable_reading_zip_integrity_and_fidelity",
+      "command": "python3 /private/tmp/gse-publication-20261027/verifier_checks.py",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "zip": {
+          "path": "/private/tmp/gse-publication-20261027/release-assets/course-reading-2026-10-27.zip",
+          "bytes": 90306549,
+          "sha256": "d27ed5f8c98f763c180b3c848077db2be4638bbe2d2f22cbf846ba2f0250df42"
+        },
+        "size_mib": 86.123,
+        "members": [
+          {
+            "name": "生成式软件工程/课程索引.html",
+            "uncompressed_bytes": 6349,
+            "sha256": "5818d6f7204e1eae6ba20d37f3ba48abaf84576757f6269011e6b9020f2bdf57",
+            "crc_and_decompression": "PASS",
+            "matches_current_archive_file": true
+          },
+          {
+            "name": "生成式软件工程/lecture-01/课堂笔记.html",
+            "uncompressed_bytes": 13103396,
+            "sha256": "67151db592f02e0fdb9889b9a79472e768d7e887a5dea9a965fa3cf2a4b62e47",
+            "crc_and_decompression": "PASS",
+            "matches_current_archive_file": true
+          },
+          {
+            "name": "生成式软件工程/extra-ai-slop/课堂笔记.html",
+            "uncompressed_bytes": 1970979,
+            "sha256": "68fa80956bb84708b683ae88a6b24e4c406f0055b77a10e25712710a22483e68",
+            "crc_and_decompression": "PASS",
+            "matches_current_archive_file": true
+          },
+          {
+            "name": "生成式软件工程/lecture-02/课堂笔记.html",
+            "uncompressed_bytes": 18840725,
+            "sha256": "f063e934af755a45e5fef94ee73327ff1ebc8a6527f497089c21931a2387b269",
+            "crc_and_decompression": "PASS",
+            "matches_current_archive_file": true
+          },
+          {
+            "name": "生成式软件工程/lecture-03/课堂笔记.html",
+            "uncompressed_bytes": 18999799,
+            "sha256": "6b76b3a70d3c1c00d3b0840616ddb20cee79bd2384b605462dcdd913a9699df8",
+            "crc_and_decompression": "PASS",
+            "matches_current_archive_file": true
+          },
+          {
+            "name": "生成式软件工程/lecture-04/课堂笔记.html",
+            "uncompressed_bytes": 4718988,
+            "sha256": "0e67d593f33b35aac8e7990afc0d9ee83777c73213dab4ada1e035a38eb865bd",
+            "crc_and_decompression": "PASS",
+            "matches_current_archive_file": true
+          },
+          {
+            "name": "生成式软件工程/lecture-05/课堂笔记.html",
+            "uncompressed_bytes": 11160775,
+            "sha256": "87b8ef114786b34e310ebd00288827716ebeab2f15044f888a8456aad79105f4",
+            "crc_and_decompression": "PASS",
+            "matches_current_archive_file": true
+          },
+          {
+            "name": "生成式软件工程/lecture-06/课堂笔记.html",
+            "uncompressed_bytes": 6969273,
+            "sha256": "a341918f8775d2b03c7c2270daf6585ab283f1a984eb17453f99da3895939dee",
+            "crc_and_decompression": "PASS",
+            "matches_current_archive_file": true
+          },
+          {
+            "name": "生成式软件工程/lecture-07/课堂笔记.html",
+            "uncompressed_bytes": 26140545,
+            "sha256": "85980aafc6cfa2911dc2b38afce0523a9e453cded8b705eb9bc8a89e03a74cc5",
+            "crc_and_decompression": "PASS",
+            "matches_current_archive_file": true
+          },
+          {
+            "name": "生成式软件工程/lecture-08/课堂笔记.html",
+            "uncompressed_bytes": 9986531,
+            "sha256": "48a1278dbae1d157bd35ec4a077a3079667a6266ad110198fa8c2dbf251377d9",
+            "crc_and_decompression": "PASS",
+            "matches_current_archive_file": true
+          },
+          {
+            "name": "生成式软件工程/lecture-09/课堂笔记.html",
+            "uncompressed_bytes": 13444202,
+            "sha256": "c53214a052ee6b68c6fe49c119c448b27084fb3dc2739dd75f49909936c9b5ab",
+            "crc_and_decompression": "PASS",
+            "matches_current_archive_file": true
+          },
+          {
+            "name": "请先阅读.txt",
+            "uncompressed_bytes": 147,
+            "sha256": "29b4d369aefa72ed5487ca75822fd3e4b1a57b7f68ee097ee78bf0ebb5b7f2c8",
+            "crc_and_decompression": "PASS",
+            "utf8_text": "打开 生成式软件工程/课程索引.html。完整制作过程、转写、讲义与项目在 GitHub 仓库；源视频在同仓库 Release。\n"
+          }
+        ],
+        "member_count": 12,
+        "html_count": 11,
+        "html_members_byte_identical_to_current_archive": 11,
+        "bad_crc_member": null,
+        "extraction_performed": false
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "independent_review_current_versions_and_minor_closure",
+      "command": "python3 /private/tmp/gse-publication-20261027/verifier_checks.py",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "review_report": {
+          "path": "/private/tmp/gse-publication-20261027/independent-review.json",
+          "bytes": 8061,
+          "sha256": "68ab2148e1eda3b7f6eeaf71c2d3c32b763d447349bf5ca695e7829075ce2cc9"
+        },
+        "reviewed_versions_match": [
+          {
+            "path": "README.md",
+            "bytes": 4293,
+            "sha256": "77bc51e902a73ef22e911bb449232f6591aeab2d52e9046e6200b5cc2e0e8856",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "RESTORE.md",
+            "bytes": 1626,
+            "sha256": "d71ae61f334698bd020a455e7127013ae7b538fc1976c0e23055eb6ac93a9ec6",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "归档阅读与恢复.html",
+            "bytes": 11209,
+            "sha256": "bdb177398126b8da41f885be0f0d0e183b8b14d7345fc7e0c7f66f4cc1ffee08",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/README.md",
+            "bytes": 1743,
+            "sha256": "991be939c237e91cbac9d62be30bd042df7b5aca2a28bf0f64ef01e38284e5b7",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "tools/verify_archive.py",
+            "bytes": 1622,
+            "sha256": "b28f3e3e33cd71050b259cd224941c0e506d4931250747dc1504ddebeb745c6f",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/source-copy-manifest.json",
+            "bytes": 3003847,
+            "sha256": "b85c8a9ed0ca5ab2d8cc8017e6290725f5a3357a9252541a10cd9a9c6d2df5f5",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/transformations.json",
+            "bytes": 423,
+            "sha256": "eb91c10b9f1d572414a17594d3bc58b0e2c36a93c3b81be775efae1f01f2efde",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/projects.json",
+            "bytes": 15749,
+            "sha256": "11d44e4a2f355f9572594b8da1d28e994625d7c2b3d34d16b8058fe8c4aaedc0",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/media-manifest.json",
+            "bytes": 7381,
+            "sha256": "e383fd06134ac0ccba4905d69cf9fd33d2b7644fd52d215579dda008f3c2cfca",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/security-review.json",
+            "bytes": 13426,
+            "sha256": "5d58b694f800ba40e161cdcb1920c3cdbfe08b773f59dfe41348a53dd95fb383",
+            "matches_reviewed_version": true
+          }
+        ],
+        "open_findings": 0,
+        "minor_total": 1,
+        "minor_closed": 1,
+        "closure_current_value": "false_positive_embedded_slide_video_base64",
+        "historical_not_tested_preserved": [
+          "archive/files.json and archive/publication-review.json are intentionally not frozen yet; their current absence is excluded from findings and final-repository acceptance must be run by the verifier after freezing.",
+          "Remote GitHub repository visibility, remote Git objects, Release assets, clone/download and upload outcomes were not checked in this local read-only review.",
+          "No new course semantic/source reading, full-video listening, per-frame semantic audit, OCR of images/videos, real phone or native printing audit was performed.",
+          "No BaoCut App opening, media relinking or second-machine native project recovery was performed.",
+          "The reviewer checked guide text and links structurally; the parent reports separate guide-browser evidence. No browser result is inferred from these structural checks."
+        ],
+        "evidence_kind": "Current report version references and closure state checked; independent review conclusions were not expanded."
+      },
+      "status": "PASS"
+    }
+  ],
+  "not_tested": [
+    "No new course full-text/source semantic review, full-video listening or per-frame semantic review.",
+    "No new browser journey or screenshot review by this verifier; existing current-version evidence was checked read-only.",
+    "No real phone, native print dialog, BaoCut App opening, media relinking, second-machine native project restore or cross-machine runtime acceptance.",
+    "No remote GitHub objects, repository visibility, upload, Release download or post-upload asset verification.",
+    "The forthcoming copy of this report into the repository and the parent session final refreeze are outside the 9465-file snapshot verified here."
+  ],
+  "mutations": "Only this verifier_checks.py and verifier.json in /private/tmp/gse-publication-20261027 were written; no course, archive, code, native .bcut or media asset was modified."
+}

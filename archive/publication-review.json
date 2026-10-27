@@ -1,6 +1,6 @@
 {
   "date": "2026-10-27",
-  "status": "local_checks_passed_publication_pending",
+  "status": "local_acceptance_complete",
   "scope": "Archive packaging and preservation, not new course semantic review",
   "original_source_files_copied": 9420,
   "native_projects": 10,
@@ -23,7 +23,12 @@
     "guide_browser": "archive/qa/guide-browser/audit.json",
     "index_browser": "archive/qa/index-browser/audit.json",
     "lecture09_browser": "archive/qa/lecture09-browser/audit.json",
-    "source_copy_manifest": "archive/source-copy-manifest.json"
+    "source_copy_manifest": "archive/source-copy-manifest.json",
+    "persona": "archive/persona-review.json",
+    "verifier_initial": "archive/verifier-initial.json",
+    "public_scope": "archive/public-release-scope.json",
+    "verifier_final": "archive/verifier-final.json",
+    "release_server_digests": "archive/release-assets-verification.json"
   },
   "visual_review": {
     "reviewer": "root",
@@ -41,5 +46,13 @@
     "OCR secret scan of course imagery",
     "new full-course semantic/audio review"
   ],
-  "remote_status": "private repository created; push and release assets pending"
+  "remote_status": "12 Release assets uploaded and server hashes matched; public-state readback will be added after visibility switch",
+  "persona_gate_recomputed": {
+    "coverage_complete": true,
+    "blocking_findings": 0,
+    "previous_findings_all_fixed": true,
+    "current_html_sha256": "e5b9b9f8b6e859ce335c6cbf3839e5ec0afb12bc1d2f69ae31c51fdf2e401a8a",
+    "author_and_reviewer_distinct": true,
+    "result": "pass"
+  }
 }

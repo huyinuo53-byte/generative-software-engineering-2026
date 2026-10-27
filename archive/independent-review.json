@@ -1,28 +1,28 @@
 {
   "schema_version": 1,
   "status": "PASS",
-  "reviewed_at": "2026-10-27T07:48:01.194717+00:00",
+  "reviewed_at": "2026-10-27T08:05:05.572325+00:00",
   "author": "/root",
   "reviewer": "/root/gse_archive_review (independent Codex instance)",
   "data_level": "personal",
   "privacy_route": "same-family-exception under /Users/yjzhao/AGENTS.md section 5.4; local read-only review; no external model seat, upload or network request",
   "artifact_root": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
-  "scope": "Archive completeness, documentation consistency, copy/transformation accounting, native project and course media binding, security evidence context, historical QA boundary. Course semantics were not re-reviewed.",
+  "scope": "Initial archive/evidence-boundary review, a public-sharing documentation follow-up, and a final two-file review of the README/HTML reading-package entry. The final follow-up did not expand course semantics or rerun full archive/media verification.",
   "reviewed_versions": [
     {
       "path": "README.md",
-      "bytes": 4293,
-      "sha256": "77bc51e902a73ef22e911bb449232f6591aeab2d52e9046e6200b5cc2e0e8856"
+      "bytes": 4609,
+      "sha256": "b6253b96913f80d691ad5a43fc7a4ddb85bcdc74addf3a5e7427a41a8140a979"
     },
     {
       "path": "RESTORE.md",
-      "bytes": 1626,
-      "sha256": "d71ae61f334698bd020a455e7127013ae7b538fc1976c0e23055eb6ac93a9ec6"
+      "bytes": 1675,
+      "sha256": "3b6534491ef1665386b253e00044c72a96c81f03d9f989b3f175a76fb5fb1463"
     },
     {
       "path": "归档阅读与恢复.html",
-      "bytes": 11209,
-      "sha256": "bdb177398126b8da41f885be0f0d0e183b8b14d7345fc7e0c7f66f4cc1ffee08"
+      "bytes": 11627,
+      "sha256": "e5b9b9f8b6e859ce335c6cbf3839e5ec0afb12bc1d2f69ae31c51fdf2e401a8a"
     },
     {
       "path": "archive/README.md",
@@ -58,6 +58,16 @@
       "path": "archive/security-review.json",
       "bytes": 13426,
       "sha256": "5d58b694f800ba40e161cdcb1920c3cdbfe08b773f59dfe41348a53dd95fb383"
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "bytes": 582,
+      "sha256": "677696a13195d31b822c265c1ccaabf00fd52924434067dda88dcce2e290465a"
+    },
+    {
+      "path": "archive/repository.json",
+      "bytes": 401,
+      "sha256": "acb31a50ed5a2b955d0f3f31eb2a898edec2199f90dc307731afbbefc0618ac4"
     }
   ],
   "findings": [
@@ -98,12 +108,16 @@
         "declared_transformations": 1,
         "total_manifest_original_bytes": 1734550234,
         "evidence_file": "/private/tmp/gse-publication-20261027/independent-evidence.json"
-      }
+      },
+      "verification_basis": "Reused initial independent evidence; not rerun in public-scope follow-up.",
+      "verified_at": "2026-10-27T07:48:01.194717+00:00"
     },
     {
       "name": "Copy scope and transformation accounting",
       "status": "PASS",
-      "details": "Enumerated the original course, related research/legacy/tooling roots and the 10 selected native project roots. No source file was unaccounted for after copy and exclusions. Historical all-project inventory changed from 26 to 4 records; kept records exactly match course-ID filtering, and original/archive hashes match transformations.json."
+      "details": "Enumerated the original course, related research/legacy/tooling roots and the 10 selected native project roots. No source file was unaccounted for after copy and exclusions. Historical all-project inventory changed from 26 to 4 records; kept records exactly match course-ID filtering, and original/archive hashes match transformations.json.",
+      "verification_basis": "Reused initial independent evidence; not rerun in public-scope follow-up.",
+      "verified_at": "2026-10-27T07:48:01.194717+00:00"
     },
     {
       "name": "Native project and course media binding",
@@ -115,7 +129,9 @@
         "sourceMetadata_id_bindings": 9,
         "lecture08_fallback_binding": "lecture-08/run.json lines 6, 10, 42-44 binds BV11LWw6VEHW, original project path and exact media SHA-256; native project and media manifest agree.",
         "media_count": 10
-      }
+      },
+      "verification_basis": "Reused initial independent evidence; not rerun in public-scope follow-up.",
+      "verified_at": "2026-10-27T07:48:01.194717+00:00"
     },
     {
       "name": "Security review context",
@@ -138,7 +154,9 @@
         ],
         "dispositions": "All matches are embedded image/video encoding, public image proxy URL, or public HTML ask-learn identifiers. No raw matched values were emitted.",
         "evidence_file": "/private/tmp/gse-publication-20261027/independent-security-evidence.json"
-      }
+      },
+      "verification_basis": "Reused initial independent evidence; not rerun in public-scope follow-up.",
+      "verified_at": "2026-10-27T07:48:01.194717+00:00"
     },
     {
       "name": "Verifier behavior in isolated temporary fixture",
@@ -154,31 +172,150 @@
           "corrupted media"
         ],
         "evidence_file": "/private/tmp/gse-publication-20261027/independent-verifier-test-evidence.json"
-      }
+      },
+      "verification_basis": "Reused initial independent evidence; not rerun in public-scope follow-up.",
+      "verified_at": "2026-10-27T07:48:01.194717+00:00"
     },
     {
       "name": "Current HTML guide fidelity and links",
       "status": "PASS",
       "details": {
-        "source_paragraph_mismatches": 0,
-        "valid_local_links": 19,
-        "local_links_total": 19,
+        "current_readme_guide_text_mismatches": 0,
+        "reading_package_zip_direct_links": 1,
+        "source_video_release_links": 1,
+        "explicit_extract_index_path": "生成式软件工程/课程索引.html",
         "external_embedded_resources": 0,
-        "evidence_file": "/private/tmp/gse-publication-20261027/independent-guide-evidence.json"
-      }
+        "unaffected_guide_sections_and_local_links": "Reuse prior public-scope evidence; not rechecked this round.",
+        "evidence_file": "/private/tmp/gse-publication-20261027/independent-reading-entry-evidence.json"
+      },
+      "verification_basis": "Current README text and its generated guide section rechecked; previous guide-section/link evidence reused for unaffected content.",
+      "verified_at": "2026-10-27T08:05:05.572325+00:00"
     },
     {
       "name": "Historical QA evidence boundary",
       "status": "PASS",
-      "details": "README.md:50, RESTORE.md:21-23, archive/README.md:9-13 and their current HTML rendering explicitly distinguish copied historical QA from fresh semantic, audio, print, device or cross-machine recovery acceptance. No historical passed/hash was changed by this review."
+      "details": "README.md:51, RESTORE.md:21-23, archive/README.md:9-13 and their current HTML rendering explicitly distinguish copied historical QA from fresh semantic, audio, print, device or cross-machine recovery acceptance. No historical passed/hash was changed by this review.",
+      "verification_basis": "Previous boundary review reused; current README boundary wording re-read at line 51 and unchanged in meaning.",
+      "verified_at": "2026-10-27T08:00:27.036072+00:00"
+    },
+    {
+      "name": "Public-sharing documentation consistency and scope",
+      "status": "PASS",
+      "verification_basis": "Previous public-scope review reused; current README public-sharing wording re-read at line 53 and unchanged in meaning.",
+      "verified_at": "2026-10-27T08:00:27.036072+00:00",
+      "details": {
+        "visibility_claims": [
+          {
+            "file": "README.md",
+            "line": 53,
+            "text": "仓库公开供课程学习分享"
+          },
+          {
+            "file": "RESTORE.md",
+            "line": 14,
+            "text": "仓库和 Release 公开可读"
+          },
+          {
+            "file": "ATTRIBUTION.md",
+            "line": 5,
+            "text": "仓库公开用于学习分享"
+          },
+          {
+            "file": "archive/repository.json",
+            "line": 3,
+            "text": "\"visibility\": \"public\""
+          }
+        ],
+        "stale_private_visibility_wording": 0,
+        "updated_files_credential_pattern_hits": 0,
+        "repository_data_scope_unchanged": true,
+        "remote_visibility_not_independently_checked": true,
+        "evidence_file": "/private/tmp/gse-publication-20261027/independent-public-scope-evidence.json"
+      }
+    },
+    {
+      "name": "Recommended reading-package entry",
+      "status": "PASS",
+      "verified_at": "2026-10-27T08:05:05.572325+00:00",
+      "verification_basis": "Only current README.md and generated HTML guide inspected.",
+      "details": {
+        "README_line_9": "Direct course-reading-2026-10-27.zip link and explicit extract/open index path.",
+        "README_line_10": "Separate 10-source-video Release entry with BV-ID/mp4 selection instruction.",
+        "markdown_to_html_entry_text_mismatches": 0,
+        "remote_zip_or_release_not_fetched": true,
+        "evidence_file": "/private/tmp/gse-publication-20261027/independent-reading-entry-evidence.json"
+      }
     }
   ],
   "not_tested": [
-    "archive/files.json and archive/publication-review.json are intentionally not frozen yet; their current absence is excluded from findings and final-repository acceptance must be run by the verifier after freezing.",
+    "archive/files.json and archive/publication-review.json are outside this incremental review; freezing/current completeness acceptance belongs to the separate verifier. Their content or presence is not assessed as a finding here.",
     "Remote GitHub repository visibility, remote Git objects, Release assets, clone/download and upload outcomes were not checked in this local read-only review.",
     "No new course semantic/source reading, full-video listening, per-frame semantic audit, OCR of images/videos, real phone or native printing audit was performed.",
     "No BaoCut App opening, media relinking or second-machine native project recovery was performed.",
-    "The reviewer checked guide text and links structurally; the parent reports separate guide-browser evidence. No browser result is inferred from these structural checks."
+    "The reviewer checked guide text and links structurally; the parent reports separate guide-browser evidence. No browser result is inferred from these structural checks.",
+    "The public-sharing follow-up did not rerun the initial 9,420-file source/archive byte scan, 10-media SHA scan or full initial text scanner. Those results are reused with unchanged manifest/tool/security-review fingerprints and the parent-stated narrow change scope.",
+    "The final two-file reading-entry follow-up did not fetch the ZIP/Release, recompute the stated approximate ZIP size, revisit other archived documents or repeat previous full checks. Remote asset availability and bytes remain the separate verifier responsibility."
   ],
-  "reviewer_mutations": "Only /private/tmp/gse-publication-20261027/independent-*.json evidence and report files were written. No source, course, native .bcut or archived product file was edited."
+  "reviewer_mutations": "Only /private/tmp/gse-publication-20261027/independent-*.json evidence and report files were written. No source, course, native .bcut or archived product file was edited.",
+  "initial_reviewed_at": "2026-10-27T07:48:01.194717+00:00",
+  "incremental_review": {
+    "reason": "The human user explicitly requested a public repository for sharing, as relayed by the parent in this session.",
+    "affected_files": [
+      "README.md",
+      "RESTORE.md",
+      "ATTRIBUTION.md",
+      "archive/repository.json",
+      "归档阅读与恢复.html"
+    ],
+    "unchanged_previously_bound_files": [
+      "archive/README.md",
+      "tools/verify_archive.py",
+      "archive/source-copy-manifest.json",
+      "archive/transformations.json",
+      "archive/projects.json",
+      "archive/media-manifest.json",
+      "archive/security-review.json"
+    ],
+    "previous_reviewed_at": "2026-10-27T07:48:01.194717+00:00",
+    "reuse_boundary": "The initial full-copy, source/media hash, project binding, scanner and verifier-fixture evidence is retained. This follow-up verifies the seven unchanged review-metadata/tool fingerprints, not every underlying course or media byte again. Fresh final completeness acceptance remains the separate verifier responsibility.",
+    "public_scope": "The release scope remains this course archive, its 10 selected native BaoCut projects and source videos, plus explicitly related legacy, research and workflow/tooling artifacts. Course project tasks/logs remain intentional production history. BaoCut global settings, global chat/session exports, account/login stores, model/App packages and credential stores are outside the copied scope.",
+    "security_boundary": "The unchanged initial security review found no genuine credentials; this round scans only the five updated public-sharing files and finds no credential-pattern hits. This is not an OCR guarantee or a proof that all historic imagery lacks private information.",
+    "evidence_file": "/private/tmp/gse-publication-20261027/independent-public-scope-evidence.json",
+    "reviewed_at": "2026-10-27T08:00:27.036072+00:00"
+  },
+  "latest_narrow_followup": {
+    "reviewed_at": "2026-10-27T08:05:05.572325+00:00",
+    "affected_files": [
+      "README.md",
+      "归档阅读与恢复.html"
+    ],
+    "reason": "Non-blocking persona suggestion: separate the recommended reading-only ZIP direct download from the 10-source-video Release entry and state the index path after extraction.",
+    "previous_versions": [
+      {
+        "path": "README.md",
+        "bytes": 4308,
+        "sha256": "93a17957cacbbc0ebc2bb41e499e6f755c7989b94ec1c17482f978017ba09757"
+      },
+      {
+        "path": "归档阅读与恢复.html",
+        "bytes": 11273,
+        "sha256": "f0fc562670f64a80c5306a60c887ca01e3a25b39d13f55cbbd41eb3757d39ac6"
+      }
+    ],
+    "current_versions": [
+      {
+        "path": "README.md",
+        "bytes": 4609,
+        "sha256": "b6253b96913f80d691ad5a43fc7a4ddb85bcdc74addf3a5e7427a41a8140a979"
+      },
+      {
+        "path": "归档阅读与恢复.html",
+        "bytes": 11627,
+        "sha256": "e5b9b9f8b6e859ce335c6cbf3839e5ec0afb12bc1d2f69ae31c51fdf2e401a8a"
+      }
+    ],
+    "result": "PASS; no new findings; prior minor remains fixed.",
+    "evidence_file": "/private/tmp/gse-publication-20261027/independent-reading-entry-evidence.json",
+    "reuse_boundary": "Only these two current files were read and hashed. All other reviewer findings, artifact hashes and checks remain from the previous accepted review; no course, media, archive metadata or full scanner recheck was performed."
+  }
 }

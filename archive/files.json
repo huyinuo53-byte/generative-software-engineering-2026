@@ -14,23 +14,28 @@
     },
     {
       "path": "ATTRIBUTION.md",
-      "bytes": 560,
-      "sha256": "b51288d5d2f2914da2999a34ab11aea5e7c9b51a4ded9f5b2eef32b7d00e03c8"
+      "bytes": 582,
+      "sha256": "677696a13195d31b822c265c1ccaabf00fd52924434067dda88dcce2e290465a"
     },
     {
       "path": "README.md",
-      "bytes": 4293,
-      "sha256": "77bc51e902a73ef22e911bb449232f6591aeab2d52e9046e6200b5cc2e0e8856"
+      "bytes": 4609,
+      "sha256": "b6253b96913f80d691ad5a43fc7a4ddb85bcdc74addf3a5e7427a41a8140a979"
     },
     {
       "path": "RESTORE.md",
-      "bytes": 1626,
-      "sha256": "d71ae61f334698bd020a455e7127013ae7b538fc1976c0e23055eb6ac93a9ec6"
+      "bytes": 1675,
+      "sha256": "3b6534491ef1665386b253e00044c72a96c81f03d9f989b3f175a76fb5fb1463"
     },
     {
       "path": "archive/README.md",
       "bytes": 1743,
       "sha256": "991be939c237e91cbac9d62be30bd042df7b5aca2a28bf0f64ef01e38284e5b7"
+    },
+    {
+      "path": "archive/evidence-path-map.json",
+      "bytes": 1698,
+      "sha256": "56087b3e49c3490e98696c629b6a4562377fc3ba18bbaeac29d685786d4178df"
     },
     {
       "path": "archive/exclusions.json",
@@ -44,8 +49,8 @@
     },
     {
       "path": "archive/independent-review.json",
-      "bytes": 8061,
-      "sha256": "68ab2148e1eda3b7f6eeaf71c2d3c32b763d447349bf5ca695e7829075ce2cc9"
+      "bytes": 15799,
+      "sha256": "710a3d99861a64ad16d6450aa74f2d0155bc14c3cf1315f0da4d47e081af974f"
     },
     {
       "path": "archive/jobs-check.json",
@@ -56,6 +61,11 @@
       "path": "archive/media-manifest.json",
       "bytes": 7381,
       "sha256": "e383fd06134ac0ccba4905d69cf9fd33d2b7644fd52d215579dda008f3c2cfca"
+    },
+    {
+      "path": "archive/persona-review.json",
+      "bytes": 6591,
+      "sha256": "5f4283629ecad0434d1ec90c90fbb7e0066e4d99de236d5c3c1cfe13350de890"
     },
     {
       "path": "archive/prepare-archive.py",
@@ -118,24 +128,29 @@
       "sha256": "11d44e4a2f355f9572594b8da1d28e994625d7c2b3d34d16b8058fe8c4aaedc0"
     },
     {
+      "path": "archive/public-release-scope.json",
+      "bytes": 1000,
+      "sha256": "4fa6440b21dc11f4515814979a4a7289fa409929a36367178af9076b1197d22e"
+    },
+    {
       "path": "archive/publication-review.json",
-      "bytes": 1687,
-      "sha256": "2251c6dbe494a0b765381c3c946ebca58e8975d0b9eedcf7ccf016abf64d4630"
+      "bytes": 2308,
+      "sha256": "f642efebfddc081e469e32dcab87dc266d58cb0e6d3817df72f20f48c3dd2680"
     },
     {
       "path": "archive/qa/guide-browser/1280-top.png",
-      "bytes": 157669,
-      "sha256": "f6b09640bc991e7b5eb254f02523540c5340b4c23b1e0ac9f65c1bcf3adb97ac"
+      "bytes": 170173,
+      "sha256": "1dfe794e60ef389a5c82622b9d45ecf20446d717dd904b181e07fa4dfbf428d3"
     },
     {
       "path": "archive/qa/guide-browser/390-top.png",
-      "bytes": 114634,
-      "sha256": "fa1f6b198c2d2bf4dcb3040623a4d3fa16aff03af4269e07534de4367989d114"
+      "bytes": 125639,
+      "sha256": "2396d464367dfd857d4e5f8420bd6891dfe5f0a9c278a59e2143edbfd915a5cb"
     },
     {
       "path": "archive/qa/guide-browser/audit.json",
       "bytes": 2103,
-      "sha256": "8ce189611b76e6f6bde0c91d5aabeb310fe34e3962ae280dce4cf91a40830fc2"
+      "sha256": "0221d02666e55e5265ed43ed7c95258bfc494e8ff913cef45ab1bf6b3599e18e"
     },
     {
       "path": "archive/qa/index-browser/1280-top.png",
@@ -166,6 +181,81 @@
       "path": "archive/qa/lecture09-browser/audit.json",
       "bytes": 2111,
       "sha256": "8a9bf8eb8a614534dfaa98199e6ea6588b6901ff2474d0cdfc022326b50e3b78"
+    },
+    {
+      "path": "archive/qa/persona/persona-desktop-media.png",
+      "bytes": 126942,
+      "sha256": "b16eb894afb47281b85573ea4c0c6bc0cfce5586035c3e03ca870226a80a713f"
+    },
+    {
+      "path": "archive/qa/persona/persona-desktop-restore.png",
+      "bytes": 177706,
+      "sha256": "7d3f1875177692f6298505702fab3a8972b779342549d509708e35e198c0fbdd"
+    },
+    {
+      "path": "archive/qa/persona/persona-desktop-scope.png",
+      "bytes": 167216,
+      "sha256": "551bb749dd06051b258cb1b6bed289faac24177e1ceb1152285c63ef0e33c5d0"
+    },
+    {
+      "path": "archive/qa/persona/persona-desktop-top.png",
+      "bytes": 155562,
+      "sha256": "09d93b5f7af974e1cab3f7190d068e2ef78db43fa00935b56ceed3ff0442512d"
+    },
+    {
+      "path": "archive/qa/persona/persona-desktop.png",
+      "bytes": 825557,
+      "sha256": "eefe6b2fff374ecefa710e720bd733bcee372c8cac2d4f2ff6632ba7d6354ee5"
+    },
+    {
+      "path": "archive/qa/persona/persona-path-evidence.json",
+      "bytes": 7735,
+      "sha256": "74d598abd8068c7daad1df4967795d890c4781eda603818861b86b44425aadcf"
+    },
+    {
+      "path": "archive/qa/persona/persona-path.cjs",
+      "bytes": 2674,
+      "sha256": "4e92527bdca72b8453b79138b00a1c3e33b1dad39f943435ae8acaed690282b9"
+    },
+    {
+      "path": "archive/qa/persona/persona-phone-command-scroll.png",
+      "bytes": 93529,
+      "sha256": "131d02eea1240b3772eab8376c0b7abe6bb07e8bc2841fcf5e9f8029ce221132"
+    },
+    {
+      "path": "archive/qa/persona/persona-phone-media.png",
+      "bytes": 86605,
+      "sha256": "50a8241c1459225ce4840f0296c09f6b47a18fb92d73d01fa3c8543265c3ea23"
+    },
+    {
+      "path": "archive/qa/persona/persona-phone-restore.png",
+      "bytes": 112032,
+      "sha256": "09bf998809f282752d5116585cd9b195acfe593b0f81514b8244406b865aa5d6"
+    },
+    {
+      "path": "archive/qa/persona/persona-phone-scope.png",
+      "bytes": 138890,
+      "sha256": "91eaee911edbac5e8b9ef3e67657da530bad5db7d9d10264c02211b75f07b618"
+    },
+    {
+      "path": "archive/qa/persona/persona-phone-top.png",
+      "bytes": 120580,
+      "sha256": "4dec9b10f3dc47ea553d3a237c85cfe3d9bba199e296c8c72905660d5842ac3f"
+    },
+    {
+      "path": "archive/qa/persona/persona-phone.png",
+      "bytes": 820377,
+      "sha256": "4165e2b9ecd309799f8471a11031da0462128ccb3de9f445feccf1df9dfd211e"
+    },
+    {
+      "path": "archive/qa/persona/persona-render.cjs",
+      "bytes": 1615,
+      "sha256": "216595b4e3fc76eb607d4db6bb3e93450a8dc539aadda16a1cb4d601d70f6e2f"
+    },
+    {
+      "path": "archive/qa/persona/persona-rendered-text.txt",
+      "bytes": 6671,
+      "sha256": "c6d2f05f23ec6f4df07794727095824bbdd86d64ce2aaae1aa180c47c2687176"
     },
     {
       "path": "archive/qa/read-path.cjs",
@@ -208,14 +298,19 @@
       "sha256": "28651e3b49cc38b61aa953e6e8005a83ef9b9f5215c7073039653a4eb1ad3424"
     },
     {
+      "path": "archive/release-assets-verification.json",
+      "bytes": 2626,
+      "sha256": "04c3567432dff449740869b7c7382fc711dfd6c28cabbcdcf214653f9890ff7b"
+    },
+    {
       "path": "archive/render-guide.cjs",
       "bytes": 1868,
       "sha256": "df0500f0f90174ac5912a08f3cd9b80a5bfdd786accd9cef9cf7edda0788fee2"
     },
     {
       "path": "archive/repository.json",
-      "bytes": 298,
-      "sha256": "97a37a323a748ab18650b1d23c3cba834c313f7e319b27db41ad8377e2ee3424"
+      "bytes": 401,
+      "sha256": "acb31a50ed5a2b955d0f3f31eb2a898edec2199f90dc307731afbbefc0618ac4"
     },
     {
       "path": "archive/security-review.json",
@@ -231,6 +326,21 @@
       "path": "archive/transformations.json",
       "bytes": 423,
       "sha256": "eb91c10b9f1d572414a17594d3bc58b0e2c36a93c3b81be775efae1f01f2efde"
+    },
+    {
+      "path": "archive/verifier-checks.py",
+      "bytes": 10544,
+      "sha256": "4d92a6445619d98c381ea401ec3e2d181edcfc44c19929e6806907f38d35da77"
+    },
+    {
+      "path": "archive/verifier-final.json",
+      "bytes": 21021,
+      "sha256": "ba9d9e64ecab65ea70092d269d32fd5edffd045506206da2ba560f7da4616c3a"
+    },
+    {
+      "path": "archive/verifier-initial.json",
+      "bytes": 22579,
+      "sha256": "e0a5082dd2408ea6b68a24501f4fe3b24f4fb536ab8be38ade21bf9d25ac1ebc"
     },
     {
       "path": "baocut/projects/05 软件工程的来龙去脉.bcut/.bcut/history/journal.jsonl",
@@ -5554,8 +5664,8 @@
     },
     {
       "path": "归档阅读与恢复.html",
-      "bytes": 11209,
-      "sha256": "bdb177398126b8da41f885be0f0d0e183b8b14d7345fc7e0c7f66f4cc1ffee08"
+      "bytes": 11627,
+      "sha256": "e5b9b9f8b6e859ce335c6cbf3839e5ec0afb12bc1d2f69ae31c51fdf2e401a8a"
     },
     {
       "path": "生成式软件工程/build_index.py",
@@ -47343,5 +47453,5 @@
       "sha256": "5818d6f7204e1eae6ba20d37f3ba48abaf84576757f6269011e6b9020f2bdf57"
     }
   ],
-  "bytes": 1739188225
+  "bytes": 1742130751
 }

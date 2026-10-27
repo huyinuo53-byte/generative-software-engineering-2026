@@ -11,7 +11,7 @@ gh release download snapshot-2026-10-27 --repo zhao-d-r/generative-software-engi
 python3 tools/verify_archive.py --media-dir media
 ```
 
-使用已授权访问这个私有仓库的 GitHub 账号。`archive/media-manifest.json` 将 Release 的 BV 文件名映射到原始视频名、来源 URL 和 SHA-256。
+仓库和 Release 公开可读；gh 命令需要可用的 GitHub CLI 环境，也可直接从网页下载。`archive/media-manifest.json` 将 Release 的 BV 文件名映射到原始视频名、来源 URL 和 SHA-256。
 
 ## 恢复 BaoCut
 

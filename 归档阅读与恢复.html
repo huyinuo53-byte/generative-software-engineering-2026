@@ -4,7 +4,8 @@
 <ul>
 <li><strong>归档指南</strong>：<a href="%E5%BD%92%E6%A1%A3%E9%98%85%E8%AF%BB%E4%B8%8E%E6%81%A2%E5%A4%8D.html">阅读与恢复 HTML</a>，也可直接读本页。</li>
 <li><strong>阅读入口</strong>：<a href="%E7%94%9F%E6%88%90%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%AF%BE%E7%A8%8B%E7%B4%A2%E5%BC%95.html">课程索引</a>。GitHub 显示 HTML 源码，下载后用浏览器打开。</li>
-<li><strong>便携阅读包 / 10 个原视频</strong>：<a href="https://github.com/zhao-d-r/generative-software-engineering-2026/releases/tag/snapshot-2026-10-27">snapshot-2026-10-27 Release</a>。</li>
+<li><strong>只读笔记（推荐）</strong>：<a href="https://github.com/zhao-d-r/generative-software-engineering-2026/releases/download/snapshot-2026-10-27/course-reading-2026-10-27.zip">下载 course-reading-2026-10-27.zip</a>（约 86 MB）；解压后打开 <code>生成式软件工程/课程索引.html</code>。</li>
+<li><strong>10 个原视频</strong>：<a href="https://github.com/zhao-d-r/generative-software-engineering-2026/releases/tag/snapshot-2026-10-27">snapshot-2026-10-27 Release</a>，按 BV ID 选择需要的 <code>.mp4</code>。</li>
 <li><strong>恢复项目</strong>：<a href="#restore">RESTORE.md</a>；<strong>制作记录说明</strong>：<a href="#archive">archive/README.md</a>。</li>
 <li><strong>延伸分析</strong>：<a href="research/reports/pstack%20Skills%20%E5%86%99%E6%B3%95%E4%B8%8E%E7%94%9F%E6%88%90%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%90%AF%E5%8F%91.html">pstack Skills 写法与生成式软件工程启发</a>。其来源快照和审查资料保存在相邻 research/research_notes 目录。</li>
 </ul>
@@ -84,7 +85,7 @@ python3 tools/verify_archive.py
 <p>源视频约 2.44 GB，放在同仓库 Release，不进入 Git 历史；转写分块和全部候选帧保存在仓库。GitHub 对普通 Git 大文件的限制见<a href="https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github">官方说明</a>。本次没有找到另存的音视频 slices；没有为上传重新切片。已有 waveform 等项目缓存予以保留。</p>
 <h2>质量与范围</h2>
 <p>原笔记中的内容/逐图/来源/浏览器复核记录随档保存。本次检查复制完整性、媒体指纹、现行 HTML 与索引、上传后的远端对象和 Release 资产；不等于重新听完整课程，也不把旧历史 QA 当成跨机器新验收。真实手机、部分原生打印与第二台机器原生项目恢复未测，逐课限制见各自 review。</p>
-<p>本机原始课程、项目和媒体未改动。课程目录中一份历史全机项目清单只保留了本课程条目；OS/Python 缓存与临时锁不归档，详见 archive/transformations.json 与 exclusions.json。历史绝对路径原样保留，执行旧脚本前先核对环境。仓库默认私有，未启用 Pages，未分发 App、模型、账户登录或密钥配置。第三方材料权属见 <a href="ATTRIBUTION.md">ATTRIBUTION.md</a>。</p>
+<p>本机原始课程、项目和媒体未改动。课程目录中一份历史全机项目清单只保留了本课程条目；OS/Python 缓存与临时锁不归档，详见 archive/transformations.json 与 exclusions.json。历史绝对路径原样保留，执行旧脚本前先核对环境。仓库公开供课程学习分享，未启用 Pages，未分发 App、模型、账户登录或密钥配置。第三方材料权属见 <a href="ATTRIBUTION.md">ATTRIBUTION.md</a>。</p>
 </section>
 <section id="restore"><h1>阅读和恢复</h1>
 <h2>阅读</h2>
@@ -93,7 +94,7 @@ python3 tools/verify_archive.py
 <pre><code class="language-sh">gh release download snapshot-2026-10-27 --repo zhao-d-r/generative-software-engineering-2026 --pattern &#39;*.mp4&#39; --dir media
 python3 tools/verify_archive.py --media-dir media
 </code></pre>
-<p>使用已授权访问这个私有仓库的 GitHub 账号。<code>archive/media-manifest.json</code> 将 Release 的 BV 文件名映射到原始视频名、来源 URL 和 SHA-256。</p>
+<p>仓库和 Release 公开可读；gh 命令需要可用的 GitHub CLI 环境，也可直接从网页下载。<code>archive/media-manifest.json</code> 将 Release 的 BV 文件名映射到原始视频名、来源 URL 和 SHA-256。</p>
 <h2>恢复 BaoCut</h2>
 <ol>
 <li>先校验 <code>python3 tools/verify_archive.py</code>，把需要的 <code>.bcut</code> 目录复制到新的工作位置；不要直接编辑仓库中的档案。</li>

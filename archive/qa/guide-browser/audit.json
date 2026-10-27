@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "file": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/归档阅读与恢复.html",
-  "html_sha256": "bdb177398126b8da41f885be0f0d0e183b8b14d7345fc7e0c7f66f4cc1ffee08",
+  "html_sha256": "e5b9b9f8b6e859ce335c6cbf3839e5ec0afb12bc1d2f69ae31c51fdf2e401a8a",
   "auditor_sha256": "2168ef6afa247f3c4dbb548961373c2cf931f578be1bc6865fa2f12fe22e3828",
   "profile": "generic",
   "dependencies": {
-    "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/归档阅读与恢复.html": "bdb177398126b8da41f885be0f0d0e183b8b14d7345fc7e0c7f66f4cc1ffee08"
+    "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/归档阅读与恢复.html": "e5b9b9f8b6e859ce335c6cbf3839e5ec0afb12bc1d2f69ae31c51fdf2e401a8a"
   },
   "viewports": [
     {
@@ -26,7 +26,7 @@
       "errors": [],
       "screenshot": {
         "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/archive/qa/guide-browser/1280-top.png",
-        "sha256": "f6b09640bc991e7b5eb254f02523540c5340b4c23b1e0ac9f65c1bcf3adb97ac"
+        "sha256": "1dfe794e60ef389a5c82622b9d45ecf20446d717dd904b181e07fa4dfbf428d3"
       }
     },
     {
@@ -47,7 +47,7 @@
       "errors": [],
       "screenshot": {
         "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/archive/qa/guide-browser/390-top.png",
-        "sha256": "fa1f6b198c2d2bf4dcb3040623a4d3fa16aff03af4269e07534de4367989d114"
+        "sha256": "2396d464367dfd857d4e5f8420bd6891dfe5f0a9c278a59e2143edbfd915a5cb"
       }
     }
   ],

@@ -1,0 +1,21 @@
+const fs = require('node:fs');
+const { chromium } = require('playwright');
+(async () => {
+  const browser = await chromium.launch({headless: true, executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', args: ['--no-sandbox']});
+  const page = await browser.newPage({viewport: {width: 1280, height: 800}});
+  const errors = [];
+  page.on('pageerror', e => errors.push(e.message));
+  await page.goto('http://127.0.0.1:8769/%E5%BD%92%E6%A1%A3%E9%98%85%E8%AF%BB%E4%B8%8E%E6%81%A2%E5%A4%8D.html');
+  await page.waitForLoadState('load');
+  const text = await page.locator('body').innerText();
+  const headings = await page.locator('h1,h2,h3,h4,h5,h6').allTextContents();
+  const links = await page.locator('a').evaluateAll(es => es.map(e => ({text: e.innerText, href: e.getAttribute('href')})));
+  fs.writeFileSync('/private/tmp/gse-publication-20261027/persona-rendered-text.txt', text);
+  await page.screenshot({path: '/private/tmp/gse-publication-20261027/persona-desktop.png', fullPage: true});
+  const desktopOverflow = await page.evaluate(() => ({scroll: document.documentElement.scrollWidth, viewport: innerWidth}));
+  await page.setViewportSize({width: 390, height: 844});
+  await page.screenshot({path: '/private/tmp/gse-publication-20261027/persona-phone.png', fullPage: true});
+  const phoneOverflow = await page.evaluate(() => ({scroll: document.documentElement.scrollWidth, viewport: innerWidth}));
+  console.log(JSON.stringify({headings, links, errors, desktopOverflow, phoneOverflow, text}, null, 2));
+  await browser.close();
+})().catch(e => {console.error(e); process.exit(1)});

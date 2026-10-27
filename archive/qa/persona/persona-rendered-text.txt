@@ -1,0 +1,81 @@
+阅读入口
+下载与恢复
+证据边界
+生成式软件工程 · 2026
+
+南京大学《生成式软件工程》个人学习笔记与 BaoCut 制作档案。归档日期：2026-10-27。
+
+现有 9 课 + 1 个补充视频，225 节正文，472 幅内嵌图，5,087 个转写来源单元。优先复用已有转写，保留时间码、讲义、演示、材料补充和审查历史。
+
+归档指南：阅读与恢复 HTML，也可直接读本页。
+阅读入口：课程索引。GitHub 显示 HTML 源码，下载后用浏览器打开。
+只读笔记（推荐）：下载 course-reading-2026-10-27.zip（约 86 MB）；解压后打开 生成式软件工程/课程索引.html。
+10 个原视频：snapshot-2026-10-27 Release，按 BV ID 选择需要的 .mp4。
+恢复项目：RESTORE.md；制作记录说明：archive/README.md。
+延伸分析：pstack Skills 写法与生成式软件工程启发。其来源快照和审查资料保存在相邻 research/research_notes 目录。
+课次	笔记	视频 ID
+第01课	欢迎来到未来	BV1pb8o6yE8f
+补充	失败的AI Slop数字永生尝试	BV1fKtN6DErG
+第02课	提示词工程	BV1CQt365EzW
+第03课	软件仓库管理	BV1kybV6DE47
+第04课	软件仓库管理 (2)	BV1Q6en6NEUo
+第05课	软件工程的来龙去脉	BV1Nyeq6qEt8
+第06课	需求和架构 (1)	BV1Rch76WEfQ
+第07课	需求和架构 (2)	BV1JGap6LE74
+第08课	Agent-native 开发	BV11LWw6VEHW
+第09课	DeepSeek Harness (1)	BV144nc6KEA4
+档案结构
+生成式软件工程/          现行 HTML、notes/layout、原始转写和 chunks、讲义/论文、帧、QA、修订
+baocut/projects/         10 个原生 .bcut 目录，含 ASR、Studio、历史、任务日志、已有缓存
+legacy/                  可识别的早期复用成果与原截图
+research/                pstack Skills 对照分析及固定版本来源
+tooling/                 本次冻结的课程 skill 与检查器源码
+archive/                 项目/视频映射、逐文件 SHA-256、转换与排除说明、归档复核
+tools/verify_archive.py   无第三方依赖的完整性检查
+
+下载与校验
+gh repo clone zhao-d-r/generative-software-engineering-2026
+cd generative-software-engineering-2026
+python3 tools/verify_archive.py
+
+
+源视频约 2.44 GB，放在同仓库 Release，不进入 Git 历史；转写分块和全部候选帧保存在仓库。GitHub 对普通 Git 大文件的限制见官方说明。本次没有找到另存的音视频 slices；没有为上传重新切片。已有 waveform 等项目缓存予以保留。
+
+质量与范围
+
+原笔记中的内容/逐图/来源/浏览器复核记录随档保存。本次检查复制完整性、媒体指纹、现行 HTML 与索引、上传后的远端对象和 Release 资产；不等于重新听完整课程，也不把旧历史 QA 当成跨机器新验收。真实手机、部分原生打印与第二台机器原生项目恢复未测，逐课限制见各自 review。
+
+本机原始课程、项目和媒体未改动。课程目录中一份历史全机项目清单只保留了本课程条目；OS/Python 缓存与临时锁不归档，详见 archive/transformations.json 与 exclusions.json。历史绝对路径原样保留，执行旧脚本前先核对环境。仓库公开供课程学习分享，未启用 Pages，未分发 App、模型、账户登录或密钥配置。第三方材料权属见 ATTRIBUTION.md。
+
+阅读和恢复
+阅读
+
+克隆或下载仓库，使用浏览器打开 生成式软件工程/课程索引.html。10 篇现行笔记均内嵌图片，可离线阅读。GitHub 文件页只显示源码；下载后打开 HTML。也可下载 Release 的 course-reading-2026-10-27.zip，这是只含现行阅读成品的便携包。
+
+取得源视频
+gh release download snapshot-2026-10-27 --repo zhao-d-r/generative-software-engineering-2026 --pattern '*.mp4' --dir media
+python3 tools/verify_archive.py --media-dir media
+
+
+仓库和 Release 公开可读；gh 命令需要可用的 GitHub CLI 环境，也可直接从网页下载。archive/media-manifest.json 将 Release 的 BV 文件名映射到原始视频名、来源 URL 和 SHA-256。
+
+恢复 BaoCut
+先校验 python3 tools/verify_archive.py，把需要的 .bcut 目录复制到新的工作位置；不要直接编辑仓库中的档案。
+下载对应原视频并按媒体清单核对哈希。
+用兼容的 BaoCut 打开项目副本；原项目保留了旧机器的媒体绝对路径。若媒体离线，通过 BaoCut 的项目设置/重新关联媒体操作选择已下载文件，不手改 .bcut 内部 JSON。
+检查转写、章节、Studio 与媒体能否正常工作。只有完成这些实际检查，才能声称跨机器原生恢复成功；本次未在第二台机器验证。
+
+工作流快照见 tooling/baocut-course-notes/；BaoCut App、模型和登录/密钥配置不分发。历史脚本可能仍引用原工作目录，应先审阅路径和依赖。完整重算会产生新版本及新审查记录，不能把归档中的旧 PASS 当作当前机器的 PASS。
+
+制作档案与证据边界
+生成式软件工程/ 保存现有课程目录、转写分块、notes/layout、讲义、全部候选帧、逐图审核、浏览器截图、修订与失败记录。
+baocut/projects/ 保存 10 个原生 .bcut 目录：原始转写、ASR rows、Studio、历史对象、项目内 tasks/logs/cache 均保留。
+legacy/ 保存可识别的早期复用草稿及提示词工程截图，不替代现行笔记。
+media-manifest.json 对应同仓库 Release 中 10 个源视频，记录平台 BV ID、原始路径、长度与 SHA-256。
+source-copy-manifest.json 记录源文件与复制指纹；transformations.json 单独记录归档转换；exclusions.json 列出未复制的 OS/Python 缓存和临时锁。
+
+唯一内容范围转换是 生成式软件工程/sources/projects.json：从历史全机项目列表中去掉其他课程条目。历史 trace 仍保留原值，因此涉及该文件的旧快照不是归档副本的新验收结果。本次完整性以 files.json 和 publication-review.json 为准；不修改历史 passed/hash。
+
+历史审核是原制作时的证据，包含真实手机、原生打印、音频逐秒听审等未测边界。复制文件并不构成新的全文/来源/真机验收。历史绝对路径、工具路径和状态照存，跨机器不自动有效。不要执行旧 ownership.json 或临时脚本来覆盖当前目录。
+
+截至本次归档，在这 10 个 .bcut 项目和可识别的课程原件中未发现独立音视频 slices。存在的 chunks/ 是转写阅读分块；frames/、visual/ 是真实画面候选与审查资料；项目 cache/ 中已有 waveform 文件也予以保存。没有为上传重新转码或制造 slices。

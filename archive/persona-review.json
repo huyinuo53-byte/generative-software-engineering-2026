@@ -1,0 +1,73 @@
+{
+  "mode": "article",
+  "round": 2,
+  "product": "/private/tmp/gse-publication-20261027/persona-handoff/归档阅读与恢复.html",
+  "for_whom": "产品经理转型 AI builder，希望以后能找到课程笔记、制作过程并恢复个人学习档案。",
+  "author": {
+    "model": "GPT-6 family",
+    "instance": "root"
+  },
+  "reviewer": {
+    "model": "GPT-6 family",
+    "instance": "/root/gse_archive_persona"
+  },
+  "independence": "same-family-exception",
+  "persona": {
+    "name": "课程档案的 owner 读者",
+    "who": "产品经理，正在转型 AI builder，同时是美股投资者；未来可能隔数月才重新打开这份课程档案。",
+    "knows": [
+      "产品思路和需求拆解",
+      "投资基本面",
+      "用过 Claude Code 和几家模型的命令行"
+    ],
+    "does_not_know": [
+      "shell、沙箱和 Git 的进阶操作",
+      "BaoCut 原生项目的目录和迁移细节",
+      "ASR rows、Studio、ownership 等制作内部术语"
+    ],
+    "context": "主要在手机上用 5 至 10 分钟阅读；偶尔到电脑前执行恢复。先判断档案是否值得保存、以后从哪里开始，然后才看制作证据。",
+    "goal": "找到现行课程笔记、知道完整制作档案的位置，并理解恢复原生项目时自己要做什么、哪些结果还没有验证。"
+  },
+  "tasks": [],
+  "coverage": {
+    "required": [
+      "full-text"
+    ],
+    "done": [
+      "full-text"
+    ],
+    "missing": []
+  },
+  "path_walked": [
+    "版本绑定：Round 2 公开分享版 HTML 的 SHA-256 为 e5b9b9f8b6e859ce335c6cbf3839e5ec0afb12bc1d2f69ae31c51fdf2e401a8a；渲染正文全文保存在 /private/tmp/gse-publication-20261027/persona-rendered-text.txt，其 SHA-256 为 c6d2f05f23ec6f4df07794727095824bbdd86d64ce2aaae1aa180c47c2687176。本轮重新从首字到末字顺序阅读全文。",
+    "页首导航：阅读入口、下载与恢复、证据边界。在 390×844 和 1280×800 下实际点击，等待滚动结束后均能抵达相应段落。",
+    "生成式软件工程 · 2026：完整复读简介、全部入口及 10 行课次表。9 课加 1 个补充视频与 10 行列表相符。上一轮 F1 已修复：首屏现在写明“只读笔记（推荐）：下载 course-reading-2026-10-27.zip（约 86 MB）；解压后打开 生成式软件工程/课程索引.html。”，并将原视频入口单列；ZIP 链接直接指向该文件的 Release 资产 URL。已查看 390×844 与 1280×800 的首屏截图，文字可读且无页面横向溢出。证据：/private/tmp/gse-publication-20261027/persona-phone-top.png；/private/tmp/gse-publication-20261027/persona-desktop-top.png。没有再为选择阅读资产而停下。",
+    "档案结构：逐行读完全部目录说明，能区分现行笔记、原生项目、旧稿、研究、工具及归档清单。notes/layout、ASR、Studio 未展开，但本节作为文件位置标签仍可使用，没有因此想退出。手机命令块可局部横向滚动。",
+    "下载与校验：读完三行命令及其后全部说明。明白原视频约 2.44 GB 且位于 Release，仓库中的转写分块不等于音视频切片。读到 gh 时需要既有 CLI 环境，后面的源视频段落说明了网页替代路径；未因这一点停止阅读。",
+    "质量与范围：两段全文阅读。能区分复制完整性检查与重新听课、真机、原生打印及第二台机器恢复。公开分享的表述与后文公开可读一致；页面明确保留历史绝对路径，读者不会误以为旧脚本可直接执行。本轮仅评价这些表述是否清楚，没有从页面自述推导仓库事实已验证。",
+    "阅读和恢复：按原文顺序进入本节，随后完整阅读三个子节。",
+    "阅读：读到 course-reading-2026-10-27.zip 后，明确了手机碎片阅读最相关的便携资产和解压后应打开的索引。能够继续执行选择，没有 blocking。",
+    "取得源视频：完整复读两行命令和公开访问说明。能够理解仓库及 Release 公开可读，gh 需要 CLI 环境，也可从网页下载；媒体清单用于把 BV 文件名对应回视频及指纹。首屏新增的原视频独立条目还明确按 BV ID 选择 .mp4，与本节一致。没有遗留私有仓库授权要求的矛盾。",
+    "恢复 BaoCut：依次读完四个步骤和补充段落。能理解先校验、复制项目、下载并重关联媒体、检查转写与 Studio 的顺序；明确第二台机器尚未验证，旧 PASS 不等于当前机器 PASS。没有被要求直接修改 .bcut 或旧档案，没有因此想退出。",
+    "制作档案与证据边界：依次读完五个文件说明条目及末尾三段，直到最后一句“没有为上传重新转码或制造 slices。”。能理解唯一内容范围转换、旧 trace 与当前完整性清单的区别，以及不应执行旧 ownership 或临时脚本覆盖目录的提醒。files.json、publication-review.json、chunks、frames、visual、waveform 等是内部标签，未妨碍判断自己要阅读还是恢复。",
+    "补充渲染检查：已查看当前版手机与桌面截图；根页面宽度分别为 390 和 1280，无页面级横向溢出。手机三个 pre 块均可局部横向滚动；浏览器未报告 pageerror。证据为 /private/tmp/gse-publication-20261027/persona-path-evidence.json 及 persona-phone/desktop 系列截图。"
+  ],
+  "findings": [],
+  "previous_round": [
+    {
+      "id": "F1",
+      "status": "fixed"
+    }
+  ],
+  "not_covered": [
+    "仅审查交接 HTML 的渲染正文与 owner 画像；未读取作者源仓库、草稿、其他制作资料或内部脚本。",
+    "未打开链接所指的其他课程正文、研究报告、GitHub Release、便携 ZIP、权属文件或清单；未独立验证篇数、图数、ZIP 大小、文件指纹、远端对象、访问可见性及第三方权属。页面中的公开表述仅做内部一致性阅读；F1 的复审验证了正文入口说明和链接目标，不代表已下载并解压资产。",
+    "没有下载视频、运行页面中的归档校验命令、安装依赖、操作真实 GitHub 账号或执行原生 BaoCut 恢复。Article 模式不要求这些产品操作。",
+    "使用已安装 Chrome 的独立临时 headless 实例检查 390×844 和 1280×800；未检查真实手机、触控手势、原生打印或第二台机器。"
+  ],
+  "verdict": "pass",
+  "changes": [
+    "采纳F1建议：首页分开阅读包与原视频，直接提供ZIP资产链接、体积和解压后的索引路径。"
+  ],
+  "declined": []
+}

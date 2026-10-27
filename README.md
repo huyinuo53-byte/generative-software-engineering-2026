@@ -6,7 +6,8 @@
 
 - **归档指南**：[阅读与恢复 HTML](归档阅读与恢复.html)，也可直接读本页。
 - **阅读入口**：[课程索引](生成式软件工程/课程索引.html)。GitHub 显示 HTML 源码，下载后用浏览器打开。
-- **便携阅读包 / 10 个原视频**：[snapshot-2026-10-27 Release](https://github.com/zhao-d-r/generative-software-engineering-2026/releases/tag/snapshot-2026-10-27)。
+- **只读笔记（推荐）**：[下载 course-reading-2026-10-27.zip](https://github.com/zhao-d-r/generative-software-engineering-2026/releases/download/snapshot-2026-10-27/course-reading-2026-10-27.zip)（约 86 MB）；解压后打开 `生成式软件工程/课程索引.html`。
+- **10 个原视频**：[snapshot-2026-10-27 Release](https://github.com/zhao-d-r/generative-software-engineering-2026/releases/tag/snapshot-2026-10-27)，按 BV ID 选择需要的 `.mp4`。
 - **恢复项目**：[RESTORE.md](RESTORE.md)；**制作记录说明**：[archive/README.md](archive/README.md)。
 - **延伸分析**：[pstack Skills 写法与生成式软件工程启发](research/reports/pstack%20Skills%20写法与生成式软件工程启发.html)。其来源快照和审查资料保存在相邻 research/research_notes 目录。
 
@@ -49,4 +50,4 @@ python3 tools/verify_archive.py
 
 原笔记中的内容/逐图/来源/浏览器复核记录随档保存。本次检查复制完整性、媒体指纹、现行 HTML 与索引、上传后的远端对象和 Release 资产；不等于重新听完整课程，也不把旧历史 QA 当成跨机器新验收。真实手机、部分原生打印与第二台机器原生项目恢复未测，逐课限制见各自 review。
 
-本机原始课程、项目和媒体未改动。课程目录中一份历史全机项目清单只保留了本课程条目；OS/Python 缓存与临时锁不归档，详见 archive/transformations.json 与 exclusions.json。历史绝对路径原样保留，执行旧脚本前先核对环境。仓库默认私有，未启用 Pages，未分发 App、模型、账户登录或密钥配置。第三方材料权属见 [ATTRIBUTION.md](ATTRIBUTION.md)。
+本机原始课程、项目和媒体未改动。课程目录中一份历史全机项目清单只保留了本课程条目；OS/Python 缓存与临时锁不归档，详见 archive/transformations.json 与 exclusions.json。历史绝对路径原样保留，执行旧脚本前先核对环境。仓库公开供课程学习分享，未启用 Pages，未分发 App、模型、账户登录或密钥配置。第三方材料权属见 [ATTRIBUTION.md](ATTRIBUTION.md)。

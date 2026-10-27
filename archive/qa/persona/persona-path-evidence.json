@@ -1,0 +1,111 @@
+[
+  {
+    "width": "phone",
+    "link": "阅读入口",
+    "hash": "#read",
+    "firstText": "生成式软件工程 · 2026\n\n南京大学《生成式软件工程》个人学习笔记与 BaoCut 制作档案。归档日期：2026-10-27。\n\n现有 9 课 + 1 个补充视频，225 节正文，472 幅内嵌图，5,087 个转写来源单元。优先复用已有转写，保留时间码、讲义、演示、材料补充和审查历史。\n\n归档指南：阅读与恢复 HTML，也可直接读本页。\n阅读入口：课程索引。GitHub 显示 HTML 源码，下载后用浏览器打开。\n只读笔记（推荐）：下载 course-reading-2026-10-27.zip（约 86 MB）；解压后打开 生成式软件工程/课程索引.html。\n10 个原视频：snapshot-2026-10-27 Release，按 BV ID 选择需要的 .mp4。\n恢复项目：R",
+    "top": -0.0625
+  },
+  {
+    "width": "phone",
+    "link": "下载与恢复",
+    "hash": "#restore",
+    "firstText": "阅读和恢复\n阅读\n\n克隆或下载仓库，使用浏览器打开 生成式软件工程/课程索引.html。10 篇现行笔记均内嵌图片，可离线阅读。GitHub 文件页只显示源码；下载后打开 HTML。也可下载 Release 的 course-reading-2026-10-27.zip，这是只含现行阅读成品的便携包。\n\n取得源视频\ngh release download snapshot-2026-10-27 --repo zhao-d-r/generative-software-engineering-2026 --pattern '*.mp4' --dir media\npython3 tools/verify_archive.py --media-dir media\n\n\n仓库和 Release 公开可读",
+    "top": 0.40625
+  },
+  {
+    "width": "phone",
+    "link": "证据边界",
+    "hash": "#archive",
+    "firstText": "制作档案与证据边界\n生成式软件工程/ 保存现有课程目录、转写分块、notes/layout、讲义、全部候选帧、逐图审核、浏览器截图、修订与失败记录。\nbaocut/projects/ 保存 10 个原生 .bcut 目录：原始转写、ASR rows、Studio、历史对象、项目内 tasks/logs/cache 均保留。\nlegacy/ 保存可识别的早期复用草稿及提示词工程截图，不替代现行笔记。\nmedia-manifest.json 对应同仓库 Release 中 10 个源视频，记录平台 BV ID、原始路径、长度与 SHA-256。\nsource-copy-manifest.json 记录源文件与复制指纹；transformations.json 单独记录归档转换；exclusion",
+    "top": 55.265625
+  },
+  {
+    "width": "phone",
+    "commandBlocks": [
+      {
+        "text": "生成式软件工程/          现行 HTML、notes/layout、原始转写和 chunks、讲义/论文、帧、QA、修订\nbaocut/projects/         10 个原生 .bcut 目录，含 ASR、Studio、历史、任务日志、已有缓存\nlegacy/                  可识别的早期复用成果与原截图\nresearch/                pstack Skills 对照分析及固定版本来源\ntooling/                 本次冻结的课程 skill 与检查器源码\narchive/                 项目/视频映射、逐文件 SHA-256、转换与排除说明、归档复核\ntools/verify_archive.py   无第三方依赖的完整性检查\n",
+        "clientWidth": 358,
+        "scrollWidth": 733,
+        "overflowX": "auto"
+      },
+      {
+        "text": "gh repo clone zhao-d-r/generative-software-engineering-2026\ncd generative-software-engineering-2026\npython3 tools/verify_archive.py\n",
+        "clientWidth": 358,
+        "scrollWidth": 532,
+        "overflowX": "auto"
+      },
+      {
+        "text": "gh release download snapshot-2026-10-27 --repo zhao-d-r/generative-software-engineering-2026 --pattern '*.mp4' --dir media\npython3 tools/verify_archive.py --media-dir media\n",
+        "clientWidth": 358,
+        "scrollWidth": 1061,
+        "overflowX": "auto"
+      }
+    ]
+  },
+  {
+    "width": 358,
+    "localHorizontalScroll": 0,
+    "before": 0,
+    "after": 375,
+    "content": 733
+  },
+  {
+    "width": 358,
+    "localHorizontalScroll": 1,
+    "before": 0,
+    "after": 174,
+    "content": 532
+  },
+  {
+    "width": 358,
+    "localHorizontalScroll": 2,
+    "before": 0,
+    "after": 703,
+    "content": 1061
+  },
+  {
+    "width": "desktop",
+    "link": "阅读入口",
+    "hash": "#read",
+    "firstText": "生成式软件工程 · 2026\n\n南京大学《生成式软件工程》个人学习笔记与 BaoCut 制作档案。归档日期：2026-10-27。\n\n现有 9 课 + 1 个补充视频，225 节正文，472 幅内嵌图，5,087 个转写来源单元。优先复用已有转写，保留时间码、讲义、演示、材料补充和审查历史。\n\n归档指南：阅读与恢复 HTML，也可直接读本页。\n阅读入口：课程索引。GitHub 显示 HTML 源码，下载后用浏览器打开。\n只读笔记（推荐）：下载 course-reading-2026-10-27.zip（约 86 MB）；解压后打开 生成式软件工程/课程索引.html。\n10 个原视频：snapshot-2026-10-27 Release，按 BV ID 选择需要的 .mp4。\n恢复项目：R",
+    "top": 0.03125
+  },
+  {
+    "width": "desktop",
+    "link": "下载与恢复",
+    "hash": "#restore",
+    "firstText": "阅读和恢复\n阅读\n\n克隆或下载仓库，使用浏览器打开 生成式软件工程/课程索引.html。10 篇现行笔记均内嵌图片，可离线阅读。GitHub 文件页只显示源码；下载后打开 HTML。也可下载 Release 的 course-reading-2026-10-27.zip，这是只含现行阅读成品的便携包。\n\n取得源视频\ngh release download snapshot-2026-10-27 --repo zhao-d-r/generative-software-engineering-2026 --pattern '*.mp4' --dir media\npython3 tools/verify_archive.py --media-dir media\n\n\n仓库和 Release 公开可读",
+    "top": -0.078125
+  },
+  {
+    "width": "desktop",
+    "link": "证据边界",
+    "hash": "#archive",
+    "firstText": "制作档案与证据边界\n生成式软件工程/ 保存现有课程目录、转写分块、notes/layout、讲义、全部候选帧、逐图审核、浏览器截图、修订与失败记录。\nbaocut/projects/ 保存 10 个原生 .bcut 目录：原始转写、ASR rows、Studio、历史对象、项目内 tasks/logs/cache 均保留。\nlegacy/ 保存可识别的早期复用草稿及提示词工程截图，不替代现行笔记。\nmedia-manifest.json 对应同仓库 Release 中 10 个源视频，记录平台 BV ID、原始路径、长度与 SHA-256。\nsource-copy-manifest.json 记录源文件与复制指纹；transformations.json 单独记录归档转换；exclusion",
+    "top": 13.90625
+  },
+  {
+    "width": "desktop",
+    "commandBlocks": [
+      {
+        "text": "生成式软件工程/          现行 HTML、notes/layout、原始转写和 chunks、讲义/论文、帧、QA、修订\nbaocut/projects/         10 个原生 .bcut 目录，含 ASR、Studio、历史、任务日志、已有缓存\nlegacy/                  可识别的早期复用成果与原截图\nresearch/                pstack Skills 对照分析及固定版本来源\ntooling/                 本次冻结的课程 skill 与检查器源码\narchive/                 项目/视频映射、逐文件 SHA-256、转换与排除说明、归档复核\ntools/verify_archive.py   无第三方依赖的完整性检查\n",
+        "clientWidth": 900,
+        "scrollWidth": 900,
+        "overflowX": "auto"
+      },
+      {
+        "text": "gh repo clone zhao-d-r/generative-software-engineering-2026\ncd generative-software-engineering-2026\npython3 tools/verify_archive.py\n",
+        "clientWidth": 900,
+        "scrollWidth": 900,
+        "overflowX": "auto"
+      },
+      {
+        "text": "gh release download snapshot-2026-10-27 --repo zhao-d-r/generative-software-engineering-2026 --pattern '*.mp4' --dir media\npython3 tools/verify_archive.py --media-dir media\n",
+        "clientWidth": 900,
+        "scrollWidth": 1061,
+        "overflowX": "auto"
+      }
+    ]
+  }
+]

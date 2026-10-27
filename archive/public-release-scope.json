@@ -1,0 +1,20 @@
+{
+  "authorization": "User requested repository be public for sharing on 2026-10-27",
+  "included": [
+    "course notes and production artifacts",
+    "10 native BaoCut projects",
+    "10 source videos in Release",
+    "identified legacy course drafts",
+    "fixed-version pstack skill research",
+    "workflow source snapshot"
+  ],
+  "omitted": [
+    "global BaoCut settings/integrations/kernel/models/credentials/chat sessions",
+    "unrelated course project records",
+    "raw yt-dlp signed download URL metadata",
+    "OS/Python caches and ephemeral locks"
+  ],
+  "historical_paths": "Retained as provenance; project recovery must re-associate media through BaoCut",
+  "text_scan_result": "All 37 pattern hits manually classified as base64/public proxy/HTML identifier false positives; no genuine credential found in text",
+  "binary_scan_boundary": "No automated OCR audit of every archived image/video; course media retained as source material, not a new claim of pixel-level privacy review"
+}

@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "verified_at": "2026-10-27T08:09:05.621974+00:00",
+  "verifier": "/root/gse_archive_verify (independent Codex instance)",
+  "artifact_root": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+  "data_level": "personal",
+  "privacy_route": "same-family-exception; local checks only, no external model seat, network request or upload",
+  "scope": "Final public-sharing document state: current 9488-file freeze, existing browser evidence freshness, independent/persona current-version acceptance. Previous unchanged course HTML, ZIP and media acceptance is explicitly reused.",
+  "frozen_manifest": {
+    "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/archive/files.json",
+    "bytes": 1890244,
+    "sha256": "f69881ccfb7a5a240a20e028ab465c29efcde050858018bf5ba262b04333e61c"
+  },
+  "verification_script": {
+    "path": "/private/tmp/gse-publication-20261027/verifier_final_checks.py",
+    "bytes": 12113,
+    "sha256": "ab1d540323ba755a80f725ff25040cd68653c89b9bd7f08eeea5a1f1eec8ef31"
+  },
+  "previous_report_preserved": {
+    "path": "/private/tmp/gse-publication-20261027/verifier.json",
+    "bytes": 22579,
+    "sha256": "e0a5082dd2408ea6b68a24501f4fe3b24f4fb536ab8be38ade21bf9d25ac1ebc"
+  },
+  "checks": [
+    {
+      "name": "current_frozen_repository_byte_integrity",
+      "status": "PASS",
+      "command": "python3 tools/verify_archive.py",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "status": "PASS",
+        "repository_files": 9488,
+        "media_files_checked": 0,
+        "failed": [],
+        "scope": "byte integrity only"
+      }
+    },
+    {
+      "name": "guide_browser_evidence_check",
+      "status": "PASS",
+      "command": "node tooling/learning-machine/audit-report.mjs '归档阅读与恢复.html' archive/qa/guide-browser --profile generic --check",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/archive/qa/guide-browser/audit.json",
+          "bytes": 2103,
+          "sha256": "0221d02666e55e5265ed43ed7c95258bfc494e8ff913cef45ab1bf6b3599e18e"
+        },
+        "mode": "Read-only existing evidence freshness check; browser not rerun."
+      }
+    },
+    {
+      "name": "index_browser_evidence_check",
+      "status": "PASS",
+      "command": "node tooling/learning-machine/audit-report.mjs '生成式软件工程/课程索引.html' archive/qa/index-browser --profile generic --check",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/archive/qa/index-browser/audit.json",
+          "bytes": 2109,
+          "sha256": "51c7d26d6be6a9c77e62f1c930b4462fd34f49564911b9c7580ec2516f3c6fda"
+        },
+        "mode": "Read-only existing evidence freshness check; browser not rerun."
+      }
+    },
+    {
+      "name": "lecture09_browser_evidence_check",
+      "status": "PASS",
+      "command": "node tooling/learning-machine/audit-report.mjs '生成式软件工程/lecture-09/课堂笔记.html' archive/qa/lecture09-browser --profile generic --check",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "status": "PASS",
+        "issues": [],
+        "evidence": {
+          "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/archive/qa/lecture09-browser/audit.json",
+          "bytes": 2111,
+          "sha256": "8a9bf8eb8a614534dfaa98199e6ea6588b6901ff2474d0cdfc022326b50e3b78"
+        },
+        "mode": "Read-only existing evidence freshness check; browser not rerun."
+      }
+    },
+    {
+      "name": "independent_review_current_hashes_and_closure",
+      "command": "python3 /private/tmp/gse-publication-20261027/verifier_final_checks.py",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "review_report": {
+          "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/archive/independent-review.json",
+          "bytes": 15799,
+          "sha256": "710a3d99861a64ad16d6450aa74f2d0155bc14c3cf1315f0da4d47e081af974f"
+        },
+        "reviewed_versions_count": 12,
+        "reviewed_versions": [
+          {
+            "path": "README.md",
+            "bytes": 4609,
+            "sha256": "b6253b96913f80d691ad5a43fc7a4ddb85bcdc74addf3a5e7427a41a8140a979",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "RESTORE.md",
+            "bytes": 1675,
+            "sha256": "3b6534491ef1665386b253e00044c72a96c81f03d9f989b3f175a76fb5fb1463",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "归档阅读与恢复.html",
+            "bytes": 11627,
+            "sha256": "e5b9b9f8b6e859ce335c6cbf3839e5ec0afb12bc1d2f69ae31c51fdf2e401a8a",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/README.md",
+            "bytes": 1743,
+            "sha256": "991be939c237e91cbac9d62be30bd042df7b5aca2a28bf0f64ef01e38284e5b7",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "tools/verify_archive.py",
+            "bytes": 1622,
+            "sha256": "b28f3e3e33cd71050b259cd224941c0e506d4931250747dc1504ddebeb745c6f",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/source-copy-manifest.json",
+            "bytes": 3003847,
+            "sha256": "b85c8a9ed0ca5ab2d8cc8017e6290725f5a3357a9252541a10cd9a9c6d2df5f5",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/transformations.json",
+            "bytes": 423,
+            "sha256": "eb91c10b9f1d572414a17594d3bc58b0e2c36a93c3b81be775efae1f01f2efde",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/projects.json",
+            "bytes": 15749,
+            "sha256": "11d44e4a2f355f9572594b8da1d28e994625d7c2b3d34d16b8058fe8c4aaedc0",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/media-manifest.json",
+            "bytes": 7381,
+            "sha256": "e383fd06134ac0ccba4905d69cf9fd33d2b7644fd52d215579dda008f3c2cfca",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/security-review.json",
+            "bytes": 13426,
+            "sha256": "5d58b694f800ba40e161cdcb1920c3cdbfe08b773f59dfe41348a53dd95fb383",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "ATTRIBUTION.md",
+            "bytes": 582,
+            "sha256": "677696a13195d31b822c265c1ccaabf00fd52924434067dda88dcce2e290465a",
+            "matches_reviewed_version": true
+          },
+          {
+            "path": "archive/repository.json",
+            "bytes": 401,
+            "sha256": "acb31a50ed5a2b955d0f3f31eb2a898edec2199f90dc307731afbbefc0618ac4",
+            "matches_reviewed_version": true
+          }
+        ],
+        "open_findings": 0,
+        "minor_findings_fixed": 1,
+        "latest_followup": {
+          "reviewed_at": "2026-10-27T08:05:05.572325+00:00",
+          "affected_files": [
+            "README.md",
+            "归档阅读与恢复.html"
+          ],
+          "reason": "Non-blocking persona suggestion: separate the recommended reading-only ZIP direct download from the 10-source-video Release entry and state the index path after extraction.",
+          "previous_versions": [
+            {
+              "path": "README.md",
+              "bytes": 4308,
+              "sha256": "93a17957cacbbc0ebc2bb41e499e6f755c7989b94ec1c17482f978017ba09757"
+            },
+            {
+              "path": "归档阅读与恢复.html",
+              "bytes": 11273,
+              "sha256": "f0fc562670f64a80c5306a60c887ca01e3a25b39d13f55cbbd41eb3757d39ac6"
+            }
+          ],
+          "current_versions": [
+            {
+              "path": "README.md",
+              "bytes": 4609,
+              "sha256": "b6253b96913f80d691ad5a43fc7a4ddb85bcdc74addf3a5e7427a41a8140a979"
+            },
+            {
+              "path": "归档阅读与恢复.html",
+              "bytes": 11627,
+              "sha256": "e5b9b9f8b6e859ce335c6cbf3839e5ec0afb12bc1d2f69ae31c51fdf2e401a8a"
+            }
+          ],
+          "result": "PASS; no new findings; prior minor remains fixed.",
+          "evidence_file": "/private/tmp/gse-publication-20261027/independent-reading-entry-evidence.json",
+          "reuse_boundary": "Only these two current files were read and hashed. All other reviewer findings, artifact hashes and checks remain from the previous accepted review; no course, media, archive metadata or full scanner recheck was performed."
+        },
+        "boundary": "Current report hashes and closure checked; original review scope and reuse limits remain unchanged."
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "persona_current_html_coverage_and_F1_closure",
+      "command": "python3 /private/tmp/gse-publication-20261027/verifier_final_checks.py",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "review_report": {
+          "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/archive/persona-review.json",
+          "bytes": 6591,
+          "sha256": "5f4283629ecad0434d1ec90c90fbb7e0066e4d99de236d5c3c1cfe13350de890"
+        },
+        "current_html": {
+          "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/归档阅读与恢复.html",
+          "bytes": 11627,
+          "sha256": "e5b9b9f8b6e859ce335c6cbf3839e5ec0afb12bc1d2f69ae31c51fdf2e401a8a"
+        },
+        "handoff_html": {
+          "path": "/private/tmp/gse-publication-20261027/persona-handoff/归档阅读与恢复.html",
+          "bytes": 11627,
+          "sha256": "e5b9b9f8b6e859ce335c6cbf3839e5ec0afb12bc1d2f69ae31c51fdf2e401a8a"
+        },
+        "current_html_matches_reviewed_hash": true,
+        "coverage": {
+          "required": [
+            "full-text"
+          ],
+          "done": [
+            "full-text"
+          ],
+          "missing": []
+        },
+        "blocking_findings": 0,
+        "current_findings": 0,
+        "previous_F1": "fixed",
+        "verdict": "pass",
+        "boundary": "Version binding and recorded full-text coverage/closure checked. Persona reading and browser interactions are existing reviewer evidence, not rerun by this verifier."
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged_prior_input_acceptance_reuse",
+      "command": "python3 /private/tmp/gse-publication-20261027/verifier_final_checks.py",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "prior_report": {
+          "path": "/private/tmp/gse-publication-20261027/verifier.json",
+          "bytes": 22579,
+          "sha256": "e0a5082dd2408ea6b68a24501f4fe3b24f4fb536ab8be38ade21bf9d25ac1ebc"
+        },
+        "ten_current_html_unchanged_against_current_verified_manifest": [
+          {
+            "path": "生成式软件工程/lecture-01/课堂笔记.html",
+            "sha256": "67151db592f02e0fdb9889b9a79472e768d7e887a5dea9a965fa3cf2a4b62e47",
+            "bytes": 13103396
+          },
+          {
+            "path": "生成式软件工程/lecture-02/课堂笔记.html",
+            "sha256": "f063e934af755a45e5fef94ee73327ff1ebc8a6527f497089c21931a2387b269",
+            "bytes": 18840725
+          },
+          {
+            "path": "生成式软件工程/lecture-03/课堂笔记.html",
+            "sha256": "6b76b3a70d3c1c00d3b0840616ddb20cee79bd2384b605462dcdd913a9699df8",
+            "bytes": 18999799
+          },
+          {
+            "path": "生成式软件工程/lecture-04/课堂笔记.html",
+            "sha256": "0e67d593f33b35aac8e7990afc0d9ee83777c73213dab4ada1e035a38eb865bd",
+            "bytes": 4718988
+          },
+          {
+            "path": "生成式软件工程/lecture-05/课堂笔记.html",
+            "sha256": "87b8ef114786b34e310ebd00288827716ebeab2f15044f888a8456aad79105f4",
+            "bytes": 11160775
+          },
+          {
+            "path": "生成式软件工程/lecture-06/课堂笔记.html",
+            "sha256": "a341918f8775d2b03c7c2270daf6585ab283f1a984eb17453f99da3895939dee",
+            "bytes": 6969273
+          },
+          {
+            "path": "生成式软件工程/lecture-07/课堂笔记.html",
+            "sha256": "85980aafc6cfa2911dc2b38afce0523a9e453cded8b705eb9bc8a89e03a74cc5",
+            "bytes": 26140545
+          },
+          {
+            "path": "生成式软件工程/lecture-08/课堂笔记.html",
+            "sha256": "48a1278dbae1d157bd35ec4a077a3079667a6266ad110198fa8c2dbf251377d9",
+            "bytes": 9986531
+          },
+          {
+            "path": "生成式软件工程/lecture-09/课堂笔记.html",
+            "sha256": "c53214a052ee6b68c6fe49c119c448b27084fb3dc2739dd75f49909936c9b5ab",
+            "bytes": 13444202
+          },
+          {
+            "path": "生成式软件工程/extra-ai-slop/课堂笔记.html",
+            "sha256": "68fa80956bb84708b683ae88a6b24e4c406f0055b77a10e25712710a22483e68",
+            "bytes": 1970979
+          }
+        ],
+        "reader_journey_unchanged": {
+          "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/archive/qa/reader/journey.json",
+          "bytes": 6031,
+          "sha256": "feafcca4a6bf09cbe391170279479ff5c3f282819b47eb9c85b54a45897bc5b6"
+        },
+        "reused_reader_evidence": {
+          "recorded_paths": 20,
+          "recorded_decoded_images": 944
+        },
+        "media_manifest_unchanged": {
+          "path": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026/archive/media-manifest.json",
+          "bytes": 7381,
+          "sha256": "e383fd06134ac0ccba4905d69cf9fd33d2b7644fd52d215579dda008f3c2cfca"
+        },
+        "reused_source_video_acceptance": "Earlier actual full SHA-256 verification of 10 source videos; no media file full hash repeated in this turn. Unchanged media manifest and server-digest snapshot comparison bind the reuse.",
+        "reused_zip_acceptance": {
+          "sha256": "d27ed5f8c98f763c180b3c848077db2be4638bbe2d2f22cbf846ba2f0250df42",
+          "bytes": 90306549,
+          "members": 12,
+          "html_members": 11,
+          "prior_crc_and_decompression": "PASS",
+          "prior_html_byte_fidelity": "11 of 11",
+          "basis": "Parent states ZIP unchanged; prior SHA matches expected/server digest; no ZIP decompression or local full hash repeated."
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "twelve_parent_captured_server_asset_digests",
+      "command": "python3 /private/tmp/gse-publication-20261027/verifier_final_checks.py",
+      "cwd": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+      "exit_code": 0,
+      "observations": {
+        "observed_evidence": {
+          "path": "/private/tmp/gse-publication-20261027/release-observed.json",
+          "bytes": 1808,
+          "sha256": "aacd37d0e77181a4873403ca0d9ba709a1968d7f0aaca260dafb64d5ac301cb2"
+        },
+        "expected_evidence": {
+          "path": "/private/tmp/gse-publication-20261027/release-expected.json",
+          "bytes": 7729,
+          "sha256": "c6cfb13dfb097a545744987827363e00ee1de979a79992c8001da9c37994c9a3"
+        },
+        "asset_count": 12,
+        "matching_assets": [
+          {
+            "name": "BV1pb8o6yE8f.mp4",
+            "bytes": 221824807,
+            "sha256": "a5b0b91ce241e51706496b428003b963d9b6c1e9df3c98ff79ba05cde8f2c8e7",
+            "observed_uploaded_state": true,
+            "expected_size_and_server_digest_match": true
+          },
+          {
+            "name": "BV1fKtN6DErG.mp4",
+            "bytes": 29783462,
+            "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+            "observed_uploaded_state": true,
+            "expected_size_and_server_digest_match": true
+          },
+          {
+            "name": "BV1CQt365EzW.mp4",
+            "bytes": 305004213,
+            "sha256": "83cf986f46d89be1af5ec362e8325a954f4c554d095453018f4b6a470cc49ad2",
+            "observed_uploaded_state": true,
+            "expected_size_and_server_digest_match": true
+          },
+          {
+            "name": "BV1kybV6DE47.mp4",
+            "bytes": 256449121,
+            "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+            "observed_uploaded_state": true,
+            "expected_size_and_server_digest_match": true
+          },
+          {
+            "name": "BV1Q6en6NEUo.mp4",
+            "bytes": 297347438,
+            "sha256": "57a92325fb43bc99b8d1a331e5364ae0771300245bcf70bd31134bebda10f0e7",
+            "observed_uploaded_state": true,
+            "expected_size_and_server_digest_match": true
+          },
+          {
+            "name": "BV1Nyeq6qEt8.mp4",
+            "bytes": 293595133,
+            "sha256": "699cb51a044420fab1086e92e301863a306177f461d98d28f2895168182f2023",
+            "observed_uploaded_state": true,
+            "expected_size_and_server_digest_match": true
+          },
+          {
+            "name": "BV1Rch76WEfQ.mp4",
+            "bytes": 277223433,
+            "sha256": "356231c7c0f6b4ba6697c75c7db54498f12622d216394aed982916b46da817be",
+            "observed_uploaded_state": true,
+            "expected_size_and_server_digest_match": true
+          },
+          {
+            "name": "BV1JGap6LE74.mp4",
+            "bytes": 306355606,
+            "sha256": "df4344f9c61dfb2a247f734570b9d2ef3ec1d21010849efb4eed78347b5dcc12",
+            "observed_uploaded_state": true,
+            "expected_size_and_server_digest_match": true
+          },
+          {
+            "name": "BV11LWw6VEHW.mp4",
+            "bytes": 237738826,
+            "sha256": "dee8d8992246a868d973678ab85c152e3eaf3e07ccef70eb5a674556386552b7",
+            "observed_uploaded_state": true,
+            "expected_size_and_server_digest_match": true
+          },
+          {
+            "name": "BV144nc6KEA4.mp4",
+            "bytes": 213549316,
+            "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+            "observed_uploaded_state": true,
+            "expected_size_and_server_digest_match": true
+          },
+          {
+            "name": "course-reading-2026-10-27.zip",
+            "bytes": 90306549,
+            "sha256": "d27ed5f8c98f763c180b3c848077db2be4638bbe2d2f22cbf846ba2f0250df42",
+            "observed_uploaded_state": true,
+            "expected_size_and_server_digest_match": true
+          },
+          {
+            "name": "SHA256SUMS.txt",
+            "bytes": 926,
+            "sha256": "aa0b76b8df70f1a1f63c678cc5579836fd2eb1e69659cb4c5c2db1ffcf0bda3c",
+            "observed_uploaded_state": true,
+            "expected_size_and_server_digest_match": true
+          }
+        ],
+        "observed_release_id": 425166634,
+        "observed_snapshot_draft": true,
+        "network_requests_by_this_verifier": 0,
+        "boundary": "Only parent-captured local server-digest evidence was compared. Snapshot says draft=true; this does not attest final Release publication, public access or remote download bytes."
+      },
+      "status": "PASS"
+    }
+  ],
+  "not_tested": [
+    "No new course semantics/source reading, full-video listening, image meaning/OCR or full per-frame review.",
+    "No new browser execution, real phone, native print dialog, BaoCut App opening, media relinking or second-machine native restore.",
+    "No media full hash, ZIP decompression or ZIP full hash repeated; earlier verified inputs reused under the explicit unchanged-input boundary above.",
+    "No independent live GitHub visibility, Release publication, remote fetch/clone/download or post-publication access acceptance. Local release-observed.json remains a draft=true snapshot.",
+    "Parent follow-up addition of remote readback metadata and final refreeze are outside this 9488-file snapshot. No document-body change is covered after this verification."
+  ],
+  "mutations": "Only /private/tmp/gse-publication-20261027/verifier_final_checks.py and verifier-final.json were written. Existing verifier.json was preserved; no archive, course, code, native .bcut or media asset was edited."
+}
