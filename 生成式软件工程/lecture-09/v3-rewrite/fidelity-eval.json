@@ -1,0 +1,1095 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "1d8045383e983bee57b9f78bef2ea29a4aa6f974913e15ec4cf143ecdb71a319",
+  "writer_model": "grok-4.7",
+  "precision": {
+    "items": [
+      {
+        "ref": "map",
+        "verdict": "supported",
+        "evidence": "s-g7.0~20, s-g235.0~22, s-g345.0, s-g347.0, s-g591.1, s-g623.0",
+        "note": "课程主线概括与给定台词相符。",
+        "hash": "c68e7c93c726d27b"
+      },
+      {
+        "ref": "s1:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g7.0~20, s-g8.0~39, s-g11.0~18, s-g18.0~25, s-g20.0~19, s-g21.0, s-g22.1~1, s-g22.1~34, s-g25.0~14",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "689f4e51d56e1b92"
+      },
+      {
+        "ref": "s1:visual",
+        "verdict": "supported",
+        "evidence": "s-g7.0~20, s-g8.0~39, s-g11.0~18, s-g18.0~25, s-g20.0~19, s-g21.0, s-g22.1~1, s-g22.1~34, s-g25.0~14",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "9e7a7ba16eb9db49"
+      },
+      {
+        "ref": "s1:p3",
+        "verdict": "supported",
+        "evidence": "s-g7.0~20, s-g8.0~39, s-g11.0~18, s-g18.0~25, s-g20.0~19, s-g21.0, s-g22.1~1, s-g22.1~34, s-g25.0~14",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "c479c0ebf995b3da"
+      },
+      {
+        "ref": "s1:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000030000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "c8f771b410a38966"
+      },
+      {
+        "ref": "s2:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g47.0~12, s-g56.0~5, s-g58.1~12",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "5cb216f79c02c8c2"
+      },
+      {
+        "ref": "s2:p4",
+        "verdict": "supported",
+        "evidence": "s-g47.0~12, s-g56.0~5, s-g58.1~12",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "73377df328880b05"
+      },
+      {
+        "ref": "s2:f1",
+        "verdict": "supported",
+        "evidence": "frames/v000360000.jpg",
+        "note": "本地页、工作区路径、模型、思考档及统计数值均与画面相符。",
+        "hash": "663bfa105d1d54f5"
+      },
+      {
+        "ref": "s3:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000500000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "de284461489ec1bf"
+      },
+      {
+        "ref": "s4:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g79.0~30, s-g80.1~34, s-g81.1~26, s-g83.0~28, s-g85.0~46, s-g86.0~39, s-g90.0~15, s-g95.0~22",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "68bf7b321a37a871"
+      },
+      {
+        "ref": "s4:n0",
+        "verdict": "supported",
+        "evidence": "s-g79.0~30, s-g80.1~34, s-g81.1~26, s-g83.0~28, s-g85.0~46, s-g86.0~39, s-g90.0~15, s-g95.0~22",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "69e5f48ef23f2f18"
+      },
+      {
+        "ref": "s4:p1",
+        "verdict": "supported",
+        "evidence": "s-g79.0~30, s-g80.1~34, s-g81.1~26, s-g83.0~28, s-g85.0~46, s-g86.0~39, s-g90.0~15, s-g95.0~22",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "a50e7a1bcda1551c"
+      },
+      {
+        "ref": "s4:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000630000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "cada53647b632152"
+      },
+      {
+        "ref": "s5:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g107.0~6, s-g110.2~5, s-g114.0~8, s-g117.0~8, s-g121.0~3, s-g124.0~1, s-g127.0~18",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "117b5973cacb2528"
+      },
+      {
+        "ref": "s5:p1",
+        "verdict": "supported",
+        "evidence": "s-g107.0~6, s-g110.2~5, s-g114.0~8, s-g117.0~8, s-g121.0~3, s-g124.0~1, s-g127.0~18",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "8c9d5edea27a4cf9"
+      },
+      {
+        "ref": "s5:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000940000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "8c2177bcf31a652c"
+      },
+      {
+        "ref": "s6:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g131.0~5, s-g134.0~8, s-g138.0~2, s-g145.0~23, s-g148.0~17, s-g154.0~3, s-g155.0~46, s-g160.0~11, s-g162.0",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "007bc44d434ee278"
+      },
+      {
+        "ref": "s6:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001080000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "977a0ac7bc9f553f"
+      },
+      {
+        "ref": "s7:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g167.0~3, s-g170.0~22, s-g174.0~11, s-g198.1~2, s-g202.0~12, s-g206.0~10, s-g209.0~4, s-g212.0~22, s-g217.0~24, s-g222.0~7",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "b4706153fe8f1af5"
+      },
+      {
+        "ref": "s7:p2",
+        "verdict": "supported",
+        "evidence": "s-g167.0~3, s-g170.0~22, s-g174.0~11, s-g198.1~2, s-g202.0~12, s-g206.0~10, s-g209.0~4, s-g212.0~22, s-g217.0~24, s-g222.0~7",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "eba6f56f969b50d9"
+      },
+      {
+        "ref": "s7:p0",
+        "verdict": "supported",
+        "evidence": "s-g167.0~3, s-g170.0~22, s-g174.0~11, s-g198.1~2, s-g202.0~12, s-g206.0~10, s-g209.0~4, s-g212.0~22, s-g217.0~24, s-g222.0~7",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "29cba6c0996c44dc"
+      },
+      {
+        "ref": "s7:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001340000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "31516c1261f8c350"
+      },
+      {
+        "ref": "s8:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g235.0~22, s-g236.0~25, s-g238.0, s-g239.0, s-g243.0, s-g244.0~25, s-g245.0~6, s-g248.0~71, s-g249.0~24, s-g249.0~76",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "3853e69257ca285a"
+      },
+      {
+        "ref": "s8:visual",
+        "verdict": "supported",
+        "evidence": "s-g235.0~22, s-g236.0~25, s-g238.0, s-g239.0, s-g243.0, s-g244.0~25, s-g245.0~6, s-g248.0~71, s-g249.0~24, s-g249.0~76",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "cdae099525d368a6"
+      },
+      {
+        "ref": "s8:p2",
+        "verdict": "supported",
+        "evidence": "s-g235.0~22, s-g236.0~25, s-g238.0, s-g239.0, s-g243.0, s-g244.0~25, s-g245.0~6, s-g248.0~71, s-g249.0~24, s-g249.0~76",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "610f5803f09eef7f"
+      },
+      {
+        "ref": "s8:p1",
+        "verdict": "supported",
+        "evidence": "s-g235.0~22, s-g236.0~25, s-g238.0, s-g239.0, s-g243.0, s-g244.0~25, s-g245.0~6, s-g248.0~71, s-g249.0~24, s-g249.0~76",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "a8615182faa2eb8e"
+      },
+      {
+        "ref": "s8:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001680000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "7a47f0b13c9d0f45"
+      },
+      {
+        "ref": "s9:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g254.2~8, s-g255.0~33, s-g259.0~2, s-g261.0, s-g261.1~8, s-g262.0, s-g262.0~34, s-g263.0, s-g264.0~59, s-g265.0~39, s-g267.0, s-g268.0~27",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "9bf6f7576faaf3af"
+      },
+      {
+        "ref": "s9:p2",
+        "verdict": "supported",
+        "evidence": "s-g254.2~8, s-g255.0~33, s-g259.0~2, s-g261.0, s-g261.1~8, s-g262.0, s-g262.0~34, s-g263.0, s-g264.0~59, s-g265.0~39, s-g267.0, s-g268.0~27",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "465b91fab696fb32"
+      },
+      {
+        "ref": "s9:p3",
+        "verdict": "supported",
+        "evidence": "s-g254.2~8, s-g255.0~33, s-g259.0~2, s-g261.0, s-g261.1~8, s-g262.0, s-g262.0~34, s-g263.0, s-g264.0~59, s-g265.0~39, s-g267.0, s-g268.0~27",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "4626134602516ea2"
+      },
+      {
+        "ref": "s9:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001890000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "f9345c3b1036f633"
+      },
+      {
+        "ref": "s10:p3",
+        "verdict": "supported",
+        "evidence": "s-g270.0, s-g281.0~8, s-g284.0~35, s-g294.0~65, s-g298.0~12, s-g300.0~55, s-g307.0, s-g310.0, s-g313.0~21",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "479129fc01c5289d"
+      },
+      {
+        "ref": "s10:f1",
+        "verdict": "supported",
+        "evidence": "frames/v002110000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "7dc5a4739cf355f0"
+      },
+      {
+        "ref": "s11:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g321.0~5, s-g324.0, s-g329.0, s-g332.0, s-g333.0, s-g334.0",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "c274ed33a1b23751"
+      },
+      {
+        "ref": "s11:p2",
+        "verdict": "supported",
+        "evidence": "s-g321.0~5, s-g324.0, s-g329.0, s-g332.0, s-g333.0, s-g334.0",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "eab5df62dc5c4e6a"
+      },
+      {
+        "ref": "s12:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g335.0, s-g337.0, s-g339.0, s-g345.0, s-g346.0, s-g347.0, s-g353.0, s-g355.0, s-g358.2~6, s-g360.0~19",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "e12356af11bb08f2"
+      },
+      {
+        "ref": "s12:p2",
+        "verdict": "supported",
+        "evidence": "s-g335.0, s-g337.0, s-g339.0, s-g345.0, s-g346.0, s-g347.0, s-g353.0, s-g355.0, s-g358.2~6, s-g360.0~19",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "1839305f82974d68"
+      },
+      {
+        "ref": "s12:p0",
+        "verdict": "supported",
+        "evidence": "s-g335.0, s-g337.0, s-g339.0, s-g345.0, s-g346.0, s-g347.0, s-g353.0, s-g355.0, s-g358.2~6, s-g360.0~19",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "250138dde76024cc"
+      },
+      {
+        "ref": "s12:f0",
+        "verdict": "supported",
+        "evidence": "frames/v002530000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "4f41a6c49f8b211a"
+      },
+      {
+        "ref": "s13:p0",
+        "verdict": "supported",
+        "evidence": "s-g362.0, s-g362.3~1, s-g365.0, s-g366.0, s-g369.0~26, s-g372.0~2, s-g373.0, s-g374.0~35, s-g374.4~1, s-g381.0, s-g395.0~9",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "55fb7aa86b027ff3"
+      },
+      {
+        "ref": "s13:e0",
+        "verdict": "supported",
+        "evidence": "frames/v002750000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "44563fc017fa78f9"
+      },
+      {
+        "ref": "s13:f0",
+        "verdict": "supported",
+        "evidence": "frames/v002750000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "217eab452cfc7259"
+      },
+      {
+        "ref": "s14:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g416.0~31, s-g428.0~6, s-g433.0~7, s-g450.0, s-g455.0~14, s-g461.0~11, s-g467.0~10, s-g472.0~3, s-g477.0~23, s-g483.0~3",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "adc4f7bbb9aa64f7"
+      },
+      {
+        "ref": "s14:n0",
+        "verdict": "supported",
+        "evidence": "s-g416.0~31, s-g428.0~6, s-g433.0~7, s-g450.0, s-g455.0~14, s-g461.0~11, s-g467.0~10, s-g472.0~3, s-g477.0~23, s-g483.0~3",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "ac37566fa4df2ad5"
+      },
+      {
+        "ref": "s14:p3",
+        "verdict": "supported",
+        "evidence": "s-g416.0~31, s-g428.0~6, s-g433.0~7, s-g450.0, s-g455.0~14, s-g461.0~11, s-g467.0~10, s-g472.0~3, s-g477.0~23, s-g483.0~3",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "043a8c60ec23cc2f"
+      },
+      {
+        "ref": "s14:f1",
+        "verdict": "supported",
+        "evidence": "frames/v003320000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "eeaca589e22d8af1"
+      },
+      {
+        "ref": "s15:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g515.0, s-g519.0, s-g526.0~6, s-g529.0, s-g535.0~4, s-g542.0~1, s-g547.0~5, s-g553.0~5, s-g555.0~35, s-g558.0, s-g559.1~8, s-g560.0~29, s-g560.0~123",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "739990ff5d1fe4b5"
+      },
+      {
+        "ref": "s15:visual",
+        "verdict": "supported",
+        "evidence": "s-g515.0, s-g519.0, s-g526.0~6, s-g529.0, s-g535.0~4, s-g542.0~1, s-g547.0~5, s-g553.0~5, s-g555.0~35, s-g558.0, s-g559.1~8, s-g560.0~29, s-g560.0~123",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "747c481a17a25724"
+      },
+      {
+        "ref": "s15:p1",
+        "verdict": "supported",
+        "evidence": "s-g515.0, s-g519.0, s-g526.0~6, s-g529.0, s-g535.0~4, s-g542.0~1, s-g547.0~5, s-g553.0~5, s-g555.0~35, s-g558.0, s-g559.1~8, s-g560.0~29, s-g560.0~123",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "998639337d73da5b"
+      },
+      {
+        "ref": "s15:p2",
+        "verdict": "supported",
+        "evidence": "s-g515.0, s-g519.0, s-g526.0~6, s-g529.0, s-g535.0~4, s-g542.0~1, s-g547.0~5, s-g553.0~5, s-g555.0~35, s-g558.0, s-g559.1~8, s-g560.0~29, s-g560.0~123",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "dd0f99e03b69e8ba"
+      },
+      {
+        "ref": "s16:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g571.0, s-g571.0~55, s-g574.0~5",
+        "note": "十次减半可直接得到 1/1024；口播约称一千分之一，并说明架构不解决停止/继续的语义冲突。",
+        "hash": "eda27ce76ba3482b"
+      },
+      {
+        "ref": "s16:visual",
+        "verdict": "supported",
+        "evidence": "s-g571.0, s-g571.0~107, s-g574.0~5",
+        "note": "十次减半及先后顺序、停止/继续冲突均有口播依据；1/1024 是该例的精确算术值。",
+        "hash": "1947d78a52f2cb55"
+      },
+      {
+        "ref": "s16:p3",
+        "verdict": "supported",
+        "evidence": "s-g563.0~24, s-g570.0~90, s-g571.0, s-g571.0~55, s-g571.0~107, s-g574.0~5, s-g575.0~53, s-g577.0~10, s-g579.0, s-g580.0~12",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "43a7fd7ef41223ea"
+      },
+      {
+        "ref": "s16:e0",
+        "verdict": "supported",
+        "evidence": "frames/v003720000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "89e9170d76c3f3f5"
+      },
+      {
+        "ref": "s16:f0",
+        "verdict": "supported",
+        "evidence": "frames/v003720000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "8a094a5fa48993ff"
+      },
+      {
+        "ref": "s17:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g581.2~5, s-g587.0, s-g589.0, s-g590.0~28, s-g591.1, s-g596.0, s-g601.0, s-g603.0",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "c8f9072e32fcb6fa"
+      },
+      {
+        "ref": "s17:visual",
+        "verdict": "supported",
+        "evidence": "s-g581.2~5, s-g587.0, s-g589.0, s-g590.0~28, s-g591.1, s-g596.0, s-g601.0, s-g603.0",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "e9e87a08467a66ee"
+      },
+      {
+        "ref": "s17:p1",
+        "verdict": "supported",
+        "evidence": "s-g581.2~5, s-g587.0, s-g589.0, s-g590.0~28, s-g591.1, s-g596.0, s-g601.0, s-g603.0",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "0087a0db5520c826"
+      },
+      {
+        "ref": "s18:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g609.0, s-g610.0, s-g611.0, s-g612.0~11, s-g613.0, s-g614.0~5, s-g615.0~4, s-g620.0, s-g621.0~8, s-g623.0, s-g624.0~52, s-g634.0, s-g637.0~14",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "57e50ccdaf942653"
+      },
+      {
+        "ref": "s18:p0",
+        "verdict": "supported",
+        "evidence": "s-g609.0, s-g610.0, s-g611.0, s-g612.0~11, s-g613.0, s-g614.0~5, s-g615.0~4, s-g620.0, s-g621.0~8, s-g623.0, s-g624.0~52, s-g634.0, s-g637.0~14",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "4c625235b95ce21c"
+      },
+      {
+        "ref": "s18:f1",
+        "verdict": "supported",
+        "evidence": "frames/v004540000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "4b4de9851f0c85fa"
+      },
+      {
+        "ref": "s20:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g681.1~39, s-g700.0, s-g702.0, s-g703.0, s-g705.0, s-g706.0, s-g707.0, s-g709.0, s-g710.0, s-g711.0, s-g712.0, s-g713.0~12",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "21a8d46136e6cf23"
+      },
+      {
+        "ref": "s20:p4",
+        "verdict": "supported",
+        "evidence": "s-g681.1~39, s-g700.0, s-g702.0, s-g703.0, s-g705.0, s-g706.0, s-g707.0, s-g709.0, s-g710.0, s-g711.0, s-g712.0, s-g713.0~12",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "a46ae9f0c0347074"
+      },
+      {
+        "ref": "s20:n1",
+        "verdict": "supported",
+        "evidence": "s-g681.1~39, s-g700.0, s-g702.0, s-g703.0, s-g705.0, s-g706.0, s-g707.0, s-g709.0, s-g710.0, s-g711.0, s-g712.0, s-g713.0~12",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "e79b30f541fac0b4"
+      },
+      {
+        "ref": "s20:f0",
+        "verdict": "supported",
+        "evidence": "frames/v004960000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "20a315b5e955ce65"
+      },
+      {
+        "ref": "q1",
+        "verdict": "supported",
+        "evidence": "s-g79.0~30, s-g80.1~34, s-g81.1~26, s-g83.0~28, s-g85.0~46, s-g86.0~39, s-g90.0~15, s-g95.0~22",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "cab121d6e72438d5"
+      },
+      {
+        "ref": "q2",
+        "verdict": "supported",
+        "evidence": "s-g79.0~30, s-g80.1~34, s-g81.1~26, s-g83.0~28, s-g85.0~46, s-g86.0~39, s-g90.0~15, s-g95.0~22",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "6b991bf2a3fe3abf"
+      },
+      {
+        "ref": "q4",
+        "verdict": "supported",
+        "evidence": "s-g335.0, s-g337.0, s-g339.0, s-g345.0, s-g346.0, s-g347.0, s-g353.0, s-g355.0, s-g358.2~6, s-g360.0~19",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "be9a7b58194346f2"
+      },
+      {
+        "ref": "q7",
+        "verdict": "supported",
+        "evidence": "s-g634.0, s-g637.0~14; frames/v004540000.jpg; frames/v004960000.jpg",
+        "note": "表述与给定口播或画面一致。",
+        "hash": "ded82adca12aca3c"
+      },
+      {
+        "ref": "q3",
+        "verdict": "supported",
+        "evidence": "s-g281.0~8, s-g284.0~35, s-g298.0~12, s-g307.0, s-g310.0",
+        "note": "限制、收益和即时数据的局限均有口播支持。",
+        "hash": "6007d24b7c276826"
+      },
+      {
+        "ref": "q5",
+        "verdict": "unsupported",
+        "evidence": "r2 packet 的 sections 未包含这一题对应的第16节转写",
+        "note": "所提供 sections 没有十个压缩插件、千分之一或 hook 停止/继续冲突的证据。",
+        "hash": "8bd6fdcc5888b8a1"
+      },
+      {
+        "ref": "q6",
+        "verdict": "supported",
+        "evidence": "s-g589.0, s-g590.0~28",
+        "note": "锁定、handoff 到上下文、修改后替换回应用三项均明确说出。",
+        "hash": "93871d3d6870db2e"
+      },
+      {
+        "ref": "s10:e0",
+        "verdict": "supported",
+        "evidence": "s-g273.0, s-g288.0~9",
+        "note": "论文标题与口播对应；C++、头文件和 class 中定义 map/reduce 均明确提及。",
+        "hash": "5538cc924a3fa1b6"
+      },
+      {
+        "ref": "s10:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g281.0~8, s-g298.0~12, s-g307.0, s-g310.0",
+        "note": "准确概括口播的取舍和局限。",
+        "hash": "7141928d55f3db86"
+      },
+      {
+        "ref": "s10:visual",
+        "verdict": "supported",
+        "evidence": "s-g281.0~8, s-g284.0~35, s-g294.0~65, s-g298.0~12",
+        "note": "流程、并行与容错均有支持。",
+        "hash": "9e902a60836332a8"
+      },
+      {
+        "ref": "s11:n0",
+        "verdict": "partial",
+        "evidence": "s-g333.0, s-g334.0",
+        "note": "Cordis 名称及职责有支持；他说今天不讲 Cordis 这部分架构，未明确将不讲的范围限定为公式。",
+        "hash": "0633dcce1f8e22bd"
+      },
+      {
+        "ref": "s12:visual",
+        "verdict": "partial",
+        "evidence": "s-g345.0, s-g346.0, s-g347.0, s-g358.2~6, s-g360.0~19",
+        "note": "正文基本准确；图示词“从消息派生”将方向写反，口播是模型消息/历史从事件日志派生。",
+        "hash": "75494f2701f12ef3"
+      },
+      {
+        "ref": "s13:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g377.0~21, s-g381.0, s-g381.1~28",
+        "note": "明确说是 session history 的两种投影。",
+        "hash": "f362c06c221b895b"
+      },
+      {
+        "ref": "s18:n1",
+        "verdict": "supported",
+        "evidence": "s-g634.0, s-g636.0~26, s-g636.0~34, s-g637.0~14",
+        "note": "口播明确说明点击注入提示，再由模型接鸟语花香。",
+        "hash": "d50eac853152ffb9"
+      },
+      {
+        "ref": "s18:visual",
+        "verdict": "supported",
+        "evidence": "s-g615.0~4, s-g618.0~42, s-g620.0, s-g621.0~8, s-g623.0, s-g624.0~52, s-g634.0, s-g637.0~14",
+        "note": "卡片、点击注回上下文及成语接龙均有支持；当前实现是重新生成卡片。",
+        "hash": "0ec6816a223b3a7f"
+      },
+      {
+        "ref": "s19:n0",
+        "verdict": "supported",
+        "evidence": "s-g661.0~24, s-g663.0~2, s-g673.0, s-g675.0, s-g676.0, s-g677.0",
+        "note": "数数是回忆 GPT-3.5；后段是在查看并复述实现解释，念到 store.begin、job 和选区 ID。",
+        "hash": "5dc75e0566448aa3"
+      },
+      {
+        "ref": "s19:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g659.1~10, s-g660.0, s-g661.0~2, s-g661.0~24, s-g663.0~2, s-g664.0~31",
+        "note": "准确概括现场缺陷、思考档及早期 GPT 的类比。",
+        "hash": "fb2c45ad7c1d7eba"
+      },
+      {
+        "ref": "s1:n1",
+        "verdict": "supported",
+        "evidence": "s-g7.0~20, s-g8.0~39, s-g18.0~25, s-g20.0~19, s-g21.0, s-g22.1~1",
+        "note": "CTO 比方与不同锁类型及独立任务并行的讨论均有支持。",
+        "hash": "177bbe21358542f0"
+      },
+      {
+        "ref": "s2:n1",
+        "verdict": "supported",
+        "evidence": "s-g47.0~12, s-g48.0~5",
+        "note": "提供的转写含 grill me、superpowers、grill with stocks，未提供后者的其他拼法。",
+        "hash": "caf28ce43576675b"
+      },
+      {
+        "ref": "s3:p2",
+        "verdict": "supported",
+        "evidence": "s-g67.0~32, s-g68.0~55, s-g69.0~67, s-g70.3~36",
+        "note": "区域划分、功能分析、十倍 token 和 skills 反复验证均直接对应口播。",
+        "hash": "55df7eb6efdd9a08"
+      },
+      {
+        "ref": "s3:p3",
+        "verdict": "supported",
+        "evidence": "s-g70.3~36, s-g72.0~14",
+        "note": "南大 GTA、starting point 和可行走区域均直接对应口播。",
+        "hash": "46dd2305a6152aca"
+      },
+      {
+        "ref": "s3:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g61.0~16, s-g62.0, s-g62.0~80, s-g66.0~31, s-g67.0~32",
+        "note": "一句话生成模型及楼高、大门、绿地的错误均有支持。",
+        "hash": "3678b6f9cae12595"
+      },
+      {
+        "ref": "s4:visual",
+        "verdict": "supported",
+        "evidence": "s-g79.0~30, s-g85.0~46, s-g86.0~39, s-g95.0~22",
+        "note": "进程终止、退避间隔及客户端订单未知状态均有支持。",
+        "hash": "d1508e172f7e3ef0"
+      },
+      {
+        "ref": "s5:p2",
+        "verdict": "supported",
+        "evidence": "s-g124.0~1, s-g127.0~18",
+        "note": "slop 倾向、产品与 MVP 的区别及验证假设均为口播内容。",
+        "hash": "4e085562c010e275"
+      },
+      {
+        "ref": "s6:n0",
+        "verdict": "partial",
+        "evidence": "s-g134.0~8, s-g138.0~2",
+        "note": "五十万行明确是设想；Grok Bot 的幻灯片拼法无法确认，本节未列图片，也未出现全部所列口播变体。",
+        "hash": "dcb3ef1a0af25076"
+      },
+      {
+        "ref": "s6:p2",
+        "verdict": "supported",
+        "evidence": "s-g151.0~13, s-g154.0~3, s-g155.0~46, s-g160.0~11, s-g162.0",
+        "note": "大厂交付取舍及 DSH bot 复刻细节均有口播支持。",
+        "hash": "a8bbff7f67f35045"
+      },
+      {
+        "ref": "s6:visual",
+        "verdict": "supported",
+        "evidence": "s-g138.0~2, s-g145.0~23, s-g148.0~17, s-g154.0~3, s-g160.0~11, s-g162.0",
+        "note": "交互假设崩塌、大厂协调及快速复刻均有口播支持；Grok Bot 按所给音译名称理解。",
+        "hash": "8e56c01718214538"
+      },
+      {
+        "ref": "s15:f0",
+        "verdict": "supported",
+        "evidence": "frames/v003500000.jpg",
+        "note": "模式菜单、Creator mode 说明、左侧入口与会话，以及模型和档位信息均与画面一致。",
+        "hash": "251c69c024e76a82"
+      },
+      {
+        "ref": "s17:f0",
+        "verdict": "partial",
+        "evidence": "frames/v004180000.jpg",
+        "note": "Excalidraw、圆角矩形和 100% 缩放均可见；高亮的是选择工具（鼠标指针），不是绘制箭头的工具。",
+        "hash": "7f387b9268d6b5f4"
+      },
+      {
+        "ref": "s17:n2",
+        "verdict": "partial",
+        "evidence": "s-g596.0; frames/v004180000.jpg",
+        "note": "口播转写为 EXCALIJO，画面标题为 Excalidraw，名称归一有依据；所给转写中没有 escalator，无法核实这部分口播归因。",
+        "hash": "cfee9daab1d5cee6"
+      },
+      {
+        "ref": "s19:e0",
+        "verdict": "supported",
+        "evidence": "frames/v004660000.jpg; s-g659.1~10",
+        "note": "会话标题、单颗黑子、落子提示、统计值及 Low 档位与画面一致；讲者明确说五子棋下在线上。",
+        "hash": "1a06ac87dbcd700f"
+      },
+      {
+        "ref": "s19:f0",
+        "verdict": "supported",
+        "evidence": "frames/v004660000.jpg",
+        "note": "Interactive UI、单颗黑子、落子提示及列出的运行统计和 Low 档位均有画面依据。",
+        "hash": "a26d77c386ce10bb"
+      }
+    ],
+    "reviewer": "independent_agent",
+    "reviewer_model": "gpt-6.1-sol",
+    "method": "prepare packets: all takeaways/explainers + per-section sample; 97 judged in latest round; 28 judged in latest round; 28 judged in latest round; 5 judged in latest round"
+  },
+  "recall": {
+    "items": [
+      {
+        "id": "q10",
+        "question": "在讲者看来，架构是在什么之间做平衡？模块边界带来的好处和未来风险各是什么？",
+        "expected": "在受限和自由间平衡；边界允许较少了解其他模块并独立开发；需求改变时不适配的架构会抽象泄露、难维护。",
+        "evidence": "s-g235.0~22, s-g236.0~25, s-g237.0~30, s-g239.0",
+        "from": "transcript",
+        "answer": "架构在受限和自由之间平衡。模块边界让开发者少了解系统其余部分，也能独立、并行开发；但限制未来自由，需求改变后可能不适配，造成抽象泄露和维护困难。",
+        "found_in": "s8:p0, s8:p1",
+        "verdict": "correct",
+        "note": "涵盖受限与自由的平衡、模块独立开发收益及需求变化后的抽象泄露风险。",
+        "hash": "a2889b553763928e"
+      },
+      {
+        "id": "q12",
+        "question": "event sourcing 中，当前状态如何得到？“强行毕业”的例子说明了什么代价？",
+        "expected": "由只追加的历史事实推导当前状态；强行毕业需新增特殊事件及处理规则；事件持久保存，可审计到提交者，难以悄悄改状态。",
+        "evidence": "s-g254.2~8, s-g255.0~33, s-g259.0~2, s-g260.0~48",
+        "from": "transcript",
+        "answer": "当前状态完全由只追加的历史事件推导。“强行毕业”不能直接覆写状态，需要新增特殊事件和处理规则，事件及提交者又永久留痕可被审计；历史推导也提高了性能优化难度。",
+        "found_in": "s9:p1",
+        "verdict": "correct",
+        "note": "涵盖追加事件推导状态、特殊毕业事件及规则、提交者留痕和审计。",
+        "hash": "ebbd168b978415cb"
+      },
+      {
+        "id": "q13",
+        "question": "讲者认为 LAMP 在什么条件下是合适的架构？什么时候会成为阻力？",
+        "expected": "单机足以满足需求时很合适；面向一亿、十亿用户时各点会出现瓶颈；基本假设变化后原架构可能成为阻力。",
+        "evidence": "s-g251.0~72, s-g253.0, s-g262.0~34, s-g263.0",
+        "from": "transcript",
+        "answer": "单机还能满足应用需求时，LAMP 就是合适的架构；当需要服务一亿、十亿用户，单机和数据库等节点成为瓶颈，必须分库分表、拆服务器，旧假设失效后架构就成为阻力。",
+        "found_in": "s9:p0, s9:p2",
+        "verdict": "correct",
+        "note": "说明单机够用时适合，亿级用户带来瓶颈及基本假设变化后的阻力。",
+        "hash": "ebbd168b978415cb"
+      },
+      {
+        "id": "q24",
+        "question": "针对“插件能组合，是否就解决了冲突”这个问题，十个上下文压缩插件的例子给出什么答案？",
+        "expected": "每个压成二分之一，十次后约为原来的千分之一；信息可能丢失；类型一致仍不保证插件语义不冲突。",
+        "evidence": "s-g569.0, s-g570.0~43, s-g571.0, s-g571.0~55, s-g571.0~95",
+        "from": "transcript",
+        "answer": "能组合不代表没有冲突。十个上下文压缩插件各压到一半，叠加后只剩原来的 1/1024，信息可能全部丢失；统一事件和类型不能自动解决插件之间的语义干扰。",
+        "found_in": "s16:p1, s16:n0",
+        "verdict": "correct",
+        "note": "正确计算十次减半为 1/1024，并指出信息损失和类型一致仍有语义冲突。",
+        "hash": "5fae47936ed2af0c"
+      },
+      {
+        "id": "q25",
+        "question": "两个合法 hook，一个要求停止、一个要求继续，讲者如何解释这个冲突及架构的能力边界？",
+        "expected": "运行到停止 hook 就会停止；执行顺序和应用语义的冲突不会被插件架构自动解决；可能需要 blackboard 等共享状态机制。",
+        "evidence": "s-g571.0~107, s-g573.1~3, s-g574.0~5, s-g575.0~53",
+        "from": "transcript",
+        "answer": "两个 hook 都合法，但停止与继续在应用语义上确实冲突；运行到要求停止的 hook 时就停掉。架构不能替应用裁决语义和执行顺序，只能减少部分 accidental complexity，不能消除 essential complexity；可能还需 blackboard 等共享状态机制。",
+        "found_in": "s16:p2",
+        "verdict": "correct",
+        "note": "涵盖遇停止 hook 即停止、架构无法自动解决顺序与语义冲突及 blackboard 机制。",
+        "hash": "5fae47936ed2af0c"
+      },
+      {
+        "id": "q29",
+        "question": "在对“插件实现到底有多少入侵”的追问中，动态 UI 插件怎样让模型知道输出协议？",
+        "expected": "hook context.systemprompt 事件；注入约 1.5KB 的协议说明；模型需输出带特别标记的 div。",
+        "evidence": "s-g672.0, s-g680.0, s-g680.0~80, s-g681.0~33",
+        "from": "transcript",
+        "answer": "动态 UI 插件勾住 context.systemPrompt 事件，为每个 session 注入约 1.5KB 协议说明，告诉模型生成带 class=\"_dsh_dynui\" 标记的 div。这是插件唯一主动写入模型上下文的内容，后续靠标记和投影从普通 assistant 输出中提取界面。",
+        "found_in": "s20:p0, s20:e0",
+        "verdict": "correct",
+        "note": "涵盖 system prompt 事件 hook、约 1.5KB 协议和特殊标记 div。",
+        "hash": "0ac1b10020486c19"
+      },
+      {
+        "id": "q30",
+        "question": "结尾填写论文列表的设想中，数据库插件提供什么？为什么讲者认为不必使用 computer use？",
+        "expected": "提供个人信息、论文、学生等数据；super app 将填表任务送上总线，由工具、记忆、数据库协作返回数据；直接填回表格，无需反复截图操作界面。",
+        "evidence": "s-g700.0, s-g702.0, s-g703.0, s-g705.0, s-g706.0, s-g707.0",
+        "from": "transcript",
+        "answer": "数据库插件提供必要的个人信息、发表论文、管理学生等资料。super app 把填论文列表的任务丢到总线，由生态中的工具、电脑、记忆和 bot 协作取数据并填回表格，形成闭环，因此不必用 computer use 反复截图操作。",
+        "found_in": "s20:p3",
+        "verdict": "correct",
+        "note": "涵盖个人、论文和学生数据，总线协作取数并直接填表，免去反复截图操作。",
+        "hash": "0ac1b10020486c19"
+      },
+      {
+        "id": "q01",
+        "question": "为什么讲者认为拥有 agent 后，个人开发者会像一家现代公司的 CTO？",
+        "expected": "需要负责整体产品；可把产品、UI、前后端等任务交给多个 agent；agent 还能创建 subagent，形成组织层级。",
+        "evidence": "s-g7.0~20, s-g8.0, s-g8.0~39, s-g9.0",
+        "from": "transcript",
+        "answer": "原来个人是单线程开发者；有了 agent，可以让架构、产品 UI、前后端等多个 agent 分工，agent 还可创建多层 subagent。个人因此像 CTO 一样负责整个组织、任务协同和最终产品，必须管理复杂需求、仓库与版本。",
+        "found_in": "s1:p1, s1:p2",
+        "verdict": "correct",
+        "note": "涵盖整体产品责任、多 agent 分工及 subagent 组织层级。",
+        "hash": "17ef5be8d5e63cff"
+      },
+      {
+        "id": "q02",
+        "question": "讲者设想的版本控制锁有哪些类型？什么条件下多个小 fix 可以并行？",
+        "expected": "锁可区分只读、写入、重构；小 fix 不造成架构 breaking change；彼此独立的小 fix 可并行。",
+        "evidence": "s-g18.0~25, s-g20.0~19, s-g21.0, s-g22.1~1",
+        "from": "transcript",
+        "answer": "包括只读锁、写锁，以及 refactor 等不同任务类型；还可借鉴操作系统先上锁的悲观方式，或数据库先执行再检测冲突的乐观锁。多个小 fix 只要相互独立、互不重叠，且不对架构造成 breaking change，就可以并行。",
+        "found_in": "s1:p3, s1:visual",
+        "verdict": "correct",
+        "note": "涵盖只读、写入、重构锁，以及独立且不破坏架构的小 fix 可并行。",
+        "hash": "17ef5be8d5e63cff"
+      },
+      {
+        "id": "q03",
+        "question": "mini agent 的核心循环为什么可以处理人与工具两种交互？",
+        "expected": "大模型推理采用一问一答；返回内容可以是工具调用；harness 围绕这种交互持续循环。",
+        "evidence": "s-g56.0~5, s-g58.1~12",
+        "from": "transcript",
+        "answer": "大模型推理通过 responses API 进行，不论是否返回工具调用，都是一问一答的循环；交互中的回答方可以是人，也可以是工具，所以同一个核心循环能处理两种交互。",
+        "found_in": "s2:p4",
+        "verdict": "correct",
+        "note": "说明一问一答、可返回工具调用及统一交互循环。",
+        "hash": "f388ce3387ac765c"
+      },
+      {
+        "id": "q04",
+        "question": "南大仙林校区三维建模案例中，agent 从哪里取得地图数据？讲者指出了哪两类建模错误？",
+        "expected": "数据来自 OpenStreetMap；计算机楼十层但高度比例不对；把大门画成楼或在入口绿地区域铺满树。",
+        "evidence": "s-g62.0, s-g64.0~13, s-g65.0~30, s-g66.0~31, s-g67.0~32",
+        "from": "transcript",
+        "answer": "从 OpenStreetMap 爬取地图数据后建模。错误包括建筑高度不准，例如十层的计算机楼明显不够高；以及误解对象或区域功能，例如把大门画成楼、把地图空白绿色区域当绿地，并在入口铺满树。",
+        "found_in": "s3:p0, s3:p1",
+        "verdict": "correct",
+        "note": "地图来源及楼高比例、入口对象或绿地区域两类错误均正确。",
+        "hash": "77eb22c4fe8b38f9"
+      },
+      {
+        "id": "q05",
+        "question": "讲者建议怎样改进校园三维模型，而不是只接受第一版？",
+        "expected": "逐块划定区域；分析各区域功能后精确建模；投入更多 token 并反复验证修正。",
+        "evidence": "s-g68.0~55, s-g69.0~67, s-g70.3~36",
+        "from": "transcript",
+        "answer": "补充提示词，把每块区域单独划定，仔细判断其功能后精确建模；投入更多 token（例如十倍）再修一遍，并用 skills 持续追着模型验证，从初版逐步改到目标效果。",
+        "found_in": "s3:p2",
+        "verdict": "correct",
+        "note": "涵盖逐块划区、分析功能、精确建模及增加 token 反复验证。",
+        "hash": "77eb22c4fe8b38f9"
+      },
+      {
+        "id": "q06",
+        "question": "高铁断网暴露了约 150 行 mini agent 缺少的哪三项能力？",
+        "expected": "会话保存；恢复；网络中断后的重试。",
+        "evidence": "s-g78.0~4, s-g79.0~30, s-g80.1~34",
+        "from": "transcript",
+        "answer": "缺少会话保存、恢复、网络中断后的重试。",
+        "found_in": "s4:p0",
+        "verdict": "correct",
+        "note": "完整列出会话保存、恢复及断网重试。",
+        "hash": "cb47907eb9cfe01b"
+      },
+      {
+        "id": "q07",
+        "question": "讲者用哪些等待间隔解释 exponential backoff？为什么不一直每秒重试？",
+        "expected": "举例等待 2、4、8 秒；连续一秒重试失败后下一秒仍可能失败；故障恢复可能需要分钟级时间。",
+        "evidence": "s-g85.0~46, s-g86.0~39",
+        "from": "transcript",
+        "answer": "失败后逐步等 1 秒、2 秒、4 秒、8 秒，直到分钟级。因为刚失败后一秒大概率仍然失败，物理故障恢复可能需两三分钟，一直每秒重试没有意义。",
+        "found_in": "s4:p1",
+        "verdict": "correct",
+        "note": "包含 2、4、8 秒递增等待，以及故障可能需分钟级恢复的原因。",
+        "hash": "cb47907eb9cfe01b"
+      },
+      {
+        "id": "q08",
+        "question": "支付请求发出后手机断网，客户端为什么不能直接显示支付失败？应该怎样处理？",
+        "expected": "服务端可能已经完成订单或向银行、航空公司付款；客户端缺少同步，状态未知；应用不能崩溃，应告知网络中断和订单状态未知。",
+        "evidence": "s-g90.0~15, s-g92.0~14, s-g93.0~28, s-g94.0~14, s-g95.0~22",
+        "from": "transcript",
+        "answer": "服务端可能已经完成下单和支付相关事务，手机没收到回执不代表没有执行，因此客户端只能认定结果未知。应用应保持运行、提示网络中断，并在恢复后与服务端同步、核对实际状态；不能直接宣布失败或盲目重放有副作用的操作。",
+        "found_in": "s4:p2, s4:n1",
+        "verdict": "correct",
+        "note": "说明服务端可能已完成支付、客户端状态未知，以及保持运行并提示断网。",
+        "hash": "cb47907eb9cfe01b"
+      },
+      {
+        "id": "q09",
+        "question": "讲者如何区分 MVP 与产品？mini agent 的哪项假设被实际使用推翻？",
+        "expected": "MVP 帮助验证真实需求和假设；产品还要处理实际使用产生的复杂性；网络和 API 稳定的假设不成立。",
+        "evidence": "s-g127.0~18, s-g131.0~5",
+        "from": "transcript",
+        "answer": "MVP 用于发现真实需求，并在使用中不断验证假设；产品则需要面对真实环境和不断变化的需求，不能只把初始任务做完。mini agent 假设网络服务不会中断，这被高铁断网、进程终止的实际使用推翻。",
+        "found_in": "s5:p2, s4:p0",
+        "verdict": "correct",
+        "note": "说明 MVP 验证需求与假设、产品应对实际复杂性，以及网络服务稳定假设被推翻。",
+        "hash": "eb057c6577a08ad4"
+      },
+      {
+        "id": "q11",
+        "question": "为什么“每个模块都是进程，彼此随便发消息”还不足以成为有用的架构？",
+        "expected": "仅有自由的 message passing 缺少约束；消息管理和接口未确定；协作仍难开发。",
+        "evidence": "s-g239.0~137, s-g241.0, s-g243.0, s-g244.0~25, s-g245.0~6",
+        "from": "transcript",
+        "answer": "任意程序都能把模块当进程、函数调用换成 RPC，因此这只是一个过于自由的通用说法。它没有规定消息何时发送、如何管理或通过什么接口和队列协作，无法提供清晰边界和开发约束，等于没有架构。",
+        "found_in": "s8:p1, s11:p1",
+        "verdict": "correct",
+        "note": "说明自由消息传递缺少约束、消息管理和接口，难以支撑协作开发。",
+        "hash": "833726bba83e9b83"
+      },
+      {
+        "id": "q14",
+        "question": "讲者纠正后，MapReduce 论文发表于哪一年、作者是谁？",
+        "expected": "2004 年；Jeff Dean 和 Sanjay。",
+        "evidence": "s-g270.0",
+        "from": "transcript",
+        "answer": "2004 年；作者是 Jeffrey Dean（口播 Jeff Dean）和 Sanjay Ghemawat。讲者先说 2010 年，随即纠正为 2004 年。",
+        "found_in": "s10:p0, s10:n0, s10:f0",
+        "verdict": "correct",
+        "note": "年份 2004 年及作者 Jeff Dean、Sanjay Ghemawat 均正确。",
+        "hash": "73168e307791852d"
+      },
+      {
+        "id": "q15",
+        "question": "Map 和 reduce 分别做什么？reduce 的什么性质有利于并行？",
+        "expected": "map 用函数把列表映射成另一个列表；reduce 反复用函数合并元素；结合律允许分别归约后再合并结果。",
+        "evidence": "s-g275.0~18, s-g276.0, s-g277.0~2, s-g280.0~41",
+        "from": "transcript",
+        "answer": "Map 把一个 list 经 function 转换成另一个 list；reduce 用 function 不断折叠元素。若归约函数满足结合律，就可先并行归约不同部分，再归约各部分的结果。",
+        "found_in": "s10:p1",
+        "verdict": "correct",
+        "note": "准确解释 map、reduce 及结合律如何允许分块并行归约。",
+        "hash": "73168e307791852d"
+      },
+      {
+        "id": "q16",
+        "question": "MapReduce 用什么编程限制换取了哪些系统能力？",
+        "expected": "要求按 map、reduce 的模式编写计算；框架隐藏分布式执行；提供多机运行及容错。",
+        "evidence": "s-g281.0~8, s-g284.0~35, s-g298.0~12, s-g300.0~55",
+        "from": "transcript",
+        "answer": "要求把计算写成 map、按 key 分组或排序与 shuffle、再 reduce 的受限形式，换来自动并行、任务调度、负载均衡、失败重试和容错，分布式实现细节由框架处理。失败重算还要求重新执行仍正确，额外副作用需保证原子性和幂等性。",
+        "found_in": "s10:p1, s10:p2, s10:e1",
+        "verdict": "correct",
+        "note": "涵盖受限的 map/reduce 编程模式、隐藏分布式细节、并行运行及容错。",
+        "hash": "73168e307791852d"
+      },
+      {
+        "id": "q17",
+        "question": "为什么讲者说 MapReduce 也有局限？他提到了哪些后续计算框架？",
+        "expected": "受限模型主要适合离线任务，使用不够方便；难支撑银行订单等即时数据需求；提到 Spark 和 Flink。",
+        "evidence": "s-g307.0, s-g310.0, s-g313.0~21",
+        "from": "transcript",
+        "answer": "MapReduce 的限制更适合离线任务，用起来也不够方便，难以支撑银行订单等即时到来的分布式数据处理。后续提到了 Spark 计算引擎和 Flink 流式数据处理。",
+        "found_in": "s10:p3",
+        "verdict": "correct",
+        "note": "涵盖离线适用性、即时需求局限及 Spark、Flink。",
+        "hash": "73168e307791852d"
+      },
+      {
+        "id": "q18",
+        "question": "Everything is a plugin 原则下，插件的 private state 和跨模块交互分别放在哪里？",
+        "expected": "私有状态封装在插件内部；跨模块通过消息或事件交互。",
+        "evidence": "s-g324.0, s-g327.0~12, s-g329.0, s-g330.0",
+        "from": "transcript",
+        "answer": "private state 封装在插件自身内部，大部分状态由插件本地维护；跨模块协作通过总线上的事件、消息和少量协作接口进行，只把希望别人看到的事情发布到 event bus。",
+        "found_in": "s11:p1, s13:p0, s14:p2",
+        "verdict": "correct",
+        "note": "准确说明插件内部封装私有状态，跨模块通过事件和消息交互。",
+        "hash": "b0c858892afda8f3"
+      },
+      {
+        "id": "q19",
+        "question": "Cordis 在讲者的操作系统类比中负责什么？插件卸载时希望发生什么？",
+        "expected": "服务解析、依赖激活和插件加载卸载；类似进程管理；卸载时尽可能自动卸载依赖、回收声明的资源或副作用，并非保证回收一切副作用。",
+        "evidence": "s-g334.0, s-g335.0, s-g337.0, s-g338.1~3, s-g339.0",
+        "from": "transcript",
+        "answer": "Cordis 类似操作系统的进程和资源管理，负责服务解析、依赖激活以及插件加载与卸载。希望插件声明资源和副作用，卸载时自动清理资源、卸载相关依赖，像进程退出后回收内存；但并非所有副作用都能回收。",
+        "found_in": "s11:p2, s12:p0",
+        "verdict": "correct",
+        "note": "涵盖服务解析、依赖激活、插件生命周期及尽可能清理资源，明确非所有副作用可回收。",
+        "hash": "dcb3895a255b32c0"
+      },
+      {
+        "id": "q20",
+        "question": "在 harness 的世界模型中，唯一的 ground truth 是什么？模型历史如何产生？",
+        "expected": "只追加的 session event 日志；模型历史从日志派生，而非另存为独立真相。",
+        "evidence": "s-g345.0, s-g346.0",
+        "from": "transcript",
+        "answer": "唯一的 ground truth 是 session 中只追加的 session event 日志，也就是完整的持久事件历史。模型历史并非另行存储，而是从这份日志派生的消息或投影。",
+        "found_in": "s12:p2, s12:n1, s13:p2",
+        "verdict": "correct",
+        "note": "准确指出只追加的 session event 日志是唯一真相，模型历史由其派生。",
+        "hash": "c4f0e8ee259079a9"
+      },
+      {
+        "id": "q21",
+        "question": "token 统计插件为什么可以不侵入其他模块？结果如何显示到界面？",
+        "expected": "观察 event bus 上的模型输出或推理事件；更新自己的内部统计状态；通过 UI slot 展示。",
+        "evidence": "s-g365.0, s-g366.0, s-g372.0~2, s-g372.1~28",
+        "from": "transcript",
+        "answer": "它只观察 event bus 上 LM inference 吐出的 token，统计 cost、cache hit 等并更新自己的私有状态，无须修改其他模块；再通过 UI slot 抽象绑定到界面某个位置显示。",
+        "found_in": "s13:p0",
+        "verdict": "correct",
+        "note": "涵盖观察总线上的推理输出、维护内部统计状态及通过 UI slot 显示。",
+        "hash": "74638d2e3e422605"
+      },
+      {
+        "id": "q22",
+        "question": "面向用户的聊天界面和面向开发者的 trajectory 有什么共同来源？",
+        "expected": "都是同一 session history 的不同投影；前者给用户看，后者用于查看工具调用等调试信息。",
+        "evidence": "s-g377.0~21, s-g381.0, s-g381.1~28, s-g382.2~3, s-g383.0~25",
+        "from": "transcript",
+        "answer": "两者都来自同一份 session history：聊天界面是面向用户的投影，trajectory 是面向开发者调试的另一种投影，可显示工具调用、结果及额外信息。可通过 session.deriveMessages 从持久历史导出。",
+        "found_in": "s13:p1, s13:p2",
+        "verdict": "correct",
+        "note": "明确两者为同一 session history 的不同投影，trajectory 用于工具调用等调试。",
+        "hash": "74638d2e3e422605"
+      },
+      {
+        "id": "q23",
+        "question": "Creator mode 比普通 agent session 多了什么能力？依赖哪种插件生命周期？",
+        "expected": "普通 session 主要有工作区读写、bash 等权限；Creator mode 可安装、拆除插件并在运行中挂到 event bus；依赖全动态加载卸载的生命周期。",
+        "evidence": "s-g535.0~4, s-g542.0~1, s-g547.0~5, s-g553.0~5",
+        "from": "transcript",
+        "answer": "普通 session 主要拥有工作区读写、bash 等 agent 权限；Creator mode 还获得 Cordis 权限，可写、添加、拆除插件，在 agent 运行时向 event bus 热插拔功能和 UI。依赖 Cordis 全动态的插件生命周期，像随时启动或终止进程。",
+        "found_in": "s15:p1, s15:e0",
+        "verdict": "correct",
+        "note": "涵盖普通会话权限、Creator mode 安装拆除插件及运行中动态加载卸载。",
+        "hash": "366da379f2c08225"
+      },
+      {
+        "id": "q26",
+        "question": "讲者最希望 event bus 接入哪类应用？以 WPS 为例，最小改造包含哪些步骤？",
+        "expected": "接入 super app；选择并锁住对象、送入模型上下文；取回修改后的对象并替换回原应用。",
+        "evidence": "s-g585.1~92, s-g587.0, s-g589.0, s-g590.0~28",
+        "from": "transcript",
+        "answer": "最想接入 super app。以 WPS 为例，用 web UI 或 bridge 连到 harness，锁住待处理对象，把对象序列化并通过总线 handoff 到模型上下文，再将修改后的对象写回替换。最小抽象层是 lock objects、serialize objects 和 UI。",
+        "found_in": "s17:p0, s17:p1, s18:f0",
+        "verdict": "correct",
+        "note": "涵盖 super app、锁定对象、送入模型上下文及将修改对象替换回原应用。",
+        "hash": "54374cc65270b9c3"
+      },
+      {
+        "id": "q27",
+        "question": "Excalidraw 画乌龟演示中，AI 工作时其他编辑能否继续？生成结果能否再手工编辑？",
+        "expected": "其他编辑照常继续，交给 AI 的对象被锁住；返回的是可编辑的原应用元素，可以继续修改或删除龟壳等元素。",
+        "evidence": "s-g601.0, s-g603.0, s-g610.0",
+        "from": "transcript",
+        "answer": "可以。AI 工作时其他编辑照常进行，交给 AI 的对象会被锁住。生成结果仍是原生 Excalidraw 对象，之后可以继续手工修改，甚至删除不满意的龟壳。",
+        "found_in": "s17:p2, s18:p0",
+        "verdict": "correct",
+        "note": "说明其他编辑继续、AI 对象被锁定，以及返回原生可编辑元素。",
+        "hash": "54374cc65270b9c3"
+      },
+      {
+        "id": "q28",
+        "question": "Generative UI 如何形成模型与界面的双向通道？",
+        "expected": "模型输出含 HTML 和 JS 的卡片放入 slot；JS 把点击及 UI 状态经 event bus 注入上下文；模型再指导 UI 更新。",
+        "evidence": "s-g615.0~4, s-g618.0~42, s-g620.0, s-g621.0~8, s-g623.0, s-g624.0~52",
+        "from": "transcript",
+        "answer": "模型输出 HTML 加 JavaScript 卡片并放进 UI slot；卡片里的按钮、输入、点击、鼠标事件和状态由 JavaScript 经 event bus 注入模型上下文；模型再根据这些输入更新 UI。演示中每次直接生成新卡片，也可以设计成生成 patch。",
+        "found_in": "s18:p1, s18:p2",
+        "verdict": "correct",
+        "note": "涵盖 HTML/JS 卡片入 slot、事件和状态经总线进入上下文及模型更新 UI。",
+        "hash": "606fa875ff1d4d6e"
+      },
+      {
+        "id": "q31",
+        "question": "画面中的 MapReduce 词频伪代码里，map 的 key 和 value 分别表示什么？每遇到一个词调用什么语句输出？",
+        "expected": "key 是 document name，value 是 document contents；输出 EmitIntermediate(w, \"1\")。",
+        "evidence": "../../frames/cand/v002045967.jpg",
+        "from": "visual",
+        "answer": "key 是 document name，value 是 document contents；每遇到一个词输出 EmitIntermediate(w, \"1\")。",
+        "found_in": "s10:e2",
+        "verdict": "correct",
+        "note": "key、value 含义及 EmitIntermediate(w, \"1\") 均准确。",
+        "hash": "73168e307791852d"
+      },
+      {
+        "id": "q32",
+        "question": "MapReduce 的 Execution overview 图中，输入 split 的编号范围是什么？右侧有哪两个 output file？",
+        "expected": "输入为 split 0 到 split 4；输出为 output file 0 和 output file 1。",
+        "evidence": "../../frames/cand/v002105967.jpg",
+        "from": "visual",
+        "answer": "输入编号从 split0 到 split4；右侧为 Output file 0 和 Output file 1。",
+        "found_in": "s10:f1",
+        "verdict": "correct",
+        "note": "split 0 至 split 4 及两个输出文件编号均正确。",
+        "hash": "73168e307791852d"
+      },
+      {
+        "id": "q33",
+        "question": "画面中的 MapReduce C++ 示例在 main 中给输入设置什么 format 和 mapper class？注册的 reducer 名称是什么？",
+        "expected": "input->set_format(\"text\")；input->set_mapper_class(\"WordCounter\")；REGISTER_REDUCER(Adder)。",
+        "evidence": "../../frames/cand/v002165967.jpg",
+        "from": "visual",
+        "answer": "main 中设置 input->set_format(\"text\") 和 input->set_mapper_class(\"WordCounter\")；注册 reducer 的语句是 REGISTER_REDUCER(Adder)，名称为 Adder。",
+        "found_in": "s10:e2",
+        "verdict": "correct",
+        "note": "format、mapper class 及注册 reducer 名称均准确。",
+        "hash": "73168e307791852d"
+      }
+    ],
+    "question_author": "independent_agent",
+    "answerer": "independent_agent",
+    "author_model": "gpt-6.1-sol",
+    "answerer_model": "gpt-6.1-sol"
+  }
+}

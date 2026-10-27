@@ -1,0 +1,933 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1pb8o6yE8f-20261027T1655Z",
+  "item": {
+    "video_id": "BV1pb8o6yE8f",
+    "source_url": "https://www.bilibili.com/video/BV1pb8o6yE8f",
+    "title": "生成式软件工程 01｜欢迎来到未来"
+  },
+  "scope": {
+    "requested": "单课完整笔记 + 手绘图解 + 外部模型保真评测",
+    "materials": false,
+    "changes": [
+      {
+        "at": "2026-10-27T16:55:00+00:00",
+        "request": "不联网、不读推荐材料；复用已生成的 chunks 与 frames 候选，不重跑 scan",
+        "added_work": "无"
+      }
+    ]
+  },
+  "toolchain": {
+    "baocut": null,
+    "asr_model": null,
+    "skill_commit": null,
+    "writer_model": "grok-4.7-high"
+  },
+  "artifacts": [
+    {
+      "id": "transcript",
+      "path": "../raw/transcript.json",
+      "role": "source",
+      "depends_on": []
+    },
+    {
+      "id": "video",
+      "path": "../raw/BV1pb8o6yE8f.mp4",
+      "role": "source",
+      "depends_on": []
+    },
+    {
+      "id": "index",
+      "path": "chunks/index.json",
+      "role": "source",
+      "depends_on": [
+        "transcript"
+      ]
+    },
+    {
+      "id": "frames",
+      "path": "frames/candidates.json",
+      "role": "source",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v000000000",
+      "path": "frames/v000000000.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v000060000",
+      "path": "frames/v000060000.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v000240000",
+      "path": "frames/v000240000.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v000649833",
+      "path": "frames/v000649833.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v000805767",
+      "path": "frames/v000805767.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v000925767",
+      "path": "frames/v000925767.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v001045767",
+      "path": "frames/v001045767.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v001285767",
+      "path": "frames/v001285767.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v001405767",
+      "path": "frames/v001405767.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v001465767",
+      "path": "frames/v001465767.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v001712733",
+      "path": "frames/v001712733.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v001892733",
+      "path": "frames/v001892733.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v002003700",
+      "path": "frames/v002003700.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v002123733",
+      "path": "frames/v002123733.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v002483733",
+      "path": "frames/v002483733.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v002732167",
+      "path": "frames/v002732167.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v003230633",
+      "path": "frames/v003230633.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v003650767",
+      "path": "frames/v003650767.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v003985567",
+      "path": "frames/v003985567.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v004241800",
+      "path": "frames/v004241800.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v004361800",
+      "path": "frames/v004361800.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v004592967",
+      "path": "frames/v004592967.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v004772967",
+      "path": "frames/v004772967.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v004892967",
+      "path": "frames/v004892967.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v005012967",
+      "path": "frames/v005012967.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v005132967",
+      "path": "frames/v005132967.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v005288967",
+      "path": "frames/v005288967.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v005499800",
+      "path": "frames/v005499800.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v005619800",
+      "path": "frames/v005619800.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v005799800",
+      "path": "frames/v005799800.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "frame-v005979800",
+      "path": "frames/v005979800.jpg",
+      "role": "evidence",
+      "depends_on": [
+        "video"
+      ]
+    },
+    {
+      "id": "notes",
+      "path": "notes.json",
+      "role": "notes",
+      "depends_on": [
+        "index",
+        "frames",
+        "frame-v000000000",
+        "frame-v000060000",
+        "frame-v000240000",
+        "frame-v000649833",
+        "frame-v000805767",
+        "frame-v000925767",
+        "frame-v001045767",
+        "frame-v001285767",
+        "frame-v001405767",
+        "frame-v001465767",
+        "frame-v001712733",
+        "frame-v001892733",
+        "frame-v002003700",
+        "frame-v002123733",
+        "frame-v002483733",
+        "frame-v002732167",
+        "frame-v003230633",
+        "frame-v003650767",
+        "frame-v003985567",
+        "frame-v004241800",
+        "frame-v004361800",
+        "frame-v004592967",
+        "frame-v004772967",
+        "frame-v004892967",
+        "frame-v005012967",
+        "frame-v005132967",
+        "frame-v005288967",
+        "frame-v005499800",
+        "frame-v005619800",
+        "frame-v005799800",
+        "frame-v005979800"
+      ]
+    },
+    {
+      "id": "visual-map",
+      "path": "visuals/map.jpg",
+      "role": "explainer",
+      "depends_on": [
+        "notes"
+      ]
+    },
+    {
+      "id": "visual-s01",
+      "path": "visuals/s01.jpg",
+      "role": "explainer",
+      "depends_on": [
+        "notes"
+      ]
+    },
+    {
+      "id": "visual-s04",
+      "path": "visuals/s04.jpg",
+      "role": "explainer",
+      "depends_on": [
+        "notes"
+      ]
+    },
+    {
+      "id": "visual-s06",
+      "path": "visuals/s06.jpg",
+      "role": "explainer",
+      "depends_on": [
+        "notes"
+      ]
+    },
+    {
+      "id": "visual-s16",
+      "path": "visuals/s16.jpg",
+      "role": "explainer",
+      "depends_on": [
+        "notes"
+      ]
+    },
+    {
+      "id": "visual-s17",
+      "path": "visuals/s17.jpg",
+      "role": "explainer",
+      "depends_on": [
+        "notes"
+      ]
+    },
+    {
+      "id": "visual-s19",
+      "path": "visuals/s19.jpg",
+      "role": "explainer",
+      "depends_on": [
+        "notes"
+      ]
+    },
+    {
+      "id": "visual-s20",
+      "path": "visuals/s20.jpg",
+      "role": "explainer",
+      "depends_on": [
+        "notes"
+      ]
+    },
+    {
+      "id": "visual-s22",
+      "path": "visuals/s22.jpg",
+      "role": "explainer",
+      "depends_on": [
+        "notes"
+      ]
+    },
+    {
+      "id": "renderer",
+      "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+      "role": "tool",
+      "depends_on": []
+    },
+    {
+      "id": "html",
+      "path": "课堂笔记.html",
+      "role": "reading",
+      "depends_on": [
+        "notes",
+        "renderer",
+        "visual-map",
+        "visual-s01",
+        "visual-s04",
+        "visual-s06",
+        "visual-s16",
+        "visual-s17",
+        "visual-s19",
+        "visual-s20",
+        "visual-s22",
+        "frame-v000000000",
+        "frame-v000060000",
+        "frame-v000240000",
+        "frame-v000649833",
+        "frame-v000805767",
+        "frame-v000925767",
+        "frame-v001045767",
+        "frame-v001285767",
+        "frame-v001405767",
+        "frame-v001465767",
+        "frame-v001712733",
+        "frame-v001892733",
+        "frame-v002003700",
+        "frame-v002123733",
+        "frame-v002483733",
+        "frame-v002732167",
+        "frame-v003230633",
+        "frame-v003650767",
+        "frame-v003985567",
+        "frame-v004241800",
+        "frame-v004361800",
+        "frame-v004592967",
+        "frame-v004772967",
+        "frame-v004892967",
+        "frame-v005012967",
+        "frame-v005132967",
+        "frame-v005288967",
+        "frame-v005499800",
+        "frame-v005619800",
+        "frame-v005799800",
+        "frame-v005979800"
+      ]
+    },
+    {
+      "id": "fidelity_eval",
+      "path": "fidelity-eval.json",
+      "role": "eval",
+      "depends_on": [
+        "notes",
+        "transcript",
+        "frames"
+      ]
+    }
+  ],
+  "log": [
+    {
+      "at": "2026-10-27T17:06:06.054112+00:00",
+      "occurred_at": null,
+      "stage": "transcript",
+      "status": "reused",
+      "attempt": null,
+      "job_id": null,
+      "detail": "复用 BaoCut 导出 ./raw/transcript.json，不重新转写",
+      "evidence": "raw/transcript.json"
+    },
+    {
+      "at": "2026-10-27T17:06:06.075310+00:00",
+      "occurred_at": null,
+      "stage": "frames",
+      "status": "reused",
+      "attempt": null,
+      "job_id": null,
+      "detail": "复用 frames.py scan：阈值 0.3、60 秒兜底、131 个候选、11 张联系表；未重跑 scan。定稿帧用 frames.py grab 从 ./raw/BV1pb8o6yE8f.mp4 截取。",
+      "evidence": "课堂笔记/frames/candidates.json"
+    },
+    {
+      "at": "2026-10-27T17:12:21.658397+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "failed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "1 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:12:37.170721+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:16:03.610630+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:16:03.658919+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "22 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-01/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T17:16:06.523261+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-01/cursor/ws/课堂笔记/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T17:25:53.628065+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:31:43.009884+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 0.9604, recall 0.9868",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-01/cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T17:32:27.932496+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:33:48.005202+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:33:48.054375+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "22 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-01/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T17:33:50.392191+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-01/cursor/ws/课堂笔记/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T17:34:19.439048+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 1.0, recall 1.0",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-01/cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T17:36:07.121297+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:36:07.160513+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 1.0, recall 1.0",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-01/cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T17:36:09.566637+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/private/var/folders/j6/0wknd5xs1sj5_xnqkgjdj8zm0000gn/T/tmpigeqvi0g/html-check.json"
+    }
+  ],
+  "issues": [],
+  "status": {
+    "outcome": "completed",
+    "known_gaps": [
+      "不是逐秒看完全片。换页候选来自阈值 0.3 加 60 秒兜底，共 131 个候选；定稿选用 31 帧。",
+      "口头提到良文峰价格图时，抽到的帧没有那张图；目录帧里只能看到文件名 liangwenfeng.gif。GCLVM 和 150 个 bug 的项目缩写只存在于转写。",
+      "简历画面含学生个人信息，笔记不转录涂黑字段，也不收录该帧。",
+      "不读课程推荐材料，也不为幻灯片上的研究、ICSE 议题或 GRPO 补外部出处。",
+      "页面检查是 headless Chrome 模拟的 390 和 1280 宽度，不是真机。"
+    ],
+    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors"
+  },
+  "revisions": [
+    {
+      "rev": 1,
+      "at": "2026-10-27T17:34:47.482936+00:00",
+      "reason": "外部评测通过后交付：精度 1.0，召回 1.0，评审 gpt-6.1-sol。",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "03a43af30f673fee7cd28445031175a8c5924a752eb3e0084d5d90dbb36f889b",
+          "bytes": 4968359
+        },
+        "video": {
+          "path": "../raw/BV1pb8o6yE8f.mp4",
+          "sha256": "a5b0b91ce241e51706496b428003b963d9b6c1e9df3c98ff79ba05cde8f2c8e7",
+          "bytes": 221824807
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "4ce87bd27933fe5cc8cf286d70bdda8a85c21074521089edecb3f69c5ce67bbe",
+          "bytes": 87308
+        },
+        "frames": {
+          "path": "frames/candidates.json",
+          "sha256": "93c88ab33265a73ac5744c347583dbd5e0e429be10ad2ca16acbdf6514d4f4b3",
+          "bytes": 13374
+        },
+        "frame-v000000000": {
+          "path": "frames/v000000000.jpg",
+          "sha256": "e68533320015e99ee6a916f896b3dade9ffa348911f7e4ab037d29688423074a",
+          "bytes": 110842
+        },
+        "frame-v000060000": {
+          "path": "frames/v000060000.jpg",
+          "sha256": "e57b8288d573447f3e6478c377c4264c05a098d74e2e69e3ba144df0a858ec5c",
+          "bytes": 83578
+        },
+        "frame-v000240000": {
+          "path": "frames/v000240000.jpg",
+          "sha256": "1ed28729a307a9cc087103c33690bfe84944259332723d2f05059da9aa794ecb",
+          "bytes": 68847
+        },
+        "frame-v000649833": {
+          "path": "frames/v000649833.jpg",
+          "sha256": "0d13b8a027d7dac193a037dc6eac1349d863e70cb1bcc349a10ca46bd3659b5d",
+          "bytes": 124135
+        },
+        "frame-v000805767": {
+          "path": "frames/v000805767.jpg",
+          "sha256": "ff65895d15398288c03ad2f4cb4d8ed3f93dd7706f2fd9791e2a94a1037e8b54",
+          "bytes": 79469
+        },
+        "frame-v000925767": {
+          "path": "frames/v000925767.jpg",
+          "sha256": "75449c9b0067821e1772bee8f8936423acde5943c0ea59a4a628a52eca9f56c6",
+          "bytes": 81923
+        },
+        "frame-v001045767": {
+          "path": "frames/v001045767.jpg",
+          "sha256": "6fbe4b9215515fae76dc01edf1830e24ae976930d984033d8d86d9997bff6e07",
+          "bytes": 82501
+        },
+        "frame-v001285767": {
+          "path": "frames/v001285767.jpg",
+          "sha256": "181bc4bc2363cc6fa792227327ff460f32c0bc6a59aeff8383e17e6a80a47b52",
+          "bytes": 92371
+        },
+        "frame-v001405767": {
+          "path": "frames/v001405767.jpg",
+          "sha256": "3ff4d73a4b98551ec74649d5a09982bf290fe0e34b2722c51003a8f2c85694a9",
+          "bytes": 107703
+        },
+        "frame-v001465767": {
+          "path": "frames/v001465767.jpg",
+          "sha256": "40f80ff8705100365e7eafc4226825739e6932a57c8f3c9ce920f967f72cb79b",
+          "bytes": 96198
+        },
+        "frame-v001712733": {
+          "path": "frames/v001712733.jpg",
+          "sha256": "7974e372e5e656700a00dc75f5c9ba2f0566b22c3b6600bd673df9ee4cce6c59",
+          "bytes": 109303
+        },
+        "frame-v001892733": {
+          "path": "frames/v001892733.jpg",
+          "sha256": "3c94dc3cfc17bd390448d5daf188dd1a487f63240c0f009e2d3d144c07f8f266",
+          "bytes": 100120
+        },
+        "frame-v002003700": {
+          "path": "frames/v002003700.jpg",
+          "sha256": "0edaf4496dfb256d935ece95f693c8cb24fad49fb1c80da273b67a16bc196275",
+          "bytes": 93000
+        },
+        "frame-v002123733": {
+          "path": "frames/v002123733.jpg",
+          "sha256": "89ec19a8efcd9cbe00b76473be7fad8e646216f383ba0c556d01bf5a1d511121",
+          "bytes": 102427
+        },
+        "frame-v002483733": {
+          "path": "frames/v002483733.jpg",
+          "sha256": "1fba4adfda8f80fb2014052aed0739b4e9aab0f51f9e0ccb37d6a0ce83d8aaf7",
+          "bytes": 86820
+        },
+        "frame-v002732167": {
+          "path": "frames/v002732167.jpg",
+          "sha256": "433fbb208fa4fc5ebec027e0e22f4925f8eff7c0f7748028f71f0672f915d32f",
+          "bytes": 88424
+        },
+        "frame-v003230633": {
+          "path": "frames/v003230633.jpg",
+          "sha256": "8389d0c08ec2b8901bfb0a90bc23b471931e06dc6edb81159f09d71d3552b4e4",
+          "bytes": 132976
+        },
+        "frame-v003650767": {
+          "path": "frames/v003650767.jpg",
+          "sha256": "3c55d5ac3c5a773717a46bc968c8f84cc1081c4322eebb306b84c9e5d98b1b78",
+          "bytes": 94274
+        },
+        "frame-v003985567": {
+          "path": "frames/v003985567.jpg",
+          "sha256": "c7114b69458b99e6da23b532d8487dc2fd0df5fba88c25a0b11f1b05a63d2244",
+          "bytes": 101697
+        },
+        "frame-v004241800": {
+          "path": "frames/v004241800.jpg",
+          "sha256": "f95266d636da015adc2956fbb80abacae134c4e216acc2dd875ef28cd412c213",
+          "bytes": 75769
+        },
+        "frame-v004361800": {
+          "path": "frames/v004361800.jpg",
+          "sha256": "209dd0ebece6f058d84a8b8143c98e23fa62134f5d37dfb615a408ca4c1cdfcd",
+          "bytes": 88033
+        },
+        "frame-v004592967": {
+          "path": "frames/v004592967.jpg",
+          "sha256": "a6b433c10d1dbf01fb448bc04ad67f94af2c96b4926b6046784fadf4fce8dee0",
+          "bytes": 95160
+        },
+        "frame-v004772967": {
+          "path": "frames/v004772967.jpg",
+          "sha256": "448cc803cdc27d0de336fad70de02bb0a76ab573f69a241744feffbfba08a55c",
+          "bytes": 102470
+        },
+        "frame-v004892967": {
+          "path": "frames/v004892967.jpg",
+          "sha256": "1db5c02c3a169cac4055f3f87f9bc83353139c59787e91219105b796615fdd38",
+          "bytes": 91716
+        },
+        "frame-v005012967": {
+          "path": "frames/v005012967.jpg",
+          "sha256": "f96ff6e2d40b1ef34273fc843d1336d299271aded52982b22b3fbdfe6de67e07",
+          "bytes": 110706
+        },
+        "frame-v005132967": {
+          "path": "frames/v005132967.jpg",
+          "sha256": "7126da9be21d12c12f11ab185fd961c65e02a6842173608026fac077e40f4970",
+          "bytes": 92887
+        },
+        "frame-v005288967": {
+          "path": "frames/v005288967.jpg",
+          "sha256": "c3d318305e08882d2de10324a6c2cb3eeb5b681728339e2ddc1a228b6647a286",
+          "bytes": 80994
+        },
+        "frame-v005499800": {
+          "path": "frames/v005499800.jpg",
+          "sha256": "653ea6dc4fbe7388e0913bbf93ad922f60e0779dccf9a46129a59e41949c6e79",
+          "bytes": 96662
+        },
+        "frame-v005619800": {
+          "path": "frames/v005619800.jpg",
+          "sha256": "e9761ca3a91fd33dd1d789585ae5ea532a0366580b8c45236ab3ecd6f136a662",
+          "bytes": 103276
+        },
+        "frame-v005799800": {
+          "path": "frames/v005799800.jpg",
+          "sha256": "1a47d01df2643461737fc8044a84df3dbb8902b57e1e55b3352a9e71fc737092",
+          "bytes": 94597
+        },
+        "frame-v005979800": {
+          "path": "frames/v005979800.jpg",
+          "sha256": "573040354cb6712ecec4cae238f1848a4a5d765dab148eda29235b25caea3f53",
+          "bytes": 103449
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "e28eb8d743c8b958b68b6b94acf67660ff59fc1a8d6fec12dca53a0f920de3b8",
+          "bytes": 143484
+        },
+        "visual-map": {
+          "path": "visuals/map.jpg",
+          "sha256": "0e96b81568fcaac7a63517f022b3e614e658e1a2aaa22fb08da6f0f5cb981771",
+          "bytes": 330372
+        },
+        "visual-s01": {
+          "path": "visuals/s01.jpg",
+          "sha256": "a20aeac88e968a9643bffcccb4590760c45f8ae4765191eb8bc0a6fc53b556d2",
+          "bytes": 366172
+        },
+        "visual-s04": {
+          "path": "visuals/s04.jpg",
+          "sha256": "743c3f590c044b211a07dcf94b503666baae7468a542d3e88f521609965cf123",
+          "bytes": 283288
+        },
+        "visual-s06": {
+          "path": "visuals/s06.jpg",
+          "sha256": "03c157e2206d96f10ed363613715ec43a698535a20c2039cdc140acfd1a6c51b",
+          "bytes": 249206
+        },
+        "visual-s16": {
+          "path": "visuals/s16.jpg",
+          "sha256": "74f8b88a4e1ca0c004440a77084f3477b40b89c470578c3e511742c8cbce0b02",
+          "bytes": 327397
+        },
+        "visual-s17": {
+          "path": "visuals/s17.jpg",
+          "sha256": "6a94f86a9368b5c8bf4667c44af1f4e75855eff0b9db6c9a5e4ecbfea342d968",
+          "bytes": 350901
+        },
+        "visual-s19": {
+          "path": "visuals/s19.jpg",
+          "sha256": "011263f48a4983a2d8e20563b7a3a946dc4555c5d1e90184e782e406804664f2",
+          "bytes": 295902
+        },
+        "visual-s20": {
+          "path": "visuals/s20.jpg",
+          "sha256": "80cbc0eb010a2976ffe9dbe6d6ab6ce1be17454c570c0f13532c202e8fe3bfbd",
+          "bytes": 330647
+        },
+        "visual-s22": {
+          "path": "visuals/s22.jpg",
+          "sha256": "6a933680b3cff1b89af517c23e3647de9da3383c6a00b30ccc5c8d96eb2efbee",
+          "bytes": 364293
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "10b0112edd19c427ba26b28992de5ef3403de6f7c8f86326ad073a7641811be7",
+          "bytes": 8038245
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "0db3d877154d2885ecfdc95559dc7fe60245ec704feb399ac2f2a229ca11cdc7",
+          "bytes": 54839
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 1.0,
+        "recall": 1.0,
+        "precision_items": 101,
+        "recall_items": 38,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": null
+    }
+  ]
+}

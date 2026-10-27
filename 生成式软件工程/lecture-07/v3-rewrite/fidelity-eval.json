@@ -1,0 +1,1047 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "17c5461cf7fb58931112be34bf6e97e099ddbaf47aa45833b67951944d6c1c9a",
+  "writer_model": "grok-4.7-high",
+  "precision": {
+    "items": [
+      {
+        "ref": "map",
+        "verdict": "supported",
+        "evidence": "s-g30.0; s-g431.1~32; s-g450.0~14; s-g468.0; s-g504.0; s-g528.0~1; s-g1158.0~38; s-g1160.0~19",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "9db1637d072f9134"
+      },
+      {
+        "ref": "s1:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g2.0; s-g16.0~28",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "f092e1536e32896a"
+      },
+      {
+        "ref": "s1:p3",
+        "verdict": "supported",
+        "evidence": "s-g18.0; s-wmuoazyli-8; s-g22.0; s-g23.0~11",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "212093b40233c6b2"
+      },
+      {
+        "ref": "s1:n0",
+        "verdict": "supported",
+        "evidence": "frames/v000060000.jpg; s-g2.0; s-g16.0~28",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "7f79689ba890a49b"
+      },
+      {
+        "ref": "s1:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000060000.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "70d5ee15d16fc7c3"
+      },
+      {
+        "ref": "s2:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g30.0; s-g34.0; s-g43.0~12; frames/v000240000.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "199de5bef3e12cce"
+      },
+      {
+        "ref": "s2:visual",
+        "verdict": "supported",
+        "evidence": "s-g34.0; s-g35.2~3; s-g43.0~12; s-g47.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "70923e2acf9ecc5e"
+      },
+      {
+        "ref": "s2:p2",
+        "verdict": "supported",
+        "evidence": "s-g49.0~13; s-g50.0; s-g52.0~2; s-g53.0~10",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "5bec4cf12538280a"
+      },
+      {
+        "ref": "s2:n0",
+        "verdict": "supported",
+        "evidence": "frames/v000240000.jpg; s-g30.0; s-g34.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "3e57b2e74ffe3903"
+      },
+      {
+        "ref": "s2:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000240000.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "76f6244c2cba9cd2"
+      },
+      {
+        "ref": "s3:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g56.1~2; s-g57.1~1; s-g68.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "b4ebc84f219ec131"
+      },
+      {
+        "ref": "s3:e0",
+        "verdict": "supported",
+        "evidence": "s-g59.0; s-g60.0; s-g62.0; s-g64.0~67; s-g66.0~136; s-g67.0~33; s-g67.0~57",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "ff7f0cab01455beb"
+      },
+      {
+        "ref": "s3:n0",
+        "verdict": "supported",
+        "evidence": "frames/v000420000.jpg; s-g56.1~2; s-g57.1~1",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "be1074c53411346c"
+      },
+      {
+        "ref": "s3:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000420000.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "d241f82865a3627e"
+      },
+      {
+        "ref": "s4:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g144.0; s-g147.0; s-g154.0; s-g157.0~2",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "52597cb43f06865a"
+      },
+      {
+        "ref": "s4:visual",
+        "verdict": "supported",
+        "evidence": "s-g149.0~8; s-g154.0; s-g157.0~2",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "29d4d3c59de72d36"
+      },
+      {
+        "ref": "s4:n0",
+        "verdict": "supported",
+        "evidence": "frames/v000660000.jpg; s-g144.0; s-g147.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "765fbffc4a305f9f"
+      },
+      {
+        "ref": "s4:p1",
+        "verdict": "supported",
+        "evidence": "s-g124.0~1; s-g126.0; s-g127.0; s-g128.0; s-wmuoazylk-180; s-g130.0~15; s-g133.0~5; s-g135.0~2; s-g138.0~1; s-wmuoazylk-203",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "3461dba7c79909df"
+      },
+      {
+        "ref": "s4:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000660000.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "144b626724b99d19"
+      },
+      {
+        "ref": "s5:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g211.0~51; s-g214.0; s-g216.0~44",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "1c88d4360a9fba87"
+      },
+      {
+        "ref": "s5:visual",
+        "verdict": "supported",
+        "evidence": "s-g217.0~33; s-g218.0~8; s-g219.0~20; s-g219.0~109; s-g220.0~3",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "e7c060e46b9486dd"
+      },
+      {
+        "ref": "s5:n0",
+        "verdict": "partial",
+        "evidence": "s-g211.0~51; s-g219.0~20; s-g219.0~109; frames/v001260000.jpg",
+        "note": "1260 秒画面及口述未讲 image/lines 的说明可确认；1200 秒画面未提供，无法核实引文结尾、完整署名和年份。",
+        "hash": "4a60f848f43b22b8"
+      },
+      {
+        "ref": "s5:p2",
+        "verdict": "supported",
+        "evidence": "s-g201.0~35; s-g203.0; s-g206.0~9; s-g206.0~36; s-g206.0~94; s-g207.0~17; s-g207.0~95",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "b00394d54e6b7f92"
+      },
+      {
+        "ref": "s5:f1",
+        "verdict": "supported",
+        "evidence": "frames/v001260000.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "0d93b6519bfb3c50"
+      },
+      {
+        "ref": "s6:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g255.0~14; s-g260.0~27; s-g272.0~8; s-g273.0~2; s-g275.0~15; s-g276.0~3",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "b38c3182c752ee44"
+      },
+      {
+        "ref": "s6:p1",
+        "verdict": "supported",
+        "evidence": "s-g255.0~14; s-g256.0~18; s-g257.0~24; s-g259.0; s-g259.0~32; s-g260.0~27; s-g262.0; s-g262.0~39; s-g264.0~13",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "d40d22bd1e6b9d7a"
+      },
+      {
+        "ref": "s6:p0",
+        "verdict": "supported",
+        "evidence": "s-g241.0~25; s-g243.0~1; s-g244.0; s-g246.0~2; s-g248.0; s-g249.0~7; s-g252.0~17; s-g252.0~24",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "1b59b0c6e7a3ead5"
+      },
+      {
+        "ref": "s7:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g292.0; s-g294.0~9; s-g295.0~13; s-g296.0; s-wmuoazylm-640",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "848bfb38400dc167"
+      },
+      {
+        "ref": "s7:n0",
+        "verdict": "partial",
+        "evidence": "s-g295.0~13; s-g296.0; s-g298.0~16; s-wmuoazylm-640",
+        "note": "四个原语和模拟时间有口述支持；本节没有待查图片，仿真时间变量、排序表及微秒例子的画面描述无法确认。",
+        "hash": "6a7fb95f751a50c0"
+      },
+      {
+        "ref": "s7:p2",
+        "verdict": "supported",
+        "evidence": "s-wmuoazylm-684; s-g310.0; s-g311.2~1; s-g311.2~25; s-wmuoazyln-700; s-g315.0; s-g316.0~5",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "0506267fb1babe9a"
+      },
+      {
+        "ref": "s8:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g431.1~32; s-wmuoazylo-1002; s-g443.0~55; s-g450.0; s-g450.0~14",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "3365ac7af15de3a6"
+      },
+      {
+        "ref": "s8:visual",
+        "verdict": "supported",
+        "evidence": "s-g423.0~5; s-g423.0~31; s-g431.1~32; s-g450.0~14",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "853f8d06bb3545bf"
+      },
+      {
+        "ref": "s8:e1",
+        "verdict": "supported",
+        "evidence": "s-wmuoazylo-977; s-g439.0~5; s-wmuoazylo-1002; s-g443.0~55",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "3b8ce98955eb7885"
+      },
+      {
+        "ref": "s8:n0",
+        "verdict": "supported",
+        "evidence": "frames/v002100000.jpg; s-g431.1~32; s-wmuoazylo-1002",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "8a7b60aa8892261b"
+      },
+      {
+        "ref": "s8:f0",
+        "verdict": "supported",
+        "evidence": "frames/v002100000.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "e7575b4ac7e35d99"
+      },
+      {
+        "ref": "s9:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g451.0~44; s-g452.0~34; s-g453.0~4; s-g460.0; s-g464.1~54",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "122fcd30882cac46"
+      },
+      {
+        "ref": "s9:p2",
+        "verdict": "supported",
+        "evidence": "s-g459.0~48; s-g460.0; s-g460.6~4; s-g461.1~5; s-g461.1~24; s-g462.0; s-g462.0~14; s-g462.0~88; s-g463.0~20",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "2be7d4543002f3a8"
+      },
+      {
+        "ref": "s9:p0",
+        "verdict": "supported",
+        "evidence": "s-g451.0~44; s-g452.0~34; s-g453.0~11; s-g454.0~27; s-g454.0~46; s-g454.0~55; s-g455.0~16; s-g456.0~43; s-g456.0~53",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "feb8cfd5c02b1ba6"
+      },
+      {
+        "ref": "s10:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g469.0; s-g470.0; s-g489.0~17; s-g491.0~18; s-g496.0~8",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "cb3543222992c185"
+      },
+      {
+        "ref": "s10:visual",
+        "verdict": "supported",
+        "evidence": "s-g469.0; s-g476.0~34; s-g484.0~16; s-g484.0~26; s-g486.0; s-g502.0~12",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "603da71f0e428207"
+      },
+      {
+        "ref": "s10:n0",
+        "verdict": "supported",
+        "evidence": "s-g490.0~2; s-g490.0~13",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "180f92a7dd0cca03"
+      },
+      {
+        "ref": "s10:p0",
+        "verdict": "supported",
+        "evidence": "s-g468.0; s-g469.0; s-g470.0; s-g471.0; s-g472.0; s-g473.0~13; s-g474.0; s-wmuoazylp-1098; s-g475.0; s-g475.0~32",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "6e79759b36fc5664"
+      },
+      {
+        "ref": "s10:f2",
+        "verdict": "supported",
+        "evidence": "frames/v003230000.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "0de0ec1319adc09a"
+      },
+      {
+        "ref": "s11:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g512.0; s-g513.0; s-g515.0; s-g520.0~50; s-g526.0~33",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "fcf33079ed8000fb"
+      },
+      {
+        "ref": "s11:p2",
+        "verdict": "supported",
+        "evidence": "s-g516.0; s-g516.0~30; s-g517.1~18; s-g518.0; s-g518.0~27; s-g519.0~15; s-g520.0~19; s-g520.0~50; s-g521.0~25",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "943b73944a96101e"
+      },
+      {
+        "ref": "s11:p3",
+        "verdict": "supported",
+        "evidence": "s-g522.0~17; s-g523.0; s-g524.1~6; s-g525.0; s-g526.0; s-g526.0~33",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "9ff34be0fc3d69f9"
+      },
+      {
+        "ref": "s11:f0",
+        "verdict": "supported",
+        "evidence": "frames/v003360000.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "15c86622e9012b7b"
+      },
+      {
+        "ref": "s12:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g535.1; s-g544.0; s-g586.0~1; s-g607.0; frames/v003704333.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "b8275d4ba209ee11"
+      },
+      {
+        "ref": "s12:p2",
+        "verdict": "supported",
+        "evidence": "s-wmuoazylq-1292; s-g578.0; s-g583.0; s-g586.0~1; s-g591.0; s-g594.0; s-g599.0~1; s-g604.0; s-g607.0; s-g614.0; s-g616.0~2; s-g621.0; s-g623.0~1; s-g625.0~6; s-g631.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "bed16c1d17f4970a"
+      },
+      {
+        "ref": "s12:p3",
+        "verdict": "supported",
+        "evidence": "s-g635.0; s-g636.0; s-g639.0~2; s-g640.0; s-g642.0; s-g648.0; s-g651.0~2; s-g654.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "7e8f68e9e0bde9dd"
+      },
+      {
+        "ref": "s12:f0",
+        "verdict": "supported",
+        "evidence": "frames/v003704333.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "ade4562a3d96a65f"
+      },
+      {
+        "ref": "s13:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g687.0; s-g700.0; s-g704.0~24; s-g721.0; s-g801.0~2; s-g805.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "ca5e989ad41fca36"
+      },
+      {
+        "ref": "s13:p3",
+        "verdict": "supported",
+        "evidence": "s-g747.0; s-g752.0; s-g756.0; s-g760.0~19; s-g764.0; s-g771.0; s-g772.0~2; s-g777.0; s-g780.0; s-g781.0; s-g782.0; s-g787.0; s-g794.0~5; s-g796.0; s-g797.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "281cc1dfd575711f"
+      },
+      {
+        "ref": "s13:n0",
+        "verdict": "partial",
+        "evidence": "s-g673.0; s-g681.0",
+        "note": "口述支持系统名单；3824 秒时间线未提供，具体年份、Smalltalk/Web 名称和逐轮抽象说明缺少证据。",
+        "hash": "24c801c1e5f2eaf6"
+      },
+      {
+        "ref": "s13:f1",
+        "verdict": "supported",
+        "evidence": "frames/v004004333.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "50e885ba18663d2e"
+      },
+      {
+        "ref": "s14:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g831.0~2; s-g835.0; s-g837.0; s-g840.0; s-g846.0; s-g861.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "4bed0ecb4475a3b6"
+      },
+      {
+        "ref": "s14:visual",
+        "verdict": "supported",
+        "evidence": "s-g831.0~2; s-g835.0; s-g837.0; s-g846.0; s-g853.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "5a8bbc2e68506d81"
+      },
+      {
+        "ref": "s14:n1",
+        "verdict": "unsupported",
+        "evidence": "s-g828.0; frames/v004304333.jpg",
+        "note": "现有证据只有 1979 年 MVC 文稿及讲师的职责说明，没有 4364 秒幻灯片；周历改 View、规则改 Model 和容量冲突规则的具体描述无法核实。",
+        "hash": "dd8dc74328566fe2"
+      },
+      {
+        "ref": "s14:p2",
+        "verdict": "supported",
+        "evidence": "s-g861.0; s-g866.0; s-g868.0; s-g873.0; s-g877.0; s-g880.0; s-g883.0; s-g885.0; s-g887.0; s-g889.0; s-g890.0~8; s-g891.0~19; s-g892.0; s-g892.0~13; s-g893.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "de3fcefccfa6c416"
+      },
+      {
+        "ref": "s14:f0",
+        "verdict": "supported",
+        "evidence": "frames/v004304333.jpg",
+        "note": "忠实描述原文画面；原文允许 View 发消息更新 Model，与讲师口述的纯函数解读需区分。",
+        "hash": "cbcdb15dc1af2949"
+      },
+      {
+        "ref": "s15:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g903.0; s-g903.1~14; s-g907.0~13; s-g908.0~37; s-g909.0~17; s-g910.0~30; s-g912.0~65",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "df3b5ef605fd9543"
+      },
+      {
+        "ref": "s15:p0",
+        "verdict": "partial",
+        "evidence": "s-g894.0~72; s-g894.0~96; s-g895.0~14; s-g895.0~28; s-g896.0~34; s-g896.0~50; s-g897.0~12; s-g898.1~6; s-g899.0~20; s-g900.0; s-g910.0~30",
+        "note": "React 的界面状态说明和 Vue 使用较少的限定均有支持；「不吝盛赞、更偏向 React」位于 s14 末尾，不在指定 s15 的证据范围内。",
+        "hash": "43d6acb1fe097508"
+      },
+      {
+        "ref": "s15:n0",
+        "verdict": "partial",
+        "evidence": "frames/v004724333.jpg; s-g899.0~20; s-g908.0~37; s-g909.0~17",
+        "note": "4724 秒的绑定与组件数据流描述有画面支持；4544 秒画面未提供，setQuery 的本轮旧值与派生列表不另存 State 无证据可核对。",
+        "hash": "a4c2929d2b75184d"
+      },
+      {
+        "ref": "s15:f1",
+        "verdict": "supported",
+        "evidence": "frames/v004724333.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "4b99b8122a62d166"
+      },
+      {
+        "ref": "s16:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g914.0~26; s-g938.0; s-g939.0; s-g982.0; s-g985.0~2; s-g987.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "df703740f0c2a669"
+      },
+      {
+        "ref": "s16:visual",
+        "verdict": "supported",
+        "evidence": "s-g922.0; s-wmuoazyls-1906; s-g939.0; s-g985.0~2; s-g987.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "d6923d2e6aea8cec"
+      },
+      {
+        "ref": "s16:n0",
+        "verdict": "supported",
+        "evidence": "frames/v004784333.jpg; s-g914.0~26; s-g938.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "6016fd29921b5946"
+      },
+      {
+        "ref": "s16:p0",
+        "verdict": "supported",
+        "evidence": "s-g914.0~26; s-g917.0; s-g919.0; s-g920.0; s-g922.0; s-wmuoazyls-1906",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "50e9de820c38682c"
+      },
+      {
+        "ref": "s16:f0",
+        "verdict": "supported",
+        "evidence": "frames/v004784333.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "58cb773a4c33b2a1"
+      },
+      {
+        "ref": "s17:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g997.0; s-g997.0~23; s-g1003.0~6; s-g1004.0~1",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "3b8cd4727ab5aff0"
+      },
+      {
+        "ref": "s17:p1",
+        "verdict": "supported",
+        "evidence": "s-g1009.0~16; s-g1010.0; s-g1012.0; s-g1013.0~5; s-g1014.0~12; s-g1015.0~28",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "b295e565154d47ff"
+      },
+      {
+        "ref": "s17:p0",
+        "verdict": "supported",
+        "evidence": "s-g991.0~1; s-g992.0; s-g994.0~3; s-g996.0; s-g997.0; s-g997.0~23; s-g1000.0~2; s-g1003.0~6; s-g1004.0~1; s-g1008.0~8",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "70393f0124e1ce9f"
+      },
+      {
+        "ref": "s18:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1031.0~13; s-g1033.0~3; s-g1035.0~66; s-g1038.0; s-g1041.0~2",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "b6101b0ff5dcef68"
+      },
+      {
+        "ref": "s18:n0",
+        "verdict": "partial",
+        "evidence": "frames/v005204333.jpg; s-g1026.0~60; s-g1027.0~12; s-g1027.0~24",
+        "note": "5204 秒表格及相信 AI 和最终校验有支持；5264 秒代码画面未提供，PAYROLL_FLOWS、payable、state.require、cash 和 CNY 75 无法核实。",
+        "hash": "0f5a723a24fb486a"
+      },
+      {
+        "ref": "s18:p2",
+        "verdict": "supported",
+        "evidence": "s-g1042.0~27; s-g1042.0~55; s-g1043.0~1; s-g1043.0~44; s-g1044.0; s-g1045.0; s-wmuoazylt-2123; s-wmuoazylt-2135; s-g1051.0; s-g1053.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "b72f80af3dd58e28"
+      },
+      {
+        "ref": "s18:f0",
+        "verdict": "supported",
+        "evidence": "frames/v005204333.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "68c00353b5c1f323"
+      },
+      {
+        "ref": "s19:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1065.0; s-g1066.0; s-g1140.0; s-g1147.1~18; s-g1158.0~38; s-g1159.0~3",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "735fe32e4666c066"
+      },
+      {
+        "ref": "s19:visual",
+        "verdict": "supported",
+        "evidence": "s-g1140.0; s-g1147.1~18; s-wmuoazylu-2313; s-g1158.0~38; s-g1159.0~3; s-g1159.0~29",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "d13d77d738a0b0c7"
+      },
+      {
+        "ref": "s19:p3",
+        "verdict": "supported",
+        "evidence": "s-wmuoazylu-2248; s-g1120.0; s-g1123.0~7; s-g1126.0; s-g1128.0; s-g1129.0; s-g1137.0; s-g1140.0; s-g1143.0; s-g1146.0~6",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "70149d7bc24fc4b5"
+      },
+      {
+        "ref": "s19:n0",
+        "verdict": "partial",
+        "evidence": "frames/v005444333.jpg; s-g1158.0~38; s-g1159.0~3; s-g1159.0~29",
+        "note": "5444 秒合同与打款图可确认，事实、视图和预期的划分有口述支持；5624 秒幻灯片未提供，不能确认其具体措辞。",
+        "hash": "7d33196b7c0ea0d7"
+      },
+      {
+        "ref": "s19:f0",
+        "verdict": "supported",
+        "evidence": "frames/v005444333.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "deceabcd72157023"
+      },
+      {
+        "ref": "s20:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1160.0~19; s-g1166.0~36; s-g1167.2~1; s-g1168.1~26; s-g1169.0~16",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "2c894c2d643aef5f"
+      },
+      {
+        "ref": "s20:p1",
+        "verdict": "supported",
+        "evidence": "s-g1166.0~36; s-g1167.2~1; s-g1167.5~1; s-g1168.1~26; s-g1169.0~16; s-g1170.0",
+        "note": "准确保留讲师借用 Hoare 类比及不直接称为设计缺陷的限定。",
+        "hash": "24a2111dbc4d16bb"
+      },
+      {
+        "ref": "s20:n0",
+        "verdict": "supported",
+        "evidence": "frames/v005804333.jpg; s-g1160.0~19; s-g1166.0~36",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "b015383430d46f1c"
+      },
+      {
+        "ref": "s20:f0",
+        "verdict": "supported",
+        "evidence": "frames/v005804333.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "78bc9fa7a9e1f62b"
+      },
+      {
+        "ref": "q1",
+        "verdict": "supported",
+        "evidence": "s-g30.0; s-g34.0; s-g35.2~3; s-g36.0~41; s-g45.2~3; s-g47.0; s-g50.0; frames/v000240000.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "18c978719052057f"
+      },
+      {
+        "ref": "q2",
+        "verdict": "supported",
+        "evidence": "s-g154.0; s-g157.0~2",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "2b5d4643351327e5"
+      },
+      {
+        "ref": "q3",
+        "verdict": "supported",
+        "evidence": "s-g217.0~33; s-g218.0~8; s-g219.0~20; s-g219.0~70; s-g220.0~3",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "d82cd9ac18b29c8d"
+      },
+      {
+        "ref": "q4",
+        "verdict": "supported",
+        "evidence": "s-wmuoazylo-1002; s-g443.0~55",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "169aee0bcec35db3"
+      },
+      {
+        "ref": "q5",
+        "verdict": "supported",
+        "evidence": "s-g469.0; s-g470.0; s-g483.0; s-g486.0; s-g498.0~44",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "062258a7ca85673a"
+      },
+      {
+        "ref": "q6",
+        "verdict": "supported",
+        "evidence": "s-wmuoazylp-1164; s-g512.0; s-g513.0; s-g515.0; frames/v003360000.jpg",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "89432ebb4695e715"
+      },
+      {
+        "ref": "q7",
+        "verdict": "supported",
+        "evidence": "s-g530.0~52; s-g531.0~13; s-g532.0; s-g535.1; s-g544.0; s-g548.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "56473a54f1fa0aa3"
+      },
+      {
+        "ref": "q8",
+        "verdict": "supported",
+        "evidence": "s-g831.0~2; s-g835.0; s-g837.0; s-g840.0; s-g846.0; s-g861.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "c7d7394c23b4eaf7"
+      },
+      {
+        "ref": "q9",
+        "verdict": "supported",
+        "evidence": "s-g922.0; s-wmuoazyls-1906; s-g939.0; s-g951.0~3; s-g970.0; s-g982.0; s-g985.0~2; s-g987.0",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "fecad7983d869805"
+      },
+      {
+        "ref": "q10",
+        "verdict": "supported",
+        "evidence": "s-g997.0~23; s-g1000.0~2; s-g1003.0~6",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "082af6fb031402cd"
+      },
+      {
+        "ref": "q11",
+        "verdict": "supported",
+        "evidence": "s-g1140.0; s-g1147.1~18; s-wmuoazylu-2313; s-g1158.0~38; s-g1159.0~3; s-g1159.0~29",
+        "note": "与对应讲稿或指定画面一致。",
+        "hash": "c5cd3c8f7692a0dd"
+      },
+      {
+        "ref": "q12",
+        "verdict": "supported",
+        "evidence": "s-g1166.0~36; s-g1167.2~1; s-g1168.1~26; s-g1169.0~16",
+        "note": "准确保留讲师借用 Hoare 类比及不直接称为设计缺陷的限定。",
+        "hash": "dd28100caf5b4fdb"
+      }
+    ],
+    "reviewer": "independent_agent",
+    "reviewer_model": "gpt-6.1-sol",
+    "method": "prepare packets: all takeaways/explainers + per-section sample; 97 judged in latest round"
+  },
+  "recall": {
+    "items": [
+      {
+        "id": "q01",
+        "question": "讲师如何区分 essential complexity 与 accidental complexity？各用课堂中的一个例子说明。",
+        "expected": "1. 前者来自问题领域、无法消除，如选课容量/先修/时间冲突；2. 后者来自技术选型，如文件系统或数据库带来的额外复杂性。",
+        "evidence": "s-g34.0; s-g35.2~3; s-g37.0~26; s-g54.0",
+        "from": "transcript",
+        "answer": "Essential complexity 是问题领域本身无法消除的复杂性，例如选课必须处理课程容量、先修要求和时间冲突，即使人工办理也存在。Accidental complexity 是实现和技术选型额外带来的复杂性，例如选择文件系统管理数据会带来并发控制和缺少原子事务的问题，换实现就会有不同取舍。",
+        "found_in": "s2:p0, s2:p1, s2:f0, s3:p0",
+        "verdict": "correct",
+        "note": "完整区分领域固有复杂性与技术选型复杂性，并给出选课约束和文件系统例子。",
+        "hash": "e0ac8cf37593499d"
+      },
+      {
+        "id": "q02",
+        "question": "文件系统与数据库的取舍中，讲师所说的原子性 transaction 是什么意思？文件系统缺少什么保证？",
+        "expected": "1. 多次读写整体 all or nothing、看起来不可分割；2. 文件系统本身不保证这种跨多个读写的事务。",
+        "evidence": "s-g45.2~3; s-g47.0; s-g47.2~3; s-g49.0",
+        "from": "transcript",
+        "answer": "原子性 transaction 指 all or nothing：一次读取多个数据、写入多个数据，整个读写看起来是一个不可分割的原子操作，像上了一把锁、stop-the-world。文件系统本身不提供这种整体读写的原子性保证，因此还要面对并发控制问题。",
+        "found_in": "s2:p1",
+        "verdict": "correct",
+        "note": "说明多次读写整体不可分割、全有或全无，以及文件系统缺少该事务保证。",
+        "hash": "1020da8708d7cedc"
+      },
+      {
+        "id": "q03",
+        "question": "为什么讲师认为只说“我要 login”让 GPT 实现，可能让需求陷入泥潭？复述其用户名密码登录的后续问题链。",
+        "expected": "1. GPT 会自行猜测注册方案；2. 用户忘记密码需恢复功能；3. 恢复又涉及短信或邮件及如何发送。",
+        "evidence": "s-g62.0; s-g62.0~36; s-g63.0~14; s-g64.0~22; s-g64.0~67; s-g65.0",
+        "from": "transcript",
+        "answer": "只说“我要 login”，GPT 会自行猜测需求，而每一步都会引出新的选择和维护负担。问题链是：登录→注册用户→用户名和密码→首次密码确认→忘记密码→用短信还是邮件找回→邮件用什么发送。不做找回，用户忘记密码就无法访问已有数据；改用微信或支付宝登录又涉及费用、个人开发者资格和公司主体。仅登录就有无穷细节，盲目自建容易陷入泥潭。",
+        "found_in": "s3:p1, s3:p2",
+        "verdict": "correct",
+        "note": "覆盖 GPT 猜测注册方案、忘记密码恢复、短信或邮件及发送方式的问题链。",
+        "hash": "e60ca21c71ad1c6b"
+      },
+      {
+        "id": "q04",
+        "question": "讲师怎样同时使用需求探索中的深度优先和广度优先？",
+        "expected": "1. 深度优先做 MVP，尽快验证最重要功能是否满足及满足程度；2. 广度优先思考登录方式、界面布局等不同决策；3. 两者需要平衡而非互斥。",
+        "evidence": "s-g68.0~40; s-g69.0~29; s-g69.0~116; s-g71.0~4; s-g71.0~22; s-g83.0~1",
+        "from": "transcript",
+        "answer": "深度优先先做 MVP，快速验证最重要的功能是否满足需求、满足多少，并决定是否重做；同时用广度优先思考登录方式、界面布局、首页展示等需求空间中的选择。二者不矛盾，要通过动手做、比较不同设计的后果来平衡，并最终把需求写出来。",
+        "found_in": "s3:p3, s3:p5",
+        "verdict": "correct",
+        "note": "覆盖深度优先验证 MVP、广度优先比较决策，以及两者的平衡。",
+        "hash": "e60ca21c71ad1c6b"
+      },
+      {
+        "id": "q05",
+        "question": "需求与架构分别收缩哪几个 space？确定设计后会背上什么？",
+        "expected": "1. 需求收缩 intent space 的不确定性；2. 架构收缩 specification 与 implementation space 的可能性；3. 确定选择会产生技术债。",
+        "evidence": "s-g154.0; s-g157.0~2",
+        "from": "transcript",
+        "answer": "需求收缩 intent space 的不确定性；架构收缩 specification space 和 implementation space 的可能性，以减少意图到规格再到实现的漂移。设计一旦选定，就背上需要长期承担和偿还的技术债。",
+        "found_in": "s4:p2, s4:takeaway, s1:p2",
+        "verdict": "correct",
+        "note": "准确列出 intent、specification、implementation space 及技术债。",
+        "hash": "7ed2bad2af27aeb8"
+      },
+      {
+        "id": "q06",
+        "question": "讲师介绍 Dijkstra 时，哪三种程序结构被认为足以表达程序逻辑，从而不需要什么？",
+        "expected": "1. 顺序、选择、循环；2. 不需要 GOTO。",
+        "evidence": "s-g178.0~12; s-g178.0~26; s-g179.2~1",
+        "from": "transcript",
+        "answer": "顺序结构、选择结构、循环结构足以表达任何程序逻辑，因此不需要 GOTO。",
+        "found_in": "s5:p0",
+        "verdict": "correct",
+        "note": "准确列出顺序、选择、循环与无需 GOTO。",
+        "hash": "bcc5caa83d7a373b"
+      },
+      {
+        "id": "q07",
+        "question": "讲师将哪些领域的哪一段年份称作 golden age？他让 AI 收集了多少篇值得读的文献？",
+        "expected": "1. 操作系统、PL、软件工程相关领域；2. 1980—2010 年；3. 1000 篇。",
+        "evidence": "s-g195.0; s-g198.2~13; s-g200.0",
+        "from": "transcript",
+        "answer": "他把操作系统、编程语言（PL）和软件工程三个领域的 1980—2010 年称为 golden age；让 AI 收集了 1000 篇值得读的 systems 文献，大概每个领域两三百篇。",
+        "found_in": "s5:p1",
+        "verdict": "correct",
+        "note": "领域、1980—2010 年及 1000 篇均准确。",
+        "hash": "bcc5caa83d7a373b"
+      },
+      {
+        "id": "q08",
+        "question": "Dijkstra 的 mental aids 包括哪三项？项链与珍珠的比喻说明了什么？",
+        "expected": "1. 枚举、归纳、抽象；2. 将复杂系统拆成可逐个理解的部分，再组合起来。",
+        "evidence": "s-g217.0~33; s-g218.0~8; s-g219.0~20; s-g219.0~70; s-g220.0~3",
+        "from": "transcript",
+        "answer": "三项 mental aids 是枚举、归纳、抽象。软件像由珍珠串成的项链：把整体复杂性分解成可以逐个理解的部分，再组合成系统；每颗珍珠承载独立设计决策，决定顺序会影响其他层需要知道多少细节。",
+        "found_in": "s5:p4, s5:f1",
+        "verdict": "correct",
+        "note": "列出枚举、归纳、抽象，并解释拆分理解后组合的比喻。",
+        "hash": "bcc5caa83d7a373b"
+      },
+      {
+        "id": "q09",
+        "question": "针对“为什么 dynamic programming 程序难调试”这一课堂设问，讲师给出的原因和改进办法是什么？",
+        "expected": "1. 难分层，中间状态是抽象数学表示；2. 恢复 state 的含义，打印或可视化状态和迁移；3. 调通后再改写为等价高效形式。",
+        "evidence": "s-g260.0~27; s-g264.0~13; s-g277.0; s-g277.0~24; s-g289.0",
+        "from": "transcript",
+        "answer": "DP 难调试是因为难以分层，中间状态往往只有纯数学表示；思考时的状态空间或有向无环图抽象，在写成 DP[i][j][k] 和循环时被丢掉，转移错误可能只算出错值而不崩溃。改进是把状态概念放回代码，说明状态含义，可视化或打印关联状态和迁移，例如用 getDescendant 返回可能迁移，再用 state 等更好的抽象逐层组织；调对后再改写成等价而高效的形式。",
+        "found_in": "s6:p1, s6:p2, s6:p3",
+        "verdict": "correct",
+        "note": "覆盖难分层与抽象状态、恢复状态含义并打印或可视化、调通后高效改写。",
+        "hash": "69fb30f0b6edf9e7"
+      },
+      {
+        "id": "q10",
+        "question": "《Growing a Language》演讲发生在哪一年、哪个会议？演讲对英文用词设了什么规则？",
+        "expected": "1. 1998 年 OOPSLA keynote；2. 只用单音节英文词；3. 双音节及以上词须当场定义。",
+        "evidence": "s-g327.0; s-g359.0; s-g378.0",
+        "from": "transcript",
+        "answer": "1998 年 OOPSLA 的 keynote。演讲从只用单音节英文词开始，遇到双音节及以上的词必须当场定义。",
+        "found_in": "s8:p0, s8:p1, s8:p2",
+        "verdict": "correct",
+        "note": "年份、会议及单音节词与多音节词现场定义规则均准确。",
+        "hash": "435b7de891281e58"
+      },
+      {
+        "id": "q11",
+        "question": "讲师借《Growing a Language》如何回答“小语言还是一次设计好大语言”的两难？好架构的扩展应具备什么地位与性质？",
+        "expected": "1. 出路是生长；2. 扩展是一等公民；3. 扩展之间可组合，提供原语与组合机制。",
+        "evidence": "s-g423.0~5; s-g423.0~31; s-g431.1~32; s-g450.0~14; s-g454.0~55",
+        "from": "transcript",
+        "answer": "小语言容易移植却难满足膨胀的需求，一次设计好大语言又体量大、交付慢，可能在成功前被小而丑的语言取代。出路是让语言和架构能够生长：提供原语与组合机制，使扩展成为一等公民，而且扩展之间能够组合，以应对需求变化。",
+        "found_in": "s8:p4, s8:p5, s8:p6, s9:p0",
+        "verdict": "correct",
+        "note": "覆盖生长、扩展作为一等公民，以及原语和可组合机制。",
+        "hash": "f8f785ee822cc49a"
+      },
+      {
+        "id": "q12",
+        "question": "讲师对 OJ 训练的哪种倾向提出了批评？其理由是什么？",
+        "expected": "1. 容易把人训练成解题机器、倾向用后即扔的代码；2. 题目做对后通常无需维护或扩展，减少对扩展性的思考。",
+        "evidence": "s-g451.0~44; s-g452.0~34; s-g453.0~4; s-g453.0~11",
+        "from": "transcript",
+        "answer": "他批评疯狂刷 OJ 容易把人训练成解题机器，形成代码“用后即扔”的倾向。因为题做对就结束，无需维护或扩展，容易忽略可生长架构和组合机制的思考。",
+        "found_in": "s9:p0",
+        "verdict": "correct",
+        "note": "准确说明解题机器和用后即扔倾向，以及缺少维护扩展需求的原因。",
+        "hash": "368dbade3949d917"
+      },
+      {
+        "id": "q13",
+        "question": "Unix Philosophy 的三条原则是什么？讲师为什么特别强调文本流？",
+        "expected": "1. 每个工具做好一件事；2. 程序能协作，处理文本流；3. 文本统一人和程序、程序和程序的接口。",
+        "evidence": "s-g469.0; s-g470.0",
+        "from": "transcript",
+        "answer": "三条原则：Do one thing and do it well；Write programs to work together；Write programs to handle text streams。文本流是通用接口，统一人和程序、程序和程序之间的接口，让小工具自由组合，也便于人理解并检查中间结果。",
+        "found_in": "s10:p0, s10:f0",
+        "verdict": "correct",
+        "note": "完整列出三条原则，并解释文本统一人与程序及程序间接口。",
+        "hash": "52626e179c8334af"
+      },
+      {
+        "id": "q14",
+        "question": "针对“如何给 nano 配一个自己的打开文件菜单”的课堂演示，讲师借此说明 Unix 的什么能力？",
+        "expected": "1. 可以把独立工具组合成自定义文件选择菜单，再由 nano 打开选中文件；2. shell、文本接口与管道提供组合复用空间。",
+        "evidence": "s-g495.0~6; s-g496.0~8; s-g497.0~37; s-g498.0~8; s-g498.0~44",
+        "from": "transcript",
+        "answer": "演示说明 Unix 工具的可组合性与复用能力：通过 shell、文本接口和管道，把各自做好一件事的小工具组合起来，就能为 nano 配自己的文件选择菜单，再打开第一课的 index，从而生长出原工具之外的功能。",
+        "found_in": "s10:p2, s10:p3, s10:e0",
+        "verdict": "correct",
+        "note": "说明组合独立工具生成文件菜单并交给 nano 打开，覆盖 shell、文本和管道复用。",
+        "hash": "52626e179c8334af"
+      },
+      {
+        "id": "q15",
+        "question": "Internet 架构重点做好哪一件事，对上层应用采取什么态度？讲师引用的 RFC 编号和时间是什么？",
+        "expected": "1. connectivity/连通性；2. 不预设上层应用，其他问题交给上层；3. RFC 1958，1996 年 6 月。",
+        "evidence": "s-g532.0; s-g535.1; s-g544.0; s-g548.0",
+        "from": "transcript",
+        "answer": "重点做好 connectivity，即连通和数据传输；至于上面跑什么应用，不做预设，把其他变化留给上层。引用 RFC 1958《Architectural Principles of the Internet》，时间是 1996 年 6 月。",
+        "found_in": "s12:p0, s12:p1",
+        "verdict": "correct",
+        "note": "覆盖连通性、不预设上层应用，以及 RFC 1958 和 1996 年 6 月。",
+        "hash": "f5ac915ed899982e"
+      },
+      {
+        "id": "q16",
+        "question": "课堂问到“怎么拼 prompt”时，讲师推荐什么方法？用什么 Python 模板例子说明？",
+        "expected": "1. 用模板语言替代 A+B+C 的字符串拼接；2. Jinja2；3. 渲染时传 instructions、日期等变量，便于维护。",
+        "evidence": "s-g760.0~19; s-g771.0; s-g777.0; s-g780.0; s-g782.0",
+        "from": "transcript",
+        "answer": "推荐模板语言，而不是把 A、B、C、D 用字符串加法拼起来。Python 中以 Jinja2 为例，把 prompt 写成包含 instructions 等变量的模板，渲染时传入 instructions 字符串、今天的日期等，模板会把它们填入相应位置，便于维护。",
+        "found_in": "s13:p3",
+        "verdict": "correct",
+        "note": "覆盖模板替代字符串拼接、Jinja2，以及 instructions 和日期变量渲染。",
+        "hash": "013d7b208d6d509a"
+      },
+      {
+        "id": "q17",
+        "question": "MVC 中 Model、View、Controller 各承担什么职责？View 为什么被描述为 pure function？",
+        "expected": "1. Model 表示当前世界知识/状态；2. View 是状态的视觉投射，不应修改状态；3. Controller 连接用户和系统，将修改操作转为 transaction。",
+        "evidence": "s-g831.0~2; s-g834.0; s-g835.0; s-g837.0; s-g840.0; s-g846.0",
+        "from": "transcript",
+        "answer": "Model 是当前世界的 single point of knowledge，封装课程、选课记录等数据、状态与业务规则；View 展示 Model，是状态到界面的投射；Controller 接收用户输入，把修改需求译成事务并协调 Model 与 View。讲师把 View 描述为 pure function，是因为它只根据状态计算展示，不应有改变世界的副作用；修改交给 Controller。",
+        "found_in": "s14:p0, s14:p1, s14:f1",
+        "verdict": "correct",
+        "note": "准确说明三者职责、Controller 将修改转为事务及 View 无修改状态的副作用。",
+        "hash": "22d605cd102c54b0"
+      },
+      {
+        "id": "q18",
+        "question": "在什么页面交互条件下，讲师说传统 MVC 的理解成立？菜单、过滤器、hover 又暴露了什么问题？",
+        "expected": "1. 每次点击后整页刷新更新时成立；2. 现代界面有独立于数据库 Model 的临时 view state；3. 这类状态也需建模，但不应放进数据库，引出 MVVM。",
+        "evidence": "s-g861.0; s-g866.0; s-g885.0; s-g889.0; s-g892.0; s-g892.0~13; s-g893.0",
+        "from": "transcript",
+        "answer": "当只有一个 HTML 页面、每次点击按钮都重新刷新和更新整页时，传统 MVC 的理解成立。展开菜单、在已有列表上过滤、hover 高亮等交互，只改变界面的临时状态，不必修改数据库或再次查询业务 Model，却仍需要模型来管理，因此要把 view state 也当作 Model，引出 MVVM。",
+        "found_in": "s14:p2",
+        "verdict": "correct",
+        "note": "覆盖整页刷新条件、独立的临时 view state、无需写数据库及 MVVM。",
+        "hash": "22d605cd102c54b0"
+      },
+      {
+        "id": "q19",
+        "question": "讲师明确更偏向 React 的理由是什么？他怎样概括 React 与 Vue 的更新思路？",
+        "expected": "1. React 对开发者直观且更纯粹；2. React 将 DOM 看成状态的纯函数，并用 Virtual DOM 隐藏更新复杂性；3. Vue 更像建立依赖图并保持同步。",
+        "evidence": "s-g894.0~38; s-g894.0~72; s-g895.0~14; s-g903.0; s-g907.0~13; s-g908.0~37; s-g909.0~17",
+        "from": "transcript",
+        "answer": "他个人更偏向 React，因为 View 对开发者直观、容易上手，模型更纯粹。React 把 DOM tree 看成全部界面状态的纯函数，开发者声明状态与变化，系统用 Virtual DOM 等机制隐藏整页重算和更新的复杂性；Vue 更像建立依赖关系图，并沿依赖保持同步。两者都由状态决定界面，只是更新模型略有不同；他也说明自己 Vue 用得较少。",
+        "found_in": "s15:p0, s15:p1, s15:p2",
+        "verdict": "correct",
+        "note": "覆盖 React 直观纯粹、状态纯函数与 Virtual DOM，以及 Vue 依赖图同步。",
+        "hash": "9bade0e02609711b"
+      },
+      {
+        "id": "q20",
+        "question": "课堂中的淘宝订单长流程，从下单之后依次涉及哪些环节？哪一步明确需要用户确认？",
+        "expected": "1. 锁库存、算优惠、支付；2. 风控、发货、退款、售后、对账；3. 支付需用户确认。",
+        "evidence": "s-g922.0; s-wmuoazyls-1906",
+        "from": "transcript",
+        "answer": "下单后依次是锁库存、计算优惠、支付、风控、发货、退款、售后、对账；明确需要用户确认的是支付。",
+        "found_in": "s16:p0, s16:e0",
+        "verdict": "correct",
+        "note": "流程环节顺序完整，并明确支付需要用户确认。",
+        "hash": "1b239de79f0d21e4"
+      },
+      {
+        "id": "q21",
+        "question": "复式记账法对每笔交易规定了什么条件？讲师说它主要为了解决什么问题？",
+        "expected": "1. 同时计入两个或以上账户；2. 金额相等、方向相反；3. 防错并通过平衡校验检查不一致。",
+        "evidence": "s-g996.0; s-g997.0; s-g997.0~23; s-g1003.0~6",
+        "from": "transcript",
+        "answer": "每笔交易必须同时计入两个或以上账户，金额相等、方向相反。主要为了防错和发现数据库当前状态的不一致，通过自平衡校验、试算平衡帮助找出账为什么对不上。",
+        "found_in": "s17:p0",
+        "verdict": "correct",
+        "note": "覆盖两个以上账户、金额相等方向相反，以及防错和平衡校验。",
+        "hash": "1014f6944e02bb95"
+      },
+      {
+        "id": "q22",
+        "question": "讲师记账系统里的 LLM 编译器把什么变成什么？当前报表怎样产生？",
+        "expected": "1. 将 persistent history 中的流水条目编译为小操作；2. 对所有操作按时间顺序 reduce/replay；3. 得到当前状态和报表。",
+        "evidence": "s-g1031.0~13; s-g1033.0~3; s-g1035.0~66; s-g1038.0; s-g1041.0~2; s-g1051.0",
+        "from": "transcript",
+        "answer": "LLM 编译器把不可篡改历史中的原始凭证或流水账事件，编译成可执行的分录、小操作，说明各张报表如何改变。当前状态由这些操作 reduce 得到，按时间顺序全部 replay，就生成当前可提交的资产负债表等报表。",
+        "found_in": "s18:p1, s18:p2, s18:f1",
+        "verdict": "correct",
+        "note": "覆盖历史流水编译为小操作、按时间顺序 reduce/replay 及产生当前状态和报表。",
+        "hash": "be9f015b99f67555"
+      },
+      {
+        "id": "q23",
+        "question": "成绩从及格改成不及格的例子中，讲师指出哪些连锁后果？Event Sourcing 如何帮助处理？",
+        "expected": "1. 影响学分、毕业/准出、后续课程资格；2. ICS 通过后已选操作系统，改为不通过会产生依赖冲突；3. 显式保留计算与依赖，可重新计算并追踪受影响结论。",
+        "evidence": "s-g1099.0; s-g1103.0; s-g1105.0; s-g1106.0; s-g1140.0; s-g1143.0; s-g1146.0~6",
+        "from": "transcript",
+        "answer": "及格改成不及格会减少学分，连带影响毕业、准出和下一门课的选课资格；例如计算机系统基础原先通过，已选上操作系统，改成挂科后先修关系就不一致。Event Sourcing 显式保留原始事实及其计算依赖，事实反转后可以重放全部计算，并通过数据流分析识别受影响的结论，减少手改当前库的遗漏。",
+        "found_in": "s19:p1, s19:p2, s19:p3",
+        "verdict": "correct",
+        "note": "覆盖学分和毕业等连锁影响、ICS 与操作系统依赖冲突，以及重算和依赖追踪。",
+        "hash": "6e47559217d923a7"
+      },
+      {
+        "id": "q24",
+        "question": "Event Sourcing 能否消除 essential complexity？当领导特批本来不能毕业的学生毕业时，讲师建议怎样记录？",
+        "expected": "1. 不能消除已有依赖复杂性；2. 将事实、view、预期分开；3. 追加特批/override 事实，而非让工程师直接手改当前数据库。",
+        "evidence": "s-g1157.0~24; s-g1158.0~38; s-g1159.0~3; s-g1159.0~29; s-g1159.0~109",
+        "from": "transcript",
+        "answer": "不能消除 essential complexity，先修和毕业条件等依赖仍然存在。它把事实、视图和预期分开；领导特批毕业时，应在不可变历史中追加“领导允许该学生毕业”的 override 事实，让允许毕业的结果由此产生，而不是让工程师直接修改当前数据库。",
+        "found_in": "s19:p5, s18:e1",
+        "verdict": "correct",
+        "note": "明确不能消除固有复杂性，并区分事实、视图、预期和追加特批事实。",
+        "hash": "87949dd20d7b5887"
+      },
+      {
+        "id": "q25",
+        "question": "讲师在结尾把 SQL/relational algebra 的什么局限称为 billion-dollar mistake？他列出哪些框架在弥补它？",
+        "expected": "1. 没把任意图灵可计算关系当作一等公民管理；2. 派生状态如毕业标志可能成为不一致点；3. MVVM、React、data flow、Event Sourcing 试图显式化 derived state 与 dependency。",
+        "evidence": "s-g1166.0~36; s-g1169.0~16; s-g1172.0~59; s-g1173.0~22",
+        "from": "transcript",
+        "answer": "局限是没有把任意图灵可计算的计算关系、跨数据库与应用代码的任意依赖作为一等公民统一管理，导致派生状态可能不一致。他借 Hoare 的 billion-dollar mistake 作类比，同时口述保留了“不直接叫设计缺陷”的态度。弥补它的框架或思路包括 MVVM、React、Dataflow 和 Event Sourcing，把 derived state 与 dependency 显式化。",
+        "found_in": "s20:p1, s20:p2, s20:f1",
+        "verdict": "correct",
+        "note": "覆盖任意可计算关系未成为一等公民、派生状态不一致及四种弥补框架。",
+        "hash": "872a754ae42972ce"
+      },
+      {
+        "id": "q26",
+        "question": "JSP 幻灯片标注 JSTL 1.0 与 JSP 2.0 分别是哪一年？各自带来了什么？",
+        "expected": "1. JSTL 1.0：2002 年，提供标准标签与 EL；2. JSP 2.0：2003 年，将 EL 纳入页面语言。",
+        "evidence": "v004184333.jpg",
+        "from": "visual",
+        "answer": "JSTL 1.0 是 2002 年，提供标准标签与 EL；JSP 2.0 是 2003 年，把 EL 纳入页面语言。",
+        "found_in": "s13:f2",
+        "verdict": "correct",
+        "note": "两项年份及 JSTL 标准标签与 EL、JSP 纳入 EL 均准确。",
+        "hash": "013d7b208d6d509a"
+      },
+      {
+        "id": "q27",
+        "question": "MVC 幻灯片中，“课表从列表换成周历”和“选课限制变化”分别主要改哪个部分？",
+        "expected": "1. 列表换周历主要改 View；2. 选课限制变化主要改 Model。",
+        "evidence": "v004364333.jpg",
+        "from": "visual",
+        "answer": "课表从列表换成周历主要改 View；选课限制变化主要改 Model，因为 Model 包含容量、冲突等业务规则。",
+        "found_in": "s14:f1",
+        "verdict": "correct",
+        "note": "准确对应周历改 View、选课限制改 Model。",
+        "hash": "22d605cd102c54b0"
+      },
+      {
+        "id": "q28",
+        "question": "记账代码画面中，带 @Curry 的函数叫什么？写出它的参数顺序，并指出星号之后的参数。",
+        "expected": "1. pay_payroll；2. state, category, amount, *, kind；3. 星号后是 kind。",
+        "evidence": "v005264333.jpg",
+        "from": "visual",
+        "answer": "函数是 pay_payroll，参数顺序为 pay_payroll(state, category, amount, *, kind)；星号之后的参数是 kind。",
+        "found_in": "s18:e0, s18:f1",
+        "verdict": "correct",
+        "note": "函数名、参数顺序及星号后的 kind 均准确。",
+        "hash": "be9f015b99f67555"
+      },
+      {
+        "id": "q29",
+        "question": "“记账为什么麻烦？”幻灯片分别用什么例子说明当前状态编码的过去、现在和未来？",
+        "expected": "1. 过去：合同签订；2. 现在：等待打款；3. 未来：货物交接、潜在坏账。",
+        "evidence": "v005444333.jpg",
+        "from": "visual",
+        "answer": "过去：合同签订；现在：等待打款；未来：货物交接、潜在坏账。",
+        "found_in": "s19:f0",
+        "verdict": "correct",
+        "note": "过去、现在、未来的四个对应例子均准确。",
+        "hash": "6e47559217d923a7"
+      }
+    ],
+    "question_author": "independent_agent",
+    "answerer": "independent_agent",
+    "author_model": "gpt-6.1-sol",
+    "answerer_model": "gpt-6.1-sol"
+  }
+}

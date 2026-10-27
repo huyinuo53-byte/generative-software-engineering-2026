@@ -1,0 +1,1041 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "7864418fc47e4bce85410e0ca1e3b6ecc5885e64030e2b7be34c7f5e342ddcd7",
+  "writer_model": "grok-4.7-high",
+  "precision": {
+    "items": [
+      {
+        "ref": "map",
+        "verdict": "supported",
+        "evidence": "s-g60.0~17; s-g305.0–s-g307.0~30; s-g531.1~42–s-g533.0~11; s-g697.0~2–s-g706.0~25; s-g727.0~47; s-g1075.0–s-g1076.0~2",
+        "note": "文字与指定片段一致。",
+        "hash": "44d31d3c47621151"
+      },
+      {
+        "ref": "s1:takeaway",
+        "verdict": "partial",
+        "evidence": "s-g3.0; s-g13.0~14–s-g16.0~24",
+        "note": "作业不限做法及体验焦油坑有依据；原话是模型“可能”作出导致维护困难的决定，笔记将风险写成必然结果。",
+        "hash": "74a600b31050eed5"
+      },
+      {
+        "ref": "s1:p6",
+        "verdict": "supported",
+        "evidence": "s-g17.0–s-g22.0~4",
+        "note": "文字与指定片段一致。",
+        "hash": "c671a65b398b049c"
+      },
+      {
+        "ref": "s1:n2",
+        "verdict": "supported",
+        "evidence": "s-g11.1~26; s-g14.0~56–s-g15.0~71",
+        "note": "明确标注为转写处理；指定片段确有“紫禁城”和“AISLAP”，未将其另造为讲师术语。",
+        "hash": "af1430c840065391"
+      },
+      {
+        "ref": "s1:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000300000.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "c902058d3f513793"
+      },
+      {
+        "ref": "s2:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g26.0~1–s-g49.0~7",
+        "note": "文字与指定片段一致。",
+        "hash": "23a79b7090ce077b"
+      },
+      {
+        "ref": "s2:p2",
+        "verdict": "supported",
+        "evidence": "s-g45.0~3–s-g49.0~7",
+        "note": "文字与指定片段一致。",
+        "hash": "d15dd8c735f169f4"
+      },
+      {
+        "ref": "s2:e0",
+        "verdict": "supported",
+        "evidence": "frames/v000360000.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "65183d23010dadfd"
+      },
+      {
+        "ref": "s2:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000360000.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "c88f347ee5d9d4a2"
+      },
+      {
+        "ref": "s3:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g55.0~6–s-g64.1~12; s-g81.0~3–s-g95.0~13",
+        "note": "文字与指定片段一致。",
+        "hash": "7ad1cbf8319daa9d"
+      },
+      {
+        "ref": "s3:visual",
+        "verdict": "supported",
+        "evidence": "s-g68.0~8–s-g95.0~13",
+        "note": "文字与指定片段一致。",
+        "hash": "8f2c1e9fa7e00265"
+      },
+      {
+        "ref": "s3:p3",
+        "verdict": "supported",
+        "evidence": "s-g90.0~9–s-g100.0",
+        "note": "文字与指定片段一致。",
+        "hash": "605bc311023e78c5"
+      },
+      {
+        "ref": "s3:p2",
+        "verdict": "supported",
+        "evidence": "s-g68.0~8–s-g85.0~10",
+        "note": "文字与指定片段一致。",
+        "hash": "dc34bd62e827a31d"
+      },
+      {
+        "ref": "s3:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000600000.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "ca341d509fd47f5e"
+      },
+      {
+        "ref": "s4:takeaway",
+        "verdict": "partial",
+        "evidence": "s-g102.0~35–s-g117.0~21; s-g118.0~71–s-g121.0~33",
+        "note": "对象图及 AI 维护一致性是讲师对未来的设想，原话有“如果”“有没有可能”；“就该”将探索性设想加强为规范结论。",
+        "hash": "08e49e4f5640042f"
+      },
+      {
+        "ref": "s4:visual",
+        "verdict": "supported",
+        "evidence": "s-g110.0~27–s-g121.0~33",
+        "note": "文字与指定片段一致。",
+        "hash": "834831e5f9ce1938"
+      },
+      {
+        "ref": "s4:p2",
+        "verdict": "supported",
+        "evidence": "s-g116.0–s-g119.0~37",
+        "note": "文字与指定片段一致。",
+        "hash": "b3adbea80ab90433"
+      },
+      {
+        "ref": "s4:p4",
+        "verdict": "supported",
+        "evidence": "s-g122.0~1–s-g126.0~10",
+        "note": "文字与指定片段一致。",
+        "hash": "27defe225dcde20d"
+      },
+      {
+        "ref": "s4:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000720000.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "8c7b4fd4f06ae8bb"
+      },
+      {
+        "ref": "s5:takeaway",
+        "verdict": "partial",
+        "evidence": "s-g127.0–s-g138.0~26",
+        "note": "view 和版本一致性有依据，但这是未来可能的软件生产方式；笔记省略设想限定，容易读成现有模型已能可靠完成的能力。",
+        "hash": "64482d7de7bb1541"
+      },
+      {
+        "ref": "s5:visual",
+        "verdict": "partial",
+        "evidence": "s-g127.0–s-g137.0",
+        "note": "抽取相关内容、view 和 V0 到 V1 有依据；这属于未来设想，“其余不动”也比原话“大部分东西应该是无关的”更绝对。",
+        "hash": "816d11404719da92"
+      },
+      {
+        "ref": "s5:p4",
+        "verdict": "supported",
+        "evidence": "s-g140.0~21–s-g144.0~80",
+        "note": "文字与指定片段一致。",
+        "hash": "86cb3f484cc59ccd"
+      },
+      {
+        "ref": "s5:p1",
+        "verdict": "supported",
+        "evidence": "s-g129.0~10–s-g132.0",
+        "note": "文字与指定片段一致。",
+        "hash": "b2653f4a5942ebc9"
+      },
+      {
+        "ref": "s5:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001080000.jpg; s-g134.0~21–s-g137.0",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "0ece8d9a5440639b"
+      },
+      {
+        "ref": "s6:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g147.0–s-g182.0~2",
+        "note": "文字与指定片段一致。",
+        "hash": "ba6a4315b463078e"
+      },
+      {
+        "ref": "s6:p1",
+        "verdict": "supported",
+        "evidence": "s-g147.0–s-g169.0~10",
+        "note": "文字与指定片段一致。",
+        "hash": "ed732c96c94b7ed7"
+      },
+      {
+        "ref": "s6:p0",
+        "verdict": "supported",
+        "evidence": "s-g145.0–s-g147.0",
+        "note": "文字与指定片段一致。",
+        "hash": "bcb7a6c5ed0060ab"
+      },
+      {
+        "ref": "s6:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001260000.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "b1b28ad875a848af"
+      },
+      {
+        "ref": "s7:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g223.0–s-g263.0; s-g287.0; s-g293.0–s-g302.0",
+        "note": "文字与指定片段一致。",
+        "hash": "54d77701bc1180c6"
+      },
+      {
+        "ref": "s7:visual",
+        "verdict": "supported",
+        "evidence": "s-g255.0~3–s-g263.0; s-g287.0; s-g297.0–s-g302.0",
+        "note": "文字与指定片段一致。",
+        "hash": "f2d56d7196dd5496"
+      },
+      {
+        "ref": "s7:p4",
+        "verdict": "supported",
+        "evidence": "s-g294.0–s-g307.0~30",
+        "note": "文字与指定片段一致。",
+        "hash": "3fdb4e9b90b2c200"
+      },
+      {
+        "ref": "s7:e0",
+        "verdict": "supported",
+        "evidence": "frames/v001500000.jpg; s-g270.0",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "f15eeb891d5ef13d"
+      },
+      {
+        "ref": "s7:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001500000.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "b026b2095add79bc"
+      },
+      {
+        "ref": "s8:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g309.0~3–s-g321.0~3; s-g362.0–s-g380.0~7",
+        "note": "文字与指定片段一致。",
+        "hash": "e2de59d5c39a87f3"
+      },
+      {
+        "ref": "s8:visual",
+        "verdict": "supported",
+        "evidence": "s-g311.0–s-g321.0~3; s-g362.0–s-g380.0~7",
+        "note": "文字与指定片段一致。",
+        "hash": "49722c98cdfb9e19"
+      },
+      {
+        "ref": "s8:p4",
+        "verdict": "supported",
+        "evidence": "s-g403.0~26–s-g438.0",
+        "note": "文字与指定片段一致。",
+        "hash": "a187957da94e6bfc"
+      },
+      {
+        "ref": "s8:p1",
+        "verdict": "supported",
+        "evidence": "s-g321.0~3–s-g356.1~3",
+        "note": "文字与指定片段一致。",
+        "hash": "550d8bc9f5d05bc5"
+      },
+      {
+        "ref": "s8:f2",
+        "verdict": "supported",
+        "evidence": "frames/v002100000.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "d35dfca3947f7677"
+      },
+      {
+        "ref": "s9:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g457.0~22–s-g468.2~2; s-g504.0~4–s-g527.0~26",
+        "note": "文字与指定片段一致。",
+        "hash": "9dca98adf55c7c61"
+      },
+      {
+        "ref": "s9:p0",
+        "verdict": "supported",
+        "evidence": "s-g457.0~22–s-g504.0~4",
+        "note": "文字与指定片段一致。",
+        "hash": "343d2b19626881a4"
+      },
+      {
+        "ref": "s9:p2",
+        "verdict": "supported",
+        "evidence": "s-g514.0–s-g527.0~26",
+        "note": "文字与指定片段一致。",
+        "hash": "734340402f2fb620"
+      },
+      {
+        "ref": "s9:f0",
+        "verdict": "supported",
+        "evidence": "frames/v002280000.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "31f046176688a434"
+      },
+      {
+        "ref": "s10:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g531.1~42–s-g537.1~14",
+        "note": "文字与指定片段一致。",
+        "hash": "aae76f1664018629"
+      },
+      {
+        "ref": "s10:visual",
+        "verdict": "supported",
+        "evidence": "s-g531.1~42–s-g533.0~11",
+        "note": "文字与指定片段一致。",
+        "hash": "b6489fe06efbe65e"
+      },
+      {
+        "ref": "s10:p1",
+        "verdict": "supported",
+        "evidence": "s-g535.0~27–s-g546.0",
+        "note": "文字与指定片段一致。",
+        "hash": "0e217a2f47503dad"
+      },
+      {
+        "ref": "s10:p2",
+        "verdict": "supported",
+        "evidence": "s-g546.0–s-g561.0",
+        "note": "文字与指定片段一致。",
+        "hash": "427b802ad3da14ac"
+      },
+      {
+        "ref": "s11:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g564.0–s-g565.0; s-g584.0~8–s-g588.1~17",
+        "note": "文字与指定片段一致。",
+        "hash": "c26115795c966482"
+      },
+      {
+        "ref": "s11:p2",
+        "verdict": "supported",
+        "evidence": "s-g571.0–s-g588.1~17",
+        "note": "文字与指定片段一致。",
+        "hash": "e90b8402e34d921f"
+      },
+      {
+        "ref": "s11:e1",
+        "verdict": "supported",
+        "evidence": "frames/v002933167.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "1d5a17becb7b0383"
+      },
+      {
+        "ref": "s11:f0",
+        "verdict": "supported",
+        "evidence": "frames/v002933167.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "3fdb54dc22245c13"
+      },
+      {
+        "ref": "s12:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g602.1~15–s-g612.0~23; s-g617.0–s-g629.0~5",
+        "note": "文字与指定片段一致。",
+        "hash": "cb5a732303a9c67f"
+      },
+      {
+        "ref": "s12:e0",
+        "verdict": "supported",
+        "evidence": "frames/v003293167.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "1ac042f60b72d6d7"
+      },
+      {
+        "ref": "s12:p3",
+        "verdict": "supported",
+        "evidence": "s-g613.0–s-g629.0~5",
+        "note": "文字与指定片段一致。",
+        "hash": "ccbf9dd48511d3e4"
+      },
+      {
+        "ref": "s12:f0",
+        "verdict": "supported",
+        "evidence": "frames/v003293167.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "dcd1d7f9e5b9d9e2"
+      },
+      {
+        "ref": "s13:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g654.0~4–s-g668.0~2; s-g697.0~2–s-g703.0~26",
+        "note": "文字与指定片段一致。",
+        "hash": "6fc2a9e655671e00"
+      },
+      {
+        "ref": "s13:visual",
+        "verdict": "supported",
+        "evidence": "s-g666.0–s-g710.0~17; frames/v003653167.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "16b017a3f6935a2a"
+      },
+      {
+        "ref": "s13:n1",
+        "verdict": "supported",
+        "evidence": "s-g713.1~5",
+        "note": "文字与指定片段一致。",
+        "hash": "d6cdde6004223733"
+      },
+      {
+        "ref": "s13:p4",
+        "verdict": "supported",
+        "evidence": "s-g711.0~42–s-g723.0~7",
+        "note": "文字与指定片段一致。",
+        "hash": "57feec2857a9f74e"
+      },
+      {
+        "ref": "s13:f0",
+        "verdict": "supported",
+        "evidence": "frames/v003653167.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "3a9a2a1e9e30d9fa"
+      },
+      {
+        "ref": "s14:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g725.0~25–s-g727.0~47; s-g737.0–s-g742.0~19",
+        "note": "文字与指定片段一致。",
+        "hash": "b68b7c162286a39b"
+      },
+      {
+        "ref": "s14:n1",
+        "verdict": "supported",
+        "evidence": "s-g737.0–s-g741.0",
+        "note": "文字与指定片段一致。",
+        "hash": "7e290415bb682dab"
+      },
+      {
+        "ref": "s14:e1",
+        "verdict": "partial",
+        "evidence": "s-g737.0–s-g743.0~7",
+        "note": "平方级沟通、《人月神话》和测试冲突均在本节；百人团队仅为十人团队两三倍效率的数字出现在 s12（s-g598.0~12–s-g600.0~4），不在指定的 s14 证据范围。",
+        "hash": "9c93c31f1977adba"
+      },
+      {
+        "ref": "s14:f0",
+        "verdict": "supported",
+        "evidence": "frames/v003893167.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "207608226ade1f40"
+      },
+      {
+        "ref": "s15:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g783.0; s-g830.0~2–s-g895.0~24",
+        "note": "文字与指定片段一致。",
+        "hash": "5df0b9405fcdbf07"
+      },
+      {
+        "ref": "s15:p1",
+        "verdict": "supported",
+        "evidence": "s-g783.0–s-g820.0~16",
+        "note": "文字与指定片段一致。",
+        "hash": "6548ddfa034b1845"
+      },
+      {
+        "ref": "s15:e1",
+        "verdict": "supported",
+        "evidence": "frames/v004386733.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "e0a43da9410335dd"
+      },
+      {
+        "ref": "s15:f1",
+        "verdict": "supported",
+        "evidence": "frames/v004386733.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "667785cc834f8554"
+      },
+      {
+        "ref": "s16:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g902.0–s-g910.1~12",
+        "note": "文字与指定片段一致。",
+        "hash": "6b0027560df162f3"
+      },
+      {
+        "ref": "s16:p0",
+        "verdict": "supported",
+        "evidence": "s-g898.0–s-g901.0~4",
+        "note": "文字与指定片段一致。",
+        "hash": "5300ee1cd058aee1"
+      },
+      {
+        "ref": "s16:p2",
+        "verdict": "supported",
+        "evidence": "s-g910.0–s-g911.0~75",
+        "note": "文字与指定片段一致。",
+        "hash": "400e04c265b7b9ba"
+      },
+      {
+        "ref": "s16:f0",
+        "verdict": "supported",
+        "evidence": "frames/v004506733.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "540b6aba1c8ec0ac"
+      },
+      {
+        "ref": "s17:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g982.1~5–s-g992.0~1; s-g1066.0~19–s-g1069.0",
+        "note": "文字与指定片段一致。",
+        "hash": "07b6359583b2b65a"
+      },
+      {
+        "ref": "s17:p5",
+        "verdict": "supported",
+        "evidence": "s-g1073.0–s-g1075.0",
+        "note": "文字与指定片段一致。",
+        "hash": "59a5adc04b4061a1"
+      },
+      {
+        "ref": "s17:p3",
+        "verdict": "supported",
+        "evidence": "s-g1037.0–s-g1066.0~19",
+        "note": "文字与指定片段一致。",
+        "hash": "d2f61b387cc505f3"
+      },
+      {
+        "ref": "s17:f1",
+        "verdict": "supported",
+        "evidence": "frames/v005168100.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "8b003cd3759bdf0b"
+      },
+      {
+        "ref": "s18:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1087.0~26–s-g1093.0~16; s-g1107.0~28–s-g1117.0; s-g1201.0~14",
+        "note": "文字与指定片段一致。",
+        "hash": "dca56ded97b7a35a"
+      },
+      {
+        "ref": "s18:visual",
+        "verdict": "supported",
+        "evidence": "s-g1087.0~26–s-g1093.0~16; s-g1107.0~28–s-g1112.0~16; s-g1201.0~14",
+        "note": "文字与指定片段一致。",
+        "hash": "1af64a291674cecd"
+      },
+      {
+        "ref": "s18:p1",
+        "verdict": "supported",
+        "evidence": "s-g1087.0~26–s-g1093.0~16",
+        "note": "文字与指定片段一致。",
+        "hash": "497db55ce7d34f88"
+      },
+      {
+        "ref": "s18:p3",
+        "verdict": "supported",
+        "evidence": "s-g1109.0–s-g1141.0~5",
+        "note": "文字与指定片段一致。",
+        "hash": "a0940262ee4b85fb"
+      },
+      {
+        "ref": "s18:f2",
+        "verdict": "supported",
+        "evidence": "frames/v005815133.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "12fc8b5fe588d524"
+      },
+      {
+        "ref": "q1",
+        "verdict": "supported",
+        "evidence": "frames/v000300000.jpg",
+        "note": "指定帧中的文字或画面支持该描述。",
+        "hash": "655322345e9fd89f"
+      },
+      {
+        "ref": "q2",
+        "verdict": "supported",
+        "evidence": "s-g26.0~1–s-g37.0~10",
+        "note": "文字与指定片段一致。",
+        "hash": "3ea4fa352c8a1ea5"
+      },
+      {
+        "ref": "q3",
+        "verdict": "supported",
+        "evidence": "s-g68.0~8–s-g95.0~13",
+        "note": "文字与指定片段一致。",
+        "hash": "6e5e90a1b1bc6ff0"
+      },
+      {
+        "ref": "q4",
+        "verdict": "supported",
+        "evidence": "s-g247.0~1–s-g263.0",
+        "note": "文字与指定片段一致。",
+        "hash": "c561bdb6b933a2ac"
+      },
+      {
+        "ref": "q5",
+        "verdict": "supported",
+        "evidence": "s-g314.0~69–s-g321.0~3; s-g362.0–s-g380.0~7",
+        "note": "文字与指定片段一致。",
+        "hash": "56bfaebe09ba3692"
+      },
+      {
+        "ref": "q6",
+        "verdict": "supported",
+        "evidence": "s-g504.0~4–s-g513.0~30; s-g525.0~20–s-g527.0~26",
+        "note": "文字与指定片段一致。",
+        "hash": "e7ee1b1a3199f5c7"
+      },
+      {
+        "ref": "q7",
+        "verdict": "supported",
+        "evidence": "s-g604.0~16–s-g622.0~4",
+        "note": "文字与指定片段一致。",
+        "hash": "c4540b0a0f3ef250"
+      },
+      {
+        "ref": "q8",
+        "verdict": "supported",
+        "evidence": "s-g666.0–s-g710.0~17",
+        "note": "文字与指定片段一致。",
+        "hash": "170d08c6192c1e52"
+      },
+      {
+        "ref": "q9",
+        "verdict": "partial",
+        "evidence": "s-g737.0–s-g741.0",
+        "note": "本节支持平方级沟通和《人月神话》；百人团队与十人团队的两三倍效率比较在 s12（s-g598.0~12–s-g600.0~4），指定 s14 中没有该数字。",
+        "hash": "1bbdaef9f299399b"
+      },
+      {
+        "ref": "q10",
+        "verdict": "supported",
+        "evidence": "s-g1087.0~26; s-g1109.0",
+        "note": "文字与指定片段一致。",
+        "hash": "efb56d0ea9094431"
+      },
+      {
+        "ref": "s10:f1",
+        "verdict": "supported",
+        "evidence": "frames/v002640000.jpg; s-g546.0; s-g548.0",
+        "note": "帧图显示右侧终端、fancy-project 目录、pi v0.85.1、模型 deepseek-v4-flash、Context 路径 ~/.pi/agent/AGENTS.md，以及底栏 /tmp/fancy-project (master)。输入框可见‘我是工头。现在有两个 tmux session。命名成 slave-a sl…’，与所述输入大意一致。",
+        "hash": "32ed403d341ae2c7"
+      }
+    ],
+    "reviewer": "independent_agent",
+    "reviewer_model": "gpt-6.1-sol",
+    "method": "prepare packets: all takeaways/explainers + per-section sample; 91 judged in latest round; 1 judged in latest round"
+  },
+  "recall": {
+    "items": [
+      {
+        "id": "q01",
+        "question": "Lab 1 的作业是否必做？讲师说最终可能怎样验收？",
+        "expected": "作业选做、自愿完成；可能提交链接，由讲师的机器人评分。",
+        "evidence": "s-g1.0; s-g2.0~24",
+        "from": "transcript",
+        "answer": "不是必做，作业选做、自愿完成；但学校最后可能要成绩，因此可能让大家提交链接，由讲师的机器人评分验收。",
+        "found_in": "s1:p0",
+        "verdict": "correct",
+        "note": "涵盖选做、自愿及提交链接由机器人评分。",
+        "hash": "1d1ba64f13e5dc51"
+      },
+      {
+        "id": "q02",
+        "question": "讲师为什么要让大家做“会成长的个人助手”，而不只是体验一次生成成功？",
+        "expected": "体验初始合理决定累积成维护困难和焦油坑；后续加入与原需求关联且冲突的需求，体验修改困难。",
+        "evidence": "s-g13.0~14; s-g14.0~56; s-g15.0~71; s-g18.0; s-g18.0~80",
+        "from": "transcript",
+        "answer": "要体验持续演进中的软件工程焦油坑：AI 初期看似合理的决定会积累成维护困难；后续 lab 还会加入与已有需求有关且冲突的新需求，让大家体验修改越来越崩溃，而不是生成一次就删掉重做。成长还要求这次纠正下次仍生效。",
+        "found_in": "s1:p5, s1:p6, s1:e0",
+        "verdict": "correct",
+        "note": "涵盖初始决策累积维护困难，以及后续关联且冲突的需求。",
+        "hash": "1d1ba64f13e5dc51"
+      },
+      {
+        "id": "q03",
+        "question": "讲师偏好的 README 应重点写什么？",
+        "expected": "最初的产品意图及预期效果；可配少量截图；最重要的设计。",
+        "evidence": "s-g26.0~1; s-g28.0~12",
+        "from": "transcript",
+        "answer": "README 应简短，重点写最初的 intent：想做什么产品、达到什么效果，可以配截图，再补最重要的设计。",
+        "found_in": "s2:p0, s2:p1",
+        "verdict": "correct",
+        "note": "涵盖产品意图、预期效果、截图和重要设计。",
+        "hash": "5b1ccb8837199bb1"
+      },
+      {
+        "id": "q04",
+        "question": "课上把哪些技术选择或设计内容归入 specification？请举两类。",
+        "expected": "数据库或编程语言选择；项目结构或模块接口（任答两类）。",
+        "evidence": "s-g45.0~3; s-g49.0~7",
+        "from": "transcript",
+        "answer": "一类是技术选型，如数据库、编程语言；另一类是结构和接口设计，如项目结构、每个模块的接口。",
+        "found_in": "s2:p2",
+        "verdict": "correct",
+        "note": "列出技术选型和结构接口设计两类。",
+        "hash": "5b1ccb8837199bb1"
+      },
+      {
+        "id": "q05",
+        "question": "把 linked list 改成 tree 的例子中，技术债是怎样形成的？",
+        "expected": "代码改成 tree，但文档仍说 linked list；代码、文档与测试的关联未被强制维护，导致不一致。",
+        "evidence": "s-g68.0~8; s-g72.1~9; s-g75.0~7; s-g81.0~3; s-g85.0~10",
+        "from": "transcript",
+        "answer": "AI 因性能问题把实现从 linked list 改为 tree，但 Markdown 文档仍写 linked list。文档、代码、测试的关联没有被强制维护，导致不一致不断累积，最后分不清谁对，这就是技术债。",
+        "found_in": "s3:p2, s3:p3",
+        "verdict": "correct",
+        "note": "说明实现改为 tree 而文档仍为 linked list，关联未维护导致不一致。",
+        "hash": "100de6a7a2db1be7"
+      },
+      {
+        "id": "q06",
+        "question": "讲师所说的 software traceability 要追踪什么，并在什么时候维持它？",
+        "expected": "文档（甚至一行）、代码、测试用例等之间的关联；在软件演进过程中持续维持。",
+        "evidence": "s-g98.0~9; s-g100.0; s-g102.0~35",
+        "from": "transcript",
+        "answer": "追踪测试用例、文档乃至文档中的某一行与代码之间的关联；在项目演进的每次小步修改中维持这些 artifact 的一致性，从一致状态走到下一版。",
+        "found_in": "s3:p3, s4:p3, s5:p2",
+        "verdict": "correct",
+        "note": "涵盖文档、代码、测试的关联及演进中的持续维护。",
+        "hash": "0166db3b17319ed5"
+      },
+      {
+        "id": "q07",
+        "question": "在讲师设想的 repo.db 中，软件部件的关系为什么不适合用文件树表达？",
+        "expected": "部件成为对象或实体；文档、实现、测试之间形成任意连接且可有环的图，超出树状结构。",
+        "evidence": "s-g110.0~27; s-g113.0; s-g114.0; s-g114.0~80",
+        "from": "transcript",
+        "answer": "代码实现文档，测试同时关联文档和代码，文档之间也有关联；这些关系是任意连接、可以有环的对象图，不能用文件树表达，所以设想放入 repo.db。",
+        "found_in": "s4:p1",
+        "verdict": "correct",
+        "note": "说明部件关系是任意连接且可有环的对象图，超出文件树。",
+        "hash": "d25ebbb3f48c118f"
+      },
+      {
+        "id": "q08",
+        "question": "讲师设想 AI 如何为一次“小步修改”生成 view？",
+        "expected": "根据聊天中的修改意图摘出相关代码、测试和文档；用适合当前任务的视图或可视化看板展示。",
+        "evidence": "s-g127.0; s-g128.0; s-g128.0~35; s-g129.2~3; s-g133.0",
+        "from": "transcript",
+        "answer": "根据本次聊天和要改的一小步，从仓库抽出相关文件、测试和文档，动态生成 view；数据仍在原处，可以用查询或可视化看板展示。修改相关联的部分后，从一致的 V0 走到 V1。",
+        "found_in": "s5:p0, s5:p1, s5:p2",
+        "verdict": "correct",
+        "note": "涵盖按修改意图抽取相关代码、测试、文档并生成任务视图。",
+        "hash": "fc07c07353a5c7b0"
+      },
+      {
+        "id": "q09",
+        "question": "有人提出“学生作业很少协作，所以很少用 rebase/merge”。讲师是否认可？他建议从哪里接触这些规范？",
+        "expected": "认可作业中场景少；建议关注外部开发社区及项目的 CONTRIBUTING.md，其中有分支、提交、PR 和线性历史等规范。",
+        "evidence": "s-g146.0; s-g146.3~18; s-g147.0; s-g150.0~2; s-g157.0; s-g169.0~10",
+        "from": "transcript",
+        "answer": "认可学生作业中协作少、使用场景少这个事实；但建议关注真实开发者社区和项目根目录的 contributing.md，从贡献指南里的分支、提交、PR 流程以及 rebase 和线性历史要求接触规范。",
+        "found_in": "s6:p0, s6:p1",
+        "verdict": "correct",
+        "note": "认可作业协作场景少，并建议从社区和贡献指南学习规范。",
+        "hash": "2347ed05bc7e1c0c"
+      },
+      {
+        "id": "q10",
+        "question": "课上 A 改文档并加测试、B 加 feature 并加测试的例子中，rebase 怎样尝试合并？什么条件下可成为线性历史？",
+        "expected": "把 B 的 feature 再把 test 依次重放到 A 后面；两条线修改无冲突且每步成功时形成线性历史。",
+        "evidence": "s-g274.0~9; s-g276.0; s-g282.0~10; s-g286.0~22; s-g287.0",
+        "from": "transcript",
+        "answer": "先尝试把 B 的 feature 重放到 A 改文档、加测试后的提交上，成功后再把 B 的 test 搬过去。若测试与 feature 不兼容或双方修改同处，就可能冲突；两条线的修改完全没有冲突时，可以一路重放成线性历史。",
+        "found_in": "s7:p2, s7:p3",
+        "verdict": "correct",
+        "note": "正确说明依次重放 feature、test，以及无冲突且重放成功时形成线性历史。",
+        "hash": "bca8c0644c30eb4d"
+      },
+      {
+        "id": "q11",
+        "question": "讲师比较普通两路 merge 和 rebase 时，原有 commit ID 如何变化？",
+        "expected": "两路 merge 保留原提交 ID 并新增合并提交 ID；rebase 改变 base，产生新的提交 ID。",
+        "evidence": "s-g294.0; s-g295.0; s-g296.0; s-g297.0; s-g300.0; s-g301.0",
+        "from": "transcript",
+        "answer": "普通两路 merge 保留原有 commit ID，另建一个合并提交 ID；rebase 改变提交的 base，每次重放都会创建新的 commit ID，历史随之改变。",
+        "found_in": "s7:p4",
+        "verdict": "correct",
+        "note": "正确区分 merge 保留原 ID、新增合并提交与 rebase 生成新 ID。",
+        "hash": "bca8c0644c30eb4d"
+      },
+      {
+        "id": "q12",
+        "question": "为什么讲师说 Git 没有把 change 当成独立的一等对象？",
+        "expected": "Git 用 commit 与其 parent 的差异表示修改；没有专门的 change 对象。",
+        "evidence": "s-g305.0; s-g305.0~41; s-g306.0",
+        "from": "transcript",
+        "answer": "Git 没有专门的 change 对象，而用一个 commit 与其 parent 之间的差异代表修改；cherry-pick、rebase 实际想操作的是修改，但仍以 commit 代替。",
+        "found_in": "s7:p4, s7:e0",
+        "verdict": "correct",
+        "note": "说明 Git 以 commit 和 parent 的差异表示修改，没有独立 change 对象。",
+        "hash": "bca8c0644c30eb4d"
+      },
+      {
+        "id": "q13",
+        "question": "按讲师介绍，Jujutsu 遇到 rebase 冲突时，相比逐步卡住的方式有什么处理思路？",
+        "expected": "把 change 及其冲突记录带下来；先完成搬移，再在结果处解决冲突。",
+        "evidence": "s-g313.0; s-g314.0~69; s-g316.0~3",
+        "from": "transcript",
+        "answer": "把冲突作为可保存的状态放进 commit，先将各个 change 带着冲突 rebase 到新位置，之后统一 resolve；不必每重放一步都卡住，带冲突的 commit 仍可继续 rebase、merge。",
+        "found_in": "s8:p0, s8:e1",
+        "verdict": "correct",
+        "note": "涵盖携带冲突完成搬移，再解决冲突的思路。",
+        "hash": "4c6b1eb06f21b7d9"
+      },
+      {
+        "id": "q14",
+        "question": "讲师用连续被高优先级 bug 打断的例子，说明 Git stash 的什么结构和管理困难？",
+        "expected": "stash 是栈；反复中断导致多层暂存，需要管理越来越深的栈。",
+        "evidence": "s-g339.0~9; s-g345.0; s-g351.0~4; s-g356.1~3",
+        "from": "transcript",
+        "answer": "git stash 是栈。手头未完成的工作被更高优先级 bug 打断，就 stash 一次；修到一半再被打断，又压一层。多层未完成修改需要管理，还可能要 rebase 这些 stash，层数多就很麻烦。",
+        "found_in": "s8:p1, s9:p2",
+        "verdict": "correct",
+        "note": "说明 stash 的栈结构及反复中断导致多层暂存的管理困难。",
+        "hash": "9792d906c109795e"
+      },
+      {
+        "id": "q16",
+        "question": "讲师认为 Agent 时代历史的价值可以从“谁写错了”转向什么？为什么仍需快照？",
+        "expected": "转向如何修好并继续前进、保留 lessons；走错方向时可回到历史快照，避免昂贵的逐步修补。",
+        "evidence": "s-g610.0~21; s-g612.0~23; s-g617.0; s-g622.0~4; s-g626.0~14; s-g629.0~5",
+        "from": "transcript",
+        "answer": "从追究谁写错了转向怎样修好、哪次变化破坏了什么以及怎样恢复，并保留演化和教训。仍需快照，因为方向走错后，退回以前的快照可能比在错误方向上逐点修补更合算。",
+        "found_in": "s12:p2, s12:p3, s12:e0",
+        "verdict": "correct",
+        "note": "涵盖修复并前进、保留教训，以及回退快照避免昂贵修补。",
+        "hash": "e43710cd7c64f6d8"
+      },
+      {
+        "id": "q17",
+        "question": "讲师为什么把 Git 类比为乐观并发控制？",
+        "expected": "先假设各自修改不冲突再开发，合并时处理冲突；人类预先沟通和划分任务使不冲突的假设通常成立。",
+        "evidence": "s-g654.0~4; s-g657.0~7; s-g666.0; s-g668.0~2",
+        "from": "transcript",
+        "answer": "因为大家先独立修改，再在 merge 或 rebase 时检测冲突；像执行事务时先假设不会冲突。人类团队事先开会分工后，通常各改各的，合并大概率顺利。",
+        "found_in": "s13:p1, s13:e0",
+        "verdict": "correct",
+        "note": "涵盖先独立修改后处理冲突，以及人类预先沟通分工的作用。",
+        "hash": "dd3b706c42db9846"
+      },
+      {
+        "id": "q18",
+        "question": "讲师提出的 Agent 悲观并发方案按什么顺序工作？任务范围已被占用时怎么办？",
+        "expected": "先锁住所需 scope，再修改并 commit、释放锁；其他 Agent 若需同一范围则等待释放。",
+        "evidence": "s-g697.0~2; s-g702.0~3; s-g703.0~26",
+        "from": "transcript",
+        "answer": "由主 Agent 先规划，子 Agent 锁住任务依赖的共享状态，再读取最新状态、修改、验证并留下可恢复的快照，最后解锁。所需范围已被占用时，必须等待前一个 Agent 释放后再上锁。",
+        "found_in": "s13:p3, s13:e1",
+        "verdict": "correct",
+        "note": "涵盖先锁定范围、修改并保存快照、释放锁，以及占用时等待。",
+        "hash": "dd3b706c42db9846"
+      },
+      {
+        "id": "q19",
+        "question": "互斥锁限制并发，为什么讲师仍认为多个 Agent 持锁时整体可以高效？",
+        "expected": "锁使冲突部分串行；仍有许多独立、不冲突的任务或线程可并行推进。",
+        "evidence": "s-g704.0~34; s-g706.0~25; s-g708.0~13; s-g710.0~7; s-g710.0~17",
+        "from": "transcript",
+        "answer": "锁只把会冲突的访问串行化；系统中还有许多互不冲突的部分可同时推进。Agent 足够多、足够快时，各自持不同的锁仍能高效工作。",
+        "found_in": "s13:p3",
+        "verdict": "correct",
+        "note": "说明冲突部分串行，独立任务仍可并行推进。",
+        "hash": "dd3b706c42db9846"
+      },
+      {
+        "id": "q20",
+        "question": "讲师认为团队扩大时沟通关系按什么规模增长？哪种工程人才因此尤其稀缺？",
+        "expected": "两两沟通关系平方级增长；能分解大任务、组织小团队并最终整合的 team leader 尤其稀缺。",
+        "evidence": "s-g737.0; s-g738.0~32; s-g740.1~2; s-g741.0",
+        "from": "transcript",
+        "answer": "沟通关系按人数的平方级增长，课件公式为 n(n-1)/2；尤其稀缺的是能把大任务分解成小团队任务并最终整合成产品的 team leader，能带小团队的人也稀缺。",
+        "found_in": "s14:p1, s14:f1",
+        "verdict": "correct",
+        "note": "涵盖平方级沟通增长及善于分解、组织和整合的 team leader。",
+        "hash": "ec0ba91d4d84b031"
+      },
+      {
+        "id": "q21",
+        "question": "课堂汉诺塔变体在普通规则之外增加了什么限制？",
+        "expected": "盘子只能沿一个指定的循环方向移动，不能反向直接移动。",
+        "evidence": "s-g753.0~28; s-g757.0; s-g759.0; s-g764.0~2; s-g767.0",
+        "from": "transcript",
+        "answer": "所有盘子只能沿一个方向移动，不能折回；演示按 A、B、C 的循环方向移动。",
+        "found_in": "s15:p0, s15:e1",
+        "verdict": "correct",
+        "note": "正确说明只能沿指定循环方向移动。",
+        "hash": "2331b2228a9ecd29"
+      },
+      {
+        "id": "q22",
+        "question": "Pico Playground 案例中，讲师想怎样用 Git 保存学生操作和 AI 点评？",
+        "expected": "学生修改、idle、运行或切换时自动提交；AI 点评可从相应提交产生分叉。",
+        "evidence": "s-g902.0; s-g903.0~40; s-g904.0",
+        "from": "transcript",
+        "answer": "学生每次编辑，在空闲、运行或切换等时机自动生成 Git 提交；请求 AI 助教时，在当时提交上产生分叉作为点评，也可用 git notes 事后挂点评而不改原提交。动作以逐行文本序列保存，利用版本历史和 diff 回放、比较操作过程。",
+        "found_in": "s16:p1, s16:e0",
+        "verdict": "correct",
+        "note": "涵盖编辑、空闲、运行或切换时自动提交，以及 AI 点评从相应提交分叉。",
+        "hash": "145b95a045cedc3c"
+      },
+      {
+        "id": "q23",
+        "question": "在 Playground 案例中，讲师打算何时再迁移数据库？",
+        "expected": "先用 Git 探索；等文件目录、commit message 格式及文件使用方式收敛后再迁移。",
+        "evidence": "s-g907.0~43; s-g910.0; s-g910.1~12",
+        "from": "transcript",
+        "answer": "先用 Git 探索，等文件目录格式、commit message 格式和文件使用约定收敛后再迁移；他还说，在遇到性能瓶颈之前不想迁到数据库。",
+        "found_in": "s16:p2, s18:p4",
+        "verdict": "correct",
+        "note": "涵盖先用 Git 探索，待目录、提交信息及文件使用约定收敛再迁移。",
+        "hash": "17e4c8c83d50af88"
+      },
+      {
+        "id": "q24",
+        "question": "讲师对项目早期是否使用 multi-agent 的明确建议是什么？",
+        "expected": "早期不要直接用 multi-agent；先找可用的最强 Agent，通过多轮对话推进。",
+        "evidence": "s-g915.0; s-g917.0~16",
+        "from": "transcript",
+        "answer": "项目早期肯定不能用 multi-agent；先找一个自己能用到的、相对最强的 Agent，由自己当包工头，与它多轮对话。",
+        "found_in": "s17:p0",
+        "verdict": "correct",
+        "note": "涵盖早期不用 multi-agent，先与可用的最强单 Agent 多轮对话。",
+        "hash": "fecb0387b0217874"
+      },
+      {
+        "id": "q25",
+        "question": "课堂问“个人助手第一个 feature 是什么”时，讨论收敛到什么需求和学习流程？",
+        "expected": "解决近期最大痛点：高效学习与复习；自动收集外部数据、层次化归档并提供良好界面。",
+        "evidence": "s-g1011.0~6; s-g1017.0; s-g1019.0; s-g1022.0; s-g1031.0~5",
+        "from": "transcript",
+        "answer": "收敛到高效学习和复习的需求：自动从外网收集资料、层次化归档并提供较好的界面；还要综合总结外部信息，根据学习进度告诉用户该学哪一部分。",
+        "found_in": "s17:p2, s17:p3",
+        "verdict": "correct",
+        "note": "涵盖高效学习复习、自动收集外部资料、层次归档和良好界面。",
+        "hash": "fecb0387b0217874"
+      },
+      {
+        "id": "q26",
+        "question": "为什么直接把开放的实验要求交给 Agent，可能得到“每条要求都做了却不是想要的东西”？",
+        "expected": "模型倾向过度遵循提示词中的具体表述；没有充分讨论真实 intent，使 specification 与 intent 有巨大差距。",
+        "evidence": "s-g968.0; s-g982.1~5; s-g992.0~1; s-g1002.0; s-g1060.0; s-g1066.0~19",
+        "from": "transcript",
+        "answer": "模型会过度遵循开放讨论稿中的每一句字面指令，但脑中的 intent 和 specification 之间有巨大缺口；若未先精心设想和讨论真正的痛点，模型会自行做设计，把示例要求逐条实现，却偏离持续为你工作的助手这个核心目的。",
+        "found_in": "s17:p2, s17:p3",
+        "verdict": "correct",
+        "note": "涵盖过度遵循字面要求及未充分讨论 intent 导致 specification 偏离。",
+        "hash": "fecb0387b0217874"
+      },
+      {
+        "id": "q27",
+        "question": "讲师怎样解释 MVP 要逼迫开发者想清楚的事？他想要的个人助手核心价值是哪两项？",
+        "expected": "明确哪些需求绝对必要；提升学习效率、提升工作效率。",
+        "evidence": "s-g1107.0~28; s-g1111.0; s-g1112.0~16; s-g1113.0",
+        "from": "transcript",
+        "answer": "MVP 逼迫开发者想清楚哪些需求是绝对要的，用最小版本验证需求，避免做出没人要的东西。个人助手的核心价值是提升学习效率和提升工作效率。",
+        "found_in": "s18:p3, s18:e1",
+        "verdict": "correct",
+        "note": "涵盖明确绝对必要需求，以及提升学习效率和工作效率。",
+        "hash": "0d63bb94627b1804"
+      },
+      {
+        "id": "q28",
+        "question": "为什么讲师认为个人助手首个 MVP 可以不带数据库？",
+        "expected": "后续可按已形成的数据组织提炼数据库；过早引入会带来重构迁移成本，文件目录更便于人直观调整。",
+        "evidence": "s-g1114.0; s-g1115.0; s-g1116.0; s-g1117.0; s-g1122.0~6",
+        "from": "transcript",
+        "answer": "可以先用熟悉、直观的文件目录管理学习资料和通知，逐步整理结构；文件系统膨胀后再让 Agent 按已有组织提炼数据库。过早引入数据库会增加 schema 的理解负担，而且每次重构都要做数据库迁移。",
+        "found_in": "s18:p3",
+        "verdict": "correct",
+        "note": "涵盖先用直观文件目录、后提炼数据库，以及过早引入的迁移成本。",
+        "hash": "0d63bb94627b1804"
+      },
+      {
+        "id": "q29",
+        "question": "课程结尾总结版本管理要记住哪三件事？",
+        "expected": "记住现在；记住历史；记住教训。",
+        "evidence": "s-g1087.0~26",
+        "from": "transcript",
+        "answer": "记住现在、记住历史、记住教训：管理当前文件，保留可恢复和分叉尝试的历史，并记录决策与失败经验，指导下一小步。",
+        "found_in": "s18:p1, s18:e0",
+        "verdict": "correct",
+        "note": "准确列出记住现在、历史、教训。",
+        "hash": "0d63bb94627b1804"
+      },
+      {
+        "id": "q30",
+        "question": "“文件装得下什么？”幻灯片的提醒示例中，spec.md 的提醒时间从多少改成多少？用于检查提醒时间的测试文件名是什么？",
+        "expected": "10 分钟改成 30 分钟；test_reminder.py。",
+        "evidence": "v000600000.jpg",
+        "from": "visual",
+        "answer": "从提前 10 分钟提醒改成提前 30 分钟提醒；测试文件名是 test_reminder.py。",
+        "found_in": "s3:e0, s3:f0",
+        "verdict": "correct",
+        "note": "准确回答 10 分钟改为 30 分钟及 test_reminder.py。",
+        "hash": "100de6a7a2db1be7"
+      },
+      {
+        "id": "q32",
+        "question": "Agent worktree 演示的“提交历史”中，slave-a 的 slop 提交声称新增多少行？该提交短哈希是什么？",
+        "expected": "5000+ 行；303bfe8。",
+        "evidence": "v002933167.jpg",
+        "from": "visual",
+        "answer": "声称新增 5000+ 行，提交说明为 slop: add 5000+ lines of generated filler；短哈希为 303bfe8。",
+        "found_in": "s11:e0, s11:e1, s11:f0",
+        "verdict": "correct",
+        "note": "准确回答 5000+ 行及短哈希 303bfe8。",
+        "hash": "c51bfacb7603c627"
+      },
+      {
+        "id": "q15",
+        "question": "讲师用什么数量级比较人类团队与 Agent 的提交速度？",
+        "expected": "人类单人修改以小时计，小团队约十分钟产生一次提交；Agent 可在秒级产生原子提交，团队容易扩到十倍或百倍。",
+        "evidence": "s-g504.0~4; s-g510.0~13; s-g514.0; s-g528.0~9; s-g531.1~42",
+        "from": "transcript",
+        "answer": "人类开发者通常以小时为单位完成修改；十几人的团队大约每十分钟产生一次提交。单个 Agent 可以分钟级、甚至秒级产生一次原子提交，而且还能轻易组成十倍、一百倍的 Agent 团队。",
+        "found_in": "s9:p1, s10:p0, s10:e0",
+        "verdict": "correct",
+        "note": "涵盖人类单人小时级、团队约十分钟一次提交、Agent 秒级原子提交及团队扩至十倍或百倍的全部关键点。",
+        "hash": "cc33ac37ce1768ca"
+      },
+      {
+        "id": "q31",
+        "question": "终端演示中，启动的 pi 工具显示的版本号是什么？其 Context 加载的是哪个文件路径？",
+        "expected": "pi v0.85.1；~/.pi/agent/AGENTS.md。",
+        "evidence": "v002640000.jpg",
+        "from": "visual",
+        "answer": "版本号是 pi v0.85.1；Context 加载的是 ~/.pi/agent/AGENTS.md。",
+        "found_in": "s10:f1",
+        "verdict": "correct",
+        "note": "版本号 pi v0.85.1 和 Context 路径 ~/.pi/agent/AGENTS.md 均与预期一致。",
+        "hash": "62ed1857c8b6598b"
+      }
+    ],
+    "question_author": "independent_agent",
+    "answerer": "independent_agent",
+    "author_model": "gpt-6.1-sol",
+    "answerer_model": "gpt-6.1-sol"
+  }
+}

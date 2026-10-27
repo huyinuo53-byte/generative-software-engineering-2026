@@ -1,0 +1,634 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "d1106a7e5fea949397dc3359f6ed181da5cdcf28bff44254f9fb7f2473897019",
+  "writer_model": "grok-4.7-high",
+  "precision": {
+    "items": [
+      {
+        "ref": "map",
+        "verdict": "supported",
+        "evidence": "s-g1.0; s-g3.0~25; s-g5.0~16; s-g8.0; s-g13.0; s-g18.0; s-g19.0~29; s-g22.0~53",
+        "note": "顺序及主题均与完整讲稿相符；明确排除了图上额外内容。",
+        "hash": "e728ab3b3dad2d91"
+      },
+      {
+        "ref": "s1:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1.0; s-g3.0~25; s-g5.0~5",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "f6a866af6bfcde83"
+      },
+      {
+        "ref": "s1:visual",
+        "verdict": "supported",
+        "evidence": "s-g1.0; s-g3.0~25; s-g5.0~5",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "cfecc271b799f285"
+      },
+      {
+        "ref": "s1:n0",
+        "verdict": "supported",
+        "evidence": "s-g1.0; s-g3.0~25; s-g5.0~5; v000005000.jpg",
+        "note": "所列画面文字可见，且与口播的区别说明有据。",
+        "hash": "46ae0917d0150af6"
+      },
+      {
+        "ref": "s1:n1",
+        "verdict": "supported",
+        "evidence": "s-g1.0; s-g3.0~25; s-g5.0~5; v000005000.jpg",
+        "note": "讲稿确实只列三种豆包用途，未进一步称为自动出题、一键回答或机器批改。",
+        "hash": "1a48f6ba5efc8316"
+      },
+      {
+        "ref": "s1:f0",
+        "verdict": "supported",
+        "evidence": "v000005000.jpg",
+        "note": "画面中的文字与构图支持该描述；此处明确记述画面，未冒充口播。",
+        "hash": "b92a1392f022aa7a"
+      },
+      {
+        "ref": "s2:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g5.0~16; s-g7.0~7",
+        "note": "概括或引述与对应口播一致。 保留的异常措辞与所给转写一致，不据画面擅自校正。",
+        "hash": "8103df498ed7070f"
+      },
+      {
+        "ref": "s2:visual",
+        "verdict": "supported",
+        "evidence": "s-g5.0~16; s-g7.0~7",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "b6f51a4080737c47"
+      },
+      {
+        "ref": "s2:p1",
+        "verdict": "supported",
+        "evidence": "s-g5.0~16; s-g7.0~7",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "edc4e06a434f3e24"
+      },
+      {
+        "ref": "s2:n0",
+        "verdict": "supported",
+        "evidence": "s-g5.0~16; s-g7.0~7; v000044000.jpg",
+        "note": "所列画面文字可见，且与口播的区别说明有据。",
+        "hash": "1097a5e1a8900ccf"
+      },
+      {
+        "ref": "s2:f0",
+        "verdict": "supported",
+        "evidence": "v000044000.jpg",
+        "note": "画面中的文字与构图支持该描述；此处明确记述画面，未冒充口播。",
+        "hash": "973759bc8a56adf6"
+      },
+      {
+        "ref": "s3:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g8.0",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "ffcb0934f9623dcd"
+      },
+      {
+        "ref": "s3:visual",
+        "verdict": "supported",
+        "evidence": "s-g8.0",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "57ac127f09191214"
+      },
+      {
+        "ref": "s3:n0",
+        "verdict": "supported",
+        "evidence": "s-g8.0; v000063000.jpg",
+        "note": "所列画面文字可见，且与口播的区别说明有据。",
+        "hash": "79eee6dbdbd29640"
+      },
+      {
+        "ref": "s3:p0",
+        "verdict": "supported",
+        "evidence": "s-g8.0",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "40cef5b91482a1cc"
+      },
+      {
+        "ref": "s3:f0",
+        "verdict": "supported",
+        "evidence": "v000063000.jpg",
+        "note": "画面中的文字与构图支持该描述；此处明确记述画面，未冒充口播。",
+        "hash": "edd9eb7e1fe6e55f"
+      },
+      {
+        "ref": "s4:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g10.0~4; s-g11.0; s-g13.0; s-g15.0~24",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "22804cad985e48a7"
+      },
+      {
+        "ref": "s4:visual",
+        "verdict": "supported",
+        "evidence": "s-g10.0~4; s-g11.0; s-g13.0; s-g15.0~24",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "08d1643a050d169b"
+      },
+      {
+        "ref": "s4:n0",
+        "verdict": "supported",
+        "evidence": "s-g10.0~4; s-g11.0; s-g13.0; s-g15.0~24; v000074000.jpg",
+        "note": "所列画面文字可见，且与口播的区别说明有据。 保留的异常措辞与所给转写一致，不据画面擅自校正。",
+        "hash": "09788bfec5a69d91"
+      },
+      {
+        "ref": "s4:p1",
+        "verdict": "supported",
+        "evidence": "s-g10.0~4; s-g11.0; s-g13.0; s-g15.0~24",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "3ac4b6d003545717"
+      },
+      {
+        "ref": "s4:f0",
+        "verdict": "supported",
+        "evidence": "v000074000.jpg",
+        "note": "画面中的文字与构图支持该描述；此处明确记述画面，未冒充口播。",
+        "hash": "150550abec777377"
+      },
+      {
+        "ref": "s5:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g18.0; s-g19.0~29",
+        "note": "概括或引述与对应口播一致。 “无意义的内卷状态”接在 s-g19.0~29 开头。",
+        "hash": "b0569e982eb3c604"
+      },
+      {
+        "ref": "s5:p1",
+        "verdict": "supported",
+        "evidence": "s-g18.0; s-g19.0~29",
+        "note": "概括或引述与对应口播一致。 “无意义的内卷状态”接在 s-g19.0~29 开头。",
+        "hash": "47e05c8bce2d4a23"
+      },
+      {
+        "ref": "s5:p0",
+        "verdict": "supported",
+        "evidence": "s-g18.0; s-g19.0~29",
+        "note": "概括或引述与对应口播一致。 “无意义的内卷状态”接在 s-g19.0~29 开头。",
+        "hash": "a4d69ae04fbcb225"
+      },
+      {
+        "ref": "s5:f0",
+        "verdict": "supported",
+        "evidence": "v000130000.jpg",
+        "note": "画面中的文字与构图支持该描述；此处明确记述画面，未冒充口播。 “无意义的内卷状态”接在 s-g19.0~29 开头。",
+        "hash": "7cd20d14675df9bf"
+      },
+      {
+        "ref": "s6:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g19.0~29; s-g21.0~23; s-g22.0~53",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "c1283867694294a7"
+      },
+      {
+        "ref": "s6:visual",
+        "verdict": "supported",
+        "evidence": "s-g19.0~29; s-g21.0~23; s-g22.0~53",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "29fcc45cc281106f"
+      },
+      {
+        "ref": "s6:p2",
+        "verdict": "supported",
+        "evidence": "s-g19.0~29; s-g21.0~23; s-g22.0~53",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "4a95366f57f21393"
+      },
+      {
+        "ref": "q1",
+        "verdict": "supported",
+        "evidence": "s-g1.0; s-g3.0~25; s-g5.0~5",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "b144f0eb74a40872"
+      },
+      {
+        "ref": "q2",
+        "verdict": "supported",
+        "evidence": "s-g5.0~16; s-g7.0~7",
+        "note": "概括或引述与对应口播一致。 保留的异常措辞与所给转写一致，不据画面擅自校正。",
+        "hash": "d9d024ad74615e0a"
+      },
+      {
+        "ref": "q3",
+        "verdict": "supported",
+        "evidence": "s-g8.0",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "4a33b86cd356b91c"
+      },
+      {
+        "ref": "q4",
+        "verdict": "supported",
+        "evidence": "s-g10.0~4; s-g11.0; s-g13.0; s-g15.0~24",
+        "note": "概括或引述与对应口播一致。 保留的异常措辞与所给转写一致，不据画面擅自校正。",
+        "hash": "8609523cc53c321b"
+      },
+      {
+        "ref": "q5",
+        "verdict": "supported",
+        "evidence": "s-g10.0~4; s-g11.0; s-g13.0; s-g15.0~24",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "b74cf91ad7457cde"
+      },
+      {
+        "ref": "q6",
+        "verdict": "supported",
+        "evidence": "s-g18.0; s-g19.0~29",
+        "note": "概括或引述与对应口播一致。 “无意义的内卷状态”接在 s-g19.0~29 开头。",
+        "hash": "8cc1d2a251b9ad5c"
+      },
+      {
+        "ref": "q7",
+        "verdict": "supported",
+        "evidence": "s-g19.0~29; s-g21.0~23; s-g22.0~53",
+        "note": "概括或引述与对应口播一致。",
+        "hash": "3d1471c8170ef796"
+      },
+      {
+        "ref": "s5:visual",
+        "verdict": "supported",
+        "evidence": "s-g18.0; s-g19.0~29",
+        "note": "简历标准化、科研项目竞赛包装、slop、硬实力不自信与找补均有口播依据；句末‘无意义的内卷’在下一句开头接续。",
+        "hash": "cbe76d8f02120276"
+      },
+      {
+        "ref": "s6:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000152000.jpg",
+        "note": "所列标题、分区、路牌和各项文字均与画面一致；右下角头像确实遮挡右列第三行，未臆补遮挡内容。",
+        "hash": "58c79c454bd006ff"
+      },
+      {
+        "ref": "s6:n0",
+        "verdict": "supported",
+        "evidence": "s-g19.0~29; s-g21.0~23; s-g22.0~53; frames/v000152000.jpg",
+        "note": "准确区分了转写原句、口播的 read the friendly manual 与图中的 Read the Manual；补充的术语、学期目标及左右列文字均可在图中核实。",
+        "hash": "4752d3018cfa69b1"
+      }
+    ],
+    "reviewer": "independent_agent",
+    "reviewer_model": "gpt-6.1-sol",
+    "method": "prepare packets: all takeaways/explainers + per-section sample; 38 judged in latest round; 3 judged in latest round"
+  },
+  "recall": {
+    "items": [
+      {
+        "id": "q01",
+        "question": "讲者开头如何判断当前大学的问题：是局部问题还是系统性问题？",
+        "expected": "明确认为大学的崩溃是系统性的。",
+        "evidence": "s-g1.0",
+        "from": "transcript",
+        "answer": "讲者认为当前大学的崩溃是系统性的，并说明这是他自己的理解。",
+        "found_in": "s1:p0",
+        "verdict": "correct",
+        "note": "明确指出大学的崩溃是系统性的。",
+        "hash": "2a738833869ec340"
+      },
+      {
+        "id": "q02",
+        "question": "讲者举了哪两所大学，说明网上可能有比本校更好的学习资料？",
+        "expected": "Stanford；MIT。",
+        "evidence": "s-g1.0",
+        "from": "transcript",
+        "answer": "Stanford（斯坦福大学）和 MIT（麻省理工学院）。",
+        "found_in": "s1:p0",
+        "verdict": "correct",
+        "note": "完整列出 Stanford 和 MIT。",
+        "hash": "2a738833869ec340"
+      },
+      {
+        "id": "q03",
+        "question": "为什么有顶尖网课，学生仍可能同时拒绝本校老师和网课？",
+        "expected": "因资源比较而本能拒绝老师；无人督促时容易摸鱼，连优质网课也不学。",
+        "evidence": "s-g1.0; s-g3.0~25",
+        "from": "transcript",
+        "answer": "学生觉得网上资料更好，会本能地拒绝本校老师；但没有人督促时又容易摸鱼，于是也拒绝了优质网课。",
+        "found_in": "s1:p0, s1:p1",
+        "verdict": "correct",
+        "note": "涵盖资源比较导致拒绝老师，以及无人督促时摸鱼、不学网课。",
+        "hash": "2a738833869ec340"
+      },
+      {
+        "id": "q04",
+        "question": "讲者所说的“豆包”恶性循环包含哪三个角色，各自用它做什么？",
+        "expected": "老师用豆包出题；学生用豆包做作业；助教用豆包改作业。",
+        "evidence": "s-g3.0~25",
+        "from": "transcript",
+        "answer": "老师用豆包出题，学生用豆包做作业，助教用豆包改作业。",
+        "found_in": "s1:p1",
+        "verdict": "correct",
+        "note": "三个角色及各自用途全部正确。",
+        "hash": "2a738833869ec340"
+      },
+      {
+        "id": "q05",
+        "question": "“豆包”循环的流程体验和参与者的心理感受分别如何？",
+        "expected": "流程很丝滑；大家仍然焦虑。",
+        "evidence": "s-g3.0~25; s-g5.0~5",
+        "from": "transcript",
+        "answer": "流程很丝滑，但参与者仍然焦虑。",
+        "found_in": "s1:p2",
+        "verdict": "correct",
+        "note": "涵盖流程丝滑和参与者仍焦虑。",
+        "hash": "2a738833869ec340"
+      },
+      {
+        "id": "q06",
+        "question": "讲者提出的第一种焦虑，要平衡哪两类利益？",
+        "expected": "短期利益与长期利益。",
+        "evidence": "s-g5.0~16",
+        "from": "transcript",
+        "answer": "短期利益和长期利益。",
+        "found_in": "s2:p0",
+        "verdict": "correct",
+        "note": "正确指出短期利益与长期利益。",
+        "hash": "611e49534d36ed3f"
+      },
+      {
+        "id": "q07",
+        "question": "讲者用过去的实验经历说明 AI 带来了什么诱惑？",
+        "expected": "过去实验调 bug 常到凌晨；现在豆包能搞定，诱惑学生把实验交给 AI。",
+        "evidence": "s-g5.0~16",
+        "from": "transcript",
+        "answer": "以前折磨人的实验 bug 要天天调到凌晨，现在豆包都能搞定，带来把实验和作业交给 AI 的诱惑。",
+        "found_in": "s2:p0",
+        "verdict": "correct",
+        "note": "涵盖过去调 bug 到凌晨，以及如今将实验交给 AI 的诱惑。",
+        "hash": "611e49534d36ed3f"
+      },
+      {
+        "id": "q08",
+        "question": "宿舍同学秒交作业去找女朋友的例子，说明亲自做实验的人为什么觉得“不值”？",
+        "expected": "别人迅速交作业就能娱乐；自己仍需花时间写代码，产生比较和不公平感。",
+        "evidence": "s-g5.0~16; s-g7.0~7",
+        "from": "transcript",
+        "answer": "自己还在写代码、做实验，宿舍同学却能秒交作业去找女朋友，因此觉得自己投入这些时间很不值。",
+        "found_in": "s2:p1",
+        "verdict": "correct",
+        "note": "涵盖同学秒交后娱乐与自己仍花时间写代码的比较。",
+        "hash": "611e49534d36ed3f"
+      },
+      {
+        "id": "q09",
+        "question": "如果选择不亲自做实验，讲者说学生又会担心什么？",
+        "expected": "担心自己没学懂；后面的课程学不会。",
+        "evidence": "s-g7.0~7",
+        "from": "transcript",
+        "answer": "担心自己没有学懂，导致后面的课学不会。",
+        "found_in": "s2:p1",
+        "verdict": "correct",
+        "note": "涵盖没学懂及后续课程学不会的担忧。",
+        "hash": "611e49534d36ed3f"
+      },
+      {
+        "id": "q10",
+        "question": "第二种焦虑是什么？沿用中学的哪种做法却没有得到想要的结果？",
+        "expected": "担忧毕业出路；延续听老师话的状态，却未获得预期结果。",
+        "evidence": "s-g8.0",
+        "from": "transcript",
+        "answer": "第二种焦虑是如何找到毕业的出路；延续中学时代听老师话的状态，却没有得到想要的东西。",
+        "found_in": "s3:p0",
+        "verdict": "correct",
+        "note": "涵盖毕业出路焦虑、沿用听老师话的做法及结果未达预期。",
+        "hash": "fb1ad08cce6ddea2"
+      },
+      {
+        "id": "q11",
+        "question": "在第二种焦虑的例子里，使用 AI 的宿舍同学有哪些表现会加剧焦虑？",
+        "expected": "学得很快，谈论的内容自己听不懂；将要保研。",
+        "evidence": "s-g8.0",
+        "from": "transcript",
+        "answer": "同学有了 AI 后学东西很快，说的话自己都听不懂，而且要保研了。",
+        "found_in": "s3:p0",
+        "verdict": "correct",
+        "note": "涵盖学得快、谈论内容听不懂和即将保研。",
+        "hash": "fb1ad08cce6ddea2"
+      },
+      {
+        "id": "q26",
+        "question": "开头四分区幻灯片中，“连锁反应”的多米诺骨牌在“学生流失”前后紧邻的两块分别写着什么？",
+        "expected": "前一块是“科研经费缩减”；后一块是“管理僵化”。",
+        "evidence": "v000005000.jpg",
+        "from": "visual",
+        "answer": "按笔记列出的骨牌顺序，“学生流失”前是“科研经费缩减”，后是“管理僵化”。",
+        "found_in": "s1:f0",
+        "verdict": "correct",
+        "note": "前后相邻骨牌均正确。",
+        "hash": "2a738833869ec340"
+      },
+      {
+        "id": "q12",
+        "question": "讲者在什么招生联系场景中收到很多简历？其中一些投递有什么特点？",
+        "expected": "学生为保研联系导师；有些简历是海投。",
+        "evidence": "s-g10.0~4",
+        "from": "transcript",
+        "answer": "在学生保研、套导师的联系场景中，他收到很多简历，其中一些是海投的。",
+        "found_in": "s4:p0",
+        "verdict": "correct",
+        "note": "涵盖保研联系导师及部分简历为海投。",
+        "hash": "3c73bb41126c11d6"
+      },
+      {
+        "id": "q13",
+        "question": "展示简历前，讲者让 agent 如何做匿名处理？",
+        "expected": "直接把 PDF 中带个人信息的内容换成 Unicode 方块。",
+        "evidence": "s-g11.0",
+        "from": "transcript",
+        "answer": "让 agent 直接把 PDF 里带信息的内容都替换成 unicode 方块。",
+        "found_in": "s4:e0",
+        "verdict": "correct",
+        "note": "准确说明将 PDF 中个人信息替换为 Unicode 方块。",
+        "hash": "3c73bb41126c11d6"
+      },
+      {
+        "id": "q14",
+        "question": "这份简历乍看“完美”，具有哪三方面的亮点？",
+        "expected": "成绩不错；有项目和奖项；有一篇 accepted 的论文。",
+        "evidence": "s-g11.0",
+        "from": "transcript",
+        "answer": "成绩不错；有项目、有奖项；还有一篇 accepted 的论文。",
+        "found_in": "s4:e0",
+        "verdict": "correct",
+        "note": "涵盖成绩、项目和奖项、已录用论文三方面亮点。",
+        "hash": "3c73bb41126c11d6"
+      },
+      {
+        "id": "q15",
+        "question": "讲者随后指出这份简历缺少哪三种可以进一步了解其工作的入口？",
+        "expected": "GitHub 链接；个人主页；preprint。",
+        "evidence": "s-g13.0",
+        "from": "transcript",
+        "answer": "GitHub 链接（转写为“GitHub 论阶”）、个人主页和 preprint。",
+        "found_in": "s4:p1, s4:n0",
+        "verdict": "correct",
+        "note": "完整列出 GitHub 链接、个人主页和 preprint。",
+        "hash": "3c73bb41126c11d6"
+      },
+      {
+        "id": "q16",
+        "question": "讲者用什么问题／方法的标题模板讽刺“学术裁缝”？",
+        "expected": "“基于 A 的 B 问题”；“C 限定下的 D 方法”。",
+        "evidence": "s-g13.0; s-g15.0~24",
+        "from": "transcript",
+        "answer": "“基于 A 的 B 问题，C 限定下的 D 方法”，还硬要搞一篇论文。",
+        "found_in": "s4:p2",
+        "verdict": "correct",
+        "note": "准确复述两种标题模板。",
+        "hash": "3c73bb41126c11d6"
+      },
+      {
+        "id": "q17",
+        "question": "讲者怀疑简历来自辅导工厂，这是已证实的事实还是他的怀疑？他提到哪个平台也有相关教程？",
+        "expected": "只是讲者的怀疑；提到 B 站有教做“学术裁缝”的视频。",
+        "evidence": "s-g13.0",
+        "from": "transcript",
+        "answer": "只是他的怀疑，并未证实；他提到 B 站还有专门教做“学术裁缝”的视频。",
+        "found_in": "s4:p1",
+        "verdict": "correct",
+        "note": "明确为未经证实的怀疑，并指出 B 站教程。",
+        "hash": "3c73bb41126c11d6"
+      },
+      {
+        "id": "q18",
+        "question": "相比“学术裁缝”，讲者说哪种项目的简历可能让他感觉更好？为什么？",
+        "expected": "自己做了一个 galgame；更像为了自己学习，而非被评价体系逼着 reward hacking。",
+        "evidence": "s-g15.0~24",
+        "from": "transcript",
+        "answer": "做了 galgame 的项目简历可能让他感觉更好，因为更像是为了自己学习，而不是被评价体系逼着 reward hacking。",
+        "found_in": "s4:p2",
+        "verdict": "correct",
+        "note": "指出 galgame 项目，并说明自主学习与评价体系驱动的区别。",
+        "hash": "3c73bb41126c11d6"
+      },
+      {
+        "id": "q19",
+        "question": "结合讲者的例子，“reward hacking”指怎样的学习／项目动机？",
+        "expected": "为迎合评价体系和获取利益、加分而包装产出；并非出于自身学习兴趣。",
+        "evidence": "s-g15.0~24; s-g18.0",
+        "from": "transcript",
+        "answer": "指被评价体系和利益驱动，为了获得评价上的加分而做项目、硬凑论文，即使题目开局就注定死掉，而不是出于自己的学习兴趣。",
+        "found_in": "s4:p1, s4:p2",
+        "verdict": "correct",
+        "note": "准确说明为评价加分和利益包装产出，而非自身学习兴趣。",
+        "hash": "3c73bb41126c11d6"
+      },
+      {
+        "id": "q20",
+        "question": "讲者为什么认为学生会拼命把科研、项目和竞赛塞进标准化简历？",
+        "expected": "担心不按标准包装就找不到下家；对硬实力不自信，转而找加分项补偿。",
+        "evidence": "s-g18.0",
+        "from": "transcript",
+        "answer": "因为他们觉得简历不做成标准化包装、用 slop 写满科研、项目和竞赛，就找不到下家；本质上是对自己的硬实力不自信，于是在能加分的地方疯狂找补，进入无意义的内卷。",
+        "found_in": "s5:p0, s5:p1",
+        "verdict": "correct",
+        "note": "涵盖找不到下家的担忧及对硬实力不自信而寻找加分项。",
+        "hash": "ba88d87df48c5f81"
+      },
+      {
+        "id": "q21",
+        "question": "讲者认为大学最需要什么课程？这种课程应带来哪三个结果？",
+        "expected": "启蒙课程；打好学科基础、找到自信、解锁新的人生可能性。",
+        "evidence": "s-g19.0~29",
+        "from": "transcript",
+        "answer": "最需要启蒙课程，带来三个结果：打好学科基础、找到自信、解锁新的人生可能性。",
+        "found_in": "s6:p0",
+        "verdict": "correct",
+        "note": "准确指出启蒙课程及三个预期结果。",
+        "hash": "8180ef09016a3035"
+      },
+      {
+        "id": "q22",
+        "question": "讲者以前在哪两门课中采用过这种启蒙和建立自信的思路？",
+        "expected": "计算机系统基础；操作系统。",
+        "evidence": "s-g19.0~29; s-g21.0~23",
+        "from": "transcript",
+        "answer": "计算机系统基础和操作系统。",
+        "found_in": "s6:p0",
+        "verdict": "correct",
+        "note": "两门课程名称均正确。",
+        "hash": "8180ef09016a3035"
+      },
+      {
+        "id": "q23",
+        "question": "讲者如何形容建立自信的过程？第一节课就要学生做什么？",
+        "expected": "过程挺痛苦；学习 read the friendly manual，即阅读手册。",
+        "evidence": "s-g21.0~23",
+        "from": "transcript",
+        "answer": "他说建立自信的过程挺痛苦，第一节课就要教学生 read the friendly manual（读手册）。",
+        "found_in": "s6:p1",
+        "verdict": "correct",
+        "note": "涵盖过程痛苦及第一节课学习阅读手册。",
+        "hash": "8180ef09016a3035"
+      },
+      {
+        "id": "q24",
+        "question": "本课程计划用多长时间，一起学习什么并做什么？",
+        "expected": "一个学期；学习驾驭 AI；做真正有趣的东西。",
+        "evidence": "s-g21.0~23",
+        "from": "transcript",
+        "answer": "用一个学期，一起学习怎么驾驭 AI，并做一些真正有趣的东西。",
+        "found_in": "s6:p2",
+        "verdict": "correct",
+        "note": "涵盖一个学期、驾驭 AI 和做真正有趣的东西。",
+        "hash": "8180ef09016a3035"
+      },
+      {
+        "id": "q25",
+        "question": "讲者如何界定课程内容的权威性？对反对意见和建议持什么态度？",
+        "expected": "主题全新，内容是自己的个人理解；欢迎反对意见和建议，并会认真考虑。",
+        "evidence": "s-g21.0~23; s-g22.0~53",
+        "from": "transcript",
+        "answer": "因为主题全新，他把课程内容视为自己的个人理解；非常欢迎反对意见和建议，并会认真考虑。",
+        "found_in": "s6:p2",
+        "verdict": "correct",
+        "note": "涵盖主题全新、个人理解，以及欢迎并认真考虑反对意见和建议。",
+        "hash": "8180ef09016a3035"
+      },
+      {
+        "id": "q27",
+        "question": "展示的匿名简历中，毕业时间具体写的是哪年哪月？第一个科研项目的起止年月是什么？",
+        "expected": "毕业时间为 2027.6；第一个科研项目为 2025.6–2026.1。",
+        "evidence": "v000090000.jpg",
+        "from": "visual",
+        "answer": "毕业时间是 2027 年 6 月；第一个科研项目的起止时间是 2025 年 6 月至 2026 年 1 月。",
+        "found_in": "s4:n2, s4:f1",
+        "verdict": "correct",
+        "note": "毕业年月和首个科研项目起止年月均准确。",
+        "hash": "3c73bb41126c11d6"
+      },
+      {
+        "id": "q28",
+        "question": "匿名简历第一个科研项目的职责段中，定制化 Hybrid MoE 结构混合了哪两种注意力？",
+        "expected": "线性注意力；softmax 注意力。",
+        "evidence": "v000090000.jpg",
+        "from": "visual",
+        "answer": "线性注意力与 softmax 注意力。",
+        "found_in": "s4:n2, s4:f1",
+        "verdict": "correct",
+        "note": "准确列出线性注意力和 softmax 注意力。",
+        "hash": "3c73bb41126c11d6"
+      },
+      {
+        "id": "q29",
+        "question": "结尾幻灯片“学期目标”栏列出的三项目标分别是什么？",
+        "expected": "驾驭工具；人机协作；激发潜能。",
+        "evidence": "v000152000.jpg",
+        "from": "visual",
+        "answer": "驾驭工具、人机协作、激发潜能。",
+        "found_in": "s6:n0, s6:f0",
+        "verdict": "correct",
+        "note": "完整列出驾驭工具、人机协作、激发潜能。",
+        "hash": "8180ef09016a3035"
+      }
+    ],
+    "question_author": "independent_agent",
+    "answerer": "independent_agent",
+    "author_model": "gpt-6.1-sol",
+    "answerer_model": "gpt-6.1-sol"
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1JGap6LE74-20261027T1805Z",
+  "item": {
+    "video_id": "BV1JGap6LE74",
+    "source_url": "https://www.bilibili.com/video/BV1JGap6LE74",
+    "title": "生成式软件工程 07｜需求和架构 (2)"
+  },
+  "scope": {
+    "requested": "单课完整笔记 + 手绘图解，从原始转写和视频重写",
+    "materials": false,
+    "changes": []
+  },
+  "toolchain": {
+    "baocut": null,
+    "asr_model": null,
+    "skill_commit": null,
+    "writing_model": "grok-4.7-high",
+    "image_model": "gpt-6.1-sol",
+    "notes": "离线复用用户提供的 BaoCut transcript.json 与预生成 chunks/frames；skill_commit 未知因为工作目录不是 git 仓库，且不读取 skill 目录外的 git 信息"
+  },
+  "artifacts": [
+    {
+      "id": "transcript",
+      "path": "transcript.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "reused",
+      "basis": "同一视频 BaoCut 导出，复制进 run，未改 raw"
+    },
+    {
+      "id": "index",
+      "path": "chunks/index.json",
+      "depends_on": [
+        "transcript"
+      ],
+      "role": "source",
+      "origin": "reused",
+      "basis": "用户预生成的 course_notes.py chunks，未重跑"
+    },
+    {
+      "id": "frames",
+      "path": "frames/candidates.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "reused",
+      "basis": "用户预生成的 frames.py scan，阈值 0.3 + 60 秒兜底"
+    },
+    {
+      "id": "notes",
+      "path": "notes.json",
+      "depends_on": [
+        "index",
+        "frames"
+      ]
+    },
+    {
+      "id": "visuals",
+      "path": "visuals/index.json",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "derived"
+    },
+    {
+      "id": "renderer",
+      "path": "renderer-note.txt",
+      "depends_on": [],
+      "role": "tool"
+    },
+    {
+      "id": "html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "notes",
+        "renderer"
+      ]
+    },
+    {
+      "id": "fidelity_eval",
+      "path": "fidelity-eval.json",
+      "depends_on": [
+        "notes",
+        "transcript",
+        "frames"
+      ]
+    }
+  ],
+  "log": [
+    {
+      "at": "2026-10-27T18:06:57.029461+00:00",
+      "occurred_at": null,
+      "stage": "scope",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "单课 BV1JGap6LE74，交付目录为 ./课堂笔记，不读推荐材料",
+      "evidence": "manifest.json"
+    },
+    {
+      "at": "2026-10-27T18:06:57.049090+00:00",
+      "occurred_at": null,
+      "stage": "asr",
+      "status": "reused",
+      "attempt": null,
+      "job_id": null,
+      "detail": "复用 BaoCut 导出 transcript.json，复制进 run，未改 raw",
+      "evidence": "transcript.json"
+    },
+    {
+      "at": "2026-10-27T18:06:57.068955+00:00",
+      "occurred_at": null,
+      "stage": "chunks",
+      "status": "reused",
+      "attempt": null,
+      "job_id": null,
+      "detail": "复用预生成 chunks，20 块 909 句，未重跑 course_notes.py chunks",
+      "evidence": "chunks/index.json"
+    },
+    {
+      "at": "2026-10-27T18:06:57.088416+00:00",
+      "occurred_at": null,
+      "stage": "frames",
+      "status": "reused",
+      "attempt": null,
+      "job_id": null,
+      "detail": "复用预生成换页候选：threshold 0.3 + 60s 兜底，未重跑 scan",
+      "evidence": "frames/candidates.json"
+    },
+    {
+      "at": "2026-10-27T18:06:57.108092+00:00",
+      "occurred_at": null,
+      "stage": "scaffold",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "v3 骨架 20 节占位，待按主题重分",
+      "evidence": "notes.json"
+    },
+    {
+      "at": "2026-10-27T18:22:04.147968+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "failed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "10 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:26:18.649425+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:26:36.624849+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "20 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-07/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T18:26:38.988533+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-07/cursor/ws/课堂笔记/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T18:26:39.010731+00:00",
+      "occurred_at": null,
+      "stage": "notes",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "20 sections, 909 sentences, validate passed",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:26:39.030320+00:00",
+      "occurred_at": null,
+      "stage": "visuals",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "8 section cards + map, illustrate.py fit",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:26:39.050253+00:00",
+      "occurred_at": null,
+      "stage": "html",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "rendered 课堂笔记.html",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:30:16.820045+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:30:27.116794+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "20 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-07/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T18:30:29.471750+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-07/cursor/ws/课堂笔记/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T18:32:24.261271+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 0.9536, recall 1.0",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-07/cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T18:34:09.088816+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:34:09.128136+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 0.9536, recall 1.0",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-07/cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T18:34:11.568740+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/private/var/folders/j6/0wknd5xs1sj5_xnqkgjdj8zm0000gn/T/tmp7_y6yvsq/html-check.json"
+    }
+  ],
+  "issues": [],
+  "status": {
+    "outcome": "completed",
+    "known_gaps": [
+      "换页用场景阈值 0.3 加 60 秒抽样，短于一分钟的幻灯片可能没被抓到；助手生成的密页没有逐字转录。",
+      "没有对照论文原文核对 MVC、Codd、RFC 1958，只记录口述和画面上的字。讲师姓名没有在口播里出现。",
+      "页面检查是无头 Chrome 的 390 与 1280 宽度，不是真机。",
+      "保真抽查有 7 条 partial、1 条 unsupported，都是编者注；它们引用的画面不在该节抽到的那一帧里，对应句子仍写在帧图注中。"
+    ],
+    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors"
+  },
+  "revisions": [
+    {
+      "rev": 1,
+      "at": "2026-10-27T18:32:55.808295+00:00",
+      "reason": "完整笔记、图解、HTML 与外部模型保真评测达标",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "transcript.json",
+          "sha256": "ebd3c6335ba9ce3e8f2df278562d25aec14c59ae787b28f91743785ef955e752",
+          "bytes": 4560609
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "63150906724b3e42af26ba5847261e4d5f76d968b09b8f2e3176eb39c81545fc",
+          "bytes": 98706
+        },
+        "frames": {
+          "path": "frames/candidates.json",
+          "sha256": "51bf9f18898160f5eac8098e0ba12e4f30c5cdcb605e1597567192c2c05313e3",
+          "bytes": 10273
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "17c5461cf7fb58931112be34bf6e97e099ddbaf47aa45833b67951944d6c1c9a",
+          "bytes": 135622
+        },
+        "visuals": {
+          "path": "visuals/index.json",
+          "sha256": "07e08f00639bc8c4ad859673735d04b52115fccb774a6cfedd18acf2505d0324",
+          "bytes": 1388
+        },
+        "renderer": {
+          "path": "renderer-note.txt",
+          "sha256": "4f0d45ea7caae58a25af6ab2c3fae625d7861ccfafe56dd9d9cb99d3c293fdd3",
+          "bytes": 275
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "9ca16d78ef92991159fab81a2f9562b75732a8b755a2083f661ce1f9639e1ddb",
+          "bytes": 7762841
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "7f17e4f60b9d16df886d2d506289cb31a2e8bb42379e0ee7b5f017bc6807275d",
+          "bytes": 52919
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9536,
+        "recall": 1.0,
+        "precision_items": 97,
+        "recall_items": 29,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": null
+    }
+  ]
+}

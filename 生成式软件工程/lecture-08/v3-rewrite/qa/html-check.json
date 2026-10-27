@@ -1,0 +1,44 @@
+{
+  "html": "/Users/evahu/model-eval/course-rerun/runs/lecture-08/cursor/ws/课堂笔记/课堂笔记.html",
+  "status": "passed",
+  "browser": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "static": {
+    "sections": 17,
+    "images": 43,
+    "explainers": 11,
+    "internal_anchors": 49,
+    "problems": []
+  },
+  "widths": {
+    "390": {
+      "width": 390,
+      "scroll_width": 390,
+      "overflow": false,
+      "broken_images": [],
+      "modes": [
+        "visual",
+        "full"
+      ],
+      "interaction": "ok",
+      "overflow_expanded": false,
+      "errors": [],
+      "screenshot": "shot-390.png"
+    },
+    "1280": {
+      "width": 1280,
+      "scroll_width": 1280,
+      "overflow": false,
+      "broken_images": [],
+      "modes": [
+        "visual",
+        "full"
+      ],
+      "interaction": "ok",
+      "overflow_expanded": false,
+      "errors": [],
+      "screenshot": "shot-1280.png"
+    }
+  },
+  "problems": [],
+  "scope": "Emulated widths in headless Chrome, not a real phone; reading quality still needs a human look."
+}

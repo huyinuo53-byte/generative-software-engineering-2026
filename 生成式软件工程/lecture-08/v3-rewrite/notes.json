@@ -1,0 +1,1351 @@
+{
+  "schema_version": 3,
+  "title": "生成式软件工程 08｜Agent-native 开发",
+  "course_title": "生成式软件工程",
+  "issue": "第 8 课",
+  "heading": "Agent-native 开发",
+  "subtitle": "自己做一个会停下来的循环，再用仓库里的检查拦住 agent 的偏执",
+  "source_url": "https://www.bilibili.com/video/BV11LWw6VEHW",
+  "read_chunks": [
+    "chunk-0001",
+    "chunk-0002",
+    "chunk-0003",
+    "chunk-0004",
+    "chunk-0005",
+    "chunk-0006",
+    "chunk-0007",
+    "chunk-0008",
+    "chunk-0009",
+    "chunk-0010",
+    "chunk-0011",
+    "chunk-0012",
+    "chunk-0013",
+    "chunk-0014",
+    "chunk-0015",
+    "chunk-0016",
+    "chunk-0017",
+    "chunk-0018",
+    "chunk-0019"
+  ],
+  "omitted": [],
+  "limitations": [
+    "19 个转写块已全部阅读，并按主题重新分节。无人值守，没有人可以回答歧义。",
+    "画面使用预先生成的 frames.py 结果：场景阈值 0.3，最长 60 秒兜底，103 个候选，9 张联系表。先看联系表，再打开可能入选的候选，最后按选定时间从原视频截取原分辨率帧。不是逐秒观看，也没有逐帧 OCR。",
+    "没有读推荐材料，没有联网核对论文、仓库、博客或文章原文。专名、命令和数字以口播加课堂画面为准；只出现在讲义页上、口播没念的内容写在对应例子和原帧图注里。",
+    "转写里的专名有多处同词异写。校正和保留的理由写在各节整理者说明里。拿不准的听写（humanize、go、Tibo、nguse、Gefa trend、mindstone）保持原样。",
+    "讲师姓名蒋炎岩、南京大学计算机学院副教授、博士生导师，来自约 2222 秒的名片画面，口播没有自报全名。名片邮箱按画面写作 yanyanjiang@nju.edu.cn。录制水印「仙 I-107老师」不当作课程内容。"
+  ],
+  "map": {
+    "path": "visuals/map.jpg",
+    "alt": "这一课从有限算力下的搜索，走到最小循环和状态机，再用检查和别人的 harness 说明：没有试错机会，好想法会停在一条直路上。",
+    "caption": "论证从「为什么要自己做循环」走到「循环如何被检查接住」，最后落到开源项目和试错机会。",
+    "labels": [
+      "算力有限",
+      "最小循环",
+      "工作区是状态",
+      "每步都检查",
+      "看别人的 harness",
+      "试错要有 token"
+    ]
+  },
+  "summary": [
+    "这一课要自己做一个 agent loop：长任务已经能往下跑，缺的是在很大的设计空间里选择方向，而算力只够把宽度和深度合在一起用。",
+    "最小实现是一个 bash 工具加一个 while。Ralph Loop 用同一个 prompt 反复做，让工作区的变化代替新的提示；外层循环和并行 worktree 用来对付一次会话里的漂移。",
+    "人和 agent 都不可信。每一步迁移都要能检查，检查要做成 hook 和可判定规则。OpenAI 那篇文章说明人可以不再亲手写代码，但环境、约束、反馈和验证还得人来定。",
+    "deepseek-harness 把中英文一致、字数预算和评审都放进仓库。讲师最后的判断是：没有 token 就少一次失败的机会，而这些做法能被看见，是因为有人把它们开源了。"
+  ],
+  "summary_terms": [
+    "agent loop",
+    "deepseek-harness"
+  ],
+  "groups": [
+    {
+      "start": 1,
+      "label": "一 / 为什么要换一种做法"
+    },
+    {
+      "start": 4,
+      "label": "二 / 最小的循环"
+    },
+    {
+      "start": 6,
+      "label": "三 / 把工作区当成状态"
+    },
+    {
+      "start": 9,
+      "label": "四 / 每一步都要查"
+    },
+    {
+      "start": 12,
+      "label": "五 / 看别人怎么把品味做成门控"
+    },
+    {
+      "start": 17,
+      "label": "六 / 试错与斩杀线"
+    }
+  ],
+  "sections": [
+    {
+      "title": "第二个实验：用有限算力换判断力",
+      "short": "算力换智力",
+      "takeaway": "长程任务已经能往下做，缺的是在设计空间里选方向；实验二要自己做 agent loop，把有限算力分给宽度和深度。",
+      "start": 0,
+      "end": 349.79,
+      "source_ids": [
+        "s-g1.0",
+        "s-g7.0~3",
+        "s-g10.0~10",
+        "s-g14.0~5",
+        "s-g19.0~15",
+        "s-g24.0~1",
+        "s-g27.0~11",
+        "s-g31.0~9",
+        "s-g37.0~11",
+        "s-g40.0~29",
+        "s-g44.0",
+        "s-g47.0",
+        "s-g48.0~34",
+        "s-g51.0~11",
+        "s-g55.0",
+        "s-g56.0",
+        "s-g60.0~3",
+        "s-g64.0~5",
+        "s-g66.0~23",
+        "s-g68.0~20",
+        "s-g73.0~4",
+        "s-g75.0~19",
+        "s-g77.0~32"
+      ],
+      "terms": [
+        "算力换智力",
+        "深度优先"
+      ],
+      "visual": {
+        "path": "visuals/s01.jpg",
+        "alt": "有限算力要同时分给宽度优先和深度优先，两个不同模型互相挑刺，避免一条路走到黑。",
+        "refs": [
+          "p2",
+          "p3"
+        ],
+        "labels": [
+          "算力有限",
+          "宽度优先",
+          "深度优先",
+          "两个模型互相挑刺",
+          "一条路走到黑",
+          "知识库要更宽"
+        ]
+      },
+      "paragraphs": [
+        "课进行到大约一半，这一讲进入 agent-native 开发怎么做。早上 Tibo 宣布当天要 reset。讲师自己会在离开办公室前设一个 go，让它去跑很耗 token 的长任务，例如一个他自己也不知道该怎么证的数学证明；它可能把一周的额度跑完，等到 reset。",
+        "第二个实验和第一个不一样。第一个更像一个个人产品 agent。做的过程里会看到新产品发布：Grokbot 在开课前就已经发布，直到最近才火。他把每天的 job 迁了过去，包括给小朋友生成 podcast，开车时听；背后调的是他说的 Cloud Code 的 OPUS 5.5，一个「说人话」的模型。每天还有 morning paper 推送，例如他提到的一篇 CSPR 论文；这个 prompt 是他调过的，直接让 AI 总结会得到不太一样的结果。另外还有 GitHub trending。实验二只取实验一里的一小块，比如 digest 邮件，或根据自己的数据库回答问题，把算力换智力再往前推一点。",
+        "agent 已经具备长程任务的完成能力，但解决问题的直觉差一些。他觉得像博士生：问题有意思，学生想到一个有合理性的 idea，就用深度优先一路做下去，先做原型，再优化、再改实验结果。比如把软件工程里某种很窄的 Python 代码补全问题做深、做好。这个过程真正要体会的，是在很大的 design space 里找到一个好解。训练人和训练模型不一样。模型的强化学习像巴甫洛夫的狗，完成任务就给奖励。设计空间里很多分叉都在搜索空间的浅层，不同方案却会对最终结果产生很大影响。所以要有一个宽度优先的过程，搜索得把宽度和深度合在一起，因为算力有限。",
+        "实验就是自己做一个 agent loop，可以参考别人。他潜伏在一个他称为 humanize 的群里，看到他们烧掉很多 token 试 multi-agent 协同，最后发现最有效的是让 GPT 和 Claude 互相 review、互相挑刺。这有点像人的多样性：两个人容易达成共识，两个模型则带着不同偏见，一个说往这边，一个说往那边，搜索就岔开；只用一个模型容易一条路走到黑，几轮之后才可能找到更好的 solution。另一件重要的事是知识库。实验一里的 database 如果只放作业、奖学金申请和简历，做 deeper research 就不够；还要把论文、博客、GitHub 项目，甚至从书里摘的片段放进报告。实验开放，但有一个可以做得很简单的框架。他一直说实验可以选择摆烂，课也能过去；做过的人会有观察 agent trajectory 的第一手体会。"
+      ],
+      "examples": [
+        "开场提纲页标题是 Agent Native 开发。软件工程一条写 Intent, spec, impl gap；项目管理写 Git, Jujutsu；需求和架构写不可避免的 essential complexity，以及需要应对的 accidental complexity。后面还有：无论如何，在某个时刻都应该开始；构建一个符合当前 spec 的原型；Let it fail，但看看做出了什么。Agent Loop 一行列了 ChatGPT、AutoGPT、Devin、Claude Code。",
+        "约 100 秒的画面是 Yanyan's wiki for TOKEN：Morning Paper 区有一篇 arXiv cs.PL 的论文，标题为 A Simplified Layout Algebra for GPU Kernels，旁边还有 GitHub Trending。约 221 秒的实验要求页标题是「实现算力换智力的循环」：在 Agent 基本用法上增加一个 effort 选项，调节计算预算，用更多探索、查证和修改换更好的结果。同页写着，今天的 Agent 已能完成长程任务，但品味或解决问题方向的直觉仍待提升；有经验的 problem solver 会结合 breadth-first search 和 depth-first search，而 Agent 有时会沿着第一个想到的方案走到底。"
+      ],
+      "editor_notes": [
+        "口播「长城任务」按上下文记为长程任务；「breakfast」紧接着被他自己说成宽度优先；「Cloud Code」与后文 Claude Code 是同一产品；「GitHub training」与后文 trending 是同一件事。CSPR 没有在口播里展开，画面上的 Morning Paper 是 arXiv cs.PL 的 GPU kernel 论文，两边都保留。humanize、go、Tibo、OPUS 5.5 都按口播保留，没有改成别的拼写或版本号。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v000000000.jpg",
+          "time": 0,
+          "caption": "右侧提纲标题 Agent Native 开发。可见 Intent, spec, impl gap；Git, Jujutsu；essential complexity 与 accidental complexity；无论如何都应该开始；构建符合当前 spec 的原型；Let it fail；Agent Loop 下列着 ChatGPT、AutoGPT、Devin、Claude Code。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v000100867.jpg",
+          "time": 100.867,
+          "caption": "右侧为 Yanyan's wiki for TOKEN。Morning Paper 区可见一篇 arXiv cs.PL 论文，标题 A Simplified Layout Algebra for GPU Kernels；同页还有 GitHub Trending。左侧是教室与讲师。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v000220867.jpg",
+          "time": 220.867,
+          "caption": "实验要求页：实现算力换智力的循环。增加 effort 选项以调节计算预算，通过更多探索、查证和修改得到更好结果。下文写 Agent 已能完成长程任务，但品味和方向直觉仍待提升，并对比 breadth-first search 与 depth-first search。"
+        }
+      ]
+    },
+    {
+      "title": "从意图到实现，每一级都是一对多",
+      "short": "一对多",
+      "takeaway": "人在 intent 空间里只能采样一个点，intent 到 spec、spec 到实现都是一对多；AI 的用处是让你随时做出一个还能比较的版本。",
+      "start": 349.79,
+      "end": 603.88,
+      "source_ids": [
+        "s-g79.0~7",
+        "s-g80.0~26",
+        "s-g83.0~38",
+        "s-g85.0~21",
+        "s-g88.0~15",
+        "s-g89.0~6",
+        "s-g90.1~1",
+        "s-g92.0~7",
+        "s-g93.2~13",
+        "s-g93.10~4",
+        "s-g94.2~24",
+        "s-g95.0~62",
+        "s-g99.0~32",
+        "s-g99.2~7",
+        "s-g100.1~8",
+        "s-g101.0~7"
+      ],
+      "terms": [
+        "一对多",
+        "intent"
+      ],
+      "visual": {
+        "path": "visuals/s02.jpg",
+        "alt": "intent 只采样一个点，到 spec 再一对多，到实现又一对多；评审来回，用来躲开一条线走到黑。",
+        "refs": [
+          "p0",
+          "p1"
+        ],
+        "labels": [
+          "Intent 采样一个点",
+          "Spec 一对多",
+          "实现又一对多",
+          "评审来回",
+          "一条线走到黑"
+        ]
+      },
+      "paragraphs": [
+        "软件工程解决的也是这个空间：从 intent 到 spec 再到 implementation。人的脑容量有限。组一个小团队，或自己做一个大作业，都只是在 intent 空间里采样一个点，而这个空间里有很多点。intent 到 spec 是一对多，spec 到 implementation 又是一对多。",
+        "如果有 reviewer 来回讨论，几轮达成共识，就落到一个点，然后再迭代到下一个共识。需求阶段会做访谈、checklist，和甲方对齐；甲方若对自己要做的事很清楚，intent 就能更清楚。specification 阶段可以找有经验的架构师讨论用什么数据库，用不用 event sourcing。他提到「那个派」的开发者站出来说他们不用 event sourcing，但用了另一种 functional design，仍然需要 persist everything。这个过程会产生很多想法，最后收敛到很不一样的实现；可维护性和可观测性，可以和一条线走到黑差很远。软件工程的办法包括用 UML 约束这个空间，让项目早期就能和别人达成一致。工具从 IDE、VS Code，到管理版本的 git、worktree，再到他口播里的更进一步的工具。工具多到举不完。如果 agent 每天推 GitHub trending，花几分钟追问，就能积累技术和品位。这是前一半课讲过的内容。",
+        "他认为 AI 给的最大能力，是随时随地可以开始：可以想，可以学，不必先想透。讨论到任何阶段，哪怕只有一个最初的想法，都可以让 AI 往下做。它可能做不深，做到后面维护不下去，或者你看着看不下去。讨论中也可以随时让它生成一个版本，比较变好还是变坏；变坏了再讨论，再做一个版本。AI 承担的是一个员工甚至一个团队。需求若能拆成两个分得比较好的子系统，就可以起两个并行 agent。他实际开发时用一个 tmux 窗口分成四份，开四个 agent；再多，大脑就跟不上输出速度。"
+      ],
+      "examples": [
+        "约 461 秒，讲义仍是《软件工程与项目管理》，黑板上是 intent、spec、implementation 的分层示意。讲义原文包括 Intent, spec, impl gap，Git, Jujutsu，以及 essential complexity 和 accidental complexity。"
+      ],
+      "editor_notes": [
+        "口播 intens space 记为 intent space；U M L 记为 UML；T M S 记为 tmux；口播里的 GG two，同页讲义写的是 Jujutsu。黑板是示意，粉笔上的每个字母没有逐个辨认。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v000460867.jpg",
+          "time": 460.867,
+          "caption": "分屏。右侧讲义《软件工程与项目管理》：Intent, spec, impl gap；Git, Jujutsu；essential complexity 与 accidental complexity。左侧讲师正在黑板上画分层示意。"
+        }
+      ]
+    },
+    {
+      "title": "先让它做出来，但模型还没有万能",
+      "short": "先做原型",
+      "takeaway": "AI 便宜到可以先搓一个原型来暴露没想到的交互；一个 bash 在理论上很够用，讲师同时说现在的模型还没有好到和最好的人一样。",
+      "start": 603.88,
+      "end": 909.08,
+      "source_ids": [
+        "s-g104.0~19",
+        "s-g110.0~4",
+        "s-g115.0~8",
+        "s-g121.0~11",
+        "s-g126.0~18",
+        "s-g134.0~5",
+        "s-g139.0~20",
+        "s-g144.0~8",
+        "s-g150.0",
+        "s-g156.0~6",
+        "s-g162.0~1",
+        "s-g166.0~16",
+        "s-g170.0~11",
+        "s-g175.0~8",
+        "s-g181.1~3",
+        "s-g186.0~12",
+        "s-g191.0~15",
+        "s-g196.0~1",
+        "s-g200.0~3"
+      ],
+      "terms": [
+        "Let it fail",
+        "bash"
+      ],
+      "paragraphs": [
+        "四个 agent 的输出已经快过他监工的速度，所以他可以在搜索树上探索，也可以并行推进需求。当前阶段有一个 intent 或一个 spec。若 AI 成本够低，就先让它帮忙预测：这个人来了会怎样，用户多了会怎样，两个模块之间有没有没想过的交互。很多问题只有真的做出来才意识到设计有个小问题。没想清楚也没关系，先搓一个，再用典型 use case 评审。有些他能做的事就可以让 AI 做。用 AI 做原型，需要 agent loop。",
+        "他顺着产品往回看。ChatGPT 大家有印象。他说 2023 年在座的人大概在上初中或高中，社交媒体上有人说模型有幻觉：模型很强，但不能完全相信。那时还有一个他称为 mindstone 的早期 coding agent Devin，号称能解决数学问题等等。大家在观望，因为那时 GPT-4 的幻觉很严重，说着说着就不知道在说什么，也还没有 o1 那样的思维链。会怀疑它到底能不能自主把任务做完。理论上，一个学会了这个过程、又不知疲倦的永动机，可以被分到一个任务，然后无穷无尽地试，直到一个相对最好的解。",
+        "模型当时没学会，是因为强化学习仍有一个很重的奖励：要完成任务。花很多时间还没完成，就停在那里。他又拿训练博士生作比：有的同学喜欢在设计阶段把文献调研清楚，导师会说时间有限，要进入「看到什么需要什么学什么」，把问题推下去，也就是宽度和深度的平衡。今天这种 ReAct、自主调用工具的 agent 仍有完成任务的压力，而且完成得快会得到奖励，所以会倾向于比较短的宽度。思维链里仍会想「如果要做这件事怎么办」。DeepSeek 的思维链经常说等一等、也许不一样，会想一阵；一旦找到它认为合适的路线就继续往下。任务太难时它会摆烂，说解决不了，直接停下。他认为这是强化学习的影响。",
+        "理论上，给一个足够好的模型一个 bash 或 Python 工具，就可以让它去造芯片、证明黎曼猜想。他想象把自己蒸馏进去：给他一个 bash，他能做的事似乎都能做，编辑文档、看文档。早期 Unix 还没有今天的图形界面，Knuth 还在写 The Art of Computer Programming 的时候，那些人就是在 shell 里和工具交互。所以你可以想象它做任何事。他接着把这句话收住：现在的模型还没有万能到和最好的人一样好，所以需要 agent loop。讲义上同一句判断旁边还有半句：尤其是目前品味还有点难学。"
+      ],
+      "examples": [
+        "约 641 秒的《开始：构建原型》写着：无论如何，在某个时刻都应该开始；构建一个符合当前 spec 的原型；Let it fail，但看看做出了什么。同页还有莱特兄弟的例子：1901 年，滑翔机的升力仅达设计的 1/3；他们随后自建风洞，重新测量翼型的升阻力。页上标注失败让他们重新检查设计所依据的数据，并写了 NASA。口播没有把这个例子念出来。",
+        "约 701 秒的 Agent Loop 页列着 ChatGPT、AutoGPT、Devin、Claude Code，并写 AI 越来越自主。理论上，「足够好」的模型给一个 bash tool 就够了，可以去造芯片、证明黎曼猜想。下一行问：如果模型还没有「万能」到和最好的人一样呢？下面写尤其是目前品味还有点难学。"
+      ],
+      "editor_notes": [
+        "口播 let it feel，提纲和原型页写的是 Let it fail。mindstone 只按口播保留，讲义产品名单里没有这个词，名单是 ChatGPT、AutoGPT、Devin、Claude Code。O one 记为 o1；breadthurs / deadthurs 是宽度优先和深度优先；share 记为 shell；立马猜想记为黎曼猜想；克鲁特记为 Knuth。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v000640867.jpg",
+          "time": 640.867,
+          "caption": "讲义《开始：构建原型》。可见应开始、构建符合当前 spec 的原型、Let it fail。另有 1901 年莱特兄弟例子：升力仅达设计的 1/3，随后自建风洞；页上有 NASA。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v000700867.jpg",
+          "time": 700.867,
+          "caption": "讲义 Agent Loop：ChatGPT、AutoGPT、Devin、Claude Code；足够好的模型加一个 bash tool 就够，可以造芯片、证明黎曼猜想；同时又问模型是否还没有万能到和最好的人一样，并写目前品味还有点难学。"
+        }
+      ]
+    },
+    {
+      "title": "一百五十行：一个 bash 工具加一个循环",
+      "short": "最小循环",
+      "takeaway": "最小的 ReAct 就是一个可调用的 bash，外加一个 while：没有工具调用就回复，有就执行并把结果写回。",
+      "start": 909.09,
+      "end": 1277.06,
+      "source_ids": [
+        "s-g206.0",
+        "s-g211.0~10",
+        "s-g215.0~12",
+        "s-g219.0~12",
+        "s-g226.0",
+        "s-g233.0~5",
+        "s-g241.1",
+        "s-g248.0~2",
+        "s-g253.1~1",
+        "s-g257.0~1",
+        "s-g263.0~1",
+        "s-g267.0~15",
+        "s-g279.0~6",
+        "s-g284.0~1",
+        "s-g291.0~5",
+        "s-g292.0",
+        "s-g296.0",
+        "s-g303.1~5",
+        "s-g307.0",
+        "s-g308.0",
+        "s-g315.0",
+        "s-g319.0",
+        "s-g328.0~14"
+      ],
+      "terms": [
+        "bash",
+        "while"
+      ],
+      "visual": {
+        "path": "visuals/s04.jpg",
+        "alt": "循环读入用户消息，没有工具调用就直接回复；有 bash 调用就执行，再把结果以 tool 角色写回。",
+        "refs": [
+          "p1",
+          "p2"
+        ],
+        "labels": [
+          "读入用户消息",
+          "没有工具调用就回复",
+          "有 bash 就执行",
+          "结果写回 tool",
+          "再问一轮"
+        ]
+      },
+      "paragraphs": [
+        "他给了一个自己准备的 ReAct agent，并说 AI 时代最重要的是 hands on：有想法就自己做一个，再和成熟的东西比，看那个增量多做了什么，体会软件从小到大膨胀，也知道模型里有些东西该怎么做。演示前他提醒 API key：不锁屏去洗手间，室友可以 cat 终端并拍照，key 就被偷走。他特意让这个 agent 去看自己的 Pi agent，用来确认没有把自己的 key 露在屏幕上。",
+        "bash tool 是一个合法的 Python 对象，能序列化成 JSON：type 是 function，name 是 bash，有 description，parameter 叫 command，用 bash 执行一条命令。旁边有对应的 run_bash。他在这里 hard code 了一个 timeout。真实的 coding agent 也会给任务设 timeout，但可能对环境感知不够。墙内访问 GitHub，教育网也许通，速度却和 agent 以为的不一样。他第一次人到墙外，看到 git clone 跑满网卡带宽，很震惊，因为自己的世界观一直 overfit 在墙内。shell 若给了不合适的 timeout，进程被杀掉，就得换一个 timeout；他这个最小软件不支持这个功能。最小原型和产品之间有 gap，可能要用架构去补。但不让 AI 先做最小实现，就不会被启发去想这个方向。",
+        "请求直接打到 api.deepseek.com 的 chat completions，再 read reply。整个 agent 是一个 while：从终端读用户输入，构建 message，read reply。回复里没有工具调用，就把回复输出。有工具调用时，回复里带着它；他补充，大模型也可以理解成用文本输出，只是这一层 parse 由 API 做了。如果这个调用是 bash，就把参数取出，跑一下，再把结果放回去：role 是 tool，带一个 tool call id 和 output。就这么简单。他说这个 agent 真的能用，大约一百五十行。",
+        "他让它生成一张「生成式软件工程」的简介 HTML 卡片。因为有 bash，理论上可以用字符串在命令里把文件写出来，输出会比较长，任务要花一点时间。他让它在浏览器里打开。它会先问环境。他的结论是：做一个 agent 没有大家想的那么难，这个演示就是把协议给大家看。它有些奇怪的 bias，他猜是不是因为看见了项目里已有的东西。过程里它不停 verify。他说这是一个白板模型，所有 prompt 都是他给的，行为也很有趣；他把一段东西去掉。这就是 agent loop。"
+      ],
+      "examples": [
+        "约 1061 秒的 agent.py 能看见：command 是必填 string；run_bash 用 subprocess；stderr 接到 subprocess.STDOUT；timeout 写的是 60。",
+        "约 1216 秒，浏览器里打开了一张深色卡片，能看见「生成式软件工程」和 GSE。他后来说，模型解决这个问题时自己开了两个浏览器，截图验证完还问他满不满意。这种行为不一定是你要的，如果你只想让它不停向前。"
+      ],
+      "editor_notes": [
+        "口播把工具调用听成了 token，把 role 听成 to；正文按他当堂补充的说法写成 tool。派 / py 记为 Pi。约 1061 秒这一屏没有把 key 文件路径展开到能逐字抄下的一行，笔记不写具体路径。deepsec 点 com 记为 api.deepseek.com。不全代码记为补全代码，slap 记为 slop。timeout 等于 60 来自这一屏，口播只说 hard code 了一个 timeout，没有念出数字。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v001060867.jpg",
+          "time": 1060.867,
+          "caption": "agent.py 约 1061 秒这一屏：command 是必填 string；run_bash 用 subprocess；stderr 接到 subprocess.STDOUT；timeout 为 60。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v001120867.jpg",
+          "time": 1120.867,
+          "caption": "agent.py 的循环：load_api_key 使用 DeepSeek；while 读取用户输入；从 reply 取 tool_calls；bash 则 run_bash，并把 role 为 tool、带 tool_call_id 的 output 追加进 messages。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v001216100.jpg",
+          "time": 1216.1,
+          "caption": "浏览器中一张深色页面，可见 GSE 和「生成式软件工程」。"
+        }
+      ]
+    },
+    {
+      "title": "Harness 把搜索圈住，Ralph 用同一个提示再来一轮",
+      "short": "Ralph Loop",
+      "takeaway": "模型自己会搜索，也会被已有代码带着去扶 slop；Ralph Loop 用同一个 prompt 反复做，让变化发生在工作区里，而不是换一句新提示。",
+      "start": 1278.91,
+      "end": 1521.07,
+      "source_ids": [
+        "s-g335.0",
+        "s-g342.0~5",
+        "s-g352.0",
+        "s-g357.0",
+        "s-g366.0~10",
+        "s-g374.0~14",
+        "s-g382.0~10",
+        "s-g393.0~11",
+        "s-g401.0~2",
+        "s-g410.0~3",
+        "s-g417.0",
+        "s-g425.0~2",
+        "s-g426.0",
+        "s-g432.0~2",
+        "s-g439.0~4",
+        "s-g445.0~11"
+      ],
+      "terms": [
+        "Ralph Loop",
+        "harness"
+      ],
+      "visual": {
+        "path": "visuals/s05.jpg",
+        "alt": "同一个 prompt 反复送给 claude -p，工作区变了，下一轮看到的世界就变了；while 本身不知道何时才算无法改进。",
+        "refs": [
+          "p0",
+          "p1"
+        ],
+        "labels": [
+          "同一个 prompt",
+          "claude -p",
+          "工作区变了",
+          "再跑一轮",
+          "while 不会自己停"
+        ]
+      },
+      "paragraphs": [
+        "刚才那个问题里，模型开始产生自己的想法：开了两个浏览器，截图验证后问他满不满意。这不一定是你要的行为。模型自己的思维链也可以做搜索；harness 做的事，是把能做的事约束在你认为比较好的范围里。",
+        "他说今天 harness 的一个核心答案叫 Ralph Loop，实际会比它复杂得多。例如他的 agent 可以产生 subagent。Claude 大约在今年某个版本里做了更新：和调用 bash 一样，它会生成一段 script，里面可以写 for 循环去调用一个 agent；自然语言模板里可以填循环变量和算出来的字符串，从而孵化 subagent。调用是异步的。他不太记得语法，觉得这里应该可以 await 某个东西，然后等待这个 agent 完成。Ralph 这个名字，是第一个把它提出来并让它流行的人起的，借自《辛普森一家》里有点笨、有点可爱、但从不放弃的 Ralph。",
+        "Ralph Loop 简单到他所说的三行：不断把同一个 prompt 丢给 claude -p，同一个任务，检查、修改，直到无法改进。他让 GPT 总结，结果让他觉得 surprising：The prompt stays the same, but the world changes。基本假设是，理论上足够好的模型，给一个 bash tool 就够；来了一个很强的能力，它自己会探索搜索空间，甚至自己把黎曼猜想证明了，人类会很难理解这种东西。",
+        "但如果假设现在的模型还容易漂移，它会像博士生一样脑子一热就做完，或者被已有代码污染上下文。它还有强烈的「舔狗」倾向：遵循指令，不去动用户的东西。他对学生可以有这样的默契：这个 repo 是零分，再拿这种代码来就不要来见我；学生会痛苦，但能理解，下一版会把架构推掉。模型若在上下文里加载了 slop，就会强烈倾向于把 slop 扶起来。重构往往不能百分之百保持行为，变化可能是把项目往好的方向推，但对正在线上、只想花一分钟让服务别崩的人来说，又显得粗鲁。所以遵循指令有道理，不遵循也有道理。真实模型常常选择遵循现有代码，把项目往泥潭里拖。"
+      ],
+      "examples": [
+        "约 1435 秒的《Ralph Loop》写：同一个任务、检查、修改，直到无法改进。引文 The prompt stays the same, but the world changes 标着 Huntley 的原文，并写每轮把工作区里的进展留给下一轮。代码是 while true; do，然后 cat PROMPT.md | claude -p，done。页底另写 while true 本身不会判断「无法改进」，何时停止需要另行约定。"
+      ],
+      "editor_notes": [
+        "口播没有说出 Geoffrey Huntley，这个名字在讲义页上。三行循环的具体写法以 1435 秒的讲义为准。rough 与 ralph 在后文混用，这里统一写成 Ralph，并在后文第一次出现脚本文件名时再按画面拼写。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v001375133.jpg",
+          "time": 1375.133,
+          "caption": "讲义《Ralph Wiggum Loop》：Geoffrey Huntley 借用《辛普森一家》里 Ralph Wiggum 的名字；有点笨、有点可爱，但从不放弃。旁边是这个角色的画像。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v001435133.jpg",
+          "time": 1435.133,
+          "caption": "讲义《Ralph Loop》：同一个任务、检查、修改，直到无法改进。引文 The prompt stays the same, but the world changes。代码框为 while true; do / cat PROMPT.md | claude -p / done。页底写 while true 本身不会判断无法改进。"
+        }
+      ]
+    },
+    {
+      "title": "工作区是状态，一轮只迁一步",
+      "short": "状态机",
+      "takeaway": "把 workspace 看成状态、把一轮 agent 看成一次迁移，长任务就变成许多可检查的小步，而且同一步还可以换一个模型来做。",
+      "start": 1521.9,
+      "end": 1827.9,
+      "source_ids": [
+        "s-g452.0",
+        "s-g456.0~12",
+        "s-g462.0~2",
+        "s-g468.0~1",
+        "s-g473.0~7",
+        "s-g480.0~8",
+        "s-g487.0~7",
+        "s-g493.0~3",
+        "s-g501.0~14",
+        "s-g507.0",
+        "s-g514.0~8",
+        "s-g518.0",
+        "s-g525.0~6",
+        "s-g532.0~8",
+        "s-g540.0~8",
+        "s-g541.0",
+        "s-g542.0",
+        "s-g548.0",
+        "s-g555.0~5"
+      ],
+      "terms": [
+        "状态机",
+        "workspace"
+      ],
+      "visual": {
+        "path": "visuals/s06.jpg",
+        "alt": "同一份工作区状态上，可以让一个模型做一轮并提交，也可以换一个模型来评审或重做。",
+        "refs": [
+          "p1",
+          "p2"
+        ],
+        "labels": [
+          "工作区是状态",
+          "一轮是一次迁移",
+          "git commit",
+          "可以换模型",
+          "小步之后再检查"
+        ]
+      },
+      "paragraphs": [
+        "若要往前救一点，就是实验二那种搜索：让模型留在 design space 里做宽度，再适当做深度，用 prompt 或 loop 管理搜索空间。Ralph Loop 是一种线性的管理。长程任务里，模型上下文装不下。他描述大家最讨厌的情况：Codex 跑得很好，突然 compact 开始，干等，用量急剧增加；compact 之后通常有一段时间降智，装进足够多上下文后又做对，过一会儿又要 compact。设置得再大，也常会遇到 compact 不够的情况。他说最近有一个把上下文更新到 500k 的史诗级更新。好处是可以把大任务分解。",
+        "他的理解是 everything is a state machine，物理世界也是 state transition system，workspace 的状态就是软件开发的状态。讲到这里他找不到粉笔擦，换了一块黑板继续。状态一开始可能只有一个 spec.md，或任何几乎还没实现的东西。Ralph Loop 就是同一个任务：spec.md，或 prompt，甚至写成 prompt.md，做一轮，从这一状态到下一状态，可以 git commit，loop 再向前。循环里的 prompt 可以要求每次不要做太多，做完要检查，还可以找另一个 agent review。好处是把「一头扎下去把任务做完」分成很多小步。",
+        "这是一个非确定的状态机。他说「做一轮」是简化写法：这一轮可以用 GPT，也可以换 Claude 来 review，或让 DeepSeek 来干活。同一个状态上可以执行不同操作，这就回到上面的 search procedure。也可以每隔一段时间做一件事，比如每个星期做一次架构 code review，看项目有没有变成 AI slop；有的话就进入重构。重构 agent 可以设得很硬：把 slop 和相关的东西直接删掉，做一个 commit，再让一个 agent 用更好的架构重新实现。这样就得到一棵搜索树。真正跑的时候，最后仍要做选择，线性地从一个状态到下一个状态，直到任务完成。"
+      ],
+      "examples": [
+        "约 1675 秒的讲义标题是 Everything Is a State Machine，总句是 Workspace = State, Agent = Transition。状态里包括需求与文档、当前部分实现和测试用例、运行结果日志和 TODO。同页写：每一次开发都是状态的迁移；有了版本控制就可以并行，但并行任务之间的依赖仍要协调；long-horizon task 可以比任何一次会话都长，前提是下一轮能从留下的状态继续。"
+      ],
+      "editor_notes": [
+        "口播 codecs 记为 Codex，rough loop 记为 Ralph Loop。500k 是口播数字，他说的是最近的上下文更新。粉笔擦一段没有教学内容，只说明他换了一块板继续画状态。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v001675133.jpg",
+          "time": 1675.133,
+          "caption": "讲义 Everything Is a State Machine：Workspace = State, Agent = Transition。列出需求与文档、当前实现与测试、运行结果日志与 TODO。写每次开发都是状态迁移，版本控制让状态可分叉，长程任务依赖上一轮留下的状态。"
+        }
+      ]
+    },
+    {
+      "title": "外层循环、并行，以及博士生劳动",
+      "short": "外层循环",
+      "takeaway": "外层循环让一次会话里会漂的长任务还能继续；讲师认为，若只看论文和项目产出，调教好的 agent 已经可以替代一部分博士生劳动。",
+      "start": 1827.93,
+      "end": 2126.4,
+      "source_ids": [
+        "s-g561.0",
+        "s-g566.0~8",
+        "s-g570.1",
+        "s-g571.0",
+        "s-g575.0",
+        "s-g579.0",
+        "s-g585.0",
+        "s-g591.0~1",
+        "s-g596.0~2",
+        "s-g601.0~9",
+        "s-g608.0",
+        "s-g614.0",
+        "s-g621.0",
+        "s-g623.0",
+        "s-g629.0~10",
+        "s-g635.0~12",
+        "s-g639.0",
+        "s-g643.0",
+        "s-g644.0",
+        "s-g646.0~9"
+      ],
+      "terms": [
+        "外层循环",
+        "worktree"
+      ],
+      "paragraphs": [
+        "跑的时候最终还是要选择，线性地走到任务完成。他认为这个想法会很有效：每一次开发都是状态迁移。由此可以推出今天 coding agent 里很多功能。subagent 并行很自然：当前是一个状态，箭头表示非确定的选择，也可以同时做。他觉得自己画得不好，意思是可以做 A 模块的重构，也可以做 B 模块的重构，再 git 合并。也就是在 git worktree 上从两个状态并行走到下一步，再合并成一个提交。有了这种循环，long-horizon task 就可以做得越来越好。",
+        "早期基于 ReAct 的 agent、AutoGPT，或线性的 claude -p，有些任务跑着跑着就漂移，上下文超过以后越做越差。外层循环让它完成更强的任务。模型厂商看到这一点，又把一次 Claude session 里能完成的任务调高；人再套一层 loop，又能完成更复杂的任务。他说这是左脚踩右脚，开始上天。他觉得 agent 已经能做一些事：如果导师已经想好方向，PhD 在某种程度上被替代，或者说被斩杀。培养人仍然重要，从不懂到懂的过程重要。但如果他作为 professor 的 KPI 是国家要的论文、研究成果和项目，对他来说 PhD 的价值已经不如 agent；有的人博士毕业时，也没有一个精心调过 loop 和 prompt 的 agent 好用。",
+        {
+          "text": "他也实现了一个非常简单的 Ralph Loop，由一个 prompt 驱动。他让它做一件事，并要求每轮先检查当前状态，只推进明确的步骤。这段提示好像也是 AI 帮他写的，他自己只说了一两句。未完成就写文件说明下一步，于是所有状态都在 repo 里。只有整个任务确认完成，才输出一个结束标记；他相信模型的能力，看到这个标记循环就结束，否则无限循环。",
+          "caveat": "结束标记的字面形式以画面上的 <RALPH_DONE> 为准，口播听成 rough down。"
+        },
+        "他用同一个 prompt 做对比，例如调研什么是世界上最好的编程语言。它要跑比较长时间，尤其当它想去 arXiv 下载论文。它试图访问 Google，他这台机器会 timeout。至少在长时间任务里，它可以做一段时间就停，把总结写进状态，再一轮一轮继续。"
+      ],
+      "examples": [
+        "约 2035 秒打开的是 ralf-loop.sh，不是 ralph 的拼写。脚本有 shebang 和 set -euo pipefail。提示要求每轮先检查当前状态，只推进一个明确的步骤，然后验证并评估结果；未完成就写文件说明下一步；只有确认整个任务已经完成，才在存档之后另起一行输出 <RALPH_DONE>，否则不要输出该标记。循环用 python3 跑同目录的 agent.py，再用 grep 查找 <RALPH_DONE>，找到就 break。"
+      ],
+      "editor_notes": [
+        "这一页脚本把 shebang、set、trap 和提示词都算进去，长于一个五行概括；核心循环就是 while、把提示送给 agent.py、grep 结束标记、break。文件名按画面写作 ralf-loop.sh。archive 记为 arXiv。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v002035133.jpg",
+          "time": 2035.133,
+          "caption": "右侧 ralf-loop.sh：每轮先检查当前状态、只推进一个明确步骤、验证并评估；未完成写下一步；完成才输出 <RALPH_DONE>。while true 中用 python3 运行 agent.py，grep 到该标记就 break。"
+        }
+      ]
+    },
+    {
+      "title": "同一个模型，循环和提示会把结果拉开",
+      "short": "结果会分开",
+      "takeaway": "同一个模型和同一个任务，one-shot 和 loop 可以差很多；哪个 harness 最好、旧提示在新模型上还灵不灵，讲师认为大家都不知道。",
+      "start": 2128.6,
+      "end": 2427.77,
+      "source_ids": [
+        "s-g647.0",
+        "s-g648.0",
+        "s-g650.0~56",
+        "s-g653.0",
+        "s-g654.0~35",
+        "s-g656.0",
+        "s-g658.0",
+        "s-g659.0",
+        "s-g661.0",
+        "s-g662.0~51",
+        "s-g665.0",
+        "s-g666.0",
+        "s-g667.0",
+        "s-g668.0",
+        "s-g669.0",
+        "s-g670.0",
+        "s-g671.0~26",
+        "s-g673.0~7",
+        "s-g679.0",
+        "s-g689.0~1",
+        "s-g699.0"
+      ],
+      "terms": [
+        "one-shot",
+        "Design Space"
+      ],
+      "paragraphs": [
+        "编程语言那个任务还在跑。他另做了一个对照：一个 loop，一个不用 loop 的 agent，同一个任务，给他做一张名片。他说这有随机性，不能绝对说谁更好。其中一个很 fancy，有他认为像玻璃的动效，还有一个小的 macOS 终端，他不知道它从哪学来；主页邮箱是错的，还有一个他读成 nguse 的名字，他说自己不是。另一个朴素得多：计算机学院副教授，邮箱是对的，GitHub 也找到了而且是对的。他让大家猜哪个是 loop 做的。朴素、信息对的那张是 loop；第一张是 one-shot 直出。他同时说，这肯定也和 loop 的 prompt 有关系。同一个模型，投入算力和 prompt，结果可以差非常大。",
+        "网上有各种推荐的 prompt 和 skill，可以复用。他最终觉得还是自己写的 prompt 最懂你，因为和模型有长期磨合，磨合之后才知道什么时候放手、什么时候不信任它。语言调研那边出现了结束标记。他说这其实就是一个大约 150 行的 agent，加上一个五行的脚本。一句话回答是：不存在绝对最好的语言。他把 research 移走，用同样的 prompt 再跑，它还是去抓那些材料。他特别提醒：这里所有工具只有 bash，不是 Python。模型能做到这样，他觉得某种程度上仍然吃惊。",
+        "在这样的 agent loop 里，没有一个所谓最好的设计。Codex 更好，还是 Claude Code 更好，还是 Pi 更好，不知道。Pi 的生态里有很多东西。Pi 本身没有 subagent，但找 subagent 插件就不止一个，有的更流行，有的没那么流行，哪一个更好其实大家都不知道，这个 Design Space 地球人都不知道。上一版 Ralph Loop 的 prompt 可能工作得很好，下一个模型来了就全变了。如果有很多系统提示词和很多 Skill，新模型发布时，最好的做法可能是把它们全部拿掉，拿一个熟悉的任务做背靠背对比；拿掉 prompt 和 Skill 之后，模型可能反而更好。这都有可能。所以他说我们活在一个非常不确定、也非常让人兴奋的时候。"
+      ],
+      "examples": [
+        "约 2222 秒的深色名片可见：jyy，蒋炎岩，YANYAN JIANG，南京大学计算机学院，副教授、博士生导师，jyywiki.cn，邮箱 yanyanjiang@nju.edu.cn，以及操作系统方向。他口播里，对的是这一类朴素卡片；fancy 那张的邮箱是错的，还出现了一个他说自己不是的名字。"
+      ],
+      "editor_notes": [
+        "名片上的姓名和单位来自画面，口播只说了「计算机学院副教授」和邮箱、GitHub 是对的，没有念出全名。nguse 只按他的读音保留。py / 派记为 Pi，callcode 记为 Claude Code，codecs 记为 Codex。五行脚本与画面上更长的 ralf-loop.sh 并存：口播是他的概括，画面是当时打开的文件。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v002221600.jpg",
+          "time": 2221.6,
+          "caption": "深色名片：jyy，蒋炎岩，YANYAN JIANG，南京大学计算机学院，副教授、博士生导师，站点 jyywiki.cn，邮箱 yanyanjiang@nju.edu.cn，方向与操作系统有关。"
+        }
+      ]
+    },
+    {
+      "title": "开发者不可信，所以每一步都要检查",
+      "short": "每步都查",
+      "takeaway": "人和 agent 都会把「应该没事」当成已经没事；Ralph 式的小步，加上每步检查不过就退回，就是 CI/CD 那件老事情。",
+      "start": 2430.17,
+      "end": 2742.88,
+      "source_ids": [
+        "s-g703.0",
+        "s-g705.0",
+        "s-g707.0",
+        "s-g709.0",
+        "s-g716.0",
+        "s-g724.0~10",
+        "s-g732.1~2",
+        "s-g736.0",
+        "s-g746.0~3",
+        "s-g754.2~1",
+        "s-g764.0~2",
+        "s-g775.0~2",
+        "s-g783.0~11",
+        "s-g793.0~1",
+        "s-g800.0~3",
+        "s-g807.2",
+        "s-g809.0",
+        "s-g818.0~3",
+        "s-g826.0~7",
+        "s-g837.0~11",
+        "s-g848.0~7"
+      ],
+      "terms": [
+        "不可信",
+        "CI/CD"
+      ],
+      "visual": {
+        "path": "visuals/s09.jpg",
+        "alt": "两条公理下面，每次状态迁移都停下来检查；过了才能发布，不过就退回去改。",
+        "refs": [
+          "p1",
+          "p2"
+        ],
+        "labels": [
+          "机器永远是对的",
+          "未测代码永远是错的",
+          "每步停下来查",
+          "过了才发布",
+          "不过就退回"
+        ]
+      },
+      "paragraphs": [
+        "语言调研的两份结果里，左边那份更保守。他看到 loop 确实会产生很大影响。循环里有一段很重要的提示：每轮先检查当前状态，只推进一个明确的步骤，然后验证并评估结果。前提仍是他的基本假设：agent 训练得不够好，或者在当前上下文里会漂移，会做不该做的事。所以先让它往前走一小步，做一次比较小的状态迁移，然后停下来等，做检查。可以用另一个 agent、另一个模型 review 这次提交，也可以跑测试和检查脚本。他认为这对推进整个项目有帮助。",
+        "这不是新想法，是软件工程里很常见的实践：开发者不可信。他回忆计算机系统基础里的两条公理。第一，机器永远是对的，不要怀疑机器。第二，未测代码永远是错的。出错就在你自己。做码农的第一条 first principle：所有错都是你自己的错，没有别人可以埋怨。同时人的本性会相信自己，自信带来某种不可信。人会觉得文档里改一句话应该没事，循环变量从一开始改成从零开始应该没事，单元测试通过了应该没问题，脑子里把样例过了一遍是不是可以交 OJ。就是因为这种不可信，实习生推一个 PR，生产系统会挂掉。",
+        "所以希望状态推进时每一个状态都是好的，和 Ralph Loop 一样：每个状态后面做一次检查。检查不通过，就拒绝这一次循环结束，回到上面把问题修好。他说：恭喜你发明了软件工程大约二十年前开始热起来的 CI/CD。把开发想象成 state transition system，每一步之后都停下来做足够多的检查；检查多到找不到问题，就可以发布。发布可以自动，检查也应该自动。第一条原则是不要相信任何开发者。进公司第一天跟实习生说做好测试，他不会去测。老师说做算法题要写断言，学生也不会，过了样例就提交。人是投机的：大脑算一个期望，提交又不花钱，也许十秒就能得到反馈，fast path 过了就过了，不对再回到 slow path。一旦有投机倾向，就变得有点不可信。如果不相信实习生，就把门控全部写在脚本里，而且不能让实习生自己决定跑不跑。"
+      ],
+      "examples": [
+        "约 2565 秒的讲义《每次 Transition，都检查》把 Ralph Loop 的关键提示写成：每轮都验证并评估结果；开发者是不可信的，自以为只改一点点不会有事。同页写 Workspace = state，Agent = transition。希望每个状态都是好的：每次 transition 做一次检查；没问题就可以发布；把「好」写成可执行条件：能构建、旧功能没坏、符合项目约定。"
+      ],
+      "editor_notes": [
+        "两条公理和「大约二十年前」都是口播。具体的 1990 年代到 2010 年的 CI/CD 年表在下一节的讲义页上，他没有在这段口播里逐条念。fast path / slow path 按口播的 fast pass / slow pass 理解。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v002564533.jpg",
+          "time": 2564.533,
+          "caption": "讲义《每次 Transition，都检查》。Ralph Loop 提示：每轮验证并评估；开发者不可信。Workspace = state，Agent = transition。好的状态要能构建、旧功能没坏、符合项目约定。"
+        }
+      ]
+    },
+    {
+      "title": "钩子要放在偷懒和对不齐的地方",
+      "short": "钩子与 lint",
+      "takeaway": "CI/CD 就是在 commit、push、合并这些事件上自动做指定动作；lint 是最底层的守门员，agent 则是更不可信的开发者。",
+      "start": 2742.88,
+      "end": 3350.95,
+      "source_ids": [
+        "s-g859.0~7",
+        "s-g868.0~1",
+        "s-g878.0~9",
+        "s-g891.0~6",
+        "s-g904.0~9",
+        "s-g917.0~9",
+        "s-g932.0~2",
+        "s-g950.0~7",
+        "s-g963.0~2",
+        "s-g975.0~7",
+        "s-g988.0~4",
+        "s-g1000.0",
+        "s-g1005.0",
+        "s-g1019.0~6",
+        "s-g1032.0~4",
+        "s-g1041.0",
+        "s-g1043.0",
+        "s-g1044.0",
+        "s-g1045.0",
+        "s-g1054.0~4",
+        "s-g1063.0~4",
+        "s-g1072.0~7",
+        "s-g1082.0",
+        "s-g1091.0~1",
+        "s-g1099.0~1",
+        "s-g1108.0~6",
+        "s-g1118.0~1",
+        "s-g1127.0~5",
+        "s-g1136.0~6",
+        "s-g1144.0~8",
+        "s-g1151.0~10",
+        "s-g1159.0~1",
+        "s-g1168.0",
+        "s-g1176.0",
+        "s-g1183.0",
+        "s-g1191.0~1",
+        "s-g1197.0~7",
+        "s-g1206.0~5",
+        "s-g1212.0~6"
+      ],
+      "terms": [
+        "lint",
+        "hook"
+      ],
+      "paragraphs": [
+        "门控要写进脚本，还不能指望实习生会去跑，于是有了 .github 里一大堆看不懂的配置。他说在大模型之前，学生对 CI/CD 不理解，常常是因为它嵌进生产流程：要在一台独立于实习生那台不可信机器的环境里创建容器，跑完流程，再把结果同步到企业能看见的页面。这些复杂性需要懂软件系统才做得了，所以同学之间用得比较少，但想法就是在适当的时候做适当的检查，然后自动推下一步。可以集成到主干，每次集成自动 build，甚至编译。推完以后整个项目可能都不 build 了。不仅可以编译，还可以检查、验证、发布。可以由人决定上线，通过检查的变更也可以自动上线。他的例子是：看到 release tag，就把 release build 推上去。在某个特定状态上做检查，这个实践用得很广。",
+        "开发流程有很多事件：commit、push、发起 pull request、merge 到某个分支或 protected branch。任何事件上理论上都能放钩子。他让 Pi 去做 hook，之前播放声音失败了，现在每次需要他输入时会叮一声，表示输出结束。他让 Codex 总结这里的 CI 流程，总结完应该叮一声。在一次状态迁移之前或之后都可以加 hook，把要做的事配置好。他说在大语言模型的时代，不再需要自己去碰那些复杂配置。",
+        ".github 里有很多 workflows，还有 Rust 的 CI。大模型之前这些都是手写的，还有一长串仓库路径和 YAML，很麻烦。今天只要清楚：在什么样的状态迁移时应该做什么。讲义里不只是 commit 和合并分支，还可以在本地 pre-commit：要求做一次编译，做一次 lint。他问全班知不知道 lint、用过没有，又问它重不重要。他的定义是：现在 lint 泛指不运行程序、只做静态分析就能发现的代码检查，包括缩进、换行、空格。刚学程序设计时会写出 a=1 这种代码。他有多年会因此生理性不适，像一个被训练过的模型。连最基本的可读性规范都做不好，很可能会带来更严重的问题。lint 基本上是软件工程最基础一级的守门员；这个都过不了，就不要谈软件工程。pre-commit 先做比较简单的事，提交上去再跑 CI。",
+        "今天 GitHub 可以接 Docker 一类的后端。他提到学校这边的 git 服务也有免费容器，虽然排队长、跑得慢，仍然能薅到算力。GitHub Actions 也有算力。他看着那些配置说，每个月好像有两千分钟。甚至可以在 GitHub Actions 里养 Claude Code：push 一个「我要做什么」，用 push 拉起 Claude Code，改 repo 再提交，再次触发 hook。要小心用两个不同的流程衔接，否则会失败。真的可以在云上养 Claude Code；subscription 可能不能用，可能要走 API。前提仍是你有软件工程概念：什么时候跑 lint，什么时候跑单元测试、系统集成测试，要不要一个 long running 的长程模糊测试。他说这个后面的课还会讲。在 agentic AI 的时代，CI 的含金量在提升。CI 的 first principle 是开发者不可信。agent 是最不该信任的开发者，因为 agent 和人类天生不对齐。它是大语言模型，想法和人不一样，经常做非人类的事。",
+        "你说写一个文档，它直接 check in 一个二十 K 的文档。你看两行就掉进无穷的细节，然后不可能看完。它还会事无巨细交代细节。代码已经 self-explain，甚至注释都可以不要，它却把思考过程和 agent loop 里遇到的问题一个一个写进文档。于是 doc.md 和 implementation.py 在你写的那一刻是关联的，基于 repo 的维护却看不见这个关联。下一次换一个 agent，上下文压缩之后它不记得这两份东西要保持一致，Python 改了，文档和代码就不一致，不知道听谁的，项目滑向 slop 的崩溃边缘。AI 若被要求写文档，太喜欢写非常细的文档，细节随版本调整，维护成本越来越高。它还会过度反应，在不重要的枝节上疯狂处理，对 design space 里最重要的东西视而不见。做网页时它会截图，会用 Chrome DevTools，疯狂用工具填满上下文。他说前两天在一个他称为 Gefa trend 的地方看到：如果要看图或做前端 verify，subagent 应该只把最简短的 summary 放回上下文，不要把截图放进去。Codex 这类有一种倾向，把一张截图放进上下文，之后一直带着这张图。他认为正常人类不会这么干。"
+      ],
+      "examples": [
+        "他口述的区分是：可以集成到主干，每次集成自动构建甚至编译；可以由人决定上线，通过检查的变更也可以自动上线。例子是看到 release tag，就把 release build 推上去。",
+        "约 2865 秒的 Hook-Based CI/CD 写：事件发生就执行指定动作。事件包括 commit、push、pull request。例子是 PR 新增提交时自动跑 Lint 和测试，并写 GitHub Actions 甚至可以养 Claude Code。本地 pre-commit 便于及时反馈，但可以被 --no-verify 跳过。远程检查要配合 required checks 和分支保护，失败才能真正阻止合并。"
+      ],
+      "editor_notes": [
+        "口播 pre-ARM、大圆模型，按上下文和后面出现的 PRE LM 记为大模型之前、大语言模型。点 GitHub 记为 .github。两千分钟是口播里的「好像」，没有在当页看到这个数字。Gefa trend 按口播保留，当页没有对应标题。get 点有点 cn 没有在画面上读成一个确定域名，笔记里只记为他所说的学校侧 git 服务。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v002744533.jpg",
+          "time": 2744.533,
+          "caption": "讲义「祝贺你，发明了 CI/CD」。可见 1990 年代 Kent Beck / XP，2000 年 Fowler / Foemmel，2001 年 CruiseControl，2010 年 Humble / Farley。并区分 Continuous Integration、Continuous Delivery、Continuous Deployment。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v002864533.jpg",
+          "time": 2864.533,
+          "caption": "讲义 Hook-Based CI/CD：commit、push、pull request 等事件上执行动作；PR 可自动跑 Lint 和测试；本地 pre-commit 可被 --no-verify 跳过；远程要有 required checks 和分支保护。"
+        }
+      ]
+    },
+    {
+      "title": "还要人维护，就把偏好写成过不了的检查",
+      "short": "可判定规则",
+      "takeaway": "今天还不能把 agent 当神；只要人还要一起改仓库，文档长度这类偏好就得变成 CI 能 fail 的规则。",
+      "start": 3350.95,
+      "end": 3610.47,
+      "source_ids": [
+        "s-g1219.0~1",
+        "s-g1227.0~7",
+        "s-g1232.0~2",
+        "s-g1237.0~4",
+        "s-g1243.0~5",
+        "s-g1252.0",
+        "s-g1260.0",
+        "s-g1267.0~1",
+        "s-g1274.0~10",
+        "s-g1280.0~10",
+        "s-g1287.0~8",
+        "s-g1288.0",
+        "s-g1294.0~5",
+        "s-g1302.0~17",
+        "s-g1308.0~10",
+        "s-g1317.0~1"
+      ],
+      "terms": [
+        "一千字",
+        "可判定"
+      ],
+      "visual": {
+        "path": "visuals/s11.jpg",
+        "alt": "人和 AI 还要一起维护时，文档超过约定长度就让 CI 失败，不能只写在提示里指望它记得。",
+        "refs": [
+          "p1",
+          "p2"
+        ],
+        "labels": [
+          "人和 AI 一起改",
+          "文档超过一千字",
+          "len 一下",
+          "CI 失败",
+          "提示里写了也会忘"
+        ]
+      },
+      "paragraphs": [
+        "如果开发者不可信，agent 是一种更不可信的开发者，而项目还需要人来维护。今天还不能把 agent 当成神。他前一天看到一篇让他震撼的推文，讨论人和超级智能的关系，例子是狗：狗无法理解人类创造的世界，人类对狗就是超级智能；狗不知道人类怎么工作，但看到一个可以生活的世界。世界上大概有十亿只狗，而且它们好像活得非常快乐。他说如果你们看过这篇很有名的推文，就不要把 AI 当成神，把任务交出去就不管。",
+        "如果在今天这个阶段还要人和 AI 共同维护一个项目，就必须强行阻止 AI 做那些事。中间任何一件发生了，就永远无法回头。一旦成为 AI slop，人无法再维护。那个文档你能改吗？不可能。你想定位到要改的地方都不可能。唯一可能就是让 agent 继续改，直到项目维护不下去。所以 CI 在 agentic AI 时代含金量很高。可以在 CI 里创建一个硬条件，例如文档不能超过一千字，直接把字符串 len 一下，超过就 fail，永远不能合进主要分支。agent 能看到这些检查，也会在本地乱运行 pre-commit hook。文档不能超过一千字，很可能本地 pre-commit 就能查。agent 马上发现失败，会想起 readme.md 或 agents.md 里有一条「文档不能超过一千六百字」。",
+        "但今天的 agent 还做不到始终记住。上下文才到大约一百万。agents.md 里往往已经写了很多，比如「文档禁止膨胀」。agent 会看到它，可随着上下文膨胀，注意力不断涣散。项目到十万行或更多时，注意力会开始滑坡。这些自动检查的类型，很多在软件工程诞生时就有人做。文档不超过一千字这种检查，一般不会有人做，因为文档是人写的，人积累 slop 的速度远远没有 AI 快，文档重构相对不那么急，也就不会先设一条 CI。AI 时代，可判定的规则变得非常重要。",
+        "他收束这一段：先是 Ralph Loop，以 workspace 的状态为状态，可以用 git，再选择某一个 action 向后做一步；过程中可以做 pre-commit、post-commit、pre-push、pre-merge 这样的门控。这就是 agent-native 开发。讲到这里，屏幕已经换到下一页关于 OpenAI 的文章。"
+      ],
+      "examples": [
+        "约 3465 秒的表题是「把 Agent 的偏执变成可执行的约束」。行包括：一写就是 20 KB 文档，对应文档字数预算和重复段落检查，人判断内容是否值得保留；堆细节、造多余抽象，对应重复率、未使用代码，人判断抽象是否必要；小任务变成大重构，对应改动范围白名单和 Diff 预算，人判断超出范围是否批准；代码能跑但读不懂，对应 Lint、类型检查、复杂度上限，人做命名与设计审查；改测试让失败消失，对应受保护的回归测试和测试删除告警，人判断行为变更是否合理；顺手关闭 CI 规则，对应规则文件变更需指定人批准，批准者与开发者分离。页底写：阈值按项目约定；CI 拦住可判定的问题，例外由人批准。二十 K 与口播的二十 K 文档是同一类例子；一千字和一千六百字是他另外举的硬门槛。",
+        "他收束时回顾：Ralph Loop 以 workspace 为状态，用 git 选择下一步，过程中可以做 pre-commit、post-commit、pre-push、pre-merge。然后他说这就是 agent native 开发，并开始提到 OpenAI。"
+      ],
+      "editor_notes": [
+        "一千字、一千六百字、大约一百万上下文、十万行，都是口播里的数量级，不是同一条规则的两个官方阈值。20 KB 出现在讲义表格里。十亿只狗是他复述的那篇推文，不是课堂统计。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v003464533.jpg",
+          "time": 3464.533,
+          "caption": "表格「把 Agent 的偏执变成可执行的约束」。20 KB 文档对文档字数预算；多余抽象对重复率和未使用代码；大重构对 Diff 预算；难读对 Lint、类型和复杂度上限；改测试对受保护的回归测试；关闭 CI 规则要指定人批准，批准者与开发者分离。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v003584533.jpg",
+          "time": 3584.533,
+          "caption": "讲义已切到 Harness engineering: leveraging Codex in an agent-first world。可见引文 We started with an empty git repository，以及环境、约束、反馈和验证机制。"
+        }
+      ]
+    },
+    {
+      "title": "空仓库可以开工，公开的门控却不像全部",
+      "short": "空仓库",
+      "takeaway": "OpenAI 的文章说人可以不再写代码，但从空仓库开始仍然要人把环境、约束、反馈和验证定好；讲师不相信公开的那点 lint 就是全部。",
+      "start": 3610.47,
+      "end": 3847.77,
+      "source_ids": [
+        "s-g1323.0~14",
+        "s-g1324.0",
+        "s-g1332.0~17",
+        "s-g1336.0~9",
+        "s-g1343.0~16",
+        "s-g1350.0",
+        "s-g1351.0",
+        "s-g1359.0",
+        "s-g1366.0",
+        "s-g1367.0",
+        "s-g1375.0",
+        "s-g1380.0~8",
+        "s-g1385.0~9",
+        "s-g1390.0~4"
+      ],
+      "terms": [
+        "empty git repository",
+        "门控"
+      ],
+      "paragraphs": [
+        "他不确定这篇是不是被「抢」了，然后发现 openai.com 竟然可以直接访问。文章题目他读成 harness engineering: leveraging Codex in an agent-first world。发布时引起了一定轰动。他说 Codex 的人和 Claude Code 后来的团队都说过人已经不写代码了。他接着说 Claude Code 在那段时间，尤其逆向时，source map 泄露了；那应该是一个门控，CI 里没有挡住明文泄露。至少要 review，明文不能泄露。每次 push 之前也要确保代码明文和 API key 没有泄露。文章里的原话是 we started with an empty git repository：从零开始，人不写代码了，但人依然要把模型流程定好，也就是环境、约束、反馈和验证机制。这些可能是用自然语言说的，比如每次 push 之前确保明文没有泄露 API key。",
+        "文章当时引起了轰动。Codex 仓库里能看到 CI。按 pull request 跑快速门禁，main 做全量认证，发布是第三层。拆开来，主要还是 lint 一类的工具，例如 cargo fmt，这是 Rust，在座的人可能不知道那是什么。他让模型把这三层解释成不懂 Rust 的人也能懂。快速那层是格式、拼写，以及 bad smell，比如文件太大、函数太大，还有依赖。main 上的全量认证，他认为应该是跑很多单元测试。发布时再打标签。",
+        {
+          "text": "文章写得很 fancy，还有 what we're still learning：如果一个软件要以年为周期维护，他们的 agent flow 还没有想好。他由此认为，只看 Codex 这些 CI 门控，一个 agent-native 项目绝对不可能只做这一点；如果只做这一点，项目一定已经崩溃。他百分之百确信，Codex 背后还有一整套巨大的 agent-native 门控，防止 AI slop，因为这个项目看起来比较正常、有人感。只用 lint 这种东西，不可能写出一个有人感的项目。",
+          "caveat": "这是讲师的判断。同页讲义写着，文章没有附上内部项目可直接复用的完整门控配置。"
+        }
+      ],
+      "examples": [
+        "口播把 Codex 的 CI 分成三层：按 pull request 跑快速门禁；代码合进 main 之后做更全的验证；发布是第三层，再打标签。",
+        "约 3825 秒的讲义标题是「Agent Native 开发：把品味做成机制」。它写：把重要的架构品味转成可检查的规则，而不只是写在规范文档中；依赖方向用 linter 检查，报错直接包含修复指导；技术债不是等到代码无法维护才清理，后台 Agent 定期扫描偏离规则的代码，提交小规模修复 PR。下面一节 “What we're still learning” 写：Codex 公开出来的 CI 看起来并不是全部；文章未附该内部项目可直接复用的完整门控配置，文中明确提到了 lint、结构测试和 CI。"
+      ],
+      "editor_notes": [
+        "Calko 按 source map 泄露这段记为 Claude Code。codecs 记为 Codex。closed AI / CLOSE 的 AI 是他的说法，不是文章标题。三层的文件名以画面笔记为准，口播只说了 PR 快速门禁、main 全量、发布第三层。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v003764533.jpg",
+          "time": 3764.533,
+          "caption": "终端笔记讨论 /Projects/codex/.github：第一层是每次提交都跑的快速门禁；第二层是合进 main 后的全量验证，并出现 postmerge；第三层是打 tag 发布。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v003824533.jpg",
+          "time": 3824.533,
+          "caption": "讲义「把品味做成机制」，并有 What we're still learning。写明文章没有附上可直接复用的完整门控配置，文中明确提到 lint、结构测试和 CI。"
+        }
+      ]
+    },
+    {
+      "title": "十六个 agent 会撞车，所以要有一张能看见的图",
+      "short": "看得见进度",
+      "takeaway": "并行不是只把任务切开；十六个 agent 会撞上同一个 bug。讲师自己靠架构图和 logbook 看谁在做什么。",
+      "start": 3847.77,
+      "end": 4021.26,
+      "source_ids": [
+        "s-g1400.0~1",
+        "s-g1405.0~2",
+        "s-g1412.0~5",
+        "s-g1414.0",
+        "s-g1419.0",
+        "s-g1426.0~4",
+        "s-g1432.0~8",
+        "s-g1437.0~11",
+        "s-g1445.0~6",
+        "s-g1451.0~2",
+        "s-g1457.0~8"
+      ],
+      "terms": [
+        "十六个 agent",
+        "logbook"
+      ],
+      "paragraphs": [
+        "讲义里还有别人的经验。Anthropic 在做 agent-native workflow、可以并行的时候，发现十六个 agent 协作、开始编译 Linux 时卡住了：大家先撞上同一个 bug，重复修复，覆盖彼此的改动。所以 Ralph Loop 真正实现时，仍然需要一个做 orchestration 的调度 agent 来协同进展，甚至要能看见进展。讲义补充了一种拆法：大部分文件用 GCC 编译，只把不同子集交给新编译器；失败后再把部分文件换回 GCC，逐步缩小导致失败的集合。不同 agent 能修不同文件暴露的问题，但验证方式会改变任务的可分性；有些文件分别过关，放在一起却失败，所以仍要检查组合。",
+        "他讲自己的一个项目，但说不能说那是什么。他们有一份 architecture.md，可以自动生成一张架构图。agent workflow 里有一个 logbook，里面有很多 task，有的完成了，有的还在 ongoing。他们有一个 agent dashboard。正在进行的任务会自动推到 GitLab 的 CI 里，可以在架构图上看到有几个 agent 在做这个任务，还有一个估计的百分比、像进度条一样，以及这个模块上在干什么。作为整个项目的总架构师，他基本上看这个就行。底下如果他是 lead，有几位同学写代码，每个同学又有几个 agent，直接管理会很困难。因为有这种 agent-native 的 loop，Anthropic 做，他们也做，他可以在一张架构图上看现在的进展，预估今天或一个小时以后项目会变成什么样，再决定调整。这是一种很典型的 agent-native 开发：看这张图就行。",
+        "他现在还不太敢做到像 Grokbot 那样，有一个 master agent，所有事情都交给它。他想试这个方向：由它去开很多 logbook 里的任务，再挂上去，一个一个真正由 agent 完成。开源社区里已有很多实践可以学。"
+      ],
+      "examples": [
+        "约 3885 秒的讲义标题就是「Anthropic：16 个 Agent 卡在同一个 Bug」。正文写 C 编译器实验里 16 个 Agent 协作编译 Linux 时却卡住，先撞上同一个 bug，重复修复、覆盖彼此的改动；并用 GCC 构造可以独立验证的子任务。"
+      ],
+      "editor_notes": [
+        "十六个 agent 编译 Linux 是讲义页和口播都有的例子。GCC 二分文件集是讲义上的补充，口播没有展开这套编译器实验的步骤。gawkbot 记为 Grokbot。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v003884533.jpg",
+          "time": 3884.533,
+          "caption": "讲义「Anthropic：16 个 Agent 卡在同一个 Bug」。C 编译器实验：16 个 Agent 协作编译 Linux 时卡住，撞上同一个 bug，重复修复并覆盖彼此改动。同页写可用 GCC 把失败缩小到文件子集，并提醒文件组合仍要一起检查。"
+        }
+      ]
+    },
+    {
+      "title": "中文和英文要同时真，就做成三个兄弟文件",
+      "short": "三份文档",
+      "takeaway": "deepseek-harness 不靠人记得去同步翻译：同目录三份文件用 hash 分出新旧，只对改过的部分做补丁。",
+      "start": 4021.26,
+      "end": 4600.73,
+      "source_ids": [
+        "s-g1466.0~4",
+        "s-g1472.0",
+        "s-g1477.0~10",
+        "s-g1485.0~9",
+        "s-g1492.1",
+        "s-g1498.2~6",
+        "s-g1499.0",
+        "s-g1500.0",
+        "s-g1504.0",
+        "s-g1507.0",
+        "s-g1514.0",
+        "s-g1523.0~5",
+        "s-g1530.0",
+        "s-g1534.0",
+        "s-g1536.0",
+        "s-g1542.0",
+        "s-g1552.0~6",
+        "s-g1554.0",
+        "s-g1567.0~3",
+        "s-g1575.0",
+        "s-g1586.0~10",
+        "s-g1598.0~6",
+        "s-g1608.0~1",
+        "s-g1619.0~3",
+        "s-g1628.0~2",
+        "s-g1638.0~1",
+        "s-g1647.0~4",
+        "s-g1657.0~4",
+        "s-g1666.0",
+        "s-g1673.0~2",
+        "s-g1679.0~24",
+        "s-g1682.0~18",
+        "s-g1684.0",
+        "s-g1689.0",
+        "s-g1694.0~17"
+      ],
+      "terms": [
+        "deepseek-harness",
+        "hash"
+      ],
+      "visual": {
+        "path": "visuals/s14.jpg",
+        "alt": "一篇文档是中文、英文和一份 i18n 记录三兄弟；hash 判定哪一侧更新，翻译只改差异。",
+        "refs": [
+          "p2",
+          "p3"
+        ],
+        "labels": [
+          "中文一篇",
+          "英文一篇",
+          "i18n 记录",
+          "hash 看新旧",
+          "只改差异"
+        ]
+      },
+      "paragraphs": [
+        "他拿 deepseek-harness 和 Codex 比。ClosedAI 什么也不说；这个仓库里藏了很多东西。clone 下来的第一感觉很奇怪，项目的 organization 和别的都不一样。这是中国人的项目。如果自己是中文 native speaker，他会选择用中文写文档，因为 System 1 读中文比读英文快。他读英文已经比较快，读中文仍可能快一倍；这一倍让他能在文档里快速浏览。他的视觉模型能从海量文字里抽出关键信息，定位到要看的地方。一个要走向世界的项目，就意味着 deepseek-harness 要同时维护中文文档和英文文档。他说这就是地狱和灾难：文档都是随手一改、随手提交，项目里有无穷多文档时，怎么保证中英文一致。docs 里就有这么多文档。",
+        "他打开 docs 里的 architecture.md，说这是一份非常有人感、看起来干净舒适的文档，中间有很多交叉引用。他告诉大家：在这个仓库里，所有交叉引用都是合法的，找不到不合法的 link，文档之间的一致性是有的。他让模型回答：项目里的中文和英文如何保持一致，又如何保持人感。演示切错时他说了一句「不是这个，是我的」。文档可能有一部分是人写的，但人主要是告诉它应该干什么。",
+        "答案是三套文件加一个门禁。每一篇在范围内的文档，都是同目录的三个兄弟文件定义的配对契约：一份中文 Markdown，一份英文 Markdown，还有一份现在不太常见的 i18n.yaml。两侧权威对等，谁先写谁就是那一次的源，另一侧靠 agent 翻译过来。绑定它们的是：它们必须做同一件事。画面上的命令是 pnpm run verify-translation-pairing。",
+        "他解释 hash：另一份文件里放一个 hash，这边也放一个。过往的 hash 都在 Git 历史里，所以知道谁变了、谁先变、谁更新、谁更旧。没见过的新 hash 就是新的。新旧不匹配，就用 AI 翻译。翻译是 patch based：看这份文档改了什么，把另一份相对应的位置改掉，其他地方保持一致。有些东西由程序保证。一段很短的 hash 文本就可以保证一致性。他认为项目不适合只用文件系统里的 repository 来表示，里面的关系是错综复杂的。deepseek-harness 做了一个牺牲：牺牲目录的干净。可以用 VS Code 的配置忽略不想看的文件，或做一个投影。三个兄弟太讨厌的话，就忽略所有 i18n.yaml，中国人再把英文文档也隐藏，只留中文；英语使用者把中文忽略掉。IDE 里的开发体验可以一模一样，但它是 agent-native 的。所以软件不应该只是一个 repo，它应该由关系组成。",
+        "更新纪律是最小补丁，不是重新翻译，只对差异部分改。人感被当成可校准的规范。i18n 下有很多材料，他打开 style samples。这么多文档毫无疑问不是人写的，但仍有一些 AI 味；项目大到这个体量还让人能维护，是下了很大功夫。案例按需加载。若把「文档该怎么写」全放进 agents.md，暴涨之后甚至一百万上下文都装不下。渐进式披露就是放在这里，只有需要翻译或写文档时才 load。还有术语表，约定仓库里中英文术语统一，也可以用门控做一定程度的检查。他设想中英文在 paragraph 或 section 上对应，然后要求某个词出现的次数不要差太多，例如加减三。词是 AI 的话，对应的中文是人工智能。"
+      ],
+      "examples": [
+        "约 4065 秒，终端在 /Projects/deepseek-harness。目录里能看到 apps、benchmarks、docs、packages、scripts、python，以及成对的 README、AGENTS.md、CLAUDE.md，还有带 i18n 的 yaml。约 4245 秒把三个兄弟画成 foo.md、foo.zh.md、foo.i18n.yaml，命令写着 pnpm run verify-translation-pairing。同一屏的引用信息标题是 Everything is a Plugin，author 为 DeepSeek-AI，年份 2026，仓库写着 github.com/deepseek-ai/deepseek-harness。"
+      ],
+      "editor_notes": [
+        "口播有 deep sea、DeepSickHarmony、Dipsy Harnes、DIPSY 等多种听法。约 4065 秒的目录屏路径是 deepseek-harness，能看到带 i18n 的 yaml。hash 的具体十六进制没有抄进正文，避免看错字符。style samples 的文件名口播听成 style3 samples。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v004064533.jpg",
+          "time": 4064.533,
+          "caption": "终端位于 deepseek-harness。可见 apps、benchmarks、docs、packages、scripts 等目录，以及 README、AGENTS.md、CLAUDE.md 和成对的 i18n yaml。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v004244567.jpg",
+          "time": 4244.567,
+          "caption": "三个兄弟文件示意为 foo.md、foo.zh.md、foo.i18n.yaml。命令为 pnpm run verify-translation-pairing。引用标题 Everything is a Plugin，DeepSeek-AI，2026，github.com/deepseek-ai/deepseek-harness。"
+        }
+      ]
+    },
+    {
+      "title": "配对契约是项目早期长出来的",
+      "short": "怎么长出来",
+      "takeaway": "先有术语约定，再把对等的 sidecar 和门禁放进流水线；讲师把它看成 pydoc、Javadoc 那一类老办法在 agent 时代的用法。",
+      "start": 4602.73,
+      "end": 4904.29,
+      "source_ids": [
+        "s-g1696.0",
+        "s-g1699.0~19",
+        "s-g1702.1~2",
+        "s-g1707.0",
+        "s-g1711.0",
+        "s-g1716.0",
+        "s-g1722.0",
+        "s-g1724.0",
+        "s-g1727.0~9",
+        "s-g1728.0~17",
+        "s-g1730.0",
+        "s-g1733.0",
+        "s-g1734.0",
+        "s-g1735.0",
+        "s-g1735.1~19",
+        "s-g1736.1~7",
+        "s-g1737.0",
+        "s-g1738.0",
+        "s-g1738.0~21",
+        "s-g1740.0",
+        "s-g1741.0",
+        "s-g1742.0",
+        "s-g1745.0",
+        "s-g1747.0",
+        "s-g1748.0",
+        "s-g1749.0",
+        "s-g1752.0",
+        "s-g1752.0~2",
+        "s-g1753.0~12",
+        "s-g1756.0",
+        "s-g1757.0~2",
+        "s-g1758.0"
+      ],
+      "terms": [
+        "配对契约",
+        "门禁"
+      ],
+      "paragraphs": [
+        "他把「加减三」说完，又笑自己说成了人工智人。他打比方：如果 AI 对应人工智能，tokenize 之后两边出现的次数可以要求相差不超过三。这是设想，阈值要小心调，不要把实际上可以通过的筛掉。不约束 agent，它会以光速生产 slop。他看到 deepseek-harness 里有非常多的门控，于是问：这一整套文档一致性流程是怎么开发出来的，由谁、在什么时间引入，又经历了怎样几次大变化。他不知道细节，但这个仓库把开发历史留了下来。",
+        "他说崔天意在 2026 年 6 月 10 日晚上 11 点，有一个从零开始的提交。项目从空长到今天这个有一定成熟度的状态。画面上的阶段摘要写的是另外两个日期，见下面的例子。主要作者是 Turtle、张子雅和崔天意，这三个人都在他们的内测群里。2026 年 6 月 25 日，术语 terminology 先行，没有任何机制，只有词汇约定。他认为这说明他们意识到文档重要，而且有经验。7 月开始引入配对契约。他不确定是不是从某个项目里看到的，因为大模型之前也有类似办法。",
+        "例如 Python 的文档可以由 docstring 生成，文档和代码永远保持一致。这不是 Python 第一个这么做，每种语言都有类似 Javadoc 的语法。C++ 本身不原生支持，也有自己的文档工具和规定语法：注释这样写，就可以被提取出来，代码和 API reference 可以百分之百一致。受到这些启发，应该有类似的东西。到了 agent-native 时代，要把人的工作迁移给 agent，这就是一个很酷的机制：配对契约加门禁。7 月 3 日是对等权威的 sidecar。他们马上发现这个机制要进入自动化流水线。文档机制在很短的早期开发里就形成了，然后一直遵循，于是可以同时维护中文和英文。",
+        "他称这里面有很多宝藏，并说这是 agent-native 开发。第一眼就会发现这个项目和别人不一样。他认为这是中国人的骄傲，DeepSeek 也是。它把这些东西开源了。OpenAI 是 closed 的 AI，放出来的是最基础的 lint。"
+      ],
+      "examples": [
+        "约 4725 秒的阶段摘要写着：2026-06-25 到 07-01，术语表先行，docs/i18n/terminology.md，没有别的机制；2026-07-02 到 07-03，配对契约和门禁诞生。作者名可见 ZiyaZhang、Tianyi Cui、Turtle。口播的「6 月 10 日晚上 11 点从零开始」没有出现在这一屏的两行摘要里。"
+      ],
+      "editor_notes": [
+        "崔天意、张子雅、Turtle 是口播；画面上的拉丁拼写是 Tianyi Cui、ZiyaZhang、Turtle。6 月 10 日 23 点是口播，6 月 25 日和 7 月 2 日至 3 日是画面上的阶段表，两个都保留。PRE LM 记为大模型之前。拍 DOC 记为 Python docstring；DOC C 阵记为 C++ 的文档提取工具，具体程序名口播没有说清。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v004724567.jpg",
+          "time": 4724.567,
+          "caption": "deepseek-harness 的阶段摘要：2026-06-25 至 07-01 术语表先行；2026-07-02 至 07-03 配对契约与门禁诞生。可见 ZiyaZhang、Tianyi Cui、Turtle。"
+        }
+      ]
+    },
+    {
+      "title": "字数有预算，评审分成三层",
+      "short": "预算与评审",
+      "takeaway": "字数预算、本地检查、CI 和人工评审，用来把做法留在仓库里，防止文档无限堆积。",
+      "start": 4904.29,
+      "end": 5214.99,
+      "source_ids": [
+        "s-g1759.0~3",
+        "s-g1760.0",
+        "s-g1761.0~17",
+        "s-g1762.0",
+        "s-g1762.0~14",
+        "s-g1763.0",
+        "s-g1763.0~2",
+        "s-g1766.0",
+        "s-g1766.0~7",
+        "s-g1768.0~2",
+        "s-g1770.0",
+        "s-g1771.0",
+        "s-g1771.0~5",
+        "s-g1772.0",
+        "s-g1775.0~5",
+        "s-g1779.0~15",
+        "s-g1780.0",
+        "s-g1781.0",
+        "s-g1782.0",
+        "s-g1784.0~2",
+        "s-g1784.0~52",
+        "s-g1790.0~2",
+        "s-g1795.0",
+        "s-g1796.0",
+        "s-g1797.0~75",
+        "s-g1799.0",
+        "s-g1800.0",
+        "s-g1801.0",
+        "s-g1801.1~65",
+        "s-g1804.0",
+        "s-g1804.0~80",
+        "s-g1805.2~33",
+        "s-g1806.0~3"
+      ],
+      "terms": [
+        "AGENTS.md",
+        "code review"
+      ],
+      "visual": {
+        "path": "visuals/s16.jpg",
+        "alt": "根文档和架构文档有字数上限；代码还要过本地自证、CI 和人工评审三层。",
+        "refs": [
+          "p0",
+          "p2"
+        ],
+        "labels": [
+          "根文档 1960 字",
+          "架构 2400 字",
+          "本地自证",
+          "CI 门禁",
+          "人工评审"
+        ]
+      },
+      "paragraphs": [
+        "公开能看见的，是 CI 时把 test 跑过这种最基本的门禁。内部会有隔一段时间的 agent review。博客里说，一开始尝试每周做一次 agent review 来防止架构崩溃，这些没有一起公开。仓库里则有常驻的指令体系：AGENTS.md 分层，每个子树上都有。还有一份 verify 的预算。口播说 root 小于等于一千九百六十，architecture 小于等于两千四百。画面上这是字数，用来防止文档无限堆积。",
+        "还有 Agent Notes，有点像他们的 Ralph Loop。状态包括 implemented、proposed、rejected 和 archived。讲师自己的 loop 不一样：他们自己实现，有 logbook，日志里带状态，和 GitLab CI 整合，有一张架构图。deepseek-harness 也应该可以有 dashboard，但他认为对方可能觉得不必要。agent 要开发时，会把事情做在一个类似 logbook 的地方。还有很多 skills。",
+        "他岔开说了一个产品变化：ChatGPT 现在喜欢生成动态 UI 组件，一些 HTML 小卡片。以前把图片堆在前面，现在会把图片嵌进文本流程，读起来舒适很多。合适的时候也会这么做。命令行上可能麻烦一点，所以 Web UI 很有可能成为各种评审流程的主流。门禁包括 code review、写作规范、工程质量规范，以及产品自己提供的 skill。",
+        "code review 现在可以这样做：以前面对陌生项目，不可能像现在一样，只要有一些原则性的认识，知道什么是好的、什么是没见过的，就可以很快向别人学。画面把评审收成三层：本地自证、CI 门禁、人工评审。他注意到它还有一个分数，但没有把分值念出来。新增文案必须通过语义评审。文档和 JSDoc 中间还有很多一致性：不只有中英文一致，还有所有链接的一致。如果文档里有一个代码块，比如一个 interface，还会检查这个 interface 原封不动、逐字出现在某个文件里。这样防止代码改了接口而文档没跟上，或者文档改了接口设计而代码没跟上。",
+        "他们把自己的想法做了一点扩展：agent-native 项目里，这种 code block 带执行语义，可以 specify 一小段东西是干什么的，例如它必须出现在某个位置，或以某种形式和另一个东西关联。里面有一些轻量级的 check，扩展了 Markdown fenced code block 的语法。skills 则把「怎么做」从「做什么」里分离。机械门禁包括 doc sync、静态 CI、coverage、snapshot。代价是每次提交前可能要跑大量门禁。但你又不写代码，大部分时候是监工。"
+      ],
+      "examples": [
+        "约 4965 秒写着：根 AGENTS.md 只放每次会话都必须知道的规则；verify-doc-budgets 里 root 不超过 1960 字，architecture 不超过 2400 字。Agent Notes 的状态包括 implemented、proposed、rejected、archived。Skills 放在 .agents/skills/，这一屏写着 16 个。",
+        "约 5085 秒写的是 scripts/verify-* 74 个，另有 gen-* 20 个，再加上 run-gates.ts。这一屏点出的名字是 doc-sync、ci-static、ci-coverage、ci-snapshot。同一页把 code review 收成三层：本地自证、CI 门禁、人工评审。"
+      ],
+      "editor_notes": [
+        "约 5085 秒这一屏是 scripts/verify-* 74 个，另有 gen-* 20 个，再加上 run-gates.ts，不是 74 里面包含那 20 个。点名的是 doc-sync、ci-static、ci-coverage、ci-snapshot。口播没有把这组数字念全。一千九百六十和两千四百，口播的单位像「次」，不在这一屏上。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v004964567.jpg",
+          "time": 4964.567,
+          "caption": "deepseek-harness 说明：AGENTS.md 分层；verify-doc-budgets 中 root ≤ 1960 字、architecture ≤ 2400 字。Agent Notes 状态有 implemented、proposed、rejected、archived。Skills 位于 .agents/skills/，屏上写 16 个。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v005084567.jpg",
+          "time": 5084.567,
+          "caption": "这一屏写 scripts/verify-* 74 个，另有 gen-* 20 个，再加上 run-gates.ts。点出 doc-sync、ci-static、ci-coverage、ci-snapshot。code review 分成本地自证、CI 门禁和人工评审。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v005144567.jpg",
+          "time": 5144.567,
+          "caption": "code review 分成本地自证、CI 和人工评审。CI 一侧可见静态检查、coverage、benchmarks、snapshots；本地一侧有推送前的检查。"
+        }
+      ]
+    },
+    {
+      "title": "人写计划；没有试错，斩杀线就在",
+      "short": "试错与斩杀线",
+      "takeaway": "人负责把计划和状态写清楚，实现交给循环；讲师认为没有 token 就少了失败的机会，好想法会停在一条直路上。",
+      "start": 5214.99,
+      "end": 5828.76,
+      "source_ids": [
+        "s-g1807.0~15",
+        "s-g1807.1~53",
+        "s-g1809.0",
+        "s-g1810.3~44",
+        "s-g1812.0~17",
+        "s-g1812.0~97",
+        "s-g1813.0~36",
+        "s-g1813.1~17",
+        "s-g1814.0~78",
+        "s-g1815.0~75",
+        "s-g1817.1",
+        "s-g1818.0~17",
+        "s-g1818.0~97",
+        "s-g1820.0~10",
+        "s-g1821.0~70",
+        "s-g1822.0~56",
+        "s-g1823.0~79",
+        "s-g1825.0~5",
+        "s-g1826.0~7",
+        "s-g1826.0~87",
+        "s-g1828.0",
+        "s-g1829.0",
+        "s-g1829.1~3",
+        "s-g1830.2~41",
+        "s-g1831.4~7",
+        "s-g1832.0~54",
+        "s-g1836.0~3",
+        "s-g1843.0~3",
+        "s-g1850.0",
+        "s-g1857.0~3",
+        "s-g1866.0~2",
+        "s-g1873.0~16",
+        "s-g1881.0",
+        "s-g1887.0~18",
+        "s-g1895.0~3",
+        "s-g1903.0~5"
+      ],
+      "terms": [
+        "token",
+        "开源"
+      ],
+      "visual": {
+        "path": "visuals/s17.jpg",
+        "alt": "好想法若没有多次失败，会变成一条直路上的 slop；token 和开源项目是讲师给出的两条去看、去试的路。",
+        "refs": [
+          "p1",
+          "p3"
+        ],
+        "labels": [
+          "先写计划",
+          "实现交给循环",
+          "没有 token",
+          "试错更少",
+          "去看开源"
+        ]
+      },
+      "paragraphs": [
+        "大部分时候人是监工：写 plan，和 AI 一起写 plan。他们在 logbook 里写 plan，在 plan mode 里先把要做什么、做到什么程度搞清楚，剩下的不是人做，是 AI 做。他改 logbook 时不需要跑那些 CI，因为代码都没动。接下来画面上还有一串小检查：客户端 UI、翻译配对、应用入口，以及 TypeScript 相关的一项，文档里粘贴的类型必须与源码一致，且不允许漂移。每一个看起来都很小，加在一起，项目就被维护起来。还有文档的分层、从任务到机制的路由。这就是他说的 agent-native。",
+        "从去年到今年，尤其到今年年初，短短半年，这个项目从六月就开始规划这些事。他看到一个开源的、很有启发的东西，而且来自真正的经验。你一看到会觉得确实应该这样，但很难凭空想出来。如果只坐在教室里做语言律师，思维就被关在当前上下文里往下走，看不见 design space 里还有巨大的另一个方向。他们肯定失败过，写过代码。崔天意跟他差不多是同龄人，所以有这些经验。即便如此，做着做着仍会重构。有一天项目烂了。他学生的 architecture 烂了，他就说先开一份新的空白，再一点一点把旧功能迁进来，保持一个好架构。深度优先走到发现苗头不对，garbage collection 解决不了所有问题。必要时可以模块级重构，也可以整个项目级重构，让项目走到更正确的方向。讲义把这件事写成：真实的失败和异常，会暴露原型里隐藏的设计假设；持续清理技术债，也可能一直在维护一个已经失效的设计假设。",
+        "历史上这样的失败不少。他举社交网络先驱 Friendster：迅速吸引大量用户，然后架构崩溃。他说这是大模型之前的事，今天也许 agent 能把它扶起来。这些经验最终促成了 agent-native 开发的一个好范例。他同时看到一个威胁：不做很多次、不失败很多次、不见很多东西，就不太可能把一个东西真正做好。intent 上可以是世界级的好想法，若组一个草台班子，走的就是一条直线，海量生产 AI slop，好想法最后被别人抄走。有经验的团队才可能收敛到更好的方向。社会性的威胁是：你必须有机会去尝试。",
+        {
+          "text": "开学时他随口说，没有 token 的学生应该立即退学，那是玩笑。他现在认真说的是：没有 token，尝试的机会就不如别人多。不经历试错，最后就看悟性，能不能通过看别人、看现在还有好东西的开源学会。即便悟到了，还是要做很多尝试、去失败。这就形成一条斩杀线。如果读完博士仍然不如 agent 好用，用人单位会选一个 senior，给他无穷的 token，而不是培养一个 PhD。资本家要最大化企业的运行效率。以前可以说师傅带徒弟，看见 potential；如果回报要四五年，那时公司早就黄了，你才能达到 agent 现在所在的位置。而且 agent 还在涨，所有人都在被斩杀。斩杀线越过本科毕业时，你还有没有一个二十美元 Claude Pro 的价值。他的 Anthropic 账号现在又在 Grokbot 里养 Claude Code，二十美元的订阅，他发现所说的 ops 5.5 额度还挺够用，而且真的很强。能够达到这个水平的本科生，他认为很困难。",
+          "caveat": "退学是他标明的玩笑；斩杀线和二十美元订阅是他当天的判断，不是课程给出的就业统计。"
+        },
+        "如果他作为一个 senior，有 big picture，又有一个好的 agent harness，而 OpenAI、Anthropic 这些东西从来没有开源，还要靠他称为国产之光的 DeepSeek 把东西开出来。若这些都只留在公司内部，就会有越来越多的人被斩杀。这是社会性问题。他认为解决可能只有在大学里，因为大学不是以盈利或 KPI 为导向。话是这么说，大家也知道网上那些故事。考核他们的指标不是上课，是科研经费，所以某种程度上也是资本家，高校越来越公司化。这是另一套资本：基金委、科技部，优青、杰青，院士的金字塔。每一个杰青的产出都像公司的产品时，学生永远赶不上 agent，老师和学生都被斩，这个体系就失效。他在这里发表暴论：大学肯定要崩溃。反过来，学而思可能是一种新形态的大学，因为它从上到下是资本化运营，靠样板课。样板课很强，举一百万雇一个清北的天才来设计，每个老师都是执行的机器。现在把执行机器换成老师加 AI，花一千万去模型厂抢最好的天才设计样板课，把教学体系颠覆。他们没有办法，惯性很大，还得这样上课。对方是资本化运营的。未来会发生什么，他不知道。",
+        "他感谢开源社区。他自己的理解是开源社区给的；不在里面看到那些好东西，就不会有今天的理解，也不会来上这门课。大家可以回去在网上找真正优秀的项目。他建议从 deepseek-harness 看起。这个 harness 和今天课上特别小的那个循环是同一类东西。今天这个还不能算完整的 Ralph Loop，它是一个 agent.py；可以把它理解成 deepseek-harness，只是那边一切皆插件，所有东西都插件化了。下课。"
+      ],
+      "examples": [
+        "约 5385 秒的《真正的经验》写：这些很难凭空想出；真实的负载、依赖和异常，会暴露原型里隐藏的设计假设。Garbage collection 无法解决所有问题，持续清理技术债也可能一直在维护一个已经失效的设计假设。失败使你理解架构的修正方向。",
+        "约 5445 秒的《一个社会性的威胁》在口播的 Friendster 之外，还写了 Webvan 和 Quibi。Webvan：2000 年年报披露配送中心负载不足设计容量的 40%，尚未实现现金流盈利；2001 年 7 月申请破产。Quibi：2020 年宣布关停，管理层认为构想不足以支撑独立流媒体服务与推出时机。约 5505 秒的《推论》写：没有 token，就没有做很多次尝试的机会；课堂推论是实践机会的差距会积累成判断力的差距。学习好的设计同时需要很强的学习动机和学习能力。同页有一句「现代新大学出现之前，被斩杀的一代」。",
+        "约 5805 秒才把 Friendster 写成一页：扩容遇上架构边界，迅速吸引大量用户，随后延迟、宕机频发，在竞争中掉队。亲历工程师复盘：单主库带多个完整副本，每个副本都要重放写入，I/O 压力导致复制延迟，署名 Dathan Pattishall，2006。工程师提出按用户分片，但内部环境使方案无法推进，容量问题的根因没有解决。这套设计后来在 Flickr 落地。课堂推论：及时重构既要看清架构，也需要组织有能力改变它。口播只有「迅速吸引大量用户，然后架构崩溃」这一层。"
+      ],
+      "editor_notes": [
+        "ops 五点五、开头的 OPUS5.5 都按口播保留，不改成别的模型号。DPC 哈尼斯记为 deepseek-harness。Wi-Fi 是口播，正文只写成客户端 UI，不改成选定画面上没有逐字读清的脚本名。学而思的一百万和一千万、Friendster 之后被扶起，都是他的说法。Webvan、Quibi、Pattishall 2006 和 Flickr 只出现在讲义页，口播没有念这些细节。"
+      ],
+      "frames": [
+        {
+          "source_type": "video_frame",
+          "path": "frames/v005384567.jpg",
+          "time": 5384.567,
+          "caption": "讲义《真正的经验》：很难凭空想出；真实负载和异常会暴露隐藏的设计假设。Garbage collection 无法解决所有问题。失败用来理解架构该往哪改。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v005444567.jpg",
+          "time": 5444.567,
+          "caption": "讲义《一个社会性的威胁》。Webvan：2000 年配送中心负载不足设计容量的 40%，2001 年 7 月破产。Quibi：2020 年关停。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v005504567.jpg",
+          "time": 5504.567,
+          "caption": "讲义《推论》：没有 token 就没有很多次尝试的机会。学习动机和学习能力并提。同页写「现代新大学出现之前，被斩杀的一代」。"
+        },
+        {
+          "source_type": "video_frame",
+          "path": "frames/v005804567.jpg",
+          "time": 5804.567,
+          "caption": "讲义 Friendster：重放写入的多副本导致复制延迟，Dathan Pattishall，2006。分片方案当时推不动，类似设计后来在 Flickr 落地。"
+        }
+      ]
+    }
+  ],
+  "supplements": [],
+  "bridges": {},
+  "self_test": [
+    {
+      "section": 1,
+      "question": "实验二想把实验一往前推的那一下，叫什么？它要补上 agent 的哪一种短处？",
+      "answer": "算力换智力。agent 已经能做长程任务，但解决问题的直觉或品味较弱，所以要在有限算力里同时做宽度和深度，而不是一条路走到黑。"
+    },
+    {
+      "section": 2,
+      "question": "intent、spec、implementation 之间是什么数量关系？",
+      "answer": "人在 intent 空间里采样一个点。intent 到 spec 是一对多，spec 到 implementation 又是一对多。"
+    },
+    {
+      "section": 4,
+      "question": "课堂上这个大约一百五十行的 agent，唯一的工具和循环结构是什么？",
+      "answer": "一个 bash 工具。while 读入用户消息；没有工具调用就输出回复；有 bash 调用就执行，再把结果以 tool 角色写回。"
+    },
+    {
+      "section": 5,
+      "question": "Ralph Loop 那三行在重复什么？GPT 的那句总结是什么？",
+      "answer": "把同一个 prompt 反复送给 claude -p。总结是 The prompt stays the same, but the world changes。while 本身不会判断何时算无法改进。"
+    },
+    {
+      "section": 9,
+      "question": "讲师复述的两条公理是什么？它们和 CI/CD 是什么关系？",
+      "answer": "机器永远是对的，不要怀疑机器；未测代码永远是错的。因为开发者不可信，所以每次状态迁移都要检查，检查不过就退回。他说这就是大约二十年前的 CI/CD。"
+    },
+    {
+      "section": 11,
+      "question": "他举的文档硬门槛是多少？agents.md 里那条又写成多少？",
+      "answer": "CI 可以用 len 把超过一千字的文档直接 fail，不让它进主分支。他又说 agents.md 里可能写着文档不能超过一千六百字，但上下文变长后 agent 会把这条忘掉。"
+    },
+    {
+      "section": 14,
+      "question": "deepseek-harness 怎样避免中英文整篇重译？",
+      "answer": "同目录三个兄弟文件，两侧对等。用 hash 和 Git 历史判断谁更新，然后只对改过的部分做补丁式翻译，并用 pnpm run verify-translation-pairing 这类门禁卡住。"
+    },
+    {
+      "section": 16,
+      "question": "root 和 architecture 的预算口播是多少？评审被分成哪三层？",
+      "answer": "root 不超过一千九百六十，architecture 不超过两千四百。三层是本地自证、CI 门禁和人工评审。"
+    },
+    {
+      "section": 17,
+      "question": "「没有 token 就退学」和他当天认真说的那句差在哪里？",
+      "answer": "退学是他标明的玩笑。认真的说法是：没有 token，尝试和失败的次数就不如别人，用人单位会把 token 给 senior，而不是花四五年培养一个还不如 agent 的新人。"
+    }
+  ]
+}

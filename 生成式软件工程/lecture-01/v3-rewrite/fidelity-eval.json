@@ -1,0 +1,1183 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "e28eb8d743c8b958b68b6b94acf67660ff59fc1a8d6fec12dca53a0f920de3b8",
+  "writer_model": "grok-4.7-high",
+  "precision": {
+    "items": [
+      {
+        "ref": "s1:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g8.0; s-g9.0; s-g13.0; s-g20.0; s-g22.0; frames/v000060000.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "35daae1c4a30d48d"
+      },
+      {
+        "ref": "s1:visual",
+        "verdict": "supported",
+        "evidence": "s-g8.0; s-g9.0; s-g13.0; s-g20.0; s-g22.0; frames/v000060000.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "d571a83a672b4ae0"
+      },
+      {
+        "ref": "s1:n0",
+        "verdict": "supported",
+        "evidence": "s-g8.0; s-g9.0; s-g13.0; s-g20.0; s-g22.0; frames/v000060000.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "f5c486f34f24f925"
+      },
+      {
+        "ref": "s1:f1",
+        "verdict": "supported",
+        "evidence": "s-g8.0; s-g9.0; s-g13.0; s-g20.0; s-g22.0; frames/v000060000.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "f90f82560be03a65"
+      },
+      {
+        "ref": "s2:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g24.0–s-g64.0; frames/v000240000.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "8acfb0f0c3434d9c"
+      },
+      {
+        "ref": "s2:p0",
+        "verdict": "supported",
+        "evidence": "s-g24.0–s-g64.0; frames/v000240000.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "73765f635ab13cf8"
+      },
+      {
+        "ref": "s2:p4",
+        "verdict": "supported",
+        "evidence": "s-g24.0–s-g64.0; frames/v000240000.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "0df4a9a169ea6e48"
+      },
+      {
+        "ref": "s2:f0",
+        "verdict": "supported",
+        "evidence": "s-g24.0–s-g64.0; frames/v000240000.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "f790f536b523c5b1"
+      },
+      {
+        "ref": "s3:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g74.0–s-g84.0",
+        "note": "与指定转写或截图一致。",
+        "hash": "f0e854dac434c78d"
+      },
+      {
+        "ref": "s3:p3",
+        "verdict": "supported",
+        "evidence": "s-g74.0–s-g84.0",
+        "note": "与指定转写或截图一致。",
+        "hash": "73b178c5aa40a7fb"
+      },
+      {
+        "ref": "s3:p2",
+        "verdict": "supported",
+        "evidence": "s-g74.0–s-g84.0",
+        "note": "与指定转写或截图一致。",
+        "hash": "e28dbb4f7223b712"
+      },
+      {
+        "ref": "s4:p2",
+        "verdict": "supported",
+        "evidence": "s-g85.0–s-g103.0~32; frames/v000649833.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "26da78dd118174fc"
+      },
+      {
+        "ref": "s5:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g105.0–s-g144.0; frames/v001045767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "98054f3a3e156002"
+      },
+      {
+        "ref": "s5:p2",
+        "verdict": "supported",
+        "evidence": "s-g105.0–s-g144.0; frames/v001045767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "e99a9675767b158a"
+      },
+      {
+        "ref": "s5:f1",
+        "verdict": "supported",
+        "evidence": "s-g105.0–s-g144.0; frames/v001045767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "9fe4a863adf721ef"
+      },
+      {
+        "ref": "s6:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g146.0–s-g173.0; frames/v001285767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "de17cf31346b8035"
+      },
+      {
+        "ref": "s6:visual",
+        "verdict": "supported",
+        "evidence": "s-g146.0–s-g173.0; frames/v001285767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "03381ecf6d3d8d0c"
+      },
+      {
+        "ref": "s6:p2",
+        "verdict": "supported",
+        "evidence": "s-g146.0–s-g173.0; frames/v001285767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "eec77fdb4257f51c"
+      },
+      {
+        "ref": "s6:f0",
+        "verdict": "supported",
+        "evidence": "s-g146.0–s-g173.0; frames/v001285767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "7c85098b4f484ac9"
+      },
+      {
+        "ref": "s7:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g188.0–s-g199.0; frames/v001712733.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "127a7fbb92a83eef"
+      },
+      {
+        "ref": "s7:n0",
+        "verdict": "supported",
+        "evidence": "s-g188.0–s-g199.0; frames/v001712733.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "f76ccdec9f76c56c"
+      },
+      {
+        "ref": "s8:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g205.0–s-g228.0; frames/v001892733.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "c7adb9fb8a2ee9e5"
+      },
+      {
+        "ref": "s8:p2",
+        "verdict": "supported",
+        "evidence": "s-g205.0–s-g228.0; frames/v001892733.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "a1f157b5ac702d5b"
+      },
+      {
+        "ref": "s8:p0",
+        "verdict": "supported",
+        "evidence": "s-g205.0–s-g228.0; frames/v001892733.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "3eb8852fba374271"
+      },
+      {
+        "ref": "s8:f0",
+        "verdict": "supported",
+        "evidence": "s-g205.0–s-g228.0; frames/v001892733.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "237432410fb95571"
+      },
+      {
+        "ref": "s9:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g229.0–s-g256.0; frames/v002123733.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "0d3df1a5a29e0149"
+      },
+      {
+        "ref": "s10:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g257.0–s-g272.0",
+        "note": "与指定转写或截图一致。",
+        "hash": "b37ab3544d98e522"
+      },
+      {
+        "ref": "s10:p0",
+        "verdict": "supported",
+        "evidence": "s-g257.0–s-g272.0",
+        "note": "与指定转写或截图一致。",
+        "hash": "3c1cc4746682e249"
+      },
+      {
+        "ref": "s11:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g280.0~12–s-g292.0~15",
+        "note": "与指定转写或截图一致。",
+        "hash": "483998ea52ff81ab"
+      },
+      {
+        "ref": "s11:p2",
+        "verdict": "supported",
+        "evidence": "s-g280.0~12–s-g292.0~15",
+        "note": "与指定转写或截图一致。",
+        "hash": "45ffa05a121bd050"
+      },
+      {
+        "ref": "s11:p1",
+        "verdict": "supported",
+        "evidence": "s-g280.0~12–s-g292.0~15",
+        "note": "与指定转写或截图一致。",
+        "hash": "e04b7a1e35237cc1"
+      },
+      {
+        "ref": "s12:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g293.0–s-g333.0; frames/v002732167.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "cb434bb58cfb612d"
+      },
+      {
+        "ref": "s12:p3",
+        "verdict": "supported",
+        "evidence": "s-g293.0–s-g333.0; frames/v002732167.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "1082df54dbb99c26"
+      },
+      {
+        "ref": "s13:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g343.0–s-g373.0",
+        "note": "与指定转写或截图一致。",
+        "hash": "63b550249d5822e4"
+      },
+      {
+        "ref": "s13:n1",
+        "verdict": "supported",
+        "evidence": "s-g343.0–s-g373.0",
+        "note": "与指定转写或截图一致。",
+        "hash": "86e3e2dafd04066e"
+      },
+      {
+        "ref": "s13:n0",
+        "verdict": "supported",
+        "evidence": "s-g343.0–s-g373.0",
+        "note": "与指定转写或截图一致。",
+        "hash": "5febad9ccd291252"
+      },
+      {
+        "ref": "s14:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g374.0–s-g445.0; frames/v003230633.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "9615ba0506933718"
+      },
+      {
+        "ref": "s14:p4",
+        "verdict": "supported",
+        "evidence": "s-g374.0–s-g445.0; frames/v003230633.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "1b1b1efc46c63468"
+      },
+      {
+        "ref": "s14:p0",
+        "verdict": "supported",
+        "evidence": "s-g374.0–s-g445.0; frames/v003230633.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "7356763b1eb88455"
+      },
+      {
+        "ref": "s14:f0",
+        "verdict": "supported",
+        "evidence": "s-g374.0–s-g445.0; frames/v003230633.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "ef8f9aeeb500af48"
+      },
+      {
+        "ref": "s15:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g446.0–s-g478.0; frames/v003650767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "247f41295a065662"
+      },
+      {
+        "ref": "s15:p0",
+        "verdict": "supported",
+        "evidence": "s-g446.0–s-g478.0; frames/v003650767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "6e6f31622524b41a"
+      },
+      {
+        "ref": "s15:e0",
+        "verdict": "supported",
+        "evidence": "s-g446.0–s-g478.0; frames/v003650767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "c70a543255282c9d"
+      },
+      {
+        "ref": "s15:f0",
+        "verdict": "supported",
+        "evidence": "s-g446.0–s-g478.0; frames/v003650767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "19f333d9d8bb18f4"
+      },
+      {
+        "ref": "s16:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g503.0–s-g519.0; frames/v003985567.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "d9fd3a4471b19b5d"
+      },
+      {
+        "ref": "s16:visual",
+        "verdict": "supported",
+        "evidence": "s-g503.0–s-g519.0; frames/v003985567.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "00551f78b732d96d"
+      },
+      {
+        "ref": "s16:e0",
+        "verdict": "supported",
+        "evidence": "s-g503.0–s-g519.0; frames/v003985567.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "d35dae4abef9b42d"
+      },
+      {
+        "ref": "s16:p3",
+        "verdict": "supported",
+        "evidence": "s-g503.0–s-g519.0; frames/v003985567.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "6be3fd7c91706d87"
+      },
+      {
+        "ref": "s16:f0",
+        "verdict": "supported",
+        "evidence": "s-g503.0–s-g519.0; frames/v003985567.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "c09d271a302e8501"
+      },
+      {
+        "ref": "s17:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g522.0–s-g547.0; frames/v004361800.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "10ea85e154037e51"
+      },
+      {
+        "ref": "s17:visual",
+        "verdict": "supported",
+        "evidence": "s-g522.0–s-g547.0; frames/v004361800.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "763315260add936f"
+      },
+      {
+        "ref": "s17:p1",
+        "verdict": "supported",
+        "evidence": "s-g522.0–s-g547.0; frames/v004361800.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "00c9512d60ac8db3"
+      },
+      {
+        "ref": "s17:f1",
+        "verdict": "supported",
+        "evidence": "s-g522.0–s-g547.0; frames/v004361800.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "bba2ac914787356a"
+      },
+      {
+        "ref": "s18:p1",
+        "verdict": "supported",
+        "evidence": "s-g562.0~14–s-g604.0; frames/v004592967.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "4fca3a324903a38e"
+      },
+      {
+        "ref": "s18:p3",
+        "verdict": "supported",
+        "evidence": "s-g562.0~14–s-g604.0; frames/v004592967.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "4d19df456491ea48"
+      },
+      {
+        "ref": "s18:f0",
+        "verdict": "supported",
+        "evidence": "s-g562.0~14–s-g604.0; frames/v004592967.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "5673a2f9e4597fee"
+      },
+      {
+        "ref": "s19:p1",
+        "verdict": "supported",
+        "evidence": "s-g605.0–s-g629.0; frames/v005012967.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "6b1fa3a78ed1eebe"
+      },
+      {
+        "ref": "s19:f1",
+        "verdict": "supported",
+        "evidence": "s-g605.0–s-g629.0; frames/v005012967.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "f7cdb5f6194fd633"
+      },
+      {
+        "ref": "s20:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g630.0~14–s-g678.0~20; frames/v005288967.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "8425e9a945b500ad"
+      },
+      {
+        "ref": "s20:visual",
+        "verdict": "supported",
+        "evidence": "s-g630.0~14–s-g678.0~20; frames/v005288967.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "d045eb7b67994822"
+      },
+      {
+        "ref": "s20:p1",
+        "verdict": "supported",
+        "evidence": "s-g630.0~14–s-g678.0~20; frames/v005288967.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "251b97538655ac92"
+      },
+      {
+        "ref": "s20:p0",
+        "verdict": "supported",
+        "evidence": "s-g630.0~14–s-g678.0~20; frames/v005288967.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "d3dc418cb86937d4"
+      },
+      {
+        "ref": "s21:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g679.0–s-g727.0; frames/v005499800.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "e4474f3bec163cdb"
+      },
+      {
+        "ref": "s21:f0",
+        "verdict": "supported",
+        "evidence": "s-g679.0–s-g727.0; frames/v005499800.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "b2665e1bd67e4bfb"
+      },
+      {
+        "ref": "s22:visual",
+        "verdict": "supported",
+        "evidence": "s-g731.0–s-g779.0; frames/v005979800.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "b509f023b88bde24"
+      },
+      {
+        "ref": "s22:e0",
+        "verdict": "supported",
+        "evidence": "s-g731.0–s-g779.0; frames/v005979800.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "00fd390ef3a10a24"
+      },
+      {
+        "ref": "q1",
+        "verdict": "supported",
+        "evidence": "s-g8.0; s-g9.0; s-g13.0; s-g20.0; s-g22.0; frames/v000060000.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "0d47bd60fc291c7c"
+      },
+      {
+        "ref": "q2",
+        "verdict": "supported",
+        "evidence": "s-g24.0–s-g64.0; frames/v000240000.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "fe516a550c44b8b8"
+      },
+      {
+        "ref": "q3",
+        "verdict": "supported",
+        "evidence": "s-g105.0–s-g144.0; frames/v001045767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "005b627c8bfd17f7"
+      },
+      {
+        "ref": "q4",
+        "verdict": "supported",
+        "evidence": "s-g146.0–s-g173.0; frames/v001285767.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "bf3fc2bb16507f5d"
+      },
+      {
+        "ref": "q5",
+        "verdict": "supported",
+        "evidence": "s-g229.0–s-g256.0; frames/v002123733.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "20d9c5c85138d5a6"
+      },
+      {
+        "ref": "q6",
+        "verdict": "supported",
+        "evidence": "s-g503.0–s-g519.0; frames/v003985567.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "88045c226a01c931"
+      },
+      {
+        "ref": "q8",
+        "verdict": "supported",
+        "evidence": "s-g731.0–s-g779.0; frames/v005979800.jpg",
+        "note": "与指定转写或截图一致。",
+        "hash": "429a8ba807cfa1af"
+      },
+      {
+        "ref": "map",
+        "verdict": "supported",
+        "evidence": "s-g8.0; s-g260.0–s-g271.0; s-g588.1~2; s-g607.0–s-g615.0; s-g630.0~14–s-g668.0; s-g763.0; s-g774.0",
+        "note": "作为标明由编辑绘制的论证链，概括有口述依据。",
+        "hash": "05fd888608292aab"
+      },
+      {
+        "ref": "q7",
+        "verdict": "supported",
+        "evidence": "s-g591.0~2–s-g599.0; frames/v004772967.jpg",
+        "note": "时长、截断、硬编码及最终完成均有口述依据；2 MB 和症状判断见幻灯片。",
+        "hash": "b6089a64a573511b"
+      },
+      {
+        "ref": "s10:n1",
+        "verdict": "supported",
+        "evidence": "s-g266.0~2; s-g271.0~31; s-g272.0",
+        "note": "忠实保留转写歧义，未擅自补全半句。",
+        "hash": "4bf3aafd07a305ff"
+      },
+      {
+        "ref": "s12:e0",
+        "verdict": "supported",
+        "evidence": "frames/v002483733.jpg; s-g295.0~11; s-g302.0",
+        "note": "幻灯片各条深度阅读建议与所述一致。",
+        "hash": "c36e4a5eb99f63a2"
+      },
+      {
+        "ref": "s18:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g599.0–s-g600.0; frames/v004772967.jpg",
+        "note": "两者完成但不可维护，以及需求变化牵连整表，均有依据。",
+        "hash": "95a6122c11759601"
+      },
+      {
+        "ref": "s19:n0",
+        "verdict": "supported",
+        "evidence": "s-g607.0–s-g615.0; s-g623.0–s-g624.0; frames/v004892967.jpg",
+        "note": "中间语言、双端执行与翻译、硬编码搬迁成本及数字所在页面均吻合。",
+        "hash": "7eaf86cdbb56a4ce"
+      },
+      {
+        "ref": "s19:takeaway",
+        "verdict": "supported",
+        "evidence": "frames/v004892967.jpg",
+        "note": "准确概括幻灯片的架构转折；固定的是公式模板与工作表结构。",
+        "hash": "11a0f34d44832e50"
+      },
+      {
+        "ref": "s19:visual",
+        "verdict": "supported",
+        "evidence": "s-g607.0–s-g615.0; frames/v004892967.jpg",
+        "note": "O(1) 和 1 KB 到 10 KB 同页可见；结构保持固定的限定准确。",
+        "hash": "1b500075b32520e8"
+      },
+      {
+        "ref": "s1:n1",
+        "verdict": "supported",
+        "evidence": "frames/v000000000.jpg",
+        "note": "所引两组成片字幕确实烧录在画面中。",
+        "hash": "cb835cfb381b4735"
+      },
+      {
+        "ref": "s21:e2",
+        "verdict": "supported",
+        "evidence": "frames/v005799800.jpg; s-g721.0–s-g727.0",
+        "note": "所引标题、正文、紫色补充与纯文字布局均可直接核对。",
+        "hash": "8a22a34978053ab9"
+      },
+      {
+        "ref": "s21:n0",
+        "verdict": "supported",
+        "evidence": "s-g679.0–s-g682.0~40; frames/v005799800.jpg",
+        "note": "准确区分书中论断、token 类比和幻灯片上的未来判断。",
+        "hash": "4b90ca04be3d3430"
+      },
+      {
+        "ref": "s22:f0",
+        "verdict": "supported",
+        "evidence": "frames/v005979800.jpg; s-g767.0–s-g774.0",
+        "note": "价格、稀缺性乘积、责任与停止权以及 30 秒回答均见画面。",
+        "hash": "12e2e72408ca73a4"
+      },
+      {
+        "ref": "s22:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g737.0–s-g740.0; s-g763.0; s-g774.0; frames/v005979800.jpg",
+        "note": "口述和幻灯片共同支持这些判断。",
+        "hash": "37585620d79deb8a"
+      },
+      {
+        "ref": "s4:n1",
+        "verdict": "supported",
+        "evidence": "s-g87.0–s-g88.0; frames/v000649833.jpg",
+        "note": "口述分工较泛，屏幕确列出历史经验、相关事实工作和第一性原理。",
+        "hash": "1b45df9d255152cf"
+      },
+      {
+        "ref": "s4:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g95.0–s-g99.0~16; frames/v000805767.jpg",
+        "note": "录像反馈到源码及可编辑、可 diff、可复现的要求有据。",
+        "hash": "f8259c36e9b74d21"
+      },
+      {
+        "ref": "s4:visual",
+        "verdict": "supported",
+        "evidence": "s-g99.0~16–s-g100.0; frames/v000805767.jpg",
+        "note": "生成链各环节及底行短句均见幻灯片。",
+        "hash": "3eecd8dde1fc02d3"
+      },
+      {
+        "ref": "s5:n1",
+        "verdict": "supported",
+        "evidence": "s-g105.0–s-g108.0~80; frames/v000925767.jpg",
+        "note": "225 项研究和学习目标判断见幻灯片，指定口述未展开研究。",
+        "hash": "f5100ca8011ef90d"
+      },
+      {
+        "ref": "s6:n2",
+        "verdict": "supported",
+        "evidence": "s-g160.0–s-g166.0~39; frames/v001405767.jpg",
+        "note": "口述扔石头与屏幕电子铅笔扫月球地面确为两种表述；讲师说明屏幕解释更严谨。",
+        "hash": "4f0c652ab3a99cb1"
+      },
+      {
+        "ref": "s9:f1",
+        "verdict": "supported",
+        "evidence": "frames/v002123733.jpg",
+        "note": "Pi 回复、启动器所列应用及 deepseek-v4-flash 状态栏均可见。",
+        "hash": "c6cabc624f3ff257"
+      },
+      {
+        "ref": "s12:f1",
+        "verdict": "supported",
+        "evidence": "frames/v002732167.jpg",
+        "note": "标题、左侧空白缩略图及正文中的讲师图片均可在帧中确认。",
+        "hash": "06d2a96ec33623ef"
+      },
+      {
+        "ref": "s17:n0",
+        "verdict": "supported",
+        "evidence": "s-g522.0–s-g525.0; s-g533.0–s-g544.0; frames/v004361800.jpg",
+        "note": "假设场景、公式兼容性、帧号、Base64、F9、循环播放及鼠标编码均有口述依据；幻灯片列出 Raw Socket、Reed-Solomon、帧号和 ACK/NAK，当前帧未展示二维码帧号数字。",
+        "hash": "7d5898c287c7d28c"
+      },
+      {
+        "ref": "s20:f1",
+        "verdict": "supported",
+        "evidence": "frames/v005288967.jpg; s-g663.0–s-g667.0",
+        "note": "地址栏路径及多格树木秋千漫画可见，下排包含空地和树桩。",
+        "hash": "493dae7a4858d555"
+      },
+      {
+        "ref": "s22:n2",
+        "verdict": "supported",
+        "evidence": "s-g777.0; s-g778.0",
+        "note": "保留了“应该”“可能”的不确定语气，剪辑生肉版并与精修版对比有直接依据。",
+        "hash": "64368c1b855c3deb"
+      },
+      {
+        "ref": "s4:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000649833.jpg",
+        "note": "路径、仅处理给定 snippet、不做标题或结束页、三个 subagent 的任务及百度页面均可见。",
+        "hash": "463aa0dee918b8c4"
+      },
+      {
+        "ref": "s7:e0",
+        "verdict": "supported",
+        "evidence": "frames/v001712733.jpg; s-g188.0–s-g195.0~8",
+        "note": "画面可确认讲义条目和 agent 的仓库说明，回复右缘截断；当前帧没有 Diffusion LM 链接，扩散模型来自口述。",
+        "hash": "fdfbfd2cd1183e64"
+      },
+      {
+        "ref": "s7:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001712733.jpg",
+        "note": "文件路径、LLM 和 Agent、条件概率、GPT-4（2023）解释 SEM，以及仓库路径、课程年份和工作区状态均可见。",
+        "hash": "54d59e4a9587f66d"
+      },
+      {
+        "ref": "s9:n1",
+        "verdict": "supported",
+        "evidence": "s-g237.0; s-g240.0–s-g244.0; s-g255.0; frames/v002003700.jpg",
+        "note": "Debian on USB 标题可见；所述转写词及模拟启动登录有原文依据。当前帧未显示模拟器或编辑器名称，未擅自补定程序名或小版本号。",
+        "hash": "f697326b2788184f"
+      },
+      {
+        "ref": "s9:p2",
+        "verdict": "supported",
+        "evidence": "s-g246.0–s-g256.0",
+        "note": "窗口管理器、生成操作文档、快捷键及自然语言完成配置和检查交付均与口述一致。",
+        "hash": "24bde6cf70801283"
+      }
+    ],
+    "reviewer": "independent_agent",
+    "reviewer_model": "gpt-6.1-sol",
+    "method": "prepare packets: all takeaways/explainers + per-section sample; 101 judged in latest round; 27 judged in latest round; 9 judged in latest round"
+  },
+  "recall": {
+    "items": [
+      {
+        "id": "q02",
+        "question": "开课时讲师描述了学生面对 AI 的哪两种焦虑？",
+        "expected": "作业全交给 AI，毕业后没学到东西而被取代；认真学习完成作业，但学到的东西 AI 也都会。",
+        "evidence": "s-g36.0–s-g42.0~6",
+        "from": "transcript",
+        "answer": "一是让 AI 帮自己上大学，课程和作业都完成得很好，毕业却什么都没学会，首先被 AI 取代；二是认真听课、认真做作业四年，虽学到东西，却发现 AI 都会做。",
+        "found_in": "s2:p1",
+        "verdict": "correct",
+        "note": "完整说明依赖 AI 导致没学会，以及认真学习后发现 AI 也都会这两种焦虑。",
+        "hash": "733fdc531ff7e5b4"
+      },
+      {
+        "id": "q03",
+        "question": "为什么讲师把展示的那份看似优秀的简历评为零分？请列出两种缺失的信息。",
+        "expected": "缺少可供进一步了解和核验的材料；如 GitHub 链接、个人主页、论文 preprint（任举两种）。",
+        "evidence": "s-g51.0–s-g57.0",
+        "from": "transcript",
+        "answer": "因为没有能进一步了解和区分候选人能力的额外信息；例如缺少 GitHub 链接、个人主页，也没有论文 preprint。",
+        "found_in": "s2:p3",
+        "verdict": "correct",
+        "note": "说明缺少可核验材料，并列出 GitHub、个人主页及论文 preprint。",
+        "hash": "733fdc531ff7e5b4"
+      },
+      {
+        "id": "q14",
+        "question": "课堂自问“为什么模型知道生成式软件工程这门课”时，展示的解释是什么？",
+        "expected": "仓库的 AGENTS.md 配置提供了信息；这是临时记忆，并非模型天然知道这门课。",
+        "evidence": "s-g215.0–s-g221.0",
+        "from": "transcript",
+        "answer": "课堂展示的解释区分训练语料学到的统计规律与对话注入的临时记忆；它知道这门具体课程和仓库，是因为每次对话开始时注入了课程介绍和仓库 AGENTS.md，并非记住了这次课程。",
+        "found_in": "s8:p1, s8:e0",
+        "verdict": "correct",
+        "note": "明确课程信息来自注入的 AGENTS.md 等临时记忆。",
+        "hash": "1e5a68fcc907b188"
+      },
+      {
+        "id": "q15",
+        "question": "讲师给初学者提出的两个最小 Agent 使用原则是什么？",
+        "expected": "现在就开始用；随时问它。",
+        "evidence": "s-g222.0–s-g224.0",
+        "from": "transcript",
+        "answer": "第一，现在就开始用；第二，随时问它。",
+        "found_in": "s8:p2",
+        "verdict": "correct",
+        "note": "准确列出现在就开始用、随时问它。",
+        "hash": "1e5a68fcc907b188"
+      },
+      {
+        "id": "q18",
+        "question": "邮件助手收到邮件后如何处理回复和发票附件？",
+        "expected": "标为已读并按讲师口吻生成回复草稿；大部分草稿仍需修改；发票附件自动保存到指定归档位置。",
+        "evidence": "s-g276.0–s-g279.0~62",
+        "from": "transcript",
+        "answer": "收到邮件后自动标成已读，并参考历史回复、用讲师口吻写好回复草稿；除简单例行回复外，大多数草稿仍需讲师修改。发票附件自动保存到指定归档位置。",
+        "found_in": "s11:p0",
+        "verdict": "correct",
+        "note": "包含标为已读、按讲师口吻生成草稿、多数需修改和发票附件自动归档。",
+        "hash": "a093ecbbf1c8ca77"
+      },
+      {
+        "id": "q19",
+        "question": "现场打印发票的任务通过什么入口提交，完成后通过什么设备通知讲师？",
+        "expected": "在 Apple Reminders 的 bot 列表添加待办；后台处理完成后通过 Reminders 推送到手表。",
+        "evidence": "s-g280.0~12–s-g286.0~56",
+        "from": "transcript",
+        "answer": "通过 Apple Reminders 中的 bot 清单新增“把我收到的上一张发票打印出来”待办提交；完成后通过 Reminders 推送到手表，通知打印完了。",
+        "found_in": "s11:p1",
+        "verdict": "correct",
+        "note": "准确说明通过 Apple Reminders 的 bot 清单提交，并向手表推送完成通知。",
+        "hash": "a093ecbbf1c8ca77"
+      },
+      {
+        "id": "q21",
+        "question": "直播采集卡断开时，Agent 的修复相当于做了什么物理操作？为什么讲师没有直接动手？",
+        "expected": "用软件方式把 USB 采集卡拔下再插回；接口在机器后面，讲师碰不到。",
+        "evidence": "s-g343.0–s-g359.0",
+        "from": "transcript",
+        "answer": "相当于把 USB 采集卡拔掉再插回去，Agent 用软件重连设备。讲师没直接拔插，是因为接口在机器后面，他碰不到。",
+        "found_in": "s13:p0",
+        "verdict": "correct",
+        "note": "准确说明软件重连等效于拔插 USB，以及接口在机器后方无法触及。",
+        "hash": "a34a34955aa5bb36"
+      },
+      {
+        "id": "q22",
+        "question": "教学周历填写演示中，哪种操作方式失败，哪种方式最终奏效？走通后如何减少重复探索？",
+        "expected": "直接注入事件不行，点击鼠标可以；把成功路径沉淀为记忆或确定性脚本。",
+        "evidence": "s-g428.0; s-g433.0–s-g436.0",
+        "from": "transcript",
+        "answer": "直接注入事件失败，模拟鼠标点击最终奏效。走通后把 session 中的路径、成功与失败经验沉淀成记忆、确定性脚本或 skill，减少下次探索。",
+        "found_in": "s14:p3, s15:p0",
+        "verdict": "correct",
+        "note": "包含事件注入失败、鼠标点击成功，以及沉淀记忆或确定性脚本。",
+        "hash": "4b815e5d98b95699"
+      },
+      {
+        "id": "q23",
+        "question": "讲师用 Unix 管道类比 Agent 生态，是为了说明 skills 的什么性质？",
+        "expected": "不同能力可以自由组合、互相调用与复用；组合可放大个人能力，而非只有孤立案例。",
+        "evidence": "s-g443.0–s-g453.0",
+        "from": "transcript",
+        "answer": "说明 skills 能自由组合、无限复用并互相调用，一加一可以大于二；组合依赖足够窄、稳定的接口，像 Unix pipe 一样把能力接成工作流。",
+        "found_in": "s14:p4, s15:p0, s15:e0",
+        "verdict": "correct",
+        "note": "完整说明 skills 的自由组合、相互调用和复用，以及组合放大能力。",
+        "hash": "4b815e5d98b95699"
+      },
+      {
+        "id": "q24",
+        "question": "试卷统分流程的第一阶段记录哪些信息？第二阶段为什么反序处理并逐项播报？",
+        "expected": "拍照后 OCR 识别姓名、学号和各小分；反序逐张处理并播报，供讲师人工核对，因 OCR 会错。",
+        "evidence": "s-g504.0–s-g510.0~54",
+        "from": "transcript",
+        "answer": "第一阶段按回车拍照，离线识别姓名、学号和每个小分，逐行写入文本文件。第二阶段反序处理并逐项语音报姓名、学号和算式，让讲师对照试卷复核；用不同表示制造冗余，截获错位、漏项和 OCR 误识别。",
+        "found_in": "s16:p1, s16:p2, s16:e0",
+        "verdict": "correct",
+        "note": "包含姓名、学号、各小分的 OCR 记录，以及反序逐项播报供人工复核 OCR 错误。",
+        "hash": "71e4323e8413bd22"
+      },
+      {
+        "id": "q25",
+        "question": "统分案例中，谁做加法，最终提交成绩前还有什么检查？",
+        "expected": "脚本做加法，不让大模型做加法；汇总到教务 Excel 模板并上传后抽样检查，再提交。",
+        "evidence": "s-g511.0–s-g514.0",
+        "from": "transcript",
+        "answer": "加法由脚本计算，大模型只负责识别。讲师逐卷听报并核对每个小分后誊写总分；分数汇总到教务 Excel 模板并上传后，还要抽样检查，确认无误才提交。",
+        "found_in": "s16:p2",
+        "verdict": "correct",
+        "note": "明确脚本做加法，并包含教务 Excel 模板上传后抽查、再提交。",
+        "hash": "71e4323e8413bd22"
+      },
+      {
+        "id": "q01",
+        "question": "讲师用哪一句话概括计算机历史上几次重要变革的共同点？",
+        "expected": "把昂贵的能力变成日用品。",
+        "evidence": "s-g7.0–s-g8.0",
+        "from": "transcript",
+        "answer": "真正的拐点，不是机器又强了一点；而是某种昂贵能力，突然变成了日用品。",
+        "found_in": "s1:e0",
+        "verdict": "correct",
+        "note": "准确概括为把昂贵能力变成日用品。",
+        "hash": "5492f4eea4a4a89b"
+      },
+      {
+        "id": "q08",
+        "question": "课程对编程方式和 token 费用的两条明确 policy 是什么？",
+        "expected": "禁止古法编程；token 自费。",
+        "evidence": "s-g107.0~54; s-g112.0",
+        "from": "transcript",
+        "answer": "禁止古法编程；token 自费。",
+        "found_in": "s5:p0, s5:p1",
+        "verdict": "correct",
+        "note": "两条 policy 均准确。",
+        "hash": "6df51f2a1035add6"
+      },
+      {
+        "id": "q09",
+        "question": "讲师原本希望采用什么考核方式？为什么认为给项目打分很难？",
+        "expected": "通过或不通过；学生可用不同模型，更强模型可能直接带来更好的结果，且难限制模型选择。",
+        "evidence": "s-g126.0–s-g130.0",
+        "from": "transcript",
+        "answer": "原本希望采用通过／不通过。项目难以客观打分：同一任务用更强模型会比 DeepSeek V4 Flash 又快又好，却无法限制大家使用什么模型，而且项目复杂程度不同。",
+        "found_in": "s5:p2, s5:p3",
+        "verdict": "correct",
+        "note": "包含通过／不通过，以及模型能力差异和无法限制模型选择的评分困难。",
+        "hash": "6df51f2a1035add6"
+      },
+      {
+        "id": "q10",
+        "question": "讲师建议的个人邮件管理项目，需要展示什么基本交互，部署在哪里？",
+        "expected": "能接收并回复讲师指定邮箱发来的邮件；可运行在宿舍一直开着的小电脑上。",
+        "evidence": "s-g131.0–s-g132.0",
+        "from": "transcript",
+        "answer": "实现自己的邮件管理系统，能收到讲师从指定邮箱发来的邮件并回信，与讲师实际通信；服务部署在宿舍里一台一直开着的小电脑上。",
+        "found_in": "s5:p2",
+        "verdict": "correct",
+        "note": "包含接收指定邮箱邮件并回复，以及部署于宿舍常开小电脑。",
+        "hash": "6df51f2a1035add6"
+      },
+      {
+        "id": "q11",
+        "question": "从使用者视角，讲师如何定义大语言模型及其生成文本的基本过程？",
+        "expected": "一个学到的概率分布；给定文本等上下文，不断预测并输出下一个 token。",
+        "evidence": "s-g146.0–s-g154.0",
+        "from": "transcript",
+        "answer": "大语言模型是学到的概率分布 Pr[token | context]。给它文本或图像等上下文及请求，它不断预测下一个 token；每次输出写回 context，再继续生成。",
+        "found_in": "s6:p0, s6:e0",
+        "verdict": "correct",
+        "note": "包含学到的概率分布和根据上下文逐 token 生成过程。",
+        "hash": "76041fe8e5854f82"
+      },
+      {
+        "id": "q12",
+        "question": "讲师第一次被 GPT-4 的解释能力震撼，是哪一年、给几岁的孩子解释什么？",
+        "expected": "2023 年；五岁；扫描电子显微镜。",
+        "evidence": "s-g156.0~18–s-g158.0",
+        "from": "transcript",
+        "answer": "2023 年，GPT-4 给五岁的孩子解释扫描电子显微镜（SEM）。",
+        "found_in": "s6:p1",
+        "verdict": "correct",
+        "note": "年份、孩子年龄和解释对象均准确。",
+        "hash": "76041fe8e5854f82"
+      },
+      {
+        "id": "q13",
+        "question": "讲师用 bash 调用说明 Agent loop：模型输出工具调用后，结果如何进入下一步？",
+        "expected": "运行 bash 程序；把结果重新送回 Agent loop，模型据此继续尝试完成任务。",
+        "evidence": "s-g171.0–s-g173.0",
+        "from": "transcript",
+        "answer": "模型输出表示调用 bash 的特殊 token，执行 bash 后，将运行结果重新送回 Agent loop，作为后续上下文继续预测、调用工具和尝试，从而自主运行。",
+        "found_in": "s6:p3, s6:e0",
+        "verdict": "correct",
+        "note": "准确说明执行 bash 后将结果送回 Agent loop，供模型继续完成任务。",
+        "hash": "76041fe8e5854f82"
+      },
+      {
+        "id": "q17",
+        "question": "关于新的学习顺序，讲师建议先做什么、后做什么，并指出什么风险？",
+        "expected": "先用 Agent 把东西做出来；再复盘理解；理解可能与较好的理解有差距。",
+        "evidence": "s-g270.1~13–s-g271.0~31",
+        "from": "transcript",
+        "answer": "先用好 Agent、把东西做出来，再回头复盘理解。风险是自己的理解与一个比较好的理解之间可能有差距。",
+        "found_in": "s10:p2",
+        "verdict": "correct",
+        "note": "包含先做出来、再复盘理解，以及理解可能存在差距的风险。",
+        "hash": "d8f617a5a107ab6f"
+      },
+      {
+        "id": "q26",
+        "question": "二维码 Excel 案例的 specification 对公式兼容性和输入转换提出了什么要求？",
+        "expected": "只用 Excel 2019 兼容公式；将任意输入字符串先做 Base64 编码，再转为二维码动画。",
+        "evidence": "s-g580.0–s-g581.0~12",
+        "from": "transcript",
+        "answer": "只使用 Excel 2019 兼容的公式，将输入的任意字符串先用 Base64 编码，再转换成 QR code 动画，并明确每帧的内容；Base64 也应由 Excel 公式计算，输入改变时随之变化。",
+        "found_in": "s18:p3, s18:p4",
+        "verdict": "correct",
+        "note": "包含 Excel 2019 公式兼容性，以及任意字符串先 Base64 编码再生成二维码动画。",
+        "hash": "f804a419e2d9df6e"
+      },
+      {
+        "id": "q27",
+        "question": "受控实验中，讲师说 GLM 5.3 首次思考多久、输出超过多少 token、总共运行多久才完成？",
+        "expected": "首次思考 25 分钟；输出超过 32K token；总共约 6 小时。",
+        "evidence": "s-g591.0~2–s-g593.0~7",
+        "from": "transcript",
+        "answer": "首次思考 25 分钟，输出超过 32K output token，超过默认输出限制而被截断；继续运行，总共六小时才完成。",
+        "found_in": "s18:p4",
+        "verdict": "correct",
+        "note": "25 分钟、超过 32K token、总共六小时均准确。",
+        "hash": "f804a419e2d9df6e"
+      },
+      {
+        "id": "q28",
+        "question": "DeepSeek V4 Pro 的首个 Base64 实现为什么不满足需求？",
+        "expected": "用 Python 预先算出 Base64 并贴在公式旁边，属于硬编码；输入字符串改变时编码不会随之变化。",
+        "evidence": "s-g595.0–s-g597.0",
+        "from": "transcript",
+        "answer": "它用 Python 预先计算 Base64，再硬编码贴入表格，而非用 Excel 公式动态编码；输入字符串改变，Base64 不会跟着改变，因此不符合需求。",
+        "found_in": "s18:p4",
+        "verdict": "correct",
+        "note": "准确指出 Python 预计算并硬编码，导致输入变化时编码不更新。",
+        "hash": "f804a419e2d9df6e"
+      },
+      {
+        "id": "q29",
+        "question": "课堂 quick quiz 问“如何实现这个二维码 Excel、如何 prompt AI”后，讲师给出的架构答案是什么？",
+        "expected": "先设计符号系统/中间语言（如 XOR、concat）；同一表达式既可在 Python 执行，也可翻译为 Excel 公式。",
+        "evidence": "s-g605.0~9–s-g613.0",
+        "from": "transcript",
+        "answer": "先设计一个像编译器中间表示的中间语言／符号系统，例如 XOR、concat，既能在 Python 中直接执行，也能翻译成 Excel 公式，再用这套基础设施生成表格。",
+        "found_in": "s19:p1",
+        "verdict": "correct",
+        "note": "包含设计中间语言／符号系统，以及同一表达式在 Python 执行、翻译为 Excel 公式。",
+        "hash": "91637c59fd4ec17c"
+      },
+      {
+        "id": "q30",
+        "question": "采用中间语言后，讲师把验证拆成了哪两个层次？",
+        "expected": "在 Python 中验证 Base64 和二维码像素计算；单独验证中间语言到 Excel 公式的翻译正确性与兼容性。",
+        "evidence": "s-g614.0–s-g615.0",
+        "from": "transcript",
+        "answer": "一层在 Python 世界中验证算法结果，例如 Base64 和二维码每个像素是否正确；另一层单独验证中间语言各操作翻译成 Excel 公式的正确性与兼容性。",
+        "found_in": "s19:p1",
+        "verdict": "correct",
+        "note": "完整区分 Python 算法结果验证与 Excel 公式翻译正确性、兼容性验证。",
+        "hash": "91637c59fd4ec17c"
+      },
+      {
+        "id": "q33",
+        "question": "讲师怎样把《人月神话》中给失败项目加人的论断类比到 AI 项目？",
+        "expected": "失败的软件项目加人可能更失败；AI 已开始产生 slop 时继续投入 token，也可能只在失败基础上不断修补。",
+        "evidence": "s-g679.0–s-g682.0~40",
+        "from": "transcript",
+        "answer": "失败的团队或软件项目再加人只会更失败；同样，当 AI 产品已经生成 slop，再投入更多 token，也只会在失败结构上不断修补、越陷越深，直到付不起 token。",
+        "found_in": "s21:p0",
+        "verdict": "correct",
+        "note": "抓住失败项目加人与 AI 产生 slop 后继续投入 token、反复修补的类比。",
+        "hash": "f6b20b97cf8d1099"
+      },
+      {
+        "id": "q34",
+        "question": "讲师认为大语言模型时代软件工程失败的定义变了吗？具体可能错在哪两段翻译？",
+        "expected": "没有变；intent 到 specification 的翻译可能错；implementation 也可能不满足 specification（如正确性或性能）。",
+        "evidence": "s-g721.0–s-g726.0",
+        "from": "transcript",
+        "answer": "没有变。失败仍是从 intent 到 specification 再到 implementation 的翻译出了错：一是规格不满足意图，做的并非真正想要的东西；二是实现不满足规格，例如正确性或性能不达标。",
+        "found_in": "s21:p4",
+        "verdict": "correct",
+        "note": "明确失败定义未变，并指出意图到规格及实现满足规格两处可能出错。",
+        "hash": "f6b20b97cf8d1099"
+      },
+      {
+        "id": "q37",
+        "question": "终端展示二维码项目目录时，两份模型生成版本的目录名分别是什么？",
+        "expected": "qrgen-dsv4p；qrgen-glm5.3。",
+        "evidence": "frames/v005012967.jpg",
+        "from": "visual",
+        "answer": "qrgen-dsv4p 和 qrgen-glm5.3。",
+        "found_in": "s19:e1, s19:f1",
+        "verdict": "correct",
+        "note": "两个目录名均准确。",
+        "hash": "91637c59fd4ec17c"
+      },
+      {
+        "id": "q38",
+        "question": "“软件工程 / The Mythical Man-Month”幻灯片的紫色补充文字说焦油并非代码量，而是什么？它如何区分功能和约束？",
+        "expected": "焦油是耦合、隐含知识和验证债；功能是局部的，约束是全局的。",
+        "evidence": "frames/v005499800.jpg",
+        "from": "visual",
+        "answer": "焦油不是代码量，而是耦合、隐含知识和验证债；功能是局部的，约束却是全局的。",
+        "found_in": "s21:e0",
+        "verdict": "correct",
+        "note": "完整包含耦合、隐含知识、验证债，以及功能局部、约束全局的区别。",
+        "hash": "f6b20b97cf8d1099"
+      },
+      {
+        "id": "q04",
+        "question": "讲师怎样界定“生成式软件工程”这门课所研究的核心问题？",
+        "expected": "它是软件工程课；研究怎样让软件工程不失败、怎样造出软件。",
+        "evidence": "s-g65.0–s-g66.0",
+        "from": "transcript",
+        "answer": "这是一门软件工程课，核心是怎样让做软件这件事不失败、把软件造出来；在生成式 AI 场景下，要弥补意图、规格与实现之间的 gap，既阻止 AI 乱猜，又发挥它从 A 到 B 的能力，通过人机协同把事情做成。",
+        "found_in": "s3:p0, s20:p2, s20:p4, s20:e1",
+        "verdict": "correct",
+        "note": "明确指出是软件工程课，核心是避免失败并造出软件。",
+        "hash": "4a4891047d371c44"
+      },
+      {
+        "id": "q05",
+        "question": "对于想来讨论或挑战老师的学生，与主要想获取知识的学生，讲师分别建议怎样参与课程？",
+        "expected": "欢迎讨论和挑战者到线下；获取知识型学生可以不来上课也不看直播，利用整理后的内容学习。",
+        "evidence": "s-g77.0–s-g79.0; s-g94.0–s-g103.0~32",
+        "from": "transcript",
+        "answer": "想讨论、挑战老师，认为老师做得不对的同学，欢迎来线下；主要想听课获取知识的同学，他建议既不用到课，也不用看直播，而是利用课后切片、重新整理后的内容学习。",
+        "found_in": "s3:p3, s4:p1, s4:p2",
+        "verdict": "correct",
+        "note": "完整区分线下讨论挑战与通过整理后的内容获取知识两种参与方式。",
+        "hash": "0c2931d222e6fac5"
+      },
+      {
+        "id": "q06",
+        "question": "讲师的幻灯片生成流程中，什么是 source of truth？其他可见材料怎样产生？",
+        "expected": "他预先写的 Markdown 讲稿是 source of truth；Agent 扩写成 Markdown slides，再由浏览器渲染，图片等由 AI 生成。",
+        "evidence": "s-g82.0; s-g99.0~16–s-g100.0",
+        "from": "transcript",
+        "answer": "他写的 Markdown 讲义文本是 source of truth。完整讲义提供上下文，选中的 snippet 划定生成边界，agent 据此扩写成 Markdown slides，再由浏览器渲染；可见的图片和幻灯片等其他模态都是 AIGC。逻辑改变时修改源码，其他材料可以重新生成。",
+        "found_in": "s4:p2, s4:e1",
+        "verdict": "correct",
+        "note": "涵盖 Markdown 讲稿作为 source of truth、Agent 扩写、浏览器渲染及 AI 生成图片。",
+        "hash": "60c84461c9249036"
+      },
+      {
+        "id": "q07",
+        "question": "讲师在制作 slides 时如何用“算力换智力”，又如何比较提示词版本？",
+        "expected": "生成三个不同 personality、上下文隔离的 subagent，主 Agent 汇总；不同提示词分别生成，由另一个模型盲评质量。",
+        "evidence": "s-g87.0–s-g89.0~63",
+        "from": "transcript",
+        "answer": "通过 skill 派出三个具有不同 personality、上下文隔离的 subagent，分别从历史教训与事故、事实和开创性工作、第一性原理思考，最后由主 agent 汇总，以更多算力换取更多智力。每换一个提示词版本就重新生成 slides，再让另一个模型盲评，比较质量并迭代到较好的版本。",
+        "found_in": "s4:p0, s4:e0",
+        "verdict": "correct",
+        "note": "涵盖三个不同 personality 且上下文隔离的 subagent、主 Agent 汇总，以及另一模型盲评提示词版本。",
+        "hash": "60c84461c9249036"
+      },
+      {
+        "id": "q16",
+        "question": "U 盘装系统案例中，讲师认为 prompt 的“点睛之笔”是什么？Agent 如何证明完成了安装？",
+        "expected": "要求用模拟器验证；在 QEMU 中启动并看到登录界面，成功登录验证。",
+        "evidence": "s-g240.0–s-g245.0",
+        "from": "transcript",
+        "answer": "点睛之笔是“用模拟器验证”。Agent 安装 Debian 到 U 盘后，真的在模拟器中启动到登录界面，按要求创建用户名和密码，并验证可以登录后再交付。",
+        "found_in": "s9:p1",
+        "verdict": "correct",
+        "note": "涵盖模拟器启动至登录界面并成功登录验证；虽未点名 QEMU，验证方式与关键结果均完整。",
+        "hash": "5a017e16e1afaa89"
+      },
+      {
+        "id": "q20",
+        "question": "读论文时，讲师如何要求 AI 提炼真正需要阅读的内容？他是否只看总结？",
+        "expected": "从人类已知知识出发，剥离论文中最少的新东西；仍拿原文、分层总结与 AI 对话。",
+        "evidence": "s-g311.0–s-g315.0",
+        "from": "transcript",
+        "answer": "他要求 AI 从人类已有知识出发，把已有内容视为已知，剥离出论文里真正新增、最少的东西，让十二页论文缩成很短的核心内容。他并非只看总结，仍读原文，并拿着原文、总结和分层次总结与 AI 讨论。",
+        "found_in": "s12:p2",
+        "verdict": "correct",
+        "note": "涵盖从已有知识剥离最少新增内容，以及继续结合原文和分层总结与 AI 讨论。",
+        "hash": "1dfff277636fcdad"
+      },
+      {
+        "id": "q31",
+        "question": "intention、specification、implementation 三个空间各指什么？",
+        "expected": "intention 是想达成的意图；specification 是程序要满足的功能和要求；implementation 是满足规格的具体实现。",
+        "evidence": "s-g630.0~14–s-g648.0",
+        "from": "transcript",
+        "answer": "Intention 是脑中想实现的意图或目标，需求提出者自己也可能不完全确定；specification 是程序应有的功能、应满足的要求、界面及界面功能等具体规格；implementation 是用具体架构、数据库及代码等实现规格的方式，程序最终要求完全无歧义的指令。同一意图可以对应许多规格，同一规格也可以有许多实现。",
+        "found_in": "s20:p0, s20:p1, s20:e0, s20:e1",
+        "verdict": "correct",
+        "note": "准确解释意图、功能要求规格和具体实现三个空间。",
+        "hash": "a91ce133ab9b896b"
+      },
+      {
+        "id": "q32",
+        "question": "讲师认为模型目前怎样填补三个空间之间的 gap？他把这种倾向与什么训练因素联系起来？",
+        "expected": "靠猜测并尽快动手实现；后训练中完成任务、通过测试获得 reward，促成快速完成任务的倾向。",
+        "evidence": "s-g668.0–s-g673.0",
+        "from": "transcript",
+        "answer": "模型目前用“猜”填补 gap：猜用户这句话意味着什么，然后立即动手实现。他把这种倾向联系到后训练的 reward：做对、做完、通过测试才有奖励，又要求在有限 token 内完成任务，因此模型倾向尽快机械地完成任务；真正长程的奖励信号仍然较弱。这也类似只训练分钟级考试题的人类奖励机制。",
+        "found_in": "s20:p3, s20:e1, s21:p3, s21:p4",
+        "verdict": "correct",
+        "note": "涵盖猜测后立即实现，以及后训练中完成任务和通过测试的奖励驱动。",
+        "hash": "7a48b9d204ab67d7"
+      },
+      {
+        "id": "q35",
+        "question": "结尾对“为什么招你而不是买一个 200 美元的 Claude Max”这个问题，讲师认可的回答包含哪些能力？请答出三项。",
+        "expected": "找到值得解决的问题；把未知拆成便宜实验；用证据及时停止坏方向；对长期结果负责（任三项）。",
+        "evidence": "s-g767.0–s-g776.0",
+        "from": "transcript",
+        "answer": "三项能力是：找到值得解决的问题；把未知拆成便宜的实验；用证据让坏方向及时停下。他认可的完整回答还包括对长期结果负责。",
+        "found_in": "s22:p2, s22:e0",
+        "verdict": "correct",
+        "note": "答出全部四项认可的能力，满足任三项要求。",
+        "hash": "db45a150a41a1788"
+      },
+      {
+        "id": "q36",
+        "question": "“读书、读论文”幻灯片把 AI 辅助深度阅读分成哪四种动作？",
+        "expected": "追踪论证；对抗阅读；主动回忆与重新组织。",
+        "evidence": "frames/v002483733.jpg",
+        "from": "visual",
+        "answer": "四种动作是：追踪论证，明确结论和证据并能跳回原文；对抗阅读，让 Agent 提出反例、遗漏前提及作者最强的反驳；主动回忆，合上原文接受口试，再依据原文纠错；重新组织，把新观点改写、归类，连接到旧笔记与真实问题。",
+        "found_in": "s12:e0",
+        "verdict": "correct",
+        "note": "完整列出追踪论证、对抗阅读、主动回忆和重新组织四种动作。",
+        "hash": "1dfff277636fcdad"
+      }
+    ],
+    "question_author": "independent_agent",
+    "answerer": "independent_agent",
+    "author_model": "gpt-6.1-sol",
+    "answerer_model": "gpt-6.1-sol"
+  }
+}

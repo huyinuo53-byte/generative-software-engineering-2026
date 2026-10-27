@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1Nyeq6qEt8-20261027T1735Z",
+  "item": {
+    "video_id": "BV1Nyeq6qEt8",
+    "source_url": "https://www.bilibili.com/video/BV1Nyeq6qEt8",
+    "title": "生成式软件工程 05｜软件工程的来龙去脉"
+  },
+  "scope": {
+    "requested": "单课完整笔记加图解。只根据本地原始转写和原视频重写，不读推荐材料，不迁移旧笔记。",
+    "materials": false,
+    "changes": []
+  },
+  "toolchain": {
+    "baocut": null,
+    "asr_model": null,
+    "skill_commit": "62f1dea5b7409906b21195b2ba1614d64ec23c7d",
+    "writer_model": "grok-4.7-high",
+    "image_model": "gpt-6.1-sol",
+    "reviewer_model": "gpt-6.1-sol"
+  },
+  "artifacts": [
+    {
+      "id": "transcript",
+      "path": "../raw/transcript.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "reused",
+      "basis": "工作目录内的 BaoCut 导出，未重新转写"
+    },
+    {
+      "id": "video",
+      "path": "../raw/BV1Nyeq6qEt8.mp4",
+      "depends_on": [],
+      "role": "source",
+      "origin": "reused",
+      "basis": "工作目录内的原视频"
+    },
+    {
+      "id": "index",
+      "path": "chunks/index.json",
+      "depends_on": [
+        "transcript"
+      ],
+      "role": "source",
+      "origin": "reused",
+      "basis": "预先跑好的 course_notes.py chunks，本次不重切"
+    },
+    {
+      "id": "frames",
+      "path": "frames/candidates.json",
+      "depends_on": [
+        "video"
+      ],
+      "role": "source",
+      "origin": "reused",
+      "basis": "预先跑好的 frames.py scan，阈值 0.3、60 秒兜底"
+    },
+    {
+      "id": "notes",
+      "path": "notes.json",
+      "depends_on": [
+        "index",
+        "frames"
+      ]
+    },
+    {
+      "id": "visuals",
+      "path": "visuals/index.json",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "generated"
+    },
+    {
+      "id": "renderer",
+      "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+      "depends_on": [],
+      "role": "tool"
+    },
+    {
+      "id": "html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "notes",
+        "renderer"
+      ]
+    },
+    {
+      "id": "fidelity_eval",
+      "path": "fidelity-eval.json",
+      "depends_on": [
+        "notes",
+        "transcript",
+        "frames"
+      ]
+    }
+  ],
+  "log": [
+    {
+      "at": "2026-10-27T17:48:53.895407+00:00",
+      "occurred_at": null,
+      "stage": "read",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "通读 chunk-0001 到 chunk-0020",
+      "evidence": "chunks/index.json"
+    },
+    {
+      "at": "2026-10-27T17:54:03.519095+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "failed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "11 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:54:07.722342+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "failed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "11 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:59:26.443532+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:59:34.623216+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "24 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-05/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T17:59:34.643538+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed, 24 sections, 8 visuals",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:00:02.726730+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-05/cursor/ws/课堂笔记/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T18:07:27.431113+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:07:37.291967+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "24 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-05/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T18:10:40.475005+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:10:40.521278+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "24 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-05/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T18:13:22.210315+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 1.0, recall 0.9722",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-05/cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T18:13:24.521713+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-05/cursor/ws/课堂笔记/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T18:15:07.481127+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:15:07.519888+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 1.0, recall 0.9722",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-05/cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T18:15:09.857534+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/private/var/folders/j6/0wknd5xs1sj5_xnqkgjdj8zm0000gn/T/tmpzfqoo0q5/html-check.json"
+    }
+  ],
+  "issues": [],
+  "status": {
+    "outcome": "completed",
+    "known_gaps": [
+      "换页检测用的是预先生成的 frames.py scan（阈值 0.3，最长 60 秒兜底，171 张候选），不是逐秒看完全片，也没有逐帧 OCR。",
+      "论文和杂志里的小字没有逐字抄进笔记。",
+      "未打开推荐阅读，也没有把 The Bitter Lesson 的原文补进笔记。",
+      "口播里没有画面核对的专名（打帕、微博 50、E Ecler、daphne virus）保持原转写，不升格成事实。",
+      "召回 36 题里 q20、q33 被判 partial：后半句在笔记里（测试晚发现要回头改、会超支；UML 用半形式语言确定可对齐的语义），答题没有写全。",
+      "浏览器检查是 headless Chrome 模拟的 390 和 1280 宽度，不是真机。"
+    ],
+    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors"
+  },
+  "revisions": [
+    {
+      "rev": 1,
+      "at": "2026-10-27T18:13:44.155440+00:00",
+      "reason": "交付第5课课堂笔记：24节、8张手绘图解、保真评测通过",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "5ab5641c1152557735a50fa6ea56715c84488f6a5ad2f474e61bc88bf1bfa33c",
+          "bytes": 4948316
+        },
+        "video": {
+          "path": "../raw/BV1Nyeq6qEt8.mp4",
+          "sha256": "699cb51a044420fab1086e92e301863a306177f461d98d28f2895168182f2023",
+          "bytes": 293595133
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "c253d81f1480c50d2f623f8bfaf74b1b7adfc273416bc6504eefcb04f2cb494f",
+          "bytes": 54682
+        },
+        "frames": {
+          "path": "frames/candidates.json",
+          "sha256": "8c5598bbb3aaabdcb3aaf69dd76b3c653d8f928bcb2d391bdb0ce61f392655e1",
+          "bytes": 17332
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "f4291e233a58217d27611657cd53fdacdc303129c6d331267574fbe5e5bf20f2",
+          "bytes": 125099
+        },
+        "visuals": {
+          "path": "visuals/index.json",
+          "sha256": "755746696127226d12628bec7451669c6e3b3886de571dd8d92108aaeeb5e5c9",
+          "bytes": 1328
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "f69ecdfa696dc9cffde1bf2695848f1d8c3f83d9bb0655c612dedcf80efebaed",
+          "bytes": 6351761
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "17b2fa2d967c291c24b3e0f21fc8ec13c6f64abffb9dcf3fb39191ccd945e571",
+          "bytes": 55257
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 1.0,
+        "recall": 0.9722,
+        "precision_items": 108,
+        "recall_items": 36,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": null
+    }
+  ]
+}

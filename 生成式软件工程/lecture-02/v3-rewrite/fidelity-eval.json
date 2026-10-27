@@ -1,0 +1,1130 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "87e234abfcba8f9bfb4bb3d086605cff54cf4c46ab262e41b4c669e4c161e197",
+  "writer_model": "grok-4.7-high",
+  "precision": {
+    "items": [
+      {
+        "ref": "s2:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g36.0~6–s-g83.2~5",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "b34fff66ba8ba908"
+      },
+      {
+        "ref": "s2:p0",
+        "verdict": "supported",
+        "evidence": "s-g36.0~6–s-g66.0~1",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "8aefde21080b8a12"
+      },
+      {
+        "ref": "s2:p2",
+        "verdict": "supported",
+        "evidence": "s-g83.2~5–s-g105.0~6",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "c8a884e7f2ca3f15"
+      },
+      {
+        "ref": "s2:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000180000.jpg",
+        "note": "截图中的标题、文字及黑板内容支持该描述。",
+        "hash": "fa9cc5689870e435"
+      },
+      {
+        "ref": "s3:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g133.0–s-g205.0~16",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "585cc68e154079e8"
+      },
+      {
+        "ref": "s3:visual",
+        "verdict": "supported",
+        "evidence": "s-g157.0~18–s-g205.0~16; visuals/s03.jpg",
+        "note": "逐字核对图上全部文字，与条目列出的文字一致，无额外文字；内容亦有本节依据。",
+        "hash": "d89c5cbd93cb41ce"
+      },
+      {
+        "ref": "s3:p3",
+        "verdict": "supported",
+        "evidence": "s-g199.0; s-g205.0~16",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "0b034df14f341411"
+      },
+      {
+        "ref": "s3:p2",
+        "verdict": "supported",
+        "evidence": "s-g170.0~13–s-g192.0~8",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "2bb4629ee831f2be"
+      },
+      {
+        "ref": "s3:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000420000.jpg",
+        "note": "截图中的标题、文字及黑板内容支持该描述。",
+        "hash": "b954f217b39b9887"
+      },
+      {
+        "ref": "s4:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g229.0~6–s-g248.0~9",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "87c362650962cd94"
+      },
+      {
+        "ref": "s4:p1",
+        "verdict": "supported",
+        "evidence": "s-g229.0~6–s-g255.0~2",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "26d6e11c28f03659"
+      },
+      {
+        "ref": "s4:p0",
+        "verdict": "supported",
+        "evidence": "s-g211.0~2–s-g229.0~6",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "529efc57ec1424fe"
+      },
+      {
+        "ref": "s5:p1",
+        "verdict": "supported",
+        "evidence": "s-g302.0~7–s-g323.0~5",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "faa34b32ff72a951"
+      },
+      {
+        "ref": "s5:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001020000.jpg",
+        "note": "截图中的标题、文字及黑板内容支持该描述。",
+        "hash": "8befd32d89e204ea"
+      },
+      {
+        "ref": "s6:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g398.0~44–s-g409.0; s-g411.1~39–s-g417.1~43",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "6c46eb21f78c7cf3"
+      },
+      {
+        "ref": "s6:visual",
+        "verdict": "supported",
+        "evidence": "s-g398.0~44–s-g417.1~43; visuals/s06.jpg",
+        "note": "逐字核对图上全部文字，与条目列出的文字一致，无额外文字；内容亦有本节依据。",
+        "hash": "17dd116a8c3f9917"
+      },
+      {
+        "ref": "s6:p2",
+        "verdict": "supported",
+        "evidence": "s-g403.0~70–s-g409.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "d0450c7f0f1097db"
+      },
+      {
+        "ref": "s6:p1",
+        "verdict": "supported",
+        "evidence": "s-g398.0~44–s-g403.0~42",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "23d6186c0692f650"
+      },
+      {
+        "ref": "s6:f1",
+        "verdict": "supported",
+        "evidence": "frames/v001457167.jpg",
+        "note": "截图中的标题、文字及黑板内容支持该描述。",
+        "hash": "01a791c861e4ead7"
+      },
+      {
+        "ref": "s7:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g435.0–s-g447.0~3; s-g458.0–s-g470.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "2753c49a852c6283"
+      },
+      {
+        "ref": "s7:e0",
+        "verdict": "supported",
+        "evidence": "s-g450.0–s-g458.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "4e39c09aee8916c1"
+      },
+      {
+        "ref": "s8:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g493.0~1–s-g509.0~8",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "6c5c06fc878e8a4b"
+      },
+      {
+        "ref": "s8:p1",
+        "verdict": "supported",
+        "evidence": "s-g497.0~9–s-g509.0~8",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "1652bcef0b370aed"
+      },
+      {
+        "ref": "s9:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g515.0~5–s-g523.0~8; s-g556.0~1–s-g594.0~15",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "003ac010e885e129"
+      },
+      {
+        "ref": "s9:visual",
+        "verdict": "supported",
+        "evidence": "s-g520.0–s-g613.0~2; visuals/s09.jpg",
+        "note": "逐字核对图上全部文字，与条目列出的文字一致，无额外文字；内容亦有本节依据。",
+        "hash": "76a511e5206456d0"
+      },
+      {
+        "ref": "s9:p0",
+        "verdict": "supported",
+        "evidence": "s-g510.0~12–s-g523.0~8",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "a737b000890f2bfd"
+      },
+      {
+        "ref": "s9:p2",
+        "verdict": "supported",
+        "evidence": "s-g569.2~6–s-g594.0~15",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "eb24b6ba2bbc11de"
+      },
+      {
+        "ref": "s10:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g624.0–s-g642.2~1; s-g665.0~15–s-g685.0~12",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "59bb9a5d073b6e26"
+      },
+      {
+        "ref": "s10:p3",
+        "verdict": "supported",
+        "evidence": "s-g665.0~15–s-g680.0~24",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "d46c5f16a059c2d1"
+      },
+      {
+        "ref": "s10:p4",
+        "verdict": "supported",
+        "evidence": "s-g680.0~24–s-g685.0~12",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "67d644fb7a6ea80d"
+      },
+      {
+        "ref": "s10:f0",
+        "verdict": "supported",
+        "evidence": "frames/v002582400.jpg",
+        "note": "截图中的标题、文字及黑板内容支持该描述。",
+        "hash": "fd6df51c113e4ea0"
+      },
+      {
+        "ref": "s11:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g688.0~1–s-g768.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "50a7cfddb6a3310f"
+      },
+      {
+        "ref": "s11:p1",
+        "verdict": "supported",
+        "evidence": "s-g732.0~12–s-g768.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "c09af81a02e436d0"
+      },
+      {
+        "ref": "s11:n0",
+        "verdict": "supported",
+        "evidence": "s-g694.0~8–s-g726.0~3",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "317e287af3f6a9af"
+      },
+      {
+        "ref": "s12:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g788.0~1–s-g865.0~5",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "1ecc836557432034"
+      },
+      {
+        "ref": "s12:visual",
+        "verdict": "supported",
+        "evidence": "s-g788.0~1–s-g865.0~5; visuals/s12.jpg",
+        "note": "逐字核对图上全部文字，与条目列出的文字一致，无额外文字；内容亦有本节依据。",
+        "hash": "6be9445fa5f50b7d"
+      },
+      {
+        "ref": "s12:p2",
+        "verdict": "supported",
+        "evidence": "s-g808.0–s-g846.0~5",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "74136f49b049bbb2"
+      },
+      {
+        "ref": "s12:p1",
+        "verdict": "supported",
+        "evidence": "s-g788.0~1–s-g808.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "34ecccf6c8f18959"
+      },
+      {
+        "ref": "s12:f0",
+        "verdict": "supported",
+        "evidence": "frames/v002882400.jpg",
+        "note": "截图中的标题、文字及黑板内容支持该描述。",
+        "hash": "4007a56a6ff41202"
+      },
+      {
+        "ref": "s13:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g874.0~11–s-g896.0~2; s-g925.0~20–s-g961.0~2",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "ce1c5e50ff5edd66"
+      },
+      {
+        "ref": "s13:e0",
+        "verdict": "supported",
+        "evidence": "s-g911.0~1–s-g935.0~7",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "4cb3ed42b4e0fdad"
+      },
+      {
+        "ref": "s13:p2",
+        "verdict": "supported",
+        "evidence": "s-g954.0~1–s-g983.0~6",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "e9d1a568be8f6504"
+      },
+      {
+        "ref": "s13:f0",
+        "verdict": "supported",
+        "evidence": "frames/v003182400.jpg",
+        "note": "截图中的标题、文字及黑板内容支持该描述。",
+        "hash": "e89448e150c15b9a"
+      },
+      {
+        "ref": "s14:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1026.0~1–s-g1067.0; s-g1107.0–s-g1110.0~3",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "ad58135b7caf7565"
+      },
+      {
+        "ref": "s14:e0",
+        "verdict": "supported",
+        "evidence": "s-g1001.0; s-g1009.0; s-g1012.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "f86961574a929a42"
+      },
+      {
+        "ref": "s14:p0",
+        "verdict": "supported",
+        "evidence": "s-g992.0~8–s-g1013.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "c7d2618af2a76f87"
+      },
+      {
+        "ref": "s15:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1119.0~2–s-g1122.0~30; s-g1140.0~18–s-g1174.0~7",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "2b6872ab3d221c6f"
+      },
+      {
+        "ref": "s15:visual",
+        "verdict": "supported",
+        "evidence": "s-g1119.0~2–s-g1174.0~7; visuals/s15.jpg",
+        "note": "逐字核对图上全部文字，与条目列出的文字一致，无额外文字；内容亦有本节依据。",
+        "hash": "1961cb292c39f5bc"
+      },
+      {
+        "ref": "s15:p0",
+        "verdict": "supported",
+        "evidence": "s-g1116.0–s-g1122.0~30",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "af7000e69afeb6ff"
+      },
+      {
+        "ref": "s15:p3",
+        "verdict": "supported",
+        "evidence": "s-g1164.0~6–s-g1174.0~7",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "4104e74410ecdf8d"
+      },
+      {
+        "ref": "s16:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1186.0~8–s-g1206.0~10; s-g1238.0~12–s-g1257.3~3",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "b6dbd0b5c0e9805e"
+      },
+      {
+        "ref": "s16:visual",
+        "verdict": "supported",
+        "evidence": "s-g1186.0~8–s-g1206.0~10; visuals/s16.jpg",
+        "note": "逐字核对图上全部文字，与条目列出的文字一致，无额外文字；内容亦有本节依据。",
+        "hash": "506004b6d5eea7de"
+      },
+      {
+        "ref": "s16:n0",
+        "verdict": "supported",
+        "evidence": "s-g1238.0~12–s-g1253.0~20; s-g1259.0~12; s-g1262.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "c3c7b4ec58c2a980"
+      },
+      {
+        "ref": "s16:p0",
+        "verdict": "supported",
+        "evidence": "s-g1180.0~6–s-g1206.0~10",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "2fa6b688890014d9"
+      },
+      {
+        "ref": "s17:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1267.0–s-g1278.0~24; s-g1283.0~8–s-g1286.0~7",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "8c1323f45a6106c9"
+      },
+      {
+        "ref": "s17:p2",
+        "verdict": "supported",
+        "evidence": "s-g1283.0~8–s-g1295.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "8b875cb5a267c36e"
+      },
+      {
+        "ref": "s17:p1",
+        "verdict": "supported",
+        "evidence": "s-g1279.0~16–s-g1281.0~42",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "3fb731edd65fdfae"
+      },
+      {
+        "ref": "s18:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1296.0; s-g1305.0~12–s-g1326.0~6",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "c44a94f52552fcdf"
+      },
+      {
+        "ref": "s18:visual",
+        "verdict": "supported",
+        "evidence": "s-g1305.0~12–s-g1350.0~5; visuals/s18.jpg",
+        "note": "逐字核对图上全部文字，与条目列出的文字一致，无额外文字；内容亦有本节依据。",
+        "hash": "53e1fd5d7c0c9772"
+      },
+      {
+        "ref": "s18:p5",
+        "verdict": "supported",
+        "evidence": "s-g1350.0~5–s-g1360.0~12",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "79d964c6846a1177"
+      },
+      {
+        "ref": "s18:n0",
+        "verdict": "supported",
+        "evidence": "s-g1296.0; s-g1299.2~14; s-g1313.0; s-g1326.0~6; s-g1331.0~1",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "52a62918e50c71af"
+      },
+      {
+        "ref": "s19:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1367.0~16–s-g1397.0~22",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "22403066e0760e58"
+      },
+      {
+        "ref": "s19:p0",
+        "verdict": "supported",
+        "evidence": "s-g1364.0~30–s-g1382.0~15",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "e46fe1695bc4919b"
+      },
+      {
+        "ref": "s20:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1401.0–s-g1421.0~2",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "1a7460dcc79b8031"
+      },
+      {
+        "ref": "s20:n0",
+        "verdict": "supported",
+        "evidence": "s-g1401.0; s-g1411.0~1; s-g1414.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "7547595608c6dc8a"
+      },
+      {
+        "ref": "s20:p0",
+        "verdict": "supported",
+        "evidence": "s-g1401.0–s-g1414.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "94819b2b01cfda46"
+      },
+      {
+        "ref": "s21:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1453.0~5–s-g1476.0~24",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "0604b02a1d6705ca"
+      },
+      {
+        "ref": "s21:visual",
+        "verdict": "supported",
+        "evidence": "s-g1453.0~5–s-g1476.0~24; visuals/s21.jpg",
+        "note": "逐字核对图上全部文字，与条目列出的文字一致，无额外文字；内容亦有本节依据。",
+        "hash": "708e1027b146c468"
+      },
+      {
+        "ref": "s21:p1",
+        "verdict": "supported",
+        "evidence": "s-g1453.0~5–s-g1483.0~5",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "0425f52e398c4391"
+      },
+      {
+        "ref": "s21:p0",
+        "verdict": "supported",
+        "evidence": "s-g1421.0~2–s-g1448.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "31c8a6de0960fb8e"
+      },
+      {
+        "ref": "s21:f0",
+        "verdict": "supported",
+        "evidence": "frames/v005210767.jpg",
+        "note": "截图中的标题、文字及黑板内容支持该描述。",
+        "hash": "f740d03097fd828c"
+      },
+      {
+        "ref": "s22:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1495.0~4–s-g1509.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "f33b73b593fe3581"
+      },
+      {
+        "ref": "s22:p0",
+        "verdict": "supported",
+        "evidence": "s-g1483.0~5–s-g1500.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "7afae04efd4ecf64"
+      },
+      {
+        "ref": "s22:n0",
+        "verdict": "supported",
+        "evidence": "s-g1495.0~4–s-g1499.0; s-g1507.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "66d1b7506311e30a"
+      },
+      {
+        "ref": "s23:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1512.0–s-g1516.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "ab1c367ff4d727dc"
+      },
+      {
+        "ref": "s23:n0",
+        "verdict": "supported",
+        "evidence": "s-g1512.0–s-g1515.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "0bc437536a1b3c0c"
+      },
+      {
+        "ref": "s23:p0",
+        "verdict": "supported",
+        "evidence": "s-g1512.0–s-g1516.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "da532fb8d127c603"
+      },
+      {
+        "ref": "s24:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1517.0–s-g1530.0; s-g1540.1–s-g1555.0~10",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "02110d7dafea2ec5"
+      },
+      {
+        "ref": "s24:visual",
+        "verdict": "supported",
+        "evidence": "s-g1517.0–s-g1546.0~6; visuals/s24.jpg",
+        "note": "逐字核对图上全部文字，与条目列出的文字一致，无额外文字；内容亦有本节依据。",
+        "hash": "e5358a98786b393c"
+      },
+      {
+        "ref": "s24:p1",
+        "verdict": "supported",
+        "evidence": "s-g1524.0–s-g1530.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "c59b33b16c755aad"
+      },
+      {
+        "ref": "s24:p2",
+        "verdict": "supported",
+        "evidence": "s-g1532.0–s-g1538.0~35",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "977a5642946d88a3"
+      },
+      {
+        "ref": "s24:f0",
+        "verdict": "supported",
+        "evidence": "frames/v005860767.jpg",
+        "note": "截图中的标题、文字及黑板内容支持该描述。",
+        "hash": "93feee06b10d3150"
+      },
+      {
+        "ref": "q1",
+        "verdict": "supported",
+        "evidence": "s-g95.0~5–s-g99.0~27",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "35a2a889d8290578"
+      },
+      {
+        "ref": "q2",
+        "verdict": "supported",
+        "evidence": "s-g178.0~3–s-g192.0~8",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "7d3c77214d929863"
+      },
+      {
+        "ref": "q3",
+        "verdict": "supported",
+        "evidence": "s-g403.0~70–s-g409.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "6716f7cb8dc5e73c"
+      },
+      {
+        "ref": "q4",
+        "verdict": "supported",
+        "evidence": "s-g569.2~6–s-g594.0~15",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "5bc55f7eb8e07159"
+      },
+      {
+        "ref": "q5",
+        "verdict": "supported",
+        "evidence": "s-g920.0~2–s-g961.0~2",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "6d133dfbfe94a771"
+      },
+      {
+        "ref": "q6",
+        "verdict": "supported",
+        "evidence": "s-g1199.0~10–s-g1206.0~10",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "72c9698629430176"
+      },
+      {
+        "ref": "q7",
+        "verdict": "supported",
+        "evidence": "s-g1308.0~2–s-g1309.0~22; s-g1319.0~58–s-g1336.0~4",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "03996d9e47ce4bd7"
+      },
+      {
+        "ref": "q8",
+        "verdict": "supported",
+        "evidence": "s-g1453.0~5–s-g1476.0~24",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "fe4d4ca6ec2f644f"
+      },
+      {
+        "ref": "q9",
+        "verdict": "supported",
+        "evidence": "s-g1521.0–s-g1527.0",
+        "note": "与指定证据一致，保留了原话的条件和语气。",
+        "hash": "d3e086b7e7087e02"
+      },
+      {
+        "ref": "map",
+        "verdict": "supported",
+        "evidence": "visuals/map.jpg; s-g79.0~1; s-g403.0~70; s-g569.2~6; s-g768.0; s-g1120.0~2; s-g1326.0~6; s-g1401.0; s-g1545.0",
+        "note": "图中七个标签与 text 一致，没有多余文字。课堂先讲人的引导，再讲开放问题拆分；图中人负责引导的横栏也符合贯穿性概括。",
+        "hash": "3c1a6564a55b8c59"
+      },
+      {
+        "ref": "s16:f0",
+        "verdict": "partial",
+        "evidence": "frames/v004070767.jpg",
+        "note": "黑板内容、99%、1% 和 A2′ 均可见，未见 10%。右侧几乎空白，但左上角仍有终端 $ 提示符和光标，称完全空白略不准确。",
+        "hash": "cda8272eb76743c7"
+      },
+      {
+        "ref": "s19:n0",
+        "verdict": "supported",
+        "evidence": "s-g1382.0~15; s-g1388.0~7; s-g1393.0",
+        "note": "书名与口播一致；两种架构是讲师举出的互斥设计例子。",
+        "hash": "cbcca6dbd10d58e6"
+      },
+      {
+        "ref": "s1:n0",
+        "verdict": "supported",
+        "evidence": "s-g12.0~4; s-g17.0~8; s-g23.0~3",
+        "note": "inline assembly 是明确标示的转写校正；传统异能在后句，解释效果和时代变化均为讲师个人感受。",
+        "hash": "5ae985fd2df16e48"
+      },
+      {
+        "ref": "s1:p1",
+        "verdict": "supported",
+        "evidence": "s-g6.0~11; s-g12.0~4; s-g17.0~8; s-g23.0~3; s-g30.0~17",
+        "note": "叙述忠于提供的转写，保留了应该不在训练语料中和确实不完美等限定；年份按课堂说法核对。",
+        "hash": "a6877ef3fe7a9268"
+      },
+      {
+        "ref": "s1:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1.0; s-g12.0~4; s-g23.0~3; s-g30.0~17",
+        "note": "沟通通道、个人经历及本节结尾所处位置都有直接依据。",
+        "hash": "b734b5e83b0587b0"
+      },
+      {
+        "ref": "s5:p4",
+        "verdict": "supported",
+        "evidence": "s-g376.0~39; s-g377.1~24; s-g378.0~65; s-g380.0~4; s-g381.3~21; s-g384.0~42; s-g387.0",
+        "note": "风险评级、静态分流、修改 prompt 后观察行为均有依据；parser 和注入机制保留了讲师想象、应该的语气。",
+        "hash": "6062a100ef5e520c"
+      },
+      {
+        "ref": "s5:takeaway",
+        "verdict": "partial",
+        "evidence": "s-g265.0; s-g272.0~13; s-g376.0~39; s-g377.1~24; s-g378.0~65; s-g380.0~4",
+        "note": "安全与便利的平衡及对演示模型的保留有依据；其余再注入提示词将讲师应该会、你会想象的机制推测写成了确定事实。",
+        "hash": "ccb1d54113d779a1"
+      },
+      {
+        "ref": "s7:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001682367.jpg",
+        "note": "终端命令、目录名称和 25、106、1249 均吻合；黑板上下两行的 sys prompt、user、intent、spec、impl 及连接可见。",
+        "hash": "12113b5dc2d6bfa5"
+      },
+      {
+        "ref": "s7:n0",
+        "verdict": "supported",
+        "evidence": "s-g435.0; s-g439.0~13; s-g445.0; s-g489.0~3",
+        "note": "名称整理与给定转写一致；学生未被点名，世界第一明确来自公众号说法。",
+        "hash": "210af50b641637d5"
+      },
+      {
+        "ref": "s8:p0",
+        "verdict": "supported",
+        "evidence": "s-g493.0~1",
+        "note": "基本固定的品位及不控制时朝固定方向发散均直接对应原话。",
+        "hash": "d3c057d758f3a93b"
+      }
+    ],
+    "reviewer": "independent_agent",
+    "reviewer_model": "gpt-6.1-sol",
+    "method": "prepare packets: all takeaways/explainers + per-section sample; 102 judged in latest round; 11 judged in latest round"
+  },
+  "recall": {
+    "items": [
+      {
+        "id": "q01",
+        "question": "讲者为什么说提示词工程实际上是上下文工程？除用户消息外，列出至少三类 agent 会看到的内容。",
+        "expected": "优化的是整个模型上下文；包括 system prompt、AGENTS.md/skills、工具定义与调用结果、对话历史或环境信息中的至少三类。",
+        "evidence": "s-g36.0~6; s-g43.0~5; s-g60.0~7; s-g79.0~1",
+        "from": "transcript",
+        "answer": "模型看到的不是聊天框里的一句话，而是整条线性上下文；优化提示词就是安排整段上下文。除用户消息外，还有系统提示词、分层 AGENTS.md、按需加载的 skills、工具定义及调用结果、对话历史、每次注入的环境变量和时间。",
+        "found_in": "s2:p0, s2:p1, s3:p1, s3:p2, s3:p3",
+        "verdict": "correct",
+        "note": "覆盖整个模型上下文及至少三类额外内容。",
+        "hash": "72d2cafe2b051e10"
+      },
+      {
+        "id": "q02",
+        "question": "讲者提到的“每句话后面加一个喵”有什么工程用途？如果“喵”消失，可能说明什么？",
+        "expected": "用作指令遵循的观察信号；可能因上下文截断、溢出或压缩等导致早期指令不再被遵循。",
+        "evidence": "s-g95.0~5; s-g99.0~27",
+        "from": "transcript",
+        "answer": "这是检查长时间工作后指令是否仍被遵循的探针。如果“喵”消失，可能是上下文溢出后被截断或被压缩，模型开始无法遵循早先指令，需要重新处理上下文。",
+        "found_in": "s2:p2",
+        "verdict": "correct",
+        "note": "说明观察信号及截断、溢出或压缩的可能原因。",
+        "hash": "58acb065e7ad0c54"
+      },
+      {
+        "id": "q03",
+        "question": "在课堂演示的全局 AGENTS.md 中，讲者设置了哪两项输出要求？",
+        "expected": "用中文回答；结尾必须写 recap。",
+        "evidence": "s-g164.0; s-g170.0~13",
+        "from": "transcript",
+        "answer": "用中文回答；结尾必须写一个 recap，总结这次做了什么。",
+        "found_in": "s3:p1",
+        "verdict": "correct",
+        "note": "中文回答和结尾 recap 均正确。",
+        "hash": "b2ee83103d2826a5"
+      },
+      {
+        "id": "q04",
+        "question": "按讲者对 skills 的介绍，模型最初看到什么，何时才读取完整的 SKILL.md？",
+        "expected": "最初只看到名称和简短描述等 metadata；匹配当前任务时才按需读取完整内容。",
+        "evidence": "s-g178.0~3; s-g185.0~14; s-g192.0~8",
+        "from": "transcript",
+        "answer": "最初只看到 skill 索引里的 metadata，即名字和简短描述；任务匹配时才按需读取完整 skill 文件。讲者还说该轮加载结束后 skill 会从上下文中被抹掉。",
+        "found_in": "s3:p2",
+        "verdict": "correct",
+        "note": "正确说明先看 metadata、任务匹配后按需读取全文。",
+        "hash": "b2ee83103d2826a5"
+      },
+      {
+        "id": "q05",
+        "question": "讲者如何建议用 AI 实践费曼学习法？AI 在反向讲解阶段要做什么？",
+        "expected": "先向 AI 请教并追问；自认为理解后自己当老师、让 AI 假装不懂的学生；AI 检查并纠正逻辑错漏。",
+        "evidence": "s-g211.0~2; s-g229.0~6; s-g235.0~10",
+        "from": "transcript",
+        "answer": "先把 AI 当老师，不懂就追问；自认为懂了，再由自己讲解，让 AI 扮演什么都不知道的学生，检查逻辑错误和遗漏，并及时纠正。",
+        "found_in": "s4:p0, s4:p1",
+        "verdict": "correct",
+        "note": "完整说明请教追问、角色反转及检查纠错。",
+        "hash": "f57778b49a01bdfe"
+      },
+      {
+        "id": "q06",
+        "question": "讲者为什么觉得 agent 在沙箱失败后请求确认会妨碍工作？他举了什么离开电脑的情境？",
+        "expected": "想先启动三个任务再去吃饭；回来发现 agent 只跑了一分钟就停在确认上，浪费无人值守时间。",
+        "evidence": "s-g280.0~5; s-g287.0~7; s-g294.0~11",
+        "from": "transcript",
+        "answer": "人希望安排好几个任务后离开，让 agent 自己运行；若它在沙箱失败后很快停下来等确认，回来才发现任务没推进，浪费双方时间。他举的是把三个任务跑起来后去吃饭，回来发现它跑了一分钟就问确认。",
+        "found_in": "s5:p0",
+        "verdict": "correct",
+        "note": "包含三个任务、去吃饭及一分钟后停在确认的情境。",
+        "hash": "851ff8ab6a0a1394"
+      },
+      {
+        "id": "q07",
+        "question": "在“为何有时执行 bash 要确认、有时不要”的现场提问中，代码检查给出了哪两类风险处理机制？",
+        "expected": "静态分流/命令解析与白名单，部分低风险命令直接放行；另有大模型参与风险评级。",
+        "evidence": "s-g355.0; s-g376.0~39; s-g377.1~24; s-g378.0~65",
+        "from": "transcript",
+        "answer": "一层是静态分流：沙箱内低风险命令、网络 allow list 等直接放行；另一层是对不确定的命令注入安全评估提示词，让大模型做风险评级。",
+        "found_in": "s5:p4, s5:f0",
+        "verdict": "correct",
+        "note": "覆盖静态分流与白名单，以及大模型风险评级。",
+        "hash": "851ff8ab6a0a1394"
+      },
+      {
+        "id": "q08",
+        "question": "如果不完全相信 agent 对安全评估代码的解释，讲者建议怎样获得行为层面的证据？",
+        "expected": "修改安全评估 prompt，使原来放行的命令被拒绝或反过来；观察实际行为是否随之改变。",
+        "evidence": "s-g380.0~4; s-g381.3~21; s-g384.0~42",
+        "from": "transcript",
+        "answer": "修改安全评估 prompt，把原先不拒绝的改成拒绝、原先拒绝的改成不拒绝，再观察实际行为是否随之变化；这些行为变化就是证据，也可以让 agent 来做。",
+        "found_in": "s5:p4",
+        "verdict": "correct",
+        "note": "正确提出修改安全 prompt 并观察放行或拒绝行为变化。",
+        "hash": "851ff8ab6a0a1394"
+      },
+      {
+        "id": "q09",
+        "question": "讲者为什么用“要求 C++ 却得到 Java”的例子说明 spec 和 verify 的作用？",
+        "expected": "明确写出实现语言后，不符合要求可直接判定；只给模糊 intent、不说语言，就可能发生漂移。",
+        "evidence": "s-g398.0~44; s-g401.0; s-g402.0~15; s-g403.0; s-g403.0~42",
+        "from": "transcript",
+        "answer": "明确 spec 写了用 C++，却交来 Java，人和模型都能核对出不合格；若只给模糊意图而没指定语言，模型自行选 Java 就可能偏离人的期待。spec 和 verify 让完成条件明确，从而发现并约束漂移。",
+        "found_in": "s6:p1, s6:e0",
+        "verdict": "correct",
+        "note": "说明明确语言可验收，模糊意图会导致漂移。",
+        "hash": "7b99833dfbcfa6cd"
+      },
+      {
+        "id": "q10",
+        "question": "针对“一句话生成赛车游戏”与心中想要的游戏不一致，讲者提出了什么具体地图方案？",
+        "expected": "明确要求复用真实地图和美术资产；可从 OpenStreetMap 获取开源地图，例子是在南大仙林校区开车。",
+        "evidence": "s-g415.0~2; s-g416.0; s-g416.0~22; s-g416.0~61; s-g417.0",
+        "from": "transcript",
+        "answer": "明确要求复用真实地图和公开可用的美术资产，例如从 OpenStreetMap 下载开源地图，找到南大仙林校区地图的文件格式并重建世界，实现校园内开车，再使用公开的车、城市、树等资产。",
+        "found_in": "s6:p4",
+        "verdict": "correct",
+        "note": "覆盖真实地图、美术资产、OpenStreetMap 和南大仙林校区。",
+        "hash": "7b99833dfbcfa6cd"
+      },
+      {
+        "id": "q11",
+        "question": "讲者自己的终端主页用了什么渲染后的处理来减轻“AI 味”？这体现了什么指令原则？",
+        "expected": "对 xterm.js 渲染结果做小幅后处理，使字形像打字机般不完美；把风格、前景背景、后处理和排版等说具体。",
+        "evidence": "s-g450.0; s-g452.0; s-g454.0~7; s-g458.0; s-g462.0~23",
+        "from": "transcript",
+        "answer": "在 xterm.js 渲染后做后处理，让字形不那么工整，像真实打字机的不完美。原则是把想要的终端、前景背景、渲染后处理、样式和排版说具体；指令越清楚，越能控制结果并减轻 AI 味。",
+        "found_in": "s7:p1, s7:p2",
+        "verdict": "correct",
+        "note": "覆盖 xterm.js 字形后处理及风格要求具体化。",
+        "hash": "f7f40259a10e8f86"
+      },
+      {
+        "id": "q12",
+        "question": "讲者用有限状态机和图灵机的类比，怎样解释思维链的作用及其局限？",
+        "expected": "上下文相当于纸笔/外部记忆，让有限的单次计算积累推理；只能 append-only 往后写，不能擦除，靠注意力忽略错误。",
+        "evidence": "s-g538.0~1; s-g556.0~1; s-g563.0~15; s-g569.2~6; s-g578.1~11",
+        "from": "transcript",
+        "answer": "每输出一个 token 只有固定、有限的计算，类似有限状态机；把上下文当纸和笔写下中间思考，就像加上纸带的图灵机，能试解并核对。局限是纸带只能往后追加、不能擦，写错的内容只能靠注意力忽略，写出的解也可能有错。",
+        "found_in": "s9:p0, s9:p1, s9:p2",
+        "verdict": "correct",
+        "note": "覆盖上下文作为外部记忆、只能追加及靠注意力忽略错误。",
+        "hash": "4edd3c03b3feeb35"
+      },
+      {
+        "id": "q13",
+        "question": "课堂藏头诗演示中，除押韵外，还要求讲什么主题的故事，以及哪八个字按顺序出现在八句里？",
+        "expected": "动物相关故事；“二零二六九月一日”八字按顺序分布在八句中。",
+        "evidence": "s-g624.0",
+        "from": "transcript",
+        "answer": "讲一个与动物有关的故事，并让“二零二六九月一日”八个字按顺序出现在八句里。",
+        "found_in": "s10:p0",
+        "verdict": "correct",
+        "note": "动物故事主题和八个指定字均正确。",
+        "hash": "c36d241017fb6717"
+      },
+      {
+        "id": "q14",
+        "question": "模型在藏头诗任务里不是一次直接写完，而是怎样尝试和纠错的？",
+        "expected": "先考虑韵脚并尝试写作；检查是否满足约束，不对就修改；多次不行时换韵脚重来。",
+        "evidence": "s-g630.0~5; s-g636.0~5; s-g642.2~1",
+        "from": "transcript",
+        "answer": "先考虑韵脚，写一版后判断是否满足条件，不对就改；试很久不行会从头推、换一个韵脚，不断验证和纠错。",
+        "found_in": "s10:p0",
+        "verdict": "correct",
+        "note": "覆盖选韵、检查修改及换韵重来。",
+        "hash": "c36d241017fb6717"
+      },
+      {
+        "id": "q15",
+        "question": "讲者认为模型主要在数学和编程上训练，却能完成复杂文字约束任务，这说明了什么？写 prompt 时最重要的因素是什么？",
+        "expected": "思维链/指令遵循能力可迁移到文字任务；强模型配合明确、可检查的 verify 是关键。",
+        "evidence": "s-g661.0~26; s-g685.0~12; s-g688.0~1; s-g694.0~8",
+        "from": "transcript",
+        "answer": "这显示了在数学、编程等有明确反馈的任务上训练出的能力，可以迁移到未在训练中出现过的复杂文字约束任务。写 prompt 最重要的是给出明确、可核对的 verify。",
+        "found_in": "s10:p2, s10:p4, s11:p0",
+        "verdict": "partial",
+        "note": "说明能力迁移和明确可检查的 verify，但遗漏强模型配合这一关键条件。",
+        "hash": "c3c8004aec3fecab"
+      },
+      {
+        "id": "q16",
+        "question": "讲者为什么觉得教学数字切片比数学、编程任务更难做好？",
+        "expected": "“好”涉及 AI 味、情绪起伏、课堂节奏和共情等多方面；这些难以像数学和代码那样给出明确 verify。",
+        "evidence": "s-g702.0~8; s-g710.0~8; s-g726.0~3; s-g732.0~12; s-g748.0~2",
+        "from": "transcript",
+        "answer": "教学的“好”有很多维度：AI 味要淡、课堂要有情绪起伏、惊喜和共情，并符合学生的节奏。这些原则他知道，却难写成可核对的条件；数学和编程则更容易有明确 verifier。",
+        "found_in": "s11:p0, s11:p1",
+        "verdict": "correct",
+        "note": "说明教学质量的多维要求及难以明确验收。",
+        "hash": "ba614d375f497518"
+      },
+      {
+        "id": "q17",
+        "question": "在“用中文回答”和“实现极品飞车”同时存在的例子中，讲者怎样描述注意力随输出阶段的变化？",
+        "expected": "写代码时更关注需求和已写代码，中文回复要求注意力下降；代码写完做总结时可重新关注中文等其他指令。",
+        "evidence": "s-g788.0~1; s-g794.0~7; s-g801.0~4; s-g817.0; s-g832.0",
+        "from": "transcript",
+        "answer": "写代码时，注意力更集中于已有代码和“实现极品飞车”的需求，“用中文回答”的注意力会下降；代码写完开始总结时，注意力转移，重新看到中文等旧要求，并可能发现和纠正不符合要求的输出。",
+        "found_in": "s12:p1, s12:p2, s12:p3",
+        "verdict": "correct",
+        "note": "正确描述编码阶段和总结阶段的注意力变化。",
+        "hash": "2e2c4f4798ef28e9"
+      },
+      {
+        "id": "q18",
+        "question": "“白色背景，不要半透明效果”的例子中，模型做出了什么令讲者觉得不自然的行为？用更多规则修正它又有什么代价？",
+        "expected": "把“白色背景（不要半透明效果）”直接写进代码注释；再加 AGENTS.md 或 skill 规则会继续污染上下文、争夺注意力。",
+        "evidence": "s-g911.0~1; s-g925.0~20; s-g935.0~7; s-g954.0~1; s-g961.0~2",
+        "from": "transcript",
+        "answer": "模型实现白色背景后，还把“白色背景（不要半透明效果）”原样写成代码注释，把效果要求当成了需要保留的句子。可用 AGENTS.md 或 skill 规定注释写法，但这些规则又会污染上下文、争夺注意力，且可能陷入不断改规则的泥潭。",
+        "found_in": "s13:p1, s13:p2",
+        "verdict": "correct",
+        "note": "覆盖原样写入注释及新增规则污染上下文、争夺注意力。",
+        "hash": "f845225a65fa9ab3"
+      },
+      {
+        "id": "q19",
+        "question": "针对“读 paper.pdf 帮我做总结”这类提问，讲者认为论文自身的逻辑会给模型带来什么偏向？",
+        "expected": "逻辑自洽的论文强烈影响上下文注意力；模型容易接受作者立场，产出作者观点的复述。",
+        "evidence": "s-g1017.0; s-g1026.0~1; s-g1032.0~14; s-g1038.0~3; s-g1055.0~6",
+        "from": "transcript",
+        "answer": "论文的 A→B→C→D 逻辑很自洽，会牵引注意力，让模型容易接受作者的前提和观点；总结于是基本复述作者立场，甚至来回说论文原话，难以站在读者的立场评价。",
+        "found_in": "s14:p1",
+        "verdict": "correct",
+        "note": "说明论文逻辑牵引注意力并导致复述作者立场。",
+        "hash": "e5025156af0edfb1"
+      },
+      {
+        "id": "q20",
+        "question": "面对“怎样抵抗已有论文对上下文的污染”的课堂提问，讲者建议先对齐哪三个问题？",
+        "expected": "人类已有相关工作是什么；已解决到什么程度；本文试图解决哪些不同的增量问题。",
+        "evidence": "s-g1105.0; s-g1113.0~34; s-g1119.0~2; s-g1119.0~31; s-g1119.0~38; s-g1120.0~2",
+        "from": "transcript",
+        "answer": "先对齐：人类历史上相关的已解决内容是什么；已经解决到什么程度；这篇工作试图解决什么不同的、增量的问题。",
+        "found_in": "s15:p0",
+        "verdict": "correct",
+        "note": "三个对齐问题均完整。",
+        "hash": "663d25c70989f590"
+      },
+      {
+        "id": "q21",
+        "question": "学生让 AI 解释尚未理解的课程内容时，讲者建议先告诉 AI 哪些个人信息，再要求怎样解释？",
+        "expected": "说明自己课程学到哪里、编程水平等已有知识；要求用已经学过的知识重新表述内容。",
+        "evidence": "s-g1121.0; s-g1122.0; s-g1122.0~21; s-g1122.0~30",
+        "from": "transcript",
+        "answer": "先告诉 AI 自己这门课学到什么程度、编程水平是什么，把已有知识放进上下文；再要求它从这个基础出发，用自己学过的知识把内容换一种说法重新解释。",
+        "found_in": "s15:p0, s15:e0",
+        "verdict": "correct",
+        "note": "覆盖课程进度、编程水平及用已学知识重新解释。",
+        "hash": "663d25c70989f590"
+      },
+      {
+        "id": "q22",
+        "question": "讲者明确说自己通常因什么拒稿，而不是仅因什么拒稿？",
+        "expected": "主要检查是否给人类提供新知识、逻辑链是否断裂；几乎不会仅因实验不够好而拒稿。",
+        "evidence": "s-g1168.0~9; s-g1174.0~7; s-g1180.0~6",
+        "from": "transcript",
+        "answer": "他大部分拒稿是因为逻辑断开，站在人类立场看没有提供新的知识；几乎不会仅因实验不够好拒稿。",
+        "found_in": "s15:p3",
+        "verdict": "correct",
+        "note": "覆盖新知识、逻辑断裂及不单因实验不足拒稿。",
+        "hash": "663d25c70989f590"
+      },
+      {
+        "id": "q23",
+        "question": "在 A 分成 A1、A2 的拒稿案例中，两部分各约占多少性能开销？为何只优化 A2 的 10% 让讲者不认可整体意义？",
+        "expected": "A1 约 99%，A2 约 1%；只改善小部分的 10% 对整体影响像噪声，真正该关注的是 A1。",
+        "evidence": "s-g1186.0~8; s-g1194.0~2; s-g1199.0~10; s-g1206.0~10",
+        "from": "transcript",
+        "answer": "他口头估算 A1 约占 99%，A2 约占 1%。即便 A2 的实验和优化成立，只改善 A2 的 10% 对整体也像噪声，主要开销在 A1，应该优先优化 A1，因此整体研究意义仍可能不成立。",
+        "found_in": "s16:p0, s16:n0",
+        "verdict": "correct",
+        "note": "99% 与 1% 正确，说明小部分优化对整体影响微弱。",
+        "hash": "da009fd5d1c47b0e"
+      },
+      {
+        "id": "q24",
+        "question": "讲者所说的真正 long horizon 任务与 PA 作业有明确 verifier 的任务有何区别？",
+        "expected": "真正长程任务含未知与探索；可能只有大致意图，spec 和 implementation 都不清楚；明确验收的 PA 不算这种真正长程任务。",
+        "evidence": "s-g1296.0; s-g1299.1~4; s-g1299.2~14",
+        "from": "transcript",
+        "answer": "PA 作业有明确 verifier，知道怎样判定完成，不算真正 long horizon。真正长程任务包含未知和不确定性探索，可能只有初步 intent，spec 和 implementation 都不清楚，需要探索怎样交付高质量结果，不能指望模型一直沿已知核对条件做下去。",
+        "found_in": "s18:p0, s24:p0",
+        "verdict": "correct",
+        "note": "正确区分明确验收任务与包含未知探索的长程任务。",
+        "hash": "efe60d788eaee492"
+      },
+      {
+        "id": "q25",
+        "question": "讲者为何认为维护良好的大型项目，可能比从零写一个小游戏更适合 AI？",
+        "expected": "大型项目有成熟的已有模式与上下文可参考；模型能加载文件、组合已有写法，而从零产品后续加功能容易成本上升和翻车。",
+        "evidence": "s-g1309.0~22; s-g1326.0~6; s-g1331.0~1; s-g1336.0~4; s-g1346.0~10",
+        "from": "transcript",
+        "answer": "维护良好的大项目提供高质量上下文和已有范例；模型能在几十个文件里找出类似实现、helper 和上锁顺序，照着学和组合。从零的小原型虽容易一次跑起来，继续加功能时却可能翻车、维护成本不断上升。",
+        "found_in": "s18:p1, s18:p3",
+        "verdict": "correct",
+        "note": "覆盖成熟项目的已有模式及从零产品后续维护风险。",
+        "hash": "bc868559513abd97"
+      },
+      {
+        "id": "q26",
+        "question": "符号执行优化研究的失败案例中，哪句需求把模型引向 reward hacking？讲者纠正后的研究起点是什么？",
+        "expected": "“想证明 A 方法有用”使模型执着于小 benchmark 上的结论；应从真实工具和最先进算法开始，耗时甚至 timeout 的搜索路径也有价值。",
+        "evidence": "s-g1453.0~5; s-g1457.0; s-g1462.0~20; s-g1467.0~7; s-g1472.0~7; s-g1476.0~24",
+        "from": "transcript",
+        "answer": "带偏它的是“我想证明这个 A 方法是有用的”，使它构造大量小 benchmark 来找正负结论，忘掉研究全局。纠正后应从真实工具和 state of the art 算法开始，即使运行数小时后 timeout，也分析超时留下的搜索路径，了解哪些程序结构让现有探索方法困难。",
+        "found_in": "s21:p1",
+        "verdict": "correct",
+        "note": "覆盖诱导需求、真实工具和先进算法起点及超时路径价值。",
+        "hash": "eb2d9fede0f0f2c8"
+      },
+      {
+        "id": "q27",
+        "question": "讲者怎样权衡“盯着 AI 随时纠正”和“让它自己跑”？他提醒学生把时间主要花在哪里？",
+        "expected": "即时注入领域知识通常更快，但更多 token 和时间也常能完成；纠正 AI 有心理奖励，应把精力留给学习未知和收益最高的事，已知且 AI 能做好就放手。",
+        "evidence": "s-g1488.0~20; s-g1497.0; s-g1498.0; s-g1502.0; s-g1506.0; s-g1507.0; s-g1509.0",
+        "from": "transcript",
+        "answer": "盯着并及时注入领域知识、纠正跑偏，可能更快；给它更多时间和 token，它通常也能完成，要权衡有限的人类精力。已知道怎么做、AI 能做好之事可以放手并验收；学生应把几乎全部时间放在把不知道变成知道、收益最大的学习上，避免为纠正 AI 的心理安慰而假努力。",
+        "found_in": "s22:p0, s22:p1",
+        "verdict": "correct",
+        "note": "覆盖即时纠正与自主运行的权衡、心理奖励及学习优先。",
+        "hash": "03a7e78a8fc5bafc"
+      },
+      {
+        "id": "q28",
+        "question": "讲座末尾关于上下文增长，讲者观察到哪一位置的指令通常仍能遵循，哪一位置尤其容易被忽略？",
+        "expected": "最后的 prompt/末尾短窗口指令通常仍可遵循；靠前尤其是中间的指令更容易不被遵循。",
+        "evidence": "s-g1512.0; s-g1513.0; s-g1514.0; s-g1515.0",
+        "from": "transcript",
+        "answer": "最后的 prompt、留在末尾的具体任务通常仍能遵循；较前面的指令会丢，尤其上下文中间的指令容易被忽略。",
+        "found_in": "s23:p0",
+        "verdict": "correct",
+        "note": "正确指出末尾指令较易遵循、中间指令易被忽略。",
+        "hash": "12faeb3058e81931"
+      },
+      {
+        "id": "q29",
+        "question": "起名字的例子中，讲者怎样把开放问题变成“算力换智力”的流程？直接让 AI 起名有什么同质化风险？",
+        "expected": "先系统调研/枚举并筛选读音，再用 subagent 逐个检查字和典籍偏好；分割搜索空间形成更明确可验证的子任务；直接生成可能大家得到相同名字，成为 AI 时代的“子涵”。",
+        "evidence": "s-g1538.0~35; s-g1540.1; s-g1541.0; s-g1543.0~8; s-g1545.0",
+        "from": "transcript",
+        "answer": "把起名空间拆成互不相交、可核对的小部分：先枚举和选择音、筛掉不好的音，再用 subagent 逐个检查字，也可限定在《诗经》词语中，靠更多算力扩大搜索。直接要一个名字会受模型固定偏见影响，大家用同一个模型可能得到同样的名字，形成 AI 时代的“子涵”。",
+        "found_in": "s24:p2, s24:p3",
+        "verdict": "correct",
+        "note": "覆盖读音筛选、subagent 检查、搜索空间拆分及名字同质化。",
+        "hash": "947414ca09fc84e8"
+      },
+      {
+        "id": "q30",
+        "question": "讲者以“墙内超人、墙外动物世界”表达了什么有条件的未来担忧？",
+        "expected": "若有价值的长程问题可用算力换智力，且 AI 比人类更高效，掌握无限计算资源者可垄断智力；资源之外的人难以追赶。",
+        "evidence": "s-g1551.1~15; s-g1553.0; s-g1554.0~2; s-g1555.0~10",
+        "from": "transcript",
+        "answer": "这是有条件的担忧：如果真正有价值的开放长程问题可以用算力换智力，而且 AI 比人类产生智力更高效，那么能获得无限计算资源的人可能筑起壁垒，成为墙内的“超人”，普通人永远赶不上其智力增长速度，落到墙外的“动物世界”。他明确说尚不知道，提出要思考怎样防止。",
+        "found_in": "s24:p4",
+        "verdict": "correct",
+        "note": "完整说明算力换智力成立时的资源垄断与追赶困难。",
+        "hash": "947414ca09fc84e8"
+      },
+      {
+        "id": "q31",
+        "question": "在“Intent → Spec → Impl: 漂移逐级放大”幻灯片中，若第 i 层留下 k_i 个默认选项，最终候选空间约为哪个公式？幻灯片列出的选择维度任选两个。",
+        "expected": "候选空间约为 ∏_i k_i；维度包括镜头、操控、地图、美术资产、胜负条件，任答两个。",
+        "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-02/cursor/ws/课堂笔记/frames/v001457167.jpg",
+        "from": "visual",
+        "answer": "笔记未记录候选空间公式及幻灯片所列的具体选择维度，无法仅据笔记回答。",
+        "found_in": null,
+        "verdict": "missing",
+        "note": "未提供候选空间公式或任何要求的选择维度。",
+        "hash": "0ad2486c7f28b33f"
+      },
+      {
+        "id": "q32",
+        "question": "“十八个字，一片水”幻灯片为避免把偏旁与部首混用，建议机器验收的 spec 精确写成什么？",
+        "expected": "“18 个汉字都含同一可见偏旁”；强调可见字形构件，而不是检字分类的部首。",
+        "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-02/cursor/ws/课堂笔记/frames/v002582400.jpg",
+        "from": "visual",
+        "answer": "笔记只记录“十八个字、相同偏旁或部首”的任务和幻灯片标题，未记录避免混用偏旁与部首的机器验收精确 spec。",
+        "found_in": null,
+        "verdict": "missing",
+        "note": "未提供“18 个汉字都含同一可见偏旁”的精确 spec。",
+        "hash": "0ad2486c7f28b33f"
+      },
+      {
+        "id": "q33",
+        "question": "最后“墙内的超人”幻灯片引用哪份报告、哪一年的数据？其中 notable models 来自产业界的占比和前沿模型训练成本量级分别是多少？",
+        "expected": "Stanford AI Index 2025，引用 2024 年；近 90% 来自产业界；训练算力成本数千万到近两亿美元。",
+        "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-02/cursor/ws/课堂笔记/frames/v005860767.jpg",
+        "from": "visual",
+        "answer": "笔记未记录该幻灯片引用的报告、数据年份、产业界占比或前沿模型训练成本量级。",
+        "found_in": null,
+        "verdict": "missing",
+        "note": "未提供报告、年份、产业界占比或训练成本。",
+        "hash": "0ad2486c7f28b33f"
+      }
+    ],
+    "question_author": "independent_agent",
+    "answerer": "independent_agent",
+    "author_model": "gpt-6.1-sol",
+    "answerer_model": "gpt-6.1-sol"
+  }
+}

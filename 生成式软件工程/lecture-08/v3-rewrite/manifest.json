@@ -1,0 +1,580 @@
+{
+  "schema_version": 1,
+  "run_id": "BV11LWw6VEHW-20261027T1814Z",
+  "item": {
+    "video_id": "BV11LWw6VEHW",
+    "source_url": "https://www.bilibili.com/video/BV11LWw6VEHW",
+    "title": "生成式软件工程 08｜Agent-native 开发"
+  },
+  "scope": {
+    "requested": "单课完整笔记、手绘图解、外部保真评测",
+    "materials": false,
+    "changes": [
+      {
+        "at": "2026-10-27T18:14:00Z",
+        "request": "无人值守；不联网、不读推荐材料；chunks 与 frames 扫描结果直接使用；图解用 codex gpt-6.1-sol；评审用 gpt-6.1-sol",
+        "added_work": "无额外材料"
+      }
+    ]
+  },
+  "toolchain": {
+    "baocut": null,
+    "asr_model": null,
+    "skill_commit": null,
+    "writer_model": "grok-4.7-high",
+    "image_model": "gpt-6.1-sol",
+    "reviewer_model": "gpt-6.1-sol"
+  },
+  "artifacts": [
+    {
+      "id": "transcript",
+      "path": "../raw/transcript.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "reused",
+      "basis": "本地 BaoCut 导出，未重新转写"
+    },
+    {
+      "id": "video",
+      "path": "../raw/BV11LWw6VEHW.mp4",
+      "depends_on": [],
+      "role": "source",
+      "origin": "reused",
+      "basis": "本地原视频，只用于按选定时间截帧"
+    },
+    {
+      "id": "index",
+      "path": "chunks/index.json",
+      "depends_on": [
+        "transcript"
+      ],
+      "role": "source",
+      "origin": "reused",
+      "basis": "预先跑过的 course_notes.py chunks，未重跑"
+    },
+    {
+      "id": "frames",
+      "path": "frames/candidates.json",
+      "depends_on": [
+        "video"
+      ],
+      "role": "source",
+      "origin": "reused",
+      "basis": "预先跑过的 frames.py scan，阈值 0.3、间隔 60 秒"
+    },
+    {
+      "id": "notes",
+      "path": "notes.json",
+      "depends_on": [
+        "index",
+        "frames"
+      ],
+      "role": "notes",
+      "origin": "generated"
+    },
+    {
+      "id": "renderer",
+      "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+      "depends_on": [],
+      "role": "tool"
+    },
+    {
+      "id": "html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "notes",
+        "renderer"
+      ],
+      "role": "delivery"
+    },
+    {
+      "id": "fidelity_eval",
+      "path": "fidelity-eval.json",
+      "depends_on": [
+        "notes",
+        "transcript",
+        "frames"
+      ],
+      "role": "eval"
+    },
+    {
+      "id": "visual_map",
+      "path": "visuals/map.jpg",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "visual",
+      "origin": "generated"
+    },
+    {
+      "id": "visual_s01",
+      "path": "visuals/s01.jpg",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "visual",
+      "origin": "generated"
+    },
+    {
+      "id": "visual_s02",
+      "path": "visuals/s02.jpg",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "visual",
+      "origin": "generated"
+    },
+    {
+      "id": "visual_s04",
+      "path": "visuals/s04.jpg",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "visual",
+      "origin": "generated"
+    },
+    {
+      "id": "visual_s05",
+      "path": "visuals/s05.jpg",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "visual",
+      "origin": "generated"
+    },
+    {
+      "id": "visual_s06",
+      "path": "visuals/s06.jpg",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "visual",
+      "origin": "generated"
+    },
+    {
+      "id": "visual_s09",
+      "path": "visuals/s09.jpg",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "visual",
+      "origin": "generated"
+    },
+    {
+      "id": "visual_s11",
+      "path": "visuals/s11.jpg",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "visual",
+      "origin": "generated"
+    },
+    {
+      "id": "visual_s14",
+      "path": "visuals/s14.jpg",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "visual",
+      "origin": "generated"
+    },
+    {
+      "id": "visual_s16",
+      "path": "visuals/s16.jpg",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "visual",
+      "origin": "generated"
+    },
+    {
+      "id": "visual_s17",
+      "path": "visuals/s17.jpg",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "visual",
+      "origin": "generated"
+    },
+    {
+      "id": "html_check",
+      "path": "qa/html-check.json",
+      "depends_on": [
+        "html"
+      ],
+      "role": "eval",
+      "origin": "generated"
+    }
+  ],
+  "log": [
+    {
+      "at": "2026-10-27T18:34:00.331188+00:00",
+      "occurred_at": null,
+      "stage": "chunks",
+      "status": "reused",
+      "attempt": null,
+      "job_id": null,
+      "detail": "预先生成的 19 段、394 句，本次直接使用",
+      "evidence": "chunks/index.json"
+    },
+    {
+      "at": "2026-10-27T18:34:00.353304+00:00",
+      "occurred_at": null,
+      "stage": "frames",
+      "status": "reused",
+      "attempt": null,
+      "job_id": null,
+      "detail": "预先扫描 103 张候选、9 张联系表；选帧时通读联系表并抽看单帧",
+      "evidence": "frames/candidates.json"
+    },
+    {
+      "at": "2026-10-27T18:34:00.373735+00:00",
+      "occurred_at": null,
+      "stage": "notes",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "17 节，source_ids 覆盖全部 394 句",
+      "evidence": "notes.json"
+    },
+    {
+      "at": "2026-10-27T18:35:12.912591+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:35:24.204238+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "17 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-08/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T18:35:43.494697+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-08/cursor/ws/课堂笔记/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T18:35:59.154819+00:00",
+      "occurred_at": null,
+      "stage": "images",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "11 张手绘图，文字只用来自 notes.json 的 labels，经 illustrate.py fit 压到最长边 1280",
+      "evidence": "visuals/map.jpg"
+    },
+    {
+      "at": "2026-10-27T18:35:59.175016+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "course_notes.py render 分层页",
+      "evidence": "课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T18:44:07.747735+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:44:07.799534+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "17 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-08/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T18:44:20.264840+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-08/cursor/ws/课堂笔记/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T18:46:53.187778+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:46:59.161660+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "17 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-08/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T18:48:06.269257+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-08/cursor/ws/课堂笔记/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T18:50:56.379231+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:50:56.478961+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "17 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-08/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T18:52:56.791468+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:52:56.889876+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "17 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-08/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T18:55:32.723997+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 0.9773, recall 1.0",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-08/cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T18:55:35.166823+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-08/cursor/ws/课堂笔记/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T18:56:06.873159+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T18:56:06.911696+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 0.9773, recall 1.0",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-08/cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T18:56:09.505997+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/private/var/folders/j6/0wknd5xs1sj5_xnqkgjdj8zm0000gn/T/tmphfkslter/html-check.json"
+    }
+  ],
+  "issues": [],
+  "status": {
+    "outcome": "completed",
+    "known_gaps": [
+      "不是逐秒观看。换页候选来自预先扫描：场景差 0.3，最长 60 秒一张，共 103 张，再从中选帧。",
+      "没有联网，也没有读推荐材料。拿不准的听写保持原样。",
+      "页面在 headless Chrome 里看过 390 和 1280 宽，并切换了图解速读和完整笔记。不是真机。",
+      "精度 0.9773，还有 4 条 partial：第 1 节「几轮以后找到更好的 solution」的指代，第 6 节把搜索条件写得更确定，第 15 节把没说完的 lint 收成一句，第 11 节例子末尾把 20 KB 和口播例子对应起来。召回 35 题全部 correct。"
+    ],
+    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors"
+  },
+  "revisions": [
+    {
+      "rev": 1,
+      "at": "2026-10-27T18:55:35.295850+00:00",
+      "reason": "笔记、图解、页面和外部保真评测一起交付",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "86537376a861cc701650b49b37b9ad245b240aa12a337fc4453f32b84fbf8ad1",
+          "bytes": 4332589
+        },
+        "video": {
+          "path": "../raw/BV11LWw6VEHW.mp4",
+          "sha256": "dee8d8992246a868d973678ab85c152e3eaf3e07ccef70eb5a674556386552b7",
+          "bytes": 237738826
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "8d84da84df52fb2573edfcc43d6100a6332489b3f51d102899494d7620cbe2cc",
+          "bytes": 44381
+        },
+        "frames": {
+          "path": "frames/candidates.json",
+          "sha256": "7d39a2aee69577f2eb8d6f7de2da7a767254bdadb9fa04a6656fa90e2f5ac01b",
+          "bytes": 10672
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "f93acce67e9f994848ecc5d7329c91a2530d185c3884c8be76e779bca9d068ee",
+          "bytes": 102374
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "28c9950679bddc283b7ced6c15c8a6312b2b7947096af5efa70edf409f622b1f",
+          "bytes": 8919331
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "bd7c8e9bbfeabece9c5a6aa9f16d86ab9f9c6c0952986a3997c63ed506bce4ef",
+          "bytes": 53703
+        },
+        "visual_map": {
+          "path": "visuals/map.jpg",
+          "sha256": "96c0058981a7d0b06e94b7fcd8b28ec10ddf679c45628eb804a2357f5d048b75",
+          "bytes": 345602
+        },
+        "visual_s01": {
+          "path": "visuals/s01.jpg",
+          "sha256": "e437601e096a36b69e2df79fb37a56d874b0e4053d18fd87707d8eaf13dea86e",
+          "bytes": 386014
+        },
+        "visual_s02": {
+          "path": "visuals/s02.jpg",
+          "sha256": "3725b9bf6f2193cdde52bc520f97547bc7478f7153706503e0648f5b5742e908",
+          "bytes": 255610
+        },
+        "visual_s04": {
+          "path": "visuals/s04.jpg",
+          "sha256": "5cebd43676db85150787c959820236677e7eac76c0ea84619dfec55c1358a378",
+          "bytes": 249339
+        },
+        "visual_s05": {
+          "path": "visuals/s05.jpg",
+          "sha256": "b3207842f01a715be2e45a2bcdbb0cf14c3f37a80dd0efc2ca905c835ef0dfd7",
+          "bytes": 305310
+        },
+        "visual_s06": {
+          "path": "visuals/s06.jpg",
+          "sha256": "bdce9f99cc3b6f3a267f7a68481a18aa4516cdd4953a615bc3b50d4ea77b3d4b",
+          "bytes": 330998
+        },
+        "visual_s09": {
+          "path": "visuals/s09.jpg",
+          "sha256": "a2fa3f2866a814cb9be911856e2884412764176cd19eb336c19181bb888ee623",
+          "bytes": 351006
+        },
+        "visual_s11": {
+          "path": "visuals/s11.jpg",
+          "sha256": "3f1f0ba5a52a40ffe2f0317853c2b727ff09c48d9ca1c0b1d82d05b07157ce3a",
+          "bytes": 275625
+        },
+        "visual_s14": {
+          "path": "visuals/s14.jpg",
+          "sha256": "f08d47af6bc86929a1bfaf1e9ccb9d86127a059e960020582bbf0882bbeeea16",
+          "bytes": 272977
+        },
+        "visual_s16": {
+          "path": "visuals/s16.jpg",
+          "sha256": "ce6580c149adbab85d97d6381637e3c22a6e033bbf277f350f5c804ca102d087",
+          "bytes": 239009
+        },
+        "visual_s17": {
+          "path": "visuals/s17.jpg",
+          "sha256": "ff5795d4f8d4ae4943ec9e4140d53e915dff10d4ca26e306a856abe51f455a64",
+          "bytes": 273583
+        },
+        "html_check": {
+          "path": "qa/html-check.json",
+          "sha256": "0abd5093c1ca262b727349040a253dcbaceb5333d61460da9eeb525b2537dee5",
+          "bytes": 1073
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9773,
+        "recall": 1.0,
+        "precision_items": 88,
+        "recall_items": 35,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": null
+    }
+  ]
+}

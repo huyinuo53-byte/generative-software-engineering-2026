@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "run_id": "BV144nc6KEA4-20261027T1611Z",
+  "item": {
+    "video_id": "BV144nc6KEA4",
+    "source_url": "https://www.bilibili.com/video/BV144nc6KEA4",
+    "title": "生成式软件工程 09｜DeepSeek Harness (1)"
+  },
+  "scope": {
+    "requested": "单课完整课堂笔记 + 手绘图解，只依据原始转写与原视频重写",
+    "materials": false,
+    "changes": [],
+    "assumptions": [
+      "无人值守：不追问，按 skill 默认交付完整笔记、图解层、外部保真评测和 HTML。",
+      "转写复用 ./raw/transcript.json 的副本，不改 raw，不调用 BaoCut，不联网，不读推荐材料。",
+      "图解用手绘信息图；生图用 codex exec -m gpt-6.1-sol。写作模型为 Grok，评测用不同家族的 GPT 独立进程。",
+      "产物目录为 课堂笔记/BV144nc6KEA4/20261027T1611Z。"
+    ]
+  },
+  "toolchain": {
+    "baocut": null,
+    "asr_model": null,
+    "skill_commit": null,
+    "ffmpeg": "local",
+    "image_model": "gpt-6.1-sol",
+    "writer_model": "grok-4.7"
+  },
+  "artifacts": [
+    {
+      "id": "transcript",
+      "path": "transcript.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "reused",
+      "basis": "同一视频 BV144nc6KEA4 的本地 BaoCut 导出，从 ./raw/transcript.json 复制，未改内容"
+    },
+    {
+      "id": "index",
+      "path": "chunks/index.json",
+      "depends_on": [
+        "transcript"
+      ],
+      "role": "derived"
+    },
+    {
+      "id": "frames",
+      "path": "frames/candidates.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "generated",
+      "basis": "frames.py scan 对原视频换页检测"
+    },
+    {
+      "id": "notes",
+      "path": "notes.json",
+      "depends_on": [
+        "index",
+        "frames"
+      ]
+    },
+    {
+      "id": "visuals",
+      "path": "visuals/index.json",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "derived"
+    },
+    {
+      "id": "renderer",
+      "path": "../../../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+      "depends_on": [],
+      "role": "tool"
+    },
+    {
+      "id": "html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "notes",
+        "renderer"
+      ]
+    },
+    {
+      "id": "fidelity_eval",
+      "path": "fidelity-eval.json",
+      "depends_on": [
+        "notes",
+        "transcript",
+        "frames"
+      ]
+    }
+  ],
+  "log": [
+    {
+      "at": "2026-10-27T16:11:48.454000+00:00",
+      "occurred_at": null,
+      "stage": "asr",
+      "status": "reused",
+      "attempt": null,
+      "job_id": null,
+      "detail": "复用本地 BaoCut 导出 transcript.json，未重新转写",
+      "evidence": "transcript.json"
+    },
+    {
+      "at": "2026-10-27T16:11:48.538191+00:00",
+      "occurred_at": null,
+      "stage": "frames",
+      "status": "started",
+      "attempt": null,
+      "job_id": null,
+      "detail": "frames.py scan threshold 0.3 interval 60",
+      "evidence": "raw/BV144nc6KEA4.mp4"
+    },
+    {
+      "at": "2026-10-27T16:12:26.966533+00:00",
+      "occurred_at": null,
+      "stage": "frames",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "frames.py scan threshold 0.3 interval 60: 98 candidates, 9 contact sheets; not frame-by-frame",
+      "evidence": "frames/candidates.json"
+    },
+    {
+      "at": "2026-10-27T16:35:21.757866+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "failed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "11 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T16:38:26.351720+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T16:38:26.401926+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "20 sections",
+      "evidence": "/Users/evahu/model-eval/deepseek-harness-20261027/rewrite-v2/cursor-grok/ws/课堂笔记/BV144nc6KEA4/20261027T1611Z/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T16:38:26.423239+00:00",
+      "occurred_at": null,
+      "stage": "notes",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "20节 notes.json 通过 validate",
+      "evidence": "notes.json"
+    },
+    {
+      "at": "2026-10-27T16:38:26.443177+00:00",
+      "occurred_at": null,
+      "stage": "illustrations",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "11张手绘信息图，illustrate.py fit",
+      "evidence": "visuals/index.json"
+    },
+    {
+      "at": "2026-10-27T16:38:26.462984+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "layered HTML",
+      "evidence": "课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T16:38:28.814674+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/deepseek-harness-20261027/rewrite-v2/cursor-grok/ws/课堂笔记/BV144nc6KEA4/20261027T1611Z/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T16:47:20.646224+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T16:49:50.737758+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T16:49:50.792851+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "20 sections",
+      "evidence": "/Users/evahu/model-eval/deepseek-harness-20261027/rewrite-v2/cursor-grok/ws/课堂笔记/BV144nc6KEA4/20261027T1611Z/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T16:49:53.214596+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/deepseek-harness-20261027/rewrite-v2/cursor-grok/ws/课堂笔记/BV144nc6KEA4/20261027T1611Z/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T16:52:57.177885+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 0.9639, recall 1.0",
+      "evidence": "/Users/evahu/model-eval/deepseek-harness-20261027/rewrite-v2/cursor-grok/ws/课堂笔记/BV144nc6KEA4/20261027T1611Z/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T16:54:46.266173+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T16:54:48.787045+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/private/tmp/claude-501/-Users-evahu-learning-machine/8a9c5dba-bc97-470f-8988-e64064fdc88f/scratchpad/l09.nhZR/html-check.json"
+    },
+    {
+      "at": "2026-10-27T16:54:48.848054+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 0.9639, recall 1.0",
+      "evidence": "/Users/evahu/model-eval/deepseek-harness-20261027/rewrite-v2/cursor-grok/ws/课堂笔记/BV144nc6KEA4/20261027T1611Z/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T17:31:02.136745+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:31:02.177039+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 0.9639, recall 1.0",
+      "evidence": "/Users/evahu/model-eval/deepseek-harness-20261027/rewrite-v2/cursor-grok/ws/课堂笔记/BV144nc6KEA4/20261027T1611Z/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T17:31:04.498407+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/private/var/folders/j6/0wknd5xs1sj5_xnqkgjdj8zm0000gn/T/tmp_uscvpm0/html-check.json"
+    }
+  ],
+  "issues": [],
+  "status": {
+    "outcome": "completed",
+    "known_gaps": [
+      "换页不是逐帧看完：frames.py 场景检测后再对幻灯片区域抽帧",
+      "没有读推荐材料",
+      "页面检查是无头 Chrome 模拟 390 与 1280 宽，不是真手机",
+      "精度仍有 5 条 partial、1 条 unsupported：自测 q5 在增量包里没带上第16节转写；s17 图注把选择工具写成了箭头；图上「从消息派生」容易读反"
+    ],
+    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors"
+  },
+  "revisions": [
+    {
+      "rev": 1,
+      "at": "2026-10-27T16:53:18.782984+00:00",
+      "reason": "20节笔记、11张手绘图解、外部保真评测通过后交付",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "transcript.json",
+          "sha256": "9cc30fd953bd2371033336eb6da563564d8709e934ac74893e9b98541b5976e4",
+          "bytes": 4235447
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "cc08bf727ed170282cf435d540b76b1c2b1985eff5465e388e97e200fb903fd7",
+          "bytes": 56929
+        },
+        "frames": {
+          "path": "frames/candidates.json",
+          "sha256": "58ecc4f047ddd0df2030e1f3959cf957558f0c0cbbdf6b558274bb139e48f132",
+          "bytes": 10159
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "1d8045383e983bee57b9f78bef2ea29a4aa6f974913e15ec4cf143ecdb71a319",
+          "bytes": 115873
+        },
+        "visuals": {
+          "path": "visuals/index.json",
+          "sha256": "86f663f75ca3a578212d9b0d0ec9bbc429184458e1a53fc1818156152f513127",
+          "bytes": 1693
+        },
+        "renderer": {
+          "path": "../../../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "bed9ddaed4c77a20a53d041c34a85e489d32044e9a232fe1e4e830f0c61063bb",
+          "bytes": 8550509
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "f07d7a7ef69b81e469db1c62416e12ea1e1818ec5ae33c50f05e3d791c98b566",
+          "bytes": 55866
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9639,
+        "recall": 1.0,
+        "precision_items": 97,
+        "recall_items": 33,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": null
+    }
+  ]
+}

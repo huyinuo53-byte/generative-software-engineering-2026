@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1fKtN6DErG-20261027T1655Z",
+  "item": {
+    "video_id": "BV1fKtN6DErG",
+    "source_url": "https://www.bilibili.com/video/BV1fKtN6DErG",
+    "title": "生成式软件工程 补充｜失败的AI Slop数字永生尝试"
+  },
+  "scope": {
+    "requested": "单课完整笔记 + 手绘图解 + 外部模型保真评测",
+    "materials": false,
+    "changes": []
+  },
+  "toolchain": {
+    "baocut": null,
+    "asr_model": null,
+    "skill_commit": "62f1dea",
+    "writer_model": "grok-4.7-high",
+    "image_model": "gpt-6.1-sol",
+    "reviewer_model": "gpt-6.1-sol"
+  },
+  "artifacts": [
+    {
+      "id": "transcript",
+      "path": "../raw/transcript.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "reused",
+      "basis": "工作目录内 BaoCut 导出，未改"
+    },
+    {
+      "id": "video",
+      "path": "../raw/BV1fKtN6DErG.mp4",
+      "depends_on": [],
+      "role": "source",
+      "origin": "reused",
+      "basis": "工作目录内原视频；未使用 candidates.json 里工作目录外的路径"
+    },
+    {
+      "id": "index",
+      "path": "chunks/index.json",
+      "depends_on": [
+        "transcript"
+      ],
+      "role": "source",
+      "origin": "reused",
+      "basis": "预先跑好的 course_notes.py chunks，未重跑"
+    },
+    {
+      "id": "frame_scan",
+      "path": "frames/candidates.json",
+      "depends_on": [
+        "video"
+      ],
+      "role": "source",
+      "origin": "reused",
+      "basis": "预先跑好的 frames.py scan，阈值 0.3、60 秒兜底，未重跑"
+    },
+    {
+      "id": "notes",
+      "path": "notes.json",
+      "depends_on": [
+        "index",
+        "frame_scan",
+        "video"
+      ],
+      "role": "notes"
+    },
+    {
+      "id": "renderer",
+      "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+      "depends_on": [],
+      "role": "tool"
+    },
+    {
+      "id": "html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "notes",
+        "renderer"
+      ]
+    },
+    {
+      "id": "fidelity_eval",
+      "path": "fidelity-eval.json",
+      "depends_on": [
+        "notes",
+        "transcript",
+        "frame_scan"
+      ]
+    }
+  ],
+  "log": [
+    {
+      "at": "2026-10-27T17:07:11.374797+00:00",
+      "occurred_at": null,
+      "stage": "scope",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "单视频离线重写；不读推荐材料、不改 raw 与 skill",
+      "evidence": "chunks/index.json"
+    },
+    {
+      "at": "2026-10-27T17:07:12.110743+00:00",
+      "occurred_at": null,
+      "stage": "read",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "通读 chunk-0001 全部 14 句；对照原视频换页后选定 8 张定稿帧",
+      "evidence": "chunks/chunk-0001.json"
+    },
+    {
+      "at": "2026-10-27T17:14:38.089180+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:14:48.962870+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "6 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/extra-ai-slop/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T17:18:45.999084+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:19:01.993553+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "6 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/extra-ai-slop/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T17:22:26.034719+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:22:39.396335+00:00",
+      "occurred_at": null,
+      "stage": "render",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "6 sections",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/extra-ai-slop/cursor/ws/课堂笔记/课堂笔记.html"
+    },
+    {
+      "at": "2026-10-27T17:23:47.455664+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 1.0, recall 1.0",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/extra-ai-slop/cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T17:23:49.786814+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/extra-ai-slop/cursor/ws/课堂笔记/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-27T17:24:51.971891+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:24:52.011498+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 1.0, recall 1.0",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/extra-ai-slop/cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T17:24:54.458761+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/private/tmp/claude-501/-Users-evahu-learning-machine/8a9c5dba-bc97-470f-8988-e64064fdc88f/scratchpad/xs.LhVM/html-check.json"
+    },
+    {
+      "at": "2026-10-27T17:30:59.725257+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "0 problems",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-27T17:30:59.762823+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 1.0, recall 1.0",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/extra-ai-slop/cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-27T17:31:02.059223+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/private/var/folders/j6/0wknd5xs1sj5_xnqkgjdj8zm0000gn/T/tmpjvnm0n5i/html-check.json"
+    }
+  ],
+  "issues": [],
+  "status": {
+    "outcome": "completed",
+    "known_gaps": [
+      "无头 Chrome 在 390 与 1280 宽下点过两种阅读模式和展开全部，没有用真机。",
+      "没有逐秒听写。换页用预先的 frames.py scan（阈值 0.3）加上每秒缩小帧的平均绝对差；55.0–55.6 秒的变暗不当作内容页。",
+      "黄块小字、5 秒图右侧平板小字、裁缝图自我驱动后两条的后半，看不清，图注里没有补字。",
+      "candidates.json 里的视频路径在工作目录外，没有打开；截帧只用 ./raw/BV1fKtN6DErG.mp4。"
+    ],
+    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors"
+  },
+  "revisions": [
+    {
+      "rev": 1,
+      "at": "2026-10-27T17:24:00.428698+00:00",
+      "reason": "笔记、图解、HTML 与外部保真评测一并交付",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "4ccc403e04cc7d201636f7f0ea074e38bcec3889195379d5d207af1424b8e693",
+          "bytes": 154693
+        },
+        "video": {
+          "path": "../raw/BV1fKtN6DErG.mp4",
+          "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+          "bytes": 29783462
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "add9ee85575c954925886514d79b3eb6818c4f10bceacc54e6ca9a1b80e1b590",
+          "bytes": 1677
+        },
+        "frame_scan": {
+          "path": "frames/candidates.json",
+          "sha256": "4653ee599338a79256889568745b888a918c55f397ad261653086e3586542b35",
+          "bytes": 812
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "d1106a7e5fea949397dc3359f6ed181da5cdcf28bff44254f9fb7f2473897019",
+          "bytes": 31067
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "80d67d4334b47505f44e2f18adfb07a94aad140b430f8d3b99a7ac0aede5cc14",
+          "bytes": 8560326
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "df2e3e84b082ea88cba48a2e136a71ab0744295c10486210ed28ac933ddb85a1",
+          "bytes": 27487
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 1.0,
+        "recall": 1.0,
+        "precision_items": 38,
+        "recall_items": 29,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": null
+    }
+  ]
+}

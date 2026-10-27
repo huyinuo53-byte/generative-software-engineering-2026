@@ -1,0 +1,1184 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "458755213dd861922e61f7a4efd3ebe8e162e6f07353d0756009368a02efa7a7",
+  "writer_model": "grok-4.7-high",
+  "precision": {
+    "items": [
+      {
+        "ref": "map",
+        "verdict": "supported",
+        "evidence": "s-g35.0~2; s-g126.0~10; s-g137.0~39; s-g886.0~9; s-g1187.0~20; s-g1199.0; s-g1218.0~25–s-g1231.0~61; visuals/map.jpg",
+        "note": "已逐字检查图中文字，均在允许清单内；图意与讲稿一致。",
+        "hash": "0b1227e786ed52ac"
+      },
+      {
+        "ref": "s1:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g18.0~2–s-g53.0~12",
+        "note": "品位、意图空间漂移和代码紧凑的观察有口述依据。",
+        "hash": "49b1853e82ff90ac"
+      },
+      {
+        "ref": "s1:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000000000.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "698507fa435e55ad"
+      },
+      {
+        "ref": "s2:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g60.0~4–s-g117.0",
+        "note": "数学共识、空间强化学习及机械臂例子与讲稿一致；是讲师的理解和观察。",
+        "hash": "2dc9fe26bcc3436c"
+      },
+      {
+        "ref": "s2:visual",
+        "verdict": "supported",
+        "evidence": "s-g60.0~4–s-g117.0; visuals/s02.jpg",
+        "note": "已逐字检查图中文字，均在允许清单内；图意与讲稿一致。",
+        "hash": "f231bfa719a440ee"
+      },
+      {
+        "ref": "s2:p4",
+        "verdict": "supported",
+        "evidence": "s-g60.0~4–s-g117.0",
+        "note": "数学共识、空间强化学习及机械臂例子与讲稿一致；是讲师的理解和观察。",
+        "hash": "675d27a264acc14d"
+      },
+      {
+        "ref": "s2:n0",
+        "verdict": "supported",
+        "evidence": "s-g60.0~4–s-g117.0; frames/v000164867.jpg",
+        "note": "听写校正符合上下文；涉及所给帧的细节已核对。",
+        "hash": "7ba58778f3f181d4"
+      },
+      {
+        "ref": "s2:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000164867.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "c1a898f990f943d3"
+      },
+      {
+        "ref": "s3:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g118.0–s-g127.0~61",
+        "note": "汽车比喻、现阶段仍要学及未来学习方式未知均有明确口述。",
+        "hash": "272b9d3a00ca7894"
+      },
+      {
+        "ref": "s3:visual",
+        "verdict": "supported",
+        "evidence": "s-g118.0–s-g127.0~61; visuals/s03.jpg",
+        "note": "已逐字检查图中文字，均在允许清单内；图意与讲稿一致。",
+        "hash": "2d5d5a9791783a29"
+      },
+      {
+        "ref": "s3:p2",
+        "verdict": "supported",
+        "evidence": "s-g118.0–s-g127.0~61",
+        "note": "汽车比喻、现阶段仍要学及未来学习方式未知均有明确口述。",
+        "hash": "83fe807c940c3ee3"
+      },
+      {
+        "ref": "s3:p3",
+        "verdict": "supported",
+        "evidence": "s-g118.0–s-g127.0~61",
+        "note": "汽车比喻、现阶段仍要学及未来学习方式未知均有明确口述。",
+        "hash": "012456d7bcd1f9cd"
+      },
+      {
+        "ref": "s4:e0",
+        "verdict": "supported",
+        "evidence": "s-g130.0~58–s-g157.2~44",
+        "note": "目录、交付物、本地服务及编译示例均有依据。",
+        "hash": "cef1fd7b797043ac"
+      },
+      {
+        "ref": "s4:p3",
+        "verdict": "supported",
+        "evidence": "s-g130.0~58–s-g157.2~44",
+        "note": "目录、交付物、本地服务及编译示例均有依据。",
+        "hash": "1e1569093e8e102f"
+      },
+      {
+        "ref": "s4:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000644867.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "aee2b3721166ccf9"
+      },
+      {
+        "ref": "s5:p2",
+        "verdict": "supported",
+        "evidence": "s-g158.0~29–s-g201.1",
+        "note": "优盘故事、Git 历史管理及作业分发流程与口述一致。",
+        "hash": "158fc811cd88ad7d"
+      },
+      {
+        "ref": "s5:p1",
+        "verdict": "supported",
+        "evidence": "s-g158.0~29–s-g201.1",
+        "note": "优盘故事、Git 历史管理及作业分发流程与口述一致。",
+        "hash": "98f3e1137da2f514"
+      },
+      {
+        "ref": "s5:f0",
+        "verdict": "supported",
+        "evidence": "frames/v000824867.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "f4d5cfdb1226c4b2"
+      },
+      {
+        "ref": "s6:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g207.0~3–s-g285.0~22",
+        "note": "学习意识、比较 README 和关注细节的主张有依据。",
+        "hash": "554e7b283ed812b0"
+      },
+      {
+        "ref": "s6:p4",
+        "verdict": "supported",
+        "evidence": "s-g207.0~3–s-g285.0~22",
+        "note": "学习意识、比较 README 和关注细节的主张有依据。",
+        "hash": "4114b82167716d55"
+      },
+      {
+        "ref": "s6:p2",
+        "verdict": "supported",
+        "evidence": "s-g207.0~3–s-g285.0~22",
+        "note": "学习意识、比较 README 和关注细节的主张有依据。",
+        "hash": "e2ba82492a3d531c"
+      },
+      {
+        "ref": "s6:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001184867.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "00cf7cd0c095a5a9"
+      },
+      {
+        "ref": "s7:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g288.0–s-g300.0",
+        "note": "先独立思考再对照及三种结果均与口述一致。",
+        "hash": "d474f9b67fc765ac"
+      },
+      {
+        "ref": "s7:visual",
+        "verdict": "supported",
+        "evidence": "s-g288.0–s-g300.0; visuals/s07.jpg",
+        "note": "已逐字检查图中文字，均在允许清单内；图意与讲稿一致。",
+        "hash": "b03e508b3255af95"
+      },
+      {
+        "ref": "s7:p2",
+        "verdict": "supported",
+        "evidence": "s-g288.0–s-g300.0",
+        "note": "先独立思考再对照及三种结果均与口述一致。",
+        "hash": "5ccf1765ba7337c3"
+      },
+      {
+        "ref": "s7:p0",
+        "verdict": "supported",
+        "evidence": "s-g288.0–s-g300.0",
+        "note": "先独立思考再对照及三种结果均与口述一致。",
+        "hash": "16a158ed295d23a8"
+      },
+      {
+        "ref": "s7:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001424867.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "129a9c67d3408cce"
+      },
+      {
+        "ref": "s8:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g307.0~3–s-g359.0~34; frames/v001604867.jpg",
+        "note": "面试结果、冲突内容就地呈现及由人决定的解释有依据。",
+        "hash": "a39ae38d53d060c3"
+      },
+      {
+        "ref": "s8:visual",
+        "verdict": "supported",
+        "evidence": "s-g307.0~3–s-g359.0~34; visuals/s08.jpg",
+        "note": "已逐字检查图中文字，均在允许清单内；图意与讲稿一致。",
+        "hash": "aabbb72b38a25e67"
+      },
+      {
+        "ref": "s8:n0",
+        "verdict": "supported",
+        "evidence": "s-g307.0~3–s-g359.0~34; frames/v001604867.jpg",
+        "note": "听写校正符合上下文；涉及所给帧的细节已核对。",
+        "hash": "4aa379482025958c"
+      },
+      {
+        "ref": "s8:p2",
+        "verdict": "supported",
+        "evidence": "s-g307.0~3–s-g359.0~34",
+        "note": "面试结果、冲突内容就地呈现及由人决定的解释有依据。",
+        "hash": "ff0ab7664963637f"
+      },
+      {
+        "ref": "s8:f0",
+        "verdict": "supported",
+        "evidence": "frames/v001604867.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "f0c797be08cd4f1d"
+      },
+      {
+        "ref": "s9:visual",
+        "verdict": "supported",
+        "evidence": "s-g363.0~14–s-g474.0~7; visuals/s09.jpg",
+        "note": "已逐字检查图中文字，均在允许清单内；图意与讲稿一致。",
+        "hash": "f21a25446438a186"
+      },
+      {
+        "ref": "s9:e0",
+        "verdict": "supported",
+        "evidence": "s-g363.0~14–s-g474.0~7",
+        "note": "版本管理需求、补丁模型与 Git 时间线有口述依据。",
+        "hash": "5b8dee43faf3493b"
+      },
+      {
+        "ref": "s9:p0",
+        "verdict": "supported",
+        "evidence": "s-g363.0~14–s-g474.0~7",
+        "note": "版本管理需求、补丁模型与 Git 时间线有口述依据。",
+        "hash": "70e41dcdbc467c8e"
+      },
+      {
+        "ref": "s9:f1",
+        "verdict": "supported",
+        "evidence": "frames/v001964867.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "3ae9193d295a3ee7"
+      },
+      {
+        "ref": "s10:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g494.0–s-g528.0~8",
+        "note": "及时提交、提交信息及追问 best practice 的说明与口述一致。",
+        "hash": "7f75fceb0d1a06a4"
+      },
+      {
+        "ref": "s10:p3",
+        "verdict": "supported",
+        "evidence": "s-g494.0–s-g528.0~8",
+        "note": "及时提交、提交信息及追问 best practice 的说明与口述一致。",
+        "hash": "8a0d3ffea9ed18d4"
+      },
+      {
+        "ref": "s10:p2",
+        "verdict": "supported",
+        "evidence": "s-g494.0–s-g528.0~8",
+        "note": "及时提交、提交信息及追问 best practice 的说明与口述一致。",
+        "hash": "86d0613bd522f647"
+      },
+      {
+        "ref": "s10:f0",
+        "verdict": "supported",
+        "evidence": "frames/v002384900.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "e57d2db5d0db45d3"
+      },
+      {
+        "ref": "s11:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g539.0~5–s-g571.0~10",
+        "note": "默认拒绝空提交及偶尔用于 CI、finalize 的例外有依据。",
+        "hash": "3ce7f6fb74fd2d3a"
+      },
+      {
+        "ref": "s11:n0",
+        "verdict": "supported",
+        "evidence": "s-g539.0~5–s-g571.0~10; frames/v002504900.jpg",
+        "note": "听写校正符合上下文；涉及所给帧的细节已核对。",
+        "hash": "a4fd8245d3c6eb33"
+      },
+      {
+        "ref": "s11:e0",
+        "verdict": "supported",
+        "evidence": "s-g539.0~5–s-g571.0~10",
+        "note": "默认拒绝空提交及偶尔用于 CI、finalize 的例外有依据。",
+        "hash": "acc7f38a124f99df"
+      },
+      {
+        "ref": "s11:f0",
+        "verdict": "supported",
+        "evidence": "frames/v002504900.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "0b605159cb6946d0"
+      },
+      {
+        "ref": "s12:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g601.0~7–s-g724.1~47",
+        "note": "编译产物的环境差异、二进制冲突及忽略策略有依据。",
+        "hash": "a3dbf28470fd75ed"
+      },
+      {
+        "ref": "s12:visual",
+        "verdict": "supported",
+        "evidence": "s-g601.0~7–s-g724.1~47; visuals/s12.jpg",
+        "note": "已逐字检查图中文字，均在允许清单内；图意与讲稿一致。",
+        "hash": "e0cd084bda94c96a"
+      },
+      {
+        "ref": "s12:p4",
+        "verdict": "supported",
+        "evidence": "s-g601.0~7–s-g724.1~47",
+        "note": "编译产物的环境差异、二进制冲突及忽略策略有依据。",
+        "hash": "f949d3d1313ff907"
+      },
+      {
+        "ref": "s12:f1",
+        "verdict": "supported",
+        "evidence": "frames/v002984900.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "22b574a81cdd98e9"
+      },
+      {
+        "ref": "s13:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g726.0~6–s-g747.0",
+        "note": "自洽可构建快照、bisect 数组类比及 blame 均有依据。",
+        "hash": "16878f8cccccc5aa"
+      },
+      {
+        "ref": "s13:p0",
+        "verdict": "supported",
+        "evidence": "s-g726.0~6–s-g747.0",
+        "note": "自洽可构建快照、bisect 数组类比及 blame 均有依据。",
+        "hash": "bee1b6c06d917723"
+      },
+      {
+        "ref": "s13:f0",
+        "verdict": "supported",
+        "evidence": "frames/v003139033.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "e39906401e9f939c"
+      },
+      {
+        "ref": "s14:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g748.0–s-g771.1~15",
+        "note": "不应提交的内容及锁文件、生成头文件的例外有依据。",
+        "hash": "26246ffd767138c3"
+      },
+      {
+        "ref": "s14:visual",
+        "verdict": "supported",
+        "evidence": "s-g748.0–s-g771.1~15; visuals/s14.jpg",
+        "note": "已逐字检查图中文字，均在允许清单内；图意与讲稿一致。",
+        "hash": "a059812438bb5b02"
+      },
+      {
+        "ref": "s14:p3",
+        "verdict": "supported",
+        "evidence": "s-g748.0–s-g771.1~15",
+        "note": "不应提交的内容及锁文件、生成头文件的例外有依据。",
+        "hash": "1f4ac4ef62d95064"
+      },
+      {
+        "ref": "s14:f0",
+        "verdict": "supported",
+        "evidence": "frames/v003319033.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "985b300cd4f71a41"
+      },
+      {
+        "ref": "s15:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g780.0~7–s-g864.0~2; frames/v003619033.jpg",
+        "note": "hook、规则命名选择及追问细节有依据。",
+        "hash": "d8be8795d28ab955"
+      },
+      {
+        "ref": "s15:n0",
+        "verdict": "supported",
+        "evidence": "s-g780.0~7–s-g864.0~2; frames/v003619033.jpg",
+        "note": "听写校正符合上下文；涉及所给帧的细节已核对。",
+        "hash": "cfc2a20cdafa39ce"
+      },
+      {
+        "ref": "s15:e0",
+        "verdict": "supported",
+        "evidence": "s-g780.0~7–s-g864.0~2",
+        "note": "hook、规则命名选择及追问细节有依据。",
+        "hash": "eae1a9f3b5426024"
+      },
+      {
+        "ref": "s15:f0",
+        "verdict": "supported",
+        "evidence": "frames/v003619033.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "3f2b43ea39fc2d2f"
+      },
+      {
+        "ref": "s16:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g886.0~9–s-g945.0",
+        "note": "目录树路径复制、共享未改节点及对象存储与口述一致。",
+        "hash": "603039759eb01697"
+      },
+      {
+        "ref": "s16:visual",
+        "verdict": "supported",
+        "evidence": "s-g886.0~9–s-g945.0; visuals/s16.jpg",
+        "note": "已逐字检查图中文字，均在允许清单内；图意与讲稿一致。",
+        "hash": "b64a1da610d2a61f"
+      },
+      {
+        "ref": "s16:p1",
+        "verdict": "supported",
+        "evidence": "s-g886.0~9–s-g945.0",
+        "note": "目录树路径复制、共享未改节点及对象存储与口述一致。",
+        "hash": "bdfdb16327247e9b"
+      },
+      {
+        "ref": "s16:p2",
+        "verdict": "supported",
+        "evidence": "s-g886.0~9–s-g945.0",
+        "note": "目录树路径复制、共享未改节点及对象存储与口述一致。",
+        "hash": "91e7a880506c13ed"
+      },
+      {
+        "ref": "s16:f0",
+        "verdict": "supported",
+        "evidence": "frames/v003968367.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "4031b0c981a18c52"
+      },
+      {
+        "ref": "s17:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g950.1~3–s-g981.0",
+        "note": "对象结构、分叉及模拟工具演示有依据。",
+        "hash": "c1f0a7185d277f03"
+      },
+      {
+        "ref": "s17:p1",
+        "verdict": "supported",
+        "evidence": "s-g950.1~3–s-g981.0",
+        "note": "对象结构、分叉及模拟工具演示有依据。",
+        "hash": "c0f2f2f8fe28cdd8"
+      },
+      {
+        "ref": "s17:f0",
+        "verdict": "supported",
+        "evidence": "frames/v004176900.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "43891d2d4542417a"
+      },
+      {
+        "ref": "s18:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g983.0–s-g1067.0",
+        "note": "真实对象字节、分支、冲突 index 三份及双 parent 均有依据。",
+        "hash": "51eabe51d373b054"
+      },
+      {
+        "ref": "s18:visual",
+        "verdict": "supported",
+        "evidence": "s-g983.0–s-g1067.0; visuals/s18.jpg",
+        "note": "已逐字检查图中文字，均在允许清单内；图意与讲稿一致。",
+        "hash": "4650748159a15cb5"
+      },
+      {
+        "ref": "s18:p1",
+        "verdict": "supported",
+        "evidence": "s-g983.0–s-g1067.0",
+        "note": "真实对象字节、分支、冲突 index 三份及双 parent 均有依据。",
+        "hash": "9912c9e35882714a"
+      },
+      {
+        "ref": "s18:e0",
+        "verdict": "supported",
+        "evidence": "s-g983.0–s-g1067.0; frames/v004620333.jpg",
+        "note": "真实对象字节、分支、冲突 index 三份及双 parent 均有依据。",
+        "hash": "74b2d64967b8ad54"
+      },
+      {
+        "ref": "s18:f0",
+        "verdict": "supported",
+        "evidence": "frames/v004620333.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "b17a68136d29a666"
+      },
+      {
+        "ref": "s19:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1075.1~14–s-g1139.0~15",
+        "note": "儿童编程环境、架构把关及细节抬高求职标准有依据。",
+        "hash": "12f7bdbcb2443a1b"
+      },
+      {
+        "ref": "s19:f1",
+        "verdict": "supported",
+        "evidence": "frames/v004890100.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "fe5fa4b674c6659d"
+      },
+      {
+        "ref": "s20:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1148.0–s-g1194.0",
+        "note": "提交规范、小步提交、审计和及时 push 的理由有依据。",
+        "hash": "5dc139748203700e"
+      },
+      {
+        "ref": "s20:n0",
+        "verdict": "supported",
+        "evidence": "s-g1148.0–s-g1194.0; frames/v005247500.jpg",
+        "note": "听写校正符合上下文；涉及所给帧的细节已核对。",
+        "hash": "45b04785805f3324"
+      },
+      {
+        "ref": "s20:f0",
+        "verdict": "supported",
+        "evidence": "frames/v005247500.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "44be504db5f94e08"
+      },
+      {
+        "ref": "s21:visual",
+        "verdict": "supported",
+        "evidence": "s-g1194.0~19–s-g1234.0~3; visuals/s21.jpg",
+        "note": "已逐字检查图中文字，均在允许清单内；图意与讲稿一致。",
+        "hash": "bfc549f9c18962a5"
+      },
+      {
+        "ref": "s21:p4",
+        "verdict": "supported",
+        "evidence": "s-g1194.0~19–s-g1234.0~3",
+        "note": "原子变更快照、架构先行、多个 agent 及下一课问题有依据。",
+        "hash": "eaf4f9c6f863ef13"
+      },
+      {
+        "ref": "s21:f1",
+        "verdict": "supported",
+        "evidence": "frames/v005947267.jpg",
+        "note": "已打开同名帧核对，所述标题、文字及主要画面内容一致。",
+        "hash": "83692829d1b1179a"
+      },
+      {
+        "ref": "q1",
+        "verdict": "supported",
+        "evidence": "s-g18.0~2–s-g53.0~12",
+        "note": "品位、意图空间漂移和代码紧凑的观察有口述依据。",
+        "hash": "e283ca58e177afe9"
+      },
+      {
+        "ref": "q2",
+        "verdict": "supported",
+        "evidence": "s-g60.0~4–s-g117.0",
+        "note": "数学共识、空间强化学习及机械臂例子与讲稿一致；是讲师的理解和观察。",
+        "hash": "4d7ecd36f5c7e260"
+      },
+      {
+        "ref": "q3",
+        "verdict": "supported",
+        "evidence": "s-g118.0–s-g127.0~61",
+        "note": "汽车比喻、现阶段仍要学及未来学习方式未知均有明确口述。",
+        "hash": "677737e2f1dd852f"
+      },
+      {
+        "ref": "q4",
+        "verdict": "supported",
+        "evidence": "s-g130.0~58–s-g157.2~44; frames/v000644867.jpg",
+        "note": "目录、交付物、本地服务及编译示例均有依据。",
+        "hash": "a140420653f65ba7"
+      },
+      {
+        "ref": "q5",
+        "verdict": "supported",
+        "evidence": "s-g288.0–s-g300.0",
+        "note": "先独立思考再对照及三种结果均与口述一致。",
+        "hash": "6912f04bf2472d14"
+      },
+      {
+        "ref": "q6",
+        "verdict": "supported",
+        "evidence": "s-g307.0~3–s-g359.0~34; frames/v001604867.jpg",
+        "note": "面试结果、冲突内容就地呈现及由人决定的解释有依据。",
+        "hash": "e7d4f69241b5d512"
+      },
+      {
+        "ref": "q7",
+        "verdict": "supported",
+        "evidence": "s-g363.0~14–s-g474.0~7",
+        "note": "版本管理需求、补丁模型与 Git 时间线有口述依据。",
+        "hash": "d24b5c2293f3cdd3"
+      },
+      {
+        "ref": "q8",
+        "verdict": "supported",
+        "evidence": "s-g539.0~5–s-g571.0~10",
+        "note": "默认拒绝空提交及偶尔用于 CI、finalize 的例外有依据。",
+        "hash": "639055ab1513c02b"
+      },
+      {
+        "ref": "q10",
+        "verdict": "supported",
+        "evidence": "s-g726.0~6–s-g747.0",
+        "note": "自洽可构建快照、bisect 数组类比及 blame 均有依据。",
+        "hash": "5393dee9b18a3965"
+      },
+      {
+        "ref": "q11",
+        "verdict": "supported",
+        "evidence": "s-g748.0–s-g771.1~15",
+        "note": "不应提交的内容及锁文件、生成头文件的例外有依据。",
+        "hash": "ef94d34f549a00a2"
+      },
+      {
+        "ref": "q12",
+        "verdict": "supported",
+        "evidence": "s-g886.0~9–s-g945.0",
+        "note": "目录树路径复制、共享未改节点及对象存储与口述一致。",
+        "hash": "ca0bb3715ffcba08"
+      },
+      {
+        "ref": "q13",
+        "verdict": "supported",
+        "evidence": "s-g983.0–s-g1067.0",
+        "note": "真实对象字节、分支、冲突 index 三份及双 parent 均有依据。",
+        "hash": "aa45564567cefeab"
+      },
+      {
+        "ref": "q14",
+        "verdict": "supported",
+        "evidence": "s-g1199.0; s-g1199.1~21; s-g1200.0; s-g1201.0~13; s-g1201.0~29; s-g1205.0~27; s-g1206.0; s-g1234.0~3",
+        "note": "核心表述、分支试错、小步追查及留待下节课讨论均有依据；bisect 是与前述二分查找相容的听写校正。",
+        "hash": "93824955640b9e37"
+      },
+      {
+        "ref": "q9",
+        "verdict": "supported",
+        "evidence": "s-g648.0~3; s-g658.0~2; s-g663.0~11; s-g670.0~10; s-g676.0~9",
+        "note": "编译产物应忽略并由构建系统产出、环境差异及二进制冲突均为原段内容，保留了日期、哈希、指纹的可能语气。",
+        "hash": "fcb17de352082032"
+      },
+      {
+        "ref": "s12:n0",
+        "verdict": "supported",
+        "evidence": "s-g601.0~7; s-g630.0; s-g701.0; s-g719.0~43",
+        "note": "明确标注为听写解释，校正与上下文相容；issue 关闭是以“比如说”引入的口述例子。仅能据口述确认，未提供画面。",
+        "hash": "7be1eb84cd7796a2"
+      },
+      {
+        "ref": "s13:n0",
+        "verdict": "supported",
+        "evidence": "s-g737.0~46; s-g739.0~37; s-g740.0~31; s-g742.0~4",
+        "note": "讲者明确把提交历史想象成数组，以前缀零、后缀一说明二分查找。",
+        "hash": "5a274d20d0a927aa"
+      },
+      {
+        "ref": "s14:e0",
+        "verdict": "supported",
+        "evidence": "s-g757.0; s-g759.0; s-g761.0; s-g762.0; s-g764.0",
+        "note": "口述明确演示未 ignore 的 .DS_Store 被 git add . 跟踪，并解释点开头也可能是配置文件。",
+        "hash": "c4a03106f46ce8a6"
+      },
+      {
+        "ref": "s17:n0",
+        "verdict": "supported",
+        "evidence": "s-g973.0; s-g977.0; s-g979.0; s-g980.0; s-g981.0",
+        "note": "本节口述列出这三个命令，没有念出站点网址。",
+        "hash": "cdefa7649d58f04a"
+      },
+      {
+        "ref": "s19:n0",
+        "verdict": "supported",
+        "evidence": "s-g1075.1~14; s-g1086.0; s-g1093.1~5; s-g1097.0; s-g1111.0~7; s-g1117.0~6; s-g1122.0~25",
+        "note": "均明确作为听写校正给出，与 Python 教学、vibe coding、模型名称及招聘标准的语境相容。",
+        "hash": "7dac1f8f7e45fd01"
+      },
+      {
+        "ref": "s19:p0",
+        "verdict": "supported",
+        "evidence": "s-g1075.1~14; s-g1078.0; s-g1079.0; s-g1084.0~2; s-g1086.0; s-g1089.0; s-g1093.0~7; s-g1093.1~5",
+        "note": "保留了官方身份、runtime 加载和 IDE 级别的不确定性；架构把关及网页、桌面两种形态均有口述依据。",
+        "hash": "1f937a163089a19c"
+      },
+      {
+        "ref": "s1:n1",
+        "verdict": "supported",
+        "evidence": "s-g18.0~2; s-g23.0~10; s-g29.0~11; s-g35.0~2; s-g40.0",
+        "note": "“苟活几个月”是关于品位和纠正模型的个人判断；随后讨论开放空间和对齐困难，并非课程时间表。",
+        "hash": "a9807942a13bf404"
+      },
+      {
+        "ref": "s1:p3",
+        "verdict": "supported",
+        "evidence": "s-g40.0; s-g44.0~4; s-g48.0~10; s-g53.0~12",
+        "note": "忠实保留讲者观察及其对思维链原因的不确定性，后半段也是讲者原有的主观表述。",
+        "hash": "87760868db10c9e4"
+      },
+      {
+        "ref": "s20:n1",
+        "verdict": "supported",
+        "evidence": "s-g1184.0~32; s-g1184.0~42; s-g1187.0~20; s-g1189.0; s-g1189.0~33",
+        "note": "小步提交、review、revert、二分查找及后续可能讲 hooks、CI 均直接出现。",
+        "hash": "514e1eb19115d1c6"
+      },
+      {
+        "ref": "s21:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g1199.0; s-g1218.0~25; s-g1219.0~25; s-g1222.0~76; s-g1224.0~81; s-g1227.0~25; s-g1231.0~61; s-g1234.0~3",
+        "note": "概括了先单线程讨论架构、控制共享状态、架构完成后开多个 Agent 的顺序，末句保留假设。",
+        "hash": "b761a50bdc4a7050"
+      },
+      {
+        "ref": "s5:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g162.0~33; s-g163.0~45; s-g165.0; s-g169.0~13; s-g178.0; s-g193.0~1; s-g198.0~4; s-g201.1",
+        "note": "优盘故障、历史交作业方式、Git 历史能力和作业获取、更新、提交流程均有直接依据。",
+        "hash": "d8dba1aeb41f8b71"
+      },
+      {
+        "ref": "s9:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g364.0; s-g367.0~11; s-g412.0~8; s-g419.0~11; s-g425.0~7; s-g433.0~10; s-g458.0~8",
+        "note": "准确概括讲者对目录备份、SVN 补丁模型、快速回溯目标及 Git 创建年份的叙述；此处仅核对讲课内容。",
+        "hash": "57399e5c070bd5f7"
+      },
+      {
+        "ref": "s21:n0",
+        "verdict": "supported",
+        "evidence": "s-g733.0~50; s-g736.0~6; s-g1189.0; s-g1194.0~19; s-g1196.0; s-g1206.0; s-g1224.0~23; s-g1226.0; s-g1226.0~38; s-g1231.0~61",
+        "note": "已明确标注为听写校正而非逐字确认；bisect 有前文二分查找讲解支撑，其余校正符合所在语境。",
+        "hash": "517d34b19c4d4cd6"
+      },
+      {
+        "ref": "s4:takeaway",
+        "verdict": "supported",
+        "evidence": "s-g130.0~2; s-g130.0~58; s-g137.0~39; s-g139.0~2; s-g142.0~13; s-g142.0~39; s-g143.1~10; s-g144.0; s-g144.1~33",
+        "note": "建目录、本地运行及 localhost 的访问限制均有原文依据；保留了模型‘可能’将用户视为开发者的限定，没有把可能说成必然。",
+        "hash": "caa3fcfbeae456b9"
+      }
+    ],
+    "reviewer": "independent_agent",
+    "reviewer_model": "gpt-6.1-sol",
+    "method": "prepare packets: all takeaways/explainers + per-section sample; 108 judged in latest round; 16 judged in latest round; 2 judged in latest round"
+  },
+  "recall": {
+    "items": [
+      {
+        "id": "q01",
+        "question": "讲者认为 GPT-6 在哪方面给了他最大的惊喜？他对编程品位的评价是什么？",
+        "expected": "空间感知和理解能力；编程仍需人的品位指导，尚未学会很好的品位。",
+        "evidence": "s-g18.0~2, s-g23.0~10, s-g53.0~12",
+        "from": "transcript",
+        "answer": "最大的惊喜是空间感知和理解。编程方面虽有提升、复杂任务更快，但他认为 GPT-6 仍没学会好品位，有经验的工程师还能用品位指导它。",
+        "found_in": "s2:p0, s1:p1",
+        "verdict": "correct",
+        "note": "涵盖空间感知与理解，以及编程仍需人的品位指导。",
+        "hash": "8a90f9065f1e7cbc"
+      },
+      {
+        "id": "q02",
+        "question": "讲者为什么认为数学适合作为 AI 能力的 grounding？",
+        "expected": "数学有全球认可的推理系统；定理证明的对错有共识。",
+        "evidence": "s-g60.0~4, s-g65.0, s-g70.0~24",
+        "from": "transcript",
+        "answer": "数学有全球共识的推理系统，定理证明对不对能获得共同判断；相较软件开放的意图空间，它适合作为逻辑推理的 grounding。",
+        "found_in": "s2:p0",
+        "verdict": "correct",
+        "note": "涵盖全球共识的推理系统与定理证明对错的共同判断。",
+        "hash": "c7adc29c2f2d7801"
+      },
+      {
+        "id": "q03",
+        "question": "光栅玩具的案例中，玩具有什么视觉特点？GPT-6 如何改变了原来的制作过程？",
+        "expected": "左右看呈现不同图案；原先需要较长搜索树，GPT-6 可以 one shot 直接完成。",
+        "evidence": "s-g110.1~26, s-g111.0~50, s-g112.2~2",
+        "from": "transcript",
+        "answer": "从左边看和从右边看会看到不同图案。原先要用很长的搜索树制作光栅件，GPT-6 一次生成就直接做出来，超过了他们做了小半年的工作。",
+        "found_in": "s2:p3, s2:e0",
+        "verdict": "correct",
+        "note": "涵盖左右不同图案，以及从长搜索树到一次生成。",
+        "hash": "c7adc29c2f2d7801"
+      },
+      {
+        "id": "q04",
+        "question": "面对“AI 时代还要不要学数据库、操作系统”的问题，讲者当下的回答与保留意见分别是什么？",
+        "expected": "现在仍要学，可更好解锁 AI 创造力；未来应该怎么学，他暂时不知道。",
+        "evidence": "s-g119.1, s-g126.0~10, s-g126.1~5",
+        "from": "transcript",
+        "answer": "当下肯定要学：正确概念能帮助借鉴知识，更好解锁 AI 的创造力。但这是个人目前的判断；他对这个问题并非完全确定，也不知道未来应该怎么学。",
+        "found_in": "s3:p0, s3:p3, s3:p4",
+        "verdict": "correct",
+        "note": "涵盖现在仍需学习、解锁 AI 创造力，以及未来如何学习尚不确定。",
+        "hash": "ac23bbf3ff510d85"
+      },
+      {
+        "id": "q05",
+        "question": "讲者说真正开始一个自己的软件项目时，第一件事是什么？项目目录中的文件共同构成什么？",
+        "expected": "先建目录并命名；文件共同构成可交付的东西或产品。",
+        "evidence": "s-g130.0~58, s-g131.0~2, s-g137.0~39",
+        "from": "transcript",
+        "answer": "先建一个目录并起名字。目录里的一组文件共同构成可交付的东西，最终成为产品。",
+        "found_in": "s4:p0, s4:p1",
+        "verdict": "correct",
+        "note": "涵盖建目录并命名，以及文件共同构成可交付产品。",
+        "hash": "4756235706394e47"
+      },
+      {
+        "id": "q06",
+        "question": "为什么本机 localhost 上能打开的产品，别人未必能打开？若希望全世界能访问，应在意图中说明什么？",
+        "expected": "localhost 指本机；明确说明产品要被全世界访问，不能只停留在本地开发服务器。",
+        "evidence": "s-g142.0~13, s-g142.0~39, s-g143.1~10, s-g144.1~33",
+        "from": "transcript",
+        "answer": "localhost 是本机，自己能打开的本地开发服务器，其他人不能直接打开。应明确写进 intent/spec：这个产品要被全世界的人看到和访问。",
+        "found_in": "s4:p2",
+        "verdict": "correct",
+        "note": "涵盖 localhost 指本机，以及需明确全球可访问的意图。",
+        "hash": "4756235706394e47"
+      },
+      {
+        "id": "q07",
+        "question": "讲者自己如何定义“软件”？",
+        "expected": "人类世界的需求在信息世界中的投影。",
+        "evidence": "s-g156.0~23",
+        "from": "transcript",
+        "answer": "软件是人类世界的需求在信息世界的一个投影；今天这个投影就是一个装着各种相关文件的目录。",
+        "found_in": "s4:p4",
+        "verdict": "correct",
+        "note": "准确给出需求在信息世界中的投影这一定义。",
+        "hash": "4756235706394e47"
+      },
+      {
+        "id": "q08",
+        "question": "讲者第一个博士生把代码存在 U 盘上的故事中，他哪年入学？什么时候因什么事故丢失代码？",
+        "expected": "2012 年入学；大二时 U 盘损坏导致代码和作业丢失。",
+        "evidence": "s-g158.0~29, s-g162.0~33, s-g163.0~45",
+        "from": "transcript",
+        "answer": "2012 年入学南大；大一把代码存在 U 盘上，大二 U 盘坏了，作业和早期珍藏的代码全部丢失。",
+        "found_in": "s5:p0",
+        "verdict": "correct",
+        "note": "准确给出 2012 年入学、大二 U 盘损坏及代码作业丢失。",
+        "hash": "6d7daba7d12a184a"
+      },
+      {
+        "id": "q09",
+        "question": "讲者赞赏的老项目 README 与常见 AI 生成 README 有何区别？",
+        "expected": "老项目 README 短且清楚；通过少量链接引导到所需内容，而非堆砌巨长文本和目录框图。",
+        "evidence": "s-g245.0~9, s-g251.0~9, s-g257.0~14",
+        "from": "transcript",
+        "answer": "老项目 README 清新简短，想看的内容通过三个链接就能找到；常见 AI README 极长，还用各种 Unicode 字符拼目录结构框图，给人 slop 的感觉。",
+        "found_in": "s6:p2",
+        "verdict": "correct",
+        "note": "涵盖简短清楚、少量链接导航，以及与冗长文本和目录框图的区别。",
+        "hash": "b84296645600a7ae"
+      },
+      {
+        "id": "q10",
+        "question": "讲者说的 virtually implement 学习方法，比较作者方案前应该先做什么？若作者方案更好，接着应思考什么？",
+        "expected": "先在脑中独立解决具体问题；比较后追问作者为什么能做得更精巧或简洁。",
+        "evidence": "s-g294.0, s-g294.0~59, s-g296.0~39, s-g297.0~35",
+        "from": "transcript",
+        "answer": "先忽略眼前答案，在脑子里自己实现一遍，得到自己的方案再比较。作者方案若更精巧、简洁，就追问为什么他能想到，让它变成自己的知识。",
+        "found_in": "s7:p0, s7:p1, s7:p2",
+        "verdict": "correct",
+        "note": "涵盖先独立在脑中实现，再追问作者方案为何更精巧简洁。",
+        "hash": "f0703de51f67465e"
+      },
+      {
+        "id": "q11",
+        "question": "在面试设问“git merge 冲突后会观察到什么”中，讲者希望学生至少能说出什么？",
+        "expected": "冲突两边的代码同时显示；能看到等号、尖括号或 HEAD/incoming 等标记。",
+        "evidence": "s-g319.1~7, s-g329.0~9, s-g347.0, s-g349.0~18, s-g353.0~2",
+        "from": "transcript",
+        "answer": "至少说出：冲突双方的代码会和冲突标记一起显示在工作区文件中；git status 显示 both modified。",
+        "found_in": "s8:p2, s8:f0",
+        "verdict": "partial",
+        "note": "说明了双方代码和冲突标记会显示，但未具体说出等号、尖括号或 HEAD/incoming 等标记；both modified 是状态信息。",
+        "hash": "04e59e78695d9c80"
+      },
+      {
+        "id": "q12",
+        "question": "讲者用“一行被分别改成二和三”的例子说明，Git 为什么不能只报冲突就结束？",
+        "expected": "Git 无法自行决定应保留哪个版本；需要在冲突处提供双方信息，让开发者解决并提交。",
+        "evidence": "s-g335.0, s-g338.0~10, s-g342.0~17, s-g349.0~18, s-g353.0~2",
+        "from": "transcript",
+        "answer": "Git 无法替人决定该留二还是三，只报错会把查找双方内容的负担留给人。它应在冲突原地摆出双方内容及标记，让开发者决定、解决后再提交。",
+        "found_in": "s8:p2",
+        "verdict": "correct",
+        "note": "涵盖 Git 无法决定版本、展示双方内容，以及开发者解决后提交。",
+        "hash": "04e59e78695d9c80"
+      },
+      {
+        "id": "q13",
+        "question": "按本课讲述，Git 是哪一年由谁开发的？",
+        "expected": "2005 年；Linux 的作者 Linus。",
+        "evidence": "s-g439.0~21, s-g452.0, s-g458.0~8",
+        "from": "transcript",
+        "answer": "2005 年，由 Linux 的作者 Linus 等人开发。",
+        "found_in": "s9:p2, s9:f1",
+        "verdict": "correct",
+        "note": "准确给出 2005 年和 Linux 作者 Linus。",
+        "hash": "5a561db71de9bcc4"
+      },
+      {
+        "id": "q14",
+        "question": "执行 git init 后，目录中出现什么？项目因此发生什么变化？",
+        "expected": "出现默认隐藏的 .git 目录；项目成为 Git 管理的仓库。",
+        "evidence": "s-g494.0, s-g497.0, s-g497.0~41",
+        "from": "transcript",
+        "answer": "出现默认隐藏的 .git 目录；项目成为由 Git 进行版本管理的仓库，可以从远端下载代码，也可以推送代码到远端。",
+        "found_in": "s10:p0",
+        "verdict": "correct",
+        "note": "涵盖隐藏的 .git 目录，以及项目成为 Git 仓库。",
+        "hash": "7cf56ec0c44f5f91"
+      },
+      {
+        "id": "q15",
+        "question": "为什么讲者认为每次提交都写“I did some cool stuffs”不好？好的 message 应留下什么？",
+        "expected": "无法看出具体改动，大量此类信息成为 slop；应描述改了什么，帮助理解项目演进。",
+        "evidence": "s-g513.0~12, s-g516.0~8, s-g524.0~5, s-g528.0~8",
+        "from": "transcript",
+        "answer": "这种话完全看不出做了什么，重复一万次会让 message 失去意义。好的 message 应说明改了什么以及为什么，留下修 bug、加需求、重构等演进轨迹与变更理由。",
+        "found_in": "s10:p3, s10:f0, s20:f1",
+        "verdict": "correct",
+        "note": "涵盖笼统信息无法说明改动，以及好消息应记录具体改动和演进。",
+        "hash": "a03dbcd12ae75562"
+      },
+      {
+        "id": "q16",
+        "question": "讲者对空提交的态度是什么？课中举了哪些用途？",
+        "expected": "可以偶尔使用但不应大量创建；可触发 CI/工作流，或单独记录版本 finalize/freeze。",
+        "evidence": "s-g553.0~13, s-g560.0~10, s-g567.0, s-g571.0~10",
+        "from": "transcript",
+        "answer": "空提交理论上可以、偶尔允许，但不是 best practice，应尽量避免，更不能大量创建。用途包括触发 CI/流水线，以及发布前用 finalize/freeze 提交把收尾与实际 bugfix 分开；发布也可以直接在当前提交打 tag。",
+        "found_in": "s11:p0, s11:p1",
+        "verdict": "correct",
+        "note": "涵盖偶尔可用但不应大量创建，以及触发 CI 和 finalize/freeze 两类用途。",
+        "hash": "865e38c974550ad6"
+      },
+      {
+        "id": "q17",
+        "question": "为什么即使源代码一样，编译出的 hello 二进制也通常不适合提交？",
+        "expected": "环境、日期、hash 或本机指纹可能导致产物不同；因此容易产生难合并的二进制冲突。",
+        "evidence": "s-g663.0~11, s-g670.0~10, s-g676.0~9",
+        "from": "transcript",
+        "answer": "编译环境不同，产物可能带日期、hash 或本机指纹，即使源代码相同二进制也可能不同，造成仓库膨胀和难以合并的二进制冲突。应忽略 hello，由构建系统重新生成。",
+        "found_in": "s12:p1, s12:p2",
+        "verdict": "correct",
+        "note": "涵盖环境、日期、hash 或指纹导致产物不同，以及二进制冲突难以合并。",
+        "hash": "8428d23a00c1c30c"
+      },
+      {
+        "id": "q18",
+        "question": "本课解释 git bisect 时，历史需要呈现什么通过/失败分布？还需要什么检查手段？",
+        "expected": "某次引入 bug 前通过，此后失败，即前缀零后缀一；需要测试用例或能检测该 bug 的手段。",
+        "evidence": "s-g739.0~37, s-g740.0~31, s-g742.0~4",
+        "from": "transcript",
+        "answer": "历史应像前缀全通过、后缀全失败的数组：某次引入 bug 后，后面的提交都不能通过，之前的都正常。还需要测试或任何能检查出这个 bug 的手段，才能二分找到首次失败。",
+        "found_in": "s13:p1",
+        "verdict": "correct",
+        "note": "涵盖引入 bug 前通过、之后失败的分布，以及检测 bug 的测试手段。",
+        "hash": "2dc3d76ab39ff5c2"
+      },
+      {
+        "id": "q19",
+        "question": "git blame 能告诉你什么？",
+        "expected": "每行代码由哪一次提交修改；用于追溯是谁引入该行改动。",
+        "evidence": "s-g735.0, s-g743.0~10",
+        "from": "transcript",
+        "answer": "能看到每一行代码在哪次提交被改动，进一步知道是谁改了这一行以及发生了什么。",
+        "found_in": "s13:p1",
+        "verdict": "correct",
+        "note": "涵盖每行对应的修改提交，以及追溯修改者。",
+        "hash": "2dc3d76ab39ff5c2"
+      },
+      {
+        "id": "q20",
+        "question": "讲者为什么说并非所有生成文件都不能提交？举出课中的两个例子。",
+        "expected": "package-lock.json 可以提交；生成的 header 可提交，便于没有相应生成工具链的环境编译。",
+        "evidence": "s-g766.0, s-g767.0~35, s-g769.0~20",
+        "from": "transcript",
+        "answer": "是否生成不是绝对标准，要看用途。例子是 package-lock.json 和生成的 header；把 header 入库能让别人不下载大量依赖、甚至没有生成它的工具链也能编译。",
+        "found_in": "s14:p2",
+        "verdict": "correct",
+        "note": "准确给出 package-lock.json、生成的 header 及缺少生成工具链时的编译用途。",
+        "hash": "e06f980fd19bbd21"
+      },
+      {
+        "id": "q21",
+        "question": "本课用来解释 hook 的两个具体场景是什么？",
+        "expected": "agent 需要用户输入时播放提醒声音；在 Git pre-commit 阶段做检查。",
+        "evidence": "s-g790.0, s-g797.0~4, s-g805.0~4",
+        "from": "transcript",
+        "answer": "一是在 agent 完成、需要用户输入时叮一声提醒；二是在 Git 的 pre-commit hook 中运行检查，满足更高的工程标准。",
+        "found_in": "s15:p0",
+        "verdict": "correct",
+        "note": "涵盖 agent 需要输入时的声音提醒，以及 pre-commit 检查。",
+        "hash": "8b1cf6eba92a00ae"
+      },
+      {
+        "id": "q22",
+        "question": "持久化目录树的讲解中，只改 b.txt 时，如何避免复制整个项目？",
+        "expected": "创建 b.txt 新版本；复制其到根的路径；其他未改部分通过指针共享。",
+        "evidence": "s-g921.0, s-g928.0~5, s-g930.0, s-g933.0~50",
+        "from": "transcript",
+        "answer": "创建 b.txt 的新版本，只复制它到根的那条路径；a.txt、d 等未改的文件或子树通过指针共享旧版本，用很小增量得到新快照。",
+        "found_in": "s16:p1",
+        "verdict": "correct",
+        "note": "涵盖新建 b.txt 版本、复制到根的路径，以及共享未改部分。",
+        "hash": "13d6bcff40512f51"
+      },
+      {
+        "id": "q23",
+        "question": "讲者介绍的三类 Git object 分别是什么？blob 表示什么？",
+        "expected": "commit、tree、blob；blob 是字节序列。",
+        "evidence": "s-g945.0, s-g950.1~3",
+        "from": "transcript",
+        "answer": "commit object、tree object、blob object；blob 是字节序列。",
+        "found_in": "s17:p0",
+        "verdict": "correct",
+        "note": "准确列出 commit、tree、blob，并说明 blob 是字节序列。",
+        "hash": "9916f8570d0c176d"
+      },
+      {
+        "id": "q24",
+        "question": "讲者自制 git 可视化工具与之前的模拟工具有什么关键区别？",
+        "expected": "基于真实仓库文件及原始 bytes 解析对象；持续监听真实 Git 变化并用动画展示。",
+        "evidence": "s-g989.0, s-g991.0, s-g993.0, s-g995.0, s-g996.0",
+        "from": "transcript",
+        "answer": "之前的 Learn Git Branching 只是模拟 Git 模型；自制 gitv 面向真实仓库，从文件系统的真实文件、原始 bytes 逐步解析对象，并持续监听 Git 变化、用动画展示。",
+        "found_in": "s18:p0",
+        "verdict": "correct",
+        "note": "涵盖真实仓库原始字节解析，以及持续监听和动画展示。",
+        "hash": "29bad9d981507f23"
+      },
+      {
+        "id": "q25",
+        "question": "合并冲突演示中 index 留下哪三个版本？解决冲突后的 merge commit 有几个 parent？",
+        "expected": "base、ours、theirs；两个 parent。",
+        "evidence": "s-g1059.0, s-g1067.0",
+        "from": "transcript",
+        "answer": "index 保留 base、ours、theirs 三份版本；解决后生成的 merge commit 有两个 parent。",
+        "found_in": "s18:p3",
+        "verdict": "correct",
+        "note": "准确给出 base、ours、theirs 和两个 parent。",
+        "hash": "29bad9d981507f23"
+      },
+      {
+        "id": "q26",
+        "question": "结尾讲者为什么主张复杂项目做小提交，而不是一次提交一万行？",
+        "expected": "大提交可能同时引入多个 bug，难以定位；小提交便于与修复配对和审计。",
+        "evidence": "s-g1185.0~58, s-g1186.0~53, s-g1187.0~20, s-g1187.0~57",
+        "from": "transcript",
+        "answer": "复杂项目的一万行大提交可能同时破坏多处、引入很多 bug，之后难以判断是否修完。每次只做一个小修改，能明确归因、把引入和修复配对，便于审计、review、revert、bisect，也能及时 push 备份。",
+        "found_in": "s20:p2",
+        "verdict": "correct",
+        "note": "涵盖大提交引入多个 bug 难以定位，以及小提交便于归因、修复配对和审计。",
+        "hash": "1ee5704a5bc74ac1"
+      },
+      {
+        "id": "q27",
+        "question": "讲者最后要求记住的 Git 核心组织方式是什么？",
+        "expected": "把项目组织成由 atomic change 推进的快照。",
+        "evidence": "s-g1199.0, s-g1199.1~21",
+        "from": "transcript",
+        "answer": "把项目组织成由 atomic change（原子变更）推进的快照，可以分支、可以合并。",
+        "found_in": "s21:p0, s21:f0",
+        "verdict": "correct",
+        "note": "准确说明由 atomic change 推进的项目快照。",
+        "hash": "848675d1326c46fc"
+      },
+      {
+        "id": "q28",
+        "question": "讲者如何评价 linear history？请同时给出优点和他的保留态度。",
+        "expected": "更易追溯，对 cherry-pick 和 blame 更友好；并非完全只有好处。",
+        "evidence": "s-g1213.0~53, s-g1214.1~14",
+        "from": "transcript",
+        "answer": "线性历史更易追溯，对 cherry-pick 和 blame 更友好，也有助 AI 定位变更、少读文件和节省 token。他说这不完全都是好处；至少在当前维护项目、无限大能力模型到来之前，是有益的做法。",
+        "found_in": "s21:p2",
+        "verdict": "correct",
+        "note": "涵盖易追溯、对 cherry-pick 和 blame 友好，以及并非全是好处的保留态度。",
+        "hash": "848675d1326c46fc"
+      },
+      {
+        "id": "q29",
+        "question": "在最后的项目经验中，架构设计阶段讲者怎样使用模型？架构完成后怎样推进？",
+        "expected": "先单线程与高智力模型讨论架构；完成后再开多个 terminal/agent 按协作规则迭代。",
+        "evidence": "s-g1218.0~25, s-g1219.0, s-g1227.0~25, s-g1231.0~61",
+        "from": "transcript",
+        "answer": "架构阶段先单线程地和一个智力较高的模型讨论，把接口设计好。架构完成后开三个或几个 terminal 并行运行 agent，用 AGENTS.md 约定协作规则，在另一块屏的实时刷新浏览器中观察效果，指出不满意的地方继续改进。",
+        "found_in": "s21:p3, s21:p4",
+        "verdict": "correct",
+        "note": "涵盖先单线程讨论架构，再通过多个 terminal/agent 按协作规则迭代。",
+        "hash": "848675d1326c46fc"
+      },
+      {
+        "id": "q30",
+        "question": "讲者的 playground 如何减少组件相互影响带来的复杂性？",
+        "expected": "大部分接口设计为 pure function；共享状态集中注册且保持很小；要求 agent 只看库接口，不看实现。",
+        "evidence": "s-g1222.0~76, s-g1223.2~43, s-g1224.0~81, s-g1226.0",
+        "from": "transcript",
+        "answer": "绝大部分接口采用纯函数，trace 是程序的纯函数，并按标准 derivation graph 展开。会互相影响的状态统一注册在全局一处，把共享状态压到十几行、组装也十几行，其余作为黑盒；要求 agent 只看接口、不看库函数实现，以减少上下文。",
+        "found_in": "s21:p3",
+        "verdict": "correct",
+        "note": "涵盖纯函数接口、集中且很小的共享状态，以及只看接口不看实现。",
+        "hash": "848675d1326c46fc"
+      },
+      {
+        "id": "q31",
+        "question": "画面中终端 git log 显示的两个提交标题分别是什么？",
+        "expected": "chore: ignore compiled hello binary；feat: add hello world program。",
+        "evidence": "frames/v002984900.jpg",
+        "from": "visual",
+        "answer": "chore: ignore compiled hello binary；feat: add hello world program。",
+        "found_in": "s12:f1",
+        "verdict": "correct",
+        "note": "两个提交标题均与 expected 一致。",
+        "hash": "8428d23a00c1c30c"
+      },
+      {
+        "id": "q32",
+        "question": "“进组以后的高血压时刻”幻灯片中，“忽略不等于遗忘”下关于 .gitignore 的提醒是什么？",
+        "expected": "不会让已经被跟踪的文件自动退出版本管理。",
+        "evidence": "frames/v003319033.jpg",
+        "from": "visual",
+        "answer": ".gitignore 不会让已经被跟踪的文件自动退出版本管理。密钥一旦泄露，删除当前文件也收不回别人拿到的副本，应先撤销或轮换凭据，再处理历史。",
+        "found_in": "s14:f0",
+        "verdict": "correct",
+        "note": "准确说明 .gitignore 不会自动取消已跟踪文件的版本管理。",
+        "hash": "e06f980fd19bbd21"
+      },
+      {
+        "id": "q33",
+        "question": "“更多的 Best Practices”幻灯片用哪条完整提交标题展示 parser 的空格修复？",
+        "expected": "fix(parser): accept repeated spaces between arguments。",
+        "evidence": "frames/v005367500.jpg",
+        "from": "visual",
+        "answer": "fix(parser): accept repeated spaces between arguments",
+        "found_in": "s20:f1",
+        "verdict": "correct",
+        "note": "完整提交标题与 expected 一致。",
+        "hash": "1ee5704a5bc74ac1"
+      },
+      {
+        "id": "q34",
+        "question": "最后“当 Agent 快了 1000 倍”幻灯片提出 Agent VCS 应回答哪三类变更处理问题？",
+        "expected": "哪些变更能组合；哪些必须排队；哪些需要重新验证。",
+        "evidence": "frames/v006007267.jpg",
+        "from": "visual",
+        "answer": "哪些变更能组合、哪些必须排队、哪些需要重新验证。",
+        "found_in": "s21:f2",
+        "verdict": "correct",
+        "note": "完整列出组合、排队、重新验证三类问题。",
+        "hash": "848675d1326c46fc"
+      }
+    ],
+    "question_author": "independent_agent",
+    "answerer": "independent_agent",
+    "author_model": "gpt-6.1-sol",
+    "answerer_model": "gpt-6.1-sol"
+  }
+}
