@@ -1,0 +1,27 @@
+{
+  "stage": "chapters",
+  "version": 1,
+  "protocolVersion": "file-v1",
+  "inputFingerprint": "900:g1.0:g23.0~25:2odq4r790o8x3",
+  "model": "agent",
+  "params": {
+    "granularity": "balanced",
+    "pageBudget": 8000
+  },
+  "pages": [
+    {
+      "id": "p001",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/p001.src.html",
+      "out": "pages/p001.out.html"
+    }
+  ],
+  "runs": [
+    {
+      "at": "2026-10-02T15:43:15Z",
+      "kind": "full"
+    }
+  ],
+  "status": "done"
+}

@@ -1,0 +1,21 @@
+{
+  "path": "/Users/yjzhao/Downloads/需求和架构 (2) [07-Raw 26生成式软件工程 NJU].mp4",
+  "sha256": "df4344f9c61dfb2a247f734570b9d2ef3ec1d21010849efb4eed78347b5dcc12",
+  "bytes": 306355606,
+  "video_duration": 5981.1,
+  "audio_duration": 5981.12,
+  "tail_decode": {
+    "range": [
+      5920,
+      5981.12
+    ],
+    "status": "passed",
+    "method": "ffmpeg -ss 5920 -i media -f null - exited 0 with no error"
+  },
+  "transcript_first": 0.96,
+  "transcript_last": 5981.04,
+  "identity": "matches project media hash",
+  "asr_state": "stale",
+  "state_reason": "未从项目证据确认stale原因，不作推断",
+  "reuse": "已有transcribe done；原媒体指纹匹配，导出首尾覆盖，布局/润色fresh；不重转写"
+}

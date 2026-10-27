@@ -1,0 +1,12 @@
+{
+  "callId": "c0014",
+  "kind": "polish",
+  "seq": 14,
+  "attempt": 1,
+  "chars": 5346,
+  "estimatedCost": 5346,
+  "protocolVersion": "file-v1",
+  "contract": "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1CQt365EzW.bcut/tasks/t-mume1b30/contracts/polish.md",
+  "payload": "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1CQt365EzW.bcut/tasks/t-mume1b30/payloads/c0014.txt",
+  "createdAtMs": 1790689693203
+}

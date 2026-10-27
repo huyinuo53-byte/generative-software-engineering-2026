@@ -1,0 +1,92 @@
+{
+  "method": "Actual Chrome iframe viewport; complete inline artifact in srcdoc; monitor added before scripts",
+  "html_sha256": "bcef494ed0c1d7890c3634865660bc3de198f18904a426030fb7f548a242651c",
+  "viewports": {
+    "mobile": {
+      "state": {
+        "width": 390,
+        "scrollWidth": 390,
+        "images": 46,
+        "brokenImages": 0,
+        "duplicateIds": [],
+        "badAnchors": 0,
+        "errors": [],
+        "title": "生成式软件工程 · 第07课｜需求和架构（2）：设计可生长的解空间"
+      },
+      "interaction": {
+        "tocOpened": true,
+        "anchorJump": true,
+        "bodyWidth": 390
+      },
+      "zoom": {
+        "open": true,
+        "imageLoaded": true,
+        "width": 382.1953125,
+        "scales": [
+          {
+            "style": "200%",
+            "actualWidth": 724.390625,
+            "dialogWidth": 382
+          },
+          {
+            "style": "300%",
+            "actualWidth": 1086.5859375,
+            "dialogWidth": 382
+          },
+          {
+            "style": "100%",
+            "actualWidth": 362.1953125,
+            "dialogWidth": 382
+          }
+        ]
+      },
+      "close": {
+        "closed": true,
+        "errors": []
+      }
+    },
+    "desktop": {
+      "state": {
+        "width": 900,
+        "scrollWidth": 900,
+        "images": 46,
+        "brokenImages": 0,
+        "duplicateIds": [],
+        "badAnchors": 0,
+        "errors": [],
+        "title": "生成式软件工程 · 第07课｜需求和架构（2）：设计可生长的解空间"
+      },
+      "interaction": {
+        "tocOpened": true,
+        "anchorJump": true,
+        "bodyWidth": 900
+      },
+      "zoom": {
+        "open": true,
+        "imageLoaded": true,
+        "width": 855,
+        "scales": [
+          {
+            "style": "200%",
+            "actualWidth": 1630,
+            "dialogWidth": 855
+          },
+          {
+            "style": "300%",
+            "actualWidth": 2445,
+            "dialogWidth": 855
+          },
+          {
+            "style": "100%",
+            "actualWidth": 815,
+            "dialogWidth": 855
+          }
+        ]
+      },
+      "close": {
+        "closed": true,
+        "errors": []
+      }
+    }
+  }
+}

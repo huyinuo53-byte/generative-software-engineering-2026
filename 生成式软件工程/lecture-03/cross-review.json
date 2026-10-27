@@ -1,0 +1,51 @@
+{
+  "result": "passed",
+  "method": "主协调者完整阅读25节笔记，独立抽查2500–2570、2830–3074、3580–3650、4290–4690、5780–6020秒转写及数字关系",
+  "notes_sha256": "0f3722fcc99ff72b5d56790c3374dfe1cd80c24fdf8dd9a0db6153b9ad4c6cc8",
+  "transcript_sha256": "c05e8ba684c753d41ba4f67397ca868902d700b077410dffc43294f53a429d54",
+  "checks": [
+    {
+      "topic": "空提交",
+      "evidence": "2525–2559秒",
+      "finding": "允许--allow-empty与合理使用场景分开，release标签没有被忽略",
+      "status": "passed"
+    },
+    {
+      "topic": "历史重写",
+      "evidence": "2935–2956秒",
+      "finding": "课堂无remote练习情境保留，未泛化为任意仓库可重写",
+      "status": "passed"
+    },
+    {
+      "topic": "提交与对象",
+      "evidence": "4331–4427秒",
+      "finding": "31压缩/23解压/15正文属于该演示对象；blob 15加NUL头8字节+15=23一致",
+      "status": "passed"
+    },
+    {
+      "topic": "分支/tree口误",
+      "evidence": "4530.64秒 s-g1043.0~7",
+      "finding": "笔记明确修正branch→commit→tree，与后文merge commit tree/parents口述一致",
+      "status": "passed"
+    },
+    {
+      "topic": "冲突完整链",
+      "evidence": "4583–4666秒",
+      "finding": "base/ours/theirs三版本、工作区标记和合并双父完整保留",
+      "status": "passed"
+    },
+    {
+      "topic": "架构与并发",
+      "evidence": "5807–5936秒",
+      "finding": "先接口设计，再少量并行终端；共享状态例子不变成通用限制",
+      "status": "passed"
+    },
+    {
+      "topic": "课尾口述边界",
+      "evidence": "5999.47秒",
+      "finding": "明确下一课讨论千倍Agent与VCS，现行讲义后续设计单列补充",
+      "status": "passed"
+    }
+  ],
+  "substantive_changes": 0
+}

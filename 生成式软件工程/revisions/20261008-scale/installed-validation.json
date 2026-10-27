@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "unit_tests": 69,
+  "skill_structure": "passed",
+  "installed_render_equals_delivered_html": true,
+  "lesson": "lecture-06",
+  "sha256": "a341918f8775d2b03c7c2270daf6585ab283f1a984eb17453f99da3895939dee"
+}

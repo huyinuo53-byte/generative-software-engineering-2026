@@ -1,0 +1,672 @@
+{
+  "schema_version": 1,
+  "run_id": "lecture-02-20261008-editorial-scale",
+  "basis": "observed_build",
+  "captured_at": "2026-10-07T20:02:10.378722+00:00",
+  "root": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02",
+  "spec_sha256": "2ef88dda3987c5ee9498021fd66d0babdbf013155a008f7953c1e05df738cf37",
+  "artifacts": [
+    {
+      "id": "transcript",
+      "path": "transcript.json",
+      "depends_on": [],
+      "sha256": "ed68f1b8de531a0d0a51287798f26e67cf86aa08a18765107ac6b39b2d84f418",
+      "bytes": 4776820
+    },
+    {
+      "id": "index",
+      "path": "chunks/index.json",
+      "depends_on": [
+        "transcript"
+      ],
+      "sha256": "5722e91d0c71d57f01b67696dd9a48267cf46089c671bd0f67c7793aaa4f7343",
+      "bytes": 51657
+    },
+    {
+      "id": "frame-0-0",
+      "path": "frames/slide-004.png",
+      "depends_on": [],
+      "sha256": "9bcdd4766e8ae096cfdbbd9af47193ea37bd17f267ef54927c9b0f711c2d82c5",
+      "bytes": 221059
+    },
+    {
+      "id": "frame-0-1",
+      "path": "frames/slide-005.png",
+      "depends_on": [],
+      "sha256": "c60284c3ac134da1c7c90033d225c7f6bdc8f0adb3fd2708a7975d70e979a8d7",
+      "bytes": 306811
+    },
+    {
+      "id": "frame-1-0",
+      "path": "frames/slide-006.png",
+      "depends_on": [],
+      "sha256": "e11d10ca7a3f57b7c3169ac5142c0f666819555f52181aeebb171f6bb237143a",
+      "bytes": 274318
+    },
+    {
+      "id": "frame-1-1",
+      "path": "frames/slide-008.png",
+      "depends_on": [],
+      "sha256": "75f9c978dfaedf4eb660617cf21cab2f9d4094d06dca725ec838dcea98f1906c",
+      "bytes": 324100
+    },
+    {
+      "id": "frame-1-2",
+      "path": "frames/video-450.jpg",
+      "depends_on": [],
+      "sha256": "6c5dc6bb4e6800334aee5276f02a0dde8c4bd788bc68e312f005b49f2731bf23",
+      "bytes": 50936
+    },
+    {
+      "id": "frame-1-3",
+      "path": "frames/video-490.jpg",
+      "depends_on": [],
+      "sha256": "2c67ef883d119785794a3cb828440d8c6a21600d6fbb542f4fa6763002ab1a49",
+      "bytes": 53823
+    },
+    {
+      "id": "frame-2-0",
+      "path": "frames/slide-007.png",
+      "depends_on": [],
+      "sha256": "daca6100c4377ca0d363158b2b6273a446a73e34221aa8d81cb127b56cb99d2c",
+      "bytes": 708579
+    },
+    {
+      "id": "frame-3-0",
+      "path": "frames/slide-009.png",
+      "depends_on": [],
+      "sha256": "7ce71cc917740da7c29e4bdc73da3657d9319b83a10d78270cd5463453e4f9e4",
+      "bytes": 385498
+    },
+    {
+      "id": "frame-4-0",
+      "path": "frames/video-1080.jpg",
+      "depends_on": [],
+      "sha256": "25a19090c6cbb70e723e950dbdc05ccb53691da58bd4e530edec865ded516fd9",
+      "bytes": 40872
+    },
+    {
+      "id": "frame-5-0",
+      "path": "frames/slide-010.png",
+      "depends_on": [],
+      "sha256": "7d7cd24ae39718a3187bb889caf156ac1c233d173d73f58055afb8d34ca78d4b",
+      "bytes": 348242
+    },
+    {
+      "id": "frame-5-1",
+      "path": "frames/slide-011.png",
+      "depends_on": [],
+      "sha256": "a2ad575a8d491e142c080d040667e3c1387a0a3229ffea99a65226c0f4679fb7",
+      "bytes": 326874
+    },
+    {
+      "id": "frame-6-0",
+      "path": "frames/slide-012.png",
+      "depends_on": [],
+      "sha256": "bd776cd6857ef3f17dfe96a43ce0f727b5d05622071c047bb4d39ff3f06497ed",
+      "bytes": 315809
+    },
+    {
+      "id": "frame-6-1",
+      "path": "frames/slide-013.png",
+      "depends_on": [],
+      "sha256": "a3342651bea55237fea4e3b8b7cd734da7bde9970ac8a6c8350f08bd5ce1e409",
+      "bytes": 363056
+    },
+    {
+      "id": "frame-7-0",
+      "path": "frames/slide-014.png",
+      "depends_on": [],
+      "sha256": "9b7ad2122cc0180a8c9de93cf7e487bfc2048472b0b18c3892063fb9f4b324ed",
+      "bytes": 306939
+    },
+    {
+      "id": "frame-7-1",
+      "path": "frames/video-1595.jpg",
+      "depends_on": [],
+      "sha256": "93187eda44327a167e7c16f89ac2265504fceb6540688c8d37dc0b8264a3b695",
+      "bytes": 34042
+    },
+    {
+      "id": "frame-7-2",
+      "path": "frames/video-1698.jpg",
+      "depends_on": [],
+      "sha256": "8fad3e30e1918a9d98b7282a5e8ed0c3b85d7413f068e382f1bb918f18ebe593",
+      "bytes": 31286
+    },
+    {
+      "id": "frame-8-0",
+      "path": "frames/slide-015.png",
+      "depends_on": [],
+      "sha256": "08b30f2e09934b4c02729c63c6694981ce2b549b6a172ee796616849299ccbc3",
+      "bytes": 373023
+    },
+    {
+      "id": "frame-9-0",
+      "path": "frames/slide-016.png",
+      "depends_on": [],
+      "sha256": "27b379a208c5b5f4e09ea4917d3d75916b24a502060dca16f0867a94f34a8ca7",
+      "bytes": 388051
+    },
+    {
+      "id": "frame-10-0",
+      "path": "frames/slide-017.png",
+      "depends_on": [],
+      "sha256": "3c4d66d4fb34d6770b9eacf864cdab9533a017451a3f33cfabd27fc9c155213d",
+      "bytes": 282254
+    },
+    {
+      "id": "frame-10-1",
+      "path": "frames/video-2418.jpg",
+      "depends_on": [],
+      "sha256": "e9e7a0c4d6221469c304baed19d6c1239c3016fb72a0ade96da33b112fcad6c1",
+      "bytes": 48989
+    },
+    {
+      "id": "frame-11-0",
+      "path": "frames/slide-018.png",
+      "depends_on": [],
+      "sha256": "8192493f1c16c046f11c16e1c321ca2949638da5683ed797e0ed4bdc2f9a101c",
+      "bytes": 270666
+    },
+    {
+      "id": "frame-11-1",
+      "path": "frames/slide-019.png",
+      "depends_on": [],
+      "sha256": "6bed0b7339ea1aaf3c6cc51f34b7741499db385fde6102c4a5b611e78dfb8414",
+      "bytes": 348699
+    },
+    {
+      "id": "frame-11-2",
+      "path": "frames/slide-020.png",
+      "depends_on": [],
+      "sha256": "5651c77dea68f2946f2edc0c389a24fdef981cfe4c4de521a16675b06264bab6",
+      "bytes": 344219
+    },
+    {
+      "id": "frame-11-3",
+      "path": "frames/video-2568.jpg",
+      "depends_on": [],
+      "sha256": "06dbd859554af708d672868aac89d30cbb3d2cc2c3925b53aec7ba5e433a38ba",
+      "bytes": 50790
+    },
+    {
+      "id": "frame-13-0",
+      "path": "frames/slide-021.png",
+      "depends_on": [],
+      "sha256": "59f2b81872f5daee0089441daaa2f98c8108a8284da6aa225592ef6554dd07b6",
+      "bytes": 292001
+    },
+    {
+      "id": "frame-14-0",
+      "path": "frames/slide-022.png",
+      "depends_on": [],
+      "sha256": "35e347b71c0078009ef67c0c46aba8db36e2e403231c97fefa2a1a9706316ac8",
+      "bytes": 339777
+    },
+    {
+      "id": "frame-15-0",
+      "path": "frames/slide-023.png",
+      "depends_on": [],
+      "sha256": "2520209da5aaad635ad10662630f6cdb05f98aeabb2cdc4c8bae466f338fb286",
+      "bytes": 236297
+    },
+    {
+      "id": "frame-15-1",
+      "path": "frames/slide-024.png",
+      "depends_on": [],
+      "sha256": "de3fcad614adf3726272aa6ff8cee6501dc73d49fa1eef0f13a52d9b01eb7ebc",
+      "bytes": 339989
+    },
+    {
+      "id": "frame-15-2",
+      "path": "frames/slide-025.png",
+      "depends_on": [],
+      "sha256": "95c7e2c125a67cd6c7dc838bffc0cbfdfd9816d106588df94f5f0d5bd9d9a8e9",
+      "bytes": 354334
+    },
+    {
+      "id": "frame-15-3",
+      "path": "frames/video-3388.jpg",
+      "depends_on": [],
+      "sha256": "d5be101b00594a6d49d490f1e26ccf1177351a48a67d0bbf52f44a3db0f95c44",
+      "bytes": 47500
+    },
+    {
+      "id": "frame-15-4",
+      "path": "frames/video-3450.jpg",
+      "depends_on": [],
+      "sha256": "31c48a4d98dbe43bcf2c4945c208c6f43b676e7c985092e23050580cf4cbe14d",
+      "bytes": 70920
+    },
+    {
+      "id": "frame-16-0",
+      "path": "frames/video-3708.jpg",
+      "depends_on": [],
+      "sha256": "5da9f286647555a06679c4cc68c45a643130161cad4a4c77d0256bc3bdc5880c",
+      "bytes": 68676
+    },
+    {
+      "id": "frame-18-0",
+      "path": "frames/slide-026.png",
+      "depends_on": [],
+      "sha256": "4feb48fb908e4bb5c2b0033dca4a6711702521f7df24f434bf7009a356bc2258",
+      "bytes": 367729
+    },
+    {
+      "id": "frame-19-0",
+      "path": "frames/slide-027.png",
+      "depends_on": [],
+      "sha256": "07d5e419939ee07eec09fc5a79abc854c051a37468ac4993167a5aefcf8086d7",
+      "bytes": 413440
+    },
+    {
+      "id": "frame-19-1",
+      "path": "frames/slide-028.png",
+      "depends_on": [],
+      "sha256": "c4a30aad58abccb902fcc2c27d7e18f3f096b6491e8592582a7f2a469f010640",
+      "bytes": 366346
+    },
+    {
+      "id": "frame-20-0",
+      "path": "frames/slide-029.png",
+      "depends_on": [],
+      "sha256": "7aeb8ba2e8c5206755e6bfa58d128852c06810c63744b7d2d9e8da993eee014a",
+      "bytes": 438704
+    },
+    {
+      "id": "frame-21-0",
+      "path": "frames/slide-030.png",
+      "depends_on": [],
+      "sha256": "9038bde801fe8169504ecbb9cef6e3672c7df7c3873087f336464a585d32e8a7",
+      "bytes": 353118
+    },
+    {
+      "id": "frame-22-0",
+      "path": "frames/slide-031.png",
+      "depends_on": [],
+      "sha256": "5015d1eac4f52509e5e2808d278ac79f1c45ab8ad4d055befd387dfbd73d8d7e",
+      "bytes": 432424
+    },
+    {
+      "id": "frame-23-0",
+      "path": "frames/slide-032.png",
+      "depends_on": [],
+      "sha256": "b6fb06610b91ebf33cb8b35c46ee26c15d82f1457cf509224b8d0302392dccb2",
+      "bytes": 393702
+    },
+    {
+      "id": "frame-24-0",
+      "path": "frames/slide-033.png",
+      "depends_on": [],
+      "sha256": "32dd2e052d56f7b36d4bc3f7e48835dee178e51b8de99b28a005970b8d4dd86b",
+      "bytes": 403320
+    },
+    {
+      "id": "frame-25-0",
+      "path": "frames/slide-034.png",
+      "depends_on": [],
+      "sha256": "dc15270ff3a76144c0f85592155bc6468d2e88301b7f9f97379210f09ec37134",
+      "bytes": 350202
+    },
+    {
+      "id": "frame-26-0",
+      "path": "frames/slide-035.png",
+      "depends_on": [],
+      "sha256": "6f70c0b8d1e794cff4d4efa2461c801426faee221f14151a3d4b986f5500508b",
+      "bytes": 299004
+    },
+    {
+      "id": "frame-27-0",
+      "path": "frames/slide-036.png",
+      "depends_on": [],
+      "sha256": "3e8f39191ba642eed9570150d61fd0a9645745208b7ab9971650d50cefe0b434",
+      "bytes": 839554
+    },
+    {
+      "id": "frame-27-1",
+      "path": "frames/slide-037.png",
+      "depends_on": [],
+      "sha256": "cd53876d613a170ddbe6d01c9b3667e790185f5bdb86b8b8b2134580e3db254f",
+      "bytes": 1437736
+    },
+    {
+      "id": "notes",
+      "path": "notes.json",
+      "depends_on": [
+        "index",
+        "frame-0-0",
+        "frame-0-1",
+        "frame-1-0",
+        "frame-1-1",
+        "frame-1-2",
+        "frame-1-3",
+        "frame-2-0",
+        "frame-3-0",
+        "frame-4-0",
+        "frame-5-0",
+        "frame-5-1",
+        "frame-6-0",
+        "frame-6-1",
+        "frame-7-0",
+        "frame-7-1",
+        "frame-7-2",
+        "frame-8-0",
+        "frame-9-0",
+        "frame-10-0",
+        "frame-10-1",
+        "frame-11-0",
+        "frame-11-1",
+        "frame-11-2",
+        "frame-11-3",
+        "frame-13-0",
+        "frame-14-0",
+        "frame-15-0",
+        "frame-15-1",
+        "frame-15-2",
+        "frame-15-3",
+        "frame-15-4",
+        "frame-16-0",
+        "frame-18-0",
+        "frame-19-0",
+        "frame-19-1",
+        "frame-20-0",
+        "frame-21-0",
+        "frame-22-0",
+        "frame-23-0",
+        "frame-24-0",
+        "frame-25-0",
+        "frame-26-0",
+        "frame-27-0",
+        "frame-27-1"
+      ],
+      "sha256": "6d9e5bd7b6a19755898203f4fb10e98dba185e43cd102ad4a40aecf596317558",
+      "bytes": 65108
+    },
+    {
+      "id": "layout",
+      "path": "reading-layout.json",
+      "depends_on": [
+        "notes"
+      ],
+      "sha256": "40ac4692b64c3dcfd411bb18de65001c029df04183be274940baa266354522ed",
+      "bytes": 10855
+    },
+    {
+      "id": "build-0",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/scripts/course_notes.py",
+      "depends_on": [],
+      "sha256": "1de4abde3012dcd8024916baa92fba751ace4ac1d8b3569170d689ed80d77b0a",
+      "bytes": 16071
+    },
+    {
+      "id": "build-1",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/scripts/reading_layout.py",
+      "depends_on": [],
+      "sha256": "9a2ae167fdbab5d1a391d69f148d8976522d2e83627008d50b4c1ba84adb6744",
+      "bytes": 12373
+    },
+    {
+      "id": "build-2",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/template.html",
+      "depends_on": [],
+      "sha256": "4e7715e38f0530897e2d882f4d75e1d64dbff859fbc95ddfb0dfa88668f9b693",
+      "bytes": 2804
+    },
+    {
+      "id": "build-3",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/editorial.html",
+      "depends_on": [],
+      "sha256": "a7cb83601a48417c1adce8a0aceb88b6887f5d55fb0919237448325f3d64f7f6",
+      "bytes": 1153
+    },
+    {
+      "id": "build-4",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/editorial.css",
+      "depends_on": [],
+      "sha256": "19ff96d00dd7456da38d0bbdb19e057059921fac780b7195f3f0d34cb357df2a",
+      "bytes": 14224
+    },
+    {
+      "id": "build-5",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/editorial.js",
+      "depends_on": [],
+      "sha256": "e53d177b7ba77871aeb4e89f8f8857cecb17ded0177d074420c47544e2cc318a",
+      "bytes": 1927
+    },
+    {
+      "id": "html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "layout",
+        "notes",
+        "index",
+        "build-0",
+        "build-1",
+        "build-2",
+        "build-3",
+        "build-4",
+        "build-5"
+      ],
+      "sha256": "f063e934af755a45e5fef94ee73327ff1ebc8a6527f497089c21931a2387b269",
+      "bytes": 18840725
+    },
+    {
+      "id": "layout-check",
+      "path": "revisions/20261008-scale/layout-validation.json",
+      "depends_on": [
+        "notes",
+        "layout"
+      ],
+      "sha256": "cdee25793c3cf07efae9315236d2df57c0f7c215e3db53425a44abb3f6df661a",
+      "bytes": 5683
+    },
+    {
+      "id": "browser",
+      "path": "revisions/20261008-scale/browser.json",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "350e8d8e9aa62efff6d77320e4b292d814c6542e44b7daa27e2606d7398c5ce7",
+      "bytes": 20424
+    },
+    {
+      "id": "pdf",
+      "path": "revisions/20261008-scale/print-check.pdf",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "10771b4c7f4e7d6ae6a379c6921ca5d9394d930e05b274f95429b4e57599fd84",
+      "bytes": 15099835
+    },
+    {
+      "id": "print",
+      "path": "revisions/20261008-scale/print.json",
+      "depends_on": [
+        "pdf",
+        "html",
+        "notes"
+      ],
+      "sha256": "dbf153d902b9349e984903a77e279333afc4f8ab4c10409b6411ca43b68c9011",
+      "bytes": 414
+    },
+    {
+      "id": "preservation",
+      "path": "revisions/20261008-scale/preservation.json",
+      "depends_on": [
+        "html",
+        "notes",
+        "layout",
+        "frame-0-0",
+        "frame-0-1",
+        "frame-1-0",
+        "frame-1-1",
+        "frame-1-2",
+        "frame-1-3",
+        "frame-2-0",
+        "frame-3-0",
+        "frame-4-0",
+        "frame-5-0",
+        "frame-5-1",
+        "frame-6-0",
+        "frame-6-1",
+        "frame-7-0",
+        "frame-7-1",
+        "frame-7-2",
+        "frame-8-0",
+        "frame-9-0",
+        "frame-10-0",
+        "frame-10-1",
+        "frame-11-0",
+        "frame-11-1",
+        "frame-11-2",
+        "frame-11-3",
+        "frame-13-0",
+        "frame-14-0",
+        "frame-15-0",
+        "frame-15-1",
+        "frame-15-2",
+        "frame-15-3",
+        "frame-15-4",
+        "frame-16-0",
+        "frame-18-0",
+        "frame-19-0",
+        "frame-19-1",
+        "frame-20-0",
+        "frame-21-0",
+        "frame-22-0",
+        "frame-23-0",
+        "frame-24-0",
+        "frame-25-0",
+        "frame-26-0",
+        "frame-27-0",
+        "frame-27-1"
+      ],
+      "sha256": "2ae9c0b37392c735468bcbca9893767ac232463cf6f9afa45c7557633205184d",
+      "bytes": 390
+    },
+    {
+      "id": "visual-0",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/1440-quiz.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "376c81af7a84acd75099e7c0f42c1b0e8c85b401d738beb61dc19c559a845b90",
+      "bytes": 177045
+    },
+    {
+      "id": "visual-1",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/1440-reading.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "8b9dbfb60e05c18b419e6a131fd06f07d82722128bd8c0289e5a7b8df8d0b1ad",
+      "bytes": 355889
+    },
+    {
+      "id": "visual-2",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/1440-top.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "d96dd0a71d39335cfcd538a409285302bba5dd5fc48f7399979a40167581d973",
+      "bytes": 182014
+    },
+    {
+      "id": "visual-3",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/320-quiz.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "4ae8757350203366928d1cfd65532c084e49d8eb884512d944fab16aec10d2e4",
+      "bytes": 69886
+    },
+    {
+      "id": "visual-4",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/320-top.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "848f4b79ccf9dd12ad8bb428a2cfd4da611aaf6be0558f7bcd0dbc3cf9065ffb",
+      "bytes": 87836
+    },
+    {
+      "id": "visual-5",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/390-quiz.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "1261ab9057e46e5032d5f1f68ce32ce8612060824e4b7075ba8db9e0b8762e94",
+      "bytes": 81890
+    },
+    {
+      "id": "visual-6",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/390-reading.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "95c94b6bd25aaa6dd8179851dfa7246b820a9a33a62327c820e24dc0e3cf9a8a",
+      "bytes": 137980
+    },
+    {
+      "id": "visual-7",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/390-top.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "b10a65f998930a4f44f83939d398e35875c838d60a8e698705f9efd3e15db04f",
+      "bytes": 97457
+    },
+    {
+      "id": "visual-8",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/768-quiz.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "09356b4693c5c10b6f4e14c2c17e4da91fbab107d0c39fdc0aacca39a94e863b",
+      "bytes": 92076
+    },
+    {
+      "id": "visual-9",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/768-top.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "6b7bd8aab046ce36608536f1503624c397522d4b963f1240f77bdef87b9f8731",
+      "bytes": 113614
+    },
+    {
+      "id": "visual-10",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/print-last-page.png",
+      "depends_on": [
+        "pdf"
+      ],
+      "sha256": "4c17339dc8183d5d6a058fb38d17e3f964d22a43e2bc5d7fbf9bdb7ffb45b636",
+      "bytes": 21804
+    },
+    {
+      "id": "review",
+      "path": "review.json",
+      "depends_on": [
+        "browser",
+        "print",
+        "layout-check",
+        "preservation",
+        "visual-0",
+        "visual-1",
+        "visual-2",
+        "visual-3",
+        "visual-4",
+        "visual-5",
+        "visual-6",
+        "visual-7",
+        "visual-8",
+        "visual-9",
+        "visual-10"
+      ],
+      "sha256": "5d24f9282c9db91d70726836a8458cc847b3c169580c03586e375124a54ee56e",
+      "bytes": 4098
+    }
+  ],
+  "claim": "File snapshot only; dependencies are declarations, not proof of execution or quality."
+}

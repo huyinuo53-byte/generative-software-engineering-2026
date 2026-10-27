@@ -1,0 +1,12 @@
+{
+  "html_sha256": "ab033482b3a8d2a70f5a26106638792dc1ad9bb0a0f56a88933a6f9e0a1ab1ff",
+  "method": "isolated Chrome headless print; all text blocks checked against pdftotext; representative page visual inspection recorded separately",
+  "temporary_pdf": "/tmp/gse-lecture-01-print.pdf",
+  "pdf_sha256": "73c8c82dce31af43cbae72d3271bab94ec5aee035a2944e8d9f8b6644f0024ad",
+  "text_blocks": 183,
+  "missing_blocks": [],
+  "printed_images": 48,
+  "expected_images": 48,
+  "pdfinfo": "Title:           第 01 课｜欢迎来到未来：用 Agent 做事，为什么仍然需要软件工程\nCreator:         Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36\nProducer:        Skia/PDF m154\nCreationDate:    Fri Oct  2 23:32:29 2026 CST\nModDate:         Fri Oct  2 23:32:29 2026 CST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          yes\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           70\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       10441245 bytes\nOptimized:       no\nPDF version:     1.4\n",
+  "status": "passed"
+}

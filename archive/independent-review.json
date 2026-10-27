@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "reviewed_at": "2026-10-27T07:48:01.194717+00:00",
+  "author": "/root",
+  "reviewer": "/root/gse_archive_review (independent Codex instance)",
+  "data_level": "personal",
+  "privacy_route": "same-family-exception under /Users/yjzhao/AGENTS.md section 5.4; local read-only review; no external model seat, upload or network request",
+  "artifact_root": "/Users/yjzhao/Documents/ChatGPT/generative-software-engineering-2026",
+  "scope": "Archive completeness, documentation consistency, copy/transformation accounting, native project and course media binding, security evidence context, historical QA boundary. Course semantics were not re-reviewed.",
+  "reviewed_versions": [
+    {
+      "path": "README.md",
+      "bytes": 4293,
+      "sha256": "77bc51e902a73ef22e911bb449232f6591aeab2d52e9046e6200b5cc2e0e8856"
+    },
+    {
+      "path": "RESTORE.md",
+      "bytes": 1626,
+      "sha256": "d71ae61f334698bd020a455e7127013ae7b538fc1976c0e23055eb6ac93a9ec6"
+    },
+    {
+      "path": "归档阅读与恢复.html",
+      "bytes": 11209,
+      "sha256": "bdb177398126b8da41f885be0f0d0e183b8b14d7345fc7e0c7f66f4cc1ffee08"
+    },
+    {
+      "path": "archive/README.md",
+      "bytes": 1743,
+      "sha256": "991be939c237e91cbac9d62be30bd042df7b5aca2a28bf0f64ef01e38284e5b7"
+    },
+    {
+      "path": "tools/verify_archive.py",
+      "bytes": 1622,
+      "sha256": "b28f3e3e33cd71050b259cd224941c0e506d4931250747dc1504ddebeb745c6f"
+    },
+    {
+      "path": "archive/source-copy-manifest.json",
+      "bytes": 3003847,
+      "sha256": "b85c8a9ed0ca5ab2d8cc8017e6290725f5a3357a9252541a10cd9a9c6d2df5f5"
+    },
+    {
+      "path": "archive/transformations.json",
+      "bytes": 423,
+      "sha256": "eb91c10b9f1d572414a17594d3bc58b0e2c36a93c3b81be775efae1f01f2efde"
+    },
+    {
+      "path": "archive/projects.json",
+      "bytes": 15749,
+      "sha256": "11d44e4a2f355f9572594b8da1d28e994625d7c2b3d34d16b8058fe8c4aaedc0"
+    },
+    {
+      "path": "archive/media-manifest.json",
+      "bytes": 7381,
+      "sha256": "e383fd06134ac0ccba4905d69cf9fd33d2b7644fd52d215579dda008f3c2cfca"
+    },
+    {
+      "path": "archive/security-review.json",
+      "bytes": 13426,
+      "sha256": "5d58b694f800ba40e161cdcb1920c3cdbfe08b773f59dfe41348a53dd95fb383"
+    }
+  ],
+  "findings": [
+    {
+      "id": "GSE-ARCHIVE-001",
+      "severity": "minor",
+      "priority": "P3",
+      "status": "fixed",
+      "file": "archive/security-review.json",
+      "line": 128,
+      "original_text": "\"disposition\": \"false_positive_embedded_slide_image_base64\"",
+      "issue": "The recorded match is inside an embedded MP4 data URI in the archived slide source, so the image label inaccurately described the reviewed context. The false-positive determination itself was correct.",
+      "action": "Change the disposition to false_positive_embedded_slide_video_base64.",
+      "fixed_text": "\"disposition\": \"false_positive_embedded_slide_video_base64\"",
+      "closure_evidence": {
+        "current_value_verified": true,
+        "file": "生成式软件工程/lecture-05/sources/slides5.html",
+        "byte_offset": 1866223,
+        "match_length": 20,
+        "recorded_value_sha256_matches": true,
+        "containing_marker": "data:video/mp4;base64,",
+        "containing_base64_run_bytes": 1832452,
+        "no_credential_value_emitted": true
+      }
+    }
+  ],
+  "open_blocker_or_major": 0,
+  "open_findings": 0,
+  "checks": [
+    {
+      "name": "Copied source bytes and archive bytes",
+      "status": "PASS",
+      "details": {
+        "manifest_rows": 9420,
+        "manifest_duplicates": 0,
+        "source_hash_or_size_failures": 0,
+        "archive_undeclared_hash_or_size_failures": 0,
+        "declared_transformations": 1,
+        "total_manifest_original_bytes": 1734550234,
+        "evidence_file": "/private/tmp/gse-publication-20261027/independent-evidence.json"
+      }
+    },
+    {
+      "name": "Copy scope and transformation accounting",
+      "status": "PASS",
+      "details": "Enumerated the original course, related research/legacy/tooling roots and the 10 selected native project roots. No source file was unaccounted for after copy and exclusions. Historical all-project inventory changed from 26 to 4 records; kept records exactly match course-ID filtering, and original/archive hashes match transformations.json."
+    },
+    {
+      "name": "Native project and course media binding",
+      "status": "PASS",
+      "details": {
+        "native_projects": 10,
+        "project_manifest_media_metadata_exact_matches": 10,
+        "original_media_size_and_sha256_matches": 10,
+        "sourceMetadata_id_bindings": 9,
+        "lecture08_fallback_binding": "lecture-08/run.json lines 6, 10, 42-44 binds BV11LWw6VEHW, original project path and exact media SHA-256; native project and media manifest agree.",
+        "media_count": 10
+      }
+    },
+    {
+      "name": "Security review context",
+      "status": "PASS",
+      "details": {
+        "recorded_findings": 37,
+        "recorded_byte_offset_and_fingerprint_matches": 37,
+        "independent_text_files_scanned": 1896,
+        "independent_pattern_matches": 44,
+        "genuine_credentials_found": 0,
+        "independent_pattern_classes": [
+          "private_key",
+          "github_token",
+          "aws_key",
+          "provider_key",
+          "google_key",
+          "slack_token",
+          "authorization_bearer",
+          "signed_url"
+        ],
+        "dispositions": "All matches are embedded image/video encoding, public image proxy URL, or public HTML ask-learn identifiers. No raw matched values were emitted.",
+        "evidence_file": "/private/tmp/gse-publication-20261027/independent-security-evidence.json"
+      }
+    },
+    {
+      "name": "Verifier behavior in isolated temporary fixture",
+      "status": "PASS",
+      "details": {
+        "passed_cases": 5,
+        "total_cases": 5,
+        "cases": [
+          "valid relocated repository",
+          "same size tampered repository file",
+          "missing repository file",
+          "valid repository and media",
+          "corrupted media"
+        ],
+        "evidence_file": "/private/tmp/gse-publication-20261027/independent-verifier-test-evidence.json"
+      }
+    },
+    {
+      "name": "Current HTML guide fidelity and links",
+      "status": "PASS",
+      "details": {
+        "source_paragraph_mismatches": 0,
+        "valid_local_links": 19,
+        "local_links_total": 19,
+        "external_embedded_resources": 0,
+        "evidence_file": "/private/tmp/gse-publication-20261027/independent-guide-evidence.json"
+      }
+    },
+    {
+      "name": "Historical QA evidence boundary",
+      "status": "PASS",
+      "details": "README.md:50, RESTORE.md:21-23, archive/README.md:9-13 and their current HTML rendering explicitly distinguish copied historical QA from fresh semantic, audio, print, device or cross-machine recovery acceptance. No historical passed/hash was changed by this review."
+    }
+  ],
+  "not_tested": [
+    "archive/files.json and archive/publication-review.json are intentionally not frozen yet; their current absence is excluded from findings and final-repository acceptance must be run by the verifier after freezing.",
+    "Remote GitHub repository visibility, remote Git objects, Release assets, clone/download and upload outcomes were not checked in this local read-only review.",
+    "No new course semantic/source reading, full-video listening, per-frame semantic audit, OCR of images/videos, real phone or native printing audit was performed.",
+    "No BaoCut App opening, media relinking or second-machine native project recovery was performed.",
+    "The reviewer checked guide text and links structurally; the parent reports separate guide-browser evidence. No browser result is inferred from these structural checks."
+  ],
+  "reviewer_mutations": "Only /private/tmp/gse-publication-20261027/independent-*.json evidence and report files were written. No source, course, native .bcut or archived product file was edited."
+}

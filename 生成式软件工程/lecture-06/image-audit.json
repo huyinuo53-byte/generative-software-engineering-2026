@@ -1,0 +1,753 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "d01cefc8b02e4dedcb6b77086747eba1bc57e9d6070f8920d518d9db6a915011",
+  "images": [
+    {
+      "section": 1,
+      "frame": 1,
+      "path": "frames/page-001.webp",
+      "sha256": "acd87abce2bf96e9abb532eb389305deae52c4fcb097ec2f497ca87015790cd1",
+      "purpose": "回顾：Intent–Spec–Impl Gap、瀑布模型与 Data-Dependency Graph。",
+      "expected_information": "三个关键词、两类方法说明完整可见",
+      "observed_information": "逐图目视确认：三个关键词、两类方法说明完整可见",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第1页/网页第1页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 2,
+      "frame": 1,
+      "path": "frames/page-002.webp",
+      "sha256": "b200d56077c08eb7052130318c208909779369449c28c871d4b31b428756f423",
+      "purpose": "官方讲义：软件工程的基本观察——软件不软。",
+      "expected_information": "三列需求难对齐/方案难选择/实现返工贵与各自图文完整",
+      "observed_information": "逐图目视确认：三列需求难对齐/方案难选择/实现返工贵与各自图文完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第2页/网页第2页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 3,
+      "frame": 1,
+      "path": "frames/page-004.webp",
+      "sha256": "b18ed7ea2e5aa946523bcf30c50714c77bf831aed3858f7cd4c6c9e4d62eef7c",
+      "purpose": "Agentic AI：目标明确的代码生产便宜，需求、产品设计与架构影响后续软件生产。",
+      "expected_information": "Agent Swarm、测试断言证明及需求产品架构杠杆文字齐全",
+      "observed_information": "逐图目视确认：Agent Swarm、测试断言证明及需求产品架构杠杆文字齐全",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第4页/网页第4页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 6,
+      "frame": 1,
+      "path": "frames/video-1540.webp",
+      "sha256": "2cd1b2c018e01c0a041af02c3afb2f6b553f85d120a5e774732c2aad02753b36",
+      "purpose": "现场需求说明书：用编号关联需求与角色/目标；此图是 25:40 的原视频帧。",
+      "expected_information": "教师现场打开需求说明书，业务目标表BG编号、目标与成功标准三列可见",
+      "observed_information": "逐图目视确认：教师现场打开需求说明书，业务目标表BG编号、目标与成功标准三列可见",
+      "comparison_evidence": "原视频1540秒全画幅；相邻候选帧核对",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/需求和架构 (1) [06-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "356231c7c0f6b4ba6697c75c7db54498f12622d216394aed982916b46da817be",
+          "detail": "视频实际1540秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "最终选帧完整，视频源1280×410；正文补充解释细小界面内容"
+    },
+    {
+      "section": 7,
+      "frame": 1,
+      "path": "frames/video-1912.webp",
+      "sha256": "940ee0ca1e976064a5490165cefae9946460458ddaa828ba13d46c16b36ce456",
+      "purpose": "31:52 原视频：超大数被拒，浏览器显示必须小于或等于100。",
+      "expected_information": "缺课输入框极大数和Value must be less than or equal to 100提示可见",
+      "observed_information": "逐图目视确认：缺课输入框极大数和Value must be less than or equal to 100提示可见",
+      "comparison_evidence": "原视频1912秒全画幅；相邻候选帧核对",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/需求和架构 (1) [06-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "356231c7c0f6b4ba6697c75c7db54498f12622d216394aed982916b46da817be",
+          "detail": "视频实际1912秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "最终选帧完整，视频源1280×410；正文补充解释细小界面内容"
+    },
+    {
+      "section": 7,
+      "frame": 2,
+      "path": "frames/video-1915.webp",
+      "sha256": "9ea785f6aa3191199b1f81f6c341f2af790c96b855cc41c2cb59df37b7fd249b",
+      "purpose": "31:55 原视频：改成100后保存成功。通用数值上限不等于符合本学期实际课次。",
+      "expected_information": "列表100次与缺课记录已更新提示同时可见",
+      "observed_information": "逐图目视确认：列表100次与缺课记录已更新提示同时可见",
+      "comparison_evidence": "原视频1915秒全画幅；相邻候选帧核对",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/需求和架构 (1) [06-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "356231c7c0f6b4ba6697c75c7db54498f12622d216394aed982916b46da817be",
+          "detail": "视频实际1915秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "最终选帧完整，视频源1280×410；正文补充解释细小界面内容"
+    },
+    {
+      "section": 8,
+      "frame": 1,
+      "path": "frames/page-007.webp",
+      "sha256": "aade014af4db7762c4e6c8cb420e9c96e87fae4e5756c0f320bc5f779d735ea1",
+      "purpose": "官方讲义需求分解图：从入学到毕业的参与者、过程与支撑能力。",
+      "expected_information": "六大业务分组和底部权限/规则版本/同步/留痕完整",
+      "observed_information": "逐图目视确认：六大业务分组和底部权限/规则版本/同步/留痕完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第7页/网页第7页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 8,
+      "frame": 2,
+      "path": "frames/page-008.webp",
+      "sha256": "41fe4443a53593153eccf307848cb9457e776edd11d2c62d6bbc557ba553de05",
+      "purpose": "需求泥潭：多方目标、规则和例外；讲义补充了利益冲突与裁决问题。",
+      "expected_information": "多方需求、规则例外、冲突裁决及参考说明完整",
+      "observed_information": "逐图目视确认：多方需求、规则例外、冲突裁决及参考说明完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第8页/网页第8页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 9,
+      "frame": 1,
+      "path": "frames/page-009.webp",
+      "sha256": "2ea74793d94c1f69b8eeac3dea7868af66b00bd36df1ca255a80aeccf704fa29",
+      "purpose": "讲义补充｜虚构培养方案案例。160 学分及各分类数字不可当作学校政策。",
+      "expected_information": "160及四类学分、二选一、缓考、抵扣、重修、批准例外均可读",
+      "observed_information": "逐图目视确认：160及四类学分、二选一、缓考、抵扣、重修、批准例外均可读",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第9页/网页第9页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 10,
+      "frame": 1,
+      "path": "frames/page-010.webp",
+      "sha256": "66a25c56a38328681d3a41edab544f43e30386d23085b91a33892df1c9793cde",
+      "purpose": "旧教务系统的 -1 案例：局部异常沿依赖传播。",
+      "expected_information": "负一次原始案例两条文字及焦油坑配图完整",
+      "observed_information": "逐图目视确认：负一次原始案例两条文字及焦油坑配图完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第10页/网页第10页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 10,
+      "frame": 2,
+      "path": "frames/page-012.webp",
+      "sha256": "785f57755d8eb05ff4bb974b8e2af0c3647434b7cc02c69b3c7bb32f25d63e08",
+      "purpose": "官方讲义：需求变更可以同时影响课程对应、学分、审核、成绩单与测试。",
+      "expected_information": "变更穿透依赖图及历史约束两部分完整",
+      "observed_information": "逐图目视确认：变更穿透依赖图及历史约束两部分完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第12页/网页第12页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 11,
+      "frame": 1,
+      "path": "frames/page-015.webp",
+      "sha256": "13b52a3bf7fb35eaa86cd749a79b6389fab0a7f60fc8e15cdba1b01861f867bb",
+      "purpose": "官方图示：复杂性有归处，变化有边界。",
+      "expected_information": "模块与替换部件图完整；重抓已消除翻页重叠",
+      "observed_information": "逐图目视确认：模块与替换部件图完整；重抓已消除翻页重叠",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第15页/网页第15页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 11,
+      "frame": 2,
+      "path": "frames/page-016.webp",
+      "sha256": "4aac285100dd997b377f8eeb1159ca80db56180669923423c6ecc1ae59f507fb",
+      "purpose": "小程序四阶段结构；数据如何穿过边界比函数数量更关键。",
+      "expected_information": "main四个调用与两组说明完整",
+      "observed_information": "逐图目视确认：main四个调用与两组说明完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第16页/网页第16页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 12,
+      "frame": 1,
+      "path": "frames/page-018.webp",
+      "sha256": "837a5e277903cfdecc79d58de56bdd7cf96635d1c42ebebd15f39581e5cec8c0",
+      "purpose": "数学规律方案：尾随零决定盘号，奇偶关系决定方向。",
+      "expected_information": "尾随零规则、方向公式、循环所有行完整",
+      "observed_information": "逐图目视确认：尾随零规则、方向公式、循环所有行完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第18页/网页第18页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 12,
+      "frame": 2,
+      "path": "frames/page-019.webp",
+      "sha256": "ac694e2e3c07d7ae757d8f78818247968ba0124005ec13e85ae9cca22f2a4657",
+      "purpose": "任务栈方案：三次 push 采用执行顺序的反序。",
+      "expected_information": "初始push、pop、n=1分支和三条反序push完整",
+      "observed_information": "逐图目视确认：初始push、pop、n=1分支和三条反序push完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第19页/网页第19页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 12,
+      "frame": 3,
+      "path": "frames/page-020.webp",
+      "sha256": "10647fd0563baa4f18970f4b457c6877e25defd7a3554fccd629f99fbdd2f77a",
+      "purpose": "抽象机器方案：Frame、pc、call 与 ret 显式表示递归执行。",
+      "expected_information": "宏call/ret、Frame变量、pc各case和末行赋值完整",
+      "observed_information": "逐图目视确认：宏call/ret、Frame变量、pc各case和末行赋值完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第20页/网页第20页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 12,
+      "frame": 4,
+      "path": "frames/page-022.webp",
+      "sha256": "ca2eb96773a0887446c5c2c94676db9d80b51beec9c2f7618fad8afd14674586",
+      "purpose": "同一个问题的不同表达：选择表示就是选择复杂性的位置。",
+      "expected_information": "四象限：数学规律、任务栈、抽象机器、分支细节与下方提问完整",
+      "observed_information": "逐图目视确认：四象限：数学规律、任务栈、抽象机器、分支细节与下方提问完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第22页/网页第22页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 13,
+      "frame": 1,
+      "path": "frames/page-024.webp",
+      "sha256": "e51b2022dde04b1491fd1ca1e8610c6e8a54d62cb5d3c4601644403e5e7d1d43",
+      "purpose": "官方讲义：长公式、版本兼容、布局移动与新增输入等变化。",
+      "expected_information": "长公式与四种变化列表完整",
+      "observed_information": "逐图目视确认：长公式与四种变化列表完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第24页/网页第24页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 14,
+      "frame": 1,
+      "path": "frames/page-025.webp",
+      "sha256": "28252aea6ff7e40feeeaf40846e62874e6be06edab4bed51f50770590388d254",
+      "purpose": "讲义补充的关键边界：构图时与运行时，符号输入与 Select。",
+      "expected_information": "IR、构图、符号输入及Select运行时边界完整",
+      "observed_information": "逐图目视确认：IR、构图、符号输入及Select运行时边界完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第25页/网页第25页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 14,
+      "frame": 2,
+      "path": "frames/page-026.webp",
+      "sha256": "8829dd17caf27d3d1ed11831a165ce1a42a5862d26bd0f6a59d8880f8534f7a9",
+      "purpose": "一份中间语言，两种执行方式：调试验证与 Excel 交付。",
+      "expected_information": "Python构图器→IR→双后端→运行结果箭头与标签完整",
+      "observed_information": "逐图目视确认：Python构图器→IR→双后端→运行结果箭头与标签完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第26页/网页第26页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 14,
+      "frame": 3,
+      "path": "frames/page-028.webp",
+      "sha256": "25599275a6f06e6da8449bd7a4dd0c3d0b349f988660881c9caaee00f02391f3",
+      "purpose": "讲义补充：IR 类型/容量/编码语义与独立验证，避免两后端同错。",
+      "expected_information": "IR运算/语义/来源及三层验证边界完整",
+      "observed_information": "逐图目视确认：IR运算/语义/来源及三层验证边界完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第28页/网页第28页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 15,
+      "frame": 1,
+      "path": "frames/page-027.webp",
+      "sha256": "19be38281f3e4da55b835ad0cdeb92de70d5e2b0db365e2af435241926b1a2b3",
+      "purpose": "讲义补充：四类需求变化分别交给哪个模块。",
+      "expected_information": "输入绑定示例及四行变化职责表与Parnas说明完整",
+      "observed_information": "逐图目视确认：输入绑定示例及四行变化职责表与Parnas说明完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第27页/网页第27页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 15,
+      "frame": 2,
+      "path": "frames/page-029.webp",
+      "sha256": "1ffef06560b59478cdf110de48dedc4c5daac211a7e45b238e24613696890525",
+      "purpose": "讲义补充：计算图优化与 Excel 实际成本，包含课堂未展开的具体策略。",
+      "expected_information": "常量折叠、公共子表达式、LET/辅助单元格及测量项完整",
+      "observed_information": "逐图目视确认：常量折叠、公共子表达式、LET/辅助单元格及测量项完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第29页/网页第29页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 16,
+      "frame": 1,
+      "path": "frames/page-032.webp",
+      "sha256": "6663587005164339d1064255d35a96809fe73dfef101709fda966bfd6ed87c2b",
+      "purpose": "官方讲义：生成原型能维护的判断带有限定——应拆分并统一规则。",
+      "expected_information": "能维护的限定与新增功能风险文字完整",
+      "observed_information": "逐图目视确认：能维护的限定与新增功能风险文字完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第32页/网页第32页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 16,
+      "frame": 2,
+      "path": "frames/video-4458.webp",
+      "sha256": "701b119e394a4261e8056842a0d82e74bf52dd8bfb90447796c66d785bbbb4c0",
+      "purpose": "74:18 原视频：现场查看生成项目的大型 TSX/services 文件；代码体积不是维护性的充分证据。",
+      "expected_information": "项目目录及App.tsx/Services.tsx文件大小列可见，代码正文不在此图内",
+      "observed_information": "逐图目视确认：项目目录及App.tsx/Services.tsx文件大小列可见，代码正文不在此图内",
+      "comparison_evidence": "原视频4458秒全画幅；相邻候选帧核对",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/需求和架构 (1) [06-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "356231c7c0f6b4ba6697c75c7db54498f12622d216394aed982916b46da817be",
+          "detail": "视频实际4458秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "最终选帧完整，视频源1280×410；正文补充解释细小界面内容"
+    },
+    {
+      "section": 17,
+      "frame": 1,
+      "path": "frames/page-034.webp",
+      "sha256": "24abcae2dff9c475ac00b19c6c3437756ea3c5bf70f2df62d51cd539c5a8c872",
+      "purpose": "当前状态混合了历史事实、规则和决定；字段不重复仍可能丢失计算依据。",
+      "expected_information": "事实规则决定公式、毕业依据及变更重审文字完整",
+      "observed_information": "逐图目视确认：事实规则决定公式、毕业依据及变更重审文字完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第34页/网页第34页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 17,
+      "frame": 2,
+      "path": "frames/page-035.webp",
+      "sha256": "4c03112c0d838f864e2b66811f26ac2f594d52e7585bbe2cb76469e7746a9a1e",
+      "purpose": "讲义补充：把人工例外表达成带批准人和理由的业务过程。",
+      "expected_information": "现实先发生、人工补丁、豁免表达和布尔值风险完整",
+      "observed_information": "逐图目视确认：现实先发生、人工补丁、豁免表达和布尔值风险完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第35页/网页第35页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 18,
+      "frame": 1,
+      "path": "frames/page-037.webp",
+      "sha256": "b7b688d1120983d221c2d8f063ff7a54402883c7ac43f0c3805f330ae2277e67",
+      "purpose": "讲义补充：旧 ID 与新 ID 各自承诺的业务含义，以及按有效期建模的方案。",
+      "expected_information": "两种ID方案风险与三项建模建议完整",
+      "observed_information": "逐图目视确认：两种ID方案风险与三项建模建议完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第37页/网页第37页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 18,
+      "frame": 2,
+      "path": "frames/page-038.webp",
+      "sha256": "5d0218f1628bccb49eaa2917441563141aac7275a844080d830557f9e6bb7f68",
+      "purpose": "代码可重写，历史不能凭空补出；这也是复杂 ERP 维护困难的来源。",
+      "expected_information": "迁移风险、历史不可恢复与维护经验说明完整",
+      "observed_information": "逐图目视确认：迁移风险、历史不可恢复与维护经验说明完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第38页/网页第38页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 19,
+      "frame": 1,
+      "path": "frames/page-039.webp",
+      "sha256": "f0f02f7c1b3f9e1676cb1f411d503f4e03665fabde8624792b091497b93928f9",
+      "purpose": "当前状态与操作历史：将依赖与历史变成可表示的对象。",
+      "expected_information": "当前状态/历史/replay与事件溯源定义完整",
+      "observed_information": "逐图目视确认：当前状态/历史/replay与事件溯源定义完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第39页/网页第39页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 19,
+      "frame": 2,
+      "path": "frames/page-040.webp",
+      "sha256": "c6574daaa5429d63f92e16b0f7301071c5876b97158ab674b2221e7ec6c36cfc",
+      "purpose": "官方讲义：事件历史生成状态的流程图。",
+      "expected_information": "请求→校验→事件→只追加历史→投影及双读视图完整",
+      "observed_information": "逐图目视确认：请求→校验→事件→只追加历史→投影及双读视图完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第40页/网页第40页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 19,
+      "frame": 3,
+      "path": "frames/page-041.webp",
+      "sha256": "6b97dc778e41b81f529613ffff2e105751919c06297e5e83c0d6d06b4ccd4140",
+      "purpose": "讲义补充｜课堂未完整展开：历史恢复、新规则重算、版本与外部副作用。",
+      "expected_information": "恢复与重算分离、版本/外部输入/副作用/依赖完整",
+      "observed_information": "逐图目视确认：恢复与重算分离、版本/外部输入/副作用/依赖完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第41页/网页第41页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 20,
+      "frame": 1,
+      "path": "frames/page-042.webp",
+      "sha256": "6b7604cbc53f999e0cffefee73613022146810c49d2e9869e83f833cdc18373a",
+      "purpose": "讲义补充｜CQRS：写端维护资格、容量等约束，读端按使用者组织信息。",
+      "expected_information": "Command/Query职责与异步间隙、同库可行性完整",
+      "observed_information": "逐图目视确认：Command/Query职责与异步间隙、同库可行性完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第42页/网页第42页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 20,
+      "frame": 2,
+      "path": "frames/page-043.webp",
+      "sha256": "530394016f4388c48985bc799f930dc4d5d3f13bee27488467df4bb0f3d789e8",
+      "purpose": "讲义补充｜DDD：统一语言与限界上下文，不同业务对“学生”的模型可以不同。",
+      "expected_information": "统一语言、限界上下文、三类业务与三概念区分完整",
+      "observed_information": "逐图目视确认：统一语言、限界上下文、三类业务与三概念区分完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第43页/网页第43页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 20,
+      "frame": 3,
+      "path": "frames/page-044.webp",
+      "sha256": "a8ce23162ffb7df6b48db03d1745f120888566933a3ae35ec0f36ec46b5200be",
+      "purpose": "讲义补充｜结论携带输入/规则/审批依据；区分事件生效与系统获知的时间。",
+      "expected_information": "审核依据四项与双时间示例完整",
+      "observed_information": "逐图目视确认：审核依据四项与双时间示例完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第44页/网页第44页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 20,
+      "frame": 4,
+      "path": "frames/page-045.webp",
+      "sha256": "2dfd39de9450bb8042949deecd1c880024d87453d578681a1f96786d53c6e785",
+      "purpose": "讲义补充｜并发不变量与模块边界，事件追加不自动解决超卖。",
+      "expected_information": "原子占位、并发版本、读视图延迟与模块边界完整",
+      "observed_information": "逐图目视确认：原子占位、并发版本、读视图延迟与模块边界完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第45页/网页第45页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    },
+    {
+      "section": 20,
+      "frame": 5,
+      "path": "frames/page-046.webp",
+      "sha256": "ce8587c3ebf33ce826a733344b7e7339e1c060b57f0f1c42b0cc5ce26606cc53",
+      "purpose": "讲义补充｜逐步迁移、基线快照、新旧对账与丢失历史的诚实边界。",
+      "expected_information": "基线、单权威写入、新旧对账、回退、CRUD边界完整",
+      "observed_information": "逐图目视确认：基线、单权威写入、新旧对账、回退、CRUD边界完整",
+      "comparison_evidence": "官方47页DOM全文与相邻页，sources/slides-text.json；网页页码与截图汇编PDF物理页一致",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "25ef97c643f1ad6f7b6e672884db39134f6e6bd92e4a9c90361a78b0f7c30d05",
+          "detail": "物理第46页/网页第46页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭翻页动画后重抓完整页；保留原始PNG并以WebP90嵌入，压缩后再次逐图目视"
+    }
+  ],
+  "reuse_binding": {
+    "at": "2026-10-07T20:00:02.834622+00:00",
+    "previous_notes_sha256": "4debf37d2cfbb2a3fc91a1f59fa85946936e4cd863c70ef05cce584a1fd14b43",
+    "reason": "Only obsolete navigation wording changed; every frame object and image byte matches prior audit",
+    "evidence": "revisions/20261008-scale/preservation.json",
+    "new_pixel_review": false
+  }
+}

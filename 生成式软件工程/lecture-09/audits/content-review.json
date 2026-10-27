@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "reviewer": "gse09_content_review_20261026",
+  "reviewed_at": "2026-10-26T01:31:08.360143+00:00",
+  "video_id": "BV144nc6KEA4",
+  "notes_sha256": "f85761ff3e017654e4ceec419479a4e531feb726955bf465b1bb19774a2a9d3c",
+  "layout_sha256": "5a04c759f2e546b74efe77f992d48bd7b567845b7d1929490a2f805c89e609a3",
+  "scope": "Full final 32-section prose/example/editor-note reading, all 92 captions, 17 supplements and 15 self-test Q&A; every takeaway and keyword; source binding and critical commit/durability supplement checks. This does not replace all-image visual audit or full source-material reading by the materials reviewer.",
+  "source_reading": {
+    "chunks": [
+      {
+        "id": "chunk-0001",
+        "file": "chunk-0001.json",
+        "sha256": "88137773983b3dc3c45fe04d51e9006bdc501c8fe40f04841909f40ddb07605d",
+        "units": 46
+      },
+      {
+        "id": "chunk-0002",
+        "file": "chunk-0002.json",
+        "sha256": "72552280caaf8cbcabe4a854b2bbea513f09e8599bb40e65e5cab93497802dcf",
+        "units": 19
+      },
+      {
+        "id": "chunk-0003",
+        "file": "chunk-0003.json",
+        "sha256": "e25ccbf66ab5cb4f62aebbae439f91604c19fdc670fca0c60f73d3261c44316f",
+        "units": 19
+      },
+      {
+        "id": "chunk-0004",
+        "file": "chunk-0004.json",
+        "sha256": "f600c5ecb74ac28fdf749928608b48bb69675de35c5f77438dd8916919835efb",
+        "units": 18
+      },
+      {
+        "id": "chunk-0005",
+        "file": "chunk-0005.json",
+        "sha256": "2bb690ed6044b5f781cd2adf227542b21c0cae51acb9b5bea005d2cd1f96a264",
+        "units": 24
+      },
+      {
+        "id": "chunk-0006",
+        "file": "chunk-0006.json",
+        "sha256": "c1597cc14727f9b0586bf27a7a24deef3e85afdf9292b37871749db218d1e14d",
+        "units": 52
+      },
+      {
+        "id": "chunk-0007",
+        "file": "chunk-0007.json",
+        "sha256": "2b5ffc4a9ab38ea8cb682a0c497085e9aa1aae1fc16121c6de593b34fb44b07f",
+        "units": 29
+      },
+      {
+        "id": "chunk-0008",
+        "file": "chunk-0008.json",
+        "sha256": "bb0135b0949e82b8924d0dc4844fc5afbc20fea3e9e734aa8fb11fefb58e8ac7",
+        "units": 23
+      },
+      {
+        "id": "chunk-0009",
+        "file": "chunk-0009.json",
+        "sha256": "ffc6cb7d0d5e2879f485533b4bf18da677a319140f6bae99d5347c5e384645ce",
+        "units": 30
+      },
+      {
+        "id": "chunk-0010",
+        "file": "chunk-0010.json",
+        "sha256": "249a177047e959eee1b952402d58debde64daedae3e6d5587aee92bbea99566e",
+        "units": 39
+      },
+      {
+        "id": "chunk-0011",
+        "file": "chunk-0011.json",
+        "sha256": "08cdc5c535c6a4a58184046c733573ec4b1260e78e4c1c99d582ba6550474de3",
+        "units": 17
+      },
+      {
+        "id": "chunk-0012",
+        "file": "chunk-0012.json",
+        "sha256": "98481ea26549347bec1446b7928822cf73a994cabcb4882af649591eb2e3d4d0",
+        "units": 30
+      },
+      {
+        "id": "chunk-0013",
+        "file": "chunk-0013.json",
+        "sha256": "4ddd17a86252f282e233baa08c61a771d591b0826af4b28fc3a2fd7a7eadb3db",
+        "units": 41
+      },
+      {
+        "id": "chunk-0014",
+        "file": "chunk-0014.json",
+        "sha256": "5a600a70562a6239d3f4e4175793dc857390215299471536f1edbe9f96eac757",
+        "units": 27
+      },
+      {
+        "id": "chunk-0015",
+        "file": "chunk-0015.json",
+        "sha256": "8f4b6752330154cbc77131cbc970ff2091386cd50352e3826f75a818a713c8c7",
+        "units": 29
+      },
+      {
+        "id": "chunk-0016",
+        "file": "chunk-0016.json",
+        "sha256": "3d50f7724b9cfe1e8cc7590ddf5e8113aa9ac60ccaf476a9acba929273ccdc65",
+        "units": 32
+      },
+      {
+        "id": "chunk-0017",
+        "file": "chunk-0017.json",
+        "sha256": "fc7b3233f4b1621cfa8177e125c1a0645672a9847416a90a1e3b6a9b3ed19b97",
+        "units": 25
+      },
+      {
+        "id": "chunk-0018",
+        "file": "chunk-0018.json",
+        "sha256": "2dd65cf19c34dba63fe3e58fd87d447c8d4c88ef69407945e22d19fc431c5c6c",
+        "units": 18
+      }
+    ],
+    "source_units": 518,
+    "start": 0.31,
+    "end": 5363.07,
+    "draft_sections": 32,
+    "draft_full_read": true
+  },
+  "final_counts": {
+    "sections": 32,
+    "images": 92,
+    "supplements": 17,
+    "self_tests": 15
+  },
+  "checks": {
+    "argument_and_example_retention": "passed",
+    "teacher_agent_editor_attribution": "passed",
+    "timecode_correction": "passed",
+    "takeaways": "passed",
+    "keywords": "passed; all are literal prose matches and do not reverse paragraph meaning",
+    "supplement_placement": "passed; distributed across 13 related sections, each used once",
+    "commit_and_durability": "passed; fixed 687f282 docs explicitly labeled not confirmed recording checkout; memory append commit, asynchronous persistence and explicit flush separated; open streaming state not promoted to durable completion",
+    "supplement_version_scope": "passed; current official additions and fixed historical docs labeled; dsh-bot target version and untested compatibility retained",
+    "self_tests": "passed; answers bounded by classroom, visible slides or cited supplements",
+    "unsupported_guarantees": "none_found"
+  },
+  "supplement_bindings": [
+    {
+      "supplement": 12,
+      "section": 1,
+      "title": "“没有银弹”约束的是总工作量，不否认局部加速"
+    },
+    {
+      "supplement": 1,
+      "section": 5,
+      "title": "重试要识别同一意图，而不是只比较参数"
+    },
+    {
+      "supplement": 0,
+      "section": 6,
+      "title": "从“能生成文件”到“可验收完成”"
+    },
+    {
+      "supplement": 11,
+      "section": 7,
+      "title": "快速拼插件的成功，也有明确的状态边界"
+    },
+    {
+      "supplement": 2,
+      "section": 10,
+      "title": "运行时承包内存管理，也留下调优取舍"
+    },
+    {
+      "supplement": 3,
+      "section": 10,
+      "title": "长连接改变的是容量与状态假设"
+    },
+    {
+      "supplement": 4,
+      "section": 10,
+      "title": "能回放事件，不代表能重做现实世界"
+    },
+    {
+      "supplement": 13,
+      "section": 11,
+      "title": "新技术的回报，常要等任务重新分配"
+    },
+    {
+      "supplement": 14,
+      "section": 11,
+      "title": "15% 是特定客服工作的指标，不是通用工程效率"
+    },
+    {
+      "supplement": 5,
+      "section": 12,
+      "title": "限制计算形式，才换来可调度和可重做"
+    },
+    {
+      "supplement": 6,
+      "section": 13,
+      "title": "RDD 缓存是在内存、磁盘和重算间选择"
+    },
+    {
+      "supplement": 7,
+      "section": 13,
+      "title": "流处理需要时间语义，也需要可恢复输入"
+    },
+    {
+      "supplement": 10,
+      "section": 14,
+      "title": "生命周期能回收注册项，不能撤销所有现实副作用"
+    },
+    {
+      "supplement": 9,
+      "section": 15,
+      "title": "提交事件、投影上下文与落盘是不同阶段"
+    },
+    {
+      "supplement": 8,
+      "section": 18,
+      "title": "followup、steer、inject 是三个调度承诺"
+    },
+    {
+      "supplement": 15,
+      "section": 22,
+      "title": "Creator Mode 需要可试错的工具箱"
+    },
+    {
+      "supplement": 16,
+      "section": 27,
+      "title": "GenUI 还需要对象可见、反馈及时与可逆性"
+    }
+  ],
+  "closed_findings": [
+    {
+      "id": "gse09-turtle",
+      "severity": "low",
+      "kind": "clarity",
+      "section_key": "bridge",
+      "section": 25,
+      "source_ids": [
+        "s-g599.0~19",
+        "s-g610.0",
+        "s-g614.0~5"
+      ],
+      "times": [
+        4202.39,
+        4300.91
+      ],
+      "before": "实际画面中的作品与转写里存在识别歧义的“turtle”等词分开核对，以可见对象和过程为准。",
+      "finding": "当前草稿把对象仍留作歧义，但原转写明确turtle/龟壳；4260秒原图也可见“乌龟”“龟壳”等标签。既已核实，应把教学对象写清。",
+      "minimal_fix": "改成“模型把带有头部、龟壳、尾巴等标签的乌龟图形交回白板，原有对象仍可编辑”；细节依最终选图标签。",
+      "evidence": [
+        "/tmp/gse09-visual/full/v0457-4260.jpg"
+      ],
+      "status": "closed",
+      "verification": "Final notes paragraphs directly reread; correction visible in the relevant section."
+    },
+    {
+      "id": "gse09-gomoku-request-anchor",
+      "severity": "medium",
+      "kind": "temporal_alignment",
+      "section_key": "idiom / gomoku",
+      "section": [
+        28,
+        29
+      ],
+      "source_ids": [
+        "s-g647.0",
+        "s-g650.0",
+        "s-g653.0~2",
+        "s-g659.1~10"
+      ],
+      "times": [
+        4569.37,
+        4661.9
+      ],
+      "before": "gomoku节（4651秒起）以“教师要求生成五子棋...”开篇，而提出请求在4569秒，穿插在成语接龙演示中。",
+      "finding": "主题切分可以按论证重排，但这句会让77:31的章节时间码看起来像首次提出请求，而原请求在76:09。",
+      "minimal_fix": "在idiom节补“成语演示期间，教师又提交了五子棋请求，要求状态留在UI、落子由模型决定”；gomoku节改“承接前面提交的五子棋任务，生成后...”，保留交叉演示的先后关系。无需大范围重分章。",
+      "evidence": [
+        "chunks/chunk-0015.json",
+        "chunks/chunk-0016.json"
+      ],
+      "status": "closed",
+      "verification": "Final notes paragraphs directly reread; correction visible in the relevant section."
+    },
+    {
+      "id": "gse09-mapreduce-memory",
+      "severity": "low",
+      "kind": "detail_retention",
+      "section_key": "mapreduce",
+      "section": 12,
+      "source_ids": [
+        "s-g294.0~65"
+      ],
+      "times": [
+        2167.15,
+        2189.41
+      ],
+      "before": "设置最多使用2000台机器、每个task的内存限制等。",
+      "finding": "课堂明确提及每个task 100MB，原论文示例也写出100MB并分别设置map/reduce内存；完整笔记可保留具体配置并继续限定为示例。",
+      "minimal_fix": "把“每个task的内存限制等”补成“每个task 100MB内存（示例分别配置map/reduce）”，保留“不是性能结果或推荐部署值”。",
+      "evidence": [
+        "/tmp/gse09-materials/sources/mapreduce.txt:2078-2082"
+      ],
+      "status": "closed",
+      "verification": "Final notes paragraphs directly reread; correction visible in the relevant section."
+    },
+    {
+      "id": "gse09-no-privileged-kernel",
+      "severity": "low",
+      "kind": "optional_coverage",
+      "section_key": "session",
+      "section": 15,
+      "source_ids": [
+        "s-g344.0"
+      ],
+      "times": [
+        2541.26,
+        2560.71
+      ],
+      "finding": "草稿已经解释核心共同概念，但可加一句保留教师“没有特权内核，核心能力也作为Cordis插件”的区分，避免读者把microkernel类比误当实际OS进程隔离。",
+      "minimal_fix": "在session节首段补“教师说明，这些核心能力本身也按Cordis插件组织；这里的‘核心’是共同世界模型，不等于独立的操作系统特权内核。”",
+      "status": "closed",
+      "verification": "Final notes paragraphs directly reread; correction visible in the relevant section."
+    }
+  ],
+  "open_findings": [],
+  "targeted_source_checks": [
+    {
+      "source": "sources/materials/sources/dsh-session.md",
+      "detail": "append memory commit vs asynchronous persistence, observer isolation; flush requirement",
+      "reviewed_lines": [
+        573,
+        610,
+        729,
+        734
+      ]
+    },
+    {
+      "source": "sources/materials/sources/dsh-cordis.md",
+      "detail": "Five Ideas, dispatch modes, middleware next/short-circuit and reversible registration vs external effects"
+    },
+    {
+      "source": "sources/materials/sources/mapreduce.txt",
+      "detail": "C++ example 2000 machines and 100 MB/task at lines2078–2082"
+    },
+    {
+      "source": "sources/materials/sources/slides9-pages.json",
+      "detail": "Page18 hot-key limitation supporting self-test5"
+    }
+  ],
+  "not_performed": [
+    "Not a second full 92-image pixel audit",
+    "Not a second full reading of all 17 supplementary original sources",
+    "No execution of DeepSeek Harness/plugin code",
+    "No real phone or native printing review"
+  ],
+  "notes": [
+    "Original source reading covers all 18 final export chunks/518 units. The initial transcript-reading evidence remains current.",
+    "All three prior requested edits and the optional no-privileged-kernel clarification are closed.",
+    "Course-level material table and mechanical/browser/trace validators remain separate coordinator gates."
+  ]
+}

@@ -1,0 +1,16 @@
+<h1>Session: 从事实到投影</h1>
+<h2>1. 记录与观察事实</h2>
+<ul>
+<li>插件记录自己负责的业务事件，观察已经提交的事实</li>
+</ul>
+<pre><code class="language-ts">session.append(type, data)
+ctx.on('session/event', (session, event) =&gt; { ... })
+</code></pre>
+<h2>2. 从事实生成投影</h2>
+<ul>
+<li>模型消息历史、业务状态……都是同一个 Session 的投影</li>
+</ul>
+<pre><code class="language-ts">session.deriveMessages() // 模型消息历史
+ctx.sessionProjections.register(definition)
+ctx.sessionProjections.stateOf(session, key) // 读取业务投影
+</code></pre>

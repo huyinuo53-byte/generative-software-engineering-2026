@@ -1,0 +1,841 @@
+{
+  "schema_version": 1,
+  "video_id": "BV11LWw6VEHW",
+  "expected_material_ids": [
+    "gse08-deepseek-harness-repository"
+  ],
+  "materials": [
+    {
+      "id": "gse08-deepseek-harness-repository",
+      "listed_title": "DeepSeek Harness 原始仓库（课堂结尾推荐）",
+      "title": "DeepSeek Harness: teaching mechanisms source reading",
+      "listed_url": "https://github.com/deepseek-ai/deepseek-harness",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness/tree/687f282e8625c6b8d11ff58211a90524be2e4317",
+      "version": "687f282e8625c6b8d11ff58211a90524be2e4317 / commit2026-10-17 / read2026-10-19",
+      "kind": "repository",
+      "identity_status": "verified_current_repo_not_recorded_commit",
+      "recommendation_kind": "classroom_explicit_recommendation",
+      "required": true,
+      "recommendation_evidence": {
+        "oral_end_seconds": [
+          5794,
+          5804
+        ],
+        "oral_evidence_owner": "parent full transcript review",
+        "actual_video_url_frame_seconds": 4230,
+        "actual_video_url_frame_path": "repository-url-at-70m30s.jpg"
+      },
+      "scope_reason": "课堂深入演示的双语配对、知识归属、Agent Notes、skills与文档门禁；不扩至所有产品代码",
+      "path": "read-scope-and-source-manifest.json",
+      "sha256": "263e96f3544aa35609db8b8e4a6909232707c52c7ecd1f1d47142ce31042eab9",
+      "scope_sections": [
+        {
+          "path": "README.md",
+          "read_ranges": [
+            [
+              1,
+              77
+            ]
+          ],
+          "sha256": "0f5516be2acde776f05572cbc8c3093c90549afe04ce118e11157d073d5d15f4"
+        },
+        {
+          "path": "README.zh.md",
+          "read_ranges": [
+            [
+              1,
+              96
+            ]
+          ],
+          "sha256": "8f19db1b217e8ef30cf413b07056cc791048bc2ba2ec51ba104e383dcfb43c61"
+        },
+        {
+          "path": "README.i18n.yaml",
+          "read_ranges": [
+            [
+              1,
+              34
+            ]
+          ],
+          "sha256": "700422df48df27704707a6832b7ba7234f1f44c42494ceffb3b8ee2210f989af"
+        },
+        {
+          "path": "AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              185
+            ]
+          ],
+          "sha256": "1eea3932544766e8a4ccc2d88dcba14ad0a3bd4e28fa660f920b9183f63e7196"
+        },
+        {
+          "path": "docs/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              77
+            ]
+          ],
+          "sha256": "cc76a90dfbdcdbf1db71b83675744c1c4039d9ccca8f38ad58a96ab56521578d"
+        },
+        {
+          "path": "scripts/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              5
+            ]
+          ],
+          "sha256": "dc1d3dc9bdc599106ba183465a85c323bf9122e1f5199bb0e25e8fa525206ff9"
+        },
+        {
+          "path": "packages/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              29
+            ]
+          ],
+          "sha256": "9954e1827bcee42e0637a1328972317476bfed6b2f12a7042b0d4c197b521c67"
+        },
+        {
+          "path": "docs/architecture.md",
+          "read_ranges": [
+            [
+              1,
+              165
+            ]
+          ],
+          "sha256": "95a7722c7096d665d8adedeb733b8f5ad7740e67cb5c6e9dc91ec05f430cb760"
+        },
+        {
+          "path": "docs/i18n/README.md",
+          "read_ranges": [
+            [
+              1,
+              69
+            ]
+          ],
+          "sha256": "85f271cf30cf3710533e61d70879b8a428d813c8923bddbf68a4241d5f3a2b81"
+        },
+        {
+          "path": "docs/i18n/translation-rules.md",
+          "read_ranges": [
+            [
+              1,
+              69
+            ]
+          ],
+          "sha256": "4ce7dfea77c4a4bbab5f466820e3d8e471029ff024e22a90892eb451f8e01f48"
+        },
+        {
+          "path": "docs/i18n/style-samples.md",
+          "read_ranges": [
+            [
+              1,
+              87
+            ]
+          ],
+          "sha256": "d57b411b3da9795856cccda90b9cab226d8e63c0bb97703e0882d4a5e1a6760b"
+        },
+        {
+          "path": "docs/i18n/terminology.md",
+          "read_ranges": [
+            [
+              1,
+              215
+            ]
+          ],
+          "sha256": "b3e56d9b2c6c2cf2bcd6a48aa622b65cafc7755433490758d4346844c0ead4cc"
+        },
+        {
+          "path": ".agents/notes/README.md",
+          "read_ranges": [
+            [
+              1,
+              125
+            ]
+          ],
+          "sha256": "089a84df7751fa993630302cb0ea1bf3ac10bf3f4bcca70ee95e55208b071f37"
+        },
+        {
+          "path": ".agents/notes/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              7
+            ]
+          ],
+          "sha256": "1c1b4a6d771ed1a7b0e4fd83776dd0cfb0567f4e89f2c7b3bc8b61b73e9a01d2"
+        },
+        {
+          "path": ".agents/notes/implemented/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              13
+            ]
+          ],
+          "sha256": "d01c6586ab5f807ccdda2e6ec30185416356b13d1f2fddb40d05cdac6d35189c"
+        },
+        {
+          "path": ".agents/notes/archived/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              9
+            ]
+          ],
+          "sha256": "63d728ce615c3a8109f0467a32525ca00c4c553e76a532fe90f13642e6986b34"
+        },
+        {
+          "path": ".agents/skills/dsh-doc/SKILL.md",
+          "read_ranges": [
+            [
+              1,
+              132
+            ]
+          ],
+          "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de"
+        },
+        {
+          "path": ".agents/skills/dsh-translate-docs/SKILL.md",
+          "read_ranges": [
+            [
+              1,
+              74
+            ]
+          ],
+          "sha256": "a72d26e988a6f9be29a09d6776bda0539ead49c42a447d327636fe4de0da83e7"
+        },
+        {
+          "path": ".agents/skills/dsh-archive-agent-notes/SKILL.md",
+          "read_ranges": [
+            [
+              1,
+              68
+            ]
+          ],
+          "sha256": "298e95629ade953ba5e0e4fd4c50e5205389ac6adc5d55dea1ef26617a323f84"
+        },
+        {
+          "path": ".agents/notes/implemented/process/2026-07-26-frozen-agent-note-archive.md",
+          "read_ranges": [
+            [
+              1,
+              45
+            ]
+          ],
+          "sha256": "34712f1c14fcec7504c292f89d9728049e79fa8c27aace0d821e66a3beaebddf"
+        },
+        {
+          "path": "scripts/verify-md-links.ts",
+          "read_ranges": [
+            [
+              1,
+              254
+            ]
+          ],
+          "sha256": "b1b6e1fefcd9321fa4c2b09bcedaf1acc58928495e2c38f5f4b1e261afea3809"
+        },
+        {
+          "path": "scripts/verify-type-equiv.ts",
+          "read_ranges": [
+            [
+              1,
+              391
+            ]
+          ],
+          "sha256": "770a2a11e9de003352136e2ab9cecf58e85ac11af2c2a59e9b8f44f32428040a"
+        },
+        {
+          "path": "scripts/doc-typecheck.ts",
+          "read_ranges": [
+            [
+              1,
+              252
+            ]
+          ],
+          "sha256": "c0cb2e255fa8950d5dfe571d5e34552ad61ad8756d75615364e4d8f6324b3db9"
+        },
+        {
+          "path": "scripts/translation-pairing-record.ts",
+          "read_ranges": [
+            [
+              1,
+              299
+            ]
+          ],
+          "sha256": "c9f4d4ebb35e87b264c09604d33c6fe789bfadc0b03f932cf05f74bcce89dca8"
+        },
+        {
+          "path": "scripts/translation-pairing.ts",
+          "read_ranges": [
+            [
+              1,
+              419
+            ]
+          ],
+          "sha256": "30d75155b43208ebc089fed9632336dfc3d24526916654e3c4e9ad1f72c95d4b"
+        },
+        {
+          "path": "scripts/verify-translation-pairing.ts",
+          "read_ranges": [
+            [
+              1,
+              368
+            ]
+          ],
+          "sha256": "2f555134b09c87443967d263ca7316299a8495d76780ee4b54a86c79feecde01"
+        },
+        {
+          "path": "scripts/translation-pairing.manifest.json",
+          "read_ranges": [
+            [
+              1,
+              13
+            ]
+          ],
+          "sha256": "9944a604474c609318ec2793512661aa0dfc67f124d6789df4f285e8c5910153"
+        },
+        {
+          "path": "scripts/verify-agent-note-format.ts",
+          "read_ranges": [
+            [
+              1,
+              94
+            ]
+          ],
+          "sha256": "055a2db5d15d7dfd59bb6b2b09795348c59e707f3d33bcb31cf5afb4a8d586fa"
+        },
+        {
+          "path": "scripts/verify-agent-note-classification.ts",
+          "read_ranges": [
+            [
+              1,
+              27
+            ]
+          ],
+          "sha256": "828a39ae61536d5986a421e07e20e7e51d81ad4fd8358c0339dae39dbe256903"
+        },
+        {
+          "path": "scripts/verify-archived-agent-notes.ts",
+          "read_ranges": [
+            [
+              1,
+              115
+            ]
+          ],
+          "sha256": "d9d051c957d1ee33604265a69ed71e01dea8db865dc68de3c28e9ed8f387df4e"
+        },
+        {
+          "path": "scripts/archived-agent-notes.ts",
+          "read_ranges": [
+            [
+              1,
+              204
+            ]
+          ],
+          "sha256": "f7e8e314e83b0baaeb6ffee319d20139506a78537389a9f1d6810d20ca1967ed"
+        },
+        {
+          "path": "scripts/agent-note-tree.ts",
+          "read_ranges": [
+            [
+              1,
+              83
+            ]
+          ],
+          "sha256": "a10e1c12568a4afefaa09db92651163dae309cd4e1d054db16b18806b3fab40a"
+        },
+        {
+          "path": "scripts/verify-doc-budgets.ts",
+          "read_ranges": [
+            [
+              1,
+              58
+            ]
+          ],
+          "sha256": "0ec5c8fb92f88c504ec4c0fb2d65c9427597250f2a41d9e5e645915f968ace2c"
+        },
+        {
+          "path": "scripts/doc-budgets.manifest.json",
+          "read_ranges": [
+            [
+              1,
+              9
+            ]
+          ],
+          "sha256": "d04affb1a4faea04c8d169755f76d043b77d8899838016925d671132696e7258"
+        },
+        {
+          "path": "scripts/run-gates.ts",
+          "read_ranges": [
+            [
+              1,
+              145
+            ],
+            [
+              255,
+              292
+            ],
+            [
+              340,
+              370
+            ],
+            [
+              800,
+              883
+            ],
+            [
+              1140,
+              1218
+            ],
+            [
+              1220,
+              1290
+            ]
+          ],
+          "sha256": "44c15c4cf4fec1e9cae78b15526f6c4e67839ab341268785babdfddf87f61a73"
+        },
+        {
+          "path": "package.json",
+          "read_ranges": [
+            [
+              85,
+              140
+            ],
+            [
+              185,
+              210
+            ]
+          ],
+          "sha256": "12bb41cd8212021a784b33a20c2b84372189a9505b42081d5e3869e21ff5cffc"
+        },
+        {
+          "path": "scripts/type-equiv.manifest.json",
+          "read_ranges": [
+            [
+              1,
+              32
+            ]
+          ],
+          "sha256": "7fcaafbfc748500bd111c8bb877a4535e254582c3f58f5078a8d043f6de1902e"
+        }
+      ],
+      "read_sections": [
+        {
+          "path": "README.md",
+          "read_ranges": [
+            [
+              1,
+              77
+            ]
+          ],
+          "sha256": "0f5516be2acde776f05572cbc8c3093c90549afe04ce118e11157d073d5d15f4"
+        },
+        {
+          "path": "README.zh.md",
+          "read_ranges": [
+            [
+              1,
+              96
+            ]
+          ],
+          "sha256": "8f19db1b217e8ef30cf413b07056cc791048bc2ba2ec51ba104e383dcfb43c61"
+        },
+        {
+          "path": "README.i18n.yaml",
+          "read_ranges": [
+            [
+              1,
+              34
+            ]
+          ],
+          "sha256": "700422df48df27704707a6832b7ba7234f1f44c42494ceffb3b8ee2210f989af"
+        },
+        {
+          "path": "AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              185
+            ]
+          ],
+          "sha256": "1eea3932544766e8a4ccc2d88dcba14ad0a3bd4e28fa660f920b9183f63e7196"
+        },
+        {
+          "path": "docs/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              77
+            ]
+          ],
+          "sha256": "cc76a90dfbdcdbf1db71b83675744c1c4039d9ccca8f38ad58a96ab56521578d"
+        },
+        {
+          "path": "scripts/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              5
+            ]
+          ],
+          "sha256": "dc1d3dc9bdc599106ba183465a85c323bf9122e1f5199bb0e25e8fa525206ff9"
+        },
+        {
+          "path": "packages/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              29
+            ]
+          ],
+          "sha256": "9954e1827bcee42e0637a1328972317476bfed6b2f12a7042b0d4c197b521c67"
+        },
+        {
+          "path": "docs/architecture.md",
+          "read_ranges": [
+            [
+              1,
+              165
+            ]
+          ],
+          "sha256": "95a7722c7096d665d8adedeb733b8f5ad7740e67cb5c6e9dc91ec05f430cb760"
+        },
+        {
+          "path": "docs/i18n/README.md",
+          "read_ranges": [
+            [
+              1,
+              69
+            ]
+          ],
+          "sha256": "85f271cf30cf3710533e61d70879b8a428d813c8923bddbf68a4241d5f3a2b81"
+        },
+        {
+          "path": "docs/i18n/translation-rules.md",
+          "read_ranges": [
+            [
+              1,
+              69
+            ]
+          ],
+          "sha256": "4ce7dfea77c4a4bbab5f466820e3d8e471029ff024e22a90892eb451f8e01f48"
+        },
+        {
+          "path": "docs/i18n/style-samples.md",
+          "read_ranges": [
+            [
+              1,
+              87
+            ]
+          ],
+          "sha256": "d57b411b3da9795856cccda90b9cab226d8e63c0bb97703e0882d4a5e1a6760b"
+        },
+        {
+          "path": "docs/i18n/terminology.md",
+          "read_ranges": [
+            [
+              1,
+              215
+            ]
+          ],
+          "sha256": "b3e56d9b2c6c2cf2bcd6a48aa622b65cafc7755433490758d4346844c0ead4cc"
+        },
+        {
+          "path": ".agents/notes/README.md",
+          "read_ranges": [
+            [
+              1,
+              125
+            ]
+          ],
+          "sha256": "089a84df7751fa993630302cb0ea1bf3ac10bf3f4bcca70ee95e55208b071f37"
+        },
+        {
+          "path": ".agents/notes/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              7
+            ]
+          ],
+          "sha256": "1c1b4a6d771ed1a7b0e4fd83776dd0cfb0567f4e89f2c7b3bc8b61b73e9a01d2"
+        },
+        {
+          "path": ".agents/notes/implemented/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              13
+            ]
+          ],
+          "sha256": "d01c6586ab5f807ccdda2e6ec30185416356b13d1f2fddb40d05cdac6d35189c"
+        },
+        {
+          "path": ".agents/notes/archived/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              9
+            ]
+          ],
+          "sha256": "63d728ce615c3a8109f0467a32525ca00c4c553e76a532fe90f13642e6986b34"
+        },
+        {
+          "path": ".agents/skills/dsh-doc/SKILL.md",
+          "read_ranges": [
+            [
+              1,
+              132
+            ]
+          ],
+          "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de"
+        },
+        {
+          "path": ".agents/skills/dsh-translate-docs/SKILL.md",
+          "read_ranges": [
+            [
+              1,
+              74
+            ]
+          ],
+          "sha256": "a72d26e988a6f9be29a09d6776bda0539ead49c42a447d327636fe4de0da83e7"
+        },
+        {
+          "path": ".agents/skills/dsh-archive-agent-notes/SKILL.md",
+          "read_ranges": [
+            [
+              1,
+              68
+            ]
+          ],
+          "sha256": "298e95629ade953ba5e0e4fd4c50e5205389ac6adc5d55dea1ef26617a323f84"
+        },
+        {
+          "path": ".agents/notes/implemented/process/2026-07-26-frozen-agent-note-archive.md",
+          "read_ranges": [
+            [
+              1,
+              45
+            ]
+          ],
+          "sha256": "34712f1c14fcec7504c292f89d9728049e79fa8c27aace0d821e66a3beaebddf"
+        },
+        {
+          "path": "scripts/verify-md-links.ts",
+          "read_ranges": [
+            [
+              1,
+              254
+            ]
+          ],
+          "sha256": "b1b6e1fefcd9321fa4c2b09bcedaf1acc58928495e2c38f5f4b1e261afea3809"
+        },
+        {
+          "path": "scripts/verify-type-equiv.ts",
+          "read_ranges": [
+            [
+              1,
+              391
+            ]
+          ],
+          "sha256": "770a2a11e9de003352136e2ab9cecf58e85ac11af2c2a59e9b8f44f32428040a"
+        },
+        {
+          "path": "scripts/doc-typecheck.ts",
+          "read_ranges": [
+            [
+              1,
+              252
+            ]
+          ],
+          "sha256": "c0cb2e255fa8950d5dfe571d5e34552ad61ad8756d75615364e4d8f6324b3db9"
+        },
+        {
+          "path": "scripts/translation-pairing-record.ts",
+          "read_ranges": [
+            [
+              1,
+              299
+            ]
+          ],
+          "sha256": "c9f4d4ebb35e87b264c09604d33c6fe789bfadc0b03f932cf05f74bcce89dca8"
+        },
+        {
+          "path": "scripts/translation-pairing.ts",
+          "read_ranges": [
+            [
+              1,
+              419
+            ]
+          ],
+          "sha256": "30d75155b43208ebc089fed9632336dfc3d24526916654e3c4e9ad1f72c95d4b"
+        },
+        {
+          "path": "scripts/verify-translation-pairing.ts",
+          "read_ranges": [
+            [
+              1,
+              368
+            ]
+          ],
+          "sha256": "2f555134b09c87443967d263ca7316299a8495d76780ee4b54a86c79feecde01"
+        },
+        {
+          "path": "scripts/translation-pairing.manifest.json",
+          "read_ranges": [
+            [
+              1,
+              13
+            ]
+          ],
+          "sha256": "9944a604474c609318ec2793512661aa0dfc67f124d6789df4f285e8c5910153"
+        },
+        {
+          "path": "scripts/verify-agent-note-format.ts",
+          "read_ranges": [
+            [
+              1,
+              94
+            ]
+          ],
+          "sha256": "055a2db5d15d7dfd59bb6b2b09795348c59e707f3d33bcb31cf5afb4a8d586fa"
+        },
+        {
+          "path": "scripts/verify-agent-note-classification.ts",
+          "read_ranges": [
+            [
+              1,
+              27
+            ]
+          ],
+          "sha256": "828a39ae61536d5986a421e07e20e7e51d81ad4fd8358c0339dae39dbe256903"
+        },
+        {
+          "path": "scripts/verify-archived-agent-notes.ts",
+          "read_ranges": [
+            [
+              1,
+              115
+            ]
+          ],
+          "sha256": "d9d051c957d1ee33604265a69ed71e01dea8db865dc68de3c28e9ed8f387df4e"
+        },
+        {
+          "path": "scripts/archived-agent-notes.ts",
+          "read_ranges": [
+            [
+              1,
+              204
+            ]
+          ],
+          "sha256": "f7e8e314e83b0baaeb6ffee319d20139506a78537389a9f1d6810d20ca1967ed"
+        },
+        {
+          "path": "scripts/agent-note-tree.ts",
+          "read_ranges": [
+            [
+              1,
+              83
+            ]
+          ],
+          "sha256": "a10e1c12568a4afefaa09db92651163dae309cd4e1d054db16b18806b3fab40a"
+        },
+        {
+          "path": "scripts/verify-doc-budgets.ts",
+          "read_ranges": [
+            [
+              1,
+              58
+            ]
+          ],
+          "sha256": "0ec5c8fb92f88c504ec4c0fb2d65c9427597250f2a41d9e5e645915f968ace2c"
+        },
+        {
+          "path": "scripts/doc-budgets.manifest.json",
+          "read_ranges": [
+            [
+              1,
+              9
+            ]
+          ],
+          "sha256": "d04affb1a4faea04c8d169755f76d043b77d8899838016925d671132696e7258"
+        },
+        {
+          "path": "scripts/run-gates.ts",
+          "read_ranges": [
+            [
+              1,
+              145
+            ],
+            [
+              255,
+              292
+            ],
+            [
+              340,
+              370
+            ],
+            [
+              800,
+              883
+            ],
+            [
+              1140,
+              1218
+            ],
+            [
+              1220,
+              1290
+            ]
+          ],
+          "sha256": "44c15c4cf4fec1e9cae78b15526f6c4e67839ab341268785babdfddf87f61a73"
+        },
+        {
+          "path": "package.json",
+          "read_ranges": [
+            [
+              85,
+              140
+            ],
+            [
+              185,
+              210
+            ]
+          ],
+          "sha256": "12bb41cd8212021a784b33a20c2b84372189a9505b42081d5e3869e21ff5cffc"
+        },
+        {
+          "path": "scripts/type-equiv.manifest.json",
+          "read_ranges": [
+            [
+              1,
+              32
+            ]
+          ],
+          "sha256": "7fcaafbfc748500bd111c8bb877a4535e254582c3f58f5078a8d043f6de1902e"
+        }
+      ],
+      "reading_status": "full_for_declared_scope",
+      "read_full_file_count": 34,
+      "read_partial_file_count": 3,
+      "known_gaps": [
+        "Whole product source and runtime behavior",
+        "Recorded checkout commit and historical working tree",
+        "Full type-equiv.manifest catalog (only schema/comment and initial sample entries read)",
+        "run-gates scheduler complete implementation and CI branch-protection settings",
+        "Referenced skill subsidiary templates/references and unrelated skill entrypoints",
+        "Translation prompt renderer and extended briefing implementation",
+        "External style-guide bodies and product paper",
+        "Execution of doc-sync, typecheck, pairing or any repository tests"
+      ],
+      "proposed_supplement_path": "HANDOFF.md",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    }
+  ]
+}

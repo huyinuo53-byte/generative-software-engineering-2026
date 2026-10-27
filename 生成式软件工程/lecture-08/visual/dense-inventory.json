@@ -1,0 +1,2762 @@
+{
+  "method": "selected demo transitions, 4-second windows at 2fps (0.5 sec); decoder fps filter relative sampling approximate within one frame",
+  "centers": [
+    54,
+    244,
+    334,
+    922,
+    1098,
+    1156,
+    1218,
+    1256,
+    1272,
+    2020,
+    2086,
+    2112,
+    2148,
+    2162,
+    2276,
+    2310,
+    2340,
+    2430,
+    2872,
+    2944,
+    3698,
+    3778,
+    4168,
+    4230,
+    4274,
+    4494,
+    4674,
+    4932,
+    5004,
+    5032,
+    5078,
+    5196,
+    5284,
+    5818
+  ],
+  "candidates": [
+    {
+      "id": "d0054-01",
+      "time": 52.0,
+      "path": "dense/around-0054/frame-01.jpg",
+      "sha256": "94f389c87638ac49d577a1453d3dd58c543edb19ab82d3d600f59ade50fc13e8",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0054-02",
+      "time": 52.5,
+      "path": "dense/around-0054/frame-02.jpg",
+      "sha256": "406f2dba39de509fe02d50aff5eef30f691e2e749c3593b30943972629be095d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0054-03",
+      "time": 53.0,
+      "path": "dense/around-0054/frame-03.jpg",
+      "sha256": "442c80253235b842d751352b8a83cfbe5246e02aaa190da75391d80dd452a80e",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0054-04",
+      "time": 53.5,
+      "path": "dense/around-0054/frame-04.jpg",
+      "sha256": "2c76c6f5e356a8daf580db5d842cf05e14a948283881760cb95cdbdc5fbf83be",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0054-05",
+      "time": 54.0,
+      "path": "dense/around-0054/frame-05.jpg",
+      "sha256": "2eb5f841f32d157570342e175ea5f7b22be6da97ed325f9b388184af92f106c7",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0054-06",
+      "time": 54.5,
+      "path": "dense/around-0054/frame-06.jpg",
+      "sha256": "7b79b7e2f43150303c9d9fdf85fbbfe7f8ad5fb1769bf453a08fe42b20535bc4",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0054-07",
+      "time": 55.0,
+      "path": "dense/around-0054/frame-07.jpg",
+      "sha256": "97906c38a16f066d0eea459b4f8ce6b55098a09e99a9162e5bc409afa90805f9",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0054-08",
+      "time": 55.5,
+      "path": "dense/around-0054/frame-08.jpg",
+      "sha256": "bdf7b2aa34788bab5407f7d51ec36f8188e01101d01c1936a68a313b4abf89f7",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0244-01",
+      "time": 242.0,
+      "path": "dense/around-0244/frame-01.jpg",
+      "sha256": "6e90ff84add7eb422b5bb83fd133b095538e273819467101ed1af72204123905",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0244-02",
+      "time": 242.5,
+      "path": "dense/around-0244/frame-02.jpg",
+      "sha256": "1c2e717333d13ac95bac4a73c7d9b36b75f62f77057b5f669085bb6d95337b8d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0244-03",
+      "time": 243.0,
+      "path": "dense/around-0244/frame-03.jpg",
+      "sha256": "2030cd06925942424568d7ba93825b50ad4bbf730913a0979536213e2f631960",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0244-04",
+      "time": 243.5,
+      "path": "dense/around-0244/frame-04.jpg",
+      "sha256": "f8382c1af2fe7ed58418f3b5231c513f588ed10cf2aa904544fdabc943386601",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0244-05",
+      "time": 244.0,
+      "path": "dense/around-0244/frame-05.jpg",
+      "sha256": "4196e4e249a349e773a6603792bb57bbdba160d3d2a0bbff3440813d4c51818e",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0244-06",
+      "time": 244.5,
+      "path": "dense/around-0244/frame-06.jpg",
+      "sha256": "eb65bf9aca43829c6a6a48e8d409c894fce94e60d949602c973e80858af26d02",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0244-07",
+      "time": 245.0,
+      "path": "dense/around-0244/frame-07.jpg",
+      "sha256": "6128e3c77145a8f19eda4f78f9427b33a1c42562ed00f44ef6ad53357384d1a3",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0244-08",
+      "time": 245.5,
+      "path": "dense/around-0244/frame-08.jpg",
+      "sha256": "cbb9f7963af1ecfa53329493f482c8ce229844839877def1944c78d5d885393a",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0334-01",
+      "time": 332.0,
+      "path": "dense/around-0334/frame-01.jpg",
+      "sha256": "9e063b2c414d1c9ea6deb3aee5478f0d6c6ee3936f21d123e9cd7a3558cc764a",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0334-02",
+      "time": 332.5,
+      "path": "dense/around-0334/frame-02.jpg",
+      "sha256": "cd592edf231dca88244758d7646de7d47154d6084f4422cb6a1a18f1a14ae1d2",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0334-03",
+      "time": 333.0,
+      "path": "dense/around-0334/frame-03.jpg",
+      "sha256": "5559914fd3b6eb57bce0f2584b5bd860c8a9b0ee3e1a1e03c0dbae87e52dbdef",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0334-04",
+      "time": 333.5,
+      "path": "dense/around-0334/frame-04.jpg",
+      "sha256": "10c78dd755390cce50ab7375026bf159068101afd0b57f8c35c6453247a6bb81",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0334-05",
+      "time": 334.0,
+      "path": "dense/around-0334/frame-05.jpg",
+      "sha256": "e64d958df668b83adfd92045caaa4255b0d89faea4b065e252971baf0b5f0eb0",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0334-06",
+      "time": 334.5,
+      "path": "dense/around-0334/frame-06.jpg",
+      "sha256": "33f86e222b0d64778214a115284ec41310719a7c9791412b0ba397de48c7e686",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0334-07",
+      "time": 335.0,
+      "path": "dense/around-0334/frame-07.jpg",
+      "sha256": "9eb09e41223f6e3e93f800f076707ef0bf53caec8e70e293b1788b4fb939f315",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0334-08",
+      "time": 335.5,
+      "path": "dense/around-0334/frame-08.jpg",
+      "sha256": "8aedf7e49de21ccd78d42f81efd8e76ac490955bed7106d739a83fb9e790bbb9",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0922-01",
+      "time": 920.0,
+      "path": "dense/around-0922/frame-01.jpg",
+      "sha256": "290320a32d9fddd09d22bb6ed70890d694a71a5ed6606af5efc7a7fb4ef9f863",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0922-02",
+      "time": 920.5,
+      "path": "dense/around-0922/frame-02.jpg",
+      "sha256": "a8862725fd9ca7652ae002a826ec62fbed570f6ffca1e9b0ee892b8f62f300e8",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0922-03",
+      "time": 921.0,
+      "path": "dense/around-0922/frame-03.jpg",
+      "sha256": "094e183c629e31bd7331aa99d6786dac9b3280d5e64d9850ed8547db099935e0",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0922-04",
+      "time": 921.5,
+      "path": "dense/around-0922/frame-04.jpg",
+      "sha256": "f5507f0c3d878f732a59526e4a318df9fe7421857d2dce8207f9bc307b133d02",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0922-05",
+      "time": 922.0,
+      "path": "dense/around-0922/frame-05.jpg",
+      "sha256": "fe61cc2ac68acf0470605f9863b9881aa30e9232a2972162c8c8e8f70e3d30ae",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0922-06",
+      "time": 922.5,
+      "path": "dense/around-0922/frame-06.jpg",
+      "sha256": "3299c9d5650c934463e9eac9a21d624b604adec09c9d429ad0d08e533bb4355a",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0922-07",
+      "time": 923.0,
+      "path": "dense/around-0922/frame-07.jpg",
+      "sha256": "32768dc3d92d7718c7c9fb5d10a7f8849e2c83a7bc60c168a43c47f05f29dc73",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d0922-08",
+      "time": 923.5,
+      "path": "dense/around-0922/frame-08.jpg",
+      "sha256": "b1e08e4a1c689ac7493632f620aee9057bf4a094cc57b85760a88bac544cd7b0",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1098-01",
+      "time": 1096.0,
+      "path": "dense/around-1098/frame-01.jpg",
+      "sha256": "4f0a47d2ed87c91d6feebe0cd99658f472263c6e91b5ea46f86807affbfb7d02",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1098-02",
+      "time": 1096.5,
+      "path": "dense/around-1098/frame-02.jpg",
+      "sha256": "d873f496e9847adfe6b76874e32025bcc548d8c267de438d68486f611d36be9f",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1098-03",
+      "time": 1097.0,
+      "path": "dense/around-1098/frame-03.jpg",
+      "sha256": "73f2715311a78aa31eaeeeb8d5f77d7db174fbf0b31d87debeb863856aaca87c",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1098-04",
+      "time": 1097.5,
+      "path": "dense/around-1098/frame-04.jpg",
+      "sha256": "b2c15735945e7b3a6a828f2cb629bbaf6c3578b29847b118a3b78e4791781b4e",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1098-05",
+      "time": 1098.0,
+      "path": "dense/around-1098/frame-05.jpg",
+      "sha256": "d340ce49dc44ee4d066f8e4f3577e717c8ad4edd6daa2e3869505663bc308c2e",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1098-06",
+      "time": 1098.5,
+      "path": "dense/around-1098/frame-06.jpg",
+      "sha256": "4af8b82f4c9c95b31f2dae309fb2a99cbe2161d345c848059e90d7c2774ea3fc",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1098-07",
+      "time": 1099.0,
+      "path": "dense/around-1098/frame-07.jpg",
+      "sha256": "42f1d57ad0f87df59e47832bd73a42a72e453dffdf1e54eefe5135dc19bf59e6",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1098-08",
+      "time": 1099.5,
+      "path": "dense/around-1098/frame-08.jpg",
+      "sha256": "a310a795a0ca152660eea1d12329021c8db6684bac5b1aa3c7670f0f51b22d78",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1156-01",
+      "time": 1154.0,
+      "path": "dense/around-1156/frame-01.jpg",
+      "sha256": "cd3d9aa3520f3067cbb9f460a9bd0ac8a409a46a6624ca9c7cd28a46db1f9f02",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1156-02",
+      "time": 1154.5,
+      "path": "dense/around-1156/frame-02.jpg",
+      "sha256": "c6fef445a6ba99a1117c9f6a9ae744d3f0f34ac535ebae7555c86134470ece84",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1156-03",
+      "time": 1155.0,
+      "path": "dense/around-1156/frame-03.jpg",
+      "sha256": "27c48aa6a8f8cae5566c62afa227b56ab965363d467643d500a85225425fff4d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1156-04",
+      "time": 1155.5,
+      "path": "dense/around-1156/frame-04.jpg",
+      "sha256": "1543aa65af92772ebd4a26983e92f9c05c5886c9cd59727e6dac210a30b6f7ac",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1156-05",
+      "time": 1156.0,
+      "path": "dense/around-1156/frame-05.jpg",
+      "sha256": "9fd750d81eeb2c9182ac09e6e6ed6debd5a6a5a64f95567bbc189e888bd97b77",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1156-06",
+      "time": 1156.5,
+      "path": "dense/around-1156/frame-06.jpg",
+      "sha256": "16fd01f520fa599a32f52ec1aab7300f5c6e6a60b301336baad473bcd624477a",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1156-07",
+      "time": 1157.0,
+      "path": "dense/around-1156/frame-07.jpg",
+      "sha256": "6068ec30f532f7a93b30af76f6764c7ed7cdc78b7983fecd492c1d0aa2dcb09b",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1156-08",
+      "time": 1157.5,
+      "path": "dense/around-1156/frame-08.jpg",
+      "sha256": "a4720f5ef5b3294a1f34ed00e8454403510f3c7d13510dd47905a95e4a8c24fa",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1218-01",
+      "time": 1216.0,
+      "path": "dense/around-1218/frame-01.jpg",
+      "sha256": "a5e412b9074b24d83bb1579eddc2d0fcc32de205ed4d6d0efb80e4a36f469333",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1218-02",
+      "time": 1216.5,
+      "path": "dense/around-1218/frame-02.jpg",
+      "sha256": "6c21f2b9dca7778732d6bdfe99e5b32bbe24552732cb85d3d1bbf028441d2b78",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1218-03",
+      "time": 1217.0,
+      "path": "dense/around-1218/frame-03.jpg",
+      "sha256": "1b5bd7bdeabef7cf73b2340583318544e8c7e700b46dbc85f1eef00cc7375275",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1218-04",
+      "time": 1217.5,
+      "path": "dense/around-1218/frame-04.jpg",
+      "sha256": "bdfc86e258ecac49c85ca7aa94c3a1fec200e1d34f48250e282411daa428d104",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1218-05",
+      "time": 1218.0,
+      "path": "dense/around-1218/frame-05.jpg",
+      "sha256": "9d507dd29c585748c4bd5516924ab8104c681e9b579331eb48affa89af2e2f74",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1218-06",
+      "time": 1218.5,
+      "path": "dense/around-1218/frame-06.jpg",
+      "sha256": "cc209c585cba75cb0af1583fb8a56cecfeaa0c8d26e5650ce9ade6e5f3f4d8f4",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1218-07",
+      "time": 1219.0,
+      "path": "dense/around-1218/frame-07.jpg",
+      "sha256": "3039680b03d8b522f7731d991fa77abff7ffd81449809fca20a4e484cfac3bfb",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1218-08",
+      "time": 1219.5,
+      "path": "dense/around-1218/frame-08.jpg",
+      "sha256": "17355fd16772cee3bf51f6e4700348a32998da229748f9658237aa05458a2bd9",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1256-01",
+      "time": 1254.0,
+      "path": "dense/around-1256/frame-01.jpg",
+      "sha256": "104bf948c811e2c1ea4aba31d7aaa9ab14f5240ea381a92031073c2e0df77e42",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1256-02",
+      "time": 1254.5,
+      "path": "dense/around-1256/frame-02.jpg",
+      "sha256": "3147a9b9cab7d74956a32d8f6cef8506eb53264db98e471551d0605929a0d50b",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1256-03",
+      "time": 1255.0,
+      "path": "dense/around-1256/frame-03.jpg",
+      "sha256": "affaaa3067aa324ef1deb8d58fd57e8f81b1c99a0144ce5a9c76717eb352a7b1",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1256-04",
+      "time": 1255.5,
+      "path": "dense/around-1256/frame-04.jpg",
+      "sha256": "5117b04b91de8cc289479f06d00b362c6c403ea56c75762e478073d2e3e0424a",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1256-05",
+      "time": 1256.0,
+      "path": "dense/around-1256/frame-05.jpg",
+      "sha256": "64de813511c7749ebbaf1b058c950eafacfaba5ed5863399817b45eb06de4240",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1256-06",
+      "time": 1256.5,
+      "path": "dense/around-1256/frame-06.jpg",
+      "sha256": "895332ff51175a4e967d1b50910a1f8a553a21c0ea842fcd8698fcffe0130833",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1256-07",
+      "time": 1257.0,
+      "path": "dense/around-1256/frame-07.jpg",
+      "sha256": "ad0342d3e535f5a67edcd51d489ea2c1db8f292c77c2d6f3aa72060554dd22c6",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1256-08",
+      "time": 1257.5,
+      "path": "dense/around-1256/frame-08.jpg",
+      "sha256": "fa64e3bacbb12018033ff6b8f8b1a875bd1ce19f3e3e8c1501a3b1af0adaad06",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1272-01",
+      "time": 1270.0,
+      "path": "dense/around-1272/frame-01.jpg",
+      "sha256": "cacadaf9b2f439c8bfefa3c9229025e26a5235ac619da12fcc1e7825533abde0",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1272-02",
+      "time": 1270.5,
+      "path": "dense/around-1272/frame-02.jpg",
+      "sha256": "a843b7b19789e6645885793e378c8fa4b559fdc2afd7364bd2f45a5fc446aa96",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1272-03",
+      "time": 1271.0,
+      "path": "dense/around-1272/frame-03.jpg",
+      "sha256": "452ee0c59cef8a2831bce65a0fdfcf2054d4aeb89ac8893c124fb2888469cd02",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1272-04",
+      "time": 1271.5,
+      "path": "dense/around-1272/frame-04.jpg",
+      "sha256": "a5255952dd7c091bb3f333b1e07a8871f7e0ae8c5ade2f5753864f8553d87bb8",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1272-05",
+      "time": 1272.0,
+      "path": "dense/around-1272/frame-05.jpg",
+      "sha256": "b4b8716afe5080ff10608337d3c9f4e8570776ace89bf0be9a218e381538b79d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1272-06",
+      "time": 1272.5,
+      "path": "dense/around-1272/frame-06.jpg",
+      "sha256": "af30547d43740abb7bb544ebb2d514573298a7c04b6e14e17156e877c993f5ef",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1272-07",
+      "time": 1273.0,
+      "path": "dense/around-1272/frame-07.jpg",
+      "sha256": "23c698dc18f2379a2f5cc9c128cb80e40ccca365ff11e67210a5dc386c933cdc",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d1272-08",
+      "time": 1273.5,
+      "path": "dense/around-1272/frame-08.jpg",
+      "sha256": "53ae85e7a254e25b3f6da797bedd66b308bba3c7f016201f75a68c5c14f823a0",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2020-01",
+      "time": 2018.0,
+      "path": "dense/around-2020/frame-01.jpg",
+      "sha256": "84a8cafe7f2103c11512286d2ee061322861fa9f7e7189af8c8debb58b0b0c85",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2020-02",
+      "time": 2018.5,
+      "path": "dense/around-2020/frame-02.jpg",
+      "sha256": "76215ce2593c44889e68418f2442b7a6da5d74847d2885638f2222b5736ee2b7",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2020-03",
+      "time": 2019.0,
+      "path": "dense/around-2020/frame-03.jpg",
+      "sha256": "aff3e5f10287078e76f8aa43598814e5d2b71667a6167fddb468342c0ce2c500",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2020-04",
+      "time": 2019.5,
+      "path": "dense/around-2020/frame-04.jpg",
+      "sha256": "bc08d6cbaf72b914eae3f769e1235633a5810489dc3b3fbb64716bc9f5081728",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2020-05",
+      "time": 2020.0,
+      "path": "dense/around-2020/frame-05.jpg",
+      "sha256": "5f7d84d67653399330a0961153ba05f257dd28752c2ed464548ab33eb3e827a4",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2020-06",
+      "time": 2020.5,
+      "path": "dense/around-2020/frame-06.jpg",
+      "sha256": "2a7cc13cff732ea7eb4878949d51ded45c6eb1b86d9c05c123023633991e96d5",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2020-07",
+      "time": 2021.0,
+      "path": "dense/around-2020/frame-07.jpg",
+      "sha256": "75197714837742c4bc9606b8aa00641ce044f2786e116383e62e5fe11d357faa",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2020-08",
+      "time": 2021.5,
+      "path": "dense/around-2020/frame-08.jpg",
+      "sha256": "d528c2dd36a91ab06d78a2439f5db56122ef2650f12d46ac17c99ac249496a77",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2086-01",
+      "time": 2084.0,
+      "path": "dense/around-2086/frame-01.jpg",
+      "sha256": "6b347ca524af34329055a7dd6db272320692623feed2f12f8c7baa35adc2224a",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2086-02",
+      "time": 2084.5,
+      "path": "dense/around-2086/frame-02.jpg",
+      "sha256": "44c3b13bee25e413e8dda0b8b9d4ac21462fe7ad8c52f7e2cb81bba7191a9c62",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2086-03",
+      "time": 2085.0,
+      "path": "dense/around-2086/frame-03.jpg",
+      "sha256": "e6fe11fa1676ae759277e487c9ed24b2df34f940dd39f751087368454e298da0",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2086-04",
+      "time": 2085.5,
+      "path": "dense/around-2086/frame-04.jpg",
+      "sha256": "c7ba22a673146467846ebe88f08b412a8ffccbbe04927037e75e9181b182eb20",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2086-05",
+      "time": 2086.0,
+      "path": "dense/around-2086/frame-05.jpg",
+      "sha256": "8a22190ce086d4b0fe9023d377d599558fa34eb020274cec412a9f6912310cf3",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2086-06",
+      "time": 2086.5,
+      "path": "dense/around-2086/frame-06.jpg",
+      "sha256": "073a82ccac07918d6faff8758cddb3aa6027a8c39ea5470126635edbf2dc27df",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2086-07",
+      "time": 2087.0,
+      "path": "dense/around-2086/frame-07.jpg",
+      "sha256": "4945d329198e19f2b731576738699cde62a944e329e347e8d4b0de5862d356a3",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2086-08",
+      "time": 2087.5,
+      "path": "dense/around-2086/frame-08.jpg",
+      "sha256": "a72fee2acc650c65e44db9dc3781ee45d700954c11bb38f752939c6ce574e658",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2112-01",
+      "time": 2110.0,
+      "path": "dense/around-2112/frame-01.jpg",
+      "sha256": "4b138d7254b4364dd19269520513d07654ce8c434356d4ffcbe8bb36fe3329d8",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2112-02",
+      "time": 2110.5,
+      "path": "dense/around-2112/frame-02.jpg",
+      "sha256": "aa81eb6fec7d4bd760ed1dc38e92c682cd499eb53f0364c3946a9b72c5a104da",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2112-03",
+      "time": 2111.0,
+      "path": "dense/around-2112/frame-03.jpg",
+      "sha256": "26d23f4c2f03762ce55ad53da864722fdc408fa4e7882be49c2b59ab1ce2cda9",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2112-04",
+      "time": 2111.5,
+      "path": "dense/around-2112/frame-04.jpg",
+      "sha256": "83465ab9b2d4ebd77d6e123a5b0c57c12c08570539bbfc49b5f0f0a597a1b920",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2112-05",
+      "time": 2112.0,
+      "path": "dense/around-2112/frame-05.jpg",
+      "sha256": "d267f25c58fff0cfe1d8aaff4f975da2cda43e2559f1a7e60c7b213d19f4ddad",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2112-06",
+      "time": 2112.5,
+      "path": "dense/around-2112/frame-06.jpg",
+      "sha256": "6e737a0309cb31ab8f432da65d67fd92346b7a1572f81e2bb62c9234fd71c915",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2112-07",
+      "time": 2113.0,
+      "path": "dense/around-2112/frame-07.jpg",
+      "sha256": "78a2ba487eba1b6303029e8376dc86df6d81cb42520937a0ddd412b51e14fdce",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2112-08",
+      "time": 2113.5,
+      "path": "dense/around-2112/frame-08.jpg",
+      "sha256": "38b0607330224e0713713376c4b7503af14d943b998cd7159b101d5c107af1d1",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2148-01",
+      "time": 2146.0,
+      "path": "dense/around-2148/frame-01.jpg",
+      "sha256": "b9902ca37ba7adfb88f968832b60769d98ed2d6bb367804bf6bb7a147ed31a95",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2148-02",
+      "time": 2146.5,
+      "path": "dense/around-2148/frame-02.jpg",
+      "sha256": "50f566587fe206c9224e2a25cf3f1ad6673df2081c3a8b604974e26fede6f731",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2148-03",
+      "time": 2147.0,
+      "path": "dense/around-2148/frame-03.jpg",
+      "sha256": "5781cc514d2c2e7037d18baeb84881f5617f78d2040be90ea9131c70762d40a3",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2148-04",
+      "time": 2147.5,
+      "path": "dense/around-2148/frame-04.jpg",
+      "sha256": "b950584586396e246e9245820c866a84228a947b6be98974f03fad6728b6c151",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2148-05",
+      "time": 2148.0,
+      "path": "dense/around-2148/frame-05.jpg",
+      "sha256": "3365d945a00c203ffa1bf24917f522451bb8551b974adf61e35131b8587bda4f",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2148-06",
+      "time": 2148.5,
+      "path": "dense/around-2148/frame-06.jpg",
+      "sha256": "b508175c8dbb3b6026483bac8966e42333f023635731004e5acc86c35ba58a1f",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2148-07",
+      "time": 2149.0,
+      "path": "dense/around-2148/frame-07.jpg",
+      "sha256": "2da957851db0c4721045791c5931b463209e61980cd08fee77e88dc5400a4c5b",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2148-08",
+      "time": 2149.5,
+      "path": "dense/around-2148/frame-08.jpg",
+      "sha256": "92a9b77a02dd3540a834af51e6dbd6218c6467a0a47185a1224186943e306105",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2162-01",
+      "time": 2160.0,
+      "path": "dense/around-2162/frame-01.jpg",
+      "sha256": "3b1263f4b43981f81aa0010ee8647ffd65c9b146faab5a4b48800ec05c7a71f7",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2162-02",
+      "time": 2160.5,
+      "path": "dense/around-2162/frame-02.jpg",
+      "sha256": "efe7cbd79f14b91c54298f043c2695893085d8e50aec0d55801a46318fe04a94",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2162-03",
+      "time": 2161.0,
+      "path": "dense/around-2162/frame-03.jpg",
+      "sha256": "be798f34da5d481f70a264a40954167f063613bbb48f2b26d8e242e69dccc665",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2162-04",
+      "time": 2161.5,
+      "path": "dense/around-2162/frame-04.jpg",
+      "sha256": "4ed475c8e58c888e37a38d557b85eba800d3e3ea856da37decfaf5d5b9996707",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2162-05",
+      "time": 2162.0,
+      "path": "dense/around-2162/frame-05.jpg",
+      "sha256": "fcdf780392e678bdf1d237b590ee45cea00632ab566cb502a675818b23966586",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2162-06",
+      "time": 2162.5,
+      "path": "dense/around-2162/frame-06.jpg",
+      "sha256": "e88e7f5ad4af8c28d37b2099c44f2756241d5dc6cc698332e57f376579ad22a9",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2162-07",
+      "time": 2163.0,
+      "path": "dense/around-2162/frame-07.jpg",
+      "sha256": "4b5b062599cbbc85f8b471c8f6b8bc2067a4ebbf059c42035d18520ba0146723",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2162-08",
+      "time": 2163.5,
+      "path": "dense/around-2162/frame-08.jpg",
+      "sha256": "b37db73fde8d709892534a6efd9433fe6a5f923c68f27dfab0d18a3322ad269a",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2276-01",
+      "time": 2274.0,
+      "path": "dense/around-2276/frame-01.jpg",
+      "sha256": "ede0501f23fcf7c38f967120747f8cf3e9ccbed0063889787eec32bf0dbddf43",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2276-02",
+      "time": 2274.5,
+      "path": "dense/around-2276/frame-02.jpg",
+      "sha256": "97e425e948454be65606450ca83e3d6aa83fb076cf1075815bded1b885668050",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2276-03",
+      "time": 2275.0,
+      "path": "dense/around-2276/frame-03.jpg",
+      "sha256": "62a9bf454d6dbfa5c1b1378dcd08aa96117f0ac1552cf38c8b496bc9e8157f40",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2276-04",
+      "time": 2275.5,
+      "path": "dense/around-2276/frame-04.jpg",
+      "sha256": "79a7b398010e7e2de981dca429b0a5b2744c9f811983245df08262e68f0da9c5",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2276-05",
+      "time": 2276.0,
+      "path": "dense/around-2276/frame-05.jpg",
+      "sha256": "a294030fb4e70622d1ed1a61100b27f7967f61123324f0d5a9d85f70a17cee57",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2276-06",
+      "time": 2276.5,
+      "path": "dense/around-2276/frame-06.jpg",
+      "sha256": "a84c6d484e8dcd351f9f4c4203211c958878c459bfc3a6ca0640e6c2ff88abda",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2276-07",
+      "time": 2277.0,
+      "path": "dense/around-2276/frame-07.jpg",
+      "sha256": "1e44a67b9857e47a9573f49c35c059f362f39eb3a2ea43d033a806f05f414fb6",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2276-08",
+      "time": 2277.5,
+      "path": "dense/around-2276/frame-08.jpg",
+      "sha256": "f04727abf7037dfe85dbd0c7bf53ecdb51a73d477f087b6ec3d941f6dd16a8a9",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2310-01",
+      "time": 2308.0,
+      "path": "dense/around-2310/frame-01.jpg",
+      "sha256": "eab9da8e9e7b0db516169099cbfab8254a60557b121c8c2fcd477e6b46081f77",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2310-02",
+      "time": 2308.5,
+      "path": "dense/around-2310/frame-02.jpg",
+      "sha256": "a1262d79a0cc515b926a2af4b6688b49b3b0f71643b885b615dc95f3737901ac",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2310-03",
+      "time": 2309.0,
+      "path": "dense/around-2310/frame-03.jpg",
+      "sha256": "e58e9fa462d1c60184dce116c849be3cde396f85998eb629f770437c6f2cc9c2",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2310-04",
+      "time": 2309.5,
+      "path": "dense/around-2310/frame-04.jpg",
+      "sha256": "62a9d53dbf7fd6ea81f7fad7c93a330673f19e256750400ef88c60a21c680c82",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2310-05",
+      "time": 2310.0,
+      "path": "dense/around-2310/frame-05.jpg",
+      "sha256": "710dd62ba5682e4bbba9aa81656624105260548123c35d1af167f8d987092a56",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2310-06",
+      "time": 2310.5,
+      "path": "dense/around-2310/frame-06.jpg",
+      "sha256": "129952cc0d860efdab3783d0ef538e5b45a4646c4d13c9fb562d3cef925d83dd",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2310-07",
+      "time": 2311.0,
+      "path": "dense/around-2310/frame-07.jpg",
+      "sha256": "8f41e92903a2a767d54ca9ea410d0446ce4d43a2671a92087ba3b1d0018048e4",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2310-08",
+      "time": 2311.5,
+      "path": "dense/around-2310/frame-08.jpg",
+      "sha256": "1751aa9caba361f35c1a459aad098aea27eb7a0ef7fc508f64bb79393e01f9c5",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2340-01",
+      "time": 2338.0,
+      "path": "dense/around-2340/frame-01.jpg",
+      "sha256": "2122b61ae36eb9e847530eae63e043e691d5d58859a71ba5deb95e4447966613",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2340-02",
+      "time": 2338.5,
+      "path": "dense/around-2340/frame-02.jpg",
+      "sha256": "4eacd3980c1a2619468af25e6ce3af3da67c42d04cb7293f28ac4a0482a4fe7f",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2340-03",
+      "time": 2339.0,
+      "path": "dense/around-2340/frame-03.jpg",
+      "sha256": "88a685e7fc96630081ca793e1eb599918e5643a18c86f237c9a770604cb3699f",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2340-04",
+      "time": 2339.5,
+      "path": "dense/around-2340/frame-04.jpg",
+      "sha256": "f9c7f09cdc61dc541a71dd3e12a892d72384e36c13aeb5f134395e4b5c7620f5",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2340-05",
+      "time": 2340.0,
+      "path": "dense/around-2340/frame-05.jpg",
+      "sha256": "57123cce7e3dea9120649e8a8c041a08f4cfa8d234f638127142fe29b7b0819d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2340-06",
+      "time": 2340.5,
+      "path": "dense/around-2340/frame-06.jpg",
+      "sha256": "89e8fd3b6b2b4b1665d9904345811e8a3aa9f670e1245455b3209cb3c0ae17ec",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2340-07",
+      "time": 2341.0,
+      "path": "dense/around-2340/frame-07.jpg",
+      "sha256": "90aacb483a3c6738fcab4bffc4c4cf2b3d7315058ff710d94dd37b8b53f5201b",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2340-08",
+      "time": 2341.5,
+      "path": "dense/around-2340/frame-08.jpg",
+      "sha256": "727763a8cb357135c3870a024f0d127e528fab428b880824bb35677855535563",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2430-01",
+      "time": 2428.0,
+      "path": "dense/around-2430/frame-01.jpg",
+      "sha256": "8ab908af1647dadb6e6da9a2380c954a53b0b869f552f2ba12dc37718b362e31",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2430-02",
+      "time": 2428.5,
+      "path": "dense/around-2430/frame-02.jpg",
+      "sha256": "4a993ddfb07caa11682c4f4566c9e663cd7c3a1c96fb8a03980ed97cc61e419c",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2430-03",
+      "time": 2429.0,
+      "path": "dense/around-2430/frame-03.jpg",
+      "sha256": "e68fe6a408d73afdd215519210588de9c941021fe16c40b64123f6d6ce6d647f",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2430-04",
+      "time": 2429.5,
+      "path": "dense/around-2430/frame-04.jpg",
+      "sha256": "9fbc5f461974c591b06f0b2d752d77b38c387beaea0c6a93c49591894b09f2b8",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2430-05",
+      "time": 2430.0,
+      "path": "dense/around-2430/frame-05.jpg",
+      "sha256": "966fecc7c99de8eb4cd968f5c825b7228ca1751e5a11698863d78b8828708806",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2430-06",
+      "time": 2430.5,
+      "path": "dense/around-2430/frame-06.jpg",
+      "sha256": "f7ac53357f569d797e37b6c85b403307db3c4ebe8535c6d3cf44fb6888404b53",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2430-07",
+      "time": 2431.0,
+      "path": "dense/around-2430/frame-07.jpg",
+      "sha256": "0023110ae9b3f3b90c2939051be8a6ee54487497c8f18d553ffc471c0b1e2866",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2430-08",
+      "time": 2431.5,
+      "path": "dense/around-2430/frame-08.jpg",
+      "sha256": "f3cf7f3a4a30d250df30abddc0cd04ccc8537eca9c4acc3c99b3be6000ce25f6",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2872-01",
+      "time": 2870.0,
+      "path": "dense/around-2872/frame-01.jpg",
+      "sha256": "f144dcbfd743bc05a1c1659e3494af314525292ea76d6960ebac07e6b43fa187",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2872-02",
+      "time": 2870.5,
+      "path": "dense/around-2872/frame-02.jpg",
+      "sha256": "44218278b757f8a62cd275e8820b3811b265ccc838acd04acbb9c8ab8be71f2c",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2872-03",
+      "time": 2871.0,
+      "path": "dense/around-2872/frame-03.jpg",
+      "sha256": "86f3accf70d760a4d2b357770697674c63efbc6b3e46add83fd54a95adbbe481",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2872-04",
+      "time": 2871.5,
+      "path": "dense/around-2872/frame-04.jpg",
+      "sha256": "39bd5f6f58eca71527f2337d0f88c097d69a0e43ecc8e97f3aefead2e93667ae",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2872-05",
+      "time": 2872.0,
+      "path": "dense/around-2872/frame-05.jpg",
+      "sha256": "d165add5bc8d594052dfc76d300af4d91c2cba58d4b6f25cdcbf796674106f2c",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2872-06",
+      "time": 2872.5,
+      "path": "dense/around-2872/frame-06.jpg",
+      "sha256": "46dca34a8d5a448d6be98e7d0952a64d3465aa67fbfcaa2aa30b6ec21f3d2343",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2872-07",
+      "time": 2873.0,
+      "path": "dense/around-2872/frame-07.jpg",
+      "sha256": "94c11c04e2c0615881534c140d841c6daa606703357051f26a81db6802e3f04b",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2872-08",
+      "time": 2873.5,
+      "path": "dense/around-2872/frame-08.jpg",
+      "sha256": "b869f18b15ad3704fc26c716664c49dd578dcd3f01d6511e4de31f867ba257f2",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2944-01",
+      "time": 2942.0,
+      "path": "dense/around-2944/frame-01.jpg",
+      "sha256": "2baeb8aae7ea9e58887f263cb6fc509df1772d64c5eaa042cb1934bc1faf0c1b",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2944-02",
+      "time": 2942.5,
+      "path": "dense/around-2944/frame-02.jpg",
+      "sha256": "2dbebedccc7ec9f68be51d1707ad44525ba8792e6c0482042b9be4898ce8e994",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2944-03",
+      "time": 2943.0,
+      "path": "dense/around-2944/frame-03.jpg",
+      "sha256": "374d5dd4deb5759462d443379f2fb609da7ba0e0092c954732db6db216e9d799",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2944-04",
+      "time": 2943.5,
+      "path": "dense/around-2944/frame-04.jpg",
+      "sha256": "623d2a2466e523a566a1743513b6bebf3f1931ea042570c434d51f4988e9b27c",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2944-05",
+      "time": 2944.0,
+      "path": "dense/around-2944/frame-05.jpg",
+      "sha256": "85549ab325465c9cd0c9ed1c123849b33e4c9d94b2fae29b02f86ce396d20d87",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2944-06",
+      "time": 2944.5,
+      "path": "dense/around-2944/frame-06.jpg",
+      "sha256": "d7f09036139bab0ec4383656e48d33daad8f985d84bbde76284ce956dd8b0ad4",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2944-07",
+      "time": 2945.0,
+      "path": "dense/around-2944/frame-07.jpg",
+      "sha256": "2c0524dd17f4a56ebbe1ebe4452b2a14167bfceb1bac6ec6291f933ac485cbd1",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d2944-08",
+      "time": 2945.5,
+      "path": "dense/around-2944/frame-08.jpg",
+      "sha256": "20c5b6d69e8051c3246bed6e854bfb39b91af88cc18bd16d3509ef0c18508d2c",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3698-01",
+      "time": 3696.0,
+      "path": "dense/around-3698/frame-01.jpg",
+      "sha256": "54f260a2ce89d929f709876439305860cbdcdd3cade2107a44b56ac8b927e269",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3698-02",
+      "time": 3696.5,
+      "path": "dense/around-3698/frame-02.jpg",
+      "sha256": "95784a46314a7ddaf810e36e3e3c0da42c77f82fc0cf6bbd96ca6964c1734a15",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3698-03",
+      "time": 3697.0,
+      "path": "dense/around-3698/frame-03.jpg",
+      "sha256": "fc9badebdd99ae5f124ac54080176f81b90a4662b75fdfa46c1c6cc301e00205",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3698-04",
+      "time": 3697.5,
+      "path": "dense/around-3698/frame-04.jpg",
+      "sha256": "ec8a5003c1d7e3064f499bc6f7cfc0650352c42cd534ebba6474b08d2485d71d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3698-05",
+      "time": 3698.0,
+      "path": "dense/around-3698/frame-05.jpg",
+      "sha256": "2cd0d78c854063e5695241daed06a98ed6deed662a17b21d69fe198a6f1367e4",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3698-06",
+      "time": 3698.5,
+      "path": "dense/around-3698/frame-06.jpg",
+      "sha256": "6ab02185bab446f950ac3dba090faa13a2ac4067b254536328c4e5252c09e156",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3698-07",
+      "time": 3699.0,
+      "path": "dense/around-3698/frame-07.jpg",
+      "sha256": "094b0bfa010661b20dc554e1f62dc776b66e1a21701b3e2f8675678e8a1b98e9",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3698-08",
+      "time": 3699.5,
+      "path": "dense/around-3698/frame-08.jpg",
+      "sha256": "dbd2baef890e2b33e1a3b7b8039a8d95b2093180df057d899a2d786beecd0c7a",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3778-01",
+      "time": 3776.0,
+      "path": "dense/around-3778/frame-01.jpg",
+      "sha256": "78f36bf5d53b20e8c0a7d32b1cc789aae4428c0c41bfd808cff194c059397368",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3778-02",
+      "time": 3776.5,
+      "path": "dense/around-3778/frame-02.jpg",
+      "sha256": "ef2f6a438b3e517cf9822bb3ce40693ea15fc864178cb856d08bb28a4139108a",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3778-03",
+      "time": 3777.0,
+      "path": "dense/around-3778/frame-03.jpg",
+      "sha256": "0c406674040387e645a64610c9360bd54f92d20102b97afc847c389077827d0b",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3778-04",
+      "time": 3777.5,
+      "path": "dense/around-3778/frame-04.jpg",
+      "sha256": "de2ae19573527c85dd7099097dd40f8b7f274ee29ded70955559fde4ef2452e6",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3778-05",
+      "time": 3778.0,
+      "path": "dense/around-3778/frame-05.jpg",
+      "sha256": "d6805af11e2ce828c25bd8b4156c8e55862aa6cdddc988ab971e7d06c14eaa63",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3778-06",
+      "time": 3778.5,
+      "path": "dense/around-3778/frame-06.jpg",
+      "sha256": "0f3c09b65601f77eb1b6037113e587d8f298decdacf74b1ec57a3a943092b5fd",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3778-07",
+      "time": 3779.0,
+      "path": "dense/around-3778/frame-07.jpg",
+      "sha256": "3c624c5cb856ea5d18398c26e3ec8c25f04cdad0319d1898edf97d0be2704595",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d3778-08",
+      "time": 3779.5,
+      "path": "dense/around-3778/frame-08.jpg",
+      "sha256": "23109d9359780135710787fa9ca8f9367be4550f1ce0414736c4f156ccdc0140",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4168-01",
+      "time": 4166.0,
+      "path": "dense/around-4168/frame-01.jpg",
+      "sha256": "fe5c308d12503e87adedf59084a6102a085eff2379d2ee2f8e778d7962e2c58d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4168-02",
+      "time": 4166.5,
+      "path": "dense/around-4168/frame-02.jpg",
+      "sha256": "e808117b463b05f5a8b29f28f8a9c1c144a6a50abcc74db3a07c57f9b12ecae6",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4168-03",
+      "time": 4167.0,
+      "path": "dense/around-4168/frame-03.jpg",
+      "sha256": "03bc8d005906ac6c3bfae14a2a2e66cd8d762b616b73cda7b12ca25bcef1ae4d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4168-04",
+      "time": 4167.5,
+      "path": "dense/around-4168/frame-04.jpg",
+      "sha256": "121f6c7876ed236e87903a3303859089aa33609a2815d3589a0a35de116f154e",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4168-05",
+      "time": 4168.0,
+      "path": "dense/around-4168/frame-05.jpg",
+      "sha256": "6e386bc95a7b907ab7dfd08ab8668828d020830fdcb02372c4bc0bc4b90c599d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4168-06",
+      "time": 4168.5,
+      "path": "dense/around-4168/frame-06.jpg",
+      "sha256": "8dcf5c8634e87fdafb5bbd02a75464493c2f6264123399df2e88546f1fa66090",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4168-07",
+      "time": 4169.0,
+      "path": "dense/around-4168/frame-07.jpg",
+      "sha256": "6dc2fc61c9f18136d10f0d46a0a5b7494eb0fe0e7c822889397aa71a60d424d8",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4168-08",
+      "time": 4169.5,
+      "path": "dense/around-4168/frame-08.jpg",
+      "sha256": "604f3e16871e31a9609e0755463682a20e6f33a81620e4813a698813b18a482e",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4230-01",
+      "time": 4228.0,
+      "path": "dense/around-4230/frame-01.jpg",
+      "sha256": "82df4083f57a26dfa27c26431cca56a147e93163bdf04a31fefe8dee0fcc8f27",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4230-02",
+      "time": 4228.5,
+      "path": "dense/around-4230/frame-02.jpg",
+      "sha256": "2d10fd0abc477f828d6066c08a0afbac34a6331672e7893c78f7e8459b109731",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4230-03",
+      "time": 4229.0,
+      "path": "dense/around-4230/frame-03.jpg",
+      "sha256": "be1f863a26c28092b7c4bb016a797f9e13cd48823fc49e82d6d90f2398c3acaf",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4230-04",
+      "time": 4229.5,
+      "path": "dense/around-4230/frame-04.jpg",
+      "sha256": "82dc04e86521c2d05e8f0c007242bdf13f305908ca54f92d7589b6379c6e53e1",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4230-05",
+      "time": 4230.0,
+      "path": "dense/around-4230/frame-05.jpg",
+      "sha256": "6cbe043897c3b9e751ce334e4b4b8fc9d0cefe8a4843e7ccd9760440cc3c31c3",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4230-06",
+      "time": 4230.5,
+      "path": "dense/around-4230/frame-06.jpg",
+      "sha256": "5a83dca422090e26cd3d878dd0cd52e3de47b56620a1be0a93edc1d2f2f184e6",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4230-07",
+      "time": 4231.0,
+      "path": "dense/around-4230/frame-07.jpg",
+      "sha256": "91ef630014573f7dbaf6b330ba5777d1d458fc9f3c6a00007e50d2639f534c5e",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4230-08",
+      "time": 4231.5,
+      "path": "dense/around-4230/frame-08.jpg",
+      "sha256": "2c50fe847edacd81243c6f2f2dbb6684eb463792735de02575fd8390bbd100db",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4274-01",
+      "time": 4272.0,
+      "path": "dense/around-4274/frame-01.jpg",
+      "sha256": "6d29b65fe8d0eb8793a8bf527ff02cd1ff36d5f7fbd2d1ba1bdbf1b5c4d2e1a0",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4274-02",
+      "time": 4272.5,
+      "path": "dense/around-4274/frame-02.jpg",
+      "sha256": "cb3c23e36e62c1c25e22a58cd5accd4be64dce9dc737cc812c9fe92619b63019",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4274-03",
+      "time": 4273.0,
+      "path": "dense/around-4274/frame-03.jpg",
+      "sha256": "cfe173480a7d9dc5bdd922463616deae85ca4f97816dde92584d5c92ef258699",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4274-04",
+      "time": 4273.5,
+      "path": "dense/around-4274/frame-04.jpg",
+      "sha256": "7e10f6dc8bfec0511fe35feb69ced358e58929111526e4c687ae49461cb18374",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4274-05",
+      "time": 4274.0,
+      "path": "dense/around-4274/frame-05.jpg",
+      "sha256": "327edb9a46b539758174a06f63e54d520316761d4828ce05a2d9d0f413c0286d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4274-06",
+      "time": 4274.5,
+      "path": "dense/around-4274/frame-06.jpg",
+      "sha256": "5fd8f74ec90a71539824bd609f895e6635f07718d72781a7791eb3da78dbbd9e",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4274-07",
+      "time": 4275.0,
+      "path": "dense/around-4274/frame-07.jpg",
+      "sha256": "537029dd57cd492cc7f14baa50c8cd95c3235317ba65ffb2f8778eeb0df535b2",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4274-08",
+      "time": 4275.5,
+      "path": "dense/around-4274/frame-08.jpg",
+      "sha256": "723133a3e859a1bb1bebf2918dc25df6a14222da0b0b9b7f4edae8c7609bcb30",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4494-01",
+      "time": 4492.0,
+      "path": "dense/around-4494/frame-01.jpg",
+      "sha256": "19e8444271949259b0c3eafdd18eb0096d75a5a683221de14bb2eec360c6ae92",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4494-02",
+      "time": 4492.5,
+      "path": "dense/around-4494/frame-02.jpg",
+      "sha256": "7ec100780f650c505ef63d1667787c1756520abdc99905bf58f95d24d19a76ba",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4494-03",
+      "time": 4493.0,
+      "path": "dense/around-4494/frame-03.jpg",
+      "sha256": "93d0e0dbcbb821dc5566b575df16d335e6a208adc930669539a765977da7b313",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4494-04",
+      "time": 4493.5,
+      "path": "dense/around-4494/frame-04.jpg",
+      "sha256": "628fc5da02e0f9036b3eac23b1724279ac839fcff17e9cc0b0499e2f8a582298",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4494-05",
+      "time": 4494.0,
+      "path": "dense/around-4494/frame-05.jpg",
+      "sha256": "b8a6399a01e73551285a4b3fc8def0213035a75eff988e241a1939b698d52664",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4494-06",
+      "time": 4494.5,
+      "path": "dense/around-4494/frame-06.jpg",
+      "sha256": "9455cf3d662d73ba2c5efb5d7e100fd7ffd944aed935581a4e85fd4ae1369e1d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4494-07",
+      "time": 4495.0,
+      "path": "dense/around-4494/frame-07.jpg",
+      "sha256": "a168c20de9d7c595b7023e74f2d82bce32f20f8d93fc6bafce4dccd4da8493db",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4494-08",
+      "time": 4495.5,
+      "path": "dense/around-4494/frame-08.jpg",
+      "sha256": "573a84b80e39277d5d8f1640a657b327342062381a18e716731a02965888e2b1",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4674-01",
+      "time": 4672.0,
+      "path": "dense/around-4674/frame-01.jpg",
+      "sha256": "69addacd7abf335793ad9e43fb06beb3df1615bacb0af5a19da6c9a1235ca21b",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4674-02",
+      "time": 4672.5,
+      "path": "dense/around-4674/frame-02.jpg",
+      "sha256": "cb7c9cd98cb8b89215ffa57890254ea4fd4c2c3c602dda710e7512768b584d6b",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4674-03",
+      "time": 4673.0,
+      "path": "dense/around-4674/frame-03.jpg",
+      "sha256": "fa2575bd4fe440b79684bad1fbd152d9a6e90709cb09e74ab2b4fe22d58d37e5",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4674-04",
+      "time": 4673.5,
+      "path": "dense/around-4674/frame-04.jpg",
+      "sha256": "edd6c6f4693f20e37ee81608c9f32cec61376ed3b077f66dbd67063efb57d205",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4674-05",
+      "time": 4674.0,
+      "path": "dense/around-4674/frame-05.jpg",
+      "sha256": "026b5aa02a64a5383b566f0206a8febb63d5b932e4c8c63ecabab4c3cebd1aec",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4674-06",
+      "time": 4674.5,
+      "path": "dense/around-4674/frame-06.jpg",
+      "sha256": "55500988e2f88b600ff500bddc038c20641c13242ad29a55f8ff3efca77a2dd3",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4674-07",
+      "time": 4675.0,
+      "path": "dense/around-4674/frame-07.jpg",
+      "sha256": "c1398513d183cbea4362755f21c28cea5100982df24cf021258849ded0d77e44",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4674-08",
+      "time": 4675.5,
+      "path": "dense/around-4674/frame-08.jpg",
+      "sha256": "39b6873aa867726905b182deb932c1ae8e1e4eed875a36cbcf7fdee440ffa1a9",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4932-01",
+      "time": 4930.0,
+      "path": "dense/around-4932/frame-01.jpg",
+      "sha256": "4566d6d0e856c0c774d6e17f085ff6b0e690c37260d4e72c54d66defd008897b",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4932-02",
+      "time": 4930.5,
+      "path": "dense/around-4932/frame-02.jpg",
+      "sha256": "585459f57a57c084fc76359055737729bfb48672f763d6e61a6d5a3c63824ed7",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4932-03",
+      "time": 4931.0,
+      "path": "dense/around-4932/frame-03.jpg",
+      "sha256": "4cd3a254154c72f37096aac59b32922a5c86b7106071183827056333b5092ecc",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4932-04",
+      "time": 4931.5,
+      "path": "dense/around-4932/frame-04.jpg",
+      "sha256": "877295902afcb99d5f6928f575b648ba55eedd0a265d79e0c1027d25acab65ad",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4932-05",
+      "time": 4932.0,
+      "path": "dense/around-4932/frame-05.jpg",
+      "sha256": "9c889671e06394dc90f668674243f692f421cb6b3d977cc802cd65c6f6b5659d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4932-06",
+      "time": 4932.5,
+      "path": "dense/around-4932/frame-06.jpg",
+      "sha256": "d7326124d386ed151328cf130be9b7038acd44c360175ffa35ef3ec8b06bb564",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4932-07",
+      "time": 4933.0,
+      "path": "dense/around-4932/frame-07.jpg",
+      "sha256": "12b5a0e0664785ac2c0a7ee5d67e0e94b7f6f7f55956d74f6a605051c07835a6",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d4932-08",
+      "time": 4933.5,
+      "path": "dense/around-4932/frame-08.jpg",
+      "sha256": "aa03b54ca22f823bb2d3f0aaee2c064a7366934d44a6f8ecc0fe5a65860de3d6",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5004-01",
+      "time": 5002.0,
+      "path": "dense/around-5004/frame-01.jpg",
+      "sha256": "faa40e964dd56a2f98d0c2a4a6d35f2d8a03955f6fe89dba65a7db2393866550",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5004-02",
+      "time": 5002.5,
+      "path": "dense/around-5004/frame-02.jpg",
+      "sha256": "29ac0229bfae355204b41afaabf7307eb1490e208b0eebbf63f901b0fc07af69",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5004-03",
+      "time": 5003.0,
+      "path": "dense/around-5004/frame-03.jpg",
+      "sha256": "43f5979d35e0bb15ae2e3c9d16703d3983af1545c59bc6880bc98aa97715fcec",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5004-04",
+      "time": 5003.5,
+      "path": "dense/around-5004/frame-04.jpg",
+      "sha256": "73660428f1499e3a8f4c4377ee998fad7d71534f99e33b4a10f2163d18e50adb",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5004-05",
+      "time": 5004.0,
+      "path": "dense/around-5004/frame-05.jpg",
+      "sha256": "2be89e63c8ed39c8709fd6206eef293c6ae4344e9813c6b321fcca79edf44f38",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5004-06",
+      "time": 5004.5,
+      "path": "dense/around-5004/frame-06.jpg",
+      "sha256": "79e86ee1357a909fe16488f41ee8d3544d69f0ea2bdd0b375226585ee4eca4e3",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5004-07",
+      "time": 5005.0,
+      "path": "dense/around-5004/frame-07.jpg",
+      "sha256": "153104b47a4ad572fb062ba55489e4d255e598490e6296850c2f01250e033971",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5004-08",
+      "time": 5005.5,
+      "path": "dense/around-5004/frame-08.jpg",
+      "sha256": "d55425b1834ab2db55e448a9d278ea531c26e075e7a3710cc7904e4ef75b9d42",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5032-01",
+      "time": 5030.0,
+      "path": "dense/around-5032/frame-01.jpg",
+      "sha256": "f8f323d188356383ec313128fc127052344d3674c12c5cc7c8c10139f3256aea",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5032-02",
+      "time": 5030.5,
+      "path": "dense/around-5032/frame-02.jpg",
+      "sha256": "52ba6a0490d559421d595714a3ca9c4f9ab5260dea7df1b7e88f77f1aa4679ae",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5032-03",
+      "time": 5031.0,
+      "path": "dense/around-5032/frame-03.jpg",
+      "sha256": "52dbbd5c5ecab9a4f4995e113c0c1c9a28b28d88547c76d16e224e16bdc96279",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5032-04",
+      "time": 5031.5,
+      "path": "dense/around-5032/frame-04.jpg",
+      "sha256": "04d9eaf9a38d87aace7750ff91c57069d9bdcabc4b7a17a9fb2718587a1064e7",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5032-05",
+      "time": 5032.0,
+      "path": "dense/around-5032/frame-05.jpg",
+      "sha256": "105ccff396dbd4626e74ca72602c21c55d5f743e5836adb869479aaac727b8eb",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5032-06",
+      "time": 5032.5,
+      "path": "dense/around-5032/frame-06.jpg",
+      "sha256": "6bd07ed029adebaa4383cc3fdc006efcde1432e869fce9ebd11c878f49c0360a",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5032-07",
+      "time": 5033.0,
+      "path": "dense/around-5032/frame-07.jpg",
+      "sha256": "f4b34a2ffae10780dee297cc98ba4489b9d86615f93d1f7841e1190988a1ad5d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5032-08",
+      "time": 5033.5,
+      "path": "dense/around-5032/frame-08.jpg",
+      "sha256": "fd7c608b6b4b68ed4f98fb3b6f2b1d307c2ea7efefbfe43581542c69e3adc00d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5078-01",
+      "time": 5076.0,
+      "path": "dense/around-5078/frame-01.jpg",
+      "sha256": "a82ed9fc3acbe5bca3ffbebf5795ef7a9f6484239f779b6ae68d5504111490d1",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5078-02",
+      "time": 5076.5,
+      "path": "dense/around-5078/frame-02.jpg",
+      "sha256": "0d88518145dbd04a93bc47ad26a57779f17209eebd3b523292a02c425a945ddd",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5078-03",
+      "time": 5077.0,
+      "path": "dense/around-5078/frame-03.jpg",
+      "sha256": "6f0b15a3db2ccf1c4c32a7a15f49aaaf0e9e6a9d5a62f20d84f5460b0470e066",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5078-04",
+      "time": 5077.5,
+      "path": "dense/around-5078/frame-04.jpg",
+      "sha256": "afb87980acbdee9d3e1b4b7d6e66fdfed275af33258b4ea5017fa673414adc8a",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5078-05",
+      "time": 5078.0,
+      "path": "dense/around-5078/frame-05.jpg",
+      "sha256": "16e88e460dd7ce79c536e4fcfa10c8fc5eae17b43b6165cd65b42a1dd0486fa4",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5078-06",
+      "time": 5078.5,
+      "path": "dense/around-5078/frame-06.jpg",
+      "sha256": "2103db6d8fd76165634dd1672a198210d3c75c25a8e9d9960775ecc9f539fea6",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5078-07",
+      "time": 5079.0,
+      "path": "dense/around-5078/frame-07.jpg",
+      "sha256": "fe2570235576adf680a5c02d5d30e8b526d49e5754e4699813919f9c30b16923",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5078-08",
+      "time": 5079.5,
+      "path": "dense/around-5078/frame-08.jpg",
+      "sha256": "a011b560428b687a0eab34583787557ffe4ca809fd623f3db6a56016809e2a84",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5196-01",
+      "time": 5194.0,
+      "path": "dense/around-5196/frame-01.jpg",
+      "sha256": "f7868156c470ba46bb53ec34b03e546fe0dcce21e9e170f530ef6d1c1aae856d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5196-02",
+      "time": 5194.5,
+      "path": "dense/around-5196/frame-02.jpg",
+      "sha256": "a42f78129ded65cfe70d5674cd6b6ae11fa03723d4a6d9191e0a40bf357bda8b",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5196-03",
+      "time": 5195.0,
+      "path": "dense/around-5196/frame-03.jpg",
+      "sha256": "5190e7453f6f40c74d20acd8870c4ac8b2408994516f83a7a81153fd263515b8",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5196-04",
+      "time": 5195.5,
+      "path": "dense/around-5196/frame-04.jpg",
+      "sha256": "1b2e966975cc205985c66e9f4067c03297f3d0318fea626097b0576cc94cab15",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5196-05",
+      "time": 5196.0,
+      "path": "dense/around-5196/frame-05.jpg",
+      "sha256": "0f33d98f7db0a4c2f862e6ca22741a890511e4fbd19f054e10bfa46ec9d77f79",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5196-06",
+      "time": 5196.5,
+      "path": "dense/around-5196/frame-06.jpg",
+      "sha256": "2bb5f3ed4cd14c83c655973f4f029215dea4f3da568f3115d97af84bc0f8c547",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5196-07",
+      "time": 5197.0,
+      "path": "dense/around-5196/frame-07.jpg",
+      "sha256": "947affb96162dc62e506d2d3aca02228181aa459376d322e69c7e55ff5e0c05e",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5196-08",
+      "time": 5197.5,
+      "path": "dense/around-5196/frame-08.jpg",
+      "sha256": "99a96368cd3ed17d6fcb071555fa05299ffe27eee7837504c44b5bfcf23305e4",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5284-01",
+      "time": 5282.0,
+      "path": "dense/around-5284/frame-01.jpg",
+      "sha256": "efb1efaca94da11df1302d0bf49d66339e0ae84e35e723f9ef4ebdd571cefcb4",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5284-02",
+      "time": 5282.5,
+      "path": "dense/around-5284/frame-02.jpg",
+      "sha256": "615cc2ba06f8f7ac56120bd8a5d572677896c05369a0cd41d12bf6a7e8c25fb8",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5284-03",
+      "time": 5283.0,
+      "path": "dense/around-5284/frame-03.jpg",
+      "sha256": "41096a3e8b92c94d3c841853a2d82b6ac9b7523362be47ceab1f0004ea86998b",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5284-04",
+      "time": 5283.5,
+      "path": "dense/around-5284/frame-04.jpg",
+      "sha256": "dc8ce54eb35256b5b88ddb3d50784d53254b93d7cde23eb878e72408ca075069",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5284-05",
+      "time": 5284.0,
+      "path": "dense/around-5284/frame-05.jpg",
+      "sha256": "e8e919b0212813b877f6d8b330fc674ef18f20387d48b1d356127b4104b60da9",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5284-06",
+      "time": 5284.5,
+      "path": "dense/around-5284/frame-06.jpg",
+      "sha256": "fcdbe4c8b59693942af8f9fdb3d5e1706d09e69fdae0fbf8db372d98ef7ef170",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5284-07",
+      "time": 5285.0,
+      "path": "dense/around-5284/frame-07.jpg",
+      "sha256": "5c4fa064eda717650d10a44ba55adf8e2683ba54ebe6a762114877024910ff82",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5284-08",
+      "time": 5285.5,
+      "path": "dense/around-5284/frame-08.jpg",
+      "sha256": "3fb7b79b93add666e8ba5c6c6fbfaecb829a83817d30a3e988a48ceadf696319",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5818-01",
+      "time": 5816.0,
+      "path": "dense/around-5818/frame-01.jpg",
+      "sha256": "bbf0178a11971a2488b54bbfdd01b88a90140f2f0ee33cc02f0777bde45cdb43",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5818-02",
+      "time": 5816.5,
+      "path": "dense/around-5818/frame-02.jpg",
+      "sha256": "d7730e36f25d417081fee88ec6d7a4a3e04408705f30e3a2c7a48b38e0def0ee",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5818-03",
+      "time": 5817.0,
+      "path": "dense/around-5818/frame-03.jpg",
+      "sha256": "78096a54d362226e712d45e10d29194972dad502499909d846e91eb97c52f261",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5818-04",
+      "time": 5817.5,
+      "path": "dense/around-5818/frame-04.jpg",
+      "sha256": "8accf8b61a918ed9ee7f790d2a96242da7875791d79ed3a8168d67a4e36ccb19",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5818-05",
+      "time": 5818.0,
+      "path": "dense/around-5818/frame-05.jpg",
+      "sha256": "8d51528e67bff140f167cadb390ad309f62ac786c39a26bee2936764b0296c1d",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5818-06",
+      "time": 5818.5,
+      "path": "dense/around-5818/frame-06.jpg",
+      "sha256": "baad1686d376ec4bbe243e7c36afdffa8641e6548f9011df1e38d0c8a7fad0c1",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5818-07",
+      "time": 5819.0,
+      "path": "dense/around-5818/frame-07.jpg",
+      "sha256": "20ee44abd5ed9c774ba8d53517f334328606f568a68e62dce9bc53600df5c088",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    },
+    {
+      "id": "d5818-08",
+      "time": 5819.5,
+      "path": "dense/around-5818/frame-08.jpg",
+      "sha256": "a01f46291c50292f4656afa843c4ef88ace84accde2beaef3804e5d1b732f051",
+      "manual_status": "visually_reviewed_dense_window",
+      "trigger": [
+        "dense_transition_review"
+      ]
+    }
+  ],
+  "status": "all_272_contact_frames_visually_reviewed_pending_integration"
+}

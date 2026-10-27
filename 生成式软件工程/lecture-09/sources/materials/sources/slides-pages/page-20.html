@@ -1,0 +1,15 @@
+<h1>设计 Agent Harness: First Principle</h1>
+<h2>Everything Is a Plugin</h2>
+<ul>
+<li>彻底解耦合：每个 plugin 都有私有的状态</li>
+<li>但我不讲 Cordis（虽然这也是架构的一部分 😂）<ul>
+<li>服务解析、依赖激活、作用域、卸载</li>
+<li>就跟操作系统提供了进程生命周期和访问控制一样</li>
+</ul>
+</li>
+</ul>
+<h2>真正的难点是协同</h2>
+<ul>
+<li>不协同 = 没用</li>
+<li>随便协同 = 没法用</li>
+</ul>

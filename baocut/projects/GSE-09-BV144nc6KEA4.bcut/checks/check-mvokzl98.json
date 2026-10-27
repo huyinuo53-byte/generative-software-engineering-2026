@@ -1,0 +1,19 @@
+{
+  "alignMetrics": {},
+  "blockers": [],
+  "checkedAt": 1792978303574,
+  "infos": [],
+  "lang": null,
+  "next": [],
+  "ready": true,
+  "stages": {
+    "asr": "fresh",
+    "asrLayout": "fresh",
+    "chapters": "never",
+    "polish": "never",
+    "segment": "never",
+    "translations": {}
+  },
+  "target": null,
+  "warnings": []
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "n": 1,
+    "moves": 1,
+    "legal": true,
+    "matches_recursive": true
+  },
+  {
+    "n": 2,
+    "moves": 3,
+    "legal": true,
+    "matches_recursive": true
+  },
+  {
+    "n": 3,
+    "moves": 7,
+    "legal": true,
+    "matches_recursive": true
+  },
+  {
+    "n": 4,
+    "moves": 15,
+    "legal": true,
+    "matches_recursive": true
+  },
+  {
+    "n": 5,
+    "moves": 31,
+    "legal": true,
+    "matches_recursive": true
+  },
+  {
+    "n": 6,
+    "moves": 63,
+    "legal": true,
+    "matches_recursive": true
+  },
+  {
+    "n": 7,
+    "moves": 127,
+    "legal": true,
+    "matches_recursive": true
+  },
+  {
+    "n": 8,
+    "moves": 255,
+    "legal": true,
+    "matches_recursive": true
+  },
+  {
+    "n": 9,
+    "moves": 511,
+    "legal": true,
+    "matches_recursive": true
+  },
+  {
+    "n": 10,
+    "moves": 1023,
+    "legal": true,
+    "matches_recursive": true
+  }
+]

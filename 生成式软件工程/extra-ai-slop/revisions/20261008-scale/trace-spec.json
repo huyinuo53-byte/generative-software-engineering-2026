@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "run_id": "extra-ai-slop-20261008-editorial-scale",
+  "basis": "observed_build",
+  "root": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop",
+  "artifacts": [
+    {
+      "id": "transcript",
+      "path": "transcript.json",
+      "depends_on": []
+    },
+    {
+      "id": "index",
+      "path": "chunks/index.json",
+      "depends_on": [
+        "transcript"
+      ]
+    },
+    {
+      "id": "frame-0-0",
+      "path": "frames/010.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frame-1-0",
+      "path": "frames/020.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frame-2-0",
+      "path": "frames/040.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frame-3-0",
+      "path": "frames/060.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frame-4-0",
+      "path": "frames/090.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frame-4-1",
+      "path": "frames/110.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frame-5-0",
+      "path": "frames/130.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frame-6-0",
+      "path": "frames/150.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "notes",
+      "path": "notes.json",
+      "depends_on": [
+        "index",
+        "frame-0-0",
+        "frame-1-0",
+        "frame-2-0",
+        "frame-3-0",
+        "frame-4-0",
+        "frame-4-1",
+        "frame-5-0",
+        "frame-6-0"
+      ]
+    },
+    {
+      "id": "layout",
+      "path": "reading-layout.json",
+      "depends_on": [
+        "notes"
+      ]
+    },
+    {
+      "id": "build-0",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/scripts/course_notes.py",
+      "depends_on": []
+    },
+    {
+      "id": "build-1",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/scripts/reading_layout.py",
+      "depends_on": []
+    },
+    {
+      "id": "build-2",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/template.html",
+      "depends_on": []
+    },
+    {
+      "id": "build-3",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/editorial.html",
+      "depends_on": []
+    },
+    {
+      "id": "build-4",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/editorial.css",
+      "depends_on": []
+    },
+    {
+      "id": "build-5",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/editorial.js",
+      "depends_on": []
+    },
+    {
+      "id": "html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "layout",
+        "notes",
+        "index",
+        "build-0",
+        "build-1",
+        "build-2",
+        "build-3",
+        "build-4",
+        "build-5"
+      ]
+    },
+    {
+      "id": "layout-check",
+      "path": "revisions/20261008-scale/layout-validation.json",
+      "depends_on": [
+        "notes",
+        "layout"
+      ]
+    },
+    {
+      "id": "browser",
+      "path": "revisions/20261008-scale/browser.json",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "pdf",
+      "path": "revisions/20261008-scale/print-check.pdf",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "print",
+      "path": "revisions/20261008-scale/print.json",
+      "depends_on": [
+        "pdf",
+        "html",
+        "notes"
+      ]
+    },
+    {
+      "id": "preservation",
+      "path": "revisions/20261008-scale/preservation.json",
+      "depends_on": [
+        "html",
+        "notes",
+        "layout",
+        "frame-0-0",
+        "frame-1-0",
+        "frame-2-0",
+        "frame-3-0",
+        "frame-4-0",
+        "frame-4-1",
+        "frame-5-0",
+        "frame-6-0"
+      ]
+    },
+    {
+      "id": "visual-0",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/1440-quiz.png",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "visual-1",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/1440-reading.png",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "visual-2",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/1440-supplement.png",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "visual-3",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/1440-top.png",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "visual-4",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/320-quiz.png",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "visual-5",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/320-top.png",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "visual-6",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-quiz.png",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "visual-7",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-reading.png",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "visual-8",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-supplement.png",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "visual-9",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-top.png",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "visual-10",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/768-quiz.png",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "visual-11",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/768-top.png",
+      "depends_on": [
+        "html"
+      ]
+    },
+    {
+      "id": "visual-12",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/print-last-page.png",
+      "depends_on": [
+        "pdf"
+      ]
+    },
+    {
+      "id": "review",
+      "path": "review.json",
+      "depends_on": [
+        "browser",
+        "print",
+        "layout-check",
+        "preservation",
+        "visual-0",
+        "visual-1",
+        "visual-2",
+        "visual-3",
+        "visual-4",
+        "visual-5",
+        "visual-6",
+        "visual-7",
+        "visual-8",
+        "visual-9",
+        "visual-10",
+        "visual-11",
+        "visual-12"
+      ]
+    }
+  ]
+}

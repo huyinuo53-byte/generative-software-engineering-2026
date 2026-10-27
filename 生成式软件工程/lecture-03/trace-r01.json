@@ -1,0 +1,952 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1kybV6DE47-20261002",
+  "basis": "observed_build",
+  "captured_at": "2026-10-02T15:35:13.580173+00:00",
+  "root": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-03",
+  "spec_sha256": "a8aecb4e5549c4c2c8b1a8b352c6882ed549ee5b26cfe385260005bfa432a0cb",
+  "artifacts": [
+    {
+      "id": "audit.json",
+      "path": "audit.json",
+      "depends_on": [],
+      "sha256": "dc7082632dd807be5f79f76cc73c49fa7015cbe842ad23fc3c6299f6b3459ee9",
+      "bytes": 4514
+    },
+    {
+      "id": "build_notes.py",
+      "path": "build_notes.py",
+      "depends_on": [],
+      "sha256": "cb1eebe27fe6161abfddf61c257fbb77bfe60ebfdec2f86489fed360476e4c0d",
+      "bytes": 38210
+    },
+    {
+      "id": "chunks/chunk-0001.json",
+      "path": "chunks/chunk-0001.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "babbda0e4c172756caf52568a09f500796753f1d26a421e5c6af2231c9dd9927",
+      "bytes": 6989
+    },
+    {
+      "id": "chunks/chunk-0002.json",
+      "path": "chunks/chunk-0002.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "680673937912a1d9ab0c58aff87f15b62eb5de68764fc98fd4c337e1876985d5",
+      "bytes": 8967
+    },
+    {
+      "id": "chunks/chunk-0003.json",
+      "path": "chunks/chunk-0003.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "47875cd62bfd993e77baf3fc2b4a5e5b38e9a320b2c5e0f5365ccc8c8f1c8a67",
+      "bytes": 9281
+    },
+    {
+      "id": "chunks/chunk-0004.json",
+      "path": "chunks/chunk-0004.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "88b99e2d8b59bbff8203f214a0aee69e416be06d32986185883a8ee42128cb32",
+      "bytes": 6763
+    },
+    {
+      "id": "chunks/chunk-0005.json",
+      "path": "chunks/chunk-0005.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "8969790a569bd5d4ee8333b8c035a5cf39896b503fc5a0c73d2094cb2aae7af1",
+      "bytes": 8509
+    },
+    {
+      "id": "chunks/chunk-0006.json",
+      "path": "chunks/chunk-0006.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "d0aaf66a9680fbab6d2da596e860ad9ca3739632ba7e982651f5ad4c33e6fe64",
+      "bytes": 6465
+    },
+    {
+      "id": "chunks/chunk-0007.json",
+      "path": "chunks/chunk-0007.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "69384c9e54a597481a2c7da7e1106d585d10d119e234426d0b988f6c80c62981",
+      "bytes": 5965
+    },
+    {
+      "id": "chunks/chunk-0008.json",
+      "path": "chunks/chunk-0008.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "a625f0c87e7455ca117b969e596098b79933783b0958a4741e417d2f8b7b1fd2",
+      "bytes": 6057
+    },
+    {
+      "id": "chunks/chunk-0009.json",
+      "path": "chunks/chunk-0009.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "a5a3bdf5e318ae80986ebdaa30771e2e3e46a93921f67981cfb6c757b4dbc4eb",
+      "bytes": 6074
+    },
+    {
+      "id": "chunks/chunk-0010.json",
+      "path": "chunks/chunk-0010.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "9b0ca0a4408589681267937b400be9913ba55a2a4620ea42129e5172d4584142",
+      "bytes": 5712
+    },
+    {
+      "id": "chunks/chunk-0011.json",
+      "path": "chunks/chunk-0011.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "4120a4e4dfa0ab1820dfd391bdc33283e431b51bef9bace5a0b3cea25bcb6e88",
+      "bytes": 6885
+    },
+    {
+      "id": "chunks/chunk-0012.json",
+      "path": "chunks/chunk-0012.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "733d795b96deaa0f544b5bba4e32cc767d339527e3efe0e71435330fbf92f488",
+      "bytes": 6879
+    },
+    {
+      "id": "chunks/chunk-0013.json",
+      "path": "chunks/chunk-0013.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "e27e212b963b13b872de2ef92ab549ce3d4b732b4aaa9384c643e54cafc9e14e",
+      "bytes": 5494
+    },
+    {
+      "id": "chunks/chunk-0014.json",
+      "path": "chunks/chunk-0014.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "7239682658f3e8742bc3ad19ca50a0fca767b5c7dc70120b88d5a7d3f788c8be",
+      "bytes": 6392
+    },
+    {
+      "id": "chunks/chunk-0015.json",
+      "path": "chunks/chunk-0015.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "ab5b74601c346304bc91a293490c990882a1c6eeb64ffa625a3e3ca58125cf53",
+      "bytes": 7350
+    },
+    {
+      "id": "chunks/chunk-0016.json",
+      "path": "chunks/chunk-0016.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "20700f5f152a0ba8f7f65c1dfdd8a174d866afc9f55f47992b2becfcd686e900",
+      "bytes": 6114
+    },
+    {
+      "id": "chunks/chunk-0017.json",
+      "path": "chunks/chunk-0017.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "4a6ee163f17bf5a0ee327a266cb0d4926804f0ac0b72fad40cab83ff27f743ec",
+      "bytes": 6647
+    },
+    {
+      "id": "chunks/chunk-0018.json",
+      "path": "chunks/chunk-0018.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "a7b0bb8278fc09255671c461827f6b2dcbcb75d57426507c71c241c99d1cf931",
+      "bytes": 7557
+    },
+    {
+      "id": "chunks/chunk-0019.json",
+      "path": "chunks/chunk-0019.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "b50fa7c3700c82fdbed44f2b55a085ef81426a004541293aea2c9d920e12d76a",
+      "bytes": 8099
+    },
+    {
+      "id": "chunks/chunk-0020.json",
+      "path": "chunks/chunk-0020.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "0666db7990233189217f0c29648771de326865839365dcb04c8e47451a27a015",
+      "bytes": 3511
+    },
+    {
+      "id": "chunks/index.json",
+      "path": "chunks/index.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "a3ef44af54e2ef85dfe52d0c47f3784d31559c4c62f9834aab3eec70bf8e0bf4",
+      "bytes": 59166
+    },
+    {
+      "id": "events.jsonl",
+      "path": "events.jsonl",
+      "depends_on": [],
+      "sha256": "0d35031219a905705099116a78e9efef739188835f4941803534890911444800",
+      "bytes": 1799
+    },
+    {
+      "id": "finalize_audit.py",
+      "path": "finalize_audit.py",
+      "depends_on": [],
+      "sha256": "c6c01ae9fe56f649f07aff862dc428e86a3bb826a232f3c1dcec2e4e8a58133b",
+      "bytes": 12024
+    },
+    {
+      "id": "frames/slide-001.png",
+      "path": "frames/slide-001.png",
+      "depends_on": [],
+      "sha256": "7833885e0335fd6a6f7c54726feae0e7a1683a710eea7b8de0cb8085e554d594",
+      "bytes": 952554
+    },
+    {
+      "id": "frames/slide-002.png",
+      "path": "frames/slide-002.png",
+      "depends_on": [],
+      "sha256": "05d534b1127129b33c311dec5c03803efd3448bbc7982e523097f8e9d2f43b9c",
+      "bytes": 307956
+    },
+    {
+      "id": "frames/slide-003.png",
+      "path": "frames/slide-003.png",
+      "depends_on": [],
+      "sha256": "8d95276a924da05234e49d1f6cc879aa33ba272ef95894b45514f1e33916ba57",
+      "bytes": 662609
+    },
+    {
+      "id": "frames/slide-004.png",
+      "path": "frames/slide-004.png",
+      "depends_on": [],
+      "sha256": "e00f7a3932d78950f4f888cc568482849ca309e85a06a8fe4c24ebec7008a327",
+      "bytes": 254368
+    },
+    {
+      "id": "frames/slide-005.png",
+      "path": "frames/slide-005.png",
+      "depends_on": [],
+      "sha256": "396cb8fd5016e87046530bf3d4cda74c9ea245f136f219919372b35389ac9509",
+      "bytes": 321342
+    },
+    {
+      "id": "frames/slide-006.png",
+      "path": "frames/slide-006.png",
+      "depends_on": [],
+      "sha256": "ad125402de19533cb1e563f97865cd0a72cf8efdec07267e2a51ba0873c6554d",
+      "bytes": 512924
+    },
+    {
+      "id": "frames/slide-007.png",
+      "path": "frames/slide-007.png",
+      "depends_on": [],
+      "sha256": "4ec6f05e94f8feb01626def6076b583f5a7b04e6ccd805edb200a81f45df4204",
+      "bytes": 204534
+    },
+    {
+      "id": "frames/slide-008.png",
+      "path": "frames/slide-008.png",
+      "depends_on": [],
+      "sha256": "7f3722265b80a62e18c75a1b07c61289318c2f5cfe888c18db6f04efd3b16fa1",
+      "bytes": 259266
+    },
+    {
+      "id": "frames/slide-009.png",
+      "path": "frames/slide-009.png",
+      "depends_on": [],
+      "sha256": "976396f95330719602918a932930de3d62e68891e39f34af9487f3b08a0982c6",
+      "bytes": 324603
+    },
+    {
+      "id": "frames/slide-010.png",
+      "path": "frames/slide-010.png",
+      "depends_on": [],
+      "sha256": "6f447bf61ce4c2f3a7d53ac40619bdac5c14c033d23c05d2a33855ab62cfd149",
+      "bytes": 263444
+    },
+    {
+      "id": "frames/slide-011.png",
+      "path": "frames/slide-011.png",
+      "depends_on": [],
+      "sha256": "b504d2e97139e0673bc9122e0caf11b16d0ceb3ee20af5ca13949c38eef18448",
+      "bytes": 295126
+    },
+    {
+      "id": "frames/slide-012.png",
+      "path": "frames/slide-012.png",
+      "depends_on": [],
+      "sha256": "d2fba295e21f70fe3c07be094a173dfdecd1eb56a90d1cd8a2d71121b26ce562",
+      "bytes": 347813
+    },
+    {
+      "id": "frames/slide-013.png",
+      "path": "frames/slide-013.png",
+      "depends_on": [],
+      "sha256": "8712fc11b3757e8614c726547d868fd4dd4d0f9d6340d05b6b7cec2844a96c8f",
+      "bytes": 312614
+    },
+    {
+      "id": "frames/slide-014.png",
+      "path": "frames/slide-014.png",
+      "depends_on": [],
+      "sha256": "9b7d554935b6c429154012193fbc64da30509e18100bd6abee80b4b6a1a82408",
+      "bytes": 309338
+    },
+    {
+      "id": "frames/slide-015.png",
+      "path": "frames/slide-015.png",
+      "depends_on": [],
+      "sha256": "524fe79508bd782b71aff3db14ed0c215d5c26d521da6648a261d23c77c22b80",
+      "bytes": 257048
+    },
+    {
+      "id": "frames/slide-016.png",
+      "path": "frames/slide-016.png",
+      "depends_on": [],
+      "sha256": "36de4f82ac00c207b30e42a8d207c8c315deade6571a2700b1cc1e487f28e779",
+      "bytes": 318594
+    },
+    {
+      "id": "frames/slide-017.png",
+      "path": "frames/slide-017.png",
+      "depends_on": [],
+      "sha256": "9da120c6a934d0cdb6d4ccfa96d07a455f558b459cc1750c31df2c2253ced3a3",
+      "bytes": 333951
+    },
+    {
+      "id": "frames/slide-018.png",
+      "path": "frames/slide-018.png",
+      "depends_on": [],
+      "sha256": "fd0a0bb57b868ba6f83165bd351aac04c6788c74450d0d612b370e12416db01f",
+      "bytes": 322001
+    },
+    {
+      "id": "frames/slide-019.png",
+      "path": "frames/slide-019.png",
+      "depends_on": [],
+      "sha256": "259f43b3da2df1d6463beec61ec507cde937a22d4b072cc3d7423ec071dc2974",
+      "bytes": 210162
+    },
+    {
+      "id": "frames/slide-020.png",
+      "path": "frames/slide-020.png",
+      "depends_on": [],
+      "sha256": "f0c113cfad8eb32a2e7c13857f0fd94a55db603f0d18e13c5025fccf1d1ea29a",
+      "bytes": 367095
+    },
+    {
+      "id": "frames/slide-021.png",
+      "path": "frames/slide-021.png",
+      "depends_on": [],
+      "sha256": "b1251c1174b2b5e72875f7b49fce2d328db100ccbf7ca72a297a4253ebe9e052",
+      "bytes": 163786
+    },
+    {
+      "id": "frames/slide-022.png",
+      "path": "frames/slide-022.png",
+      "depends_on": [],
+      "sha256": "ad94ad11279a8bc4fd712939469dd7ac5beb515aeb558c4efd450b547ec81251",
+      "bytes": 384311
+    },
+    {
+      "id": "frames/slide-023.png",
+      "path": "frames/slide-023.png",
+      "depends_on": [],
+      "sha256": "ee9b9f778b9d2c5cbd2163c3c1b860868ed50db4f3f9e2fae743e6515c30eb25",
+      "bytes": 305719
+    },
+    {
+      "id": "frames/slide-024.png",
+      "path": "frames/slide-024.png",
+      "depends_on": [],
+      "sha256": "5ef556fe92a2938aa1600675e02a67a569e93c923823710b965e57e08e67516c",
+      "bytes": 302497
+    },
+    {
+      "id": "frames/slide-025.png",
+      "path": "frames/slide-025.png",
+      "depends_on": [],
+      "sha256": "d64bc58dcbba711f45200e4146f5bcc125a71e34ca6df491e7f4ebabcb059eff",
+      "bytes": 321113
+    },
+    {
+      "id": "frames/slide-026.png",
+      "path": "frames/slide-026.png",
+      "depends_on": [],
+      "sha256": "79f7b0a69836bb17e638825cb8e7c2b1dc86e7e3ccc832f7f120034575a5bfe0",
+      "bytes": 345165
+    },
+    {
+      "id": "frames/slide-027.png",
+      "path": "frames/slide-027.png",
+      "depends_on": [],
+      "sha256": "5017ee7b7e2402ba0eb90166f084e658261c1aba47059afa999d00c8c1972661",
+      "bytes": 388850
+    },
+    {
+      "id": "frames/slide-028.png",
+      "path": "frames/slide-028.png",
+      "depends_on": [],
+      "sha256": "b734bfba63c4fc98e9e34e1a8e0885990e34364ce9599fddd7020de7ac07e935",
+      "bytes": 378640
+    },
+    {
+      "id": "frames/slide-029.png",
+      "path": "frames/slide-029.png",
+      "depends_on": [],
+      "sha256": "eeddb2095659a0d5538349c78ee1a87968d2afd2ae2395b807e16728428e4a38",
+      "bytes": 629077
+    },
+    {
+      "id": "frames/slide-030.png",
+      "path": "frames/slide-030.png",
+      "depends_on": [],
+      "sha256": "e58b62d3ff88328fa2a54de94fe1429e0b4b08dbcf47c790ce29f4505e618785",
+      "bytes": 263587
+    },
+    {
+      "id": "frames/slide-031.png",
+      "path": "frames/slide-031.png",
+      "depends_on": [],
+      "sha256": "a8e9643c5b215a089eb07daa7ee70df60e416665af8f5fe8b8466915fa7936ee",
+      "bytes": 303614
+    },
+    {
+      "id": "frames/slide-032.png",
+      "path": "frames/slide-032.png",
+      "depends_on": [],
+      "sha256": "54a0a0848460aa77c06a36abd83de29b3172722f0fe2266df1e02f9b95d6e0e1",
+      "bytes": 312688
+    },
+    {
+      "id": "frames/slide-033.png",
+      "path": "frames/slide-033.png",
+      "depends_on": [],
+      "sha256": "de93aa10c5771e46ade660b7ac101236c42a541219a5a5fbbff4eb3fc756b57a",
+      "bytes": 565491
+    },
+    {
+      "id": "frames/slide-034.png",
+      "path": "frames/slide-034.png",
+      "depends_on": [],
+      "sha256": "3db79d4e13effa13979b6481278f7ea0a2c23aee37654203a5aca73ba39049cb",
+      "bytes": 364227
+    },
+    {
+      "id": "frames/slide-035.png",
+      "path": "frames/slide-035.png",
+      "depends_on": [],
+      "sha256": "31d544ee59972a3d495acf4a78a0ed4aba466892a9419b210cbcc59b9bf2e0bc",
+      "bytes": 404673
+    },
+    {
+      "id": "frames/video-2190.jpg",
+      "path": "frames/video-2190.jpg",
+      "depends_on": [],
+      "sha256": "2d4b50742451c352e67d455e8f2fa52cfbd4bf45d9b538526fd95eaf21f6418e",
+      "bytes": 58688
+    },
+    {
+      "id": "frames/video-2380.jpg",
+      "path": "frames/video-2380.jpg",
+      "depends_on": [],
+      "sha256": "194bea979cc16264e6978fec9334d53051da44168ca32a071543ebb4481baf9a",
+      "bytes": 75020
+    },
+    {
+      "id": "frames/video-2548.jpg",
+      "path": "frames/video-2548.jpg",
+      "depends_on": [],
+      "sha256": "a725457b6ba360b3febffcab589b06d3c9e9083d3401adfb86915926b54a4b75",
+      "bytes": 81874
+    },
+    {
+      "id": "frames/video-2815.jpg",
+      "path": "frames/video-2815.jpg",
+      "depends_on": [],
+      "sha256": "7bf2629843d256e96fa66eed5a1aa01076750f818ba3e28167de5d5de8901ad0",
+      "bytes": 92750
+    },
+    {
+      "id": "frames/video-2966.jpg",
+      "path": "frames/video-2966.jpg",
+      "depends_on": [],
+      "sha256": "951c5cde69f55c88f5a366e18662068e498344c0523eac7599aab04faf9ea437",
+      "bytes": 74365
+    },
+    {
+      "id": "frames/video-3140.jpg",
+      "path": "frames/video-3140.jpg",
+      "depends_on": [],
+      "sha256": "ef4ce30433f737ce89421585271eac81ddc6df7124bf9d1ba56c9339eda0da92",
+      "bytes": 97025
+    },
+    {
+      "id": "frames/video-3757.jpg",
+      "path": "frames/video-3757.jpg",
+      "depends_on": [],
+      "sha256": "7cba118d1f27c776096c3b12212b5c033658f4b50f1b2c7dabee0ec40da3b462",
+      "bytes": 94119
+    },
+    {
+      "id": "frames/video-3950.jpg",
+      "path": "frames/video-3950.jpg",
+      "depends_on": [],
+      "sha256": "91dde4700474fabc615b7d99a80b78d4540bc2f7bfd81aba588cc96fe0e8abad",
+      "bytes": 74305
+    },
+    {
+      "id": "frames/video-4158.jpg",
+      "path": "frames/video-4158.jpg",
+      "depends_on": [],
+      "sha256": "05a6654270645313244a400fe1961e54a542a7c83994e7e0af9d38f2ee4e04b8",
+      "bytes": 105413
+    },
+    {
+      "id": "frames/video-4349.jpg",
+      "path": "frames/video-4349.jpg",
+      "depends_on": [],
+      "sha256": "0aaccd8fb4c2abaf8e18a6f0c5a53abf52c4360885eabf061594aa0f747454ac",
+      "bytes": 95791
+    },
+    {
+      "id": "frames/video-4409.jpg",
+      "path": "frames/video-4409.jpg",
+      "depends_on": [],
+      "sha256": "77e83eef1a87a34adc93e15afe6605bed0fdb7f336eff363d121a31e4e18cdc7",
+      "bytes": 94568
+    },
+    {
+      "id": "frames/video-4520.jpg",
+      "path": "frames/video-4520.jpg",
+      "depends_on": [],
+      "sha256": "dfec99a5a1fea8f45f8a1d381b606faa71d780c1c60fcb5bad4705ca706b8478",
+      "bytes": 105949
+    },
+    {
+      "id": "frames/video-4640.jpg",
+      "path": "frames/video-4640.jpg",
+      "depends_on": [],
+      "sha256": "d1afe9540afb7b0d67b198091ab8d5e4e5eafaae606fbb67b09760457b92b25c",
+      "bytes": 98872
+    },
+    {
+      "id": "frames/video-4678.jpg",
+      "path": "frames/video-4678.jpg",
+      "depends_on": [],
+      "sha256": "b3d107af2756589e13e7990667e6a37f1299ad31f099aa1f9d09eeadef6009ad",
+      "bytes": 97831
+    },
+    {
+      "id": "frames/video-4906.jpg",
+      "path": "frames/video-4906.jpg",
+      "depends_on": [],
+      "sha256": "c343e5dd882e7f7a4de483476d8575568c81552e7eaf46b666adad4f28114a57",
+      "bytes": 86427
+    },
+    {
+      "id": "frames/video-4919.jpg",
+      "path": "frames/video-4919.jpg",
+      "depends_on": [],
+      "sha256": "79fbefa9bc0c40f4b117b419379d629cedd55df37f6f019a09be684bcbe6c7d0",
+      "bytes": 90786
+    },
+    {
+      "id": "frames/video-4985.jpg",
+      "path": "frames/video-4985.jpg",
+      "depends_on": [],
+      "sha256": "3c8942119609097e3bf2e0108c12ae4a93f8f844f55d4ba49dc25eb298bf9a9f",
+      "bytes": 86916
+    },
+    {
+      "id": "frames/video-5048.jpg",
+      "path": "frames/video-5048.jpg",
+      "depends_on": [],
+      "sha256": "d7ac39cb635e7e980f472780410f9e74e4d38fb720b119ff98ba3d90533518ec",
+      "bytes": 84834
+    },
+    {
+      "id": "frames/video-5890.jpg",
+      "path": "frames/video-5890.jpg",
+      "depends_on": [],
+      "sha256": "2731deb79c7bc014599e875cfedf9dd245ec91ff672f14e5e076ea808bb57287",
+      "bytes": 95122
+    },
+    {
+      "id": "html-static-check.json",
+      "path": "html-static-check.json",
+      "depends_on": [],
+      "sha256": "8db1bb59eb87cd4ba9eb3ccb2fdf6b2464af7c03d67af3c41f5e7cbd2823329a",
+      "bytes": 243
+    },
+    {
+      "id": "image-audit.json",
+      "path": "image-audit.json",
+      "depends_on": [
+        "notes.json",
+        "frames/slide-001.png",
+        "frames/slide-002.png",
+        "frames/slide-003.png",
+        "frames/slide-004.png",
+        "frames/slide-005.png",
+        "frames/slide-006.png",
+        "frames/slide-007.png",
+        "frames/slide-008.png",
+        "frames/slide-009.png",
+        "frames/slide-010.png",
+        "frames/slide-011.png",
+        "frames/slide-012.png",
+        "frames/slide-013.png",
+        "frames/slide-014.png",
+        "frames/slide-015.png",
+        "frames/video-2190.jpg",
+        "frames/video-2380.jpg",
+        "frames/video-2548.jpg",
+        "frames/slide-016.png",
+        "frames/video-2815.jpg",
+        "frames/video-2966.jpg",
+        "frames/slide-017.png",
+        "frames/video-3140.jpg",
+        "frames/slide-018.png",
+        "frames/slide-019.png",
+        "frames/slide-020.png",
+        "frames/video-3950.jpg",
+        "frames/slide-021.png",
+        "frames/slide-022.png",
+        "frames/video-4158.jpg",
+        "frames/video-4349.jpg",
+        "frames/video-4409.jpg",
+        "frames/video-4520.jpg",
+        "frames/video-4640.jpg",
+        "frames/video-4678.jpg",
+        "frames/video-4906.jpg",
+        "frames/video-4919.jpg",
+        "frames/slide-023.png",
+        "frames/video-4985.jpg",
+        "frames/video-5048.jpg",
+        "frames/slide-024.png",
+        "frames/slide-025.png",
+        "frames/slide-026.png",
+        "frames/slide-027.png",
+        "frames/slide-028.png",
+        "frames/slide-029.png",
+        "frames/slide-030.png",
+        "frames/slide-031.png",
+        "frames/slide-032.png",
+        "frames/slide-033.png",
+        "frames/slide-034.png",
+        "frames/slide-035.png",
+        "frames/video-5890.jpg"
+      ],
+      "sha256": "85b5e6e12ca7622fdcf12ef8dccc5ce4c596bd3894fc376c36439c1af1d9a5ba",
+      "bytes": 57170
+    },
+    {
+      "id": "notes.json",
+      "path": "notes.json",
+      "depends_on": [
+        "chunks/index.json",
+        "sources/slides-text.json",
+        "sources/lecture-text.txt"
+      ],
+      "sha256": "0f3722fcc99ff72b5d56790c3374dfe1cd80c24fdf8dd9a0db6153b9ad4c6cc8",
+      "bytes": 67846
+    },
+    {
+      "id": "official-lecture.html",
+      "path": "official-lecture.html",
+      "depends_on": [],
+      "sha256": "6b04caae3148f7558d19a7215e5c3da1d2620a076f76e9136de679d21c90f78b",
+      "bytes": 73262
+    },
+    {
+      "id": "official-slides.html",
+      "path": "official-slides.html",
+      "depends_on": [],
+      "sha256": "cb977e9e19c15f9d6ab0dd3a82abfae56babbb8377880584ad70546276af5bd4",
+      "bytes": 319507
+    },
+    {
+      "id": "pipeline.jsonl",
+      "path": "pipeline.jsonl",
+      "depends_on": [],
+      "sha256": "a42f412fe19437567fa0327082e10db79213e7714d1d13fc88f79cc0a3fbf04a",
+      "bytes": 354952
+    },
+    {
+      "id": "qa/desktop.html",
+      "path": "qa/desktop.html",
+      "depends_on": [],
+      "sha256": "3a1c0972a5ca3191d79df9c1403ba23d46c1a536aa2b8036cc37b7662e6c94bb",
+      "bytes": 18966992
+    },
+    {
+      "id": "qa/mobile.html",
+      "path": "qa/mobile.html",
+      "depends_on": [],
+      "sha256": "bdfe608ea783f62abd3fa199d07b0436c2c0e71341244a07b12dd476efe8e155",
+      "bytes": 18966992
+    },
+    {
+      "id": "review.json",
+      "path": "review.json",
+      "depends_on": [
+        "notes.json",
+        "课堂笔记.html",
+        "audit.json",
+        "image-audit.json"
+      ],
+      "sha256": "830d94353c61c062a5002e44ff4227674aad39b4a77648f2aa7b2a98d49e7506",
+      "bytes": 1805
+    },
+    {
+      "id": "run.json",
+      "path": "run.json",
+      "depends_on": [],
+      "sha256": "c7cb98c5b639c37172119689dbd483df9e4efa2d3717d74f447564d01d5555c7",
+      "bytes": 1656
+    },
+    {
+      "id": "slide-capture.json",
+      "path": "slide-capture.json",
+      "depends_on": [],
+      "sha256": "2dd6a2d39f9411dd6d4ba759fb4000870a2b0a53ba4d277e2092a62a990fe52a",
+      "bytes": 29092
+    },
+    {
+      "id": "slides-data.json",
+      "path": "slides-data.json",
+      "depends_on": [],
+      "sha256": "5340aa18c54c52168c844692c1bb8d9368244268804e7e14b64bd2673970f611",
+      "bytes": 275305
+    },
+    {
+      "id": "sources/contact-1.jpg",
+      "path": "sources/contact-1.jpg",
+      "depends_on": [],
+      "sha256": "b5490f8051a96b966b88667e91bcdb4e64b1fb8d548dbe837723f5d27add4052",
+      "bytes": 447763
+    },
+    {
+      "id": "sources/contact-2.jpg",
+      "path": "sources/contact-2.jpg",
+      "depends_on": [],
+      "sha256": "40337f6f552e5e35c4a834f15756a96571300169a422aad74e4157ee96287057",
+      "bytes": 376358
+    },
+    {
+      "id": "sources/contact-3.jpg",
+      "path": "sources/contact-3.jpg",
+      "depends_on": [],
+      "sha256": "d8be39f2151e69edd650756729f090bb43f10e8946e63ddcb53af12f19c60ff4",
+      "bytes": 465526
+    },
+    {
+      "id": "sources/contact-4.jpg",
+      "path": "sources/contact-4.jpg",
+      "depends_on": [],
+      "sha256": "59340e789bd0275f9f40572371e43e0e389ceede7d65046c5b32d2b7a15e87a9",
+      "bytes": 549129
+    },
+    {
+      "id": "sources/contact-5.jpg",
+      "path": "sources/contact-5.jpg",
+      "depends_on": [],
+      "sha256": "76aee3d84e5896dde017d779160dfca7e14e5eb4667b1884774e9c53fc1df4ef",
+      "bytes": 544534
+    },
+    {
+      "id": "sources/contact-6.jpg",
+      "path": "sources/contact-6.jpg",
+      "depends_on": [],
+      "sha256": "eb45dd960ce8f327c8410762af6590d35a41973abee7a0c1218111a614c341c5",
+      "bytes": 459290
+    },
+    {
+      "id": "sources/contact-7.jpg",
+      "path": "sources/contact-7.jpg",
+      "depends_on": [],
+      "sha256": "842fda8ef5c1938687a77cac27aa4e4c5cd933ac8e7e04ac31bc2540ef714dc3",
+      "bytes": 629679
+    },
+    {
+      "id": "sources/contact-8.jpg",
+      "path": "sources/contact-8.jpg",
+      "depends_on": [],
+      "sha256": "40b4f4479ef0118058e9badbcca531c4063ebf173a057eeff516af85a10a07a8",
+      "bytes": 504134
+    },
+    {
+      "id": "sources/contact-9.jpg",
+      "path": "sources/contact-9.jpg",
+      "depends_on": [],
+      "sha256": "972b67ad19324123138df422789ed555feb69f83892c9bb79b0695162192ce77",
+      "bytes": 481480
+    },
+    {
+      "id": "sources/export.json",
+      "path": "sources/export.json",
+      "depends_on": [],
+      "sha256": "de3c6e694051f87b5e6748d3c592cc21de48c8f402b71ece6ed468a8be12d809",
+      "bytes": 636
+    },
+    {
+      "id": "sources/lecture-text.txt",
+      "path": "sources/lecture-text.txt",
+      "depends_on": [],
+      "sha256": "40964cd4a8a05a2dcf76453ba9fca0922af1d4f19ddf65d1c274603421394195",
+      "bytes": 27498
+    },
+    {
+      "id": "sources/media-validation.json",
+      "path": "sources/media-validation.json",
+      "depends_on": [],
+      "sha256": "189be5e269d6739ea7fdab5a47197cfff5861df9fab104ec4a0a3f98b0f9b578",
+      "bytes": 4214
+    },
+    {
+      "id": "sources/project-check.json",
+      "path": "sources/project-check.json",
+      "depends_on": [],
+      "sha256": "503242b54c942ff07f6dd9047a2322dad5e1710369b0bcd179d67f2dfff05261",
+      "bytes": 554
+    },
+    {
+      "id": "sources/project.json",
+      "path": "sources/project.json",
+      "depends_on": [],
+      "sha256": "f2098be6cc7f4e3c511f846c45d27ebe15621a5ed31c2d6fa3935e018e3472a9",
+      "bytes": 1926
+    },
+    {
+      "id": "sources/slides-text.json",
+      "path": "sources/slides-text.json",
+      "depends_on": [],
+      "sha256": "12dba2c2dc2efb584075a442b6b4d0947b05dbf8e0692c045f0cecf9bd1b1d09",
+      "bytes": 21103
+    },
+    {
+      "id": "sources/source-slides.pdf",
+      "path": "sources/source-slides.pdf",
+      "depends_on": [],
+      "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+      "bytes": 7652519
+    },
+    {
+      "id": "transcript.json",
+      "path": "transcript.json",
+      "depends_on": [],
+      "sha256": "c05e8ba684c753d41ba4f67397ca868902d700b077410dffc43294f53a429d54",
+      "bytes": 4697691
+    },
+    {
+      "id": "课堂笔记.html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "notes.json",
+        "chunks/index.json",
+        "renderer",
+        "html_postprocess",
+        "frames/slide-001.png",
+        "frames/slide-002.png",
+        "frames/slide-003.png",
+        "frames/slide-004.png",
+        "frames/slide-005.png",
+        "frames/slide-006.png",
+        "frames/slide-007.png",
+        "frames/slide-008.png",
+        "frames/slide-009.png",
+        "frames/slide-010.png",
+        "frames/slide-011.png",
+        "frames/slide-012.png",
+        "frames/slide-013.png",
+        "frames/slide-014.png",
+        "frames/slide-015.png",
+        "frames/video-2190.jpg",
+        "frames/video-2380.jpg",
+        "frames/video-2548.jpg",
+        "frames/slide-016.png",
+        "frames/video-2815.jpg",
+        "frames/video-2966.jpg",
+        "frames/slide-017.png",
+        "frames/video-3140.jpg",
+        "frames/slide-018.png",
+        "frames/slide-019.png",
+        "frames/slide-020.png",
+        "frames/video-3950.jpg",
+        "frames/slide-021.png",
+        "frames/slide-022.png",
+        "frames/video-4158.jpg",
+        "frames/video-4349.jpg",
+        "frames/video-4409.jpg",
+        "frames/video-4520.jpg",
+        "frames/video-4640.jpg",
+        "frames/video-4678.jpg",
+        "frames/video-4906.jpg",
+        "frames/video-4919.jpg",
+        "frames/slide-023.png",
+        "frames/video-4985.jpg",
+        "frames/video-5048.jpg",
+        "frames/slide-024.png",
+        "frames/slide-025.png",
+        "frames/slide-026.png",
+        "frames/slide-027.png",
+        "frames/slide-028.png",
+        "frames/slide-029.png",
+        "frames/slide-030.png",
+        "frames/slide-031.png",
+        "frames/slide-032.png",
+        "frames/slide-033.png",
+        "frames/slide-034.png",
+        "frames/slide-035.png",
+        "frames/video-5890.jpg"
+      ],
+      "sha256": "83f0e12e75ce32e44088b7960eb52fd705353235a5a7ca9e83e8d003cc9ec3ec",
+      "bytes": 18956221
+    },
+    {
+      "id": "renderer",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/scripts/course_notes.py",
+      "depends_on": [],
+      "sha256": "64fa8d4f22a38cb2a7ece0258d4a373dd0cb317f424ec6ee33e20f0e79348a03",
+      "bytes": 15389
+    },
+    {
+      "id": "html_postprocess",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/finalize_html.py",
+      "depends_on": [],
+      "sha256": "22cea445ed166e7344d508adcb0eae125b0e6655e5555770bc35a7a6c11af53f",
+      "bytes": 3372
+    }
+  ],
+  "claim": "File snapshot only; dependencies are declarations, not proof of execution or quality."
+}

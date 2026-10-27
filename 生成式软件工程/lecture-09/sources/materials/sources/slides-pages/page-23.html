@@ -1,0 +1,17 @@
+<h1>Agent: 接收输入与动态上下文</h1>
+<h2>3. 向 Agent 提交输入</h2>
+<ul>
+<li><code>followup</code>：新的一轮用户输入，唤醒执行</li>
+<li><code>inject</code>：补充上下文，等待后续 step，不唤醒</li>
+<li><code>steer</code>：尽快进入后续 step，可以唤醒</li>
+</ul>
+<pre><code class="language-ts">agent.followup(message)
+agent.inject(message)
+agent.steer(message)
+</code></pre>
+<h2>4. 持续贡献动态上下文</h2>
+<ul>
+<li><code>text</code> 动态读取当前状态</li>
+</ul>
+<pre><code class="language-ts">ctx.systemPrompt.context({ ..., text: () =&gt; describeCurrentState() })
+</code></pre>

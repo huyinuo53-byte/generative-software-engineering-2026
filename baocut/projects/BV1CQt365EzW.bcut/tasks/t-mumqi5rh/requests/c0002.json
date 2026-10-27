@@ -1,0 +1,11 @@
+{
+  "callId": "c0002",
+  "kind": "summary",
+  "seq": 2,
+  "attempt": 1,
+  "chars": 10014,
+  "estimatedCost": 10014,
+  "contract": "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1CQt365EzW.bcut/tasks/t-mumqi5rh/contracts/summary.md",
+  "payload": "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1CQt365EzW.bcut/tasks/t-mumqi5rh/payloads/c0002.json",
+  "createdAtMs": 1790689853364
+}

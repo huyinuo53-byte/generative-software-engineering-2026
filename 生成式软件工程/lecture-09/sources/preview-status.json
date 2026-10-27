@@ -1,0 +1,7 @@
+{
+  "status": "unavailable",
+  "http_status": 503,
+  "reason": "web_service_off",
+  "method": "HTTP check after one idempotent serve ensure retry",
+  "impact": "Official CLI exports used; final standalone HTML receives separate browser QA."
+}

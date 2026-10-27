@@ -1,0 +1,794 @@
+{
+  "summary": "这是一堂中文大学课程的即兴技术讲授，围绕生成式软件工程中的提示词与上下文工程，贯穿 Agent 指令遵循、可验证任务、思维链、注意力、论文阅读、复杂代码库维护、开放研究和长程搜索等主题。润色应保留课堂演示和主讲人的推理节奏，同时统一中英文产品名、模型名、文件名、软件工程、学术研究与复杂性理论术语。",
+  "terms": [
+    {
+      "term": "3-SAT",
+      "note": "3-可满足性问题",
+      "observedVariants": [
+        "three set"
+      ]
+    },
+    {
+      "term": "A Philosophy of Software Design",
+      "note": "软件设计著作",
+      "observedVariants": [
+        "the philosophy of software design"
+      ]
+    },
+    {
+      "term": "AGENTS.md",
+      "note": "Agent 指令文件",
+      "observedVariants": [
+        "agents 点 md",
+        "agents 点点 md",
+        "agent 点 md"
+      ]
+    },
+    {
+      "term": "AI slop",
+      "note": "低质 AI 生成内容",
+      "observedVariants": [
+        "AI slot"
+      ]
+    },
+    {
+      "term": "Agent",
+      "note": "智能体"
+    },
+    {
+      "term": "Android Runtime",
+      "note": "Android 运行时"
+    },
+    {
+      "term": "Anthropic",
+      "note": "AI 公司"
+    },
+    {
+      "term": "Bash",
+      "note": "命令行 Shell"
+    },
+    {
+      "term": "C++",
+      "note": "C++ 源文件扩展名语境",
+      "observedVariants": [
+        "C 加加",
+        "点 C P P"
+      ]
+    },
+    {
+      "term": "CSGO",
+      "note": "游戏名"
+    },
+    {
+      "term": "CTF",
+      "note": "Capture the Flag 安全竞赛"
+    },
+    {
+      "term": "ChatGPT",
+      "note": "OpenAI 对话产品"
+    },
+    {
+      "term": "ChatGPT 3.5",
+      "note": "模型名"
+    },
+    {
+      "term": "ChatGPT 4",
+      "note": "模型名"
+    },
+    {
+      "term": "Chrome DevTools",
+      "note": "Chrome 开发者工具",
+      "observedVariants": [
+        "Crom Dev Tools"
+      ]
+    },
+    {
+      "term": "Church–Turing thesis",
+      "note": "丘奇-图灵论题",
+      "observedVariants": [
+        "CHURCH TUNING SYSTEM"
+      ]
+    },
+    {
+      "term": "Claude Opus 4.5",
+      "note": "Anthropic 模型",
+      "observedVariants": [
+        "cloud opus 四点五"
+      ]
+    },
+    {
+      "term": "Codex",
+      "note": "OpenAI 编程 Agent",
+      "observedVariants": [
+        "codecs"
+      ]
+    },
+    {
+      "term": "Codex session",
+      "note": "Codex 会话",
+      "observedVariants": [
+        "codecs 的 session"
+      ]
+    },
+    {
+      "term": "DeepSeek",
+      "note": "AI 模型"
+    },
+    {
+      "term": "DeepSeek V3 Flash",
+      "note": "模型名",
+      "observedVariants": [
+        "deep",
+        "deep seek with flash"
+      ]
+    },
+    {
+      "term": "EXE",
+      "note": "Windows 可执行文件扩展名",
+      "observedVariants": [
+        "点 E X E"
+      ]
+    },
+    {
+      "term": "F5",
+      "note": "播放幻灯片的快捷键"
+    },
+    {
+      "term": "Flash",
+      "note": "快速档模型"
+    },
+    {
+      "term": "GPT-5",
+      "note": "模型系列",
+      "observedVariants": [
+        "GPT 五"
+      ]
+    },
+    {
+      "term": "GPT-5.6",
+      "note": "模型名",
+      "observedVariants": [
+        "GPT 五点六",
+        "G P T 五点六"
+      ]
+    },
+    {
+      "term": "GitHub",
+      "note": "代码托管平台"
+    },
+    {
+      "term": "Hamiltonian path",
+      "note": "哈密顿路径",
+      "observedVariants": [
+        "哈姆雷特 pass"
+      ]
+    },
+    {
+      "term": "Homebrew",
+      "note": "macOS 包管理器"
+    },
+    {
+      "term": "Hugging Face",
+      "note": "模型与数据平台",
+      "observedVariants": [
+        "huggingface"
+      ]
+    },
+    {
+      "term": "IDE",
+      "note": "集成开发环境"
+    },
+    {
+      "term": "Java",
+      "note": "编程语言"
+    },
+    {
+      "term": "Kimi K3",
+      "note": "模型名",
+      "observedVariants": [
+        "KIMI K 三"
+      ]
+    },
+    {
+      "term": "LSP",
+      "note": "Language Server Protocol"
+    },
+    {
+      "term": "LUCA",
+      "note": "最后共同祖先",
+      "observedVariants": [
+        "卢卡"
+      ]
+    },
+    {
+      "term": "Linux 2.6",
+      "note": "Linux 内核版本"
+    },
+    {
+      "term": "Linux kernel",
+      "note": "操作系统内核",
+      "observedVariants": [
+        "Linux 内核"
+      ]
+    },
+    {
+      "term": "Make Slides",
+      "note": "幻灯片 Skill 名"
+    },
+    {
+      "term": "Manuel Blum",
+      "note": "计算机科学家"
+    },
+    {
+      "term": "NP",
+      "note": "复杂性类 NP"
+    },
+    {
+      "term": "NP-complete",
+      "note": "NP 完全",
+      "observedVariants": [
+        "NP complete"
+      ]
+    },
+    {
+      "term": "Nature",
+      "note": "科学期刊",
+      "observedVariants": [
+        "nature 那个 maxing"
+      ]
+    },
+    {
+      "term": "OpenAI",
+      "note": "AI 公司"
+    },
+    {
+      "term": "OpenStreetMap",
+      "note": "开源地图平台"
+    },
+    {
+      "term": "P",
+      "note": "复杂性类 P"
+    },
+    {
+      "term": "PA",
+      "note": "程序设计实验",
+      "observedVariants": [
+        "PA 作业",
+        "PA2"
+      ]
+    },
+    {
+      "term": "PDF",
+      "note": "文档格式"
+    },
+    {
+      "term": "PhD student",
+      "note": "博士生",
+      "observedVariants": [
+        "P H E student"
+      ]
+    },
+    {
+      "term": "Python",
+      "note": "编程语言"
+    },
+    {
+      "term": "Richard Sutton",
+      "note": "强化学习研究者"
+    },
+    {
+      "term": "Skill",
+      "note": "可复用的经验与任务说明",
+      "observedVariants": [
+        "skills",
+        "skill 点 md"
+      ]
+    },
+    {
+      "term": "The Mythical Man-Month",
+      "note": "软件工程著作",
+      "observedVariants": [
+        "人月神话"
+      ]
+    },
+    {
+      "term": "Transformer",
+      "note": "模型架构"
+    },
+    {
+      "term": "Turing machine",
+      "note": "图灵机",
+      "observedVariants": [
+        "图灵机",
+        "the Turing machine"
+      ]
+    },
+    {
+      "term": "TypeScript",
+      "note": "编程语言",
+      "observedVariants": [
+        "TYSKRIPT"
+      ]
+    },
+    {
+      "term": "VS Code",
+      "note": "编辑器"
+    },
+    {
+      "term": "YOLO mode",
+      "note": "无需逐次确认的执行模式"
+    },
+    {
+      "term": "accepted",
+      "note": "论文被接收",
+      "observedVariants": [
+        "accept"
+      ]
+    },
+    {
+      "term": "agent harness",
+      "note": "Agent 运行框架"
+    },
+    {
+      "term": "allowlist",
+      "note": "白名单",
+      "observedVariants": [
+        "allow list"
+      ]
+    },
+    {
+      "term": "append-only",
+      "note": "只追加不可覆写",
+      "observedVariants": [
+        "append only"
+      ]
+    },
+    {
+      "term": "artifact",
+      "note": "可运行或可检查的产物"
+    },
+    {
+      "term": "benchmark",
+      "note": "基准测试"
+    },
+    {
+      "term": "bias",
+      "note": "偏置"
+    },
+    {
+      "term": "big world hypothesis",
+      "note": "大世界假说"
+    },
+    {
+      "term": "chain of thought",
+      "note": "思维链推理",
+      "observedVariants": [
+        "思维链",
+        "chain of sort"
+      ]
+    },
+    {
+      "term": "claim",
+      "note": "论文主张"
+    },
+    {
+      "term": "complexity class",
+      "note": "计算复杂性类"
+    },
+    {
+      "term": "computer science",
+      "note": "计算机科学",
+      "observedVariants": [
+        "commercial science"
+      ]
+    },
+    {
+      "term": "context engineering",
+      "note": "上下文工程",
+      "observedVariants": [
+        "上下文工程"
+      ]
+    },
+    {
+      "term": "disjoint",
+      "note": "互不重叠的子空间",
+      "observedVariants": [
+        "destroyed"
+      ]
+    },
+    {
+      "term": "fact",
+      "note": "已知事实"
+    },
+    {
+      "term": "finite-state machine",
+      "note": "有限状态机",
+      "observedVariants": [
+        "有限状态机"
+      ]
+    },
+    {
+      "term": "gateway",
+      "note": "统一入口组件"
+    },
+    {
+      "term": "glassmorphism",
+      "note": "半透明毛玻璃视觉风格",
+      "observedVariants": [
+        "毛玻璃效果"
+      ]
+    },
+    {
+      "term": "grounding",
+      "note": "用共同事实或知识边界奠基"
+    },
+    {
+      "term": "helper",
+      "note": "辅助函数"
+    },
+    {
+      "term": "implementation",
+      "note": "具体实现"
+    },
+    {
+      "term": "include path",
+      "note": "编译器头文件搜索路径"
+    },
+    {
+      "term": "incremental",
+      "note": "增量式研究问题"
+    },
+    {
+      "term": "inline assembly",
+      "note": "内联汇编",
+      "observedVariants": [
+        "inlay assembly"
+      ]
+    },
+    {
+      "term": "intent",
+      "note": "用户意图",
+      "observedVariants": [
+        "intend",
+        "incant"
+      ]
+    },
+    {
+      "term": "invalid paper",
+      "note": "论证无效的论文"
+    },
+    {
+      "term": "journal extension",
+      "note": "期刊扩展版论文"
+    },
+    {
+      "term": "just-in-time compiler",
+      "note": "即时编译器",
+      "observedVariants": [
+        "justin time 的编译器"
+      ]
+    },
+    {
+      "term": "long-horizon",
+      "note": "长程任务",
+      "observedVariants": [
+        "long horizon"
+      ]
+    },
+    {
+      "term": "memory",
+      "note": "持久化知识记录"
+    },
+    {
+      "term": "metadata",
+      "note": "元数据"
+    },
+    {
+      "term": "mitochondrial inheritance",
+      "note": "线粒体母系遗传",
+      "observedVariants": [
+        "线粒体是母系单遗传"
+      ]
+    },
+    {
+      "term": "next-token prediction",
+      "note": "下一词元预测",
+      "observedVariants": [
+        "next token prediction",
+        "predict NEXT TOKEN",
+        "predicts next token"
+      ]
+    },
+    {
+      "term": "one-shot",
+      "note": "单次提示完成",
+      "observedVariants": [
+        "one shot"
+      ]
+    },
+    {
+      "term": "open question",
+      "note": "开放问题"
+    },
+    {
+      "term": "paper and pencil",
+      "note": "外部记忆的比喻"
+    },
+    {
+      "term": "paper.pdf",
+      "note": "论文文件名",
+      "observedVariants": [
+        "paper 点 pdf"
+      ]
+    },
+    {
+      "term": "parser",
+      "note": "语法解析器",
+      "observedVariants": [
+        "passer"
+      ]
+    },
+    {
+      "term": "planning",
+      "note": "规划"
+    },
+    {
+      "term": "polynomial hierarchy",
+      "note": "多项式层次",
+      "observedVariants": [
+        "problemat hierarchy"
+      ]
+    },
+    {
+      "term": "pre-AI",
+      "note": "AI 普及前的设计时期"
+    },
+    {
+      "term": "prompt",
+      "note": "提示词"
+    },
+    {
+      "term": "prompt engineering",
+      "note": "提示词工程"
+    },
+    {
+      "term": "proof of concept",
+      "note": "概念验证"
+    },
+    {
+      "term": "provider",
+      "note": "模型服务提供方",
+      "observedVariants": [
+        "providers"
+      ]
+    },
+    {
+      "term": "publish",
+      "note": "发表"
+    },
+    {
+      "term": "py.dev",
+      "note": "网站名",
+      "observedVariants": [
+        "py 点 dev"
+      ]
+    },
+    {
+      "term": "reject",
+      "note": "拒稿"
+    },
+    {
+      "term": "related work",
+      "note": "相关工作"
+    },
+    {
+      "term": "rename symbol",
+      "note": "符号重命名重构"
+    },
+    {
+      "term": "rephrase",
+      "note": "基于已有知识重新表述"
+    },
+    {
+      "term": "review",
+      "note": "同行评审"
+    },
+    {
+      "term": "reward hacking",
+      "note": "钻奖励函数空子的行为",
+      "observedVariants": [
+        "reward hacker"
+      ]
+    },
+    {
+      "term": "rule of thumb",
+      "note": "经验法则",
+      "observedVariants": [
+        "rule sum"
+      ]
+    },
+    {
+      "term": "sandbox",
+      "note": "隔离执行环境",
+      "observedVariants": [
+        "沙箱模式"
+      ]
+    },
+    {
+      "term": "self-attention",
+      "note": "自注意力机制",
+      "observedVariants": [
+        "self attention",
+        "selfattention"
+      ]
+    },
+    {
+      "term": "self-contained",
+      "note": "自包含、无需外部资产",
+      "observedVariants": [
+        "self campaign"
+      ]
+    },
+    {
+      "term": "session",
+      "note": "一次会话"
+    },
+    {
+      "term": "spec",
+      "note": "可验证的系统规格"
+    },
+    {
+      "term": "specification",
+      "note": "规格说明"
+    },
+    {
+      "term": "state of the art",
+      "note": "当前最佳方法",
+      "observedVariants": [
+        "state of art"
+      ]
+    },
+    {
+      "term": "subagent",
+      "note": "子代理"
+    },
+    {
+      "term": "subsystem",
+      "note": "子系统"
+    },
+    {
+      "term": "symbolic execution",
+      "note": "程序分析方法",
+      "observedVariants": [
+        "符号执行"
+      ]
+    },
+    {
+      "term": "system prompt",
+      "note": "系统提示词"
+    },
+    {
+      "term": "terminal",
+      "note": "终端界面"
+    },
+    {
+      "term": "test-time scaling",
+      "note": "测试时扩展",
+      "observedVariants": [
+        "test time scaling"
+      ]
+    },
+    {
+      "term": "text-to-speech",
+      "note": "文本转语音",
+      "observedVariants": [
+        "test to speech"
+      ]
+    },
+    {
+      "term": "timeout",
+      "note": "超时"
+    },
+    {
+      "term": "token",
+      "note": "模型词元；此处指消耗 token",
+      "observedVariants": [
+        "short token"
+      ]
+    },
+    {
+      "term": "top conference",
+      "note": "顶级会议"
+    },
+    {
+      "term": "trade-off",
+      "note": "权衡",
+      "observedVariants": [
+        "tradeoff"
+      ]
+    },
+    {
+      "term": "trainout",
+      "note": "训练收敛出的行为模式"
+    },
+    {
+      "term": "tree search",
+      "note": "树搜索",
+      "observedVariants": [
+        "chirp sort"
+      ]
+    },
+    {
+      "term": "valid paper",
+      "note": "形式或逻辑有效的论文"
+    },
+    {
+      "term": "verifier",
+      "note": "验证器或验证信号",
+      "observedVariants": [
+        "wherefore",
+        "verifire",
+        "varfa"
+      ]
+    },
+    {
+      "term": "verify",
+      "note": "可验证的反馈信号"
+    },
+    {
+      "term": "xterm.js",
+      "note": "终端前端组件",
+      "observedVariants": [
+        "xterm 点 js"
+      ]
+    },
+    {
+      "term": "《诗经》",
+      "note": "中国古典诗歌总集",
+      "observedVariants": [
+        "诗经"
+      ]
+    },
+    {
+      "term": "费曼学习法",
+      "note": "学习方法名"
+    }
+  ],
+  "namedEntities": [
+    "A Philosophy of Software Design",
+    "Android Runtime",
+    "Anthropic",
+    "CSGO",
+    "ChatGPT",
+    "ChatGPT 3.5",
+    "ChatGPT 4",
+    "Chrome DevTools",
+    "Claude Opus 4.5",
+    "Codex",
+    "DeepSeek",
+    "DeepSeek V3 Flash",
+    "Flash",
+    "GPT-5",
+    "GPT-5.6",
+    "GitHub",
+    "Homebrew",
+    "Hugging Face",
+    "Kimi K3",
+    "Linux 2.6",
+    "Make Slides",
+    "Manuel Blum",
+    "Nature",
+    "OpenAI",
+    "OpenStreetMap",
+    "PhD student",
+    "Richard Sutton",
+    "The Mythical Man-Month",
+    "VS Code",
+    "py.dev",
+    "xterm.js",
+    "《诗经》",
+    "费曼学习法"
+  ],
+  "fingerprint": "27090:g1.0:g1555.0~44:28xkeuw5wug7j",
+  "referenceFingerprint": "1:376w2aicxculx"
+}

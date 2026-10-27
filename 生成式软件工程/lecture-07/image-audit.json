@@ -1,0 +1,927 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "dc6c3e8b0390646246587a16c904ebe64cc2b40dfe4084c6b3a9c7a0c0749c60",
+  "images": [
+    {
+      "section": 1,
+      "frame": 1,
+      "path": "frames/slide-01.png",
+      "sha256": "58e1fbbaea35b14b86f609738f1c3229e41d7ec1467f4e81b47e79c98c7fa6f9",
+      "purpose": "官方网页讲义第1/39页：Intent → Spec → Impl",
+      "expected_information": "官方讲义第1页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-1.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第1节，当前官方网页第1/39页；截图汇编物理第1页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 1,
+      "frame": 2,
+      "path": "frames/slide-02.png",
+      "sha256": "9c6e29d5b6e2bf26fe21e60d513f2b169d80ce84520a18f4655e1c2382b6341c",
+      "purpose": "官方网页讲义第2/39页：架构无处不在",
+      "expected_information": "官方讲义第2页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-1.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第1节，当前官方网页第2/39页；截图汇编物理第2页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 2,
+      "frame": 1,
+      "path": "frames/slide-03.png",
+      "sha256": "33322939d4cb37760c06c14afe23993c79c08821ae1f96cfdd317618e7787933",
+      "purpose": "官方网页讲义第3/39页：软件工程的本质：驾驭复杂性",
+      "expected_information": "官方讲义第3页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-1.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第2节，当前官方网页第3/39页；截图汇编物理第3页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 3,
+      "frame": 1,
+      "path": "frames/slide-04.png",
+      "sha256": "2e8e31f648a89d02a5a67e72091f2096e2342cd6f6bee4c2f0899721d8616883",
+      "purpose": "官方网页讲义第4/39页：需求工程：直面 Essential Complexity",
+      "expected_information": "官方讲义第4页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-1.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第3节，当前官方网页第4/39页；截图汇编物理第4页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 4,
+      "frame": 1,
+      "path": "frames/slide-05.png",
+      "sha256": "5a367dd7b861e9f5119f12816233360c4488535d50284743fb1be819471aef6f",
+      "purpose": "官方网页讲义第5/39页：架构设计",
+      "expected_information": "官方讲义第5页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-1.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第4节，当前官方网页第5/39页；截图汇编物理第5页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 5,
+      "frame": 1,
+      "path": "frames/slide-06.png",
+      "sha256": "b3373b7ca9d6ebfbc8b5bd154080aa031d7444cc427402cab364e8ff6903f994",
+      "purpose": "官方网页讲义第6/39页：On Our Inability to Do Much",
+      "expected_information": "官方讲义第6页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-1.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第5节，当前官方网页第6/39页；截图汇编物理第6页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 6,
+      "frame": 1,
+      "path": "frames/slide-07.png",
+      "sha256": "3deaf36feb91766531ad005788ad8200e933dd67b06b49a2d36f9206d3f20625",
+      "purpose": "官方网页讲义第7/39页：Our Mental Aids",
+      "expected_information": "官方讲义第7页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-2.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第6节，当前官方网页第7/39页；截图汇编物理第7页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 6,
+      "frame": 2,
+      "path": "frames/slide-08.png",
+      "sha256": "1a4e62345510f3a8d3834a0f9406ce5d55262bc16d5fe0bd9f2defac8bd490f0",
+      "purpose": "官方网页讲义第8/39页：Hierarchical Program Structures",
+      "expected_information": "官方讲义第8页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-2.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第6节，当前官方网页第8/39页；截图汇编物理第8页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 7,
+      "frame": 1,
+      "path": "frames/slide-09.png",
+      "sha256": "e01b988ca79a031dafb6e46ae0a8e9d35bcb93003833347109026dd6c9c5bf1e",
+      "purpose": "官方网页讲义第9/39页：让 AI 带我们读第七章",
+      "expected_information": "官方讲义第9页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-2.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第7节，当前官方网页第9/39页；截图汇编物理第9页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 7,
+      "frame": 2,
+      "path": "frames/video-1578.jpg",
+      "sha256": "2645ee294cc5dea8cf187138f0a7b0488dc29683a604dca4ca9c28e24775c008",
+      "purpose": "现场 AI 导读 Concept Hierarchies；右侧显示概念层次说明，左侧保留课堂板书",
+      "expected_information": "现场 AI 导读 Concept Hierarchies；右侧显示概念层次说明，左侧保留课堂板书。",
+      "observed_information": "已逐张查看完整原视频帧；现场 AI 导读 Concept Hierarchies；右侧显示概念层次说明，左侧保留课堂板书。",
+      "comparison_evidence": "对应notes第7节，原视频实际时间1578",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/需求和架构 (2) [07-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "df4344f9c61dfb2a247f734570b9d2ef3ec1d21010849efb4eed78347b5dcc12",
+          "detail": "原媒体1280×410，完整全画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选取操作/论证完整阶段；nano同时保留选择和打开结果"
+    },
+    {
+      "section": 8,
+      "frame": 1,
+      "path": "frames/video-1869.jpg",
+      "sha256": "04822f5ad188ef7846a6c9a4c56b787c123acca3cecf913b1fb761c4101dad08",
+      "purpose": "现场回答展开离散事件模拟：模拟时间、按唤醒时间排序的表，以及 hold/wait/activate/simulate 四项原语",
+      "expected_information": "现场回答展开离散事件模拟：模拟时间、按唤醒时间排序的表，以及 hold/wait/activate/simulate 四项原语。",
+      "observed_information": "已逐张查看完整原视频帧；现场回答展开离散事件模拟：模拟时间、按唤醒时间排序的表，以及 hold/wait/activate/simulate 四项原语。",
+      "comparison_evidence": "对应notes第8节，原视频实际时间1869",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/需求和架构 (2) [07-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "df4344f9c61dfb2a247f734570b9d2ef3ec1d21010849efb4eed78347b5dcc12",
+          "detail": "原媒体1280×410，完整全画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选取操作/论证完整阶段；nano同时保留选择和打开结果"
+    },
+    {
+      "section": 8,
+      "frame": 2,
+      "path": "frames/video-1954.jpg",
+      "sha256": "639b62de10911113f69308b8b9b004ca630172e7f12934e8d261c60b3555a254",
+      "purpose": "AI 生成的 MINISIM 与现代前端对照表；保留演示结果，同时标明这里只是待验证的类比",
+      "expected_information": "AI 生成的 MINISIM 与现代前端对照表；保留演示结果，同时标明这里只是待验证的类比。",
+      "observed_information": "已逐张查看完整原视频帧；AI 生成的 MINISIM 与现代前端对照表；保留演示结果，同时标明这里只是待验证的类比。",
+      "comparison_evidence": "对应notes第8节，原视频实际时间1954",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/需求和架构 (2) [07-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "df4344f9c61dfb2a247f734570b9d2ef3ec1d21010849efb4eed78347b5dcc12",
+          "detail": "原媒体1280×410，完整全画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选取操作/论证完整阶段；nano同时保留选择和打开结果"
+    },
+    {
+      "section": 9,
+      "frame": 1,
+      "path": "frames/slide-10.png",
+      "sha256": "278cbb17aaf86be7ca7b2868f8275577c1a290d7551c273e0a429df9d3fcb81c",
+      "purpose": "官方网页讲义第10/39页：阅读经典 (1990s)",
+      "expected_information": "官方讲义第10页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-2.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第9节，当前官方网页第10/39页；截图汇编物理第10页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 9,
+      "frame": 2,
+      "path": "frames/slide-11.png",
+      "sha256": "115742632694d33059477aba304599ef187be8d51f28e0fa8030c169826425ba",
+      "purpose": "官方网页讲义第11/39页：Growing a Language",
+      "expected_information": "官方讲义第11页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-2.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第9节，当前官方网页第11/39页；截图汇编物理第11页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 10,
+      "frame": 1,
+      "path": "frames/slide-12.png",
+      "sha256": "5e86fc1a06fbd7558b4e85e59f67d3f74f5b469fafdbdc30e54c7b327f893088",
+      "purpose": "官方网页讲义第12/39页：好的架构：设计解空间",
+      "expected_information": "官方讲义第12页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-2.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第10节，当前官方网页第12/39页；截图汇编物理第12页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 11,
+      "frame": 1,
+      "path": "frames/slide-13.png",
+      "sha256": "274ca48bad34ec9deb27f7443f578e728491a1cbe3860a592516c629c4f78760",
+      "purpose": "官方网页讲义第13/39页：阅读经典，建立品味",
+      "expected_information": "官方讲义第13页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-3.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第11节，当前官方网页第13/39页；截图汇编物理第13页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 12,
+      "frame": 1,
+      "path": "frames/slide-14.png",
+      "sha256": "7a40c43ed21323110c9fe8b0e5b4832f6b9a3dfd4d3908ff6e38064eccdb66dd",
+      "purpose": "官方网页讲义第14/39页：设计解空间：UNIX Philosophy",
+      "expected_information": "官方讲义第14页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-3.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第12节，当前官方网页第14/39页；截图汇编物理第14页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 12,
+      "frame": 2,
+      "path": "frames/slide-15.png",
+      "sha256": "ff94d4267e4a3d188c2eb99707dca7f08538389e954e06a94e247278966971f5",
+      "purpose": "官方网页讲义第15/39页：UNIX：组合需要共同约定",
+      "expected_information": "官方讲义第15页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-3.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第12节，当前官方网页第15/39页；截图汇编物理第15页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 12,
+      "frame": 3,
+      "path": "frames/slide-16.png",
+      "sha256": "d6a7460eed394b1431ee99b9fedd4bc30e35285dd5f02122d64be201d79b4b77",
+      "purpose": "官方网页讲义第16/39页：UNIX：使用者创造新的用途",
+      "expected_information": "官方讲义第16页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-3.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第12节，当前官方网页第16/39页；截图汇编物理第16页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 12,
+      "frame": 4,
+      "path": "frames/video-3232.jpg",
+      "sha256": "4cafa0cf8b8b423cd7aba8b6a245df767d855f864cf1110f39d04dec2e24ca8e",
+      "purpose": "现场文件选择器：候选文件通过文本接口提供，用户可以选出要打开的文件",
+      "expected_information": "现场文件选择器：候选文件通过文本接口提供，用户可以选出要打开的文件。",
+      "observed_information": "已逐张查看完整原视频帧；现场文件选择器：候选文件通过文本接口提供，用户可以选出要打开的文件。",
+      "comparison_evidence": "对应notes第12节，原视频实际时间3232",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/需求和架构 (2) [07-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "df4344f9c61dfb2a247f734570b9d2ef3ec1d21010849efb4eed78347b5dcc12",
+          "detail": "原媒体1280×410，完整全画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选取操作/论证完整阶段；nano同时保留选择和打开结果"
+    },
+    {
+      "section": 12,
+      "frame": 5,
+      "path": "frames/video-3254.jpg",
+      "sha256": "93235f9665aa9fe54e8ef5f93f4b2cfe8b053b9759839ff0ac3349b9ac76a94a",
+      "purpose": "选择后的结果：GNU nano 打开 p1/lect/index.md",
+      "expected_information": "选择后的结果：GNU nano 打开 p1/lect/index.md。与前一图共同保存工具组合的完整演示。",
+      "observed_information": "已逐张查看完整原视频帧；选择后的结果：GNU nano 打开 p1/lect/index.md。与前一图共同保存工具组合的完整演示。",
+      "comparison_evidence": "对应notes第12节，原视频实际时间3254",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/需求和架构 (2) [07-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "df4344f9c61dfb2a247f734570b9d2ef3ec1d21010849efb4eed78347b5dcc12",
+          "detail": "原媒体1280×410，完整全画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选取操作/论证完整阶段；nano同时保留选择和打开结果"
+    },
+    {
+      "section": 13,
+      "frame": 1,
+      "path": "frames/slide-17.png",
+      "sha256": "f17d9a4814d46b08145c33126ccd4fc991b1b60df3a37fb89e6db43f9769249e",
+      "purpose": "官方网页讲义第17/39页：案例二：关系数据库",
+      "expected_information": "官方讲义第17页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-3.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第13节，当前官方网页第17/39页；截图汇编物理第17页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 13,
+      "frame": 2,
+      "path": "frames/slide-18.png",
+      "sha256": "a0e910d5dfcbacd6e64e7da9b1dd0929a5dfb868048bd21fd03172e79076c5f3",
+      "purpose": "官方网页讲义第18/39页：关系数据库：现实、关系与存储",
+      "expected_information": "官方讲义第18页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-3.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第13节，当前官方网页第18/39页；截图汇编物理第18页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 14,
+      "frame": 1,
+      "path": "frames/slide-19.png",
+      "sha256": "c8b221e1a503f9f0d1ba95f56b505f9b2c8129f55cfda9982d142e79bf354824",
+      "purpose": "官方网页讲义第19/39页：案例三：The Internet",
+      "expected_information": "官方讲义第19页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-4.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第14节，当前官方网页第19/39页；截图汇编物理第19页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 14,
+      "frame": 2,
+      "path": "frames/slide-20.png",
+      "sha256": "3325a1ca822b0887931fa85d985790194ac5844b819f05044b235892e4350a9a",
+      "purpose": "官方网页讲义第20/39页：Internet：在持续变化中演化",
+      "expected_information": "官方讲义第20页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-4.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第14节，当前官方网页第20/39页；截图汇编物理第20页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 15,
+      "frame": 1,
+      "path": "frames/slide-21.png",
+      "sha256": "d0dc7d91dcbbf1b6a7542bcbd75cc5c9f9a3f2ee5db5480b958621fcba14a8f8",
+      "purpose": "官方网页讲义第21/39页：Systems：每一轮浪潮的新抽象",
+      "expected_information": "官方讲义第21页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-4.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第15节，当前官方网页第21/39页；截图汇编物理第21页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 15,
+      "frame": 2,
+      "path": "frames/slide-22.png",
+      "sha256": "9678a43464082d69b4cb5e261b195efd42a8c1ca723aa71d7acfe284684d86d0",
+      "purpose": "官方网页讲义第22/39页：如果是面向客户需求的软件呢？",
+      "expected_information": "官方讲义第22页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-4.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第15节，当前官方网页第22/39页；截图汇编物理第22页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 16,
+      "frame": 1,
+      "path": "frames/slide-23.png",
+      "sha256": "8320f364d4b732f7354d91bc62a3f6a39c9e4a691163402902d32fba190bcf02",
+      "purpose": "官方网页讲义第23/39页：Java Web：直接在 HTML 里写代码",
+      "expected_information": "官方讲义第23页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-4.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第16节，当前官方网页第23/39页；截图汇编物理第23页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 16,
+      "frame": 2,
+      "path": "frames/slide-24.png",
+      "sha256": "e1ce2f936654c8969b4b77b1a7e05777c23684d67c84c9b6603c13594eb98c07",
+      "purpose": "官方网页讲义第24/39页：JSP：从 Java 片段到表达式与标签",
+      "expected_information": "官方讲义第24页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-4.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第16节，当前官方网页第24/39页；截图汇编物理第24页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 17,
+      "frame": 1,
+      "path": "frames/slide-25.png",
+      "sha256": "3f9cb5e296a44847e4cc7fac34df2f9fc518ff0eb42f81334b55ab9e41964672",
+      "purpose": "官方网页讲义第25/39页：MVC：让不同的变化各有归属",
+      "expected_information": "官方讲义第25页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-5.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第17节，当前官方网页第25/39页；截图汇编物理第25页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 17,
+      "frame": 2,
+      "path": "frames/slide-26.png",
+      "sha256": "4d341ecda3a581df1d3e2ebaf5006ba4ebb6749526c465f74d29ecc12fc58cd1",
+      "purpose": "官方网页讲义第26/39页：MVC：一次选课请求",
+      "expected_information": "官方讲义第26页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-5.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第17节，当前官方网页第26/39页；截图汇编物理第26页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 18,
+      "frame": 1,
+      "path": "frames/slide-27.png",
+      "sha256": "7b5a3598ad4899b6ed81412e00b22c3979704c06ce1318943a2ba00a6718b6dc",
+      "purpose": "官方网页讲义第27/39页：把 ViewState 也当成 Model",
+      "expected_information": "官方讲义第27页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-5.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第18节，当前官方网页第27/39页；截图汇编物理第27页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 18,
+      "frame": 2,
+      "path": "frames/slide-28.png",
+      "sha256": "f26121c9ce519e64362bec0de9412b2968d1cd2e64a8ce82334d7c69dac7cd11",
+      "purpose": "官方网页讲义第28/39页：MVVM：让界面绑定状态",
+      "expected_information": "官方讲义第28页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-5.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第18节，当前官方网页第28/39页；截图汇编物理第28页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 19,
+      "frame": 1,
+      "path": "frames/slide-29.png",
+      "sha256": "98ebcd941b397599085ac84ed0e5f97703c5a0db22357dc306964ea5aeb5a64a",
+      "purpose": "官方网页讲义第29/39页：React：用状态快照描述界面",
+      "expected_information": "官方讲义第29页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-5.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第19节，当前官方网页第29/39页；截图汇编物理第29页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 19,
+      "frame": 2,
+      "path": "frames/slide-30.png",
+      "sha256": "774f7d59f5a1985217b41bb83b2100e48374657175a1d851aec366506a1ab777",
+      "purpose": "官方网页讲义第30/39页：Vue 与 React：同一个课程筛选框",
+      "expected_information": "官方讲义第30页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-5.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第19节，当前官方网页第30/39页；截图汇编物理第30页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 20,
+      "frame": 1,
+      "path": "frames/slide-31.png",
+      "sha256": "318c89758ce9aed1d09004a623cdf108f5f7c2d3c4bb5fd6f575724d2778b8f7",
+      "purpose": "官方网页讲义第31/39页：应对复杂性",
+      "expected_information": "官方讲义第31页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-6.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第20节，当前官方网页第31/39页；截图汇编物理第31页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 21,
+      "frame": 1,
+      "path": "frames/slide-32.png",
+      "sha256": "573c5456834afa2bce4ef513882cfe9021ead36157123f0c3d40ef115a6c3942",
+      "purpose": "官方网页讲义第32/39页：复式记账：同一笔业务，保持会计等式",
+      "expected_information": "官方讲义第32页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-6.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第21节，当前官方网页第32/39页；截图汇编物理第32页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 22,
+      "frame": 1,
+      "path": "frames/slide-33.png",
+      "sha256": "cf6097739f0dd12c94454e1d51a60fefe82b17082a31c728eac892d12a8c7f5b",
+      "purpose": "官方网页讲义第33/39页：记账架构：Event Sourcing & LLM as a Compiler",
+      "expected_information": "官方讲义第33页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-6.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第22节，当前官方网页第33/39页；截图汇编物理第33页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 22,
+      "frame": 2,
+      "path": "frames/slide-34.png",
+      "sha256": "23fe701ca6ff95b51d65137ae90ada290717d16cd9297ac5c6fbe226823d8a29",
+      "purpose": "官方网页讲义第34/39页：从分录到报表",
+      "expected_information": "官方讲义第34页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-6.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第22节，当前官方网页第34/39页；截图汇编物理第34页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 22,
+      "frame": 3,
+      "path": "frames/video-5338.jpg",
+      "sha256": "3b08c14b93fdb1bc566c536d53aacc1922683d478e30408cabf12042fa360068",
+      "purpose": "板书完整展开“原始历史 → LLM编译的小操作 → 回放计算状态”；右侧同时显示官方记账操作代码",
+      "expected_information": "板书完整展开“原始历史 → LLM编译的小操作 → 回放计算状态”；右侧同时显示官方记账操作代码。",
+      "observed_information": "已逐张查看完整原视频帧；板书完整展开“原始历史 → LLM编译的小操作 → 回放计算状态”；右侧同时显示官方记账操作代码。",
+      "comparison_evidence": "对应notes第22节，原视频实际时间5338",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/需求和架构 (2) [07-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "df4344f9c61dfb2a247f734570b9d2ef3ec1d21010849efb4eed78347b5dcc12",
+          "detail": "原媒体1280×410，完整全画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选取操作/论证完整阶段；nano同时保留选择和打开结果"
+    },
+    {
+      "section": 22,
+      "frame": 4,
+      "path": "frames/ledger-detail.webp",
+      "sha256": "ccafc4b7efddc21289cb3589d27c20f423a3ea007414290c51fcf6a3e395495e",
+      "purpose": "第34页表格的内嵌原始图，放大保留两项分录与三张报表变化",
+      "expected_information": "银行收支两项分录及资产负债表、利润表、现金流量表三组变化",
+      "observed_information": "已单独放大查看：75、22.07、−52.93及三组变化完整；源图左上凭证名有意遮挡，正文不推测",
+      "comparison_evidence": "对应notes第22节，当前官方网页第34/39页；截图汇编物理第34页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 23,
+      "frame": 1,
+      "path": "frames/slide-35.png",
+      "sha256": "5f749c3ee19adacf0f857716f1ca828cffb289fcba909b69f7890421604ac9d7",
+      "purpose": "官方网页讲义第35/39页：记账为什么麻烦？",
+      "expected_information": "官方讲义第35页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-6.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第23节，当前官方网页第35/39页；截图汇编物理第35页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 23,
+      "frame": 2,
+      "path": "frames/slide-37.png",
+      "sha256": "837155111c1e172ecd19ceaaf3a1e7e61a202de7911a8fed89481fe5d35f5181",
+      "purpose": "官方网页讲义第37/39页：跳出问题看问题：“现在” 是 “过去” 的结果",
+      "expected_information": "官方讲义第37页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-7.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第23节，当前官方网页第37/39页；截图汇编物理第37页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 24,
+      "frame": 1,
+      "path": "frames/slide-36.png",
+      "sha256": "72f472f9296ecd52b1a2473231c54ba336499c55848e0ddd023e786bf49cf170",
+      "purpose": "官方网页讲义第36/39页：Event Sourcing 和复杂性分解",
+      "expected_information": "官方讲义第36页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-6.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第24节，当前官方网页第36/39页；截图汇编物理第36页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 25,
+      "frame": 1,
+      "path": "frames/slide-38.png",
+      "sha256": "58e0b9fab6878c84ad81e1371d8e16270f00f787f0728c6b63043a85e031dc0f",
+      "purpose": "官方网页讲义第38/39页：SQL 的 Billion Dollar Mistake 😁",
+      "expected_information": "官方讲义第38页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-7.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第25节，当前官方网页第38/39页；截图汇编物理第38页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    },
+    {
+      "section": 25,
+      "frame": 2,
+      "path": "frames/slide-39.png",
+      "sha256": "002ac916f1e9a08180dbc2d330202eb1956315fc98a05f12170375d2eac527c5",
+      "purpose": "官方网页讲义第39/39页：从状态一致性到计算正确性",
+      "expected_information": "官方讲义第39页完整标题、全部列表/代码/图示、页码",
+      "observed_information": "已在contact-7.jpg逐页目视对照，标题、正文底端与页码完整；图/公式/代码与slides-text.json该页相符",
+      "comparison_evidence": "对应notes第25节，当前官方网页第39/39页；截图汇编物理第39页",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "1fb9a81642297db7a79bacba4bd7288fc10087cc2fffcd2f7e6a7513c464e1ae",
+          "detail": "官方网页逐页截图汇编，非官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "选用完整官方页；第34页增补内嵌原图以便阅读"
+    }
+  ],
+  "review_method": "39页在7张六页联系表中逐页目视与逐页DOM文本核对；第1页和银行图单图放大；6张选用视频帧均单独目视。"
+}

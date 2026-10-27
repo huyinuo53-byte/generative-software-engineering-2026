@@ -1,0 +1,28 @@
+{
+  "design": "Editorial study edition: warm paper, ink headings, rust accents; full content with selective semantic emphasis.",
+  "sections": [
+    {"short":"实时决策与 AI 加速","takeaway":"模型能力与交互延迟要分开判断；现场架构猜测仍然是猜测。","terms":["现场推测","交互延迟","长期品位","对接下来该做什么的直觉","即时奖励","低延迟"]},
+    {"short":"数据分布工程","takeaway":"能力飞轮能否转起来，取决于每轮是否带来经过独立验证的净收益。","terms":["数据分布工程","可验证反馈","独立验证的净收益","解释假说","原问题","数据分布","泛化表现"]},
+    {"short":"意图、规格与实现","takeaway":"代码生成得更快，仍需检验模型补齐的默认决定是否符合真实意图。","terms":["人的意图（Intent）","规格（Specification）","实现（Implementation）","MVP","降低试错成本","高风险假设","默认行为","明确禁止","尚未决定"]},
+    {"short":"Office Assistant","takeaway":"先划清设备接口，再用可验收结果与反馈，让 agent 的试错收敛。","terms":["稳定接口","硬件细节与上层产品","可验收结果","设备边界","教师反馈浓淡","下一步设想"]},
+    {"short":"Agent 与应用入口","takeaway":"实现成本与入口可能改变，抽象、反馈和工程责任仍需有人承担。","terms":["服务接口","可调用能力","抽象、分解、反馈、可靠性","强烈预测","权限、维护和业务责任"]},
+    {"short":"需求鸿沟的起点","takeaway":"同一个功能名称，可能包含完全不同的制度、例外与责任分配。","terms":["巨大鸿沟","社会制度和人的偏好","边界条件","高度定制","制度","默认值"]},
+    {"short":"软件危机与可读性","takeaway":"结构化与良好分解的价值，是让人能持续理解并检查程序行为。","terms":["软件危机","有纪律的 C 写法","良好分解","长期协作与维护","所有路径都履行清理责任"]},
+    {"short":"Apollo 与可靠性","takeaway":"能在意外中保住关键功能，依赖机制、测试证据与操作判断共同作用。","terms":["优先级、恢复和降级","系统机制、测试证据和操作判断","整个生命周期","组织能力","假设被破坏"]},
+    {"short":"Royce 与返工代价","takeaway":"测试若暴露上游假设错误，代价会沿依赖链回溯，局部修代码可能无效。","terms":["单向流程为什么危险","物理事实","timing / storage / I/O","相邻阶段","根本性假设错误","错误前提"]},
+    {"short":"Pilot、MVP 与 TDD","takeaway":"先做一次是为了学习：让关键假设提前遇到运行证据，再决定正式实现。","terms":["pilot model","用户与业务假设","第一次主要用来学习","先写期望","执行测试","有损压缩","一手资料"]},
+    {"short":"敏捷与依赖图","takeaway":"比较流程时，既看反馈来得多晚，也看此前堆积了多少依赖该假设的工作。","terms":["数据依赖图","宽度和深度","窄切片","缩短反馈环","深度优先式迭代","反馈时点"]},
+    {"short":"工具如何降低风险","takeaway":"Checklist 与半形式语言，把组织经验转成可重复、可核查的行动。","terms":["半形式语言","最终确认","组织记忆","剩余 gap","业务选择","质量控制"]},
+    {"short":"性质测试与需求追踪","takeaway":"测试应检查真正的承诺；追踪关系让每条承诺都能找到实现与证据。","terms":["独立证据","Property-based testing","需求追踪矩阵","保留输入每个元素及其出现次数","性质写对","双向链接","检查方式","持续检查"]},
+    {"short":"契约与保证的层次","takeaway":"先写清谁保证什么，再区分一次执行通过、搜索反例和给定假设下的证明。","terms":["前置条件","后置条件","不变量","责任不同","余额不变","运行时断言","基于性质的测试","静态验证","可替换性承诺"]},
+    {"short":"UML 与语义对齐","takeaway":"模型保存跨实现必须遵守的决定；图是视图，顺序与所有权等语义要分别表达。","terms":["模型元素及其语义","自然语言歧义","独立于某次实现","共同语义基础","模型元素身份","可导航性","生命周期","弱顺序","严格先后","良构性","不自动证明"]},
+    {"short":"固定什么，留白什么","takeaway":"明确保留已决定、禁止和未决定的边界；尚未规定不等于已经授权。","terms":["定死","留白","对齐","合法轨迹","非法轨迹","尚未规定","不表示业务已经批准","实现自由"]}
+  ],
+  "summary_terms":["人的意图","接口抽象","反馈","数据依赖图","契约与 UML","可检查约束"],
+  "references":[
+    {"url":"https://distill.pub/2017/research-debt/","checked":"2026-10-08","method":"live article and actual page screenshot","adopted":"A focused reading column, clearly differentiated headings, space between arguments; no article text copied."},
+    {"url":"https://press.stripe.com/","checked":"2026-10-08","method":"live page and actual screenshot after initial navigation timeout","adopted":"Editorial masthead and restrained publication identity; no 3D bookshelf or copied assets."},
+    {"url":"https://design-system.service.gov.uk/styles/type-scale/","checked":"2026-10-08","method":"official documentation read","adopted":"Consistent type scale and vertical rhythm, responsive text sizes."},
+    {"url":"https://design-system.service.gov.uk/styles/headings/","checked":"2026-10-08","method":"official documentation read","adopted":"Semantic heading hierarchy with smaller contextual captions."}
+  ]
+}

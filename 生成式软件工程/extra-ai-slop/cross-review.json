@@ -1,0 +1,33 @@
+{
+  "result": "passed",
+  "method": "主协调者全文读取14来源单元与完整7节笔记；独立查看60、130秒原视频帧",
+  "notes_sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6",
+  "transcript_sha256": "4ccc403e04cc7d201636f7f0ea074e38bcec3889195379d5d207af1424b8e693",
+  "checks": [
+    {
+      "topic": "旁白与图像偏移",
+      "evidence": "55.23–76.83秒及frames/060.jpg",
+      "finding": "标题标准简历的力量与右下建议确实可见，旁白只有毕业焦虑和简历转场",
+      "status": "passed"
+    },
+    {
+      "topic": "怀疑与事实",
+      "evidence": "93.73–109.25秒",
+      "finding": "工厂仅讲述者怀疑，笔记未擅自确认或识别匿名个人",
+      "status": "passed"
+    },
+    {
+      "topic": "原图日期",
+      "evidence": "frames/130.jpg",
+      "finding": "2024.11.16署记和重复硕果累累像素可见，未当课程日期",
+      "status": "passed"
+    },
+    {
+      "topic": "完整结尾",
+      "evidence": "137.43–168.28秒",
+      "finding": "基础/自信/驾驭AI/欢迎异议完整保留，短片身份清楚",
+      "status": "passed"
+    }
+  ],
+  "substantive_changes": 0
+}

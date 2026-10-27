@@ -1,0 +1,551 @@
+[
+  {
+    "id": "e01",
+    "key": "review",
+    "start": 0,
+    "end": 188,
+    "description": "软件工程/需求架构/Agent-native复习；Intent分支与系统板书",
+    "official_slide_pages": [
+      1,
+      2
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e02",
+    "key": "conference",
+    "start": 188,
+    "end": 238,
+    "description": "DeepSeek Harness活动照片",
+    "official_slide_pages": [
+      3
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e03",
+    "key": "lecture-source",
+    "start": 238,
+    "end": 328,
+    "description": "原始讲义Markdown导航，准备运行Agent",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e04",
+    "key": "greeting",
+    "start": 328,
+    "end": 374,
+    "description": "Greeting会话回应身份与工作目录",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e05",
+    "key": "miniagent",
+    "start": 374,
+    "end": 452,
+    "description": "miniagent.py工具协议与bash执行函数",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e06",
+    "key": "campus",
+    "start": 452,
+    "end": 618,
+    "description": "3D校园全景、旋转、缩放和建筑局部",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e07",
+    "key": "requirements",
+    "start": 618,
+    "end": 758,
+    "description": "150行Agent工作与网络中断问题",
+    "official_slide_pages": [
+      4
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e08",
+    "key": "api-retry",
+    "start": 758,
+    "end": 874,
+    "description": "API中断、可重试/不可重试/结果未知与幂等问题",
+    "official_slide_pages": [
+      5
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e09",
+    "key": "many-requirements",
+    "start": 874,
+    "end": 926,
+    "description": "Agent周边能力与需求规格入口",
+    "official_slide_pages": [
+      6
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e10",
+    "key": "product-spec",
+    "start": 926,
+    "end": 1029,
+    "description": "办公Agent规格v1.0（2026-10-18）：场景、功能、非功能、验收与发布要求",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e11",
+    "key": "loop-world",
+    "start": 1029,
+    "end": 1076,
+    "description": "小Agent循环被权限/预算/恢复等真实需求包围",
+    "official_slide_pages": [
+      7
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e12",
+    "key": "grok-bot",
+    "start": 1076,
+    "end": 1156,
+    "description": "Grok Bot改变需求的课堂例子",
+    "official_slide_pages": [
+      8
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e13",
+    "key": "dsh-bot",
+    "start": 1156,
+    "end": 1332,
+    "description": "dsh-bot角色接续与协作界面",
+    "official_slide_pages": [
+      9
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e14",
+    "key": "origin",
+    "start": 1332,
+    "end": 1412,
+    "description": "项目2026-06-10起点与AGENTS/README初始化",
+    "official_slide_pages": [
+      10
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e15",
+    "key": "architecture-tradeoff",
+    "start": 1412,
+    "end": 1888,
+    "description": "架构限制与收益；模块/流水线/进程示意板书逐步形成",
+    "official_slide_pages": [
+      11
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e16",
+    "key": "assumptions",
+    "start": 1888,
+    "end": 1982,
+    "description": "架构假设失效及电力改变组织的例子",
+    "official_slide_pages": [
+      12
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e17",
+    "key": "ai-acceleration",
+    "start": 1982,
+    "end": 1992,
+    "description": "AI产业加速器页",
+    "official_slide_pages": [
+      13
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e18",
+    "key": "abstraction-gallery",
+    "start": 1992,
+    "end": 2016,
+    "description": "快速查看OS/语言/LAMP/EventSourcing/MapReduce/Spark/Flink架构例子",
+    "official_slide_pages": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e19",
+    "key": "mapreduce-paper",
+    "start": 2016,
+    "end": 2190,
+    "description": "MapReduce原文词频伪代码、执行图及C++Appendix浏览",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e20",
+    "key": "mapreduce-and-streaming",
+    "start": 2190,
+    "end": 2298,
+    "description": "返回MapReduce、Spark、Flink架构与边界",
+    "official_slide_pages": [
+      18,
+      19
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e21",
+    "key": "event-sourcing",
+    "start": 2298,
+    "end": 2304,
+    "description": "Event Sourcing回放边界页",
+    "official_slide_pages": [
+      17
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e22",
+    "key": "architecture-return",
+    "start": 2304,
+    "end": 2310,
+    "description": "短暂返回架构取舍和讲义源码",
+    "official_slide_pages": [
+      11
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e23",
+    "key": "everything-plugin",
+    "start": 2310,
+    "end": 2520,
+    "description": "Everything Is a Plugin、Cordis以及插件化世界模型板书",
+    "official_slide_pages": [
+      20
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e24",
+    "key": "world-and-explanation",
+    "start": 2520,
+    "end": 2842,
+    "description": "Session事实记录；现场Agent解释session、LLM、tools、scope、events",
+    "official_slide_pages": [
+      21
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e25",
+    "key": "free-thought",
+    "start": 2842,
+    "end": 2904,
+    "description": "切回世界模型页与自由思考的现场Agent输出",
+    "official_slide_pages": [
+      21
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e26",
+    "key": "trajectory",
+    "start": 2904,
+    "end": 2942,
+    "description": "Trajectory上下文、bash调用参数、结果与Timing",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e27",
+    "key": "tool-reply",
+    "start": 2942,
+    "end": 2974,
+    "description": "工具执行后模型总结目录和环境；输出属于当前会话",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e28",
+    "key": "session-projection",
+    "start": 2974,
+    "end": 3027,
+    "description": "Session从事实到投影，穿插Trajectory回查",
+    "official_slide_pages": [
+      21,
+      22
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e29",
+    "key": "agent-inputs",
+    "start": 3027,
+    "end": 3070,
+    "description": "followup/inject/steer及动态上下文",
+    "official_slide_pages": [
+      23
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e30",
+    "key": "hooks",
+    "start": 3070,
+    "end": 3164,
+    "description": "pending决策hook与已发生事实事件的区别",
+    "official_slide_pages": [
+      24,
+      22
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e31",
+    "key": "plugin-bus",
+    "start": 3164,
+    "end": 3204,
+    "description": "总线图说明业务插件、Agent/Loop、LLM/Tools和Session投影",
+    "official_slide_pages": [
+      25
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e32",
+    "key": "plugin-ecosystem",
+    "start": 3204,
+    "end": 3300,
+    "description": "TUI/pdf-reader/sidebar/Creator的插件生态入口",
+    "official_slide_pages": [
+      26
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e33",
+    "key": "greeting-return",
+    "start": 3300,
+    "end": 3404,
+    "description": "Greeting、原有临时文件与侧栏入口",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e34",
+    "key": "panels",
+    "start": 3404,
+    "end": 3500,
+    "description": "Files/Terminal/SideChat面板及布局切换",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e35",
+    "key": "modes",
+    "start": 3500,
+    "end": 3616,
+    "description": "Standard/PTC/Minimal/Creator模式菜单及Creator任务输入",
+    "official_slide_pages": [
+      26
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e36",
+    "key": "creator-execution",
+    "start": 3616,
+    "end": 3774,
+    "description": "Creator读代码、写插件文件、安装审批、停止与追加改要求",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e37",
+    "key": "plugin-cost",
+    "start": 3774,
+    "end": 3928,
+    "description": "插件语义冲突、顺序与作用域，1/2连续压缩10次示例",
+    "official_slide_pages": [
+      27
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e38",
+    "key": "dashboard",
+    "start": 3928,
+    "end": 3962,
+    "description": "Agent完成声明、文件变化和累计token仪表盘",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e39",
+    "key": "community",
+    "start": 3962,
+    "end": 4048,
+    "description": "维护和生态、最终用户工具包",
+    "official_slide_pages": [
+      28
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e40",
+    "key": "app-ai",
+    "start": 4048,
+    "end": 4168,
+    "description": "为已有App加入AI能力，lock/serialize/UI的抽象",
+    "official_slide_pages": [
+      29
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e41",
+    "key": "turtle",
+    "start": 4168,
+    "end": 4354,
+    "description": "Excalidraw原有图形→AI侧聊→绿色乌龟→结构对象选择",
+    "official_slide_pages": [
+      29
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e42",
+    "key": "genui-intro",
+    "start": 4354,
+    "end": 4442,
+    "description": "GenUI：Session卡片与模型的双向通道",
+    "official_slide_pages": [
+      30
+    ],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e43",
+    "key": "idiom",
+    "start": 4442,
+    "end": 4650,
+    "description": "成语接龙卡片：HTML、初始候选、选择反馈、上下文回传与下一轮候选",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e44",
+    "key": "gomoku",
+    "start": 4650,
+    "end": 4778,
+    "description": "五子棋卡片：棋盘、落子、模型回应、显示/事件问题与调试",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e45",
+    "key": "canvas-implementation",
+    "start": 4778,
+    "end": 4888,
+    "description": "Excalidraw插件与dsh WebServer、iframe、Cordis服务的实现解释",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e46",
+    "key": "dynui-implementation",
+    "start": 4888,
+    "end": 5038,
+    "description": "dynui上下文注入/消息截断、公开API与实现边界的现场解释",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e47",
+    "key": "scope",
+    "start": 5038,
+    "end": 5110,
+    "description": "scope隔离、工具限制与各层影响范围",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "e48",
+    "key": "summary-board",
+    "start": 5110,
+    "end": 5363.541375,
+    "description": "pending决策、应用锁与Agent自身世界区别；收束板书",
+    "official_slide_pages": [],
+    "boundary_note": "semantic review window boundary; exact screenshot time in selected-frames",
+    "review_status": "reviewed"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "bcut",
+    "chapters",
+    "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1CQt365EzW.bcut",
+    "--review",
+    "--llm",
+    "agent",
+    "--jsonl"
+  ],
+  "cwd": "/Users/yjzhao/Library/Application Support/BaoCut/agent/_scratch",
+  "finishedAtMs": 1790689837345,
+  "pid": 75514,
+  "startedAtMs": 1790689795739,
+  "taskId": "t-mumqgxay"
+}

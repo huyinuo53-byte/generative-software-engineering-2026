@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "lecture": "05",
+  "reviewer": "independent agent /root/lecture07",
+  "author_is_reviewer": false,
+  "reviewed_at": "2026-10-02T15:20:13.404087+00:00",
+  "scope": "Independent targeted content review against frozen transcript and official course slide text. Not a whole-video or every-frame audit; no fresh external primary-paper verification.",
+  "source_hashes_sha256": {
+    "notes.json": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+    "transcript.json": "5ab5641c1152557735a50fa6ea56715c84488f6a5ad2f474e61bc88bf1bfa33c",
+    "sources/slides-text.json": "dbc327e496a5cf596b023070ed47c8c9c8ec5c158be386c8702b2f8efc4e9f02"
+  },
+  "main_notes_read": "all sections; source rechecks targeted as listed",
+  "outcome": "passed_targeted_review",
+  "checks_count": 8,
+  "checks": [
+    {
+      "id": "05-01",
+      "sections": [
+        1
+      ],
+      "claim": "Jev 架构猜测与已知效果分开",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          0,
+          120
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g6.0~1",
+        "s-g7.0~5"
+      ],
+      "official_slide_pages": [
+        1
+      ],
+      "assessment": "正文明确 prefill-only 是讲师盲猜，没有把课堂视觉效果当成内部架构证明；讲义官方披露与讲师猜测也分开。",
+      "required_change": null
+    },
+    {
+      "id": "05-02",
+      "sections": [
+        2
+      ],
+      "claim": "数据分布工程属于讲师归纳，形式化不保证意图正确",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          555,
+          750
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g100.0~5",
+        "s-g103.0~27",
+        "s-g110.0~36",
+        "s-g116.0"
+      ],
+      "official_slide_pages": [
+        3,
+        4,
+        5
+      ],
+      "assessment": "保留规约空洞、训练领域扩展与飞轮逻辑，同时标注不是某厂已披露训练配方，跨域改善未写成无条件定理。",
+      "required_change": null
+    },
+    {
+      "id": "05-03",
+      "sections": [
+        4
+      ],
+      "claim": "打印机校准的人工反馈和接口设计",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          1212,
+          1524
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g295.0",
+        "s-g300.0~17",
+        "s-g304.0~18",
+        "s-g352.0~25",
+        "s-g359.0"
+      ],
+      "official_slide_pages": [],
+      "assessment": "scan 的方向/单双面/DPI、print(image)、分工与标签试打均保留。浓淡判断由讲师反馈，摄像头自动闭环是设想；正文未将口述“没有干预”的概括扩大为完全无人过程。",
+      "required_change": null
+    },
+    {
+      "id": "05-04",
+      "sections": [
+        9
+      ],
+      "claim": "Royce 论文中的运行约束与返工",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          3170,
+          3370
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g617.0~6",
+        "s-g643.0~8"
+      ],
+      "official_slide_pages": [
+        17,
+        19
+      ],
+      "assessment": "正文和官方讲义相符：经典图之后批评风险，测试暴露 timing/storage/I/O，可能回溯需求和设计。未写成 Royce 推崇只走一遍的流程。本次核对冻结的课程一手材料，未独立重读 Royce 全文。",
+      "required_change": null
+    },
+    {
+      "id": "05-05",
+      "sections": [
+        10
+      ],
+      "claim": "Do It Twice 的 pilot 与现代 MVP/TDD 边界",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          3490,
+          3620
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g683.0~28",
+        "s-g687.0~2",
+        "s-g693.0~6"
+      ],
+      "official_slide_pages": [
+        20,
+        21
+      ],
+      "assessment": "正文没有把技术 pilot 与业务 MVP 完全等同，并清楚区分先写期望与执行验证需要实现。",
+      "required_change": null
+    },
+    {
+      "id": "05-06",
+      "sections": [
+        11
+      ],
+      "claim": "Data Dependency Graph 是课堂重新解释",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          4090,
+          4280
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g932.0~9",
+        "s-g936.0",
+        "s-g940.0",
+        "s-g944.0"
+      ],
+      "official_slide_pages": [
+        21,
+        22
+      ],
+      "assessment": "正文保留依赖改变引起下游失效，并把 DAG 及 BFS/DFS 比喻标为讲师解释，不归为 Royce 原文结论。",
+      "required_change": null
+    },
+    {
+      "id": "05-07",
+      "sections": [
+        14
+      ],
+      "claim": "契约编程的责任与验证范围",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          5275,
+          5440
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g1166.0",
+        "s-g1169.0",
+        "s-g1170.0",
+        "s-g1171.0",
+        "s-g1173.0",
+        "s-g1176.0~2"
+      ],
+      "official_slide_pages": [
+        26,
+        27
+      ],
+      "assessment": "前置条件 0<amount<=balance、后置余额与余额不足的业务选择正确；运行时断言、本次测试和给定假设下的静态验证分开，没有声称任意需求自动证明。",
+      "required_change": null
+    },
+    {
+      "id": "05-08",
+      "sections": [
+        16
+      ],
+      "claim": "UML 读规范过程、费用与未展开讲义",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          5800,
+          5999.2
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g1296.0~3",
+        "s-g1303.0",
+        "s-g1309.0~1",
+        "s-g1353.0~3",
+        "s-g1363.0"
+      ],
+      "official_slide_pages": [
+        29,
+        30,
+        31
+      ],
+      "assessment": "796 页、约 50 页分块及重叠保留。699 元套餐/18% 五小时额度/约5.3元均限定讲师叙述而非实际账单。末尾明确让学生读剩余讲义；后续内容标为补充，没有捏造为课堂详细口述。",
+      "required_change": null
+    }
+  ],
+  "material_errors_found": [],
+  "body_modified": false,
+  "limitations": [
+    "本次检查不替代原作者的全文转写覆盖记录与逐图审查。",
+    "桌面/手机 UI 由主协调负责，本文件不声称 UI 验收。"
+  ]
+}

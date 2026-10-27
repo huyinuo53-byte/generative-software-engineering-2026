@@ -1,0 +1,13 @@
+{
+  "callId": "c0001",
+  "kind": "chapters",
+  "seq": 1,
+  "attempt": 1,
+  "chars": 33192,
+  "estimatedCost": 33192,
+  "items": 1,
+  "protocolVersion": "file-v1",
+  "contract": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-08-BV11LWw6VEHW.bcut/tasks/t-mvelb1nw/contracts/chapters.md",
+  "payload": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-08-BV11LWw6VEHW.bcut/tasks/t-mvelb1nw/payloads/c0001.html",
+  "createdAtMs": 1792374176309
+}

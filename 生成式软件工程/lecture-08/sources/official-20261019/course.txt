@@ -1,0 +1,15 @@
+Yanyan's Wiki
+Yanyan's wiki for
+生成式软件工程 (2026 秋)
+生成式软件工程 (2026 秋季学期)
+课时：每周二上午 10:00-12:00；课堂直播；视频回放
+课程讲义
+欢迎来到未来
+提示词与上下文工程
+版本管理 (1)  | Lab1: 个人数字助手
+版本管理 (2)
+软件工程的来龙去脉
+需求和架构 (1)
+需求和架构 (2)  | Lab2: Deeper Research
+Agent Native 开发
+Creative Commons License: BY-NC 4.0苏 ICP 备 2020049101 号

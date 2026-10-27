@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-26T01:03:45.555192+00:00",
+  "heartbeat_at": "2026-10-26T01:01:26.335Z",
+  "source": "https://space.bilibili.com/202224425/lists/8942017?type=season",
+  "method": "live Chrome extension rendered DOM",
+  "displayed_total": 9,
+  "displayed_update": "10月20日",
+  "video_ids": [
+    "BV1pb8o6yE8f",
+    "BV1CQt365EzW",
+    "BV1kybV6DE47",
+    "BV1Q6en6NEUo",
+    "BV1Nyeq6qEt8",
+    "BV1Rch76WEfQ",
+    "BV1JGap6LE74",
+    "BV11LWw6VEHW",
+    "BV144nc6KEA4"
+  ],
+  "new_ids": [
+    "BV144nc6KEA4"
+  ],
+  "previous_not_listed": [
+    "BV1fKtN6DErG"
+  ],
+  "existing_completed_html_hashes_match": true,
+  "api_attempt": "-352; used real Chrome rendered collection",
+  "new_video": {
+    "id": "BV144nc6KEA4",
+    "title": "DeepSeek Harness (1) [09-Raw/26生成式软件工程/NJU]",
+    "duration_display": "01:29:24",
+    "published_display": "10月20日"
+  }
+}

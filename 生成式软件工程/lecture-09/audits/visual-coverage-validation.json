@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "candidates": 634,
+  "errors": [],
+  "scope": "Versions, ledger coverage, targets and declared review only; not semantic completeness."
+}

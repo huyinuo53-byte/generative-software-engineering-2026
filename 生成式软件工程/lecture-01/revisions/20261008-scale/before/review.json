@@ -1,0 +1,96 @@
+{
+  "run_id": "BV1pb8o6yE8f-20261002-complete-notes",
+  "outcome": "completed",
+  "summary": "完整阅读20块转写，821来源单元逐项覆盖；23节、48图。内容与逐图复核、最终HTML结构/桌面/390px窄屏/打印保真检查通过。未做真实手机或逐秒音频听审。",
+  "validation": {
+    "content": {
+      "status": "passed",
+      "evidence": [
+        "audit.json",
+        "cross-review.json"
+      ]
+    },
+    "image_integrity": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_static": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "desktop": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "narrow": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "real_phone": {
+      "status": "not_requested",
+      "evidence": "未做真实手机设备实测；390px仅浏览器模拟"
+    },
+    "pdf": {
+      "status": "not_requested",
+      "evidence": "临时PDF只用于HTML打印检查，不作为完整PDF交付"
+    },
+    "project_strict": {
+      "status": "passed",
+      "evidence": "project-check.json"
+    },
+    "source_coverage": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "html_print": {
+      "status": "passed",
+      "evidence": "qa/print.json"
+    },
+    "package": {
+      "status": "not_requested",
+      "evidence": "逐视频独立单文件HTML"
+    }
+  },
+  "blocker": null,
+  "resume_condition": null,
+  "source_hashes": {
+    "transcript.json": "03a43af30f673fee7cd28445031175a8c5924a752eb3e0084d5d90dbb36f889b",
+    "chunks/index.json": "4ce87bd27933fe5cc8cf286d70bdda8a85c21074521089edecb3f69c5ce67bbe",
+    "notes.json": "f3d82787541036b7f430c228c18c9d742eb155d0c759841a22da6c0a92ff368c",
+    "课堂笔记.html": "ab033482b3a8d2a70f5a26106638792dc1ad9bb0a0f56a88933a6f9e0a1ab1ff",
+    "image-audit.json": "89812cc4c42e635c5e58373df610f47e5a6ccafa48a2fafaebca440da09fa2bf",
+    "qa/browser.json": "89f577be9660ccb0981d7a770bbcbaea1dea2e0c64eaaab609e715a7f13aedcc",
+    "qa/print.json": "47bec31647625f0ffdb18c8e668eb79bdf730ebd28e0696657c976643b871696"
+  },
+  "audit": [
+    "audit.json",
+    "cross-review.json"
+  ],
+  "trace_snapshot": "trace-final.json",
+  "scope_revision": 1,
+  "delivered_files": [
+    "课堂笔记.html"
+  ],
+  "lessons": [
+    {
+      "status": "candidate",
+      "scope": "jyywiki HTML讲义",
+      "finding": "官方网页也可能存在原始公式渲染缺损，图片可解码不代表信息完整。",
+      "evidence": "第13页链式分解公式缺损",
+      "next_action": "逐页目视；成品剔除缺损图并在正文明确补全，保留未改动来源。"
+    }
+  ],
+  "metrics": {
+    "wall_seconds": null,
+    "active_seconds": null,
+    "tokens": null,
+    "cost": null,
+    "source_units": 821,
+    "transcript_chunks": 20,
+    "selected_images": 48,
+    "official_slide_pages": 44,
+    "sections": 23,
+    "text_blocks": 183
+  },
+  "finished_at": "2026-10-02T15:38:14.671819+00:00"
+}

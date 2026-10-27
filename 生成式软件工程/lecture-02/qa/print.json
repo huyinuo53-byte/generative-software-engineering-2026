@@ -1,0 +1,12 @@
+{
+  "html_sha256": "fc4bb4234b9af966e41c5fac789217ad3afbc31b65dc654e3fa55bc33089e0a2",
+  "method": "isolated Chrome headless print; all text blocks checked against pdftotext; representative page visual inspection recorded separately",
+  "temporary_pdf": "/tmp/gse-lecture-02-print.pdf",
+  "pdf_sha256": "6f8f3aaa79e8868372ac76016c116597fea777c04ade66e7e468c38a5bb5b68f",
+  "text_blocks": 156,
+  "missing_blocks": [],
+  "printed_images": 44,
+  "expected_images": 44,
+  "pdfinfo": "Title:           第02课｜提示词工程：从上下文到可验证的协作\nCreator:         Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36\nProducer:        Skia/PDF m154\nCreationDate:    Fri Oct  2 23:30:59 2026 CST\nModDate:         Fri Oct  2 23:30:59 2026 CST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          yes\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           58\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       13958556 bytes\nOptimized:       no\nPDF version:     1.4\n",
+  "status": "passed"
+}

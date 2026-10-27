@@ -1,0 +1,12 @@
+{
+  "callId": "c0001",
+  "kind": "analysis",
+  "seq": 1,
+  "attempt": 1,
+  "chars": 10740,
+  "estimatedCost": 10740,
+  "protocolVersion": "file-v1",
+  "contract": "/Users/yjzhao/Library/Application Support/BaoCut/projects/06 需求和架构（1）.bcut/tasks/t-mup6h7g8/contracts/analysis.md",
+  "payload": "/Users/yjzhao/Library/Application Support/BaoCut/projects/06 需求和架构（1）.bcut/tasks/t-mup6h7g8/payloads/c0001.md",
+  "createdAtMs": 1790837615100
+}

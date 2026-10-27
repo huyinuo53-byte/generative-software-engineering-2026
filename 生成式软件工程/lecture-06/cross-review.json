@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "lecture": "06",
+  "reviewer": "independent agent /root/lecture07",
+  "author_is_reviewer": false,
+  "reviewed_at": "2026-10-02T15:20:13.406557+00:00",
+  "scope": "Independent targeted content review against frozen transcript and official course slide text. Not a whole-video or every-frame audit; no fresh external primary-paper verification.",
+  "source_hashes_sha256": {
+    "notes.json": "4debf37d2cfbb2a3fc91a1f59fa85946936e4cd863c70ef05cce584a1fd14b43",
+    "transcript.json": "3307c7c4be10cf564b613a1963757aff0d7b76ab28d4d81a4369c7f767a13026",
+    "sources/slides-text.json": "d0a03fbb5334f346c98f082016cc41dd83d6967e916bfe245a5e491bb79d608b"
+  },
+  "main_notes_read": "all sections; source rechecks targeted as listed",
+  "outcome": "passed_targeted_review",
+  "checks_count": 8,
+  "checks": [
+    {
+      "id": "06-01",
+      "sections": [
+        7
+      ],
+      "claim": "缺课次数原型：超大值被拒、100 可保存",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          1810,
+          1972
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g224.0",
+        "s-g230.0",
+        "s-g238.0~1"
+      ],
+      "official_slide_pages": [],
+      "assessment": "独立目视 1912 秒显示 value <=100 的浏览器校验，1915 秒显示 100 次和记录更新。正文区分数值范围约束与整个学期业务上限；未根据前端现象声称后端已验收。",
+      "required_change": null
+    },
+    {
+      "id": "06-02",
+      "sections": [
+        9
+      ],
+      "claim": "毕业要求变化和虚构培养方案",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          2180,
+          2452
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g355.0~9",
+        "s-g389.0~6",
+        "s-g435.0~9",
+        "s-g451.0~6",
+        "s-g452.0~17"
+      ],
+      "official_slide_pages": [
+        9
+      ],
+      "assessment": "离散数学拆课、替代/交换、人工 override 均保留；160 学分及40/72/28/20分类等官方讲义例子被明确称为虚构，不作为南大真实制度。",
+      "required_change": null
+    },
+    {
+      "id": "06-03",
+      "sections": [
+        10
+      ],
+      "claim": "旧系统 -1 导致 500 是讲师经历",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          2452,
+          2670
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g457.0~100",
+        "s-g458.0~51",
+        "s-g458.0~131"
+      ],
+      "official_slide_pages": [],
+      "assessment": "正文未把讲师猜测数据库修复写成已查明根因，也未据此断言字段类型。保留长期运行的软件与真实世界交互所积累的技术债。",
+      "required_change": null
+    },
+    {
+      "id": "06-04",
+      "sections": [
+        12
+      ],
+      "claim": "三种非递归汉诺塔表示及数学方案",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          3180,
+          3355
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g543.0~6",
+        "s-g547.0~21",
+        "s-g563.0~9",
+        "s-g568.0~4",
+        "s-g582.0~4"
+      ],
+      "official_slide_pages": [
+        18,
+        19,
+        20
+      ],
+      "assessment": "任务反序压栈、Frame/pc 小步模拟与数学规律解释相符。独立重算 n=1..10 的数学方案，逐步检查合法性并与递归序列比较均通过；未将课堂模型实例泛化成模型排名。",
+      "required_change": null
+    },
+    {
+      "id": "06-05",
+      "sections": [
+        14
+      ],
+      "claim": "二维码 IR 的验证/交付结构与独立正确性",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          4040,
+          4270
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g780.0",
+        "s-g781.0",
+        "s-g788.0",
+        "s-g795.0",
+        "s-g800.0~23",
+        "s-g810.0~5"
+      ],
+      "official_slide_pages": [
+        27,
+        28
+      ],
+      "assessment": "表达式树分别翻译到 Python 与 Excel 的主线与口述一致。符号输入和独立解码器等扩展标注讲义补充，两个后端同结果未误当算法正确证明。",
+      "required_change": null
+    },
+    {
+      "id": "06-06",
+      "sections": [
+        18
+      ],
+      "claim": "院系更名的历史身份与属性版本",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          5044,
+          5300
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g924.2~7",
+        "s-g928.0",
+        "s-g929.0~21",
+        "s-g930.0~63",
+        "s-g931.2~26"
+      ],
+      "official_slide_pages": [
+        37,
+        38
+      ],
+      "assessment": "正文完整保留覆盖名称和新建 ID 的两种问题，按有效期保存属性、承继关系、培养方案独立版本化标成讲义补充；没有给出不分业务身份的唯一数据库答案。",
+      "required_change": null
+    },
+    {
+      "id": "06-07",
+      "sections": [
+        19
+      ],
+      "claim": "事件溯源仍需新逻辑与规则版本",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          5400,
+          5700
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g951.0",
+        "s-g972.0~19",
+        "s-g979.0~4",
+        "s-g995.0~4",
+        "s-g997.0~8",
+        "s-g1003.0"
+      ],
+      "official_slide_pages": [
+        39,
+        40,
+        41
+      ],
+      "assessment": "退学/复学例子保留，新需求仍需业务逻辑。整理者校正底层 journal/Git/持久化树不等同业务事件；恢复历史与新规则重算分开，并保留副作用与已授予学位事实的边界。",
+      "required_change": null
+    },
+    {
+      "id": "06-08",
+      "sections": [
+        20
+      ],
+      "claim": "CQRS/DDD 与 Event Sourcing 互不等同",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          5755,
+          5811
+        ]
+      ],
+      "source_sentence_ids": [
+        "s-g1046.0",
+        "s-g1052.0~7",
+        "s-g1059.0~6"
+      ],
+      "official_slide_pages": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "assessment": "口述只简提术语，正文明确未完整讲授实现。并发、双时态、逐步迁移标为现行讲义扩展；未把事件追加误作容量原子保证或用 AI 捏造丢失历史。",
+      "required_change": null
+    }
+  ],
+  "material_errors_found": [],
+  "body_modified": false,
+  "limitations": [
+    "本次检查不替代原作者的全文转写覆盖记录与逐图审查。",
+    "桌面/手机 UI 由主协调负责，本文件不声称 UI 验收。"
+  ],
+  "independently_viewed_frames": [
+    "frames/video-1912.webp",
+    "frames/video-1915.webp"
+  ],
+  "independent_calculation": {
+    "method": "Translate slide 18 formula into Python; verify legal moves and exact recursive sequence. Does not compile or test entire classroom project.",
+    "results": [
+      {
+        "n": 1,
+        "moves": 1,
+        "legal": true,
+        "matches_recursive": true
+      },
+      {
+        "n": 2,
+        "moves": 3,
+        "legal": true,
+        "matches_recursive": true
+      },
+      {
+        "n": 3,
+        "moves": 7,
+        "legal": true,
+        "matches_recursive": true
+      },
+      {
+        "n": 4,
+        "moves": 15,
+        "legal": true,
+        "matches_recursive": true
+      },
+      {
+        "n": 5,
+        "moves": 31,
+        "legal": true,
+        "matches_recursive": true
+      },
+      {
+        "n": 6,
+        "moves": 63,
+        "legal": true,
+        "matches_recursive": true
+      },
+      {
+        "n": 7,
+        "moves": 127,
+        "legal": true,
+        "matches_recursive": true
+      },
+      {
+        "n": 8,
+        "moves": 255,
+        "legal": true,
+        "matches_recursive": true
+      },
+      {
+        "n": 9,
+        "moves": 511,
+        "legal": true,
+        "matches_recursive": true
+      },
+      {
+        "n": 10,
+        "moves": 1023,
+        "legal": true,
+        "matches_recursive": true
+      }
+    ]
+  }
+}

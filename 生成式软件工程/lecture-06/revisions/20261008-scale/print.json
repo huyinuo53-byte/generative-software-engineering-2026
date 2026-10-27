@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "method": "Chrome headless PDF; pdftotext -layout preserves literal end-of-line hyphens; whitespace-normalized exact blocks; pdfimages count; not native print dialog",
+  "blocks": 124,
+  "missing": [],
+  "images": 37,
+  "html_sha256": "a341918f8775d2b03c7c2270daf6585ab283f1a984eb17453f99da3895939dee",
+  "pdf_sha256": "6f03566578efed8fd8e60be15db8e5d97e9775418215bc2fbfbb12ec7bbf84de"
+}

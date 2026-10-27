@@ -1,0 +1,341 @@
+{
+  "text_files_scanned": 1885,
+  "findings": [
+    {
+      "file": "生成式软件工程/lecture-01/qa/desktop.html",
+      "kind": "aws_key",
+      "offset": 5170462,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-01/qa/desktop.html",
+      "kind": "aws_key",
+      "offset": 5179335,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-01/qa/mobile.html",
+      "kind": "aws_key",
+      "offset": 5170462,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-01/qa/mobile.html",
+      "kind": "aws_key",
+      "offset": 5179335,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-01/revisions/20261008-scale/before/课堂笔记.html",
+      "kind": "aws_key",
+      "offset": 5165525,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-01/revisions/20261008-scale/before/课堂笔记.html",
+      "kind": "aws_key",
+      "offset": 5174398,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-01/课堂笔记.html",
+      "kind": "aws_key",
+      "offset": 5190408,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-01/课堂笔记.html",
+      "kind": "aws_key",
+      "offset": 5199281,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-05/qa/desktop.html",
+      "kind": "aws_key",
+      "offset": 2997213,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-05/qa/mobile.html",
+      "kind": "aws_key",
+      "offset": 2997213,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-05/revisions/20261008-editorial/before/课堂笔记.html",
+      "kind": "aws_key",
+      "offset": 3336564,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-05/revisions/20261008-integrated/before/课堂笔记.html",
+      "kind": "aws_key",
+      "offset": 2993128,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-05/revisions/20261008-scale/before/课堂笔记.html",
+      "kind": "aws_key",
+      "offset": 3353597,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-05/sources/slides5.html",
+      "kind": "aws_key",
+      "offset": 1866223,
+      "length": 20,
+      "value_sha256": "332e35558675bd7e76bd90783108425e539488fcf32b10e29161bfeda64c0296",
+      "looks_placeholder": false,
+      "disposition": "false_positive_embedded_slide_video_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-05/课堂笔记.html",
+      "kind": "aws_key",
+      "offset": 3353597,
+      "length": 20,
+      "value_sha256": "4b82f7466cc183e24dffcc235b8622f6795176c22f72aedf45584003e440f78f",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-07/qa/desktop.html",
+      "kind": "provider_key",
+      "offset": 23408635,
+      "length": 53,
+      "value_sha256": "ebe3ca97c17f9a2c4484e1d066df0734729d42bde48d6a2ef9f4c5532a2216b5",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-07/qa/mobile.html",
+      "kind": "provider_key",
+      "offset": 23408635,
+      "length": 53,
+      "value_sha256": "ebe3ca97c17f9a2c4484e1d066df0734729d42bde48d6a2ef9f4c5532a2216b5",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-07/revisions/20261008-scale/before/课堂笔记.html",
+      "kind": "provider_key",
+      "offset": 23400078,
+      "length": 53,
+      "value_sha256": "ebe3ca97c17f9a2c4484e1d066df0734729d42bde48d6a2ef9f4c5532a2216b5",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-07/课堂笔记.html",
+      "kind": "provider_key",
+      "offset": 23504260,
+      "length": 53,
+      "value_sha256": "ebe3ca97c17f9a2c4484e1d066df0734729d42bde48d6a2ef9f4c5532a2216b5",
+      "looks_placeholder": false,
+      "disposition": "false_positive_inline_image_base64"
+    },
+    {
+      "file": "生成式软件工程/lecture-08/sources/official-20261019/friendster.html",
+      "kind": "provider_key",
+      "offset": 63852,
+      "length": 76,
+      "value_sha256": "39c7ffbea827ee2e53259eed1111b7aefa11c536bc89e6a760f56e8b5562033c",
+      "looks_placeholder": false,
+      "disposition": "false_positive_public_image_proxy_url"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 15224,
+      "length": 37,
+      "value_sha256": "b24728e67e522f20fc4b73daa4e6db2a69916145e8bb3c6a20234dcca63f17fd",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 15779,
+      "length": 37,
+      "value_sha256": "f6882f49871058bef87c2568cec3ef495064b9fd1aa7fa67edc107034feedf58",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 16323,
+      "length": 31,
+      "value_sha256": "4b0a9ada796611a7ef17239af3aaf21f95de8966e9b16d6567e3dad51e92a086",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 63894,
+      "length": 37,
+      "value_sha256": "3ec725d6ea6665d4e49d755788793d6b192c633cddfc2e6c54145925823bcd90",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 63951,
+      "length": 46,
+      "value_sha256": "8cf0d3630dcb5d1036391629103e5473d4895398f8734669e7f85459c97d6415",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 64509,
+      "length": 37,
+      "value_sha256": "3ec725d6ea6665d4e49d755788793d6b192c633cddfc2e6c54145925823bcd90",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 64607,
+      "length": 46,
+      "value_sha256": "36d0834752894ad1941cbde0c6cc5e141340a00188cca8161d6652d5b9d2f58b",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 65137,
+      "length": 37,
+      "value_sha256": "3ec725d6ea6665d4e49d755788793d6b192c633cddfc2e6c54145925823bcd90",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 65235,
+      "length": 40,
+      "value_sha256": "1a78c3288296cd12f6bc83ce79a60bb8716458078f998e32ad325c8c95ade0c3",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 65286,
+      "length": 31,
+      "value_sha256": "eecffa5ae79fd51725eab032245a8c450bcbe39bcf6733f697c4fa0379e00c36",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 70776,
+      "length": 37,
+      "value_sha256": "3ec725d6ea6665d4e49d755788793d6b192c633cddfc2e6c54145925823bcd90",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 70833,
+      "length": 46,
+      "value_sha256": "8cf0d3630dcb5d1036391629103e5473d4895398f8734669e7f85459c97d6415",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 71391,
+      "length": 37,
+      "value_sha256": "3ec725d6ea6665d4e49d755788793d6b192c633cddfc2e6c54145925823bcd90",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 71489,
+      "length": 46,
+      "value_sha256": "36d0834752894ad1941cbde0c6cc5e141340a00188cca8161d6652d5b9d2f58b",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 72019,
+      "length": 37,
+      "value_sha256": "3ec725d6ea6665d4e49d755788793d6b192c633cddfc2e6c54145925823bcd90",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 72117,
+      "length": 40,
+      "value_sha256": "1a78c3288296cd12f6bc83ce79a60bb8716458078f998e32ad325c8c95ade0c3",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    },
+    {
+      "file": "生成式软件工程/lecture-09/sources/materials/sources/vba.html",
+      "kind": "provider_key",
+      "offset": 72168,
+      "length": 31,
+      "value_sha256": "eecffa5ae79fd51725eab032245a8c450bcbe39bcf6733f697c4fa0379e00c36",
+      "looks_placeholder": false,
+      "disposition": "false_positive_html_ask_learn_identifiers"
+    }
+  ],
+  "status": "PASS",
+  "genuine_credentials_found": 0,
+  "review": "All pattern matches inspected in structural context. No account settings, global runtime files, integrations, kernel credentials, chat sessions or raw downloaded signed URL metadata were copied. Binary image/video content was not OCR-scanned; course imagery retained unchanged."
+}

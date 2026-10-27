@@ -1,0 +1,1005 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+  "actor": "lecture05-author",
+  "method": "39页逐页目视（四页对照视图）+2幅最终视频帧单独目视；sourcePDF为同一JPEG页序汇编。图片没有只靠解码通过验收。",
+  "excluded_images": [
+    {
+      "path": "frames/slide-07.jpg",
+      "reason": "官方网页第7页动态视频未加载、黑色占位；禁止作为Office Assistant完成图",
+      "resolution": "最终改用frames/slide-1274.79.png的真实视频完成状态；静态页标题论点已写入正文"
+    }
+  ],
+  "images": [
+    {
+      "section": 1,
+      "frame": 1,
+      "path": "frames/slide-01.jpg",
+      "sha256": "877ace84d6edf984aaf955760e6551d38092d80f6c250d892e2072be9e9411fa",
+      "purpose": "保留完整官方教学页：Jev假说、技术补注与AI演进两组要点",
+      "expected_information": "Jev假说、技术补注与AI演进两组要点",
+      "observed_information": "实际目视确认：Jev假说、技术补注与AI演进两组要点完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-01.jpg 的第1格；与sources/slides-text.json第1项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第1页=官方网页第1/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 1,
+      "frame": 2,
+      "path": "frames/slide-02.jpg",
+      "sha256": "fba56cc30ffe63fbcb398d700cf8b06eb38e9f9fe0032488cddc7d3c6f561abd",
+      "purpose": "保留完整官方教学页：90%/10%、taste定义、预测与访谈图片",
+      "expected_information": "90%/10%、taste定义、预测与访谈图片",
+      "observed_information": "实际目视确认：90%/10%、taste定义、预测与访谈图片完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-01.jpg 的第2格；与sources/slides-text.json第2项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第2页=官方网页第2/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 2,
+      "frame": 1,
+      "path": "frames/slide-03.jpg",
+      "sha256": "c0d0e4ef3fd5a66b7ee8ab9e2091bd0af1fa62d73335cc69b25dd9016b67ccf6",
+      "purpose": "保留完整官方教学页：数据阶段/比例难度顺序/持续调整及DoReMi补注",
+      "expected_information": "数据阶段/比例难度顺序/持续调整及DoReMi补注",
+      "observed_information": "实际目视确认：数据阶段/比例难度顺序/持续调整及DoReMi补注完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-01.jpg 的第3格；与sources/slides-text.json第3项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第3页=官方网页第3/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 2,
+      "frame": 2,
+      "path": "frames/slide-04.jpg",
+      "sha256": "5ea0f1fd37ad4c0ed871938bdc484bb843e57de8af54bad938fd2df997005c00",
+      "purpose": "保留完整官方教学页：五步飞轮、方向箭头、中心独立验证净收益",
+      "expected_information": "五步飞轮、方向箭头、中心独立验证净收益",
+      "observed_information": "实际目视确认：五步飞轮、方向箭头、中心独立验证净收益完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-01.jpg 的第4格；与sources/slides-text.json第4项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第4页=官方网页第4/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 2,
+      "frame": 3,
+      "path": "frames/slide-05.jpg",
+      "sha256": "c705b2d9c3bb0271416d3769d65eaa95957c3ce6f53bbb1541d08880229bbfb9",
+      "purpose": "保留完整官方教学页：三组可训练领域及各自验证方式",
+      "expected_information": "三组可训练领域及各自验证方式",
+      "observed_information": "实际目视确认：三组可训练领域及各自验证方式完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-02.jpg 的第1格；与sources/slides-text.json第5项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第5页=官方网页第5/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 3,
+      "frame": 1,
+      "path": "frames/slide-06.jpg",
+      "sha256": "e82575a2e27e9bee7267c8c6cdfbe6e94ad4f64f06d919402e6624545f1c83af",
+      "purpose": "保留完整官方教学页：Intent/Spec/Impl快照与从空项目出发",
+      "expected_information": "Intent/Spec/Impl快照与从空项目出发",
+      "observed_information": "实际目视确认：Intent/Spec/Impl快照与从空项目出发完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-02.jpg 的第2格；与sources/slides-text.json第6项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第6页=官方网页第6/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 4,
+      "frame": 1,
+      "path": "frames/slide-1274.79.png",
+      "sha256": "ac2cb1011eff12c6943f80694b346b0c4ff344d4480494326dfdd02d7e17ca7f",
+      "purpose": "记录动态演示/板书中官方静态页不能替代的实际状态",
+      "expected_information": "Office Assistant扫描完成结果、多页缩略图和获取二维码",
+      "observed_information": "已目视：屏幕显示三个页缩略图、扫描预览与二维码；非黑屏占位。细字受原视频清晰度限制。",
+      "comparison_evidence": "实际查看源run frames/slide-1274.79.png；与本节相邻转写内容交叉核对。",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/课堂笔记/BV1Nyeq6qEt8/20261001T063030Z/frames/slide-1274.79.png",
+          "sha256": "ac2cb1011eff12c6943f80694b346b0c4ff344d4480494326dfdd02d7e17ca7f",
+          "detail": "历史原帧，实际视频时间1274.79秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "保留合法取得的原视频真实帧；不对低分辨率作虚假锐化，不把细字当可识别证据。"
+    },
+    {
+      "section": 5,
+      "frame": 1,
+      "path": "frames/slide-08.jpg",
+      "sha256": "a7bb7bccaa95db43b81c24e093a65fe271783152dc2d4c391c332bb8abd52622",
+      "purpose": "保留完整官方教学页：软件工程诞生、智慧、UML三个课程主题",
+      "expected_information": "软件工程诞生、智慧、UML三个课程主题",
+      "observed_information": "实际目视确认：软件工程诞生、智慧、UML三个课程主题完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-02.jpg 的第4格；与sources/slides-text.json第8项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第8页=官方网页第8/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 6,
+      "frame": 1,
+      "path": "frames/slide-09.jpg",
+      "sha256": "34973e4bedd0b40c112d5198ae5df469188ab2f4c8e11da315c9413f4eedfa1b",
+      "purpose": "保留完整官方教学页：高编程成本、软技能、企业任务与职业历史",
+      "expected_information": "高编程成本、软技能、企业任务与职业历史",
+      "observed_information": "实际目视确认：高编程成本、软技能、企业任务与职业历史完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-03.jpg 的第1格；与sources/slides-text.json第9项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第9页=官方网页第9/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 6,
+      "frame": 2,
+      "path": "frames/slide-10.jpg",
+      "sha256": "c64f72681108a0a7977fce38d3dbfbc180463d2a2cc410f12571dbe046c9f190",
+      "purpose": "保留完整官方教学页：杂志封面、1968年出处、三项教学设想和意图思考",
+      "expected_information": "杂志封面、1968年出处、三项教学设想和意图思考",
+      "observed_information": "实际目视确认：杂志封面、1968年出处、三项教学设想和意图思考完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-03.jpg 的第2格；与sources/slides-text.json第10项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第10页=官方网页第10/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 6,
+      "frame": 3,
+      "path": "frames/slide-11.jpg",
+      "sha256": "c34aeb52b29179bf2b539d5a9d2a55868ca7ab0404120f3877d1e675212118bc",
+      "purpose": "保留完整官方教学页：选课规则三种分支、特批、候补和责任边界",
+      "expected_information": "选课规则三种分支、特批、候补和责任边界",
+      "observed_information": "实际目视确认：选课规则三种分支、特批、候补和责任边界完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-03.jpg 的第3格；与sources/slides-text.json第11项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第11页=官方网页第11/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 7,
+      "frame": 1,
+      "path": "frames/slide-12.jpg",
+      "sha256": "6c7fa6324a4ac595aa600f75f1b929564240f5e48582e5709bb363002da551f6",
+      "purpose": "保留完整官方教学页：进度成本质量、goto观点与Humble Programmer",
+      "expected_information": "进度成本质量、goto观点与Humble Programmer",
+      "observed_information": "实际目视确认：进度成本质量、goto观点与Humble Programmer完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-03.jpg 的第4格；与sources/slides-text.json第12项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第12页=官方网页第12/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 8,
+      "frame": 1,
+      "path": "frames/slide-13.jpg",
+      "sha256": "9fbb357688406eed94329c6a6a92cdc450f9a843c62b83880a3dbaa1d448f9bd",
+      "purpose": "保留完整官方教学页：NATO历史与危机适用范围的争论",
+      "expected_information": "NATO历史与危机适用范围的争论",
+      "observed_information": "实际目视确认：NATO历史与危机适用范围的争论完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-04.jpg 的第1格；与sources/slides-text.json第13项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第13页=官方网页第13/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 8,
+      "frame": 2,
+      "path": "frames/slide-14.jpg",
+      "sha256": "1a2c2edb998f7982dba3eaf9faf0a8b463bb388408cf3867a283701f2ecd4a98",
+      "purpose": "保留完整官方教学页：Hamilton、1201/1202警报、优先级恢复和预先测试",
+      "expected_information": "Hamilton、1201/1202警报、优先级恢复和预先测试",
+      "observed_information": "实际目视确认：Hamilton、1201/1202警报、优先级恢复和预先测试完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-04.jpg 的第2格；与sources/slides-text.json第14项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第14页=官方网页第14/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 8,
+      "frame": 3,
+      "path": "frames/slide-15.jpg",
+      "sha256": "b8aa4c3e6269d91d72ce828bd8fffc6f3d4d64a072bfe6f204d75bba66c3ab12",
+      "purpose": "保留完整官方教学页：时间成本约束与IEEE开发运行维护定义",
+      "expected_information": "时间成本约束与IEEE开发运行维护定义",
+      "observed_information": "实际目视确认：时间成本约束与IEEE开发运行维护定义完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-04.jpg 的第3格；与sources/slides-text.json第15项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第15页=官方网页第15/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 9,
+      "frame": 1,
+      "path": "frames/slide-16.jpg",
+      "sha256": "ca1fec7b2a4d734846593fdd8f3e277579a06beb6194407ce6ecf4b86ef1ab8e",
+      "purpose": "保留完整官方教学页：同一会议室意图分成三种理解和不一致产品的关系图",
+      "expected_information": "同一会议室意图分成三种理解和不一致产品的关系图",
+      "observed_information": "实际目视确认：同一会议室意图分成三种理解和不一致产品的关系图完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-04.jpg 的第4格；与sources/slides-text.json第16项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第16页=官方网页第16/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 9,
+      "frame": 2,
+      "path": "frames/slide-17.jpg",
+      "sha256": "5d1505ee4a1350fc244effa3a495a08e83aa39641678ee3c7bb7040a785330af",
+      "purpose": "保留完整官方教学页：Royce原文、简单顺序风险、相邻返工假设与需求回溯",
+      "expected_information": "Royce原文、简单顺序风险、相邻返工假设与需求回溯",
+      "observed_information": "实际目视确认：Royce原文、简单顺序风险、相邻返工假设与需求回溯完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-05.jpg 的第1格；与sources/slides-text.json第17项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第17页=官方网页第17/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 9,
+      "frame": 3,
+      "path": "frames/slide-19.jpg",
+      "sha256": "1aec1e0e04eb41deb0d321deae41a2237133149185c8429d1dbe63e54c264d60",
+      "purpose": "保留完整官方教学页：timing/storage/I/O、返工链和控制周期反例",
+      "expected_information": "timing/storage/I/O、返工链和控制周期反例",
+      "observed_information": "实际目视确认：timing/storage/I/O、返工链和控制周期反例完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-05.jpg 的第3格；与sources/slides-text.json第19项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第19页=官方网页第19/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 10,
+      "frame": 1,
+      "path": "frames/slide-18.jpg",
+      "sha256": "2564e779923ed1beca05a59de34ac7241b908e4e8ac9239579ff17ab8538008c",
+      "purpose": "保留完整官方教学页：一手原文、过去有损压缩与现在按需压缩",
+      "expected_information": "一手原文、过去有损压缩与现在按需压缩",
+      "observed_information": "实际目视确认：一手原文、过去有损压缩与现在按需压缩完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-05.jpg 的第2格；与sources/slides-text.json第18项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第18页=官方网页第18/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 10,
+      "frame": 2,
+      "path": "frames/slide-20.jpg",
+      "sha256": "633830b9c7ea7de7e2e354dffb9bb37acd632bf2deb4b44d5e3c8c9dd3f7340c",
+      "purpose": "保留完整官方教学页：Pilot与MVP区别、敏捷反复反馈",
+      "expected_information": "Pilot与MVP区别、敏捷反复反馈",
+      "observed_information": "实际目视确认：Pilot与MVP区别、敏捷反复反馈完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-05.jpg 的第4格；与sources/slides-text.json第20项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第20页=官方网页第20/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 10,
+      "frame": 3,
+      "path": "frames/slide-23.jpg",
+      "sha256": "1438fd735e2d865f60b6ec9c3b346f4459861d859f60e5b52d37cb95c1473edb",
+      "purpose": "保留完整官方教学页：经典记录最初问题及三类历史条件",
+      "expected_information": "经典记录最初问题及三类历史条件",
+      "observed_information": "实际目视确认：经典记录最初问题及三类历史条件完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-06.jpg 的第3格；与sources/slides-text.json第23项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第23页=官方网页第23/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 11,
+      "frame": 1,
+      "path": "frames/slide-21.jpg",
+      "sha256": "add25426f9de7b42b6ba67768544bce1e31a9871de316bf8c3fba6a9506eb1fe",
+      "purpose": "保留完整官方教学页：五阶段箭头、TDD写期望与执行验证的区别",
+      "expected_information": "五阶段箭头、TDD写期望与执行验证的区别",
+      "observed_information": "实际目视确认：五阶段箭头、TDD写期望与执行验证的区别完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-06.jpg 的第1格；与sources/slides-text.json第21项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第21页=官方网页第21/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 11,
+      "frame": 2,
+      "path": "frames/slide-22.jpg",
+      "sha256": "11a35c6e75b09f81210c9821ca5353034c5fa7fb44ba0928b4add1b4387b3a12",
+      "purpose": "保留完整官方教学页：瀑布/MVP/敏捷三行依赖反馈图、红虚线和蓝箭头图例",
+      "expected_information": "瀑布/MVP/敏捷三行依赖反馈图、红虚线和蓝箭头图例",
+      "observed_information": "实际目视确认：瀑布/MVP/敏捷三行依赖反馈图、红虚线和蓝箭头图例完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-06.jpg 的第2格；与sources/slides-text.json第22项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第22页=官方网页第22/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 11,
+      "frame": 3,
+      "path": "frames/full-4274.29.png",
+      "sha256": "88055630138de5ac917e09a87b82b66ed9c142a3f2cc4caf8d74205b664c2684",
+      "purpose": "记录动态演示/板书中官方静态页不能替代的实际状态",
+      "expected_information": "教师依赖板书的节点连线整体和右侧完整Data Dependency Graph课件",
+      "observed_information": "已目视：左侧可见依赖节点和连线，右侧课件与TDD说明完整；板书细字在源视频中不能完全辨认，正文提供基于转写的论证。",
+      "comparison_evidence": "实际查看源run frames/full-4274.29.png；与本节相邻转写内容交叉核对。",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/课堂笔记/BV1Nyeq6qEt8/20261001T063030Z/frames/full-4274.29.png",
+          "sha256": "88055630138de5ac917e09a87b82b66ed9c142a3f2cc4caf8d74205b664c2684",
+          "detail": "历史原帧，实际视频时间4274.29秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "保留合法取得的原视频真实帧；不对低分辨率作虚假锐化，不把细字当可识别证据。"
+    },
+    {
+      "section": 12,
+      "frame": 1,
+      "path": "frames/slide-24.jpg",
+      "sha256": "7f7ecb5acb6fea493495c6cd754551e498bdf3a1feaf8d9f44af5b6e9c8db686",
+      "purpose": "保留完整官方教学页：需求/设计/代码三种语言和方法工具",
+      "expected_information": "需求/设计/代码三种语言和方法工具",
+      "observed_information": "实际目视确认：需求/设计/代码三种语言和方法工具完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-06.jpg 的第4格；与sources/slides-text.json第24项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第24页=官方网页第24/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 13,
+      "frame": 1,
+      "path": "frames/slide-25.jpg",
+      "sha256": "c608629ddee261c22c63db294dbc8836356ac630c12808ab03a3c87b104256fa",
+      "purpose": "保留完整官方教学页：优惠决策表、排序两性质、需求追踪与退课例子",
+      "expected_information": "优惠决策表、排序两性质、需求追踪与退课例子",
+      "observed_information": "实际目视确认：优惠决策表、排序两性质、需求追踪与退课例子完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-07.jpg 的第1格；与sources/slides-text.json第25项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第25页=官方网页第25/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 14,
+      "frame": 1,
+      "path": "frames/slide-26.jpg",
+      "sha256": "09dfe70f175627222795c990cefbd2380f8c752f8e7b5e98a3bdd9a51a54efe8",
+      "purpose": "保留完整官方教学页：前后置条件、amount不等式、新旧余额等式、余额不变量和失败设计",
+      "expected_information": "前后置条件、amount不等式、新旧余额等式、余额不变量和失败设计",
+      "observed_information": "实际目视确认：前后置条件、amount不等式、新旧余额等式、余额不变量和失败设计完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-07.jpg 的第2格；与sources/slides-text.json第26项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第26页=官方网页第26/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 14,
+      "frame": 2,
+      "path": "frames/slide-27.jpg",
+      "sha256": "6689ceb28707c3bef32dc9730bfda81b0f54034cd5e161ec09c0911dcedb54ed",
+      "purpose": "保留完整官方教学页：Eiffel代码完整require-do-ensure-end及Dafny/Verus验证边界",
+      "expected_information": "Eiffel代码完整require-do-ensure-end及Dafny/Verus验证边界",
+      "observed_information": "实际目视确认：Eiffel代码完整require-do-ensure-end及Dafny/Verus验证边界完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-07.jpg 的第3格；与sources/slides-text.json第27项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第27页=官方网页第27/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 15,
+      "frame": 1,
+      "path": "frames/slide-28.jpg",
+      "sha256": "d6a6831e3d5b60d021501bbe8a55b3f5f22cef308ff1f2ab4b3831165008824f",
+      "purpose": "保留完整官方教学页：UML统一意图、模型元素与半形式语义",
+      "expected_information": "UML统一意图、模型元素与半形式语义",
+      "observed_information": "实际目视确认：UML统一意图、模型元素与半形式语义完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-07.jpg 的第4格；与sources/slides-text.json第28项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第28页=官方网页第28/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 16,
+      "frame": 1,
+      "path": "frames/slide-29.jpg",
+      "sha256": "5944790a801b3399a94ae9969c60446e8b8e3b84f78e8bd013a11f6a139cfc9b",
+      "purpose": "保留完整官方教学页：规范阅读经历、套餐折算口述及原图",
+      "expected_information": "规范阅读经历、套餐折算口述及原图",
+      "observed_information": "实际目视确认：规范阅读经历、套餐折算口述及原图完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-08.jpg 的第1格；与sources/slides-text.json第29项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第29页=官方网页第29/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 16,
+      "frame": 2,
+      "path": "frames/slide-30.jpg",
+      "sha256": "32025e13210d9ce6fc85d1d2f0bbdf197744d8a7c72655a754a315ed39880ba1",
+      "purpose": "保留完整官方教学页：固定和留白、跨人与跨时间对齐及稳定性补注",
+      "expected_information": "固定和留白、跨人与跨时间对齐及稳定性补注",
+      "observed_information": "实际目视确认：固定和留白、跨人与跨时间对齐及稳定性补注完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-08.jpg 的第2格；与sources/slides-text.json第30项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第30页=官方网页第30/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 16,
+      "frame": 3,
+      "path": "frames/slide-31.jpg",
+      "sha256": "151b99ef81b12166b6c694f399c2604634d20240aa37c2b9390cfa188a652592",
+      "purpose": "保留完整官方教学页：意图到模型到两种实现、状态图时序图文字契约和两次支付",
+      "expected_information": "意图到模型到两种实现、状态图时序图文字契约和两次支付",
+      "observed_information": "实际目视确认：意图到模型到两种实现、状态图时序图文字契约和两次支付完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-08.jpg 的第3格；与sources/slides-text.json第31项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第31页=官方网页第31/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 16,
+      "frame": 4,
+      "path": "frames/slide-32.jpg",
+      "sha256": "95a9142ca327d4b9256c9bb44461c660ad89c72d8528708a08c58112237511d9",
+      "purpose": "保留完整官方教学页：图模型区别、XMI限定、UML DI和截图身份损失",
+      "expected_information": "图模型区别、XMI限定、UML DI和截图身份损失",
+      "observed_information": "实际目视确认：图模型区别、XMI限定、UML DI和截图身份损失完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-08.jpg 的第4格；与sources/slides-text.json第32项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第32页=官方网页第32/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 16,
+      "frame": 5,
+      "path": "frames/slide-33.jpg",
+      "sha256": "84dd3fe29de960319511f2b9550db25f811c4a7577170301d24cbe866eb1feca",
+      "purpose": "保留完整官方教学页：契约机制、isQuery、isSubstitutable和证明责任边界",
+      "expected_information": "契约机制、isQuery、isSubstitutable和证明责任边界",
+      "observed_information": "实际目视确认：契约机制、isQuery、isSubstitutable和证明责任边界完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-09.jpg 的第1格；与sources/slides-text.json第33项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第33页=官方网页第33/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 16,
+      "frame": 6,
+      "path": "frames/slide-34.jpg",
+      "sha256": "1ad682bfabfe1742e96e1a43caae8c6feedb9802b871804e55fbba31d6656504",
+      "purpose": "保留完整官方教学页：P/I/U集合公式、三种支付轨迹与semantic variation point区分",
+      "expected_information": "P/I/U集合公式、三种支付轨迹与semantic variation point区分",
+      "observed_information": "实际目视确认：P/I/U集合公式、三种支付轨迹与semantic variation point区分完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-09.jpg 的第2格；与sources/slides-text.json第34项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第34页=官方网页第34/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 16,
+      "frame": 7,
+      "path": "frames/slide-35.jpg",
+      "sha256": "ed5299c9f67204046c5d2f3feadf990bce0c9505aa480176826fa8df3d9d7180",
+      "purpose": "保留完整官方教学页：值身份、聚合导航所有权、关联端与生命周期边界",
+      "expected_information": "值身份、聚合导航所有权、关联端与生命周期边界",
+      "observed_information": "实际目视确认：值身份、聚合导航所有权、关联端与生命周期边界完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-09.jpg 的第3格；与sources/slides-text.json第35项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第35页=官方网页第35/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 16,
+      "frame": 8,
+      "path": "frames/slide-36.jpg",
+      "sha256": "ad88eb77ffaa3adbe52a2e0e780015a6592d4f369307b97d3cef13a02fa4077e",
+      "purpose": "保留完整官方教学页：seq弱序的两类顺序、跨生命线交错、strict限定",
+      "expected_information": "seq弱序的两类顺序、跨生命线交错、strict限定",
+      "observed_information": "实际目视确认：seq弱序的两类顺序、跨生命线交错、strict限定完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-09.jpg 的第4格；与sources/slides-text.json第36项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第36页=官方网页第36/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 16,
+      "frame": 9,
+      "path": "frames/slide-37.jpg",
+      "sha256": "b9b2e9c9e4f18eb225421854b2733603495b4992e38ca2fded992a572475e582",
+      "purpose": "保留完整官方教学页：OCL、Pin/PackageMerge、Profile/MOF、良构与证明区别及不可表达限制",
+      "expected_information": "OCL、Pin/PackageMerge、Profile/MOF、良构与证明区别及不可表达限制",
+      "observed_information": "实际目视确认：OCL、Pin/PackageMerge、Profile/MOF、良构与证明区别及不可表达限制完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-10.jpg 的第1格；与sources/slides-text.json第37项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第37页=官方网页第37/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 16,
+      "frame": 10,
+      "path": "frames/slide-38.jpg",
+      "sha256": "657ad927cd39ebce36e0a90b11792221d9a81ec9f4154f83ea7bafd4ffe13d31",
+      "purpose": "保留完整官方教学页：合法行为与具体实现、超时三种选择、猜测漂移及三类边界",
+      "expected_information": "合法行为与具体实现、超时三种选择、猜测漂移及三类边界",
+      "observed_information": "实际目视确认：合法行为与具体实现、超时三种选择、猜测漂移及三类边界完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-10.jpg 的第2格；与sources/slides-text.json第38项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第38页=官方网页第38/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    },
+    {
+      "section": 16,
+      "frame": 11,
+      "path": "frames/slide-39.jpg",
+      "sha256": "4837a16834cd14bc2898bfb1d6390269741486a1289334374e7019be48280161",
+      "purpose": "保留完整官方教学页：协议不变量等清单、支付三行承诺-证据映射与独立保存检查",
+      "expected_information": "协议不变量等清单、支付三行承诺-证据映射与独立保存检查",
+      "observed_information": "实际目视确认：协议不变量等清单、支付三行承诺-证据映射与独立保存检查完整可见；页底页码与边缘未裁断，图中文字/箭头/公式在其原有范围可辨。",
+      "comparison_evidence": "qa/sheet-10.jpg 的第3格；与sources/slides-text.json第39项及完整讲义文本对照。",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "cce42c3ade14882824929bc40ccd2ca28b582df71c952b5241db3c2a38ca34c3",
+          "detail": "物理第39页=官方网页第39/39页；截图汇编"
+        },
+        {
+          "path": "sources/slides5.html",
+          "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+          "detail": "冻结的官方完整HTML，slides-data保留原页内容"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "本次重新获取完整网页渲染页，替换旧静态视频讲义裁图；课后页无课堂时间标记。"
+    }
+  ]
+}

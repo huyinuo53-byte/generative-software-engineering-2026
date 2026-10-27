@@ -1,0 +1,998 @@
+{
+  "scope": "Local isolated Chrome; four viewport widths, not physical phone; no new source reading",
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "missingText": [],
+      "textBlocks": 128,
+      "images": 44,
+      "broken": 0,
+      "duplicateIds": [],
+      "badAnchors": [],
+      "positions": [
+        {
+          "token": "f0",
+          "expected": "s1",
+          "actual": "s1"
+        },
+        {
+          "token": "f1",
+          "expected": "s1",
+          "actual": "s1"
+        },
+        {
+          "token": "f0",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f2",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f3",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f1",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f0",
+          "expected": "s3",
+          "actual": "s3"
+        },
+        {
+          "token": "f0",
+          "expected": "s4",
+          "actual": "s4"
+        },
+        {
+          "token": "f0",
+          "expected": "s5",
+          "actual": "s5"
+        },
+        {
+          "token": "f0",
+          "expected": "s6",
+          "actual": "s6"
+        },
+        {
+          "token": "f1",
+          "expected": "s6",
+          "actual": "s6"
+        },
+        {
+          "token": "f0",
+          "expected": "s7",
+          "actual": "s7"
+        },
+        {
+          "token": "f1",
+          "expected": "s7",
+          "actual": "s7"
+        },
+        {
+          "token": "f1",
+          "expected": "s8",
+          "actual": "s8"
+        },
+        {
+          "token": "f2",
+          "expected": "s8",
+          "actual": "s8"
+        },
+        {
+          "token": "f0",
+          "expected": "s8",
+          "actual": "s8"
+        },
+        {
+          "token": "f0",
+          "expected": "s9",
+          "actual": "s9"
+        },
+        {
+          "token": "f0",
+          "expected": "s10",
+          "actual": "s10"
+        },
+        {
+          "token": "f1",
+          "expected": "s11",
+          "actual": "s11"
+        },
+        {
+          "token": "f0",
+          "expected": "s11",
+          "actual": "s11"
+        },
+        {
+          "token": "f3",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f0",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f1",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f2",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f0",
+          "expected": "s14",
+          "actual": "s14"
+        },
+        {
+          "token": "f0",
+          "expected": "s15",
+          "actual": "s15"
+        },
+        {
+          "token": "f3",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f4",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f0",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f2",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f0",
+          "expected": "s17",
+          "actual": "s17"
+        },
+        {
+          "token": "f16:1",
+          "expected": "s17",
+          "actual": "s17"
+        },
+        {
+          "token": "f0",
+          "expected": "s19",
+          "actual": "s19"
+        },
+        {
+          "token": "f0",
+          "expected": "s20",
+          "actual": "s20"
+        },
+        {
+          "token": "f1",
+          "expected": "s20",
+          "actual": "s20"
+        },
+        {
+          "token": "f0",
+          "expected": "s21",
+          "actual": "s21"
+        },
+        {
+          "token": "f0",
+          "expected": "s22",
+          "actual": "s22"
+        },
+        {
+          "token": "f0",
+          "expected": "s23",
+          "actual": "s23"
+        },
+        {
+          "token": "f0",
+          "expected": "s24",
+          "actual": "s24"
+        },
+        {
+          "token": "f0",
+          "expected": "s25",
+          "actual": "s25"
+        },
+        {
+          "token": "f0",
+          "expected": "s26",
+          "actual": "s26"
+        },
+        {
+          "token": "f0",
+          "expected": "s27",
+          "actual": "s27"
+        },
+        {
+          "token": "f0",
+          "expected": "s28",
+          "actual": "s28"
+        },
+        {
+          "token": "f1",
+          "expected": "s28",
+          "actual": "s28"
+        }
+      ],
+      "quizCount": 5,
+      "answersClosed": true,
+      "oldAppendix": false,
+      "takeaways": 28,
+      "strongCount": 140,
+      "emphasisRatio": 0.031457034892280515,
+      "externalImages": 0,
+      "externalStyles": 0,
+      "colors": {
+        "question": "rgb(232, 239, 228)",
+        "answer": "rgb(251, 241, 223)"
+      },
+      "errors": [],
+      "toc": true,
+      "zoom": true,
+      "keyboardAnswerToggle": true
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "missingText": [],
+      "textBlocks": 128,
+      "images": 44,
+      "broken": 0,
+      "duplicateIds": [],
+      "badAnchors": [],
+      "positions": [
+        {
+          "token": "f0",
+          "expected": "s1",
+          "actual": "s1"
+        },
+        {
+          "token": "f1",
+          "expected": "s1",
+          "actual": "s1"
+        },
+        {
+          "token": "f0",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f2",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f3",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f1",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f0",
+          "expected": "s3",
+          "actual": "s3"
+        },
+        {
+          "token": "f0",
+          "expected": "s4",
+          "actual": "s4"
+        },
+        {
+          "token": "f0",
+          "expected": "s5",
+          "actual": "s5"
+        },
+        {
+          "token": "f0",
+          "expected": "s6",
+          "actual": "s6"
+        },
+        {
+          "token": "f1",
+          "expected": "s6",
+          "actual": "s6"
+        },
+        {
+          "token": "f0",
+          "expected": "s7",
+          "actual": "s7"
+        },
+        {
+          "token": "f1",
+          "expected": "s7",
+          "actual": "s7"
+        },
+        {
+          "token": "f1",
+          "expected": "s8",
+          "actual": "s8"
+        },
+        {
+          "token": "f2",
+          "expected": "s8",
+          "actual": "s8"
+        },
+        {
+          "token": "f0",
+          "expected": "s8",
+          "actual": "s8"
+        },
+        {
+          "token": "f0",
+          "expected": "s9",
+          "actual": "s9"
+        },
+        {
+          "token": "f0",
+          "expected": "s10",
+          "actual": "s10"
+        },
+        {
+          "token": "f1",
+          "expected": "s11",
+          "actual": "s11"
+        },
+        {
+          "token": "f0",
+          "expected": "s11",
+          "actual": "s11"
+        },
+        {
+          "token": "f3",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f0",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f1",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f2",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f0",
+          "expected": "s14",
+          "actual": "s14"
+        },
+        {
+          "token": "f0",
+          "expected": "s15",
+          "actual": "s15"
+        },
+        {
+          "token": "f3",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f4",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f0",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f2",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f0",
+          "expected": "s17",
+          "actual": "s17"
+        },
+        {
+          "token": "f16:1",
+          "expected": "s17",
+          "actual": "s17"
+        },
+        {
+          "token": "f0",
+          "expected": "s19",
+          "actual": "s19"
+        },
+        {
+          "token": "f0",
+          "expected": "s20",
+          "actual": "s20"
+        },
+        {
+          "token": "f1",
+          "expected": "s20",
+          "actual": "s20"
+        },
+        {
+          "token": "f0",
+          "expected": "s21",
+          "actual": "s21"
+        },
+        {
+          "token": "f0",
+          "expected": "s22",
+          "actual": "s22"
+        },
+        {
+          "token": "f0",
+          "expected": "s23",
+          "actual": "s23"
+        },
+        {
+          "token": "f0",
+          "expected": "s24",
+          "actual": "s24"
+        },
+        {
+          "token": "f0",
+          "expected": "s25",
+          "actual": "s25"
+        },
+        {
+          "token": "f0",
+          "expected": "s26",
+          "actual": "s26"
+        },
+        {
+          "token": "f0",
+          "expected": "s27",
+          "actual": "s27"
+        },
+        {
+          "token": "f0",
+          "expected": "s28",
+          "actual": "s28"
+        },
+        {
+          "token": "f1",
+          "expected": "s28",
+          "actual": "s28"
+        }
+      ],
+      "quizCount": 5,
+      "answersClosed": true,
+      "oldAppendix": false,
+      "takeaways": 28,
+      "strongCount": 140,
+      "emphasisRatio": 0.031457034892280515,
+      "externalImages": 0,
+      "externalStyles": 0,
+      "colors": {
+        "question": "rgb(232, 239, 228)",
+        "answer": "rgb(251, 241, 223)"
+      },
+      "errors": [],
+      "toc": true,
+      "zoom": true,
+      "keyboardAnswerToggle": true
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "missingText": [],
+      "textBlocks": 128,
+      "images": 44,
+      "broken": 0,
+      "duplicateIds": [],
+      "badAnchors": [],
+      "positions": [
+        {
+          "token": "f0",
+          "expected": "s1",
+          "actual": "s1"
+        },
+        {
+          "token": "f1",
+          "expected": "s1",
+          "actual": "s1"
+        },
+        {
+          "token": "f0",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f2",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f3",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f1",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f0",
+          "expected": "s3",
+          "actual": "s3"
+        },
+        {
+          "token": "f0",
+          "expected": "s4",
+          "actual": "s4"
+        },
+        {
+          "token": "f0",
+          "expected": "s5",
+          "actual": "s5"
+        },
+        {
+          "token": "f0",
+          "expected": "s6",
+          "actual": "s6"
+        },
+        {
+          "token": "f1",
+          "expected": "s6",
+          "actual": "s6"
+        },
+        {
+          "token": "f0",
+          "expected": "s7",
+          "actual": "s7"
+        },
+        {
+          "token": "f1",
+          "expected": "s7",
+          "actual": "s7"
+        },
+        {
+          "token": "f1",
+          "expected": "s8",
+          "actual": "s8"
+        },
+        {
+          "token": "f2",
+          "expected": "s8",
+          "actual": "s8"
+        },
+        {
+          "token": "f0",
+          "expected": "s8",
+          "actual": "s8"
+        },
+        {
+          "token": "f0",
+          "expected": "s9",
+          "actual": "s9"
+        },
+        {
+          "token": "f0",
+          "expected": "s10",
+          "actual": "s10"
+        },
+        {
+          "token": "f1",
+          "expected": "s11",
+          "actual": "s11"
+        },
+        {
+          "token": "f0",
+          "expected": "s11",
+          "actual": "s11"
+        },
+        {
+          "token": "f3",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f0",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f1",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f2",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f0",
+          "expected": "s14",
+          "actual": "s14"
+        },
+        {
+          "token": "f0",
+          "expected": "s15",
+          "actual": "s15"
+        },
+        {
+          "token": "f3",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f4",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f0",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f2",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f0",
+          "expected": "s17",
+          "actual": "s17"
+        },
+        {
+          "token": "f16:1",
+          "expected": "s17",
+          "actual": "s17"
+        },
+        {
+          "token": "f0",
+          "expected": "s19",
+          "actual": "s19"
+        },
+        {
+          "token": "f0",
+          "expected": "s20",
+          "actual": "s20"
+        },
+        {
+          "token": "f1",
+          "expected": "s20",
+          "actual": "s20"
+        },
+        {
+          "token": "f0",
+          "expected": "s21",
+          "actual": "s21"
+        },
+        {
+          "token": "f0",
+          "expected": "s22",
+          "actual": "s22"
+        },
+        {
+          "token": "f0",
+          "expected": "s23",
+          "actual": "s23"
+        },
+        {
+          "token": "f0",
+          "expected": "s24",
+          "actual": "s24"
+        },
+        {
+          "token": "f0",
+          "expected": "s25",
+          "actual": "s25"
+        },
+        {
+          "token": "f0",
+          "expected": "s26",
+          "actual": "s26"
+        },
+        {
+          "token": "f0",
+          "expected": "s27",
+          "actual": "s27"
+        },
+        {
+          "token": "f0",
+          "expected": "s28",
+          "actual": "s28"
+        },
+        {
+          "token": "f1",
+          "expected": "s28",
+          "actual": "s28"
+        }
+      ],
+      "quizCount": 5,
+      "answersClosed": true,
+      "oldAppendix": false,
+      "takeaways": 28,
+      "strongCount": 140,
+      "emphasisRatio": 0.031457034892280515,
+      "externalImages": 0,
+      "externalStyles": 0,
+      "colors": {
+        "question": "rgb(232, 239, 228)",
+        "answer": "rgb(251, 241, 223)"
+      },
+      "errors": [],
+      "toc": true,
+      "zoom": true,
+      "keyboardAnswerToggle": true
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "missingText": [],
+      "textBlocks": 128,
+      "images": 44,
+      "broken": 0,
+      "duplicateIds": [],
+      "badAnchors": [],
+      "positions": [
+        {
+          "token": "f0",
+          "expected": "s1",
+          "actual": "s1"
+        },
+        {
+          "token": "f1",
+          "expected": "s1",
+          "actual": "s1"
+        },
+        {
+          "token": "f0",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f2",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f3",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f1",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f0",
+          "expected": "s3",
+          "actual": "s3"
+        },
+        {
+          "token": "f0",
+          "expected": "s4",
+          "actual": "s4"
+        },
+        {
+          "token": "f0",
+          "expected": "s5",
+          "actual": "s5"
+        },
+        {
+          "token": "f0",
+          "expected": "s6",
+          "actual": "s6"
+        },
+        {
+          "token": "f1",
+          "expected": "s6",
+          "actual": "s6"
+        },
+        {
+          "token": "f0",
+          "expected": "s7",
+          "actual": "s7"
+        },
+        {
+          "token": "f1",
+          "expected": "s7",
+          "actual": "s7"
+        },
+        {
+          "token": "f1",
+          "expected": "s8",
+          "actual": "s8"
+        },
+        {
+          "token": "f2",
+          "expected": "s8",
+          "actual": "s8"
+        },
+        {
+          "token": "f0",
+          "expected": "s8",
+          "actual": "s8"
+        },
+        {
+          "token": "f0",
+          "expected": "s9",
+          "actual": "s9"
+        },
+        {
+          "token": "f0",
+          "expected": "s10",
+          "actual": "s10"
+        },
+        {
+          "token": "f1",
+          "expected": "s11",
+          "actual": "s11"
+        },
+        {
+          "token": "f0",
+          "expected": "s11",
+          "actual": "s11"
+        },
+        {
+          "token": "f3",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f0",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f1",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f2",
+          "expected": "s12",
+          "actual": "s12"
+        },
+        {
+          "token": "f0",
+          "expected": "s14",
+          "actual": "s14"
+        },
+        {
+          "token": "f0",
+          "expected": "s15",
+          "actual": "s15"
+        },
+        {
+          "token": "f3",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f4",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f0",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f2",
+          "expected": "s16",
+          "actual": "s16"
+        },
+        {
+          "token": "f0",
+          "expected": "s17",
+          "actual": "s17"
+        },
+        {
+          "token": "f16:1",
+          "expected": "s17",
+          "actual": "s17"
+        },
+        {
+          "token": "f0",
+          "expected": "s19",
+          "actual": "s19"
+        },
+        {
+          "token": "f0",
+          "expected": "s20",
+          "actual": "s20"
+        },
+        {
+          "token": "f1",
+          "expected": "s20",
+          "actual": "s20"
+        },
+        {
+          "token": "f0",
+          "expected": "s21",
+          "actual": "s21"
+        },
+        {
+          "token": "f0",
+          "expected": "s22",
+          "actual": "s22"
+        },
+        {
+          "token": "f0",
+          "expected": "s23",
+          "actual": "s23"
+        },
+        {
+          "token": "f0",
+          "expected": "s24",
+          "actual": "s24"
+        },
+        {
+          "token": "f0",
+          "expected": "s25",
+          "actual": "s25"
+        },
+        {
+          "token": "f0",
+          "expected": "s26",
+          "actual": "s26"
+        },
+        {
+          "token": "f0",
+          "expected": "s27",
+          "actual": "s27"
+        },
+        {
+          "token": "f0",
+          "expected": "s28",
+          "actual": "s28"
+        },
+        {
+          "token": "f1",
+          "expected": "s28",
+          "actual": "s28"
+        }
+      ],
+      "quizCount": 5,
+      "answersClosed": true,
+      "oldAppendix": false,
+      "takeaways": 28,
+      "strongCount": 140,
+      "emphasisRatio": 0.031457034892280515,
+      "externalImages": 0,
+      "externalStyles": 0,
+      "colors": {
+        "question": "rgb(232, 239, 228)",
+        "answer": "rgb(251, 241, 223)"
+      },
+      "errors": [],
+      "toc": true,
+      "zoom": true,
+      "keyboardAnswerToggle": true
+    }
+  ],
+  "status": "passed"
+}

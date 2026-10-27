@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "file": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/课程索引.html",
+  "html_sha256": "a84ef2d87a0706f518a2f881a6eba636f01780ef2583e67ebc40dc70718e0f95",
+  "auditor_sha256": "3a198bda6793224de440282420ce6cb83780c3b77e527f6138bcb240fd015fa6",
+  "profile": "generic",
+  "dependencies": {
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/课程索引.html": "a84ef2d87a0706f518a2f881a6eba636f01780ef2583e67ebc40dc70718e0f95"
+  },
+  "viewports": [
+    {
+      "width": 1280,
+      "viewportWidth": 1280,
+      "scrollWidth": 1280,
+      "title": "生成式软件工程｜逐课完整笔记",
+      "images": 0,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "brokenAnchors": [],
+      "interactions": {
+        "navigation": "NOT_APPLICABLE",
+        "details": "PASS",
+        "comparison": "NOT_APPLICABLE",
+        "zoom": "NOT_APPLICABLE"
+      },
+      "errors": [],
+      "screenshot": {
+        "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261019-new-08/index-browser/1280-top.png",
+        "sha256": "d94d6a40c44a17b90168d50d49b430c6d22c58e9bcecd46bae578f76eed77ed0"
+      }
+    },
+    {
+      "width": 390,
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "title": "生成式软件工程｜逐课完整笔记",
+      "images": 0,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "brokenAnchors": [],
+      "interactions": {
+        "navigation": "NOT_APPLICABLE",
+        "details": "PASS",
+        "comparison": "NOT_APPLICABLE",
+        "zoom": "NOT_APPLICABLE"
+      },
+      "errors": [],
+      "screenshot": {
+        "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261019-new-08/index-browser/390-top.png",
+        "sha256": "8b1222ae41a3633aeb15d754e0db6f5e75f618a4e9c4ca056df1b40f1c98c8cb"
+      }
+    }
+  ],
+  "reused_viewports": [],
+  "status": "PASS",
+  "scope": "mechanical browser checks; no semantic, source, video, real-device or native-print certification",
+  "issues": []
+}

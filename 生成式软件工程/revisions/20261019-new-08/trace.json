@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "run_id": "GSE-weekly-20261019",
+  "basis": "observed_build",
+  "captured_at": "2026-10-19T02:02:39.477934+00:00",
+  "root": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程",
+  "spec_sha256": "f89bbf72c2c0ed36f40d973c8013df55158e3bf083809e88857b8e03d1d5349f",
+  "artifacts": [
+    {
+      "id": "b0",
+      "path": "manifest.json",
+      "depends_on": [],
+      "sha256": "77b0d61545d1c88eb01d0f4d9d416ae45b6dee27f979c171d6c348470b0c1de5",
+      "bytes": 4255
+    },
+    {
+      "id": "b1",
+      "path": "review.json",
+      "depends_on": [],
+      "sha256": "b556b9179d36b5f989e86d8c903a71113a80073bffcd1dc8311177a9fcb03984",
+      "bytes": 4945
+    },
+    {
+      "id": "b2",
+      "path": "materials.json",
+      "depends_on": [],
+      "sha256": "7f8a17172b17ac0e8acc7222df2ea1451f54cc3ad86f66df83943dd1d2fdf19d",
+      "bytes": 81721
+    },
+    {
+      "id": "b3",
+      "path": "build_index.py",
+      "depends_on": [],
+      "sha256": "8587e6d45b939b0376ab81699e892cbde98c67164c3f253ee8aec800df93fdc4",
+      "bytes": 8751
+    },
+    {
+      "id": "b4",
+      "path": "课程索引.html",
+      "depends_on": [],
+      "sha256": "a84ef2d87a0706f518a2f881a6eba636f01780ef2583e67ebc40dc70718e0f95",
+      "bytes": 5962
+    },
+    {
+      "id": "b5",
+      "path": "lecture-08/review.json",
+      "depends_on": [],
+      "sha256": "6238c0533eb3d014a5ea3160317609c50488b45fa5c3ebada9277dc11f249d81",
+      "bytes": 5876
+    },
+    {
+      "id": "b6",
+      "path": "lecture-08/notes.json",
+      "depends_on": [],
+      "sha256": "962275c64c913c167cf9ce9bb489a49c168b510ea80ee8701e67033c18fa89cf",
+      "bytes": 114111
+    },
+    {
+      "id": "b7",
+      "path": "lecture-08/课堂笔记.html",
+      "depends_on": [],
+      "sha256": "48a1278dbae1d157bd35ec4a077a3079667a6266ad110198fa8c2dbf251377d9",
+      "bytes": 9986531
+    },
+    {
+      "id": "b8",
+      "path": "lecture-08/trace-r01.json",
+      "depends_on": [],
+      "sha256": "9c9a2ab3ce26a55249d17edae9c4d25cb267d4063ef1cc52c55bfe75a14afbfa",
+      "bytes": 932501
+    },
+    {
+      "id": "b9",
+      "path": "revisions/20261019-new-08/preservation.json",
+      "depends_on": [],
+      "sha256": "33b09277f4735e6f637e0030fccad95414b817159360d1ba521e7ee86074d49d",
+      "bytes": 1322
+    },
+    {
+      "id": "b10",
+      "path": "revisions/20261019-new-08/review.json",
+      "depends_on": [],
+      "sha256": "91f9b01eaaa655ec61ccf751fe24730958286dec3c52306f1018901daa1ebbcd",
+      "bytes": 815
+    },
+    {
+      "id": "b11",
+      "path": "revisions/20261019-new-08/index-browser/audit.json",
+      "depends_on": [],
+      "sha256": "a2f7ea3f61ce27cee2d84e29aa0e46d25a19e383d084fffa523d706e753f1308",
+      "bytes": 2103
+    },
+    {
+      "id": "b12",
+      "path": "revisions/20261019-new-08/index-reader.json",
+      "depends_on": [],
+      "sha256": "646c74922374763da4c67f2fac1ea590aa1441f164816a39071516824dae4ef4",
+      "bytes": 1479
+    },
+    {
+      "id": "b13",
+      "path": "revisions/20261019-new-08/index-visual-review.json",
+      "depends_on": [],
+      "sha256": "8cbab725f01c40588fdfdfcc8383fda7362f01f5e951e9af9c6a5623d865f6f0",
+      "bytes": 412
+    },
+    {
+      "id": "b14",
+      "path": "lecture-01/课堂笔记.html",
+      "depends_on": [],
+      "sha256": "67151db592f02e0fdb9889b9a79472e768d7e887a5dea9a965fa3cf2a4b62e47",
+      "bytes": 13103396
+    },
+    {
+      "id": "b15",
+      "path": "lecture-02/课堂笔记.html",
+      "depends_on": [],
+      "sha256": "f063e934af755a45e5fef94ee73327ff1ebc8a6527f497089c21931a2387b269",
+      "bytes": 18840725
+    },
+    {
+      "id": "b16",
+      "path": "lecture-03/课堂笔记.html",
+      "depends_on": [],
+      "sha256": "6b76b3a70d3c1c00d3b0840616ddb20cee79bd2384b605462dcdd913a9699df8",
+      "bytes": 18999799
+    },
+    {
+      "id": "b17",
+      "path": "lecture-04/课堂笔记.html",
+      "depends_on": [],
+      "sha256": "0e67d593f33b35aac8e7990afc0d9ee83777c73213dab4ada1e035a38eb865bd",
+      "bytes": 4718988
+    },
+    {
+      "id": "b18",
+      "path": "lecture-05/课堂笔记.html",
+      "depends_on": [],
+      "sha256": "87b8ef114786b34e310ebd00288827716ebeab2f15044f888a8456aad79105f4",
+      "bytes": 11160775
+    },
+    {
+      "id": "b19",
+      "path": "lecture-06/课堂笔记.html",
+      "depends_on": [],
+      "sha256": "a341918f8775d2b03c7c2270daf6585ab283f1a984eb17453f99da3895939dee",
+      "bytes": 6969273
+    },
+    {
+      "id": "b20",
+      "path": "lecture-07/课堂笔记.html",
+      "depends_on": [],
+      "sha256": "85980aafc6cfa2911dc2b38afce0523a9e453cded8b705eb9bc8a89e03a74cc5",
+      "bytes": 26140545
+    },
+    {
+      "id": "b21",
+      "path": "extra-ai-slop/课堂笔记.html",
+      "depends_on": [],
+      "sha256": "68fa80956bb84708b683ae88a6b24e4c406f0055b77a10e25712710a22483e68",
+      "bytes": 1970979
+    }
+  ],
+  "claim": "File snapshot only; dependencies are declarations, not proof of execution or quality."
+}

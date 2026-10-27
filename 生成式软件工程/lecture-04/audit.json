@@ -1,0 +1,124 @@
+{
+  "reviewer": "lecture06 author, separate source-return pass for lecture04",
+  "method": "Read all streamed segments during ASR, then reread all20 final exported chunks; read official lecture and25slide texts fully; inspect25compressed slides and10final video crops; targeted jj/Git primary documentation verification",
+  "coverage": {
+    "chunks_read": 20,
+    "sentences": 463,
+    "sections": 19,
+    "official_slide_pages": 25,
+    "selected_images": 35,
+    "full_audio_listening": false,
+    "all_video_frames_seen": false
+  },
+  "source_hashes": {
+    "transcript.json": "b4dbe241056eab779de3231cfbe0fbf3c7c2d6413271f83b3289514347c96e2d",
+    "chunks/index.json": "a7e393677f02a2e869c4bae303dcd276a422bd5f6f44d726236d3d975abcdf79",
+    "notes.json": "5023817b0fa063e8ba806226ad39444be5eac4d826b367605496423658d295ee",
+    "sources/slides4.html": "7d5f06f1713ca59893008c925fc1f0f605fdfd85f0bdd7385039843747d9ccf2",
+    "sources/lect4.md": "e453ce974ab239e1b506f113e969d28cbe4545f2585d11ea2684ef60b36c05a6"
+  },
+  "issues": [
+    {
+      "issue_id": "04-01",
+      "severity": "major",
+      "category": "source_precision",
+      "problem": "口述将jj change描述为独立object，并用逐字节立即commit+amend类比工作副本",
+      "after": "正文区分change概念与commit的change ID属性，多数jj命令时snapshot，重写不代表旧提交立即删除",
+      "evidence": [
+        "sources/jj-glossary.md sections Change/Rewrite/Visible",
+        "sources/jj-working-copy.md Introduction",
+        "chunks/chunk-0006.json",
+        "chunks/chunk-0007.json"
+      ],
+      "status": "resolved"
+    },
+    {
+      "issue_id": "04-02",
+      "severity": "major",
+      "category": "source_precision",
+      "problem": "合并冲突时作者归属讨论可能被误读为merge改写所有原作者",
+      "after": "限定冲突解决形成的新内容；原提交/作者仍保留，Git官方手册复核",
+      "evidence": [
+        "sources/git-merge.adoc",
+        "chunks/chunk-0005.json"
+      ],
+      "status": "resolved"
+    },
+    {
+      "issue_id": "04-03",
+      "severity": "major",
+      "category": "demo_boundary",
+      "problem": "demo sent/receipt日志易误写成真实发信/办事成功",
+      "after": "明确fixtures外部数据、live凭据未提供、最后一公里未验证；屏幕设计不是本次代码审计",
+      "evidence": [
+        "frames/demo-5460.png",
+        "frames/demo-5520.png",
+        "sources/frame-observations.json"
+      ],
+      "status": "resolved"
+    },
+    {
+      "issue_id": "04-04",
+      "severity": "major",
+      "category": "source_precision",
+      "problem": "把锁解释成消灭所有冲突或把Git类比当数据库事务保证",
+      "after": "注明共享状态/依赖范围、遵守协议、读最新、验证与快照；教务容量是共享状态反例；锁与Git不自动保证语义正确",
+      "evidence": [
+        "chunks/chunk-0012.json",
+        "sources/lect4.txt",
+        "sources/slides-text.json"
+      ],
+      "status": "resolved"
+    },
+    {
+      "issue_id": "04-05",
+      "severity": "major",
+      "category": "image_repair",
+      "problem": "只禁用CSS动画会让离场页与当前页叠加",
+      "after": "隐藏inactive slides后重抓全部25页并重制PDF/WebP，逐页目视通过",
+      "evidence": [
+        "capture_slides.py",
+        "sources/audit-sheet-01.jpg",
+        "sources/audit-sheet-09.jpg"
+      ],
+      "status": "resolved"
+    },
+    {
+      "issue_id": "04-06",
+      "severity": "minor",
+      "category": "numerical_check",
+      "problem": "单向汉诺塔易与普通汉诺塔2^n−1混淆",
+      "after": "明确单向规则；n1..7双目标14组与独立BFS最短路一致，未声称一般证明",
+      "evidence": [
+        "frames/demo-4320.png",
+        "sources/hanoi-check.json",
+        "verify_hanoi.py"
+      ],
+      "status": "resolved"
+    },
+    {
+      "issue_id": "04-07",
+      "severity": "minor",
+      "category": "evidence_sequence",
+      "problem": "早期未初始化Git可能被写成整个演示从未创建提交",
+      "after": "同时保留91:00未初始化画面与91:19后来已有单个提交的口述，区分阶段",
+      "evidence": [
+        "frames/demo-5460.png",
+        "chunks/chunk-0018.json s-g1098.0"
+      ],
+      "status": "resolved"
+    }
+  ],
+  "numerical_verification": "sources/hanoi-check.json",
+  "review_boundary": "desktop/narrow handled by coordinator; independent content review by lecture07; no full sourcecode review of classroom demo",
+  "transcription_corrections": [
+    "webcode→Vibe Coding",
+    "Gigi/机器组→jj/Jujutsu",
+    "walk tree→worktree",
+    "t max→tmux",
+    "一号→eHall",
+    "by sec→bisect",
+    "slot/AISLAP→slop in clear context"
+  ],
+  "note": "No .bcut hand edits or duplicate transcription, no user repo commits or pushes."
+}

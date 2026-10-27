@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "run_id": "gse-20261008-editorial-scale",
+  "basis": "observed_build",
+  "root": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261008-scale",
+  "artifacts": [
+    {
+      "id": "lesson-0",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/trace.json",
+      "depends_on": []
+    },
+    {
+      "id": "lesson-1",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/revisions/20261008-scale/trace.json",
+      "depends_on": []
+    },
+    {
+      "id": "lesson-2",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/trace.json",
+      "depends_on": []
+    },
+    {
+      "id": "lesson-3",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-03/revisions/20261008-scale/trace.json",
+      "depends_on": []
+    },
+    {
+      "id": "lesson-4",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/trace.json",
+      "depends_on": []
+    },
+    {
+      "id": "lesson-5",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-06/revisions/20261008-scale/trace.json",
+      "depends_on": []
+    },
+    {
+      "id": "lesson-6",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-07/revisions/20261008-scale/trace.json",
+      "depends_on": []
+    },
+    {
+      "id": "approved-pilot",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/课堂笔记.html",
+      "depends_on": []
+    },
+    {
+      "id": "index-generator",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/build_index.py",
+      "depends_on": []
+    },
+    {
+      "id": "course-index",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/课程索引.html",
+      "depends_on": [
+        "lesson-0",
+        "lesson-1",
+        "lesson-2",
+        "lesson-3",
+        "lesson-4",
+        "lesson-5",
+        "lesson-6",
+        "approved-pilot",
+        "index-generator"
+      ]
+    },
+    {
+      "id": "index-qa",
+      "path": "index-browser.json",
+      "depends_on": [
+        "course-index"
+      ]
+    },
+    {
+      "id": "independent-layout-review.json",
+      "path": "independent-layout-review.json",
+      "depends_on": [
+        "lesson-0",
+        "lesson-1",
+        "lesson-2",
+        "lesson-3",
+        "lesson-4",
+        "lesson-5",
+        "lesson-6"
+      ]
+    },
+    {
+      "id": "forward-test-review.json",
+      "path": "forward-test-review.json",
+      "depends_on": [
+        "lesson-0",
+        "lesson-1",
+        "lesson-2",
+        "lesson-3",
+        "lesson-4",
+        "lesson-5",
+        "lesson-6"
+      ]
+    },
+    {
+      "id": "visual-review.json",
+      "path": "visual-review.json",
+      "depends_on": [
+        "lesson-0",
+        "lesson-1",
+        "lesson-2",
+        "lesson-3",
+        "lesson-4",
+        "lesson-5",
+        "lesson-6"
+      ]
+    },
+    {
+      "id": "print-visual-review.json",
+      "path": "print-visual-review.json",
+      "depends_on": [
+        "lesson-0",
+        "lesson-1",
+        "lesson-2",
+        "lesson-3",
+        "lesson-4",
+        "lesson-5",
+        "lesson-6"
+      ]
+    },
+    {
+      "id": "preservation.json",
+      "path": "preservation.json",
+      "depends_on": [
+        "lesson-0",
+        "lesson-1",
+        "lesson-2",
+        "lesson-3",
+        "lesson-4",
+        "lesson-5",
+        "lesson-6"
+      ]
+    },
+    {
+      "id": "installed-validation.json",
+      "path": "installed-validation.json",
+      "depends_on": [
+        "lesson-0",
+        "lesson-1",
+        "lesson-2",
+        "lesson-3",
+        "lesson-4",
+        "lesson-5",
+        "lesson-6"
+      ]
+    },
+    {
+      "id": "skill-installation.json",
+      "path": "skill-installation.json",
+      "depends_on": [
+        "lesson-0",
+        "lesson-1",
+        "lesson-2",
+        "lesson-3",
+        "lesson-4",
+        "lesson-5",
+        "lesson-6"
+      ]
+    },
+    {
+      "id": "review.json",
+      "path": "review.json",
+      "depends_on": [
+        "lesson-0",
+        "lesson-1",
+        "lesson-2",
+        "lesson-3",
+        "lesson-4",
+        "lesson-5",
+        "lesson-6"
+      ]
+    },
+    {
+      "id": "course-review",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/review.json",
+      "depends_on": [
+        "review.json",
+        "index-qa"
+      ]
+    },
+    {
+      "id": "manifest",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/manifest.json",
+      "depends_on": [
+        "course-review"
+      ]
+    }
+  ]
+}

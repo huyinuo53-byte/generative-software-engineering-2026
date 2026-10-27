@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "images": 40,
+  "errors": [],
+  "scope": "Record coverage, file versions and declared checks only; no semantic image recognition or browser/PDF acceptance."
+}

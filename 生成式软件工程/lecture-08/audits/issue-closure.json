@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "notes_sha256": "962275c64c913c167cf9ce9bb489a49c168b510ea80ee8701e67033c18fa89cf",
+  "issues": [
+    {
+      "id": "board-gcc",
+      "resolution": "visual-coverage.json的compiler事件区分左右内容，event-binding-map纠正旧events误解释；正文21节及v0439图注已回读。",
+      "evidence": [
+        "visual-coverage.json",
+        "audits/gse08-event-binding-map.json",
+        "audits/content-review.json"
+      ]
+    },
+    {
+      "id": "historical-hash",
+      "resolution": "保留原始HANDOFF和纠错记录；更正复制来的最终HANDOFF，实际4350画面已分节hash。",
+      "evidence": [
+        "sources/harness-20261019/parent-correction.json",
+        "audits/gse08-final-visual-review.json"
+      ]
+    },
+    {
+      "id": "desktop-toc",
+      "resolution": "本课交付CSS启用桌面summary鼠标操作并真正折叠nav；复验PASS。共享skill与既有课程不改。",
+      "evidence": [
+        "audits/browser-first-failure.json",
+        "qa/browser/audit.json"
+      ]
+    },
+    {
+      "id": "hero-issue",
+      "resolution": "issue由日期长字符串改08，标题恢复正常宽度；桌面截图已目视。"
+    },
+    {
+      "id": "final-typo",
+      "resolution": "文务改义务，独立审阅者已关闭。",
+      "evidence": [
+        "audits/content-review.json"
+      ]
+    }
+  ],
+  "open_issues": []
+}

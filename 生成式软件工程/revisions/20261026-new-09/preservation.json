@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "old_completed_htmls": 9,
+  "items": [
+    {
+      "folder": "lecture-01",
+      "expected": "67151db592f02e0fdb9889b9a79472e768d7e887a5dea9a965fa3cf2a4b62e47",
+      "actual": "67151db592f02e0fdb9889b9a79472e768d7e887a5dea9a965fa3cf2a4b62e47",
+      "unchanged": true
+    },
+    {
+      "folder": "lecture-02",
+      "expected": "f063e934af755a45e5fef94ee73327ff1ebc8a6527f497089c21931a2387b269",
+      "actual": "f063e934af755a45e5fef94ee73327ff1ebc8a6527f497089c21931a2387b269",
+      "unchanged": true
+    },
+    {
+      "folder": "lecture-03",
+      "expected": "6b76b3a70d3c1c00d3b0840616ddb20cee79bd2384b605462dcdd913a9699df8",
+      "actual": "6b76b3a70d3c1c00d3b0840616ddb20cee79bd2384b605462dcdd913a9699df8",
+      "unchanged": true
+    },
+    {
+      "folder": "lecture-04",
+      "expected": "0e67d593f33b35aac8e7990afc0d9ee83777c73213dab4ada1e035a38eb865bd",
+      "actual": "0e67d593f33b35aac8e7990afc0d9ee83777c73213dab4ada1e035a38eb865bd",
+      "unchanged": true
+    },
+    {
+      "folder": "lecture-05",
+      "expected": "87b8ef114786b34e310ebd00288827716ebeab2f15044f888a8456aad79105f4",
+      "actual": "87b8ef114786b34e310ebd00288827716ebeab2f15044f888a8456aad79105f4",
+      "unchanged": true
+    },
+    {
+      "folder": "lecture-06",
+      "expected": "a341918f8775d2b03c7c2270daf6585ab283f1a984eb17453f99da3895939dee",
+      "actual": "a341918f8775d2b03c7c2270daf6585ab283f1a984eb17453f99da3895939dee",
+      "unchanged": true
+    },
+    {
+      "folder": "lecture-07",
+      "expected": "85980aafc6cfa2911dc2b38afce0523a9e453cded8b705eb9bc8a89e03a74cc5",
+      "actual": "85980aafc6cfa2911dc2b38afce0523a9e453cded8b705eb9bc8a89e03a74cc5",
+      "unchanged": true
+    },
+    {
+      "folder": "lecture-08",
+      "expected": "48a1278dbae1d157bd35ec4a077a3079667a6266ad110198fa8c2dbf251377d9",
+      "actual": "48a1278dbae1d157bd35ec4a077a3079667a6266ad110198fa8c2dbf251377d9",
+      "unchanged": true
+    },
+    {
+      "folder": "extra-ai-slop",
+      "expected": "68fa80956bb84708b683ae88a6b24e4c406f0055b77a10e25712710a22483e68",
+      "actual": "68fa80956bb84708b683ae88a6b24e4c406f0055b77a10e25712710a22483e68",
+      "unchanged": true
+    }
+  ],
+  "scope": "Prior HTML bytes preserved; no re-ASR or rewriting. Historical semantic evidence is retained, not rerun."
+}

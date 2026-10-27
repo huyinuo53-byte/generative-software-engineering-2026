@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "run_id": "BV1Q6en6NEUo-20261002",
+  "batch_id": "GSE-20261002",
+  "item_id": "lecture-04",
+  "scope_revision": 1,
+  "source_url": "https://www.bilibili.com/video/BV1Q6en6NEUo",
+  "requested_outputs": [
+    "complete_mobile_html",
+    "notes_json",
+    "quality_review"
+  ],
+  "required_checks": [
+    "source_coverage",
+    "content",
+    "image_audit",
+    "html_static",
+    "desktop",
+    "narrow"
+  ],
+  "sources": [
+    {
+      "id": "transcript",
+      "path": "transcript.json",
+      "kind": "original_export",
+      "transcript_origin": "new_coordinator_pipeline",
+      "reuse_reason": "No prior transcript found by coordinator; reused the already-running coordinator pipeline, no duplicate transcribe request. Export after project show confirmed BV1Q6en6NEUo and fresh asr/asrLayout.",
+      "project": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-04-BV1Q6en6NEUo.bcut",
+      "duration_seconds": 5909.376,
+      "known_gaps": []
+    },
+    {
+      "id": "video",
+      "path": "/Users/yjzhao/Downloads/软件仓库管理 (2) [04-Raw 26生成式软件工程 NJU].mp4",
+      "sha256": "sha256-57a92325fb43bc99b8d1a331e5364ae0771300245bcf70bd31134bebda10f0e7",
+      "kind": "original_media",
+      "video_stream_seconds": 5909.366,
+      "audio_stream_seconds": 5909.376,
+      "tail_decode": "last60 seconds ffmpeg exit0; sources/tail-decode.log empty"
+    },
+    {
+      "id": "slides",
+      "path": "sources/slides4.html",
+      "url": "https://jyywiki.cn/GSE/2026/slides4.html",
+      "kind": "current_official_web_slides",
+      "pages": 25,
+      "version_note": "Frozen current webpage; video spot checks align, not a full historical version identity claim"
+    },
+    {
+      "id": "lecture",
+      "path": "sources/lect4.md",
+      "url": "https://jyywiki.cn/GSE/2026/lect4.md",
+      "kind": "official_web_lecture_html_despite_md_url"
+    }
+  ],
+  "toolchain": {
+    "app_version": "2.1.0",
+    "spec": "1.249",
+    "engine": "moss-transcribe-diarize",
+    "language": "zh",
+    "source": "coordinator preflight and sources/project-show.json"
+  },
+  "scope_changes": []
+}

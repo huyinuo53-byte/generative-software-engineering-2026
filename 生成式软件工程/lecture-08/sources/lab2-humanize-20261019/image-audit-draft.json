@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-19T01:23:40.060876+00:00",
+  "material_id": "humanize-2610.08900v2",
+  "images": [
+    {
+      "path": "/tmp/gse08-lab2-materials/key-page-05.png",
+      "sha256": "454fe7322d199809ca9260596ac8bcb2882c859a053132a94c53745d812f1845",
+      "width": 1855,
+      "height": 2400,
+      "source_kind": "pdf_page",
+      "page": 5,
+      "figure": 4,
+      "source_url": "https://arxiv.org/abs/2610.08900v2",
+      "scope": "full PDF page, no crop",
+      "visual_check": "passed",
+      "detail": "已目视复核四条交接箭头、停止条件、code review入口、图注均完整。",
+      "final_html_integration": "pending"
+    },
+    {
+      "path": "/tmp/gse08-lab2-materials/key-page-07.png",
+      "sha256": "0d7f2a4516c0169b69d7b48e89a68747523208919ded056e6db2abd2f6291c50",
+      "width": 1855,
+      "height": 2400,
+      "source_kind": "pdf_page",
+      "page": 7,
+      "figure": 5,
+      "source_url": "https://arxiv.org/abs/2610.08900v2",
+      "scope": "full PDF page, no crop",
+      "visual_check": "passed",
+      "detail": "已目视复核知识/性能证据/harness输入，1x基线、对数轴、所有四个条形数值、single kernel/48h/team-reported脚注及图注均完整。",
+      "final_html_integration": "pending"
+    }
+  ]
+}

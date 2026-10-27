@@ -1,0 +1,17 @@
+{
+  "repository_url": "https://github.com/deepseek-ai/deepseek-harness",
+  "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+  "commit_time": "2026-10-17T15:22:43+08:00",
+  "retrieved_and_read_date": "2026-10-19",
+  "packaged_at": "2026-10-19T01:47:05.922318+00:00",
+  "recorded_lesson_date": "2026-10-13",
+  "relationship_to_recorded_version": "current commit is later than lesson; no identity to recorded checkout is claimed",
+  "url_discovery": {
+    "official_html_result": "saved lect8.html and slides8.html contain no DeepSeek Harness repository href",
+    "primary_evidence": "real video README source clone URL at 4230s / 70:30",
+    "frame_original": "/tmp/gse08-visual/scan/sample-02116.jpg"
+  },
+  "execution": "Static source reading only. No dependency install, repository script, test, application, or unknown code executed.",
+  "scope": "Teaching mechanisms: bilingual pairing, terminology/style calibration, hierarchical standing instructions, Agent Notes lifecycle, skill entrypoints, documentation gates. Not all product source or repository history.",
+  "working_tree_status": ""
+}

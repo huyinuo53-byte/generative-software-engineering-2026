@@ -1,0 +1,33 @@
+{
+  "run_id": "BV1Nyeq6qEt8-20261001T063030Z",
+  "outcome": "completed",
+  "summary": "完成 99:59 视频的中文转写、20 个分块和 491 个句子的顺序全文阅读，整理为 16 章、23 个截图引用的单文件 HTML。结构证据校验、桌面和 390px 窄屏布局、图片放大、打印规则及 BaoCut strict check 均已完成。",
+  "lessons": [
+    {
+      "status": "candidate",
+      "scope": "course_notes.py HTML mobile QA",
+      "finding": "模板只给段落设置 overflow-wrap，长英文标题或导航链接在 390px 宽度下可能产生横向裁切。",
+      "evidence": "首次 390x844 Chrome 截图中标题和 Intent—Specification—Implementation 导航被裁切；为 h1 h2 h3 nav a 增加 overflow-wrap:anywhere 与 word-break:break-word 后，390px 约束检查 header scrollWidth=clientWidth=390，且无子元素溢出。",
+      "next_action": "在另一份包含长英文术语的课程笔记中复现；若再次成立，再把响应式断行修复提升为 verified 并更新模板。"
+    },
+    {
+      "status": "candidate",
+      "scope": "BaoCut App hosted local browser QA",
+      "finding": "常用本机端口可能已被旧服务占用，Python http.server 在 IPv6 上启动成功也可能被既有 IPv4 服务遮蔽。",
+      "evidence": "8765 端口同时出现旧目录列表与新 IPv6 server；改用显式 --bind 127.0.0.1 的 8877 后返回目标 HTML 200。",
+      "next_action": "下次先 curl 目标 URL 核对目录与状态码，再开始浏览器 QA；使用显式未占用端口和 IPv4 绑定。"
+    },
+    {
+      "status": "candidate",
+      "scope": "section evidence interval validation",
+      "finding": "按句子 start 分配章节后，章节 end 仍需扩展到该句实际 end，否则 renderer 会拒绝证据区间。",
+      "evidence": "首次 render 报 Section interval must contain its evidence: s-g93.0~46；按每章证据句最小 start 和最大 end 重算后通过，491/491 source IDs 覆盖。",
+      "next_action": "下一次 run 复现后，将区间包络计算固化为 notes 生成前的机械检查。"
+    }
+  ],
+  "metrics": {
+    "wall_seconds": 1500,
+    "active_seconds": null,
+    "tokens": null
+  }
+}

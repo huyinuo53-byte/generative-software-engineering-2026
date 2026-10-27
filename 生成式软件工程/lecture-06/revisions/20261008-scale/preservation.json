@@ -1,0 +1,17 @@
+{
+  "lesson": "lecture-06",
+  "status": "passed",
+  "changes": [
+    {
+      "path": "/sections/19/paragraphs/2",
+      "before": "本页及下方补充保留官方现行讲义结尾扩展内容，并明确区分口述。CQRS 分离接受操作的写模型与提供查询的读模型；DDD 让业务概念与限界上下文决定边界；Event Sourcing 决定如何记录和重建历史。三者可组合，却互不等同。",
+      "after": "本节及相关知识点保留官方现行讲义结尾扩展内容，并明确区分口述。CQRS 分离接受操作的写模型与提供查询的读模型；DDD 让业务概念与限界上下文决定边界；Event Sourcing 决定如何记录和重建历史。三者可组合，却互不等同。"
+    }
+  ],
+  "all_other_notes_fields_unchanged": true,
+  "all_image_bytes_match_previous_audit": true,
+  "images": 37,
+  "transcript_and_index_unchanged": true,
+  "html_sha256": "a341918f8775d2b03c7c2270daf6585ab283f1a984eb17453f99da3895939dee",
+  "layout_sha256": "b86aa7351bcbfecb61953fff5efe4393a072d375618f6f602ddea20ec0cc20fe"
+}

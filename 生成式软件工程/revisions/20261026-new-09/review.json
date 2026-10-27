@@ -1,0 +1,24 @@
+{
+  "outcome": "completed",
+  "new_video": "BV144nc6KEA4",
+  "lecture_review": "../../lecture-09/review.json",
+  "index_validation": "index-browser/audit.json",
+  "index_reader_validation": "index-reader.json",
+  "index_visual_review": "index-visual-review.json",
+  "preservation": "preservation.json",
+  "old_completed_videos_preserved": 9,
+  "new_completed_videos": 1,
+  "total_delivered": 10,
+  "current_playlist_videos": 9,
+  "preserved_unlisted": 1,
+  "updated_files": [
+    "../../lecture-09/",
+    "../../materials.json",
+    "../../manifest.json",
+    "../../review.json",
+    "../../build_index.py",
+    "../../课程索引.html"
+  ],
+  "scope": "新课独立验收；旧产物历史证据复用，不冒充重新阅读或重测整套课程。",
+  "completed_at": "2026-10-26T01:38:18.657303+00:00"
+}

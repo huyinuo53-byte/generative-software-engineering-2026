@@ -1,0 +1,34 @@
+{
+  "fingerprint": "900:g1.0:g23.0~25:2odq4r790o8x3",
+  "parts": {
+    "count": 1,
+    "outlineAttempts": 0,
+    "outlineFallback": false,
+    "pages": [
+      {
+        "attempts": 1,
+        "degraded": false,
+        "end": 168.533375,
+        "id": "p001",
+        "segments": 5,
+        "start": 0.15,
+        "units": 2
+      }
+    ]
+  },
+  "review": true,
+  "rows": [
+    {
+      "end": 77.55,
+      "id": "c-mur4u87k-0",
+      "start": 0.0,
+      "title": "AI 时代的大学焦虑"
+    },
+    {
+      "end": 168.533375,
+      "id": "c-mur4u87k-1",
+      "start": 77.55,
+      "title": "标准化简历与真实能力"
+    }
+  ]
+}

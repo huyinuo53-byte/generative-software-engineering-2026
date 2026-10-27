@@ -1,0 +1,36 @@
+{
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "cards": 8,
+    "title": "生成式软件工程｜逐课完整笔记",
+    "links": [
+      "lecture-01/课堂笔记.html",
+      "lecture-02/课堂笔记.html",
+      "lecture-03/课堂笔记.html",
+      "lecture-04/课堂笔记.html",
+      "lecture-05/课堂笔记.html",
+      "lecture-06/课堂笔记.html",
+      "lecture-07/课堂笔记.html",
+      "extra-ai-slop/课堂笔记.html"
+    ]
+  },
+  "desktop": {
+    "width": 900,
+    "scrollWidth": 900,
+    "cards": 8,
+    "title": "生成式软件工程｜逐课完整笔记",
+    "links": [
+      "lecture-01/课堂笔记.html",
+      "lecture-02/课堂笔记.html",
+      "lecture-03/课堂笔记.html",
+      "lecture-04/课堂笔记.html",
+      "lecture-05/课堂笔记.html",
+      "lecture-06/课堂笔记.html",
+      "lecture-07/课堂笔记.html",
+      "extra-ai-slop/课堂笔记.html"
+    ]
+  },
+  "open_course": "第 05 课｜软件工程的来龙去脉：从需求鸿沟到可检查的承诺",
+  "method": "390/900px iframe geometry plus actual top-level local index click to lecture05; iframe file navigation has separate origin"
+}

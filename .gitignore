@@ -1,0 +1,6 @@
+# Source videos are in GitHub Releases, not Git objects.
+/media/
+/.downloads/
+.DS_Store
+__pycache__/
+*.pyc

@@ -1,0 +1,285 @@
+{
+  "status": "passed",
+  "content_units": 180,
+  "figures": 46,
+  "supplements": 0,
+  "placements": [
+    {
+      "source_section": 1,
+      "frame": 0,
+      "display_section": 1,
+      "path": "frames/slide-01.png"
+    },
+    {
+      "source_section": 1,
+      "frame": 1,
+      "display_section": 1,
+      "path": "frames/slide-02.png"
+    },
+    {
+      "source_section": 2,
+      "frame": 0,
+      "display_section": 2,
+      "path": "frames/slide-03.png"
+    },
+    {
+      "source_section": 3,
+      "frame": 0,
+      "display_section": 3,
+      "path": "frames/slide-04.png"
+    },
+    {
+      "source_section": 4,
+      "frame": 0,
+      "display_section": 4,
+      "path": "frames/slide-05.png"
+    },
+    {
+      "source_section": 5,
+      "frame": 0,
+      "display_section": 5,
+      "path": "frames/slide-06.png"
+    },
+    {
+      "source_section": 6,
+      "frame": 0,
+      "display_section": 6,
+      "path": "frames/slide-07.png"
+    },
+    {
+      "source_section": 6,
+      "frame": 1,
+      "display_section": 6,
+      "path": "frames/slide-08.png"
+    },
+    {
+      "source_section": 7,
+      "frame": 0,
+      "display_section": 7,
+      "path": "frames/slide-09.png"
+    },
+    {
+      "source_section": 7,
+      "frame": 1,
+      "display_section": 7,
+      "path": "frames/video-1578.jpg"
+    },
+    {
+      "source_section": 8,
+      "frame": 0,
+      "display_section": 8,
+      "path": "frames/video-1869.jpg"
+    },
+    {
+      "source_section": 8,
+      "frame": 1,
+      "display_section": 8,
+      "path": "frames/video-1954.jpg"
+    },
+    {
+      "source_section": 9,
+      "frame": 0,
+      "display_section": 9,
+      "path": "frames/slide-10.png"
+    },
+    {
+      "source_section": 9,
+      "frame": 1,
+      "display_section": 9,
+      "path": "frames/slide-11.png"
+    },
+    {
+      "source_section": 10,
+      "frame": 0,
+      "display_section": 10,
+      "path": "frames/slide-12.png"
+    },
+    {
+      "source_section": 11,
+      "frame": 0,
+      "display_section": 11,
+      "path": "frames/slide-13.png"
+    },
+    {
+      "source_section": 12,
+      "frame": 0,
+      "display_section": 12,
+      "path": "frames/slide-14.png"
+    },
+    {
+      "source_section": 12,
+      "frame": 1,
+      "display_section": 12,
+      "path": "frames/slide-15.png"
+    },
+    {
+      "source_section": 12,
+      "frame": 3,
+      "display_section": 12,
+      "path": "frames/video-3232.jpg"
+    },
+    {
+      "source_section": 12,
+      "frame": 4,
+      "display_section": 12,
+      "path": "frames/video-3254.jpg"
+    },
+    {
+      "source_section": 12,
+      "frame": 2,
+      "display_section": 12,
+      "path": "frames/slide-16.png"
+    },
+    {
+      "source_section": 13,
+      "frame": 0,
+      "display_section": 13,
+      "path": "frames/slide-17.png"
+    },
+    {
+      "source_section": 13,
+      "frame": 1,
+      "display_section": 13,
+      "path": "frames/slide-18.png"
+    },
+    {
+      "source_section": 14,
+      "frame": 0,
+      "display_section": 14,
+      "path": "frames/slide-19.png"
+    },
+    {
+      "source_section": 14,
+      "frame": 1,
+      "display_section": 14,
+      "path": "frames/slide-20.png"
+    },
+    {
+      "source_section": 15,
+      "frame": 0,
+      "display_section": 15,
+      "path": "frames/slide-21.png"
+    },
+    {
+      "source_section": 15,
+      "frame": 1,
+      "display_section": 15,
+      "path": "frames/slide-22.png"
+    },
+    {
+      "source_section": 16,
+      "frame": 0,
+      "display_section": 16,
+      "path": "frames/slide-23.png"
+    },
+    {
+      "source_section": 16,
+      "frame": 1,
+      "display_section": 16,
+      "path": "frames/slide-24.png"
+    },
+    {
+      "source_section": 17,
+      "frame": 0,
+      "display_section": 17,
+      "path": "frames/slide-25.png"
+    },
+    {
+      "source_section": 17,
+      "frame": 1,
+      "display_section": 17,
+      "path": "frames/slide-26.png"
+    },
+    {
+      "source_section": 18,
+      "frame": 0,
+      "display_section": 18,
+      "path": "frames/slide-27.png"
+    },
+    {
+      "source_section": 18,
+      "frame": 1,
+      "display_section": 18,
+      "path": "frames/slide-28.png"
+    },
+    {
+      "source_section": 19,
+      "frame": 0,
+      "display_section": 19,
+      "path": "frames/slide-29.png"
+    },
+    {
+      "source_section": 19,
+      "frame": 1,
+      "display_section": 19,
+      "path": "frames/slide-30.png"
+    },
+    {
+      "source_section": 20,
+      "frame": 0,
+      "display_section": 20,
+      "path": "frames/slide-31.png"
+    },
+    {
+      "source_section": 21,
+      "frame": 0,
+      "display_section": 21,
+      "path": "frames/slide-32.png"
+    },
+    {
+      "source_section": 22,
+      "frame": 0,
+      "display_section": 22,
+      "path": "frames/slide-33.png"
+    },
+    {
+      "source_section": 22,
+      "frame": 2,
+      "display_section": 22,
+      "path": "frames/video-5338.jpg"
+    },
+    {
+      "source_section": 22,
+      "frame": 1,
+      "display_section": 22,
+      "path": "frames/slide-34.png"
+    },
+    {
+      "source_section": 22,
+      "frame": 3,
+      "display_section": 22,
+      "path": "frames/ledger-detail.webp"
+    },
+    {
+      "source_section": 23,
+      "frame": 0,
+      "display_section": 23,
+      "path": "frames/slide-35.png"
+    },
+    {
+      "source_section": 23,
+      "frame": 1,
+      "display_section": 23,
+      "path": "frames/slide-37.png"
+    },
+    {
+      "source_section": 24,
+      "frame": 0,
+      "display_section": 24,
+      "path": "frames/slide-36.png"
+    },
+    {
+      "source_section": 25,
+      "frame": 0,
+      "display_section": 25,
+      "path": "frames/slide-38.png"
+    },
+    {
+      "source_section": 25,
+      "frame": 1,
+      "display_section": 25,
+      "path": "frames/slide-39.png"
+    }
+  ],
+  "boundary": "Structural coverage and version binding only; requires semantic and browser review."
+}

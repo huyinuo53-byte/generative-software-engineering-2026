@@ -1,0 +1,12 @@
+{
+  "html_sha256": "83f0e12e75ce32e44088b7960eb52fd705353235a5a7ca9e83e8d003cc9ec3ec",
+  "method": "isolated Chrome headless print; all text blocks checked against pdftotext; representative page visual inspection recorded separately",
+  "temporary_pdf": "/tmp/gse-lecture-03-print.pdf",
+  "pdf_sha256": "d22a0f866d6a591e5cb8fb48b024058cad1d793426620126ca1b975a34aa461e",
+  "text_blocks": 160,
+  "missing_blocks": [],
+  "printed_images": 53,
+  "expected_images": 53,
+  "pdfinfo": "Title:           生成式软件工程 · 第03课：软件仓库管理\nCreator:         Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36\nProducer:        Skia/PDF m154\nCreationDate:    Fri Oct  2 23:38:14 2026 CST\nModDate:         Fri Oct  2 23:38:14 2026 CST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          yes\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           62\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       14794908 bytes\nOptimized:       no\nPDF version:     1.4\n",
+  "status": "passed"
+}

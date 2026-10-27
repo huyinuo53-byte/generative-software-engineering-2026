@@ -1,0 +1,35 @@
+{
+  "active": false,
+  "activity": null,
+  "bcutStudioProgress": "0.1",
+  "callsActive": null,
+  "callsDone": null,
+  "callsRetried": null,
+  "callsTotal": null,
+  "contentFingerprint": "sha256-d75ee214f2860a8a75eeabd8cc3709b2eb38b3950db944d5962fda58a0391014",
+  "detail": "转录内容已同步",
+  "error": null,
+  "flow": null,
+  "inFlight": null,
+  "lang": null,
+  "linesDone": null,
+  "linesTotal": null,
+  "pct": 100,
+  "phase": "ready",
+  "phases": [
+    {
+      "label": "润色",
+      "state": "pending"
+    },
+    {
+      "label": "翻译",
+      "state": "pending"
+    },
+    {
+      "label": "拆分对齐",
+      "state": "pending"
+    }
+  ],
+  "taskId": null,
+  "updatedAt": 1792977131034
+}

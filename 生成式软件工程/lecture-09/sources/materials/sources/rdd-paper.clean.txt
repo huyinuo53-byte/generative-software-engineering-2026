@@ -1,0 +1,80 @@
+Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing | USENIX
+Skip to main content
+Back to USENIX
+NSDI '12 Home
+Registration Information
+Discounts
+Organizers
+At a Glance
+Technical Sessions
+Poster and Demo Session
+Birds-of-a-Feather Sessions
+Workshops
+Sponsors
+Activities
+Calendar
+Hotel and Travel Information
+Students
+Questions?
+Help Promote
+For Participants
+Call for Papers
+Past Proceedings
+sponsors
+Gold Sponsor
+Silver Sponsor
+Silver Sponsor
+Silver Sponsor
+Silver Sponsor
+Bronze Sponsor
+Bronze Sponsor
+Bronze Sponsor
+Media Sponsor
+USENIX Conference Policies
+Event Code of Conduct
+Conference Network Policy
+Statement on Environmental Responsibility Policy
+Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing
+Matei Zaharia, Mosharaf Chowdhury, Tathagata Das, Ankur Dave, Justin Ma, Murphy McCauley, Michael J. Franklin, Scott Shenker, and Ion Stoica, University of California, Berkeley     Awarded Best Paper!     Awarded Community Award Honorable Mention!
+We present Resilient Distributed Datasets (RDDs), a distributed memory abstraction that lets programmers perform in-memory computations on large clusters in a fault-tolerant manner. RDDs are motivated by two types of applications that current computing frameworks handle inefficiently: iterative algorithms and interactive data mining tools. In both cases, keeping data in memory can improve performance by an order of magnitude. To achieve fault tolerance efficiently, RDDs provide a restricted form of shared memory, based on coarse-grained transformations rather than fine-grained updates to shared state. However, we show that RDDs are expressive enough to capture a wide class of computations, including recent specialized programming models for iterative jobs, such as Pregel, and new applications that these models do not capture. We have implemented RDDs in a system called Spark, which we evaluate through a variety of user applications and benchmarks.
+Matei Zaharia, University of California, Berkeley
+Mosharaf Chowdhury, University of California, Berkeley
+Tathagata Das, University of California, Berkeley
+Ankur Dave, University of California, Berkeley
+Justin Ma, University of California, Berkeley
+Murphy McCauly, University of California, Berkeley
+Michael J. Franklin, University of California, Berkeley
+Scott Shenker, University of California, Berkeley
+Ion Stoica, University of California, Berkeley
+Open Access Media
+USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. Support USENIX and our commitment to Open Access.
+BibTeX
+@inproceedings {180560,
+author = {Matei Zaharia and Mosharaf Chowdhury and Tathagata Das and Ankur Dave and Justin Ma and Murphy McCauly and Michael J. Franklin and Scott Shenker and Ion Stoica},
+title = {Resilient Distributed Datasets: A {Fault-Tolerant} Abstraction for {In-Memory} Cluster Computing},
+booktitle = {9th USENIX Symposium on Networked Systems Design and Implementation (NSDI 12)},
+year = {2012},
+isbn = {978-931971-92-8},
+address = {San Jose, CA},
+pages = {15--28},
+url = {https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia},
+publisher = {USENIX Association},
+month = apr
+}
+Download
+Zaharia PDF
+View the slides
+Presentation Video
+Presentation Audio
+MP3 Download
+OGG Download
+Download Audio
+Log in or register to post comments
+Gold Sponsors
+Silver Sponsors
+Bronze Sponsors
+Media Sponsors & Industry Partners
+© USENIX
+EIN 13-3055038
+Privacy Policy
+Contact Us

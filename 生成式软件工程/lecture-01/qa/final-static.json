@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "source_units": 821,
+  "coverage_once": true,
+  "source_time_containment": true,
+  "html_text_blocks": 183,
+  "all_text_present": true,
+  "inline_images": 48,
+  "duplicate_ids": 0,
+  "broken_anchors": 0,
+  "html_sha256": "ab033482b3a8d2a70f5a26106638792dc1ad9bb0a0f56a88933a6f9e0a1ab1ff"
+}

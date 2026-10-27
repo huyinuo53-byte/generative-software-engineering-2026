@@ -1,0 +1,15 @@
+{
+  "method": "isolated Chrome headless PDF print, all expected text and answers extracted; image count; not native print dialog",
+  "blocks": 220,
+  "missing": [],
+  "images": 40,
+  "answer_pages": [
+    45,
+    46,
+    47,
+    48
+  ],
+  "status": "passed",
+  "html_sha256": "87b8ef114786b34e310ebd00288827716ebeab2f15044f888a8456aad79105f4",
+  "sealed_at": "2026-10-07T19:25:20.376788+00:00"
+}

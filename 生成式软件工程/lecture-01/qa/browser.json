@@ -1,0 +1,92 @@
+{
+  "method": "Actual Chrome iframe viewport; complete inline artifact in srcdoc; monitor added before scripts",
+  "html_sha256": "ab033482b3a8d2a70f5a26106638792dc1ad9bb0a0f56a88933a6f9e0a1ab1ff",
+  "viewports": {
+    "mobile": {
+      "state": {
+        "width": 390,
+        "scrollWidth": 390,
+        "images": 48,
+        "brokenImages": 0,
+        "duplicateIds": [],
+        "badAnchors": 0,
+        "errors": [],
+        "title": "第 01 课｜欢迎来到未来：用 Agent 做事，为什么仍然需要软件工程"
+      },
+      "interaction": {
+        "tocOpened": true,
+        "anchorJump": true,
+        "bodyWidth": 390
+      },
+      "zoom": {
+        "open": true,
+        "imageLoaded": true,
+        "width": 382.1953125,
+        "scales": [
+          {
+            "style": "200%",
+            "actualWidth": 724.390625,
+            "dialogWidth": 382
+          },
+          {
+            "style": "300%",
+            "actualWidth": 1086.5859375,
+            "dialogWidth": 382
+          },
+          {
+            "style": "100%",
+            "actualWidth": 362.1953125,
+            "dialogWidth": 382
+          }
+        ]
+      },
+      "close": {
+        "closed": true,
+        "errors": []
+      }
+    },
+    "desktop": {
+      "state": {
+        "width": 900,
+        "scrollWidth": 900,
+        "images": 48,
+        "brokenImages": 0,
+        "duplicateIds": [],
+        "badAnchors": 0,
+        "errors": [],
+        "title": "第 01 课｜欢迎来到未来：用 Agent 做事，为什么仍然需要软件工程"
+      },
+      "interaction": {
+        "tocOpened": true,
+        "anchorJump": true,
+        "bodyWidth": 900
+      },
+      "zoom": {
+        "open": true,
+        "imageLoaded": true,
+        "width": 855,
+        "scales": [
+          {
+            "style": "200%",
+            "actualWidth": 1630,
+            "dialogWidth": 855
+          },
+          {
+            "style": "300%",
+            "actualWidth": 2445,
+            "dialogWidth": 855
+          },
+          {
+            "style": "100%",
+            "actualWidth": 815,
+            "dialogWidth": 855
+          }
+        ]
+      },
+      "close": {
+        "closed": true,
+        "errors": []
+      }
+    }
+  }
+}

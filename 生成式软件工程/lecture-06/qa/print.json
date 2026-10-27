@@ -1,0 +1,12 @@
+{
+  "html_sha256": "c44c7dc08f5a54e38ef6fb952a0862a49eed1f0805d4d68409d914d33984f25e",
+  "method": "isolated Chrome headless print; all text blocks checked against pdftotext; representative page visual inspection recorded separately",
+  "temporary_pdf": "/tmp/gse-lecture-06-print.pdf",
+  "pdf_sha256": "65620a90287161b06da4101d1484788a1adb6d37a3c1bcd1f9a155c7ef10d207",
+  "text_blocks": 124,
+  "missing_blocks": [],
+  "printed_images": 37,
+  "expected_images": 37,
+  "pdfinfo": "Title:           第06课｜需求和架构（1）：让变化有地方可去\nCreator:         Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36\nProducer:        Skia/PDF m154\nCreationDate:    Fri Oct  2 23:31:05 2026 CST\nModDate:         Fri Oct  2 23:31:05 2026 CST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          yes\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           49\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       27705104 bytes\nOptimized:       no\nPDF version:     1.4\n",
+  "status": "passed"
+}

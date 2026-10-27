@@ -1,0 +1,575 @@
+{
+  "materials": [
+    {
+      "id": "gse08-deepseek-harness-repository",
+      "listed_title": "DeepSeek Harness 原始仓库（课堂结尾推荐）",
+      "title": "DeepSeek Harness: teaching mechanisms source reading",
+      "listed_url": "https://github.com/deepseek-ai/deepseek-harness",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness/tree/687f282e8625c6b8d11ff58211a90524be2e4317",
+      "version": "687f282e8625c6b8d11ff58211a90524be2e4317 / commit2026-10-17 / read2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "explicit_recommendation",
+      "required": true,
+      "recommendation_evidence": {
+        "oral_end_seconds": [
+          5794,
+          5804
+        ],
+        "oral_evidence_owner": "parent full transcript review",
+        "actual_video_url_frame_seconds": 4230,
+        "actual_video_url_frame_path": "repository-url-at-70m30s.jpg"
+      },
+      "scope_reason": "课堂深入演示的双语配对、知识归属、Agent Notes、skills与文档门禁；不扩至所有产品代码",
+      "path": "lecture-08/sources/harness-20261019/read-scope-and-source-manifest.json",
+      "sha256": "263e96f3544aa35609db8b8e4a6909232707c52c7ecd1f1d47142ce31042eab9",
+      "scope_sections": [
+        "README.md lines [[1, 77]]",
+        "README.zh.md lines [[1, 96]]",
+        "README.i18n.yaml lines [[1, 34]]",
+        "AGENTS.md lines [[1, 185]]",
+        "docs/AGENTS.md lines [[1, 77]]",
+        "scripts/AGENTS.md lines [[1, 5]]",
+        "packages/AGENTS.md lines [[1, 29]]",
+        "docs/architecture.md lines [[1, 165]]",
+        "docs/i18n/README.md lines [[1, 69]]",
+        "docs/i18n/translation-rules.md lines [[1, 69]]",
+        "docs/i18n/style-samples.md lines [[1, 87]]",
+        "docs/i18n/terminology.md lines [[1, 215]]",
+        ".agents/notes/README.md lines [[1, 125]]",
+        ".agents/notes/AGENTS.md lines [[1, 7]]",
+        ".agents/notes/implemented/AGENTS.md lines [[1, 13]]",
+        ".agents/notes/archived/AGENTS.md lines [[1, 9]]",
+        ".agents/skills/dsh-doc/SKILL.md lines [[1, 132]]",
+        ".agents/skills/dsh-translate-docs/SKILL.md lines [[1, 74]]",
+        ".agents/skills/dsh-archive-agent-notes/SKILL.md lines [[1, 68]]",
+        ".agents/notes/implemented/process/2026-07-26-frozen-agent-note-archive.md lines [[1, 45]]",
+        "scripts/verify-md-links.ts lines [[1, 254]]",
+        "scripts/verify-type-equiv.ts lines [[1, 391]]",
+        "scripts/doc-typecheck.ts lines [[1, 252]]",
+        "scripts/translation-pairing-record.ts lines [[1, 299]]",
+        "scripts/translation-pairing.ts lines [[1, 419]]",
+        "scripts/verify-translation-pairing.ts lines [[1, 368]]",
+        "scripts/translation-pairing.manifest.json lines [[1, 13]]",
+        "scripts/verify-agent-note-format.ts lines [[1, 94]]",
+        "scripts/verify-agent-note-classification.ts lines [[1, 27]]",
+        "scripts/verify-archived-agent-notes.ts lines [[1, 115]]",
+        "scripts/archived-agent-notes.ts lines [[1, 204]]",
+        "scripts/agent-note-tree.ts lines [[1, 83]]",
+        "scripts/verify-doc-budgets.ts lines [[1, 58]]",
+        "scripts/doc-budgets.manifest.json lines [[1, 9]]",
+        "scripts/run-gates.ts lines [[1, 145], [255, 292], [340, 370], [800, 883], [1140, 1218], [1220, 1290]]",
+        "package.json lines [[85, 140], [185, 210]]",
+        "scripts/type-equiv.manifest.json lines [[1, 32]]"
+      ],
+      "read_sections": [
+        "README.md lines [[1, 77]]",
+        "README.zh.md lines [[1, 96]]",
+        "README.i18n.yaml lines [[1, 34]]",
+        "AGENTS.md lines [[1, 185]]",
+        "docs/AGENTS.md lines [[1, 77]]",
+        "scripts/AGENTS.md lines [[1, 5]]",
+        "packages/AGENTS.md lines [[1, 29]]",
+        "docs/architecture.md lines [[1, 165]]",
+        "docs/i18n/README.md lines [[1, 69]]",
+        "docs/i18n/translation-rules.md lines [[1, 69]]",
+        "docs/i18n/style-samples.md lines [[1, 87]]",
+        "docs/i18n/terminology.md lines [[1, 215]]",
+        ".agents/notes/README.md lines [[1, 125]]",
+        ".agents/notes/AGENTS.md lines [[1, 7]]",
+        ".agents/notes/implemented/AGENTS.md lines [[1, 13]]",
+        ".agents/notes/archived/AGENTS.md lines [[1, 9]]",
+        ".agents/skills/dsh-doc/SKILL.md lines [[1, 132]]",
+        ".agents/skills/dsh-translate-docs/SKILL.md lines [[1, 74]]",
+        ".agents/skills/dsh-archive-agent-notes/SKILL.md lines [[1, 68]]",
+        ".agents/notes/implemented/process/2026-07-26-frozen-agent-note-archive.md lines [[1, 45]]",
+        "scripts/verify-md-links.ts lines [[1, 254]]",
+        "scripts/verify-type-equiv.ts lines [[1, 391]]",
+        "scripts/doc-typecheck.ts lines [[1, 252]]",
+        "scripts/translation-pairing-record.ts lines [[1, 299]]",
+        "scripts/translation-pairing.ts lines [[1, 419]]",
+        "scripts/verify-translation-pairing.ts lines [[1, 368]]",
+        "scripts/translation-pairing.manifest.json lines [[1, 13]]",
+        "scripts/verify-agent-note-format.ts lines [[1, 94]]",
+        "scripts/verify-agent-note-classification.ts lines [[1, 27]]",
+        "scripts/verify-archived-agent-notes.ts lines [[1, 115]]",
+        "scripts/archived-agent-notes.ts lines [[1, 204]]",
+        "scripts/agent-note-tree.ts lines [[1, 83]]",
+        "scripts/verify-doc-budgets.ts lines [[1, 58]]",
+        "scripts/doc-budgets.manifest.json lines [[1, 9]]",
+        "scripts/run-gates.ts lines [[1, 145], [255, 292], [340, 370], [800, 883], [1140, 1218], [1220, 1290]]",
+        "package.json lines [[85, 140], [185, 210]]",
+        "scripts/type-equiv.manifest.json lines [[1, 32]]"
+      ],
+      "reading_status": "full",
+      "read_full_file_count": 34,
+      "read_partial_file_count": 3,
+      "known_gaps": [],
+      "proposed_supplement_path": "HANDOFF.md",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [],
+      "original_kind": "repository",
+      "identity_note": "仓库URL由视频4230秒确认；固定当前commit晚于录制，录制时commit未确定。",
+      "source_files": [
+        {
+          "path": "README.md",
+          "read_ranges": [
+            [
+              1,
+              77
+            ]
+          ],
+          "sha256": "0f5516be2acde776f05572cbc8c3093c90549afe04ce118e11157d073d5d15f4"
+        },
+        {
+          "path": "README.zh.md",
+          "read_ranges": [
+            [
+              1,
+              96
+            ]
+          ],
+          "sha256": "8f19db1b217e8ef30cf413b07056cc791048bc2ba2ec51ba104e383dcfb43c61"
+        },
+        {
+          "path": "README.i18n.yaml",
+          "read_ranges": [
+            [
+              1,
+              34
+            ]
+          ],
+          "sha256": "700422df48df27704707a6832b7ba7234f1f44c42494ceffb3b8ee2210f989af"
+        },
+        {
+          "path": "AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              185
+            ]
+          ],
+          "sha256": "1eea3932544766e8a4ccc2d88dcba14ad0a3bd4e28fa660f920b9183f63e7196"
+        },
+        {
+          "path": "docs/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              77
+            ]
+          ],
+          "sha256": "cc76a90dfbdcdbf1db71b83675744c1c4039d9ccca8f38ad58a96ab56521578d"
+        },
+        {
+          "path": "scripts/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              5
+            ]
+          ],
+          "sha256": "dc1d3dc9bdc599106ba183465a85c323bf9122e1f5199bb0e25e8fa525206ff9"
+        },
+        {
+          "path": "packages/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              29
+            ]
+          ],
+          "sha256": "9954e1827bcee42e0637a1328972317476bfed6b2f12a7042b0d4c197b521c67"
+        },
+        {
+          "path": "docs/architecture.md",
+          "read_ranges": [
+            [
+              1,
+              165
+            ]
+          ],
+          "sha256": "95a7722c7096d665d8adedeb733b8f5ad7740e67cb5c6e9dc91ec05f430cb760"
+        },
+        {
+          "path": "docs/i18n/README.md",
+          "read_ranges": [
+            [
+              1,
+              69
+            ]
+          ],
+          "sha256": "85f271cf30cf3710533e61d70879b8a428d813c8923bddbf68a4241d5f3a2b81"
+        },
+        {
+          "path": "docs/i18n/translation-rules.md",
+          "read_ranges": [
+            [
+              1,
+              69
+            ]
+          ],
+          "sha256": "4ce7dfea77c4a4bbab5f466820e3d8e471029ff024e22a90892eb451f8e01f48"
+        },
+        {
+          "path": "docs/i18n/style-samples.md",
+          "read_ranges": [
+            [
+              1,
+              87
+            ]
+          ],
+          "sha256": "d57b411b3da9795856cccda90b9cab226d8e63c0bb97703e0882d4a5e1a6760b"
+        },
+        {
+          "path": "docs/i18n/terminology.md",
+          "read_ranges": [
+            [
+              1,
+              215
+            ]
+          ],
+          "sha256": "b3e56d9b2c6c2cf2bcd6a48aa622b65cafc7755433490758d4346844c0ead4cc"
+        },
+        {
+          "path": ".agents/notes/README.md",
+          "read_ranges": [
+            [
+              1,
+              125
+            ]
+          ],
+          "sha256": "089a84df7751fa993630302cb0ea1bf3ac10bf3f4bcca70ee95e55208b071f37"
+        },
+        {
+          "path": ".agents/notes/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              7
+            ]
+          ],
+          "sha256": "1c1b4a6d771ed1a7b0e4fd83776dd0cfb0567f4e89f2c7b3bc8b61b73e9a01d2"
+        },
+        {
+          "path": ".agents/notes/implemented/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              13
+            ]
+          ],
+          "sha256": "d01c6586ab5f807ccdda2e6ec30185416356b13d1f2fddb40d05cdac6d35189c"
+        },
+        {
+          "path": ".agents/notes/archived/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              9
+            ]
+          ],
+          "sha256": "63d728ce615c3a8109f0467a32525ca00c4c553e76a532fe90f13642e6986b34"
+        },
+        {
+          "path": ".agents/skills/dsh-doc/SKILL.md",
+          "read_ranges": [
+            [
+              1,
+              132
+            ]
+          ],
+          "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de"
+        },
+        {
+          "path": ".agents/skills/dsh-translate-docs/SKILL.md",
+          "read_ranges": [
+            [
+              1,
+              74
+            ]
+          ],
+          "sha256": "a72d26e988a6f9be29a09d6776bda0539ead49c42a447d327636fe4de0da83e7"
+        },
+        {
+          "path": ".agents/skills/dsh-archive-agent-notes/SKILL.md",
+          "read_ranges": [
+            [
+              1,
+              68
+            ]
+          ],
+          "sha256": "298e95629ade953ba5e0e4fd4c50e5205389ac6adc5d55dea1ef26617a323f84"
+        },
+        {
+          "path": ".agents/notes/implemented/process/2026-07-26-frozen-agent-note-archive.md",
+          "read_ranges": [
+            [
+              1,
+              45
+            ]
+          ],
+          "sha256": "34712f1c14fcec7504c292f89d9728049e79fa8c27aace0d821e66a3beaebddf"
+        },
+        {
+          "path": "scripts/verify-md-links.ts",
+          "read_ranges": [
+            [
+              1,
+              254
+            ]
+          ],
+          "sha256": "b1b6e1fefcd9321fa4c2b09bcedaf1acc58928495e2c38f5f4b1e261afea3809"
+        },
+        {
+          "path": "scripts/verify-type-equiv.ts",
+          "read_ranges": [
+            [
+              1,
+              391
+            ]
+          ],
+          "sha256": "770a2a11e9de003352136e2ab9cecf58e85ac11af2c2a59e9b8f44f32428040a"
+        },
+        {
+          "path": "scripts/doc-typecheck.ts",
+          "read_ranges": [
+            [
+              1,
+              252
+            ]
+          ],
+          "sha256": "c0cb2e255fa8950d5dfe571d5e34552ad61ad8756d75615364e4d8f6324b3db9"
+        },
+        {
+          "path": "scripts/translation-pairing-record.ts",
+          "read_ranges": [
+            [
+              1,
+              299
+            ]
+          ],
+          "sha256": "c9f4d4ebb35e87b264c09604d33c6fe789bfadc0b03f932cf05f74bcce89dca8"
+        },
+        {
+          "path": "scripts/translation-pairing.ts",
+          "read_ranges": [
+            [
+              1,
+              419
+            ]
+          ],
+          "sha256": "30d75155b43208ebc089fed9632336dfc3d24526916654e3c4e9ad1f72c95d4b"
+        },
+        {
+          "path": "scripts/verify-translation-pairing.ts",
+          "read_ranges": [
+            [
+              1,
+              368
+            ]
+          ],
+          "sha256": "2f555134b09c87443967d263ca7316299a8495d76780ee4b54a86c79feecde01"
+        },
+        {
+          "path": "scripts/translation-pairing.manifest.json",
+          "read_ranges": [
+            [
+              1,
+              13
+            ]
+          ],
+          "sha256": "9944a604474c609318ec2793512661aa0dfc67f124d6789df4f285e8c5910153"
+        },
+        {
+          "path": "scripts/verify-agent-note-format.ts",
+          "read_ranges": [
+            [
+              1,
+              94
+            ]
+          ],
+          "sha256": "055a2db5d15d7dfd59bb6b2b09795348c59e707f3d33bcb31cf5afb4a8d586fa"
+        },
+        {
+          "path": "scripts/verify-agent-note-classification.ts",
+          "read_ranges": [
+            [
+              1,
+              27
+            ]
+          ],
+          "sha256": "828a39ae61536d5986a421e07e20e7e51d81ad4fd8358c0339dae39dbe256903"
+        },
+        {
+          "path": "scripts/verify-archived-agent-notes.ts",
+          "read_ranges": [
+            [
+              1,
+              115
+            ]
+          ],
+          "sha256": "d9d051c957d1ee33604265a69ed71e01dea8db865dc68de3c28e9ed8f387df4e"
+        },
+        {
+          "path": "scripts/archived-agent-notes.ts",
+          "read_ranges": [
+            [
+              1,
+              204
+            ]
+          ],
+          "sha256": "f7e8e314e83b0baaeb6ffee319d20139506a78537389a9f1d6810d20ca1967ed"
+        },
+        {
+          "path": "scripts/agent-note-tree.ts",
+          "read_ranges": [
+            [
+              1,
+              83
+            ]
+          ],
+          "sha256": "a10e1c12568a4afefaa09db92651163dae309cd4e1d054db16b18806b3fab40a"
+        },
+        {
+          "path": "scripts/verify-doc-budgets.ts",
+          "read_ranges": [
+            [
+              1,
+              58
+            ]
+          ],
+          "sha256": "0ec5c8fb92f88c504ec4c0fb2d65c9427597250f2a41d9e5e645915f968ace2c"
+        },
+        {
+          "path": "scripts/doc-budgets.manifest.json",
+          "read_ranges": [
+            [
+              1,
+              9
+            ]
+          ],
+          "sha256": "d04affb1a4faea04c8d169755f76d043b77d8899838016925d671132696e7258"
+        },
+        {
+          "path": "scripts/run-gates.ts",
+          "read_ranges": [
+            [
+              1,
+              145
+            ],
+            [
+              255,
+              292
+            ],
+            [
+              340,
+              370
+            ],
+            [
+              800,
+              883
+            ],
+            [
+              1140,
+              1218
+            ],
+            [
+              1220,
+              1290
+            ]
+          ],
+          "sha256": "44c15c4cf4fec1e9cae78b15526f6c4e67839ab341268785babdfddf87f61a73"
+        },
+        {
+          "path": "package.json",
+          "read_ranges": [
+            [
+              85,
+              140
+            ],
+            [
+              185,
+              210
+            ]
+          ],
+          "sha256": "12bb41cd8212021a784b33a20c2b84372189a9505b42081d5e3869e21ff5cffc"
+        },
+        {
+          "path": "scripts/type-equiv.manifest.json",
+          "read_ranges": [
+            [
+              1,
+              32
+            ]
+          ],
+          "sha256": "7fcaafbfc748500bd111c8bb877a4535e254582c3f58f5078a8d043f6de1902e"
+        }
+      ],
+      "scope_limitations": [
+        "Whole product source and runtime behavior",
+        "Recorded checkout commit and historical working tree",
+        "Full type-equiv.manifest catalog (only schema/comment and initial sample entries read)",
+        "run-gates scheduler complete implementation and CI branch-protection settings",
+        "Referenced skill subsidiary templates/references and unrelated skill entrypoints",
+        "Translation prompt renderer and extended briefing implementation",
+        "External style-guide bodies and product paper",
+        "Execution of doc-sync, typecheck, pairing or any repository tests"
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    }
+  ],
+  "supplements": [
+    {
+      "section_key": "bilingual",
+      "title": "三件套把“需要重新确认”变成可检测状态，不能替代翻译审查",
+      "text": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] 当前配对由同目录 `foo.md`、`foo.zh.md` 和 `foo.i18n.yaml` 组成；中英文同等权威，可从任意一侧发起修改。当前 sidecar 按英文标题路径划分，分别记录每节两侧文本的 hash；脚本采用 SHA-256 的前 16 个十六进制字符。围栏代码和生成区另做一致性检查，不计入这份分节 hash。不同章节的改动因此能改变不同记录行，减少无关合并冲突。\n\n绿色的准确含义是：这些内容被记录为已确认一致，结构也符合约束；它不证明确认者判断正确。 脚本没有翻译语义模型。把意思错误的译文重录 sidecar，仍可能通过机械门禁。因此术语、条件、否定、例外、警告及是否增删含义依然要逐条审查。`--write <pair>` 是明确确认指定配对的动作；无参数 `--write` 被拒绝，以免悄悄认可其他未读文件。`--list` 只是清单，退出 0 也可能列出 missing/out-of-sync，不能当验收通过。\n\n出处：`docs/i18n/README.md` 全文，尤其 7–44；`scripts/translation-pairing-record.ts` 144–232、275–299；`scripts/translation-pairing.ts` 233–287；`scripts/verify-translation-pairing.ts` 全文。样本 `README.md` / `README.zh.md` / `README.i18n.yaml` 已分别全文阅读。",
+      "source_label": "当前原始仓库补充；34文件全文、3文件明确范围，只读静态核验，未执行门禁",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness/tree/687f282e8625c6b8d11ff58211a90524be2e4317"
+    },
+    {
+      "section_key": "translation",
+      "title": "文风样例、术语表与现行算法各有权威范围",
+      "text": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] `translation-rules.md` 要求完整保留原文的命题和约束，同时用自然中文/英文表达；术语表规定正文译法、首次出现形式、禁用译法以及概念边界。例：capability 与 feature 分别译“能力”“功能”，Agent Note 保持英文作为特定文档类型，seam 也不随意译作“接缝”。`style-samples.md` 用架构叙述、测试政策、机制、决策等七类双语样例校准写法，而不是列一组抽象“写得自然”的口号。\n\n实读发现一个版本陷阱：当前 `style-samples.md` 53–69 的机制/政策样例仍讲整文件 Git blob hash 与 `git cat-file`，而当前配对合同及实现已经使用分节 hash。 应将它当文风样例，不应照抄为当前配对算法。当前 Agent Notes 的 frozen archive 检查确实仍保留整文件 Git blob hash sidecar，并另用 SHA-256 封存每个文件；这是独立档案机制，不能与活动文档算法混成一种。\n\n出处：`docs/i18n/translation-rules.md`、`terminology.md`、`style-samples.md` 全文；`scripts/translation-pairing-record.ts` 176–232；`scripts/archived-agent-notes.ts` 全文。不要仅因文件位于官方仓库就断言其每个例子都描述现行实现。",
+      "source_label": "当前原始仓库补充；34文件全文、3文件明确范围，只读静态核验，未执行门禁",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness/tree/687f282e8625c6b8d11ff58211a90524be2e4317"
+    },
+    {
+      "section_key": "inventory",
+      "title": "AGENTS 的层级是在分配知识归属与读取成本",
+      "text": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] 根 `AGENTS.md` 放共同约束，`docs/AGENTS.md` 放文档规则，`packages/AGENTS.md` 放包目录规则，Agent Notes 子树再加生命周期规则。文档标准明确“一种事实一个归属”：架构页讲组合结构，子系统/包参考讲可使用的契约，Agent Notes 留下为什么这么选、放弃什么、要怎么验证，skill 保存复用工作流。它不要求所有事实都塞进一个根提示文件。\n\n字数门禁只计 manifest 指定的常驻文档，超过预算要先搬到合适的归属，再压缩；确实需要扩预算时要解释。检查实现是按空白分隔的 `wc -w` 风格计数，不应写成 token 预算或整个仓库总字数限制。根规则还要求把能机械检查的不变量接到实际执行的顶层门禁，并用非法样本证明拒绝路径，而不只写“请遵守”。\n\n出处：`AGENTS.md` 129–181；`docs/AGENTS.md` 15–59；`packages/AGENTS.md`；`scripts/verify-doc-budgets.ts` 与 `doc-budgets.manifest.json`。当前具体预算会变；不沿用视频旧数字作为现行事实。",
+      "source_label": "当前原始仓库补充；34文件全文、3文件明确范围，只读静态核验，未执行门禁",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness/tree/687f282e8625c6b8d11ff58211a90524be2e4317"
+    },
+    {
+      "section_key": "inventory",
+      "title": "Agent Notes 是有生命周期的决策记忆，不是聊天记录",
+      "text": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] 当前活动路径是 `{proposed|implemented|rejected}/{feature|bug-fix|simplification|architecture|process|testing}/日期-题目.md`。proposed 写问题、方案、备选、验收与风险；implemented 写已交付决策及后果；rejected 在状态行给出拒绝理由。格式脚本核对路径与状态、必需标题，且拒绝 implemented 中残留 Proposal/Plan/Migration plan/Acceptance criteria 等计划标题。中文对应侧保持 machine tokens，格式门禁跳过 `.zh.md`，其结构一致性由配对门禁负责。\n\nimplemented 要随代码变化更新路径、符号、默认值等实现事实；若决策反转，应新建决策记录并互链，不能把旧文件改成相反结论。是否归档以未来决策价值判断，不能按年龄或字数一刀切。完整被替代且理由已被新归属吸收可按规则合并；仍有兼容性、安全、负面保证或重引入条件的记录继续活动。归档仅适用于已实现的记录，保留历史价值而冻结内容；归档后的外链可以过时，不能当当前行为权威。归档检查用独立封存清单阻止历史静默变更。\n\n出处：`.agents/notes/README.md` 全文；该子树三个 `AGENTS.md`；`agent-note-tree.ts`、`verify-agent-note-format.ts`、`verify-agent-note-classification.ts`、`verify-archived-agent-notes.ts`、`archived-agent-notes.ts`；归档政策 Agent Note 与 `dsh-archive-agent-notes/SKILL.md` 全文。脚本可核对格式与封存，不能判断替代理由是否充分。",
+      "source_label": "当前原始仓库补充；34文件全文、3文件明确范围，只读静态核验，未执行门禁",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness/tree/687f282e8625c6b8d11ff58211a90524be2e4317"
+    },
+    {
+      "section_key": "review-gates",
+      "title": "类型文档有两种不同检查，不能合称“证明文档正确”",
+      "text": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] 普通 `ts` 文档代码块由 `doc-typecheck` 作为 TypeScript 示例编译，检查其能否使用当前 workspace API。`ts ignore-check` 是显式豁免；当 eligible 示例至少 4 个且超过一半豁免，脚本会失败。生成目录及 source-equivalence fence 由其他门禁负责。\n\n`verify-type-equiv` 则处理标记为 `ts type-equiv` / `ts public-api` 的复制声明，通过 manifest 的 doc + symbol + projection 找源码。它要求文档块和 manifest 一一对应，拒绝孤立块、孤立条目、重复映射或声明漂移。对比忽略空白与非 JSDoc 注释，但保留声明结构及原始 JSDoc；public-api 投影移除方法体、属性初值、private/protected 等，保留公开签名和文档。显式列出的 interface augmentation 也可合并比对。\n\n检查覆盖的是已标注/已登记的声明，不证明新增类型一定写了文档，更不证明自然语言解释、实现行为或示例运行效果正确。 当前 docs/AGENTS 本身明确说它抓得到已复制内容漂移，抓不到从未被文档记录的新类型。\n\n出处：`docs/AGENTS.md` 43–44；`scripts/verify-type-equiv.ts` 全文；`scripts/doc-typecheck.ts` 全文；`type-equiv.manifest.json` 仅阅读注释/schema 与首批映射例子（1–32），未逐条读整个 catalog。",
+      "source_label": "当前原始仓库补充；34文件全文、3文件明确范围，只读静态核验，未执行门禁",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness/tree/687f282e8625c6b8d11ff58211a90524be2e4317"
+    },
+    {
+      "section_key": "review-gates",
+      "title": "Markdown 链接门禁具体查什么",
+      "text": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] `verify-md-links` 在选定 Markdown 范围解析链接、图片与 definition，检查相对目标是否存在；目标是 Markdown 时，还检查 `#fragment` 是否对应标题 slug 或实际 HTML `<a id>`。同页锚点也检查，代码样例和注释里的伪锚点不算。\n\n它明确跳过带 URL scheme 的外部链接、协议相对链接、根绝对路径；非 Markdown 文件的片段（如代码 `#L10`）也不验证。档案文件不作为外链扫描源，但活动文档指向档案仍可检查。所以准确表述是“防止本地文档相对引用断裂”，不能说“自动验证了网上每个链接和内容”。\n\n出处：`scripts/verify-md-links.ts` 全文。双语的语义目标及 locale 一致性另由配对门禁负责；它和目标存在性检查是不同工作。",
+      "source_label": "当前原始仓库补充；34文件全文、3文件明确范围，只读静态核验，未执行门禁",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness/tree/687f282e8625c6b8d11ff58211a90524be2e4317"
+    },
+    {
+      "section_key": "review-gates",
+      "title": "doc-sync 是接线后的检查集合，skill 是可重用操作规范",
+      "text": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] 已核对 `package.json` 到 `scripts/run-gates.ts` 的静态接线：`doc-sync` 分派到 `docSyncLeafGates()`，列出 doc-typecheck、type-equivalence、markdown-links、translation-pairing、Agent Note 分类/格式/档案检查、文档预算、网站构建、生成目录新鲜度等。`test:docs` 只取 quick 标记子集，明确排除 build 与 doc-typecheck 等重检查；不能用 quick 成功代替完整 doc-sync。聚合入口对阻断检查失败或 skipped 返回非零。这里验证的是源码接线，不是本次真实跑绿或远端必需状态检查已启用。\n\n`dsh-doc` 定义读者起点、可观察结果、失败与恢复、知识归属、同次更新双语和证据流程；要求运行所描述的实际操作才可以写操作结论。`dsh-archive-agent-notes` 定义逐项保留/归档/删除的判断和完整 triplet 迁移流程。当前日常翻译是术语引导的一次直接更新；`dsh-translate-docs` 的 briefing、委派与双遍审校仅供用户显式调用。不要因为看到该 skill 文件，就把重流程写成每次翻译必经步骤。本次只是把这些 skill 当研究材料阅读，没有按它们发起执行、委派或仓库改动。\n\n出处：`package.json` 104–139、198；`run-gates.ts` 103–139、359–362、805–883；三个 skill 入口全文。",
+      "source_label": "当前原始仓库补充；34文件全文、3文件明确范围，只读静态核验，未执行门禁",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness/tree/687f282e8625c6b8d11ff58211a90524be2e4317"
+    }
+  ]
+}

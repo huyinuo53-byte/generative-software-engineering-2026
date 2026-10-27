@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10",
+    "node_id": "C_kwDOQ_aGvtoAKGViNGRiMmI1NWIyYjdkZWMzZDkyODI3NTRjZGRmMGE1NmJmNGZmMTA",
+    "commit": {
+      "author": {
+        "name": "lauren",
+        "email": "poteto@users.noreply.github.com",
+        "date": "2026-10-22T06:08:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-10-22T06:08:55Z"
+      },
+      "message": "feat(pstack): add the statechart skill to draw TLA+ models as charts (#741)\n\n* Add the statechart skill to pstack\n\nDraws what a user sees as a Mermaid statechart generated from a TLA+\nmodel. TLC checks the reader's rules as invariants. Each state is marked\nworks, still wrong, or fixed by an open change, and each counterexample\nclass is drawn as a numbered path. The skill also turns an agreed chart\ninto a TLA+ skeleton and compares the drawn chart with the agreed one.\n\nBumps pstack to 0.15.30 and regenerates the Claude Code harness tree.\n\n* Fix the review findings in the statechart skill\n\n- Check each rule in its own TLC run. The generated cfg names no rule,\n  and a comment in it lists the rules.\n- Refuse TLC output from a run that failed or stopped early, and read\n  counterexamples that a start state breaks.\n- Count steps that change nothing when a state is settled, number bugs\n  that only the fixed model has after the current bugs, and escape\n  quotes in captions.\n- Compare parallel regions as one machine, and refuse charts that were\n  not drawn for comparison.\n- Refuse final states and duplicate captions, read class shorthand and\n  states first named inside a composite, and match a never line to an\n  exact state.\n- Rewrite SKILL.md to match, and run the skill script tests in CI.\n\n* Refuse a -- outside a composite in statechart charts\n\nA -- at the top level of a chart opened a second root part that the\nparser never read, so every region after it was dropped. chart-to-tla\nwrote a one-region skeleton, and compare-charts could print \"same\".\nparseMermaid now refuses the chart. A unit test covers parseMermaid,\nchart-to-tla, and compare-charts.\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n* Exit 2 when compare-charts cannot read a chart\n\ncompare-charts let a read or parse error escape, so a chart it could\nnot read exited 1, the code for charts that differ. It now prints the\nfile and the reason to stderr and exits 2, as SKILL.md says for a\nrefused chart. Exit 1 now means only that the charts differ.\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n* Update the statechart skill to its current version\n\nReplace the skill, its scripts, and its tests with the current version.\nstatechart.mjs runs the whole flow with from-spec and from-chart, and its\n--help replaces the old Setup section. New features are a code-against-spec\naudit (--against), nested state boxes, parallel regions, guards, scoped\ncharts, timer labels, and legend groups and colors chosen in the mapping.\n\nTLC comes from TLA2TOOLS and JAVA only. Without TLA2TOOLS, the scripts point\nto the TLA+ releases page and exit 2.\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n* Exit 2 when --png cannot render a chart\n\nA failed mermaid-cli render printed \"could not render\" but still exited 0,\nor 0 with --expect-broken, so callers reported PNGs that did not exist.\nfinish() now exits 2 whenever --png renders fewer PNGs than charts, and\nkeeps the files it wrote. The --help exit codes say so, and a new test\ncovers it with an npx that cannot launch a browser.\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n* Update the statechart skill to its latest version\n\nRendered charts keep their full width. An edge label writes the opening\nwords that its choices share once, instead of cutting the label with \"…\".\n--full-labels replaces --all-labels, and compare-charts refuses a chart\ndrawn without it.\n\nThe fix replay matches each bug step by the screens and step words that\nthe reader sees, and two states get at most one arrow. Each rule also runs\nas a TLC CONSTRAINT, so a rule that stays broken stops at its first bad\nstate instead of flooding TLC with counterexamples.\n\nstatechart.mjs passes its arguments and models through functions instead\nof module globals. The --png exit code from the previous commit is now\npart of the source.\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n* Update the statechart skill: safe output folder, its TLA+ model, and the comment and assignment cleanups\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n* Drop a comment in the public findTlc that only describes the code\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n---------\n\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
+      "tree": {
+        "sha": "5ce75826c51b71580bd32e90a977c2d8ea96badc",
+        "url": "https://api.github.com/repos/cursor/plugins/git/trees/5ce75826c51b71580bd32e90a977c2d8ea96badc"
+      },
+      "url": "https://api.github.com/repos/cursor/plugins/git/commits/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJq2ah3CRC1aQ7uu5UhlAAA1L0QAGEvfFQ6XQj4+dUq1twpHYcb\n+CoZhMNLcugmfoxAa/00xmFpsKodiz3MMhA7Dy9Z/CCIGsb1ku1Mwy4CXKHrH3uq\nyrSUM+cfSYtsLEk2UzDXtmHPKJqIWFdVevVwWh9BTCg35PBbYzW+PbZJDPRUEqR3\nHWqFrvEFBmgqENCoFeXEWGHOnheAd6F5QQ5446NV+2NJ3v6AZTqG+KgDHzoIhkv6\nibTIa1lNzj7yk2fG+1Lld3WP76hQYzFG2rLUO3xsZPzk7gf7q2mWQFWw5cJbWy/O\nDIbawCCi/9wBg3TT0GaKd/n1NMUfvmfRPsp+arxT26KzU1+2zIZGXZaWu2+u2g63\nVG4bj6vSXGpP5cgHJpG3dBP091B6DQJUJlgsxzutWBvg7+lUiGXN+ntzmKZmgJRr\nNfg2Qis0sAOIhVxWN0HFBsH5ZjBNG54aJAalVSn7t1l/kMbTprmc8yQjQtSO0G93\nWW55UCAXZbY/5pNBc3pyiRdYcDkWXgkNnkdA9AVqE5My1V7iFcCvHo8O7oYSmPHp\nSdVc4IMeYGjCblEnvzdOQE61P+6J2oKbBhY7uPwofa/LhcZuy70M/oL/u3ri9pF8\ntmbOTuYNvqrOnBnXJ4WHlHu5sYqXzE4A6qTe3YMyfS+1K41Tp2WfhhY63L7MdHmq\nIfezNjPa3vhCAWchBPia\n=BeEP\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5ce75826c51b71580bd32e90a977c2d8ea96badc\nparent d1453c11d1dde9714d4c313c97d3a68432265c7f\nauthor lauren <poteto@users.noreply.github.com> 1792649335 -0700\ncommitter GitHub <noreply@github.com> 1792649335 -0700\n\nfeat(pstack): add the statechart skill to draw TLA+ models as charts (#741)\n\n* Add the statechart skill to pstack\n\nDraws what a user sees as a Mermaid statechart generated from a TLA+\nmodel. TLC checks the reader's rules as invariants. Each state is marked\nworks, still wrong, or fixed by an open change, and each counterexample\nclass is drawn as a numbered path. The skill also turns an agreed chart\ninto a TLA+ skeleton and compares the drawn chart with the agreed one.\n\nBumps pstack to 0.15.30 and regenerates the Claude Code harness tree.\n\n* Fix the review findings in the statechart skill\n\n- Check each rule in its own TLC run. The generated cfg names no rule,\n  and a comment in it lists the rules.\n- Refuse TLC output from a run that failed or stopped early, and read\n  counterexamples that a start state breaks.\n- Count steps that change nothing when a state is settled, number bugs\n  that only the fixed model has after the current bugs, and escape\n  quotes in captions.\n- Compare parallel regions as one machine, and refuse charts that were\n  not drawn for comparison.\n- Refuse final states and duplicate captions, read class shorthand and\n  states first named inside a composite, and match a never line to an\n  exact state.\n- Rewrite SKILL.md to match, and run the skill script tests in CI.\n\n* Refuse a -- outside a composite in statechart charts\n\nA -- at the top level of a chart opened a second root part that the\nparser never read, so every region after it was dropped. chart-to-tla\nwrote a one-region skeleton, and compare-charts could print \"same\".\nparseMermaid now refuses the chart. A unit test covers parseMermaid,\nchart-to-tla, and compare-charts.\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n* Exit 2 when compare-charts cannot read a chart\n\ncompare-charts let a read or parse error escape, so a chart it could\nnot read exited 1, the code for charts that differ. It now prints the\nfile and the reason to stderr and exits 2, as SKILL.md says for a\nrefused chart. Exit 1 now means only that the charts differ.\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n* Update the statechart skill to its current version\n\nReplace the skill, its scripts, and its tests with the current version.\nstatechart.mjs runs the whole flow with from-spec and from-chart, and its\n--help replaces the old Setup section. New features are a code-against-spec\naudit (--against), nested state boxes, parallel regions, guards, scoped\ncharts, timer labels, and legend groups and colors chosen in the mapping.\n\nTLC comes from TLA2TOOLS and JAVA only. Without TLA2TOOLS, the scripts point\nto the TLA+ releases page and exit 2.\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n* Exit 2 when --png cannot render a chart\n\nA failed mermaid-cli render printed \"could not render\" but still exited 0,\nor 0 with --expect-broken, so callers reported PNGs that did not exist.\nfinish() now exits 2 whenever --png renders fewer PNGs than charts, and\nkeeps the files it wrote. The --help exit codes say so, and a new test\ncovers it with an npx that cannot launch a browser.\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n* Update the statechart skill to its latest version\n\nRendered charts keep their full width. An edge label writes the opening\nwords that its choices share once, instead of cutting the label with \"…\".\n--full-labels replaces --all-labels, and compare-charts refuses a chart\ndrawn without it.\n\nThe fix replay matches each bug step by the screens and step words that\nthe reader sees, and two states get at most one arrow. Each rule also runs\nas a TLC CONSTRAINT, so a rule that stays broken stops at its first bad\nstate instead of flooding TLC with counterexamples.\n\nstatechart.mjs passes its arguments and models through functions instead\nof module globals. The --png exit code from the previous commit is now\npart of the source.\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n* Update the statechart skill: safe output folder, its TLA+ model, and the comment and assignment cleanups\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n* Drop a comment in the public findTlc that only describes the code\n\nCo-authored-by: lauren <poteto@users.noreply.github.com>\n\n---------\n\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
+        "verified_at": "2026-10-22T06:08:56Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cursor/plugins/commits/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10",
+    "html_url": "https://github.com/cursor/plugins/commit/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10",
+    "comments_url": "https://api.github.com/repos/cursor/plugins/commits/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/comments",
+    "author": {
+      "login": "poteto",
+      "id": 1390709,
+      "node_id": "MDQ6VXNlcjEzOTA3MDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1390709?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/poteto",
+      "html_url": "https://github.com/poteto",
+      "followers_url": "https://api.github.com/users/poteto/followers",
+      "following_url": "https://api.github.com/users/poteto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/poteto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/poteto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/poteto/subscriptions",
+      "organizations_url": "https://api.github.com/users/poteto/orgs",
+      "repos_url": "https://api.github.com/users/poteto/repos",
+      "events_url": "https://api.github.com/users/poteto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/poteto/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d1453c11d1dde9714d4c313c97d3a68432265c7f",
+        "url": "https://api.github.com/repos/cursor/plugins/commits/d1453c11d1dde9714d4c313c97d3a68432265c7f",
+        "html_url": "https://github.com/cursor/plugins/commit/d1453c11d1dde9714d4c313c97d3a68432265c7f"
+      }
+    ]
+  }
+]

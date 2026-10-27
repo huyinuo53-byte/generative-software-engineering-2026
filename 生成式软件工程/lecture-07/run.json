@@ -1,0 +1,55 @@
+{
+  "run_id": "BV1JGap6LE74-20261002",
+  "batch_id": "GSE-20261002",
+  "item_id": "lecture-07",
+  "scope_revision": 1,
+  "scope_changes": [],
+  "video_id": "BV1JGap6LE74",
+  "source_url": "https://www.bilibili.com/video/BV1JGap6LE74/",
+  "requested_outputs": [
+    "per-video detailed mobile-readable offline HTML",
+    "notes.json",
+    "quality review"
+  ],
+  "required_checks": [
+    "content",
+    "image",
+    "html_static",
+    "desktop",
+    "narrow"
+  ],
+  "sources": [
+    {
+      "id": "transcript",
+      "path": "transcript.json",
+      "kind": "BaoCut original export",
+      "transcript_origin": "reused",
+      "reuse_reason": "已有转写done，媒体hash匹配，首尾覆盖",
+      "project": "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1JGap6LE74.bcut",
+      "known_gaps": [
+        "ASR stale原因未确认，未逐秒听审"
+      ]
+    },
+    {
+      "id": "slides",
+      "path": "sources/slides7.html",
+      "kind": "official webpage",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+      "pages": 39
+    },
+    {
+      "id": "lecture",
+      "path": "sources/lect7.md",
+      "kind": "official article served as HTML",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect7.md"
+    }
+  ],
+  "toolchain": {
+    "cli": "/Users/yjzhao/Downloads/BaoCut.app/Contents/Resources/skills/baocut/bin/bcut-cli",
+    "app": "2.1.0 (coordinator preflight)",
+    "spec": "1.249 (coordinator preflight)",
+    "transcription_engine": "moss-transcribe-diarize",
+    "model": null
+  },
+  "created_at": "2026-10-02T15:13:06.803263+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "callId": "c0010",
+  "kind": "polish",
+  "seq": 10,
+  "attempt": 1,
+  "chars": 3405,
+  "estimatedCost": 3405,
+  "protocolVersion": "file-v1",
+  "contract": "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1JGap6LE74.bcut/tasks/t-muoadlp9/contracts/polish.md",
+  "payload": "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1JGap6LE74.bcut/tasks/t-muoadlp9/payloads/c0010.txt",
+  "createdAtMs": 1790783959853
+}

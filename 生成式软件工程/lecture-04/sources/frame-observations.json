@@ -1,0 +1,38 @@
+[
+  {
+    "time": 4320,
+    "title": "Pico Playground 汉诺塔代码与交互回放",
+    "observed": "左侧代码 next_of 将 A→B、B→C、C→A；右侧三塔、回放控制、调用轨迹。仅确认画面展示，不主张本机验证该算法。",
+    "path": "frames/demo-4320.png"
+  },
+  {
+    "time": 5460,
+    "title": "个人助手 demo 与 Git 初始化缺失",
+    "observed": "左侧端到端 demo 日志显示邮件 sent 与 eHall receipt，但后来5520明确说明外部系统数据为替身；右侧 git status 报 not a git repository，说明这次生成尚未初始化版本历史。日志不能证明真实发信或真实办事完成。",
+    "path": "frames/demo-5460.png"
+  },
+  {
+    "time": 5520,
+    "title": "demo 与 live 边界、分层架构",
+    "observed": "模型自报流水线和防护是真的，外部系统 demo 数据是替身；缺真实邮箱授权与统一身份认证账号。真实适配器代码存在但未验证最后一公里。结构图分传输层 fixture/http/imap、核心层确认状态机/DB/任务/审计、Markdown资料与SQLite状态。不要把模型自报等同测试结论。",
+    "path": "frames/demo-5520.png"
+  },
+  {
+    "time": 5760,
+    "title": "模型给出的确认执行与幂等设计",
+    "observed": "单一 executeConfirmation，pending→approved→executed，markExecuted 附 WHERE status=approved；确认时冻结主题/收件人/正文或表单字段；Message-ID、uidvalidity/last_uid、idempotency_key、workflow_runs(message_id)去重。风险low/medium/high，high自动降为需确认；后台tasks队列、PWA bearer token+SSE。属于屏幕所示模型方案，未审计实现。",
+    "path": "frames/demo-5760.png"
+  },
+  {
+    "time": 5820,
+    "title": "云同步数据分类表",
+    "observed": "模型原则：云盘同步记录，SQLite每台设备从记录派生本地缓存。Markdown个人资料双向；邮件eml单向IMAP→云，Message-ID命名；索引可重建不同步；草稿/确认/任务/审计只镜像只读；IMAP游标设备本地；secrets.json不上云。属于方案建议，未证明云同步实现。",
+    "path": "frames/demo-5820.png"
+  },
+  {
+    "time": 5880,
+    "title": "云盘实现取舍",
+    "observed": "共享月度append notices在两台设备同时写会冲突，建议一事一文件，以confirmationId命名；多设备写权限可单写者租约/心跳或按deviceId分片。挂载目录改动最少但云盘自己解决副本；WebDAV可精确三方比对；网盘API无稳定etag时冲突检测困难，倾向单向备份。属于模型设计对话，未运行验证。",
+    "path": "frames/demo-5880.png"
+  }
+]

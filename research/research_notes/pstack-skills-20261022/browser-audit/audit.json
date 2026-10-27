@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "file": "/Users/yjzhao/Documents/ChatGPT/learning-machine/research/reports/pstack Skills 写法与生成式软件工程启发.html",
+  "html_sha256": "052703342c63f081b7eb0bef98920a01cf9f7d02299d8f2d624232e7d275afc8",
+  "auditor_sha256": "2168ef6afa247f3c4dbb548961373c2cf931f578be1bc6865fa2f12fe22e3828",
+  "profile": "generic",
+  "dependencies": {
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/research/reports/pstack Skills 写法与生成式软件工程启发.html": "052703342c63f081b7eb0bef98920a01cf9f7d02299d8f2d624232e7d275afc8"
+  },
+  "viewports": [
+    {
+      "width": 1280,
+      "viewportWidth": 1280,
+      "scrollWidth": 1280,
+      "title": "pstack Skills 写法与生成式软件工程启发",
+      "images": 0,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "brokenAnchors": [],
+      "interactions": {
+        "navigation": "PASS",
+        "details": "PASS",
+        "comparison": "NOT_APPLICABLE",
+        "zoom": "NOT_APPLICABLE"
+      },
+      "errors": [],
+      "screenshot": {
+        "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/research/research_notes/pstack-skills-20261022/browser-audit/1280-top.png",
+        "sha256": "6b4595f92d289109cf0340e8030ed55fc923fc538fd49e2b16eeae0c28afb878"
+      }
+    },
+    {
+      "width": 390,
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "title": "pstack Skills 写法与生成式软件工程启发",
+      "images": 0,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "brokenAnchors": [],
+      "interactions": {
+        "navigation": "PASS",
+        "details": "PASS",
+        "comparison": "NOT_APPLICABLE",
+        "zoom": "NOT_APPLICABLE"
+      },
+      "errors": [],
+      "screenshot": {
+        "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/research/research_notes/pstack-skills-20261022/browser-audit/390-top.png",
+        "sha256": "bad4ab2baec290df1d4837b050ed08bfa5aa1049b8ba7a4a558b4821ac97302d"
+      }
+    }
+  ],
+  "reused_viewports": [],
+  "status": "PASS",
+  "scope": "mechanical browser checks; no semantic, source, video, real-device or native-print certification",
+  "issues": []
+}

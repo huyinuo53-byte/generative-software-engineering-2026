@@ -1,0 +1,103 @@
+{
+  "basis": "Reconstructed displayed recursion from actual frame at 4320s; independent BFS checks directed legal moves for n1..7, not a general proof",
+  "results": [
+    {
+      "n": 1,
+      "destination": "B",
+      "moves": 1,
+      "bfs_shortest": 1,
+      "legal": true
+    },
+    {
+      "n": 1,
+      "destination": "C",
+      "moves": 2,
+      "bfs_shortest": 2,
+      "legal": true
+    },
+    {
+      "n": 2,
+      "destination": "B",
+      "moves": 5,
+      "bfs_shortest": 5,
+      "legal": true
+    },
+    {
+      "n": 2,
+      "destination": "C",
+      "moves": 7,
+      "bfs_shortest": 7,
+      "legal": true
+    },
+    {
+      "n": 3,
+      "destination": "B",
+      "moves": 15,
+      "bfs_shortest": 15,
+      "legal": true
+    },
+    {
+      "n": 3,
+      "destination": "C",
+      "moves": 21,
+      "bfs_shortest": 21,
+      "legal": true
+    },
+    {
+      "n": 4,
+      "destination": "B",
+      "moves": 43,
+      "bfs_shortest": 43,
+      "legal": true
+    },
+    {
+      "n": 4,
+      "destination": "C",
+      "moves": 59,
+      "bfs_shortest": 59,
+      "legal": true
+    },
+    {
+      "n": 5,
+      "destination": "B",
+      "moves": 119,
+      "bfs_shortest": 119,
+      "legal": true
+    },
+    {
+      "n": 5,
+      "destination": "C",
+      "moves": 163,
+      "bfs_shortest": 163,
+      "legal": true
+    },
+    {
+      "n": 6,
+      "destination": "B",
+      "moves": 327,
+      "bfs_shortest": 327,
+      "legal": true
+    },
+    {
+      "n": 6,
+      "destination": "C",
+      "moves": 447,
+      "bfs_shortest": 447,
+      "legal": true
+    },
+    {
+      "n": 7,
+      "destination": "B",
+      "moves": 895,
+      "bfs_shortest": 895,
+      "legal": true
+    },
+    {
+      "n": 7,
+      "destination": "C",
+      "moves": 1223,
+      "bfs_shortest": 1223,
+      "legal": true
+    }
+  ]
+}

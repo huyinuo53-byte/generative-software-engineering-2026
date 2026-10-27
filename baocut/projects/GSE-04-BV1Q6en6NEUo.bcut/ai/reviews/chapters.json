@@ -1,0 +1,43 @@
+{
+  "candidateOverlay": {
+    "chapters": [
+      {
+        "end": 2152.9,
+        "id": "c-mur4toa0-0",
+        "start": 0.0,
+        "title": "重新设计版本管理系统"
+      },
+      {
+        "end": 3829.07,
+        "id": "c-mur4toa0-1",
+        "start": 2152.9,
+        "title": "为Agent设计版本管理系统"
+      },
+      {
+        "end": 5909.376,
+        "id": "c-mur4toa0-2",
+        "start": 3829.07,
+        "title": "从零开始一个新项目"
+      }
+    ],
+    "stages": {
+      "chapters": "26079:g1.0:g1207.0~4:xyd6pjf2kuto"
+    }
+  },
+  "createdAt": 1790955769901,
+  "kind": "chapters",
+  "mediaDuration": 5909.376,
+  "mediaHash": "sha256-57a92325fb43bc99b8d1a331e5364ae0771300245bcf70bd31134bebda10f0e7",
+  "parts": {
+    "count": 0,
+    "outlineAttempts": 0,
+    "outlineFallback": false,
+    "pages": []
+  },
+  "reviewVersion": 4,
+  "status": "accepted",
+  "summary": {
+    "chapters": 3
+  },
+  "updatedAt": 1790955784682
+}

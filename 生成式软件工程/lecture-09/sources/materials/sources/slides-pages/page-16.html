@@ -1,0 +1,12 @@
+<h1>LAMP：从表单网站到在线协作</h1>
+<h2>请求、业务、数据，各司其职</h2>
+<ul>
+<li><span class="aigc">约束：典型表单网站把一次操作组织成“HTTP 请求 → PHP 处理 → MySQL 读写 → 返回页面”。</span></li>
+<li><span class="aigc">便利：课程报名的名额检查和报名记录可放进同一数据库事务；Web 服务、持久化与备份都有现成基础设施。</span></li>
+</ul>
+<h2>请求要结束，协作却要一直在线</h2>
+<ul>
+<li><span class="aigc">新增课堂实时讨论：若用 PHP-FPM 请求一直等待消息，工作进程就一直被占用；并发上限由进程池容量约束。<a href="https://www.php.net/manual/en/install.fpm.configuration.php">PHP-FPM 文档</a></span></li>
+<li><span class="aigc">可以接入 WebSocket 与消息广播，但要重新安排连接、共享状态和后台任务；Apache 本身已有 WebSocket 代理支持。<a href="https://httpd.apache.org/docs/2.4/mod/mod_proxy_wstunnel.html">Apache 文档</a></span></li>
+<li><span class="aigc">再加入外部支付：数据库回滚不能自动撤销已完成的扣款。重试、去重和补偿需要业务自己定义，单库事务的边界显现出来。</span></li>
+</ul>

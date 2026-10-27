@@ -1,0 +1,56 @@
+{
+  "formatVersion": "0.1",
+  "language": "zh",
+  "media": {
+    "duration": 5810.133375,
+    "fps": 30.0,
+    "hash": "sha256-356231c7c0f6b4ba6697c75c7db54498f12622d216394aed982916b46da817be",
+    "height": 410,
+    "path": "/Users/yjzhao/Downloads/需求和架构 (1) [06-Raw 26生成式软件工程 NJU].mp4",
+    "probeStamp": "277223433:1790836321001",
+    "rotation": 0,
+    "sourceMetadata": {
+      "chapters": [
+        {
+          "end": 903.0,
+          "start": 0.0,
+          "title": "引言 (后半音频翻车"
+        },
+        {
+          "end": 2668.0,
+          "start": 903.0,
+          "title": "需求工程"
+        },
+        {
+          "end": 4352.0,
+          "start": 2668.0,
+          "title": "无处不在的架构"
+        },
+        {
+          "end": 5810.0,
+          "start": 4352.0,
+          "title": "回到教务系统"
+        }
+      ],
+      "extractor": "BiliBili",
+      "id": "BV1Rch76WEfQ",
+      "thumbnail": "http://i1.hdslb.com/bfs/archive/e2606ba4314ef35e144efa4436ab30e3c3bbea63.jpg",
+      "title": "需求和架构 (1) [06-Raw/26生成式软件工程/NJU]",
+      "uploadDate": "20260922",
+      "uploader": "绿导师原谅你了",
+      "url": "https://www.bilibili.com/video/BV1Rch76WEfQ",
+      "viewCount": 9751
+    },
+    "sourceUrl": "https://www.bilibili.com/video/BV1Rch76WEfQ",
+    "width": 1280
+  },
+  "stages": {
+    "transcribe": {
+      "engine": "moss-transcribe-diarize",
+      "input_fingerprint": "sha256-d465c638dfc9a0e19713e213405dcc9486082c008022a2efc9b7d34478a8608c",
+      "status": "done"
+    }
+  },
+  "title": "需求和架构 (1) [06-Raw/26生成式软件工程/NJU]",
+  "url": "https://www.bilibili.com/video/BV1Rch76WEfQ"
+}

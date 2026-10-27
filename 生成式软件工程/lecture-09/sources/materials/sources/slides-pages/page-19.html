@@ -1,0 +1,14 @@
+<h1>当计算不再是一轮批处理</h1>
+<h2>Spark：迭代计算需要复用数据</h2>
+<ul>
+<li>批处理不够灵活：Spark<span class="aigc"> 用更一般的计算 DAG 组织多阶段处理，缓存可复用的数据集。</span></li>
+<li><span class="aigc">例如反复迭代同一批训练数据：不用每轮都经外部存储交换结果；分区丢失时按依赖关系重算。<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia">RDD 论文</a></span></li>
+<li><span class="aigc">新的取舍：哪些数据缓存、如何分区、内存不足时怎么办，又成为性能问题。<a href="https://spark.apache.org/docs/latest/rdd-programming-guide.html#rdd-persistence">RDD 缓存</a></span></li>
+</ul>
+<h2>Flink：实时需求不能等数据全部到齐</h2>
+<ul>
+<li>传统批处理难以满足低延迟实时需求：Flink<span class="aigc"> 让算子持续处理到达的数据，并维护状态。</span></li>
+<li><span class="aigc">例如“最近五分钟的访问量”：日志会乱序、迟到；事件时间、水位线和迟到处理策略一起定义什么时候产出或修正结果。<a href="https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/time/">时间与水位线</a></span></li>
+<li><span class="aigc">技术栈也随之重组：输入可来自 Kafka 等可重放日志；执行变成常驻算子；恢复要协调输入位置与算子状态的检查点。<a href="https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/stateful-stream-processing/">有状态流处理</a></span></li>
+<li><span class="aigc">“等多久算完整”“保留多少状态”成为新的架构约束，性能与结果语义一起进入设计。</span></li>
+</ul>

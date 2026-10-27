@@ -1,0 +1,12 @@
+{
+  "callId": "c0013",
+  "kind": "analysis",
+  "seq": 13,
+  "attempt": 1,
+  "chars": 603,
+  "estimatedCost": 603,
+  "protocolVersion": "file-v1",
+  "contract": "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1CQt365EzW.bcut/tasks/t-mume1b30/contracts/analysis.md",
+  "payload": "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1CQt365EzW.bcut/tasks/t-mume1b30/payloads/c0013.md",
+  "createdAtMs": 1790689608154
+}

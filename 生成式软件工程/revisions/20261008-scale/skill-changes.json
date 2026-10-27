@@ -1,0 +1,67 @@
+[
+  {
+    "path": "SKILL.md",
+    "before_sha256": "507c9d187f441f4c80e404a986ec73b6d4a62dada59475e401f0c7963e614057",
+    "after_sha256": "0e152dd499d424f148ea143036e1a08fab201c41ed7feb99bde42be682bc79b3"
+  },
+  {
+    "path": "assets/editorial.css",
+    "before_sha256": null,
+    "after_sha256": "19ff96d00dd7456da38d0bbdb19e057059921fac780b7195f3f0d34cb357df2a"
+  },
+  {
+    "path": "assets/editorial.html",
+    "before_sha256": null,
+    "after_sha256": "a7cb83601a48417c1adce8a0aceb88b6887f5d55fb0919237448325f3d64f7f6"
+  },
+  {
+    "path": "assets/editorial.js",
+    "before_sha256": null,
+    "after_sha256": "e53d177b7ba77871aeb4e89f8f8857cecb17ded0177d074420c47544e2cc318a"
+  },
+  {
+    "path": "references/contract.md",
+    "before_sha256": "4b68a5d940966bd38e177b484a64edd83f1cef13ebdf6a12aac4ded92d28e352",
+    "after_sha256": "944a51e032f1ea6867ce27195e7f6ca4c58f6ccd0dd1f6cfcd5ea5aac65c84ee"
+  },
+  {
+    "path": "references/editorial-layout.md",
+    "before_sha256": null,
+    "after_sha256": "ce1f0f7ea8fe54e9cd700d5069d1ee3e746270a591642663501c399be3efa40a"
+  },
+  {
+    "path": "references/lessons.json",
+    "before_sha256": "69d66d61c0834e006a7ba714399ca354947620b7b51cba97050d8fc300904d24",
+    "after_sha256": "f0db3c95fda82485158fe5f8a98f2c5afa6ea4df5e761b92031ce78411956fbb"
+  },
+  {
+    "path": "references/quality-delivery.md",
+    "before_sha256": "8a1b006ace241aee4f34833e69a1b4e87ea9585357ba40070b7c86d0e8a4270b",
+    "after_sha256": "0d1490301417766b2341478036cffe35bb0b4f9b66b5d9e12a252a45851df7f6"
+  },
+  {
+    "path": "references/reading-materials.md",
+    "before_sha256": "67155130397682da624c717eb112f9a49b84b7cdc6ff6a1846536fdc2619d17f",
+    "after_sha256": "51b513ac578a5d4ac77239929a43e9f794b06715caffab194bcf5ab279c9a442"
+  },
+  {
+    "path": "scripts/course_notes.py",
+    "before_sha256": "6d0833e602a13777c788cac8b167d1f21557265d5cfc3cfbaec28ac08e238cdd",
+    "after_sha256": "1de4abde3012dcd8024916baa92fba751ace4ac1d8b3569170d689ed80d77b0a"
+  },
+  {
+    "path": "scripts/reading_layout.py",
+    "before_sha256": null,
+    "after_sha256": "9a2ae167fdbab5d1a391d69f148d8976522d2e83627008d50b4c1ba84adb6744"
+  },
+  {
+    "path": "scripts/test_reading_layout.py",
+    "before_sha256": null,
+    "after_sha256": "0808d920bfc82eed1d9b0e9d98c030d981a9b96d0afd3230c8724c04fe9eba63"
+  },
+  {
+    "path": "scripts/validate_reading_layout.py",
+    "before_sha256": null,
+    "after_sha256": "299dfb32ca01f1ce84ee909d66a3d00d905a4c79d319c042a0534975571bcc30"
+  }
+]

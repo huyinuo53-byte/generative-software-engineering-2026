@@ -1,0 +1,438 @@
+[
+  {
+    "video_id": "BV1pb8o6yE8f",
+    "title": "欢迎来到未来 [01-Raw/26生成式软件工程/NJU]",
+    "path": "baocut/projects/GSE-01-BV1pb8o6yE8f.bcut",
+    "original_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-01-BV1pb8o6yE8f.bcut",
+    "identity_basis": "media sourceMetadata.id",
+    "metadata": {
+      "duration": 5999.317375,
+      "fps": 30.0,
+      "hash": "sha256-a5b0b91ce241e51706496b428003b963d9b6c1e9df3c98ff79ba05cde8f2c8e7",
+      "height": 410,
+      "path": "/Users/yjzhao/Downloads/欢迎来到未来 [01-Raw 26生成式软件工程 NJU].mp4",
+      "probeStamp": "221824807:1790953253794",
+      "rotation": 0,
+      "sourceMetadata": {
+        "chapters": [
+          {
+            "end": 1784.0,
+            "start": 0.0,
+            "title": "课程简介"
+          },
+          {
+            "end": 2914.0,
+            "start": 1784.0,
+            "title": "实操 (1"
+          },
+          {
+            "end": 3910.0,
+            "start": 2914.0,
+            "title": "视频恢复—实操 (2"
+          },
+          {
+            "end": 4480.0,
+            "start": 3910.0,
+            "title": "实操 (3"
+          },
+          {
+            "end": 6000.0,
+            "start": 4480.0,
+            "title": "软件工程"
+          }
+        ],
+        "extractor": "BiliBili",
+        "id": "BV1pb8o6yE8f",
+        "thumbnail": "http://i0.hdslb.com/bfs/archive/d6c6e9f0534276d739e7ba3c8ae84473fd58c784.jpg",
+        "title": "欢迎来到未来 [01-Raw/26生成式软件工程/NJU]",
+        "uploadDate": "20260826",
+        "uploader": "绿导师原谅你了",
+        "url": "https://www.bilibili.com/video/BV1pb8o6yE8f",
+        "viewCount": 98270
+      },
+      "sourceUrl": "https://www.bilibili.com/video/BV1pb8o6yE8f",
+      "width": 1280
+    }
+  },
+  {
+    "video_id": "BV1fKtN6DErG",
+    "title": "失败的AI Slop数字永生尝试",
+    "path": "baocut/projects/GSE-extra-BV1fKtN6DErG.bcut",
+    "original_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-extra-BV1fKtN6DErG.bcut",
+    "identity_basis": "media sourceMetadata.id",
+    "metadata": {
+      "duration": 168.533375,
+      "fps": 25.0,
+      "hash": "sha256-d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+      "height": 1072,
+      "path": "/Users/yjzhao/Downloads/失败的AI Slop数字永生尝试.mp4",
+      "probeStamp": "29783462:1790954884705",
+      "rotation": 0,
+      "sourceMetadata": {
+        "description": "2026秋季《生成式软件工程》课程切片。持续改进中……",
+        "extractor": "BiliBili",
+        "id": "BV1fKtN6DErG",
+        "thumbnail": "http://i1.hdslb.com/bfs/archive/14f00050e64f477bcc240965dcd9739c8c750497.jpg",
+        "title": "失败的AI Slop数字永生尝试",
+        "uploadDate": "20260828",
+        "uploader": "绿导师原谅你了",
+        "url": "https://www.bilibili.com/video/BV1fKtN6DErG",
+        "viewCount": 24655
+      },
+      "sourceUrl": "https://www.bilibili.com/video/BV1fKtN6DErG",
+      "width": 1920
+    }
+  },
+  {
+    "video_id": "BV1CQt365EzW",
+    "title": "提示词工程 [02-Raw/26生成式软件工程/NJU]",
+    "path": "baocut/projects/BV1CQt365EzW.bcut",
+    "original_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1CQt365EzW.bcut",
+    "identity_basis": "media sourceMetadata.id",
+    "metadata": {
+      "duration": 5905.536,
+      "fps": 30.0,
+      "hash": "sha256-83cf986f46d89be1af5ec362e8325a954f4c554d095453018f4b6a470cc49ad2",
+      "height": 410,
+      "path": "/Users/yjzhao/Downloads/提示词工程 [02-Raw 26生成式软件工程 NJU].mp4",
+      "probeStamp": "305004213:1790667421280",
+      "rotation": 0,
+      "sourceMetadata": {
+        "chapters": [
+          {
+            "end": 1987.0,
+            "start": 0.0,
+            "title": "Prompt (Context) Engineering"
+          },
+          {
+            "end": 4530.0,
+            "start": 1987.0,
+            "title": "使模型遵循指令的技巧"
+          },
+          {
+            "end": 5906.0,
+            "start": 4530.0,
+            "title": "更长程任务的建议"
+          }
+        ],
+        "extractor": "BiliBili",
+        "id": "BV1CQt365EzW",
+        "thumbnail": "http://i1.hdslb.com/bfs/archive/7cb300cfcc64cbaeb9c7bf74c41de28f3a558318.jpg",
+        "title": "提示词工程 [02-Raw/26生成式软件工程/NJU]",
+        "uploadDate": "20260901",
+        "uploader": "绿导师原谅你了",
+        "url": "https://www.bilibili.com/video/BV1CQt365EzW/?spm_id_from=333.1387.collection.video_card.click&vd_source=abb5da006a35c5bef8fab8f9fa774175",
+        "viewCount": 47118
+      },
+      "sourceUrl": "https://www.bilibili.com/video/BV1CQt365EzW/?spm_id_from=333.1387.collection.video_card.click&vd_source=abb5da006a35c5bef8fab8f9fa774175",
+      "width": 1280
+    }
+  },
+  {
+    "video_id": "BV1kybV6DE47",
+    "title": "软件仓库管理 [03-Raw/26生成式软件工程/NJU]",
+    "path": "baocut/projects/GSE-03-BV1kybV6DE47.bcut",
+    "original_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-03-BV1kybV6DE47.bcut",
+    "identity_basis": "media sourceMetadata.id",
+    "metadata": {
+      "duration": 6013.205375,
+      "fps": 30.0,
+      "hash": "sha256-fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+      "height": 410,
+      "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+      "probeStamp": "256449121:1790953336451",
+      "rotation": 0,
+      "sourceMetadata": {
+        "chapters": [
+          {
+            "end": 1480.0,
+            "start": 0.0,
+            "title": "开场 & 版本管理"
+          },
+          {
+            "end": 3788.0,
+            "start": 1480.0,
+            "title": "Git 入门与一些 最佳实践"
+          },
+          {
+            "end": 6014.0,
+            "start": 3788.0,
+            "title": "学习 Git"
+          }
+        ],
+        "extractor": "BiliBili",
+        "id": "BV1kybV6DE47",
+        "thumbnail": "http://i1.hdslb.com/bfs/archive/68df1508fe220439d042badb972f99db90e57ff0.jpg",
+        "title": "软件仓库管理 [03-Raw/26生成式软件工程/NJU]",
+        "uploadDate": "20260908",
+        "uploader": "绿导师原谅你了",
+        "url": "https://www.bilibili.com/video/BV1kybV6DE47",
+        "viewCount": 25394
+      },
+      "sourceUrl": "https://www.bilibili.com/video/BV1kybV6DE47",
+      "width": 1280
+    }
+  },
+  {
+    "video_id": "BV1Q6en6NEUo",
+    "title": "软件仓库管理 (2) [04-Raw/26生成式软件工程/NJU]",
+    "path": "baocut/projects/GSE-04-BV1Q6en6NEUo.bcut",
+    "original_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-04-BV1Q6en6NEUo.bcut",
+    "identity_basis": "media sourceMetadata.id",
+    "metadata": {
+      "duration": 5909.376,
+      "fps": 30.0,
+      "hash": "sha256-57a92325fb43bc99b8d1a331e5364ae0771300245bcf70bd31134bebda10f0e7",
+      "height": 410,
+      "path": "/Users/yjzhao/Downloads/软件仓库管理 (2) [04-Raw 26生成式软件工程 NJU].mp4",
+      "probeStamp": "297347438:1790953992226",
+      "rotation": 0,
+      "sourceMetadata": {
+        "chapters": [
+          {
+            "end": 2153.0,
+            "start": 0.0,
+            "title": "重新设计版本管理系统"
+          },
+          {
+            "end": 3828.0,
+            "start": 2153.0,
+            "title": "为Agent设计版本管理系统"
+          },
+          {
+            "end": 5909.0,
+            "start": 3828.0,
+            "title": "从零开始一个新项目"
+          }
+        ],
+        "extractor": "BiliBili",
+        "id": "BV1Q6en6NEUo",
+        "thumbnail": "http://i2.hdslb.com/bfs/archive/168d8b60cc63f056d15486450260509004e0b559.jpg",
+        "title": "软件仓库管理 (2) [04-Raw/26生成式软件工程/NJU]",
+        "uploadDate": "20260915",
+        "uploader": "绿导师原谅你了",
+        "url": "https://www.bilibili.com/video/BV1Q6en6NEUo",
+        "viewCount": 14575
+      },
+      "sourceUrl": "https://www.bilibili.com/video/BV1Q6en6NEUo",
+      "width": 1280
+    }
+  },
+  {
+    "video_id": "BV1Nyeq6qEt8",
+    "title": "软件工程的来龙去脉 [05-Raw/26生成式软件工程/NJU]",
+    "path": "baocut/projects/05 软件工程的来龙去脉.bcut",
+    "original_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/05 软件工程的来龙去脉.bcut",
+    "identity_basis": "media sourceMetadata.id",
+    "metadata": {
+      "duration": 5999.317375,
+      "fps": 30.0,
+      "hash": "sha256-699cb51a044420fab1086e92e301863a306177f461d98d28f2895168182f2023",
+      "height": 410,
+      "path": "/Users/yjzhao/Downloads/软件工程的来龙去脉 [05-Raw 26生成式软件工程 NJU].mp4",
+      "probeStamp": "293595133:1790836380498",
+      "rotation": 0,
+      "sourceMetadata": {
+        "chapters": [
+          {
+            "end": 1057.0,
+            "start": 0.0,
+            "title": "新闻播报"
+          },
+          {
+            "end": 2341.0,
+            "start": 1057.0,
+            "title": "回到软件开发"
+          },
+          {
+            "end": 4506.0,
+            "start": 2341.0,
+            "title": "从软件危机到软件工程"
+          },
+          {
+            "end": 5999.0,
+            "start": 4506.0,
+            "title": "软件工程给世界带来了什么"
+          }
+        ],
+        "extractor": "BiliBili",
+        "id": "BV1Nyeq6qEt8",
+        "thumbnail": "http://i0.hdslb.com/bfs/archive/c75d365bb65abad0975bb1e8ca11ad5b67b68861.jpg",
+        "title": "软件工程的来龙去脉 [05-Raw/26生成式软件工程/NJU]",
+        "uploadDate": "20260920",
+        "uploader": "绿导师原谅你了",
+        "url": "https://www.bilibili.com/video/BV1Nyeq6qEt8",
+        "viewCount": 16163
+      },
+      "sourceUrl": "https://www.bilibili.com/video/BV1Nyeq6qEt8",
+      "width": 1280
+    }
+  },
+  {
+    "video_id": "BV1Rch76WEfQ",
+    "title": "需求和架构 (1) [06-Raw/26生成式软件工程/NJU]",
+    "path": "baocut/projects/06 需求和架构（1）.bcut",
+    "original_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/06 需求和架构（1）.bcut",
+    "identity_basis": "media sourceMetadata.id",
+    "metadata": {
+      "duration": 5810.133375,
+      "fps": 30.0,
+      "hash": "sha256-356231c7c0f6b4ba6697c75c7db54498f12622d216394aed982916b46da817be",
+      "height": 410,
+      "path": "/Users/yjzhao/Downloads/需求和架构 (1) [06-Raw 26生成式软件工程 NJU].mp4",
+      "probeStamp": "277223433:1790836321001",
+      "rotation": 0,
+      "sourceMetadata": {
+        "chapters": [
+          {
+            "end": 903.0,
+            "start": 0.0,
+            "title": "引言 (后半音频翻车"
+          },
+          {
+            "end": 2668.0,
+            "start": 903.0,
+            "title": "需求工程"
+          },
+          {
+            "end": 4352.0,
+            "start": 2668.0,
+            "title": "无处不在的架构"
+          },
+          {
+            "end": 5810.0,
+            "start": 4352.0,
+            "title": "回到教务系统"
+          }
+        ],
+        "extractor": "BiliBili",
+        "id": "BV1Rch76WEfQ",
+        "thumbnail": "http://i1.hdslb.com/bfs/archive/e2606ba4314ef35e144efa4436ab30e3c3bbea63.jpg",
+        "title": "需求和架构 (1) [06-Raw/26生成式软件工程/NJU]",
+        "uploadDate": "20260922",
+        "uploader": "绿导师原谅你了",
+        "url": "https://www.bilibili.com/video/BV1Rch76WEfQ",
+        "viewCount": 9751
+      },
+      "sourceUrl": "https://www.bilibili.com/video/BV1Rch76WEfQ",
+      "width": 1280
+    }
+  },
+  {
+    "video_id": "BV1JGap6LE74",
+    "title": "需求和架构 (2) [07-Raw/26生成式软件工程/NJU]",
+    "path": "baocut/projects/BV1JGap6LE74.bcut",
+    "original_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1JGap6LE74.bcut",
+    "identity_basis": "media sourceMetadata.id",
+    "metadata": {
+      "duration": 5981.12,
+      "fps": 30.0,
+      "hash": "sha256-df4344f9c61dfb2a247f734570b9d2ef3ec1d21010849efb4eed78347b5dcc12",
+      "height": 410,
+      "path": "/Users/yjzhao/Downloads/需求和架构 (2) [07-Raw 26生成式软件工程 NJU].mp4",
+      "probeStamp": "306355606:1790783039551",
+      "rotation": 0,
+      "sourceMetadata": {
+        "chapters": [
+          {
+            "end": 857.0,
+            "start": 0.0,
+            "title": "回顾"
+          },
+          {
+            "end": 2961.0,
+            "start": 857.0,
+            "title": "阅读经典"
+          },
+          {
+            "end": 4744.0,
+            "start": 2961.0,
+            "title": "典型的系统架构"
+          },
+          {
+            "end": 5981.0,
+            "start": 4744.0,
+            "title": "应对复杂性"
+          }
+        ],
+        "extractor": "BiliBili",
+        "id": "BV1JGap6LE74",
+        "thumbnail": "http://i2.hdslb.com/bfs/archive/83c1f57d146cd404c922cef190d2c4646dca654b.jpg",
+        "title": "需求和架构 (2) [07-Raw/26生成式软件工程/NJU]",
+        "uploadDate": "20260929",
+        "uploader": "绿导师原谅你了",
+        "url": "https://www.bilibili.com/video/BV1JGap6LE74/",
+        "viewCount": 4037
+      },
+      "sourceUrl": "https://www.bilibili.com/video/BV1JGap6LE74/",
+      "width": 1280
+    }
+  },
+  {
+    "video_id": "BV11LWw6VEHW",
+    "title": "Agent-native 开发 [08-Raw/26生成式软件工程/NJU]",
+    "path": "baocut/projects/GSE-08-BV11LWw6VEHW.bcut",
+    "original_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-08-BV11LWw6VEHW.bcut",
+    "identity_basis": "original run video binding + exact media SHA256",
+    "metadata": {
+      "duration": 5829.6746875,
+      "fps": 30.0,
+      "hash": "sha256-dee8d8992246a868d973678ab85c152e3eaf3e07ccef70eb5a674556386552b7",
+      "height": 410,
+      "path": "/Users/yjzhao/Downloads/GSE-08-BV11LWw6VEHW.mp4",
+      "probeStamp": "237738826:1792372618992",
+      "rotation": 0,
+      "width": 1280
+    }
+  },
+  {
+    "video_id": "BV144nc6KEA4",
+    "title": "DeepSeek Harness (1) [09-Raw/26生成式软件工程/NJU]",
+    "path": "baocut/projects/GSE-09-BV144nc6KEA4.bcut",
+    "original_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-09-BV144nc6KEA4.bcut",
+    "identity_basis": "media sourceMetadata.id",
+    "metadata": {
+      "duration": 5363.541375,
+      "fps": 30.0,
+      "hash": "sha256-d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+      "height": 410,
+      "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+      "probeStamp": "213549316:1792976660246",
+      "rotation": 0,
+      "sourceMetadata": {
+        "chapters": [
+          {
+            "end": 1407.0,
+            "start": 0.0,
+            "title": "需求"
+          },
+          {
+            "end": 2301.0,
+            "start": 1407.0,
+            "title": "架构"
+          },
+          {
+            "end": 3956.0,
+            "start": 2301.0,
+            "title": "设计"
+          },
+          {
+            "end": 5364.0,
+            "start": 3956.0,
+            "title": "生态"
+          }
+        ],
+        "extractor": "BiliBili",
+        "id": "BV144nc6KEA4",
+        "thumbnail": "http://i0.hdslb.com/bfs/archive/42232c3515ecb0e7b27b1bfb1744f611a0ba78f6.jpg",
+        "title": "DeepSeek Harness (1) [09-Raw/26生成式软件工程/NJU]",
+        "uploadDate": "20261020",
+        "uploader": "绿导师原谅你了",
+        "url": "https://www.bilibili.com/video/BV144nc6KEA4",
+        "viewCount": 29154
+      },
+      "sourceUrl": "https://www.bilibili.com/video/BV144nc6KEA4",
+      "width": 1280
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "actor": "root",
+  "run_id": "BV144nc6KEA4-20261026",
+  "status": "released",
+  "at": "2026-10-26T01:03:45.555192+00:00",
+  "existing_run_absent": true,
+  "project_checked": true,
+  "project_id": "p-30e53540f92dea82",
+  "project": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-09-BV144nc6KEA4.bcut",
+  "released_at": "2026-10-26T01:38:18.657303+00:00",
+  "reason": "新课作者、材料、视觉和终审代理已结束，所有必要检查通过。"
+}

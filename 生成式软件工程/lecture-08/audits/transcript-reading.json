@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "reader": "root",
+  "method": "主作者完整读取ASR全部1911segment，随后按实际导出文件逐一完整读取19个chunk，按1–6、7–12、13–19分批；正文逐主题而非按分块分章。",
+  "read_chunks": [
+    "chunk-0001",
+    "chunk-0002",
+    "chunk-0003",
+    "chunk-0004",
+    "chunk-0005",
+    "chunk-0006",
+    "chunk-0007",
+    "chunk-0008",
+    "chunk-0009",
+    "chunk-0010",
+    "chunk-0011",
+    "chunk-0012",
+    "chunk-0013",
+    "chunk-0014",
+    "chunk-0015",
+    "chunk-0016",
+    "chunk-0017",
+    "chunk-0018",
+    "chunk-0019"
+  ],
+  "chunk_files": [
+    {
+      "path": "chunks/chunk-0001.json",
+      "sha256": "233e386b2732753946c9676864868ac179c70f80ad494a32c99b852a6a27915f"
+    },
+    {
+      "path": "chunks/chunk-0002.json",
+      "sha256": "a9a70b7c315c1e0da11ef077ae8ac35b25d9b6b362bbc67b8f88eb380e211a92"
+    },
+    {
+      "path": "chunks/chunk-0003.json",
+      "sha256": "2d39df8657be1a77aca5e672fd755cba436617d475581c608d25ec453ec5b156"
+    },
+    {
+      "path": "chunks/chunk-0004.json",
+      "sha256": "4c8ed2dfa8d10618f172d9399d0fa0585106e8a6413d1509df26c807f87ce728"
+    },
+    {
+      "path": "chunks/chunk-0005.json",
+      "sha256": "511c4a7b9258371f59247f9268fc19749859114f190eb52962848414b347fb69"
+    },
+    {
+      "path": "chunks/chunk-0006.json",
+      "sha256": "bb4545f37a0cc1d3f29329a15e78df39337d720c16b723446954c913ed0eedfa"
+    },
+    {
+      "path": "chunks/chunk-0007.json",
+      "sha256": "9fcaa66b1aff455bdda0fc5d358d61872094db9852d27b6ab8db5bf5e98e120c"
+    },
+    {
+      "path": "chunks/chunk-0008.json",
+      "sha256": "4d30077f3edb539c579256608e3d797bcebfb11552e9c355ffe81b0b31365f93"
+    },
+    {
+      "path": "chunks/chunk-0009.json",
+      "sha256": "c8a38b761ff39b4f3bf48cbd7eda0f71befc0326d955a32ba0c3763c70fbc2db"
+    },
+    {
+      "path": "chunks/chunk-0010.json",
+      "sha256": "9d098751584fddbfc8c94417858221d3d5f4d4df4b75084add81d146a9292118"
+    },
+    {
+      "path": "chunks/chunk-0011.json",
+      "sha256": "3af1a326f7f0d33cbd20e874c231ccbf4511e6622fba7f31960cc24c62499961"
+    },
+    {
+      "path": "chunks/chunk-0012.json",
+      "sha256": "cf5016498e23b43d29628ca5c450030188ee1cd1ab88b591619adc3b138892f3"
+    },
+    {
+      "path": "chunks/chunk-0013.json",
+      "sha256": "706bd0b29eb48515a0cea0825cf083930a8fa90491caa5321cd76eb5f5ff54f7"
+    },
+    {
+      "path": "chunks/chunk-0014.json",
+      "sha256": "9c9d5c1e548eaa0f762910f36ecae3be3946782c5ab5c61c84e50d2d844c1958"
+    },
+    {
+      "path": "chunks/chunk-0015.json",
+      "sha256": "f2fe5425676582bef3fc307ed5622b07217004389344e5303d00545892195d14"
+    },
+    {
+      "path": "chunks/chunk-0016.json",
+      "sha256": "ded6019015bdb315fa81ed3b2d6a37686877081f744a00a438f21814e6092807"
+    },
+    {
+      "path": "chunks/chunk-0017.json",
+      "sha256": "c20e225ca227f5180fcfbd3d11ff691cb2887e58e60c22938f760b97391ba3a0"
+    },
+    {
+      "path": "chunks/chunk-0018.json",
+      "sha256": "c964ac534dea19e77f825fce7d1ab24bb588e653e3f357eb86a4ef597355300a"
+    },
+    {
+      "path": "chunks/chunk-0019.json",
+      "sha256": "74b67306956a425fffa4e2deeb07d76884e48ed72727ce541e4442dfac793ed6"
+    }
+  ],
+  "source_units": 394,
+  "transcript_sha256": "86537376a861cc701650b49b37b9ad245b240aa12a337fc4453f32b84fbf8ad1",
+  "index_sha256": "8d84da84df52fb2573edfcc43d6100a6332489b3f51d102899494d7620cbe2cc",
+  "audio_listening": "not_full_audio_review",
+  "retrospective_record": true
+}

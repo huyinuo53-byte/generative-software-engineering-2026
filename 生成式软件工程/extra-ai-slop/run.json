@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "run_id": "BV1fKtN6DErG-20261002-complete-notes",
+  "batch_id": "gse-2026-course-20261002",
+  "item_id": "extra-ai-slop",
+  "scope_revision": 1,
+  "scope_changes": [],
+  "video_id": "BV1fKtN6DErG",
+  "source_url": "https://www.bilibili.com/video/BV1fKtN6DErG/",
+  "requested_outputs": [
+    "按视频独立HTML",
+    "时间码",
+    "关键画面",
+    "内容和图片复核"
+  ],
+  "required_checks": [
+    "transcript_full_read",
+    "evidence_coverage",
+    "content_review",
+    "image_audit",
+    "html_static",
+    "desktop",
+    "narrow"
+  ],
+  "actor": "lecture05-agent-authoring-extra",
+  "created_at": "2026-10-02T15:31:43.425125+00:00",
+  "project_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-extra-BV1fKtN6DErG.bcut",
+  "media_path": "/Users/yjzhao/Downloads/失败的AI Slop数字永生尝试.mp4",
+  "media_sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+  "media_validation": {
+    "container_seconds": 168.533333,
+    "video_seconds": 168.52,
+    "audio_seconds": 168.533333,
+    "width": 1920,
+    "height": 1072,
+    "tail_decode_last_seconds": 8,
+    "tail_decode_exit_code": 0
+  },
+  "toolchain": {
+    "cli_path": "/Users/yjzhao/Downloads/BaoCut.app/Contents/Resources/skills/baocut/bin/bcut-cli",
+    "coordinator_reported_version": "2.1.0",
+    "coordinator_reported_spec": "1.249",
+    "asr_engine": "moss-transcribe-diarize"
+  },
+  "transcript_origin": "reused_completed_batch_asr",
+  "job_id": "auto:75514:1790953347688009000:632",
+  "sources": [
+    {
+      "kind": "downloaded_source_metadata",
+      "path": "sources/media-info.json",
+      "sha256": "eb5e58681e30e32b73d145d8efc75a70a9fc7e36552fd60bc347be2030d06eb5"
+    },
+    {
+      "kind": "media_probe",
+      "path": "sources/media-probe.json",
+      "sha256": "8717d417f4b2e1f04c5b6f0ad42ac52385458908dff05789490911b107f54589"
+    }
+  ],
+  "known_gaps": [
+    "短片是AI改编示例，没有获取对应独立官方讲义；信息图作为原视频画面证据，未将生成文字当权威教材。"
+  ],
+  "reuse_basis": {
+    "project_video_id": "BV1fKtN6DErG",
+    "asr_state": "fresh",
+    "stage": "done",
+    "export_cues": 74,
+    "export_words": 900,
+    "export_warnings": [],
+    "reason": "复用主协调者已注册任务632的完成结果，仅导出原始转写，无重复ASR",
+    "transcript_sha256": "4ccc403e04cc7d201636f7f0ea074e38bcec3889195379d5d207af1424b8e693"
+  }
+}

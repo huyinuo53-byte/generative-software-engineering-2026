@@ -1,0 +1,11 @@
+{
+  "embedded_image_count": 35,
+  "expected_images": 35,
+  "duplicate_ids": 0,
+  "missing_anchors": [],
+  "external_image_count": 0,
+  "bytes": 4680229,
+  "notes_sha256": "5023817b0fa063e8ba806226ad39444be5eac4d826b367605496423658d295ee",
+  "index_sha256": "a7e393677f02a2e869c4bae303dcd276a422bd5f6f44d726236d3d975abcdf79",
+  "html_sha256": "8b103e4daacab6a7925c072d9d594606e2a25d33cebef10812921c8ee6d59d66"
+}

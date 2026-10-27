@@ -1,0 +1,583 @@
+{
+  "schema_version": 1,
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "checked_at": "2026-10-19T01:15:01.191907+00:00",
+  "item": "lecture-08",
+  "video_id": "BV11LWw6VEHW",
+  "mapping_evidence": {
+    "course_title": "生成式软件工程（2026秋）",
+    "lecture_number": 8,
+    "title": "Agent Native 开发",
+    "course_html": "course.html",
+    "lecture_url": "https://jyywiki.cn/GSE/2026/lect8.md",
+    "slides_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+    "mapping_note": "官网第8项明确链接lect8.md/slides8.html且标题一致；视频BV身份来自主代理，未由本子任务重新核对视频。"
+  },
+  "expected_material_ids": [
+    "gse08-ralph",
+    "gse08-ci",
+    "gse08-cd",
+    "gse08-github-protection",
+    "gse08-git-hooks",
+    "gse08-github-pages",
+    "gse08-github-deployments",
+    "gse08-minions",
+    "gse08-compiler",
+    "gse08-strongdm",
+    "gse08-dtu",
+    "gse08-harness"
+  ],
+  "materials": [
+    {
+      "id": "gse08-ralph",
+      "listed_title": "Ralph Wiggum as a software engineer",
+      "title": "Ralph Wiggum as a software engineer",
+      "listed_url": "https://ghuntley.com/ralph/",
+      "source_url": "https://ghuntley.com/ralph/",
+      "version": "2025-07-14 / retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "ralph.html",
+      "sha256": "d61c10891a7ef999fbcffb8e4ca12bffb21521968e15e8e8ec6bc304f7c7b266",
+      "scope_sections": [
+        "article正文全部，含 one item per loop、backpressure、TODO、build/plan prompts"
+      ],
+      "read_sections": [
+        "article正文全部，含 one item per loop、backpressure、TODO、build/plan prompts"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        5
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "Ralph 不只是重复提示词：把规格和计划每轮重新提供，一轮集中一件事，以构建、测试和静态检查拒绝坏状态，把失败原因及测试为何存在写回文件。作者还强调先查已有实现，并承认新项目引导更适合、既有仓库使用存疑，仍需资深判断。文中大规模并行数字和乐观能力判断是个人经验与主张，不是本课应照搬的默认配置。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-ci",
+      "listed_title": "Continuous Integration (original version)",
+      "title": "Continuous Integration (original version)",
+      "listed_url": "https://martinfowler.com/articles/originalContinuousIntegration.html",
+      "source_url": "https://martinfowler.com/articles/originalContinuousIntegration.html",
+      "version": "2000-09-10",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "ci.html",
+      "sha256": "8a4c0f392e03bf6e8c51c48fe7b26fb78274ef82500cd3ec128f06d22502fbce",
+      "scope_sections": [
+        "article全部：Benefits至Summing up"
+      ],
+      "read_sections": [
+        "article全部：Benefits至Summing up"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        8
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "CI 的核心是集成频繁且构建可重复：从统一版本源取出代码、脚本、配置及数据库定义，在干净环境自动构建并跑验证测试。每天尝试构建但长期失败不算成功实践；只编译也不足以确认行为。作者明确说测试不能证明没有Bug，且CI收益依据经验，文中增长倍数不是测量结论。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-cd",
+      "listed_title": "Continuous Delivery vs Continuous Deployment",
+      "title": "Continuous Delivery vs Continuous Deployment",
+      "listed_url": "https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/",
+      "source_url": "https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/",
+      "version": "2010-08-13",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "cd.html",
+      "sha256": "473b20083fef02e2161d21868270b1bef914fcc62b7f1e74c6a76ca65e94e860",
+      "scope_sections": [
+        "正文全部"
+      ],
+      "read_sections": [
+        "正文全部"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        8
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "持续交付意味着每个合格构建具备随时发布的条件，是否发布由业务决定；持续部署把合格构建实际交给用户。原文强调可发布不只意味着单元测试通过，还要验证生产近似环境、容量、安全、可用性和跨系统集成。硬件耦合或版本支持成本可能合理地限制发布频率。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-github-protection",
+      "listed_title": "About protected branches",
+      "title": "About protected branches",
+      "listed_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "source_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "version": "current docs retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "github-protection.html",
+      "sha256": "ea89563f74fa9f59095e510adb240df83c4fdb3d9cfa106ae36dd3d82d232d8b",
+      "scope_sections": [
+        "About branch protection rules",
+        "Require status checks before merging",
+        "Require merge queue"
+      ],
+      "read_sections": [
+        "About branch protection rules",
+        "Require status checks before merging",
+        "Require merge queue"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        9,
+        10,
+        11
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "分支保护才把检查结果变成合并约束。必需状态检查可能接受 successful、skipped 或 neutral，所以流程设计还要确认相关检查确实运行。默认管理员和可绕过角色可能不受限制，须按项目权限规则设置。strict要求与主干保持最新；merge queue验证主干加队列前序PR的组合。文档描述机制，不证明某仓库配置已生效。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-git-hooks",
+      "listed_title": "Git hooks manual: pre-commit",
+      "title": "Git hooks manual: pre-commit",
+      "listed_url": "https://git-scm.com/docs/githooks",
+      "source_url": "https://git-scm.com/docs/githooks",
+      "version": "current docs retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "git-hooks.html",
+      "sha256": "b4fac3012eb016dc1bc95eb92e5237094ea1c11eb468719678ce1d29eae9ac6e",
+      "scope_sections": [
+        "pre-commit"
+      ],
+      "read_sections": [
+        "pre-commit"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        9
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "pre-commit 在提交前运行，非零退出会中止提交，但可由 --no-verify 跳过。因此它适合快速本地反馈，不能独自承担远端合并门控。这里只阅读与本课论点直接相关的 pre-commit 段落。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-github-pages",
+      "listed_title": "Using custom workflows with GitHub Pages",
+      "title": "Using custom workflows with GitHub Pages",
+      "listed_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "version": "current docs retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "github-pages.html",
+      "sha256": "1f42069eb60ebd2053578dcaca0403fa0a8d51fa8cce2ad469205b2c72ec0043",
+      "scope_sections": [
+        "About custom workflows",
+        "Configuring configure-pages",
+        "Configuring upload-pages-artifact",
+        "Deploying artifacts",
+        "Linking separate build and deploy jobs"
+      ],
+      "read_sections": [
+        "About custom workflows",
+        "Configuring configure-pages",
+        "Configuring upload-pages-artifact",
+        "Deploying artifacts",
+        "Linking separate build and deploy jobs"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        11
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "Pages 的构建与部署可以在同一工作流分作不同job；部署通过 needs 依赖构建，并部署已经上传的产物。应把测试和构建成功落实为依赖关系，而非只在提示词里要求先后顺序。原文要求 pages:write、id-token:write 和部署环境规则；当前Action版本不是课堂冻结配置。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-github-deployments",
+      "listed_title": "Deploying with GitHub Actions",
+      "title": "Deploying with GitHub Actions",
+      "listed_url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/control-deployments",
+      "source_url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/control-deployments",
+      "version": "current docs retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "github-deployments.html",
+      "sha256": "ec19b34e6c7a84af8321a73a2f8ad00489d3fbe1fced5892b7ce7722da53cb83",
+      "scope_sections": [
+        "Triggering your deployment",
+        "Using environments",
+        "Using concurrency及其示例"
+      ],
+      "read_sections": [
+        "Triggering your deployment",
+        "Using environments",
+        "Using concurrency及其示例"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        10
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "同一concurrency组最多一个运行任务，可取消过时的pending任务，cancel-in-progress可取消正在运行者。环境名与并发组不是自动绑定：同环境的另一个工作流若没声明相同并发规则，仍不受它约束。整理者建议：发布验收须测试重叠任务，不能仅凭有 concurrency 字段就断言旧版本不会覆盖新版本。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-minions",
+      "listed_title": "Minions: Stripe’s one-shot, end-to-end coding agents—Part2",
+      "title": "Minions: Stripe’s one-shot, end-to-end coding agents—Part2",
+      "listed_url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "source_url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "version": "2026-02-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "minions.html",
+      "sha256": "af839dd68ea23c8366642d3f6d37755245b1d0a469cd4d8f621e9757d1e79a63",
+      "scope_sections": [
+        "article正文全部：Devboxes至In conclusion"
+      ],
+      "read_sections": [
+        "article正文全部：Devboxes至In conclusion"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        16
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "Stripe把已知必做工序编成确定节点，让Agent负责实现与修复；本地lint反馈前移，随后完整CI最多两轮，第二次后交回人类审查。自主运行的前提是隔离devbox、无生产用户数据、受限网络和工具权限。文中的1300+周合并PR是Stripe自报吞吐，仍由人类审查，不是通用成功率。原图需谨慎：正文将Fix CI failures称Agent节点，但示意图画为矩形，不能靠图形替作者解决这一不一致。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-compiler",
+      "listed_title": "Building a C compiler with a team of parallel Claudes",
+      "title": "Building a C compiler with a team of parallel Claudes",
+      "listed_url": "https://www.anthropic.com/engineering/building-c-compiler",
+      "source_url": "https://www.anthropic.com/engineering/building-c-compiler",
+      "version": "2026-02-05",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "compiler.html",
+      "sha256": "a438ba14119d764d63e3dd13724d9c5199381326c009f17788139a55056a3a44",
+      "scope_sections": [
+        "article正文全部：Enabling long-running Claudes至Looking forward"
+      ],
+      "read_sections": [
+        "article正文全部：Enabling long-running Claudes至Looking forward"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        17
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "16个Opus4.6 Agent起初在Linux编译同一错误上互相覆盖；作者用GCC编译大部分文件、新编译器编译子集，逐步缩小失败集合，才让工作分开。还需delta debugging找出单独通过但组合失败的文件。结果来自近2000会话、两周、20亿输入token、1.4亿输出token及近2万美元API成本；不要混淆。该编译器仍借助GCC处理x86的16位启动代码，汇编链接器亦非完整自研，生成代码效率和Rust质量有限，不是成熟编译器替代品。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-strongdm",
+      "listed_title": "Software Factories And The Agentic Moment",
+      "title": "Software Factories And The Agentic Moment",
+      "listed_url": "https://factory.strongdm.ai/",
+      "source_url": "https://factory.strongdm.ai/",
+      "version": "2026-02-06",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "strongdm.html",
+      "sha256": "f0953954fdd57189b4ac8f9eb2f91858a34402a7005dcc042959d840e17d68a8",
+      "scope_sections": [
+        "article正文全部"
+      ],
+      "read_sections": [
+        "article正文全部"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        18
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "StrongDM以场景表达端到端用户故事，常将其放在实现仓库外作为留出验收，避免Agent通过修改狭窄测试制造全绿。对于含Agent的产品，satisfaction观察多条轨迹中可能满足用户的比例，依然依赖场景与评判质量。其不手写/不人工审代码和每天每人1000美元token是团队主张与实验文化，不是可靠工程的普适门槛。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-dtu",
+      "listed_title": "Digital Twin Universe",
+      "title": "Digital Twin Universe",
+      "listed_url": "https://factory.strongdm.ai/techniques/dtu",
+      "source_url": "https://factory.strongdm.ai/techniques/dtu",
+      "version": "current page retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "dtu.html",
+      "sha256": "01666eeb02ce3239748ca864fbabb815ba36d4f503ef926bc30c9af7fa4928e7",
+      "scope_sections": [
+        "页面全文：Why DTU、四项优势、How It Works"
+      ],
+      "read_sections": [
+        "页面全文：Why DTU、四项优势、How It Works"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        18
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "DTU复制的是依赖服务边界上的可观察行为；先从API合同和边界案例做替身，再与真实依赖对照，直到不再找到行为差异。这样能高频重放场景、测试真实生产上危险或昂贵的故障。它不声称穷尽所有真实服务行为；替身和真实系统的差距仍会限制验收结论。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-friendster",
+      "listed_title": "Unorthodox approach to database design Part2:Friendster",
+      "title": "Unorthodox approach to database design Part2:Friendster",
+      "listed_url": "https://mysqldba.blogspot.com/2006/11/unorthodox-approach-to-database-design.html",
+      "source_url": "https://mysqldba.blogspot.com/2006/11/unorthodox-approach-to-database-design.html",
+      "version": "2006-11-09",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义背景案例，已额外阅读作者正文，不扩为数据库课程",
+      "path": "friendster.html",
+      "sha256": "4be367119a9b2e7e2d400100b80a5fa32efddb3a01fe8dd9355e0f837c89def3",
+      "scope_sections": [
+        "作者正文全文（不将评论当作者结论）"
+      ],
+      "read_sections": [
+        "作者正文全文（不将评论当作者结论）"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        21
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "亲历工程师指出，完整从库仍要重放所有写入，大数据集和I/O会产生复制延迟；提出按用户分片，缩小每台数据规模并分散写负载，配对复制提供可用性。文中说组织环境未让方案在Friendster落地，后在Flickr采用。这是工程师回顾，不能单独解释公司兴衰；跨分片关联和迁移成本也不能从该短文视为已解决。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-harness",
+      "listed_title": "Harness engineering: leveraging Codex in an agent-first world",
+      "title": "Harness engineering: leveraging Codex in an agent-first world",
+      "listed_url": "https://openai.com/index/harness-engineering/",
+      "source_url": "https://openai.com/index/harness-engineering/",
+      "version": "2026-02-11 / retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "path": "web-retrieval.json",
+      "sha256": "fcdf991503da195ef56e39e9c1a41ece6e396291cee9c9ae8c06ceb0f36a3fca",
+      "source_format": "web tool line-numbered retrieval; direct HTTP403",
+      "scope_sections": [
+        "article正文全部，从We started with an empty git repository到What we are still learning"
+      ],
+      "read_sections": [
+        "article正文全部，从We started with an empty git repository到What we are still learning"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        14,
+        15
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "OpenAI把AGENTS.md做导航，知识放入版本化仓库；每工作区独立运行应用并开放UI、日志和指标给Agent；通过lint/结构测试守住依赖边界并持续小规模清理。原文同时采用较少阻塞合并门控，不等于没有CI；也承认多年架构一致性尚未知。这是特定内部产品经验，不能直接泛化为所有项目的最优规则。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-webvan",
+      "listed_title": "Webvan 2000 Form10-K",
+      "title": "Webvan Group, Inc. Form10-K, year ended2000-12-31",
+      "listed_url": "https://www.sec.gov/Archives/edgar/data/1092657/000101287001001485/0001012870-01-001485.txt",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1092657/000101287001001485/0001012870-01-001485.txt",
+      "version": "2000 Form10-K / SEC accession0001012870-01-001485",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "仅核对讲义22页容量与亏损背景，不扩展为整份财报阅读",
+      "path": "webvan-source-excerpts.json",
+      "sha256": "bcee1d39c0263e7cdfcaeb45e487c4c1635a9da7ffea2378d67e52beb96939c4",
+      "source_format": "web tool retrieved original SEC text excerpts",
+      "scope_sections": [
+        "Item7风险：需额外资本（印刷页18）",
+        "高容量业务系统未验证（印刷页21）"
+      ],
+      "read_sections": [
+        "Item7风险：需额外资本（印刷页18）",
+        "高容量业务系统未验证（印刷页21）"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        22
+      ],
+      "known_gaps": [
+        "未读取整份年报；不得声称全文已读"
+      ],
+      "proposed_supplement": "2000年报区分两类设施：配送中心低于原设计容量40%，CFC低于70%；且当时尚无设施现金流盈利。应写配送中心而非所有设施都低于40%。这些披露支持需求/设施失配的讨论，不能据此把破产归因于单一技术架构。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    },
+    {
+      "id": "gse08-quibi",
+      "listed_title": "An open letter from Quibi",
+      "title": "An open letter to the employees, investors, and partners",
+      "listed_url": "https://quibi-hq.medium.com/an-open-letter-from-quibi-8af6b415377f",
+      "source_url": "https://quibi-hq.medium.com/an-open-letter-from-quibi-8af6b415377f",
+      "version": "2020-10-21",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "仅核对关停声明和管理层归因，不扩展到Quibi商业史",
+      "path": "web-retrieval.json",
+      "sha256": "fcdf991503da195ef56e39e9c1a41ece6e396291cee9c9ae8c06ceb0f36a3fca",
+      "scope_sections": [
+        "声明主体网页行41–67"
+      ],
+      "read_sections": [
+        "声明主体网页行41–67"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        22
+      ],
+      "known_gaps": [
+        "未将订阅UI、作者页及评论纳入阅读"
+      ],
+      "proposed_supplement": "Quibi管理层宣布结束业务，并把失败可能归为独立流媒体构想不足、或推出时机，也明确表示无法确知。可用于提醒实现完成不等于独立产品需求成立；不能改写成已证实的单一失败因果。",
+      "integration_status": "pending_parent_assignment",
+      "contributions": []
+    }
+  ],
+  "scope_boundary": "已盘点当前官网/讲义全部链接；尚须主代理逐块转写补入课堂口述明确推荐及材料。未把来源文章内部视频推荐递归扩成课程推荐。未调用课程成品验收器，整合尚未发生。",
+  "unread_background_links": [
+    {
+      "url": "https://continuousdelivery.com/2010/02/continuous-delivery/",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://github.com/marketplace/actions/claude-code-github-integration",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://global.toyota/en/company/vision-and-philosophy/production-system/",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://linearb.io/dev-interrupted/podcast/inventing-the-ralph-wiggum-loop",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://martinfowler.com/articles/continuousIntegration.html",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://www.grc.nasa.gov/WWW/k-12/airplane/wrights/test1901.html",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://www.sec.gov/litigation/admin/34-50771-o-2.htm",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://www.thoughtworks.com/about-us/history",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://www.wired.com/2007/04/what-i-learned-from-friendster-jonathan-abrams-new-startup/",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    }
+  ],
+  "reused_link_variants": [
+    {
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-merge-queue",
+      "material_id": "gse08-github-protection",
+      "disposition": "same already-read source; different www/anchor spelling"
+    },
+    {
+      "url": "https://git-scm.com/docs/githooks#_pre_commit",
+      "material_id": "gse08-git-hooks",
+      "disposition": "same already-read source; different www/anchor spelling"
+    },
+    {
+      "url": "https://www.martinfowler.com/articles/originalContinuousIntegration.html",
+      "material_id": "gse08-ci",
+      "disposition": "same already-read source; different www/anchor spelling"
+    }
+  ]
+}

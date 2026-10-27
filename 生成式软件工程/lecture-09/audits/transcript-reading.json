@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "source_sha256": "9cc30fd953bd2371033336eb6da563564d8709e934ac74893e9b98541b5976e4",
+  "index_sha256": "cc08bf727ed170282cf435d540b76b1c2b1985eff5465e388e97e200fb903fd7",
+  "source_units": 518,
+  "read_chunks": 18,
+  "authors": [
+    {
+      "actor": "root",
+      "method": "顺序完整阅读原始ASR713片段，0.31–5363.07秒；按主题写作后核对最终来源索引。"
+    },
+    {
+      "actor": "gse09_content_review_20261026",
+      "method": "最终导出18块518单元逐块全文阅读；记录在initial-content-review/content-review-draft.json"
+    }
+  ],
+  "scope": "完整转写阅读，不是逐秒听审全部音频。"
+}

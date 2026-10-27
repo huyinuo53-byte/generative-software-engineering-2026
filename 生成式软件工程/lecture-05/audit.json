@@ -1,0 +1,372 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1Nyeq6qEt8-20261002-quality-upgrade",
+  "actor": "lecture05-author",
+  "independence": "同一代理撰写后单独二次关键证据回查；不称外部独立审稿",
+  "notes_sha256": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+  "source_hashes": {
+    "transcript.json": "5ab5641c1152557735a50fa6ea56715c84488f6a5ad2f474e61bc88bf1bfa33c",
+    "chunks/index.json": "c253d81f1480c50d2f623f8bfaf74b1b7adfc273416bc6504eefcb04f2cb494f",
+    "sources/slides5.html": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+    "sources/lect5.html": "d2a1a510c8957e4ba87919adeb7f8fa420b1366179ab3a3af5874892c7a0e593",
+    "sources/previous-notes.json": "083e3784694fe91d0bb36fc48b0d95c36122f9475261e8062c2d32e2a21aba91"
+  },
+  "reading": [
+    {
+      "chunk_id": "chunk-0001",
+      "path": "chunks/chunk-0001.json",
+      "start": 0.83,
+      "end": 315.23,
+      "sentences": 30,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "1ff9c66e5d77799eda2dbc005b801a5ed137effa5217b541ff68f8b247bbfde6"
+    },
+    {
+      "chunk_id": "chunk-0002",
+      "path": "chunks/chunk-0002.json",
+      "start": 318.61,
+      "end": 640.18,
+      "sentences": 23,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "77a6dc3c8dbc1c4da4bae1763fb729980e5018a00c38ca9d994b27439746bb2d"
+    },
+    {
+      "chunk_id": "chunk-0003",
+      "path": "chunks/chunk-0003.json",
+      "start": 640.18,
+      "end": 945.6,
+      "sentences": 36,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "351f121ef43b94af8cd359563a1f592c9f540689406e86aa1d2788b0e7737058"
+    },
+    {
+      "chunk_id": "chunk-0004",
+      "path": "chunks/chunk-0004.json",
+      "start": 945.6,
+      "end": 1247.9,
+      "sentences": 19,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "ce8f61c84f3c5e3d6c5a4d924b8d5355452bfa61535d9ba6ee7d287fe4d9908b"
+    },
+    {
+      "chunk_id": "chunk-0005",
+      "path": "chunks/chunk-0005.json",
+      "start": 1247.9,
+      "end": 1555.54,
+      "sentences": 28,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "fc25cd7fcfcc64c85d1f1fc007bc5da52dfe0fa90ca513b9610ff6257e7994d9"
+    },
+    {
+      "chunk_id": "chunk-0006",
+      "path": "chunks/chunk-0006.json",
+      "start": 1555.54,
+      "end": 1863.21,
+      "sentences": 41,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "bae9852070db9ca0e7775774321a7cc22da1ce13e97132b2bf49fafe745c0c91"
+    },
+    {
+      "chunk_id": "chunk-0007",
+      "path": "chunks/chunk-0007.json",
+      "start": 1863.21,
+      "end": 2176.89,
+      "sentences": 28,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "83ab425727853a232b6b8c5be236d51d4f52c71f9282ccaf19d2a058665dddb1"
+    },
+    {
+      "chunk_id": "chunk-0008",
+      "path": "chunks/chunk-0008.json",
+      "start": 2176.89,
+      "end": 2477.57,
+      "sentences": 26,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "69cbd8aaa21f8541be44910511bfd7a8db5f87a4183e844ec38033f2cd3ab0c7"
+    },
+    {
+      "chunk_id": "chunk-0009",
+      "path": "chunks/chunk-0009.json",
+      "start": 2477.57,
+      "end": 2786.81,
+      "sentences": 34,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "c968bba8f206319ed9217c43831b1276d0f4018188c16d6c5d6d7081b2fc3421"
+    },
+    {
+      "chunk_id": "chunk-0010",
+      "path": "chunks/chunk-0010.json",
+      "start": 2789.12,
+      "end": 3096.6,
+      "sentences": 18,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "98406d69f118980483433db9b5862c72c5aab51f3b64115476e7024f8d715950"
+    },
+    {
+      "chunk_id": "chunk-0011",
+      "path": "chunks/chunk-0011.json",
+      "start": 3096.6,
+      "end": 3402.33,
+      "sentences": 20,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "98b9237893286957511cf0718280f3d3dc3308c716ffe720bdde23fa7e6802c4"
+    },
+    {
+      "chunk_id": "chunk-0012",
+      "path": "chunks/chunk-0012.json",
+      "start": 3402.33,
+      "end": 3705.54,
+      "sentences": 18,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "76e2f7f7af723f6cbeb1d6aa06255ef025677439d776b668dbe848af70ad4460"
+    },
+    {
+      "chunk_id": "chunk-0013",
+      "path": "chunks/chunk-0013.json",
+      "start": 3705.54,
+      "end": 4021.39,
+      "sentences": 19,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "a3e3ca297bcee5c66d895297a889754aef44a71ec0548238394c33c0571a73e2"
+    },
+    {
+      "chunk_id": "chunk-0014",
+      "path": "chunks/chunk-0014.json",
+      "start": 4021.54,
+      "end": 4338.13,
+      "sentences": 23,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "1b16c6cae00e8c1f9dd5595a986947d3d5178a2e298205c98d68bb46b07de67a"
+    },
+    {
+      "chunk_id": "chunk-0015",
+      "path": "chunks/chunk-0015.json",
+      "start": 4338.13,
+      "end": 4642.31,
+      "sentences": 20,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "1eaccc7d351e8388938c5c959ba9708723f40469c0a05da5357e3bb322973409"
+    },
+    {
+      "chunk_id": "chunk-0016",
+      "path": "chunks/chunk-0016.json",
+      "start": 4642.31,
+      "end": 4964.24,
+      "sentences": 21,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "25f761fec96dc1fe46ffaa5de9d9f541141f9ea41ce2c3a3ced628978e4932bb"
+    },
+    {
+      "chunk_id": "chunk-0017",
+      "path": "chunks/chunk-0017.json",
+      "start": 4964.24,
+      "end": 5273.29,
+      "sentences": 27,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "98bfb25e7f8b708826ea51642b03c1357bbae72b8fb8298a9d2a83f348d27e69"
+    },
+    {
+      "chunk_id": "chunk-0018",
+      "path": "chunks/chunk-0018.json",
+      "start": 5273.7,
+      "end": 5576.55,
+      "sentences": 25,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "5e0df1ecadbf2f267512dc51cdca406a1885dd662e425af14b3e94c3d71fb7c8"
+    },
+    {
+      "chunk_id": "chunk-0019",
+      "path": "chunks/chunk-0019.json",
+      "start": 5576.55,
+      "end": 5877.67,
+      "sentences": 26,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "f10984066aba379e491753e47d314e1e9ebed297994773c775cce8e62d701dc1"
+    },
+    {
+      "chunk_id": "chunk-0020",
+      "path": "chunks/chunk-0020.json",
+      "start": 5877.67,
+      "end": 5999.18,
+      "sentences": 9,
+      "status": "fully_read",
+      "actor": "lecture05-author",
+      "method": "逐块完整读取原句文本，不以旧稿替代",
+      "sha256": "708d925fd7335745bcbb7f5d22d39fca926a60f1ca1bf1f05ff24521a4b1654f"
+    }
+  ],
+  "review_scope": {
+    "transcript": "全部20块491条，0.83–5999.18秒",
+    "official_slides": "39/39页文本与像素目视；38页入选，第7页动态视频占位被实际视频帧替换",
+    "official_lecture": "全文lect5.md呈现的HTML正文",
+    "video_frames": [
+      1274.79,
+      4274.29
+    ],
+    "audio_relisten": [],
+    "raw_UML_spec_read": false,
+    "cited_papers_full_read": false
+  },
+  "issues": [
+    {
+      "issue_id": "Q05-01",
+      "severity": "medium",
+      "before": "旧稿把单动作token和输入编码写成肯定的模型架构。",
+      "evidence": "s-g6.0~1@32.67",
+      "resolution": "保留prefill-only为现场猜测；补分官方讲义补注，避免假说升级事实。",
+      "status": "resolved",
+      "verification": "回查上述源句/讲义，与当前notes对应段落比较；源句原文未修改",
+      "before_sha256": "083e3784694fe91d0bb36fc48b0d95c36122f9475261e8062c2d32e2a21aba91",
+      "after_sha256": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+      "category": "revised_previous_draft"
+    },
+    {
+      "issue_id": "Q05-02",
+      "severity": "medium",
+      "before": "旧稿的无人监督描述易让人忽略真实硬件实验的人类浓淡反馈。",
+      "evidence": "s-g359.0@1474.42",
+      "resolution": "明确当前闭环仍含教师反馈，摄像头无人验收是设想；去掉不明确驱动名的猜测。",
+      "status": "resolved",
+      "verification": "回查上述源句/讲义，与当前notes对应段落比较；源句原文未修改",
+      "before_sha256": "083e3784694fe91d0bb36fc48b0d95c36122f9475261e8062c2d32e2a21aba91",
+      "after_sha256": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+      "category": "revised_previous_draft"
+    },
+    {
+      "issue_id": "Q05-03",
+      "severity": "medium",
+      "before": "旧标题把Royce Pilot直接等同于现代MVP。",
+      "evidence": "s-g683.0~28@3490.05; official slides20",
+      "resolution": "改为类比并区分技术运行风险与用户业务假设；保留早反馈的共同点。",
+      "status": "resolved",
+      "verification": "回查上述源句/讲义，与当前notes对应段落比较；源句原文未修改",
+      "before_sha256": "083e3784694fe91d0bb36fc48b0d95c36122f9475261e8062c2d32e2a21aba91",
+      "after_sha256": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+      "category": "revised_previous_draft"
+    },
+    {
+      "issue_id": "Q05-04",
+      "severity": "medium",
+      "before": "旧稿把下一次物理设备实验写成已经布置的要求。",
+      "evidence": "s-g398.0~16@1739.09",
+      "resolution": "正文改为当堂预告、尚未正式布置。",
+      "status": "resolved",
+      "verification": "回查上述源句/讲义，与当前notes对应段落比较；源句原文未修改",
+      "before_sha256": "083e3784694fe91d0bb36fc48b0d95c36122f9475261e8062c2d32e2a21aba91",
+      "after_sha256": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+      "category": "revised_previous_draft"
+    },
+    {
+      "issue_id": "Q05-05",
+      "severity": "high",
+      "before": "旧稿没有完整记录余额不足的契约责任、运行断言与静态证明差别，可能泛化自动证明能力。",
+      "evidence": "s-g1171.0@5344.5;s-g1194.0~14@5472.51; slides26–27",
+      "resolution": "补取款不等式、前后状态、不变量、失败设计、三种验证层次；未来自动证明明确是愿景。",
+      "status": "resolved",
+      "verification": "回查上述源句/讲义，与当前notes对应段落比较；源句原文未修改",
+      "before_sha256": "083e3784694fe91d0bb36fc48b0d95c36122f9475261e8062c2d32e2a21aba91",
+      "after_sha256": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+      "category": "revised_previous_draft"
+    },
+    {
+      "issue_id": "Q05-06",
+      "severity": "medium",
+      "before": "旧稿只保留UML概览，官方第31–39页知识点缺失。",
+      "evidence": "s-g1363.0@5990.35; slides31–39",
+      "resolution": "增9项课后讲义补充与全部对应图；不编造源句、课堂时间或当堂授课范围。",
+      "status": "resolved",
+      "verification": "回查上述源句/讲义，与当前notes对应段落比较；源句原文未修改",
+      "before_sha256": "083e3784694fe91d0bb36fc48b0d95c36122f9475261e8062c2d32e2a21aba91",
+      "after_sha256": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+      "category": "revised_previous_draft"
+    },
+    {
+      "issue_id": "Q05-07",
+      "severity": "medium",
+      "before": "旧稿时序图表述可能被理解为全局串行。",
+      "evidence": "s-g1231.0~6@5689.35; slides36",
+      "resolution": "补seq弱序、同生命线约束、跨生命线交错与strict边界。",
+      "status": "resolved",
+      "verification": "回查上述源句/讲义，与当前notes对应段落比较；源句原文未修改",
+      "before_sha256": "083e3784694fe91d0bb36fc48b0d95c36122f9475261e8062c2d32e2a21aba91",
+      "after_sha256": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+      "category": "revised_previous_draft"
+    },
+    {
+      "issue_id": "Q05-08",
+      "severity": "medium",
+      "before": "旧稿将同一项目历史阅读方式误写成当前全局工作方式。",
+      "evidence": "previous-notes.json section16 editor_notes",
+      "resolution": "按本次分工改为第05课代理全文阅读和同代理二次内容审查；UI交给协调者。",
+      "status": "resolved",
+      "verification": "回查上述源句/讲义，与当前notes对应段落比较；源句原文未修改",
+      "before_sha256": "083e3784694fe91d0bb36fc48b0d95c36122f9475261e8062c2d32e2a21aba91",
+      "after_sha256": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+      "category": "revised_previous_draft"
+    },
+    {
+      "issue_id": "Q05-09",
+      "severity": "low",
+      "before": "旧静态讲义截帧分辨率小且容易遗漏后展开内容。",
+      "evidence": "previous-notes.json frames; sources/slides5.html",
+      "resolution": "选用38张官方完整页面；保留2张实际演示/板书帧。",
+      "status": "resolved",
+      "verification": "回查上述源句/讲义，与当前notes对应段落比较；源句原文未修改",
+      "before_sha256": "083e3784694fe91d0bb36fc48b0d95c36122f9475261e8062c2d32e2a21aba91",
+      "after_sha256": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+      "category": "revised_previous_draft"
+    },
+    {
+      "issue_id": "Q05-10",
+      "severity": "medium",
+      "before": "制作时发现官方第7页是动态视频黑色占位。",
+      "evidence": "frames/slide-07.jpg",
+      "resolution": "未入选成品，改用21:14.79实际扫描完成视频帧；静态讲义全文保留于来源。",
+      "status": "resolved",
+      "verification": "回查上述源句/讲义，与当前notes对应段落比较；源句原文未修改",
+      "before_sha256": "083e3784694fe91d0bb36fc48b0d95c36122f9475261e8062c2d32e2a21aba91",
+      "after_sha256": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+      "category": "production_risk"
+    }
+  ],
+  "content_status": "passed",
+  "semantic_coverage": "保留全部教学主题、设备实验、历史论证、工具例子和课程结尾；没有把491/491结构归属等同于语义准确率。"
+}

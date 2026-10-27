@@ -1,0 +1,100 @@
+{
+  "run_id": "BV1Nyeq6qEt8-20261008-editorial-pilot",
+  "scope_revision": 3,
+  "scope": "第五课图文整合、整体阅读界面与重点层次试点",
+  "outcome": "completed",
+  "user_acceptance": "pending",
+  "summary": "保留整合版全部文字与40幅原图，增加16条关键判断和选择性关键词加粗；优化标题/正文/图注、桌面侧栏及移动目录；12道自测答案折叠。",
+  "validation": {
+    "content": {
+      "status": "passed",
+      "evidence": "revisions/20261008-editorial/content-review.json"
+    },
+    "image_integrity": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "source_coverage": {
+      "status": "passed",
+      "evidence": "revisions/20261008-integrated/content-review.json"
+    },
+    "html_static": {
+      "status": "passed",
+      "evidence": "revisions/20261008-editorial/browser.json"
+    },
+    "desktop": {
+      "status": "passed",
+      "evidence": "revisions/20261008-editorial/browser.json"
+    },
+    "narrow": {
+      "status": "passed",
+      "evidence": "revisions/20261008-editorial/browser.json"
+    },
+    "html_print": {
+      "status": "passed",
+      "evidence": "revisions/20261008-editorial/print.json"
+    },
+    "real_phone": {
+      "status": "not_requested",
+      "evidence": "Not tested; narrow is browser simulation"
+    },
+    "full_video_review": {
+      "status": "not_requested",
+      "evidence": "Not repeated for this layout revision"
+    },
+    "cited_original_reading": {
+      "status": "not_requested",
+      "evidence": "No new cited-original reading in this revision"
+    },
+    "native_print_dialog": {
+      "status": "not_requested",
+      "evidence": "Headless PDF print tested; native dialog not tested"
+    },
+    "tablet": {
+      "status": "passed",
+      "evidence": "revisions/20261008-editorial/browser.json"
+    }
+  },
+  "previous_review": "revisions/20261008-editorial/before/review.json",
+  "reuse": {
+    "transcript": "unchanged, prior full reading retained; only final classroom-boundary passage re-read this revision",
+    "source_materials": "existing frozen lecture slides; no live refresh or new reading claims",
+    "image_pixels": "all 40 unchanged; previous image-level audit retained",
+    "project_strict": "previous check only, not rerun; no project mutation"
+  },
+  "source_hashes": {
+    "notes.json": "dc8f00c56d59111dae9d0d92843d625cf10b9c63a9fe0523927e62d72e80a658",
+    "课堂笔记.html": "87b8ef114786b34e310ebd00288827716ebeab2f15044f888a8456aad79105f4",
+    "transcript.json": "5ab5641c1152557735a50fa6ea56715c84488f6a5ad2f474e61bc88bf1bfa33c",
+    "chunks/index.json": "c253d81f1480c50d2f623f8bfaf74b1b7adfc273416bc6504eefcb04f2cb494f",
+    "image-audit.json": "6616749ae4e39b34ac3b2105bcfce73eb7d1dca4c4b1af95fca2f1faf3bbb01d"
+  },
+  "delivered_files": [
+    "课堂笔记.html"
+  ],
+  "trace_snapshot": "revisions/20261008-editorial/trace.json",
+  "follow_up": "User accepts fifth lesson before scaling to other lessons; update shared skill only after course-scale validation.",
+  "lessons": [
+    {
+      "status": "candidate",
+      "scope": "user-approved pilot pending acceptance",
+      "finding": "Separate source attribution from reading order: bind each addition and its figure to the relevant argument, not a global after-class appendix.",
+      "evidence": "integration-map.json and browser screenshots",
+      "next_action": "Await user review before generalizing"
+    },
+    {
+      "status": "candidate",
+      "scope": "fifth-lesson pilot, user acceptance pending",
+      "finding": "Use section-level editorial takeaways plus sparse semantic emphasis, maintaining full source text; use a responsive reading column and paired evidence.",
+      "evidence": "editorial.json, editorial.css and revisions/20261008-editorial/browser.json",
+      "next_action": "Wait for user acceptance before scaling or modifying skill."
+    }
+  ],
+  "metrics": {
+    "tokens": null,
+    "cost": null,
+    "active_seconds": null
+  },
+  "finished_at": "2026-10-07T19:25:20.376788+00:00",
+  "blocker": null
+}

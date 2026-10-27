@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1fKtN6DErG-20261002-complete-notes",
+  "basis": "observed_build",
+  "root": ".",
+  "artifacts": [
+    {
+      "id": "audit.json",
+      "path": "audit.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0001.json",
+      "path": "chunks/chunk-0001.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/index.json",
+      "path": "chunks/index.json",
+      "depends_on": []
+    },
+    {
+      "id": "cross-review.json",
+      "path": "cross-review.json",
+      "depends_on": []
+    },
+    {
+      "id": "events.jsonl",
+      "path": "events.jsonl",
+      "depends_on": []
+    },
+    {
+      "id": "frames/000.jpg",
+      "path": "frames/000.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/010.jpg",
+      "path": "frames/010.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/020.jpg",
+      "path": "frames/020.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/030.jpg",
+      "path": "frames/030.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/040.jpg",
+      "path": "frames/040.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/050.jpg",
+      "path": "frames/050.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/060.jpg",
+      "path": "frames/060.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/070.jpg",
+      "path": "frames/070.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/080.jpg",
+      "path": "frames/080.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/090.jpg",
+      "path": "frames/090.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/100.jpg",
+      "path": "frames/100.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/110.jpg",
+      "path": "frames/110.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/120.jpg",
+      "path": "frames/120.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/130.jpg",
+      "path": "frames/130.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/140.jpg",
+      "path": "frames/140.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/150.jpg",
+      "path": "frames/150.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/160.jpg",
+      "path": "frames/160.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "image-audit.json",
+      "path": "image-audit.json",
+      "depends_on": []
+    },
+    {
+      "id": "notes.json",
+      "path": "notes.json",
+      "depends_on": [
+        "transcript.json",
+        "chunks/index.json"
+      ]
+    },
+    {
+      "id": "qa/browser.json",
+      "path": "qa/browser.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ]
+    },
+    {
+      "id": "qa/contact-1.jpg",
+      "path": "qa/contact-1.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "qa/contact-2.jpg",
+      "path": "qa/contact-2.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "qa/contact-3.jpg",
+      "path": "qa/contact-3.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "qa/desktop-body.png",
+      "path": "qa/desktop-body.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/desktop-top.png",
+      "path": "qa/desktop-top.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/desktop-zoom.png",
+      "path": "qa/desktop-zoom.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/desktop-zoom3.png",
+      "path": "qa/desktop-zoom3.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/final-static.json",
+      "path": "qa/final-static.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ]
+    },
+    {
+      "id": "qa/mobile-body.png",
+      "path": "qa/mobile-body.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/mobile-top.png",
+      "path": "qa/mobile-top.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/mobile-zoom.png",
+      "path": "qa/mobile-zoom.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/mobile-zoom3.png",
+      "path": "qa/mobile-zoom3.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/print.json",
+      "path": "qa/print.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ]
+    },
+    {
+      "id": "qa/project-check.json",
+      "path": "qa/project-check.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ]
+    },
+    {
+      "id": "qa/static-check.json",
+      "path": "qa/static-check.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ]
+    },
+    {
+      "id": "review.json",
+      "path": "review.json",
+      "depends_on": [
+        "notes.json",
+        "课堂笔记.html",
+        "image-audit.json",
+        "qa/browser.json",
+        "qa/print.json"
+      ]
+    },
+    {
+      "id": "run.json",
+      "path": "run.json",
+      "depends_on": []
+    },
+    {
+      "id": "sources/media-info.json",
+      "path": "sources/media-info.json",
+      "depends_on": []
+    },
+    {
+      "id": "sources/media-probe.json",
+      "path": "sources/media-probe.json",
+      "depends_on": []
+    },
+    {
+      "id": "transcript.json",
+      "path": "transcript.json",
+      "depends_on": []
+    },
+    {
+      "id": "课堂笔记.html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "notes.json",
+        "chunks/index.json",
+        "frames/010.jpg",
+        "frames/020.jpg",
+        "frames/040.jpg",
+        "frames/060.jpg",
+        "frames/090.jpg",
+        "frames/110.jpg",
+        "frames/130.jpg",
+        "frames/150.jpg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "bcut",
+    "polish",
+    "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1JGap6LE74.bcut",
+    "--paragraphs",
+    "p-g451.0~44",
+    "--llm",
+    "agent",
+    "--jsonl"
+  ],
+  "cwd": "/Users/yjzhao/Library/Application Support/BaoCut/agent/_scratch",
+  "finishedAtMs": 1790836223426,
+  "pid": 75514,
+  "startedAtMs": 1790836108650,
+  "taskId": "t-mup5kx2h"
+}

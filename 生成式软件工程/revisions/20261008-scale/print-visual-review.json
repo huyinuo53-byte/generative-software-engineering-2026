@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "status": "last_page_samples_passed",
+  "reviewed_at": "2026-10-08T03:55:48.869974+08:00",
+  "method": "System Poppler pdftoppm at 100 dpi; each final page PNG directly inspected through view_image.",
+  "reviewed_page_count": 7,
+  "total_pdf_pages": 296,
+  "samples": [
+    {
+      "lesson": "lecture-01",
+      "pdf": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/revisions/20261008-scale/print-check.pdf",
+      "pdf_sha256": "6c48f3ec97eff6b7aa740f6d3aa0faf5e122126ffc11efc2bdf45ccc0e57d5ba",
+      "total_pages": 54,
+      "reviewed_pages": [
+        54
+      ],
+      "image": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/revisions/20261008-scale/print-last-page.png",
+      "image_sha256": "86727ceb2e3d4fe91dcc3925c33484bcd4c23e4614d2f9e1f2578d11e04d9e83",
+      "visible_questions": [
+        10,
+        11,
+        12
+      ],
+      "observation": "Complete question and expanded answer cards are visible with green/cream hierarchy, return links and intact text. No clipping, overlapping or broken glyphs observed on this last page.",
+      "result": "passed_sample"
+    },
+    {
+      "lesson": "lecture-02",
+      "pdf": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/print-check.pdf",
+      "pdf_sha256": "10771b4c7f4e7d6ae6a379c6921ca5d9394d930e05b274f95429b4e57599fd84",
+      "total_pages": 47,
+      "reviewed_pages": [
+        47
+      ],
+      "image": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/print-last-page.png",
+      "image_sha256": "4c17339dc8183d5d6a058fb38d17e3f964d22a43e2bc5d7fbf9bdb7ffb45b636",
+      "visible_questions": [
+        5
+      ],
+      "observation": "Complete question and expanded answer cards are visible with green/cream hierarchy, return links and intact text. No clipping, overlapping or broken glyphs observed on this last page.",
+      "result": "passed_sample"
+    },
+    {
+      "lesson": "lecture-03",
+      "pdf": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-03/revisions/20261008-scale/print-check.pdf",
+      "pdf_sha256": "1325b5253098470676101cd872587aca0fa98118c921ed1a1411bc0949511552",
+      "total_pages": 50,
+      "reviewed_pages": [
+        50
+      ],
+      "image": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-03/revisions/20261008-scale/print-last-page.png",
+      "image_sha256": "8abd4b6963695f14b786f575c22e3a18328c8211b335f8938c78c796502dff89",
+      "visible_questions": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "observation": "Complete question and expanded answer cards are visible with green/cream hierarchy, return links and intact text. No clipping, overlapping or broken glyphs observed on this last page.",
+      "result": "passed_sample"
+    },
+    {
+      "lesson": "lecture-04",
+      "pdf": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/print-check.pdf",
+      "pdf_sha256": "4ff3f5d4bc21bb0606e62002c34857d186b58700407e52999a7a4d67e222fdd7",
+      "total_pages": 41,
+      "reviewed_pages": [
+        41
+      ],
+      "image": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/print-last-page.png",
+      "image_sha256": "ed49f745b00028424aedeb62be6b707515b76a68736dad16550aaa312dff0f2f",
+      "visible_questions": [
+        5,
+        6,
+        7
+      ],
+      "observation": "Complete question and expanded answer cards are visible with green/cream hierarchy, return links and intact text. No clipping, overlapping or broken glyphs observed on this last page.",
+      "result": "passed_sample"
+    },
+    {
+      "lesson": "lecture-06",
+      "pdf": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-06/revisions/20261008-scale/print-check.pdf",
+      "pdf_sha256": "6f03566578efed8fd8e60be15db8e5d97e9775418215bc2fbfbb12ec7bbf84de",
+      "total_pages": 40,
+      "reviewed_pages": [
+        40
+      ],
+      "image": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-06/revisions/20261008-scale/print-last-page.png",
+      "image_sha256": "09dc3d043a9d948bfc3c9d9a5d54305db662bd2bd25c1b3676c9447eb2056fb9",
+      "visible_questions": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "observation": "Complete question and expanded answer cards are visible with green/cream hierarchy, return links and intact text. No clipping, overlapping or broken glyphs observed on this last page.",
+      "result": "passed_sample"
+    },
+    {
+      "lesson": "lecture-07",
+      "pdf": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-07/revisions/20261008-scale/print-check.pdf",
+      "pdf_sha256": "44f78b5ce57237423c7df3a58d6bc97dde31162971e786eae17ccbfb85166d44",
+      "total_pages": 52,
+      "reviewed_pages": [
+        52
+      ],
+      "image": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-07/revisions/20261008-scale/print-last-page.png",
+      "image_sha256": "475a14e17fcfd47ba1e2ada2c8375360bc2e2732a27edb96ec5ef54335919ef1",
+      "visible_questions": [
+        8,
+        9
+      ],
+      "observation": "Complete question and expanded answer cards are visible with green/cream hierarchy, return links and intact text. No clipping, overlapping or broken glyphs observed on this last page.",
+      "result": "passed_sample"
+    },
+    {
+      "lesson": "extra-ai-slop",
+      "pdf": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/print-check.pdf",
+      "pdf_sha256": "1209a02980b6dd2bcd351187bec5a6a32e6cb6d1eecf5c873865d3c64561c0d0",
+      "total_pages": 12,
+      "reviewed_pages": [
+        12
+      ],
+      "image": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/print-last-page.png",
+      "image_sha256": "5bf7f387db92974a74852ee35fcb256d157c1d2c2702bd36fb1bec85a3d6b4f9",
+      "visible_questions": [
+        4
+      ],
+      "observation": "Complete question and expanded answer cards are visible with green/cream hierarchy, return links and intact text. No clipping, overlapping or broken glyphs observed on this last page.",
+      "result": "passed_sample"
+    }
+  ],
+  "boundaries": [
+    "Only the final page of each of seven PDFs was visually inspected; not every page or page boundary.",
+    "These are existing browser print-check PDFs, not evidence of native OS print-preview or physical-printer testing.",
+    "Last pages with only one or two complete cards have expected unused space below them; this is not proof that earlier pagination is optimal.",
+    "Expanded answers are visibly present in the reviewed cards; full-document answer preservation is a separate structural check."
+  ],
+  "findings": []
+}

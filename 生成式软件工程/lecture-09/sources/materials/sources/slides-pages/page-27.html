@@ -1,0 +1,20 @@
+<h1>那么，代价呢？</h1>
+<h2>生态碎片：插件之间的语义冲突，得自己管理</h2>
+<ul>
+<li>A 改写输入，B 检查输入；先后顺序可能改变结果</li>
+<li>两个 Hook 都合法，但一个要求继续，另一个要求停止<ul>
+<li><span class="aigc">电话系统也如此：“遇忙转移”遇上“呼叫等待”，新来电该转走，还是留下？<a href="https://www.sciencedirect.com/science/article/abs/pii/S1389128613001527">Feature Interaction</a></span></li>
+</ul>
+</li>
+<li>插件开始依赖另一个插件产生的事件、注册顺序或副作用</li>
+</ul>
+<h2>10 个自动上下文压缩插件</h2>
+<ul>
+<li>每个都压缩 $1/2$，最后被压缩到没法用 😂</li>
+</ul>
+<p>$$
+\left(\frac{1}{2}\right)^{10} = \frac{1}{1024}
+$$</p>
+<ul>
+<li><span class="aigc">即使顺序不影响结果，“每个插件单独合理”也不保证“组合起来合理”。</span></li>
+</ul>

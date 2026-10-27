@@ -1,0 +1,112 @@
+{
+  "run_id": "BV1Rch76WEfQ-20261002",
+  "outcome": "completed",
+  "summary": "完整阅读19块转写，486来源单元逐项覆盖；20节、37图。内容与逐图复核、最终HTML结构/桌面/390px窄屏/打印保真检查通过。未做真实手机或逐秒音频听审。",
+  "validation": {
+    "content": {
+      "status": "passed",
+      "evidence": [
+        "audit.json",
+        "cross-review.json"
+      ]
+    },
+    "image_audit": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_static": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "project_check": {
+      "status": "passed",
+      "evidence": "sources/project-check.json"
+    },
+    "desktop": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "narrow": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "real_phone": {
+      "status": "not_requested",
+      "evidence": "未做真实手机设备实测；390px仅浏览器模拟"
+    },
+    "pdf": {
+      "status": "not_requested",
+      "evidence": "临时PDF只用于HTML打印检查，不作为完整PDF交付"
+    },
+    "source_coverage": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "image_integrity": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_print": {
+      "status": "passed",
+      "evidence": "qa/print.json"
+    },
+    "package": {
+      "status": "not_requested",
+      "evidence": "逐视频独立单文件HTML"
+    },
+    "project_strict": {
+      "status": "passed",
+      "evidence": "sources/project-check.json"
+    }
+  },
+  "blocker": null,
+  "resume_condition": null,
+  "source_hashes": {
+    "transcript.json": "3307c7c4be10cf564b613a1963757aff0d7b76ab28d4d81a4369c7f767a13026",
+    "chunks/index.json": "265c761a2ca8a855ccf56a0ca3f0ecff125952afb0d800b7c0ef25f3a6d4b5b6",
+    "notes.json": "4debf37d2cfbb2a3fc91a1f59fa85946936e4cd863c70ef05cce584a1fd14b43",
+    "课堂笔记.html": "c44c7dc08f5a54e38ef6fb952a0862a49eed1f0805d4d68409d914d33984f25e",
+    "image-audit.json": "f9c1105d77156780f6949b3dc4e8ec567049d1b1cc3f1db7d0c9cdf925227847",
+    "qa/browser.json": "35904357a7babfa8b1a10b4ef5b53faf85aab8ae8caa71b88665680cc9872543",
+    "qa/print.json": "17273b324209e045e26a2e1f7479d72bf43b662e8cb4406286d67208f033fe07"
+  },
+  "audit": [
+    "audit.json",
+    "cross-review.json"
+  ],
+  "scope_revision": 1,
+  "delivered_files": [
+    "课堂笔记.html"
+  ],
+  "lessons": [
+    {
+      "status": "candidate",
+      "scope": "jyywiki slides6.html screenshot",
+      "finding": "0.3 second screenshot after show may include transition and crop content",
+      "evidence": "audit.json issue06-02",
+      "next_action": "disable transition/animation in own tab and visually verify each final slide"
+    },
+    {
+      "status": "candidate",
+      "scope": "classroom UI demonstration transcript review",
+      "finding": "apparent inconsistent statements may describe distinct input values; inspect validation and saved result",
+      "evidence": "31:52 >100 rejected;31:55 100 saved",
+      "next_action": "read adjacent actual frames before deciding contradiction"
+    }
+  ],
+  "metrics": {
+    "wall_seconds": null,
+    "active_seconds": null,
+    "tokens": null,
+    "media_hours": 1.6139259258333332,
+    "images": 37,
+    "sections": 20,
+    "source_units": 486,
+    "transcript_chunks": 19,
+    "selected_images": 37,
+    "text_blocks": 124,
+    "cost": null
+  },
+  "finished_at": "2026-10-02T15:35:10.117055+00:00",
+  "trace_snapshot": "trace-final.json"
+}

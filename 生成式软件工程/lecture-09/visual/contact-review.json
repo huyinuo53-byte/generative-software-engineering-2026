@@ -1,0 +1,293 @@
+{
+  "reviewer": "gse09_visual_20261026",
+  "status": "reviewed",
+  "sheets": [
+    {
+      "path": "contacts/contact-01.jpg",
+      "sha256": "5057652072c76455df9219c0e3b3e2da3192425029980b4bee27dc234a5f3f8e",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-02.jpg",
+      "sha256": "bdd86bb5bbbe52de1922f124a4113edb4b9e1d1f987031cc68ac3b18ea60c172",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-03.jpg",
+      "sha256": "c5aa937c9020cf6efce140f118b1ef93db88e46f7ed0139bbab934fcad7d4231",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-04.jpg",
+      "sha256": "59bbf66bd7c7d2a646442a984af516a8d9bcb33a3bfb34b2225d31bcf55a0c2f",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-05.jpg",
+      "sha256": "ede6b9aa2eee69e2daae02fe3fc7c388ebbe2ea8863b32c974e8bdc1e159932b",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-06.jpg",
+      "sha256": "b743ebcae96ec06b622042881041698d13904efeeeee8d0d637d946b347da9fa",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-07.jpg",
+      "sha256": "f16735d2c7e27e08b58d990fa5c08b730bdc8c26fbc9b15e68ebea4176410fad",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-08.jpg",
+      "sha256": "973689fca8a4ddebc7e692d6a75237e6126840d11906ca7ba2b7265c87e21a8b",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-09.jpg",
+      "sha256": "d05e7f8f17065921e32d5ecc10809ebff5b57a98a01e60a64498693f7cf91bd3",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-10.jpg",
+      "sha256": "abbbf588ea15528ffcd9363c348bea06a9f8e51c4c06140722bdf1050cadc709",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-11.jpg",
+      "sha256": "c8ef32a43b5792127d4fa5dae45237bfad01e8410f6cae4a0a8cdd2fa6040c97",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-12.jpg",
+      "sha256": "5a1321d87121ec50594bd28b8d041bb9c480abd434a9182188bb2ba513760847",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-13.jpg",
+      "sha256": "25799be71a9854a4e77ed333ee6efe6e520dfc077ad6e47e69bb1d00075c0eb1",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-14.jpg",
+      "sha256": "c2becd72bb8dc3f608d1ffdaf266d9200231fcda24e2b7ddedc64ddb3a7cfe8a",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-15.jpg",
+      "sha256": "b768ce29ae2758ebd55fd45dcb27a72ab3bbc571a34cf5cb3d93e8ce225f998b",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-16.jpg",
+      "sha256": "fa23a55d6f89b49dec24eb50009ef7de9d6bc1b9821041627d27f21680d42a6e",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-17.jpg",
+      "sha256": "586205c1829e0e18e1eaaeec0d222cda477c5b8fc70e0d91818549e3634ae77d",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-18.jpg",
+      "sha256": "71b1daa4e8025a124705bce1c9056b81f69b55d6025aba96c6583e8fa649fc8b",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-19.jpg",
+      "sha256": "e357323809fe5ee8f333548e1ba1fd6561193454d08da01f22a3de4e4bf21121",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-20.jpg",
+      "sha256": "63eec16c22bfbf008976f0f7a58994b8639a7a7831cb6dce4c6a5693053895c1",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-21.jpg",
+      "sha256": "47c64191454037a6ef7fb0c5da7a6fe8054ca7c17790d5690035ba397ae3e465",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-22.jpg",
+      "sha256": "5ef59cc350d0120ab48ee170bc6f5b4c8299f83b8cd3e154dff91f1eb4f7ed4e",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-23.jpg",
+      "sha256": "2a8ee95045b7cce5bed2690266ed4ca730166c7e2952b4cbfe6f027692587d72",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/contact-24.jpg",
+      "sha256": "0fc2eacc98f6754611650699dc2da9777c43a2306198c47d36b585be42df4c45",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/dense-01.jpg",
+      "sha256": "0bde6023c2a0c4a669308dc25ea2f4ede4bcf02e34095d7edd65cefb5f084e01",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/dense-02.jpg",
+      "sha256": "91bae6a9aad0815f83320c77225d8e3b08a916743d6a30315a12610e8430bcbd",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/dense-03.jpg",
+      "sha256": "43ad9112d885a0d7aa11da16515bdf002b010c525d97e05df33b0522ee740de7",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/dense-04.jpg",
+      "sha256": "8ea400bf82b66fc0d019271821ad384a3656ff1bf31cfd3841ac748e17e9eaa1",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/dense-05.jpg",
+      "sha256": "d9ae13c8990a73d6c5230c5056c4e4327b6ea3e3888509a397a43e423082f457",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/dense-06.jpg",
+      "sha256": "427b9a11a0659a10fdadf2caaaec263471bdbfac155a2fb0a644a3d4d6179fa7",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/dense-07.jpg",
+      "sha256": "a9bb087d381bbd33c99a69f89a2e1bfe59cb3d3fcace9ffe023f2c173b990972",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/duplicates-01.jpg",
+      "sha256": "4db6fc1d1fd0871ca118d64f9e06aa239ab8745435220db4958822e3021beede",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/duplicates-02.jpg",
+      "sha256": "ad9658bf9bb4c9758775291e7b9f163639c33294b0e8a0dea9f4f50829cefd0a",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/duplicates-03.jpg",
+      "sha256": "35b5b23155dca91a4cbf938abb57343f3766cd611583d0eef7d6528b30df98ed",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/duplicates-04.jpg",
+      "sha256": "a6287295ed581d76235f74e693a031cbe50ad08cad4ad3dae666b4dcb5279147",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/duplicates-05.jpg",
+      "sha256": "20b8d7b25dcf33b23e2b07e5672d19d8f631ab845608c589e33df38222206108",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/duplicates-06.jpg",
+      "sha256": "f089bf182304f7d02737233814b4e36c1a43e6126e1f76bf35a62c518e59be4c",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/duplicates-07.jpg",
+      "sha256": "0f8415b0b9db581a9a68867fe3732398acf6056f993f81152427aa18fcc9b781",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/duplicates-08.jpg",
+      "sha256": "5526abb0092834d20ce7756eacd806eae0649ee276a4bae79ffffd44231ab3f2",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/duplicates-09.jpg",
+      "sha256": "1ae5e446e802d5656a4b0d7b470f43c1bdbebdf59e63f3e3ac5d5287eede2d45",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/duplicates-10.jpg",
+      "sha256": "44dc8d4b478c36a62d26f2357f19911e7b9b13f5a29b850bebdf1a80d90602c2",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-01.jpg",
+      "sha256": "2ea51aefb5bc46b769937b411b923eb6da027d03a7f3bf1b57455fa79f3dcb9e",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-02.jpg",
+      "sha256": "8daee139c1fc433c6c83bbb20165c27cbab00bba37b3b304855db55dd40469ce",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-03.jpg",
+      "sha256": "ca642470f195880cf3041a44051ec323c9d0684dee5698891f08f3e3c411f7d6",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-04.jpg",
+      "sha256": "b0820b0ecc0eb85db89c26600764b15e8f1ca253eb03f8dc96a5c3c32e020fb9",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-05.jpg",
+      "sha256": "e08d7b58b00815cb28812cd67cf6c1f8adaec3a2acd3445202e92999bc7001f6",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-06.jpg",
+      "sha256": "c1e6a7dd2737c2301c449b6eac943b4e26c34cee0b6fc5860e831d78d4afa257",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-07.jpg",
+      "sha256": "56d3beb981a54221f40092b9501eb270d0618d165ea3ab8983296b848584466f",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-08.jpg",
+      "sha256": "6d38ec7e8180da50a90352a2a25de73f3892316e20ed9d946c15eb9c4bcdf37b",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-09.jpg",
+      "sha256": "2140d2ac02bcfc4d122f94c1d918f7dafbaff190b05dad86bf6740d49d0c3dcf",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-10.jpg",
+      "sha256": "efbac5db1ad82a404da6cee3529b39b82e64f4d3491aa8945db3aedc747e09ef",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-11.jpg",
+      "sha256": "b6ba81095ebfb2d399d71449fa74c0f22a9cb55b4ba03991e877929155a04060",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-12.jpg",
+      "sha256": "e5e8bd35d1b8f9928e1645e1fb1d6f3bcd05748df6b72f3a4ec04a19f21c0740",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-13.jpg",
+      "sha256": "7b362722f50b5d43615c9f72896d272da9113696ae9dabe98ced53ce6d76e559",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-14.jpg",
+      "sha256": "b47b33e689343690ab01be2759684878f0b9fd0b7c8e8e53a251bea75ba654f8",
+      "reviewed": true
+    },
+    {
+      "path": "contacts/full-15.jpg",
+      "sha256": "0e4bf6b4cc2dbf40b4894a87f1403721f20e9174365e8f0c26c1028b7882a45c",
+      "reviewed": true
+    }
+  ],
+  "counts": {
+    "right_screen_representative_sheets": 24,
+    "full_frame30s_fallback_sheets": 15,
+    "full_frame_automated_duplicate_sheets": 10,
+    "dense_transition_sheets": 7
+  },
+  "scope": "Contact sheets used only for navigation/coverage; selected originals reviewed separately; not per-second continuous playback."
+}

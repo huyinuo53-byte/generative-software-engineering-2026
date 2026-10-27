@@ -1,0 +1,37 @@
+[
+  {
+    "page": 3,
+    "path": "/tmp/gse09-materials/sources/assets/page-03-asset-01.webp",
+    "mime": "image/webp",
+    "bytes": 20072,
+    "sha256": "a9d8e75e47a3674ce1c7d5d654bcb6be6acdb96e9f6db491a3ecdea41c258d65"
+  },
+  {
+    "page": 7,
+    "path": "/tmp/gse09-materials/sources/assets/page-07-asset-01.webp",
+    "mime": "image/webp",
+    "bytes": 21500,
+    "sha256": "53a8451d1f63f4335031138c70ec4afda4f915543b117411d44ccfb81f7ef21a"
+  },
+  {
+    "page": 8,
+    "path": "/tmp/gse09-materials/sources/assets/page-08-asset-01.webp",
+    "mime": "image/webp",
+    "bytes": 97646,
+    "sha256": "575abbfe804e3e0ee23934511fc6a2818da5af04ad4bfc0ac808cdf871fb70b2"
+  },
+  {
+    "page": 9,
+    "path": "/tmp/gse09-materials/sources/assets/page-09-asset-01.webp",
+    "mime": "image/webp",
+    "bytes": 104270,
+    "sha256": "b19f3e3846e4e3b8bea8c570ec9d51aafaf0e8c115d4d7184bec65d7d2ec34d8"
+  },
+  {
+    "page": 25,
+    "path": "/tmp/gse09-materials/sources/assets/page-25-asset-01.webp",
+    "mime": "image/webp",
+    "bytes": 38016,
+    "sha256": "9b3364b885a7af0bb997672f115c14cab1d367f0583105768389d85a0d522be5"
+  }
+]

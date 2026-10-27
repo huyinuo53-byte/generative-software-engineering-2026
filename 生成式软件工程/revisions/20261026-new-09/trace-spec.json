@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "run_id": "GSE-weekly-20261026",
+  "basis": "observed_build",
+  "root": "../..",
+  "artifacts": [
+    {
+      "id": "b0",
+      "path": "manifest.json",
+      "depends_on": []
+    },
+    {
+      "id": "b1",
+      "path": "review.json",
+      "depends_on": []
+    },
+    {
+      "id": "b2",
+      "path": "materials.json",
+      "depends_on": []
+    },
+    {
+      "id": "b3",
+      "path": "build_index.py",
+      "depends_on": []
+    },
+    {
+      "id": "b4",
+      "path": "课程索引.html",
+      "depends_on": []
+    },
+    {
+      "id": "b5",
+      "path": "checks/2026-10-26.json",
+      "depends_on": []
+    },
+    {
+      "id": "b6",
+      "path": "lecture-09/review.json",
+      "depends_on": []
+    },
+    {
+      "id": "b7",
+      "path": "lecture-09/notes.json",
+      "depends_on": []
+    },
+    {
+      "id": "b8",
+      "path": "lecture-09/课堂笔记.html",
+      "depends_on": []
+    },
+    {
+      "id": "b9",
+      "path": "lecture-09/trace-r01.json",
+      "depends_on": []
+    },
+    {
+      "id": "b10",
+      "path": "revisions/20261026-new-09/preservation.json",
+      "depends_on": []
+    },
+    {
+      "id": "b11",
+      "path": "revisions/20261026-new-09/review.json",
+      "depends_on": []
+    },
+    {
+      "id": "b12",
+      "path": "revisions/20261026-new-09/index-browser/audit.json",
+      "depends_on": []
+    },
+    {
+      "id": "b13",
+      "path": "revisions/20261026-new-09/index-reader.json",
+      "depends_on": []
+    },
+    {
+      "id": "b14",
+      "path": "revisions/20261026-new-09/index-visual-review.json",
+      "depends_on": []
+    },
+    {
+      "id": "b15",
+      "path": "lecture-01/课堂笔记.html",
+      "depends_on": []
+    },
+    {
+      "id": "b16",
+      "path": "lecture-02/课堂笔记.html",
+      "depends_on": []
+    },
+    {
+      "id": "b17",
+      "path": "lecture-03/课堂笔记.html",
+      "depends_on": []
+    },
+    {
+      "id": "b18",
+      "path": "lecture-04/课堂笔记.html",
+      "depends_on": []
+    },
+    {
+      "id": "b19",
+      "path": "lecture-05/课堂笔记.html",
+      "depends_on": []
+    },
+    {
+      "id": "b20",
+      "path": "lecture-06/课堂笔记.html",
+      "depends_on": []
+    },
+    {
+      "id": "b21",
+      "path": "lecture-07/课堂笔记.html",
+      "depends_on": []
+    },
+    {
+      "id": "b22",
+      "path": "lecture-08/课堂笔记.html",
+      "depends_on": []
+    },
+    {
+      "id": "b23",
+      "path": "extra-ai-slop/课堂笔记.html",
+      "depends_on": []
+    }
+  ]
+}

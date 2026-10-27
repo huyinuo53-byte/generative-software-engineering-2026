@@ -1,0 +1,18 @@
+{
+  "video_id": "BV11LWw6VEHW",
+  "base_candidates": 712,
+  "dense_candidates": 272,
+  "all_visual_candidate_count": 984,
+  "visually_inspected_contact_count": 984,
+  "contact_sheets": 53,
+  "native_frames_count": 59,
+  "notes_targets_mapped": 0,
+  "status": "pending_notes_integration",
+  "not_claimed": [
+    "transcript review",
+    "final notes coverage",
+    "all board handwriting readable",
+    "every frame watched",
+    "source code repository independently checked"
+  ]
+}

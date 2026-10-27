@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "scope": "editorial layout only; source notes unchanged",
+  "notes_sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6",
+  "read_scope": {
+    "all_sections": 7,
+    "all_paragraphs": 16,
+    "all_examples": 0,
+    "all_editor_notes": 1,
+    "all_frame_captions_and_metadata": 8,
+    "all_supplements": 1,
+    "summary_self_test_limitations": "all read",
+    "frozen_primary_sources_reread": false,
+    "new_transcript_or_visual_review": false
+  },
+  "placement_decisions": [
+    "Preserves supplemental short-video identity; does not label it lecture08.",
+    "Generated-image expansions and narrator views remain explicitly distinguished. All video frames remain in original sections.",
+    "Overall adaptation review x0 follows final section explanation that this is organizer observation. Its evidence frames remain adjacent to preceding local discussions, not duplicated or moved."
+  ],
+  "checks": {
+    "all_p_e_n_f_x_exactly_once": true,
+    "source_notes_unchanged": true,
+    "video_frames_not_moved": true,
+    "ui_tested": false,
+    "all_keywords_exact_existing_substrings": true,
+    "keyword_scope": "displayed prose only; excludes titles and frame captions",
+    "reading_layout_validator": "passed"
+  },
+  "concerns": [
+    "This review covers editorial placement against existing frozen notes and captions, not new fact checking, original-source reading or image content inspection.",
+    "Parent must render and validate desktop/narrow widths, interactions and print."
+  ],
+  "navigation_wording_changes": []
+}

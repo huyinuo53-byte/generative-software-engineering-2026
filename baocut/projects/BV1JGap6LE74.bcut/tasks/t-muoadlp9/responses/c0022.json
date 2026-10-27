@@ -1,0 +1,7 @@
+{
+  "callId": "c0022",
+  "text": "<<<BLOCK 1>>>\n1-8\n<<<BLOCK-END>>>\n\n<<<BLOCK 2>>>\n1-12\n<<<BLOCK-END>>>\n\n<<<BLOCK 3>>>\n1-5\n<<<BLOCK-END>>>\n\n<<<BLOCK 4>>>\n1-4\n5-7\n<<<BLOCK-END>>>\n\n<<<BLOCK 5>>>\n1-7\n<<<BLOCK-END>>>\n\n<<<BLOCK 6>>>\n1-3\n4-7\n<<<BLOCK-END>>>\n\n<<<BLOCK 7>>>\n1-2\n3-7\n<<<BLOCK-END>>>\n\n<<<BLOCK 8>>>\n1-6\n<<<BLOCK-END>>>\n\n<<<BLOCK 9>>>\n1-10\n<<<BLOCK-END>>>\n\n<<<BLOCK 10>>>\n1-5\n6-9\n<<<BLOCK-END>>>\n\n<<<BLOCK 11>>>\n1-6\n<<<BLOCK-END>>>\n",
+  "workerId": "codex-polish-repair-1",
+  "leaseId": "l523ef32cfab949f5b12f7bfca08e081d",
+  "atMs": 1790784742295
+}

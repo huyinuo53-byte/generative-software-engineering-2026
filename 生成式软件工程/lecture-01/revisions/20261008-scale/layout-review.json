@@ -1,0 +1,46 @@
+{
+  "revision": "20261008-scale",
+  "scope": "layout-only",
+  "notes_sha256": "f3d82787541036b7f430c228c18c9d742eb155d0c759841a22da6c0a92ff368c",
+  "reading_scope": {
+    "all_sections": 23,
+    "paragraphs": 106,
+    "examples": 3,
+    "editor_notes": 5,
+    "frame_captions": 48,
+    "supplements": 6,
+    "scope_statement": "完整阅读本次现有 notes.json 的正文、例子、整理者注释、补充文字与全部图注；未重读原始转写或重听视频。",
+    "visually_reopened_frames": [
+      "frames/slide-38.jpg"
+    ]
+  },
+  "placement_rationale": [
+    "x0 与第18页进入第11节阅读方法；x3 与第40页进入第18节的 eHall 架构反例；x2 与第39页接在第20节 qrgen 架构解释之后，并保持教师未认可为标准答案的警示。",
+    "x1 与第34、38页进入第21节的澄清和风险取舍；第23节保留 x4/第41页于验证瓶颈之后，x5/第42–44页于权责讨论之后。",
+    "所有原有段落次序保持，各节讲义与现场帧移至对应论点/例子近旁；跨节移动仅涉及 PDF 页面，不改来源和时间。"
+  ],
+  "verification": {
+    "notes_unchanged": true,
+    "all_content_tokens_exactly_once": true,
+    "terms_exact_substrings": true,
+    "video_frames_keep_section_ownership": true,
+    "browser_checked": false
+  },
+  "remaining_issues": [
+    "原 notes 第11节、第23节仍有“见本课补充区”“补充区单独记录”的旧指示语，本次按照不改原文约束保留；实际补充已在关联段落之后内嵌。",
+    "第23节论证密集且仍有5幅图，现按验证与责任两条论证分布，需父任务最终浏览器验证阅读节奏。",
+    "既有材料未独立全文阅读及视频视觉覆盖边界保持不变，本次不能升级为完整来源复核。"
+  ],
+  "navigation_copy_changes": [
+    {
+      "json_pointer": "/sections/10/editor_notes/0",
+      "old": "官方讲义第18页补充“追踪论证、对抗阅读、主动回忆、重新组织”四种方法，见本课补充区；本次没有声称已读完上述两本书。",
+      "new": "官方讲义第18页补充“追踪论证、对抗阅读、主动回忆、重新组织”四种方法，见本节下方的讲义补充；本次没有声称已读完上述两本书。"
+    },
+    {
+      "json_pointer": "/sections/22/editor_notes/0",
+      "old": "第38–42页的细化内容含讲义 AIGC 扩展，本视频没有逐条展开；图注不绑定精确课堂时间，补充区单独记录。",
+      "new": "第38–42页的细化内容含讲义 AIGC 扩展，本视频没有逐条展开；图注不绑定精确课堂时间，相关补充已放在对应知识点旁并保留来源标注。"
+    }
+  ]
+}

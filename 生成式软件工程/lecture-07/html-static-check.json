@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "ids_unique": true,
+  "anchors_valid": true,
+  "embedded_images": 46,
+  "all_content_images_offline": true,
+  "script_render_coverage": 909,
+  "not_verified_here": [
+    "desktop",
+    "narrow",
+    "real_phone",
+    "interactive zoom/print/console"
+  ]
+}

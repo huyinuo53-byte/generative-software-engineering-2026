@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "title": "小步实验入门（合成测试）",
+  "source_url": "https://example.org/fixture-course",
+  "limitations": [
+    "全部文字与时间为合成 fixture，未对应真实课堂或原始音频。",
+    "图为另一课程既有讲义页的测试复用，仅测试 PDF 页面邻接与来源呈现，不构成新课程证据。"
+  ],
+  "read_chunks": [
+    "fixture-0001"
+  ],
+  "omitted": [],
+  "sections": [
+    {
+      "title": "先说明目标与条件",
+      "start": 0,
+      "end": 30,
+      "source_ids": [
+        "fixture-s1"
+      ],
+      "paragraphs": [
+        "合成练习要求成功率 > 95% & 成本 < 10；这两个条件需要分别检查。",
+        "字符串 <script>window.fixtureInjected = true</script> 是测试文本，应原样显示而不能执行。"
+      ],
+      "examples": [
+        "例如输入 A&B 时，显示结果必须保留 & 符号。"
+      ],
+      "editor_notes": [],
+      "frames": []
+    },
+    {
+      "title": "让一个小实验先产生反馈",
+      "start": 30,
+      "end": 60,
+      "source_ids": [
+        "fixture-s2"
+      ],
+      "paragraphs": [
+        "把大目标拆成小实验，每次只改一个条件，再检查反馈。",
+        "通过检查后仍保留结果，便于下一次比较。"
+      ],
+      "examples": [],
+      "editor_notes": [
+        "整理者说明：本合成例子只说明阅读布局，不宣称验证了教学效果。"
+      ],
+      "frames": []
+    },
+    {
+      "title": "从失败继续迭代",
+      "start": 60,
+      "end": 90,
+      "source_ids": [
+        "fixture-s3"
+      ],
+      "paragraphs": [
+        "失败也是结果；保留失败原因，下一轮才能判断改动是否有效。"
+      ],
+      "examples": [],
+      "editor_notes": [],
+      "frames": [
+        {
+          "source_type": "pdf_page",
+          "path": "frames/fixture-page.jpg",
+          "source_label": "fixture：复用 GSE 第 01 课第 38 页，仅用于模板测试",
+          "page": 38,
+          "caption": "fixture 复用图：拆解、验证、迭代组成反馈循环；未伪造本合成课程的课堂时刻。"
+        }
+      ]
+    }
+  ],
+  "supplements": [
+    {
+      "title": "补充：用反馈连接小实验",
+      "text": "在本合成练习中，拆解缩短反馈距离；验证帮助发现错误；迭代让下一步调整有依据。",
+      "source_label": "fixture：根据复用图主题编写的合成文字",
+      "pages": [
+        38
+      ]
+    }
+  ]
+}

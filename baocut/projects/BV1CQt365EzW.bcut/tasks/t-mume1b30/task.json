@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "bcut",
+    "auto",
+    "https://www.bilibili.com/video/BV1CQt365EzW/?spm_id_from=333.1387.collection.video_card.click&vd_source=abb5da006a35c5bef8fab8f9fa774175",
+    "--project",
+    "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1CQt365EzW.bcut",
+    "--source-lang",
+    "auto",
+    "--llm",
+    "agent",
+    "--jsonl"
+  ],
+  "cwd": "/Users/yjzhao/Library/Application Support/BaoCut/agent/_scratch",
+  "finishedAtMs": 1790689789071,
+  "pid": 75514,
+  "startedAtMs": 1790668911708,
+  "taskId": "t-mume1b30"
+}

@@ -1,0 +1,12 @@
+{
+  "purpose": "保留原独立报告不改写；将报告中制作期临时路径解析到本次冻结的永久副本。",
+  "mapping": {
+    "/tmp/gse08-asr02.jsonl": "logs/asr-02-completed.jsonl",
+    "/tmp/gse08-visual/": "visual/",
+    "/tmp/gse08-materials/": "sources/official-20261019/",
+    "/tmp/gse08-harness-reading/delivery/": "sources/harness-20261019/",
+    "/tmp/gse08-content-review-early.json": "audits/gse08-content-review-early.json",
+    "/tmp/gse08-final-visual-review.json": "audits/gse08-final-visual-review.json",
+    "/tmp/gse08-event-binding-map.json": "audits/gse08-event-binding-map.json"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "run_id": "BV144nc6KEA4-20261026",
+  "scope_revision": 1,
+  "video_id": "BV144nc6KEA4",
+  "title": "DeepSeek Harness (1)",
+  "outcome": "completed",
+  "first_pending": null,
+  "pending": [],
+  "validation": {
+    "content": {
+      "status": "passed",
+      "evidence": "audits/content-review.json"
+    },
+    "structure": {
+      "status": "passed",
+      "evidence": "audits/layout-validation.json"
+    },
+    "source_coverage": {
+      "status": "passed",
+      "evidence": "audits/transcript-reading.json"
+    },
+    "reading_materials": {
+      "status": "passed",
+      "evidence": "audits/materials-validation.json"
+    },
+    "material_integration": {
+      "status": "passed",
+      "evidence": "audits/material-integration.json"
+    },
+    "visual_coverage": {
+      "status": "passed",
+      "evidence": "visual-coverage.json"
+    },
+    "images": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_static": {
+      "status": "passed",
+      "evidence": "audits/html-content-preservation.json"
+    },
+    "desktop": {
+      "status": "passed",
+      "evidence": "qa/browser/audit.json"
+    },
+    "narrow_screen": {
+      "status": "passed",
+      "evidence": "qa/reader/journey.json"
+    },
+    "zoom_pan_close": {
+      "status": "passed",
+      "evidence": "qa/reader/journey.json"
+    },
+    "console": {
+      "status": "passed",
+      "evidence": "qa/browser/audit.json"
+    },
+    "print": {
+      "status": "passed",
+      "evidence": "qa/reader/journey.json"
+    },
+    "visual_samples": {
+      "status": "passed",
+      "evidence": "qa/reader/visual-review.json"
+    },
+    "project_strict": {
+      "status": "passed",
+      "evidence": "sources/project-strict-check.json"
+    },
+    "real_phone": {
+      "status": "not_requested",
+      "evidence": "未测试或未要求；来源PDF汇编不作为最终PDF交付。"
+    },
+    "native_print": {
+      "status": "not_requested",
+      "evidence": "未测试或未要求；来源PDF汇编不作为最终PDF交付。"
+    },
+    "pdf_delivery": {
+      "status": "not_requested",
+      "evidence": "未测试或未要求；来源PDF汇编不作为最终PDF交付。"
+    },
+    "zip": {
+      "status": "not_requested",
+      "evidence": "未测试或未要求；来源PDF汇编不作为最终PDF交付。"
+    }
+  },
+  "summary": "89分24秒，18块518单元全文阅读与复核；32节92内嵌图17原文补充15自测，3视口交互通过。",
+  "source_hashes": {
+    "notes.json": "f85761ff3e017654e4ceec419479a4e531feb726955bf465b1bb19774a2a9d3c",
+    "reading-layout.json": "5a04c759f2e546b74efe77f992d48bd7b567845b7d1929490a2f805c89e609a3",
+    "课堂笔记.html": "c53214a052ee6b68c6fe49c119c448b27084fb3dc2739dd75f49909936c9b5ab",
+    "transcript.json": "9cc30fd953bd2371033336eb6da563564d8709e934ac74893e9b98541b5976e4",
+    "chunks/index.json": "cc08bf727ed170282cf435d540b76b1c2b1985eff5465e388e97e200fb903fd7",
+    "image-audit.json": "307cf91f905ed72cbf40032f6007e35690a1a595f5bcd9fdb490b52229431203",
+    "visual-coverage.json": "57ce7c619e6116433f5f8a8ddeb74227c9ecccf1039a69fa376a11ab799aa23f",
+    "visual-inventory.json": "36aa16133b108a7aed3ba60cb4c715279d4b370032a75fc72fa8e4ac8108506f",
+    "materials.json": "f8022090ff01853fd1d52094cb3d624812bb09747452d4eebd97aff4e1fca2f1"
+  },
+  "trace_snapshot": "trace-r01.json",
+  "delivered_files": [
+    "课堂笔记.html"
+  ],
+  "delivery_path": "课堂笔记.html",
+  "completed_at": "2026-10-26T01:33:19.323157+00:00",
+  "reuse": {
+    "transcript": "已查询81个项目，无匹配BV；新建p-30e53540f92dea82并仅转写一次。",
+    "original_courses": "旧9篇不重转写、不重写，当前HTML逐篇与既有review指纹相同。"
+  },
+  "limits": [
+    "完整顺序阅读本视频 BaoCut 转写，18 个阅读块、518 个来源单元；主作者阅读原始ASR片段，独立审阅者逐块全文复核最终导出。术语结合原画面和官方材料校订，未逐秒听审全部音频。",
+    "视频原画幅为1280×410。全时长2秒采样、变化候选、30秒全幅兜底和关键转场加密回查覆盖整片；这是按所述方法的视觉盘点，不是逐帧或连续播放证明。原画面细小文字的辨认边界在相应图注和审核中保留。",
+    "官方讲义于2026-10-26逐页截图，封存为30页网页来源汇编，不是教师原生PDF。录制时已存在的紫色补注仍与实际口述区分；不能仅因class=aigc判断课后新增。现行源码/文档补充另标固定版本与范围。",
+    "正文、图和自测均内嵌，可离线阅读。原视频和网页引用需联网；桌面及390/320px浏览器模拟不等于真实手机测试，打印媒体检查不等于原生打印预览。"
+  ],
+  "blocker": null,
+  "metrics": {
+    "tokens": null,
+    "cost": null,
+    "queue_seconds": null,
+    "compute_seconds": null
+  },
+  "toolchain": {
+    "BaoCut_app": "2.1.0",
+    "spec": "1.249.0",
+    "ASR": "moss-transcribe-diarize",
+    "source_lang": "auto",
+    "runtime_reused": true
+  },
+  "media": {
+    "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+    "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+    "duration_seconds": 5363.541375,
+    "video_duration_seconds": 5363.533,
+    "audio_duration_seconds": 5363.541333,
+    "tail_decode": "passed"
+  }
+}

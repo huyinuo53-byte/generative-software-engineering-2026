@@ -1,0 +1,11 @@
+{
+  "status": "failed_assertion",
+  "observed": {
+    "item": "lecture-01",
+    "width": 1280,
+    "all_img_elements": 49,
+    "empty_src_viewer_placeholder": 1,
+    "content_images_expected": 48
+  },
+  "cause": "Test counted an uninitialized lightbox image element as content; corrected to inspect img with nonempty src, consistent with HTML auditor. No course HTML changed."
+}

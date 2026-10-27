@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "checked_at": "2026-10-19T01:22:33.666033+00:00",
+  "expected_material_ids": [
+    "humanize-2610.08900v2"
+  ],
+  "materials": [
+    {
+      "id": "humanize-2610.08900v2",
+      "kind": "paper",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "Lab2现行官方页面§2.1明确用其作为多模型求解/审查与内核优化的核心案例；材料补充不冒充第08课口述。",
+      "listed_title": "Humanize: Judgement Engineering for Agentic Coding",
+      "listed_url": "https://arxiv.org/abs/2610.08900",
+      "listing_source_url": "https://jyywiki.cn/GSE/2026/lab2.md",
+      "listing_location": "§2.1 算力换智力，Humanize案例段；原HTML /tmp/gse08-lab2.html 第17行",
+      "title": "Humanize: Judgement Engineering for Agentic Coding",
+      "authors": [
+        "Sihao Liu",
+        "Ligeng Zhu",
+        "Zijian Zhang",
+        "Dongyun Zou",
+        "Zhengyang Zhang",
+        "Changye Li",
+        "Song Bian",
+        "Song Han",
+        "Tony Nowatzki"
+      ],
+      "source_url": "https://arxiv.org/abs/2610.08900v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.08900v2",
+      "version": "v2",
+      "version_date": "2026-10-08",
+      "identity_status": "verified",
+      "identity_note": "arXiv版本页、PDF首页标题/作者/arXiv v2标记一致。v1发表于2026-10-06，当前v2于2026-10-08更新。尚未核实课堂实际展示的是哪一版本，因此所有增量标现行官方材料与论文补充。",
+      "path": "/tmp/gse08-lab2-materials/humanize-v2.pdf",
+      "sha256": "be9c8aff9a2b06dd4ac553e46d5c3b1761a831cf0c4e306b4743f9235b0411e5",
+      "total_pages": 14,
+      "reading_status": "full",
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "read_sections": [
+        "Abstract",
+        "1 Introduction",
+        "2 Judgement Engineering",
+        "2.1 Alternating Models as Joint Sampling",
+        "3 System Design",
+        "3.1 Planning as a Contract",
+        "3.2 The Round Protocol",
+        "3.3 Mechanical Gates",
+        "4 Deployment and Postmortem Study",
+        "5 Applications",
+        "6 Findings",
+        "7 Related Work",
+        "8 Limitations",
+        "9 Conclusion",
+        "Acknowledgments",
+        "References",
+        "Appendix A Mechanical Gates",
+        "Appendix B Corpus Coding"
+      ],
+      "visual_checks": [
+        {
+          "page": 2,
+          "path": "/tmp/gse08-lab2-materials/page-02.png",
+          "sha256": "2b4b5efb6211686b34da4a8df0499299e66e13ce851e499f252b2e283f822b89",
+          "detail": "Figure 1：完成权的归属；Humanize由reviewer COMPLETE加clean code review决定；底部应用数字非对照实验。"
+        },
+        {
+          "page": 3,
+          "path": "/tmp/gse08-lab2-materials/page-03.png",
+          "sha256": "aba87477e6b3afd5a58b15fd4448995a392c4a76c794502807e64513c61590a6",
+          "detail": "Figure 2与公式：盲点交集图；m_R为条件漏检概率，论文只提供机制论证而非测得普遍准确率。"
+        },
+        {
+          "page": 4,
+          "path": "/tmp/gse08-lab2-materials/page-04.png",
+          "sha256": "2b753444da5c1e5883fec4b75c1a041fbd24ed5b43f21aba98394ef211b42bfa",
+          "detail": "Figure 3：实现阶段42轮上限；review阶段明确无上限；红箭头是不完成退出。"
+        },
+        {
+          "page": 5,
+          "path": "/tmp/gse08-lab2-materials/page-05.png",
+          "sha256": "fd8d3ad72fce455ece239934150419af85dc5dab825c2030ba71fb88417f747b",
+          "detail": "Figure 4：builder提交代码/contract/summary，确定性hook检查后fresh reviewer看计划、历史和代码，不看builder推理；COMPLETE后仍有diff review。"
+        },
+        {
+          "page": 7,
+          "path": "/tmp/gse08-lab2-materials/page-07.png",
+          "sha256": "b44b06d50e3ed62d729a36b6dc0949a6e6bce3e2664441d4c676d0845ce72856",
+          "detail": "Figure 5：图左研究/优化/按shape专门化三阶段，KernelWiki和ncu-report-skill分别提供知识与性能证据；右图log scale、baseline 1x、single kernel、48h、team-reported，K-Search1.37/Humanize3.71/+Wiki6.14/+profiling8.58。"
+        },
+        {
+          "page": 8,
+          "path": "/tmp/gse08-lab2-materials/page-08.png",
+          "sha256": "bb3fabc2624e870a5b76d75b972ac3752f170ff0b0f091a2ac55f93522e04378",
+          "detail": "Figure 6：纵轴review独立性、横轴oracle强度；公式b m_R m_O只覆盖被检查claim。"
+        },
+        {
+          "page": 14,
+          "path": "/tmp/gse08-lab2-materials/page-14.png",
+          "sha256": "cbda18aa1d58b4c9b59f87c1f4af2bd698f61104623c16591c9a10348c31bb5f",
+          "detail": "Table1类别计数相加72；Table2分母118 postmortems，Present可多标签，Primary单标签；成本只有25报告涉及，不代表实际token成本已全面度量。"
+        }
+      ],
+      "known_gaps": [],
+      "related_items": [
+        "lecture-08"
+      ],
+      "contributions": [],
+      "integration_status": "pending",
+      "integration_note": "补充草稿在supplements-draft.json；待主代理按实际课堂时间码和notes节号映射，复制到持久课程目录后刷新相对路径与contributions。",
+      "reading_evidence": {
+        "text_path": "/tmp/gse08-lab2-materials/humanize-v2.txt",
+        "text_sha256": "0b263676c3544c178f1e0940a1b9958c11bfdd596e6915a4f4226faf917793ac",
+        "sequential_read_line_ranges": [
+          [
+            1,
+            220
+          ],
+          [
+            221,
+            465
+          ],
+          [
+            466,
+            715
+          ],
+          [
+            716,
+            957
+          ]
+        ],
+        "read_method": "对完整PDF按layout提取后顺序完整阅读，重要图表原页另实际目视；未递归阅读参考文献。",
+        "checked_at": "2026-10-19T01:22:33.666033+00:00"
+      },
+      "validation_boundaries": [
+        "论文应用/赛事结果均作为论文作者报告转述，未独立重跑。",
+        "未以arXiv摘要代替全文。",
+        "未检验最新Humanize软件是否仍具备本版本描述的CLI兼容性或机制。",
+        "未读取下游KDA技术报告，KDA数字归因本论文§5团队自报。"
+      ]
+    },
+    {
+      "id": "alphazero-1712.01815",
+      "kind": "paper",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "官方Lab2 §2.1仅将问题搜索类比AlphaZero并立即说明开放任务缺少明确规则与胜负标准；不是要求掌握算法的明确推荐，故本轮不扩展完整旧论文。",
+      "listed_url": "https://arxiv.org/abs/1712.01815",
+      "identity_status": "unverified",
+      "version": null,
+      "reading_status": "out_of_scope",
+      "read_pages": [],
+      "read_sections": [],
+      "related_items": [
+        "lecture-08"
+      ],
+      "contributions": []
+    }
+  ],
+  "draft": true
+}

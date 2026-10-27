@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "content_units": 26,
+  "figures": 8,
+  "supplements": 1,
+  "placements": [
+    {
+      "source_section": 1,
+      "frame": 0,
+      "display_section": 1,
+      "path": "frames/010.jpg"
+    },
+    {
+      "source_section": 2,
+      "frame": 0,
+      "display_section": 2,
+      "path": "frames/020.jpg"
+    },
+    {
+      "source_section": 3,
+      "frame": 0,
+      "display_section": 3,
+      "path": "frames/040.jpg"
+    },
+    {
+      "source_section": 4,
+      "frame": 0,
+      "display_section": 4,
+      "path": "frames/060.jpg"
+    },
+    {
+      "source_section": 5,
+      "frame": 0,
+      "display_section": 5,
+      "path": "frames/090.jpg"
+    },
+    {
+      "source_section": 5,
+      "frame": 1,
+      "display_section": 5,
+      "path": "frames/110.jpg"
+    },
+    {
+      "source_section": 6,
+      "frame": 0,
+      "display_section": 6,
+      "path": "frames/130.jpg"
+    },
+    {
+      "source_section": 7,
+      "frame": 0,
+      "display_section": 7,
+      "path": "frames/150.jpg"
+    }
+  ],
+  "boundary": "Structural coverage and version binding only; requires semantic and browser review."
+}

@@ -1,0 +1,1664 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T01:53:49.331985+00:00",
+  "video_id": "BV11LWw6VEHW",
+  "review_scope": "逐图语义绑定：实际已看图像+来源hash+最终notes图注/所在节/时间关联；不覆盖HTML渲染、真机、逐秒音频、所有事实复核或整课完成判定。",
+  "notes_path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/notes.json",
+  "notes_sha256": "8ce8c22029acfe3b90ff2ba9c73eb0434f2226f3a4ecc7a45e9f750654f8cc3b",
+  "image_binding_projection_sha256": "4a0e10f75b1aae35fb711c998e1d05952d4c18628294d49c5354d275fccd682a",
+  "count": 69,
+  "counts_by_type": {
+    "video_frame": 43,
+    "current_official_slide": 24,
+    "paper_page": 2
+  },
+  "status": "binding_review_complete_no_issues",
+  "unviewed_images": [],
+  "issues": [],
+  "corrections": [
+    {
+      "source": "/tmp/gse08-harness-reading/delivery/HANDOFF.md",
+      "error": "未经视频支持推断课堂当时采用整文件hash",
+      "corrected_to": "v0499真实画面已为按heading section的hash；current style-samples旧样例不能倒推课堂版本",
+      "verification": "本轮实际原尺寸再次看v0499",
+      "source_snapshot_modified": false
+    }
+  ],
+  "items": [
+    {
+      "image_number": 1,
+      "notes_target": "sections[0].frames[0]",
+      "section_number": 1,
+      "section_title": "课程进入下半程：从个人助手到更深入的研究",
+      "section_start": 0,
+      "section_end": 104,
+      "source_type": "video_frame",
+      "path": "visual/full/v0005-0056.jpg",
+      "sha256": "1e7f1a21e2066b63ac89c133a4faaaf0846abd9016ccfd7d57c15b8fd3992945",
+      "caption": "Lab2 背景页中的个人助手与 Morning Paper 示例。",
+      "timestamp": 56,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "画面为 Lab2 背景页，个人助手/Morning Paper 示例与开场讨论相符。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0005"
+    },
+    {
+      "image_number": 2,
+      "notes_target": "sections[1].frames[0]",
+      "section_number": 2,
+      "section_title": "算力换智力：既要向下做，也要向旁边找",
+      "section_start": 98.17,
+      "section_end": 246.22,
+      "source_type": "video_frame",
+      "path": "visual/full/v0010-0120.jpg",
+      "sha256": "0921a0b834c656e7814ae769f32b64263c8f2b21cf2f778d7982634d408d6cea",
+      "caption": "Lab2 要求增加探索与查证的 effort；板书开始展开搜索树。",
+      "timestamp": 120,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "源视频细小板书仅部分可辨；图文解释依赖对应口述，不猜笔迹。"
+      ],
+      "rationale": "Lab2 effort/探索要求与开始画出的树形板书对应本节搜索深度和宽度；不从细小板书补造文字。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0010"
+    },
+    {
+      "image_number": 3,
+      "notes_target": "sections[2].frames[0]",
+      "section_number": 3,
+      "section_title": "多样性与知识库：把复核变成真实的改进",
+      "section_start": 242,
+      "section_end": 362.73,
+      "source_type": "video_frame",
+      "path": "visual/full/v0016-0244.jpg",
+      "sha256": "ef821ea95e6eeb895143df511d1a8d740d0d99992ee749e0c8994cdccc88823c",
+      "caption": "Lab2 引用 Humanize，并将更深入的研究连接到迭代求解。",
+      "timestamp": 244,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "浏览器中 Humanize 引用与迭代求解相连，适合作为本节原论文补充入口。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0016"
+    },
+    {
+      "image_number": 4,
+      "notes_target": "sections[2].frames[1]",
+      "section_number": 3,
+      "section_title": "多样性与知识库：把复核变成真实的改进",
+      "section_start": 242,
+      "section_end": 362.73,
+      "source_type": "video_frame",
+      "path": "visual/full/v0019-0306.jpg",
+      "sha256": "d621c4a68c7c5222a328c16cbc8c5a6323a158b0cf0301adc14985c81fb3a3f3",
+      "caption": "Lab2 页面继续展示上下文工程与效果评估；这些要求不等于增加轮数就必然提升。",
+      "timestamp": 306,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "Lab2 后续上下文工程/评估内容对应知识库与真实轨迹讨论，图注没有保证迭代必胜。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0019"
+    },
+    {
+      "image_number": 5,
+      "notes_target": "sections[2].frames[2]",
+      "section_number": 3,
+      "section_title": "多样性与知识库：把复核变成真实的改进",
+      "section_start": 242,
+      "section_end": 362.73,
+      "source_type": "pdf_page",
+      "path": "sources/lab2-humanize-20261019/key-page-05.png",
+      "sha256": "454fe7322d199809ca9260596ac8bcb2882c859a053132a94c53745d812f1845",
+      "caption": "图4：计划契约、builder交接、机械gate与独立reviewer；完整原页，区分文件完整与语义正确。",
+      "timestamp": 244,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "材料读者负责论文全文；本次独立目视复核所用两页及其图注/章节关系。"
+      ],
+      "actual_view_basis": "reopened_full_original_page_in_this_review_and_compared_to_material_reader_audit",
+      "evidence": [
+        "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/sources/lab2-humanize-20261019/image-audit-draft.json"
+      ],
+      "source_page": 5,
+      "rationale": "图4完整显示四次builder/reviewer交接、Stop hook与review出口；正文区分机械产物完整性与语义内容，且明确论文v2补充非课堂逐项讲述。"
+    },
+    {
+      "image_number": 6,
+      "notes_target": "sections[2].frames[3]",
+      "section_number": 3,
+      "section_title": "多样性与知识库：把复核变成真实的改进",
+      "section_start": 242,
+      "section_end": 362.73,
+      "source_type": "pdf_page",
+      "path": "sources/lab2-humanize-20261019/key-page-07.png",
+      "sha256": "0d7f2a4516c0169b69d7b48e89a68747523208919ded056e6db2abd2f6291c50",
+      "caption": "图5：KDA的48小时、单个DSA TopK kernel团队自报消融；右图对数轴，8.58倍不是所有kernel或通用成功率。",
+      "timestamp": 244,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "材料读者负责论文全文；本次独立目视复核所用两页及其图注/章节关系。"
+      ],
+      "actual_view_basis": "reopened_full_original_page_in_this_review_and_compared_to_material_reader_audit",
+      "evidence": [
+        "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/sources/lab2-humanize-20261019/image-audit-draft.json"
+      ],
+      "source_page": 7,
+      "rationale": "图5左为知识/性能反馈工作流，右为对数轴单kernel消融，1.37/3.71/6.14/8.58与team-reported/one kernel/48h均完整；图注未将8.58泛化为所有kernel或成功率。"
+    },
+    {
+      "image_number": 7,
+      "notes_target": "sections[3].frames[0]",
+      "section_number": 4,
+      "section_title": "Intent → Spec → Implementation：软件工程约束的是搜索空间",
+      "section_start": 358,
+      "section_end": 528,
+      "source_type": "video_frame",
+      "path": "visual/full/v0033-0510.jpg",
+      "sha256": "6654809504cea826d1dea15e52bae91593f6c1e7b91d7f4b64bd005a9a1b8307",
+      "caption": "Intent、Spec 与 Implementation 的多层选择；板书细字以对应口述解释为准。",
+      "timestamp": 510,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "源视频细小板书仅部分可辨；图文解释依赖对应口述，不猜笔迹。"
+      ],
+      "rationale": "全幅保留 Intent/Spec/Implementation 层次选择的板书；图注明确细字依口述，不冒充完全可读。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0033"
+    },
+    {
+      "image_number": 8,
+      "notes_target": "sections[3].frames[1]",
+      "section_number": 4,
+      "section_title": "Intent → Spec → Implementation：软件工程约束的是搜索空间",
+      "section_start": 358,
+      "section_end": 528,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-01.jpg",
+      "sha256": "f30fd76e264a76d3a4f3c91a27cda7e80b774504a5c9a696985f23c436c76d3e",
+      "caption": "现行讲义第1页：Intent—Spec—Implementation与复杂性。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 363,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 1,
+      "rationale": "复习两组主题：项目管理、需求与架构；标题和列表完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 9,
+      "notes_target": "sections[4].frames[0]",
+      "section_number": 5,
+      "section_title": "让原型替你暴露未曾想过的问题",
+      "section_start": 527.08,
+      "section_end": 670,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-02.jpg",
+      "sha256": "6ab1d4a0efe2219bf80531c3300a1c5bdb8f0710b1d55afe8ac1c38f4ef04fb3",
+      "caption": "现行讲义第2页：先构建原型、用具体用例检验。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 533,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 2,
+      "rationale": "原型与假设；紫色 AIGC 区含 NASA 莱特兄弟例子，清晰完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 10,
+      "notes_target": "sections[5].frames[0]",
+      "section_number": 6,
+      "section_title": "Agent Loop 的最低组成：模型、工具和反馈",
+      "section_start": 667.19,
+      "section_end": 914,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-03.jpg",
+      "sha256": "02befbb4045cee731132327e51e1024db9cc7e71dbc889f7a2e825c70144efcf",
+      "caption": "现行讲义第3页：Agent Loop的模型与工具。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 675,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 3,
+      "rationale": "Agent 自主性与模型能力限制；两组标题及条目完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 11,
+      "notes_target": "sections[6].frames[0]",
+      "section_number": 7,
+      "section_title": "约 150 行 MiniAgent：把工具协议摊开来看",
+      "section_start": 909.09,
+      "section_end": 1154,
+      "source_type": "video_frame",
+      "path": "visual/full/v0054-0922.jpg",
+      "sha256": "bf93530f50f446862fda2c851f323800c7f349112883f202e40d25a943cbaae3",
+      "caption": "MiniAgent 的 imports、key读取函数和工具定义；画面未显示实际密钥。",
+      "timestamp": 922,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "编辑器顶部 imports、key 读取函数及工具定义可见；这是代码读取函数，不是显示凭据值。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0054"
+    },
+    {
+      "image_number": 12,
+      "notes_target": "sections[6].frames[1]",
+      "section_number": 7,
+      "section_title": "约 150 行 MiniAgent：把工具协议摊开来看",
+      "section_start": 909.09,
+      "section_end": 1154,
+      "source_type": "video_frame",
+      "path": "visual/full/v0061-1006.jpg",
+      "sha256": "337d8abfcccaea238afcd2a4f2b0841e23253b5e8ae5b4b77f469b3827fbdf33",
+      "caption": "run_bash 的命令执行与60秒timeout，暴露最小原型的环境假设。",
+      "timestamp": 1006,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "run_bash 实现与 timeout=60 可读，适配最小工具执行机制。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0061"
+    },
+    {
+      "image_number": 13,
+      "notes_target": "sections[6].frames[2]",
+      "section_number": 7,
+      "section_title": "约 150 行 MiniAgent：把工具协议摊开来看",
+      "section_start": 909.09,
+      "section_end": 1154,
+      "source_type": "video_frame",
+      "path": "visual/full/v0070-1098.jpg",
+      "sha256": "6de6810840ff43bbd7969f032414c7c8c97d368cacc797faecf6ef1535767112",
+      "caption": "请求与read_reply接收流式回复、工具调用。",
+      "timestamp": 1098,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "模型请求和 read_reply 的流式处理代码可见，绑定工具协议小节正确。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0070"
+    },
+    {
+      "image_number": 14,
+      "notes_target": "sections[6].frames[3]",
+      "section_number": 7,
+      "section_title": "约 150 行 MiniAgent：把工具协议摊开来看",
+      "section_start": 909.09,
+      "section_end": 1154,
+      "source_type": "video_frame",
+      "path": "visual/full/v0073-1106.jpg",
+      "sha256": "f1fc3b0a97d3e818dcbb65be20a2736344497a6e6c58573e7c3bb8932e380004",
+      "caption": "main循环把bash结果以tool消息送回模型。",
+      "timestamp": 1106,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "main 中 tool call 执行并追加 tool message 的循环可见，图注未夸大为成熟调度系统。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0073"
+    },
+    {
+      "image_number": 15,
+      "notes_target": "sections[7].frames[0]",
+      "section_number": 8,
+      "section_title": "现场做 HTML 卡片：能生成，还要知道怎样验证",
+      "section_start": 1154,
+      "section_end": 1277.06,
+      "source_type": "video_frame",
+      "path": "visual/full/v0100-1218.jpg",
+      "sha256": "c62b63fc36d12c7b2dcf75fea7f81be57d988f3ed764e02cb6f2c70303bba89f",
+      "caption": "浏览器打开生成的GSE简介卡，展示任务从指令到页面的执行结果。",
+      "timestamp": 1218,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "浏览器渲染 GSE 简介卡，是该现场生成任务的页面结果。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0100"
+    },
+    {
+      "image_number": 16,
+      "notes_target": "sections[7].frames[1]",
+      "section_number": 8,
+      "section_title": "现场做 HTML 卡片：能生成，还要知道怎样验证",
+      "section_start": 1154,
+      "section_end": 1277.06,
+      "source_type": "video_frame",
+      "path": "visual/full/v0121-1266.jpg",
+      "sha256": "d4c37026c183da7e998a4b4d2526ca5af8283ccfb7b6240bd5fc885bda41d672",
+      "caption": "现场Agent以截图和颜色统计继续verify；这不是完整页面语义验收。",
+      "timestamp": 1266,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "终端中的截图/颜色统计验证对应页面生成后的 verify，图注恰当地限定为非完整语义验收。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0121"
+    },
+    {
+      "image_number": 17,
+      "notes_target": "sections[8].frames[0]",
+      "section_number": 9,
+      "section_title": "Harness 与 Ralph：同一个提示词，变化的是工作区",
+      "section_start": 1274,
+      "section_end": 1466,
+      "source_type": "video_frame",
+      "path": "visual/full/v0131-1410.jpg",
+      "sha256": "2c3604ca4c6165e6097a6fe34f70582c171a6637b4c40a3bec0d5997db3eeca7",
+      "caption": "Ralph循环与上下文/历史的板书讨论。",
+      "timestamp": 1410,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "源视频细小板书仅部分可辨；图文解释依赖对应口述，不猜笔迹。"
+      ],
+      "rationale": "Ralph 与上下文/历史的板书阶段对应本节；细小手写内容保留口述解释限制。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0131"
+    },
+    {
+      "image_number": 18,
+      "notes_target": "sections[8].frames[1]",
+      "section_number": 9,
+      "section_title": "Harness 与 Ralph：同一个提示词，变化的是工作区",
+      "section_start": 1274,
+      "section_end": 1466,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-04.jpg",
+      "sha256": "c1d15aef33ab2a68db5fed8411226054c3e75534948ffd5c0fb4f7ad3dd01568",
+      "caption": "现行讲义第4页：Ralph名称的背景。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 1279,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 4,
+      "rationale": "Ralph 命名解释和人物插画；人物脚部保留、非讲者现场图。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 19,
+      "notes_target": "sections[8].frames[2]",
+      "section_number": 9,
+      "section_title": "Harness 与 Ralph：同一个提示词，变化的是工作区",
+      "section_start": 1274,
+      "section_end": 1466,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-05.jpg",
+      "sha256": "3d6705d01be2461b0f5dbbd7af95e691fdbe2395f4caedd6653a3d27a68c72f9",
+      "caption": "现行讲义第5页：Ralph循环与终止问题。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 1279,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 5,
+      "rationale": "循环示例三行代码完整，停止条件补充与原文链接可辨。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 20,
+      "notes_target": "sections[9].frames[0]",
+      "section_number": 10,
+      "section_title": "工作区是状态：给长任务留下能重新理解的证据",
+      "section_start": 1465.15,
+      "section_end": 2016.23,
+      "source_type": "video_frame",
+      "path": "visual/full/v0164-1920.jpg",
+      "sha256": "a8fb2acfc95543a25d151a6ba6a2bac7fc1c09f09ddba48c3e5fd7896a062718",
+      "caption": "工作区状态、不同转移动作以及并行分支再合并的板书。",
+      "timestamp": 1920,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "源视频细小板书仅部分可辨；图文解释依赖对应口述，不猜笔迹。"
+      ],
+      "rationale": "状态与转换、平行路径/合并的板书对应工作区持久状态讨论。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0164"
+    },
+    {
+      "image_number": 21,
+      "notes_target": "sections[9].frames[1]",
+      "section_number": 10,
+      "section_title": "工作区是状态：给长任务留下能重新理解的证据",
+      "section_start": 1465.15,
+      "section_end": 2016.23,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-06.jpg",
+      "sha256": "fa614935a5b4818897595fe4769d0c620421c3efb8de16c92783e97135e54231",
+      "caption": "现行讲义第6页：Everything Is a State Machine。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 1471,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 6,
+      "rationale": "Workspace/State，Agent/Transition；完整显示末行长任务说明。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 22,
+      "notes_target": "sections[10].frames[0]",
+      "section_number": 11,
+      "section_title": "Ralph 实演（上）：每轮只推进一步，把下一步写进文件",
+      "section_start": 2010,
+      "section_end": 2143,
+      "source_type": "video_frame",
+      "path": "visual/full/v0173-2020.jpg",
+      "sha256": "b5358b3f7e5ff4315bfe0aacab65c2b8f9722a5333eaf3d6ff2de0343d205777",
+      "caption": "ralf-loop.sh约定每轮工作与<RALPH_DONE>终止标记。",
+      "timestamp": 2020,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "ralf-loop.sh 与 RALPH_DONE 标记可见，属于该循环真实脚本，不是普通 agent.py。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0173"
+    },
+    {
+      "image_number": 23,
+      "notes_target": "sections[11].frames[0]",
+      "section_number": 12,
+      "section_title": "Ralph 实演（下）：名片比较与研究任务收尾",
+      "section_start": 2134.14,
+      "section_end": 2310.1,
+      "source_type": "video_frame",
+      "path": "visual/full/v0205-2146.jpg",
+      "sha256": "fa8d0be62af39a52e614ed6d53204e4e1c01f26266005990feddc86a19f00974",
+      "caption": "第一轮语言研究写出NEXT_STEPS.md，留给下一轮继续。",
+      "timestamp": 2146,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "研究第一轮写 NEXT_STEPS.md 的终端结果可见，符合跨轮次交接。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0205"
+    },
+    {
+      "image_number": 24,
+      "notes_target": "sections[11].frames[1]",
+      "section_number": 12,
+      "section_title": "Ralph 实演（下）：名片比较与研究任务收尾",
+      "section_start": 2134.14,
+      "section_end": 2310.1,
+      "source_type": "video_frame",
+      "path": "visual/full/v0216-2174.jpg",
+      "sha256": "72d03e46e0c2505040af9fd5f8d32d82bc834eafc2c69a1c9a12ee5832c55500",
+      "caption": "预先生成的蓝紫个人名片；教师指出其中邮箱与身份有误。",
+      "timestamp": 2174,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "蓝紫个人名片确为页面比较图；身份/邮箱有误这一评价由课堂口述支撑，非仅凭画面推定。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0216"
+    },
+    {
+      "image_number": 25,
+      "notes_target": "sections[11].frames[2]",
+      "section_number": 12,
+      "section_title": "Ralph 实演（下）：名片比较与研究任务收尾",
+      "section_start": 2134.14,
+      "section_end": 2310.1,
+      "source_type": "video_frame",
+      "path": "visual/full/v0226-2220.jpg",
+      "sha256": "41b9b712fff3e0c4344dbbe4a92ef0cc878efaf070dcd640719397c2367e0cf4",
+      "caption": "另一张较朴素的名片；教师称来自loop，并检查联系方式。",
+      "timestamp": 2220,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "另一张橙/朴素个人名片确为对比输出；来自 loop 的归属由课堂口述，图注保留“教师称”。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0226"
+    },
+    {
+      "image_number": 26,
+      "notes_target": "sections[11].frames[3]",
+      "section_number": 12,
+      "section_title": "Ralph 实演（下）：名片比较与研究任务收尾",
+      "section_start": 2134.14,
+      "section_end": 2310.1,
+      "source_type": "video_frame",
+      "path": "visual/full/v0239-2276.jpg",
+      "sha256": "c49d1f8c57665a84aa1e44082297d2518754da7255a7cc0b8307cd8e0c20915c",
+      "caption": "语言研究输出完成标记并返回shell；标记本身不证明研究事实正确。",
+      "timestamp": 2276,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "语言研究终端返回完成标记/shell，图注明确完成标记不是事实正确证明。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0239"
+    },
+    {
+      "image_number": 27,
+      "notes_target": "sections[11].frames[4]",
+      "section_number": 12,
+      "section_title": "Ralph 实演（下）：名片比较与研究任务收尾",
+      "section_start": 2134.14,
+      "section_end": 2310.1,
+      "source_type": "video_frame",
+      "path": "visual/full/v0246-2300.jpg",
+      "sha256": "53c8a173a6c8b68fb180035fa3422347f2c49ef5f22283f7708f7b40402d78be",
+      "caption": "打开第一份语言研究报告，其结论及数据属于现场Agent输出。",
+      "timestamp": 2300,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "第一份语言研究报告确已打开，图注明确其结论数据为现场 Agent 输出。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0246"
+    },
+    {
+      "image_number": 28,
+      "notes_target": "sections[12].frames[0]",
+      "section_number": 13,
+      "section_title": "同题再跑：Harness 的好坏需要随模型重新比较",
+      "section_start": 2310,
+      "section_end": 2465.3,
+      "source_type": "video_frame",
+      "path": "visual/full/v0275-2440.jpg",
+      "sha256": "3b709d0d0ff3558be0ed5226d132302c251396712d10b7c54fbb4e534622fecf",
+      "caption": "普通agent.py再次生成研究结果，课堂对比两份报告；网页获取失败不因完成声明而消失。",
+      "timestamp": 2440,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "普通 agent.py 的同题研究输出符合本节比较，未误认作 ralf-loop.sh；失败/结论仍归现场输出。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0275"
+    },
+    {
+      "image_number": 29,
+      "notes_target": "sections[13].frames[0]",
+      "section_number": 14,
+      "section_title": "每次状态转移都检查：防止偏差不断积累",
+      "section_start": 2458,
+      "section_end": 2644,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-07.jpg",
+      "sha256": "49b7c35e2b59dce14ccdf3578ebc2c6e2361ec497bc77b9772399dbf64e57efe",
+      "caption": "现行讲义第7页：每次Transition都检查。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 2463,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 7,
+      "rationale": "每次迁移验证；不可信开发者及可执行条件完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 30,
+      "notes_target": "sections[14].frames[0]",
+      "section_number": 15,
+      "section_title": "CI/CD：把“请记得检查”变成自动执行",
+      "section_start": 2637.56,
+      "section_end": 2805.95,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-08.jpg",
+      "sha256": "8f695dbbc515514a9be66300d07843aa08a36f0228646b9d3e839485715c69e3",
+      "caption": "现行讲义第8页：CI与两种CD。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 2649,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 8,
+      "rationale": "CI 历史和 CI/两种 CD 区别；底部三条定义保留。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 31,
+      "notes_target": "sections[15].frames[0]",
+      "section_number": 16,
+      "section_title": "把检查挂到事件上：从本地 Hook 到仓库流水线",
+      "section_start": 2800,
+      "section_end": 3010,
+      "source_type": "video_frame",
+      "path": "visual/full/v0325-2944.jpg",
+      "sha256": "dc63835fcc19f0329d42c47ce8c99cfb05c461eeb80b51f928d1402eb0ed3f75",
+      "caption": "Codex仓库workflow和现场AI总结；本笔记未对该提交重新运行CI。",
+      "timestamp": 2944,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "Codex workflow/AI 说明的终端画面对应事件挂接与 CI，未声称重跑。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0325"
+    },
+    {
+      "image_number": 32,
+      "notes_target": "sections[15].frames[1]",
+      "section_number": 16,
+      "section_title": "把检查挂到事件上：从本地 Hook 到仓库流水线",
+      "section_start": 2800,
+      "section_end": 3010,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-09.jpg",
+      "sha256": "02ef706f76b0deaeb4a7d0d7bff5a6f902b5b4e2b60b8e3919469b7f1b151c56",
+      "caption": "现行讲义第9页：Hook-Based CI/CD。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 2805,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 9,
+      "rationale": "Hook 事件、pre-commit 与远端门控两组完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 33,
+      "notes_target": "sections[16].frames[0]",
+      "section_number": 17,
+      "section_title": "Lint、测试与业务规则：门禁要各司其职",
+      "section_start": 3010,
+      "section_end": 3162,
+      "source_type": "video_frame",
+      "path": "visual/full/v0347-3048.jpg",
+      "sha256": "0e08d0ab4a306173bd35c2b22e50df4a4f21abcd30c95fadf928cfb0a92b60c3",
+      "caption": "现场询问lint与测试的区别，屏幕展示AI解释。",
+      "timestamp": 3048,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "现场关于 lint 与测试的问答可见，图注把回答归 AI。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0347"
+    },
+    {
+      "image_number": 34,
+      "notes_target": "sections[16].frames[1]",
+      "section_number": 17,
+      "section_title": "Lint、测试与业务规则：门禁要各司其职",
+      "section_start": 3010,
+      "section_end": 3162,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-10.jpg",
+      "sha256": "f52a8c102cdcc8da12d84b48143992fcff4cf2b246eef73a7995db559dd7b48c",
+      "caption": "现行讲义第10页：业务规则与门禁边界。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 3015,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 10,
+      "rationale": "琐碎规则含并行PR、flaky测试、override、部署倒序；末行 Spec 条件完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 35,
+      "notes_target": "sections[16].frames[2]",
+      "section_number": 17,
+      "section_title": "Lint、测试与业务规则：门禁要各司其职",
+      "section_start": 3010,
+      "section_end": 3162,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-11.jpg",
+      "sha256": "97f3d9c1e10913f3f64d15103810d7e5915ac04f7144be5f43d41928b5ea38d7",
+      "caption": "现行讲义第11页：把CI/CD写成Spec。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 3015,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 11,
+      "rationale": "合并与发布条件；底部失败路径验收行完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 36,
+      "notes_target": "sections[17].frames[0]",
+      "section_number": 18,
+      "section_title": "为什么 Agent 时代更需要 CI：隐形关联会让项目逐渐失真",
+      "section_start": 3157.17,
+      "section_end": 3458,
+      "source_type": "video_frame",
+      "path": "visual/full/v0371-3330.jpg",
+      "sha256": "c6a52e53735177dc44a4d2695e79d67dab07bbb02c117bb6cce005c24b04fc82",
+      "caption": "文档与代码的隐形关系、门禁与维护的板书。",
+      "timestamp": 3330,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "源视频细小板书仅部分可辨；图文解释依赖对应口述，不猜笔迹。"
+      ],
+      "rationale": "文档、代码关系与 gate 的板书对应维护负担主题；不把箭头当独立技术证据。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0371"
+    },
+    {
+      "image_number": 37,
+      "notes_target": "sections[17].frames[1]",
+      "section_number": 18,
+      "section_title": "为什么 Agent 时代更需要 CI：隐形关联会让项目逐渐失真",
+      "section_start": 3157.17,
+      "section_end": 3458,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-12.jpg",
+      "sha256": "8bb62a3a02991169d039b76997c21e185351f3721187143fe35d8537464b91bc",
+      "caption": "现行讲义第12页：Agent的偏好与不可信开发者。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 3167,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 12,
+      "rationale": "Agent 偏执清单、CI纠正、jidoka类比及不可降标准完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 38,
+      "notes_target": "sections[18].frames[0]",
+      "section_number": 19,
+      "section_title": "把偏好变成可执行约束：自动检查与人工判断分开",
+      "section_start": 3451.9,
+      "section_end": 3574,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-13.jpg",
+      "sha256": "9551a8a07f3c495cd66d23fec43e9853a39d2f18cb2909e46782ce0cbbab9d86",
+      "caption": "现行讲义第13页：六类可执行约束及人工判断。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 3463,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 13,
+      "rationale": "纯图六行表：20KB文档/冗余抽象/扩大重构/可读性/改测试/关CI，各有自动检查与人工判断；表头和阈值脚注完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 39,
+      "notes_target": "sections[19].frames[0]",
+      "section_number": 20,
+      "section_title": "Agent-native 开发：把环境、知识与品味做成机制",
+      "section_start": 3567.92,
+      "section_end": 3832,
+      "source_type": "video_frame",
+      "path": "visual/full/v0386-3600.jpg",
+      "sha256": "33a5ccbe6b5612e4711ef168780be5d8ca81730411fcf003eab4b55616e86510",
+      "caption": "课堂打开OpenAI Harness engineering原文；公开文章与课堂推测分开记录。",
+      "timestamp": 3600,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "浏览器显示 OpenAI Harness engineering 页面，适配其原文与课堂评价分层。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0386"
+    },
+    {
+      "image_number": 40,
+      "notes_target": "sections[19].frames[1]",
+      "section_number": 20,
+      "section_title": "Agent-native 开发：把环境、知识与品味做成机制",
+      "section_start": 3567.92,
+      "section_end": 3832,
+      "source_type": "video_frame",
+      "path": "visual/full/v0411-3742.jpg",
+      "sha256": "65db6e9609f3f768fdf18de942b010cdae4d5da0278389fc0f5265f95d270d26",
+      "caption": "现场AI用三层流程解释Codex CI。",
+      "timestamp": 3742,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "现场回答按 CI 三层组织，绑定流程讨论正确，仍标为现场 AI。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0411"
+    },
+    {
+      "image_number": 41,
+      "notes_target": "sections[19].frames[2]",
+      "section_number": 20,
+      "section_title": "Agent-native 开发：把环境、知识与品味做成机制",
+      "section_start": 3567.92,
+      "section_end": 3832,
+      "source_type": "video_frame",
+      "path": "visual/full/v0420-3778.jpg",
+      "sha256": "48120c53404010c4d22d86a835eebf731efe3c92df7b6313a3b0be2d7886c76e",
+      "caption": "PR/main/发布的餐厅类比表，属于现场AI的教学说明。",
+      "timestamp": 3778,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "PR/main/发布餐厅类比表为 AI 教学解释，未作为仓库实际配置证明。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0420"
+    },
+    {
+      "image_number": 42,
+      "notes_target": "sections[19].frames[3]",
+      "section_number": 20,
+      "section_title": "Agent-native 开发：把环境、知识与品味做成机制",
+      "section_start": 3567.92,
+      "section_end": 3832,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-14.jpg",
+      "sha256": "a356677dfb404abef2e6f33160a753cd509f23bc81f7d497d33500b8123d5efe",
+      "caption": "现行讲义第14页：OpenAI Harness Engineering。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 3579,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 14,
+      "rationale": "OpenAI来源、空仓库、知识外部化、独立应用实例；底部bug换行完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 43,
+      "notes_target": "sections[19].frames[4]",
+      "section_number": 20,
+      "section_title": "Agent-native 开发：把环境、知识与品味做成机制",
+      "section_start": 3567.92,
+      "section_end": 3832,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-15.jpg",
+      "sha256": "b8455176c7c4abe21e8a20518f975b240044ffeb6616d4ee5a74b5d3e0e39ca2",
+      "caption": "现行讲义第15页：把品味做成机制。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 3579,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 15,
+      "rationale": "架构约束和持续清理；ClosedAI吐槽澄清原文确有lint/结构测试/CI。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 44,
+      "notes_target": "sections[20].frames[0]",
+      "section_number": 21,
+      "section_title": "行业案例：并行数量不重要，任务能否独立验证更重要",
+      "section_start": 3824.58,
+      "section_end": 4047.53,
+      "source_type": "video_frame",
+      "path": "visual/full/v0439-3990.jpg",
+      "sha256": "fd4688e0a31a40d5cf46dbc4c8092c6e043eef4bee5f2a402744517b96c4d38f",
+      "caption": "左侧板书是教师自己项目的architecture/logbook/dashboard与Agent分工；右侧投影仍是Anthropic/GCC案例。",
+      "timestamp": 3990,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "源视频细小板书仅部分可辨；图文解释依赖对应口述，不猜笔迹。"
+      ],
+      "rationale": "重新原尺寸查看：左侧下半板书含 architecture/logbook/dashboard 与任务/Agent 分工；右侧投影仍是 Anthropic 与 GCC 参照案例。正文已明确教师自己的项目板书与 GCC 材料分开。",
+      "actual_view_basis": "reopened_native_resolution_in_this_review",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0439"
+    },
+    {
+      "image_number": 45,
+      "notes_target": "sections[20].frames[1]",
+      "section_number": 21,
+      "section_title": "行业案例：并行数量不重要，任务能否独立验证更重要",
+      "section_start": 3824.58,
+      "section_end": 4047.53,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-16.jpg",
+      "sha256": "35bd431017375406ad81634a85f14c3bfd521c81c8d244cbfd3092f3fbf4239c",
+      "caption": "现行讲义第16页：Stripe Minions。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 3837,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 16,
+      "rationale": "Stripe确定节点与Agent节点及最多两轮完整CI说明，紫色表示当前讲义补充。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 46,
+      "notes_target": "sections[20].frames[2]",
+      "section_number": 21,
+      "section_title": "行业案例：并行数量不重要，任务能否独立验证更重要",
+      "section_start": 3824.58,
+      "section_end": 4047.53,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-17.jpg",
+      "sha256": "baa8b3198293dc975f0e881000ab0e81a9752eabc2e14ccbe93220dda03b5898",
+      "caption": "现行讲义第17页：Anthropic编译器实验。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 3837,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 17,
+      "rationale": "Anthropic16Agent同一Bug、GCC参照、组合失败边界完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 47,
+      "notes_target": "sections[20].frames[3]",
+      "section_number": 21,
+      "section_title": "行业案例：并行数量不重要，任务能否独立验证更重要",
+      "section_start": 3824.58,
+      "section_end": 4047.53,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-18.jpg",
+      "sha256": "9d27b2cb6ec7a33f61e0459c9040d2700681900fb75a714350d5cdc8dc8338f2",
+      "caption": "现行讲义第18页：StrongDM Software Factory。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 3837,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 18,
+      "rationale": "StrongDM场景和DTU；末尾选课例子完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 48,
+      "notes_target": "sections[21].frames[0]",
+      "section_number": 22,
+      "section_title": "DeepSeek Harness：先看真实仓库怎样组织知识",
+      "section_start": 4044,
+      "section_end": 4196.66,
+      "source_type": "video_frame",
+      "path": "visual/full/v0460-4168.jpg",
+      "sha256": "f19cabf6feafee7d001614a0f38119afbdf6067dae19b5a54263afc8775d449e",
+      "caption": "打开DeepSeek Harness的architecture.md，观察文档结构与交叉引用。",
+      "timestamp": 4168,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "architecture.md 架构文档确被打开；图注只说观察结构与交叉引用，不声称全架构教学。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0460"
+    },
+    {
+      "image_number": 49,
+      "notes_target": "sections[21].frames[1]",
+      "section_number": 22,
+      "section_title": "DeepSeek Harness：先看真实仓库怎样组织知识",
+      "section_start": 4044,
+      "section_end": 4196.66,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-19.jpg",
+      "sha256": "1279ae14aaeca77bf5a5db6d68846963a8ccda615fd0b7e502645b0ba2d4184d",
+      "caption": "现行讲义第19页：DeepSeek Harness主题插画（不是架构图）。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 4049,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 19,
+      "rationale": "Deepseek Harness人物装备隐喻全身图完整；无架构数据，不能推断实际系统。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 50,
+      "notes_target": "sections[22].frames[0]",
+      "section_number": 23,
+      "section_title": "双语三件套：显式记录哪一段已经配对",
+      "section_start": 4196,
+      "section_end": 4466,
+      "source_type": "video_frame",
+      "path": "visual/full/v0476-4230.jpg",
+      "sha256": "64cf849da04e1df22c42e8c11822d7078cf141d81f79766b91e2d9ce1981c39a",
+      "caption": "现场Agent解释双语文档三件套与配对门禁。",
+      "timestamp": 4230,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "README 源文及现场双语三件套说明对应本节；仓库 clone URL 也可见。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0476"
+    },
+    {
+      "image_number": 51,
+      "notes_target": "sections[22].frames[1]",
+      "section_number": 23,
+      "section_title": "双语三件套：显式记录哪一段已经配对",
+      "section_start": 4196,
+      "section_end": 4466,
+      "source_type": "video_frame",
+      "path": "visual/full/v0499-4350.jpg",
+      "sha256": "a8a91209d4b918443d60ffe8a9946ebfad01ac2fa04f99c83719f31b65542cbe",
+      "caption": "README.i18n.yaml按标题片段记录英文与中文哈希。",
+      "timestamp": 4350,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "重新原尺寸查看：右侧 README.i18n.yaml 注释写 per heading section、每节 en/zh；左侧回答明确标题 slug 路径和 SHA256 前16位。图注“按标题片段”正确，整文件 hash 归因已撤回。",
+      "actual_view_basis": "reopened_native_resolution_in_this_review",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0499"
+    },
+    {
+      "image_number": 52,
+      "notes_target": "sections[22].frames[2]",
+      "section_number": 23,
+      "section_title": "双语三件套：显式记录哪一段已经配对",
+      "section_start": 4196,
+      "section_end": 4466,
+      "source_type": "video_frame",
+      "path": "visual/full/v0501-4380.jpg",
+      "sha256": "55a80cba4235655d14dc07b249f987043c41be10f668e52dab614dbe93f367ae",
+      "caption": "两侧内容及其配对关系的板书；哈希不同可提示变化。",
+      "timestamp": 4380,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "源视频细小板书仅部分可辨；图文解释依赖对应口述，不猜笔迹。"
+      ],
+      "rationale": "两侧内容与配对关系板书支持讲解变化检测；仅称提示变化，不称语义等价已证明。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0501"
+    },
+    {
+      "image_number": 53,
+      "notes_target": "sections[23].frames[0]",
+      "section_number": 24,
+      "section_title": "“人感”怎样校准：样例、术语和按需加载",
+      "section_start": 4461.85,
+      "section_end": 4668.17,
+      "source_type": "video_frame",
+      "path": "visual/full/v0514-4480.jpg",
+      "sha256": "00d2de564c29c78977890298cd6f4f57ac6d65ae697a1148ae911f090d6c733d",
+      "caption": "文档翻译流程与按需加载的规范入口。",
+      "timestamp": 4480,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "终端呈现翻译流程及规范入口，适配按需加载主题；不把当前仓库规则倒灌课堂。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0514"
+    },
+    {
+      "image_number": 54,
+      "notes_target": "sections[23].frames[1]",
+      "section_number": 24,
+      "section_title": "“人感”怎样校准：样例、术语和按需加载",
+      "section_start": 4461.85,
+      "section_end": 4668.17,
+      "source_type": "video_frame",
+      "path": "visual/full/v0523-4530.jpg",
+      "sha256": "75d77cbc329ce0b720853e0c00d7c0835c97fae19f0e54eaa6c00ca6b66c42d2",
+      "caption": "style-samples.md中的风格样例；样例不等于当前校验算法。",
+      "timestamp": 4530,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "style-samples.md 风格样例可见；图注新增样例不等于当前算法，避免旧样例文字误导。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0523"
+    },
+    {
+      "image_number": 55,
+      "notes_target": "sections[23].frames[2]",
+      "section_number": 24,
+      "section_title": "“人感”怎样校准：样例、术语和按需加载",
+      "section_start": 4461.85,
+      "section_end": 4668.17,
+      "source_type": "video_frame",
+      "path": "visual/full/v0528-4590.jpg",
+      "sha256": "94861fe8486013cccea8b8ee87b17c64ebabab742c85c3964f5043a44c0c8677",
+      "caption": "terminology与一致性讨论，教师提示过严规则会误伤。",
+      "timestamp": 4590,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "terminology/翻译规则场景及教师阈值讨论对应术语校准；过严误伤属于口述观点。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0528"
+    },
+    {
+      "image_number": 56,
+      "notes_target": "sections[24].frames[0]",
+      "section_number": 25,
+      "section_title": "让 Agent 还原设计历史：为什么这条规则会出现",
+      "section_start": 4666,
+      "section_end": 4870,
+      "source_type": "video_frame",
+      "path": "visual/full/v0536-4674.jpg",
+      "sha256": "f5297416c67089acf66df7bcfbdcfd9ab914afe3c7046bb40348fcb34ba473c3",
+      "caption": "现场追问双语机制的开发历史，Agent开始检索Git记录。",
+      "timestamp": 4674,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "现场 Agent 开始按 Git 历史找双语机制来源，图注没有声称本笔记完成同一历史复现。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0536"
+    },
+    {
+      "image_number": 57,
+      "notes_target": "sections[24].frames[1]",
+      "section_number": 25,
+      "section_title": "让 Agent 还原设计历史：为什么这条规则会出现",
+      "section_start": 4666,
+      "section_end": 4870,
+      "source_type": "video_frame",
+      "path": "visual/full/v0556-4722.jpg",
+      "sha256": "4e932582584b1c89f137336e10cf428bf537c9472d91f0ea9c48d251f8afe159",
+      "caption": "现场Agent列出的术语约定与三件套早期阶段。",
+      "timestamp": 4722,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "现场回答列出早期术语约定和三件套阶段，来源明确为现场 Agent。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0556"
+    },
+    {
+      "image_number": 58,
+      "notes_target": "sections[24].frames[2]",
+      "section_number": 25,
+      "section_title": "让 Agent 还原设计历史：为什么这条规则会出现",
+      "section_start": 4666,
+      "section_end": 4870,
+      "source_type": "video_frame",
+      "path": "visual/scan/sample-02431.jpg",
+      "sha256": "b14dff1a537a7a53480953b697e6cb87c137eb7ee31fd9ae39da656f15a840ae",
+      "caption": "现场Agent总结六次演化，包括最小补丁、轻量路径与简化驱动；未独立重放这些历史提交。",
+      "timestamp": 4860,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "本轮新开原尺寸：标题“几次大变化，一句话总结”，列出六项：07-02/03三件套、07-05人感评审资产、07-12/14可执行模板、07-26/27briefing+最小补丁、08-08轻量双线、09-23简化驱动。图注准确保留“现场Agent总结”，未独立认证历史。",
+      "actual_view_basis": "reopened_native_resolution_in_this_review",
+      "evidence": [
+        "/tmp/gse08-visual/visual-inventory.json",
+        "direct view_image of /Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/visual/scan/sample-02431.jpg"
+      ],
+      "source_candidate_id": "v0574"
+    },
+    {
+      "image_number": 59,
+      "notes_target": "sections[25].frames[0]",
+      "section_number": 26,
+      "section_title": "从常驻规则到 Skills：把任务、知识和执行方法分层",
+      "section_start": 4870,
+      "section_end": 5066.14,
+      "source_type": "video_frame",
+      "path": "visual/full/v0595-4932.jpg",
+      "sha256": "dd46a67c2ccef67dad0083986f00c3743c83c95c2277b4ec0ea453de1017021d",
+      "caption": "分层AGENTS、字数预算和带生命周期的Agent Notes清单。",
+      "timestamp": 4932,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "终端中的分层 AGENTS、预算与 Agent Notes 生命周期对应常驻规则到技能的层级。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0595"
+    },
+    {
+      "image_number": 60,
+      "notes_target": "sections[25].frames[1]",
+      "section_number": 26,
+      "section_title": "从常驻规则到 Skills：把任务、知识和执行方法分层",
+      "section_start": 4870,
+      "section_end": 5066.14,
+      "source_type": "video_frame",
+      "path": "visual/full/v0615-5032.jpg",
+      "sha256": "755c9ab6dfeafaefdd1f9a3cf55c7090c13aabf85c9ec5182bc67024a4c562e6",
+      "caption": "现场查看skills分类，区分开发流程技能与产品提供的技能。",
+      "timestamp": 5032,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "skills 分类及仓库开发技能/产品技能区别可见，绑定技能调用边界正确。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0615"
+    },
+    {
+      "image_number": 61,
+      "notes_target": "sections[26].frames[0]",
+      "section_number": 27,
+      "section_title": "代码评审与文档可执行关系：约束从口头要求落到证据",
+      "section_start": 5066,
+      "section_end": 5290.31,
+      "source_type": "video_frame",
+      "path": "visual/full/v0635-5080.jpg",
+      "sha256": "a1ea575de9775a09b9b492ad5489ebb1ce513a3dd526a02dd2ff2201046fa33e",
+      "caption": "本地自证、CI与人工评审的现场说明。",
+      "timestamp": 5080,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "现场评审工作流回答对应本地自证、CI 与人工评审三段；不宣称运行通过。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0635"
+    },
+    {
+      "image_number": 62,
+      "notes_target": "sections[26].frames[1]",
+      "section_number": 27,
+      "section_title": "代码评审与文档可执行关系：约束从口头要求落到证据",
+      "section_start": 5066,
+      "section_end": 5290.31,
+      "source_type": "video_frame",
+      "path": "visual/full/v0660-5244.jpg",
+      "sha256": "1f1939a2c8685d88dc28e6d021a9e12e76c74868ec976a4cb07f355dbc088640",
+      "caption": "机械门禁与文档分层清单；需看各脚本合同才能判断其保证范围。",
+      "timestamp": 5244,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "终端机械门禁和文档分层清单对应本节类型/链接关系；图注明确保证范围取决脚本。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0660"
+    },
+    {
+      "image_number": 63,
+      "notes_target": "sections[27].frames[0]",
+      "section_number": 28,
+      "section_title": "经验来自失败：必要时回到架构层重新选择",
+      "section_start": 5283,
+      "section_end": 5481.77,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-20.jpg",
+      "sha256": "ea1f35ba887d8e8041a2566566603234d0ff0e2a13cf122178607dfa79157471",
+      "caption": "现行讲义第20页：真正的经验与重构。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 5288,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 20,
+      "rationale": "经验、架构假设、垃圾回收的边界完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 64,
+      "notes_target": "sections[27].frames[1]",
+      "section_number": 28,
+      "section_title": "经验来自失败：必要时回到架构层重新选择",
+      "section_start": 5283,
+      "section_end": 5481.77,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-21.jpg",
+      "sha256": "c4ee36d1c39a59d809f90679cdf49ba583f8b774054fe473e5051b4a5708925d",
+      "caption": "现行讲义第21页：Friendster背景。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 5288,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 21,
+      "rationale": "Friendster读副本负载与按用户分片；组织实施的推论完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 65,
+      "notes_target": "sections[27].frames[2]",
+      "section_number": 28,
+      "section_title": "经验来自失败：必要时回到架构层重新选择",
+      "section_start": 5283,
+      "section_end": 5481.77,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-22.jpg",
+      "sha256": "87b696212278b8dad01296308422346edba3c8784a0d280fd5476b9c5fa3850c",
+      "caption": "现行讲义第22页：Webvan与Quibi背景。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 5288,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 22,
+      "rationale": "Webvan/Quibi背景材料；容量百分比与管理层自述归因可辨。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 66,
+      "notes_target": "sections[28].frames[0]",
+      "section_number": 29,
+      "section_title": "尝试机会与学习：课堂最后的社会性担忧",
+      "section_start": 5478,
+      "section_end": 5813.19,
+      "source_type": "video_frame",
+      "path": "visual/full/v0692-5610.jpg",
+      "sha256": "d095a5e49c3db73bf90261334d698771c2a1972004455a4aafbfd75a72134cb7",
+      "caption": "尝试机会、经验和能力门槛的课堂讨论；板书用于观点说明。",
+      "timestamp": 5610,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "源视频细小板书仅部分可辨；图文解释依赖对应口述，不猜笔迹。"
+      ],
+      "rationale": "尝试机会、学习与能力门槛的课堂板书对应社会性判断；图注将其限定为观点说明。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0692"
+    },
+    {
+      "image_number": 67,
+      "notes_target": "sections[28].frames[1]",
+      "section_number": 29,
+      "section_title": "尝试机会与学习：课堂最后的社会性担忧",
+      "section_start": 5478,
+      "section_end": 5813.19,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-23.jpg",
+      "sha256": "fbbf6c650fc0128d4ce21a205e1895d6e5f7d4a822c403ae12bb9359be4eb05e",
+      "caption": "现行讲义第23页：Token与尝试机会。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 5483,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 23,
+      "rationale": "Token实践机会、学习动机能力、教育风险推论完整。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 68,
+      "notes_target": "sections[28].frames[2]",
+      "section_number": 29,
+      "section_title": "尝试机会与学习：课堂最后的社会性担忧",
+      "section_start": 5478,
+      "section_end": 5813.19,
+      "source_type": "pdf_page",
+      "path": "sources/official-20261019/slides/slide-24.jpg",
+      "sha256": "6b5e4b2b8c0dc366bb033ca514f35d5ac9eb0e53bce34b5dca7374d1bfece83c",
+      "caption": "现行讲义第24页：学习机会断层插画（不是定量研究图）。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+      "timestamp": 5483,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [
+        "related_time 仅表示正文关联，不代表当前讲义在录制时同秒显示。"
+      ],
+      "actual_view_basis": "prior_24_page_visual_inspection_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-materials/slide-image-audit.json"
+      ],
+      "source_page": 24,
+      "rationale": "纯图：Token=0，尝试/失败在左，反馈/重构/未来大学在右；学习机会被截断，完整保留图中标注。 与本节主题及图注吻合；来源明确标作现行网页截图汇编，非原生PDF或同秒视频。"
+    },
+    {
+      "image_number": 69,
+      "notes_target": "sections[29].frames[0]",
+      "section_number": 30,
+      "section_title": "回到最小核心：从 agent.py 看见成熟系统的增量",
+      "section_start": 5808,
+      "section_end": 5830,
+      "source_type": "video_frame",
+      "path": "visual/full/v0712-5822.jpg",
+      "sha256": "29a29fd3cb2c104d4d05a1758a59f6d7b34a42503a2d2cf48e879084ee8205b4",
+      "caption": "课程结束前回到agent.py的工具循环，连接最小核心与插件化系统。",
+      "timestamp": 5822,
+      "time_relation": "inside_section",
+      "binding_result": "matched",
+      "semantic_caveats": [],
+      "rationale": "结束前 agent.py 的 main/tool 循环确再次出现，符合回到最小核心的总结。",
+      "actual_view_basis": "prior_native_resolution_review_reused_after_exact_hash_match",
+      "evidence": [
+        "/tmp/gse08-visual/native-frame-review.json",
+        "/tmp/gse08-visual/selected-frames.json"
+      ],
+      "source_candidate_id": "v0712"
+    }
+  ],
+  "limitations": [
+    "本轮复用此前实际目视记录时均逐一比对已读源图的SHA-256；不把文件存在或脚本运行视为目视检查。",
+    "本轮新开原图：v0439、v0499、4860秒v0574，以及Humanize第5/7页。",
+    "未重新证明现场Agent历史总结与实际Git历史一致；图注和正文保留其现场回答归属。",
+    "任何后续caption/path/section/time或图像字节变化需要重新审查受影响项。"
+  ]
+}

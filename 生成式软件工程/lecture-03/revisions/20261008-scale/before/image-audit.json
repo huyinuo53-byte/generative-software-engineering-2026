@@ -1,0 +1,1067 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "0f3722fcc99ff72b5d56790c3374dfe1cd80c24fdf8dd9a0db6153b9ad4c6cc8",
+  "review_method": "35页通过9张四页联系表逐页目视且读全文DOM文本；35页单图放大；18入选帧逐张目视，另1候选重复PPT未用；截图PDF第33页重新渲染目视。",
+  "images": [
+    {
+      "section": 1,
+      "frame": 1,
+      "path": "frames/slide-001.png",
+      "sha256": "7833885e0335fd6a6f7c54726feae0e7a1683a710eea7b8de0cb8085e554d594",
+      "purpose": "课堂开场的模型进展话题；保留课堂语境，不作当前产品能力评测。",
+      "expected_information": "第1页完整标题、内容、图示/公式和物理页码；开场标题和模型进展漫画完整",
+      "observed_information": "已逐页目视：开场标题和模型进展漫画完整",
+      "comparison_evidence": "sources/contact-1.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 1,
+      "frame": 2,
+      "path": "frames/slide-002.png",
+      "sha256": "05d534b1127129b33c311dec5c03803efd3448bbc7982e523097f8e9d2f43b9c",
+      "purpose": "设计问题具有开放的意图、规约和实现空间。",
+      "expected_information": "第2页完整标题、内容、图示/公式和物理页码；开放设计问题两组列表及Simon补充完整",
+      "observed_information": "已逐页目视：开放设计问题两组列表及Simon补充完整",
+      "comparison_evidence": "sources/contact-1.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 2,
+      "frame": 1,
+      "path": "frames/slide-003.png",
+      "sha256": "8d95276a924da05234e49d1f6cc879aa33ba272ef95894b45514f1e33916ba57",
+      "purpose": "“理应当做到”与数学逻辑路线，是讲师在课堂上的判断和研究经历。",
+      "expected_information": "第3页完整标题、内容、图示/公式和物理页码；数学路线判断与研究经历截图完整",
+      "observed_information": "已逐页目视：数学路线判断与研究经历截图完整",
+      "comparison_evidence": "sources/contact-1.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 3,
+      "frame": 1,
+      "path": "frames/slide-004.png",
+      "sha256": "e00f7a3932d78950f4f888cc568482849ca309e85a06a8fe4c24ebec7008a327",
+      "purpose": "创造力需要正确的概念和理解；当前学习的目的不是只记操作。",
+      "expected_information": "第4页完整标题、内容、图示/公式和物理页码；概念、理解与进入工程任务两段完整",
+      "observed_information": "已逐页目视：概念、理解与进入工程任务两段完整",
+      "comparison_evidence": "sources/contact-1.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 4,
+      "frame": 1,
+      "path": "frames/slide-005.png",
+      "sha256": "396cb8fd5016e87046530bf3d4cda74c9ea245f136f219919372b35389ac9509",
+      "purpose": "一个目录中的 intent/spec/impl，经 build 形成应用或可执行文件。",
+      "expected_information": "第5页完整标题、内容、图示/公式和物理页码；目录intent/spec/impl→build→应用/exe图完整",
+      "observed_information": "已逐页目视：目录intent/spec/impl→build→应用/exe图完整",
+      "comparison_evidence": "sources/contact-2.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 5,
+      "frame": 1,
+      "path": "frames/slide-006.png",
+      "sha256": "ad125402de19533cb1e563f97865cd0a72cf8efdec07267e2a51ba0873c6554d",
+      "purpose": "U 盘单份保存与打包发邮件的局限。",
+      "expected_information": "第6页完整标题、内容、图示/公式和物理页码；优盘损坏与邮件打包两种情境图完整",
+      "observed_information": "已逐页目视：优盘损坏与邮件打包两种情境图完整",
+      "comparison_evidence": "sources/contact-2.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 5,
+      "frame": 2,
+      "path": "frames/slide-007.png",
+      "sha256": "4ec6f05e94f8feb01626def6076b583f5a7b04e6ccd805edb200a81f45df4204",
+      "purpose": "Git 管理版本；make submit 是课程项目约定。",
+      "expected_information": "第7页完整标题、内容、图示/公式和物理页码；clone/pull/make submit及其项目自定义边界完整",
+      "observed_information": "已逐页目视：clone/pull/make submit及其项目自定义边界完整",
+      "comparison_evidence": "sources/contact-2.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 6,
+      "frame": 1,
+      "path": "frames/slide-008.png",
+      "sha256": "7f3722265b80a62e18c75a1b07c61289318c2f5cfe888c18db6f04efd3b16fa1",
+      "purpose": "把一次浏览变成具体问题：哪个细节是我自己做时不会想到的？",
+      "expected_information": "第8页完整标题、内容、图示/公式和物理页码；GitHub素材与学习问题两段完整",
+      "observed_information": "已逐页目视：GitHub素材与学习问题两段完整",
+      "comparison_evidence": "sources/contact-2.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 7,
+      "frame": 1,
+      "path": "frames/slide-009.png",
+      "sha256": "976396f95330719602918a932930de3d62e68891e39f34af9487f3b08a0982c6",
+      "purpose": "先在脑中实现，再解释方案差异；讲义同时提示自我解释。",
+      "expected_information": "第9页完整标题、内容、图示/公式和物理页码；virtually implement的比较分支与注意力说明完整",
+      "observed_information": "已逐页目视：virtually implement的比较分支与注意力说明完整",
+      "comparison_evidence": "sources/contact-3.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 8,
+      "frame": 1,
+      "path": "frames/slide-010.png",
+      "sha256": "6f447bf61ce4c2f3a7d53ac40619bdac5c14c033d23c05d2a33855ab62cfd149",
+      "purpose": "面试经历和文本冲突的观察入口。",
+      "expected_information": "第10页完整标题、内容、图示/公式和物理页码；面试问题、0/10、文本冲突与status说明完整",
+      "observed_information": "已逐页目视：面试问题、0/10、文本冲突与status说明完整",
+      "comparison_evidence": "sources/contact-3.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 9,
+      "frame": 1,
+      "path": "frames/slide-011.png",
+      "sha256": "b504d2e97139e0673bc9122e0caf11b16d0ceb3ee20af5ca13949c38eef18448",
+      "purpose": "复制目录、文件历史与多人协作，是不同层次的需求。",
+      "expected_information": "第11页完整标题、内容、图示/公式和物理页码；目录副本、RCS、CVS/SVN、Git对比文字完整",
+      "observed_information": "已逐页目视：目录副本、RCS、CVS/SVN、Git对比文字完整",
+      "comparison_evidence": "sources/contact-3.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 9,
+      "frame": 2,
+      "path": "frames/slide-012.png",
+      "sha256": "d2fba295e21f70fe3c07be094a173dfdecd1eb56a90d1cd8a2d71121b26ce562",
+      "purpose": "官方讲义的 Git 简史图。",
+      "expected_information": "第12页完整标题、内容、图示/公式和物理页码；1991–2002、2002、2005三阶段Git简史图及底部引文完整",
+      "observed_information": "已逐页目视：1991–2002、2002、2005三阶段Git简史图及底部引文完整",
+      "comparison_evidence": "sources/contact-3.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 9,
+      "frame": 3,
+      "path": "frames/slide-013.png",
+      "sha256": "8712fc11b3757e8614c726547d868fd4dd4d0f9d6340d05b6b7cec2844a96c8f",
+      "purpose": "项目级快照保存配套状态；存盘和提交不同。",
+      "expected_information": "第13页完整标题、内容、图示/公式和物理页码；回溯、快照、代码配置配套及存盘/提交边界完整",
+      "observed_information": "已逐页目视：回溯、快照、代码配置配套及存盘/提交边界完整",
+      "comparison_evidence": "sources/contact-4.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 9,
+      "frame": 4,
+      "path": "frames/slide-014.png",
+      "sha256": "9b7d554935b6c429154012193fbc64da30509e18100bd6abee80b4b6a1a82408",
+      "purpose": "由已有经验外推快照、历史与协作。",
+      "expected_information": "第14页完整标题、内容、图示/公式和物理页码；三个经验外推例与删除已提交文件的说明完整",
+      "observed_information": "已逐页目视：三个经验外推例与删除已提交文件的说明完整",
+      "comparison_evidence": "sources/contact-4.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 10,
+      "frame": 1,
+      "path": "frames/slide-015.png",
+      "sha256": "524fe79508bd782b71aff3db14ed0c215d5c26d521da6648a261d23c77c22b80",
+      "purpose": "工作区、暂存区与提交：add 保存的是当时的内容。",
+      "expected_information": "第15页完整标题、内容、图示/公式和物理页码；init/clone/add/commit和add后再改的反例完整",
+      "observed_information": "已逐页目视：init/clone/add/commit和add后再改的反例完整",
+      "comparison_evidence": "sources/contact-4.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 10,
+      "frame": 2,
+      "path": "frames/video-2190.jpg",
+      "sha256": "2d4b50742451c352e67d455e8f2fa52cfbd4bf45d9b538526fd95eaf21f6418e",
+      "purpose": "现场：hello.c 已暂存，git status 显示还没有提交。",
+      "expected_information": "现场：hello.c 已暂存，git status 显示还没有提交。",
+      "observed_information": "已单独目视完整1280×410帧：现场：hello.c 已暂存，git status 显示还没有提交。",
+      "comparison_evidence": "原视频实际秒数2190，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 10,
+      "frame": 3,
+      "path": "frames/video-2380.jpg",
+      "sha256": "194bea979cc16264e6978fec9334d53051da44168ca32a071543ebb4481baf9a",
+      "purpose": "现场 Agent 对含糊提交说明提出批评；表格是模型输出，不等于每项判断均正确。",
+      "expected_information": "现场 Agent 对含糊提交说明提出批评；表格是模型输出，不等于每项判断均正确。",
+      "observed_information": "已单独目视完整1280×410帧：现场 Agent 对含糊提交说明提出批评；表格是模型输出，不等于每项判断均正确。",
+      "comparison_evidence": "原视频实际秒数2380，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 11,
+      "frame": 1,
+      "path": "frames/video-2548.jpg",
+      "sha256": "a725457b6ba360b3febffcab589b06d3c9e9083d3401adfb86915926b54a4b75",
+      "purpose": "现场空提交成功：新记录存在，但没有对应的文件内容修改。",
+      "expected_information": "现场空提交成功：新记录存在，但没有对应的文件内容修改。",
+      "observed_information": "已单独目视完整1280×410帧：现场空提交成功：新记录存在，但没有对应的文件内容修改。",
+      "comparison_evidence": "原视频实际秒数2548，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 12,
+      "frame": 1,
+      "path": "frames/slide-016.png",
+      "sha256": "36de4f82ac00c207b30e42a8d207c8c315deade6571a2700b1cc1e487f28e779",
+      "purpose": "“目录里有什么”和“项目需要共同保存什么”是两个问题。",
+      "expected_information": "第16页完整标题、内容、图示/公式和物理页码；两个追问、构建产物及绝对路径反例完整",
+      "observed_information": "已逐页目视：两个追问、构建产物及绝对路径反例完整",
+      "comparison_evidence": "sources/contact-4.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 12,
+      "frame": 2,
+      "path": "frames/video-2815.jpg",
+      "sha256": "7bf2629843d256e96fa66eed5a1aa01076750f818ba3e28167de5d5de8901ad0",
+      "purpose": "Agent 指出 hello 是编译产物，建议源码与构建方法共同维护。",
+      "expected_information": "Agent 指出 hello 是编译产物，建议源码与构建方法共同维护。",
+      "observed_information": "已单独目视完整1280×410帧：Agent 指出 hello 是编译产物，建议源码与构建方法共同维护。",
+      "comparison_evidence": "原视频实际秒数2815，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 12,
+      "frame": 3,
+      "path": "frames/video-2966.jpg",
+      "sha256": "951c5cde69f55c88f5a366e18662068e498344c0523eac7599aab04faf9ea437",
+      "purpose": "整理后的本地练习历史：程序骨架与忽略编译产物各有清楚意图。",
+      "expected_information": "整理后的本地练习历史：程序骨架与忽略编译产物各有清楚意图。",
+      "observed_information": "已单独目视完整1280×410帧：整理后的本地练习历史：程序骨架与忽略编译产物各有清楚意图。",
+      "comparison_evidence": "原视频实际秒数2966，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 13,
+      "frame": 1,
+      "path": "frames/slide-017.png",
+      "sha256": "9da120c6a934d0cdb6d4ccfa96d07a455f558b459cc1750c31df2c2253ced3a3",
+      "purpose": "让 Agent 逐文件解释变化，作为学习约定而非自动放行。",
+      "expected_information": "第17页完整标题、内容、图示/公式和物理页码；AGENTS.md示例与源码/产物判断完整",
+      "observed_information": "已逐页目视：AGENTS.md示例与源码/产物判断完整",
+      "comparison_evidence": "sources/contact-5.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 13,
+      "frame": 2,
+      "path": "frames/video-3140.jpg",
+      "sha256": "ef4ce30433f737ce89421585271eac81ddc6df7124bf9d1ba56c9339eda0da92",
+      "purpose": "现场：Agent 识别无法编译的修改，并解释自洽快照与 bisect 的关系。",
+      "expected_information": "现场：Agent 识别无法编译的修改，并解释自洽快照与 bisect 的关系。",
+      "observed_information": "已单独目视完整1280×410帧：现场：Agent 识别无法编译的修改，并解释自洽快照与 bisect 的关系。",
+      "comparison_evidence": "原视频实际秒数3140，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 14,
+      "frame": 1,
+      "path": "frames/slide-018.png",
+      "sha256": "fd0a0bb57b868ba6f83165bd351aac04c6788c74450d0d612b370e12416db01f",
+      "purpose": "提交规则有例外；.gitignore 不会自动取消已有跟踪，也不抹掉历史。",
+      "expected_information": "第18页完整标题、内容、图示/公式和物理页码；构建产物、个人配置、密钥、临时文件、例外及ignore限制完整",
+      "observed_information": "已逐页目视：构建产物、个人配置、密钥、临时文件、例外及ignore限制完整",
+      "comparison_evidence": "sources/contact-5.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 15,
+      "frame": 1,
+      "path": "frames/slide-019.png",
+      "sha256": "259f43b3da2df1d6463beec61ec507cde937a22d4b072cc3d7423ec071dc2974",
+      "purpose": "两种规则名的选择：先识别名字在文档里的角色。",
+      "expected_information": "第19页完整标题、内容、图示/公式和物理页码；大小写规则示例与直觉问题完整",
+      "observed_information": "已逐页目视：大小写规则示例与直觉问题完整",
+      "comparison_evidence": "sources/contact-5.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 15,
+      "frame": 2,
+      "path": "frames/slide-020.png",
+      "sha256": "f0c113cfad8eb32a2e7c13857f0fd94a55db603f0d18e13c5025fccf1d1ea29a",
+      "purpose": "RFC 大写关键词只作类比，不规定检查规则必须大写。",
+      "expected_information": "第20页完整标题、内容、图示/公式和物理页码；标识/自然语言角色、RFC类比及一致性边界完整",
+      "observed_information": "已逐页目视：标识/自然语言角色、RFC类比及一致性边界完整",
+      "comparison_evidence": "sources/contact-5.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 16,
+      "frame": 1,
+      "path": "frames/video-3950.jpg",
+      "sha256": "91dde4700474fabc615b7d99a80b78d4540bc2f7bfd81aba588cc96fe0e8abad",
+      "purpose": "现场黑板：修改 b.txt 后复制变化路径，未变子树继续共享。",
+      "expected_information": "现场黑板：修改 b.txt 后复制变化路径，未变子树继续共享。",
+      "observed_information": "已单独目视完整1280×410帧：现场黑板：修改 b.txt 后复制变化路径，未变子树继续共享。",
+      "comparison_evidence": "原视频实际秒数3950，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 17,
+      "frame": 1,
+      "path": "frames/slide-021.png",
+      "sha256": "b1251c1174b2b5e72875f7b49fce2d328db100ccbf7ca72a297a4253ebe9e052",
+      "purpose": "寻找或生成能把关键细节展开的工具。",
+      "expected_information": "第21页完整标题、内容、图示/公式和物理页码；可视化学习主张三项完整",
+      "observed_information": "已逐页目视：可视化学习主张三项完整",
+      "comparison_evidence": "sources/contact-6.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 17,
+      "frame": 2,
+      "path": "frames/slide-022.png",
+      "sha256": "ad94ad11279a8bc4fd712939469dd7ac5beb515aeb558c4efd450b547ec81251",
+      "purpose": "gitv 完整提示词：真实 bytes、对象解析、持续监听与交互要求。",
+      "expected_information": "第22页完整标题、内容、图示/公式和物理页码；完整gitv提示词、对比链接及学习研究补充完整",
+      "observed_information": "已逐页目视：完整gitv提示词、对比链接及学习研究补充完整",
+      "comparison_evidence": "sources/contact-6.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 17,
+      "frame": 3,
+      "path": "frames/video-4158.jpg",
+      "sha256": "05a6654270645313244a400fe1961e54a542a7c83994e7e0af9d38f2ee4e04b8",
+      "purpose": "Learn Git Branching 的模拟画面：提交/切换有动画，add/staging 显示不支持。",
+      "expected_information": "Learn Git Branching 的模拟画面：提交/切换有动画，add/staging 显示不支持。",
+      "observed_information": "已单独目视完整1280×410帧：Learn Git Branching 的模拟画面：提交/切换有动画，add/staging 显示不支持。",
+      "comparison_evidence": "原视频实际秒数4158，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 18,
+      "frame": 1,
+      "path": "frames/video-4349.jpg",
+      "sha256": "0aaccd8fb4c2abaf8e18a6f0c5a53abf52c4360885eabf061594aa0f747454ac",
+      "purpose": "真实 blob：原始字节 → zlib 解压 → 对象头和正文，课堂此例为31 B→23 B。",
+      "expected_information": "真实 blob：原始字节 → zlib 解压 → 对象头和正文，课堂此例为31 B→23 B。",
+      "observed_information": "已单独目视完整1280×410帧：真实 blob：原始字节 → zlib 解压 → 对象头和正文，课堂此例为31 B→23 B。",
+      "comparison_evidence": "原视频实际秒数4349，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 18,
+      "frame": 2,
+      "path": "frames/video-4409.jpg",
+      "sha256": "77e83eef1a87a34adc93e15afe6605bed0fdb7f336eff363d121a31e4e18cdc7",
+      "purpose": "真实 tree：解析后的模式、文件名 hello.c 与对象链接。",
+      "expected_information": "真实 tree：解析后的模式、文件名 hello.c 与对象链接。",
+      "observed_information": "已单独目视完整1280×410帧：真实 tree：解析后的模式、文件名 hello.c 与对象链接。",
+      "comparison_evidence": "原视频实际秒数4409，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 19,
+      "frame": 1,
+      "path": "frames/video-4520.jpg",
+      "sha256": "dfec99a5a1fea8f45f8a1d381b606faa71d780c1c60fcb5bad4705ca706b8478",
+      "purpose": "现场 refs/heads/A：分支引用指向提交，A/B 从同一基线作出不同修改。",
+      "expected_information": "现场 refs/heads/A：分支引用指向提交，A/B 从同一基线作出不同修改。",
+      "observed_information": "已单独目视完整1280×410帧：现场 refs/heads/A：分支引用指向提交，A/B 从同一基线作出不同修改。",
+      "comparison_evidence": "原视频实际秒数4520，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 19,
+      "frame": 2,
+      "path": "frames/video-4640.jpg",
+      "sha256": "d1afe9540afb7b0d67b198091ab8d5e4e5eafaae606fbb67b09760457b92b25c",
+      "purpose": "冲突现场：工作区文本标记与 Index 的 base/ours/theirs 并排呈现。",
+      "expected_information": "冲突现场：工作区文本标记与 Index 的 base/ours/theirs 并排呈现。",
+      "observed_information": "已单独目视完整1280×410帧：冲突现场：工作区文本标记与 Index 的 base/ours/theirs 并排呈现。",
+      "comparison_evidence": "原视频实际秒数4640，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 19,
+      "frame": 3,
+      "path": "frames/video-4678.jpg",
+      "sha256": "b3d107af2756589e13e7990667e6a37f1299ad31f099aa1f9d09eeadef6009ad",
+      "purpose": "冲突解决后：合并提交保留两个父提交，最终代码采用 argc/argv 形式。",
+      "expected_information": "冲突解决后：合并提交保留两个父提交，最终代码采用 argc/argv 形式。",
+      "observed_information": "已单独目视完整1280×410帧：冲突解决后：合并提交保留两个父提交，最终代码采用 argc/argv 形式。",
+      "comparison_evidence": "原视频实际秒数4678，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 20,
+      "frame": 1,
+      "path": "frames/video-4906.jpg",
+      "sha256": "c343e5dd882e7f7a4de483476d8575568c81552e7eaf46b666adad4f28114a57",
+      "purpose": "Pico 汉诺塔：代码、变量、调用轨迹、移动画面在同一时间点联动。",
+      "expected_information": "Pico 汉诺塔：代码、变量、调用轨迹、移动画面在同一时间点联动。",
+      "observed_information": "已单独目视完整1280×410帧：Pico 汉诺塔：代码、变量、调用轨迹、移动画面在同一时间点联动。",
+      "comparison_evidence": "原视频实际秒数4906，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 20,
+      "frame": 2,
+      "path": "frames/video-4919.jpg",
+      "sha256": "79fbefa9bc0c40f4b117b419379d629cedd55df37f6f019a09be684bcbe6c7d0",
+      "purpose": "Pico 汉诺塔后续阶段：增加盘数后继续播放，盘子分布、移动箭头与当前变量同步改变。",
+      "expected_information": "Pico 汉诺塔后续阶段：增加盘数后继续播放，盘子分布、移动箭头与当前变量同步改变。",
+      "observed_information": "已单独目视完整1280×410帧：Pico 汉诺塔后续阶段：增加盘数后继续播放，盘子分布、移动箭头与当前变量同步改变。",
+      "comparison_evidence": "原视频实际秒数4919，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 21,
+      "frame": 1,
+      "path": "frames/slide-023.png",
+      "sha256": "ee9b9f778b9d2c5cbd2163c3c1b860868ed50db4f3f9e2fae743e6515c30eb25",
+      "purpose": "学习工具降低操作成本后，愿意学懂与留意细节更有价值。",
+      "expected_information": "第23页完整标题、内容、图示/公式和物理页码；细节标准、愿意学懂与有限时间三组完整",
+      "observed_information": "已逐页目视：细节标准、愿意学懂与有限时间三组完整",
+      "comparison_evidence": "sources/contact-6.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 21,
+      "frame": 2,
+      "path": "frames/video-4985.jpg",
+      "sha256": "3c8942119609097e3bf2e0108c12ae4a93f8f844f55d4ba49dc25eb298bf9a9f",
+      "purpose": "Pico World：循环、drop API、坐标、状态与方块世界同步。",
+      "expected_information": "Pico World：循环、drop API、坐标、状态与方块世界同步。",
+      "observed_information": "已单独目视完整1280×410帧：Pico World：循环、drop API、坐标、状态与方块世界同步。",
+      "comparison_evidence": "原视频实际秒数4985，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 21,
+      "frame": 3,
+      "path": "frames/video-5048.jpg",
+      "sha256": "d7ac39cb635e7e980f472780410f9e74e4d38fb720b119ff98ba3d90533518ec",
+      "purpose": "插入排序：当前插入项、已排序前缀、变量和执行轨迹。",
+      "expected_information": "插入排序：当前插入项、已排序前缀、变量和执行轨迹。",
+      "observed_information": "已单独目视完整1280×410帧：插入排序：当前插入项、已排序前缀、变量和执行轨迹。",
+      "comparison_evidence": "原视频实际秒数5048，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    },
+    {
+      "section": 22,
+      "frame": 1,
+      "path": "frames/slide-024.png",
+      "sha256": "5ef556fe92a2938aa1600675e02a67a569e93c923823710b965e57e08e67516c",
+      "purpose": "Diff 留改动，提交说明留理由；格式只是入口。",
+      "expected_information": "第24页完整标题、内容、图示/公式和物理页码；Conventional Commit标题例、正文例与理由作用完整",
+      "observed_information": "已逐页目视：Conventional Commit标题例、正文例与理由作用完整",
+      "comparison_evidence": "sources/contact-6.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 22,
+      "frame": 2,
+      "path": "frames/slide-025.png",
+      "sha256": "d64bc58dcbba711f45200e4146f5bcc125a71e34ca6df491e7f4ebabcb059eff",
+      "purpose": "留退路与整理变更：检查点、恢复和可验证历史。",
+      "expected_information": "第25页完整标题、内容、图示/公式和物理页码；检查点/备份/整理/可检验历史四项完整",
+      "observed_information": "已逐页目视：检查点/备份/整理/可检验历史四项完整",
+      "comparison_evidence": "sources/contact-7.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 22,
+      "frame": 3,
+      "path": "frames/slide-026.png",
+      "sha256": "79f7b0a69836bb17e638825cb8e7c2b1dc86e7e3ccc832f7f120034575a5bfe0",
+      "purpose": "协作约定：共享历史、流程、Hooks/CI 与追溯。",
+      "expected_information": "第26页完整标题、内容、图示/公式和物理页码；共享历史/分支发布/CI/追溯四项及底部分类完整",
+      "observed_information": "已逐页目视：共享历史/分支发布/CI/追溯四项及底部分类完整",
+      "comparison_evidence": "sources/contact-7.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 23,
+      "frame": 1,
+      "path": "frames/slide-027.png",
+      "sha256": "5017ee7b7e2402ba0eb90166f084e658261c1aba47059afa999d00c8c1972661",
+      "purpose": "讲义补充｜SWE-bench：给定仓库起点与问题，产出修复补丁；课堂未展开此页。",
+      "expected_information": "第27页完整标题、内容、图示/公式和物理页码；SWE-bench输入输出、流程、两类测试完整",
+      "observed_information": "已逐页目视：SWE-bench输入输出、流程、两类测试完整",
+      "comparison_evidence": "sources/contact-7.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 23,
+      "frame": 2,
+      "path": "frames/slide-028.png",
+      "sha256": "b734bfba63c4fc98e9e34e1a8e0885990e34364ce9599fddd7020de7ac07e935",
+      "purpose": "讲义补充｜Astropy 嵌套模型：一行修复之外还有测试、更新记录与发布。",
+      "expected_information": "第28页完整标题、内容、图示/公式和物理页码；Astropy问题、矩阵根因、PR测试交付完整",
+      "observed_information": "已逐页目视：Astropy问题、矩阵根因、PR测试交付完整",
+      "comparison_evidence": "sources/contact-7.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 23,
+      "frame": 3,
+      "path": "frames/slide-029.png",
+      "sha256": "eeddb2095659a0d5538349c78ee1a87968d2afd2ae2395b807e16728428e4a38",
+      "purpose": "gh/glab 连接平台对象；Git 保存与传输版本。",
+      "expected_information": "第29页完整标题、内容、图示/公式和物理页码；issue→修改→commit→push→PR→CI/review→合并流程与反馈箭头完整",
+      "observed_information": "已逐页目视：issue→修改→commit→push→PR→CI/review→合并流程与反馈箭头完整",
+      "comparison_evidence": "sources/contact-8.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 24,
+      "frame": 1,
+      "path": "frames/slide-030.png",
+      "sha256": "e58b62d3ff88328fa2a54de94fe1429e0b4b08dbcf47c790ce29f4505e618785",
+      "purpose": "原子变更推进快照：减少理解和审计“一团混沌”的困难。",
+      "expected_information": "第30页完整标题、内容、图示/公式和物理页码；原子变更、任务分解、bisect/冲突与linear history完整",
+      "observed_information": "已逐页目视：原子变更、任务分解、bisect/冲突与linear history完整",
+      "comparison_evidence": "sources/contact-8.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 25,
+      "frame": 1,
+      "path": "frames/slide-031.png",
+      "sha256": "a8e9643c5b215a089eb07daa7ee70df60e416665af8f5fe8b8466915fa7936ee",
+      "purpose": "架构讨论先收敛，再有限并发、立即反馈。",
+      "expected_information": "第31页完整标题、内容、图示/公式和物理页码；单线程架构和n≤3实现两组列表完整",
+      "observed_information": "已逐页目视：单线程架构和n≤3实现两组列表完整",
+      "comparison_evidence": "sources/contact-8.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 25,
+      "frame": 2,
+      "path": "frames/slide-032.png",
+      "sha256": "54a0a0848460aa77c06a36abd83de29b3172722f0fe2266df1e02f9b95d6e0e1",
+      "purpose": "讲义补充｜1000倍是放大瓶颈的思想实验，课堂只提出问题。",
+      "expected_information": "第32页完整标题、内容、图示/公式和物理页码；1000倍思想实验、瓶颈与change algebra三类问题完整",
+      "observed_information": "已逐页目视：1000倍思想实验、瓶颈与change algebra三类问题完整",
+      "comparison_evidence": "sources/contact-8.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 25,
+      "frame": 3,
+      "path": "frames/slide-033.png",
+      "sha256": "de93aa10c5771e46ade660b7ac101236c42a541219a5a5fbbff4eb3fc756b57a",
+      "purpose": "讲义补充｜独立快照生成、候选组合验证、确切版本原子发布。",
+      "expected_information": "第33页完整标题、内容、图示/公式和物理页码；两Agent、H/C、验证、CAS、重试箭头与可交换公式完整",
+      "observed_information": "已逐页目视：两Agent、H/C、验证、CAS、重试箭头与可交换公式完整",
+      "comparison_evidence": "sources/contact-9.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 25,
+      "frame": 4,
+      "path": "frames/slide-034.png",
+      "sha256": "3db79d4e13effa13979b6481278f7ea0a2c23aee37654203a5aca73ba39049cb",
+      "purpose": "讲义补充｜Jujutsu 与 write skew：没有文本冲突也可能违反共同约束。",
+      "expected_information": "第34页完整标题、内容、图示/公式和物理页码；Jujutsu三机制和值班write skew反例完整",
+      "observed_information": "已逐页目视：Jujutsu三机制和值班write skew反例完整",
+      "comparison_evidence": "sources/contact-9.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 25,
+      "frame": 5,
+      "path": "frames/slide-035.png",
+      "sha256": "31d544ee59972a3d495acf4a78a0ed4aba466892a9419b210cbcc59b9bf2e0bc",
+      "purpose": "讲义补充｜机器细粒度证据与人类大步历史；错误恢复能力是前提。",
+      "expected_information": "第35页完整标题、内容、图示/公式和物理页码；短锁边界、人与机器历史及正确性/恢复/审计边界完整",
+      "observed_information": "已逐页目视：短锁边界、人与机器历史及正确性/恢复/审计边界完整",
+      "comparison_evidence": "sources/contact-9.jpg及逐页slides-text.json；第35页另外单图放大，第33页PDF重新渲染核对",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "7971b72f469e37fc19c55a7466d7de0987b75b31d0c42096e50cc1f7541a0d4d",
+          "detail": "官方网页35页截图汇编，不是官方原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "复用协调者完整官网截图，逐页重新目视核对"
+    },
+    {
+      "section": 25,
+      "frame": 6,
+      "path": "frames/video-5890.jpg",
+      "sha256": "2731deb79c7bc014599e875cfedf9dd245ec91ff672f14e5e076ea808bb57287",
+      "purpose": "Pico 架构说明现场：代码、轨迹与世界联动；口述强调纯函数和小型共享状态。",
+      "expected_information": "Pico 架构说明现场：代码、轨迹与世界联动；口述强调纯函数和小型共享状态。",
+      "observed_information": "已单独目视完整1280×410帧：Pico 架构说明现场：代码、轨迹与世界联动；口述强调纯函数和小型共享状态。",
+      "comparison_evidence": "原视频实际秒数5890，与该节原句时间对照",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/软件仓库管理 [03-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "detail": "原媒体完整画幅"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "动态演示按阶段补帧：冲突前/中/后，汉诺塔增加盘数后的播放状态"
+    }
+  ]
+}

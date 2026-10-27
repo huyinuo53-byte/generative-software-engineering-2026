@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "images": 41,
+  "embedded_images": 40,
+  "duplicate_ids": [],
+  "broken_internal_anchors": [],
+  "nonembedded_images": [],
+  "html_sha256": "d526d866fff4f9f65f24f5c2ca43bcca16eafe26685c5cd4d0dfb115db05df57",
+  "scope": "HTML解析静态资源/锚点；不是浏览器或手机测试",
+  "content_images": 40,
+  "lightbox_placeholder_images": 1,
+  "note": "第41个img是alt=讲义放大图的对话框占位，src由点击图片后填充；40个正文图均内嵌。"
+}

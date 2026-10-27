@@ -1,0 +1,12 @@
+{
+  "html_sha256": "bcef494ed0c1d7890c3634865660bc3de198f18904a426030fb7f548a242651c",
+  "method": "isolated Chrome headless print; all text blocks checked against pdftotext; representative page visual inspection recorded separately",
+  "temporary_pdf": "/tmp/gse-lecture-07-print.pdf",
+  "pdf_sha256": "cc74bd289dbcdd69f322b665774860dcf815f1dd499363a4372ff97619cd50ff",
+  "text_blocks": 187,
+  "missing_blocks": [],
+  "printed_images": 46,
+  "expected_images": 46,
+  "pdfinfo": "Title:           生成式软件工程 · 第07课｜需求和架构（2）：设计可生长的解空间\nCreator:         Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36\nProducer:        Skia/PDF m154\nCreationDate:    Fri Oct  2 23:31:10 2026 CST\nModDate:         Fri Oct  2 23:31:10 2026 CST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          yes\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           67\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       20803573 bytes\nOptimized:       no\nPDF version:     1.4\n",
+  "status": "passed"
+}

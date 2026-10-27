@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "actor": "lecture07-agent",
+  "independent_from_author": true,
+  "reviewed_at": "2026-10-02T15:15:58.994157+00:00",
+  "source_hashes": {
+    "notes_before": "11a0843aa8f46b39993f85363e18a524f0ddb64f040f8f61c2c0682d79359156",
+    "notes_after": "31b07abdef8601acce9cbb3c41067fbfbb390cefb3ee78051e74e04b16f5627c",
+    "html_before": "63fb726eca41afc3998d92e117d03ba3435675dff30de891bd2fdde0e7ab66dd",
+    "transcript": "ed68f1b8de531a0d0a51287798f26e67cf86aa08a18765107ac6b39b2d84f418",
+    "index": "5722e91d0c71d57f01b67696dd9a48267cf46089c671bd0f67c7793aaa4f7343",
+    "media": "83cf986f46d89be1af5ec362e8325a954f4c554d095453018f4b6a470cc49ad2"
+  },
+  "method": "全文阅读28节主稿；独立定点回读原转写并逐张目视16张候选视频帧，最终保留10张。官方34图沿用主作者逐图记录，不冒称本审查者重新全看。",
+  "scope": {
+    "transcript_time_ranges_seconds": [
+      [
+        350,
+        571
+      ],
+      [
+        673,
+        850
+      ],
+      [
+        1490,
+        1810
+      ],
+      [
+        2324,
+        2680
+      ],
+      [
+        3298,
+        3410
+      ],
+      [
+        3597,
+        3660
+      ],
+      [
+        5090,
+        5220
+      ]
+    ],
+    "notes_sections": "1–28全读",
+    "new_video_frames": [
+      450,
+      490,
+      1080,
+      1595,
+      1698,
+      2418,
+      2568,
+      3388,
+      3450,
+      3708
+    ],
+    "not_reviewed": "未全文独立重读20块；未重审论文、Codex全部源码、模型内部计算或训练数据"
+  },
+  "issues": [
+    {
+      "issue_id": "02-IR-01",
+      "severity": "major",
+      "finding": "初稿只有讲义图，关键现场过程没有视觉证据",
+      "fix": "增加10张实际时间视频帧，覆盖上下文/源码/主页/文学/论文5类演示",
+      "status": "fixed"
+    },
+    {
+      "issue_id": "02-IR-02",
+      "severity": "medium",
+      "finding": "现场诗句与18字句与讲义版本不同，若只留讲义容易混淆输出",
+      "fix": "明确u韵vs ang韵；现场18字句逐字计数；保留原图避免ASR同音错字拼接",
+      "evidence": [
+        "s-g652.0 2413.57–2435.68",
+        "s-g675.0 2564.52–2585.22"
+      ],
+      "status": "fixed"
+    },
+    {
+      "issue_id": "02-IR-03",
+      "severity": "medium",
+      "finding": "论文阅读从初始总结转到知识边界提问缺少过程证据",
+      "fix": "补3388/3450/3708三阶段画面和提问原意，明确不等于本笔记独立评定论文",
+      "status": "fixed"
+    },
+    {
+      "issue_id": "02-IR-04",
+      "severity": "checked",
+      "finding": "初稿已经对Skill加载、模型自述、幻觉训练机制、SQL/研究类比等做边界限制",
+      "fix": "保留原限定；未发现需要将课堂经验升级为普遍事实的理由",
+      "status": "passed"
+    }
+  ],
+  "checks": [
+    {
+      "name": "现场18字句",
+      "value": "江湖游泳渡河波涛汹涌泪流满溢洗涤泥污",
+      "length": 18,
+      "status": "passed"
+    },
+    {
+      "name": "A2占比算例",
+      "calculation": ".01 × .10 = .001",
+      "result": "0.0010",
+      "status": "passed"
+    }
+  ],
+  "summary": "未发现主稿关键结论的实质反转；主要提升为保留可回查现场演示、分开现场/讲义输出和补充过程细节。新增图片后须重建HTML并重做UI/追溯快照。"
+}

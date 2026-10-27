@@ -1,0 +1,117 @@
+{
+  "run_id": "BV1Q6en6NEUo-20261002",
+  "outcome": "completed",
+  "summary": "完整阅读20块转写，463来源单元逐项覆盖；19节、35图。内容与逐图复核、最终HTML结构/桌面/390px窄屏/打印保真检查通过。未做真实手机或逐秒音频听审。",
+  "validation": {
+    "content": {
+      "status": "passed",
+      "evidence": [
+        "audit.json",
+        "cross-review.json"
+      ]
+    },
+    "image_audit": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_static": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "project_check": {
+      "status": "passed",
+      "evidence": "sources/project-check.json"
+    },
+    "desktop": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "narrow": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "real_phone": {
+      "status": "not_requested",
+      "evidence": "未做真实手机设备实测；390px仅浏览器模拟"
+    },
+    "pdf": {
+      "status": "not_requested",
+      "evidence": "临时PDF只用于HTML打印检查，不作为完整PDF交付"
+    },
+    "independent_content": {
+      "status": "passed",
+      "evidence": "cross-review.json"
+    },
+    "source_coverage": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "image_integrity": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_print": {
+      "status": "passed",
+      "evidence": "qa/print.json"
+    },
+    "package": {
+      "status": "not_requested",
+      "evidence": "逐视频独立单文件HTML"
+    },
+    "project_strict": {
+      "status": "passed",
+      "evidence": "sources/project-check.json"
+    }
+  },
+  "blocker": null,
+  "resume_condition": null,
+  "source_hashes": {
+    "transcript.json": "b4dbe241056eab779de3231cfbe0fbf3c7c2d6413271f83b3289514347c96e2d",
+    "chunks/index.json": "a7e393677f02a2e869c4bae303dcd276a422bd5f6f44d726236d3d975abcdf79",
+    "notes.json": "5023817b0fa063e8ba806226ad39444be5eac4d826b367605496423658d295ee",
+    "课堂笔记.html": "8b103e4daacab6a7925c072d9d594606e2a25d33cebef10812921c8ee6d59d66",
+    "image-audit.json": "d4aeb50813f82ce64e53113fed365c8d74fb1b2e939f8bd512face7921f291b5",
+    "qa/browser.json": "4e07eae0cd98c0faf1b1e545fe24f37db57f9f999ae0e1122cf91f4aeb9cd14d",
+    "qa/print.json": "37a82e1300ef77ca65d45cd2a8d871ac0a895221e13f94eff1c19802e4c6ad7a"
+  },
+  "audit": [
+    "audit.json",
+    "cross-review.json"
+  ],
+  "scope_revision": 1,
+  "delivered_files": [
+    "课堂笔记.html"
+  ],
+  "lessons": [
+    {
+      "status": "candidate",
+      "scope": "web slide capture",
+      "finding": "disabling transitions alone can retain leaving slide; hide all inactive slides",
+      "evidence": "audit.json 04-05",
+      "next_action": "check final full page after show and verify all slides"
+    },
+    {
+      "status": "candidate",
+      "scope": "classroom model demo",
+      "finding": "sent/receipt in demo may be fixture output; read explicit live boundary",
+      "evidence": "audit.json 04-03",
+      "next_action": "pair result screenshot with live/fixture explanation before claiming external success"
+    }
+  ],
+  "metrics": {
+    "wall_seconds": null,
+    "active_seconds": null,
+    "tokens": null,
+    "media_hours": 1.6414933333333335,
+    "images": 35,
+    "sections": 19,
+    "source_units": 463,
+    "transcript_chunks": 20,
+    "selected_images": 35,
+    "text_blocks": 141,
+    "cost": null
+  },
+  "cross_review": "cross-review.json",
+  "trace_snapshot": "trace-final.json",
+  "finished_at": "2026-10-02T15:42:51.977992+00:00"
+}

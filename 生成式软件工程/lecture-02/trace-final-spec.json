@@ -1,0 +1,612 @@
+{
+  "schema_version": 1,
+  "run_id": "lecture-02-20261002",
+  "basis": "observed_build",
+  "root": ".",
+  "artifacts": [
+    {
+      "id": "audit-independent07.json",
+      "path": "audit-independent07.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0001.json",
+      "path": "chunks/chunk-0001.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0002.json",
+      "path": "chunks/chunk-0002.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0003.json",
+      "path": "chunks/chunk-0003.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0004.json",
+      "path": "chunks/chunk-0004.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0005.json",
+      "path": "chunks/chunk-0005.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0006.json",
+      "path": "chunks/chunk-0006.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0007.json",
+      "path": "chunks/chunk-0007.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0008.json",
+      "path": "chunks/chunk-0008.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0009.json",
+      "path": "chunks/chunk-0009.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0010.json",
+      "path": "chunks/chunk-0010.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0011.json",
+      "path": "chunks/chunk-0011.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0012.json",
+      "path": "chunks/chunk-0012.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0013.json",
+      "path": "chunks/chunk-0013.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0014.json",
+      "path": "chunks/chunk-0014.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0015.json",
+      "path": "chunks/chunk-0015.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0016.json",
+      "path": "chunks/chunk-0016.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0017.json",
+      "path": "chunks/chunk-0017.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0018.json",
+      "path": "chunks/chunk-0018.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0019.json",
+      "path": "chunks/chunk-0019.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0020.json",
+      "path": "chunks/chunk-0020.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/index.json",
+      "path": "chunks/index.json",
+      "depends_on": []
+    },
+    {
+      "id": "contact-01.jpg",
+      "path": "contact-01.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "contact-02.jpg",
+      "path": "contact-02.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "contact-03.jpg",
+      "path": "contact-03.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "contact-04.jpg",
+      "path": "contact-04.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "contact-05.jpg",
+      "path": "contact-05.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "contact-06.jpg",
+      "path": "contact-06.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "contact-07.jpg",
+      "path": "contact-07.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "events.jsonl",
+      "path": "events.jsonl",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-001.png",
+      "path": "frames/slide-001.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-002.png",
+      "path": "frames/slide-002.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-003.png",
+      "path": "frames/slide-003.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-004.png",
+      "path": "frames/slide-004.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-005.png",
+      "path": "frames/slide-005.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-006.png",
+      "path": "frames/slide-006.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-007.png",
+      "path": "frames/slide-007.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-008.png",
+      "path": "frames/slide-008.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-009.png",
+      "path": "frames/slide-009.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-010.png",
+      "path": "frames/slide-010.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-011.png",
+      "path": "frames/slide-011.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-012.png",
+      "path": "frames/slide-012.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-013.png",
+      "path": "frames/slide-013.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-014.png",
+      "path": "frames/slide-014.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-015.png",
+      "path": "frames/slide-015.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-016.png",
+      "path": "frames/slide-016.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-017.png",
+      "path": "frames/slide-017.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-018.png",
+      "path": "frames/slide-018.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-019.png",
+      "path": "frames/slide-019.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-020.png",
+      "path": "frames/slide-020.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-021.png",
+      "path": "frames/slide-021.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-022.png",
+      "path": "frames/slide-022.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-023.png",
+      "path": "frames/slide-023.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-024.png",
+      "path": "frames/slide-024.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-025.png",
+      "path": "frames/slide-025.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-026.png",
+      "path": "frames/slide-026.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-027.png",
+      "path": "frames/slide-027.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-028.png",
+      "path": "frames/slide-028.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-029.png",
+      "path": "frames/slide-029.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-030.png",
+      "path": "frames/slide-030.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-031.png",
+      "path": "frames/slide-031.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-032.png",
+      "path": "frames/slide-032.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-033.png",
+      "path": "frames/slide-033.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-034.png",
+      "path": "frames/slide-034.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-035.png",
+      "path": "frames/slide-035.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-036.png",
+      "path": "frames/slide-036.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/slide-037.png",
+      "path": "frames/slide-037.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-1080.jpg",
+      "path": "frames/video-1080.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-1115.jpg",
+      "path": "frames/video-1115.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-1595.jpg",
+      "path": "frames/video-1595.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-1698.jpg",
+      "path": "frames/video-1698.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-2418.jpg",
+      "path": "frames/video-2418.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-2560.jpg",
+      "path": "frames/video-2560.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-2568.jpg",
+      "path": "frames/video-2568.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-3388.jpg",
+      "path": "frames/video-3388.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-3450.jpg",
+      "path": "frames/video-3450.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-3550.jpg",
+      "path": "frames/video-3550.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-3675.jpg",
+      "path": "frames/video-3675.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-3708.jpg",
+      "path": "frames/video-3708.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-450.jpg",
+      "path": "frames/video-450.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-490.jpg",
+      "path": "frames/video-490.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-5198.jpg",
+      "path": "frames/video-5198.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/video-890.jpg",
+      "path": "frames/video-890.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "image-audit.json",
+      "path": "image-audit.json",
+      "depends_on": []
+    },
+    {
+      "id": "notes.json",
+      "path": "notes.json",
+      "depends_on": [
+        "transcript.json",
+        "chunks/index.json"
+      ]
+    },
+    {
+      "id": "official-lecture.html",
+      "path": "official-lecture.html",
+      "depends_on": []
+    },
+    {
+      "id": "official-slides.html",
+      "path": "official-slides.html",
+      "depends_on": []
+    },
+    {
+      "id": "project-check.json",
+      "path": "project-check.json",
+      "depends_on": []
+    },
+    {
+      "id": "project.json",
+      "path": "project.json",
+      "depends_on": []
+    },
+    {
+      "id": "qa/browser.json",
+      "path": "qa/browser.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ]
+    },
+    {
+      "id": "qa/desktop-body.png",
+      "path": "qa/desktop-body.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/desktop-top.png",
+      "path": "qa/desktop-top.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/desktop-zoom.png",
+      "path": "qa/desktop-zoom.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/desktop-zoom3.png",
+      "path": "qa/desktop-zoom3.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/final-static.json",
+      "path": "qa/final-static.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ]
+    },
+    {
+      "id": "qa/mobile-body.png",
+      "path": "qa/mobile-body.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/mobile-top.png",
+      "path": "qa/mobile-top.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/mobile-zoom.png",
+      "path": "qa/mobile-zoom.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/mobile-zoom3.png",
+      "path": "qa/mobile-zoom3.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/notes-ui-revision.json",
+      "path": "qa/notes-ui-revision.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ]
+    },
+    {
+      "id": "qa/print.json",
+      "path": "qa/print.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ]
+    },
+    {
+      "id": "review.json",
+      "path": "review.json",
+      "depends_on": [
+        "notes.json",
+        "课堂笔记.html",
+        "image-audit.json",
+        "qa/browser.json",
+        "qa/print.json"
+      ]
+    },
+    {
+      "id": "run.json",
+      "path": "run.json",
+      "depends_on": []
+    },
+    {
+      "id": "slide-capture.json",
+      "path": "slide-capture.json",
+      "depends_on": []
+    },
+    {
+      "id": "slides-data.json",
+      "path": "slides-data.json",
+      "depends_on": []
+    },
+    {
+      "id": "source-slides.pdf",
+      "path": "source-slides.pdf",
+      "depends_on": []
+    },
+    {
+      "id": "transcript.json",
+      "path": "transcript.json",
+      "depends_on": []
+    },
+    {
+      "id": "课堂笔记.html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "notes.json",
+        "chunks/index.json",
+        "frames/slide-004.png",
+        "frames/slide-005.png",
+        "frames/slide-006.png",
+        "frames/slide-008.png",
+        "frames/video-450.jpg",
+        "frames/video-490.jpg",
+        "frames/slide-007.png",
+        "frames/slide-009.png",
+        "frames/video-1080.jpg",
+        "frames/slide-010.png",
+        "frames/slide-011.png",
+        "frames/slide-012.png",
+        "frames/slide-013.png",
+        "frames/slide-014.png",
+        "frames/video-1595.jpg",
+        "frames/video-1698.jpg",
+        "frames/slide-015.png",
+        "frames/slide-016.png",
+        "frames/slide-017.png",
+        "frames/video-2418.jpg",
+        "frames/slide-018.png",
+        "frames/slide-019.png",
+        "frames/slide-020.png",
+        "frames/video-2568.jpg",
+        "frames/slide-021.png",
+        "frames/slide-022.png",
+        "frames/slide-023.png",
+        "frames/slide-024.png",
+        "frames/slide-025.png",
+        "frames/video-3388.jpg",
+        "frames/video-3450.jpg",
+        "frames/video-3708.jpg",
+        "frames/slide-026.png",
+        "frames/slide-027.png",
+        "frames/slide-028.png",
+        "frames/slide-029.png",
+        "frames/slide-030.png",
+        "frames/slide-031.png",
+        "frames/slide-032.png",
+        "frames/slide-033.png",
+        "frames/slide-034.png",
+        "frames/slide-035.png",
+        "frames/slide-036.png",
+        "frames/slide-037.png"
+      ]
+    }
+  ]
+}

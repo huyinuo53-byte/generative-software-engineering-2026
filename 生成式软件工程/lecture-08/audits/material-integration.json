@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "notes_sha256": "962275c64c913c167cf9ce9bb489a49c168b510ea80ee8701e67033c18fa89cf",
+  "materials_sha256": "7f8a17172b17ac0e8acc7222df2ea1451f54cc3ad86f66df83943dd1d2fdf19d",
+  "materials": 18,
+  "supplements": 27,
+  "method": "原始材料读者按范围实际阅读；主作者完整回读交接与所有补充，按主题嵌入；独立终审复核关键数字、机制与归因。Lab2落第2节整理者说明，其他材料有note_target落点。",
+  "evidence": [
+    "audits/content-review.json",
+    "sources/official-20261019/materials-draft.json",
+    "sources/lab2-humanize-20261019/materials-draft.json",
+    "sources/harness-20261019/read-scope-and-source-manifest.json",
+    "audits/materials-validation.json"
+  ],
+  "boundaries": [
+    "现行讲义与课后仓库提交未当课堂逐句口述",
+    "仓库仅34全文+3范围，并非全部产品源码；未执行门禁",
+    "历史旧8篇未重新认证来源阅读"
+  ]
+}

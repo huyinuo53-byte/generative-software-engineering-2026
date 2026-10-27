@@ -1,0 +1,96 @@
+{
+  "course": "生成式软件工程",
+  "queried_at": "2026-10-02T15:04:18.731986+00:00",
+  "source": "https://space.bilibili.com/202224425/lists/8942017?type=season",
+  "videos": [
+    {
+      "id": "BV1pb8o6yE8f",
+      "title": "欢迎来到未来 [01-Raw/26生成式软件工程/NJU]",
+      "url": "https://www.bilibili.com/video/BV1pb8o6yE8f?spm_id_from=333.1387.collection.video_card.click",
+      "status": {
+        "transcript": "new",
+        "notes": "completed",
+        "ui": "passed"
+      },
+      "output": "lecture-01/课堂笔记.html"
+    },
+    {
+      "id": "BV1fKtN6DErG",
+      "title": "失败的AI Slop数字永生尝试",
+      "url": "https://www.bilibili.com/video/BV1fKtN6DErG?spm_id_from=333.1387.collection.video_card.click",
+      "status": {
+        "transcript": "new",
+        "notes": "completed",
+        "ui": "passed"
+      },
+      "output": "extra-ai-slop/课堂笔记.html"
+    },
+    {
+      "id": "BV1CQt365EzW",
+      "title": "提示词工程 [02-Raw/26生成式软件工程/NJU]",
+      "url": "https://www.bilibili.com/video/BV1CQt365EzW?spm_id_from=333.1387.collection.video_card.click",
+      "status": {
+        "transcript": "reused",
+        "notes": "completed",
+        "ui": "passed"
+      },
+      "output": "lecture-02/课堂笔记.html"
+    },
+    {
+      "id": "BV1kybV6DE47",
+      "title": "软件仓库管理 [03-Raw/26生成式软件工程/NJU]",
+      "url": "https://www.bilibili.com/video/BV1kybV6DE47?spm_id_from=333.1387.collection.video_card.click",
+      "status": {
+        "transcript": "new",
+        "notes": "completed",
+        "ui": "passed"
+      },
+      "output": "lecture-03/课堂笔记.html"
+    },
+    {
+      "id": "BV1Q6en6NEUo",
+      "title": "软件仓库管理 (2) [04-Raw/26生成式软件工程/NJU]",
+      "url": "https://www.bilibili.com/video/BV1Q6en6NEUo?spm_id_from=333.1387.collection.video_card.click",
+      "status": {
+        "transcript": "new",
+        "notes": "completed",
+        "ui": "passed"
+      },
+      "output": "lecture-04/课堂笔记.html"
+    },
+    {
+      "id": "BV1Nyeq6qEt8",
+      "title": "软件工程的来龙去脉 [05-Raw/26生成式软件工程/NJU]",
+      "url": "https://www.bilibili.com/video/BV1Nyeq6qEt8?spm_id_from=333.1387.collection.video_card.click",
+      "status": {
+        "transcript": "reused",
+        "notes": "completed",
+        "ui": "passed"
+      },
+      "output": "lecture-05/课堂笔记.html"
+    },
+    {
+      "id": "BV1Rch76WEfQ",
+      "title": "需求和架构 (1) [06-Raw/26生成式软件工程/NJU]",
+      "url": "https://www.bilibili.com/video/BV1Rch76WEfQ?spm_id_from=333.1387.collection.video_card.click",
+      "status": {
+        "transcript": "reused",
+        "notes": "completed",
+        "ui": "passed"
+      },
+      "output": "lecture-06/课堂笔记.html"
+    },
+    {
+      "id": "BV1JGap6LE74",
+      "title": "需求和架构 (2) [07-Raw/26生成式软件工程/NJU]",
+      "url": "https://www.bilibili.com/video/BV1JGap6LE74?spm_id_from=333.1387.collection.video_card.click",
+      "status": {
+        "transcript": "reused",
+        "notes": "completed",
+        "ui": "passed"
+      },
+      "output": "lecture-07/课堂笔记.html"
+    }
+  ],
+  "outcome": "completed"
+}

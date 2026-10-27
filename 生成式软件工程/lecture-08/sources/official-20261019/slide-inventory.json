@@ -1,0 +1,323 @@
+[
+  {
+    "page": 1,
+    "text": "Review & Comments\n软件工程与项目管理\n\n软件工程\nIntent, spec, impl gap\n\n\n项目管理\nGit, Jujutsu, ...\n\n\n\n需求和架构\n\n不可避免的 essential complexity，以及需要应对的 accidental complexity\n各种弥补 gap 的实践范式、方法、工具……\n",
+    "aigc_additions": [],
+    "urls": [],
+    "screenshot": "slides/slide-01.jpg",
+    "sha256": "f30fd76e264a76d3a4f3c91a27cda7e80b774504a5c9a696985f23c436c76d3e"
+  },
+  {
+    "page": 2,
+    "text": "开始：构建原型\n无论如何，在某个时刻我们都应该开始\n\n构建一个符合当前 spec 的原型\nLet it fail... 但看看我们做出了个什么\n\n原型也在检验我们的预期\n\n符合 spec，并不保证 spec 中的假设成立；原型让隐含假设变成可观察的结果。\n1901 年，莱特兄弟滑翔机的升力仅达预测的 1/3；他们随后自建风洞，重新测量翼型的升阻力——失败让他们重新检查设计所依据的数据。NASA\n",
+    "aigc_additions": [
+      "符合 spec，并不保证 spec 中的假设成立；原型让隐含假设变成可观察的结果。",
+      "1901 年，莱特兄弟滑翔机的升力仅达预测的 1/3；他们随后自建风洞，重新测量翼型的升阻力——失败让他们重新检查设计所依据的数据。NASA"
+    ],
+    "urls": [
+      "https://www.grc.nasa.gov/WWW/k-12/airplane/wrights/test1901.html"
+    ],
+    "screenshot": "slides/slide-02.jpg",
+    "sha256": "6ab1d4a0efe2219bf80531c3300a1c5bdb8f0710b1d55afe8ac1c38f4ef04fb3"
+  },
+  {
+    "page": 3,
+    "text": "Agent Loop\nAI 越来越自主\n\nChatGPT, AutoGPT, Devin, Claude Code, ... AI 越来越自主\n理论上说，“足够好”的模型，给他一个 bash tool 就够了\n可以去造芯片、证明黎曼猜想……\n\n\n\n但如果模型还没有“万能”到和最好的人一样？\n\n尤其是目前品味还有点难学\n",
+    "aigc_additions": [],
+    "urls": [],
+    "screenshot": "slides/slide-03.jpg",
+    "sha256": "02befbb4045cee731132327e51e1024db9cc7e71dbc889f7a2e825c70144efcf"
+  },
+  {
+    "page": 4,
+    "text": "Ralph Wiggum Loop\n为什么叫 Ralph？\n\nGeoffrey Huntley 借用了《辛普森一家》里 Ralph Wiggum 的名字。\n他形容这个方法：有点笨、有点可爱，但从不放弃。命名的由来\n\n",
+    "aigc_additions": [
+      "Geoffrey Huntley 借用了《辛普森一家》里 Ralph Wiggum 的名字。",
+      "他形容这个方法：有点笨、有点可爱，但从不放弃。命名的由来"
+    ],
+    "urls": [
+      "https://linearb.io/dev-interrupted/podcast/inventing-the-ralph-wiggum-loop"
+    ],
+    "screenshot": "slides/slide-04.jpg",
+    "sha256": "c1d15aef33ab2a68db5fed8411226054c3e75534948ffd5c0fb4f7ad3dd01568"
+  },
+  {
+    "page": 5,
+    "text": "Ralph Loop\n同一个任务、检查、修改，直到无法改进\n\nThe prompt stays the same, but the world changes.\n每轮重新开始对话；进展通过工作区里的文件留给下一轮。Huntley 的原文\n\n\n\nwhile true; do\n    cat PROMPT.md | claude -p\ndone\n\nwhile true 本身不会判断“无法改进”；何时停止，需要另行约定。",
+    "aigc_additions": [
+      "每轮重新开始对话；进展通过工作区里的文件留给下一轮。Huntley 的原文",
+      "while true 本身不会判断“无法改进”；何时停止，需要另行约定。"
+    ],
+    "urls": [
+      "https://ghuntley.com/ralph/"
+    ],
+    "screenshot": "slides/slide-05.jpg",
+    "sha256": "3d6705d01be2461b0f5dbbd7af95e691fdbe2395f4caedd6653a3d27a68c72f9"
+  },
+  {
+    "page": 6,
+    "text": "Everything Is a State Machine\nWorkspace = State, Agent = Transition\n\n需求、文档……\n当前部分实现、测试用例……\n运行结果、日志、TODOs……\n\n每一次开发都是状态的迁移\n\n有了版本控制，不就可以并行了吗？\n（这不就是现代软件的开发方式吗？）\n版本控制让状态可以分叉；并行任务之间的依赖仍需要协调。\n\n\n“Long-horizon task” 进入大家的视野\n任务可以比任何一次会话都长，前提是下一轮能从留下的状态继续。\n\n\n",
+    "aigc_additions": [
+      "版本控制让状态可以分叉；并行任务之间的依赖仍需要协调。",
+      "任务可以比任何一次会话都长，前提是下一轮能从留下的状态继续。"
+    ],
+    "urls": [],
+    "screenshot": "slides/slide-06.jpg",
+    "sha256": "fa614935a5b4818897595fe4769d0c620421c3efb8de16c92783e97135e54231"
+  },
+  {
+    "page": 7,
+    "text": "每次 Transition，都检查\nRalph Loop 的关键提示词\n\n每轮都验证并评估结果\n开发者是“不可信”的——自以为只改一点点不会有事\nWorkspace = state\nAgent = transition\n\n\n\n我们希望每个状态都是“好”的\n\n那就在每次 transition 的时候做一次检查\n如果没问题，还可以直接发布\n把“好”写成可执行的条件：能构建、旧功能没坏、符合项目约定\n",
+    "aigc_additions": [
+      "把“好”写成可执行的条件：能构建、旧功能没坏、符合项目约定"
+    ],
+    "urls": [],
+    "screenshot": "slides/slide-07.jpg",
+    "sha256": "49b7c35e2b59dce14ccdf3578ebc2c6e2361ec497bc77b9772399dbf64e57efe"
+  },
+  {
+    "page": 8,
+    "text": "祝贺你，发明了 CI/CD\n从“集成地狱”到小步发布\n\n1990s：Kent Beck / XP 推动频繁集成；改动越少，出错后越容易定位。CI 的发展\n2000：Fowler / Foemmel 总结 CI；2001：Thoughtworks 开源 CruiseControl，让自动构建持续运行\n2010：Humble / Farley 的《Continuous Delivery》系统化 deployment pipeline，把自动验证延伸到发布。原作者介绍\n\nCI 与两个 CD\n\nContinuous Integration：频繁集成到主干，每次集成都自动构建、验证\nContinuous Delivery：保持随时可发布，何时上线可以由人决定\nContinuous Deployment：通过检查的变更自动上线。两种 CD 的区别\n",
+    "aigc_additions": [
+      "1990s：Kent Beck / XP 推动频繁集成；改动越少，出错后越容易定位。CI 的发展",
+      "2000：Fowler / Foemmel 总结 CI；2001：Thoughtworks 开源 CruiseControl，让自动构建持续运行",
+      "2010：Humble / Farley 的《Continuous Delivery》系统化 deployment pipeline，把自动验证延伸到发布。原作者介绍",
+      "Continuous Integration：频繁集成到主干，每次集成都自动构建、验证",
+      "Continuous Delivery：保持随时可发布，何时上线可以由人决定",
+      "Continuous Deployment：通过检查的变更自动上线。两种 CD 的区别"
+    ],
+    "urls": [
+      "https://martinfowler.com/articles/continuousIntegration.html",
+      "https://www.martinfowler.com/articles/originalContinuousIntegration.html",
+      "https://www.thoughtworks.com/about-us/history",
+      "https://continuousdelivery.com/2010/02/continuous-delivery/",
+      "https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/"
+    ],
+    "screenshot": "slides/slide-08.jpg",
+    "sha256": "8f695dbbc515514a9be66300d07843aa08a36f0228646b9d3e839485715c69e3"
+  },
+  {
+    "page": 9,
+    "text": "Hook-Based CI/CD\n事件发生，执行指定动作\n\n还记得失败的“播放声音”吗？\n开发流程中有很多事件节点：commit、push、pull request、……\nCI/CD = 为事件配置指定的动作\n例如：PR 新增提交，自动运行 Lint 和测试。GitHub Actions 事件 (羊毛，甚至可以养 Claude Code)\n\n\n\n检查要放在有约束力的位置\n\n本地 pre-commit 便于及时反馈，但可以被 --no-verify 跳过。Git Hooks\n远程检查配合 required checks + 分支保护，才能让失败真正阻止合并。GitHub 分支保护\n",
+    "aigc_additions": [
+      "例如：PR 新增提交，自动运行 Lint 和测试。GitHub Actions 事件",
+      "本地 pre-commit 便于及时反馈，但可以被 --no-verify 跳过。Git Hooks",
+      "远程检查配合 required checks + 分支保护，才能让失败真正阻止合并。GitHub 分支保护"
+    ],
+    "urls": [
+      "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request",
+      "https://github.com/marketplace/actions/claude-code-github-integration",
+      "https://git-scm.com/docs/githooks#_pre_commit",
+      "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches"
+    ],
+    "screenshot": "slides/slide-09.jpg",
+    "sha256": "02ef706f76b0deaeb4a7d0d7bff5a6f902b5b4e2b60b8e3919469b7f1b151c56"
+  },
+  {
+    "page": 10,
+    "text": "简单的机制，琐碎的业务规则\nPre-LLM 时代，写配置非常劝退\n\n名词吓唬人，但真的就那么简单\n任何业务系统都会很琐碎：CI fail 禁止 merge、override、……\n两个 PR 单独都绿，合起来却坏了：合并前验证最新组合；忙碌的主干可用 merge queue\n测试偶发失败：谁负责修？允许重跑几次？何时隔离？\n生产故障要紧急修复：谁能 override？放行后如何留痕、补检查？\n新版本先部署，旧任务后完成：如何避免旧版覆盖新版？部署并发控制\n\n\n\n今天，只要 Spec 能表达清楚\n\nAgent 可以写配置；失败怎么办、谁有权例外，仍要成为需求的一部分\n",
+    "aigc_additions": [
+      "两个 PR 单独都绿，合起来却坏了：合并前验证最新组合；忙碌的主干可用 merge queue",
+      "测试偶发失败：谁负责修？允许重跑几次？何时隔离？",
+      "生产故障要紧急修复：谁能 override？放行后如何留痕、补检查？",
+      "新版本先部署，旧任务后完成：如何避免旧版覆盖新版？部署并发控制",
+      "Agent 可以写配置；失败怎么办、谁有权例外，仍要成为需求的一部分"
+    ],
+    "urls": [
+      "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-merge-queue",
+      "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/control-deployments"
+    ],
+    "screenshot": "slides/slide-10.jpg",
+    "sha256": "f52a8c102cdcc8da12d84b48143992fcff4cf2b246eef73a7995db559dd7b48c"
+  },
+  {
+    "page": 11,
+    "text": "把 CI/CD 写成 Spec\n合并的条件\n\nCI 必须要求 Lint 通过、测试通过\nPR 有新提交就重新检查；合并前验证它与最新主干的组合\n检查失败就禁止合并；将要求落实为分支保护规则，约束直接 push 和绕过检查的权限\n\n发布的条件\n\n通过 CI 后，根据 main 分支生成页面，直接部署到 github.io\nmain 更新后，对这次提交重新运行 Lint、测试和页面构建\n全部成功才部署这次构建的产物；失败则保留上一版。GitHub Pages 工作流\n\n\n验收时故意制造一次 Lint 错误、一次测试失败：确认真的合不了、发不出\n",
+    "aigc_additions": [
+      "PR 有新提交就重新检查；合并前验证它与最新主干的组合",
+      "检查失败就禁止合并；将要求落实为分支保护规则，约束直接 push 和绕过检查的权限",
+      "main 更新后，对这次提交重新运行 Lint、测试和页面构建",
+      "全部成功才部署这次构建的产物；失败则保留上一版。GitHub Pages 工作流",
+      "验收时故意制造一次 Lint 错误、一次测试失败：确认真的合不了、发不出"
+    ],
+    "urls": [
+      "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages"
+    ],
+    "screenshot": "slides/slide-11.jpg",
+    "sha256": "97f3d9c1e10913f3f64d15103810d7e5915ac04f7144be5f43d41928b5ea38d7"
+  },
+  {
+    "page": 12,
+    "text": "CI 在 Agentic AI 时代的含金量\nFirst Principle：开发者是不可信的\n\nAgent 有自己的偏执，甚至做出人类开发者不会做的事\n一写就是 20 KB 文档\n事无巨细交代细节，产生冗余（技术债）\n过度反应，在不重要的细枝末节上疯狂出力\n写出人类无法阅读的代码\n\n\n\n如果项目还需要人共同维护，就必须强行阻止\n\n正好：CI 阻止，Agent 修正\n可以类比丰田的 jidoka：发现异常就停线，把质量检查放进生产过程。Toyota Production System\n负责修改代码的 Agent，不能单方面降低过关标准\n",
+    "aigc_additions": [
+      "可以类比丰田的 jidoka：发现异常就停线，把质量检查放进生产过程。Toyota Production System",
+      "负责修改代码的 Agent，不能单方面降低过关标准"
+    ],
+    "urls": [
+      "https://global.toyota/en/company/vision-and-philosophy/production-system/"
+    ],
+    "screenshot": "slides/slide-12.jpg",
+    "sha256": "8bb62a3a02991169d039b76997c21e185351f3721187143fe35d8537464b91bc"
+  },
+  {
+    "page": 13,
+    "text": "",
+    "aigc_additions": [],
+    "urls": [],
+    "screenshot": "slides/slide-13.jpg",
+    "sha256": "9551a8a07f3c495cd66d23fec43e9853a39d2f18cb2909e46782ce0cbbab9d86"
+  },
+  {
+    "page": 14,
+    "text": "Agent Native 开发\nHarness engineering: leveraging Codex in an agent-first world\n“We started with an empty git repository”\n\n不用写代码了，但还需要环境、约束、反馈和验证机制\n\n让 Agent 找得到、看得见\n\n人类脑中的工程知识必须外部化，并组织成 Agent 能发现的版本化状态\nAGENTS.md 做目录；设计、计划和决策放进仓库，按需查阅。\n\n\n让 Agent 能直接观察程序行为，而不是依赖人类描述结果\n每份工作区能独立启动应用；Agent 自己操作页面、查日志、复现 bug。\n\n\n",
+    "aigc_additions": [
+      "AGENTS.md 做目录；设计、计划和决策放进仓库，按需查阅。",
+      "每份工作区能独立启动应用；Agent 自己操作页面、查日志、复现 bug。"
+    ],
+    "urls": [
+      "https://openai.com/index/harness-engineering/"
+    ],
+    "screenshot": "slides/slide-14.jpg",
+    "sha256": "a356677dfb404abef2e6f33160a753cd509f23bc81f7d497d33500b8123d5efe"
+  },
+  {
+    "page": 15,
+    "text": "Agent Native 开发：把品味做成机制\n让约束可检查，让修复持续发生\n\n将重要的架构品味转化为可检查的规则，而不只是写在规范文档中\n依赖方向用 linter 检查，报错信息直接包含修复指导。\n\n\n技术债不是等到代码无法维护才清理，而是持续进行小规模修复\n后台 Agent 定期扫描偏离规则的代码，提交小规模重构 PR。原文中的实践\n\n\n\n“What we’re still learning”\n\nWow! 那让我们看一下 Codex 的 CI 门控都有哪些吧\nClosedAI: 什么都没有……\n这里吐槽的是：文章未附该内部项目可直接复用的完整门控配置；文中明确提到了 lint、结构测试和 CI。\n\n\n",
+    "aigc_additions": [
+      "依赖方向用 linter 检查，报错信息直接包含修复指导。",
+      "后台 Agent 定期扫描偏离规则的代码，提交小规模重构 PR。原文中的实践",
+      "这里吐槽的是：文章未附该内部项目可直接复用的完整门控配置；文中明确提到了 lint、结构测试和 CI。"
+    ],
+    "urls": [
+      "https://openai.com/index/harness-engineering/"
+    ],
+    "screenshot": "slides/slide-15.jpg",
+    "sha256": "b8455176c7c4abe21e8a20518f975b240044ffeb6616d4ee5a74b5d3e0e39ca2"
+  },
+  {
+    "page": 16,
+    "text": "Stripe Minions：哪些步骤需要 Agent？\n把固定工序写进工作流\n\nStripe 的 Minions Blueprint 混合两类节点：\n实现任务、修复 CI 失败：由 Agent 决定怎么做。\n运行 linter、推送分支：直接执行普通代码，不调用模型。\n\n\n\n完整 CI 最多跑两轮\n\n先在本地修 lint，再推送、跑 CI；无法自动修复的失败，交给 Agent 再修一次。\n第二次推送、CI 后，分支交回人类审查；团队认为继续重试的收益会递减。\n",
+    "aigc_additions": [
+      "Stripe 的 Minions Blueprint 混合两类节点：",
+      "实现任务、修复 CI 失败：由 Agent 决定怎么做。",
+      "运行 linter、推送分支：直接执行普通代码，不调用模型。",
+      "先在本地修 lint，再推送、跑 CI；无法自动修复的失败，交给 Agent 再修一次。",
+      "第二次推送、CI 后，分支交回人类审查；团队认为继续重试的收益会递减。"
+    ],
+    "urls": [
+      "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2"
+    ],
+    "screenshot": "slides/slide-16.jpg",
+    "sha256": "35bd431017375406ad81634a85f14c3bfd521c81c8d244cbfd3092f3fbf4239c"
+  },
+  {
+    "page": 17,
+    "text": "Anthropic：16 个 Agent 卡在同一个 Bug\n有了并行进程，还得有不同的任务\n\nC 编译器实验：16 个 Agent 协作，开始编译 Linux 时却卡住了。\n大家先撞上同一个 bug，重复修复、覆盖彼此的改动。\n\n\n\n用 GCC 构造可以独立验证的子任务\n\n大部分文件用 GCC 编译，只把不同子集交给新编译器。\n失败后把部分文件换回 GCC，逐步缩小导致失败的集合。\n\n\n不同 Agent 因而能修不同文件暴露的问题：验证方式改变了任务的可分性。\n仍需检查文件组合：有些文件分别过关，放在一起却失败。\n",
+    "aigc_additions": [
+      "C 编译器实验：16 个 Agent 协作，开始编译 Linux 时却卡住了。",
+      "大家先撞上同一个 bug，重复修复、覆盖彼此的改动。",
+      "大部分文件用 GCC 编译，只把不同子集交给新编译器。",
+      "失败后把部分文件换回 GCC，逐步缩小导致失败的集合。",
+      "不同 Agent 因而能修不同文件暴露的问题：验证方式改变了任务的可分性。",
+      "仍需检查文件组合：有些文件分别过关，放在一起却失败。"
+    ],
+    "urls": [
+      "https://www.anthropic.com/engineering/building-c-compiler"
+    ],
+    "screenshot": "slides/slide-17.jpg",
+    "sha256": "baa8b3198293dc975f0e881000ab0e81a9752eabc2e14ccbe93220dda03b5898"
+  },
+  {
+    "page": 18,
+    "text": "StrongDM：把验收环境也造出来\n测试全绿，也可能只是在“改卷子”\n\nStrongDM 的自述：Agent 会用 return true 应付狭窄测试，也会修改测试来迁就代码。\n把端到端用户故事做成 scenarios，常放在代码库之外，像留出的考试题。\n对含 Agent 的软件，统计多条执行轨迹中有多少可能满足用户。\n\n\n\n连外部服务也能有“陪练”\n\nDigital Twin Universe：为 Slack、Okta 等造行为替身，模拟 API 和边界情况。\n先与真实服务对照、修正差异，再高频重放场景、模拟故障。\n\n\n课堂尝试：让 Agent 开发选课系统，用替身复现“最后一个名额被抢走”“提交成功但响应丢失”。\n",
+    "aigc_additions": [
+      "StrongDM 的自述：Agent 会用 return true 应付狭窄测试，也会修改测试来迁就代码。",
+      "把端到端用户故事做成 scenarios，常放在代码库之外，像留出的考试题。",
+      "对含 Agent 的软件，统计多条执行轨迹中有多少可能满足用户。",
+      "Digital Twin Universe：为 Slack、Okta 等造行为替身，模拟 API 和边界情况。",
+      "先与真实服务对照、修正差异，再高频重放场景、模拟故障。",
+      "课堂尝试：让 Agent 开发选课系统，用替身复现“最后一个名额被抢走”“提交成功但响应丢失”。"
+    ],
+    "urls": [
+      "https://factory.strongdm.ai/",
+      "https://factory.strongdm.ai/techniques/dtu"
+    ],
+    "screenshot": "slides/slide-18.jpg",
+    "sha256": "9d27b2cb6ec7a33f61e0459c9040d2700681900fb75a714350d5cdc8dc8338f2"
+  },
+  {
+    "page": 19,
+    "text": "Deepseek Harness\n",
+    "aigc_additions": [],
+    "urls": [],
+    "screenshot": "slides/slide-19.jpg",
+    "sha256": "1279ae14aaeca77bf5a5db6d68846963a8ccda615fd0b7e502645b0ba2d4184d"
+  },
+  {
+    "page": 20,
+    "text": "真正的经验\n很难“凭空想出”\n\n这些是真正的经验\n真实的负载、依赖和异常，会暴露原型里隐藏的设计假设。\n\n及时重构\n\nGarbage collection 无法解决所有问题\n持续清理技术债，也可能一直在维护一个已经失效的设计假设。\n\n\n失败使你理解架构的修正方向\n",
+    "aigc_additions": [
+      "真实的负载、依赖和异常，会暴露原型里隐藏的设计假设。",
+      "持续清理技术债，也可能一直在维护一个已经失效的设计假设。"
+    ],
+    "urls": [],
+    "screenshot": "slides/slide-20.jpg",
+    "sha256": "ea1f35ba887d8e8041a2566566603234d0ff0e2a13cf122178607dfa79157471"
+  },
+  {
+    "page": 21,
+    "text": "Friendster：重构没赶上用户离开\n扩容遇上架构边界\n\n社交网络先驱 Friendster 迅速吸引大量用户，随后延迟、宕机频发，在竞争中掉队。创始人访谈及背景\n亲历工程师复盘：单主库带多个完整副本，每个副本都要重放写入；I/O 压力导致复制延迟。Dathan Pattishall，2006\n\n看出怎么改，还要改得动\n\n工程师提出按用户分片，但内部环境使方案无法推进；容量问题的根因没有解决。工程师复盘\n这套设计后来在 Flickr 落地。同一份复盘\n\n\n课堂推论：及时重构既需要看清架构，也需要组织有能力改变它。\n",
+    "aigc_additions": [
+      "社交网络先驱 Friendster 迅速吸引大量用户，随后延迟、宕机频发，在竞争中掉队。创始人访谈及背景",
+      "亲历工程师复盘：单主库带多个完整副本，每个副本都要重放写入；I/O 压力导致复制延迟。Dathan Pattishall，2006",
+      "工程师提出按用户分片，但内部环境使方案无法推进；容量问题的根因没有解决。工程师复盘",
+      "这套设计后来在 Flickr 落地。同一份复盘",
+      "课堂推论：及时重构既需要看清架构，也需要组织有能力改变它。"
+    ],
+    "urls": [
+      "https://www.wired.com/2007/04/what-i-learned-from-friendster-jonathan-abrams-new-startup/",
+      "https://mysqldba.blogspot.com/2006/11/unorthodox-approach-to-database-design.html",
+      "https://mysqldba.blogspot.com/2006/11/unorthodox-approach-to-database-design.html",
+      "https://mysqldba.blogspot.com/2006/11/unorthodox-approach-to-database-design.html"
+    ],
+    "screenshot": "slides/slide-21.jpg",
+    "sha256": "c4ee36d1c39a59d809f90679cdf49ba583f8b774054fe473e5051b4a5708925d"
+  },
+  {
+    "page": 22,
+    "text": "一个社会性的威胁\n不做很多次、见很多个，就不可能做好\n\n好的想法会 slop 化，最后产品失败\n\n互联网时代，这样的失败也很多\n\nWebvan：网上买菜，仓配设施与订单规模失配\n2000 年报披露：配送中心负载不足设计容量的 40%，尚无设施实现现金流盈利。公司年报\n2001 年 7 月申请破产。SEC 记录 课堂推论：订单密度不足时，重资产扩张会让每一轮试错更贵。\n\n\nQuibi：精品短视频，独立产品的需求假设\n2020 年宣布关停；管理层认为，构想不足以支撑独立流媒体服务与推出时机，可能共同造成失败。官方告别信\n\n\n",
+    "aigc_additions": [
+      "Webvan：网上买菜，仓配设施与订单规模失配",
+      "2000 年报披露：配送中心负载不足设计容量的 40%，尚无设施实现现金流盈利。公司年报",
+      "2001 年 7 月申请破产。SEC 记录 课堂推论：订单密度不足时，重资产扩张会让每一轮试错更贵。",
+      "Quibi：精品短视频，独立产品的需求假设",
+      "2020 年宣布关停；管理层认为，构想不足以支撑独立流媒体服务与推出时机，可能共同造成失败。官方告别信"
+    ],
+    "urls": [
+      "https://www.sec.gov/Archives/edgar/data/1092657/000101287001001485/0001012870-01-001485.txt",
+      "https://www.sec.gov/litigation/admin/34-50771-o-2.htm",
+      "https://quibi-hq.medium.com/an-open-letter-from-quibi-8af6b415377f"
+    ],
+    "screenshot": "slides/slide-22.jpg",
+    "sha256": "87b696212278b8dad01296308422346edba3c8784a0d280fd5476b9c5fa3850c"
+  },
+  {
+    "page": 23,
+    "text": "推论\n尝试的机会\n\n没有 token，就没有做很多次尝试的机会\n课堂推论：实践机会的差距，会积累成判断力的差距。\n\n学习好的设计\n\n同时需要具备很强的学习动机 + 学习能力\n这不就斩杀了吗……\n现代新大学出现之前，被斩杀的一代\n\n\n",
+    "aigc_additions": [
+      "课堂推论：实践机会的差距，会积累成判断力的差距。"
+    ],
+    "urls": [],
+    "screenshot": "slides/slide-23.jpg",
+    "sha256": "fbbf6c650fc0128d4ce21a205e1895d6e5f7d4a822c403ae12bb9359be4eb05e"
+  },
+  {
+    "page": 24,
+    "text": "这不就斩杀了吗……\n",
+    "aigc_additions": [],
+    "urls": [],
+    "screenshot": "slides/slide-24.jpg",
+    "sha256": "6b5e4b2b8c0dc366bb033ca514f35d5ac9eb0e53bce34b5dca7374d1bfece83c"
+  }
+]

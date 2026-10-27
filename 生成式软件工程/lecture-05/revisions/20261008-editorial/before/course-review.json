@@ -1,0 +1,124 @@
+{
+  "course": "生成式软件工程",
+  "outcome": "completed",
+  "completed_at": "2026-10-02T15:43:11.008301+00:00",
+  "items": [
+    {
+      "folder": "lecture-01",
+      "title": "欢迎来到未来",
+      "html": "lecture-01/课堂笔记.html",
+      "html_sha256": "ab033482b3a8d2a70f5a26106638792dc1ad9bb0a0f56a88933a6f9e0a1ab1ff",
+      "review": "lecture-01/review.json",
+      "outcome": "completed",
+      "sections": 23,
+      "images": 48,
+      "source_units": 821,
+      "transcript": "new"
+    },
+    {
+      "folder": "lecture-02",
+      "title": "提示词工程",
+      "html": "lecture-02/课堂笔记.html",
+      "html_sha256": "fc4bb4234b9af966e41c5fac789217ad3afbc31b65dc654e3fa55bc33089e0a2",
+      "review": "lecture-02/review.json",
+      "outcome": "completed",
+      "sections": 28,
+      "images": 44,
+      "source_units": 458,
+      "transcript": "reused"
+    },
+    {
+      "folder": "lecture-03",
+      "title": "软件仓库管理",
+      "html": "lecture-03/课堂笔记.html",
+      "html_sha256": "83f0e12e75ce32e44088b7960eb52fd705353235a5a7ca9e83e8d003cc9ec3ec",
+      "review": "lecture-03/review.json",
+      "outcome": "completed",
+      "sections": 25,
+      "images": 53,
+      "source_units": 533,
+      "transcript": "new"
+    },
+    {
+      "folder": "lecture-04",
+      "title": "软件仓库管理（2）",
+      "html": "lecture-04/课堂笔记.html",
+      "html_sha256": "8b103e4daacab6a7925c072d9d594606e2a25d33cebef10812921c8ee6d59d66",
+      "review": "lecture-04/review.json",
+      "outcome": "completed",
+      "sections": 19,
+      "images": 35,
+      "source_units": 463,
+      "transcript": "new"
+    },
+    {
+      "folder": "lecture-05",
+      "title": "软件工程的来龙去脉",
+      "html": "lecture-05/课堂笔记.html",
+      "html_sha256": "12bd9e824d5a7e8720f0c7eb5440623ae8b8dd422cdeac0cf53a343aa5a3d32c",
+      "review": "lecture-05/review.json",
+      "outcome": "completed",
+      "sections": 16,
+      "images": 40,
+      "source_units": 491,
+      "transcript": "reused",
+      "layout_revision": 2,
+      "user_acceptance": "pending"
+    },
+    {
+      "folder": "lecture-06",
+      "title": "需求和架构（1）",
+      "html": "lecture-06/课堂笔记.html",
+      "html_sha256": "c44c7dc08f5a54e38ef6fb952a0862a49eed1f0805d4d68409d914d33984f25e",
+      "review": "lecture-06/review.json",
+      "outcome": "completed",
+      "sections": 20,
+      "images": 37,
+      "source_units": 486,
+      "transcript": "reused"
+    },
+    {
+      "folder": "lecture-07",
+      "title": "需求和架构（2）",
+      "html": "lecture-07/课堂笔记.html",
+      "html_sha256": "bcef494ed0c1d7890c3634865660bc3de198f18904a426030fb7f548a242651c",
+      "review": "lecture-07/review.json",
+      "outcome": "completed",
+      "sections": 25,
+      "images": 46,
+      "source_units": 909,
+      "transcript": "reused"
+    },
+    {
+      "folder": "extra-ai-slop",
+      "title": "失败的 AI Slop 数字永生尝试",
+      "html": "extra-ai-slop/课堂笔记.html",
+      "html_sha256": "abb0116d211e8eaf64637819460d6552d8b647d31c84570408d6a1a8d2c89e7f",
+      "review": "extra-ai-slop/review.json",
+      "outcome": "completed",
+      "sections": 7,
+      "images": 8,
+      "source_units": 14,
+      "transcript": "new"
+    }
+  ],
+  "totals": {
+    "videos": 8,
+    "sections": 163,
+    "images": 311,
+    "source_units": 4175,
+    "reused_transcripts": 4,
+    "new_transcripts": 4
+  },
+  "scope": "全部转写全文读取；逐张入选图检查；重点演示抽帧；未逐秒听审，未真实手机测试",
+  "chapter_metadata": "chapter-metadata/README.md",
+  "index_validation": "qa/index-browser.json",
+  "final_trace_validation": "qa/final-trace-check.json",
+  "index_sha256": "dfffd41e4f147684725912d062fc43b0a7c66034cbc4a8d38e35be36d93b5732",
+  "latest_revision": {
+    "item": "lecture-05",
+    "at": "2026-10-07T19:10:04.509975+00:00",
+    "review": "lecture-05/review.json",
+    "scope": "single-lesson layout only; old course-wide trace remains historical"
+  }
+}

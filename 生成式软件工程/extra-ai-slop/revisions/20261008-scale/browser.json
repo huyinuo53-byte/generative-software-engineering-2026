@@ -1,0 +1,298 @@
+{
+  "scope": "Local isolated Chrome; four viewport widths, not physical phone; no new source reading",
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "missingText": [],
+      "textBlocks": 35,
+      "images": 8,
+      "broken": 0,
+      "duplicateIds": [],
+      "badAnchors": [],
+      "positions": [
+        {
+          "token": "f0",
+          "expected": "s1",
+          "actual": "s1"
+        },
+        {
+          "token": "f0",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f0",
+          "expected": "s3",
+          "actual": "s3"
+        },
+        {
+          "token": "f0",
+          "expected": "s4",
+          "actual": "s4"
+        },
+        {
+          "token": "f0",
+          "expected": "s5",
+          "actual": "s5"
+        },
+        {
+          "token": "f1",
+          "expected": "s5",
+          "actual": "s5"
+        },
+        {
+          "token": "f0",
+          "expected": "s6",
+          "actual": "s6"
+        },
+        {
+          "token": "f0",
+          "expected": "s7",
+          "actual": "s7"
+        },
+        {
+          "token": "x0",
+          "expected": "s7",
+          "actual": "s7"
+        }
+      ],
+      "quizCount": 4,
+      "answersClosed": true,
+      "oldAppendix": false,
+      "takeaways": 7,
+      "strongCount": 30,
+      "emphasisRatio": 0.023005845747689987,
+      "externalImages": 0,
+      "externalStyles": 0,
+      "colors": {
+        "question": "rgb(232, 239, 228)",
+        "answer": "rgb(251, 241, 223)"
+      },
+      "errors": [],
+      "toc": true,
+      "zoom": true,
+      "keyboardAnswerToggle": true
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "missingText": [],
+      "textBlocks": 35,
+      "images": 8,
+      "broken": 0,
+      "duplicateIds": [],
+      "badAnchors": [],
+      "positions": [
+        {
+          "token": "f0",
+          "expected": "s1",
+          "actual": "s1"
+        },
+        {
+          "token": "f0",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f0",
+          "expected": "s3",
+          "actual": "s3"
+        },
+        {
+          "token": "f0",
+          "expected": "s4",
+          "actual": "s4"
+        },
+        {
+          "token": "f0",
+          "expected": "s5",
+          "actual": "s5"
+        },
+        {
+          "token": "f1",
+          "expected": "s5",
+          "actual": "s5"
+        },
+        {
+          "token": "f0",
+          "expected": "s6",
+          "actual": "s6"
+        },
+        {
+          "token": "f0",
+          "expected": "s7",
+          "actual": "s7"
+        },
+        {
+          "token": "x0",
+          "expected": "s7",
+          "actual": "s7"
+        }
+      ],
+      "quizCount": 4,
+      "answersClosed": true,
+      "oldAppendix": false,
+      "takeaways": 7,
+      "strongCount": 30,
+      "emphasisRatio": 0.023005845747689987,
+      "externalImages": 0,
+      "externalStyles": 0,
+      "colors": {
+        "question": "rgb(232, 239, 228)",
+        "answer": "rgb(251, 241, 223)"
+      },
+      "errors": [],
+      "toc": true,
+      "zoom": true,
+      "keyboardAnswerToggle": true
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "missingText": [],
+      "textBlocks": 35,
+      "images": 8,
+      "broken": 0,
+      "duplicateIds": [],
+      "badAnchors": [],
+      "positions": [
+        {
+          "token": "f0",
+          "expected": "s1",
+          "actual": "s1"
+        },
+        {
+          "token": "f0",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f0",
+          "expected": "s3",
+          "actual": "s3"
+        },
+        {
+          "token": "f0",
+          "expected": "s4",
+          "actual": "s4"
+        },
+        {
+          "token": "f0",
+          "expected": "s5",
+          "actual": "s5"
+        },
+        {
+          "token": "f1",
+          "expected": "s5",
+          "actual": "s5"
+        },
+        {
+          "token": "f0",
+          "expected": "s6",
+          "actual": "s6"
+        },
+        {
+          "token": "f0",
+          "expected": "s7",
+          "actual": "s7"
+        },
+        {
+          "token": "x0",
+          "expected": "s7",
+          "actual": "s7"
+        }
+      ],
+      "quizCount": 4,
+      "answersClosed": true,
+      "oldAppendix": false,
+      "takeaways": 7,
+      "strongCount": 30,
+      "emphasisRatio": 0.023005845747689987,
+      "externalImages": 0,
+      "externalStyles": 0,
+      "colors": {
+        "question": "rgb(232, 239, 228)",
+        "answer": "rgb(251, 241, 223)"
+      },
+      "errors": [],
+      "toc": true,
+      "zoom": true,
+      "keyboardAnswerToggle": true
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "missingText": [],
+      "textBlocks": 35,
+      "images": 8,
+      "broken": 0,
+      "duplicateIds": [],
+      "badAnchors": [],
+      "positions": [
+        {
+          "token": "f0",
+          "expected": "s1",
+          "actual": "s1"
+        },
+        {
+          "token": "f0",
+          "expected": "s2",
+          "actual": "s2"
+        },
+        {
+          "token": "f0",
+          "expected": "s3",
+          "actual": "s3"
+        },
+        {
+          "token": "f0",
+          "expected": "s4",
+          "actual": "s4"
+        },
+        {
+          "token": "f0",
+          "expected": "s5",
+          "actual": "s5"
+        },
+        {
+          "token": "f1",
+          "expected": "s5",
+          "actual": "s5"
+        },
+        {
+          "token": "f0",
+          "expected": "s6",
+          "actual": "s6"
+        },
+        {
+          "token": "f0",
+          "expected": "s7",
+          "actual": "s7"
+        },
+        {
+          "token": "x0",
+          "expected": "s7",
+          "actual": "s7"
+        }
+      ],
+      "quizCount": 4,
+      "answersClosed": true,
+      "oldAppendix": false,
+      "takeaways": 7,
+      "strongCount": 30,
+      "emphasisRatio": 0.023005845747689987,
+      "externalImages": 0,
+      "externalStyles": 0,
+      "colors": {
+        "question": "rgb(232, 239, 228)",
+        "answer": "rgb(251, 241, 223)"
+      },
+      "errors": [],
+      "toc": true,
+      "zoom": true,
+      "keyboardAnswerToggle": true
+    }
+  ],
+  "status": "passed"
+}

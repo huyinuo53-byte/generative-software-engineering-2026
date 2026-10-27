@@ -1,0 +1,751 @@
+{
+  "summary": "中文大学课堂系统讲解软件工程中的需求、产品设计与架构，以教务系统、命令行解析、汉诺塔、Excel 二维码和事件溯源为案例，贯穿技术债、复杂性分解与需求变化下的架构选择。主讲教师采用口语化讲授和现场演示，夹杂大量英文技术词、模型名与评价性表达；润色应保留完整论证链、案例细节和课堂语气，同时统一专名、缩写与误识别术语。",
+  "terms": [
+    {
+      "term": "AI",
+      "note": "artificial intelligence"
+    },
+    {
+      "term": "AI inference",
+      "note": "model inference",
+      "observedVariants": [
+        "AI infer"
+      ]
+    },
+    {
+      "term": "Agent AI",
+      "note": "agentic AI context"
+    },
+    {
+      "term": "Baidu",
+      "note": "search engine",
+      "observedVariants": [
+        "百度"
+      ]
+    },
+    {
+      "term": "Brainfuck",
+      "note": "esoteric programming language"
+    },
+    {
+      "term": "C",
+      "note": "programming language",
+      "observedVariants": [
+        "C 语言",
+        "C 加加"
+      ]
+    },
+    {
+      "term": "C++ cin",
+      "note": "standard input stream",
+      "observedVariants": [
+        "C in"
+      ]
+    },
+    {
+      "term": "CLI",
+      "note": "command-line interface",
+      "observedVariants": [
+        "C I I"
+      ]
+    },
+    {
+      "term": "CQRS",
+      "note": "command-query pattern"
+    },
+    {
+      "term": "CRUD",
+      "note": "create read update delete"
+    },
+    {
+      "term": "CSDN",
+      "note": "developer content platform"
+    },
+    {
+      "term": "CSRankings",
+      "note": "ranking website",
+      "observedVariants": [
+        "CSrank"
+      ]
+    },
+    {
+      "term": "Command Query Responsibility Segregation",
+      "note": "CQRS expansion"
+    },
+    {
+      "term": "Computer Science",
+      "note": "academic field"
+    },
+    {
+      "term": "DOOM",
+      "note": "video game often ported as demo",
+      "observedVariants": [
+        "毁灭战士"
+      ]
+    },
+    {
+      "term": "DeepSeek V4 Flash",
+      "note": "model name",
+      "observedVariants": [
+        "DeepSeek v4flash"
+      ]
+    },
+    {
+      "term": "Domain-Driven Design",
+      "note": "software design approach",
+      "observedVariants": [
+        "domain driven design"
+      ]
+    },
+    {
+      "term": "Dropbox",
+      "note": "likely UI dropdown misrecognition"
+    },
+    {
+      "term": "ECC",
+      "note": "error-correcting code"
+    },
+    {
+      "term": "ERP",
+      "note": "enterprise resource planning"
+    },
+    {
+      "term": "Excel",
+      "note": "spreadsheet application"
+    },
+    {
+      "term": "GPT",
+      "note": "model family"
+    },
+    {
+      "term": "GPT-6",
+      "note": "model name as spoken",
+      "observedVariants": [
+        "G P 六",
+        "GPT6",
+        "GPT 六"
+      ]
+    },
+    {
+      "term": "Git",
+      "note": "version control system"
+    },
+    {
+      "term": "GitHub",
+      "note": "code hosting platform"
+    },
+    {
+      "term": "HTTP 500",
+      "note": "server error status",
+      "observedVariants": [
+        "五零零"
+      ]
+    },
+    {
+      "term": "LLM",
+      "note": "large language model",
+      "observedVariants": [
+        "lm",
+        "LRM"
+      ]
+    },
+    {
+      "term": "MVP",
+      "note": "minimum viable product"
+    },
+    {
+      "term": "NEMU",
+      "note": "emulator used in course labs",
+      "observedVariants": [
+        "N E M U"
+      ]
+    },
+    {
+      "term": "NLP",
+      "note": "natural language processing"
+    },
+    {
+      "term": "No Silver Bullet",
+      "note": "software engineering essay and maxim",
+      "observedVariants": [
+        "there is no silver bullet"
+      ]
+    },
+    {
+      "term": "OBS",
+      "note": "streaming software",
+      "observedVariants": [
+        "O B S"
+      ]
+    },
+    {
+      "term": "OJ",
+      "note": "online judge"
+    },
+    {
+      "term": "POSIX",
+      "note": "operating-system standard",
+      "observedVariants": [
+        "posics"
+      ]
+    },
+    {
+      "term": "PhD",
+      "note": "doctoral degree"
+    },
+    {
+      "term": "PyExcel",
+      "note": "hypothetical compiler name as spoken",
+      "observedVariants": [
+        "pytoexcel",
+        "pyxrc"
+      ]
+    },
+    {
+      "term": "Python",
+      "note": "programming language in filename context",
+      "observedVariants": [
+        "P Y",
+        "点 py"
+      ]
+    },
+    {
+      "term": "QR code",
+      "note": "two-dimensional barcode",
+      "observedVariants": [
+        "QR code generator",
+        "二维码"
+      ]
+    },
+    {
+      "term": "README",
+      "note": "project documentation file"
+    },
+    {
+      "term": "Redis",
+      "note": "in-memory data store",
+      "observedVariants": [
+        "record is"
+      ]
+    },
+    {
+      "term": "Reed-Solomon code",
+      "note": "QR error-correction code",
+      "observedVariants": [
+        "纠错码"
+      ]
+    },
+    {
+      "term": "SVN",
+      "note": "version control system"
+    },
+    {
+      "term": "TSX",
+      "note": "TypeScript JSX file type"
+    },
+    {
+      "term": "Tower of Hanoi",
+      "note": "Hanoi puzzle",
+      "observedVariants": [
+        "tabofhanoi",
+        "Talbot Hana"
+      ]
+    },
+    {
+      "term": "Turing-complete",
+      "note": "computational completeness",
+      "observedVariants": [
+        "turncomplete"
+      ]
+    },
+    {
+      "term": "TypeScript",
+      "note": "programming language in filename context",
+      "observedVariants": [
+        "T S"
+      ]
+    },
+    {
+      "term": "UML",
+      "note": "Unified Modeling Language"
+    },
+    {
+      "term": "VLOOKUP",
+      "note": "Excel lookup function"
+    },
+    {
+      "term": "Winston W. Royce",
+      "note": "waterfall paper author",
+      "observedVariants": [
+        "Royce"
+      ]
+    },
+    {
+      "term": "XLOOKUP",
+      "note": "Excel lookup function"
+    },
+    {
+      "term": "XOR",
+      "note": "bitwise exclusive-or",
+      "observedVariants": [
+        "异或",
+        "xof1"
+      ]
+    },
+    {
+      "term": "abstract syntax tree",
+      "note": "expression representation",
+      "observedVariants": [
+        "表达式树"
+      ]
+    },
+    {
+      "term": "agent swarm",
+      "note": "multiple agents working together",
+      "observedVariants": [
+        "agentstorm"
+      ]
+    },
+    {
+      "term": "argc",
+      "note": "C command-line argument count",
+      "observedVariants": [
+        "arg C"
+      ]
+    },
+    {
+      "term": "argv",
+      "note": "C command-line argument vector",
+      "observedVariants": [
+        "arg V"
+      ]
+    },
+    {
+      "term": "artifact",
+      "note": "software artifact"
+    },
+    {
+      "term": "best practice",
+      "note": "recommended engineering practice"
+    },
+    {
+      "term": "bit",
+      "note": "binary digit"
+    },
+    {
+      "term": "blog",
+      "note": "web article"
+    },
+    {
+      "term": "buzzword",
+      "note": "fashionable jargon",
+      "observedVariants": [
+        "buzzwords"
+      ]
+    },
+    {
+      "term": "checklist",
+      "note": "verification list"
+    },
+    {
+      "term": "client-server",
+      "note": "architecture style",
+      "observedVariants": [
+        "client server"
+      ]
+    },
+    {
+      "term": "consistent",
+      "note": "consistency property"
+    },
+    {
+      "term": "crash",
+      "note": "software failure"
+    },
+    {
+      "term": "data center",
+      "note": "computing facility",
+      "observedVariants": [
+        "datacenter"
+      ]
+    },
+    {
+      "term": "data dependency",
+      "note": "dependency relation"
+    },
+    {
+      "term": "database transaction",
+      "note": "atomic database operation",
+      "observedVariants": [
+        "database 的 transaction"
+      ]
+    },
+    {
+      "term": "delta",
+      "note": "incremental change"
+    },
+    {
+      "term": "dependency",
+      "note": "data dependency"
+    },
+    {
+      "term": "dropdown",
+      "note": "UI selection control",
+      "observedVariants": [
+        "dropbox"
+      ]
+    },
+    {
+      "term": "dump",
+      "note": "serialize or print a tree"
+    },
+    {
+      "term": "event sourcing",
+      "note": "architecture pattern"
+    },
+    {
+      "term": "factor",
+      "note": "database decomposition"
+    },
+    {
+      "term": "feature",
+      "note": "software feature"
+    },
+    {
+      "term": "first principle",
+      "note": "reasoning from fundamentals"
+    },
+    {
+      "term": "function application",
+      "note": "function call concept",
+      "observedVariants": [
+        "function applications"
+      ]
+    },
+    {
+      "term": "geek",
+      "note": "technical enthusiast"
+    },
+    {
+      "term": "getopt",
+      "note": "command-line option parser",
+      "observedVariants": [
+        "get opt"
+      ]
+    },
+    {
+      "term": "idempotent",
+      "note": "repeat-safe operation",
+      "observedVariants": [
+        "item potent"
+      ]
+    },
+    {
+      "term": "implementation",
+      "note": "software implementation"
+    },
+    {
+      "term": "intent",
+      "note": "software intent"
+    },
+    {
+      "term": "intermediate representation",
+      "note": "compiler IR",
+      "observedVariants": [
+        "中间语言"
+      ]
+    },
+    {
+      "term": "lambda",
+      "note": "anonymous function"
+    },
+    {
+      "term": "lesson",
+      "note": "takeaway"
+    },
+    {
+      "term": "ls",
+      "note": "Unix listing command"
+    },
+    {
+      "term": "main",
+      "note": "program entry function"
+    },
+    {
+      "term": "memory error",
+      "note": "memory-related error",
+      "observedVariants": [
+        "memoryerror"
+      ]
+    },
+    {
+      "term": "minimum viable product",
+      "note": "MVP expansion",
+      "observedVariants": [
+        "minimumviableproduct",
+        "minimal mobile product"
+      ]
+    },
+    {
+      "term": "monolithic",
+      "note": "single-unit architecture"
+    },
+    {
+      "term": "normal form",
+      "note": "relational database normalization"
+    },
+    {
+      "term": "npm",
+      "note": "JavaScript package manager"
+    },
+    {
+      "term": "npm run dev",
+      "note": "development command",
+      "observedVariants": [
+        "NPM run def"
+      ]
+    },
+    {
+      "term": "operational semantics",
+      "note": "programming-language semantics"
+    },
+    {
+      "term": "optimistic locking",
+      "note": "concurrency-control method",
+      "observedVariants": [
+        "乐观锁"
+      ]
+    },
+    {
+      "term": "overreact",
+      "note": "excessive response",
+      "observedVariants": [
+        "all react"
+      ]
+    },
+    {
+      "term": "parser",
+      "note": "syntax parser",
+      "observedVariants": [
+        "passer"
+      ]
+    },
+    {
+      "term": "parsing state",
+      "note": "parser state",
+      "observedVariants": [
+        "passingstate",
+        "passing state"
+      ]
+    },
+    {
+      "term": "persistent data structure",
+      "note": "version-preserving data structure"
+    },
+    {
+      "term": "persistent state",
+      "note": "durable application state",
+      "observedVariants": [
+        "persistent 的状态"
+      ]
+    },
+    {
+      "term": "power user",
+      "note": "advanced user",
+      "observedVariants": [
+        "poweruser"
+      ]
+    },
+    {
+      "term": "pre-AI",
+      "note": "era before modern AI",
+      "observedVariants": [
+        "a pre-AI"
+      ]
+    },
+    {
+      "term": "profile",
+      "note": "performance profile"
+    },
+    {
+      "term": "profile-guided optimization",
+      "note": "optimization method",
+      "observedVariants": [
+        "profiling guided optimization"
+      ]
+    },
+    {
+      "term": "recursion",
+      "note": "recursive computation"
+    },
+    {
+      "term": "replay",
+      "note": "reconstruct state from history"
+    },
+    {
+      "term": "service",
+      "note": "application service layer",
+      "observedVariants": [
+        "services"
+      ]
+    },
+    {
+      "term": "session",
+      "note": "isolated model conversation"
+    },
+    {
+      "term": "sheet",
+      "note": "spreadsheet worksheet"
+    },
+    {
+      "term": "silent error",
+      "note": "undetected hardware error"
+    },
+    {
+      "term": "silver bullet",
+      "note": "metaphor in software engineering"
+    },
+    {
+      "term": "simplification",
+      "note": "program simplification"
+    },
+    {
+      "term": "single source of truth",
+      "note": "authoritative data source",
+      "observedVariants": [
+        "single point of truth"
+      ]
+    },
+    {
+      "term": "single-step",
+      "note": "one operational step",
+      "observedVariants": [
+        "singlestep"
+      ]
+    },
+    {
+      "term": "slop",
+      "note": "low-quality generated output",
+      "observedVariants": [
+        "slog"
+      ]
+    },
+    {
+      "term": "specification",
+      "note": "software specification",
+      "observedVariants": [
+        "spec"
+      ]
+    },
+    {
+      "term": "state machine",
+      "note": "state-transition model"
+    },
+    {
+      "term": "state-transition system",
+      "note": "formal state model"
+    },
+    {
+      "term": "std::move",
+      "note": "C++ move utility",
+      "observedVariants": [
+        "STD 是有 move 的"
+      ]
+    },
+    {
+      "term": "strcmp",
+      "note": "C string comparison function",
+      "observedVariants": [
+        "string compare"
+      ]
+    },
+    {
+      "term": "subagent",
+      "note": "delegated AI agent"
+    },
+    {
+      "term": "switch-case",
+      "note": "control-flow structure",
+      "observedVariants": [
+        "switch case"
+      ]
+    },
+    {
+      "term": "technical debt",
+      "note": "accumulated maintenance cost"
+    },
+    {
+      "term": "three-tier monolith",
+      "note": "architecture pattern",
+      "observedVariants": [
+        "经典三层单体"
+      ]
+    },
+    {
+      "term": "traceability",
+      "note": "requirements traceability"
+    },
+    {
+      "term": "trade-off",
+      "note": "engineering compromise",
+      "observedVariants": [
+        "trade off"
+      ]
+    },
+    {
+      "term": "unsigned integer",
+      "note": "integer type"
+    },
+    {
+      "term": "unsupervised learner",
+      "note": "machine-learning metaphor"
+    },
+    {
+      "term": "validation",
+      "note": "software validation"
+    },
+    {
+      "term": "vibe code",
+      "note": "AI-assisted coding context",
+      "observedVariants": [
+        "webcode"
+      ]
+    },
+    {
+      "term": "well-defined",
+      "note": "formally defined behavior"
+    },
+    {
+      "term": "write-ahead journal",
+      "note": "transaction journal",
+      "observedVariants": [
+        "local headed 的这个 right headed 的 journal"
+      ]
+    }
+  ],
+  "namedEntities": [
+    "Baidu",
+    "CSDN",
+    "CSRankings",
+    "DOOM",
+    "DeepSeek V4 Flash",
+    "Dropbox",
+    "Excel",
+    "GPT",
+    "GPT-6",
+    "Git",
+    "GitHub",
+    "No Silver Bullet",
+    "OBS",
+    "PhD",
+    "PyExcel",
+    "Redis",
+    "SVN",
+    "Tower of Hanoi",
+    "Winston W. Royce",
+    "npm",
+    "silver bullet"
+  ],
+  "fingerprint": "26172:g1.0:g1067.0~12:3nhtiwhi530x4",
+  "referenceFingerprint": "1:2z6uk7rvppe4m"
+}

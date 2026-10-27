@@ -1,0 +1,10 @@
+{"at": "2026-10-01T06:31:01.368400+00:00", "stage": "preflight", "status": "completed", "detail": "BaoCut 2.1.0 spec 1.249.0; URL/CDP verified BV1Nyeq6qEt8; yt-dlp, ffmpeg, MOSS model ready"}
+{"at": "2026-10-01T06:31:01.401688+00:00", "stage": "transcription", "status": "started", "detail": "Starting unique hosted project with URL download and Chinese transcription; no full-video polish"}
+{"at": "2026-10-01T06:44:51.551253+00:00", "stage": "transcription", "status": "completed", "detail": "MOSS transcribed 5999.3s media; 28059 words; transcript exported original JSON; project media fingerprint sha256-699cb51a..."}
+{"at": "2026-10-01T06:44:51.594954+00:00", "stage": "reading", "status": "started", "detail": "Chunking exported transcript for complete sequential reading"}
+{"at": "2026-10-01T06:48:11.657860+00:00", "stage": "reading", "status": "completed", "detail": "Sequentially read all 20 chunks and 491 sentences; all source IDs assigned across 16 sections"}
+{"at": "2026-10-01T06:48:11.696938+00:00", "stage": "visual_review", "status": "completed", "detail": "Inspected 40 full-frame navigation samples; cropped 24 slide candidates from measured split; visually selected key lecture pages and kept full-frame board evidence"}
+{"at": "2026-10-01T06:48:11.732483+00:00", "stage": "render", "status": "started", "detail": "Rendering single-file HTML with embedded images and evidence validation"}
+{"at": "2026-10-01T06:48:47.559038+00:00", "stage": "render", "status": "failed", "detail": "First render rejected section interval not containing full source sentence; corrected section bounds and frame bindings"}
+{"at": "2026-10-01T06:55:45.780872+00:00", "stage": "render", "status": "completed", "detail": "Single-file HTML rendered; 16 sections; 491/491 source IDs; 23 screenshot references; responsive wrapping patched after mobile QA"}
+{"at": "2026-10-01T06:55:45.812333+00:00", "stage": "qa", "status": "completed", "detail": "Desktop browser, 390px constrained layout, image loading, zoom dialog, print CSS, duplicate IDs, and BaoCut strict check passed; ready=true blockers=0 warnings=0"}

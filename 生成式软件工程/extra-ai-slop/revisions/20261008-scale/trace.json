@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "run_id": "extra-ai-slop-20261008-editorial-scale",
+  "basis": "observed_build",
+  "captured_at": "2026-10-07T20:02:10.266932+00:00",
+  "root": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop",
+  "spec_sha256": "8fe4148a90b756561030f4550b54b5500a8b835a37bc2b8e95443e8e265faf6f",
+  "artifacts": [
+    {
+      "id": "transcript",
+      "path": "transcript.json",
+      "depends_on": [],
+      "sha256": "4ccc403e04cc7d201636f7f0ea074e38bcec3889195379d5d207af1424b8e693",
+      "bytes": 154693
+    },
+    {
+      "id": "index",
+      "path": "chunks/index.json",
+      "depends_on": [
+        "transcript"
+      ],
+      "sha256": "add9ee85575c954925886514d79b3eb6818c4f10bceacc54e6ca9a1b80e1b590",
+      "bytes": 1677
+    },
+    {
+      "id": "frame-0-0",
+      "path": "frames/010.jpg",
+      "depends_on": [],
+      "sha256": "6e64fdc713bb9b4c74ef5bb9692dcf328e5e1b05ff6e60bcf4c6e9df0283688a",
+      "bytes": 178494
+    },
+    {
+      "id": "frame-1-0",
+      "path": "frames/020.jpg",
+      "depends_on": [],
+      "sha256": "6c59d604628ab8f17dadc1eb58326ab2b52995583e9a48dfad3ce1168e5344a6",
+      "bytes": 181631
+    },
+    {
+      "id": "frame-2-0",
+      "path": "frames/040.jpg",
+      "depends_on": [],
+      "sha256": "88f539f4b62965e9faeefbd27584968efac8273af1e9c36dbac958c165b5f137",
+      "bytes": 189781
+    },
+    {
+      "id": "frame-3-0",
+      "path": "frames/060.jpg",
+      "depends_on": [],
+      "sha256": "7fef6a6b03422f1d6554a0a21532fd780e0f194874ccf1c0d52dcfd9a117c185",
+      "bytes": 190511
+    },
+    {
+      "id": "frame-4-0",
+      "path": "frames/090.jpg",
+      "depends_on": [],
+      "sha256": "91be45eccb62c2ac4fe1bc1974a2c45bf4528a15dddb4f8632349eb7df2bd380",
+      "bytes": 150237
+    },
+    {
+      "id": "frame-4-1",
+      "path": "frames/110.jpg",
+      "depends_on": [],
+      "sha256": "98a3be48562326881bfe65d9cdb10482211acfc62b76e606a1f8396e081c4536",
+      "bytes": 179622
+    },
+    {
+      "id": "frame-5-0",
+      "path": "frames/130.jpg",
+      "depends_on": [],
+      "sha256": "af45fdc7ae8238c02edb422ea60e94f44adb9db8af63f5c5affc12b97251827e",
+      "bytes": 201939
+    },
+    {
+      "id": "frame-6-0",
+      "path": "frames/150.jpg",
+      "depends_on": [],
+      "sha256": "1c596b1e2bb90b2d3e17ae7b73654fb188ba7fc74a5e30cc7745037a26de0332",
+      "bytes": 173347
+    },
+    {
+      "id": "notes",
+      "path": "notes.json",
+      "depends_on": [
+        "index",
+        "frame-0-0",
+        "frame-1-0",
+        "frame-2-0",
+        "frame-3-0",
+        "frame-4-0",
+        "frame-4-1",
+        "frame-5-0",
+        "frame-6-0"
+      ],
+      "sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6",
+      "bytes": 13838
+    },
+    {
+      "id": "layout",
+      "path": "reading-layout.json",
+      "depends_on": [
+        "notes"
+      ],
+      "sha256": "028c84a1b0d6cda72c8bcf3d6f29dcc39524dae17852fcc7ed99cf60ff7d3ff5",
+      "bytes": 3033
+    },
+    {
+      "id": "build-0",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/scripts/course_notes.py",
+      "depends_on": [],
+      "sha256": "1de4abde3012dcd8024916baa92fba751ace4ac1d8b3569170d689ed80d77b0a",
+      "bytes": 16071
+    },
+    {
+      "id": "build-1",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/scripts/reading_layout.py",
+      "depends_on": [],
+      "sha256": "9a2ae167fdbab5d1a391d69f148d8976522d2e83627008d50b4c1ba84adb6744",
+      "bytes": 12373
+    },
+    {
+      "id": "build-2",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/template.html",
+      "depends_on": [],
+      "sha256": "4e7715e38f0530897e2d882f4d75e1d64dbff859fbc95ddfb0dfa88668f9b693",
+      "bytes": 2804
+    },
+    {
+      "id": "build-3",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/editorial.html",
+      "depends_on": [],
+      "sha256": "a7cb83601a48417c1adce8a0aceb88b6887f5d55fb0919237448325f3d64f7f6",
+      "bytes": 1153
+    },
+    {
+      "id": "build-4",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/editorial.css",
+      "depends_on": [],
+      "sha256": "19ff96d00dd7456da38d0bbdb19e057059921fac780b7195f3f0d34cb357df2a",
+      "bytes": 14224
+    },
+    {
+      "id": "build-5",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/editorial.js",
+      "depends_on": [],
+      "sha256": "e53d177b7ba77871aeb4e89f8f8857cecb17ded0177d074420c47544e2cc318a",
+      "bytes": 1927
+    },
+    {
+      "id": "html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "layout",
+        "notes",
+        "index",
+        "build-0",
+        "build-1",
+        "build-2",
+        "build-3",
+        "build-4",
+        "build-5"
+      ],
+      "sha256": "68fa80956bb84708b683ae88a6b24e4c406f0055b77a10e25712710a22483e68",
+      "bytes": 1970979
+    },
+    {
+      "id": "layout-check",
+      "path": "revisions/20261008-scale/layout-validation.json",
+      "depends_on": [
+        "notes",
+        "layout"
+      ],
+      "sha256": "01ef8565b95f106735ce82b180f90715e4021c61fe579550638238b5aa966c7d",
+      "bytes": 1143
+    },
+    {
+      "id": "browser",
+      "path": "revisions/20261008-scale/browser.json",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "28470dd03ad003494c89385dbfd084ed305bb8b63e42bf6cd8c8b9950d61e625",
+      "bytes": 6320
+    },
+    {
+      "id": "pdf",
+      "path": "revisions/20261008-scale/print-check.pdf",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "1209a02980b6dd2bcd351187bec5a6a32e6cb6d1eecf5c873865d3c64561c0d0",
+      "bytes": 2560915
+    },
+    {
+      "id": "print",
+      "path": "revisions/20261008-scale/print.json",
+      "depends_on": [
+        "pdf",
+        "html",
+        "notes"
+      ],
+      "sha256": "7789d3305ca9a8d364a25957a072fe8949de6570561856f45fd2611365bd5080",
+      "bytes": 412
+    },
+    {
+      "id": "preservation",
+      "path": "revisions/20261008-scale/preservation.json",
+      "depends_on": [
+        "html",
+        "notes",
+        "layout",
+        "frame-0-0",
+        "frame-1-0",
+        "frame-2-0",
+        "frame-3-0",
+        "frame-4-0",
+        "frame-4-1",
+        "frame-5-0",
+        "frame-6-0"
+      ],
+      "sha256": "e81dbed3e370269191c72ed98ed80342717ccc697e2e75f39de5004995fb017a",
+      "bytes": 392
+    },
+    {
+      "id": "visual-0",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/1440-quiz.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "179137f94075bd32dac76a692d21f0e5d8891c18bed878a6d7e5bda3e068a5ee",
+      "bytes": 148268
+    },
+    {
+      "id": "visual-1",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/1440-reading.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "196ec2f9e0cb998e70759b18a0c2e6c0b17399365aa4c57eabf32765ab942037",
+      "bytes": 563932
+    },
+    {
+      "id": "visual-2",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/1440-supplement.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "55268c8e6581a8cbe212bb56b386a8040fb6ef2a45229ab83239f5a265ee3ca8",
+      "bytes": 114066
+    },
+    {
+      "id": "visual-3",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/1440-top.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "49e59da48c9cb6d06543a4a87dee7ac3b51836ed2f0966759cdc148b98b987a4",
+      "bytes": 163426
+    },
+    {
+      "id": "visual-4",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/320-quiz.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "4e74cf4ba0ddead119a0570184c3893f89cc9eae6d49798a1a4ba7235bfd9924",
+      "bytes": 65333
+    },
+    {
+      "id": "visual-5",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/320-top.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "8d9a81e82c094055ee0dafb3b252de5ee1bb4bd9a47517761d90557c796d2bf5",
+      "bytes": 78826
+    },
+    {
+      "id": "visual-6",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-quiz.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "230ba8322952fda748feca82a7f613dc7825a2e1c5dadba1a46a9fd393379b82",
+      "bytes": 67640
+    },
+    {
+      "id": "visual-7",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-reading.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "52c0902b4c8b7da86859a0e66c183e954659af66234790af8e66fcef1dfccfc9",
+      "bytes": 185562
+    },
+    {
+      "id": "visual-8",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-supplement.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "9b2d86aa7e134f888b2f8042ab6b769ee4c27c97b893700bf756cc79485172a2",
+      "bytes": 104342
+    },
+    {
+      "id": "visual-9",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-top.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "b430578efb361cd49b8c62c94740a51c9207fd817b30c291a63d6ea56dc6b5dd",
+      "bytes": 82074
+    },
+    {
+      "id": "visual-10",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/768-quiz.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "48b6f51b3ba817db049dd8385422b4e86dbd967b57eef41a1de93f725290dd2b",
+      "bytes": 89031
+    },
+    {
+      "id": "visual-11",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/768-top.png",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "94baea99a135575dcb7a277533abb1552d9f26ff68eee29d6f716ce12a724272",
+      "bytes": 114979
+    },
+    {
+      "id": "visual-12",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/print-last-page.png",
+      "depends_on": [
+        "pdf"
+      ],
+      "sha256": "5bf7f387db92974a74852ee35fcb256d157c1d2c2702bd36fb1bec85a3d6b4f9",
+      "bytes": 24675
+    },
+    {
+      "id": "review",
+      "path": "review.json",
+      "depends_on": [
+        "browser",
+        "print",
+        "layout-check",
+        "preservation",
+        "visual-0",
+        "visual-1",
+        "visual-2",
+        "visual-3",
+        "visual-4",
+        "visual-5",
+        "visual-6",
+        "visual-7",
+        "visual-8",
+        "visual-9",
+        "visual-10",
+        "visual-11",
+        "visual-12"
+      ],
+      "sha256": "00afba630de9bde2493bdd1cc826517b8e043d07bbaefb21ddc540d7048a6dfc",
+      "bytes": 4093
+    }
+  ],
+  "claim": "File snapshot only; dependencies are declarations, not proof of execution or quality."
+}

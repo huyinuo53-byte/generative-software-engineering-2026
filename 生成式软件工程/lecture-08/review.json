@@ -1,0 +1,143 @@
+{
+  "run_id": "BV11LWw6VEHW-20261019",
+  "scope_revision": 1,
+  "outcome": "completed",
+  "first_pending": null,
+  "pending": [],
+  "video_id": "BV11LWw6VEHW",
+  "title": "Agent-native 开发",
+  "summary": "97分钟完整转写阅读，30主题、69内嵌图、27原始材料补充、16自测；内容/逐图/画面覆盖/桌面与390及320窄屏复核通过。",
+  "validation": {
+    "content": {
+      "status": "passed",
+      "evidence": "audits/content-review.json"
+    },
+    "structure": {
+      "status": "passed",
+      "evidence": "audits/layout-validation.json"
+    },
+    "source_coverage": {
+      "status": "passed",
+      "evidence": "audits/transcript-reading.json"
+    },
+    "reading_materials": {
+      "status": "passed",
+      "evidence": "audits/materials-validation.json"
+    },
+    "material_integration": {
+      "status": "passed",
+      "evidence": "audits/material-integration.json"
+    },
+    "visual_coverage": {
+      "status": "passed",
+      "evidence": "visual-coverage.json"
+    },
+    "images": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_static": {
+      "status": "passed",
+      "evidence": "audits/html-content-preservation.json"
+    },
+    "desktop": {
+      "status": "passed",
+      "evidence": "qa/browser/audit.json"
+    },
+    "narrow_screen": {
+      "status": "passed",
+      "evidence": "qa/reader/journey.json"
+    },
+    "zoom_pan_close": {
+      "status": "passed",
+      "evidence": "qa/reader/journey.json"
+    },
+    "console": {
+      "status": "passed",
+      "evidence": "qa/browser/audit.json"
+    },
+    "print": {
+      "status": "passed",
+      "evidence": "qa/reader/journey.json",
+      "scope": "Print media and before/after print events; 16 answers open and visible. No exported PDF or native print dialog."
+    },
+    "visual_samples": {
+      "status": "passed",
+      "evidence": "qa/reader/visual-review.json"
+    },
+    "project_strict": {
+      "status": "passed",
+      "evidence": "sources/project-strict-check.json"
+    },
+    "real_phone": {
+      "status": "not_requested",
+      "evidence": "未执行；本次交付为离线HTML，按实际阅读/静态源代码审查范围记录。"
+    },
+    "native_print": {
+      "status": "not_requested",
+      "evidence": "未执行；本次交付为离线HTML，按实际阅读/静态源代码审查范围记录。"
+    },
+    "pdf": {
+      "status": "not_requested",
+      "evidence": "未执行；本次交付为离线HTML，按实际阅读/静态源代码审查范围记录。"
+    },
+    "zip": {
+      "status": "not_requested",
+      "evidence": "未执行；本次交付为离线HTML，按实际阅读/静态源代码审查范围记录。"
+    },
+    "full_audio_listening": {
+      "status": "not_requested",
+      "evidence": "未执行；本次交付为离线HTML，按实际阅读/静态源代码审查范围记录。"
+    },
+    "repository_execution": {
+      "status": "not_requested",
+      "evidence": "未执行；本次交付为离线HTML，按实际阅读/静态源代码审查范围记录。"
+    }
+  },
+  "source_hashes": {
+    "notes.json": "962275c64c913c167cf9ce9bb489a49c168b510ea80ee8701e67033c18fa89cf",
+    "reading-layout.json": "e329c8ac520c42ee1f15348c421f7f7856a9be328988e69e51236ccf8021dbd4",
+    "课堂笔记.html": "48a1278dbae1d157bd35ec4a077a3079667a6266ad110198fa8c2dbf251377d9",
+    "transcript.json": "86537376a861cc701650b49b37b9ad245b240aa12a337fc4453f32b84fbf8ad1",
+    "chunks/index.json": "8d84da84df52fb2573edfcc43d6100a6332489b3f51d102899494d7620cbe2cc",
+    "image-audit.json": "234631ac0397969bd624753223a4505d3d5591187f0810a8b3ccb1010961c623",
+    "visual-coverage.json": "c99f821138456553f2059704dc53c5db03ebd30399bf0e063f8e55d69e31cde4",
+    "audits/content-review.json": "4fe2e439b50e24badf2012ed3178e8ad168fd9b337afbc17b20829fb7195ee20",
+    "audits/layout-validation.json": "be4b0bb6b67775b898d5c30bc53a2ed724a7eab5b9918da14a3097be01beff10",
+    "audits/transcript-reading.json": "ad12ba6e58d7a1f82d88b9640f5e147582c210193a63da1cf90f251ceacfd448",
+    "audits/materials-validation.json": "bcc1ec48c37682019cc3efec65c393938c16e25c0a40f01ff225d334bf486064",
+    "audits/material-integration.json": "f3449fbf7b481b3708ebab4c704a1fa5ce09a7eb0b7c7a9a8b3a1ea98ea36eac",
+    "audits/html-content-preservation.json": "c7d2a623d46f2905ac2b2bdb3e873aec4ae6484f9cc931a494c2d59e6c02d1a1",
+    "qa/browser/audit.json": "75b62ac81945c373adc129d184136bb97fe96fc33d036a73bd5e9b93f70ba8f5",
+    "qa/reader/journey.json": "a5d413dc460d95705dc75e0398d0031a663f4346feca5b961f103b7f212f0430",
+    "qa/reader/visual-review.json": "0c51c4e57f19c47c4708f433cce7781ec23dbc72397dad8bdc6631068c5bfe83",
+    "sources/project-strict-check.json": "0b99e40a15faad2b64f5e370326e0413602cf14918d9c22d1343d659a7307824"
+  },
+  "trace_snapshot": "trace-r01.json",
+  "delivered_files": [
+    "课堂笔记.html"
+  ],
+  "delivery_path": "课堂笔记.html",
+  "finished_at": "2026-10-19T02:00:24.898526+00:00",
+  "blocker": null,
+  "reuse": {
+    "transcript": "66个已有BaoCut项目中未找到匹配BV的新课转写；经身份核对新建匹配项目并生成，失败下载未重复ASR。旧八课转写/正文/HTML保留。",
+    "images": "逐图原尺寸审阅和图片hash复用；最终仅修改文字笔误，图绑定与事件段落逐项比较未变。"
+  },
+  "limits": [
+    "未逐秒听审全部音频或逐帧播放视频",
+    "现行官方24页网页截图汇编非原生PDF，可能含课后补充",
+    "仓库固定commit晚于录制，仅34文件全文和3文件范围静态阅读",
+    "浏览器窄屏模拟不是真实手机；打印媒体模拟非原生打印"
+  ],
+  "metrics": {
+    "tokens": null,
+    "cost": null,
+    "media_seconds": 5829.674667,
+    "sections": 30,
+    "images": 69,
+    "supplements": 27,
+    "self_test": 16,
+    "source_units": 394
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "bcut",
+    "auto",
+    "https://www.bilibili.com/video/BV1JGap6LE74/",
+    "--project",
+    "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1JGap6LE74.bcut",
+    "--llm",
+    "agent",
+    "--jsonl"
+  ],
+  "cwd": "/Users/yjzhao/Library/Application Support/BaoCut/agent/_scratch",
+  "finishedAtMs": 1790784779380,
+  "pid": 75514,
+  "startedAtMs": 1790783699229,
+  "taskId": "t-muoadlp9"
+}

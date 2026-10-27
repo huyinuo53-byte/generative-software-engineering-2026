@@ -1,0 +1,100 @@
+{
+  "run_id": "lecture-04-20261008-editorial-scale",
+  "scope_revision": 2,
+  "scope": "Existing notes editorial integration, semantic emphasis and reading UI; no new transcription or source acquisition",
+  "outcome": "completed",
+  "summary": "19 sections, 35 unchanged figures; prose and supplements integrated, source attribution retained; four viewport widths, interactions and headless print verified.",
+  "previous_review": "revisions/20261008-scale/before/review.json",
+  "validation": {
+    "content_preservation": {
+      "status": "passed",
+      "evidence": "revisions/20261008-scale/preservation.json"
+    },
+    "layout_structure": {
+      "status": "passed",
+      "evidence": "revisions/20261008-scale/layout-validation.json"
+    },
+    "desktop": {
+      "status": "passed",
+      "evidence": "revisions/20261008-scale/browser.json"
+    },
+    "tablet": {
+      "status": "passed",
+      "evidence": "revisions/20261008-scale/browser.json"
+    },
+    "narrow": {
+      "status": "passed",
+      "evidence": "revisions/20261008-scale/browser.json"
+    },
+    "interactions": {
+      "status": "passed",
+      "evidence": "revisions/20261008-scale/browser.json"
+    },
+    "html_print": {
+      "status": "passed",
+      "evidence": "revisions/20261008-scale/print.json"
+    },
+    "semantic_layout": {
+      "status": "passed",
+      "evidence": [
+        "revisions/20261008-scale/layout-review.json",
+        "../revisions/20261008-scale/independent-layout-review.json"
+      ]
+    },
+    "visual_samples": {
+      "status": "passed",
+      "evidence": "../revisions/20261008-scale/visual-review.json"
+    },
+    "print_visual_samples": {
+      "status": "passed",
+      "evidence": "../revisions/20261008-scale/print-visual-review.json",
+      "scope": "Only final PDF page of this note viewed; full text and image count checked programmatically"
+    },
+    "real_phone": {
+      "status": "not_requested",
+      "evidence": "Not repeated in this editorial-only revision; prior evidence retained in before/review.json"
+    },
+    "native_print_dialog": {
+      "status": "not_requested",
+      "evidence": "Not repeated in this editorial-only revision; prior evidence retained in before/review.json"
+    },
+    "source_rereading": {
+      "status": "not_requested",
+      "evidence": "Not repeated in this editorial-only revision; prior evidence retained in before/review.json"
+    },
+    "full_video_review": {
+      "status": "not_requested",
+      "evidence": "Not repeated in this editorial-only revision; prior evidence retained in before/review.json"
+    },
+    "project_strict": {
+      "status": "not_requested",
+      "evidence": "Not repeated in this editorial-only revision; prior evidence retained in before/review.json"
+    }
+  },
+  "reuse": {
+    "transcript": "Unchanged; prior full reading reused",
+    "source_materials": "Frozen existing sources; no live refresh or new reading claim",
+    "image_pixels": "All bytes verified against prior image audit; previous pixel observations reused"
+  },
+  "source_hashes": {
+    "notes.json": "5023817b0fa063e8ba806226ad39444be5eac4d826b367605496423658d295ee",
+    "reading-layout.json": "a785abb92697e3d0366363fa06a86bf3113e11e8ddd98afb2dfb1cb2372290db",
+    "课堂笔记.html": "0e67d593f33b35aac8e7990afc0d9ee83777c73213dab4ada1e035a38eb865bd",
+    "transcript.json": "b4dbe241056eab779de3231cfbe0fbf3c7c2d6413271f83b3289514347c96e2d",
+    "chunks/index.json": "a7e393677f02a2e869c4bae303dcd276a422bd5f6f44d726236d3d975abcdf79",
+    "image-audit.json": "d4aeb50813f82ce64e53113fed365c8d74fb1b2e939f8bd512face7921f291b5",
+    "revisions/20261008-scale/browser.json": "6cc85cce16af9e2fc12850b8486c68fedd72f27a1623a32948ba1f1c41f587da",
+    "revisions/20261008-scale/print.json": "68d9f9e8f6e0f8ceecdb0029b9e73cfb8a455269ae74afe454ec5ea94b1732cc"
+  },
+  "trace_snapshot": "revisions/20261008-scale/trace.json",
+  "delivered_files": [
+    "课堂笔记.html"
+  ],
+  "finished_at": "2026-10-07T20:00:02.834622+00:00",
+  "blocker": null,
+  "metrics": {
+    "tokens": null,
+    "active_seconds": null,
+    "cost": null
+  }
+}

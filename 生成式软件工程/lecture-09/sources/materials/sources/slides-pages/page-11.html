@@ -1,0 +1,16 @@
+<h1>架构：没有免费的午餐</h1>
+<p>架构是 “受限” 和 “自由” 之间的平衡。</p>
+<h2>“在架构下” 意味着牺牲了什么？</h2>
+<ul>
+<li>操作系统上的进程：<span class="aigc">不能任意控制硬件、访问其他进程的内存</span></li>
+<li>高级语言程序：<span class="aigc">接受语言的表达规则，把部分控制权交给编译器和运行时</span></li>
+<li>LAMP (Linux, Apache, MySQL, PHP)：<span class="aigc">把业务放进 Web 请求、应用逻辑、关系数据库的分工</span></li>
+<li>Event sourcing：<span class="aigc">不能随意覆写状态，变更必须通过记录事件表达</span></li>
+</ul>
+<h2>得到了什么？</h2>
+<ul>
+<li>干净、解耦合、容易理解和维护的代码<span class="aigc">——前提是边界划分与需求吻合</span></li>
+<li>复用框架带来的基础设施工具 (测试、日志……)</li>
+<li><span class="aigc">共同的接口和约定：团队可以分别开发，模块可以替换</span></li>
+<li><span class="aigc">把一类问题交给基础设施统一解决：隔离、优化、恢复，不必每个业务重写一遍</span></li>
+</ul>

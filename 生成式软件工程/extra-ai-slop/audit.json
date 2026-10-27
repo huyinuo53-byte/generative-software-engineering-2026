@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1fKtN6DErG-20261002-complete-notes",
+  "actor": "lecture05-agent-authoring-extra",
+  "independence": "同一作者完整阅读后第二遍将14个来源单元逐项与7节对照，并比较8个选定原帧；非外部独立审稿。",
+  "notes_sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6",
+  "source_hashes": {
+    "transcript.json": "4ccc403e04cc7d201636f7f0ea074e38bcec3889195379d5d207af1424b8e693",
+    "chunks/index.json": "add9ee85575c954925886514d79b3eb6818c4f10bceacc54e6ca9a1b80e1b590",
+    "sources/media-info.json": "eb5e58681e30e32b73d145d8efc75a70a9fc7e36552fd60bc347be2030d06eb5"
+  },
+  "reading": [
+    {
+      "chunk_id": "chunk-0001",
+      "path": "chunks/chunk-0001.json",
+      "sha256": "7cc810ee1e5a536ade02f5f146033da0f1427571a21571e174438680111b85d9",
+      "status": "fully_read",
+      "source_units": 14,
+      "start": 0.15,
+      "end": 168.28
+    }
+  ],
+  "review_scope": {
+    "transcript": "全部14来源单元完整阅读与二次核对",
+    "frames": "17候选全部目视，8选定帧单独再看",
+    "audio_relisten": false,
+    "unoccluded_original_slides_available": false
+  },
+  "issues": [
+    {
+      "issue_id": "QEX-01",
+      "severity": "high",
+      "evidence": "s-g8.0; s-g10.0~4; frames/060.jpg",
+      "risk": "画面将毕业焦虑改写成标准简历建议，旁白未给出且后文批评包装。",
+      "resolution": "正文明确图文分离，未将生成图标题当讲述者主张。",
+      "status": "resolved",
+      "after_sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6"
+    },
+    {
+      "issue_id": "QEX-02",
+      "severity": "high",
+      "evidence": "s-g13.0;frames/090.jpg",
+      "risk": "把对学术裁缝/辅导工厂的怀疑误作已证实事实。",
+      "resolution": "保留为讲述者评价与怀疑，不认定匿名个人造假或购买服务。",
+      "status": "resolved",
+      "after_sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6"
+    },
+    {
+      "issue_id": "QEX-03",
+      "severity": "medium",
+      "evidence": "frames/020.jpg;040.jpg;130.jpg",
+      "risk": "原图重复标题/项目/词组且存在未核验2024日期署记。",
+      "resolution": "记录在图注及补充，不用于课程日期或作者身份。",
+      "status": "resolved",
+      "after_sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6"
+    },
+    {
+      "issue_id": "QEX-04",
+      "severity": "medium",
+      "evidence": "frames/010.jpg–150.jpg",
+      "risk": "数字人及简历覆盖原背景，可能被误当完整未遮挡讲义。",
+      "resolution": "保留完整视频帧作为改编证据，明确无独立原始讲义，不猜被挡部分。",
+      "status": "resolved",
+      "after_sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6"
+    },
+    {
+      "issue_id": "QEX-05",
+      "severity": "medium",
+      "evidence": "标题元数据；全片14条来源",
+      "risk": "凭短片标题臆造制作工具或作者的失败诊断。",
+      "resolution": "不推断模型和流程；画面审核明确为整理者观察，不冒充作者自述。",
+      "status": "resolved",
+      "after_sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6"
+    },
+    {
+      "issue_id": "QEX-06",
+      "severity": "low",
+      "evidence": "s-g5.0~16; s-g13.0;frames/040.jpg;110.jpg",
+      "risk": "ASR“AI戳我上大学”“GitHub论阶”等噪声。",
+      "resolution": "正文按语境及清晰画面写AI替我上大学、GitHub链接；原转写不改。",
+      "status": "resolved",
+      "after_sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6"
+    }
+  ],
+  "content_status": "passed",
+  "semantic_coverage": "保留动机、两种焦虑、简历实例、评价悖论、启蒙与开放建议的完整短片论证；14/14结构覆盖不单独证明语义准确率。"
+}

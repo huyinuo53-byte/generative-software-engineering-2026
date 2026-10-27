@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-19T01:09:05.374304+00:00",
+  "heartbeat_at": "2026-10-19T01:03:35.575Z",
+  "source": "https://space.bilibili.com/202224425/lists/8942017?type=season",
+  "method": "live Chrome extension rendered DOM",
+  "displayed_total": 8,
+  "displayed_update": "10月13日",
+  "video_ids": [
+    "BV1pb8o6yE8f",
+    "BV1CQt365EzW",
+    "BV1kybV6DE47",
+    "BV1Q6en6NEUo",
+    "BV1Nyeq6qEt8",
+    "BV1Rch76WEfQ",
+    "BV1JGap6LE74",
+    "BV11LWw6VEHW"
+  ],
+  "new_ids": [
+    "BV11LWw6VEHW"
+  ],
+  "previous_not_listed": [
+    "BV1fKtN6DErG"
+  ],
+  "preserved_previous": true,
+  "existing_completed_html_hashes_match": true,
+  "browser_cdp_proxy": "disconnected; extension fallback succeeded"
+}

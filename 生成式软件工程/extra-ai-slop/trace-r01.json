@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1fKtN6DErG-20261002-complete-notes",
+  "basis": "observed_build",
+  "captured_at": "2026-10-02T15:37:20.330352+00:00",
+  "root": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop",
+  "spec_sha256": "6fa7a1d8a50419b88a4496b42159c8692b0fec1f23546de22106315a13eb4aeb",
+  "artifacts": [
+    {
+      "id": "audit.json",
+      "path": "audit.json",
+      "depends_on": [
+        "notes.json",
+        "write_audit.py"
+      ],
+      "sha256": "4a2bc897f6dac237d63d7261ec23caa4b2ff0f06eb37ff467d4b2b7782965c3f",
+      "bytes": 3997
+    },
+    {
+      "id": "build_notes.py",
+      "path": "build_notes.py",
+      "depends_on": [],
+      "sha256": "0b17d036c40ea71864c0e4de5c52ab8a739da0a4049934cc3c3ded571670b78b",
+      "bytes": 10779
+    },
+    {
+      "id": "chunks/chunk-0001.json",
+      "path": "chunks/chunk-0001.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "7cc810ee1e5a536ade02f5f146033da0f1427571a21571e174438680111b85d9",
+      "bytes": 4150
+    },
+    {
+      "id": "chunks/index.json",
+      "path": "chunks/index.json",
+      "depends_on": [
+        "transcript.json"
+      ],
+      "sha256": "add9ee85575c954925886514d79b3eb6818c4f10bceacc54e6ca9a1b80e1b590",
+      "bytes": 1677
+    },
+    {
+      "id": "frames/000.jpg",
+      "path": "frames/000.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "8de60f44f4f18a071fa276fdaaa18dda0eb7b10026dd6fa3ba69adf6fbca697f",
+      "bytes": 175208
+    },
+    {
+      "id": "frames/010.jpg",
+      "path": "frames/010.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "6e64fdc713bb9b4c74ef5bb9692dcf328e5e1b05ff6e60bcf4c6e9df0283688a",
+      "bytes": 178494
+    },
+    {
+      "id": "frames/020.jpg",
+      "path": "frames/020.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "6c59d604628ab8f17dadc1eb58326ab2b52995583e9a48dfad3ce1168e5344a6",
+      "bytes": 181631
+    },
+    {
+      "id": "frames/030.jpg",
+      "path": "frames/030.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "81ae3a937ce85dd2302dbe594aba77946c5d0da25eede74009aea3f161f50181",
+      "bytes": 181889
+    },
+    {
+      "id": "frames/040.jpg",
+      "path": "frames/040.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "88f539f4b62965e9faeefbd27584968efac8273af1e9c36dbac958c165b5f137",
+      "bytes": 189781
+    },
+    {
+      "id": "frames/050.jpg",
+      "path": "frames/050.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "dee3e72d21be90fb4635cd2f119cf47f87e26b1f5f0733263574e33e5d702265",
+      "bytes": 190171
+    },
+    {
+      "id": "frames/060.jpg",
+      "path": "frames/060.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "7fef6a6b03422f1d6554a0a21532fd780e0f194874ccf1c0d52dcfd9a117c185",
+      "bytes": 190511
+    },
+    {
+      "id": "frames/070.jpg",
+      "path": "frames/070.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "f1fd913590dff0cac5ba95eff3287a8d73aecc90390f19fcd73a61e0a6b58db4",
+      "bytes": 190420
+    },
+    {
+      "id": "frames/080.jpg",
+      "path": "frames/080.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "46f3ac60399c31f85a4963b9222f8bbf9f7a3f0f0214fa787493346266acedd2",
+      "bytes": 150191
+    },
+    {
+      "id": "frames/090.jpg",
+      "path": "frames/090.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "91be45eccb62c2ac4fe1bc1974a2c45bf4528a15dddb4f8632349eb7df2bd380",
+      "bytes": 150237
+    },
+    {
+      "id": "frames/100.jpg",
+      "path": "frames/100.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "c9d6e825433d8f96231e102254605700d6fff7005cf3c450eb617b7e1c2bcf5c",
+      "bytes": 150568
+    },
+    {
+      "id": "frames/110.jpg",
+      "path": "frames/110.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "98a3be48562326881bfe65d9cdb10482211acfc62b76e606a1f8396e081c4536",
+      "bytes": 179622
+    },
+    {
+      "id": "frames/120.jpg",
+      "path": "frames/120.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "33f67e1b90bcacc63b832a0985d5d30e8c0a65ea5e0222b1e8c81cd025cfa8d8",
+      "bytes": 179573
+    },
+    {
+      "id": "frames/130.jpg",
+      "path": "frames/130.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "af45fdc7ae8238c02edb422ea60e94f44adb9db8af63f5c5affc12b97251827e",
+      "bytes": 201939
+    },
+    {
+      "id": "frames/140.jpg",
+      "path": "frames/140.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "cc29d9a8679a0405aeea37b7fbd673673354ef6797955b1793d291b16351c3f3",
+      "bytes": 159074
+    },
+    {
+      "id": "frames/150.jpg",
+      "path": "frames/150.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "1c596b1e2bb90b2d3e17ae7b73654fb188ba7fc74a5e30cc7745037a26de0332",
+      "bytes": 173347
+    },
+    {
+      "id": "frames/160.jpg",
+      "path": "frames/160.jpg",
+      "depends_on": [
+        "original-media"
+      ],
+      "sha256": "b690279b1f81b1c8711556666561f0b1f37a549431e0ac28416842ca356a7c5e",
+      "bytes": 173274
+    },
+    {
+      "id": "image-audit.json",
+      "path": "image-audit.json",
+      "depends_on": [
+        "notes.json",
+        "write_audit.py"
+      ],
+      "sha256": "ba704fbd9755e135fb252db76ea97d3bbe5f20a68bd534c6c5045310fed3d4ca",
+      "bytes": 11215
+    },
+    {
+      "id": "notes.json",
+      "path": "notes.json",
+      "depends_on": [
+        "chunks/index.json",
+        "build_notes.py",
+        "sources/media-info.json",
+        "frames/010.jpg",
+        "frames/020.jpg",
+        "frames/040.jpg",
+        "frames/060.jpg",
+        "frames/090.jpg",
+        "frames/110.jpg",
+        "frames/130.jpg",
+        "frames/150.jpg"
+      ],
+      "sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6",
+      "bytes": 13838
+    },
+    {
+      "id": "qa/contact-1.jpg",
+      "path": "qa/contact-1.jpg",
+      "depends_on": [],
+      "sha256": "9b2da11ae9ce846cc6663442def830ab303cfee8452c5ac419a9a5c07c97b5ef",
+      "bytes": 518596
+    },
+    {
+      "id": "qa/contact-2.jpg",
+      "path": "qa/contact-2.jpg",
+      "depends_on": [],
+      "sha256": "4b1a1f87e98015dbc95103c1b0f6103a85a7976bf36d11569281d76878d78b66",
+      "bytes": 463301
+    },
+    {
+      "id": "qa/contact-3.jpg",
+      "path": "qa/contact-3.jpg",
+      "depends_on": [],
+      "sha256": "f0f018945aa4dfcea872e0b106f456706f6e3ddc6f51f45068f02bbb9cee3267",
+      "bytes": 413064
+    },
+    {
+      "id": "qa/project-check.json",
+      "path": "qa/project-check.json",
+      "depends_on": [],
+      "sha256": "533a8221fddcc81af478488d9be261926d46809de5230614036cad7f0651387b",
+      "bytes": 560
+    },
+    {
+      "id": "qa/static-check.json",
+      "path": "qa/static-check.json",
+      "depends_on": [
+        "课堂笔记.html",
+        "write_audit.py"
+      ],
+      "sha256": "316698618858741cf099f458d40deabf2d38d7f063c666360aaba25f32f16b3a",
+      "bytes": 370
+    },
+    {
+      "id": "review.json",
+      "path": "review.json",
+      "depends_on": [
+        "notes.json",
+        "课堂笔记.html",
+        "audit.json",
+        "image-audit.json",
+        "qa/static-check.json",
+        "qa/project-check.json"
+      ],
+      "sha256": "ec01d6a41d4980e0582137c240e1d773f7feab3bdf4785b31aa633adca47f23a",
+      "bytes": 2253
+    },
+    {
+      "id": "run.json",
+      "path": "run.json",
+      "depends_on": [],
+      "sha256": "123a860b228cad1bdef2ea8eacdbc60d00e5f81d0873699c5e71bb21d0d3024b",
+      "bytes": 2465
+    },
+    {
+      "id": "sources/media-info.json",
+      "path": "sources/media-info.json",
+      "depends_on": [],
+      "sha256": "eb5e58681e30e32b73d145d8efc75a70a9fc7e36552fd60bc347be2030d06eb5",
+      "bytes": 324
+    },
+    {
+      "id": "sources/media-probe.json",
+      "path": "sources/media-probe.json",
+      "depends_on": [],
+      "sha256": "8717d417f4b2e1f04c5b6f0ad42ac52385458908dff05789490911b107f54589",
+      "bytes": 3618
+    },
+    {
+      "id": "transcript.json",
+      "path": "transcript.json",
+      "depends_on": [],
+      "sha256": "4ccc403e04cc7d201636f7f0ea074e38bcec3889195379d5d207af1424b8e693",
+      "bytes": 154693
+    },
+    {
+      "id": "write_audit.py",
+      "path": "write_audit.py",
+      "depends_on": [],
+      "sha256": "5209e4a084f8f1942b9b3e1615f81f1caf5a8ef83aa1d1d2cb1338ca787f80bb",
+      "bytes": 9071
+    },
+    {
+      "id": "课堂笔记.html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "notes.json",
+        "chunks/index.json",
+        "renderer",
+        "template",
+        "mobile-finalizer",
+        "frames/010.jpg",
+        "frames/020.jpg",
+        "frames/040.jpg",
+        "frames/060.jpg",
+        "frames/090.jpg",
+        "frames/110.jpg",
+        "frames/130.jpg",
+        "frames/150.jpg"
+      ],
+      "sha256": "abb0116d211e8eaf64637819460d6552d8b647d31c84570408d6a1a8d2c89e7f",
+      "bytes": 1948944
+    },
+    {
+      "id": "renderer",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/scripts/course_notes.py",
+      "depends_on": [],
+      "sha256": "64fa8d4f22a38cb2a7ece0258d4a373dd0cb317f424ec6ee33e20f0e79348a03",
+      "bytes": 15389
+    },
+    {
+      "id": "template",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/template.html",
+      "depends_on": [],
+      "sha256": "013380805d26d157881ed446d275d950b7fcc03db0f1eb4cb1879eb30df992a4",
+      "bytes": 1982
+    },
+    {
+      "id": "mobile-finalizer",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/finalize_html.py",
+      "depends_on": [],
+      "sha256": "22cea445ed166e7344d508adcb0eae125b0e6655e5555770bc35a7a6c11af53f",
+      "bytes": 3372
+    },
+    {
+      "id": "original-media",
+      "path": "/Users/yjzhao/Downloads/失败的AI Slop数字永生尝试.mp4",
+      "depends_on": [],
+      "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+      "bytes": 29783462
+    }
+  ],
+  "claim": "File snapshot only; dependencies are declarations, not proof of execution or quality."
+}

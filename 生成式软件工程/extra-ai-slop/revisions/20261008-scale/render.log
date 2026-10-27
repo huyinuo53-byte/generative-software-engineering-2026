@@ -1,0 +1,9 @@
+{
+  "style": "editorial",
+  "output": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/课堂笔记.html",
+  "sections": 7,
+  "images": 8,
+  "coverage_declared": 14,
+  "omitted": 0,
+  "semantic_and_browser_qa": "required by agent"
+}

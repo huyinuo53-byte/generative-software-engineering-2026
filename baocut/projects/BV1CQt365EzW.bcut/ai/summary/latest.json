@@ -1,0 +1,11 @@
+{
+  "bcutWriting": "0.1",
+  "createdAt": "2026-09-29T13:54:00Z",
+  "dir": "ai/summary/v001",
+  "inputFingerprint": "27090:g1.0:g1555.0~44:28xkeuw5wug7j",
+  "instructions": "生成完整、详细、可回查的中文课堂笔记，不要做简短摘要。必须覆盖全片三个官方章节：Prompt (Context) Engineering、使模型遵循指令的技巧、更长程任务的建议。按时间顺序组织，保留关键时间码；区分核心论点、机制解释、课堂演示与案例、可操作方法、风险与限制、结尾社会思考。保留重要专有名词和作者的论证链，去除口头赘词但不要遗漏观点。结尾给出可执行清单与值得质疑或验证的观点。",
+  "kind": "summary",
+  "lang": "zh-Hans",
+  "result": "ai/summary/v001/result.json",
+  "version": 1
+}

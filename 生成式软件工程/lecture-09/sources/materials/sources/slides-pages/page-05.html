@@ -1,0 +1,15 @@
+<h1>API 中断，应该怎么办？</h1>
+<h2>先弄清楚发生了什么</h2>
+<ul>
+<li><span class="aigc">暂时断网、服务限流：保留进度，有限重试。</span></li>
+<li><span class="aigc">输入损坏、权限不足：需要改变条件，原样重试没有用。</span></li>
+<li><span class="aigc">执行结果未知：<strong>没收到结果，不等于没有执行。</strong></span></li>
+</ul>
+<h2>“接着做”会不会变成“再做一遍”？</h2>
+<ul>
+<li><span class="aigc">例如：文件已经移动，但工具结果还没来得及记录，进程就崩了。</span><ul>
+<li><span class="aigc">恢复后先核实实际状态；不能直接重放有副作用的操作。</span></li>
+</ul>
+</li>
+<li><span class="aigc"><a href="https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/">AWS 的重试设计经验</a>：可靠性不只是“失败后再试一次”，还包括“不多做一次”。</span></li>
+</ul>

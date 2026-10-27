@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-07T19:35:38.928439+00:00",
+  "lessons": {
+    "extra-ai-slop": {
+      "notes.json": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6",
+      "课堂笔记.html": "abb0116d211e8eaf64637819460d6552d8b647d31c84570408d6a1a8d2c89e7f",
+      "transcript.json": "4ccc403e04cc7d201636f7f0ea074e38bcec3889195379d5d207af1424b8e693",
+      "chunks/index.json": "add9ee85575c954925886514d79b3eb6818c4f10bceacc54e6ca9a1b80e1b590"
+    },
+    "lecture-01": {
+      "notes.json": "f3d82787541036b7f430c228c18c9d742eb155d0c759841a22da6c0a92ff368c",
+      "课堂笔记.html": "ab033482b3a8d2a70f5a26106638792dc1ad9bb0a0f56a88933a6f9e0a1ab1ff",
+      "transcript.json": "03a43af30f673fee7cd28445031175a8c5924a752eb3e0084d5d90dbb36f889b",
+      "chunks/index.json": "4ce87bd27933fe5cc8cf286d70bdda8a85c21074521089edecb3f69c5ce67bbe"
+    },
+    "lecture-02": {
+      "notes.json": "6d9e5bd7b6a19755898203f4fb10e98dba185e43cd102ad4a40aecf596317558",
+      "课堂笔记.html": "fc4bb4234b9af966e41c5fac789217ad3afbc31b65dc654e3fa55bc33089e0a2",
+      "transcript.json": "ed68f1b8de531a0d0a51287798f26e67cf86aa08a18765107ac6b39b2d84f418",
+      "chunks/index.json": "5722e91d0c71d57f01b67696dd9a48267cf46089c671bd0f67c7793aaa4f7343"
+    },
+    "lecture-03": {
+      "notes.json": "0f3722fcc99ff72b5d56790c3374dfe1cd80c24fdf8dd9a0db6153b9ad4c6cc8",
+      "课堂笔记.html": "83f0e12e75ce32e44088b7960eb52fd705353235a5a7ca9e83e8d003cc9ec3ec",
+      "transcript.json": "c05e8ba684c753d41ba4f67397ca868902d700b077410dffc43294f53a429d54",
+      "chunks/index.json": "a3ef44af54e2ef85dfe52d0c47f3784d31559c4c62f9834aab3eec70bf8e0bf4"
+    },
+    "lecture-04": {
+      "notes.json": "5023817b0fa063e8ba806226ad39444be5eac4d826b367605496423658d295ee",
+      "课堂笔记.html": "8b103e4daacab6a7925c072d9d594606e2a25d33cebef10812921c8ee6d59d66",
+      "transcript.json": "b4dbe241056eab779de3231cfbe0fbf3c7c2d6413271f83b3289514347c96e2d",
+      "chunks/index.json": "a7e393677f02a2e869c4bae303dcd276a422bd5f6f44d726236d3d975abcdf79"
+    },
+    "lecture-05": {
+      "notes.json": "dc8f00c56d59111dae9d0d92843d625cf10b9c63a9fe0523927e62d72e80a658",
+      "课堂笔记.html": "87b8ef114786b34e310ebd00288827716ebeab2f15044f888a8456aad79105f4",
+      "transcript.json": "5ab5641c1152557735a50fa6ea56715c84488f6a5ad2f474e61bc88bf1bfa33c",
+      "chunks/index.json": "c253d81f1480c50d2f623f8bfaf74b1b7adfc273416bc6504eefcb04f2cb494f"
+    },
+    "lecture-06": {
+      "notes.json": "4debf37d2cfbb2a3fc91a1f59fa85946936e4cd863c70ef05cce584a1fd14b43",
+      "课堂笔记.html": "c44c7dc08f5a54e38ef6fb952a0862a49eed1f0805d4d68409d914d33984f25e",
+      "transcript.json": "3307c7c4be10cf564b613a1963757aff0d7b76ab28d4d81a4369c7f767a13026",
+      "chunks/index.json": "265c761a2ca8a855ccf56a0ca3f0ecff125952afb0d800b7c0ef25f3a6d4b5b6"
+    },
+    "lecture-07": {
+      "notes.json": "dc6c3e8b0390646246587a16c904ebe64cc2b40dfe4084c6b3a9c7a0c0749c60",
+      "课堂笔记.html": "bcef494ed0c1d7890c3634865660bc3de198f18904a426030fb7f548a242651c",
+      "transcript.json": "ebd3c6335ba9ce3e8f2df278562d25aec14c59ae787b28f91743785ef955e752",
+      "chunks/index.json": "63150906724b3e42af26ba5847261e4d5f76d968b09b8f2e3176eb39c81545fc"
+    }
+  },
+  "scope": "Existing eight course notes only; no new ASR/source acquisition."
+}

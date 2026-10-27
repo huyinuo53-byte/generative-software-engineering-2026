@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "video_id": "BV144nc6KEA4",
+  "created_at": "2026-10-26T01:21:37.844138+00:00",
+  "supplements": [
+    {
+      "id": "gse09-supp-prd",
+      "title": "从“能生成文件”到“可验收完成”",
+      "material_ids": [
+        "gse09-prd"
+      ],
+      "related_topic": "需求：小循环外围的产品契约",
+      "location": "PRD：完成定义、FR08/10/11/15、NFR 与验收集",
+      "text": "第 6 页内嵌 PRD 把“完成”限定为交付物实际生成且可用、必需工具真实成功、检查通过、没有未完成的必需步骤；“模型说完成了”不满足定义。规格还要求停止后不再派发新工具、恢复能接续真实状态，写入结果未知时先核对再重试。20 分钟、100 次工具、60 次模型调用及 180 次验收运行等数字都是这个样例的产品预算和目标，不是 dsh 已达到的实测指标。整理者建议：每加一个按钮，先写它对应什么状态变化、如何观察成功和失败。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides9.html#6",
+      "suggested_role": "design_boundary",
+      "assets": [],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-retry",
+      "title": "重试要识别同一意图，而不是只比较参数",
+      "material_ids": [
+        "gse09-aws"
+      ],
+      "related_topic": "API 中断与未知执行结果",
+      "location": "AWS：Reducing client complexity；Late arriving requests；Same client request ID, different intent",
+      "text": "AWS 用客户端提供的请求 ID 表示同一个意图，因为两次参数完全相同的创建请求也可能确实想要两台机器。服务端需要把 ID 记录与实际变更原子地处理，重复请求返回语义等价的结果；同 ID 却换了参数应报错，避免悄悄做另一件事。还要定义 ID 保留多久，以处理迟到的重试。迁移到 Agent 工具时，“没有收到响应”只能推出结果未知，不能推出尚未执行；付费、发送、创建资源等动作尤其需要这种协议。本文说明的是接口设计方法，不证明所有现有工具都具备幂等性。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "suggested_role": "mechanism",
+      "assets": [
+        "sources/assets/aws-idempotent-flow.png"
+      ],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-gc",
+      "title": "运行时承包内存管理，也留下调优取舍",
+      "material_ids": [
+        "gse09-gc"
+      ],
+      "related_topic": "架构的受限与自由：托管内存",
+      "location": "Java SE 25：Ergonomics 章",
+      "text": "Java 的运行时能根据行为选择、调整回收策略，但暂停时间、吞吐量和内存占用并不能同时无限改善。官方文档把暂停目标称为提示性目标；为缩短停顿可能增加回收频率，吞吐量和堆大小又会互相牵动。因此“把内存管理交给运行时”意味着不用每次手写释放，并不表示业务没有内存压力、停顿目标必然达成或程序逻辑错误会自动消失。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://docs.oracle.com/en/java/javase/25/gctuning/ergonomics.html",
+      "suggested_role": "limitation",
+      "assets": [],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-lamp",
+      "title": "长连接改变的是容量与状态假设",
+      "material_ids": [
+        "gse09-php",
+        "gse09-apache"
+      ],
+      "related_topic": "架构假设改变：从表单网站到在线协作",
+      "location": "PHP-FPM：pm/max_children/timeout；Apache mod_proxy_wstunnel",
+      "text": "PHP-FPM 的进程池配置明确限制同时处理的请求数；如果一次请求长期占着工作进程，容量和超时策略就与短请求不同。Apache 官方文档同时说明它可以代理 WebSocket，所以不能把课堂例子简化为“PHP/Apache 天生做不了实时协作”。真正要重新检查的是连接持续多久、谁保存会话状态、断线如何重连，以及工作进程怎样被占用。该模块文档已提示 Apache 2.4.47 起可由 mod_proxy_http 处理升级隧道，旧模块名不应被当作新方案推荐。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://www.php.net/manual/en/install.fpm.configuration.php",
+      "suggested_role": "clarification",
+      "assets": [],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-event",
+      "title": "能回放事件，不代表能重做现实世界",
+      "material_ids": [
+        "gse09-event"
+      ],
+      "related_topic": "Session = list[Event] 与状态投影",
+      "location": "Fowler 2005 draft：External Updates / External Queries / Changes to Processing",
+      "text": "Event Sourcing 把状态变化的事实序列作为重建依据，快照可以加快恢复，但不是另一个独立真相。Fowler 特别讨论外部系统：回放一次“发送邮件”事件不能再发一封邮件，历史查询使用的汇率等结果也不能悄悄换成今天的值；通常需通过 gateway 区分实时执行与回放，并保存重放所需的历史输入。事件处理代码改变后，还要决定怎样解释旧事件。因此日志提供审计和重建的条件，不能自动修复错误输入、错误业务规则或已发生的副作用。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "suggested_role": "limitation",
+      "assets": [],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-mapreduce",
+      "title": "限制计算形式，才换来可调度和可重做",
+      "material_ids": [
+        "gse09-mapreduce"
+      ],
+      "related_topic": "架构案例：MapReduce",
+      "location": "OSDI 2004：§2 Programming Model、§3.3 Fault Tolerance、§4.5 Side-effects",
+      "text": "MapReduce 要求计算能拆成 map 产生中间键值、按 key 汇集、reduce 处理同 key 值的形式。运行时由此知道任务边界，能够分区、调度并重做失败工作。原始实现中 map 中间输出在本地盘上，worker 失效会让已完成的 map 也需重做；reduce 的完成输出已在全局文件系统里，处理不同。原文还明确：该实现的 master 故障会中止本次计算，不能概括成“所有故障都自动恢复”。确定性函数才能获得文中较强的顺序等价保证；用户代码若另写外部文件，其原子性与幂等性仍由应用负责。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean_html/index.html",
+      "suggested_role": "mechanism",
+      "assets": [
+        "sources/assets/mapreduce-figure1.png"
+      ],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-spark",
+      "title": "RDD 缓存是在内存、磁盘和重算间选择",
+      "material_ids": [
+        "gse09-spark"
+      ],
+      "related_topic": "从一轮批处理到迭代计算",
+      "location": "Spark RDD Guide：RDD Persistence / Which Storage Level to Choose? / Removing Data",
+      "text": "Spark 的 persistence 让重复使用的分区被保留，丢失时可以按 lineage 重算；缓存并不是先调用一次就立刻把所有数据算完，实际第一次 action 才触发计算和存储。不同 storage level 决定超出内存时丢弃重算、溢写磁盘、序列化还是复制副本。迭代任务的便利来自把可复用的数据及依赖关系交给框架；它并不承诺全部数据永驻内存，也不是取消内存、I/O 和 CPU 的取舍。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://spark.apache.org/docs/latest/rdd-programming-guide.html#rdd-persistence",
+      "suggested_role": "mechanism",
+      "assets": [],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-flink",
+      "title": "流处理需要时间语义，也需要可恢复输入",
+      "material_ids": [
+        "gse09-flink-time",
+        "gse09-flink-state"
+      ],
+      "related_topic": "从批处理到持续到来的事件",
+      "location": "Flink 2.3 概念页：Event Time / Watermarks；Checkpointing",
+      "text": "Processing time 依据机器处理时刻，简单且延迟低，却可能因网络和重放顺序变化而得到不同窗口结果。Event time 使用事件自带时间戳，watermark 表示系统认为某时间之前的数据已大体到齐，仍需给迟到事件定义处理策略；多个输入通常受最慢 watermark 牵制。状态恢复还需要一起保存算子状态与输入位置，再从可回放的数据源重放。checkpoint 默认并未自动开启，且“内部状态 exactly-once”不能直接推出外部扣款、邮件或任意工具调用只发生一次。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/time/",
+      "suggested_role": "mechanism",
+      "assets": [
+        "sources/assets/flink-watermark-white.png",
+        "sources/assets/flink-checkpoint-white.png"
+      ],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-agent",
+      "title": "followup、steer、inject 是三个调度承诺",
+      "material_ids": [
+        "gse09-dsh-core"
+      ],
+      "related_topic": "向 Agent 提交输入",
+      "location": "锁定 687f282：docs/subsystems/core.md 行 53–198、308–352",
+      "text": "在这一固定版本的核心文档中，followup 排队普通用户输入并唤醒 Agent，通常形成后续 turn；steer 尽早进入下一个可接纳的 step，也会唤醒；inject 则为后续 pre-step 补上下文，本身不唤醒。已经被当前 step 领取的批次不会被追溯改写，取消或销毁还可能丢弃未处理输入。因此“尽快引导”不等于回滚正在发生的模型请求或工具副作用，whenIdle 也不是某一条输入独有的完成回执。这是固定文档的接口解释，未运行验证，也未确认正是录制当天 checkout。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/core.md",
+      "suggested_role": "mechanism",
+      "assets": [],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-session",
+      "title": "提交事件、投影上下文与落盘是不同阶段",
+      "material_ids": [
+        "gse09-dsh-session",
+        "gse09-dsh-system-prompt"
+      ],
+      "related_topic": "Session、投影与动态上下文",
+      "location": "锁定 687f282：session.md 行 446–676、731–804、1297–1321；system-prompt.md",
+      "text": "固定版本文档把 Session 追加定义为有顺序、不可变且可 JSON 序列化的事实提交；已提交后的观察者故障会被隔离。这里的 commit 首先发生在内存日志，持久化是异步的；若调用者需要等待磁盘持久化，应显式 flush。另一个区别是事件不等于全部模型消息：turn/step 边界、失败尝试等结构事件不一定送进模型，deriveMessages 只是一个投影。动态上下文 provider 在组装或刷新相应边界求值；注册一个 provider 并不意味着任意时刻都能修改已经发出的请求。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/session.md",
+      "suggested_role": "mechanism",
+      "assets": [],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-cordis",
+      "title": "生命周期能回收注册项，不能撤销所有现实副作用",
+      "material_ids": [
+        "gse09-dsh-cordis",
+        "gse09-dsh-architecture"
+      ],
+      "related_topic": "微内核、插件与 Hooks",
+      "location": "锁定 687f282：cordis-primer.md；architecture.md",
+      "text": "Cordis 以 context、service key 和依赖声明组织插件，插件可以登记可释放的 effect/listener，使服务依赖满足或卸载时有明确的激活和清理边界。middleware 的 next() 表示继续把控制权交给后续参与者；不调用它可以短路，所以空包装若只是 await next()，本身并没有改变决策。要区分 hook 参与尚未执行的决策与 session/event 观察已提交事实。生命周期清理可撤掉监听器、注册服务等资源，但不会自动撤销已写文件或已发送消息，也不等同于 OS 安全沙箱。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/cordis-primer.md",
+      "suggested_role": "mechanism",
+      "assets": [],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-bot",
+      "title": "快速拼插件的成功，也有明确的状态边界",
+      "material_ids": [
+        "gse09-bot"
+      ],
+      "related_topic": "插件生态：dsh-bot 案例",
+      "location": "dsh-bot README，3acc759（2026-10-02）",
+      "text": "这个固定 README 展示 persona、长期记忆、多人群聊、@ 排队和定时活动如何围绕插件接入，但同时列出边界：persona 编辑只对新会话生效，群聊等待队列只在内存中，重启会丢失；它依赖 dsh-session-tool，官方 GUI 自建会话不由它管理。README 的目标版本是 DeepSeek Shell v0.2.0-rc.1。本次只读取文档，没有运行项目，不能把这些描述升级为当前 Harness 上已验收的兼容性或稳定性。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://raw.githubusercontent.com/Nothing1024/dsh-bot/3acc759fc634d5d5c55792614b6bca03c630a345/README.md",
+      "suggested_role": "limitation",
+      "assets": [],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-complexity",
+      "title": "“没有银弹”约束的是总工作量，不否认局部加速",
+      "material_ids": [
+        "gse09-brooks"
+      ],
+      "related_topic": "复习：essential 与 accidental complexity",
+      "location": "Brooks 1986，PDF 物理页 1–5",
+      "text": "Brooks 把复杂性、一致性要求、持续变化和不可见性列为软件的本质困难；语言和工具主要先降低表达与实现中的附带工作。如果附带工作并未占到总工作量九成，只把它全部消除也不足以让总工作量下降一个数量级。这是对整体基线构成的判断，不能改写成“任何编码任务都不可能快十倍”，更不能直接证明 AI 永远不能改变需求理解或设计工作。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf",
+      "suggested_role": "clarification",
+      "assets": [],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-reorg",
+      "title": "新技术的回报，常要等任务重新分配",
+      "material_ids": [
+        "gse09-david"
+      ],
+      "related_topic": "架构假设变化与 AI 产业加速",
+      "location": "David 1990，物理页 2–4（印刷页 356–358）",
+      "text": "工厂电气化的历史例子并非仅把蒸汽机替换成电机：从集中传动改为单机驱动后，机器布局、厂房层数、维护停机和物料流都能重排，收益需要互补组织变化才能释放。旧设备尚未折旧、经验积累和重新设计成本会延缓转换。迁移到软件工程时，这提示我们同时检查任务分工、接口和验证方式；它是理解机制的历史类比，不是 AI 何时提高生产率的预测公式。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://gwern.net/doc/economics/automation/1990-david.pdf",
+      "suggested_role": "interpretation",
+      "assets": [],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-qje",
+      "title": "15% 是特定客服工作的指标，不是通用工程效率",
+      "material_ids": [
+        "gse09-qje"
+      ],
+      "related_topic": "当前讲义补充：AI 生产率研究",
+      "location": "QJE 2025：Abstract、IV.B、V.A Table II 与 Conclusion 开头",
+      "text": "研究覆盖一家企业的 5,172 名客服人员、约 300 万次聊天，工具给人工客服提供建议，并非自主 Agent。偏好的固定效应规格显示每小时解决问题数约提高 15.2%，收益随经验和原有表现差异很大，弱经验人员改善更多，表现最强者部分质量指标可能下降。论文使用分批采用的观测设计及相应控制，不能当作全行业随机试验，也不能把该数值直接乘到软件工程、就业、工资或长期组织收益上。这里只阅读核对该课堂例证所需章节，不声称整篇论文全文。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+      "suggested_role": "result_boundary",
+      "assets": [],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-toolkits",
+      "title": "Creator Mode 需要可试错的工具箱",
+      "material_ids": [
+        "gse09-toolkits"
+      ],
+      "related_topic": "把试错留在用户现场",
+      "location": "von Hippel 作者 PDF，物理页 5–21，尤其第 12 页五项条件",
+      "text": "用户工具箱不只是一处输入框。von Hippel 讨论的五个条件包括：能在工具内跑完试错循环、覆盖合适的设计解空间、使用用户熟悉的语言与技能、提供可组合模块，以及把结果可靠翻译为实际生产方案。有时制造商还得重新划分任务，让用户能掌握的局部设计与生产约束相吻合。对本课 Creator Mode 的启发是，让用户就地观察、修改和检验，比不断远程解释“我想要什么”更有效；但仍需一个有边界且可落地的解空间，不能把无限制生成本身当作工具箱已成立。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://web.mit.edu/people/evhippel/papers/Toolkits%20JPIM%20final.pdf",
+      "suggested_role": "mechanism",
+      "assets": [
+        "sources/toolkits-p12.png"
+      ],
+      "classroom_time": null
+    },
+    {
+      "id": "gse09-supp-direct",
+      "title": "GenUI 还需要对象可见、反馈及时与可逆性",
+      "material_ids": [
+        "gse09-direct",
+        "gse09-vba"
+      ],
+      "related_topic": "大型 App AI 增强与双向 GenUI",
+      "location": "Shneiderman 1983，物理页 6–10，特别第 8 页；VBA Programming 101 至 Properties",
+      "text": "直接操纵的原文四项特征是持续可见的对象表示、用动作或有标签按钮取代复杂语法、快速增量且可逆的操作及立即可见的效果，以及循序掌握的学习层次。一个 HTML 卡片即使能把点击送回上下文，也不自动满足这些要求：还要让用户看清当前对象、动作会改什么、失败怎样保留状态，并允许逐步修正。作者也提醒图形可能产生误解、拥挤或错误类比。成熟应用的 VBA 对象/方法/属性接口说明，可复用的能力早已存在；AI 接入仍需把意图映射到可观察、可检查的对象操作。",
+      "source_label": "原始材料补充，非课堂口述；各条注明版本与范围",
+      "source_url": "https://www.cs.umd.edu/~ben/papers/Shneiderman1983Direct.pdf",
+      "suggested_role": "design_boundary",
+      "assets": [
+        "sources/direct-manipulation-p08.png"
+      ],
+      "classroom_time": null
+    }
+  ]
+}

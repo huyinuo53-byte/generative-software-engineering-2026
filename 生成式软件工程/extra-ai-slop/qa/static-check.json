@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "html_sha256": "abb0116d211e8eaf64637819460d6552d8b647d31c84570408d6a1a8d2c89e7f",
+  "duplicate_ids": 0,
+  "broken_local_anchors": [],
+  "inline_images": 8,
+  "external_images": [],
+  "renderer_coverage": "14/14 source ids, 8 video frames within intervals",
+  "finalizer_applied": true,
+  "ui_scope": "browser interaction pending coordinator"
+}

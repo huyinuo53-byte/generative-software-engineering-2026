@@ -1,0 +1,215 @@
+
+
+   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      Ergonomics
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+   
+      
+
+         Previous
+         Next
+          JavaScript must be enabled to correctly display this content
+        
+      
+      
+         
+         
+         
+2 Ergonomics
+         
+         
+
+            
+
+               
+Ergonomics is the process by which the Java Virtual Machine (JVM) and garbage collection heuristics, such as behavior-based heuristics, improve application performance.
+               
+               
+The JVM provides platform-dependent default selections for the garbage collector, heap size, and runtime compiler. These selections match the needs of different types of applications while requiring less command-line tuning. In addition, behavior-based tuning dynamically optimizes the sizes of the heap to meet a specified behavior of the application. 
+               
+This section describes these default selections and behavior-based tuning. Use these defaults before using the more detailed controls described in subsequent sections.
+               
+
+                  
+Topics
+                  
+                     
+Garbage Collector, Heap, and Runtime Compiler Default Selections
+                     
+Behavior-Based Tuning
+                           
+Maximum Pause-Time Goal
+                           
+Throughput Goal
+                           
+Footprint
+                        
+                     
+                     
+Tuning Strategy
+                  
+               
+            
+            
+
+Garbage Collector, Heap, and Runtime Compiler Default Selections
+               
+
+                  
+These are important garbage collector, heap size, and runtime compiler default selections: 
+                  
+
+                     
+                        
+
+                           
+Garbage-First (G1) Collector on server-class machines, Serial Collector
+                        otherwise.
+                        
+                        
+
+                           
+The maximum number of GC threads is limited by heap size and available CPU resources 
+                        
+                        
+
+                           
+Initial heap size of 1/64 of physical memory 
+                        
+                        
+
+                           
+Maximum heap size of 1/4 of physical memory 
+                        
+                        
+
+                           
+Tiered compiler, using both C1 and C2 
+                        
+                     
+                     
+                     
+
+                        
+Note:
+                        
+                        
+The VM considers machines as server-class if the VM detects two or more processors and physical memory larger than or equal to 1792 MB.
+                        
+                     
+                  
+               
+            
+            
+
+Behavior-Based Tuning
+               
+
+                  
+The Java HotSpot VM garbage collectors can be configured to preferentially meet one of two goals: maximum pause-time and application throughput. If the preferred goal is met, the collectors will try to maximize the other. Naturally, these goals can't always be met: Applications require a minimum heap to hold at least all of the live data, and other configuration might preclude reaching some or all of the desired goals.
+               
+               
+
+Maximum Pause-Time Goal
+                  
+
+                     
+The pause time is the duration during which the garbage collector stops the application and recovers space that's no longer in use. The intent of the maximum pause-time goal is to limit the longest of these pauses.
+                     
+                     
+An average time for pauses and a variance on that average is maintained by the garbage collector. The average is taken from the start of the execution, but it's weighted so that more recent pauses count more heavily. If the average plus the variance of the pause-time is greater than the maximum pause-time goal, then the garbage collector considers that the goal isn't being met.
+                     
+The maximum pause-time goal is specified with the command-line option -XX:MaxGCPauseMillis=<nnn>. This is interpreted as a hint to the garbage collector that a pause-time of <nnn> milliseconds or fewer is desired. The garbage collector adjusts the Java heap size and other parameters related to garbage collection in an attempt to keep garbage collection pauses shorter than <nnn> milliseconds. The default for the maximum pause-time goal varies by collector. These adjustments may cause garbage collection to occur more frequently, reducing the overall throughput of the application. In some cases, though, the desired pause-time goal can't be met.
+                     
+                  
+               
+               
+
+Throughput Goal
+                  
+
+                     
+The throughput goal is measured in terms of the time spent collecting
+        garbage, and the time spent outside of garbage collection is the application
+        time.
+                     
+                     
+The goal is specified by the command-line option -XX:GCTimeRatio=nnn. The ratio of garbage collection time to application time is 1/ (1+nnn). For example, -XX:GCTimeRatio=19 sets a goal of 1/20th or 5% of the total time for garbage collection.
+                     
+                     
+The time spent in garbage collection is the total time for all garbage collection induced pauses. If the throughput goal isn't being met, then one possible action for the garbage collector is to increase the size of the heap so that the time spent in the application between collection pauses can be longer.
+                  
+               
+               
+
+Footprint
+                  
+
+                     
+If the throughput and maximum pause-time goals have been met, then the garbage collector reduces the size of the heap until one of the goals (invariably the throughput goal) can't be met. The minimum and maximum heap sizes that the garbage collector can use can be set using -Xms=<nnn> and -Xmx=<mmm> for minimum and maximum heap size respectively.
+                     
+                  
+               
+            
+            
+
+Tuning Strategy
+               
+
+                  
+The heap grows or shrinks to a size that supports the chosen throughput goal. Learn about heap tuning strategies such as choosing a maximum heap size, and choosing maximum pause-time goal.
+                  
+Don't choose a maximum value for the heap unless you know that you need a heap greater than the default maximum heap size. Choose a throughput goal that's sufficient for your application.
+                  
+A change in the application's behavior can cause the heap to grow or shrink. For example, if the application starts allocating at a higher rate, then the heap grows to maintain the same throughput.
+                  
+If the heap grows to its maximum size and the throughput goal isn't being met, then the maximum heap size is too small for the throughput goal. Set the maximum heap size to a value that's close to the total physical memory on the platform, but doesn't cause swapping of the application. Execute the application again. If the throughput goal still isn't met, then the goal for the application time is too high for the available memory on the platform.
+                  
+If the throughput goal can be met, but pauses are too long, then select a maximum pause-time goal. Choosing a maximum pause-time goal may mean that your throughput goal won't be met, so choose values that are an acceptable compromise for the application.
+                  
+It's typical that the size of the heap oscillates as the garbage collector tries to satisfy competing goals. This is true even if the application has reached a steady state. The pressure to achieve a throughput goal (which may require a larger heap) competes with the goals for a maximum pause-time and a minimum footprint (which both may require a small heap).
+               
+            
+         
+      
+   

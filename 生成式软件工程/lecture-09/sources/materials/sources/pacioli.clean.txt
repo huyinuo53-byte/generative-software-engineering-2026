@@ -1,0 +1,17 @@
+Under the Tuscan Sum: · Keeping the Books: The Rubinstein Collection of the Orsetti Family Business Archive · KU Libraries Exhibits
+The University of KansasKU
+Under the Tuscan Sum:
+The Italian double-entry accounting system
+The Orsetti family of merchants used the accepted practices of their time to record their business and personal expenses and revenues. In 1494, Luca Pacioli, a Franciscan friar and mathematician, published his description of the Venetian double-entry accounting system, the treatise “About Accounts and Other Writings,” in Summa de arithmetica, geometria, proportioni et proportionalita. Pacioli’s work was translated into many languages, so that the style of bookkeeping became standard practice across Europe. In many ways, his descriptions of double-entry accounting are still used today.
+Using three main books, the accounting activities should follow a specific order: 1) write down all transactions in detail in a memorandum or “waste” book, 2) rewrite the transactions in a more orderly fashion in the journal, 3) copy each journal entry in the ledger in two different places, with each entry arranged in two columns, with debits on the left and credits on the right, 4) cancel or strike-through the transaction in the journal, and 5) list debtors and creditors in an index.
+Journal
+Journal entry detailing wheat transactions with Giovanni Domenico Biancalana, son of the late Mariano Biancalana of Carraia, Tuscany (indicated by the red arrow in the image). The numbers in the left margin allow the merchant to locate the debit entry and credit postings in the corresponding ledger H opposite, on pages 150 and 208 respectively. For every entry in the journal there will be two postings in the ledger, according to this system. Pacioli instructs that once the entry is double-entered into the ledger it should be marked through in the journal with a diagonal slash across the text, but that hasn’t been done here.
+Altopasso. Giornale H. 1725-1737.MS E164.
+________________________________________________________________________
+Ledger Ledger H for the Altopascio estate opened to the credit posting for a grain transaction with the Biancalana family of Carraia, Tuscany. The entry for wheat that appears in the journal is marked here with a red arrow.
+Altopasso. Libro Maestro H. 1725-1754.MS J15:6.
+________________________________________________________________________
+IndexPacioli notes that the ledger should be accompanied by a trovorello, or finding key, in which debtors and creditors are listed alphabetically with accompanying ledger page numbers. The index that accompanies Ledger H is not part of the Rubinstein Collection, so a comparable index is included here as an example.
+Altopasso. Index to Libro Maestro F. 1700-1711.MS J15:4c.
+← Taking Care of Business:
+Taking Account: →

@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "reviewer": "root",
+  "html_sha256": "48a1278dbae1d157bd35ec4a077a3079667a6266ad110198fa8c2dbf251377d9",
+  "journey_sha256": "a5d413dc460d95705dc75e0398d0031a663f4346feca5b961f103b7f212f0430",
+  "screenshots_viewed": [
+    {
+      "path": "1280-top.png",
+      "sha256": "6996f712873b2e7456d4c559e120c1ba203c35e56f048e3a4c7980fb9d64c204"
+    },
+    {
+      "path": "390-bilingual.png",
+      "sha256": "33f083f6356178664c9833bbe94b14e3c29157d127c340152c8c12c28c1f24da"
+    },
+    {
+      "path": "390-native-pan.png",
+      "sha256": "2c9816d54bada97cb9b3d7a3408904be689fe851636a242783a9d6380ef5c7dd"
+    },
+    {
+      "path": "320-fit.png",
+      "sha256": "98aa817f64104af8b0f0263cc87cec70b9f50bfde1c7d9b31f05dd62bc0fade2"
+    },
+    {
+      "path": "390-quiz.png",
+      "sha256": "eac484c80e175cea561b411f507c804d833801881d8ab7eedfa536a0d7ae5073"
+    },
+    {
+      "path": "390-repo.png",
+      "sha256": "8909e059aad990b72716d0ed89609b3907c6eac133bddd3914a84373971a21cb"
+    },
+    {
+      "path": "320-top.png",
+      "sha256": "02e3c52536cbd194def27931d0f178b436b547790c78f6c0fd5e5088fd1f2bf3"
+    },
+    {
+      "path": "1280-bilingual.png",
+      "sha256": "ad4fc674af7b1f4286d1918cd52410ca5a2f57765b6879a17966ea9fd9b83f3e"
+    }
+  ],
+  "observations": [
+    "桌面标题和08期号比例正常，目录与正文两栏清晰",
+    "390/320窄屏标题、正文及自测可读，页面无横向溢出",
+    "原尺寸图在独立容器横向平移，关闭和适合屏幕始终可用",
+    "自测问题与展开答案颜色及层次区分，回查链接可用",
+    "仓库补充保留段落空行和当前版本标签；源码文件名按窄屏折行"
+  ],
+  "scope": "8代表截图实际目视+3视口读者路径；不是每一屏逐页目视，不是真实手机或原生打印。"
+}

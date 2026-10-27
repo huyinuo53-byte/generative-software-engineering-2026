@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1pb8o6yE8f-20261002-complete-notes",
+  "actor": "lecture05-agent-authoring-01",
+  "independence": "作者在全文阅读后进行第二遍重点事实回查；协调者将另行独立复核，不把本文件说成外部审稿。",
+  "notes_sha256": "d5355bbf3579597e0cee882bc13cf0390b77de488271ac555a144c7fc6615b87",
+  "source_hashes": {
+    "transcript.json": "03a43af30f673fee7cd28445031175a8c5924a752eb3e0084d5d90dbb36f889b",
+    "chunks/index.json": "4ce87bd27933fe5cc8cf286d70bdda8a85c21074521089edecb3f69c5ce67bbe",
+    "sources/slides1.html": "1e076988a10af24f9bb0234ad91ace624ce6b8a877ca3e57d98c23f853ea88b5",
+    "sources/lect1.html": "9762564834577d54143c628a2e36a90418ae058c86cdea65a43d15484690a3aa"
+  },
+  "reading": [
+    {
+      "chunk_id": "chunk-0001",
+      "path": "chunks/chunk-0001.json",
+      "start": 0.06,
+      "end": 304.17,
+      "sentences": 53,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "58fb849b76c9c29494960d4fccafda5d591aa4c3e2005ceb375427ce34b681b2"
+    },
+    {
+      "chunk_id": "chunk-0002",
+      "path": "chunks/chunk-0002.json",
+      "start": 304.38,
+      "end": 604.62,
+      "sentences": 35,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "c44d0dadcc667290e751b0572e902ebe96c388ab4c1dfefb0daff806f200f312"
+    },
+    {
+      "chunk_id": "chunk-0003",
+      "path": "chunks/chunk-0003.json",
+      "start": 608.74,
+      "end": 916.09,
+      "sentences": 40,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "b1ba204c6d42c0a70de270cee21a3a4b506e4308d2519dd4d602ee7e21e20ffe"
+    },
+    {
+      "chunk_id": "chunk-0004",
+      "path": "chunks/chunk-0004.json",
+      "start": 916.09,
+      "end": 1223.45,
+      "sentences": 44,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "aaba7ee216f4c8830f8f026d1754704fc2b8e6bdf2dd8ebc22a4fa598ff2708c"
+    },
+    {
+      "chunk_id": "chunk-0005",
+      "path": "chunks/chunk-0005.json",
+      "start": 1224.47,
+      "end": 1538.5,
+      "sentences": 43,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "6e731cdc82478efa1712705e2c8c824600529d65f9cbdeec94a661d5e23ffdc6"
+    },
+    {
+      "chunk_id": "chunk-0006",
+      "path": "chunks/chunk-0006.json",
+      "start": 1538.5,
+      "end": 1839.05,
+      "sentences": 28,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "780da85632ca57e0d7099bb5944fcd2e7a90d55d11f9e5a40285b5604b30a98a"
+    },
+    {
+      "chunk_id": "chunk-0007",
+      "path": "chunks/chunk-0007.json",
+      "start": 1839.5,
+      "end": 2141.07,
+      "sentences": 51,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "78ee7ecbaab82c4576875d7c27490e4129f0582f756fe8bb5103859e51a625cd"
+    },
+    {
+      "chunk_id": "chunk-0008",
+      "path": "chunks/chunk-0008.json",
+      "start": 2141.07,
+      "end": 2441.76,
+      "sentences": 57,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "b10f130c251f74c66fdcad47908dbaeaf317fad9a9306d526664472d929bd024"
+    },
+    {
+      "chunk_id": "chunk-0009",
+      "path": "chunks/chunk-0009.json",
+      "start": 2441.76,
+      "end": 2744.2,
+      "sentences": 41,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "0a348274cf4479b1e1268034900b0dcdf92ef0f68a0a2e90d2c1a8858429d494"
+    },
+    {
+      "chunk_id": "chunk-0010",
+      "path": "chunks/chunk-0010.json",
+      "start": 2744.2,
+      "end": 3044.85,
+      "sentences": 47,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "8061b0a5890be89addede10e7c71f32b506cfd16c3bd0d5fca4df451b3b0ad3c"
+    },
+    {
+      "chunk_id": "chunk-0011",
+      "path": "chunks/chunk-0011.json",
+      "start": 3045.2,
+      "end": 3346.39,
+      "sentences": 55,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "02f71de39de19fbb30b0caee8f09a4303245275605e2d19ec3c7859f78d16cf4"
+    },
+    {
+      "chunk_id": "chunk-0012",
+      "path": "chunks/chunk-0012.json",
+      "start": 3346.85,
+      "end": 3646.94,
+      "sentences": 44,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "ed3fb6fac8fcd52c47ba1133fefd9b9ee473784fcb2ff9c4e1067a91a419289b"
+    },
+    {
+      "chunk_id": "chunk-0013",
+      "path": "chunks/chunk-0013.json",
+      "start": 3647.69,
+      "end": 3958.39,
+      "sentences": 48,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "a1cbee1c23f659fd997b827b0147ee2b81144548143318aed4b5a0e1361a785e"
+    },
+    {
+      "chunk_id": "chunk-0014",
+      "path": "chunks/chunk-0014.json",
+      "start": 3958.39,
+      "end": 4258.67,
+      "sentences": 35,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "cb6f707f1658cbf1d04a2857520201e0a33c4aa7f942e342971a4b97c35897ea"
+    },
+    {
+      "chunk_id": "chunk-0015",
+      "path": "chunks/chunk-0015.json",
+      "start": 4259.47,
+      "end": 4575.49,
+      "sentences": 29,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "c18ba08753c7e34ec1320372c93318681c58f9ad2e455afaeab78d93543b91b8"
+    },
+    {
+      "chunk_id": "chunk-0016",
+      "path": "chunks/chunk-0016.json",
+      "start": 4575.49,
+      "end": 4879.94,
+      "sentences": 24,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "8da05c5d93755d4c1a2226e2f332ecb99c3f0b0f21765939c07725837f32773b"
+    },
+    {
+      "chunk_id": "chunk-0017",
+      "path": "chunks/chunk-0017.json",
+      "start": 4880.49,
+      "end": 5179.53,
+      "sentences": 42,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "3f6176805a03c02cddd17d65e17b98cf19f1ea8e401e341d08edd2fb0439e1c6"
+    },
+    {
+      "chunk_id": "chunk-0018",
+      "path": "chunks/chunk-0018.json",
+      "start": 5181.61,
+      "end": 5494.86,
+      "sentences": 43,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "16df53bcf9ebb1b2a677ddb1aee825ed55e0af8e35a6bdda6080194d325d2ec2"
+    },
+    {
+      "chunk_id": "chunk-0019",
+      "path": "chunks/chunk-0019.json",
+      "start": 5494.86,
+      "end": 5803.93,
+      "sentences": 38,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "5152b7b32a7185363db2b0b2c084172e7680574b8719a4d2728867491438712f"
+    },
+    {
+      "chunk_id": "chunk-0020",
+      "path": "chunks/chunk-0020.json",
+      "start": 5803.97,
+      "end": 5997.94,
+      "sentences": 24,
+      "status": "fully_read",
+      "method": "逐块全文读取；并在作者复核中定点回读关键结论",
+      "sha256": "1c969475e38e70820e9c1a6eca22961aba5cac1289e5bc386b22b63e9b3cdef8"
+    }
+  ],
+  "review_scope": {
+    "transcript": "全部20块821条，0.06–5997.94秒",
+    "official_slides": "44/44页文本和像素；43页入选，第13页公式缺损排除",
+    "official_lecture": "lect1.md返回的完整HTML正文",
+    "video_frames": [
+      1860,
+      2675,
+      3500,
+      4260,
+      4310,
+      4960
+    ],
+    "audio_relisten": [],
+    "cited_books_full_read": false,
+    "cited_papers_full_read": false
+  },
+  "issues": [
+    {
+      "issue_id": "Q01-01",
+      "severity": "high",
+      "evidence": "s-g126.0@1045.09;s-g127.0@1055.73",
+      "risk": "讲義写不评分，口述说明教务未必允许通过/不通过。",
+      "resolution": "正文区分教学主张与未确认的正式成绩政策。",
+      "status": "resolved",
+      "verification": "在初稿写作或作者二次回查中对照对应来源，检查当前正文/图注",
+      "after_sha256": "d5355bbf3579597e0cee882bc13cf0390b77de488271ac555a144c7fc6615b87",
+      "category": "source_conflict_or_authoring_risk"
+    },
+    {
+      "issue_id": "Q01-02",
+      "severity": "high",
+      "evidence": "s-g510.0~54@4061.82;s-g513.0@4083.08;s-g514.0@4090.31",
+      "risk": "统分可能被压缩成全自动判分、录入。",
+      "resolution": "保留逐张核对、确定性脚本算术、最终提交前抽查，明确不等于自动判卷。",
+      "status": "resolved",
+      "verification": "在初稿写作或作者二次回查中对照对应来源，检查当前正文/图注",
+      "after_sha256": "d5355bbf3579597e0cee882bc13cf0390b77de488271ac555a144c7fc6615b87",
+      "category": "source_conflict_or_authoring_risk"
+    },
+    {
+      "issue_id": "Q01-03",
+      "severity": "medium",
+      "evidence": "s-g754.0@5888.13;s-g759.0@5906.4;slides39–40",
+      "risk": "当前讲义含详细路线，但讲师明确批评当时AI给出的两个设计。",
+      "resolution": "保留材料，标为AIGC讨论补充，未写成教师已认可标准答案。",
+      "status": "resolved",
+      "verification": "在初稿写作或作者二次回查中对照对应来源，检查当前正文/图注",
+      "after_sha256": "d5355bbf3579597e0cee882bc13cf0390b77de488271ac555a144c7fc6615b87",
+      "category": "source_conflict_or_authoring_risk"
+    },
+    {
+      "issue_id": "Q01-04",
+      "severity": "medium",
+      "evidence": "slides13;frames/slide-13.jpg",
+      "risk": "实际目视发现原源公式显示中断。",
+      "resolution": "剔除最终图，正文标明补全链式分解公式，源截图未篡改。",
+      "status": "resolved",
+      "verification": "在初稿写作或作者二次回查中对照对应来源，检查当前正文/图注",
+      "after_sha256": "d5355bbf3579597e0cee882bc13cf0390b77de488271ac555a144c7fc6615b87",
+      "category": "source_conflict_or_authoring_risk"
+    },
+    {
+      "issue_id": "Q01-05",
+      "severity": "medium",
+      "evidence": "s-g588.1~2@4708.93",
+      "risk": "容易把qrgen失败仅解释为corner cases覆盖不足。",
+      "resolution": "补教师批评：最终通用规格不等于第一步全面扩张，应先做能验证的最简单版本。",
+      "status": "resolved",
+      "verification": "在初稿写作或作者二次回查中对照对应来源，检查当前正文/图注",
+      "after_sha256": "d5355bbf3579597e0cee882bc13cf0390b77de488271ac555a144c7fc6615b87",
+      "category": "source_conflict_or_authoring_risk"
+    },
+    {
+      "issue_id": "Q01-06",
+      "severity": "medium",
+      "evidence": "s-g595.0@4774.38;s-g597.0@4797.92",
+      "risk": "硬编码样例易被说成Base64完全没有实现，忽略动态输入要求。",
+      "resolution": "指出Python预算结果写入Excel导致输入变化时不重算，准确保留失败触发条件。",
+      "status": "resolved",
+      "verification": "在初稿写作或作者二次回查中对照对应来源，检查当前正文/图注",
+      "after_sha256": "d5355bbf3579597e0cee882bc13cf0390b77de488271ac555a144c7fc6615b87",
+      "category": "source_conflict_or_authoring_risk"
+    },
+    {
+      "issue_id": "Q01-07",
+      "severity": "medium",
+      "evidence": "official slides11;SEM口述",
+      "risk": "旧比喻可能被误写成电子成像的字面物理机理。",
+      "resolution": "正文按官方补充保留扫描-探测-映射机制，区分类比与测量三维高度。",
+      "status": "resolved",
+      "verification": "在初稿写作或作者二次回查中对照对应来源，检查当前正文/图注",
+      "after_sha256": "d5355bbf3579597e0cee882bc13cf0390b77de488271ac555a144c7fc6615b87",
+      "category": "source_conflict_or_authoring_risk"
+    },
+    {
+      "issue_id": "Q01-08",
+      "severity": "medium",
+      "evidence": "原视频3500、4260、4310秒",
+      "risk": "看到网页和二维码不证明正式提交或所有帧解码正确。",
+      "resolution": "图注与正文限定为真实显示状态，不声称未实施的验收。",
+      "status": "resolved",
+      "verification": "在初稿写作或作者二次回查中对照对应来源，检查当前正文/图注",
+      "after_sha256": "d5355bbf3579597e0cee882bc13cf0390b77de488271ac555a144c7fc6615b87",
+      "category": "source_conflict_or_authoring_risk"
+    },
+    {
+      "issue_id": "Q01-09",
+      "severity": "medium",
+      "evidence": "原视频2914秒后课堂转写",
+      "risk": "转写完整不证明中间画面无冻结。",
+      "resolution": "单独记录USB/采集恢复插曲，并说明未逐秒测定故障区间。",
+      "status": "resolved",
+      "verification": "在初稿写作或作者二次回查中对照对应来源，检查当前正文/图注",
+      "after_sha256": "d5355bbf3579597e0cee882bc13cf0390b77de488271ac555a144c7fc6615b87",
+      "category": "source_conflict_or_authoring_risk"
+    },
+    {
+      "issue_id": "Q01-10",
+      "severity": "low",
+      "evidence": "slides12、23、29、41",
+      "risk": "连续成功率和垃圾总量算例可能被当产品实测。",
+      "resolution": "明确独立同分布假设或教学假设，拒绝伪造实测含义。",
+      "status": "resolved",
+      "verification": "在初稿写作或作者二次回查中对照对应来源，检查当前正文/图注",
+      "after_sha256": "d5355bbf3579597e0cee882bc13cf0390b77de488271ac555a144c7fc6615b87",
+      "category": "source_conflict_or_authoring_risk"
+    }
+  ],
+  "content_status": "passed",
+  "semantic_coverage": "23节保留课堂全部主线和案例；821/821是来源归属声明，不能单独证明每个语义判断正确。"
+}

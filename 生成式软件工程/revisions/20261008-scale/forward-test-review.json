@@ -1,0 +1,133 @@
+{
+  "reviewer": "independent-subagent/layout_01_02",
+  "review_scope": "完整审读现有 notes 与 reading-layout 的表达、关键词、图注和位置；不重审原始视频、转写或外部资料。",
+  "overall": "passed_with_nonblocking_editorial_suggestions",
+  "fixture_test": {
+    "directory": "/tmp/course-template-forward-test",
+    "results": "/tmp/course-template-forward-test/forward-test-results.json",
+    "initial_render": "passed",
+    "optional_summary_and_selftest_omitted": "passed",
+    "negative_controls": "stale SHA, omitted/duplicate supplement, nonexistent term rejected",
+    "html_special_characters": "preserved as escaped text in static HTML",
+    "browser": "blocked; no runtime/visual pass claimed"
+  },
+  "courses": {
+    "lecture-06": {
+      "notes_sha256": "d01cefc8b02e4dedcb6b77086747eba1bc57e9d6070f8920d518d9db6a915011",
+      "layout_sha256": "b86aa7351bcbfecb61953fff5efe4393a072d375618f6f602ddea20ec0cc20fe",
+      "bound_notes_hash_valid": true,
+      "read_all_sections": 20,
+      "paragraphs": 68,
+      "examples": 1,
+      "editor_notes": 13,
+      "frame_captions": 37,
+      "all_tokens_exactly_once": true,
+      "exact_terms_failures": [],
+      "supplement_adjacency": [
+        {
+          "token": "x0",
+          "display_section": 17,
+          "following_tokens": [
+            "f20:2",
+            "p2",
+            "f1"
+          ]
+        },
+        {
+          "token": "x1",
+          "display_section": 20,
+          "following_tokens": [
+            "f3",
+            "f4"
+          ]
+        }
+      ],
+      "takeaway_faithfulness": "passed; all section takeaways grounded in their prose, examples, notes or displayed supplements",
+      "semantic_placement": "passed",
+      "specific_review": [
+        "第7节保留上限100与业务合理性差异，不把原型成功扩大为全端验证。",
+        "第14节独立验证与符号输入条件紧邻对应讲义，提炼保留两后端同错风险。",
+        "x0 放第17节业务依据后接原第20节第44页；x1 放第20节边界与迁移讨论后接45/46页。x1 所含时间例子也引用44页，当前只显示一次44页符合保真且非关键缺陷。"
+      ]
+    },
+    "lecture-07": {
+      "notes_sha256": "dc6c3e8b0390646246587a16c904ebe64cc2b40dfe4084c6b3a9c7a0c0749c60",
+      "layout_sha256": "1016008f0779a00333a4cdaaafe049330fc8ea0990933d52fe64b47042cd22ab",
+      "bound_notes_hash_valid": true,
+      "read_all_sections": 25,
+      "paragraphs": 92,
+      "examples": 13,
+      "editor_notes": 29,
+      "frame_captions": 46,
+      "all_tokens_exactly_once": true,
+      "exact_terms_failures": [],
+      "supplement_adjacency": [],
+      "takeaway_faithfulness": "passed; all section takeaways grounded in their prose, examples, notes or displayed supplements",
+      "semantic_placement": "passed",
+      "specific_review": [
+        "无全局补充，editor_notes 已分散到对应论点，来源边界仍明确。",
+        "UNIX 两张现场帧保持选择→nano打开相邻，图文与真实演示状态一致。",
+        "React/Vue 保留状态快照与非全部双向的限定；复式记账保留平衡不等于真实。",
+        "第22节架构图、板书、分录表和明细图各自紧邻相应说明；第25节外部副作用与旧规则限制仍在。"
+      ]
+    },
+    "extra-ai-slop": {
+      "notes_sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6",
+      "layout_sha256": "028c84a1b0d6cda72c8bcf3d6f29dcc39524dae17852fcc7ed99cf60ff7d3ff5",
+      "bound_notes_hash_valid": true,
+      "read_all_sections": 7,
+      "paragraphs": 16,
+      "examples": 0,
+      "editor_notes": 1,
+      "frame_captions": 8,
+      "all_tokens_exactly_once": true,
+      "exact_terms_failures": [],
+      "supplement_adjacency": [
+        {
+          "token": "x0",
+          "display_section": 7,
+          "following_tokens": []
+        }
+      ],
+      "takeaway_faithfulness": "passed; all section takeaways grounded in their prose, examples, notes or displayed supplements",
+      "semantic_placement": "passed",
+      "specific_review": [
+        "全部8帧仍留真实时间归属章节，未为补充图文配对跨节挪动视频帧。",
+        "第7节 x0 是全片保留/偏移/来源的复核综合，紧接 p2 已说明这是整理者观察，保留末节合理，不是生硬的课堂/课后分区。",
+        "提炼保留匿名简历评价只是怀疑、图内日期不是课程日期、图像扩写不是旁白事实等边界。"
+      ]
+    }
+  },
+  "blocking_findings": [],
+  "nonblocking_suggestions": [
+    {
+      "course": "lecture-07",
+      "section": 21,
+      "field": "terms",
+      "current": "业务",
+      "suggestion": "先表达这是什么业务",
+      "reason": "单独“业务”较泛，整段的判断动作更值得强调；原文存在这个精确短语。"
+    },
+    {
+      "course": "extra-ai-slop",
+      "section": 2,
+      "field": "terms",
+      "current": "学习",
+      "suggestion": "学习是否真的发生",
+      "reason": "完整短语更突出任务完成与学习证据的区别，减少通用词强调。"
+    },
+    {
+      "course": "extra-ai-slop",
+      "section": 6,
+      "field": "terms",
+      "current": "解释",
+      "suggestion": "不是对所有学生行为的心理诊断",
+      "reason": "强调解释的适用边界比泛词更有助阅读；属可选编辑判断，不影响事实正确性。"
+    }
+  ],
+  "limits": [
+    "未重新打开全部课程图片；基于现有完整图注判断主题对应。",
+    "未重新听审源视频，也不改变既有来源覆盖与原材料阅读缺口。",
+    "浏览器策略拒绝 fixture 本地文件 URL，未绕过；静态检查不代表 UI 验收。"
+  ]
+}

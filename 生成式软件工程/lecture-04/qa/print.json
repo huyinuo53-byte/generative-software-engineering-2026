@@ -1,0 +1,12 @@
+{
+  "html_sha256": "8b103e4daacab6a7925c072d9d594606e2a25d33cebef10812921c8ee6d59d66",
+  "method": "isolated Chrome headless print; all text blocks checked against pdftotext; representative page visual inspection recorded separately",
+  "temporary_pdf": "/tmp/gse-lecture-04-print.pdf",
+  "pdf_sha256": "21516443c1a4201a7c15e13bf82a53108e192991e84afa538b4d3eb22fdfaae3",
+  "text_blocks": 141,
+  "missing_blocks": [],
+  "printed_images": 35,
+  "expected_images": 35,
+  "pdfinfo": "Title:           04｜软件仓库管理（2）：修改、并发与从零开始\nCreator:         Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36\nProducer:        Skia/PDF m154\nCreationDate:    Fri Oct  2 23:39:48 2026 CST\nModDate:         Fri Oct  2 23:39:48 2026 CST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          yes\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           50\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       15252179 bytes\nOptimized:       no\nPDF version:     1.4\n",
+  "status": "passed"
+}

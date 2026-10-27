@@ -1,0 +1,84 @@
+{
+  "status": "ok",
+  "project": "/Users/yjzhao/Library/Application Support/BaoCut/projects/05 软件工程的来龙去脉.bcut",
+  "changed": [],
+  "next": "bcut polish '/Users/yjzhao/Library/Application Support/BaoCut/projects/05 软件工程的来龙去脉.bcut'",
+  "data": {
+    "attention": [],
+    "manifest": {
+      "formatVersion": "0.1",
+      "language": "zh",
+      "media": {
+        "duration": 5999.317375,
+        "fps": 30.0,
+        "hash": "sha256-699cb51a044420fab1086e92e301863a306177f461d98d28f2895168182f2023",
+        "height": 410,
+        "path": "/Users/yjzhao/Downloads/软件工程的来龙去脉 [05-Raw 26生成式软件工程 NJU].mp4",
+        "probeStamp": "293595133:1790836380498",
+        "rotation": 0,
+        "sourceMetadata": {
+          "chapters": [
+            {
+              "end": 1057.0,
+              "start": 0.0,
+              "title": "新闻播报"
+            },
+            {
+              "end": 2341.0,
+              "start": 1057.0,
+              "title": "回到软件开发"
+            },
+            {
+              "end": 4506.0,
+              "start": 2341.0,
+              "title": "从软件危机到软件工程"
+            },
+            {
+              "end": 5999.0,
+              "start": 4506.0,
+              "title": "软件工程给世界带来了什么"
+            }
+          ],
+          "extractor": "BiliBili",
+          "id": "BV1Nyeq6qEt8",
+          "thumbnail": "http://i0.hdslb.com/bfs/archive/c75d365bb65abad0975bb1e8ca11ad5b67b68861.jpg",
+          "title": "软件工程的来龙去脉 [05-Raw/26生成式软件工程/NJU]",
+          "uploadDate": "20260920",
+          "uploader": "绿导师原谅你了",
+          "url": "https://www.bilibili.com/video/BV1Nyeq6qEt8",
+          "viewCount": 16163
+        },
+        "sourceUrl": "https://www.bilibili.com/video/BV1Nyeq6qEt8",
+        "width": 1280
+      },
+      "stages": {
+        "transcribe": {
+          "engine": "moss-transcribe-diarize",
+          "input_fingerprint": "sha256-5ab74265972295c96bd955d08e40a25a992ac6078ae1440a4be39fc9864696cd",
+          "status": "done"
+        }
+      },
+      "title": "软件工程的来龙去脉 [05-Raw/26生成式软件工程/NJU]",
+      "url": "https://www.bilibili.com/video/BV1Nyeq6qEt8"
+    },
+    "stages": {
+      "asr": "fresh",
+      "asrLayout": "fresh",
+      "chapters": "never",
+      "polish": "never",
+      "segment": "never",
+      "translations": {}
+    },
+    "suggestedNext": [
+      "bcut polish '/Users/yjzhao/Library/Application Support/BaoCut/projects/05 软件工程的来龙去脉.bcut'",
+      "bcut translate '/Users/yjzhao/Library/Application Support/BaoCut/projects/05 软件工程的来龙去脉.bcut' --lang zh"
+    ],
+    "transcript": {
+      "chapters": 0,
+      "lang": "zh",
+      "orphanOverrides": [],
+      "speakers": 1,
+      "words": 28059
+    }
+  }
+}

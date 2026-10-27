@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-27",
+  "status": "local_checks_passed_publication_pending",
+  "scope": "Archive packaging and preservation, not new course semantic review",
+  "original_source_files_copied": 9420,
+  "native_projects": 10,
+  "native_project_files": 671,
+  "native_project_bytes": 180574074,
+  "source_videos": 10,
+  "source_video_bytes": 2438871355,
+  "source_video_sha256": "10/10 verified against BaoCut media bindings",
+  "current_notes": {
+    "count": 10,
+    "sections": 225,
+    "images": 472,
+    "source_units": 5087,
+    "original_bytes_preserved": true
+  },
+  "checks": {
+    "independent_review": "archive/independent-review.json",
+    "security": "archive/security-review.json",
+    "copied_index_and_notes_reader": "archive/qa/reader/journey.json",
+    "guide_browser": "archive/qa/guide-browser/audit.json",
+    "index_browser": "archive/qa/index-browser/audit.json",
+    "lecture09_browser": "archive/qa/lecture09-browser/audit.json",
+    "source_copy_manifest": "archive/source-copy-manifest.json"
+  },
+  "visual_review": {
+    "reviewer": "root",
+    "viewed": [
+      "archive/qa/guide-browser/390-top.png",
+      "archive/qa/reader/index-1280.png",
+      "archive/qa/reader/lecture09-390.png"
+    ],
+    "result": "Readable guide, preserved course index, narrow lesson path intact"
+  },
+  "historical_scope_conversion": "One global project inventory scoped to course only; historical hashes kept intact",
+  "not_checked": [
+    "Second-machine native BaoCut restoration",
+    "real phone",
+    "OCR secret scan of course imagery",
+    "new full-course semantic/audio review"
+  ],
+  "remote_status": "private repository created; push and release assets pending"
+}

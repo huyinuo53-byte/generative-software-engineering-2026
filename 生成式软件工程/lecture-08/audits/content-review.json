@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "review_kind": "independent_final_content_review",
+  "reviewer": "lecture08_lab2",
+  "review_date": "2026-10-19",
+  "notes_path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/notes.json",
+  "notes_sha256": "962275c64c913c167cf9ce9bb489a49c168b510ea80ee8701e67033c18fa89cf",
+  "outcome": "passed_for_stated_content_scope",
+  "scope": {
+    "final_notes_fully_read": {"sections": 30, "frame_captions": 69, "supplements": 27, "self_tests": 16, "also_read": ["title", "summary", "limitations", "omitted"]},
+    "transcript_review": {
+      "range_seconds": [0, 5828.762],
+      "source": "/tmp/gse08-asr02.jsonl",
+      "early_review_reused": "/tmp/gse08-content-review-early.json",
+      "early_scope_seconds": [0, 4466],
+      "early_segment_records_read": 1659,
+      "remaining_scope_seconds": [4466, 5828.762],
+      "remaining_segment_records_read": 253,
+      "boundary_note": "尾段第一条4465.577–4469.197与早期审阅重合；没有把两个计数简单相加当去重总量。最后一条5827.492–5828.762为下课。"
+    },
+    "version_handling": "全文首先读取0d307477bd68accbd2a7f5a23b9cb80880ed6642a831e45358f66c9e0475b2db版本；8ce8c220版本仅改v0439图注，已回读并实际开图。最终962275c6版本与已读快照逐字段比较，仅上述图注和section25笔误修正；两处均回读核对。",
+    "visual_checks_this_final_turn": [
+      "visual/full/v0439-3990.jpg：左板书为教师自身architecture/logbook/dashboard；右投影仍为Anthropic/GCC。",
+      "visual/full/v0499-4350.jpg：逐标题配对的16位SHA256记录，不能拿旧style-samples的Git blob文字解释现行算法。",
+      "visual/scan/sample-02431.jpg：4860秒现场Agent六阶段历史报告；新文档义务扩展至全体文档义务。"
+    ],
+    "earlier_reading_reused": "早期已完整读24页官方讲义文字；Humanize v2论文14页全文及6图2表已在材料任务实际阅读/查看，本次重新核对五组相关补充的统计分母和结论边界。",
+    "not_claimed": [
+      "未重新全程听原始音频；课堂核对依赖已有完整ASR、官方讲义及画面证据。",
+      "本轮没有逐图重新打开全部69张，只完整读全部图注并实际复核上述3张。全部图片的视觉验收须引用专门审阅证据。",
+      "未运行研究仓库代码、测试、门禁或skill，未验证远端分支保护实际配置。静态接线不等于执行成功。",
+      "未独立重放现场Agent报告的历史提交；笔记已明确其来源。",
+      "本次不覆盖HTML交互、离线、窄屏排版或打印。",
+      "仓库34文件全文/3文件定点为原材料读者的实际记录；本审阅者只复核下列关键范围，不冒充重复完整仓库阅读。"
+    ]
+  },
+  "primary_source_checks": [
+    {"source": "sources/official-20261019/minions.txt", "scope": "1300周PR的人审/代码口径、隔离devbox、蓝图确定性与Agent阶段、最多两轮CI，图和文字标签差异", "result": "支持，保留作者报告归因"},
+    {"source": "sources/official-20261019/compiler.txt", "scope": "16Agent、约2000会话、token/费用、GCC oracle/subset/delta debugging、16位x86/汇编链接/性能限制", "result": "支持，未夸大为完整替代GCC"},
+    {"source": "sources/official-20261019/ralph.txt", "scope": "每轮一项、搜索优先、反馈压力、错误spec及资深审阅/现有仓库限制", "result": "支持且保留作者观点边界"},
+    {"source": "sources/official-20261019/cd.txt", "scope": "主文完整读取：delivery/deployment区别，生产相似环境与不适合自动部署的边界", "result": "支持"},
+    {"source": "sources/official-20261019/ci.txt", "scope": "clean build/test、频繁集成与每日build不足，测试不证明全对", "result": "支持"},
+    {"source": "sources/official-20261019/github-protection.txt; github-deployments.txt; github-pages.txt", "scope": "管理员默认绕过、success/skipped/neutral、strict/loose/queue；environment不自动并发互斥、cancel-in-progress；部署权限与needs build", "result": "支持，未写成课堂已配置/验收"},
+    {"source": "sources/official-20261019/strongdm.txt; dtu.txt", "scope": "工厂规范与1000美元非客观基准、return true gaming、holdout场景/satisfaction；DTU主文全文读、行为克隆和校准", "result": "支持，未宣称完整语义等价"},
+    {"source": "sources/official-20261019/friendster.txt", "scope": "原作者正文复制/IO/分片和组织限制；不把评论当原作者事实", "result": "支持"},
+    {"source": "sources/official-20261019/webvan-source-excerpts.json", "scope": "设施未现金流盈利，CFC不足70%与distribution不足40%分母分开", "result": "支持，未当单因果证明"},
+    {"source": "sources/official-20261019/web-retrieval.json", "scope": "OpenAI L241–269及306–313：较少阻断门禁非零CI、人判断、长期未知；Quibi管理层信L41–67：idea/timing为管理层归因猜测", "result": "支持"},
+    {"source": "sources/harness-20261019/repository-version.json; HANDOFF.md; parent-correction.json", "scope": "完整读版本/原读者范围/纠正记录；commit687f282e8625c6b8d11ff58211a90524be2e4317，2026-10-17晚于2026-10-13课堂", "result": "版本边界明确"},
+    {"source": "sources/harness-20261019/source-snapshot/docs/i18n/README.md", "scope": "1–85：平权triplet、逐节SHA、排除代码生成块、最小补丁、日常轻量和显式重流程", "result": "支持"},
+    {"source": "sources/harness-20261019/source-snapshot/scripts/translation-pairing-record.ts; docs/i18n/style-samples.md", "scope": "前者144–232实际实现，后者53–72旧Git blob样例", "result": "现行逐节SHA256截取16位与旧样例明确区分"},
+    {"source": "sources/harness-20261019/source-snapshot/scripts/doc-typecheck.ts; verify-md-links.ts; verify-type-equiv.ts", "scope": "定点读忽略率分母/阈值、外链和绝对链接跳过范围、AST公共投影及类型/文字边界", "result": "未夸大检查证明范围"},
+    {"source": "sources/harness-20261019/source-snapshot/scripts/run-gates.ts", "scope": "103–139、359–362、805–883：doc-sync聚合、quick子集、failed/skipped阻断退出码", "result": "静态接线支持，未执行"},
+    {"source": "sources/harness-20261019/source-snapshot/scripts/verify-doc-budgets.ts", "scope": "全文58行：manifest指定文件、空白分隔wc-w计数、list-only与fail区别", "result": "支持，非token预算或全仓库总字数"},
+    {"source": "sources/harness-20261019/source-snapshot/.agents/notes/README.md; AGENTS.md", "scope": "全文：生命周期/类别、why/alternatives、完整triplet、归档冻结非当前权威、implemented事实更新", "result": "支持，未和教师自有dashboard混同"}
+  ],
+  "early_findings_closure": [
+    {"id": "EARLY-01", "status": "closed", "evidence": "第23节包含4389–4464目录整洁代价、IDE语言/契约隐藏和关系投影完整论证。"},
+    {"id": "EARLY-02", "status": "closed_in_notes", "evidence": "3873–4005教师自身项目正文、editor note与3990图注正确；实际图片左右分区核验。", "delivery_dependency": "旧visual/events的错误解释需要带时间码的纠正覆盖记录。主作者报告52事件映射已完成，准备落盘；本审阅者未把未落盘/未读的映射当独立验收。"},
+    {"id": "EARLY-03", "status": "closed", "evidence": "第12节2134.14–2310.1包含2146写NEXT_STEPS和2148续轮，图时在节区间内。"},
+    {"id": "EARLY-A01", "status": "closed", "evidence": "CI/Continuous Delivery/Continuous Deployment补充及自测已区分。"},
+    {"id": "EARLY-A02", "status": "closed", "evidence": "讲义和GitHub/Git hooks补充区分本地hook/远端required checks、queue/并发和故意失败验证；未宣称现场执行通过。"}
+  ],
+  "findings": [
+    {"id": "FINAL-01", "severity": "low", "status": "closed", "json_location": "sections[24].examples[0]", "time_seconds": 4860, "title": "新文档义务误写为文务", "evidence": "visual/scan/sample-02431.jpg实际显示新文档义务→全体文档义务。", "resolution": "最终962275c6版本已改为新文档义务扩展到全体文档义务；逐字段比较后实际回读，未改变现场Agent报告归因。"}
+  ],
+  "open_content_findings": [],
+  "assessment": "在声明的全文审阅范围内通过。未发现尚未关闭的实质事实错误、关键课堂遗漏或来源归因混淆。结论来自全文人工阅读及原始证据复核，不来自结构验证、文件存在或hash匹配。",
+  "remaining_delivery_dependencies": ["视觉覆盖纠正记录落盘并纳入追溯", "专门逐图审阅与来源覆盖验收", "最终HTML桌面/窄屏/交互及离线验收"]
+}

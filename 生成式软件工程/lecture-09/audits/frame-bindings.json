@@ -1,0 +1,312 @@
+[
+  {
+    "candidate_id": "v0009",
+    "section": 1,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0013",
+    "section": 2,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0019",
+    "section": 2,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0029",
+    "section": 3,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0030",
+    "section": 3,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0042",
+    "section": 3,
+    "frame": 3
+  },
+  {
+    "candidate_id": "v0048",
+    "section": 3,
+    "frame": 4
+  },
+  {
+    "candidate_id": "v0068",
+    "section": 3,
+    "frame": 5
+  },
+  {
+    "candidate_id": "v0092",
+    "section": 6,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0098",
+    "section": 6,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0100",
+    "section": 6,
+    "frame": 3
+  },
+  {
+    "candidate_id": "v0107",
+    "section": 6,
+    "frame": 4
+  },
+  {
+    "candidate_id": "v0121",
+    "section": 7,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0142",
+    "section": 9,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0152",
+    "section": 10,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0180",
+    "section": 12,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0184",
+    "section": 12,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0194",
+    "section": 12,
+    "frame": 3
+  },
+  {
+    "candidate_id": "v0198",
+    "section": 12,
+    "frame": 4
+  },
+  {
+    "candidate_id": "v0225",
+    "section": 15,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0230",
+    "section": 15,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0237",
+    "section": 15,
+    "frame": 3
+  },
+  {
+    "candidate_id": "v0250",
+    "section": 16,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0262",
+    "section": 17,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0269",
+    "section": 17,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0274",
+    "section": 17,
+    "frame": 3
+  },
+  {
+    "candidate_id": "v0275",
+    "section": 17,
+    "frame": 4
+  },
+  {
+    "candidate_id": "v0276",
+    "section": 17,
+    "frame": 5
+  },
+  {
+    "candidate_id": "v0284",
+    "section": 17,
+    "frame": 6
+  },
+  {
+    "candidate_id": "v0296",
+    "section": 19,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0324",
+    "section": 21,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0334",
+    "section": 21,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0335",
+    "section": 21,
+    "frame": 3
+  },
+  {
+    "candidate_id": "v0347",
+    "section": 22,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0363",
+    "section": 22,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0386",
+    "section": 22,
+    "frame": 3
+  },
+  {
+    "candidate_id": "v0390",
+    "section": 22,
+    "frame": 4
+  },
+  {
+    "candidate_id": "v0396",
+    "section": 22,
+    "frame": 5
+  },
+  {
+    "candidate_id": "v0421",
+    "section": 24,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0448",
+    "section": 25,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0455",
+    "section": 25,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0457",
+    "section": 25,
+    "frame": 3
+  },
+  {
+    "candidate_id": "v0462",
+    "section": 26,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0467",
+    "section": 26,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0486",
+    "section": 27,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0490",
+    "section": 28,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0504",
+    "section": 28,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0515",
+    "section": 28,
+    "frame": 3
+  },
+  {
+    "candidate_id": "v0521",
+    "section": 28,
+    "frame": 4
+  },
+  {
+    "candidate_id": "v0524",
+    "section": 29,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0539",
+    "section": 29,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0544",
+    "section": 29,
+    "frame": 3
+  },
+  {
+    "candidate_id": "v0551",
+    "section": 29,
+    "frame": 4
+  },
+  {
+    "candidate_id": "v0567",
+    "section": 30,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0573",
+    "section": 30,
+    "frame": 2
+  },
+  {
+    "candidate_id": "v0581",
+    "section": 30,
+    "frame": 3
+  },
+  {
+    "candidate_id": "v0593",
+    "section": 30,
+    "frame": 4
+  },
+  {
+    "candidate_id": "v0604",
+    "section": 30,
+    "frame": 5
+  },
+  {
+    "candidate_id": "v0608",
+    "section": 30,
+    "frame": 6
+  },
+  {
+    "candidate_id": "v0616",
+    "section": 30,
+    "frame": 7
+  },
+  {
+    "candidate_id": "v0622",
+    "section": 31,
+    "frame": 1
+  },
+  {
+    "candidate_id": "v0633",
+    "section": 32,
+    "frame": 1
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "notes_sha256": "f85761ff3e017654e4ceec419479a4e531feb726955bf465b1bb19774a2a9d3c",
+  "materials_sha256": "f8022090ff01853fd1d52094cb3d624812bb09747452d4eebd97aff4e1fca2f1",
+  "materials": 30,
+  "required": 17,
+  "supplements": 17,
+  "method": "材料读者实际读完声明范围，主作者完整回读17补充并按主题整合，独立终审回读全部补充/图注/关键判断。",
+  "boundaries": [
+    "固定仓库不是宣称录制checkout",
+    "背景NASA及FeatureInteraction正文未取得；RDD论文只有摘要，未用于扩写",
+    "QJE仅本课例证声明章节，未声称整篇论文",
+    "现行aigc补注多已在录制中显示，不据class判后补"
+  ],
+  "evidence": [
+    "sources/materials/handoff.md",
+    "audits/content-review.json",
+    "audits/materials-validation.json"
+  ]
+}

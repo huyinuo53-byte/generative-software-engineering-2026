@@ -1,0 +1,2087 @@
+{
+  "notes_sha256": "8ce8c22029acfe3b90ff2ba9c73eb0434f2226f3a4ecc7a45e9f750654f8cc3b",
+  "events": [
+    {
+      "event": "opening",
+      "start": 0,
+      "end": 42,
+      "observed_content": "讲义 Markdown 源码和空终端；课题 Agent Native 开发。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 1,
+          "paragraph": 1,
+          "notes_pointer": "/sections/0/paragraphs/0",
+          "text": "第 08 课把主题推进到 Agent-native 开发：当模型已经能调用工具、改动文件、执行任务，开发者应怎样组织它的工作？教师以自己积累长任务、利用额度重置前的时间运行数学证明等任务开场。这是个人使用情境，不是某个工具能保证证明成功的证据。",
+          "sha256": "4f11013704b604ae0dc059420022a9063afbdcd0f761b001cc864d3be9a057dd"
+        }
+      ],
+      "existing_frames": [],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "lab2-background",
+      "start": 42,
+      "end": 104,
+      "observed_content": "实验(2): Deeper Research 页面；背景内嵌 Master Bot/Morning Paper 应用截图。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 1,
+          "paragraph": 2,
+          "notes_pointer": "/sections/0/paragraphs/1",
+          "text": "第二个实验 Deeper Research 已发布。第一个实验偏向做一个自己的产品：围绕个人资料库，让 Agent 处理邮件、回答问题或提供信息服务。教师展示日常自动任务，包括给孩子生成在车上听的播客、推送 Morning Paper 和 GitHub Trending；论文摘要的提示词经过调整，直接要求模型“总结论文”不一定得到同样的阅读体验。",
+          "sha256": "b1a888b3a90971699ff8b8fcf7346247c46a872fb7a62129b63565196ee4ffa5"
+        },
+        {
+          "section": 1,
+          "paragraph": 3,
+          "notes_pointer": "/sections/0/paragraphs/2",
+          "text": "第二个实验从这个个人 Agent 中抽出一小块，追问同一个问题：增加一些探索、查证和修改的预算，能否得到更好的结果？课程强调亲手观察 Agent 的实际轨迹，产品截图和效果描述只是起点。",
+          "sha256": "90638bbd5f3424702bba1477194bd38184d386f860eb08d7947891c49f037ad2"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 1,
+          "frame": 1,
+          "path": "visual/full/v0005-0056.jpg",
+          "caption": "Lab2 背景页中的个人助手与 Morning Paper 示例。",
+          "sha256": "1e7f1a21e2066b63ac89c133a4faaaf0846abd9016ccfd7d57c15b8fd3992945"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "lab2-effort",
+      "start": 104,
+      "end": 242,
+      "observed_content": "实验要求：增加 effort，投入更多探索/查证/修改；左板书逐步画出 breadth-first 与 depth-first 探索。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 2,
+          "paragraph": 1,
+          "notes_pointer": "/sections/1/paragraphs/0",
+          "text": "Agent 已能完成较长任务，但“最初应该选择哪条路线”的直觉未必可靠。教师用研究生做研究作类比：想到一个合理想法后，可以不断实现原型、优化方法、改善实验，这是深度优先；它能把一个很窄的问题做深，却容易让人忘记更大的设计空间。",
+          "sha256": "f63512856855febc3c37e7c53e2a2ac2a3c70cfcbbf31c172205118694f0a439"
+        },
+        {
+          "section": 2,
+          "paragraph": 2,
+          "notes_pointer": "/sections/1/paragraphs/1",
+          "text": "设计空间在浅层就有许多分叉。不同方案可能把最终结果带到很远的地方，因此需要宽度优先的探索：在投入大量实现成本之前，把若干候选路线摆到一起比较。板书先画一个问题向下延伸的单一路径，再补上浅层分叉，说明搜索不是只有“继续改进当前答案”一种动作。",
+          "sha256": "6196e0df79cfed4b1ba29e110c717263b94e4f132fdb629ca1a6c2041db93464"
+        },
+        {
+          "section": 2,
+          "paragraph": 3,
+          "notes_pointer": "/sections/1/paragraphs/2",
+          "text": "算力有限，不能无限枚举，也不能永远调研而不落地。Lab2 要自己构建 Agent loop，让求解、审查、修改形成可控制的循环；真正需要设计的是什么时候继续深入、什么时候尝试另一条路，以及怎样保留较好的候选。",
+          "sha256": "ca0733227b846ec00ccedf20f99123b69308745175047b019ccdfda82585c335"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 2,
+          "frame": 1,
+          "path": "visual/full/v0010-0120.jpg",
+          "caption": "Lab2 要求增加探索与查证的 effort；板书开始展开搜索树。",
+          "sha256": "0921a0b834c656e7814ae769f32b64263c8f2b21cf2f778d7982634d408d6cea"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "lab2-harness",
+      "start": 242,
+      "end": 334,
+      "observed_content": "网页搜索/评估流程图、Humanize: Judgement Engineering for Agentic Coding 标题、Workspace 循环；2.2 上下文工程；2.3 评估效果。URL 栏未显示。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 3,
+          "paragraph": 1,
+          "notes_pointer": "/sections/2/paragraphs/0",
+          "text": "教师以 Humanize 为参考，转述自己观察到的做法：让 GPT 与 Claude 相互 review、相互挑刺。两个带有不同偏好的模型可能提出不同路线，减轻一个模型沿同一方向一路走到底的问题。课堂用“两个互补的人”解释多样性；这是机制直觉和实践经验，不是所有多模型系统都优于单模型的定理。",
+          "sha256": "8533511c7cfa6a7bfbe175498477e958003e94c6acf26f4384f9920a4e43eae6"
+        },
+        {
+          "section": 3,
+          "paragraph": 2,
+          "notes_pointer": "/sections/2/paragraphs/1",
+          "text": "只增加来回轮数还不够，Agent 也需要可以检索的知识。第一个实验中的个人资料库可能有作业、奖学金申请、简历；做 Deeper Research 时，还需要研究论文、博客、GitHub 项目或书中相关片段，把外部知识带入问题求解。",
+          "sha256": "edf020818ecf33218eb98aa620d1dab971b82bd7e990cad4f1dc7ea84a027fc1"
+        },
+        {
+          "section": 3,
+          "paragraph": 3,
+          "notes_pointer": "/sections/2/paragraphs/2",
+          "text": "实验留有开放空间，实现可以简单。教师更看重学生真正观察过一次 Agent trajectory：它在何处搜索、依赖什么证据、为什么修改、怎样结束。只有亲手做过，才容易发现产品宣传和一次真实任务之间的差异。",
+          "sha256": "35fd6989a478497199e6d4269c70da54ed725e8af64ae491ff39726a6cba14c7"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 3,
+          "frame": 1,
+          "path": "visual/full/v0016-0244.jpg",
+          "caption": "Lab2 引用 Humanize，并将更深入的研究连接到迭代求解。",
+          "sha256": "ef821ea95e6eeb895143df511d1a8d740d0d99992ee749e0c8994cdccc88823c"
+        },
+        {
+          "section": 3,
+          "frame": 2,
+          "path": "visual/full/v0019-0306.jpg",
+          "caption": "Lab2 页面继续展示上下文工程与效果评估；这些要求不等于增加轮数就必然提升。",
+          "sha256": "d621c4a68c7c5222a328c16cbc8c5a6323a158b0cf0301adc14985c81fb3a3f3"
+        },
+        {
+          "section": 3,
+          "frame": 3,
+          "path": "sources/lab2-humanize-20261019/key-page-05.png",
+          "caption": "图4：计划契约、builder交接、机械gate与独立reviewer；完整原页，区分文件完整与语义正确。",
+          "sha256": "454fe7322d199809ca9260596ac8bcb2882c859a053132a94c53745d812f1845"
+        },
+        {
+          "section": 3,
+          "frame": 4,
+          "path": "sources/lab2-humanize-20261019/key-page-07.png",
+          "caption": "图5：KDA的48小时、单个DSA TopK kernel团队自报消融；右图对数轴，8.58倍不是所有kernel或通用成功率。",
+          "sha256": "0d7f2a4516c0169b69d7b48e89a68747523208919ded056e6db2abd2f6291c50"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "review-gaps",
+      "start": 334,
+      "end": 526,
+      "observed_content": "转到 Review & Comments；intent/spec/impl 与 essential/accidental complexity；左板逐步画出三层图及落差箭头。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 4,
+          "paragraph": 1,
+          "notes_pointer": "/sections/3/paragraphs/0",
+          "text": "教师把前半学期串成三层：intent 是想达到什么，specification 是把要求写成怎样的约束，implementation 是具体怎样实现。从意图到规格、从规格到实现都是一对多。人的注意力有限，一开始通常只在巨大的空间里选中一个点，不能把第一个想法当成唯一答案。",
+          "sha256": "e8837936b249459aa51d4b2ba12a350f10a1cfb1c57ed06b52628712f83598d3"
+        },
+        {
+          "section": 4,
+          "paragraph": 2,
+          "notes_pointer": "/sections/3/paragraphs/1",
+          "text": "不同层有不同的对齐对象。需求阶段用访谈、checklist 和甲方沟通，让“到底想做什么”更清楚；规格与架构阶段可以向有经验的人讨论数据库选择、事件溯源是否合适、状态如何持久化。反复讨论会产生不同方案，最终的可维护性和可观测性可能相差很大。",
+          "sha256": "2a0800f37405b2c32f36437e67fba9124368c19d8c50b897e2525cbd2720128b"
+        },
+        {
+          "section": 4,
+          "paragraph": 3,
+          "notes_pointer": "/sections/3/paragraphs/2",
+          "text": "UML 等建模方法的价值，在于给讨论施加可共同理解的约束，尽早暴露分歧。IDE、Git、worktree 和其他版本工具则帮助管理实现与状态。教师建议持续看真实项目使用了什么技术，并对不懂的地方追问；少量但连续的观察能积累判断力。",
+          "sha256": "e6f2b52632f0ad0c5cdc29abed065363457295c7a68ccc7642f7d3551305621e"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 4,
+          "frame": 1,
+          "path": "visual/full/v0033-0510.jpg",
+          "caption": "Intent、Spec 与 Implementation 的多层选择；板书细字以对应口述解释为准。",
+          "sha256": "6654809504cea826d1dea15e52bae91593f6c1e7b91d7f4b64bd005a9a1b8307"
+        },
+        {
+          "section": 4,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-01.jpg",
+          "caption": "现行讲义第1页：Intent—Spec—Implementation与复杂性。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "f30fd76e264a76d3a4f3c91a27cda7e80b774504a5c9a696985f23c436c76d3e"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "prototype",
+      "start": 526,
+      "end": 670,
+      "observed_content": "开始：构建原型；左板继续指向需求/规格/实现。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 5,
+          "paragraph": 1,
+          "notes_pointer": "/sections/4/paragraphs/0",
+          "text": "AI 降低了“从当前阶段直接往下做出一个版本”的成本。即使意图或规格尚不完善，也可以让它实现一个原型，再比较变好还是变坏。原型做不下去、变得难维护，或者用例暴露冲突，都可以成为下一轮讨论的反馈。",
+          "sha256": "ab95b5e029f8c90b4fe88283d9a896dee269a1da14235238833d8952ef1cb340"
+        },
+        {
+          "section": 5,
+          "paragraph": 2,
+          "notes_pointer": "/sections/4/paragraphs/1",
+          "text": "很多设计问题只有实现之后才看得见：用户更多会怎样？某类人加入后会怎样？两个模块之间是否有此前没想到的交互？教师提出先做出版本，再构建典型 use case 进行评审，让实现帮助预测后果。这里的“先做”不是免除判断，而是把昂贵的猜测变成较便宜的试验。",
+          "sha256": "cb69521158d6d0e2ddd1a2b9f1fc3491af0e58471dbadd016969564d0e47ede5"
+        },
+        {
+          "section": 5,
+          "paragraph": 3,
+          "notes_pointer": "/sections/4/paragraphs/2",
+          "text": "如果子系统需求能够分开，Agent 可以并行承担不同工作。教师展示自己的习惯是把终端分成四块，同时监督四个 Agent；超过这个数量，人的注意力会跟不上。这是个人经验，说明并行收益还受人类检查与协调能力约束。",
+          "sha256": "4c946a6edb9081f0025e5a3e3bae567c97378c61a0359dcb5f2d2247f081632d"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 5,
+          "frame": 1,
+          "path": "sources/official-20261019/slides/slide-02.jpg",
+          "caption": "现行讲义第2页：先构建原型、用具体用例检验。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "6ab1d4a0efe2219bf80531c3300a1c5bdb8f0710b1d55afe8ac1c38f4ef04fb3"
+        }
+      ],
+      "static_official_page_suffices": true,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "agent-loop",
+      "start": 670,
+      "end": 914,
+      "observed_content": "Agent Loop；自主模型与 bash tool；原型与品味话题。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 6,
+          "paragraph": 1,
+          "notes_pointer": "/sections/5/paragraphs/0",
+          "text": "教师回顾从 ChatGPT 到早期 coding agent 的观感变化：模型可以产生自主行动，但早期幻觉让人难以直接信任它。一个不知疲倦的执行者看似能够不停尝试，现实中的模型却常在选定一条看起来可行的路线后持续推进，或在困难任务面前直接停止。",
+          "sha256": "f4f95c56caf8c36db6e4872035a0120f7bf3aab125bf73d858447ccc33eeb689"
+        },
+        {
+          "section": 6,
+          "paragraph": 2,
+          "notes_pointer": "/sections/5/paragraphs/1",
+          "text": "课堂用强化学习中的完成任务压力解释这种倾向，并再次回到宽度和深度之间的平衡。把这段话理解为教师对行为的解释，不应扩写为某一闭源模型训练奖励的已核实细节。模型会思考、会调用工具，也不意味着它会自动投入最合适的探索预算。",
+          "sha256": "9335ce3ba8b18abd3186d25bb86d308ed2f43c27001e651ef4bff190927e1000"
+        },
+        {
+          "section": 6,
+          "paragraph": 3,
+          "notes_pointer": "/sections/5/paragraphs/2",
+          "text": "最低限度的 Agent 可以只获得一个 bash 或 Python 工具。Shell 能读写文件、运行程序和调用系统工具，因此很简单的工具接口也能连接很多能力。教师用“如果把自己的能力蒸馏给模型，只给一个 bash 也能做许多事”帮助理解工具通用性；“造芯片、证明黎曼猜想”是设想式例子，不能作为演示能力声明。",
+          "sha256": "b8f663329125e3799138ee9cc0afc8f1f16f43206202eb638b18f64bb4b39d74"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 6,
+          "frame": 1,
+          "path": "sources/official-20261019/slides/slide-03.jpg",
+          "caption": "现行讲义第3页：Agent Loop的模型与工具。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "02befbb4045cee731132327e51e1024db9cc7e71dbc889f7a2e825c70144efcf"
+        }
+      ],
+      "static_official_page_suffices": true,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "agent-source-config",
+      "start": 914,
+      "end": 984,
+      "observed_content": "打开 agent.py，imports、读取 API key 的函数（未显示实际 key）、system prompt、bash tool schema。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 7,
+          "paragraph": 1,
+          "notes_pointer": "/sections/6/paragraphs/0",
+          "text": "教师现场打开 agent.py，建议先亲手实现一个很小的 ReAct 型 Agent，再与成熟产品比较：复杂系统究竟多处理了哪些问题？只有看到一个简单核心怎样逐渐膨胀，才容易理解工程经验来自哪里。",
+          "sha256": "5c9ee4f13bae344310ee16875bc0605c9effa479bdf2aebb5872b1a5683e859f"
+        },
+        {
+          "section": 7,
+          "paragraph": 2,
+          "notes_pointer": "/sections/6/paragraphs/1",
+          "text": "bash 工具以 Python 对象描述，可序列化成 JSON：声明 function 类型、名称、说明以及 command 参数。执行器取出命令，交给 subprocess；画面显示 bash -c、关闭标准输入、合并标准输出与错误，并设置 60 秒超时。这样，模型提出的工具调用才会变成真实执行。",
+          "sha256": "cc5c2e1dbcaa7a20cff914a0fbebbb5e0805d178cfa5430d3d166fd04ebf9618"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 7,
+          "frame": 1,
+          "path": "visual/full/v0054-0922.jpg",
+          "caption": "MiniAgent 的 imports、key读取函数和工具定义；画面未显示实际密钥。",
+          "sha256": "bf93530f50f446862fda2c851f323800c7f349112883f202e40d25a943cbaae3"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "agent-source-bash",
+      "start": 984,
+      "end": 1082,
+      "observed_content": "bash 工具 schema，run_bash：subprocess.run、bash -c、stdin DEVNULL、合并 stdout/stderr、60 秒 timeout。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 7,
+          "paragraph": 2,
+          "notes_pointer": "/sections/6/paragraphs/1",
+          "text": "bash 工具以 Python 对象描述，可序列化成 JSON：声明 function 类型、名称、说明以及 command 参数。执行器取出命令，交给 subprocess；画面显示 bash -c、关闭标准输入、合并标准输出与错误，并设置 60 秒超时。这样，模型提出的工具调用才会变成真实执行。",
+          "sha256": "cc5c2e1dbcaa7a20cff914a0fbebbb5e0805d178cfa5430d3d166fd04ebf9618"
+        },
+        {
+          "section": 7,
+          "paragraph": 4,
+          "notes_pointer": "/sections/6/paragraphs/3",
+          "text": "固定 timeout 暴露了原型与产品的差距。模型对网络环境的预期可能不准确：同样的 GitHub 操作在不同网络下速度相差很大，太短的超时会错误中止任务，真实产品可能需要调整、续跑或其他处理。教师强调，先实现原型，才能碰到并思考这种具体问题。",
+          "sha256": "5e627db018b2913bef39da38d172827c2902544d62d809e9fe71efa475c0a435"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 7,
+          "frame": 2,
+          "path": "visual/full/v0061-1006.jpg",
+          "caption": "run_bash 的命令执行与60秒timeout，暴露最小原型的环境假设。",
+          "sha256": "337d8abfcccaea238afcd2a4f2b0841e23253b5e8ae5b4b77f469b3827fbdf33"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "agent-source-loop",
+      "start": 1082,
+      "end": 1154,
+      "observed_content": "DeepSeek 流式请求；read_reply 拼接 reasoning/content/tool_calls；main 内层循环收到工具调用后运行 bash 并把 output 放回 messages。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 7,
+          "paragraph": 3,
+          "notes_pointer": "/sections/6/paragraphs/2",
+          "text": "程序向 DeepSeek 的 chat completions 接口请求回复，并把流式响应中的内容和工具调用拼起来。主循环从终端读取用户输入、构造 messages；如果回复没有 tool call，就显示回答；如果包含 bash 调用，就解析参数、执行命令，再把结果以 role=tool、对应 tool_call_id 放回消息历史，继续请求模型。这里原转写多处把 tool call 识别成 token，按实际代码画面校正。",
+          "sha256": "93c8eaa3f0a688f1eeaf9da01a20dbc1f856db67438bfb7588b065c214f3abc4"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 7,
+          "frame": 3,
+          "path": "visual/full/v0070-1098.jpg",
+          "caption": "请求与read_reply接收流式回复、工具调用。",
+          "sha256": "6de6810840ff43bbd7969f032414c7c8c97d368cacc797faecf6ef1535767112"
+        },
+        {
+          "section": 7,
+          "frame": 4,
+          "path": "visual/full/v0073-1106.jpg",
+          "caption": "main循环把bash结果以tool消息送回模型。",
+          "sha256": "f1fc3b0a97d3e818dcbb65be20a2736344497a6e6c58573e7c3bb8932e380004"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "agent-build-card",
+      "start": 1154,
+      "end": 1216,
+      "observed_content": "启动 ./agent.py，输入 Hi；目录检查、读已有 HTML；生成 GSE 介绍卡 HTML、调用 xdg-open，随后检查 DISPLAY/浏览器。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 8,
+          "paragraph": 1,
+          "notes_pointer": "/sections/7/paragraphs/0",
+          "text": "教师让 MiniAgent 生成《生成式软件工程》的简介 HTML 卡片，并在浏览器中打开。Agent 通过 bash 写文件、探查运行环境并调用浏览器；终端与浏览器切换展示了从文字指令到真实文件、再到页面成品的完整小链条。",
+          "sha256": "81c8ce94ccfd2b7d7974e418ea36e6e985a3be46830bcefdcab42f66c916332b"
+        },
+        {
+          "section": 8,
+          "paragraph": 2,
+          "notes_pointer": "/sections/7/paragraphs/1",
+          "text": "成品有明显的视觉风格，教师猜测模型可能受工作目录中已有页面影响。这个观察说明上下文会影响模型选择；它没有证明某种具体样式一定来自哪一个文件。教师也注意到 Agent 打开多个浏览器、继续 verify、向用户询问是否满意，这些动作未必都是用户想要的。",
+          "sha256": "b5558ebc5bef9a5a82f000ca99779a2b74304405e8c9139196c46cf3969832e1"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 8,
+          "frame": 1,
+          "path": "visual/full/v0100-1218.jpg",
+          "caption": "浏览器打开生成的GSE简介卡，展示任务从指令到页面的执行结果。",
+          "sha256": "c62b63fc36d12c7b2dcf75fea7f81be57d988f3ed764e02cb6f2c70303bba89f"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "gse-card",
+      "start": 1216,
+      "end": 1255,
+      "observed_content": "浏览器显示深色 GSE 介绍卡；滚动/鼠标和动画变化，保留页面成品而非每个动画帧。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 8,
+          "paragraph": 1,
+          "notes_pointer": "/sections/7/paragraphs/0",
+          "text": "教师让 MiniAgent 生成《生成式软件工程》的简介 HTML 卡片，并在浏览器中打开。Agent 通过 bash 写文件、探查运行环境并调用浏览器；终端与浏览器切换展示了从文字指令到真实文件、再到页面成品的完整小链条。",
+          "sha256": "81c8ce94ccfd2b7d7974e418ea36e6e985a3be46830bcefdcab42f66c916332b"
+        },
+        {
+          "section": 8,
+          "paragraph": 2,
+          "notes_pointer": "/sections/7/paragraphs/1",
+          "text": "成品有明显的视觉风格，教师猜测模型可能受工作目录中已有页面影响。这个观察说明上下文会影响模型选择；它没有证明某种具体样式一定来自哪一个文件。教师也注意到 Agent 打开多个浏览器、继续 verify、向用户询问是否满意，这些动作未必都是用户想要的。",
+          "sha256": "b5558ebc5bef9a5a82f000ca99779a2b74304405e8c9139196c46cf3969832e1"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 8,
+          "frame": 1,
+          "path": "visual/full/v0100-1218.jpg",
+          "caption": "浏览器打开生成的GSE简介卡，展示任务从指令到页面的执行结果。",
+          "sha256": "c62b63fc36d12c7b2dcf75fea7f81be57d988f3ed764e02cb6f2c70303bba89f"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "pixel-check",
+      "start": 1255,
+      "end": 1274,
+      "observed_content": "Agent 用 grim 截图、Pillow 统计色彩与红黄绿灯像素，随后报告页面已显示；这是现场 Agent 的验证策略，不是本审查对其充分性的认可。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 8,
+          "paragraph": 3,
+          "notes_pointer": "/sections/7/paragraphs/2",
+          "text": "画面中的验证继续调用截图工具和 Pillow，统计图像的颜色与红黄绿像素，再给出页面已显示的判断。应区分“执行了一个检查”与“检查足以证明页面正确”：像素计数可以提供局部信号，却不能证明语义、交互、布局和全部用户路径都正确。最后一句是整理者依据所见操作给出的边界说明。",
+          "sha256": "d73cdede4e949f3c64e9f1a7695aeed877b292e95ef95f9c2a5a4d499314d60e"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 8,
+          "frame": 2,
+          "path": "visual/full/v0121-1266.jpg",
+          "caption": "现场Agent以截图和颜色统计继续verify；这不是完整页面语义验收。",
+          "sha256": "d4c37026c183da7e998a4b4d2526ca5af8283ccfb7b6240bd5fc885bda41d672"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "ralph-origin",
+      "start": 1274,
+      "end": 1466,
+      "observed_content": "Agent Loop/Ralph Wiggum/Ralph Loop 来回切换；左板新增 token/历史路径草图。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 9,
+          "paragraph": 1,
+          "notes_pointer": "/sections/8/paragraphs/0",
+          "text": "MiniAgent 的演示引出 Harness：模型会自己选择路径、询问用户、调用工具，外围系统需要把这些行为约束在任务所需的范围。真实 Harness 可以包含子 Agent、异步等待和带程序控制的调度；教师只示意这些能力，没有给出可直接复制的某个产品 API 语法。",
+          "sha256": "bebd6850fb5414d1d81918ca13d82ab68f95e25258cb63e7be51f511bed0d0ab"
+        },
+        {
+          "section": 9,
+          "paragraph": 2,
+          "notes_pointer": "/sections/8/paragraphs/1",
+          "text": "Ralph Loop 把这个想法压缩为简单重复：同一个任务提示词交给 Agent，检查和修改，再开始一轮。名称借自《辛普森一家》中不轻易放弃的 Ralph。课堂用“提示词不变，但世界在变”概括重点：上一轮留下的代码、文档和结果，会成为下一轮面对的工作区。",
+          "sha256": "76b93cb26c37979444b724d20fc10223e52d95632132ff733c5ba15592da249e"
+        },
+        {
+          "section": 9,
+          "paragraph": 3,
+          "notes_pointer": "/sections/8/paragraphs/2",
+          "text": "最简单的循环只是框架，不能保证每次改进，也不能让模型自动知道何时完成。教师把 Ralph 称为当时流行的核心做法，同时明确实际系统会更复杂。后面的 shell 示例会把每轮职责、状态记录和停止条件写出来。",
+          "sha256": "6f865bf9d5ed833ec0837aa8cfe5c6367daba580930f19fe6bfbf85ae3afbca6"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 9,
+          "frame": 1,
+          "path": "visual/full/v0131-1410.jpg",
+          "caption": "Ralph循环与上下文/历史的板书讨论。",
+          "sha256": "2c3604ca4c6165e6097a6fe34f70582c171a6637b4c40a3bec0d5997db3eeca7"
+        },
+        {
+          "section": 9,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-04.jpg",
+          "caption": "现行讲义第4页：Ralph名称的背景。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "c1d15aef33ab2a68db5fed8411226054c3e75534948ffd5c0fb4f7ad3dd01568"
+        },
+        {
+          "section": 9,
+          "frame": 3,
+          "path": "sources/official-20261019/slides/slide-05.jpg",
+          "caption": "现行讲义第5页：Ralph循环与终止问题。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "3d6705d01be2461b0f5dbbd7af95e691fdbe2395f4caedd6653a3d27a68c72f9"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "state-machine",
+      "start": 1466,
+      "end": 2010,
+      "observed_content": "Ralph Loop 与 Everything Is a State Machine；上下推拉黑板，下板逐步画状态/分支圈图。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 10,
+          "paragraph": 1,
+          "notes_pointer": "/sections/9/paragraphs/0",
+          "text": "模型可能受既有实现和长期上下文影响，把任务理解为继续扶持当前架构，即使架构本身值得重新考虑。教师以指导学生重做设计作类比，也承认线上故障时用户可能只需要快速修复、保持行为。这不是“总应重构”的结论，而是提醒我们把当前任务的边界说清楚。",
+          "sha256": "2b31854a98025acb8572deb1ebacc3ff1b72256b7f05ea6cd1bce42615011c07"
+        },
+        {
+          "section": 10,
+          "paragraph": 2,
+          "notes_pointer": "/sections/9/paragraphs/1",
+          "text": "更强的 Harness 可以管理宽度和深度搜索；Ralph 则是一种较线性的推进方法。长任务的上下文可能装不下，压缩后模型需要重新恢复信息。教师描述自己观察到的压缩耗时、用量增加和一段表现下降；这些属于使用经验，不能当成所有模型或每次压缩必然如此的规律。",
+          "sha256": "7cecd3ac3ca4707f2632d03d1673aed629e763f9a64c2cb2b169e6624933acdc"
+        },
+        {
+          "section": 10,
+          "paragraph": 3,
+          "notes_pointer": "/sections/9/paragraphs/2",
+          "text": "把整个 workspace 看成状态，起点可以只有 spec.md 或 prompt.md。每轮先读状态，只推进一小步，检查结果，再留下文件或提交，让下一轮从新的状态继续。状态不只包含代码，也包含目标、未完成项、失败原因和下一步；这些持久化内容承接跨会话进度。",
+          "sha256": "598e7d5f3327f4c0378ea07ff53195766810fd9928bd09061d08224377aafb9d"
+        },
+        {
+          "section": 10,
+          "paragraph": 4,
+          "notes_pointer": "/sections/9/paragraphs/3",
+          "text": "状态转移不必只有“再写代码”一种。相同工作区可以交给不同模型实现、审查或重构，也可以定期做架构 review。板书从单线推进扩展成多种可选转移，说明 Agent 调度也是搜索过程；实际推进时仍需选出下一步，不能只堆积分支。",
+          "sha256": "7a6e6a7d06af961ce3918d9ae91e3a514effcb8a842aabb144b3c3322548242e"
+        },
+        {
+          "section": 10,
+          "paragraph": 5,
+          "notes_pointer": "/sections/9/paragraphs/4",
+          "text": "并行工作也能从这个视角解释：从同一状态分出独立 worktree，分别处理 A、B 模块，再合并到一个新的状态。外层循环把长任务拆成较小的可靠步骤；更好的模型与更好的循环可以相互促进，但并行修改仍要处理接口、冲突与合并后的验证。",
+          "sha256": "3ffdbd4586ee51a8e26de09f4363c3c8b7cd099b3395089f2818fc4dad6bfd66"
+        },
+        {
+          "section": 10,
+          "paragraph": 6,
+          "notes_pointer": "/sections/9/paragraphs/5",
+          "text": "教师对研究工作作出较强的个人判断：在导师已选好方向、任务 loop 与提示词调好、只看成果产出的条件下，Agent 已能替代一些研究执行工作。同时，他强调把不会的人培养成会的人仍有价值。笔记保留这组条件，不将其改写成“博士生整体已被替代”的事实结论。",
+          "sha256": "8f8fe7f8e44d849eecb4e8acaaaf78987f59718f1897538cb2e6fd208f5f1c45"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 10,
+          "frame": 1,
+          "path": "visual/full/v0164-1920.jpg",
+          "caption": "工作区状态、不同转移动作以及并行分支再合并的板书。",
+          "sha256": "a8fb2acfc95543a25d151a6ba6a2bac7fc1c09f09ddba48c3e5fd7896a062718"
+        },
+        {
+          "section": 10,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-06.jpg",
+          "caption": "现行讲义第6页：Everything Is a State Machine。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "fa614935a5b4818897595fe4769d0c620421c3efb8de16c92783e97135e54231"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "ralph-script",
+      "start": 2010,
+      "end": 2084,
+      "observed_content": "展示 ralf-loop.sh：每轮只推进明确步骤，留下文件，下轮重读；只有确认完成才输出 <RALPH_DONE>；grep -Fxq 决定 break。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 11,
+          "paragraph": 1,
+          "notes_pointer": "/sections/10/paragraphs/0",
+          "text": "教师展示 ralf-loop.sh，核心仍是一个提示词：每轮先检查当前状态，只推进一个明确步骤；未完成时写文件说明下一步；只有确认整个任务完成后，才输出约定的完成标记。repo 因而同时保存成果和继续工作的依据。",
+          "sha256": "1f97006ef26b5943791149699f1cdf4821e149873342f91f14ae9a1b31323f09"
+        },
+        {
+          "section": 11,
+          "paragraph": 2,
+          "notes_pointer": "/sections/10/paragraphs/1",
+          "text": "真实 shell 代码不是单纯的 while true：它收集 Agent 输出，用 grep -Fxq 检测独立一行的 <RALPH_DONE>，命中后 break。这个机制能识别停止声明，但声明是否真实，仍取决于验收要求和模型的检查；不能把字符串匹配当成任务正确性证明。",
+          "sha256": "9ece57b66b66053b20a089a4dc56b14b98f0277aae34c18b0308da9b4c9a3b3e"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 11,
+          "frame": 1,
+          "path": "visual/full/v0173-2020.jpg",
+          "caption": "ralf-loop.sh约定每轮工作与<RALPH_DONE>终止标记。",
+          "sha256": "b5358b3f7e5ff4315bfe0aacab65c2b8f9722a5333eaf3d6ff2de0343d205777"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "ralph-round1",
+      "start": 2084,
+      "end": 2148,
+      "observed_content": "启动“世界上最好的编程语言”研究；curl 超时后重试/解析 TIOBE、PYPL；写 research/NEXT_STEPS.md 作为下一轮进度。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 11,
+          "paragraph": 3,
+          "notes_pointer": "/sections/10/paragraphs/2",
+          "text": "现场任务是研究“世界上最好的编程语言”。第一轮开始获取 TIOBE、PYPL 等资料，遇到 curl 超时后继续尝试，画面显示它在获取资料，尚不能据此接受语言排名。",
+          "sha256": "e0f521f7c1acb3a35e9448129202560b033b711cd1286c6acf63dbd92a89a37a"
+        },
+        {
+          "section": 12,
+          "paragraph": 1,
+          "notes_pointer": "/sections/11/paragraphs/0",
+          "text": "约 35:46，研究任务写出 NEXT_STEPS.md；约 35:48，新的 MiniAgent 进程重新读取目录和这个文件，继续取资料。教师随后切换到已有的名片比较，研究任务仍在后台进行；这两个画面活动不能串成同一个输出链。",
+          "sha256": "c71a69ee7d95ad4887e2cedc4e7677cdea0d0bbce1825e014773b83616efa78c"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 12,
+          "frame": 1,
+          "path": "visual/full/v0205-2146.jpg",
+          "caption": "第一轮语言研究写出NEXT_STEPS.md，留给下一轮继续。",
+          "sha256": "fa8d0be62af39a52e614ed6d53204e4e1c01f26266005990feddc86a19f00974"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "ralph-round2",
+      "start": 2148,
+      "end": 2161,
+      "observed_content": "新 MiniAgent 进程启动，读取目录和 NEXT_STEPS，继续研究 Stack Overflow/GitHub。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 12,
+          "paragraph": 1,
+          "notes_pointer": "/sections/11/paragraphs/0",
+          "text": "约 35:46，研究任务写出 NEXT_STEPS.md；约 35:48，新的 MiniAgent 进程重新读取目录和这个文件，继续取资料。教师随后切换到已有的名片比较，研究任务仍在后台进行；这两个画面活动不能串成同一个输出链。",
+          "sha256": "c71a69ee7d95ad4887e2cedc4e7677cdea0d0bbce1825e014773b83616efa78c"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 12,
+          "frame": 1,
+          "path": "visual/full/v0205-2146.jpg",
+          "caption": "第一轮语言研究写出NEXT_STEPS.md，留给下一轮继续。",
+          "sha256": "fa8d0be62af39a52e614ed6d53204e4e1c01f26266005990feddc86a19f00974"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "card-comparison",
+      "start": 2161,
+      "end": 2264,
+      "observed_content": "研究终端仍存在；前台在蓝紫 jyy 个性名片与橙色 jyy 名片间切换；这是两种已有页面的视觉比较，不能写成本轮语言研究的输出。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 12,
+          "paragraph": 2,
+          "notes_pointer": "/sections/11/paragraphs/1",
+          "text": "等待语言研究运行时，教师展示此前用两种方式生成的个人名片：一个是普通 Agent，一种加了 loop。第一张蓝紫色卡片有玻璃效果和终端装饰，但教师指出邮箱和身份信息有错；第二张橙色卡片较朴素，教师检查的邮箱与 GitHub 信息正确。两张名片不是当前语言研究任务的产物。",
+          "sha256": "604ddb025d6923e6f86b02fd0e8cb0ac56f7a522308b2250bbc4eac2ac9b52d0"
+        },
+        {
+          "section": 12,
+          "paragraph": 3,
+          "notes_pointer": "/sections/11/paragraphs/2",
+          "text": "教师揭示较朴素的一张来自 loop，同时提醒这是有随机性的单次比较，结果也与 prompt 有关，不能直接断言“loop 永远更好”。可确认的是：相同模型在不同算力、提示词和上下文下，确实可能产生明显不同的结果。长期磨合的个人提示词，有时比直接套用网上的 skill 更贴合自己的需求。",
+          "sha256": "af7295ea39aa549782121b3b7a794e070dcb89d69d227d650ae321bb40983d6d"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 12,
+          "frame": 2,
+          "path": "visual/full/v0216-2174.jpg",
+          "caption": "预先生成的蓝紫个人名片；教师指出其中邮箱与身份有误。",
+          "sha256": "72d03e46e0c2505040af9fd5f8d32d82bc834eafc2c69a1c9a12ee5832c55500"
+        },
+        {
+          "section": 12,
+          "frame": 3,
+          "path": "visual/full/v0226-2220.jpg",
+          "caption": "另一张较朴素的名片；教师称来自loop，并检查联系方式。",
+          "sha256": "41b9b712fff3e0c4344dbbe4a92ef0cc878efaf070dcd640719397c2367e0cf4"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "ralph-stop",
+      "start": 2264,
+      "end": 2284,
+      "observed_content": "回终端，写研究报告及 NEXT_STEPS；输出自评与 <RALPH_DONE>，shell 返回。报告内数据为现场 Agent 结果，未独立核实。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 12,
+          "paragraph": 4,
+          "notes_pointer": "/sections/11/paragraphs/3",
+          "text": "回到仍在运行的语言研究终端，Agent 写出报告与下一步文件，最终输出 <RALPH_DONE>，shell 返回。教师打开报告，读到“不存在绝对最好的语言”的结论。这里证明循环能走到约定的收尾状态；报告里的排名、原始数据和资料解释没有在课堂逐项核验，笔记也不将它们作为研究事实。",
+          "sha256": "2aee17c703a6759342eaed8d54a0ed3d214a3848275a7db65c8e08a9b88235cf"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 12,
+          "frame": 4,
+          "path": "visual/full/v0239-2276.jpg",
+          "caption": "语言研究输出完成标记并返回shell；标记本身不证明研究事实正确。",
+          "sha256": "c49d1f8c57665a84aa1e44082297d2518754da7255a7cc0b8307cd8e0c20915c"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "ralph-report-read",
+      "start": 2284,
+      "end": 2310,
+      "observed_content": "Vim 打开 research/世界上最好的编程语言-调研报告.md；方法局限、场景推荐、来源和原始数据等。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 12,
+          "paragraph": 4,
+          "notes_pointer": "/sections/11/paragraphs/3",
+          "text": "回到仍在运行的语言研究终端，Agent 写出报告与下一步文件，最终输出 <RALPH_DONE>，shell 返回。教师打开报告，读到“不存在绝对最好的语言”的结论。这里证明循环能走到约定的收尾状态；报告里的排名、原始数据和资料解释没有在课堂逐项核验，笔记也不将它们作为研究事实。",
+          "sha256": "2aee17c703a6759342eaed8d54a0ed3d214a3848275a7db65c8e08a9b88235cf"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 12,
+          "frame": 5,
+          "path": "visual/full/v0246-2300.jpg",
+          "caption": "打开第一份语言研究报告，其结论及数据属于现场Agent输出。",
+          "sha256": "53c8a173a6c8b68fb180035fa3422347f2c49ef5f22283f7708f7b40402d78be"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "second-research",
+      "start": 2310,
+      "end": 2350,
+      "observed_content": "又一次运行研究，屏幕显示 ./agent.py 启动（需结合转写确认与 Ralph 比较意图）；curl/HTML 解析，IEEE 返回正文含隐私/会员内容、GitHub 出现 Page not found。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 13,
+          "paragraph": 1,
+          "notes_pointer": "/sections/12/paragraphs/0",
+          "text": "教师把第一份 research 结果移开，用同一个问题再次运行。画面显示这次启动的是 ./agent.py，工具仍只有 bash；它继续请求网页并生成另一份报告。屏幕中的获取过程出现 IEEE 隐私或会员相关 HTML，以及 GitHub 的 Page not found，提醒我们“读到了网页内容”不等于“拿到了所需证据”。",
+          "sha256": "96b660a022b1db66b18d0c2c4b48910de622255c2bf46d05c3dc978bc195d08a"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 13,
+          "frame": 1,
+          "path": "visual/full/v0275-2440.jpg",
+          "caption": "普通agent.py再次生成研究结果，课堂对比两份报告；网页获取失败不因完成声明而消失。",
+          "sha256": "3b709d0d0ff3558be0ed5226d132302c251396712d10b7c54fbb4e534622fecf"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "state-discussion",
+      "start": 2350,
+      "end": 2422,
+      "observed_content": "回 Everything Is a State Machine 静态讲义。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 10,
+          "paragraph": 3,
+          "notes_pointer": "/sections/9/paragraphs/2",
+          "text": "把整个 workspace 看成状态，起点可以只有 spec.md 或 prompt.md。每轮先读状态，只推进一小步，检查结果，再留下文件或提交，让下一轮从新的状态继续。状态不只包含代码，也包含目标、未完成项、失败原因和下一步；这些持久化内容承接跨会话进度。",
+          "sha256": "598e7d5f3327f4c0378ea07ff53195766810fd9928bd09061d08224377aafb9d"
+        },
+        {
+          "section": 13,
+          "paragraph": 3,
+          "notes_pointer": "/sections/12/paragraphs/2",
+          "text": "没有人已经穷尽 Agent 的设计空间：不同产品、插件、子 Agent 组织方式都可能不同。模型更新后，旧的系统提示词或 skills 可能失效，甚至拖累表现。教师建议用熟悉的任务做背靠背对照，比较保留与拿掉这些约束的效果；这是评估建议，不能理解成不经测试就删除生产规则。",
+          "sha256": "708b3d19a3e3af269ca0e90660722186fe3fbaca553a9b42660250262f80e317"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 10,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-06.jpg",
+          "caption": "现行讲义第6页：Everything Is a State Machine。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "fa614935a5b4818897595fe4769d0c620421c3efb8de16c92783e97135e54231"
+        }
+      ],
+      "static_official_page_suffices": true,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "second-research-result",
+      "start": 2422,
+      "end": 2458,
+      "observed_content": "新报告宣称调研完成；编程语言调研报告.md 与语言榜单原始数据.txt；打开两栏报告；不是独立事实查证结果。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 13,
+          "paragraph": 1,
+          "notes_pointer": "/sections/12/paragraphs/0",
+          "text": "教师把第一份 research 结果移开，用同一个问题再次运行。画面显示这次启动的是 ./agent.py，工具仍只有 bash；它继续请求网页并生成另一份报告。屏幕中的获取过程出现 IEEE 隐私或会员相关 HTML，以及 GitHub 的 Page not found，提醒我们“读到了网页内容”不等于“拿到了所需证据”。",
+          "sha256": "96b660a022b1db66b18d0c2c4b48910de622255c2bf46d05c3dc978bc195d08a"
+        },
+        {
+          "section": 13,
+          "paragraph": 2,
+          "notes_pointer": "/sections/12/paragraphs/1",
+          "text": "课堂最后并排看两份报告，教师判断其中一份更保守，并指出 loop 对结果影响明显。但没有进行固定预算、多次重复、盲评或逐条查证，因此这是实演观察，不是对两种架构优劣的严格实验。第二份报告的“调研完成”声明也不能替代资料真实性核验。",
+          "sha256": "cfa14f8ac6929376dec8bc696c981c3038198fb4eef7b312fa68058c6a8cbf70"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 13,
+          "frame": 1,
+          "path": "visual/full/v0275-2440.jpg",
+          "caption": "普通agent.py再次生成研究结果，课堂对比两份报告；网页获取失败不因完成声明而消失。",
+          "sha256": "3b709d0d0ff3558be0ed5226d132302c251396712d10b7c54fbb4e534622fecf"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "ci-cd",
+      "start": 2644,
+      "end": 2800,
+      "observed_content": "祝贺你，发明了 CI/CD；CI、Continuous Delivery、Continuous Deployment。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 15,
+          "paragraph": 1,
+          "notes_pointer": "/sections/14/paragraphs/0",
+          "text": "把软件开发看成状态转移系统后，CI/CD 的动机变得直接：每一步之后做必要检查，满足条件再进入集成或发布阶段。检查和后续动作都可以自动化，避免只在口头上反复要求大家做好测试。",
+          "sha256": "865c4989f1dffacd19b32099f2a47c66a6a243fe1ebc4ed6b2d50f8aa0a171af"
+        },
+        {
+          "section": 15,
+          "paragraph": 2,
+          "notes_pointer": "/sections/14/paragraphs/1",
+          "text": "教师用在线判题类比人的取巧倾向：过了样例就先提交，失败再回来修。这在成本很低的练习里容易发生，但生产系统不能依靠同样的自觉。门控应写成脚本，而且不能只要求开发者自己记得运行；应让平台在适当事件上触发。",
+          "sha256": "84a1a4364cf12c2677393666632904a02edb9246075aab96fe716634f529f415"
+        },
+        {
+          "section": 15,
+          "paragraph": 3,
+          "notes_pointer": "/sections/14/paragraphs/2",
+          "text": "真实 CI/CD 看起来复杂，是因为它要把检查放到独立环境，可能创建容器、调度构建、收集结果，再接入团队可见的流程。学生较少使用，不代表核心思想复杂：在合适时机做合适检查，然后推进下一步。",
+          "sha256": "5a614465474c3650cde38ac74730c67466ba59b5fe7d6df212886aee1a243407"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 15,
+          "frame": 1,
+          "path": "sources/official-20261019/slides/slide-08.jpg",
+          "caption": "现行讲义第8页：CI与两种CD。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "8f695dbbc515514a9be66300d07843aa08a36f0228646b9d3e839485715c69e3"
+        }
+      ],
+      "static_official_page_suffices": true,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "hooks",
+      "start": 2800,
+      "end": 2872,
+      "observed_content": "Hook-Based CI/CD；讲义/CI-CD 页切换。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 16,
+          "paragraph": 1,
+          "notes_pointer": "/sections/15/paragraphs/0",
+          "text": "开发流程有许多事件：commit、push、提出 PR、合并分支、合并到受保护分支、打 release tag。Hook 可以放在转移之前或之后，执行检查或后续动作。课堂还以 Agent 输出结束时响一声为小例子：它也是围绕事件安装动作，只是目的从质量检查变成提醒。",
+          "sha256": "979e5b84f8c67d3ef60bb03a1308ce7aca614399e393c57a6f009752c466adeb"
+        },
+        {
+          "section": 16,
+          "paragraph": 3,
+          "notes_pointer": "/sections/15/paragraphs/2",
+          "text": "过去需要手写许多 YAML 和平台表达式；现在可让模型协助生成，但人仍须说清楚“什么状态迁移时，应该做什么”。本地 pre-commit 可以运行较轻的编译或 lint，远端 CI 再承担更多检查。自动生成配置减少的是机械编写成本，不免除策略、权限和执行效果的验证。",
+          "sha256": "3c002fb1553c6866c0354ede1cb69ba3cefc3973be3ba427cef4510000c24b48"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 16,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-09.jpg",
+          "caption": "现行讲义第9页：Hook-Based CI/CD。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "02ef706f76b0deaeb4a7d0d7bff5a6f902b5b4e2b60b8e3919469b7f1b151c56"
+        }
+      ],
+      "static_official_page_suffices": true,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "codex-ci-explore",
+      "start": 2872,
+      "end": 3010,
+      "observed_content": "Pi 在 ~/Projects/codex/.github 上阅读 workflows；右边浏览 rust-ci-full.yml，format/cargo shear/argument lint/Python tests/平台 matrix；左边 AI 总结复用 workflow、fan-in、Bazel 与 Cargo 等。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 16,
+          "paragraph": 2,
+          "notes_pointer": "/sections/15/paragraphs/1",
+          "text": "教师打开 Codex 仓库的 .github，让 Pi 总结 CI 流程，并浏览 workflows/rust-ci-full.yml。屏幕包含格式检查、cargo shear、参数 lint、Python tests 与平台 matrix 等配置。现场 AI 还解释 workflow 复用和汇总关系；这些是演示中 AI 的仓库阅读结果，并非本笔记对该仓库某个固定提交做过独立架构审计。",
+          "sha256": "7b9d858e85be89fe10fbf936849b9af04d9d48ea0cda01523b1bff59c3ae6851"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 16,
+          "frame": 1,
+          "path": "visual/full/v0325-2944.jpg",
+          "caption": "Codex仓库workflow和现场AI总结；本笔记未对该提交重新运行CI。",
+          "sha256": "dc63835fcc19f0329d42c47ce8c99cfb05c461eeb80b51f928d1402eb0ed3f75"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "lint-explain",
+      "start": 3010,
+      "end": 3136,
+      "observed_content": "现场追问“什么是 Lint？它重要吗”；AI 表格与文字说明测试 vs lint、工程卫生、CI 快门禁；一度全屏正文。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 17,
+          "paragraph": 1,
+          "notes_pointer": "/sections/16/paragraphs/0",
+          "text": "课堂现场追问“什么是 lint，它重要吗？”教师解释，lint 泛指不运行程序就能发现问题的静态代码检查，涵盖格式、空格、缩进、可读性约定，以及工具能够识别的代码问题。它是基础守门员：连可读性和基本规范都不稳定，维护复杂系统会更困难。",
+          "sha256": "67bc3fc14655223f5d7ca66ec29377910f01d041ed970dbbbecb9e8e20a294e3"
+        },
+        {
+          "section": 17,
+          "paragraph": 2,
+          "notes_pointer": "/sections/16/paragraphs/1",
+          "text": "简单检查适合放在 pre-commit，复杂的检查可以放到提交后的 CI。格式、lint、构建、单元测试、集成检查和上线条件承担不同职责；不能把其中任何一个成功信号写成“代码已经完全正确”。现场 AI 的 lint 解释保留为辅助教学材料，而不作为独立验证结果。",
+          "sha256": "86d0c38e78c969f098f7f5ec352cb693ef7ce7ced03aa867bd1a9f7fc86d4980"
+        },
+        {
+          "section": 17,
+          "paragraph": 3,
+          "notes_pointer": "/sections/16/paragraphs/2",
+          "text": "教师还提出把 Agent 放进云端工作流：一次 push 触发任务，Agent 修改仓库、提交，再由后续流程衔接。但需要处理触发链、权限和可能的循环，而不是随便把两个动作接起来。他提到免费运行额度与订阅/API 的使用差异时带有不确定措辞；这里不把当堂数字或猜测作为当前服务政策。更稳定的设计问题是何时运行 lint、单测、集成测试或较长的模糊测试。",
+          "sha256": "508de776f04bd7cc8f5cee2bd60f1623e87cce05b97cea12f2a9dbbcceb0656e"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 17,
+          "frame": 1,
+          "path": "visual/full/v0347-3048.jpg",
+          "caption": "现场询问lint与测试的区别，屏幕展示AI解释。",
+          "sha256": "0e08d0ab4a306173bd35c2b22e50df4a4f21abcd30c95fadf928cfb0a92b60c3"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "ci-business-rules",
+      "start": 3136,
+      "end": 3162,
+      "observed_content": "Hook-Based CI/CD→琐碎业务规则→把 CI/CD 写成 Spec，快速翻页。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 17,
+          "paragraph": 2,
+          "notes_pointer": "/sections/16/paragraphs/1",
+          "text": "简单检查适合放在 pre-commit，复杂的检查可以放到提交后的 CI。格式、lint、构建、单元测试、集成检查和上线条件承担不同职责；不能把其中任何一个成功信号写成“代码已经完全正确”。现场 AI 的 lint 解释保留为辅助教学材料，而不作为独立验证结果。",
+          "sha256": "86d0c38e78c969f098f7f5ec352cb693ef7ce7ced03aa867bd1a9f7fc86d4980"
+        },
+        {
+          "section": 17,
+          "paragraph": 3,
+          "notes_pointer": "/sections/16/paragraphs/2",
+          "text": "教师还提出把 Agent 放进云端工作流：一次 push 触发任务，Agent 修改仓库、提交，再由后续流程衔接。但需要处理触发链、权限和可能的循环，而不是随便把两个动作接起来。他提到免费运行额度与订阅/API 的使用差异时带有不确定措辞；这里不把当堂数字或猜测作为当前服务政策。更稳定的设计问题是何时运行 lint、单测、集成测试或较长的模糊测试。",
+          "sha256": "508de776f04bd7cc8f5cee2bd60f1623e87cce05b97cea12f2a9dbbcceb0656e"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 17,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-10.jpg",
+          "caption": "现行讲义第10页：业务规则与门禁边界。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "f52a8c102cdcc8da12d84b48143992fcff4cf2b246eef73a7995db559dd7b48c"
+        },
+        {
+          "section": 17,
+          "frame": 3,
+          "path": "sources/official-20261019/slides/slide-11.jpg",
+          "caption": "现行讲义第11页：把CI/CD写成Spec。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "97f3d9c1e10913f3f64d15103810d7e5915ac04f7144be5f43d41928b5ea38d7"
+        }
+      ],
+      "static_official_page_suffices": true,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "agent-bias-ci",
+      "start": 3162,
+      "end": 3458,
+      "observed_content": "开发者不可信、CI 阻止/Agent 修正；左下板新增两个泳道与门禁图。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 18,
+          "paragraph": 1,
+          "notes_pointer": "/sections/17/paragraphs/0",
+          "text": "教师认为 Agent 是特别需要约束的开发者：它可能事无巨细地写出很长的文档，把实现细节乃至尝试过程都留在正式说明中。生成量很大，不代表信息更可用；对读者而言，核心问题可能被细节淹没。",
+          "sha256": "3c016b31d266e026ef011fd3db1f75bd03d53e7f0cd260571aa2e9872a95f442"
+        },
+        {
+          "section": 18,
+          "paragraph": 2,
+          "notes_pointer": "/sections/17/paragraphs/1",
+          "text": "更危险的是隐形关联。doc.md 与 implementation.py 在生成时互相对应，但仓库里不一定显式记录这条关系。换一个 Agent 或压缩上下文后，下一轮只修改代码，文档就失真；后来再读到旧文档，模型又可能据此继续做错。材料越多、重复描述越细，这类同步成本越高。",
+          "sha256": "ce3e9eacfcaaa6b350612b110f4a275875281f04a73e4347dc1fe38ba08fd538"
+        },
+        {
+          "section": 18,
+          "paragraph": 3,
+          "notes_pointer": "/sections/17/paragraphs/2",
+          "text": "Agent 还可能在不重要的边角上过度反应，却忽视设计空间中真正重要的选择。工程约束应帮助它把注意力放回可维护性与用户目标，而不能只让输出看起来“做了很多”。",
+          "sha256": "43d7fcab9c0a5cc07db30e926f4d702b27713330197ad1665c78c6adb31e3413"
+        },
+        {
+          "section": 18,
+          "paragraph": 4,
+          "notes_pointer": "/sections/17/paragraphs/3",
+          "text": "另一个例子是验证过程把大量截图和工具输出塞满主上下文。教师提到让子 Agent 完成浏览器检查、只向主任务返回简短结论的做法；核心是控制上下文负担，但关键证据仍需要留存以便回查。对于仍由人与 AI 共同维护的项目，不能把模型当成无需理解、无需检查的万能执行者。",
+          "sha256": "0ccef63e0cb6549e777c7f5e4d60a14bf7ba71ab9aec634662f5fe19fb8091cb"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 18,
+          "frame": 1,
+          "path": "visual/full/v0371-3330.jpg",
+          "caption": "文档与代码的隐形关系、门禁与维护的板书。",
+          "sha256": "c6a52e53735177dc44a4d2695e79d67dab07bbb02c117bb6cce005c24b04fc82"
+        },
+        {
+          "section": 18,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-12.jpg",
+          "caption": "现行讲义第12页：Agent的偏好与不可信开发者。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "8bb62a3a02991169d039b76997c21e185351f3721187143fe35d8537464b91bc"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "constraint-table",
+      "start": 3458,
+      "end": 3574,
+      "observed_content": "把 Agent 的偏执变成可执行的约束：六行表，自动检查与人工判断分列。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 19,
+          "paragraph": 1,
+          "notes_pointer": "/sections/18/paragraphs/0",
+          "text": "课堂给出一个具体例子：为文档设置字数预算，超限就让 CI 失败，使不合要求的改动无法进入主要分支。Agent 也能在本地运行检查，看到失败后修正文档。这比只在 AGENTS.md 中写“禁止膨胀”更直接，因为长上下文会稀释模型对文字规则的注意。",
+          "sha256": "6839e9c1a4ac9d3b37fb782f7545ad7010fd65ccc790cbff4ca8f224d04d8e39"
+        },
+        {
+          "section": 19,
+          "paragraph": 2,
+          "notes_pointer": "/sections/18/paragraphs/1",
+          "text": "字数限制只是示例，阈值须由项目约定；短文档也可能错误，长文档也可能必要。有效约束应说明检查对象、失败信息、修复方式与例外处理，而不只是追求所有文件更短。下面完整保留讲义表格，并将其视为规则设计的参考，不宣称课堂已经演示配置了全部规则。",
+          "sha256": "3a637a6c0e447689a4f6e33a9085f4a7888abb7ff51ba52500ab3c8acc6b5d1f"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 19,
+          "frame": 1,
+          "path": "sources/official-20261019/slides/slide-13.jpg",
+          "caption": "现行讲义第13页：六类可执行约束及人工判断。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "9551a8a07f3c495cd66d23fec43e9853a39d2f18cb2909e46782ce0cbbab9d86"
+        }
+      ],
+      "static_official_page_suffices": true,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "openai-harness",
+      "start": 3574,
+      "end": 3694,
+      "observed_content": "Agent Native 开发、OpenAI Harness engineering 网页实际打开/滚动：标题、架构示意、repository knowledge；回讲义“把品味做成机制”。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 20,
+          "paragraph": 1,
+          "notes_pointer": "/sections/19/paragraphs/0",
+          "text": "前面两条线在这里汇合：用 workspace 表示状态，用 Agent 推进一步，再在 pre-commit、pre-push、合并等位置加入门控。教师把这套组织方式连接到 Agent-native 开发，并现场打开 OpenAI 的 Harness engineering 文章。",
+          "sha256": "838604657dd1eea8e6e280244b443fbad5c9805291426446f5dbde94178486a5"
+        },
+        {
+          "section": 20,
+          "paragraph": 2,
+          "notes_pointer": "/sections/19/paragraphs/1",
+          "text": "人不再逐行写代码，并不等于人什么都不做。仍需要安排环境、约束、反馈和验证机制，例如发布前检查是否把不应公开的明文或密钥带入产物。课堂用 source map 泄露作提醒；本笔记没有独立调查该事件，因此不把它作为对某家公司事故原因的确证。",
+          "sha256": "c7312962332bcf3d77ef1808e8c403ab38fc70cb74648efbc2f929c2eddbfa54"
+        },
+        {
+          "section": 20,
+          "paragraph": 4,
+          "notes_pointer": "/sections/19/paragraphs/3",
+          "text": "教师认为，一个看起来可由人维护的项目，仅靠公开展示的基础 lint 不够，背后很可能还有更完整的机制。这是教师基于项目观感作出的判断，不能升级成“已证实存在某套隐藏系统”。原文同时承认以年为尺度维护架构的一致性仍在探索；下方阅读补充说明其实际公开的知识管理、应用观察与清理机制。",
+          "sha256": "54f37d186677b24e48da5c5d6c6c608ffbc561c69c528db3865454b3ae059789"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 20,
+          "frame": 1,
+          "path": "visual/full/v0386-3600.jpg",
+          "caption": "课堂打开OpenAI Harness engineering原文；公开文章与课堂推测分开记录。",
+          "sha256": "33a5ccbe6b5612e4711ef168780be5d8ca81730411fcf003eab4b55616e86510"
+        },
+        {
+          "section": 20,
+          "frame": 4,
+          "path": "sources/official-20261019/slides/slide-14.jpg",
+          "caption": "现行讲义第14页：OpenAI Harness Engineering。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "a356677dfb404abef2e6f33160a753cd509f23bc81f7d497d33500b8123d5efe"
+        },
+        {
+          "section": 20,
+          "frame": 5,
+          "path": "sources/official-20261019/slides/slide-15.jpg",
+          "caption": "现行讲义第15页：把品味做成机制。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "b8455176c7c4abe21e8a20518f975b240044ffeb6616d4ee5a74b5d3e0e39ca2"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "codex-ci-three-layers",
+      "start": 3694,
+      "end": 3780,
+      "observed_content": "返回现场 AI 的 Codex CI 三层解释：PR 门禁 / main 全量 / 发布；餐厅试吃员、深度质检、端菜类比与对照表。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 20,
+          "paragraph": 3,
+          "notes_pointer": "/sections/19/paragraphs/2",
+          "text": "课堂回到现场 AI 对 Codex CI 的解释：PR 阶段快速门禁，main 阶段较全面验证，发布阶段构建和打标签；AI 用餐厅试吃、深度质检和端菜类比。教师浏览格式、拼写、文件或函数规模、依赖等 lint 项，并推测主干阶段运行较多单元测试。这里保留“现场 AI 总结/教师推测”的身份，不声称完成了真实仓库的配置审计。",
+          "sha256": "6f7714e27edf280a4d8e4183c0d1f4f5f8073098969f4ee3512c9d3da731d43d"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 20,
+          "frame": 2,
+          "path": "visual/full/v0411-3742.jpg",
+          "caption": "现场AI用三层流程解释Codex CI。",
+          "sha256": "65db6e9609f3f768fdf18de942b010cdae4d5da0278389fc0f5265f95d270d26"
+        },
+        {
+          "section": 20,
+          "frame": 3,
+          "path": "visual/full/v0420-3778.jpg",
+          "caption": "PR/main/发布的餐厅类比表，属于现场AI的教学说明。",
+          "sha256": "48120c53404010c4d22d86a835eebf731efe3c92df7b6313a3b0be2d7886c76e"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "stripe",
+      "start": 3832,
+      "end": 3844,
+      "observed_content": "Stripe Minions 讲义：混合节点，完整 CI 最多两轮；未打开 Stripe 原文。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 21,
+          "paragraph": 1,
+          "notes_pointer": "/sections/20/paragraphs/0",
+          "text": "讲义先短暂展示 Stripe Minions，课堂没有详细展开其流程。随后重点讨论 Anthropic 的多 Agent 编译器实验：把 16 个 Agent 放到同一个复杂目标上，它们可能卡在同一个错误，并互相修改或覆盖，增加数量并不会自动产生分工。",
+          "sha256": "c0788ccf808e0be1293bd67980cbabe2332dfce20b8168959707b975bb31fd64"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 21,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-16.jpg",
+          "caption": "现行讲义第16页：Stripe Minions。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "35bd431017375406ad81634a85f14c3bfd521c81c8d244cbfd3092f3fbf4239c"
+        }
+      ],
+      "static_official_page_suffices": true,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "compiler",
+      "start": 3844,
+      "end": 4006,
+      "observed_content": "右投影为Anthropic 16 Agent/GCC参照案例；左板由教师自己的architecture/logbook/dashboard与任务/Agent分工逐步展开。两种信息同时在全幅中，不能把板书标成GCC编译流程。",
+      "observation_corrected": true,
+      "exact_paragraphs": [
+        {
+          "section": 21,
+          "paragraph": 1,
+          "notes_pointer": "/sections/20/paragraphs/0",
+          "text": "讲义先短暂展示 Stripe Minions，课堂没有详细展开其流程。随后重点讨论 Anthropic 的多 Agent 编译器实验：把 16 个 Agent 放到同一个复杂目标上，它们可能卡在同一个错误，并互相修改或覆盖，增加数量并不会自动产生分工。",
+          "sha256": "c0788ccf808e0be1293bd67980cbabe2332dfce20b8168959707b975bb31fd64"
+        },
+        {
+          "section": 21,
+          "paragraph": 2,
+          "notes_pointer": "/sections/20/paragraphs/1",
+          "text": "接下来教师转到自己尚未公开名称的项目：architecture.md 生成架构图，Agent loop 的 logbook 记录任务及完成/进行中状态，dashboard 把 ongoing 任务、参与 Agent 和估计进度映射到模块上，并推到 GitLab CI 中。负责人据此看见每个模块在做什么，再判断接下来如何调整。板书画的是这套架构与任务可视化，不是 GCC 编译流程。",
+          "sha256": "c8d2aca32c5a080b27d8d2abb63020c43856d97931ae75f5ca2cb4c7cb9712ba"
+        },
+        {
+          "section": 21,
+          "paragraph": 3,
+          "notes_pointer": "/sections/20/paragraphs/2",
+          "text": "团队中的每个人又可能带着多个 Agent，只看各终端很难掌握全局。共享任务记录和架构位置提供共同视图。教师还设想进一步让 master agent 分解并安排 logbook 任务，但明确说自己当时还不太敢完全这样做，不能把这个设想当作已实现的自动管理能力。",
+          "sha256": "47c99bee1565c96bd1d54e0bb479e3cef89e309943bc2f4c9281e4519c0f0f59"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 21,
+          "frame": 1,
+          "path": "visual/full/v0439-3990.jpg",
+          "caption": "左侧板书是教师自己项目的architecture/logbook/dashboard与Agent分工；右侧投影仍是Anthropic/GCC案例。",
+          "sha256": "fd4688e0a31a40d5cf46dbc4c8092c6e043eef4bee5f2a402744517b96c4d38f"
+        },
+        {
+          "section": 21,
+          "frame": 3,
+          "path": "sources/official-20261019/slides/slide-17.jpg",
+          "caption": "现行讲义第17页：Anthropic编译器实验。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "baa8b3198293dc975f0e881000ab0e81a9752eabc2e14ccbe93220dda03b5898"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "strongdm-intro",
+      "start": 4006,
+      "end": 4044,
+      "observed_content": "StrongDM 讲义短暂出现；Deepseek Harness 人物图；真正的经验；转回终端。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 21,
+          "paragraph": 4,
+          "notes_pointer": "/sections/20/paragraphs/3",
+          "text": "StrongDM 的 Software Factory 随后在讲义中短暂出现，再转入教师自己的 Harness 经验。本节下方分别标明来自三篇原始资料的补充：这些机制和实验数字不是这几分钟课堂逐项报告过的内容。",
+          "sha256": "21a5cf5415819b316dbb027a06d638ffdc568c58a9a5adc4ce725cc5f825b475"
+        },
+        {
+          "section": 22,
+          "paragraph": 1,
+          "notes_pointer": "/sections/21/paragraphs/0",
+          "text": "教师建议把 DeepSeek Harness 仓库 clone 下来观察，并把它评价为值得学习的 Agent-native 项目。这是课堂中的经验评价；这里展示的是当时工作区，不将它等同于当前公开仓库的最新状态。",
+          "sha256": "d84529f8715106753c943a772a7e7f84dbc8fdf0bc70efe8cd6b861eebe44342"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 21,
+          "frame": 4,
+          "path": "sources/official-20261019/slides/slide-18.jpg",
+          "caption": "现行讲义第18页：StrongDM Software Factory。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "9d27b2cb6ec7a33f61e0459c9040d2700681900fb75a714350d5cdc8dc8338f2"
+        },
+        {
+          "section": 22,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-19.jpg",
+          "caption": "现行讲义第19页：DeepSeek Harness主题插画（不是架构图）。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "1279ae14aaeca77bf5a5db6d68846963a8ccda615fd0b7e502645b0ba2d4184d"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "harness-docs",
+      "start": 4044,
+      "end": 4196,
+      "observed_content": "打开 deepseek-harness，ls 与 docs 双语文件；architecture.md：Cordis 插件、profile、bundle、启动形态。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 22,
+          "paragraph": 1,
+          "notes_pointer": "/sections/21/paragraphs/0",
+          "text": "教师建议把 DeepSeek Harness 仓库 clone 下来观察，并把它评价为值得学习的 Agent-native 项目。这是课堂中的经验评价；这里展示的是当时工作区，不将它等同于当前公开仓库的最新状态。",
+          "sha256": "d84529f8715106753c943a772a7e7f84dbc8fdf0bc70efe8cd6b861eebe44342"
+        },
+        {
+          "section": 22,
+          "paragraph": 2,
+          "notes_pointer": "/sections/21/paragraphs/1",
+          "text": "第一个具体问题是双语文档。中文母语开发者能更快扫读中文、定位关键词，但面向更广的使用者又需要英文。文档经常顺手改动，数量一多，如何保证两种语言持续对应就成为真正的工程负担。",
+          "sha256": "0d26d3dd289d3bd466ce1654257aedecd7583f659a40a500810c4d0ddb872057"
+        },
+        {
+          "section": 22,
+          "paragraph": 3,
+          "notes_pointer": "/sections/21/paragraphs/2",
+          "text": "现场进入仓库，列出 docs，并打开 architecture.md。画面出现 Cordis 插件、profile、bundle 和启动形态等架构说明。接下来不是逐项讲完整个架构，而是以这份可读的文档为入口，追踪仓库如何约束双语内容的一致性和质量。",
+          "sha256": "9193e5a1b7bb1894efaddd31c73ec4a4adb4e296bd668aa72cbb18902de9c0ec"
+        },
+        {
+          "section": 22,
+          "paragraph": 4,
+          "notes_pointer": "/sections/21/paragraphs/3",
+          "text": "教师认为这份文档干净、容易阅读，交叉引用也受到检查，并声称仓库里找不到不合法链接。这一较强说法属于课堂评价；本笔记记录演示与机制，没有克隆该版本并对所有链接重跑验证。",
+          "sha256": "e93946319a70153c57ea5bac2b5a5d758b9cb04eea9904dcaa0ffeb75ea8cce3"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 22,
+          "frame": 1,
+          "path": "visual/full/v0460-4168.jpg",
+          "caption": "打开DeepSeek Harness的architecture.md，观察文档结构与交叉引用。",
+          "sha256": "f19cabf6feafee7d001614a0f38119afbdf6067dae19b5a54263afc8775d449e"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "bilingual-contract",
+      "start": 4196,
+      "end": 4274,
+      "observed_content": "Pi 探查 docs/i18n 与 scripts；部分查找 no such file；AI 回答 foo.md/foo.zh.md/foo.i18n.yaml 三件套、一致性门禁；右侧 README 双语切换。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 23,
+          "paragraph": 1,
+          "notes_pointer": "/sections/22/paragraphs/0",
+          "text": "教师向现场 Agent 提问：中文和英文文档怎样保持一致，又怎样保持“人感”？Agent 探查文件和脚本后，解释一套三件套：foo.md、foo.zh.md 与 foo.i18n.yaml。两种语言是权威对等的，谁先写、谁先修改，谁就是那次同步的源，而不是永久规定英文或中文为唯一真源。",
+          "sha256": "825d9616a6c5f1c05bd5ee5ae9c7f1c4bdfae76d453744b00ce84ebfc478ad4d"
+        },
+        {
+          "section": 23,
+          "paragraph": 3,
+          "notes_pointer": "/sections/22/paragraphs/2",
+          "text": "这让原本藏在人脑和会话里的对应关系变成可检查的文件结构。门禁可以发现结构、版本或确认状态不一致，但单纯重新计算哈希，不能证明两段语义相同，更不能证明语言自然。检查器负责哪些机械条件，Agent 或人负责哪些语义判断，必须分开。最后这一边界也为后面的翻译品味机制作铺垫。",
+          "sha256": "7c29d854b6c5782a67cfd51252c2aa543b8e56b7ce3c8e6f23b33921e6742a80"
+        },
+        {
+          "section": 23,
+          "paragraph": 4,
+          "notes_pointer": "/sections/22/paragraphs/3",
+          "text": "这种设计牺牲了目录表面的简洁：每份文档旁边多了翻译文件和配对记录。但开发者可以在 IDE 中配置可见性，只显示自己常用的语言，把 .i18n.yaml 隐藏为实现细节。教师借此重申：软件包含复杂的关系，文件树只是其中一种表示；显示时可以做投影，底层关系仍须保存。",
+          "sha256": "1b3ff116b4d05f9aab385709ae759f37ed7a5edbc18a49322c70f88957e5bf8a"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 23,
+          "frame": 1,
+          "path": "visual/full/v0476-4230.jpg",
+          "caption": "现场Agent解释双语文档三件套与配对门禁。",
+          "sha256": "64cf849da04e1df22c42e8c11822d7078cf141d81f79766b91e2d9ce1981c39a"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "bilingual-hashes",
+      "start": 4274,
+      "end": 4466,
+      "observed_content": "右侧 README.i18n.yaml 展示逐 heading slug 的 en/zh 哈希；左侧 AI 解释三件套、结构签名、正文变化重新配对；左板新增输入输出/文件配对示意。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 23,
+          "paragraph": 2,
+          "notes_pointer": "/sections/22/paragraphs/1",
+          "text": "右侧打开 README.i18n.yaml，按 heading slug 记录两种语言各段的哈希。配合 Git 历史，系统可以知道哪些内容变了、哪些配对仍沿用旧版本；不匹配时触发针对变化部分的翻译和检查。教师强调 patch-based 的同步：先看一侧改了什么，再更新另一侧相应位置，不必每次重写整份文档。",
+          "sha256": "ea4da35e66589abdbbefa9df9b4c3f7d345a8f18b50767ade6d59ee0056de4cc"
+        },
+        {
+          "section": 23,
+          "paragraph": 3,
+          "notes_pointer": "/sections/22/paragraphs/2",
+          "text": "这让原本藏在人脑和会话里的对应关系变成可检查的文件结构。门禁可以发现结构、版本或确认状态不一致，但单纯重新计算哈希，不能证明两段语义相同，更不能证明语言自然。检查器负责哪些机械条件，Agent 或人负责哪些语义判断，必须分开。最后这一边界也为后面的翻译品味机制作铺垫。",
+          "sha256": "7c29d854b6c5782a67cfd51252c2aa543b8e56b7ce3c8e6f23b33921e6742a80"
+        },
+        {
+          "section": 23,
+          "paragraph": 4,
+          "notes_pointer": "/sections/22/paragraphs/3",
+          "text": "这种设计牺牲了目录表面的简洁：每份文档旁边多了翻译文件和配对记录。但开发者可以在 IDE 中配置可见性，只显示自己常用的语言，把 .i18n.yaml 隐藏为实现细节。教师借此重申：软件包含复杂的关系，文件树只是其中一种表示；显示时可以做投影，底层关系仍须保存。",
+          "sha256": "1b3ff116b4d05f9aab385709ae759f37ed7a5edbc18a49322c70f88957e5bf8a"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 23,
+          "frame": 2,
+          "path": "visual/full/v0499-4350.jpg",
+          "caption": "README.i18n.yaml按标题片段记录英文与中文哈希。",
+          "sha256": "a8a91209d4b918443d60ffe8a9946ebfad01ac2fa04f99c83719f31b65542cbe"
+        },
+        {
+          "section": 23,
+          "frame": 3,
+          "path": "visual/full/v0501-4380.jpg",
+          "caption": "两侧内容及其配对关系的板书；哈希不同可提示变化。",
+          "sha256": "55a80cba4235655d14dc07b249f987043c41be10f668e52dab614dbe93f367ae"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "history-archaeology",
+      "start": 4666,
+      "end": 4870,
+      "observed_content": "追问这套双语机制的历史；AI 读取 archived notes、git log、git show，报告六阶段演进和贡献者；右侧看初始提交。仅为现场 Agent 的仓库考古结果。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 25,
+          "paragraph": 1,
+          "notes_pointer": "/sections/24/paragraphs/0",
+          "text": "教师进一步追问：这整套文档一致性流程由谁、何时引入，经历了哪些变化？现场 Agent 读取归档说明和 Git 的 log/show，按时间还原演进。这种提问把阅读从“现在有哪些文件”推进到“为什么会有这些文件”。",
+          "sha256": "24a488e53e0f4465f72de6dc234da98d6791e0bfa081a0584af86add8045f9af"
+        },
+        {
+          "section": 25,
+          "paragraph": 2,
+          "notes_pointer": "/sections/24/paragraphs/1",
+          "text": "课堂看到的报告先提到术语约定，再到配对契约与后续流程。教师据此判断维护者早已意识到文档质量的重要，并对显式配对的设计表示认可。报告中的具体作者、提交日期和阶段划分属于现场 Agent 的仓库考古结果，本笔记未另外固定同一提交逐项重放。",
+          "sha256": "4cd3a7e4d9179364758493ef3f31fe1dd7ce0b030cd7e978424983bd5a93f110"
+        },
+        {
+          "section": 25,
+          "paragraph": 3,
+          "notes_pointer": "/sections/24/paragraphs/2",
+          "text": "教师把它联系到传统文档工具：例如 docstring、Javadoc，把说明放到与代码更接近的位置，并从约定结构生成文档。它们降低同步成本，仍不保证注释内容永远正确；双语契约则在此基础上把另一类关系显式化。",
+          "sha256": "944710bdbb16c27ce3fe3adab68b30ebf23d377bf59d53076d98e814706f44ab"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 25,
+          "frame": 1,
+          "path": "visual/full/v0536-4674.jpg",
+          "caption": "现场追问双语机制的开发历史，Agent开始检索Git记录。",
+          "sha256": "f5297416c67089acf66df7bcfbdcfd9ab914afe3c7046bb40348fcb34ba473c3"
+        },
+        {
+          "section": 25,
+          "frame": 2,
+          "path": "visual/full/v0556-4722.jpg",
+          "caption": "现场Agent列出的术语约定与三件套早期阶段。",
+          "sha256": "4e932582584b1c89f137336e10cf428bf537c9472d91f0ea9c48d251f8afe159"
+        },
+        {
+          "section": 25,
+          "frame": 3,
+          "path": "visual/scan/sample-02431.jpg",
+          "caption": "现场Agent总结六次演化，包括最小补丁、轻量路径与简化驱动；未独立重放这些历史提交。",
+          "sha256": "b14dff1a537a7a53480953b697e6cb87c137eb7ee31fd9ae39da656f15a840ae"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "harness-inventory",
+      "start": 4870,
+      "end": 5004,
+      "observed_content": "请求类似机制盘点；AI 读 AGENTS/notes/skills/scripts/snapshots，列常驻规则、生命周期 Agent Notes、skills、机械门禁、上下文组织、状态等十六项。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 26,
+          "paragraph": 1,
+          "notes_pointer": "/sections/25/paragraphs/0",
+          "text": "教师让现场 Agent 继续扫描仓库，按 Agent-native 开发的视角列出机制。首先是分层 AGENTS.md：根目录保留全局入口，子树放局部规则，一项事实有明确归属。画面中的 verify-doc-budgets 对根文档与 architecture 等设置字数预算；这是该演示版本的规则，不是所有项目应照搬的阈值。",
+          "sha256": "c558ab6af729bdc05a0ad20fe3ddb8ae4e8665e09986b9284175402ac0336bda"
+        },
+        {
+          "section": 26,
+          "paragraph": 2,
+          "notes_pointer": "/sections/25/paragraphs/1",
+          "text": "第二类是 Agent Notes：保存代码和一般文档难以留下的“为什么”“放弃了什么”，并区分 proposed、implemented、rejected 和 archived 等状态。教师把它与自己项目中带状态、接入 GitLab CI 的 logbook 对比；相似点是把任务与决策持久化，不能据此断言两套实现相同或都已有 dashboard。",
+          "sha256": "7bba3ad5d80ee4595baf9410b29200f8080e2a5560084193b2c38703fd6243dd"
+        },
+        {
+          "section": 26,
+          "paragraph": 3,
+          "notes_pointer": "/sections/25/paragraphs/2",
+          "text": "第三类是 skills，把“怎样做”从“这次要做什么”中分离。现场另开 Agent 查看评审工作流、写作规范、工程质量与维护类技能，并区分开发仓库使用的 skills 和产品向使用者提供的 skills。技能的入口、调用方式和按需加载需要明确，不能因为目录里有文件就认为模型每次会正确调用。",
+          "sha256": "fe08a064f548c9815a9b51d9f6d4a0ed8f06c48101f79efcc9b91d606ee798fc"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 26,
+          "frame": 1,
+          "path": "visual/full/v0595-4932.jpg",
+          "caption": "分层AGENTS、字数预算和带生命周期的Agent Notes清单。",
+          "sha256": "dd46a67c2ccef67dad0083986f00c3743c83c95c2277b4ec0ea453de1017021d"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "skills-detail",
+      "start": 5004,
+      "end": 5066,
+      "observed_content": "另开 Pi 查 skills：工作流/门禁、写作/规范、工程质量、元技能、维护；产品内置 skills 与开发仓库 skills 分开。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 26,
+          "paragraph": 3,
+          "notes_pointer": "/sections/25/paragraphs/2",
+          "text": "第三类是 skills，把“怎样做”从“这次要做什么”中分离。现场另开 Agent 查看评审工作流、写作规范、工程质量与维护类技能，并区分开发仓库使用的 skills 和产品向使用者提供的 skills。技能的入口、调用方式和按需加载需要明确，不能因为目录里有文件就认为模型每次会正确调用。",
+          "sha256": "fe08a064f548c9815a9b51d9f6d4a0ed8f06c48101f79efcc9b91d606ee798fc"
+        },
+        {
+          "section": 26,
+          "paragraph": 4,
+          "notes_pointer": "/sections/25/paragraphs/3",
+          "text": "课堂还谈到阅读界面的变化：图片和小型动态 UI 如果放进相关文字的阅读流程，可能比堆在一处更舒适。教师据此推测 Web UI 可能承担更多 Agent 交互；这属于产品趋势判断，不是已经证明的未来结论。",
+          "sha256": "ddbfb5fda8cd78aa41ca05e82939a08c30aa79a2b51e7a36696d9641ee39d5e5"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 26,
+          "frame": 2,
+          "path": "visual/full/v0615-5032.jpg",
+          "caption": "现场查看skills分类，区分开发流程技能与产品提供的技能。",
+          "sha256": "755c9ab6dfeafaefdd1f9a3cf55c7090c13aabf85c9ec5182bc67024a4c562e6"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "review-detail",
+      "start": 5066,
+      "end": 5196,
+      "observed_content": "追问 code review；AI 读 GitHub policy、workflows、pre-push skill、PR template；解释本地自证→CI→人工签署和覆盖率、approved/changes requested/draft/pending 门禁。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 27,
+          "paragraph": 1,
+          "notes_pointer": "/sections/26/paragraphs/0",
+          "text": "面对陌生项目，只要知道哪些问题值得问，就可以让 Agent 带着自己读源码与流程。课堂追问 code review，现场回答把它组织为本地自证、CI 门禁、人工评审三段，并展示分数、覆盖与批准状态等要求；这些是现场阅读结果，不是本笔记独立跑通了该仓库的完整合并流程。",
+          "sha256": "3238e8b3c024746b86ddbdabc20af1d1a178cf356d98de8865642ec8deed8e01"
+        },
+        {
+          "section": 27,
+          "paragraph": 2,
+          "notes_pointer": "/sections/26/paragraphs/1",
+          "text": "文档检查不只针对翻译。教师提到链接一致性，以及文档中的 interface 代码块应与源码对应。随后用自己项目作扩展：给 Markdown fenced code block 加很小的执行语义，声明它应出现在什么位置、或与什么对象关联，再由轻量检查器验证。这样原本靠记忆维持的关系，就能在变更时被检查。",
+          "sha256": "ece305fc349a6199a8d46ad394c02c1dbbede63cf5c83ffc779298d310c7536f"
+        },
+        {
+          "section": 27,
+          "paragraph": 4,
+          "notes_pointer": "/sections/26/paragraphs/3",
+          "text": "代价是提交前可能运行许多检查。教师提出自己的分工：人与 AI 先在 logbook/plan 中把要做什么、做到什么程度写清楚，之后实现与相应验证由 Agent 做；只改计划、没有改代码时，不必机械重跑所有代码 CI。具体跳过哪些检查仍取决于依赖关系，不能把这个例子扩写成“改文档永远不用测”。",
+          "sha256": "fb674c4674b88b49677651a5495a4fa08becfd643ff97483d38b0c5dcbf68467"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 27,
+          "frame": 1,
+          "path": "visual/full/v0635-5080.jpg",
+          "caption": "本地自证、CI与人工评审的现场说明。",
+          "sha256": "a1ea575de9775a09b9b492ad5489ebb1ce513a3dd526a02dd2ff2201046fa33e"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "harness-final-inventory",
+      "start": 5196,
+      "end": 5283,
+      "observed_content": "现场AI列verify脚本、文档分层、schema/snapshot、先验证后落盘、model-visible/logged关系、prototype API、推理痕迹和归档简化。屏幕清单是现场阅读结果，不直接证明所有实现。",
+      "observation_corrected": true,
+      "exact_paragraphs": [
+        {
+          "section": 27,
+          "paragraph": 2,
+          "notes_pointer": "/sections/26/paragraphs/1",
+          "text": "文档检查不只针对翻译。教师提到链接一致性，以及文档中的 interface 代码块应与源码对应。随后用自己项目作扩展：给 Markdown fenced code block 加很小的执行语义，声明它应出现在什么位置、或与什么对象关联，再由轻量检查器验证。这样原本靠记忆维持的关系，就能在变更时被检查。",
+          "sha256": "ece305fc349a6199a8d46ad394c02c1dbbede63cf5c83ffc779298d310c7536f"
+        },
+        {
+          "section": 27,
+          "paragraph": 3,
+          "notes_pointer": "/sections/26/paragraphs/2",
+          "text": "屏幕列出 doc-sync、CI static、coverage、snapshot、translation pairing、client UI、application entry points 和 type-equivalence 等门禁。它们看似细小，合在一起才让系统持续可维护。字面相同、类型等价、链接有效和行为正确是不同要求；在不了解脚本的实际合同时，不应把它们混称为“文档与实现完全一致”。",
+          "sha256": "2869dae44465aa6396686ad2728e64e1a9b826f584c5696b30c5b2c904d6f023"
+        },
+        {
+          "section": 27,
+          "paragraph": 4,
+          "notes_pointer": "/sections/26/paragraphs/3",
+          "text": "代价是提交前可能运行许多检查。教师提出自己的分工：人与 AI 先在 logbook/plan 中把要做什么、做到什么程度写清楚，之后实现与相应验证由 Agent 做；只改计划、没有改代码时，不必机械重跑所有代码 CI。具体跳过哪些检查仍取决于依赖关系，不能把这个例子扩写成“改文档永远不用测”。",
+          "sha256": "fb674c4674b88b49677651a5495a4fa08becfd643ff97483d38b0c5dcbf68467"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 27,
+          "frame": 2,
+          "path": "visual/full/v0660-5244.jpg",
+          "caption": "机械门禁与文档分层清单；需看各脚本合同才能判断其保证范围。",
+          "sha256": "1f1939a2c8685d88dc28e6d021a9e12e76c74868ec976a4cb07f355dbc088640"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "experience",
+      "start": 5283,
+      "end": 5410,
+      "observed_content": "Deepseek Harness 人物图与真正的经验讲义；黑板推拉重排，指向过去失败/架构探索。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 28,
+          "paragraph": 1,
+          "notes_pointer": "/sections/27/paragraphs/0",
+          "text": "看见成熟机制后，人很容易觉得“本来就应该这样”，却很难在没有经历问题时凭空想出。教师把这归于真实经验：写过、失败过，才知道当前路线之外还有哪些可能；仅在当前想法里不断推演，可能始终看不到另一个设计分支。",
+          "sha256": "33b5be76cef47ce21fcd28bdf99aeac31ef5834bf024b1934abbb77cae50ed57"
+        },
+        {
+          "section": 28,
+          "paragraph": 2,
+          "notes_pointer": "/sections/27/paragraphs/1",
+          "text": "即使有经验，项目也可能逐渐失去好的结构。教师举学生项目的例子：当 architecture 已经坏掉，就开一个清楚的新骨架，把旧功能一点点迁入，维持新的架构。清理杂物未必能解决全部结构问题，必要时可以做模块级或项目级重构。",
+          "sha256": "e61872914bdc03317138c850b6daabf2d46cb702d0cef0c29caeb4c86d41f11e"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 28,
+          "frame": 1,
+          "path": "sources/official-20261019/slides/slide-20.jpg",
+          "caption": "现行讲义第20页：真正的经验与重构。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "ea1f35ba887d8e8041a2566566603234d0ff0e2a13cf122178607dfa79157471"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "failures",
+      "start": 5410,
+      "end": 5478,
+      "observed_content": "Friendster、Webvan/Quibi 讲义；可对照当前官方页，但不从画面推测所有文字已口述。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 28,
+          "paragraph": 3,
+          "notes_pointer": "/sections/27/paragraphs/2",
+          "text": "课堂提到 Friendster 在迅速吸引用户后遇到架构问题，用来说明好的意图还需要有经验的实现团队。一个好想法沿错误路线堆积代码，可能失去先发机会。讲义另列 Webvan 和 Quibi，但没有在口述中展开；下面将它们作为现行讲义的背景补充，并保留各原始资料的因果边界。",
+          "sha256": "e5d7e5b23d944f3c809c47d52cbff026c5101435f8abe28b328a82a97748f6cf"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 28,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-21.jpg",
+          "caption": "现行讲义第21页：Friendster背景。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "c4ee36d1c39a59d809f90679cdf49ba583f8b774054fe473e5051b4a5708925d"
+        },
+        {
+          "section": 28,
+          "frame": 3,
+          "path": "sources/official-20261019/slides/slide-22.jpg",
+          "caption": "现行讲义第22页：Webvan与Quibi背景。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "87b696212278b8dad01296308422346edba3c8784a0d280fd5476b9c5fa3850c"
+        }
+      ],
+      "static_official_page_suffices": true,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "learning-opportunity",
+      "start": 5478,
+      "end": 5718,
+      "observed_content": "推论：Token→尝试机会、学习动机+能力；左板补画需求/实现图上的连线、划叉。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 29,
+          "paragraph": 1,
+          "notes_pointer": "/sections/28/paragraphs/0",
+          "text": "教师回到开学时“没有 token 的学生应该退学”的说法，并明确说那是玩笑；真正担心的是，没有足够资源的人，尝试机会可能少于别人。只看别人可以学习一些经验，但亲手试错仍有不可替代的部分。",
+          "sha256": "7d19b6512223506214c2a3f957017f699bbb11bc125d3e04faef9fc4a0b5e98b"
+        },
+        {
+          "section": 29,
+          "paragraph": 2,
+          "notes_pointer": "/sections/28/paragraphs/1",
+          "text": "他进一步提出一种用人风险：如果组织只追求短期产出，可能更愿意给经验丰富的人配大量 token，而不是花多年培养新人；而模型能力继续上升，又可能抬高新人进入实际项目的门槛。这是课堂的担忧与情景推演，不是已经确立的就业规律。不能用某个订阅价格或一次模型体验衡量一个学生的全部价值。",
+          "sha256": "b7cc68db2c6e941d98b8d87a35f07263d01beba052cc6a94a6536b8b88e22789"
+        },
+        {
+          "section": 29,
+          "paragraph": 3,
+          "notes_pointer": "/sections/28/paragraphs/2",
+          "text": "大学理论上可以为长期培养提供空间，但教师也批评科研经费和成果指标可能使高校趋向短期产出。他随后以“大学肯定要崩溃”的强烈措辞讨论教育转型，并马上称之为自己的“暴论”；又设想培训机构用优秀样板课加教师和 AI 重组教学。课堂最后明确说不知道未来会怎样。这些内容保留为观点讨论，不当作机构现状调查或确定预测。",
+          "sha256": "54f0412733962a95f6338b489f50946a53553f2683393654cfaff93f59535157"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 29,
+          "frame": 1,
+          "path": "visual/full/v0692-5610.jpg",
+          "caption": "尝试机会、经验和能力门槛的课堂讨论；板书用于观点说明。",
+          "sha256": "d095a5e49c3db73bf90261334d698771c2a1972004455a4aafbfd75a72134cb7"
+        },
+        {
+          "section": 29,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-23.jpg",
+          "caption": "现行讲义第23页：Token与尝试机会。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "fbbf6c650fc0128d4ce21a205e1895d6e5f7d4a822c403ae12bb9359be4eb05e"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "closing-images",
+      "start": 5718,
+      "end": 5808,
+      "observed_content": "学习机会断层插画；快速回真正的经验、Deepseek Harness、Friendster。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 29,
+          "paragraph": 3,
+          "notes_pointer": "/sections/28/paragraphs/2",
+          "text": "大学理论上可以为长期培养提供空间，但教师也批评科研经费和成果指标可能使高校趋向短期产出。他随后以“大学肯定要崩溃”的强烈措辞讨论教育转型，并马上称之为自己的“暴论”；又设想培训机构用优秀样板课加教师和 AI 重组教学。课堂最后明确说不知道未来会怎样。这些内容保留为观点讨论，不当作机构现状调查或确定预测。",
+          "sha256": "54f0412733962a95f6338b489f50946a53553f2683393654cfaff93f59535157"
+        },
+        {
+          "section": 29,
+          "paragraph": 4,
+          "notes_pointer": "/sections/28/paragraphs/3",
+          "text": "最后的实际建议是利用开源社区：找到真正优秀的项目，观察它如何组织约束、知识和执行，再亲手做出自己的小版本。教师感谢开源社区对自己理解和课程的帮助，并明确建议从 DeepSeek Harness 开始阅读。现行讲义的“学习机会断层”插画表达的是这种担忧，不是量化研究图。",
+          "sha256": "9d263747a51e2a8ab10bb523a845d432569cf88a29bfef8ef8220445aa63a670"
+        },
+        {
+          "section": 28,
+          "paragraph": 1,
+          "notes_pointer": "/sections/27/paragraphs/0",
+          "text": "看见成熟机制后，人很容易觉得“本来就应该这样”，却很难在没有经历问题时凭空想出。教师把这归于真实经验：写过、失败过，才知道当前路线之外还有哪些可能；仅在当前想法里不断推演，可能始终看不到另一个设计分支。",
+          "sha256": "33b5be76cef47ce21fcd28bdf99aeac31ef5834bf024b1934abbb77cae50ed57"
+        },
+        {
+          "section": 28,
+          "paragraph": 3,
+          "notes_pointer": "/sections/27/paragraphs/2",
+          "text": "课堂提到 Friendster 在迅速吸引用户后遇到架构问题，用来说明好的意图还需要有经验的实现团队。一个好想法沿错误路线堆积代码，可能失去先发机会。讲义另列 Webvan 和 Quibi，但没有在口述中展开；下面将它们作为现行讲义的背景补充，并保留各原始资料的因果边界。",
+          "sha256": "e5d7e5b23d944f3c809c47d52cbff026c5101435f8abe28b328a82a97748f6cf"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 29,
+          "frame": 3,
+          "path": "sources/official-20261019/slides/slide-24.jpg",
+          "caption": "现行讲义第24页：学习机会断层插画（不是定量研究图）。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "6b5e4b2b8c0dc366bb033ca514f35d5ac9eb0e53bce34b5dca7374d1bfece83c"
+        },
+        {
+          "section": 28,
+          "frame": 1,
+          "path": "sources/official-20261019/slides/slide-20.jpg",
+          "caption": "现行讲义第20页：真正的经验与重构。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "ea1f35ba887d8e8041a2566566603234d0ff0e2a13cf122178607dfa79157471"
+        },
+        {
+          "section": 28,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-21.jpg",
+          "caption": "现行讲义第21页：Friendster背景。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "c4ee36d1c39a59d809f90679cdf49ba583f8b774054fe473e5051b4a5708925d"
+        },
+        {
+          "section": 22,
+          "frame": 2,
+          "path": "sources/official-20261019/slides/slide-19.jpg",
+          "caption": "现行讲义第19页：DeepSeek Harness主题插画（不是架构图）。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "1279ae14aaeca77bf5a5db6d68846963a8ccda615fd0b7e502645b0ba2d4184d"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "closing-source",
+      "start": 5808,
+      "end": 5829.674667,
+      "observed_content": "回终端/目录；重新打开 agent.py 到 main tool loop，视频到这里结束。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 30,
+          "paragraph": 1,
+          "notes_pointer": "/sections/29/paragraphs/0",
+          "text": "收尾时教师再次打开 agent.py，并纠正自己的说法：这个很小的文件更准确地说是 Agent 核心，而不是整套 Ralph Loop。可以把它当作理解 DeepSeek Harness 的起点；成熟项目把许多能力插件化，逐步补入真实工作中需要的机制。",
+          "sha256": "7319cfb8b45bd62f48bfa9434540742278053bdd3205118386c5e61c9913460a"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 30,
+          "frame": 1,
+          "path": "visual/full/v0712-5822.jpg",
+          "caption": "课程结束前回到agent.py的工具循环，连接最小核心与插件化系统。",
+          "sha256": "29a29fd3cb2c104d4d05a1758a59f6d7b34a42503a2d2cf48e879084ee8205b4"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "transition-check",
+      "start": 2458,
+      "end": 2644,
+      "observed_content": "每次 Transition 都检查；短暂回 ralf-loop.sh，强调评价/验证结果与持续保持好状态。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 14,
+          "paragraph": 1,
+          "notes_pointer": "/sections/13/paragraphs/0",
+          "text": "回看 Ralph 提示词，其中最重要的部分是“先检查当前状态，只推进一个明确步骤，然后验证并评估结果”。在模型可能漂移的假设下，小步推进使检查对象更集中；每次转移后停下来 review 或运行测试，比等全部做完后才检查更容易找到偏差。",
+          "sha256": "02452fd12433aaa18d5325a871b9c8bd81951f579caf70e740bcf93002dfcd25"
+        },
+        {
+          "section": 14,
+          "paragraph": 2,
+          "notes_pointer": "/sections/13/paragraphs/1",
+          "text": "这并非 AI 时代才出现的做法。软件工程本来就不应只凭开发者的自信接收代码。教师用“未测代码永远是错的”的课堂口号强调验证优先；这里应理解为工程上的警觉，不是对所有未测试程序的数学断言。",
+          "sha256": "965f77e70affbc3b8fe93243fb974766ef4e4d5d6943e7fab5e4207b9234538b"
+        },
+        {
+          "section": 14,
+          "paragraph": 3,
+          "notes_pointer": "/sections/13/paragraphs/2",
+          "text": "“只改一句文档”“把循环从一开始改成从零开始”“样例和单测已经过了”，都可能让开发者过早相信自己。教师把这类心理倾向与状态检查联系起来：如果某次检查未通过，就不接受本轮结束，而是返回修复，再评估新的状态。这里的“好状态”只能由已有检查所覆盖的性质支持，仍要警惕测试遗漏。",
+          "sha256": "c295a1791d2c588a873b3e8983a430420305f1de57453f73b57e94ba38f28bdf"
+        },
+        {
+          "section": 11,
+          "paragraph": 1,
+          "notes_pointer": "/sections/10/paragraphs/0",
+          "text": "教师展示 ralf-loop.sh，核心仍是一个提示词：每轮先检查当前状态，只推进一个明确步骤；未完成时写文件说明下一步；只有确认整个任务完成后，才输出约定的完成标记。repo 因而同时保存成果和继续工作的依据。",
+          "sha256": "1f97006ef26b5943791149699f1cdf4821e149873342f91f14ae9a1b31323f09"
+        },
+        {
+          "section": 11,
+          "paragraph": 2,
+          "notes_pointer": "/sections/10/paragraphs/1",
+          "text": "真实 shell 代码不是单纯的 while true：它收集 Agent 输出，用 grep -Fxq 检测独立一行的 <RALPH_DONE>，命中后 break。这个机制能识别停止声明，但声明是否真实，仍取决于验收要求和模型的检查；不能把字符串匹配当成任务正确性证明。",
+          "sha256": "9ece57b66b66053b20a089a4dc56b14b98f0277aae34c18b0308da9b4c9a3b3e"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 14,
+          "frame": 1,
+          "path": "sources/official-20261019/slides/slide-07.jpg",
+          "caption": "现行讲义第7页：每次Transition都检查。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "49b7c35e2b59dce14ccdf3578ebc2c6e2361ec497bc77b9772399dbf64e57efe"
+        },
+        {
+          "section": 11,
+          "frame": 1,
+          "path": "visual/full/v0173-2020.jpg",
+          "caption": "ralf-loop.sh约定每轮工作与<RALPH_DONE>终止标记。",
+          "sha256": "b5358b3f7e5ff4315bfe0aacab65c2b8f9722a5333eaf3d6ff2de0343d205777"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "taste-mechanism",
+      "start": 3780,
+      "end": 3832,
+      "observed_content": "回把品味做成机制；What we’re still learning 选中强调。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 20,
+          "paragraph": 4,
+          "notes_pointer": "/sections/19/paragraphs/3",
+          "text": "教师认为，一个看起来可由人维护的项目，仅靠公开展示的基础 lint 不够，背后很可能还有更完整的机制。这是教师基于项目观感作出的判断，不能升级成“已证实存在某套隐藏系统”。原文同时承认以年为尺度维护架构的一致性仍在探索；下方阅读补充说明其实际公开的知识管理、应用观察与清理机制。",
+          "sha256": "54f37d186677b24e48da5c5d6c6c608ffbc561c69c528db3865454b3ae059789"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 20,
+          "frame": 5,
+          "path": "sources/official-20261019/slides/slide-15.jpg",
+          "caption": "现行讲义第15页：把品味做成机制。紫色或扩展内容与课堂口述的归属以正文标注为准。",
+          "sha256": "b8455176c7c4abe21e8a20518f975b240044ffeb6616d4ee5a74b5d3e0e39ca2"
+        }
+      ],
+      "static_official_page_suffices": true,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    },
+    {
+      "event": "translation-taste",
+      "start": 4466,
+      "end": 4666,
+      "observed_content": "区分机器一致性与翻译审美；展示 docs/i18n/style-samples.md、terminology.md；AI 说明人工校准段落、术语、不译词、原写作与翻译两遍策略。",
+      "observation_corrected": false,
+      "exact_paragraphs": [
+        {
+          "section": 24,
+          "paragraph": 1,
+          "notes_pointer": "/sections/23/paragraphs/0",
+          "text": "现场打开 docs/i18n/style-samples.md，展示已经校准的写作或翻译样例。教师认为文档仍能看出一些 AI 痕迹，但在项目长大后仍能让人阅读、维护，背后需要持续约束，而不是一句“写得自然一点”。",
+          "sha256": "de339204c765bccfded99b3910229978ef0f0f47d4a952a3e960ae873b723da5"
+        },
+        {
+          "section": 24,
+          "paragraph": 2,
+          "notes_pointer": "/sections/23/paragraphs/1",
+          "text": "这些规范不是全部塞进 AGENTS.md。写作和翻译时再按需加载，属于渐进式披露：常驻上下文保留导航，相关任务再获取细节。否则规范自己不断膨胀，最终也会挤占模型注意力。",
+          "sha256": "d03f31377574192d192541d5c7eab1b58498596e21c1d8779803f5204722c159"
+        },
+        {
+          "section": 24,
+          "paragraph": 3,
+          "notes_pointer": "/sections/23/paragraphs/2",
+          "text": "terminology.md 约定中英文术语的统一译法。现场 Agent 还展示初次出现、缩写、不翻译词以及先写作后翻译的流程说明；这些属于所见仓库工作方式，不能只因文件存在就推断每次执行都遵守。",
+          "sha256": "73089edb471539198cb1652b077764bf269aa45cd04b060f1434839f150890ab"
+        },
+        {
+          "section": 24,
+          "paragraph": 4,
+          "notes_pointer": "/sections/23/paragraphs/3",
+          "text": "教师提出一个可尝试的机械检查例子：段落或章节已配对时，可以比较某个术语在两种语言中的出现次数，超过一定偏差就提示。他用“加减三”等举例，也马上提醒阈值过严会误伤合理译文。它是设计思路，不是该仓库已经验证采用的固定算法；数量相近仍不能证明翻译正确。",
+          "sha256": "c8c2ae379925ce954e59b2643b382d5974c54e5ec41a23ff5cb153b70f9c7e29"
+        }
+      ],
+      "existing_frames": [
+        {
+          "section": 24,
+          "frame": 1,
+          "path": "visual/full/v0514-4480.jpg",
+          "caption": "文档翻译流程与按需加载的规范入口。",
+          "sha256": "00d2de564c29c78977890298cd6f4f57ac6d65ae697a1148ae911f090d6c733d"
+        },
+        {
+          "section": 24,
+          "frame": 2,
+          "path": "visual/full/v0523-4530.jpg",
+          "caption": "style-samples.md中的风格样例；样例不等于当前校验算法。",
+          "sha256": "75d77cbc329ce0b720853e0c00d7c0835c97fae19f0e54eaa6c00ca6b66c42d2"
+        },
+        {
+          "section": 24,
+          "frame": 3,
+          "path": "visual/full/v0528-4590.jpg",
+          "caption": "terminology与一致性讨论，教师提示过严规则会误伤。",
+          "sha256": "94861fe8486013cccea8b8ee87b17c64ebabab742c85c3964f5043a44c0c8677"
+        }
+      ],
+      "static_official_page_suffices": false,
+      "mapping_basis": "人工按已目视事件内容对应当前完整段落与成品图；并非按时间最近或每章一图自动分配。"
+    }
+  ]
+}

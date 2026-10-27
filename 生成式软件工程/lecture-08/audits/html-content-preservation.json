@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "html_sha256": "48a1278dbae1d157bd35ec4a077a3079667a6266ad110198fa8c2dbf251377d9",
+  "notes_sha256": "962275c64c913c167cf9ce9bb489a49c168b510ea80ee8701e67033c18fa89cf",
+  "text_blocks_checked": 249,
+  "missing": [],
+  "source_units": 394,
+  "unique_assignment": true,
+  "scope": "All authored prose/example/editor notes/captions/supplements/questions/answers present in rendered HTML text; not semantic correctness."
+}

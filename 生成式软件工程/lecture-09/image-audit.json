@@ -1,0 +1,1846 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "f85761ff3e017654e4ceec419479a4e531feb726955bf465b1bb19774a2a9d3c",
+  "images": [
+    {
+      "section": 1,
+      "frame": 1,
+      "path": "visual/full/v0009-0180.jpg",
+      "sha256": "d7c2ec8d80988fcd4738461bcbd0f8e4fc1a439841742841e599b2c40fdf9f70",
+      "purpose": "复习 Intent、Spec、Implementation、复杂性与版本管理，左侧形成分支示意板书。",
+      "expected_information": "复习 Intent、Spec、Implementation、复杂性与版本管理，左侧形成分支示意板书。",
+      "observed_information": "复习页两组条目和Brooks紫色补注可见；教师部分遮挡左板，板书另以后续全幅保留。",
+      "comparison_evidence": "visual/native-frame-review.json#v0009; visual/contact-review.json; precise seek 180.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 180.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 1,
+      "frame": 2,
+      "path": "sources/official-capture/page-01.png",
+      "sha256": "94e83252140ddf08c02bb962aa162b16c4dc97de78fb3e7b4679e4d01af15523",
+      "purpose": "保存现行官方讲义第1页：Review & Comments。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "软件工程的Intent/Spec/Impl、NASA紫色例子与Git/Jujutsu条目完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第1页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 1,
+      "frame": 3,
+      "path": "sources/official-capture/page-02.png",
+      "sha256": "566e96d276d14888b6b2b764f7521511ba62bc393bea79a6b744014df2199316",
+      "purpose": "保存现行官方讲义第2页：Review & Comments。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "essential/accidental复杂性、Brooks九成条件及Agent-native/CI-CD完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第2页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 2,
+      "frame": 1,
+      "path": "visual/full/v0013-0210.jpg",
+      "sha256": "379fbb3505f9b8d87f9b379a8ff45740df05fc05c0ae8f2451e6d3d0fab7f5f8",
+      "purpose": "课堂展示 DeepSeek Harness 活动现场照片。",
+      "expected_information": "课堂展示 DeepSeek Harness 活动现场照片。",
+      "observed_information": "原尺寸实际目视：课堂展示 DeepSeek Harness 活动现场照片。",
+      "comparison_evidence": "visual/native-frame-review.json#v0013; visual/contact-review.json; precise seek 210.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 210.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 2,
+      "frame": 2,
+      "path": "visual/full/v0019-360.jpg",
+      "sha256": "fa1730a7ccad60d4f17aea5d598950238a04bcd6b78cafb990fe5f347b01b3b3",
+      "purpose": "DeepSeek Harness 的 Greeting 会话回答“你是谁”，并说明当前工作目录。",
+      "expected_information": "DeepSeek Harness 的 Greeting 会话回答“你是谁”，并说明当前工作目录。",
+      "observed_information": "模型回复和当前目录均完整可见，已经不是加载中的“你是谁”状态。",
+      "comparison_evidence": "visual/native-frame-review.json#v0019; visual/contact-review.json; precise seek 360",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 360秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 2,
+      "frame": 3,
+      "path": "sources/official-capture/page-03.png",
+      "sha256": "a2966ee7bc5e8eec6317c890f19ba19c758971cd464ced480335bfd8ad40dfd6",
+      "purpose": "保存现行官方讲义第3页：开发者交流活动照片。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "开发者交流现场照片和展示物完整，照片原像素有限，不据此识别小字。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第3页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 3,
+      "frame": 1,
+      "path": "visual/full/v0029-0400.jpg",
+      "sha256": "55f8b36a618f56cfa0843f794b0649c97cf06e5f82450f17cd36dcc739bd1e02",
+      "purpose": "miniagent.py 中的 RETRY_DELAY 配置、系统提示词与 bash 工具定义。",
+      "expected_information": "miniagent.py 中的 RETRY_DELAY 配置、系统提示词与 bash 工具定义。",
+      "observed_information": "原尺寸实际目视：miniagent.py 中的 RETRY_DELAY 配置、系统提示词与 bash 工具定义。",
+      "comparison_evidence": "visual/native-frame-review.json#v0029; visual/contact-review.json; precise seek 400.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 400.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 3,
+      "frame": 2,
+      "path": "visual/full/v0030-0402.jpg",
+      "sha256": "b79fbe2385b5472b481a72033bedfa323a288a50b9f4e1651eae04a6a71c408c",
+      "purpose": "bash 工具的 JSON 参数和命令执行函数。",
+      "expected_information": "bash 工具的 JSON 参数和命令执行函数。",
+      "observed_information": "原尺寸实际目视：bash 工具的 JSON 参数和命令执行函数。",
+      "comparison_evidence": "visual/native-frame-review.json#v0030; visual/contact-review.json; precise seek 402.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 402.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 3,
+      "frame": 3,
+      "path": "visual/full/v0042-0458.jpg",
+      "sha256": "7bd11a29045345fdb270dc32180fded3adf44c67729399633f1bb258ecfd789e",
+      "purpose": "生成的南大仙林校区三维场景，全景可旋转查看。",
+      "expected_information": "生成的南大仙林校区三维场景，全景可旋转查看。",
+      "observed_information": "原尺寸实际目视：生成的南大仙林校区三维场景，全景可旋转查看。",
+      "comparison_evidence": "visual/native-frame-review.json#v0042; visual/contact-review.json; precise seek 458.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 458.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 3,
+      "frame": 4,
+      "path": "visual/full/v0048-0470.jpg",
+      "sha256": "f71de1c914ba5e05ed5708f81004eb45a26af7d1b167601386fb97fdc485acd4",
+      "purpose": "校园三维场景放大到院系楼宇，标签、建筑和树木可见。",
+      "expected_information": "校园三维场景放大到院系楼宇，标签、建筑和树木可见。",
+      "observed_information": "原尺寸实际目视：校园三维场景放大到院系楼宇，标签、建筑和树木可见。",
+      "comparison_evidence": "visual/native-frame-review.json#v0048; visual/contact-review.json; precise seek 470.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 470.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 3,
+      "frame": 5,
+      "path": "visual/full/v0068-0550.jpg",
+      "sha256": "57528cf3be1f447db3dcf55e6572baeeec81b22131bdf32349aaef00568652f4",
+      "purpose": "交互调整后的校园局部，可比较道路、绿地及楼宇布局。",
+      "expected_information": "交互调整后的校园局部，可比较道路、绿地及楼宇布局。",
+      "observed_information": "原尺寸实际目视：交互调整后的校园局部，可比较道路、绿地及楼宇布局。",
+      "comparison_evidence": "visual/native-frame-review.json#v0068; visual/contact-review.json; precise seek 550.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 550.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 3,
+      "frame": 6,
+      "path": "sources/official-capture/page-04.png",
+      "sha256": "4122b51cd7c30cf6b5427f9fa66ad2e8dda1b54025089f3bdd43485aae3bc39b",
+      "purpose": "保存现行官方讲义第4页：Agent Harness: 需求。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "150行Mini-Agent、校园三维图目标、网络中断反例和API问题完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第4页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 5,
+      "frame": 1,
+      "path": "sources/official-capture/page-05.png",
+      "sha256": "304dfebda155635a1d807a047179e25a4ce04244f926820064b3b1c1b510493a",
+      "purpose": "保存现行官方讲义第5页：API 中断，应该怎么办？。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "三种失败类别、未知执行结果、文件移动例与AWS链接完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第5页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 6,
+      "frame": 1,
+      "path": "visual/full/v0092-0928.jpg",
+      "sha256": "dfa3eefbcbcb807c20fd1fc0527ca9d1ccfa9534160fe5e2d94ffef856350ab7",
+      "purpose": "现场打开《办公 Agent 产品需求规格说明书》，可见版本1.0和2026年10月18日。",
+      "expected_information": "现场打开《办公 Agent 产品需求规格说明书》，可见版本1.0和2026年10月18日。",
+      "observed_information": "原尺寸实际目视：现场打开《办公 Agent 产品需求规格说明书》，可见版本1.0和2026年10月18日。",
+      "comparison_evidence": "visual/native-frame-review.json#v0092; visual/contact-review.json; precise seek 928.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 928.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 6,
+      "frame": 2,
+      "path": "visual/full/v0098-0992.jpg",
+      "sha256": "fac3146b34e5ffe5fa448b6de99e05df2e614fd513addc4c4cfa82c487de4fbf",
+      "purpose": "产品需求中的目标用户与核心场景。",
+      "expected_information": "产品需求中的目标用户与核心场景。",
+      "observed_information": "原尺寸实际目视：产品需求中的目标用户与核心场景。",
+      "comparison_evidence": "visual/native-frame-review.json#v0098; visual/contact-review.json; precise seek 992.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 992.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 6,
+      "frame": 3,
+      "path": "visual/full/v0100-0996.jpg",
+      "sha256": "bee6cccc09fab332b9d05827c2f69d53375fe9c59fbd9fc1e6c6700fe5f5ada1",
+      "purpose": "办公Agent规格中 FR05 文档生成与修改、FR06 表格处理与计算等具体要求。",
+      "expected_information": "办公Agent规格中 FR05 文档生成与修改、FR06 表格处理与计算等具体要求。",
+      "observed_information": "FR05文档生成/修改与FR06表格计算局部可读，原拟caption停止恢复已纠正。",
+      "comparison_evidence": "visual/native-frame-review.json#v0100; visual/contact-review.json; precise seek 996.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 996.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 6,
+      "frame": 4,
+      "path": "visual/full/v0107-1024.jpg",
+      "sha256": "2b75db07a83ddf76a768b7af394f71e489fc9a6c72d11115b7a646ac7f04b5c6",
+      "purpose": "规格中的非功能需求与验收口径，数值属于该规格目标。",
+      "expected_information": "规格中的非功能需求与验收口径，数值属于该规格目标。",
+      "observed_information": "NFR01–NFR09条目、P95以及1秒/8秒/2秒等目标可读；NFR10在画面底部开始，完整规格需读原文。",
+      "comparison_evidence": "visual/native-frame-review.json#v0107; visual/contact-review.json; precise seek 1024.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 1024.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 6,
+      "frame": 5,
+      "path": "sources/official-capture/page-06.png",
+      "sha256": "8a2e3e462405e64618d6df9f44de992e874fa3889cb70a225e95fe7b51b4bf58",
+      "purpose": "保存现行官方讲义第6页：需求可太多了。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "项目/Skills/权限、预算/交付/隐私/体验条目完整；末行可见。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第6页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 6,
+      "frame": 6,
+      "path": "sources/official-capture/page-07.png",
+      "sha256": "ea655f99031e4685282f4f28856f002753f2f780c66ab0aa58c4d4807adb84b3",
+      "purpose": "保存现行官方讲义第7页：一个小循环，被真实世界包围。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "最小Agent Loop与恢复、暂停、权限、预算、验收、同步六类外围需求均完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第7页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 7,
+      "frame": 1,
+      "path": "visual/full/v0121-1156.jpg",
+      "sha256": "cf1c2075b7dba8ae0dbd120d37a86c4533559a6fa4f40a7e26503ad143427dfe",
+      "purpose": "dsh-bot 协作界面的课堂展示。",
+      "expected_information": "dsh-bot 协作界面的课堂展示。",
+      "observed_information": "原尺寸实际目视：dsh-bot 协作界面的课堂展示。",
+      "comparison_evidence": "visual/native-frame-review.json#v0121; visual/contact-review.json; precise seek 1156.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 1156.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 7,
+      "frame": 2,
+      "path": "sources/official-capture/page-08.png",
+      "sha256": "efb017f02d34a71a72a847da2451026b76a17f24ecbc1db9b16d3b69068bce6d",
+      "purpose": "保存现行官方讲义第8页：Agent Harness: 需求的改变。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "Grok Bot标题、角色列表和Morning Paper界面完整；界面细字需原尺寸看。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第8页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 7,
+      "frame": 3,
+      "path": "sources/official-capture/page-09.png",
+      "sha256": "f930464284056b9e0b13f6f60d658c4a059424aed123063f545190d5d7d8421d",
+      "purpose": "保存现行官方讲义第9页：Agent Harness: 需求的改变。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "dsh-bot执行/审阅/改进界面截图与标题完整，非本次实际运行证明。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第9页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 8,
+      "frame": 1,
+      "path": "sources/official-capture/page-10.png",
+      "sha256": "4962931055b40c3e2a0f5bc60df833f89c28a05f74c42c858c13b5de78b29e26",
+      "purpose": "保存现行官方讲义第10页：回到 2026 年 6 月 10 日 22:57。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "2026-06-10 22:57、主流产品与两个初始化步骤完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第10页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 9,
+      "frame": 1,
+      "path": "visual/full/v0142-1470.jpg",
+      "sha256": "c3a9b5cb19f5cbeeade8779fb05b7f44ffe2a9e8fb37eaa1c1c48c934b7cef3a",
+      "purpose": "架构约束讨论中新增的立体框架板书。",
+      "expected_information": "架构约束讨论中新增的立体框架板书。",
+      "observed_information": "原尺寸实际目视：架构约束讨论中新增的立体框架板书。",
+      "comparison_evidence": "visual/native-frame-review.json#v0142; visual/contact-review.json; precise seek 1470.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 1470.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 9,
+      "frame": 2,
+      "path": "sources/official-capture/page-11.png",
+      "sha256": "4c32bd8cce2ed62e0502a8f50aa55984ebe6229f9183ccac80bed44164d78404",
+      "purpose": "保存现行官方讲义第11页：架构：没有免费的午餐。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "受限/自由、四类架构取舍与得到的基础设施/接口文字完整，右侧留白为原页面适配。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第11页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 10,
+      "frame": 1,
+      "path": "visual/full/v0152-1680.jpg",
+      "sha256": "b34e893036148a7540847ed89eb2b897cbdcc10c5db0cffd5d5e069400eea814",
+      "purpose": "板书继续形成多阶段/多块协作示意，右侧是架构约束与收益页。",
+      "expected_information": "板书继续形成多阶段/多块协作示意，右侧是架构约束与收益页。",
+      "observed_information": "上下板均见多块/箭头示意，右投影保留架构限制和所得能力。",
+      "comparison_evidence": "visual/native-frame-review.json#v0152; visual/contact-review.json; precise seek 1680.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 1680.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 10,
+      "frame": 2,
+      "path": "sources/official-capture/page-14.png",
+      "sha256": "ec74a5ec9c48621d25303066cb8787fcb5eafcde478a8bdd48ea983f77846624",
+      "purpose": "保存现行官方讲义第14页：操作系统：进程的自由有边界。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "进程地址空间、系统调用、工作集抖动与memory.max边界完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第14页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 10,
+      "frame": 3,
+      "path": "sources/official-capture/page-15.png",
+      "sha256": "e9a53ba40c4db8a100e89b125fd161ab467835ce3524399eedd4c297d637443d",
+      "purpose": "保存现行官方讲义第15页：高级语言：内存管理交出去之后。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "Java托管内存、论坛延迟例、暂停/吞吐/内存取舍与GC链接完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第15页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 10,
+      "frame": 4,
+      "path": "sources/official-capture/page-16.png",
+      "sha256": "50d7ac2f25a9de2ab998e5de4bf70e58ed3075bbb970348f7662375b308b74cb",
+      "purpose": "保存现行官方讲义第16页：LAMP：从表单网站到在线协作。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "两组五项约束/收益/新需求的文字与文档链接均完整。无公式或代码块。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第16页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 10,
+      "frame": 5,
+      "path": "sources/official-capture/page-17.png",
+      "sha256": "17292ea11a95e77090ee78b1ae9de99aaf6e729989a7b94b19ac99438967a081",
+      "purpose": "保存现行官方讲义第17页：Event Sourcing：能回放什么？。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "校园卡100→12→12例子、回放副作用、历史汇率/版本上下文三项均完整。无代码块。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第17页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 11,
+      "frame": 1,
+      "path": "sources/official-capture/page-12.png",
+      "sha256": "c922b82b1020340283da4bd2ae83d25caa0f41fa4ba07bea2f940e0832e33a52",
+      "purpose": "保存现行官方讲义第12页：架构的假设，也有有效期。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "假设有效期、电力与传动轴/流程重组类比完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第12页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 11,
+      "frame": 2,
+      "path": "sources/official-capture/page-13.png",
+      "sha256": "8397c54ebf0b65ea44ab782dbc6ce57f981d20d61d71f13e2a0b6affca64f6a5",
+      "purpose": "保存现行官方讲义第13页：AI：产业的超级加速器。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "5172客服/15%及推演、分配边界完整，不能泛化软件效率。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第13页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 12,
+      "frame": 1,
+      "path": "visual/full/v0180-2040.jpg",
+      "sha256": "05a2e9c841c1f114144c3a11a0114143ab88b87cc78060a22cdd05a8422868e0",
+      "purpose": "MapReduce 原文中的词频示例与 map/reduce 伪代码。",
+      "expected_information": "MapReduce 原文中的词频示例与 map/reduce 伪代码。",
+      "observed_information": "原尺寸实际目视：MapReduce 原文中的词频示例与 map/reduce 伪代码。",
+      "comparison_evidence": "visual/native-frame-review.json#v0180; visual/contact-review.json; precise seek 2040.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2040.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 12,
+      "frame": 2,
+      "path": "visual/full/v0184-2104.jpg",
+      "sha256": "71f8922405cb218fc4a9e22b1b75e1bcfa4db5671d3a7e7b8de2a9c4ccb1ab73",
+      "purpose": "MapReduce 原文的执行结构图，包含 map workers、intermediate files 和 reduce workers。",
+      "expected_information": "MapReduce 原文的执行结构图，包含 map workers、intermediate files 和 reduce workers。",
+      "observed_information": "原尺寸实际目视：MapReduce 原文的执行结构图，包含 map workers、intermediate files 和 reduce workers。",
+      "comparison_evidence": "visual/native-frame-review.json#v0184; visual/contact-review.json; precise seek 2104.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2104.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 12,
+      "frame": 3,
+      "path": "visual/full/v0194-2144.jpg",
+      "sha256": "c6688fc3a17f773f18bb8d90302fc3503e0b3d628e1ddfa39a19b93e038b7065",
+      "purpose": "MapReduce 原文 C++ 词频实现的 Mapper 与 Reducer 开头，按课堂浏览位置展示局部。",
+      "expected_information": "MapReduce 原文 C++ 词频实现的 Mapper 与 Reducer 开头，按课堂浏览位置展示局部。",
+      "observed_information": "Mapper主体可见；Reducer仅开头，caption明确局部，不宣称整段代码齐全。",
+      "comparison_evidence": "visual/native-frame-review.json#v0194; visual/contact-review.json; precise seek 2144.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2144.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 12,
+      "frame": 4,
+      "path": "visual/full/v0198-2170.jpg",
+      "sha256": "bd1996f8fff486deb8202e074da8bca879f26740ccb834fbaead761076b430f6",
+      "purpose": "MapReduce C++调用方指定输出文件和Reducer类。",
+      "expected_information": "MapReduce C++调用方指定输出文件和Reducer类。",
+      "observed_information": "原尺寸实际目视：MapReduce C++调用方指定输出文件和Reducer类。",
+      "comparison_evidence": "visual/native-frame-review.json#v0198; visual/contact-review.json; precise seek 2170.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2170.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 12,
+      "frame": 5,
+      "path": "sources/official-capture/page-18.png",
+      "sha256": "91dcdefa8a9fcbf0bf6a8868a6e8c41c71722bc0d83c13976fd894cbd12c4aac",
+      "purpose": "保存现行官方讲义第18页：MapReduce：接受计算形式，换取集群能力。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "map→按key分组→reduce与热门key/幂等副作用/重算约束全文完整。末句“上。”靠近页底但在原图仍完整，额外查看底部裁片确认。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第18页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 13,
+      "frame": 1,
+      "path": "sources/official-capture/page-19.png",
+      "sha256": "9290cdfee756a47e2ed3ca085d064db8a24739a4f95c68076f491d50748e66b6",
+      "purpose": "保存现行官方讲义第19页：当计算不再是一轮批处理。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "Spark/RDD与Flink/水位线/状态检查点两部分完整，末句性能与语义也完整。无公式代码块。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第19页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 14,
+      "frame": 1,
+      "path": "sources/official-capture/page-20.png",
+      "sha256": "56b62a2aa8e1cc1a14b22eca27d250415095f30223f9bc9e03b10cd73a232052",
+      "purpose": "保存现行官方讲义第20页：设计 Agent Harness: First Principle。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "Everything Is a Plugin、Cordis四项和协同两结论均完整。无公式代码块。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第20页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 15,
+      "frame": 1,
+      "path": "visual/full/v0225-2546.jpg",
+      "sha256": "3f66c3df2e09aacd2380052bbf95d835b386ba9c74881f50cf1660985db1746b",
+      "purpose": "现场 Agent 解释 Cordis、session、typed events 与实现入口；这是现场生成的解释。",
+      "expected_information": "现场 Agent 解释 Cordis、session、typed events 与实现入口；这是现场生成的解释。",
+      "observed_information": "原尺寸实际目视：现场 Agent 解释 Cordis、session、typed events 与实现入口；这是现场生成的解释。",
+      "comparison_evidence": "visual/native-frame-review.json#v0225; visual/contact-review.json; precise seek 2546.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2546.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 15,
+      "frame": 2,
+      "path": "visual/full/v0230-2580.jpg",
+      "sha256": "6ba5a769f9505c5a392c3ca3c4597e24d31f2e7f36bef795fc854c35b8fab490",
+      "purpose": "现场解释列出 core/session、llm/llm 与 core/tools 等关键模块。",
+      "expected_information": "现场解释列出 core/session、llm/llm 与 core/tools 等关键模块。",
+      "observed_information": "原尺寸实际目视：现场解释列出 core/session、llm/llm 与 core/tools 等关键模块。",
+      "comparison_evidence": "visual/native-frame-review.json#v0230; visual/contact-review.json; precise seek 2580.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2580.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 15,
+      "frame": 3,
+      "path": "visual/full/v0237-2638.jpg",
+      "sha256": "767260ecdd65628cbae36bf9d61d27c76678480b5e1ac400d35972de3be6a264",
+      "purpose": "现场解释继续展示 capability seam、scope 与 middleware 等扩展层。",
+      "expected_information": "现场解释继续展示 capability seam、scope 与 middleware 等扩展层。",
+      "observed_information": "原尺寸实际目视：现场解释继续展示 capability seam、scope 与 middleware 等扩展层。",
+      "comparison_evidence": "visual/native-frame-review.json#v0237; visual/contact-review.json; precise seek 2638.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2638.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 15,
+      "frame": 4,
+      "path": "sources/official-capture/page-21.png",
+      "sha256": "cc54b094310ef0f053756c4ebaed6a517687ea7a42cb228911c253a239b0d62f",
+      "purpose": "保存现行官方讲义第21页：构建 Agent Harness 的“世界模型”。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "Session=list[Event]、投影、Pacioli历史类比、Agent和UI slots两项均完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第21页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 16,
+      "frame": 1,
+      "path": "visual/full/v0250-2790.jpg",
+      "sha256": "941a519c37204a66e292e18d4822c895e58fad79827a093692054168e8e2d16e",
+      "purpose": "课堂打开会话 Token usage 面板；屏幕读数仅属于此次现场会话。",
+      "expected_information": "课堂打开会话 Token usage 面板；屏幕读数仅属于此次现场会话。",
+      "observed_information": "原尺寸实际目视：课堂打开会话 Token usage 面板；屏幕读数仅属于此次现场会话。",
+      "comparison_evidence": "visual/native-frame-review.json#v0250; visual/contact-review.json; precise seek 2790.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2790.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 16,
+      "frame": 2,
+      "path": "sources/official-capture/page-25.png",
+      "sha256": "f5d7521ae04c12c5f04372d7220344564d2a0b363f9fcaed8ed0d7367b53df26",
+      "purpose": "保存现行官方讲义第25页：插件挂在“总线”上。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "总线图完整：业务插件、Agent/Loop、LLM/Tools、Session、模型投影、业务投影、UI和Cordis底座，所有框与箭头未裁断；图内字较正文小但原尺寸可读。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第25页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 17,
+      "frame": 1,
+      "path": "visual/full/v0262-2905-final.jpg",
+      "sha256": "69081b111b9b4cba2c0ddb9823409b3d2e67736b8c6d12ef32dc54bb15cdeff4",
+      "purpose": "切换到 Trajectory，时间线展示会话中的上下文、用户与模型步骤。",
+      "expected_information": "切换到 Trajectory，时间线展示会话中的上下文、用户与模型步骤。",
+      "observed_information": "原尺寸确认Trajectory及USER/CONTEXT/ASSISTANT链在2905出现，2908已返回Chat，采用2905。",
+      "comparison_evidence": "visual/native-frame-review.json#v0262; visual/contact-review.json; precise seek 2905.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2905.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 17,
+      "frame": 2,
+      "path": "visual/full/v0269-2920.jpg",
+      "sha256": "a4b072f65f9a2dedadfaa7ce636eeb4b00120f6406a6e2225764718d481ee382",
+      "purpose": "点选 Context 步骤，可见其摘要、前置上下文与采样时间。",
+      "expected_information": "点选 Context 步骤，可见其摘要、前置上下文与采样时间。",
+      "observed_information": "原尺寸实际目视：点选 Context 步骤，可见其摘要、前置上下文与采样时间。",
+      "comparison_evidence": "visual/native-frame-review.json#v0269; visual/contact-review.json; precise seek 2920.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2920.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 17,
+      "frame": 3,
+      "path": "visual/full/v0274-2934.jpg",
+      "sha256": "44703d17bc39a5c83ce6d4e1a3cb2773f1db02d497d77027646e3fbadc90f24b",
+      "purpose": "Trajectory 中检查一次 bash 工具调用的结构化参数。",
+      "expected_information": "Trajectory 中检查一次 bash 工具调用的结构化参数。",
+      "observed_information": "选中Payload页签，description与command字段可读。",
+      "comparison_evidence": "visual/native-frame-review.json#v0274; visual/contact-review.json; precise seek 2934",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2934秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 17,
+      "frame": 4,
+      "path": "visual/full/v0275-2936.jpg",
+      "sha256": "d5dc5789725772a0c6a9700449f34a4ed217efe809d9a6cad6953fa4ceb6204b",
+      "purpose": "同一工具调用的返回结果与目录列表。",
+      "expected_information": "同一工具调用的返回结果与目录列表。",
+      "observed_information": "原尺寸实际目视：同一工具调用的返回结果与目录列表。",
+      "comparison_evidence": "visual/native-frame-review.json#v0275; visual/contact-review.json; precise seek 2936.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2936.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 17,
+      "frame": 5,
+      "path": "visual/full/v0276-2938.jpg",
+      "sha256": "2a88ac43e945efefd5a5b09dc79ad501c92866e34a48aec3d747803cb2e81f7d",
+      "purpose": "同一工具调用的 Timing 信息，可回查执行过程。",
+      "expected_information": "同一工具调用的 Timing 信息，可回查执行过程。",
+      "observed_information": "原尺寸实际目视：同一工具调用的 Timing 信息，可回查执行过程。",
+      "comparison_evidence": "visual/native-frame-review.json#v0276; visual/contact-review.json; precise seek 2938.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 2938.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 17,
+      "frame": 6,
+      "path": "visual/full/v0284-3024.jpg",
+      "sha256": "89aed47a378a9c662ae50a0b7ffdd0a63da9b19c5b5cf1b254acc1e07cec892e",
+      "purpose": "Trajectory 展示含用户消息、上下文和 bash 调用的记录链；视图由日志记录生成。",
+      "expected_information": "Trajectory 展示含用户消息、上下文和 bash 调用的记录链；视图由日志记录生成。",
+      "observed_information": "Trajectory中CONTEXT、USER、ASSISTANT与3条TOOL记录同时可见。",
+      "comparison_evidence": "visual/native-frame-review.json#v0284; visual/contact-review.json; precise seek 3024",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 3024秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 17,
+      "frame": 7,
+      "path": "sources/official-capture/page-22.png",
+      "sha256": "82c232f6bde4b258b21fb97674f30e6c3f469d054e36c110637c9b2eab89494a",
+      "purpose": "保存现行官方讲义第22页：Session: 从事实到投影。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "两块代码完整：append/on回调闭合；deriveMessages/register/stateOf三行含行尾中文注释完整。代码超出浅灰容器背景但未出截图边界。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第22页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 18,
+      "frame": 1,
+      "path": "sources/official-capture/page-23.png",
+      "sha256": "220cf02b25258a91a713083c247959f0f1aeeb5b37b9790b95ee099a52b4676c",
+      "purpose": "保存现行官方讲义第23页：Agent: 接收输入与动态上下文。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "followup/inject/steer三行代码与末行ctx.systemPrompt.context调用（含闭合括号）完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第23页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 19,
+      "frame": 1,
+      "path": "visual/full/v0296-3164.jpg",
+      "sha256": "1253ca33a928c9e6b5cd5aa39f4401fd70fe7614aa4adfb754320bd23f891ff4",
+      "purpose": "插件挂在总线上的架构图，展示Agent/Loop、LLM/Tools、Session与投影视图。",
+      "expected_information": "插件挂在总线上的架构图，展示Agent/Loop、LLM/Tools、Session与投影视图。",
+      "observed_information": "原尺寸实际目视：插件挂在总线上的架构图，展示Agent/Loop、LLM/Tools、Session与投影视图。",
+      "comparison_evidence": "visual/native-frame-review.json#v0296; visual/contact-review.json; precise seek 3164.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 3164.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 19,
+      "frame": 2,
+      "path": "sources/official-capture/page-24.png",
+      "sha256": "8429e563fc7d43f31c68efc8c30aebfbc08b5749ab1a13267ec4c1249749031e",
+      "purpose": "保存现行官方讲义第24页：Hooks: 参与执行决策。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "pre-step hook四行代码含async签名、await next、return及闭合完整；session/event与agent/pre-step紫色区别说明完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第24页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 20,
+      "frame": 1,
+      "path": "sources/official-capture/page-26.png",
+      "sha256": "f7dd457a3339ee88842caecb30b3db6f99c76b536319ba478e08a8f0e638623b",
+      "purpose": "保存现行官方讲义第26页：一切都是为了插件生态。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "TUI、pdf-reader inject、Cordis生命周期、sidebar、Creator Mode热插拔各段完整。无公式/长代码块。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第26页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 21,
+      "frame": 1,
+      "path": "visual/full/v0324-3421.jpg",
+      "sha256": "2d6989c3768be31efb2af597122d5af420a9df542ac9d992e4751e61839c13ef",
+      "purpose": "侧栏 Files 面板展示可浏览的项目文件树。",
+      "expected_information": "侧栏 Files 面板展示可浏览的项目文件树。",
+      "observed_information": "原尺寸实际目视：侧栏 Files 面板展示可浏览的项目文件树。",
+      "comparison_evidence": "visual/native-frame-review.json#v0324; visual/contact-review.json; precise seek 3421",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 3421秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 21,
+      "frame": 2,
+      "path": "visual/full/v0334-3450.jpg",
+      "sha256": "f7eee6d697786363363fca1bb2c3bab02c8314190a0fe247a8f7c1bbbe3b7c81",
+      "purpose": "在主会话下打开终端面板，底层终端能力与聊天共存。",
+      "expected_information": "在主会话下打开终端面板，底层终端能力与聊天共存。",
+      "observed_information": "原尺寸实际目视：在主会话下打开终端面板，底层终端能力与聊天共存。",
+      "comparison_evidence": "visual/native-frame-review.json#v0334; visual/contact-review.json; precise seek 3450.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 3450.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 21,
+      "frame": 3,
+      "path": "visual/full/v0335-3480.jpg",
+      "sha256": "7da00e658e1584181f94cb3d5058cedc36a478aa6244550e2549d680072cd728",
+      "purpose": "Side Chat 作为独立面板嵌入主界面。",
+      "expected_information": "Side Chat 作为独立面板嵌入主界面。",
+      "observed_information": "原尺寸实际目视：Side Chat 作为独立面板嵌入主界面。",
+      "comparison_evidence": "visual/native-frame-review.json#v0335; visual/contact-review.json; precise seek 3480.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 3480.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 22,
+      "frame": 1,
+      "path": "visual/full/v0347-3524.jpg",
+      "sha256": "8a74719ccb9cb12ea247c6062deed0a9b81a3b219408cb7f44d90081ab1a8124",
+      "purpose": "新会话模式菜单显示 Standard、PTC、Minimal 与 Creator 模式，说明各模式用途。",
+      "expected_information": "新会话模式菜单显示 Standard、PTC、Minimal 与 Creator 模式，说明各模式用途。",
+      "observed_information": "菜单原文是PTC mode，非Plan；Standard/Minimal/Creator均可见。",
+      "comparison_evidence": "visual/native-frame-review.json#v0347; visual/contact-review.json; precise seek 3524",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 3524秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 22,
+      "frame": 2,
+      "path": "visual/full/v0363-3636.jpg",
+      "sha256": "48a4401b8365b0b4650ce45655c76d6b7c0b007f287c1aa1db797d1a912bc636",
+      "purpose": "Creator现场执行的工具轨迹和Session statistics，反映本次运行。",
+      "expected_information": "Creator现场执行的工具轨迹和Session statistics，反映本次运行。",
+      "observed_information": "原尺寸实际目视：Creator现场执行的工具轨迹和Session statistics，反映本次运行。",
+      "comparison_evidence": "visual/native-frame-review.json#v0363; visual/contact-review.json; precise seek 3636.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 3636.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 22,
+      "frame": 3,
+      "path": "visual/full/v0386-3700.jpg",
+      "sha256": "885308ae5581519f2102f608d3c2da7594a5602aba98c81cdc5cd4eeecc33a54",
+      "purpose": "Creator轨迹出现多个Write步骤，开始生成插件文件。",
+      "expected_information": "Creator轨迹出现多个Write步骤，开始生成插件文件。",
+      "observed_information": "原尺寸实际目视：Creator轨迹出现多个Write步骤，开始生成插件文件。",
+      "comparison_evidence": "visual/native-frame-review.json#v0386; visual/contact-review.json; precise seek 3700.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 3700.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 22,
+      "frame": 4,
+      "path": "visual/full/v0390-3712.jpg",
+      "sha256": "9c12844bd65f143cf8fdef75bc2e8c855d66f42a6410631be2de91cc7d6699b9",
+      "purpose": "插件安装出现允许操作的审批卡，需操作者决定。",
+      "expected_information": "插件安装出现允许操作的审批卡，需操作者决定。",
+      "observed_information": "Waiting for approval、操作名install_bundle以及Reject/Allow once可见；未操作真实审批。",
+      "comparison_evidence": "visual/native-frame-review.json#v0390; visual/contact-review.json; precise seek 3712.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 3712.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 22,
+      "frame": 5,
+      "path": "visual/full/v0396-3738.jpg",
+      "sha256": "03032bd0143aaa94bc3f9f2b1dbaad49b4fe59857e92774affb2d2003061b6f8",
+      "purpose": "停止后的执行记录和追加指令，展示中途控制。",
+      "expected_information": "停止后的执行记录和追加指令，展示中途控制。",
+      "observed_information": "Stopped和用户随后新指令可见；仪表盘1.2M是现场读数。",
+      "comparison_evidence": "visual/native-frame-review.json#v0396; visual/contact-review.json; precise seek 3738.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 3738.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 23,
+      "frame": 1,
+      "path": "sources/official-capture/page-27.png",
+      "sha256": "6570d42af38c15e19f65f8ac8f5bcc1d1c461a19daabeb387a530a2682e1fd3f",
+      "purpose": "保存现行官方讲义第27页：那么，代价呢？。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "Feature Interaction、插件依赖和10次压缩说明完整；公式(1/2)^10=1/1024上下标/分数线均正常完整。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第27页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 24,
+      "frame": 1,
+      "path": "visual/full/v0421-3946.jpg",
+      "sha256": "190381fd41a965c917f2efa35aaccf09555bcf0296424164580b78ea2c6a1801",
+      "purpose": "现场 Agent 汇报仪表盘替换结果，下方显示新增的累计 token 仪表盘；声明仍需实际验收。",
+      "expected_information": "现场 Agent 汇报仪表盘替换结果，下方显示新增的累计 token 仪表盘；声明仍需实际验收。",
+      "observed_information": "原尺寸实际目视：现场 Agent 汇报仪表盘替换结果，下方显示新增的累计 token 仪表盘；声明仍需实际验收。",
+      "comparison_evidence": "visual/native-frame-review.json#v0421; visual/contact-review.json; precise seek 3946.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 3946.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 24,
+      "frame": 2,
+      "path": "sources/official-capture/page-28.png",
+      "sha256": "627d6f341ce48d8a23a1427f390f3436fc1aeac8cecf06122b63349c95b8f794",
+      "purpose": "保存现行官方讲义第28页：维护和生态。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "低复杂度/vibe、社区观点与von Hippel 2001工具包整段完整。无代码公式。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第28页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 25,
+      "frame": 1,
+      "path": "visual/full/v0448-4198.jpg",
+      "sha256": "ddee2e4fd57112d64957f03dd563e586d2ff9d6e61d86675ce98a92f48b934c6",
+      "purpose": "Excalidraw已有矩形、菱形和Hello文字，作为AI编辑前状态。",
+      "expected_information": "Excalidraw已有矩形、菱形和Hello文字，作为AI编辑前状态。",
+      "observed_information": "原尺寸实际目视：Excalidraw已有矩形、菱形和Hello文字，作为AI编辑前状态。",
+      "comparison_evidence": "visual/native-frame-review.json#v0448; visual/contact-review.json; precise seek 4198.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4198.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 25,
+      "frame": 2,
+      "path": "visual/full/v0455-4244.jpg",
+      "sha256": "a82507526742e46f0e04ef359d0b4fd43fc29e1957b0112fd4e0f3896410fe40",
+      "purpose": "用户向AI提出编辑画布的要求，右侧侧聊显示执行过程。",
+      "expected_information": "用户向AI提出编辑画布的要求，右侧侧聊显示执行过程。",
+      "observed_information": "原尺寸实际目视：用户向AI提出编辑画布的要求，右侧侧聊显示执行过程。",
+      "comparison_evidence": "visual/native-frame-review.json#v0455; visual/contact-review.json; precise seek 4244.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4244.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 25,
+      "frame": 3,
+      "path": "visual/full/v0457-4260.jpg",
+      "sha256": "05a4486fb06e457d70c7a7b8bae314c65b782b3f68c9c9726913052052b803ae",
+      "purpose": "AI把绿色乌龟加入原有矩形，图中可见“乌龟”“龟壳”“头部”“尾巴”“鳍足”等标签。",
+      "expected_information": "AI把绿色乌龟加入原有矩形，图中可见“乌龟”“龟壳”“头部”“尾巴”“鳍足”等标签。",
+      "observed_information": "龟壳/头部/尾巴/鳍足标签明确，确认是乌龟，非导航初判的鸟。",
+      "comparison_evidence": "visual/native-frame-review.json#v0457; visual/contact-review.json; precise seek 4260.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4260.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 25,
+      "frame": 4,
+      "path": "sources/official-capture/page-29.png",
+      "sha256": "167f6cd38835aee56f35bf4f0076b6c522738e9e4a569215bd3222eaa2846c92",
+      "purpose": "保存现行官方讲义第29页：方向一：大型 App 的 AI 增强。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "lock objects+serialize objects+UI和VBA复用能力整段完整，无源码代码块。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第29页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 26,
+      "frame": 1,
+      "path": "visual/full/v0462-4302.jpg",
+      "sha256": "dcb7bb6ddeb7988b3fb10150caa1cf23c72fe8cf22713bc0f2e8b1467ef84bdc",
+      "purpose": "乌龟由多枚画布对象组成，可一起选中并继续编辑。",
+      "expected_information": "乌龟由多枚画布对象组成，可一起选中并继续编辑。",
+      "observed_information": "多对象边框与选中控件可见，支持结构化画布对象解释。",
+      "comparison_evidence": "visual/native-frame-review.json#v0462; visual/contact-review.json; precise seek 4302.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4302.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 26,
+      "frame": 2,
+      "path": "visual/full/v0467-4330.jpg",
+      "sha256": "8c286017b4cdca625df10e0e1ceeda35632e8e6904a6814051690a99c2246aae",
+      "purpose": "右侧侧聊说明新画乌龟的结构和标签，画布与模型解释并排展示。",
+      "expected_information": "右侧侧聊说明新画乌龟的结构和标签，画布与模型解释并排展示。",
+      "observed_information": "原尺寸实际目视：右侧侧聊说明新画乌龟的结构和标签，画布与模型解释并排展示。",
+      "comparison_evidence": "visual/native-frame-review.json#v0467; visual/contact-review.json; precise seek 4330.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4330.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 27,
+      "frame": 1,
+      "path": "visual/full/v0486-4478.jpg",
+      "sha256": "24d573b7096f3d1813ef0677bdba79abe2c6398381c5a0a6149447330da50c6b",
+      "purpose": "放大后的成语接龙卡片，完整选项与卡片底部操作提示可见。",
+      "expected_information": "放大后的成语接龙卡片，完整选项与卡片底部操作提示可见。",
+      "observed_information": "初始成语8个候选和底部提示都完整可见；是放大卡片界面，不宣称OS独立窗口。",
+      "comparison_evidence": "visual/native-frame-review.json#v0486; visual/contact-review.json; precise seek 4478",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4478秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 27,
+      "frame": 2,
+      "path": "sources/official-capture/page-30.png",
+      "sha256": "574408ab402420995af2366ea82f4d594673cd7cb7d481d0d79f1cd89bb57ae9",
+      "purpose": "保存现行官方讲义第30页：方向二：GenUI。截图对应本地30页来源汇编；其中补注与课堂实际口述分别标明。",
+      "expected_information": "该页完整标题、正文、图例、代码与链接标注（如有），不遗漏底部条目",
+      "observed_information": "HTML+JS双向通道、下棋与两段紫色流程/直接操纵说明完整。无公式代码块。",
+      "comparison_evidence": "sources/official-capture/Chrome逐页截图；root实际目视1–15页，visual代理实际目视16–30页",
+      "sources": [
+        {
+          "path": "sources/official-capture/official-web-slides-capture.pdf",
+          "sha256": "ef1362b523387af422ab64966122934b83130af3d105f13ae7d6f7222788aba5",
+          "detail": "网页截图汇编物理第30页，不是教师原生PDF"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 28,
+      "frame": 1,
+      "path": "visual/full/v0490-4501.jpg",
+      "sha256": "507fd8d155ac722f3e2e9e17afcd19bcdcb3a82d73f99d9485788a0fefcac857",
+      "purpose": "成语接龙选择后的红色反馈与状态变化。",
+      "expected_information": "成语接龙选择后的红色反馈与状态变化。",
+      "observed_information": "点击惊弓之鸟后红色“就以…开局”反馈可见；红色不等于代码错误。",
+      "comparison_evidence": "visual/native-frame-review.json#v0490; visual/contact-review.json; precise seek 4501",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4501秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 28,
+      "frame": 2,
+      "path": "visual/full/v0504-4540.jpg",
+      "sha256": "f47edf8af2b2132e3a5564b8b7c89babe1b82c7a0e856fd9b997758b3c7f94cc",
+      "purpose": "卡片更新到下一轮候选词，状态在界面中变化。",
+      "expected_information": "卡片更新到下一轮候选词，状态在界面中变化。",
+      "observed_information": "原尺寸实际目视：卡片更新到下一轮候选词，状态在界面中变化。",
+      "comparison_evidence": "visual/native-frame-review.json#v0504; visual/contact-review.json; precise seek 4540",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4540秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 28,
+      "frame": 3,
+      "path": "visual/full/v0515-4606.jpg",
+      "sha256": "7150dfd1ec8571494764a6f59b520f28b9c6cb25e937fbe53643968348c167fb",
+      "purpose": "继续运行成语接龙，显示已有词链与后续候选。",
+      "expected_information": "继续运行成语接龙，显示已有词链与后续候选。",
+      "observed_information": "原尺寸实际目视：继续运行成语接龙，显示已有词链与后续候选。",
+      "comparison_evidence": "visual/native-frame-review.json#v0515; visual/contact-review.json; precise seek 4606.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4606.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 28,
+      "frame": 4,
+      "path": "visual/full/v0521-4632.jpg",
+      "sha256": "5f582456a2487696e6c88cab587c6544489bff0b5cea83c305dfb6a3dbeace71",
+      "purpose": "又一次选择后卡片更新接龙链。",
+      "expected_information": "又一次选择后卡片更新接龙链。",
+      "observed_information": "原尺寸实际目视：又一次选择后卡片更新接龙链。",
+      "comparison_evidence": "visual/native-frame-review.json#v0521; visual/contact-review.json; precise seek 4632.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4632.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 29,
+      "frame": 1,
+      "path": "visual/full/v0524-4658-final.jpg",
+      "sha256": "6fb8f02190eb9ece1f14f22888e634a625fa4f4ac755a7789ab0c26287cb1085",
+      "purpose": "五子棋卡片开始交互后的首枚黑子，后续模型响应围绕此棋盘状态更新。",
+      "expected_information": "五子棋卡片开始交互后的首枚黑子，后续模型响应围绕此棋盘状态更新。",
+      "observed_information": "五子棋卡片可见首枚黑子，棋盘局部受当前视口/输入框遮挡；完整后续棋盘另保留v0544。",
+      "comparison_evidence": "visual/native-frame-review.json#v0524; visual/contact-review.json; precise seek 4658.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4658.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 29,
+      "frame": 2,
+      "path": "visual/full/v0539-4701.jpg",
+      "sha256": "99724e185ad9774c9d3d5c81fdfe039299995f674f92b180bf0ba3e308500f7f",
+      "purpose": "五子棋交互中的中间失败状态：棋盘只显示较少行且有“AI思考中”提示，不能把它当完成的对弈。",
+      "expected_information": "五子棋交互中的中间失败状态：棋盘只显示较少行且有“AI思考中”提示，不能把它当完成的对弈。",
+      "observed_information": "只较少棋盘行与AI思考中，按真实失败状态保留。",
+      "comparison_evidence": "visual/native-frame-review.json#v0539; visual/contact-review.json; precise seek 4701",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4701秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 29,
+      "frame": 3,
+      "path": "visual/full/v0544-4710.jpg",
+      "sha256": "278a4fe018a6bdfa1ecff1d4fb3e5531f95a0f696b782816673419fcdb73b6d6",
+      "purpose": "棋盘中黑白棋子同时可见，体现一次交互后的状态。",
+      "expected_information": "棋盘中黑白棋子同时可见，体现一次交互后的状态。",
+      "observed_information": "黑白两子及后续棋盘状态可见，仍不足证明整局合法或所有交互通过。",
+      "comparison_evidence": "visual/native-frame-review.json#v0544; visual/contact-review.json; precise seek 4710.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4710.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 29,
+      "frame": 4,
+      "path": "visual/full/v0551-4774.jpg",
+      "sha256": "74727a5741973a1354b74c7e99de942ad4c8b3d7303a82367a51fd0a663ab7d4",
+      "purpose": "用户指出交互未达到预期，Agent开始检查代码与修补。",
+      "expected_information": "用户指出交互未达到预期，Agent开始检查代码与修补。",
+      "observed_information": "原尺寸实际目视：用户指出交互未达到预期，Agent开始检查代码与修补。",
+      "comparison_evidence": "visual/native-frame-review.json#v0551; visual/contact-review.json; precise seek 4774.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4774.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 30,
+      "frame": 1,
+      "path": "visual/full/v0567-4828.jpg",
+      "sha256": "7463818355ca410641660cb0253fb99831d4903c533123e23795d6ac643a2cbc",
+      "purpose": "现场解释画布页面、dsh WebServer、iframe与Cordis之间的通信路径。",
+      "expected_information": "现场解释画布页面、dsh WebServer、iframe与Cordis之间的通信路径。",
+      "observed_information": "原尺寸实际目视：现场解释画布页面、dsh WebServer、iframe与Cordis之间的通信路径。",
+      "comparison_evidence": "visual/native-frame-review.json#v0567; visual/contact-review.json; precise seek 4828.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4828.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 30,
+      "frame": 2,
+      "path": "visual/full/v0573-4840.jpg",
+      "sha256": "caafca23023bad336f32bce55995003f55e2bac5487c16f0bf4d6162ed35767b",
+      "purpose": "现场解释的操作入口和事件映射局部，包含观察、取消、落盘和生命周期；不能把这一帧当完整表。",
+      "expected_information": "现场解释的操作入口和事件映射局部，包含观察、取消、落盘和生命周期；不能把这一帧当完整表。",
+      "observed_information": "观察/取消/落盘/生命周期行可见；上方入口表格不在本帧全部展示。",
+      "comparison_evidence": "visual/native-frame-review.json#v0573; visual/contact-review.json; precise seek 4840.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4840.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 30,
+      "frame": 3,
+      "path": "visual/full/v0581-4896.jpg",
+      "sha256": "fccce84ca85f08c72e6c18d53827f49a81250ad3b09f123289fe88df35eb8e5d",
+      "purpose": "现场解释两个世界、上下文注入和状态更新机制。",
+      "expected_information": "现场解释两个世界、上下文注入和状态更新机制。",
+      "observed_information": "原尺寸实际目视：现场解释两个世界、上下文注入和状态更新机制。",
+      "comparison_evidence": "visual/native-frame-review.json#v0581; visual/contact-review.json; precise seek 4896.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4896.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 30,
+      "frame": 4,
+      "path": "visual/full/v0593-4998.jpg",
+      "sha256": "24e11b0b102d2be91b6f663839bec8e4af298011f90d90afed20b869fcd093b9",
+      "purpose": "现场解释列出主要入口及调用关系。",
+      "expected_information": "现场解释列出主要入口及调用关系。",
+      "observed_information": "原尺寸实际目视：现场解释列出主要入口及调用关系。",
+      "comparison_evidence": "visual/native-frame-review.json#v0593; visual/contact-review.json; precise seek 4998.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 4998.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 30,
+      "frame": 5,
+      "path": "visual/full/v0604-5034.jpg",
+      "sha256": "9ac90bbecaf03e41a40996fcedf925a8e7bfed7225e53db7fc96136dc5107678",
+      "purpose": "现场 Agent 解释实现的边界，并指出先前棋盘截断来自事件构造/处理而非dynui核心。",
+      "expected_information": "现场 Agent 解释实现的边界，并指出先前棋盘截断来自事件构造/处理而非dynui核心。",
+      "observed_information": "屏幕说明前一轮“棋盘被截断”来自事件构造/处理，不是dynui本身；只作为现场Agent解释。",
+      "comparison_evidence": "visual/native-frame-review.json#v0604; visual/contact-review.json; precise seek 5034.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 5034.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 30,
+      "frame": 6,
+      "path": "visual/full/v0608-5044.jpg",
+      "sha256": "401bf7311942a988ba0faaad0b4c62f5df70b140b25611c3491b9169ae95b6c6",
+      "purpose": "代码中的restrict与agent preset，以及ctx.with(scope)等范围控制机制。",
+      "expected_information": "代码中的restrict与agent preset，以及ctx.with(scope)等范围控制机制。",
+      "observed_information": "scoped上下文检查及报错文本可读；不由截图宣称已经验证真实权限隔离。",
+      "comparison_evidence": "visual/native-frame-review.json#v0608; visual/contact-review.json; precise seek 5044.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 5044.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 30,
+      "frame": 7,
+      "path": "visual/full/v0616-5070.jpg",
+      "sha256": "4b62b527d60a0723e9b259f5b915d2bec2a4da2147bcdc39bbcc57d5064ed16f",
+      "purpose": "现场解释以表格区分WebServer、事件、工具注册和系统提示等不同层次。",
+      "expected_information": "现场解释以表格区分WebServer、事件、工具注册和系统提示等不同层次。",
+      "observed_information": "原尺寸实际目视：现场解释以表格区分WebServer、事件、工具注册和系统提示等不同层次。",
+      "comparison_evidence": "visual/native-frame-review.json#v0616; visual/contact-review.json; precise seek 5070.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 5070.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 31,
+      "frame": 1,
+      "path": "visual/full/v0622-5110.jpg",
+      "sha256": "e0191e37ae2667803bb33efb0a1b3f8a135c4511b4e470c6eb2305dacfa2d566",
+      "purpose": "待执行决策与事务/锁相关的代码解释；右侧是现场Agent输出。",
+      "expected_information": "待执行决策与事务/锁相关的代码解释；右侧是现场Agent输出。",
+      "observed_information": "原尺寸实际目视：待执行决策与事务/锁相关的代码解释；右侧是现场Agent输出。",
+      "comparison_evidence": "visual/native-frame-review.json#v0622; visual/contact-review.json; precise seek 5110.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 5110.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    },
+    {
+      "section": 32,
+      "frame": 1,
+      "path": "visual/full/v0633-5340.jpg",
+      "sha256": "cba13ab32f2b270bf34c9f685d3b3313d6131273e09a1b3674335f92abdc2c66",
+      "purpose": "课程结束前的完整板书和原始讲义编辑器，保留整体架构脉络。",
+      "expected_information": "课程结束前的完整板书和原始讲义编辑器，保留整体架构脉络。",
+      "observed_information": "结束前黑板上下板完整构图与屏幕的收束解释可见。",
+      "comparison_evidence": "visual/native-frame-review.json#v0633; visual/contact-review.json; precise seek 5340.0",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+          "sha256": "d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+          "detail": "BV144nc6KEA4 原视频 5340.0秒"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "实际查看原尺寸；视频转场修正记录保留，官方页等待换页动画结束后完整截取。"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "formatVersion": "0.1",
+  "language": "zh",
+  "media": {
+    "duration": 5981.12,
+    "fps": 30.0,
+    "hash": "sha256-df4344f9c61dfb2a247f734570b9d2ef3ec1d21010849efb4eed78347b5dcc12",
+    "height": 410,
+    "path": "/Users/yjzhao/Downloads/需求和架构 (2) [07-Raw 26生成式软件工程 NJU].mp4",
+    "probeStamp": "306355606:1790783039551",
+    "rotation": 0,
+    "sourceMetadata": {
+      "chapters": [
+        {
+          "end": 857.0,
+          "start": 0.0,
+          "title": "回顾"
+        },
+        {
+          "end": 2961.0,
+          "start": 857.0,
+          "title": "阅读经典"
+        },
+        {
+          "end": 4744.0,
+          "start": 2961.0,
+          "title": "典型的系统架构"
+        },
+        {
+          "end": 5981.0,
+          "start": 4744.0,
+          "title": "应对复杂性"
+        }
+      ],
+      "extractor": "BiliBili",
+      "id": "BV1JGap6LE74",
+      "thumbnail": "http://i2.hdslb.com/bfs/archive/83c1f57d146cd404c922cef190d2c4646dca654b.jpg",
+      "title": "需求和架构 (2) [07-Raw/26生成式软件工程/NJU]",
+      "uploadDate": "20260929",
+      "uploader": "绿导师原谅你了",
+      "url": "https://www.bilibili.com/video/BV1JGap6LE74/",
+      "viewCount": 4037
+    },
+    "sourceUrl": "https://www.bilibili.com/video/BV1JGap6LE74/",
+    "width": 1280
+  },
+  "stages": {
+    "transcribe": {
+      "engine": "moss-transcribe-diarize",
+      "input_fingerprint": "sha256-b37b58293c1ef304dcb1ea03d1cb8f611acecd16308a977049cfb7408a9533b2",
+      "status": "done"
+    }
+  },
+  "title": "需求和架构 (2) [07-Raw/26生成式软件工程/NJU]",
+  "url": "https://www.bilibili.com/video/BV1JGap6LE74/"
+}

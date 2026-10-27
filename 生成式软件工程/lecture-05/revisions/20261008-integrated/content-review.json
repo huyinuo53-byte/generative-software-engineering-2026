@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "reviewer": "same agent second pass; no independent-agent review",
+  "scope": "single-lesson layout and editorial integration, not a fresh full transcription or all cited-original reading",
+  "read_this_revision": [
+    "all existing notes prose and nine supplements",
+    "frozen slides text pages 6,16-23,26-39 plus opening-page excerpts",
+    "final transcript chunk tail s-g1353.0~3 through s-g1363.0",
+    "visual contact sheet 31-39 and rendered desktop/narrow blocks"
+  ],
+  "findings": [
+    {
+      "problem": "pages 31-39 dumped in section 16 while text follows quiz",
+      "fix": "nine explanation-image pairs integrated into sections 3,13,14,15,16 with short connecting sentences and explicit source labels"
+    },
+    {
+      "problem": "all section figures rendered after all prose",
+      "fix": "explicit per-section reading order placing figures near relevant arguments; every paragraph/example/note/figure accounted for"
+    },
+    {
+      "problem": "Q/A had similar hierarchy and answers were exposed",
+      "fix": "numbered green question panels; collapsed keyboard-accessible answers with amber background and source-section link"
+    }
+  ],
+  "preservation": {
+    "source_ids_and_time_ranges_unchanged": true,
+    "source_units": 491,
+    "images": 40,
+    "image_bytes_unchanged": true,
+    "self_test_items_unchanged": 12,
+    "supplement_bodies_retained": 9,
+    "other_lesson_html_unchanged": true
+  },
+  "visual_inspection": [
+    "1440-slide-33.png: explanation and full slide adjacent, source label clear",
+    "390-slide-36.png: narrow prose readable, image contained; original size via zoom",
+    "1440-quiz-open.png and 390-quiz-open.png: question/answer differentiated by layout, labels and color",
+    "print-page55.png: answer panels retained in print"
+  ],
+  "boundary": "New bridges are editorial connective prose derived from existing notes, not attributed to teacher. Pages31-39 do not receive fabricated lecture timestamps."
+}

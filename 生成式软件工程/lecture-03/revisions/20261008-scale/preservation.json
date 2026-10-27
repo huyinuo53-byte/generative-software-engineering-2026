@@ -1,0 +1,17 @@
+{
+  "lesson": "lecture-03",
+  "status": "passed",
+  "changes": [
+    {
+      "path": "/sections/24/paragraphs/4",
+      "before": "最后仅提出思想实验：如果 Agent 再快一千倍，版本控制和人的验收怎样跟上？视频到此下课，明确说下一节再讨论。现行讲义32–35页已提供后续设计方向，以下作为补充保留，不写成这节实际完成的口述推导。",
+      "after": "最后仅提出思想实验：如果 Agent 再快一千倍，版本控制和人的验收怎样跟上？视频到此下课，明确说下一节再讨论。现行讲义32–35页已提供后续设计方向，本节作为补充保留，不写成这节实际完成的口述推导。"
+    }
+  ],
+  "all_other_notes_fields_unchanged": true,
+  "all_image_bytes_match_previous_audit": true,
+  "images": 53,
+  "transcript_and_index_unchanged": true,
+  "html_sha256": "6b76b3a70d3c1c00d3b0840616ddb20cee79bd2384b605462dcdd913a9699df8",
+  "layout_sha256": "e257dbbe488824983af596226e87913163bfd457ed2ca7550c6ec49103b8d5c9"
+}

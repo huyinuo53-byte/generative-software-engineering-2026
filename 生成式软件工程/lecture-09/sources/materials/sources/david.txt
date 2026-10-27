@@ -1,0 +1,406 @@
+    The Dynamo and the Computer: An Historical Perspective
+             on the Modern Productivity Paradox
+
+                                             By PAUL A. DAVID*
+
+   Many observers of recent trends in the                            If, however, we are prepared to approach
+industrialized economies of the West have                         the matter from the perspective afforded by
+been perplexed by the conjecture of rapid                         the economic history of the large technical
+technological innovation with disappoint-                         systems characteristic of network industries,
+ingly slow gains in measured productivity. A                      and to keep in mind a time-scale appropriate
+generation of economists who were brought                         for thinking about transitions from estab-
+up to identify increases in total factor pro-                     lished technological regimes to their respec-
+ductivity indexes with "technical progress"                       tive successor regimes, many features of the
+has found it quite paradoxical for the growth                     so-called productivity paradox will be found
+accountants' residual measure of "the ad-                         to be neither so unprecedented nor so puz-
+vance of knowledge" to have vanished at the                       zling as they might otherwise appear.
+very same time that a wave of major innova-
+tions was appearing-in microelectronics, in                                                    I
+communications technologies based on lasers
+and fiber optics, in composite materials, and                        My aim here simply is to convince modern
+in biotechnology. Disappointments with " the                      economic analysts (whether perplexed by the
+computer revolution" and the newly dawned                         productivity slowdown, or not) of the imme-
+"information age" in this regard have been                        diate relevance of historical studies that trace
+keenly felt. Indeed, the notion that there is                     the evolution of techno-economic regimes
+something anomalous about the prevailing                          formed around general purpose engines.' The
+state of affairs has drawn much of its appeal                     latter, typically, are key functional compo-
+from the apparent failure of the wave of                          nents embodied in hardware that can be
+innovations based on the microprocessor and                       applied as elements or modular units of the
+the memory chip to elicit a surge of growth                       engineering designs developed for a wide
+in productivity from the sectors of the U.S.                      variety of specific operations or processes.
+economy that recently have been investing                         Accordingly, they are found ubiquitously
+so heavily in electronic data processing                          distributed throughout such systems when
+equipment (see, for example, Stephen Roach,                       the latter have attained their mature, fully
+1987, 1988; Martin Baily and Robert Gor-                          elaborated state. James Watt's (separate con-
+don, 1988). This latter aspect of the so-called                   denser) steam engine design springs to mind
+" productivity paradox" attained popular                          readily as an example of an innovation that
+currency in the succinct formulation at-                          fulfilled this technological role in the first
+tributed to Robert Solow: "We see the com-                        industrial revolution. My particular line of
+puters everywhere but in the productivity                         argument will be better served, however, by
+statistics."                                                      directing notice to the parallel between the
+                                                                  modern computer and another general pur-
+                                                                  pose engine, one that figured prominently in
+   *Department of Economics, Encina Hall, Stanford
+University, Stanford, CA 94305. Discussions with Paul
+                                                                  what sometimes is called the "second Indus-
+Rhode were particularly helpful early in the research. I          trial Revolution"-namely, the electric dy-
+am grateful for comments from Steve Broadberry,                   namo. (But, see also Herbert Simon, 1986.)
+Jonathan Cave, Nick Crafts, among the participants in                Although the analogy between informa-
+the Economic History Summer Workshop held at War-                 tion technology and electrical technology
+wick University, July 10-28, 1989; from Timothy
+Taylor; and from Shane Greenstein, Avner Greif,
+Edward Steinmueller, and other participants in the
+Technology and Productivity Workshop at Stanford,                    'This paper draws upon material developed in a
+October 1989.                                                     longer wdrk-my 1989 paper.
+                                                            355
+
+
+
+
+                         This content downloaded from 185.44.77.28 on Wed, 25 Jun 2014 03:55:17 AM
+                                        All use subject to JSTOR Terms and Conditions
+356                                 AEA PAPERS AND PROCEEDINGS                                   MA Y 1990
+
+
+would have many limitations if taken very                   percent of factory mechanical drive. It would
+literally, it proves illuminating nonetheless.              take another two decades, roughly speaking,
+Computer and dynamo each form the nodal                     for these aggregate measures of the extent of
+elements of physically distributed (transmis-               electrification to attain the 50 percent diffu-
+sion) networks. Both occupy key positions in                sion level (see my 1989 paper, Table 3, for
+a web of strongly complementary technical                   estimates and sources). It may be remarked
+relationships that give rise to "network ex-                that, in 1900, an observer of the progress of
+ternality effects" of various kinds, and so                 the "Electrical Age" stood as far distant in
+make issues of compatibility standardization                time from the introduction of the carbon
+important for business strategy and public                  filament incandescent lamp by Edison, and
+policy (see my 1987 paper and my paper                      Swann (1879), and of the Edison central
+with Julie Bunn, 1988). In both instances, we               generating station in New York and London
+can recognize the emergence of an extended                  (1881), as today we stand from comparable
+trajectory of incremental technical improve-                "breakthrough" events in the computer rev-
+ments, the gradual and protracted process of                olution: the introduction of the 1043 byte
+diffusion into widespread use, and the con-                 memory chip (1969) and the silicon micro-
+fluence with other streams of technological                 processor (1970) by Intel. Although the pace
+innovation, all of which are interdependent                 of the computer's diffusion in the business
+features of the dynamic process through                     and public sectors of the industrialized soci-
+which a general purpose engine acquires a                   eties during the past two decades has been
+broad domain of specific applications (see                  faster than that recorded for the dynamo
+Timothy Bresnahan and Manuel Trajten-                       during its comparable early phase of adop-
+berg, 1989). Moreover, each of the principal                tion, it has been estimated that only 10 per-
+empirical phenomena that make up modem                      cent of the world's 50 million business enter-
+perceptions of a productivity paradox had                   prises today are using computers, and only 2
+its striking historical precedent in the condi-             percent of the world's business information
+tions that obtained a little less than a cen-               has been digitized (see Peter Lewis, 1989).
+tury ago in the industrialized West, includ-                   The history of electrification after 1900
+ing the pronounced slowdown in industrial                   (see I. C. R. Byatt, 1979; Thomas Hughes,
+and aggregate productivity growth experi-                   1983; Ryoshin Minami, 1987) lends consid-
+enced during the 1890-1913 era by the two                   erable plausibility to the "regime transition
+leading industrial countries, Britain and the               thesis" of Christopher Freeman and Carlotta
+United States (see my 1989 paper, pp. 12-15,                Perez (1990). They suggest that productivity
+for details). In 1900, contemporary observers               growth has been sluggish, and very well might
+well might have remarked that the electric                  remain so because the emergence and elabo-
+dynamos were to be seen "everywherebut in                   ration of a new techno-economic regime
+the productivity statistics!"                               based on computer and communications in-
+                                                            novations (supplanting the mature, ossified
+                      II                                    Fordist regime of mass production) will,
+                                                            more than likely, be a protracted and histori-
+   At the turn of the century, farsighted engi-             cally contingent affair.
+neers already had envisaged profound trans-                    Certainly, the transformation of industrial
+formations that electrification would bring                 processes by the new electric power technol-
+to factories, stores, and homes. But the ma-                ogy was a long-delayed and far from auto-
+terialization of such visions hardly was im-                matic business. It did not acquire real mo-
+minent. In 1899 in the United States, electric              mentum in the United States until after
+lighting was being used in a mere 3 percent                 1914-17, when regulated regional utility
+of all residences (and in only 8 percent of                 rates for electricity were lowered substan-
+urban dwelling units); the horsepower capac-                tially in relationship to the general price
+ity of all (primary and secondary) electric                 level (see my 1989 paper: Table 4, Fig. 14),
+motors installed in manufacturing establish-                and central station generating capacity came
+ments in the country represented less than 5                to predominate over generating capacity in
+
+
+
+
+                     This content downloaded from 185.44.77.28 on Wed, 25 Jun 2014 03:55:17 AM
+                                    All use subject to JSTOR Terms and Conditions
+VOL. 80 NO. 2                  ECONOMIC HISTORY OF TECHNOLOGY                                           357
+
+
+isolated industrial plants. Furthermore, fac-                tions, so that each motor would drive related
+tory electrification did not reach full fruition             groups of machines), the retrofitting of
+in its technical development nor have an                     steam- or water-powered plants typically en-
+impact on productivity growth in manufac-                    tailed adding primary electric motors to the
+turing before the early 1920s. At that time                  original stock of equipment. While factory
+only slightly more than half of factory me-                  owners rationally could ignore the sunk costs
+chanical drive capacity had been electrified.                of the existing power transmission appara-
+(On the significance for derived productivity                tus, and simply calculate whether the bene-
+growth of attaining 50 percent diffusion, see                fits in the form of reduced power require-
+my 1989 paper, Appendix A.) This was four                    ments and improved machine speed control
+decades after the first central power station                justified the marginal capital expenditures
+opened for business.                                         required to install the group drive system,
+    The proximate source of the delay in the                 productivity accountants would have to
+exploitation of the productivity improve-                    reckon that the original belt and shaft equip-
+ment potential incipient in the dynamo revo-                 ment (and the primary engines that powered
+lution was, in large part, the slow pace of                  them) remained in place as available capac-
+factory electrification. The latter, in turn,                ity. The effect would be to raise the capital-
+was attributable to the unprofitability of re-               output ratio in manufacturing, which mili-
+placing still serviceable manufacturingplants                tated against rapid gains in total factor
+embodying production technologies adapted                    productivity (TFP)-especially if the energy
+to the old regime of mechanical power de-                    input savings and the quality improvements
+rived from water and steam. Thus, it was the                 from better machine control were left out of
+American industries that were enjoying the                   the productivity calculation.
+most rapid expansion in the early twentieth                      This sort of overlaying of one technical
+century (tobacco, fabricated metals, trans-                  system upon a preexisting stratum is not
+portation equipment, and electrical machin-                  unusual during historical transitions from
+ery itself) that afforded greatest immediate                 one technological paradigm to the next. Ex-
+scope for the construction of new, electrified               amples can be cited from the experience of
+plants along the lines recommended by pro-                   the steam revolution (G. N. von Tunzel-
+gressive industrial engineers (see Richard                   mann, 1978, pp. 142-43, 172-73). Indeed,
+DuBoff, 1979, p. 142; and Minami, pp.                        the same phenomenon has been remarked
+138-41). More widespread opportunities to                    upon recently in the case of the computer's
+embody best-practice manufacturing appli-                    application in numerous data processing and
+cations of electric power awaited the further                recording functions, where old paper-based
+physical depreciation of durable factory                     procedures are being retained alongside the
+structures, the locational obsolescence of                   new, microelectronic-based methods- some-
+older-vintage industrial plants sited in urban               times to the detriment of each system's per-
+ core areas, and, ultimately, the development                formance (see, for example, Baily and Gor-
+ of a general fixed capital formation boom in                don, pp. 401-02).
+ the expansionary macroeconomic climate of                       Finally, it would be a mistake to suppose
+ the 1920s.                                                   that large potential gains from factory elec-
+    The persistence of durable industrial facil-              trification were obtainable from the begin-
+ ities embodying older power generation and                   ning of the century onward, just because
+ transmission equipment had further conse-                    there were farsighted electrical engineers who
+ quences that are worth noticing. During the                  at the time were able to envisage many
+ phase of the U.S. factory electrification                    sources of cost savings that would result
+ movement extending from the mid-1890s to                     from exploiting the flexibility of a power
+ the eve of the 1920s, the "group drive" sys-                 transmission system based on electric wires,
+ tem of power transmission remained in vogue                  and the efficiency of replacing the system of
+ (see Duboff, p. 144; Warren Devine, 1983,                    shafting and belts with the so-called "unit
+ pp. 351, 354). With this system (in which                    drive" system. In the latter arrangement, in-
+ electric motors turned separate shafting sec-                dividual electric motors were used to run
+
+
+
+
+                     This content downloaded from 185.44.77.28 on Wed, 25 Jun 2014 03:55:17 AM
+                                    All use subject to JSTOR Terms and Conditions
+358                                AEA PAPERS AND PROCEEDINGS                                    MA Y 1990
+
+
+machines of all sizes (see Devine, pp. 362ff).              ness of constructing factories and shops re-
+The advantages of the unit drive for factory                mained extremely unconcentrated, and was
+design turned out to extend well beyond the                 characterized by a high rate of turnover of
+savings in inputs of fuel derived from elimi-               firms and skilled personnel. Difficulties in
+nating the need to keep all the line shafts                 internalizing and appropriating the benefits
+turning, and the greater energy efficiency                  of the technical knowledge acquired in such
+achieved by reducing friction losses in trans-              circumstances are likely to slow experience-
+mission. Factory structures could be radi-                  based learning. A theoretical analysis of an
+cally redesigned once the need for bracing                  interdependent dynamic process involving
+(to support the heavy shafting and belt-hous-               diffusion and incremental innovations based
+ings for the transmission apparatus that typ-               upon learning-by-doing (see my paper with
+ically was mounted overhead) had been dis-                  Trond Olsen, 1986) demonstrates that where
+pensed with. This afforded 1) savings in fixed              the capital goods embodying the new tech-
+capital through lighter factory construction,               nology are competitively supplied, and there
+and 2) further capital savings from the shift               are significant knowledge spillovers among
+to building single-story factories, whereas                 the firms in the supplying industry, the re-
+formerly the aim of reducing power losses in                sulting pace of technology adoption will be
+turning very long line shafts had dictated the              slower than is socially optimal.
+erection of more costly multistory structures.
+Single-story, linear factory layouts, in turn,                                            III
+permitted 3) closer attention to optimizing
+materials handling, and flexible reconfigu-                    The preceding review of the sources of
+ration of machine placement and handling                    "diffusion lags" bears directly on the rela-
+equipment to accommodate subsequent                         tionship between the timing of movements
+changes in product and process designs                      in industrial productivity, and the applica-
+within the new structures. Related to this, 4)              tions found for electric power within the
+the modularity of the unit drive system and                 industrial sector. A somewhat different class
+the flexibility of wiring curtailed losses of               of considerations also holds part of the ex-
+production incurred during maintenance, re-                 planation for the sluggish growth of produc-
+arrangement of production lines, and plant                  tivity in the United States prior to the 1920s.
+retrofitting; the entire power system no                    These have to do more with the deficiencies
+longer had to be shut down in order to make                 of the conventional productivity measures,
+changes in one department or section of the                 which are especially problematic in treating
+mill.                                                       the new kinds of products and process ap-
+   Although all this was clear enough in prin-              plications that tend to be found for an
+ciple, the relevant point is that its implemen-             emergent general purpose technology during
+tation on a wide scale required working out                 the initial phases of its development. Here,
+the details in the context of many kinds of                 too, the story of the dynamo revolution
+new industrial facilities, in many different                holds noteworthy precedents for some of the
+locales, thereby building up a cadre of expe-               problems frequently mentioned today in
+rienced factory architects and electrical engi-             connection with the suspected impact of
+neers familiar with the new approach to                     the computer (see, Baily-Gordon; and Gor-
+manufacturing. The decentralized sort of                    don-Baily, 1989): 1) unmeasured quality
+learning process that this entailed was de-                 changes associated with the introduction of
+pendent upon the volume of demand for                       novel commodities; and 2) the particular
+new industrial facilities at sites that favor-              bias of the new technology toward expand-
+ed reliance upon purchased electricity for                  ing production of categories of goods and
+power. It was, moreover, inherently uncer-                  services that previously were not being
+tain and slow to gain momentum, owing in                    recorded in the national income accounts.
+part to the structure of the industry respon-                  In the case of the dynamo, initial commer-
+sible for supplying the capital that embodied               cial applications during the 1890-1914 era
+the new, evolving technology. For, the busi-                were concentrated in the fields of light-
+
+
+
+
+                     This content downloaded from 185.44.77.28 on Wed, 25 Jun 2014 03:55:17 AM
+                                    All use subject to JSTOR Terms and Conditions
+VOL. 80 NO. 2                  ECONOMIC HISTORY OF TECHNOLOGY                                            359
+
+
+ing equipment and urban transit systems.                     and the proportionate increase of its in-
+Notice that qualitative characteristics such                 stalled secondary electric motor capacity be-
+as brightness, ease of maintenance, and fire                 tween 1919 and 1929. Making use of this
+safety were especially important attributes of               cross-section relationship, approximatelyhalf
+incandescent lighting for stores and facto-                  of the 5 percentage point acceleration re-
+ries, as well as for homes-the early electric                corded in the aggregate TFP growth rate of
+lighting systems having been designed to be                  the U.S. manufacturing sector during
+closely competitive with illuminating gas on                 1919-29 (compared with 1909-19) is ac-
+a cost basis. Likewise, the contributions to                 counted for statistically simply by the growth
+the improvement in economic welfare in the                   in manufacturing secondary electric motor
+form of faster trip speeds and shorter pas-                  capacity during that decade (see my 1989
+senger waiting times afforded by electric                    paper, Table 5, and pp. 26-27).
+streetcars, and later by subways (not to men-                   But, even that did not exhaust the full
+tion the greater residential amenities enjoyed               productivity ramifications of the dynamo
+by urban workers who were enabled to com-                    revolution in the industrial sector during the
+mute to the central business district from                   1920s. An important source of measured
+more salubrious residential neighborhoods),                  productivity gains during this era has been
+all remained largely uncaptured by the con-                  found to be the capital-saving effects of the
+ventional indexes of real product and pro-                   technological and organizational innovations
+ductivity.                                                   that underlay the growth of continuous pro-
+   Measurement biases of this kind persisted                 cess manufacturing, and the spread of con-
+in the later period of factory electrification,              tinuous shift-work, most notably in the
+most notably in regard to some of the indi-                  petroleum products, paper, and chemical in-
+rect benefits of implementing the "unit                      dustries (see John Lorant, 1966, chs. 3, 4, 5).
+drive" system. One of these was the im-                      Although these developments did not in-
+provement in machine control achieved by                     volve the replacement of shafts by wires,
+eliminating the problem of belt slippage and                 they were bound up indirectly with the new
+installing variable speed d.c. motors. This                  technological regime build up around the
+yielded better quality, more standardized                    dynamo. Advances in automatic process
+output without commensurately increased                      control engineering were dependent upon
+costs (see Devine, pp. 363ff). Factory de-                   use of electrical instrumentation and elec-
+signs adapted to the unit drive system also                  tro-mechanical relays. More fundamentally,
+brought improvements in working condi-                       electrification was a key complementary ele-
+tions and safety. Lighter, cleaner workshops                 ment in the foregoing innovations because
+were made possible by the introduction of                    pulp- and paper-making, chemical produc-
+skylights, where formerly overhead transmis-                 tion, and petroleum refining (like the pri-
+sion apparatus had been mounted; and also                    mary metals, and the stone, clay and glass
+by the elimination of the myriad strands of                  industries where there were similar move-
+rotating belting that previously swirled dust                ments towards electrical instrumentation for
+and grease through the factory atmosphere,                   process control, and greater intensity in the
+ and, where unenclosed within safety screen-                 utilization of fixed facilities) were the
+ing, threatened to maim or kill workers who                  branches of manufacture that made particu-
+became caught up in them.                                    larly heavy use of electricity for process heat.
+   These more qualitative indirect benefits,
+however, came as part of a package contain-                                                IV
+ing other gains that, as has been seen, took
+the form of more readily quantifiable re-                       Closer study of some economic history of
+source savings. Consequently, a significantly                technology, and familiarity with the story of
+positive cross-section association can be                    the dynamo revolution in particular, should
+found between the rise in the industry's TFP                 help us avoid both the pitfall of undue san-
+growth rate (adjusted for purchased energy                   guinity and the pitfall of unrealistic impa-
+inputs) during the 1920s, vis-'a-visthe 1910s,               tience into which current discussions of the
+
+
+
+
+                     This content downloaded from 185.44.77.28 on Wed, 25 Jun 2014 03:55:17 AM
+                                    All use subject to JSTOR Terms and Conditions
+                                   AEA PAPERS AND PROCEEDINGS                                      MAY 1990
+360
+
+
+productivity paradox seem to plunge all too                 does not rise significantly as they age. Unlike
+frequently. Some closing words of caution                   those conventional structures and equip-
+are warranted, however, to guard against the                ment stocks, however, information structures
+dangers of embracing the historical analogy                 per se do not automatically undergo signifi-
+too literally.                                              cant physical depreciation. Although they
+    Computers are not dynamos. The nature                   may become economically obsolete and be
+of man-machine interactions and the techni-                 scrapped on that account, one cannot de-
+cal problems of designing efficient interfaces              pend on the mere passage of time to create
+for humans and computers are enormously                     occasions to radically redesign a firm's infor-
+more subtle and complex than those that                     mation structures and operating modes.
+arose in the implementation of electric light-              Consequently, there is likely to be a strong
+ing and power technology. Moreover, infor-                  inertial component in the evolution of infor-
+mation as an economic commodity is not                      mation-intensive production organizations.
+like electric current. It has special attrib-                  But, even these cautionary qualifications
+utes (lack of superadditivity and negligible                serve only to further reinforce one of the
+marginal costs of transfer) that make direct                main thrusts of the dynamo analogy. They
+measurement of its production and alloca-                   suggest the existence of special difficulties in
+tion very difficult and reliance upon conven-               the commercialization of novel (information)
+tional market processes very problematic.                   technologies that need to be overcome be-
+Information is different, too, in that it can               fore the mass of information-users can bene-
+give rise to "overload," a special form of                  fit in their roles as producers, and do so in
+congestion effect arising from inhibitions on               ways reflected by our traditional, market-ori-
+the exercise of the option of free disposal                 ented indicators of productivity.
+usually presumed to characterize standard
+economic commodities. Negligible costs of                                        REFERENCES
+distribution are one cause of "overload";
+information transmitters are encouraged to                   Baily, MartinN. and Gordon,RobertJ., "The
+be indiscriminate in broadcasting their out-                   Productivity Slowdown, Measurement Is-
+put. At the user end, free disposal may be an                  sues, and the Explosion of Computer
+unjustified assumption in the economic anal-                   Power," Brookings Papers on Economic
+ysis of information systems, because our cul-                  Activity, 2:1988, 347-420.
+tural inheritance assigns high value to (previ-              Bresnahan,TimothyF. andTrajtenberg,    Manuel,
+ously scarce) information, predisposing us to                  "General Purpose Technologies and Ag-
+try screening whatever becomes available.                      gregate Growth," Working Paper, Depart-
+Yet, screening is costly; while it can con-                    ment of Economics, Stanford University,
+ tribute to a risk-averse information recip-                   January 1989.
+ient's personal welfare, the growing duplica-                Byatt,I. C. R., The British Electrical Industry
+ tive allocation of human resources to coping                  1875-1914: The Economic Returns to a
+with information overload may displace ac-                     New Technology,Oxford: Clarendon Press,
+ tivities producing commodities that are bet-                  1979.
+ ter recorded by the national income ac-                     David, Paul A., "Computer and Dynamo:
+counts.                                                        The Modern Productivity Paradox in a
+    In defense of the historical analogy drawn                 Not-Too-Distant Mirror,"Center for Eco-
+here, the information structuresof firms (i.e.,                nomic Policy Research, No. 172, Stanford
+ the type of data they collect and generate,                   University, July 1989.
+ the way they distribute and process it for                     _      , ""Some New Standards for the Eco-
+interpretation) may be seen as direct coun-                     nomics of Standardization in the Informa-
+ terparts of the physical layouts and materials                 tion Age," in P. Dasgupta and P. L.
+ flow patterns of production and transporta-                    Stoneman, eds., Economic Policy and
+ tion systems. In one sense they are, for they                  TechnologicalPerformance,London: Cam-
+ constitute a form of sunk costs, and the                       bridge University Press, 1987, ch. 7.
+ variable cost of utilizing such a structure                    _        and Bunn, Julie A., "The Economics
+
+
+
+
+                     This content downloaded from 185.44.77.28 on Wed, 25 Jun 2014 03:55:17 AM
+                                    All use subject to JSTOR Terms and Conditions
+VOL. 80 NO. 2                   ECONOMIC HISTORY OF TECHNOLOGY                                       361
+
+  of Gateway Technologies and the Evolu-                       Technology and Industry, Paris, June 1989.
+  tion of Network Industries: Lessons from                   Hughes,ThomasP., Networks of Power: Elec-
+  Electricity Supply History," Information                     trification in WesternSociety, 1880 -1930,
+  Economics and Policy, Spring 1988, 4,                        Johns Hopkins University Press, 1983.
+  165-202.                                                   Lewis, Peter H., "The Executive Computer:
+         and Olsen, Trond E., "Equilibrium                      Can There Be Too Much Power?," New
+  Dynamics of Diffusion when Incremental                        York Times, December 31, 1989, p. 9.
+  Technological Innovations are Foreseen,"                   Lorant, John H., The Role of Capital-Im-
+  Ricerche Economiche, October-December,                       proving Innovations in American Manufac-
+  1986, 40, 738-70.                                            turing during the 1920's, New York: Arno
+Devine, Warren,Jr., "From Shafts to Wires:                     Press, 1966.
+   Historical Perspective on Electrification,"               Minami, Ryoshin, Power Revolution in the
+  Journal of Economic History, June 1983,                      Industrialization of Japan: 1885-1940,
+  43, 347-72.                                                  Tokyo: Kinokuniya Co., 1987.
+DuBoff,Richard,Electrical Power in American                  Roach, Stephen S., "America's Technology
+  Manufacturing 1889-1958, New York:                           Dilemma: A Profile of the Information
+  Arno Press, 1979.                                            Economy," Special Economic Study-
+Freeman,Christopher, andPerez,Carlotta,"The                    Morgan Stanley, New York, September 22,
+   Diffusion of Technical Innovations and                      1987.
+  Changes of Techno-economic Paradigm,"                        __._      "White Collar Productivity: A
+  in F. Arcangeli et al., eds., The Diffusion of               Glimmer of Hope?," Special Economic
+  New Technologies, Vol. 3: TechnologyDif-                     Study -Morgan Stanley, New York, Sep-
+  fusion and Economic Growth:International                     tember 16, 1988.
+  and National Policy Perspectives, New                      Simon, HerbertA., "The Steam Engine and
+  York: Oxford University Press, forthcom-                     the Computer: What Makes Technolo-
+  ing 1990.                                                    gy Revolutionary?," EDUCOM Bulletin,
+Gordon,RobertJ. andBaily,Martin,N., "Mea-                       Spring 1986, 22, 2-5.
+  surement Issues and the Productivity                       von Tunzelmann,G. N., Steam Power and
+   Slowdown in Five Major Industrial Coun-                     British Industrialization to 1860, Oxford:
+  tries," OECD, Directorate of Science,                         Clarendon Press, 1978.
+
+
+
+
+                      This content downloaded from 185.44.77.28 on Wed, 25 Jun 2014 03:55:17 AM
+                                     All use subject to JSTOR Terms and Conditions
+

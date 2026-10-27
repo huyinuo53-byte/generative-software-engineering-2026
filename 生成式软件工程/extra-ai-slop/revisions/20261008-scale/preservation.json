@@ -1,0 +1,11 @@
+{
+  "lesson": "extra-ai-slop",
+  "status": "passed",
+  "changes": [],
+  "all_other_notes_fields_unchanged": true,
+  "all_image_bytes_match_previous_audit": true,
+  "images": 8,
+  "transcript_and_index_unchanged": true,
+  "html_sha256": "68fa80956bb84708b683ae88a6b24e4c406f0055b77a10e25712710a22483e68",
+  "layout_sha256": "028c84a1b0d6cda72c8bcf3d6f29dcc39524dae17852fcc7ed99cf60ff7d3ff5"
+}

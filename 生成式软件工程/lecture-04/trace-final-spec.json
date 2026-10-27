@@ -1,0 +1,686 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1Q6en6NEUo-20261002",
+  "basis": "observed_build",
+  "root": ".",
+  "artifacts": [
+    {
+      "id": "audit.json",
+      "path": "audit.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0001.json",
+      "path": "chunks/chunk-0001.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0002.json",
+      "path": "chunks/chunk-0002.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0003.json",
+      "path": "chunks/chunk-0003.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0004.json",
+      "path": "chunks/chunk-0004.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0005.json",
+      "path": "chunks/chunk-0005.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0006.json",
+      "path": "chunks/chunk-0006.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0007.json",
+      "path": "chunks/chunk-0007.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0008.json",
+      "path": "chunks/chunk-0008.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0009.json",
+      "path": "chunks/chunk-0009.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0010.json",
+      "path": "chunks/chunk-0010.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0011.json",
+      "path": "chunks/chunk-0011.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0012.json",
+      "path": "chunks/chunk-0012.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0013.json",
+      "path": "chunks/chunk-0013.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0014.json",
+      "path": "chunks/chunk-0014.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0015.json",
+      "path": "chunks/chunk-0015.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0016.json",
+      "path": "chunks/chunk-0016.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0017.json",
+      "path": "chunks/chunk-0017.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0018.json",
+      "path": "chunks/chunk-0018.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0019.json",
+      "path": "chunks/chunk-0019.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0020.json",
+      "path": "chunks/chunk-0020.json",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/index.json",
+      "path": "chunks/index.json",
+      "depends_on": []
+    },
+    {
+      "id": "content-draft.json",
+      "path": "content-draft.json",
+      "depends_on": []
+    },
+    {
+      "id": "cross-review.json",
+      "path": "cross-review.json",
+      "depends_on": []
+    },
+    {
+      "id": "events.jsonl",
+      "path": "events.jsonl",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-2660.png",
+      "path": "frames/demo-2660.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-2782.png",
+      "path": "frames/demo-2782.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-2905.png",
+      "path": "frames/demo-2905.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-2962.png",
+      "path": "frames/demo-2962.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-2990.png",
+      "path": "frames/demo-2990.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-3020.png",
+      "path": "frames/demo-3020.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-4320.png",
+      "path": "frames/demo-4320.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-5350.png",
+      "path": "frames/demo-5350.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-5400.png",
+      "path": "frames/demo-5400.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-5460.png",
+      "path": "frames/demo-5460.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-5520.png",
+      "path": "frames/demo-5520.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-5580.png",
+      "path": "frames/demo-5580.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-5640.png",
+      "path": "frames/demo-5640.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-5700.png",
+      "path": "frames/demo-5700.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-5760.png",
+      "path": "frames/demo-5760.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-5820.png",
+      "path": "frames/demo-5820.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/demo-5880.png",
+      "path": "frames/demo-5880.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-001.png",
+      "path": "frames/page-001.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-002.png",
+      "path": "frames/page-002.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-003.png",
+      "path": "frames/page-003.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-004.png",
+      "path": "frames/page-004.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-005.png",
+      "path": "frames/page-005.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-006.png",
+      "path": "frames/page-006.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-007.png",
+      "path": "frames/page-007.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-008.png",
+      "path": "frames/page-008.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-009.png",
+      "path": "frames/page-009.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-010.png",
+      "path": "frames/page-010.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-011.png",
+      "path": "frames/page-011.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-012.png",
+      "path": "frames/page-012.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-013.png",
+      "path": "frames/page-013.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-014.png",
+      "path": "frames/page-014.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-015.png",
+      "path": "frames/page-015.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-016.png",
+      "path": "frames/page-016.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-017.png",
+      "path": "frames/page-017.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-018.png",
+      "path": "frames/page-018.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-019.png",
+      "path": "frames/page-019.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-020.png",
+      "path": "frames/page-020.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-021.png",
+      "path": "frames/page-021.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-022.png",
+      "path": "frames/page-022.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-023.png",
+      "path": "frames/page-023.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-024.png",
+      "path": "frames/page-024.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/page-025.png",
+      "path": "frames/page-025.png",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-0120.jpg",
+      "path": "frames/survey-0120.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-0420.jpg",
+      "path": "frames/survey-0420.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-0720.jpg",
+      "path": "frames/survey-0720.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-1020.jpg",
+      "path": "frames/survey-1020.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-1320.jpg",
+      "path": "frames/survey-1320.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-1620.jpg",
+      "path": "frames/survey-1620.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-1920.jpg",
+      "path": "frames/survey-1920.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-2220.jpg",
+      "path": "frames/survey-2220.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-2520.jpg",
+      "path": "frames/survey-2520.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-2820.jpg",
+      "path": "frames/survey-2820.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-3120.jpg",
+      "path": "frames/survey-3120.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-3420.jpg",
+      "path": "frames/survey-3420.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-3720.jpg",
+      "path": "frames/survey-3720.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-4020.jpg",
+      "path": "frames/survey-4020.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-4320.jpg",
+      "path": "frames/survey-4320.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-4620.jpg",
+      "path": "frames/survey-4620.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-4920.jpg",
+      "path": "frames/survey-4920.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-5220.jpg",
+      "path": "frames/survey-5220.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-5520.jpg",
+      "path": "frames/survey-5520.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "frames/survey-5820.jpg",
+      "path": "frames/survey-5820.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "html-static.json",
+      "path": "html-static.json",
+      "depends_on": []
+    },
+    {
+      "id": "image-audit.json",
+      "path": "image-audit.json",
+      "depends_on": []
+    },
+    {
+      "id": "notes.json",
+      "path": "notes.json",
+      "depends_on": [
+        "transcript.json",
+        "chunks/index.json"
+      ]
+    },
+    {
+      "id": "qa/browser.json",
+      "path": "qa/browser.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ]
+    },
+    {
+      "id": "qa/desktop-body.png",
+      "path": "qa/desktop-body.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/desktop-top.png",
+      "path": "qa/desktop-top.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/desktop-zoom.png",
+      "path": "qa/desktop-zoom.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/desktop-zoom3.png",
+      "path": "qa/desktop-zoom3.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/final-static.json",
+      "path": "qa/final-static.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ]
+    },
+    {
+      "id": "qa/mobile-body.png",
+      "path": "qa/mobile-body.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/mobile-top.png",
+      "path": "qa/mobile-top.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/mobile-zoom.png",
+      "path": "qa/mobile-zoom.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/mobile-zoom3.png",
+      "path": "qa/mobile-zoom3.png",
+      "depends_on": []
+    },
+    {
+      "id": "qa/print.json",
+      "path": "qa/print.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ]
+    },
+    {
+      "id": "review.json",
+      "path": "review.json",
+      "depends_on": [
+        "notes.json",
+        "课堂笔记.html",
+        "image-audit.json",
+        "qa/browser.json",
+        "qa/print.json"
+      ]
+    },
+    {
+      "id": "run.json",
+      "path": "run.json",
+      "depends_on": []
+    },
+    {
+      "id": "sources/audit-sheet-01.jpg",
+      "path": "sources/audit-sheet-01.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/audit-sheet-02.jpg",
+      "path": "sources/audit-sheet-02.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/audit-sheet-03.jpg",
+      "path": "sources/audit-sheet-03.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/audit-sheet-04.jpg",
+      "path": "sources/audit-sheet-04.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/audit-sheet-05.jpg",
+      "path": "sources/audit-sheet-05.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/audit-sheet-06.jpg",
+      "path": "sources/audit-sheet-06.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/audit-sheet-07.jpg",
+      "path": "sources/audit-sheet-07.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/audit-sheet-08.jpg",
+      "path": "sources/audit-sheet-08.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/audit-sheet-09.jpg",
+      "path": "sources/audit-sheet-09.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/final-video-audit-01.jpg",
+      "path": "sources/final-video-audit-01.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/final-video-audit-02.jpg",
+      "path": "sources/final-video-audit-02.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/final-video-audit-03.jpg",
+      "path": "sources/final-video-audit-03.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/final-video-audit-04.jpg",
+      "path": "sources/final-video-audit-04.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/frame-observations.json",
+      "path": "sources/frame-observations.json",
+      "depends_on": []
+    },
+    {
+      "id": "sources/hanoi-check.json",
+      "path": "sources/hanoi-check.json",
+      "depends_on": []
+    },
+    {
+      "id": "sources/media-probe.json",
+      "path": "sources/media-probe.json",
+      "depends_on": []
+    },
+    {
+      "id": "sources/preparation-review.json",
+      "path": "sources/preparation-review.json",
+      "depends_on": []
+    },
+    {
+      "id": "sources/project-check.json",
+      "path": "sources/project-check.json",
+      "depends_on": []
+    },
+    {
+      "id": "sources/project-show.json",
+      "path": "sources/project-show.json",
+      "depends_on": []
+    },
+    {
+      "id": "sources/slides-text.json",
+      "path": "sources/slides-text.json",
+      "depends_on": []
+    },
+    {
+      "id": "sources/slides4.html",
+      "path": "sources/slides4.html",
+      "depends_on": []
+    },
+    {
+      "id": "sources/source-slides.pdf",
+      "path": "sources/source-slides.pdf",
+      "depends_on": []
+    },
+    {
+      "id": "sources/video-survey-01.jpg",
+      "path": "sources/video-survey-01.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/video-survey-02.jpg",
+      "path": "sources/video-survey-02.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/video-survey-03.jpg",
+      "path": "sources/video-survey-03.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/video-survey-04.jpg",
+      "path": "sources/video-survey-04.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "sources/video-survey-05.jpg",
+      "path": "sources/video-survey-05.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "transcript.json",
+      "path": "transcript.json",
+      "depends_on": []
+    },
+    {
+      "id": "课堂笔记.html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "notes.json",
+        "chunks/index.json"
+      ]
+    }
+  ]
+}

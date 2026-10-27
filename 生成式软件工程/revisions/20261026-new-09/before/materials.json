@@ -1,0 +1,1575 @@
+{
+  "schema_version": 1,
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "checked_at": "2026-10-19T01:15:01.191907+00:00",
+  "item": "lecture-08",
+  "video_id": "BV11LWw6VEHW",
+  "mapping_evidence": {
+    "course_title": "生成式软件工程（2026秋）",
+    "lecture_number": 8,
+    "title": "Agent Native 开发",
+    "course_html": "course.html",
+    "lecture_url": "https://jyywiki.cn/GSE/2026/lect8.md",
+    "slides_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+    "mapping_note": "官网第8项明确链接lect8.md/slides8.html且标题一致；视频BV身份来自主代理，未由本子任务重新核对视频。"
+  },
+  "expected_material_ids": [
+    "gse08-ralph",
+    "gse08-ci",
+    "gse08-cd",
+    "gse08-github-protection",
+    "gse08-git-hooks",
+    "gse08-github-pages",
+    "gse08-github-deployments",
+    "gse08-minions",
+    "gse08-compiler",
+    "gse08-strongdm",
+    "gse08-dtu",
+    "gse08-friendster",
+    "gse08-harness",
+    "gse08-webvan",
+    "gse08-quibi",
+    "humanize-2610.08900v2",
+    "gse08-lab2",
+    "gse08-deepseek-harness-repository"
+  ],
+  "materials": [
+    {
+      "id": "gse08-ralph",
+      "listed_title": "Ralph Wiggum as a software engineer",
+      "title": "Ralph Wiggum as a software engineer",
+      "listed_url": "https://ghuntley.com/ralph/",
+      "source_url": "https://ghuntley.com/ralph/",
+      "version": "2025-07-14 / retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "lecture-08/sources/official-20261019/ralph.html",
+      "sha256": "d61c10891a7ef999fbcffb8e4ca12bffb21521968e15e8e8ec6bc304f7c7b266",
+      "scope_sections": [
+        "article正文全部，含 one item per loop、backpressure、TODO、build/plan prompts"
+      ],
+      "read_sections": [
+        "article正文全部，含 one item per loop、backpressure、TODO、build/plan prompts"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        5
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "Ralph 不只是重复提示词：把规格和计划每轮重新提供，一轮集中一件事，以构建、测试和静态检查拒绝坏状态，把失败原因及测试为何存在写回文件。作者还强调先查已有实现，并承认新项目引导更适合、既有仓库使用存疑，仍需资深判断。文中大规模并行数字和乐观能力判断是个人经验与主张，不是本课应照搬的默认配置。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 9,
+          "location": "article正文全部，含 one item per loop、backpressure、TODO、build/plan prompts",
+          "claim": "Ralph 不只是重复提示词：把规格和计划每轮重新提供，一轮集中一件事，以构建、测试和静态检查拒绝坏状态，把失败原因及测试为何存在写回文件。作者还强调先查已有实现，并承认新项目引导更适合、既有仓库使用存疑，仍需资深判断。文中大规模并行数字和乐观能力判断是个人经验与主张，不是本课应照搬的默认配置。",
+          "role": "mechanism",
+          "note_target": "supplements[0]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-ci",
+      "listed_title": "Continuous Integration (original version)",
+      "title": "Continuous Integration (original version)",
+      "listed_url": "https://martinfowler.com/articles/originalContinuousIntegration.html",
+      "source_url": "https://martinfowler.com/articles/originalContinuousIntegration.html",
+      "version": "2000-09-10",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "lecture-08/sources/official-20261019/ci.html",
+      "sha256": "8a4c0f392e03bf6e8c51c48fe7b26fb78274ef82500cd3ec128f06d22502fbce",
+      "scope_sections": [
+        "article全部：Benefits至Summing up"
+      ],
+      "read_sections": [
+        "article全部：Benefits至Summing up"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        8
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "CI 的核心是集成频繁且构建可重复：从统一版本源取出代码、脚本、配置及数据库定义，在干净环境自动构建并跑验证测试。每天尝试构建但长期失败不算成功实践；只编译也不足以确认行为。作者明确说测试不能证明没有Bug，且CI收益依据经验，文中增长倍数不是测量结论。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 15,
+          "location": "article全部：Benefits至Summing up",
+          "claim": "CI 的核心是集成频繁且构建可重复：从统一版本源取出代码、脚本、配置及数据库定义，在干净环境自动构建并跑验证测试。每天尝试构建但长期失败不算成功实践；只编译也不足以确认行为。作者明确说测试不能证明没有Bug，且CI收益依据经验，文中增长倍数不是测量结论。",
+          "role": "mechanism",
+          "note_target": "supplements[1]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-cd",
+      "listed_title": "Continuous Delivery vs Continuous Deployment",
+      "title": "Continuous Delivery vs Continuous Deployment",
+      "listed_url": "https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/",
+      "source_url": "https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/",
+      "version": "2010-08-13",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "lecture-08/sources/official-20261019/cd.html",
+      "sha256": "473b20083fef02e2161d21868270b1bef914fcc62b7f1e74c6a76ca65e94e860",
+      "scope_sections": [
+        "正文全部"
+      ],
+      "read_sections": [
+        "正文全部"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        8
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "持续交付意味着每个合格构建具备随时发布的条件，是否发布由业务决定；持续部署把合格构建实际交给用户。原文强调可发布不只意味着单元测试通过，还要验证生产近似环境、容量、安全、可用性和跨系统集成。硬件耦合或版本支持成本可能合理地限制发布频率。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 15,
+          "location": "正文全部",
+          "claim": "持续交付意味着每个合格构建具备随时发布的条件，是否发布由业务决定；持续部署把合格构建实际交给用户。原文强调可发布不只意味着单元测试通过，还要验证生产近似环境、容量、安全、可用性和跨系统集成。硬件耦合或版本支持成本可能合理地限制发布频率。",
+          "role": "mechanism",
+          "note_target": "supplements[2]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-github-protection",
+      "listed_title": "About protected branches",
+      "title": "About protected branches",
+      "listed_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "source_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "version": "current docs retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "lecture-08/sources/official-20261019/github-protection.html",
+      "sha256": "ea89563f74fa9f59095e510adb240df83c4fdb3d9cfa106ae36dd3d82d232d8b",
+      "scope_sections": [
+        "About branch protection rules",
+        "Require status checks before merging",
+        "Require merge queue"
+      ],
+      "read_sections": [
+        "About branch protection rules",
+        "Require status checks before merging",
+        "Require merge queue"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        9,
+        10,
+        11
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "分支保护才把检查结果变成合并约束。必需状态检查可能接受 successful、skipped 或 neutral，所以流程设计还要确认相关检查确实运行。默认管理员和可绕过角色可能不受限制，须按项目权限规则设置。strict要求与主干保持最新；merge queue验证主干加队列前序PR的组合。文档描述机制，不证明某仓库配置已生效。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 16,
+          "location": "About branch protection rules; Require status checks before merging; Require merge queue",
+          "claim": "分支保护才把检查结果变成合并约束。必需状态检查可能接受 successful、skipped 或 neutral，所以流程设计还要确认相关检查确实运行。默认管理员和可绕过角色可能不受限制，须按项目权限规则设置。strict要求与主干保持最新；merge queue验证主干加队列前序PR的组合。文档描述机制，不证明某仓库配置已生效。",
+          "role": "mechanism",
+          "note_target": "supplements[3]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-git-hooks",
+      "listed_title": "Git hooks manual: pre-commit",
+      "title": "Git hooks manual: pre-commit",
+      "listed_url": "https://git-scm.com/docs/githooks",
+      "source_url": "https://git-scm.com/docs/githooks",
+      "version": "current docs retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "lecture-08/sources/official-20261019/git-hooks.html",
+      "sha256": "b4fac3012eb016dc1bc95eb92e5237094ea1c11eb468719678ce1d29eae9ac6e",
+      "scope_sections": [
+        "pre-commit"
+      ],
+      "read_sections": [
+        "pre-commit"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        9
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "pre-commit 在提交前运行，非零退出会中止提交，但可由 --no-verify 跳过。因此它适合快速本地反馈，不能独自承担远端合并门控。这里只阅读与本课论点直接相关的 pre-commit 段落。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 16,
+          "location": "pre-commit",
+          "claim": "pre-commit 在提交前运行，非零退出会中止提交，但可由 --no-verify 跳过。因此它适合快速本地反馈，不能独自承担远端合并门控。这里只阅读与本课论点直接相关的 pre-commit 段落。",
+          "role": "mechanism",
+          "note_target": "supplements[4]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-github-pages",
+      "listed_title": "Using custom workflows with GitHub Pages",
+      "title": "Using custom workflows with GitHub Pages",
+      "listed_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "version": "current docs retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "lecture-08/sources/official-20261019/github-pages.html",
+      "sha256": "1f42069eb60ebd2053578dcaca0403fa0a8d51fa8cce2ad469205b2c72ec0043",
+      "scope_sections": [
+        "About custom workflows",
+        "Configuring configure-pages",
+        "Configuring upload-pages-artifact",
+        "Deploying artifacts",
+        "Linking separate build and deploy jobs"
+      ],
+      "read_sections": [
+        "About custom workflows",
+        "Configuring configure-pages",
+        "Configuring upload-pages-artifact",
+        "Deploying artifacts",
+        "Linking separate build and deploy jobs"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        11
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "Pages 的构建与部署可以在同一工作流分作不同job；部署通过 needs 依赖构建，并部署已经上传的产物。应把测试和构建成功落实为依赖关系，而非只在提示词里要求先后顺序。原文要求 pages:write、id-token:write 和部署环境规则；当前Action版本不是课堂冻结配置。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 17,
+          "location": "About custom workflows; Configuring configure-pages; Configuring upload-pages-artifact; Deploying artifacts; Linking separate build and deploy jobs",
+          "claim": "Pages 的构建与部署可以在同一工作流分作不同job；部署通过 needs 依赖构建，并部署已经上传的产物。应把测试和构建成功落实为依赖关系，而非只在提示词里要求先后顺序。原文要求 pages:write、id-token:write 和部署环境规则；当前Action版本不是课堂冻结配置。",
+          "role": "mechanism",
+          "note_target": "supplements[5]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-github-deployments",
+      "listed_title": "Deploying with GitHub Actions",
+      "title": "Deploying with GitHub Actions",
+      "listed_url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/control-deployments",
+      "source_url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/control-deployments",
+      "version": "current docs retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "lecture-08/sources/official-20261019/github-deployments.html",
+      "sha256": "ec19b34e6c7a84af8321a73a2f8ad00489d3fbe1fced5892b7ce7722da53cb83",
+      "scope_sections": [
+        "Triggering your deployment",
+        "Using environments",
+        "Using concurrency及其示例"
+      ],
+      "read_sections": [
+        "Triggering your deployment",
+        "Using environments",
+        "Using concurrency及其示例"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        10
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "同一concurrency组最多一个运行任务，可取消过时的pending任务，cancel-in-progress可取消正在运行者。环境名与并发组不是自动绑定：同环境的另一个工作流若没声明相同并发规则，仍不受它约束。整理者建议：发布验收须测试重叠任务，不能仅凭有 concurrency 字段就断言旧版本不会覆盖新版本。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 17,
+          "location": "Triggering your deployment; Using environments; Using concurrency及其示例",
+          "claim": "同一concurrency组最多一个运行任务，可取消过时的pending任务，cancel-in-progress可取消正在运行者。环境名与并发组不是自动绑定：同环境的另一个工作流若没声明相同并发规则，仍不受它约束。整理者建议：发布验收须测试重叠任务，不能仅凭有 concurrency 字段就断言旧版本不会覆盖新版本。",
+          "role": "mechanism",
+          "note_target": "supplements[6]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-minions",
+      "listed_title": "Minions: Stripe’s one-shot, end-to-end coding agents—Part2",
+      "title": "Minions: Stripe’s one-shot, end-to-end coding agents—Part2",
+      "listed_url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "source_url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "version": "2026-02-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "lecture-08/sources/official-20261019/minions.html",
+      "sha256": "af839dd68ea23c8366642d3f6d37755245b1d0a469cd4d8f621e9757d1e79a63",
+      "scope_sections": [
+        "article正文全部：Devboxes至In conclusion"
+      ],
+      "read_sections": [
+        "article正文全部：Devboxes至In conclusion"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        16
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "Stripe把已知必做工序编成确定节点，让Agent负责实现与修复；本地lint反馈前移，随后完整CI最多两轮，第二次后交回人类审查。自主运行的前提是隔离devbox、无生产用户数据、受限网络和工具权限。文中的1300+周合并PR是Stripe自报吞吐，仍由人类审查，不是通用成功率。原图需谨慎：正文将Fix CI failures称Agent节点，但示意图画为矩形，不能靠图形替作者解决这一不一致。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 21,
+          "location": "article正文全部：Devboxes至In conclusion",
+          "claim": "Stripe把已知必做工序编成确定节点，让Agent负责实现与修复；本地lint反馈前移，随后完整CI最多两轮，第二次后交回人类审查。自主运行的前提是隔离devbox、无生产用户数据、受限网络和工具权限。文中的1300+周合并PR是Stripe自报吞吐，仍由人类审查，不是通用成功率。原图需谨慎：正文将Fix CI failures称Agent节点，但示意图画为矩形，不能靠图形替作者解决这一不一致。",
+          "role": "mechanism",
+          "note_target": "supplements[7]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-compiler",
+      "listed_title": "Building a C compiler with a team of parallel Claudes",
+      "title": "Building a C compiler with a team of parallel Claudes",
+      "listed_url": "https://www.anthropic.com/engineering/building-c-compiler",
+      "source_url": "https://www.anthropic.com/engineering/building-c-compiler",
+      "version": "2026-02-05",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "lecture-08/sources/official-20261019/compiler.html",
+      "sha256": "a438ba14119d764d63e3dd13724d9c5199381326c009f17788139a55056a3a44",
+      "scope_sections": [
+        "article正文全部：Enabling long-running Claudes至Looking forward"
+      ],
+      "read_sections": [
+        "article正文全部：Enabling long-running Claudes至Looking forward"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        17
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "16个Opus4.6 Agent起初在Linux编译同一错误上互相覆盖；作者用GCC编译大部分文件、新编译器编译子集，逐步缩小失败集合，才让工作分开。还需delta debugging找出单独通过但组合失败的文件。结果来自近2000会话、两周、20亿输入token、1.4亿输出token及近2万美元API成本；不要混淆。该编译器仍借助GCC处理x86的16位启动代码，汇编链接器亦非完整自研，生成代码效率和Rust质量有限，不是成熟编译器替代品。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 21,
+          "location": "article正文全部：Enabling long-running Claudes至Looking forward",
+          "claim": "16个Opus4.6 Agent起初在Linux编译同一错误上互相覆盖；作者用GCC编译大部分文件、新编译器编译子集，逐步缩小失败集合，才让工作分开。还需delta debugging找出单独通过但组合失败的文件。结果来自近2000会话、两周、20亿输入token、1.4亿输出token及近2万美元API成本；不要混淆。该编译器仍借助GCC处理x86的16位启动代码，汇编链接器亦非完整自研，生成代码效率和Rust质量有限，不是成熟编译器替代品。",
+          "role": "mechanism",
+          "note_target": "supplements[8]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-strongdm",
+      "listed_title": "Software Factories And The Agentic Moment",
+      "title": "Software Factories And The Agentic Moment",
+      "listed_url": "https://factory.strongdm.ai/",
+      "source_url": "https://factory.strongdm.ai/",
+      "version": "2026-02-06",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "lecture-08/sources/official-20261019/strongdm.html",
+      "sha256": "f0953954fdd57189b4ac8f9eb2f91858a34402a7005dcc042959d840e17d68a8",
+      "scope_sections": [
+        "article正文全部"
+      ],
+      "read_sections": [
+        "article正文全部"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        18
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "StrongDM以场景表达端到端用户故事，常将其放在实现仓库外作为留出验收，避免Agent通过修改狭窄测试制造全绿。对于含Agent的产品，satisfaction观察多条轨迹中可能满足用户的比例，依然依赖场景与评判质量。其不手写/不人工审代码和每天每人1000美元token是团队主张与实验文化，不是可靠工程的普适门槛。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 21,
+          "location": "article正文全部",
+          "claim": "StrongDM以场景表达端到端用户故事，常将其放在实现仓库外作为留出验收，避免Agent通过修改狭窄测试制造全绿。对于含Agent的产品，satisfaction观察多条轨迹中可能满足用户的比例，依然依赖场景与评判质量。其不手写/不人工审代码和每天每人1000美元token是团队主张与实验文化，不是可靠工程的普适门槛。",
+          "role": "mechanism",
+          "note_target": "supplements[9]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-dtu",
+      "listed_title": "Digital Twin Universe",
+      "title": "Digital Twin Universe",
+      "listed_url": "https://factory.strongdm.ai/techniques/dtu",
+      "source_url": "https://factory.strongdm.ai/techniques/dtu",
+      "version": "current page retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "直接支撑当前官方讲义核心机制；网页限声明章节",
+      "path": "lecture-08/sources/official-20261019/dtu.html",
+      "sha256": "01666eeb02ce3239748ca864fbabb815ba36d4f503ef926bc30c9af7fa4928e7",
+      "scope_sections": [
+        "页面全文：Why DTU、四项优势、How It Works"
+      ],
+      "read_sections": [
+        "页面全文：Why DTU、四项优势、How It Works"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        18
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "DTU复制的是依赖服务边界上的可观察行为；先从API合同和边界案例做替身，再与真实依赖对照，直到不再找到行为差异。这样能高频重放场景、测试真实生产上危险或昂贵的故障。它不声称穷尽所有真实服务行为；替身和真实系统的差距仍会限制验收结论。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 21,
+          "location": "页面全文：Why DTU、四项优势、How It Works",
+          "claim": "DTU复制的是依赖服务边界上的可观察行为；先从API合同和边界案例做替身，再与真实依赖对照，直到不再找到行为差异。这样能高频重放场景、测试真实生产上危险或昂贵的故障。它不声称穷尽所有真实服务行为；替身和真实系统的差距仍会限制验收结论。",
+          "role": "mechanism",
+          "note_target": "supplements[10]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-friendster",
+      "listed_title": "Unorthodox approach to database design Part2:Friendster",
+      "title": "Unorthodox approach to database design Part2:Friendster",
+      "listed_url": "https://mysqldba.blogspot.com/2006/11/unorthodox-approach-to-database-design.html",
+      "source_url": "https://mysqldba.blogspot.com/2006/11/unorthodox-approach-to-database-design.html",
+      "version": "2006-11-09",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义背景案例，已额外阅读作者正文，不扩为数据库课程",
+      "path": "lecture-08/sources/official-20261019/friendster.html",
+      "sha256": "4be367119a9b2e7e2d400100b80a5fa32efddb3a01fe8dd9355e0f837c89def3",
+      "scope_sections": [
+        "作者正文全文（不将评论当作者结论）"
+      ],
+      "read_sections": [
+        "作者正文全文（不将评论当作者结论）"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        21
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "亲历工程师指出，完整从库仍要重放所有写入，大数据集和I/O会产生复制延迟；提出按用户分片，缩小每台数据规模并分散写负载，配对复制提供可用性。文中说组织环境未让方案在Friendster落地，后在Flickr采用。这是工程师回顾，不能单独解释公司兴衰；跨分片关联和迁移成本也不能从该短文视为已解决。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 28,
+          "location": "作者正文全文（不将评论当作者结论）",
+          "claim": "亲历工程师指出，完整从库仍要重放所有写入，大数据集和I/O会产生复制延迟；提出按用户分片，缩小每台数据规模并分散写负载，配对复制提供可用性。文中说组织环境未让方案在Friendster落地，后在Flickr采用。这是工程师回顾，不能单独解释公司兴衰；跨分片关联和迁移成本也不能从该短文视为已解决。",
+          "role": "background",
+          "note_target": "supplements[11]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-harness",
+      "listed_title": "Harness engineering: leveraging Codex in an agent-first world",
+      "title": "Harness engineering: leveraging Codex in an agent-first world",
+      "listed_url": "https://openai.com/index/harness-engineering/",
+      "source_url": "https://openai.com/index/harness-engineering/",
+      "version": "2026-02-11 / retrieved2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "path": "lecture-08/sources/official-20261019/web-retrieval.json",
+      "sha256": "fcdf991503da195ef56e39e9c1a41ece6e396291cee9c9ae8c06ceb0f36a3fca",
+      "source_format": "web tool line-numbered retrieval; direct HTTP403",
+      "scope_sections": [
+        "article正文全部，从We started with an empty git repository到What we are still learning"
+      ],
+      "read_sections": [
+        "article正文全部，从We started with an empty git repository到What we are still learning"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        14,
+        15
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "OpenAI把AGENTS.md做导航，知识放入版本化仓库；每工作区独立运行应用并开放UI、日志和指标给Agent；通过lint/结构测试守住依赖边界并持续小规模清理。原文同时采用较少阻塞合并门控，不等于没有CI；也承认多年架构一致性尚未知。这是特定内部产品经验，不能直接泛化为所有项目的最优规则。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 20,
+          "location": "article正文全部，从We started with an empty git repository到What we are still learning",
+          "claim": "OpenAI把AGENTS.md做导航，知识放入版本化仓库；每工作区独立运行应用并开放UI、日志和指标给Agent；通过lint/结构测试守住依赖边界并持续小规模清理。原文同时采用较少阻塞合并门控，不等于没有CI；也承认多年架构一致性尚未知。这是特定内部产品经验，不能直接泛化为所有项目的最优规则。",
+          "role": "mechanism",
+          "note_target": "supplements[12]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    },
+    {
+      "id": "gse08-webvan",
+      "listed_title": "Webvan 2000 Form10-K",
+      "title": "Webvan Group, Inc. Form10-K, year ended2000-12-31",
+      "listed_url": "https://www.sec.gov/Archives/edgar/data/1092657/000101287001001485/0001012870-01-001485.txt",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1092657/000101287001001485/0001012870-01-001485.txt",
+      "version": "2000 Form10-K / SEC accession0001012870-01-001485",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "仅核对讲义22页容量与亏损背景，不扩展为整份财报阅读",
+      "path": "lecture-08/sources/official-20261019/webvan-source-excerpts.json",
+      "sha256": "bcee1d39c0263e7cdfcaeb45e487c4c1635a9da7ffea2378d67e52beb96939c4",
+      "source_format": "web tool retrieved original SEC text excerpts",
+      "scope_sections": [
+        "Item7风险：需额外资本（印刷页18）",
+        "高容量业务系统未验证（印刷页21）"
+      ],
+      "read_sections": [
+        "Item7风险：需额外资本（印刷页18）",
+        "高容量业务系统未验证（印刷页21）"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        22
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "2000年报区分两类设施：配送中心低于原设计容量40%，CFC低于70%；且当时尚无设施现金流盈利。应写配送中心而非所有设施都低于40%。这些披露支持需求/设施失配的讨论，不能据此把破产归因于单一技术架构。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 28,
+          "location": "Item7风险：需额外资本（印刷页18）; 高容量业务系统未验证（印刷页21）",
+          "claim": "2000年报区分两类设施：配送中心低于原设计容量40%，CFC低于70%；且当时尚无设施现金流盈利。应写配送中心而非所有设施都低于40%。这些披露支持需求/设施失配的讨论，不能据此把破产归因于单一技术架构。",
+          "role": "background",
+          "note_target": "supplements[13]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ],
+      "reading_scope_limitations": [
+        "未读取整份年报；不得声称全文已读"
+      ]
+    },
+    {
+      "id": "gse08-quibi",
+      "listed_title": "An open letter from Quibi",
+      "title": "An open letter to the employees, investors, and partners",
+      "listed_url": "https://quibi-hq.medium.com/an-open-letter-from-quibi-8af6b415377f",
+      "source_url": "https://quibi-hq.medium.com/an-open-letter-from-quibi-8af6b415377f",
+      "version": "2020-10-21",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "仅核对关停声明和管理层归因，不扩展到Quibi商业史",
+      "path": "lecture-08/sources/official-20261019/web-retrieval.json",
+      "sha256": "fcdf991503da195ef56e39e9c1a41ece6e396291cee9c9ae8c06ceb0f36a3fca",
+      "scope_sections": [
+        "声明主体网页行41–67"
+      ],
+      "read_sections": [
+        "声明主体网页行41–67"
+      ],
+      "reading_status": "full",
+      "slide_pages": [
+        22
+      ],
+      "known_gaps": [],
+      "proposed_supplement": "Quibi管理层宣布结束业务，并把失败可能归为独立流媒体构想不足、或推出时机，也明确表示无法确知。可用于提醒实现完成不等于独立产品需求成立；不能改写成已证实的单一失败因果。",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 28,
+          "location": "声明主体网页行41–67",
+          "claim": "Quibi管理层宣布结束业务，并把失败可能归为独立流媒体构想不足、或推出时机，也明确表示无法确知。可用于提醒实现完成不等于独立产品需求成立；不能改写成已证实的单一失败因果。",
+          "role": "background",
+          "note_target": "supplements[14]"
+        }
+      ],
+      "related_items": [
+        "lecture-08"
+      ],
+      "reading_scope_limitations": [
+        "未将订阅UI、作者页及评论纳入阅读"
+      ]
+    },
+    {
+      "id": "humanize-2610.08900v2",
+      "kind": "paper",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "scope_reason": "Lab2现行官方页面§2.1明确用其作为多模型求解/审查与内核优化的核心案例；材料补充不冒充第08课口述。",
+      "listed_title": "Humanize: Judgement Engineering for Agentic Coding",
+      "listed_url": "https://arxiv.org/abs/2610.08900",
+      "listing_source_url": "https://jyywiki.cn/GSE/2026/lab2.md",
+      "listing_location": "§2.1 算力换智力，Humanize案例段；原HTML /tmp/gse08-lab2.html 第17行",
+      "title": "Humanize: Judgement Engineering for Agentic Coding",
+      "authors": [
+        "Sihao Liu",
+        "Ligeng Zhu",
+        "Zijian Zhang",
+        "Dongyun Zou",
+        "Zhengyang Zhang",
+        "Changye Li",
+        "Song Bian",
+        "Song Han",
+        "Tony Nowatzki"
+      ],
+      "source_url": "https://arxiv.org/abs/2610.08900v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.08900v2",
+      "version": "v2",
+      "version_date": "2026-10-08",
+      "identity_status": "verified",
+      "identity_note": "arXiv版本页、PDF首页标题/作者/arXiv v2标记一致。v1发表于2026-10-06，当前v2于2026-10-08更新。尚未核实课堂实际展示的是哪一版本，因此所有增量标现行官方材料与论文补充。",
+      "path": "lecture-08/sources/lab2-humanize-20261019/humanize-v2.pdf",
+      "sha256": "be9c8aff9a2b06dd4ac553e46d5c3b1761a831cf0c4e306b4743f9235b0411e5",
+      "total_pages": 14,
+      "reading_status": "full",
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "read_sections": [
+        "Abstract",
+        "1 Introduction",
+        "2 Judgement Engineering",
+        "2.1 Alternating Models as Joint Sampling",
+        "3 System Design",
+        "3.1 Planning as a Contract",
+        "3.2 The Round Protocol",
+        "3.3 Mechanical Gates",
+        "4 Deployment and Postmortem Study",
+        "5 Applications",
+        "6 Findings",
+        "7 Related Work",
+        "8 Limitations",
+        "9 Conclusion",
+        "Acknowledgments",
+        "References",
+        "Appendix A Mechanical Gates",
+        "Appendix B Corpus Coding"
+      ],
+      "visual_checks": [
+        {
+          "page": 2,
+          "path": "/tmp/gse08-lab2-materials/page-02.png",
+          "sha256": "2b4b5efb6211686b34da4a8df0499299e66e13ce851e499f252b2e283f822b89",
+          "detail": "Figure 1：完成权的归属；Humanize由reviewer COMPLETE加clean code review决定；底部应用数字非对照实验。"
+        },
+        {
+          "page": 3,
+          "path": "/tmp/gse08-lab2-materials/page-03.png",
+          "sha256": "aba87477e6b3afd5a58b15fd4448995a392c4a76c794502807e64513c61590a6",
+          "detail": "Figure 2与公式：盲点交集图；m_R为条件漏检概率，论文只提供机制论证而非测得普遍准确率。"
+        },
+        {
+          "page": 4,
+          "path": "/tmp/gse08-lab2-materials/page-04.png",
+          "sha256": "2b753444da5c1e5883fec4b75c1a041fbd24ed5b43f21aba98394ef211b42bfa",
+          "detail": "Figure 3：实现阶段42轮上限；review阶段明确无上限；红箭头是不完成退出。"
+        },
+        {
+          "page": 5,
+          "path": "/tmp/gse08-lab2-materials/page-05.png",
+          "sha256": "fd8d3ad72fce455ece239934150419af85dc5dab825c2030ba71fb88417f747b",
+          "detail": "Figure 4：builder提交代码/contract/summary，确定性hook检查后fresh reviewer看计划、历史和代码，不看builder推理；COMPLETE后仍有diff review。"
+        },
+        {
+          "page": 7,
+          "path": "/tmp/gse08-lab2-materials/page-07.png",
+          "sha256": "b44b06d50e3ed62d729a36b6dc0949a6e6bce3e2664441d4c676d0845ce72856",
+          "detail": "Figure 5：图左研究/优化/按shape专门化三阶段，KernelWiki和ncu-report-skill分别提供知识与性能证据；右图log scale、baseline 1x、single kernel、48h、team-reported，K-Search1.37/Humanize3.71/+Wiki6.14/+profiling8.58。"
+        },
+        {
+          "page": 8,
+          "path": "/tmp/gse08-lab2-materials/page-08.png",
+          "sha256": "bb3fabc2624e870a5b76d75b972ac3752f170ff0b0f091a2ac55f93522e04378",
+          "detail": "Figure 6：纵轴review独立性、横轴oracle强度；公式b m_R m_O只覆盖被检查claim。"
+        },
+        {
+          "page": 14,
+          "path": "/tmp/gse08-lab2-materials/page-14.png",
+          "sha256": "cbda18aa1d58b4c9b59f87c1f4af2bd698f61104623c16591c9a10348c31bb5f",
+          "detail": "Table1类别计数相加72；Table2分母118 postmortems，Present可多标签，Primary单标签；成本只有25报告涉及，不代表实际token成本已全面度量。"
+        }
+      ],
+      "known_gaps": [],
+      "related_items": [
+        "lecture-08"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 3,
+          "location": "PDF物理页2,3,4,5",
+          "claim": "论文补充 [humanize-2610.08900v2，物理页2–5，§2–3、图4]：Humanize把循环的输入定义为人已理解并接受的计划契约：目标、验收条件、范围与任务。builder实现后提交代码、当前主线目标、完成声明、证据和遗留项；确定性hook先检查必需文件和状态，再启动独立上下文中的reviewer。reviewer检查计划、近期历史和仓库，把问题分成主线缺口、阻塞问题和可排队问题；它评判实现者的证据，不接收实现者的内部推理。实现获接受后还要做diff代码审查，干净审查后才能收尾。对Lab2的意义是：更高effort应增加可证伪的检查与有依据的修改，而不能只是反复要求模型“再想想”。最后一句是整理者从论文推导的实验设计建议。",
+          "role": "mechanism",
+          "note_target": "supplements[15]"
+        },
+        {
+          "item": "lecture-08",
+          "section": 19,
+          "location": "PDF物理页5,10,14",
+          "claim": "论文补充 [humanize-2610.08900v2，物理页5、10、14，§3.3、§8、附录A]：论文统计72处可阻塞、结束或重定向流程的机械gate，包括状态保护12处、计划/范围11处和轮次隔离10处。它们能要求摘要、证据文件或review结果存在且格式合法，却不能证明这些内容真实；语义仍要由reviewer核查。作者还指出一个fail-open边界：状态文件格式错误时，工具调用验证器退出码1会被宿主当非阻塞错误。因此“有审计文件”“全部schema通过”和“任务完成”是不同断言。这里描述的是论文研究的插件版本，不保证当前软件行为。",
+          "role": "mechanism",
+          "note_target": "supplements[16]"
+        },
+        {
+          "item": "lecture-08",
+          "section": 3,
+          "location": "PDF物理页3,8",
+          "claim": "论文补充 [humanize-2610.08900v2，物理页3、8，§2.1、图2和图6]：作者用错误漏检链解释独立审查：b表示builder制造且漏掉缺陷的概率；m_R表示在builder漏检条件下reviewer继续漏检的概率，接受缺陷的概率写成b×m_R；若加入外部验证器，再乘其条件漏检因素m_O。这是机制模型，不是论文测量出的普遍准确率，也不要求两个模型的错误独立。不同厂商、独立上下文是减小共同盲点的设计尝试；误报也会增加返工。如果形式化证明检查器能完整验证某个命题，同模型承担两个角色也可能得到可靠的该命题结果；但测试集、构建成功或性能harness通常只覆盖部分性质，不能替代是否符合用户意图或是否应合并的判断。",
+          "role": "mechanism",
+          "note_target": "supplements[17]"
+        },
+        {
+          "item": "lecture-08",
+          "section": 3,
+          "location": "PDF物理页7",
+          "claim": "论文补充 [humanize-2610.08900v2，物理页7，§5、图5]：KDA把每个GPU kernel拆成三个计划：先得到正确实现，再按profiling反馈提高速度，最后针对输入shape做专门化分发。KernelWiki检索已有生产kernel、比赛提交和文档；ncu-report-skill把Nsight Compute的性能测量转成可分析证据；FlashInfer官方harness提供正确性与延迟检查。图5给出的48小时、单个DSA TopK indexer、团队自报消融中，相对FlashInfer基线的平均加速比为：Humanize循环3.71倍，加入KernelWiki后6.14倍，再加入profiling技能后8.58倍；另一个先前系统K-Search为1.37倍。右图是对数横轴。这支持该案例中“更多相关知识与可执行反馈有帮助”的观察，不能推广成所有任务都会提升到8.58倍，也不能把这组数字与比赛阶段的19.08倍混为一轮实验。论文同时报告五个kernel仍有两个慢于基线。",
+          "role": "experiment",
+          "note_target": "supplements[18]"
+        },
+        {
+          "item": "lecture-08",
+          "section": 13,
+          "location": "PDF物理页6,8,9,10,14",
+          "claim": "论文补充 [humanize-2610.08900v2，物理页6、8–10、14，§4、§6、§8与附录B]：研究收集118份公开复盘，其中113份带系统分析代理的模板；用户自行选择提交，四名报告者写了一半，样本不是全部运行的代表。93份报告披露轮数，中位数10、最长87；只有27份区分阶段，其中541轮里364轮（67.3%）发生在实现已接受后的代码审查。原因之一是实现阶段默认42轮上限，代码审查阶段却无上限。45份报告出现实现者夸大完成情况，但论文没有同一builder、同预算、有无reviewer的受控比较，也没有完整gate触发或每轮token成本遥测。因此不能把这些观察当作审查带来净收益的因果证明。作者建议每个阶段设边界、按验收证据判断进展、合并相关审查发现，并为环境阻塞提供退出。Lab2可据此提前固定任务、输入、基础模型与评价标准，同时记录质量、耗时、token；这条实验建议来自现行官方Lab2 §2.3。",
+          "role": "experiment",
+          "note_target": "supplements[19]"
+        }
+      ],
+      "integration_status": "pending",
+      "integration_note": "补充草稿在supplements-draft.json；待主代理按实际课堂时间码和notes节号映射，复制到持久课程目录后刷新相对路径与contributions。",
+      "reading_evidence": {
+        "text_path": "/tmp/gse08-lab2-materials/humanize-v2.txt",
+        "text_sha256": "0b263676c3544c178f1e0940a1b9958c11bfdd596e6915a4f4226faf917793ac",
+        "sequential_read_line_ranges": [
+          [
+            1,
+            220
+          ],
+          [
+            221,
+            465
+          ],
+          [
+            466,
+            715
+          ],
+          [
+            716,
+            957
+          ]
+        ],
+        "read_method": "对完整PDF按layout提取后顺序完整阅读，重要图表原页另实际目视；未递归阅读参考文献。",
+        "checked_at": "2026-10-19T01:22:33.666033+00:00"
+      },
+      "validation_boundaries": [
+        "论文应用/赛事结果均作为论文作者报告转述，未独立重跑。",
+        "未以arXiv摘要代替全文。",
+        "未检验最新Humanize软件是否仍具备本版本描述的CLI兼容性或机制。",
+        "未读取下游KDA技术报告，KDA数字归因本论文§5团队自报。"
+      ]
+    },
+    {
+      "id": "gse08-lab2",
+      "kind": "web",
+      "recommendation_kind": "explicit_recommendation",
+      "required": true,
+      "title": "实验(2): Deeper Research",
+      "listed_title": "实验(2): Deeper Research",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lab2.md",
+      "source_url": "https://jyywiki.cn/GSE/2026/lab2.md",
+      "version": "2026-10-19获取",
+      "identity_status": "verified",
+      "path": "lecture-08/sources/lab2.html",
+      "sha256": "b70187c215c73a29718747089a31b051396adf93ad083a08f27ebcc96744106e",
+      "reading_status": "full",
+      "scope_sections": [
+        "正文背景、实验要求、算力换智力、上下文工程、评估效果、提交"
+      ],
+      "read_sections": [
+        "正文背景、实验要求、算力换智力、上下文工程、评估效果、提交"
+      ],
+      "known_gaps": [],
+      "related_items": [
+        "lecture-08"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 2,
+          "location": "§2.1–2.3",
+          "claim": "固定输入与基础模型，比较不同effort并记录质量、延迟和成本",
+          "role": "exercise",
+          "note_target": "editor_notes[0]"
+        }
+      ]
+    },
+    {
+      "id": "gse08-deepseek-harness-repository",
+      "listed_title": "DeepSeek Harness 原始仓库（课堂结尾推荐）",
+      "title": "DeepSeek Harness: teaching mechanisms source reading",
+      "listed_url": "https://github.com/deepseek-ai/deepseek-harness",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness/tree/687f282e8625c6b8d11ff58211a90524be2e4317",
+      "version": "687f282e8625c6b8d11ff58211a90524be2e4317 / commit2026-10-17 / read2026-10-19",
+      "kind": "web",
+      "identity_status": "verified",
+      "recommendation_kind": "explicit_recommendation",
+      "required": true,
+      "recommendation_evidence": {
+        "oral_end_seconds": [
+          5794,
+          5804
+        ],
+        "oral_evidence_owner": "parent full transcript review",
+        "actual_video_url_frame_seconds": 4230,
+        "actual_video_url_frame_path": "repository-url-at-70m30s.jpg"
+      },
+      "scope_reason": "课堂深入演示的双语配对、知识归属、Agent Notes、skills与文档门禁；不扩至所有产品代码",
+      "path": "lecture-08/sources/harness-20261019/read-scope-and-source-manifest.json",
+      "sha256": "263e96f3544aa35609db8b8e4a6909232707c52c7ecd1f1d47142ce31042eab9",
+      "scope_sections": [
+        "README.md lines [[1, 77]]",
+        "README.zh.md lines [[1, 96]]",
+        "README.i18n.yaml lines [[1, 34]]",
+        "AGENTS.md lines [[1, 185]]",
+        "docs/AGENTS.md lines [[1, 77]]",
+        "scripts/AGENTS.md lines [[1, 5]]",
+        "packages/AGENTS.md lines [[1, 29]]",
+        "docs/architecture.md lines [[1, 165]]",
+        "docs/i18n/README.md lines [[1, 69]]",
+        "docs/i18n/translation-rules.md lines [[1, 69]]",
+        "docs/i18n/style-samples.md lines [[1, 87]]",
+        "docs/i18n/terminology.md lines [[1, 215]]",
+        ".agents/notes/README.md lines [[1, 125]]",
+        ".agents/notes/AGENTS.md lines [[1, 7]]",
+        ".agents/notes/implemented/AGENTS.md lines [[1, 13]]",
+        ".agents/notes/archived/AGENTS.md lines [[1, 9]]",
+        ".agents/skills/dsh-doc/SKILL.md lines [[1, 132]]",
+        ".agents/skills/dsh-translate-docs/SKILL.md lines [[1, 74]]",
+        ".agents/skills/dsh-archive-agent-notes/SKILL.md lines [[1, 68]]",
+        ".agents/notes/implemented/process/2026-07-26-frozen-agent-note-archive.md lines [[1, 45]]",
+        "scripts/verify-md-links.ts lines [[1, 254]]",
+        "scripts/verify-type-equiv.ts lines [[1, 391]]",
+        "scripts/doc-typecheck.ts lines [[1, 252]]",
+        "scripts/translation-pairing-record.ts lines [[1, 299]]",
+        "scripts/translation-pairing.ts lines [[1, 419]]",
+        "scripts/verify-translation-pairing.ts lines [[1, 368]]",
+        "scripts/translation-pairing.manifest.json lines [[1, 13]]",
+        "scripts/verify-agent-note-format.ts lines [[1, 94]]",
+        "scripts/verify-agent-note-classification.ts lines [[1, 27]]",
+        "scripts/verify-archived-agent-notes.ts lines [[1, 115]]",
+        "scripts/archived-agent-notes.ts lines [[1, 204]]",
+        "scripts/agent-note-tree.ts lines [[1, 83]]",
+        "scripts/verify-doc-budgets.ts lines [[1, 58]]",
+        "scripts/doc-budgets.manifest.json lines [[1, 9]]",
+        "scripts/run-gates.ts lines [[1, 145], [255, 292], [340, 370], [800, 883], [1140, 1218], [1220, 1290]]",
+        "package.json lines [[85, 140], [185, 210]]",
+        "scripts/type-equiv.manifest.json lines [[1, 32]]"
+      ],
+      "read_sections": [
+        "README.md lines [[1, 77]]",
+        "README.zh.md lines [[1, 96]]",
+        "README.i18n.yaml lines [[1, 34]]",
+        "AGENTS.md lines [[1, 185]]",
+        "docs/AGENTS.md lines [[1, 77]]",
+        "scripts/AGENTS.md lines [[1, 5]]",
+        "packages/AGENTS.md lines [[1, 29]]",
+        "docs/architecture.md lines [[1, 165]]",
+        "docs/i18n/README.md lines [[1, 69]]",
+        "docs/i18n/translation-rules.md lines [[1, 69]]",
+        "docs/i18n/style-samples.md lines [[1, 87]]",
+        "docs/i18n/terminology.md lines [[1, 215]]",
+        ".agents/notes/README.md lines [[1, 125]]",
+        ".agents/notes/AGENTS.md lines [[1, 7]]",
+        ".agents/notes/implemented/AGENTS.md lines [[1, 13]]",
+        ".agents/notes/archived/AGENTS.md lines [[1, 9]]",
+        ".agents/skills/dsh-doc/SKILL.md lines [[1, 132]]",
+        ".agents/skills/dsh-translate-docs/SKILL.md lines [[1, 74]]",
+        ".agents/skills/dsh-archive-agent-notes/SKILL.md lines [[1, 68]]",
+        ".agents/notes/implemented/process/2026-07-26-frozen-agent-note-archive.md lines [[1, 45]]",
+        "scripts/verify-md-links.ts lines [[1, 254]]",
+        "scripts/verify-type-equiv.ts lines [[1, 391]]",
+        "scripts/doc-typecheck.ts lines [[1, 252]]",
+        "scripts/translation-pairing-record.ts lines [[1, 299]]",
+        "scripts/translation-pairing.ts lines [[1, 419]]",
+        "scripts/verify-translation-pairing.ts lines [[1, 368]]",
+        "scripts/translation-pairing.manifest.json lines [[1, 13]]",
+        "scripts/verify-agent-note-format.ts lines [[1, 94]]",
+        "scripts/verify-agent-note-classification.ts lines [[1, 27]]",
+        "scripts/verify-archived-agent-notes.ts lines [[1, 115]]",
+        "scripts/archived-agent-notes.ts lines [[1, 204]]",
+        "scripts/agent-note-tree.ts lines [[1, 83]]",
+        "scripts/verify-doc-budgets.ts lines [[1, 58]]",
+        "scripts/doc-budgets.manifest.json lines [[1, 9]]",
+        "scripts/run-gates.ts lines [[1, 145], [255, 292], [340, 370], [800, 883], [1140, 1218], [1220, 1290]]",
+        "package.json lines [[85, 140], [185, 210]]",
+        "scripts/type-equiv.manifest.json lines [[1, 32]]"
+      ],
+      "reading_status": "full",
+      "read_full_file_count": 34,
+      "read_partial_file_count": 3,
+      "known_gaps": [],
+      "proposed_supplement_path": "HANDOFF.md",
+      "integration_status": "integrated_pending_semantic_review",
+      "contributions": [
+        {
+          "item": "lecture-08",
+          "section": 23,
+          "location": "固定提交原文件范围见source_files及正文出处",
+          "claim": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] 当前配对由同目录 `foo.md`、`foo.zh.md` 和 `foo.i18n.yaml` 组成；中英文同等权威，可从任意一侧发起修改。当前 sidecar 按英文标题路径划分，分别记录每节两侧文本的 hash；脚本采用 SHA-256 的前 16 个十六进制字符。围栏代码和生成区另做一致性检查，不计入这份分节 hash。不同章节的改动因此能改变不同记录行，减少无关合并冲突。\n\n绿色的准确含义是：这些内容被记录为已确认一致，结构也符合约束；它不证明确认者判断正确。 脚本没有翻译语义模型。把意思错误的译文重录 sidecar，仍可能通过机械门禁。因此术语、条件、否定、例外、警告及是否增删含义依然要逐条审查。`--write <pair>` 是明确确认指定配对的动作；无参数 `--write` 被拒绝，以免悄悄认可其他未读文件。`--list` 只是清单，退出 0 也可能列出 missing/out-of-sync，不能当验收通过。\n\n出处：`docs/i18n/README.md` 全文，尤其 7–44；`scripts/translation-pairing-record.ts` 144–232、275–299；`scripts/translation-pairing.ts` 233–287；`scripts/verify-translation-pairing.ts` 全文。样本 `README.md` / `README.zh.md` / `README.i18n.yaml` 已分别全文阅读。",
+          "role": "mechanism",
+          "note_target": "supplements[20]"
+        },
+        {
+          "item": "lecture-08",
+          "section": 24,
+          "location": "固定提交原文件范围见source_files及正文出处",
+          "claim": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] `translation-rules.md` 要求完整保留原文的命题和约束，同时用自然中文/英文表达；术语表规定正文译法、首次出现形式、禁用译法以及概念边界。例：capability 与 feature 分别译“能力”“功能”，Agent Note 保持英文作为特定文档类型，seam 也不随意译作“接缝”。`style-samples.md` 用架构叙述、测试政策、机制、决策等七类双语样例校准写法，而不是列一组抽象“写得自然”的口号。\n\n实读发现一个版本陷阱：当前 `style-samples.md` 53–69 的机制/政策样例仍讲整文件 Git blob hash 与 `git cat-file`，而当前配对合同及实现已经使用分节 hash。 应将它当文风样例，不应照抄为当前配对算法。当前 Agent Notes 的 frozen archive 检查确实仍保留整文件 Git blob hash sidecar，并另用 SHA-256 封存每个文件；这是独立档案机制，不能与活动文档算法混成一种。\n\n出处：`docs/i18n/translation-rules.md`、`terminology.md`、`style-samples.md` 全文；`scripts/translation-pairing-record.ts` 176–232；`scripts/archived-agent-notes.ts` 全文。不要仅因文件位于官方仓库就断言其每个例子都描述现行实现。",
+          "role": "mechanism",
+          "note_target": "supplements[21]"
+        },
+        {
+          "item": "lecture-08",
+          "section": 26,
+          "location": "固定提交原文件范围见source_files及正文出处",
+          "claim": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] 根 `AGENTS.md` 放共同约束，`docs/AGENTS.md` 放文档规则，`packages/AGENTS.md` 放包目录规则，Agent Notes 子树再加生命周期规则。文档标准明确“一种事实一个归属”：架构页讲组合结构，子系统/包参考讲可使用的契约，Agent Notes 留下为什么这么选、放弃什么、要怎么验证，skill 保存复用工作流。它不要求所有事实都塞进一个根提示文件。\n\n字数门禁只计 manifest 指定的常驻文档，超过预算要先搬到合适的归属，再压缩；确实需要扩预算时要解释。检查实现是按空白分隔的 `wc -w` 风格计数，不应写成 token 预算或整个仓库总字数限制。根规则还要求把能机械检查的不变量接到实际执行的顶层门禁，并用非法样本证明拒绝路径，而不只写“请遵守”。\n\n出处：`AGENTS.md` 129–181；`docs/AGENTS.md` 15–59；`packages/AGENTS.md`；`scripts/verify-doc-budgets.ts` 与 `doc-budgets.manifest.json`。当前具体预算会变；不沿用视频旧数字作为现行事实。",
+          "role": "mechanism",
+          "note_target": "supplements[22]"
+        },
+        {
+          "item": "lecture-08",
+          "section": 26,
+          "location": "固定提交原文件范围见source_files及正文出处",
+          "claim": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] 当前活动路径是 `{proposed|implemented|rejected}/{feature|bug-fix|simplification|architecture|process|testing}/日期-题目.md`。proposed 写问题、方案、备选、验收与风险；implemented 写已交付决策及后果；rejected 在状态行给出拒绝理由。格式脚本核对路径与状态、必需标题，且拒绝 implemented 中残留 Proposal/Plan/Migration plan/Acceptance criteria 等计划标题。中文对应侧保持 machine tokens，格式门禁跳过 `.zh.md`，其结构一致性由配对门禁负责。\n\nimplemented 要随代码变化更新路径、符号、默认值等实现事实；若决策反转，应新建决策记录并互链，不能把旧文件改成相反结论。是否归档以未来决策价值判断，不能按年龄或字数一刀切。完整被替代且理由已被新归属吸收可按规则合并；仍有兼容性、安全、负面保证或重引入条件的记录继续活动。归档仅适用于已实现的记录，保留历史价值而冻结内容；归档后的外链可以过时，不能当当前行为权威。归档检查用独立封存清单阻止历史静默变更。\n\n出处：`.agents/notes/README.md` 全文；该子树三个 `AGENTS.md`；`agent-note-tree.ts`、`verify-agent-note-format.ts`、`verify-agent-note-classification.ts`、`verify-archived-agent-notes.ts`、`archived-agent-notes.ts`；归档政策 Agent Note 与 `dsh-archive-agent-notes/SKILL.md` 全文。脚本可核对格式与封存，不能判断替代理由是否充分。",
+          "role": "mechanism",
+          "note_target": "supplements[23]"
+        },
+        {
+          "item": "lecture-08",
+          "section": 27,
+          "location": "固定提交原文件范围见source_files及正文出处",
+          "claim": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] 普通 `ts` 文档代码块由 `doc-typecheck` 作为 TypeScript 示例编译，检查其能否使用当前 workspace API。`ts ignore-check` 是显式豁免；当 eligible 示例至少 4 个且超过一半豁免，脚本会失败。生成目录及 source-equivalence fence 由其他门禁负责。\n\n`verify-type-equiv` 则处理标记为 `ts type-equiv` / `ts public-api` 的复制声明，通过 manifest 的 doc + symbol + projection 找源码。它要求文档块和 manifest 一一对应，拒绝孤立块、孤立条目、重复映射或声明漂移。对比忽略空白与非 JSDoc 注释，但保留声明结构及原始 JSDoc；public-api 投影移除方法体、属性初值、private/protected 等，保留公开签名和文档。显式列出的 interface augmentation 也可合并比对。\n\n检查覆盖的是已标注/已登记的声明，不证明新增类型一定写了文档，更不证明自然语言解释、实现行为或示例运行效果正确。 当前 docs/AGENTS 本身明确说它抓得到已复制内容漂移，抓不到从未被文档记录的新类型。\n\n出处：`docs/AGENTS.md` 43–44；`scripts/verify-type-equiv.ts` 全文；`scripts/doc-typecheck.ts` 全文；`type-equiv.manifest.json` 仅阅读注释/schema 与首批映射例子（1–32），未逐条读整个 catalog。",
+          "role": "mechanism",
+          "note_target": "supplements[24]"
+        },
+        {
+          "item": "lecture-08",
+          "section": 27,
+          "location": "固定提交原文件范围见source_files及正文出处",
+          "claim": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] `verify-md-links` 在选定 Markdown 范围解析链接、图片与 definition，检查相对目标是否存在；目标是 Markdown 时，还检查 `#fragment` 是否对应标题 slug 或实际 HTML `<a id>`。同页锚点也检查，代码样例和注释里的伪锚点不算。\n\n它明确跳过带 URL scheme 的外部链接、协议相对链接、根绝对路径；非 Markdown 文件的片段（如代码 `#L10`）也不验证。档案文件不作为外链扫描源，但活动文档指向档案仍可检查。所以准确表述是“防止本地文档相对引用断裂”，不能说“自动验证了网上每个链接和内容”。\n\n出处：`scripts/verify-md-links.ts` 全文。双语的语义目标及 locale 一致性另由配对门禁负责；它和目标存在性检查是不同工作。",
+          "role": "mechanism",
+          "note_target": "supplements[25]"
+        },
+        {
+          "item": "lecture-08",
+          "section": 27,
+          "location": "固定提交原文件范围见source_files及正文出处",
+          "claim": "[gse08-deepseek-harness-repository；当前源码补充，commit 687f282，2026-10-17，晚于课堂] 已核对 `package.json` 到 `scripts/run-gates.ts` 的静态接线：`doc-sync` 分派到 `docSyncLeafGates()`，列出 doc-typecheck、type-equivalence、markdown-links、translation-pairing、Agent Note 分类/格式/档案检查、文档预算、网站构建、生成目录新鲜度等。`test:docs` 只取 quick 标记子集，明确排除 build 与 doc-typecheck 等重检查；不能用 quick 成功代替完整 doc-sync。聚合入口对阻断检查失败或 skipped 返回非零。这里验证的是源码接线，不是本次真实跑绿或远端必需状态检查已启用。\n\n`dsh-doc` 定义读者起点、可观察结果、失败与恢复、知识归属、同次更新双语和证据流程；要求运行所描述的实际操作才可以写操作结论。`dsh-archive-agent-notes` 定义逐项保留/归档/删除的判断和完整 triplet 迁移流程。当前日常翻译是术语引导的一次直接更新；`dsh-translate-docs` 的 briefing、委派与双遍审校仅供用户显式调用。不要因为看到该 skill 文件，就把重流程写成每次翻译必经步骤。本次只是把这些 skill 当研究材料阅读，没有按它们发起执行、委派或仓库改动。\n\n出处：`package.json` 104–139、198；`run-gates.ts` 103–139、359–362、805–883；三个 skill 入口全文。",
+          "role": "mechanism",
+          "note_target": "supplements[26]"
+        }
+      ],
+      "original_kind": "repository",
+      "identity_note": "仓库URL由视频4230秒确认；固定当前commit晚于录制，录制时commit未确定。",
+      "source_files": [
+        {
+          "path": "README.md",
+          "read_ranges": [
+            [
+              1,
+              77
+            ]
+          ],
+          "sha256": "0f5516be2acde776f05572cbc8c3093c90549afe04ce118e11157d073d5d15f4"
+        },
+        {
+          "path": "README.zh.md",
+          "read_ranges": [
+            [
+              1,
+              96
+            ]
+          ],
+          "sha256": "8f19db1b217e8ef30cf413b07056cc791048bc2ba2ec51ba104e383dcfb43c61"
+        },
+        {
+          "path": "README.i18n.yaml",
+          "read_ranges": [
+            [
+              1,
+              34
+            ]
+          ],
+          "sha256": "700422df48df27704707a6832b7ba7234f1f44c42494ceffb3b8ee2210f989af"
+        },
+        {
+          "path": "AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              185
+            ]
+          ],
+          "sha256": "1eea3932544766e8a4ccc2d88dcba14ad0a3bd4e28fa660f920b9183f63e7196"
+        },
+        {
+          "path": "docs/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              77
+            ]
+          ],
+          "sha256": "cc76a90dfbdcdbf1db71b83675744c1c4039d9ccca8f38ad58a96ab56521578d"
+        },
+        {
+          "path": "scripts/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              5
+            ]
+          ],
+          "sha256": "dc1d3dc9bdc599106ba183465a85c323bf9122e1f5199bb0e25e8fa525206ff9"
+        },
+        {
+          "path": "packages/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              29
+            ]
+          ],
+          "sha256": "9954e1827bcee42e0637a1328972317476bfed6b2f12a7042b0d4c197b521c67"
+        },
+        {
+          "path": "docs/architecture.md",
+          "read_ranges": [
+            [
+              1,
+              165
+            ]
+          ],
+          "sha256": "95a7722c7096d665d8adedeb733b8f5ad7740e67cb5c6e9dc91ec05f430cb760"
+        },
+        {
+          "path": "docs/i18n/README.md",
+          "read_ranges": [
+            [
+              1,
+              69
+            ]
+          ],
+          "sha256": "85f271cf30cf3710533e61d70879b8a428d813c8923bddbf68a4241d5f3a2b81"
+        },
+        {
+          "path": "docs/i18n/translation-rules.md",
+          "read_ranges": [
+            [
+              1,
+              69
+            ]
+          ],
+          "sha256": "4ce7dfea77c4a4bbab5f466820e3d8e471029ff024e22a90892eb451f8e01f48"
+        },
+        {
+          "path": "docs/i18n/style-samples.md",
+          "read_ranges": [
+            [
+              1,
+              87
+            ]
+          ],
+          "sha256": "d57b411b3da9795856cccda90b9cab226d8e63c0bb97703e0882d4a5e1a6760b"
+        },
+        {
+          "path": "docs/i18n/terminology.md",
+          "read_ranges": [
+            [
+              1,
+              215
+            ]
+          ],
+          "sha256": "b3e56d9b2c6c2cf2bcd6a48aa622b65cafc7755433490758d4346844c0ead4cc"
+        },
+        {
+          "path": ".agents/notes/README.md",
+          "read_ranges": [
+            [
+              1,
+              125
+            ]
+          ],
+          "sha256": "089a84df7751fa993630302cb0ea1bf3ac10bf3f4bcca70ee95e55208b071f37"
+        },
+        {
+          "path": ".agents/notes/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              7
+            ]
+          ],
+          "sha256": "1c1b4a6d771ed1a7b0e4fd83776dd0cfb0567f4e89f2c7b3bc8b61b73e9a01d2"
+        },
+        {
+          "path": ".agents/notes/implemented/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              13
+            ]
+          ],
+          "sha256": "d01c6586ab5f807ccdda2e6ec30185416356b13d1f2fddb40d05cdac6d35189c"
+        },
+        {
+          "path": ".agents/notes/archived/AGENTS.md",
+          "read_ranges": [
+            [
+              1,
+              9
+            ]
+          ],
+          "sha256": "63d728ce615c3a8109f0467a32525ca00c4c553e76a532fe90f13642e6986b34"
+        },
+        {
+          "path": ".agents/skills/dsh-doc/SKILL.md",
+          "read_ranges": [
+            [
+              1,
+              132
+            ]
+          ],
+          "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de"
+        },
+        {
+          "path": ".agents/skills/dsh-translate-docs/SKILL.md",
+          "read_ranges": [
+            [
+              1,
+              74
+            ]
+          ],
+          "sha256": "a72d26e988a6f9be29a09d6776bda0539ead49c42a447d327636fe4de0da83e7"
+        },
+        {
+          "path": ".agents/skills/dsh-archive-agent-notes/SKILL.md",
+          "read_ranges": [
+            [
+              1,
+              68
+            ]
+          ],
+          "sha256": "298e95629ade953ba5e0e4fd4c50e5205389ac6adc5d55dea1ef26617a323f84"
+        },
+        {
+          "path": ".agents/notes/implemented/process/2026-07-26-frozen-agent-note-archive.md",
+          "read_ranges": [
+            [
+              1,
+              45
+            ]
+          ],
+          "sha256": "34712f1c14fcec7504c292f89d9728049e79fa8c27aace0d821e66a3beaebddf"
+        },
+        {
+          "path": "scripts/verify-md-links.ts",
+          "read_ranges": [
+            [
+              1,
+              254
+            ]
+          ],
+          "sha256": "b1b6e1fefcd9321fa4c2b09bcedaf1acc58928495e2c38f5f4b1e261afea3809"
+        },
+        {
+          "path": "scripts/verify-type-equiv.ts",
+          "read_ranges": [
+            [
+              1,
+              391
+            ]
+          ],
+          "sha256": "770a2a11e9de003352136e2ab9cecf58e85ac11af2c2a59e9b8f44f32428040a"
+        },
+        {
+          "path": "scripts/doc-typecheck.ts",
+          "read_ranges": [
+            [
+              1,
+              252
+            ]
+          ],
+          "sha256": "c0cb2e255fa8950d5dfe571d5e34552ad61ad8756d75615364e4d8f6324b3db9"
+        },
+        {
+          "path": "scripts/translation-pairing-record.ts",
+          "read_ranges": [
+            [
+              1,
+              299
+            ]
+          ],
+          "sha256": "c9f4d4ebb35e87b264c09604d33c6fe789bfadc0b03f932cf05f74bcce89dca8"
+        },
+        {
+          "path": "scripts/translation-pairing.ts",
+          "read_ranges": [
+            [
+              1,
+              419
+            ]
+          ],
+          "sha256": "30d75155b43208ebc089fed9632336dfc3d24526916654e3c4e9ad1f72c95d4b"
+        },
+        {
+          "path": "scripts/verify-translation-pairing.ts",
+          "read_ranges": [
+            [
+              1,
+              368
+            ]
+          ],
+          "sha256": "2f555134b09c87443967d263ca7316299a8495d76780ee4b54a86c79feecde01"
+        },
+        {
+          "path": "scripts/translation-pairing.manifest.json",
+          "read_ranges": [
+            [
+              1,
+              13
+            ]
+          ],
+          "sha256": "9944a604474c609318ec2793512661aa0dfc67f124d6789df4f285e8c5910153"
+        },
+        {
+          "path": "scripts/verify-agent-note-format.ts",
+          "read_ranges": [
+            [
+              1,
+              94
+            ]
+          ],
+          "sha256": "055a2db5d15d7dfd59bb6b2b09795348c59e707f3d33bcb31cf5afb4a8d586fa"
+        },
+        {
+          "path": "scripts/verify-agent-note-classification.ts",
+          "read_ranges": [
+            [
+              1,
+              27
+            ]
+          ],
+          "sha256": "828a39ae61536d5986a421e07e20e7e51d81ad4fd8358c0339dae39dbe256903"
+        },
+        {
+          "path": "scripts/verify-archived-agent-notes.ts",
+          "read_ranges": [
+            [
+              1,
+              115
+            ]
+          ],
+          "sha256": "d9d051c957d1ee33604265a69ed71e01dea8db865dc68de3c28e9ed8f387df4e"
+        },
+        {
+          "path": "scripts/archived-agent-notes.ts",
+          "read_ranges": [
+            [
+              1,
+              204
+            ]
+          ],
+          "sha256": "f7e8e314e83b0baaeb6ffee319d20139506a78537389a9f1d6810d20ca1967ed"
+        },
+        {
+          "path": "scripts/agent-note-tree.ts",
+          "read_ranges": [
+            [
+              1,
+              83
+            ]
+          ],
+          "sha256": "a10e1c12568a4afefaa09db92651163dae309cd4e1d054db16b18806b3fab40a"
+        },
+        {
+          "path": "scripts/verify-doc-budgets.ts",
+          "read_ranges": [
+            [
+              1,
+              58
+            ]
+          ],
+          "sha256": "0ec5c8fb92f88c504ec4c0fb2d65c9427597250f2a41d9e5e645915f968ace2c"
+        },
+        {
+          "path": "scripts/doc-budgets.manifest.json",
+          "read_ranges": [
+            [
+              1,
+              9
+            ]
+          ],
+          "sha256": "d04affb1a4faea04c8d169755f76d043b77d8899838016925d671132696e7258"
+        },
+        {
+          "path": "scripts/run-gates.ts",
+          "read_ranges": [
+            [
+              1,
+              145
+            ],
+            [
+              255,
+              292
+            ],
+            [
+              340,
+              370
+            ],
+            [
+              800,
+              883
+            ],
+            [
+              1140,
+              1218
+            ],
+            [
+              1220,
+              1290
+            ]
+          ],
+          "sha256": "44c15c4cf4fec1e9cae78b15526f6c4e67839ab341268785babdfddf87f61a73"
+        },
+        {
+          "path": "package.json",
+          "read_ranges": [
+            [
+              85,
+              140
+            ],
+            [
+              185,
+              210
+            ]
+          ],
+          "sha256": "12bb41cd8212021a784b33a20c2b84372189a9505b42081d5e3869e21ff5cffc"
+        },
+        {
+          "path": "scripts/type-equiv.manifest.json",
+          "read_ranges": [
+            [
+              1,
+              32
+            ]
+          ],
+          "sha256": "7fcaafbfc748500bd111c8bb877a4535e254582c3f58f5078a8d043f6de1902e"
+        }
+      ],
+      "scope_limitations": [
+        "Whole product source and runtime behavior",
+        "Recorded checkout commit and historical working tree",
+        "Full type-equiv.manifest catalog (only schema/comment and initial sample entries read)",
+        "run-gates scheduler complete implementation and CI branch-protection settings",
+        "Referenced skill subsidiary templates/references and unrelated skill entrypoints",
+        "Translation prompt renderer and extended briefing implementation",
+        "External style-guide bodies and product paper",
+        "Execution of doc-sync, typecheck, pairing or any repository tests"
+      ],
+      "related_items": [
+        "lecture-08"
+      ]
+    }
+  ],
+  "scope_boundary": "已盘点当前官网/讲义全部链接；尚须主代理逐块转写补入课堂口述明确推荐及材料。未把来源文章内部视频推荐递归扩成课程推荐。未调用课程成品验收器，整合尚未发生。",
+  "unread_background_links": [
+    {
+      "url": "https://continuousdelivery.com/2010/02/continuous-delivery/",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://github.com/marketplace/actions/claude-code-github-integration",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://global.toyota/en/company/vision-and-philosophy/production-system/",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://linearb.io/dev-interrupted/podcast/inventing-the-ralph-wiggum-loop",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://martinfowler.com/articles/continuousIntegration.html",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://www.grc.nasa.gov/WWW/k-12/airplane/wrights/test1901.html",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://www.sec.gov/litigation/admin/34-50771-o-2.htm",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://www.thoughtworks.com/about-us/history",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    },
+    {
+      "url": "https://www.wired.com/2007/04/what-i-learned-from-friendster-jonathan-abrams-new-startup/",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "scope_reason": "当前讲义中的历史/命名/类比/工具入口，不是明确推荐；不扩展本课核心方法阅读。若转写明确推荐则须重新纳入。"
+    }
+  ],
+  "reused_link_variants": [
+    {
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-merge-queue",
+      "material_id": "gse08-github-protection",
+      "disposition": "same already-read source; different www/anchor spelling"
+    },
+    {
+      "url": "https://git-scm.com/docs/githooks#_pre_commit",
+      "material_id": "gse08-git-hooks",
+      "disposition": "same already-read source; different www/anchor spelling"
+    },
+    {
+      "url": "https://www.martinfowler.com/articles/originalContinuousIntegration.html",
+      "material_id": "gse08-ci",
+      "disposition": "same already-read source; different www/anchor spelling"
+    }
+  ],
+  "scope": "本次新增第08课的材料台账；不追认或重写旧课阅读记录。"
+}

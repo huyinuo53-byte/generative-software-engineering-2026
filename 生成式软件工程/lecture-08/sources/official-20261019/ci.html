@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head><meta charset="UTF-8">
+<title>Continuous Integration (original version)</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><script defer src="https://cloud.umami.is/script.js" data-website-id="eb12527f-b713-4afa-905a-8a50f8a7f157"></script>
+<meta content = 'summary' name = 'twitter:card'></meta>
+
+<meta content = '16665197' name = 'twitter:site:id'></meta>
+
+<meta content = '@martinfowler' name = 'twitter:site'></meta>
+
+<meta content = 'Continuous Integration (original version)' property = 'og:title'></meta>
+
+<meta content = 'https://martinfowler.com/articles/originalContinuousIntegration.html' property = 'og:url'></meta>
+
+<meta content = 'A long-form article entitled: "Continuous Integration (original version)"' property = 'og:description'></meta>
+
+<meta content = 'https://martinfowler.com/logo-sq.png' property = 'og:image'></meta>
+
+<meta content = 'martinfowler.com' property = 'og:site_name'></meta>
+
+<meta content = 'article' property = 'og:type'></meta>
+
+<meta content = '2000-09-10' property = 'og:article:modified_time'></meta>
+
+<meta content = 'width=device-width, initial-scale=1' name = 'viewport'></meta>
+
+<link href = '/article.css' rel = 'stylesheet' type = 'text/css'></link>
+</head>
+
+<body><header id = 'banner' style = 'background-image: url("/banner.png"); background-repeat: no-repeat'>
+
+<div class = 'name-logo'><a href = 'https://martinfowler.com'><img src = '/mf-name-white.png'></img></a></div>
+  <div class = 'search'>
+    <!-- SiteSearch Google -->
+    <form method='GET' action="https://www.google.com/search">
+      <input type='hidden' name='ie' value='UTF-8'/>
+      <input type='hidden' name='oe' value='UTF-8'/>
+      <input class = 'field' type='text' 
+             name='q' size='15' maxlength='255' value=""/>
+      <button class = 'button' type='submit' 
+             name='btnG' value=" " title = "Search"/>
+      <input type='hidden' name='domains' value="martinfowler.com"/>
+      <input type='hidden' name='sitesearch' value=""/> 
+      <input
+          type='hidden' name='sitesearch' value="martinfowler.com"/>
+    </form>
+  </div>
+
+<div class = 'menu-button navmenu-button'><a class = 'icon icon-bars' href = '#navmenu-bottom'></a></div>
+
+<nav class = 'top-menu'>
+<ul>
+<li><a class = '' href = 'https://refactoring.com'>Refactoring</a></li>
+
+<li><a class = '' href = '/agile.html'>Agile</a></li>
+
+<li><a class = '' href = '/architecture'>Architecture</a></li>
+
+<li><a class = '' href = '/aboutMe.html'>About</a></li>
+
+<li><a class = 'tw' href = 'https://www.thoughtworks.com/engineering'>Thoughtworks</a></li>
+
+<li><a class = 'icon icon-rss' href = '/feed.atom' title = 'feed'></a></li>
+
+<li><a class = 'icon icon-twitter' href = 'https://www.twitter.com/martinfowler' title = 'Twitter stream'></a></li>
+
+<li class = 'icon'><a href = 'https://toot.thoughtworks.com/@mfowler' title = 'Mastodon stream'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.2595 13.9898C20.9852 15.4006 18.8033 16.9446 16.2974 17.2439C14.9907 17.3998 13.7041 17.5431 12.3321 17.4802C10.0885 17.3774 8.31809 16.9446 8.31809 16.9446C8.31809 17.163 8.33156 17.371 8.3585 17.5655C8.65019 19.7797 10.5541 19.9124 12.3576 19.9742C14.1779 20.0365 15.7987 19.5254 15.7987 19.5254L15.8735 21.1711C15.8735 21.1711 14.6003 21.8548 12.3321 21.9805C11.0814 22.0493 9.52849 21.9491 7.71973 21.4703C3.79684 20.432 3.12219 16.2504 3.01896 12.0074C2.98749 10.7477 3.00689 9.55981 3.00689 8.56632C3.00689 4.22771 5.84955 2.95599 5.84955 2.95599C7.2829 2.29772 9.74238 2.0209 12.2993 2H12.3621C14.919 2.0209 17.3801 2.29772 18.8133 2.95599C18.8133 2.95599 21.6559 4.22771 21.6559 8.56632C21.6559 8.56632 21.6916 11.7674 21.2595 13.9898ZM18.3029 8.9029C18.3029 7.82924 18.0295 6.97604 17.4805 6.34482C16.9142 5.71359 16.1726 5.39001 15.2522 5.39001C14.187 5.39001 13.3805 5.79937 12.8473 6.61819L12.3288 7.48723L11.8104 6.61819C11.2771 5.79937 10.4706 5.39001 9.40554 5.39001C8.485 5.39001 7.74344 5.71359 7.17719 6.34482C6.62807 6.97604 6.3547 7.82924 6.3547 8.9029V14.1562H8.43597V9.05731C8.43597 7.98246 8.88822 7.4369 9.79281 7.4369C10.793 7.4369 11.2944 8.08408 11.2944 9.36376V12.1547H13.3634V9.36376C13.3634 8.08408 13.8646 7.4369 14.8648 7.4369C15.7694 7.4369 16.2216 7.98246 16.2216 9.05731V14.1562H18.3029V8.9029Z"></path></svg>
+</a></li>
+
+<li class = 'icon'><a href = 'https://www.linkedin.com/in/martin-fowler-com/' title = 'LinkedIn'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4.00098 3H20.001C20.5533 3 21.001 3.44772 21.001 4V20C21.001 20.5523 20.5533 21 20.001 21H4.00098C3.44869 21 3.00098 20.5523 3.00098 20V4C3.00098 3.44772 3.44869 3 4.00098 3ZM5.00098 5V19H19.001V5H5.00098ZM7.50098 9C6.67255 9 6.00098 8.32843 6.00098 7.5C6.00098 6.67157 6.67255 6 7.50098 6C8.3294 6 9.00098 6.67157 9.00098 7.5C9.00098 8.32843 8.3294 9 7.50098 9ZM6.50098 10H8.50098V17.5H6.50098V10ZM12.001 10.4295C12.5854 9.86534 13.2665 9.5 14.001 9.5C16.072 9.5 17.501 11.1789 17.501 13.25V17.5H15.501V13.25C15.501 12.2835 14.7175 11.5 13.751 11.5C12.7845 11.5 12.001 12.2835 12.001 13.25V17.5H10.001V10H12.001V10.4295Z"></path></svg>
+</a></li>
+
+<li class = 'icon'><a href = 'https://bsky.app/profile/martinfowler.com' title = 'BlueSky'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 11.3884C11.0942 9.62673 8.62833 6.34423 6.335 4.7259C4.13833 3.17506 3.30083 3.4434 2.75167 3.69256C2.11583 3.9784 2 4.95506 2 5.52839C2 6.10339 2.315 10.2367 2.52 10.9276C3.19917 13.2076 5.61417 13.9776 7.83917 13.7309C4.57917 14.2142 1.68333 15.4017 5.48083 19.6292C9.65833 23.9542 11.2058 18.7017 12 16.0392C12.7942 18.7017 13.7083 23.7651 18.4442 19.6292C22 16.0392 19.4208 14.2142 16.1608 13.7309C18.3858 13.9784 20.8008 13.2076 21.48 10.9276C21.685 10.2376 22 6.10256 22 5.52923C22 4.95423 21.8842 3.97839 21.2483 3.6909C20.6992 3.44256 19.8617 3.17423 17.665 4.72423C15.3717 6.34506 12.9058 9.62756 12 11.3884Z"></path></svg></a></li>
+</ul>
+</nav>
+</header>
+<nav id = 'top-navmenu'>
+<nav class = 'navmenu'>
+<div class = 'nav-head'>  <div class = 'search'>
+    <!-- SiteSearch Google -->
+    <form method='GET' action="https://www.google.com/search">
+      <input type='hidden' name='ie' value='UTF-8'/>
+      <input type='hidden' name='oe' value='UTF-8'/>
+      <input class = 'field' type='text' 
+             name='q' size='15' maxlength='255' value=""/>
+      <button class = 'button' type='submit' 
+             name='btnG' value=" " title = "Search"/>
+      <input type='hidden' name='domains' value="martinfowler.com"/>
+      <input type='hidden' name='sitesearch' value=""/> 
+      <input
+          type='hidden' name='sitesearch' value="martinfowler.com"/>
+    </form>
+  </div>
+
+<div class = 'closediv'>
+<span class = 'close' title = 'close'></span>
+</div>
+</div>
+
+<div class = 'nav-body'>
+<div class = 'topics'>
+<h2>Topics</h2>
+
+<p><a href = '/architecture'>Architecture</a></p>
+
+<p><a href = 'https://refactoring.com'>Refactoring</a></p>
+
+<p><a href = '/agile.html'>Agile</a></p>
+
+<p><a href = '/delivery.html'>Delivery</a></p>
+
+<p><a href = '/microservices'>Microservices</a></p>
+
+<p><a href = '/data'>Data</a></p>
+
+<p><a href = '/testing'>Testing</a></p>
+
+<p><a href = '/dsl.html'>DSL</a></p>
+</div>
+
+<div class = 'about'>
+<h2>about me</h2>
+
+<p><a href = '/aboutMe.html'>About</a></p>
+
+<p><a href = '/books'>Books</a></p>
+
+<p><a href = '/faq.html'>FAQ</a></p>
+</div>
+
+<div class = 'content'>
+<h2>content</h2>
+
+<p><a href = '/videos.html'>Videos</a></p>
+
+<p><a href = '/tags'>Content Index</a></p>
+
+<p><a href = '/fragments'>Fragments</a></p>
+
+<p><a href = '/boardgames'>Board Games</a></p>
+
+<p><a href = '/photos'>Photography</a></p>
+</div>
+
+<div class = 'tw'>
+<h2>Thoughtworks</h2>
+
+<p><a href = 'https://thoughtworks.com'>Home</a></p>
+
+<p><a href = 'https://thoughtworks.com/insights'>Insights</a></p>
+
+<p><a href = 'https://thoughtworks.com/careers'>Careers</a></p>
+
+<p><a href = 'https://thoughtworks.com/radar'>Radar</a></p>
+
+<p><a href = 'https://www.thoughtworks.com/engineering'>Engineering</a></p>
+</div>
+
+<div class = 'feeds'>
+<h2>follow</h2>
+
+<p><a href = '/feed.atom'>RSS</a></p>
+
+<p><a href = 'https://toot.thoughtworks.com/@mfowler'>Mastodon</a></p>
+
+<p><a href = 'https://www.linkedin.com/in/martin-fowler-com/'>LinkedIn</a></p>
+
+<p><a href = 'https://bsky.app/profile/martinfowler.com'>Bluesky</a></p>
+
+<p><a href = 'https://www.twitter.com/martinfowler'>X</a></p>
+
+<p><a href = 'https://boardgamegeek.com/blog/13064/martins-7th-decade'>BGG</a></p>
+</div>
+</div>
+</nav>
+</nav>
+
+<nav id = 'toc-dropdown'>
+<button class = 'dropdown-button'>
+<h2>Table of Contents</h2>
+</button>
+
+<div class = 'hidden' id = 'dropdownLinks'>
+<ul>
+<li><a href = '#top'>Top</a></li>
+
+<li><a href = '#TheBenefitsOfContinuousIntegration'>The Benefits of Continuous Integration</a></li>
+
+<li><a href = '#TheMoreOftenTheBetter'>The More Often the Better</a></li>
+
+<li><a href = '#WhatIsASuccessfulBuild'>What Is a Successful Build?</a></li>
+
+<li><a href = '#SingleSourcePoint'>Single Source Point</a></li>
+
+<li><a href = '#AutomatedBuildScripts'>Automated Build Scripts</a></li>
+
+<li><a href = '#Self-testingCode'>Self-Testing Code</a></li>
+
+<li><a href = '#TheMasterBuild'>The Master Build</a></li>
+
+<li><a href = '#CheckingIn'>Checking in</a></li>
+
+<li><a href = '#SummingUp'>Summing up</a></li>
+</ul>
+</div>
+</nav>
+
+<main>
+<h1>Continuous Integration (original version)</h1>
+
+<section class = 'frontMatter'>
+<p class = 'abstract'><i>
+	An important part of any software development process is getting reliable builds of the software. Despite it's importance, we are often surprised when this isn't done. Here we discuss the process that Matt has put into place on a major project at Thoughtworks, a process that is increasingly used throughout the company. It stresses a fully automated and reproducible build, including testing, that runs many times a day. This allows each developer to integrate daily thus reducing integration problems.
+</i></p>
+
+<p class = 'date'>10 September 2000</p>
+
+<hr style = 'clear: both'></hr>
+
+<div class = 'front-grid'>
+<div class = 'author-list'>
+<div class = 'author'>
+<div class = 'photo'><a href = '/'><img alt = 'Photo of Martin Fowler' src = '/mf.jpg' width = '80'></img></a></div>
+
+<address class = 'name'><a href = '/' rel = 'author'>Martin Fowler</a></address>
+</div>
+
+<div class = 'author'>
+<address class = 'name'>
+	Matthew Foemmel</address>
+</div>
+</div>
+
+<div class = 'tags'></div>
+
+<div class = 'contents'>
+<h2>Contents</h2>
+
+<ul>
+<li><a href = '#TheBenefitsOfContinuousIntegration'>The Benefits of Continuous Integration</a></li>
+
+<li><a href = '#TheMoreOftenTheBetter'>The More Often the Better</a></li>
+
+<li><a href = '#WhatIsASuccessfulBuild'>What Is a Successful Build?</a></li>
+
+<li><a href = '#SingleSourcePoint'>Single Source Point</a></li>
+
+<li><a href = '#AutomatedBuildScripts'>Automated Build Scripts</a></li>
+
+<li><a href = '#Self-testingCode'>Self-Testing Code</a></li>
+
+<li><a href = '#TheMasterBuild'>The Master Build</a></li>
+
+<li><a href = '#CheckingIn'>Checking in</a></li>
+
+<li><a href = '#SummingUp'>Summing up</a></li>
+</ul>
+</div>
+</div>
+<hr></hr></section>
+
+<div class = 'paperBody shallow'>
+<p><b>This article is now superseded by a <a href = '/articles/continuousIntegration.html'>more up to date version</a></b></p>
+
+<p>Software development is full of best practices which are often talked about but seem to be rarely done. One of the most basic, and valuable, of these is a fully automated build and test process that allows a team to build and test their software many times a day. The idea of a daily build has been talked about a lot. <a href="https://www.amazon.com/gp/product/1556159005/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1556159005&linkCode=as2&tag=martinfowlerc-20">McConnnell</a> recommends it as a best practice and it's been long known as a feature of the Microsoft development approach. We agree with the <a href = '/articles/newMethodology.html#XpextremeProgramming'>XP</a> community, however, in saying that daily builds are a minimum. A fully automated process that allows you to build several times a day is both achievable and well worth the effort.
+	</p>
+
+<p>We are using the term <i>Continuous Integration</i>, a term used as one of the practices of XP (Extreme Programming). However we recognize that the practice has been around for a long time and is used by plenty of folks that would never consider XP for their work. We've been using XP as a touchstone in our software development process and that influences a lot of our terminology and practices. However you can use continuous integration without using any other parts of XP - indeed we think it's an essential part of any competent software development activity.
+	</p>
+
+<p>There are several parts to making an automated daily build work.</p>
+
+<ul>
+<li>Keep a single place where all the source code lives and where anyone can obtain the current sources from (and previous versions)</li>
+
+<li>Automate the build process so that anyone can use a single command to build the system from the sources</li>
+
+<li>Automate the testing so that you can run a good suite of tests on the system at any time with a single command</li>
+
+<li>Make sure anyone can get a current executable which you are confident is the best executable so far.</li>
+</ul>
+
+<p>All of this takes a certain amount of discipline. We've found that it takes a lot of energy to introduce it into a project. We've also found that once installed, it doesn't take too much effort to keep it up.
+	</p>
+
+<section id = 'TheBenefitsOfContinuousIntegration'>
+<h2>The Benefits of Continuous Integration</h2>
+
+<p>One of the hardest things to express about  continuous integration is that makes a fundamental shift to the whole development pattern, one that isn't easy to see if you've never worked in an environment that practices it. In fact most people do see this atmosphere if they are working solo - because then they only integrate with themself. For many people team development just comes with certain problems that are part of the territory. Continuous integration reduces these problems, in exchange for a certain amount of discipline.
+	</p>
+
+<p>The fundamental benefit of continuous integration is that it removes sessions where people spend time hunting bugs where one person's work has stepped on someone else's work without either person realizing what happened. These bugs are hard to find because the problem isn't in one person's area, it is in the interaction between two pieces of work. This problem is exacerbated by time. Often integration bugs can be inserted weeks or months before they first manifest themselves. As a result they take a lot of finding.
+	</p>
+
+<p>With continuous integration the vast majority of such bugs manifest themselves the same day they were introduced. Furthermore it's immediately obvious where at least half of the interaction lies. This greatly reduces the scope of the search for the bug. And if you can't find the bug, you can avoid putting the offending code into the product, so the worst that happens is that you don't add the feature that also adds the bug. (Of course you may want the feature more than you hate the bug, but at least this way it's an informed choice.)
+	</p>
+
+<p>Now there's no guarantee that you get all the integration bugs. The technique relies on testing, and as we all know testing does not prove the absence of errors. The key point is that continuous integration catches enough bugs to be worth the cost.
+	</p>
+
+<p>The net result of all this is increased productivity by reducing the time spent chasing down integration bugs. While we don't know of anyone who's given this anything approaching a scientific study the anecdotal evidence is pretty strong. Continuous Integration can slash the amount of time spent in integration hell, in fact it can turn hell into a non-event.
+	</p>
+</section>
+
+<section id = 'TheMoreOftenTheBetter'>
+<h2>The More Often the Better</h2>
+
+<p>There's a fundamental counter-intuitive effect at the center of continuous integration. It is that it is better to integrate often than to integrate rarely. For those that do it, this is obvious; but for those that haven't this seems like a contradiction to direct experience.
+	</p>
+
+<p>If you integrate only occasionally, such as less than daily, then integration is a painful exercise, one that takes a lot of time and energy. Indeed it's sufficiently awkward that the last thing you want to do is do it more frequently. The comment we often hear is “on a project this big, you can't do a daily build.”
+	</p>
+
+<p>Yet there are projects that do. We build a couple of dozen times a day on a code base around two hundred thousand lines of code worked on by a team of fifty people. Microsoft does daily builds on projects with tens of millions of lines of code.
+	</p>
+
+<p>The reason that this is possible is that the effort of integration is exponentially proportional to the amount of time between integrations. Although we're not aware of any measurements for this, this means that integrating once a week does not take five times as long as integrating once a day, but more like twenty-five times as long. So if your integration is painful, you shouldn't take this as a sign that you can't integrate more frequently. Done well, more frequent integration should be painless and you end up spending much less time carrying out the integration.
+	</p>
+
+<p>A key for this is automation. Most of integration can, and should, be done automatically. Getting the sources, compiling, linking, and significant testing can all be done automatically. At end you should be left with a simple indication of whether the build worked: yes or no. If yes you ignore it, if no you should be able to easily undo the last change to the configuration and be certain the build will work this time. No thought should be required to get a working build.
+	</p>
+
+<p>With an automated process like this, you can build as frequently as you like. The only limitation is the amount of time it takes to do the build.
+	</p>
+</section>
+
+<section id = 'WhatIsASuccessfulBuild'>
+<h2>What Is a Successful Build?</h2>
+
+<p>An important thing to decide is what makes a successful build. It may seem obvious, but it's remarkable how this can get muddy. Martin once reviewed a project. He asked if the project did a daily build and was answered in the affirmative. Fortunately Ron Jeffries was there to probe further. He asked the question “what do you do with build errors?” The response was “we send an e-mail to the relevant person”. In fact the project hadn't succeeded in a build for months. That's not a daily build, that's a daily build attempt.
+	</p>
+
+<p>We are pretty aggressive about what we mean by a successful build.</p>
+
+<ul>
+<li>All the latest sources are checked out of the configuration management system</li>
+
+<li>Every file is compiled from scratch</li>
+
+<li>The resulting object files (Java classes in our case) are linked and deployed for execution (put into jars).</li>
+
+<li>The system is started and suite of tests (in our case, around 150 test classes) is run against the system. </li>
+
+<li>If all of these steps execute without error or human intervention and every test passes, then we have a successful build</li>
+</ul>
+
+<p>Most people consider a compile and link to be a build. At the least we think a build should include starting the application and running some simple tests against it (<a href="https://www.amazon.com/gp/product/1556159005/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1556159005&linkCode=as2&tag=martinfowlerc-20">McConnnell</a> used the term “smoke test”: switch it on and see if smoke comes out). Running a more exhaustive set of tests greatly improves the value of continuous integration, so we prefer to do that as well.
+	</p>
+</section>
+
+<section id = 'SingleSourcePoint'>
+<h2>Single Source Point</h2>
+
+<p>In order to integrate easily, any developer needs to be able to get a full set of current sources easily. There's nothing worse than having to go around to different developers to ask for the latest bits and then having to copy them over, figure out where to put them, all this before you can begin the build.
+	</p>
+
+<p>The standard is simple. Anyone should be able to bring a clean machine, connect it to the network, and with a single command bring down every source file that's needed to build the system under development.
+	</p>
+
+<p>The obvious (we hope) solution is to use a configuration management (source control) system as the source of all code. Configuration management systems are usually designed to be used over a network and have the tools that allow people to easily get hold of sources. Furthermore they also include version management so you can easily find previous versions of various files. Cost shouldn't be an issue as <a href = 'http://www.cvshome.org/'>CVS</a> is an excellent open-source configuration management tool.
+	</p>
+
+<p>For this to work all source files should be kept in the configuration management system. All is often more than people think. It also includes build scripts, properties files, database schema DDLs, install scripts, and anything else that's needed to build on a clean machine. Too often we've seen code controlled, but not some other vital file that has to be found.
+	</p>
+
+<p>Try to ensure everything is under a single source tree in the configuration management system. Sometimes people use separate projects in the configuration management system for different components. The trouble with this is then people have to remember which versions of which components work with which versions of other components. For some situations you have to separate the sources, however these situations are much rarer than you think. You can build multiple components from a single tree of sources, such issues should be handled by the build scripts, not by the storage structure.
+	</p>
+</section>
+
+<section id = 'AutomatedBuildScripts'>
+<h2>Automated Build Scripts</h2>
+
+<p>If you're writing a small program with a dozen or so files, then building the application may be just a matter of a single command to a compiler: <code>javac *.java</code>. Bigger projects need rather more. In these cases you have files in many directories. You need to ensure the resulting object code is in the proper place. As well as compilations there may be link steps. You have code generated from other files that needs to be generated before you can compile. Tests need to be run automatically.
+	</p>
+
+<p>A big build often takes time, you don't want to do all of these steps if you've only made a small change. So a good build tool analyzes what needs to be changed as part of the process. The common way to do this is to check the dates of the source and object files and only compile if the source date is later. Dependencies then get tricky: if one object file changes those that depend on it may also need to be rebuilt. Compilers may handle this kind of thing, or they may not.
+	</p>
+
+<p>Depending on what you need, you may need different kinds of things to be built. You can build a system with or without test code, or with different sets of tests. Some components can be built stand-alone. A build script should allow you to build alternative targets for different cases.
+	</p>
+
+<p>Once you get past a simple command line, scripts often handle the load. These might be shell scripts or use a more sophisticated scripting language such as perl or python. But soon it makes sense to use an environment designed for this kind of thing, such as the make tools in Unix.
+	</p>
+
+<p>In our Java development we quickly discovered we needed a more serious solution. Indeed Matt put a good bit of time into developing a build tool called Jinx which was designed for Enterprise Java work. Recently, however, we have switched over to the open-source build tool <a href = 'http://jakarta.apache.org/ant/index.html'>Ant</a>. Ant has a very similar design to Jinx, allowing us to compile Java files and package them into Jars. It also makes it easy for us to write our own extensions to Ant to allow us to do other tasks within the build.
+	</p>
+
+<p>Many of us use IDEs, and most IDEs have some kind of build management process within them. However these files are always proprietary to the IDE and often fragile. Furthermore they need the IDE to work. IDE users set up their own project files and use them for individual development. However we rely on Ant for main builds and the master build is run on a server using Ant.
+	</p>
+</section>
+
+<section id = 'Self-testingCode'>
+<h2>Self-Testing Code</h2>
+
+<p>Just getting a program to compile is not enough. While compilers in strongly typed languages can spot many problems, there are too many errors that even a successful compile lets through. To help track these down we put a lot of emphasis on an automated testing discipline - another practice that's advocated by XP.
+	</p>
+
+<p>XP divides tests into two categories: unit tests and acceptance (also called functional) tests. Unit tests are written by developers and typically test an individual class or small group of classes. Acceptance tests are usually written by customers or an outside test group (with the help of developers) and test the whole system end-to-end. We use both kinds of test, and automate both kinds of test as much as possible.
+	</p>
+
+<p>As part of the build we run a suite of tests that we call the “BVT” (Build Verification Tests). All the tests in the BVT must pass in order for us to have a successful build. All of the XP-style unit tests are in the BVT. As this article is about the build process, we'll mostly talk about the BVT here, just bear in mind that there is a second line of testing in addition to what's in the BVT, so don't judge the whole testing and QA effort by the BVT alone. Indeed our QA group doesn't ever see code unless it's passed the BVT since they only work on working builds.
+	</p>
+
+<p>The basic principle is that when developers are writing code they also write tests for that code. When they complete a task, not just do they check in the production code, they also check in the tests for that code. Those that follow XP closely use the
+	<a href = 'http://www.extremeprogramming.org/rules/testfirst.html'>test first</a> style of programming: you shouldn't write any code until you have a failing test. So if you want to add a new feature to the system, you first write a test that will only work if the feature is there, then you make that test work.
+	</p>
+
+<p>We write the tests in Java, the same language that we're developing in. This makes writing tests just the same as writing code. We use <a href = 'http://www.junit.org'>JUnit</a> as the framework for organizing and writing tests. JUnit is a simple framework that allows you to quickly write tests, organize them into suites, and run suites interactively or in batch mode. (JUnit is the Java member of the <a href = 'http://www.xProgramming.com/software.htm'>xUnit</a> family - for which there are versions for almost every language.)
+	 </p>
+
+<p>Developers typically run some subset of the unit tests with every compile as they are writing the software. This actually speeds up the development work since the tests help to find any logic errors in the code you're working on. Then, rather than debugging, you can look at the changes since you last ran the tests. Those changes should be small and thus it's a lot easier to find the bug.
+	 </p>
+
+<p>Not everyone works strictly in the XP test-first style, but the key benefit comes from writing the tests at the same time. As well as making an individual task go faster, it also builds up the BVT making it more likely to catch errors. Since the BVT runs several times a day, this means that any problems that the BVT detects are easier to find for the same reason: we can look at a small amount of changed code in order to find the bug. This debugging by looking at the changed code is often much more effective than debugging by stepping though running code.
+	 </p>
+
+<p>Of course you can't count on tests to find everything. As it's often been said: tests don't prove the absence of bugs. However perfection isn't the only point at which you get payback for a good BVT. Imperfect tests, run frequently, are much better than perfect tests that are never written at all.
+	 </p>
+
+<p>A related question is the issue of developers writing tests on their own code. It's often been said that people should not test their own code, because it's too easy to overlook errors in your own work. While this is true, the self-testing process requires a rapid turn-around of tests into the code base. The value of that fast turn-around is greater than the value of separate testers. So for the BVTs we rely on developer-written tests, but there are separate acceptance tests which are written independently.
+	 </p>
+
+<p>Another important part of self-testing is to improve the quality of tests with feedback - a key value of XP. Feedback here comes in the form of bugs that escaped the BVT. The rule here is that you aren't allowed to fix a bug until you have a failing unit test in the BVT. This way every time you fix a bug, you also add a test to ensure it doesn't slip past you again. Furthermore this test should lead you to think of other tests that need to be written to strengthen the BVT.
+	 </p>
+</section>
+
+<section id = 'TheMasterBuild'>
+<h2>The Master Build</h2>
+
+<p>Build automation makes a lot of sense for individual developers, but where it really shines is in producing a master build for the whole team. We've found that having a master build procedure brings the team together and makes it easier to find integration problems early.
+	</p>
+
+<p>The first step is to choose a machine to run the master builds. We use Trebuchet (we played Age of Empires a lot) a four processor server which is pretty much dedicated to the build process. (In the early days when builds took a long time this horse-power was essential.)
+	</p>
+
+<p>The build process is in a Java class that's always running. If there's no build going on the build process sits in a while loop checking the repository every few minutes. If nobody's checked in any code since the last build, it continues to wait. If there's new code in the repository, then it starts building.
+	</p>
+
+<p>The first stage of the build is to do a full check out from the repository. Starteam provides a pretty good API for Java, so it was straightforward to hook into the repository. The build daemon looks at the repository at five minutes before the current time and sees if anyone checked in during that last five minutes. If so it considers it safe to check out the code as of five minutes ago (this prevents checking out in the middle of someone checking in, without locking the repository.)
+	</p>
+
+<p>The daemon checks out to a directory on Trebuchet. Once all is checked out the daemon then invokes the ant script in the directory. Ant then takes over to do a full build. We do a full build from all the  sources. The ant script goes as far as compiling and dividing the resulting class files into half a dozen jars for deploying into the EJB server.
+	</p>
+
+<p>Once Ant has done the compiling and deployment, the build daemon starts the EJB server with new jars and executes the BVT test suite. The tests run, if all pass then we have a successful build. The build daemon then goes back into Starteam and labels the sources that were checked out with a build number. It then looks to see if anyone's checked in while it was building, if so it starts another build. If not the daemon goes back into its while loop and waits for the next check in.
+	</p>
+
+<p>At the end of the build, the build daemon sends an e-mail to all developers that had newly checked in code with that build. The e-mail summarizes the status of that build. It's considered bad form to leave the building after checking in code until you've got that e-mail.
+	</p>
+
+<p>The daemon writes a log of all its steps to an XML log file. A servlet runs on Trebuchet which allows anyone to see the state of the build by inspecting the log.
+	</p>
+
+<div class = 'figure ' id = 'logSnap.jpg'><img src = 'logSnap.jpg'></img>
+<p class = 'photoCaption'>Figure 1: The build servlet</p>
+</div>
+
+<p>The screen shows if there's a build currently running and if so when it started. Down the left there is a history of all the builds, whether successful or not. Clicking on a build shows the details of that build: whether it compiled, status of tests, what changes were made, etc.
+	</p>
+
+<p>We've found that many developers keep a regular eye on this web page. It gives them a sense of what's going on in the project and on what's getting altered as people check in. At some point we may put other project news on that page, but we don't want it to lose its relevance.
+	</p>
+
+<p>It's important that any developer can simulate the master build locally on their own machine. That way if an integration error does occur, a developer can investigate and debug the problem on their own machine without tying up the master build process. Furthermore the developer can run the build locally before checking in to reduce the chances of the master build failing.
+	</p>
+
+<p>There's a reasonable question here about whether the master build should be a clean build, i.e. all from sources only, or an incremental build. Incremental builds can be a lot faster, but they also introduce the risk of a problem sneaking because something didn't get compiled. It also has the risk of us not being able to recreate a build. Our builds are pretty quick (about 15 minutes for ~200KLOC) so we're happy with doing a clean build each time. However some shops like to do incremental builds most of the time, but a regular clean build (at least daily) in case those odd errors crop up.
+	</p>
+</section>
+
+<section id = 'CheckingIn'>
+<h2>Checking in</h2>
+
+<p>Using an automated build means that the developers follow a certain kind of rhythm as they develop software. The most important part of that rhythm is that they integrate regularly. We've run across organizations where they do a daily build, but people don't check in frequently. If developers only check in every few weeks, then a daily build doesn't do much for you. We follow a general principle that every developer checks code in roughly once a day.
+	</p>
+
+<p>Before starting on a new task, developers should first sync with the configuration management system. This will mean that their local copies of the sources are up to date. Writing code on top of out-of-date sources only leads to trouble and confusion.
+	</p>
+
+<p>The developer then works on the task updating whichever files need changing. A developer may integrate when a task is done, or part way through a task, but all tests need to run fine in order to integrate.
+	</p>
+
+<p>The first part of integration is to resync the developers working copies with the repository. Any files changed on the repository are copied into the working directory and the configuration management system warns the developer of any conflicts. The developer then needs to build to the synchronized working set and run the BVT successfully on those files.
+	</p>
+
+<p>Now the developer can commit the new files to the repository. Once that's done the developer needs to wait for the master build. If the master build succeeds, then the check in succeeded. If not the developer can fix the problem and commit the fix if it's straightforward. If it's more complicated then the developer needs to back out the changes, resync his working directory and get things working locally before committing again.
+	</p>
+
+<p>Some check-in processes force a serialization of the check-in process. In this situation there is a build token which only one developer can take. The developer will take the build token, resync the working copy, commit the changes, and release the token. This stops more than one developer updating the repository between builds. We've found that we rarely run into trouble without the build token, so we don't use one. Frequently more than one person commits into the same master build, but only rarely does that cause a build failure: and then it's usually easy to fix.
+	</p>
+
+<p>We also leave to the developer's judgement how careful they should be before checking in. It's up to developer how likely they think it is that there will be an integration error. If she thinks it is likely, then she does a local build first before checking in, if she thinks an integration error is unlikely then she will just check in. If she's wrong she'll find out once the master build runs and then she'll have to back out her changes and figure out what went wrong. You can tolerate errors providing they are quick to find and easy to remove.
+	</p>
+</section>
+
+<section id = 'SummingUp'>
+<h2>Summing up</h2>
+
+<p>Developing a disciplined and automated build process is essential to a controlled project. Many software gurus say that, but we've found that it's still a rarity in the field.
+	</p>
+
+<p>The key is to automate absolutely everything and run the process so often that integration errors are found quickly. As a result everyone is more prepared to change things when they need to, because they know that if they do cause an integration error, it's easy to find and fix. Once you have these benefits, you'll find they are such that you'll kick and scream before you give them up.
+	</p>
+</section>
+
+<hr class = 'bodySep'></hr>
+</div>
+
+<div class = 'appendix'>
+<details id = 'SignificantRevisions'>
+<summary>Significant Revisions</summary>
+
+<p><i>10 September 2000: </i>Original publication</p>
+</details>
+</div>
+</main>
+
+<nav id = 'bottom-navmenu'>
+<nav class = 'navmenu'>
+<div class = 'nav-head'>  <div class = 'search'>
+    <!-- SiteSearch Google -->
+    <form method='GET' action="https://www.google.com/search">
+      <input type='hidden' name='ie' value='UTF-8'/>
+      <input type='hidden' name='oe' value='UTF-8'/>
+      <input class = 'field' type='text' 
+             name='q' size='15' maxlength='255' value=""/>
+      <button class = 'button' type='submit' 
+             name='btnG' value=" " title = "Search"/>
+      <input type='hidden' name='domains' value="martinfowler.com"/>
+      <input type='hidden' name='sitesearch' value=""/> 
+      <input
+          type='hidden' name='sitesearch' value="martinfowler.com"/>
+    </form>
+  </div>
+
+<div class = 'closediv'>
+<span class = 'close' title = 'close'></span>
+</div>
+</div>
+
+<div class = 'nav-body'>
+<div class = 'topics'>
+<h2>Topics</h2>
+
+<p><a href = '/architecture'>Architecture</a></p>
+
+<p><a href = 'https://refactoring.com'>Refactoring</a></p>
+
+<p><a href = '/agile.html'>Agile</a></p>
+
+<p><a href = '/delivery.html'>Delivery</a></p>
+
+<p><a href = '/microservices'>Microservices</a></p>
+
+<p><a href = '/data'>Data</a></p>
+
+<p><a href = '/testing'>Testing</a></p>
+
+<p><a href = '/dsl.html'>DSL</a></p>
+</div>
+
+<div class = 'about'>
+<h2>about me</h2>
+
+<p><a href = '/aboutMe.html'>About</a></p>
+
+<p><a href = '/books'>Books</a></p>
+
+<p><a href = '/faq.html'>FAQ</a></p>
+</div>
+
+<div class = 'content'>
+<h2>content</h2>
+
+<p><a href = '/videos.html'>Videos</a></p>
+
+<p><a href = '/tags'>Content Index</a></p>
+
+<p><a href = '/fragments'>Fragments</a></p>
+
+<p><a href = '/boardgames'>Board Games</a></p>
+
+<p><a href = '/photos'>Photography</a></p>
+</div>
+
+<div class = 'tw'>
+<h2>Thoughtworks</h2>
+
+<p><a href = 'https://thoughtworks.com'>Home</a></p>
+
+<p><a href = 'https://thoughtworks.com/insights'>Insights</a></p>
+
+<p><a href = 'https://thoughtworks.com/careers'>Careers</a></p>
+
+<p><a href = 'https://thoughtworks.com/radar'>Radar</a></p>
+
+<p><a href = 'https://www.thoughtworks.com/engineering'>Engineering</a></p>
+</div>
+
+<div class = 'feeds'>
+<h2>follow</h2>
+
+<p><a href = '/feed.atom'>RSS</a></p>
+
+<p><a href = 'https://toot.thoughtworks.com/@mfowler'>Mastodon</a></p>
+
+<p><a href = 'https://www.linkedin.com/in/martin-fowler-com/'>LinkedIn</a></p>
+
+<p><a href = 'https://bsky.app/profile/martinfowler.com'>Bluesky</a></p>
+
+<p><a href = 'https://www.twitter.com/martinfowler'>X</a></p>
+
+<p><a href = 'https://boardgamegeek.com/blog/13064/martins-7th-decade'>BGG</a></p>
+</div>
+</div>
+</nav>
+</nav>
+<footer id='page-footer'>
+<div class='tw-logo'>
+<a href='https://www.thoughtworks.com/engineering'>
+<img src='/thoughtworks_white.png'>
+</a>
+</div>
+<div class='menu-button'>
+<div class='icon-bars navmenu-button'></div>
+</div>
+<div class='copyright'>
+<p>© Martin Fowler | <a href="/aboutMe.html#disclosures">Disclosures</a></p>
+</div>
+</footer>
+
+<script src = '/jquery-1.11.3.min.js' type = 'text/javascript'></script>
+
+<script src = '/mfcom.js' type = 'text/javascript'></script>
+</body>
+</html>

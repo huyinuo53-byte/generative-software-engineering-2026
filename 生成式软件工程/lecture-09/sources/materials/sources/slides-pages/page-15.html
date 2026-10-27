@@ -1,0 +1,12 @@
+<h1>高级语言：内存管理交出去之后</h1>
+<h2>以 Java 等托管语言为例</h2>
+<ul>
+<li><span class="aigc">约束：按语言的对象、类型与引用规则写程序；对象布局和回收时机主要交给运行时。</span></li>
+<li><span class="aigc">便利：实现课程论坛时，专注帖子、评论和业务规则，不必逐个决定对象何时 <code>free</code>。</span></li>
+</ul>
+<h2>从“算得对”到“必须及时响应”</h2>
+<ul>
+<li><span class="aigc">论坛加入实时互动：突然大量创建短命对象，GC 的暂停与 CPU 开销可能进入用户可感知的延迟。</span></li>
+<li><span class="aigc">降低暂停、提高吞吐、减少内存占用，是需要权衡的目标；调一个参数不能保证同时改善三者。<a href="https://docs.oracle.com/en/java/javase/25/gctuning/ergonomics.html">HotSpot GC 调优</a></span></li>
+<li><span class="aigc">业务代码仍然正确，却要重新理解分配速率、活跃对象和堆大小——运行时隐藏的成本又回到了开发者面前。</span></li>
+</ul>

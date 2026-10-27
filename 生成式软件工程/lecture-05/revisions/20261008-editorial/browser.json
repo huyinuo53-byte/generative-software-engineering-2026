@@ -1,0 +1,336 @@
+{
+  "method": "isolated Chrome on local file at widths 1440,768,390,320; no real phone",
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "images": 40,
+      "broken": 0,
+      "duplicateIds": [],
+      "badAnchors": [],
+      "missingText": [],
+      "integrations": [
+        {
+          "page": 31,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 32,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 33,
+          "section": "s14",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 34,
+          "section": "s16",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 35,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 36,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 37,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 38,
+          "section": "s3",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 39,
+          "section": "s13",
+          "images": 1,
+          "hasLabel": true
+        }
+      ],
+      "quizCount": 12,
+      "answersInitiallyClosed": true,
+      "oldAppendix": false,
+      "strongCount": 132,
+      "takeaways": 16,
+      "emphasisRatio": 0.029007508308374022,
+      "externalImages": 0,
+      "externalStyles": 0,
+      "colors": {
+        "question": "rgb(232, 239, 228)",
+        "answer": "rgb(251, 241, 223)"
+      },
+      "errors": [],
+      "toc": true,
+      "zoom": true,
+      "keyboardAnswerToggle": true,
+      "returnLink": true
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "images": 40,
+      "broken": 0,
+      "duplicateIds": [],
+      "badAnchors": [],
+      "missingText": [],
+      "integrations": [
+        {
+          "page": 31,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 32,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 33,
+          "section": "s14",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 34,
+          "section": "s16",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 35,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 36,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 37,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 38,
+          "section": "s3",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 39,
+          "section": "s13",
+          "images": 1,
+          "hasLabel": true
+        }
+      ],
+      "quizCount": 12,
+      "answersInitiallyClosed": true,
+      "oldAppendix": false,
+      "strongCount": 132,
+      "takeaways": 16,
+      "emphasisRatio": 0.029007508308374022,
+      "externalImages": 0,
+      "externalStyles": 0,
+      "colors": {
+        "question": "rgb(232, 239, 228)",
+        "answer": "rgb(251, 241, 223)"
+      },
+      "errors": [],
+      "toc": true,
+      "zoom": true,
+      "keyboardAnswerToggle": true,
+      "returnLink": true
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "images": 40,
+      "broken": 0,
+      "duplicateIds": [],
+      "badAnchors": [],
+      "missingText": [],
+      "integrations": [
+        {
+          "page": 31,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 32,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 33,
+          "section": "s14",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 34,
+          "section": "s16",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 35,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 36,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 37,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 38,
+          "section": "s3",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 39,
+          "section": "s13",
+          "images": 1,
+          "hasLabel": true
+        }
+      ],
+      "quizCount": 12,
+      "answersInitiallyClosed": true,
+      "oldAppendix": false,
+      "strongCount": 132,
+      "takeaways": 16,
+      "emphasisRatio": 0.029007508308374022,
+      "externalImages": 0,
+      "externalStyles": 0,
+      "colors": {
+        "question": "rgb(232, 239, 228)",
+        "answer": "rgb(251, 241, 223)"
+      },
+      "errors": [],
+      "toc": true,
+      "zoom": true,
+      "keyboardAnswerToggle": true,
+      "returnLink": true
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "images": 40,
+      "broken": 0,
+      "duplicateIds": [],
+      "badAnchors": [],
+      "missingText": [],
+      "integrations": [
+        {
+          "page": 31,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 32,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 33,
+          "section": "s14",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 34,
+          "section": "s16",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 35,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 36,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 37,
+          "section": "s15",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 38,
+          "section": "s3",
+          "images": 1,
+          "hasLabel": true
+        },
+        {
+          "page": 39,
+          "section": "s13",
+          "images": 1,
+          "hasLabel": true
+        }
+      ],
+      "quizCount": 12,
+      "answersInitiallyClosed": true,
+      "oldAppendix": false,
+      "strongCount": 132,
+      "takeaways": 16,
+      "emphasisRatio": 0.029007508308374022,
+      "externalImages": 0,
+      "externalStyles": 0,
+      "colors": {
+        "question": "rgb(232, 239, 228)",
+        "answer": "rgb(251, 241, 223)"
+      },
+      "errors": [],
+      "toc": true,
+      "zoom": true,
+      "keyboardAnswerToggle": true,
+      "returnLink": true
+    }
+  ],
+  "status": "passed",
+  "html_sha256": "87b8ef114786b34e310ebd00288827716ebeab2f15044f888a8456aad79105f4",
+  "sealed_at": "2026-10-07T19:25:20.376788+00:00"
+}

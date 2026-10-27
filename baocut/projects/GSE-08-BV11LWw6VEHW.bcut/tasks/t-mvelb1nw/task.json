@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "bcut",
+    "--require-spec",
+    ">=1.172,<2.0",
+    "chapters",
+    "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-08-BV11LWw6VEHW.bcut",
+    "--review",
+    "--llm",
+    "agent",
+    "--jsonl"
+  ],
+  "cwd": "/Users/yjzhao/Documents/ChatGPT/learning-machine",
+  "finishedAtMs": 1792374219948,
+  "pid": 75514,
+  "startedAtMs": 1792374176301,
+  "taskId": "t-mvelb1nw"
+}

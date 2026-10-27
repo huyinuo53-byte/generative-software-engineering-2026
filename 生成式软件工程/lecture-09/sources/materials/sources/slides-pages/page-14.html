@@ -1,0 +1,12 @@
+<h1>操作系统：进程的自由有边界</h1>
+<h2>接受隔离，获得“自己的机器”</h2>
+<ul>
+<li><span class="aigc">约束：在自己的地址空间里执行，通过系统调用申请资源；不能想改谁的内存就改谁的。</span></li>
+<li><span class="aigc">便利：编辑器、编译器和播放器同时运行；一个进程的非法访存可以被终止，而不直接改坏另一个进程的地址空间。</span></li>
+</ul>
+<h2>当“内存够用”的假设被打破</h2>
+<ul>
+<li><span class="aigc">程序逻辑没变，活跃数据却放不进物理内存；启用交换时，频繁换页可能让机器忙于搬数据。<a href="https://denninginstitute.com/pjd/PUBS/Workingsets.html">工作集与抖动</a></span></li>
+<li><span class="aigc">本机能跑的程序，放进有限额的运行环境却被杀掉：Linux 的 <code>memory.max</code> 达到上限且无法回收时，会触发组内 OOM。<a href="https://docs.kernel.org/admin-guide/cgroup-v2.html">内核文档</a></span></li>
+<li><span class="aigc">独立地址空间隐藏了地址映射，物理资源的容量和竞争仍会进入程序的性能与可靠性。</span></li>
+</ul>

@@ -1,0 +1,95 @@
+{
+  "run_id": "BV1kybV6DE47-20261002",
+  "outcome": "completed",
+  "summary": "完整阅读20块转写，533来源单元逐项覆盖；25节、53图。内容与逐图复核、最终HTML结构/桌面/390px窄屏/打印保真检查通过。未做真实手机或逐秒音频听审。",
+  "validation": {
+    "content": {
+      "status": "passed",
+      "evidence": [
+        "audit.json",
+        "cross-review.json"
+      ]
+    },
+    "images": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_static": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "desktop": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "narrow": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "real_phone": {
+      "status": "not_requested",
+      "evidence": "未做真实手机设备实测；390px仅浏览器模拟"
+    },
+    "pdf": {
+      "status": "not_requested",
+      "evidence": "临时PDF只用于HTML打印检查，不作为完整PDF交付"
+    },
+    "source_coverage": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "image_integrity": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_print": {
+      "status": "passed",
+      "evidence": "qa/print.json"
+    },
+    "package": {
+      "status": "not_requested",
+      "evidence": "逐视频独立单文件HTML"
+    },
+    "project_strict": {
+      "status": "passed",
+      "evidence": "sources/project-check.json"
+    }
+  },
+  "blocker": null,
+  "resume_condition": null,
+  "source_hashes": {
+    "transcript.json": "c05e8ba684c753d41ba4f67397ca868902d700b077410dffc43294f53a429d54",
+    "chunks/index.json": "a3ef44af54e2ef85dfe52d0c47f3784d31559c4c62f9834aab3eec70bf8e0bf4",
+    "notes.json": "0f3722fcc99ff72b5d56790c3374dfe1cd80c24fdf8dd9a0db6153b9ad4c6cc8",
+    "课堂笔记.html": "83f0e12e75ce32e44088b7960eb52fd705353235a5a7ca9e83e8d003cc9ec3ec",
+    "image-audit.json": "85b5e6e12ca7622fdcf12ef8dccc5ce4c596bd3894fc376c36439c1af1d9a5ba",
+    "qa/browser.json": "3af1b4a3d4d47b0655c767d9db0edd9c64167348671ac69355aed125e9d6015d",
+    "qa/print.json": "112eae536981e4b02cb2969881ddca4f073ad88ea962f1341490a51ec0db1714"
+  },
+  "audit": [
+    "audit.json",
+    "cross-review.json"
+  ],
+  "delivered_files": [
+    "课堂笔记.html"
+  ],
+  "trace_snapshot": "trace-final.json",
+  "lessons": [],
+  "metrics": {
+    "wall_seconds": null,
+    "active_seconds": null,
+    "tokens": null,
+    "cost": null,
+    "media_hours": 1.6703348263888889,
+    "chunks": 20,
+    "sentences": 533,
+    "slide_pages": 35,
+    "images": 53,
+    "sections": 25,
+    "source_units": 533,
+    "transcript_chunks": 20,
+    "selected_images": 53,
+    "text_blocks": 160
+  },
+  "finished_at": "2026-10-02T15:39:49.683840+00:00"
+}

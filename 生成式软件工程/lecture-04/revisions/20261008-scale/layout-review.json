@@ -1,0 +1,69 @@
+{
+  "status": "layout-authored",
+  "scope": "仅阅读布局编辑；主协调负责渲染及浏览器验收",
+  "notes_sha256": "5023817b0fa063e8ba806226ad39444be5eac4d826b367605496423658d295ee",
+  "reading_scope": {
+    "notes_sections": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "all_paragraphs_examples_editor_notes": true,
+    "all_frame_captions": true,
+    "all_supplements": true,
+    "source_reread": false,
+    "frame_pixels_reread": false,
+    "transcript_reread": false
+  },
+  "supplement_mapping": {
+    "x0": {
+      "section": 16,
+      "reason": "从保存现在、历史和教训自然推进到记忆是否在下一任务被采用，紧接23页。"
+    },
+    "x1": {
+      "section": 11,
+      "reason": "紧随锁的责任边界，补充崩溃恢复、死锁及粒度取舍，紧接16页。"
+    },
+    "x2": {
+      "section": 6,
+      "reason": "jj工作副本与change定义同段完成课堂直觉和官方校注，紧接9页。"
+    },
+    "x3": {
+      "section": 9,
+      "reason": "worktree共享/独立状态校注紧接目录现场与隔离原则，配13页；merge边界仍保留原文字。"
+    }
+  },
+  "checks": {
+    "section_count": 19,
+    "paragraphs": 64,
+    "examples": 1,
+    "editor_notes": 27,
+    "frames": 35,
+    "supplements": 4,
+    "flow_exact_coverage": true,
+    "video_frame_ownership_unchanged": true,
+    "notes_unchanged": true,
+    "terms_exact_match": true
+  },
+  "limitations": [
+    "本轮完整阅读现有笔记正文、例子、整理者说明、图注和补充；复用已有来源，不声称重读讲义原文或重新观看截图与视频。",
+    "UI、渲染和源文件未变化的最终验证由主协调记录。"
+  ],
+  "navigation_wording_suggestions": []
+}

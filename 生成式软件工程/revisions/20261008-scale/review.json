@@ -1,0 +1,89 @@
+{
+  "run_id": "gse-20261008-editorial-scale",
+  "outcome": "completed",
+  "finished_at": "2026-10-07T20:00:02.834622+00:00",
+  "scope": "Seven existing notes upgraded after fifth-lesson acceptance; all eight preserve source artifacts",
+  "items": [
+    {
+      "folder": "extra-ai-slop",
+      "status": "completed",
+      "sections": 7,
+      "images": 8,
+      "html_sha256": "68fa80956bb84708b683ae88a6b24e4c406f0055b77a10e25712710a22483e68"
+    },
+    {
+      "folder": "lecture-01",
+      "status": "completed",
+      "sections": 23,
+      "images": 48,
+      "html_sha256": "67151db592f02e0fdb9889b9a79472e768d7e887a5dea9a965fa3cf2a4b62e47"
+    },
+    {
+      "folder": "lecture-02",
+      "status": "completed",
+      "sections": 28,
+      "images": 44,
+      "html_sha256": "f063e934af755a45e5fef94ee73327ff1ebc8a6527f497089c21931a2387b269"
+    },
+    {
+      "folder": "lecture-03",
+      "status": "completed",
+      "sections": 25,
+      "images": 53,
+      "html_sha256": "6b76b3a70d3c1c00d3b0840616ddb20cee79bd2384b605462dcdd913a9699df8"
+    },
+    {
+      "folder": "lecture-04",
+      "status": "completed",
+      "sections": 19,
+      "images": 35,
+      "html_sha256": "0e67d593f33b35aac8e7990afc0d9ee83777c73213dab4ada1e035a38eb865bd"
+    },
+    {
+      "folder": "lecture-05",
+      "status": "accepted-pilot-unchanged",
+      "html_sha256": "87b8ef114786b34e310ebd00288827716ebeab2f15044f888a8456aad79105f4"
+    },
+    {
+      "folder": "lecture-06",
+      "status": "completed",
+      "sections": 20,
+      "images": 37,
+      "html_sha256": "a341918f8775d2b03c7c2270daf6585ab283f1a984eb17453f99da3895939dee"
+    },
+    {
+      "folder": "lecture-07",
+      "status": "completed",
+      "sections": 25,
+      "images": 46,
+      "html_sha256": "85980aafc6cfa2911dc2b38afce0523a9e453cded8b705eb9bc8a89e03a74cc5"
+    }
+  ],
+  "checks": {
+    "preservation": "preservation.json",
+    "semantic_cross_review": [
+      "independent-layout-review.json",
+      "forward-test-review.json"
+    ],
+    "visual": "visual-review.json",
+    "print_visual": "print-visual-review.json",
+    "installed_skill": "installed-validation.json"
+  },
+  "fixes": [
+    "Four obsolete supplement-location sentences corrected",
+    "Two figure placements corrected after independent review",
+    "Four emphasis terms corrected to exact prose matches",
+    "Long-title balance applied and four orphan headings visually rechecked"
+  ],
+  "nonblocking_suggestions": "Three broader emphasis terms retained for this revision; no semantic error or content loss. See forward-test-review.json.",
+  "boundaries": [
+    "No new ASR, live playlist lookup or source reading",
+    "No real-phone or native print-dialog test",
+    "Print all text/image counts checked; seven final pages visually sampled"
+  ],
+  "metrics": {
+    "tokens": null,
+    "cost": null,
+    "active_seconds": null
+  }
+}

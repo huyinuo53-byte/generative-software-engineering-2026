@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "reviewer": "same primary agent second pass",
+  "scope": "UI and selective emphasis only; previous semantic integration review remains in revisions/20261008-integrated/content-review.json",
+  "source_notes_unchanged": true,
+  "source_notes_sha256": "dc8f00c56d59111dae9d0d92843d625cf10b9c63a9fe0523927e62d72e80a658",
+  "preservation": {
+    "all_prose_text_present": true,
+    "images": 40,
+    "source_units": 491,
+    "self_test_items": 12,
+    "external_asset_dependencies": 0,
+    "other_lessons_unchanged": true
+  },
+  "added_editorial_content": {
+    "takeaways": 16,
+    "source": "per-section synthesis of existing notes, visibly labelled 整理者提炼",
+    "emphasis_spans": 132,
+    "emphasis_character_ratio": 0.029007508308374022,
+    "limit": "at most two exact non-overlapping terms per prose block"
+  },
+  "visual_checks": [
+    "desktop top and section3: heading scale, narrower prose vs wider figure, active sidebar",
+    "390px top and quiz: mobile hierarchy and differentiated question/answer",
+    "320px section3: longest heading and body wrap; no horizontal overflow",
+    "1440px slide33 and 390px slide36: existing paired figure/explanation integration retained",
+    "print page46: answers shown, four question panels legible"
+  ],
+  "repairs": [
+    {
+      "problem": "320px concept line overflowed to336px",
+      "resolution": "use course-native Intent/Spec/Impl labels; all four viewport checks rerun"
+    },
+    {
+      "problem": "CSS shadows generated61 extra grayscale PDF raster objects",
+      "resolution": "disable print shadows; text/image checks now220 blocks and40 original images"
+    }
+  ],
+  "design_references": "../../editorial.json",
+  "limitations": [
+    "No real phone test",
+    "No new full-video or cited-original-paper review",
+    "PDF check uses headless print, not native print dialog"
+  ]
+}

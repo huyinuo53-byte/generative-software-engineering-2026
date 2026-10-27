@@ -1,0 +1,10 @@
+{
+  "run_id": "lecture-03-20261008-editorial-scale",
+  "basis": "observed_build",
+  "status": "unchanged",
+  "changed_files": [],
+  "unavailable_files": [],
+  "requires_revalidation": [],
+  "checked_files": 83,
+  "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+}

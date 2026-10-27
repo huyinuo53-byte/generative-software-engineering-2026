@@ -1,0 +1,255 @@
+{
+  "version": 1,
+  "notes_sha256": "962275c64c913c167cf9ce9bb489a49c168b510ea80ee8701e67033c18fa89cf",
+  "course_title": "生成式软件工程 · NJU 2026",
+  "issue": "08",
+  "title": "Agent-native 开发",
+  "subtitle": "从一个小循环，走到可持续维护的工程系统",
+  "summary_title": "先把握本课主线",
+  "summary_terms": [
+    "工作区",
+    "状态转移",
+    "机械检查与语义判断"
+  ],
+  "groups": [
+    {
+      "start": 1,
+      "label": "一 / 先设计探索与反馈"
+    },
+    {
+      "start": 6,
+      "label": "二 / 从最小Agent到Ralph循环"
+    },
+    {
+      "start": 14,
+      "label": "三 / 把验证接入开发流程"
+    },
+    {
+      "start": 20,
+      "label": "四 / 真实项目中的Harness"
+    },
+    {
+      "start": 28,
+      "label": "五 / 从失败与开源中学习"
+    }
+  ],
+  "sections": [
+    {
+      "short": "课程进入下半程",
+      "takeaway": "一个日常 Agent 的价值，取决于上下文、任务设计和持续反馈，而不只是模型名称。",
+      "terms": [],
+      "flow": "p0 p1 f0 p2 n0"
+    },
+    {
+      "short": "算力换智力",
+      "takeaway": "预算应同时留给方案比较和落实验证；沿第一条路线做得更深，不等于找到了更好的路线。",
+      "terms": [
+        "宽度优先",
+        "深度优先"
+      ],
+      "flow": "p0 p1 f0 p2 e0 n0"
+    },
+    {
+      "short": "多样性与知识库",
+      "takeaway": "不同模型和外部知识能拓宽探索，但必须用证据判断它们是否改进了答案。",
+      "terms": [
+        "知识"
+      ],
+      "flow": "p0 p1 f0 p2 f1 n0 x15 f2 x17 x18 f3"
+    },
+    {
+      "short": "Intent → Spec → Implementation",
+      "takeaway": "从意图到规格再到实现，每一步都有多种选择；沟通和工具帮助尽早排除不合适的分支。",
+      "terms": [
+        "intent",
+        "specification"
+      ],
+      "flow": "p0 p1 f0 p2 e0 f1"
+    },
+    {
+      "short": "让原型替你暴露未曾想过的问题",
+      "takeaway": "原型是验证当前假设的工具；先做一版、用典型场景评审，再决定如何改。",
+      "terms": [
+        "典型 use case"
+      ],
+      "flow": "p0 p1 p2 f0"
+    },
+    {
+      "short": "Agent Loop 的最低组成",
+      "takeaway": "自主调用工具只是循环的起点，路线选择、停止和验证仍需要设计。",
+      "terms": [],
+      "flow": "p0 p1 p2 f0"
+    },
+    {
+      "short": "约 150 行 MiniAgent",
+      "takeaway": "最小 Agent 的核心，是把工具结果重新送回模型；产品能力来自对真实环境和失败方式的补充。",
+      "terms": [
+        "tool_call_id",
+        "timeout"
+      ],
+      "flow": "p0 f0 p1 f1 p2 f2 p3 f3 e0 e1"
+    },
+    {
+      "short": "现场做 HTML 卡片",
+      "takeaway": "一次可见的成品证明这个小循环能工作；验证动作是否充分，要另外判断。",
+      "terms": [],
+      "flow": "p0 p1 f0 p2 f1"
+    },
+    {
+      "short": "Harness 与 Ralph",
+      "takeaway": "Harness 用循环、工具和规则约束模型的行为，使它沿着可检查的过程推进。",
+      "terms": [
+        "Harness",
+        "工作区"
+      ],
+      "flow": "p0 p1 f0 p2 f1 f2 x0"
+    },
+    {
+      "short": "工作区是状态",
+      "takeaway": "用持久化工作区承接每轮进度，再用检查约束状态转移；重启上下文不能代替保存事实。",
+      "terms": [
+        "状态转移"
+      ],
+      "flow": "p0 p1 p2 p3 f0 p4 p5 e0 f1"
+    },
+    {
+      "short": "Ralph 实演（上）",
+      "takeaway": "循环要同时说明本轮做什么、未完成时留下什么、完成时怎样退出。",
+      "terms": [],
+      "flow": "p0 p1 f0 p2"
+    },
+    {
+      "short": "Ralph 实演（下）",
+      "takeaway": "同一模型的输出会因循环、提示词和上下文而变化；单次示例不能隔离因果。",
+      "terms": [],
+      "flow": "p0 f0 p1 f1 p2 f2 f3 p3 f4"
+    },
+    {
+      "short": "同题再跑",
+      "takeaway": "设计空间还在变化；保留熟悉任务的对照，才能判断旧提示词是否仍有帮助。",
+      "terms": [],
+      "flow": "p0 p1 f0 p2 x19"
+    },
+    {
+      "short": "每次状态转移都检查",
+      "takeaway": "把大改动拆小，在每一步留下测试和复核，才能及时阻断错误的推进。",
+      "terms": [],
+      "flow": "p0 p1 p2 f0"
+    },
+    {
+      "short": "CI/CD",
+      "takeaway": "工程流程需要自动触发检查，并把结果接到后续动作，而不能只依靠开发者自觉。",
+      "terms": [
+        "自动化"
+      ],
+      "flow": "p0 p1 p2 f0 x1 x2"
+    },
+    {
+      "short": "把检查挂到事件上",
+      "takeaway": "先说明哪个事件触发什么检查、失败怎么办，再让工具实现配置。",
+      "terms": [],
+      "flow": "p0 p1 f0 p2 f1 x3 x4"
+    },
+    {
+      "short": "Lint、测试与业务规则",
+      "takeaway": "静态检查负责较便宜、确定的约束；通过 lint 不能推出业务行为正确。",
+      "terms": [],
+      "flow": "p0 p1 f0 p2 f1 f2 x5 x6"
+    },
+    {
+      "short": "为什么 Agent 时代更需要 CI",
+      "takeaway": "把可自动判定的坏习惯写成检查，减少上下文丢失后继续累积的维护负担。",
+      "terms": [],
+      "flow": "p0 p1 p2 f0 p3 e0 f1"
+    },
+    {
+      "short": "把偏好变成可执行约束",
+      "takeaway": "机械门禁处理能明确判定的规则，例外和语义价值仍需要授权的人判断。",
+      "terms": [
+        "字数预算"
+      ],
+      "flow": "p0 p1 n0 n1 f0 x16"
+    },
+    {
+      "short": "Agent-native 开发",
+      "takeaway": "人减少手写代码之后，仍要设计环境、约束、反馈和验收。",
+      "terms": [],
+      "flow": "p0 p1 f0 p2 f1 p3 f2 f3 f4 x12"
+    },
+    {
+      "short": "行业案例",
+      "takeaway": "让多个 Agent 有效协作，先要把失败拆成能分别推进、分别验证的小问题。",
+      "terms": [],
+      "flow": "p0 p1 p2 f0 p3 n0 n1 f1 f2 f3 x7 x8 x9 x10"
+    },
+    {
+      "short": "DeepSeek Harness",
+      "takeaway": "双语文档不是多生成一份翻译；它增加了必须持续维护的对应关系。",
+      "terms": [],
+      "flow": "p0 p1 p2 f0 p3 f1"
+    },
+    {
+      "short": "双语三件套",
+      "takeaway": "哈希帮助发现变化，配对契约帮助阻止失配；二者都不能自动证明译文忠实。",
+      "terms": [
+        "哈希",
+        "语义"
+      ],
+      "flow": "p0 p1 f0 p2 f1 p3 f2 n0 x20"
+    },
+    {
+      "short": "“人感”怎样校准",
+      "takeaway": "语义与风格不能只靠哈希；要给 Agent 可比较的样例，并控制检查误伤。",
+      "terms": [
+        "渐进式披露"
+      ],
+      "flow": "p0 p1 f0 p2 f1 p3 f2 x21"
+    },
+    {
+      "short": "让 Agent 还原设计历史",
+      "takeaway": "当前规则与演化历史一起读，才能理解经验如何从真实问题中长出来。",
+      "terms": [
+        "Git"
+      ],
+      "flow": "p0 f0 p1 f1 p2 f2 e0"
+    },
+    {
+      "short": "从常驻规则到 Skills",
+      "takeaway": "上下文需要导航和生命周期；过程记录不能无限堆在常驻指令里。",
+      "terms": [
+        "Agent Notes",
+        "按需加载"
+      ],
+      "flow": "p0 p1 f0 p2 f1 p3 x22 x23"
+    },
+    {
+      "short": "代码评审与文档可执行关系",
+      "takeaway": "检查链应覆盖本地修改、CI 和人工判断，并随改动范围选择真正受影响的检查。",
+      "terms": [
+        "依赖关系"
+      ],
+      "flow": "p0 p1 f0 p2 f1 p3 n0 x24 x25 x26"
+    },
+    {
+      "short": "经验来自失败",
+      "takeaway": "小修小补未必能修复错误方向；从真实失败中发现问题，再选择局部或整体重构。",
+      "terms": [],
+      "flow": "p0 p1 p2 f0 f1 f2 x11 x13 x14"
+    },
+    {
+      "short": "尝试机会与学习",
+      "takeaway": "资源影响试错机会，但经历失败、理解反馈和形成判断，才把机会变成能力。",
+      "terms": [
+        "试错"
+      ],
+      "flow": "p0 p1 p2 f0 p3 f1 f2"
+    },
+    {
+      "short": "回到最小核心",
+      "takeaway": "先弄懂小循环，再逐项追问真实产品为什么需要更多机制。",
+      "terms": [],
+      "flow": "p0 p1 f0"
+    }
+  ],
+  "bridges": {}
+}

@@ -1,0 +1,728 @@
+{
+  "summary": "这是一堂面向本科生的中文软件工程课程，教师围绕“需求与架构”讨论本质复杂性与偶然复杂性、需求空间与实现空间、技术债、模块化，以及数据库和事件驱动的信息系统架构。课程借助 Dijkstra、结构化程序设计、协程、动态规划、MVC、MVVM、React 与 Event Sourcing 等概念和案例，说明抽象、层次分解、可生长设计、事件记录与回放如何管理复杂性；整理时应保留中英混合技术术语和课堂演示语气。",
+  "terms": [
+    {
+      "term": "ASP",
+      "note": "Active Server Pages 缩写"
+    },
+    {
+      "term": "AWK",
+      "note": "文本处理语言与工具"
+    },
+    {
+      "term": "Android",
+      "note": "移动操作系统"
+    },
+    {
+      "term": "Architectural Principles of the Internet",
+      "note": "RFC 1958 标题",
+      "observedVariants": [
+        "Architecture Principle of the Internet"
+      ]
+    },
+    {
+      "term": "Boost",
+      "note": "C++ 程序库集合"
+    },
+    {
+      "term": "Brainfuck",
+      "note": "极简编程语言"
+    },
+    {
+      "term": "Brooks",
+      "note": "指提出软件工程复杂性相关论述的 Brooks"
+    },
+    {
+      "term": "C++",
+      "note": "编程语言名",
+      "observedVariants": [
+        "C 加加"
+      ]
+    },
+    {
+      "term": "CRUD",
+      "note": "Create、Read、Update、Delete 的缩写"
+    },
+    {
+      "term": "CSDN",
+      "note": "中文开发者社区"
+    },
+    {
+      "term": "CSS",
+      "note": "Cascading Style Sheets 缩写"
+    },
+    {
+      "term": "ChatGPT",
+      "note": "OpenAI 对话产品名",
+      "observedVariants": [
+        "chat G P T"
+      ]
+    },
+    {
+      "term": "Claude",
+      "note": "AI 产品名称",
+      "observedVariants": [
+        "cloud"
+      ]
+    },
+    {
+      "term": "Cursor",
+      "note": "AI 编程工具"
+    },
+    {
+      "term": "DOM",
+      "note": "Document Object Model 缩写"
+    },
+    {
+      "term": "DP[i][j][k]",
+      "note": "动态规划状态下标表示",
+      "observedVariants": [
+        "DPIJK"
+      ]
+    },
+    {
+      "term": "Dijkstra",
+      "note": "指 Edsger W. Dijkstra",
+      "observedVariants": [
+        "dexter",
+        "Daxx"
+      ]
+    },
+    {
+      "term": "E. F. Codd",
+      "note": "关系模型提出者",
+      "observedVariants": [
+        "EF 考"
+      ]
+    },
+    {
+      "term": "Emacs",
+      "note": "文本编辑器",
+      "observedVariants": [
+        "IMAX",
+        "emac"
+      ]
+    },
+    {
+      "term": "Event Sourcing",
+      "note": "事件溯源架构模式",
+      "observedVariants": [
+        "sourcing"
+      ]
+    },
+    {
+      "term": "Exit Status",
+      "note": "进程退出状态"
+    },
+    {
+      "term": "FTP",
+      "note": "文件传输协议"
+    },
+    {
+      "term": "Fiber",
+      "note": "React Fiber 架构"
+    },
+    {
+      "term": "GOTO",
+      "note": "非结构化跳转语句"
+    },
+    {
+      "term": "GOTO considered harmful",
+      "note": "Dijkstra 相关经典论题",
+      "observedVariants": [
+        "goto is harmful"
+      ]
+    },
+    {
+      "term": "GPT",
+      "note": "生成式 AI 产品或模型",
+      "observedVariants": [
+        "G P T",
+        "D P C"
+      ]
+    },
+    {
+      "term": "GPU",
+      "note": "图形处理器缩写"
+    },
+    {
+      "term": "GUI",
+      "note": "图形用户界面",
+      "observedVariants": [
+        "QE"
+      ]
+    },
+    {
+      "term": "Go",
+      "note": "编程语言"
+    },
+    {
+      "term": "Grok",
+      "note": "AI 产品名称",
+      "observedVariants": [
+        "grok bot"
+      ]
+    },
+    {
+      "term": "Growing a Language",
+      "note": "Guy Steele 的演讲与文章标题",
+      "observedVariants": [
+        "Growing Language"
+      ]
+    },
+    {
+      "term": "HTML",
+      "note": "网页标记语言缩写"
+    },
+    {
+      "term": "HTTP",
+      "note": "超文本传输协议"
+    },
+    {
+      "term": "HTTPS",
+      "note": "HTTP 的安全传输版本"
+    },
+    {
+      "term": "IBM System/360",
+      "note": "IBM 大型机系列",
+      "observedVariants": [
+        "IBM360",
+        "360"
+      ]
+    },
+    {
+      "term": "ICS",
+      "note": "课程简称，指计算机系统基础",
+      "observedVariants": [
+        "S"
+      ]
+    },
+    {
+      "term": "Intel",
+      "note": "处理器与计算平台品牌",
+      "observedVariants": [
+        "英特尔网"
+      ]
+    },
+    {
+      "term": "Internet",
+      "note": "互联网技术名词，规范英文大小写"
+    },
+    {
+      "term": "Java",
+      "note": "编程语言，规范英文大小写"
+    },
+    {
+      "term": "Java Language Specification",
+      "note": "Java 语言规范",
+      "observedVariants": [
+        "Java Language"
+      ]
+    },
+    {
+      "term": "Java Virtual Machine Specification",
+      "note": "Java 虚拟机规范"
+    },
+    {
+      "term": "Jinja2",
+      "note": "Python 模板引擎",
+      "observedVariants": [
+        "geniato",
+        "Jinjatu"
+      ]
+    },
+    {
+      "term": "Kubernetes",
+      "note": "容器编排系统"
+    },
+    {
+      "term": "LLM",
+      "note": "Large Language Model 缩写",
+      "observedVariants": [
+        "LM"
+      ]
+    },
+    {
+      "term": "Linux",
+      "note": "操作系统内核及系统名"
+    },
+    {
+      "term": "MVC",
+      "note": "Model-View-Controller 架构模式"
+    },
+    {
+      "term": "MVP",
+      "note": "最小可行产品"
+    },
+    {
+      "term": "MVVM",
+      "note": "Model-View-ViewModel 架构模式"
+    },
+    {
+      "term": "Model-View-Controller",
+      "note": "MVC 的规范展开形式",
+      "observedVariants": [
+        "Model Views Controllers"
+      ]
+    },
+    {
+      "term": "OJ",
+      "note": "Online Judge 的缩写"
+    },
+    {
+      "term": "OOPSLA",
+      "note": "面向对象编程、系统、语言与应用会议",
+      "observedVariants": [
+        "乌斯达酒吧"
+      ]
+    },
+    {
+      "term": "PDF",
+      "note": "文档格式"
+    },
+    {
+      "term": "PHP",
+      "note": "服务端脚本语言"
+    },
+    {
+      "term": "Part 3",
+      "note": "书籍章节标识",
+      "observedVariants": [
+        "par3"
+      ]
+    },
+    {
+      "term": "Python",
+      "note": "编程语言"
+    },
+    {
+      "term": "RESTful API",
+      "note": "符合 REST 风格的接口",
+      "observedVariants": [
+        "restful 的 API"
+      ]
+    },
+    {
+      "term": "RFC 1958",
+      "note": "Internet 架构原则文档编号"
+    },
+    {
+      "term": "React",
+      "note": "前端 UI 框架，规范英文大小写"
+    },
+    {
+      "term": "React Scheduler",
+      "note": "React 的调度模块"
+    },
+    {
+      "term": "SELECT",
+      "note": "SQL 查询语句关键字"
+    },
+    {
+      "term": "SQL",
+      "note": "Structured Query Language 缩写"
+    },
+    {
+      "term": "SSH",
+      "note": "安全远程登录协议"
+    },
+    {
+      "term": "Scheme",
+      "note": "编程语言名"
+    },
+    {
+      "term": "Structured Programming",
+      "note": "Dijkstra 等人的经典著作与方法",
+      "observedVariants": [
+        "结构化程序设计"
+      ]
+    },
+    {
+      "term": "TCP/IP",
+      "note": "网络协议族",
+      "observedVariants": [
+        "T C P I P",
+        "TCPIP"
+      ]
+    },
+    {
+      "term": "Telnet",
+      "note": "远程登录协议与工具"
+    },
+    {
+      "term": "Tony Hoare",
+      "note": "提出“十亿美元错误”说法的计算机科学家"
+    },
+    {
+      "term": "Unix",
+      "note": "操作系统及设计传统，保留规范大小写"
+    },
+    {
+      "term": "Unix Philosophy",
+      "note": "Unix 哲学"
+    },
+    {
+      "term": "Vim",
+      "note": "文本编辑器",
+      "observedVariants": [
+        "WIM"
+      ]
+    },
+    {
+      "term": "Virtual DOM",
+      "note": "React 等框架使用的虚拟 DOM 概念"
+    },
+    {
+      "term": "Vue",
+      "note": "与 React 对比的前端框架",
+      "observedVariants": [
+        "view"
+      ]
+    },
+    {
+      "term": "access",
+      "note": "访问数据"
+    },
+    {
+      "term": "accidental complexity",
+      "note": "偶然复杂性",
+      "observedVariants": [
+        "accidental 呃",
+        "complexity"
+      ]
+    },
+    {
+      "term": "agent",
+      "note": "AI agent"
+    },
+    {
+      "term": "atomic",
+      "note": "原子性的英文表达"
+    },
+    {
+      "term": "authentication",
+      "note": "身份认证"
+    },
+    {
+      "term": "billion-dollar mistake",
+      "note": "对空指针发明的著名自嘲",
+      "observedVariants": [
+        "billion dollar mistake"
+      ]
+    },
+    {
+      "term": "bookkeeping",
+      "note": "运行时维护开销"
+    },
+    {
+      "term": "class",
+      "note": "面向对象中的类"
+    },
+    {
+      "term": "communication",
+      "note": "并发实体间通信"
+    },
+    {
+      "term": "confirmation",
+      "note": "密码确认步骤"
+    },
+    {
+      "term": "coroutine",
+      "note": "并发程序的协程抽象",
+      "observedVariants": [
+        "携程",
+        "corouting"
+      ]
+    },
+    {
+      "term": "crash",
+      "note": "程序崩溃"
+    },
+    {
+      "term": "currying",
+      "note": "函数式编程中的柯里化",
+      "observedVariants": [
+        "curry"
+      ]
+    },
+    {
+      "term": "data dependency",
+      "note": "数据依赖关系",
+      "observedVariants": [
+        "dependency"
+      ]
+    },
+    {
+      "term": "data dependency graph",
+      "note": "数据依赖图"
+    },
+    {
+      "term": "data flow",
+      "note": "数据流"
+    },
+    {
+      "term": "database schema",
+      "note": "数据库模式"
+    },
+    {
+      "term": "database view",
+      "note": "此处是数据库视图",
+      "observedVariants": [
+        "数据库的试图",
+        "数据库试图"
+      ]
+    },
+    {
+      "term": "derived state",
+      "note": "派生状态"
+    },
+    {
+      "term": "directed acyclic graph",
+      "note": "常用缩写 DAG",
+      "observedVariants": [
+        "有向无环图"
+      ]
+    },
+    {
+      "term": "dynamic programming",
+      "note": "算法方法",
+      "observedVariants": [
+        "动态规划"
+      ]
+    },
+    {
+      "term": "essential complexity",
+      "note": "软件工程中的本质复杂性"
+    },
+    {
+      "term": "first-class citizen",
+      "note": "一等公民",
+      "observedVariants": [
+        "first class citizen"
+      ]
+    },
+    {
+      "term": "getDescendant",
+      "note": "示例中的函数名",
+      "observedVariants": [
+        "get descendant"
+      ]
+    },
+    {
+      "term": "implementation",
+      "note": "软件实现层"
+    },
+    {
+      "term": "implementation space",
+      "note": "实现空间"
+    },
+    {
+      "term": "intent",
+      "note": "与 specification、implementation 并列的软件工程概念",
+      "observedVariants": [
+        "intention"
+      ]
+    },
+    {
+      "term": "intent space",
+      "note": "意图空间"
+    },
+    {
+      "term": "login page",
+      "note": "登录页面",
+      "observedVariants": [
+        "loginpage"
+      ]
+    },
+    {
+      "term": "mental aids",
+      "note": "Dijkstra 文献中的表述",
+      "observedVariants": [
+        "our mental aids"
+      ]
+    },
+    {
+      "term": "method",
+      "note": "类中的方法"
+    },
+    {
+      "term": "microservices",
+      "note": "微服务架构"
+    },
+    {
+      "term": "minimal viable product",
+      "note": "常用缩写为 MVP",
+      "observedVariants": [
+        "minimal variable product"
+      ]
+    },
+    {
+      "term": "nano",
+      "note": "文本编辑器"
+    },
+    {
+      "term": "nmemb",
+      "note": "qsort 参数名",
+      "observedVariants": [
+        "n mem byte"
+      ]
+    },
+    {
+      "term": "null pointer",
+      "note": "空指针",
+      "observedVariants": [
+        "now pointer",
+        "空指针"
+      ]
+    },
+    {
+      "term": "object",
+      "note": "面向对象中的对象"
+    },
+    {
+      "term": "problem domain",
+      "note": "问题域"
+    },
+    {
+      "term": "prompt",
+      "note": "大模型提示词"
+    },
+    {
+      "term": "qsort",
+      "note": "C 标准库排序函数",
+      "observedVariants": [
+        "Quicksort"
+      ]
+    },
+    {
+      "term": "query",
+      "note": "数据库查询"
+    },
+    {
+      "term": "query string",
+      "note": "查询字符串"
+    },
+    {
+      "term": "reduce",
+      "note": "通过归约操作生成当前状态"
+    },
+    {
+      "term": "relational algebra",
+      "note": "关系代数",
+      "observedVariants": [
+        "关系代数"
+      ]
+    },
+    {
+      "term": "relational database",
+      "note": "关系数据库",
+      "observedVariants": [
+        "relation database"
+      ]
+    },
+    {
+      "term": "replay",
+      "note": "事件重放"
+    },
+    {
+      "term": "sed",
+      "note": "Unix 流编辑工具"
+    },
+    {
+      "term": "shared memory",
+      "note": "共享内存"
+    },
+    {
+      "term": "shell",
+      "note": "Unix 命令解释器与文本接口",
+      "observedVariants": [
+        "share"
+      ]
+    },
+    {
+      "term": "side effect",
+      "note": "函数式编程中的副作用"
+    },
+    {
+      "term": "specification",
+      "note": "需求到实现之间的规格层",
+      "observedVariants": [
+        "spec"
+      ]
+    },
+    {
+      "term": "specification space",
+      "note": "规格空间"
+    },
+    {
+      "term": "state of the art",
+      "note": "技术语境中的前沿水平表达"
+    },
+    {
+      "term": "stop-the-world",
+      "note": "全局暂停式比喻",
+      "observedVariants": [
+        "stop the world"
+      ]
+    },
+    {
+      "term": "trade-off space",
+      "note": "技术选型的权衡空间",
+      "observedVariants": [
+        "trade off space"
+      ]
+    },
+    {
+      "term": "transaction",
+      "note": "此处指数据库事务，不是普通“事物”",
+      "observedVariants": [
+        "事物"
+      ]
+    },
+    {
+      "term": "view",
+      "note": "数据库视图",
+      "observedVariants": [
+        "试图"
+      ]
+    },
+    {
+      "term": "南京大学小百合 BBS",
+      "note": "校园电子公告板系统"
+    }
+  ],
+  "namedEntities": [
+    "Android",
+    "Architectural Principles of the Internet",
+    "Brooks",
+    "CSDN",
+    "ChatGPT",
+    "Claude",
+    "Cursor",
+    "Dijkstra",
+    "E. F. Codd",
+    "Emacs",
+    "GOTO considered harmful",
+    "GPT",
+    "Grok",
+    "Growing a Language",
+    "IBM System/360",
+    "ICS",
+    "Intel",
+    "Jinja2",
+    "Kubernetes",
+    "OOPSLA",
+    "Part 3",
+    "RFC 1958",
+    "Structured Programming",
+    "Tony Hoare",
+    "Unix Philosophy",
+    "Vim",
+    "billion-dollar mistake",
+    "mental aids",
+    "nano",
+    "南京大学小百合 BBS"
+  ],
+  "fingerprint": "25944:g1.0:g1175.0~11:si7y1qcyzmba",
+  "referenceFingerprint": "1:bvc08zgtdutk"
+}

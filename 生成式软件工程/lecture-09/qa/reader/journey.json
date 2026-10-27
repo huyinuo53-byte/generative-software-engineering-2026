@@ -1,0 +1,172 @@
+{
+  "html_sha256": "c53214a052ee6b68c6fe49c119c448b27084fb3dc2739dd75f49909936c9b5ab",
+  "method": "Local Chrome headless reader journeys: actual clicks, pointer wheel pan, keyboard Escape, screenshot inspection separate",
+  "viewports": [
+    {
+      "width": 1280,
+      "screenshots": [
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/1280-top.png",
+          "sha256": "38ca3d2994482cfd04b6657018a0dc113d13083854de4b91c32eeee763dcff56"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/1280-session.png",
+          "sha256": "97bf63e626bb7dc9ae53a22ce7d2213142db03cb3170a5179acc46628742284c"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/1280-native-pan.png",
+          "sha256": "e05f301d1032ce8722916a7c956ff5a6360d63d9286fa592b0b357aa84437ab6"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/1280-fit.png",
+          "sha256": "47549c26d1b7b7d32dad05b6b54eebcec7a973f2cc482b53df791664cb320e20"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/1280-quiz.png",
+          "sha256": "8d604ecf1bf26bd4dbda132dc105c75dee66470637a0433270b2ed9a6ad8198c"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/1280-repo.png",
+          "sha256": "b08b2f45418c5c1801769e0015e783223b9b787aa68c789aa4c24049f193e978"
+        }
+      ],
+      "toc_jump": true,
+      "native": {
+        "viewport": 1176,
+        "content": 1280,
+        "scrollLeft": 104,
+        "imgWidth": 1280,
+        "natural": 1280
+      },
+      "fit": true,
+      "closed": true,
+      "escape": true,
+      "answer_open": true,
+      "quiz_back": true,
+      "answer_closed": true,
+      "source": "来源与时间\n\n视频原帧 00:42:26 · 现场 Agent 解释 Cordis、session、typed events 与实现入口；这是现场生成的解释。",
+      "source_has_timestamp": true,
+      "page": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "images": 92,
+        "inline": true,
+        "quiz": 15
+      }
+    },
+    {
+      "width": 390,
+      "screenshots": [
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/390-top.png",
+          "sha256": "9b0eb2cfa3029b7002a74e09623b3cb86d0ec5a1b41a0efba95915b2c3e5874e"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/390-session.png",
+          "sha256": "f259b3f6cb7e24270e2380a01e2c5ae9f399cd6bfa13e09a090ed8c10437fd19"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/390-native-pan.png",
+          "sha256": "6eaa385a1ade8194ab4722c76e3c0f512325651962ec486d873f82b3c3c2ad6c"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/390-fit.png",
+          "sha256": "a5ec2925f9dc4d61b4d89de3235454eb7179146537845225eb6579d3f82eb95d"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/390-quiz.png",
+          "sha256": "8fa3fbdd0bcb0db0e650d63cec91921efc947ca58bc90eb3499285638f495c9d"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/390-repo.png",
+          "sha256": "65487995e34bc8703e30dc8f20130693d4f25243be4cd6b0e2fecc94ddbb9f30"
+        }
+      ],
+      "toc_jump": true,
+      "native": {
+        "viewport": 331,
+        "content": 1280,
+        "scrollLeft": 450,
+        "imgWidth": 1280,
+        "natural": 1280
+      },
+      "fit": true,
+      "closed": true,
+      "escape": true,
+      "answer_open": true,
+      "quiz_back": true,
+      "answer_closed": true,
+      "source": "来源与时间\n\n视频原帧 00:42:26 · 现场 Agent 解释 Cordis、session、typed events 与实现入口；这是现场生成的解释。",
+      "source_has_timestamp": true,
+      "page": {
+        "width": 390,
+        "scrollWidth": 390,
+        "images": 92,
+        "inline": true,
+        "quiz": 15
+      }
+    },
+    {
+      "width": 320,
+      "screenshots": [
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/320-top.png",
+          "sha256": "3a93c85a49b364ca0157e11c65080916ff17e8f2cf289fb5bd68df238081c74a"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/320-session.png",
+          "sha256": "665e27b0f371a3be46e723fbdcf409148d9fac7832d06befbb674d4644e70e4c"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/320-native-pan.png",
+          "sha256": "aed763c7e347eb55d1f9dcbf6dc30a041116f306306d9593634e024b7cefbc45"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/320-fit.png",
+          "sha256": "3c63f7785740a0664806e97651dfdc057eaf5145260a937b267617a08c2c7a6a"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/320-quiz.png",
+          "sha256": "869e98f6ddd6738e7dc7ae12ec379ce6240ee1d81bd6d4f79b806219b9eb5dfe"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/reader/320-repo.png",
+          "sha256": "b4c25236913b58304707c31a049660e1abadfa9a20b1e2086691988fa6652760"
+        }
+      ],
+      "toc_jump": true,
+      "native": {
+        "viewport": 264,
+        "content": 1280,
+        "scrollLeft": 450,
+        "imgWidth": 1280,
+        "natural": 1280
+      },
+      "fit": true,
+      "closed": true,
+      "escape": true,
+      "answer_open": true,
+      "quiz_back": true,
+      "answer_closed": true,
+      "source": "来源与时间\n\n视频原帧 00:42:26 · 现场 Agent 解释 Cordis、session、typed events 与实现入口；这是现场生成的解释。",
+      "source_has_timestamp": true,
+      "page": {
+        "width": 320,
+        "scrollWidth": 320,
+        "images": 92,
+        "inline": true,
+        "quiz": 15
+      }
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "print_media": {
+    "answers": 15,
+    "allOpen": true,
+    "visible": true
+  },
+  "status": "pending_visual_inspection",
+  "real_phone": "not_tested",
+  "native_print": "not_tested"
+}

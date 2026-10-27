@@ -1,0 +1,367 @@
+{
+  "version": 1,
+  "status": "sampled_visual_review_passed",
+  "reviewer": "layout_03_04 agent",
+  "reviewed_image_count": 31,
+  "reviewed_images": [
+    {
+      "lesson": "lecture-01",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/revisions/20261008-scale/1440-top.png",
+      "sha256": "b0079082542ee8d3ddfce78d728e139945c7df4949cd9b8c3b46b097871c7782",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "unchanged_hash_verified_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "lesson": "lecture-01",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/revisions/20261008-scale/390-reading.png",
+      "sha256": "0108a93f638d1a89e4ef6926282f0cdb6588a1eec60a0fd43973037c14daf407",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "6db84418ccf208d11b5893d6b8ec84668717cff504cb4c8327e24c0cbd2b577a",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-01",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/revisions/20261008-scale/390-quiz.png",
+      "sha256": "6ca10858d3b90e393384a14e652defcd13fae1efa8204b8e4ff02dc379eb6517",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "b4ab9408913139d5925c446993cc3284beb60569ca6bc26c655e9283f92f25d4",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-01",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/revisions/20261008-scale/390-supplement.png",
+      "sha256": "8c3e36ddf16cdac177aacb1e5d4c124a305aa160d0da040bd23cb18068c461fb",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "unchanged_hash_verified_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "lesson": "lecture-01",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/revisions/20261008-scale/1440-reading.png",
+      "sha256": "7ec73913a5c458e06ff2f8d862092b1686e2e57c8c1cc219fd95474a7ddbc828",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "5191a58e8b72e0678cde6b81058502d59a789570017ea3710f91a51ba4bfb998",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-02",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/1440-top.png",
+      "sha256": "d96dd0a71d39335cfcd538a409285302bba5dd5fc48f7399979a40167581d973",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "unchanged_hash_verified_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "lesson": "lecture-02",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/390-reading.png",
+      "sha256": "95c94b6bd25aaa6dd8179851dfa7246b820a9a33a62327c820e24dc0e3cf9a8a",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "c62f4f8e4cc7fad5d56c6d407634df006c2dc2f7aa7fdbdd5f8fecb17f64f05a",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-02",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/390-quiz.png",
+      "sha256": "1261ab9057e46e5032d5f1f68ce32ce8612060824e4b7075ba8db9e0b8762e94",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "e0b979c5d35d80b70c65016dd7c82258738ffde775973f8c47e8d450f319fb7e",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-02",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/390-top.png",
+      "sha256": "b10a65f998930a4f44f83939d398e35875c838d60a8e698705f9efd3e15db04f",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "d8e47b0c0140e1bf91b8a2964dd6494eb13cf7a765c028612d0b719753c5cf3d",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-03",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-03/revisions/20261008-scale/1440-top.png",
+      "sha256": "4359eb3baa993c9915e034479605c20b8b87231cbecbe3f5ddb846b64f01f8dc",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "unchanged_hash_verified_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "lesson": "lecture-03",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-03/revisions/20261008-scale/390-reading.png",
+      "sha256": "f98551d5e7423b913474ed987fb4feee2fccf688ff44b7be7f4a9ea0a209794e",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "8a189832231dbea1ce0cbead5deede532ec0ccdb76adfff8e0d1325747e0f82a",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-03",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-03/revisions/20261008-scale/390-quiz.png",
+      "sha256": "7ff98d76a87cce1cd093acad990afd8b4da0d447acedf0b9f88450d8232ca002",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "79442cf0b34a6711a9309bdfee44b531ad0c06fbdebd087bc38e84d0ef619bb6",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-03",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-03/revisions/20261008-scale/390-supplement.png",
+      "sha256": "773bbc541d8cae59371ed889f3d599d3e1aa8b63d81d9a4d8df99a1cdaf3ee1f",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "36ec4b52c5bb3e06dd99a921a43c472139bb46b3fdb7f51285ad0dfabbbfc221",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-04",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/1440-top.png",
+      "sha256": "c81762e705b321c4d2a2f29d00345b371da32b04d3f6f7e9cad78f08554589eb",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "unchanged_hash_verified_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "lesson": "lecture-04",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/390-reading.png",
+      "sha256": "00a406d43e7a0b5536ebacb6d69cfbf5e701c667d2e5c1d7ff7f29758c93e018",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "a5a4c0ee9dc5275aeb01d3569c77bb3d0f023278e4928444c0c23aef370ed217",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-04",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/390-quiz.png",
+      "sha256": "1c8f81cf5b7f02c17643d7ca69639ee8645bdfecb6106580ee310289a5b43a6b",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "90435a78c56179cea55744554fc317b727197aeb375c1073a0e3c0c0670a299f",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-04",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/390-supplement.png",
+      "sha256": "1883cd1a41f59889ce50a2c7ff822f00ad80cebc7be20deb0fb738eb4d96ea24",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "1883cd1a41f59889ce50a2c7ff822f00ad80cebc7be20deb0fb738eb4d96ea24",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-04",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/1440-supplement.png",
+      "sha256": "28729ec31c1b80cfb680339e48c22664c37f45a7b28aa1a9092cda86e7d3a928",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "unchanged_hash_verified_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "lesson": "lecture-04",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/390-top.png",
+      "sha256": "d8410b9f770132418c6f45f1e0f639637afb6547cf4ee8ee724ee5737c281e39",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "3c06faccd9d88716d00a61686fe14c37ad2b9fa82953a1ee5e094c6faf96cc1d",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-06",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-06/revisions/20261008-scale/1440-top.png",
+      "sha256": "ffbaf7dea0e4f00156b6967dd552115878e7905694f2e0df1c23ea5bcc097cac",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "unchanged_hash_verified_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "lesson": "lecture-06",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-06/revisions/20261008-scale/390-reading.png",
+      "sha256": "4580d199c3b040c3814e9f7b453dc1fd292e310e552f3d9adfbab66d86099978",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "c68b93082b266d8379148062971df7887565c02cdbd79ba77bbf65baed6b4cc4",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-06",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-06/revisions/20261008-scale/390-quiz.png",
+      "sha256": "c8a690d4b8470252310a7cf07fcd44b7ffa403f87b4ddb948bf56990ceeed14c",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "902b2ce0092bdb8b19bd7ca45484e2833203e7711b091ef3c119a5e9e31c1a48",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-06",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-06/revisions/20261008-scale/390-supplement.png",
+      "sha256": "8dd2139c7eb009d5edc3efb35d6af495b68bd378bb0e502c8d48e3d78dc4c896",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "eea1f5adf529bfb46539647f0a49d3b323abcfdb1897bc1c23ff64a4247d02f4",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-06",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-06/revisions/20261008-scale/1440-quiz.png",
+      "sha256": "9defb65105abbd73fd33346b726556389bac91591e8e8347b5c23d2f2756e3a1",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "unchanged_hash_verified_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "lesson": "lecture-07",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-07/revisions/20261008-scale/1440-top.png",
+      "sha256": "ac1322c9ceed18417dd96240b56d900c2353289ea3f367566ed5d0ebe198855f",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "unchanged_hash_verified_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "lesson": "lecture-07",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-07/revisions/20261008-scale/390-reading.png",
+      "sha256": "eeb4fd742d3ac38f4b76050b2b812e5d8248401e778bd623a1672e3b0c0ae167",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "a0078c485bb099a1a6c6c55de6325bc4a95fc357e6cc125238cbcc5a7467d526",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "lecture-07",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-07/revisions/20261008-scale/390-quiz.png",
+      "sha256": "225b95e463d36d77ebac51855139f35473ef31a37a4aee0bb8b25f1614e6559a",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "0ad5af267945441e2a7df17d06f2c0d520d8c081cdec50fe4d43daea119c8ce5",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "extra-ai-slop",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/1440-top.png",
+      "sha256": "49e59da48c9cb6d06543a4a87dee7ac3b51836ed2f0966759cdc148b98b987a4",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "unchanged_hash_verified_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "lesson": "extra-ai-slop",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-reading.png",
+      "sha256": "52c0902b4c8b7da86859a0e66c183e954659af66234790af8e66fcef1dfccfc9",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "2e4d6f52a62539f7d6fbe2329190ba3760981b1c666386adb740ac856ab12d25",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "extra-ai-slop",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-quiz.png",
+      "sha256": "230ba8322952fda748feca82a7f613dc7825a2e1c5dadba1a46a9fd393379b82",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "7e22a79f378edf0e3129327bac82f957c2dbdab076a3821a99542c8e12f616c6",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    },
+    {
+      "lesson": "extra-ai-slop",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-supplement.png",
+      "sha256": "9b2d86aa7e134f888b2f8042ab6b769ee4c27c97b893700bf756cc79485172a2",
+      "method": "view_image: directly inspected individual screenshot pixels",
+      "prior_sha256": "9ada985013cdf72707562098d91a2ea0eeb5889401008aac9a944bd79170c9e4",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00",
+      "recheck_method": "view_image: reopened and directly inspected refreshed screenshot"
+    }
+  ],
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "heading_orphan",
+      "screenshot": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/revisions/20261008-scale/1440-reading.png",
+      "observation": "Title last line contains only 立",
+      "recommendation": "Apply text-wrap: balance to headings, then recheck these screenshots.",
+      "status": "resolved_and_visually_rechecked",
+      "resolution": "Balanced heading wraps eliminate the isolated final character; no clipping or overlap observed.",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "severity": "minor",
+      "category": "heading_orphan",
+      "screenshot": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/390-reading.png",
+      "observation": "Title last line contains only 己",
+      "recommendation": "Apply text-wrap: balance to headings, then recheck these screenshots.",
+      "status": "resolved_and_visually_rechecked",
+      "resolution": "Balanced heading wraps eliminate the isolated final character; no clipping or overlap observed.",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "severity": "minor",
+      "category": "heading_orphan",
+      "screenshot": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/390-top.png",
+      "observation": "Title last line contains only 标",
+      "recommendation": "Apply text-wrap: balance to headings, then recheck these screenshots.",
+      "status": "resolved_and_visually_rechecked",
+      "resolution": "Balanced heading wraps eliminate the isolated final character; no clipping or overlap observed.",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00"
+    },
+    {
+      "severity": "minor",
+      "category": "heading_orphan",
+      "screenshot": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/390-top.png",
+      "observation": "Title last line contains only 化",
+      "recommendation": "Apply text-wrap: balance to headings, then recheck these screenshots.",
+      "status": "resolved_and_visually_rechecked",
+      "resolution": "Balanced heading wraps eliminate the isolated final character; no clipping or overlap observed.",
+      "rechecked_at": "2026-10-08T03:55:48.869974+08:00"
+    }
+  ],
+  "observations": {
+    "lecture-01": "Desktop and narrow reading/quiz refreshed screenshots rechecked. Balanced heading now uses two substantive lines; no orphan character. Question and answer hierarchy remains clear.",
+    "lecture-02": "Refreshed narrow hero, reading and quiz rechecked. Both former orphan-character headings now use balanced substantive lines. No new overlap or clipping.",
+    "lecture-03": "Refreshed narrow reading, quiz and supplement rechecked. Branch/merge/rebase supplement is readable and retains explicit official-lecture attribution, immediately followed by the branch-reference video frame and its original-video label.",
+    "lecture-04": "Refreshed narrow hero, reading and quiz rechecked; hero no longer leaves a single character on its last line. jj supplement was also reopened and remains adjacent to working-copy slide with readable provenance.",
+    "lecture-06": "Key terms are selectively emphasized. Desktop and narrow quiz separate question, control, answer and return link. Business-data supplement and slide 44 are adjacent; image container does not crop the slide.",
+    "lecture-07": "Desktop headings and summary align. Narrow login title wraps in two lines. Slide follows explanation. Long quiz questions wrap; opened answer is readable.",
+    "extra-ai-slop": "EX identity is clear. Narrow source image retains complete image aspect; caption identifies original avatar obstruction. Text-only editorial supplement is complete without an unrelated image. Quiz hierarchy is clear."
+  },
+  "positive_findings": [
+    "No text overlap, horizontal clipping or layout-induced image cropping observed in reviewed samples.",
+    "Questions use strong dark type on green; answers use a separate cream panel, label and return link.",
+    "Main prose, takeaways, navigation, captions and provenance are visually differentiated.",
+    "Dense slides become small at narrow width; the detail-view affordance is visible, but zoom was not interacted with during this review."
+  ],
+  "boundaries": [
+    "31 screenshots directly viewed; not every section or source image was examined.",
+    "Screenshot appearance does not verify interaction, default details state, browser console, native print, screen reader or real mobile devices.",
+    "Quiz screenshots show first answer expanded and later answers collapsed; behavior needs separate browser verification.",
+    "Supplement screenshots are element captures: edge-to-edge cropping does not mean the full page lacks margins.",
+    "Screenshots ending partway through a figure are viewport captures, not proof of image cropping.",
+    "Later edits still require reviewing affected screenshots; unchanged hashes preserve initial visual review evidence, not a new pixel inspection."
+  ],
+  "initial_observations": {
+    "lecture-01": "Desktop and narrow reading/quiz refreshed screenshots rechecked. Balanced heading now uses two substantive lines; no orphan character. Question and answer hierarchy remains clear.",
+    "lecture-02": "Refreshed narrow hero, reading and quiz rechecked. Both former orphan-character headings now use balanced substantive lines. No new overlap or clipping.",
+    "lecture-03": "Refreshed narrow reading, quiz and supplement rechecked. Branch/merge/rebase supplement is readable and retains explicit official-lecture attribution, immediately followed by the branch-reference video frame and its original-video label.",
+    "lecture-04": "Refreshed narrow hero, reading and quiz rechecked; hero no longer leaves a single character on its last line. jj supplement was also reopened and remains adjacent to working-copy slide with readable provenance.",
+    "lecture-06": "Key terms are selectively emphasized. Desktop and narrow quiz separate question, control, answer and return link. Business-data supplement and slide 44 are adjacent; image container does not crop the slide.",
+    "lecture-07": "Desktop headings and summary align. Narrow login title wraps in two lines. Slide follows explanation. Long quiz questions wrap; opened answer is readable.",
+    "extra-ai-slop": "EX identity is clear. Narrow source image retains complete image aspect; caption identifies original avatar obstruction. Text-only editorial supplement is complete without an unrelated image. Quiz hierarchy is clear."
+  },
+  "recheck_at": "2026-10-08T03:55:48.869974+08:00",
+  "rechecked_image_count": 21,
+  "rechecked_images": [
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/revisions/20261008-scale/390-reading.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/revisions/20261008-scale/390-quiz.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/revisions/20261008-scale/1440-reading.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/390-reading.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/390-quiz.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-02/revisions/20261008-scale/390-top.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-03/revisions/20261008-scale/390-reading.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-03/revisions/20261008-scale/390-quiz.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-03/revisions/20261008-scale/390-supplement.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/390-reading.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/390-quiz.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/390-supplement.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-04/revisions/20261008-scale/390-top.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-06/revisions/20261008-scale/390-reading.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-06/revisions/20261008-scale/390-quiz.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-06/revisions/20261008-scale/390-supplement.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-07/revisions/20261008-scale/390-reading.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-07/revisions/20261008-scale/390-quiz.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-reading.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-quiz.png",
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop/revisions/20261008-scale/390-supplement.png"
+  ],
+  "current_hashes_verified": true
+}

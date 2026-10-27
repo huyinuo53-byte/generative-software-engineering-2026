@@ -1,0 +1,10 @@
+{
+  "actor": "root",
+  "run_id": "BV11LWw6VEHW-20261019",
+  "at": "2026-10-19T01:09:05.374304+00:00",
+  "status": "released",
+  "existing_run_absent": true,
+  "project_checked": true,
+  "released_at": "2026-10-19T02:02:37.781579+00:00",
+  "reason": "all required checks completed; reviewer agents finished; no active course writer"
+}

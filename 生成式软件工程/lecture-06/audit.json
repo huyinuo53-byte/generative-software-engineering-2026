@@ -1,0 +1,88 @@
+{
+  "reviewer": "lecture06 author, separate source-return review pass",
+  "method": "19 chunks read in full; official47 slide text and lecture article read in full; all selected37 images visually inspected; adjacent demo frames checked; math example executed",
+  "source_hashes": {
+    "transcript.json": "3307c7c4be10cf564b613a1963757aff0d7b76ab28d4d81a4369c7f767a13026",
+    "chunks/index.json": "265c761a2ca8a855ccf56a0ca3f0ecff125952afb0d800b7c0ef25f3a6d4b5b6",
+    "notes.json": "4debf37d2cfbb2a3fc91a1f59fa85946936e4cd863c70ef05cce584a1fd14b43",
+    "sources/slides6.html": "3e580d390cf6e819675302dcef2c2bd624caed96ae178258a33e23e02a9c6520",
+    "sources/lect6.md": "ead2315ec489519607583c97e6f7e5e299da535dbe3c86da3bc44c3d9e652852"
+  },
+  "coverage": {
+    "chunks_read": 19,
+    "sentences": 486,
+    "sections": 20,
+    "selected_images": 37,
+    "official_slides_text_read": 47,
+    "full_video_listening": false,
+    "all_video_frames_seen": false
+  },
+  "issues": [
+    {
+      "issue_id": "06-01",
+      "severity": "major",
+      "category": "draft_correction",
+      "problem": "仅凭转写把缺课次数演示判为口述矛盾，漏掉两个输入状态",
+      "evidence": [
+        "s-g224.0 1902.44-1914.21",
+        "s-g230.0 1916.30-1934.40",
+        "s-g457.0~20 2499.03-2511.66",
+        "frames/video-1912.png",
+        "frames/video-1915.png"
+      ],
+      "before": "大数未阻止与稍后说被拒不一致",
+      "after": "大于100被拒；100保存成功，仍可能超实际课次，通用上限不等于业务上限",
+      "verification": "实际逐帧核对提示和保存成功结果",
+      "status": "resolved"
+    },
+    {
+      "issue_id": "06-02",
+      "severity": "major",
+      "category": "image_repair",
+      "problem": "初次0.3秒后截图捕获翻页动画，15页图被叠页裁切",
+      "before": "讲义15页标题和模块图不全",
+      "after": "禁用CSS transition/animation后等待0.7秒重抓47页",
+      "verification": "所有37张成品图逐图目视，15页完整",
+      "status": "resolved"
+    },
+    {
+      "issue_id": "06-03",
+      "severity": "major",
+      "category": "prevented_attribution_error",
+      "problem": "现行官方讲义比视频更丰富，容易把补充内容说成已讲授",
+      "evidence": [
+        "slides pages9,25-29,37,41-46",
+        "transcript end 5773.16-5810.11"
+      ],
+      "after": "补充数字/IR验证/CQRS/DDD/一致性/迁移均显式标讲义补充；无虚构同秒截图",
+      "status": "resolved"
+    },
+    {
+      "issue_id": "06-04",
+      "severity": "minor",
+      "category": "prevented_overclaim",
+      "problem": "把一个汉诺塔模型输出当全模型能力评测、或代码短等同无复杂度",
+      "after": "标课堂个案，保留2^n−1及uint64输入边界；独立测试n1..10",
+      "evidence": [
+        "sources/hanoi-check.json"
+      ],
+      "status": "resolved"
+    },
+    {
+      "issue_id": "06-05",
+      "severity": "major",
+      "category": "source_limitation",
+      "problem": "视频标题章节警告引言后半音频翻车，时间戳连续不能证实听辨可靠",
+      "evidence": [
+        "sources/project-show.json",
+        "sources/audio-silence.log"
+      ],
+      "after": "保留限制，未伪造口述修复。0–903秒以-45dB持续3秒检测未见长静音；此项只排查静音，不检验失真/断续或词准确率",
+      "status": "documented",
+      "remaining_unknown": "未逐秒人工回听，具体低质量区间与漏词未知"
+    }
+  ],
+  "numerical_verification": "sources/hanoi-check.json",
+  "review_boundary": "no independent external research on papers linked by official lecture; UI pending coordinator",
+  "unselected_video_qr_note": "Inspected 3563/3568/3573/3580s: spreadsheet demonstrated but QR matrix cropped in video viewport; no claim of decode success, not included as complete QR figure."
+}

@@ -1,0 +1,9 @@
+{
+  "style": "editorial",
+  "output": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-06/课堂笔记.html",
+  "sections": 20,
+  "images": 37,
+  "coverage_declared": 486,
+  "omitted": 0,
+  "semantic_and_browser_qa": "required by agent"
+}

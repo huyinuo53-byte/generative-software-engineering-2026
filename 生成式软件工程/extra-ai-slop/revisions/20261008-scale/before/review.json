@@ -1,0 +1,95 @@
+{
+  "run_id": "BV1fKtN6DErG-20261002-complete-notes",
+  "outcome": "completed",
+  "summary": "完整阅读1块转写，14来源单元逐项覆盖；7节、8图。内容与逐图复核、最终HTML结构/桌面/390px窄屏/打印保真检查通过。未做真实手机或逐秒音频听审。",
+  "validation": {
+    "content": {
+      "status": "passed",
+      "evidence": [
+        "audit.json",
+        "cross-review.json"
+      ]
+    },
+    "image_integrity": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_static": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "project_strict": {
+      "status": "passed",
+      "evidence": "qa/project-check.json：0 blockers，0 warnings，fresh ASR"
+    },
+    "desktop": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "narrow": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "real_phone": {
+      "status": "not_requested",
+      "evidence": "未做真实手机设备实测；390px仅浏览器模拟"
+    },
+    "pdf": {
+      "status": "not_requested",
+      "evidence": "临时PDF只用于HTML打印检查，不作为完整PDF交付"
+    },
+    "source_coverage": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "html_print": {
+      "status": "passed",
+      "evidence": "qa/print.json"
+    },
+    "package": {
+      "status": "not_requested",
+      "evidence": "逐视频独立单文件HTML"
+    }
+  },
+  "blocker": null,
+  "resume_condition": null,
+  "source_hashes": {
+    "transcript.json": "4ccc403e04cc7d201636f7f0ea074e38bcec3889195379d5d207af1424b8e693",
+    "chunks/index.json": "add9ee85575c954925886514d79b3eb6818c4f10bceacc54e6ca9a1b80e1b590",
+    "notes.json": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6",
+    "课堂笔记.html": "abb0116d211e8eaf64637819460d6552d8b647d31c84570408d6a1a8d2c89e7f",
+    "image-audit.json": "ba704fbd9755e135fb252db76ea97d3bbe5f20a68bd534c6c5045310fed3d4ca",
+    "qa/browser.json": "8a017c683e72f1623036a4305657b320bbc05a7c9343bd998fd426d85111c1d4",
+    "qa/print.json": "7c781223214d935468de88a3d865c41b7625080104701f6d38ded519344a4a14"
+  },
+  "audit": [
+    "audit.json",
+    "cross-review.json"
+  ],
+  "trace_snapshot": "trace-final.json",
+  "scope_revision": 1,
+  "delivered_files": [
+    "课堂笔记.html"
+  ],
+  "metrics": {
+    "wall_seconds": null,
+    "active_seconds": null,
+    "tokens": null,
+    "cost": null,
+    "source_units": 14,
+    "transcript_chunks": 1,
+    "selected_images": 8,
+    "sections": 7,
+    "text_blocks": 42
+  },
+  "lessons": [
+    {
+      "status": "candidate",
+      "scope": "AI课程切片图文",
+      "finding": "生成信息图可以美观、清晰，却把批评标准化包装改成标准简历建议；应以同段旁白核对语义。",
+      "evidence": "60秒图与s-g8.0及后续s-g18.0对照",
+      "next_action": "分别记录口述主张、图像添写、整理者判断。"
+    }
+  ],
+  "finished_at": "2026-10-02T15:39:49.905628+00:00"
+}

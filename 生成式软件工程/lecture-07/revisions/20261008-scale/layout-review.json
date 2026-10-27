@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "scope": "editorial layout only; source notes unchanged",
+  "notes_sha256": "dc6c3e8b0390646246587a16c904ebe64cc2b40dfe4084c6b3a9c7a0c0749c60",
+  "read_scope": {
+    "all_sections": 25,
+    "all_paragraphs": 92,
+    "all_examples": 13,
+    "all_editor_notes": 29,
+    "all_frame_captions_and_metadata": 46,
+    "all_supplements": 0,
+    "summary_self_test_limitations": "all read",
+    "frozen_primary_sources_reread": false,
+    "new_transcript_or_visual_review": false
+  },
+  "placement_decisions": [
+    "No global supplements exist. Local editor notes and examples are interleaved with arguments and corresponding figures.",
+    "UNIX file selection and nano result remain together. Ledger arithmetic and original detail image remain together.",
+    "Source caveats on analogies, accounting truth and replay side effects remain beside their associated claims."
+  ],
+  "checks": {
+    "all_p_e_n_f_x_exactly_once": true,
+    "source_notes_unchanged": true,
+    "video_frames_not_moved": true,
+    "ui_tested": false,
+    "all_keywords_exact_existing_substrings": true,
+    "keyword_scope": "displayed prose only; excludes titles and frame captions",
+    "reading_layout_validator": "passed"
+  },
+  "concerns": [
+    "This review covers editorial placement against existing frozen notes and captions, not new fact checking, original-source reading or image content inspection.",
+    "Parent must render and validate desktop/narrow widths, interactions and print."
+  ],
+  "navigation_wording_changes": []
+}

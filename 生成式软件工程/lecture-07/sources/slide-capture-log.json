@@ -1,0 +1,275 @@
+[
+  {
+    "value": {
+      "page": 1,
+      "title": "Intent → Spec → Impl",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 2,
+      "title": "架构无处不在",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 3,
+      "title": "软件工程的本质：驾驭复杂性",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 4,
+      "title": "需求工程：直面 Essential Complexity",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 5,
+      "title": "架构设计",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 6,
+      "title": "On Our Inability to Do Much",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 7,
+      "title": "Our Mental Aids",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 8,
+      "title": "Hierarchical Program Structures",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 9,
+      "title": "让 AI 带我们读第七章",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 10,
+      "title": "阅读经典 (1990s)",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 11,
+      "title": "Growing a Language",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 12,
+      "title": "好的架构：设计解空间",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 13,
+      "title": "阅读经典，建立品味",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 14,
+      "title": "设计解空间：UNIX Philosophy",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 15,
+      "title": "UNIX：组合需要共同约定",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 16,
+      "title": "UNIX：使用者创造新的用途",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 17,
+      "title": "案例二：关系数据库",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 18,
+      "title": "关系数据库：现实、关系与存储",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 19,
+      "title": "案例三：The Internet",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 20,
+      "title": "Internet：在持续变化中演化",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 21,
+      "title": "Systems：每一轮浪潮的新抽象",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 22,
+      "title": "如果是面向客户需求的软件呢？",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 23,
+      "title": "Java Web：直接在 HTML 里写代码",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 24,
+      "title": "JSP：从 Java 片段到表达式与标签",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 25,
+      "title": "MVC：让不同的变化各有归属",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 26,
+      "title": "MVC：一次选课请求",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 27,
+      "title": "把 ViewState 也当成 Model",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 28,
+      "title": "MVVM：让界面绑定状态",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 29,
+      "title": "React：用状态快照描述界面",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 30,
+      "title": "Vue 与 React：同一个课程筛选框",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 31,
+      "title": "应对复杂性",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 32,
+      "title": "复式记账：同一笔业务，保持会计等式",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 33,
+      "title": "记账架构：Event Sourcing & LLM as a Compiler",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 34,
+      "title": "从分录到报表",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 35,
+      "title": "记账为什么麻烦？",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 36,
+      "title": "Event Sourcing 和复杂性分解",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 37,
+      "title": "跳出问题看问题：“现在” 是 “过去” 的结果",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 38,
+      "title": "SQL 的 Billion Dollar Mistake 😁",
+      "loaded": true
+    }
+  },
+  {
+    "value": {
+      "page": 39,
+      "title": "从状态一致性到计算正确性",
+      "loaded": true
+    }
+  }
+]

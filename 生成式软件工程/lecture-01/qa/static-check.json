@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "html_sha256": "f6160aa3cdcb5bf62bab7f4c2c6a0fae174f6f36b5534ecabd4daa6eebbe56d4",
+  "duplicate_ids": 0,
+  "broken_local_anchors": [],
+  "selected_images": 48,
+  "inline_data_images": 48,
+  "external_image_urls": [],
+  "checks": [
+    "renderer validated 821 source ids and image timestamps",
+    "HTML parsed for duplicate ids, local anchors and offline image embedding",
+    "course finalizer applied collapsed scope and TOC plus 2x/3x image viewer"
+  ],
+  "browser_scope": "not performed by author; coordinator handles desktop/narrow"
+}

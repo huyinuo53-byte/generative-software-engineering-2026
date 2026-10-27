@@ -1,0 +1,106 @@
+[
+  {
+    "lesson": "lecture-01",
+    "trace": {
+      "run_id": "BV1pb8o6yE8f-20261002-complete-notes",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 109,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    }
+  },
+  {
+    "lesson": "lecture-02",
+    "trace": {
+      "run_id": "lecture-02-20261002",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 108,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    }
+  },
+  {
+    "lesson": "lecture-03",
+    "trace": {
+      "run_id": "BV1kybV6DE47-20261002",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 115,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    }
+  },
+  {
+    "lesson": "lecture-04",
+    "trace": {
+      "run_id": "BV1Q6en6NEUo-20261002",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 132,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    }
+  },
+  {
+    "lesson": "lecture-05",
+    "trace": {
+      "run_id": "BV1Nyeq6qEt8-20261002-quality-upgrade",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 100,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    }
+  },
+  {
+    "lesson": "lecture-06",
+    "trace": {
+      "run_id": "BV1Rch76WEfQ-20261002",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 120,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    }
+  },
+  {
+    "lesson": "lecture-07",
+    "trace": {
+      "run_id": "BV1JGap6LE74-20261002",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 106,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    }
+  },
+  {
+    "lesson": "extra-ai-slop",
+    "trace": {
+      "run_id": "BV1fKtN6DErG-20261002-complete-notes",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 46,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    }
+  }
+]

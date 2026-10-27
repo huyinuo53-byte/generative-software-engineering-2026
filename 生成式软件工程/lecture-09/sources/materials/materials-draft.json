@@ -1,0 +1,1291 @@
+{
+  "schema_version": 1,
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "checked_at": "2026-10-26T01:21:37.844138+00:00",
+  "video_id": "BV144nc6KEA4",
+  "lecture": "09",
+  "staging_root": "/tmp/gse09-materials",
+  "expected_material_ids": [
+    "gse09-lect9",
+    "gse09-slides9",
+    "gse09-prd",
+    "gse09-aws",
+    "gse09-event",
+    "gse09-mapreduce",
+    "gse09-spark",
+    "gse09-flink-time",
+    "gse09-flink-state",
+    "gse09-gc",
+    "gse09-php",
+    "gse09-dsh-architecture",
+    "gse09-dsh-core",
+    "gse09-dsh-session",
+    "gse09-dsh-system-prompt",
+    "gse09-dsh-cordis",
+    "gse09-bot"
+  ],
+  "materials": [
+    {
+      "id": "gse09-lect9",
+      "listed_title": "DeepSeek Harness (1) — 官方课程讲义",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lect9.md",
+      "title": "DeepSeek Harness (1) — 官方课程讲义",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect9.md",
+      "version": "2026-10-26 当前网页；未声称与录制日逐字相同",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/lect9.html",
+      "sha256": "709dfd3ba0a2b0823bbdcaded746251a52bf7aa16730bd984c9d405d8d7e8b6e",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "全文正文与链接清单"
+      ],
+      "scope_sections": [
+        "全文正文与链接清单"
+      ],
+      "scope_reason": "本课正文主来源；全部阅读。",
+      "scope_boundary": null,
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": []
+    },
+    {
+      "id": "gse09-slides9",
+      "listed_title": "DeepSeek Harness (1) — 官方 30 页幻灯片",
+      "listed_url": "https://jyywiki.cn/GSE/2026/slides9.html",
+      "title": "DeepSeek Harness (1) — 官方 30 页幻灯片",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides9.html",
+      "version": "2026-10-26 当前网页；aigc 标记只表示内容来源，不表示课后",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/slides9.html",
+      "sha256": "78eafd2f8cefe2da6e7bdd77881814ea79b99eda3da99acaaf142fc972e49931",
+      "total_pages": 30,
+      "reading_status": "full",
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "read_sections": [
+        "slides-data 全部 30 页的文字、代码与链接；逐页 HTML 已保存"
+      ],
+      "scope_sections": [
+        "slides-data 全部 30 页的文字、代码与链接；逐页 HTML 已保存"
+      ],
+      "scope_reason": "所有幻灯片文字全文读取，实际录制是否出现由视频代理逐页对照。",
+      "scope_boundary": "本代理不声称已看 30 张浏览器渲染页；主作者负责逐页截图与最终画面比对。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": []
+    },
+    {
+      "id": "gse09-prd",
+      "listed_title": "办公 Agent PRD v1.0（代号：搭档）",
+      "listed_url": "https://jyywiki.cn/GSE/2026/slides9.html#6",
+      "title": "办公 Agent PRD v1.0（代号：搭档）",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides9.html#6",
+      "version": "v1.0，文内日期 2026-10-18",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/office-agent-prd.md",
+      "sha256": "9102f90c0dea90a50d91cf7dd9ebe4706f53fdf1dd46c1f8fcbc6d953ad5dfbb",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "第 6 页 data:text/markdown;base64 内嵌 PRD 全文"
+      ],
+      "scope_sections": [
+        "第 6 页 data:text/markdown;base64 内嵌 PRD 全文"
+      ],
+      "scope_reason": "教师在需求页给出的完整产品规格样例；解码后逐节读完。",
+      "scope_boundary": "这是产品目标和验收方案，不是 DeepSeek Harness 已实现功能或实验结果。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "需求：小循环外围的产品契约",
+          "location": "PRD：完成定义、FR08/10/11/15、NFR 与验收集",
+          "claim": "从“能生成文件”到“可验收完成”",
+          "role": "design_boundary",
+          "draft_supplement_id": "gse09-supp-prd",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-aws",
+      "listed_title": "Making retries safe with idempotent APIs",
+      "listed_url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "title": "Making retries safe with idempotent APIs",
+      "source_url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "version": "AWS Builders’ Library，当前快照",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/aws-idempotent.html",
+      "sha256": "dac49ae09f6936dae933ebc547a1f8b7f82fbe641403a2ac1d048ec5b8cc4516",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "Introduction",
+        "Retrying and side effects",
+        "Reducing client complexity with idempotent API design",
+        "Retries and semantic equivalence",
+        "Late arriving requests",
+        "Same client request ID, different intent",
+        "Conclusion"
+      ],
+      "scope_sections": [
+        "Introduction",
+        "Retrying and side effects",
+        "Reducing client complexity with idempotent API design",
+        "Retries and semantic equivalence",
+        "Late arriving requests",
+        "Same client request ID, different intent",
+        "Conclusion"
+      ],
+      "scope_reason": "讲义直接引用，补充“执行结果未知不能盲重试”的机制。",
+      "scope_boundary": "正文与主要示例已读；网页重复渲染的 CLI JSON 不重复视为独立内容。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [
+        {
+          "asset": "sources/assets/aws-idempotent-flow.png",
+          "detail": "已目视客户端重试携带相同 ID、服务端状态存储、返回语义等价结果的完整序列图。"
+        }
+      ],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "API 中断与未知执行结果",
+          "location": "AWS：Reducing client complexity；Late arriving requests；Same client request ID, different intent",
+          "claim": "重试要识别同一意图，而不是只比较参数",
+          "role": "mechanism",
+          "draft_supplement_id": "gse09-supp-retry",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-event",
+      "listed_title": "Event Sourcing",
+      "listed_url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "title": "Event Sourcing",
+      "source_url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "version": "Martin Fowler，2005-12-12，作者标为 draft",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/fowler-event.html",
+      "sha256": "ff817ecc7b176c9456b8381687437e93f38bb8be6c6c3b4e4403b664818f8a02",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "整篇文章，含 How it Works、When to Use、Reversing Events、External Updates、External Queries 与代码示例"
+      ],
+      "scope_sections": [
+        "整篇文章，含 How it Works、When to Use、Reversing Events、External Updates、External Queries 与代码示例"
+      ],
+      "scope_reason": "讲义直接引用，为事件回放与外部副作用边界提供原始论述。",
+      "scope_boundary": null,
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "Session = list[Event] 与状态投影",
+          "location": "Fowler 2005 draft：External Updates / External Queries / Changes to Processing",
+          "claim": "能回放事件，不代表能重做现实世界",
+          "role": "limitation",
+          "draft_supplement_id": "gse09-supp-event",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-mapreduce",
+      "listed_title": "MapReduce: Simplified Data Processing on Large Clusters",
+      "listed_url": "https://usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean_html/index.html",
+      "title": "MapReduce: Simplified Data Processing on Large Clusters",
+      "source_url": "https://usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean_html/index.html",
+      "version": "Jeffrey Dean / Sanjay Ghemawat，OSDI 2004 HTML 版本",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/mapreduce.html",
+      "sha256": "15d609d9f22fa37fe3963d34f667e7a59f1b0d3d648276fb38b36e4255e58fab",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "全文：摘要、§1–8、参考文献及 Word Frequency 附录；数学图片 alt 原式另行读取"
+      ],
+      "scope_sections": [
+        "全文：摘要、§1–8、参考文献及 Word Frequency 附录；数学图片 alt 原式另行读取"
+      ],
+      "scope_reason": "讲义核心架构例子，全文读取并检查主架构图。",
+      "scope_boundary": "性能图仅按正文结果读取，未逐图目视；补充不引用性能图数值。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [
+        {
+          "asset": "sources/assets/mapreduce-figure1.png",
+          "detail": "已目视 Figure 1：master 调度 map/reduce；map 输出本地文件，reduce 远程读取后写输出。图分辨率 479×329，小字较小，不建议在手机正文作为唯一解释。"
+        }
+      ],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "架构案例：MapReduce",
+          "location": "OSDI 2004：§2 Programming Model、§3.3 Fault Tolerance、§4.5 Side-effects",
+          "claim": "限制计算形式，才换来可调度和可重做",
+          "role": "mechanism",
+          "draft_supplement_id": "gse09-supp-mapreduce",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-spark",
+      "listed_title": "RDD Programming Guide — RDD Persistence",
+      "listed_url": "https://spark.apache.org/docs/latest/rdd-programming-guide.html#rdd-persistence",
+      "title": "RDD Programming Guide — RDD Persistence",
+      "source_url": "https://spark.apache.org/docs/latest/rdd-programming-guide.html#rdd-persistence",
+      "version": "Apache Spark latest 2026-10-26 快照",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/spark-rdd.html",
+      "sha256": "1b605c22f5fed33500566154094609c544c5dbe7d57e3133a7188e62cb49349f",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "RDD Persistence",
+        "Which Storage Level to Choose?",
+        "Removing Data"
+      ],
+      "scope_sections": [
+        "RDD Persistence",
+        "Which Storage Level to Choose?",
+        "Removing Data"
+      ],
+      "scope_reason": "官方讲义链接精确指向 RDD Persistence，限定缓存、重算和存储级别相关节。",
+      "scope_boundary": "不是完整 Spark 指南或 2012 RDD 论文阅读。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "从一轮批处理到迭代计算",
+          "location": "Spark RDD Guide：RDD Persistence / Which Storage Level to Choose? / Removing Data",
+          "claim": "RDD 缓存是在内存、磁盘和重算间选择",
+          "role": "mechanism",
+          "draft_supplement_id": "gse09-supp-spark",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-flink-time",
+      "listed_title": "Timely Stream Processing",
+      "listed_url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/time/",
+      "title": "Timely Stream Processing",
+      "source_url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/time/",
+      "version": "Apache Flink stable，页面资产路径为 release-2.3，2026-10-26 快照",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/flink-time.html",
+      "sha256": "022591aa4486a416233cba34daf2fb2007f848a3be34ba03f417addc1de734d5",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "页面正文全部概念章节"
+      ],
+      "scope_sections": [
+        "页面正文全部概念章节"
+      ],
+      "scope_reason": "讲义直接引用，完整读取该概念页。",
+      "scope_boundary": null,
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [
+        {
+          "asset": "sources/assets/flink-watermark-white.png",
+          "detail": "已目视官方 SVG 白底渲染，核对 watermark 与乱序事件位置。"
+        }
+      ],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "从批处理到持续到来的事件",
+          "location": "Flink 2.3 概念页：Event Time / Watermarks；Checkpointing",
+          "claim": "流处理需要时间语义，也需要可恢复输入",
+          "role": "mechanism",
+          "draft_supplement_id": "gse09-supp-flink",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-flink-state",
+      "listed_title": "Stateful Stream Processing",
+      "listed_url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/stateful-stream-processing/",
+      "title": "Stateful Stream Processing",
+      "source_url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/stateful-stream-processing/",
+      "version": "Apache Flink stable，页面资产路径为 release-2.3，2026-10-26 快照",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/flink-state.html",
+      "sha256": "c066713d1e5232832c0980fea0bb67a540a52de7eaab3ff1daf636e0c08a89a3",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "页面正文全部概念章节"
+      ],
+      "scope_sections": [
+        "页面正文全部概念章节"
+      ],
+      "scope_reason": "讲义直接引用，完整读取该概念页。",
+      "scope_boundary": null,
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [
+        {
+          "asset": "sources/assets/flink-checkpoint-white.png",
+          "detail": "已目视官方 checkpoint SVG，核对 source 位置、barrier、状态快照与 sink ack 的时序。"
+        }
+      ],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "从批处理到持续到来的事件",
+          "location": "Flink 2.3 概念页：Event Time / Watermarks；Checkpointing",
+          "claim": "流处理需要时间语义，也需要可恢复输入",
+          "role": "mechanism",
+          "draft_supplement_id": "gse09-supp-flink",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-gc",
+      "listed_title": "Garbage Collector Ergonomics",
+      "listed_url": "https://docs.oracle.com/en/java/javase/25/gctuning/ergonomics.html",
+      "title": "Garbage Collector Ergonomics",
+      "source_url": "https://docs.oracle.com/en/java/javase/25/gctuning/ergonomics.html",
+      "version": "Oracle Java SE 25",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/java-gc.html",
+      "sha256": "a174115a2641be0b924634c184e4f8dc7e7997be28967b4f3c265b0de2bd0dab",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "JDK 25 GCTuning Ergonomics 章全文"
+      ],
+      "scope_sections": [
+        "JDK 25 GCTuning Ergonomics 章全文"
+      ],
+      "scope_reason": "讲义直接引用，读取自动调优目标与冲突。",
+      "scope_boundary": null,
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "架构的受限与自由：托管内存",
+          "location": "Java SE 25：Ergonomics 章",
+          "claim": "运行时承包内存管理，也留下调优取舍",
+          "role": "limitation",
+          "draft_supplement_id": "gse09-supp-gc",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-php",
+      "listed_title": "PHP-FPM Configuration",
+      "listed_url": "https://www.php.net/manual/en/install.fpm.configuration.php",
+      "title": "PHP-FPM Configuration",
+      "source_url": "https://www.php.net/manual/en/install.fpm.configuration.php",
+      "version": "PHP 官方手册当前快照",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/php-fpm.html",
+      "sha256": "af3d73c1a23ac5c1530d2f424ba573e088d362bf9cce265da97e47facb9e082e",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "pm、pm.max_children、pm.start_servers、spare_servers、max_requests、status、timeout 等进程池相关配置"
+      ],
+      "scope_sections": [
+        "pm、pm.max_children、pm.start_servers、spare_servers、max_requests、status、timeout 等进程池相关配置"
+      ],
+      "scope_reason": "讲义以请求/进程模型说明长连接的新约束，只需进程池与超时相关配置。",
+      "scope_boundary": "未读完整 PHP 安装手册；不据此推断 PHP 或 Apache 无法支持 WebSocket。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "架构假设改变：从表单网站到在线协作",
+          "location": "PHP-FPM：pm/max_children/timeout；Apache mod_proxy_wstunnel",
+          "claim": "长连接改变的是容量与状态假设",
+          "role": "clarification",
+          "draft_supplement_id": "gse09-supp-lamp",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-dsh-architecture",
+      "listed_title": "DeepSeek Harness Architecture",
+      "listed_url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/architecture.md",
+      "title": "DeepSeek Harness Architecture",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/architecture.md",
+      "version": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/dsh-architecture.md",
+      "sha256": "95a7722c7096d665d8adedeb733b8f5ad7740e67cb5c6e9dc91ec05f430cb760",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "docs/architecture.md 全文（165 行）"
+      ],
+      "scope_sections": [
+        "docs/architecture.md 全文（165 行）"
+      ],
+      "scope_reason": "复用第 08 讲已冻结同一版本文件，并本次全文重读；只读机制，不执行项目。",
+      "scope_boundary": "commit 为 2026-10-17；不是已证实的第 09 讲录制 checkout。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "微内核、插件与 Hooks",
+          "location": "锁定 687f282：cordis-primer.md；architecture.md",
+          "claim": "生命周期能回收注册项，不能撤销所有现实副作用",
+          "role": "mechanism",
+          "draft_supplement_id": "gse09-supp-cordis",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-dsh-core",
+      "listed_title": "Agent Core: Session, Scheduling, and Lifecycle",
+      "listed_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/core.md",
+      "title": "Core",
+      "source_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/core.md",
+      "version": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "identity_status": "verified",
+      "identity_note": "原文一级标题为 Core，材料范围限定 Agent 调度与生命周期相关行。",
+      "path": "sources/dsh-core.md",
+      "sha256": "c465d63b40da9be9109be67fdfc89fb90bfdb14d5afff7b80c1386bd10c006c6",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "docs/subsystems/core.md 行 53–198、308–352、930–953"
+      ],
+      "scope_sections": [
+        "docs/subsystems/core.md 行 53–198、308–352、930–953"
+      ],
+      "scope_reason": "仅补本课承重接口的原始文档，锁定第 08 讲同一 commit；没有全仓阅读或执行。",
+      "scope_boundary": "静态文档阅读不证明运行表现；录制版本未确认。Cordis 全论文不在本课必读范围（40:12 教师明确跳过）。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "向 Agent 提交输入",
+          "location": "锁定 687f282：docs/subsystems/core.md 行 53–198、308–352",
+          "claim": "followup、steer、inject 是三个调度承诺",
+          "role": "mechanism",
+          "draft_supplement_id": "gse09-supp-agent",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-dsh-session",
+      "listed_title": "Session subsystem",
+      "listed_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/session.md",
+      "title": "Session subsystem",
+      "source_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/session.md",
+      "version": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/dsh-session.md",
+      "sha256": "7feaa7cc6451fc016bddb4871fc849b9f75890dbcd38a7fa11b87deace10b194",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "docs/subsystems/session.md 行 446–676、731–804、1297–1321"
+      ],
+      "scope_sections": [
+        "docs/subsystems/session.md 行 446–676、731–804、1297–1321"
+      ],
+      "scope_reason": "仅补本课承重接口的原始文档，锁定第 08 讲同一 commit；没有全仓阅读或执行。",
+      "scope_boundary": "静态文档阅读不证明运行表现；录制版本未确认。Cordis 全论文不在本课必读范围（40:12 教师明确跳过）。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "Session、投影与动态上下文",
+          "location": "锁定 687f282：session.md 行 446–676、731–804、1297–1321；system-prompt.md",
+          "claim": "提交事件、投影上下文与落盘是不同阶段",
+          "role": "mechanism",
+          "draft_supplement_id": "gse09-supp-session",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-dsh-system-prompt",
+      "listed_title": "System prompt subsystem",
+      "listed_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/system-prompt.md",
+      "title": "System Prompt Assembly",
+      "source_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/system-prompt.md",
+      "version": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/dsh-system-prompt.md",
+      "sha256": "f316bed51c243dcd3be9ad037864c83e3970b884705fffe97d246dc7c15d1b95",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "docs/subsystems/system-prompt.md 全文"
+      ],
+      "scope_sections": [
+        "docs/subsystems/system-prompt.md 全文"
+      ],
+      "scope_reason": "仅补本课承重接口的原始文档，锁定第 08 讲同一 commit；没有全仓阅读或执行。",
+      "scope_boundary": "静态文档阅读不证明运行表现；录制版本未确认。Cordis 全论文不在本课必读范围（40:12 教师明确跳过）。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "Session、投影与动态上下文",
+          "location": "锁定 687f282：session.md 行 446–676、731–804、1297–1321；system-prompt.md",
+          "claim": "提交事件、投影上下文与落盘是不同阶段",
+          "role": "mechanism",
+          "draft_supplement_id": "gse09-supp-session",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-dsh-cordis",
+      "listed_title": "Cordis Primer",
+      "listed_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/cordis-primer.md",
+      "title": "Cordis Primer",
+      "source_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/cordis-primer.md",
+      "version": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/dsh-cordis.md",
+      "sha256": "f0cc573cc10b60d1bd76039fb0bd666edfb32c9b18027d4dc301c042a9e65d58",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "docs/cordis-primer.md 全文"
+      ],
+      "scope_sections": [
+        "docs/cordis-primer.md 全文"
+      ],
+      "scope_reason": "仅补本课承重接口的原始文档，锁定第 08 讲同一 commit；没有全仓阅读或执行。",
+      "scope_boundary": "静态文档阅读不证明运行表现；录制版本未确认。Cordis 全论文不在本课必读范围（40:12 教师明确跳过）。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "微内核、插件与 Hooks",
+          "location": "锁定 687f282：cordis-primer.md；architecture.md",
+          "claim": "生命周期能回收注册项，不能撤销所有现实副作用",
+          "role": "mechanism",
+          "draft_supplement_id": "gse09-supp-cordis",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-bot",
+      "listed_title": "dsh-bot README",
+      "listed_url": "https://raw.githubusercontent.com/Nothing1024/dsh-bot/3acc759fc634d5d5c55792614b6bca03c630a345/README.md",
+      "title": "dsh-bot README",
+      "source_url": "https://raw.githubusercontent.com/Nothing1024/dsh-bot/3acc759fc634d5d5c55792614b6bca03c630a345/README.md",
+      "version": "3acc759fc634d5d5c55792614b6bca03c630a345（2026-10-02）",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/dsh-bot-readme.md",
+      "sha256": "6ad670b47bef19017e4682dc11178789c6e41b86708ae6afdc57d1dfe8a5d832",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "README 全文"
+      ],
+      "scope_sections": [
+        "README 全文"
+      ],
+      "scope_reason": "讲义直接引用的插件案例；锁定版本完整阅读。",
+      "scope_boundary": "README 标明 DeepSeek Shell v0.2.0-rc.1；与其他 Harness 版本的兼容性及功能未运行验证。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "插件生态：dsh-bot 案例",
+          "location": "dsh-bot README，3acc759（2026-10-02）",
+          "claim": "快速拼插件的成功，也有明确的状态边界",
+          "role": "limitation",
+          "draft_supplement_id": "gse09-supp-bot",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-brooks",
+      "listed_title": "No Silver Bullet: Essence and Accidents of Software Engineering",
+      "listed_url": "https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf",
+      "title": "No Silver Bullet: Essence and Accidents of Software Engineering",
+      "source_url": "https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf",
+      "version": "1986 IFIP 扫描 PDF",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/brooks.pdf",
+      "sha256": "fcbd318dbaa31c5b14b782b02ae25f53fc8aa33779d18ba1b4f126994c99b9ae",
+      "total_pages": 16,
+      "reading_status": "full",
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "read_sections": [
+        "摘要、引言、四种 essential difficulty，及相邻开始的过去突破讨论"
+      ],
+      "scope_sections": [
+        "摘要、引言、四种 essential difficulty，及相邻开始的过去突破讨论"
+      ],
+      "scope_reason": "本课只用 essential/accidental complexity 与数量级限制的背景论证；限定物理页 1–5，不升级为整篇必读。",
+      "scope_boundary": "物理页 6–16 不在本课声明阅读范围。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "复习：essential 与 accidental complexity",
+          "location": "Brooks 1986，PDF 物理页 1–5",
+          "claim": "“没有银弹”约束的是总工作量，不否认局部加速",
+          "role": "clarification",
+          "draft_supplement_id": "gse09-supp-complexity",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-david",
+      "listed_title": "The Dynamo and the Computer: An Historical Perspective on the Modern Productivity Paradox",
+      "listed_url": "https://gwern.net/doc/economics/automation/1990-david.pdf",
+      "title": "The Dynamo and the Computer: An Historical Perspective on the Modern Productivity Paradox",
+      "source_url": "https://gwern.net/doc/economics/automation/1990-david.pdf",
+      "version": "Paul A. David，1990",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/david.pdf",
+      "sha256": "11291f658da048e3486e2474b31ee07cfc8fb0d1711222e90f90a1d9fe98494d",
+      "total_pages": 7,
+      "reading_status": "full",
+      "read_pages": [
+        2,
+        3,
+        4
+      ],
+      "read_sections": [
+        "§II 工厂电气化与 unit drive 论述及相邻 §III 开头"
+      ],
+      "scope_sections": [
+        "§II 工厂电气化与 unit drive 论述及相邻 §III 开头"
+      ],
+      "scope_reason": "当前讲义以电气化补充架构假设变化；读取承载工厂重组机制的物理页 2–4。",
+      "scope_boundary": "其余物理页不在本课声明范围；历史类比不是对 AI 时间表的因果估计。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "架构假设变化与 AI 产业加速",
+          "location": "David 1990，物理页 2–4（印刷页 356–358）",
+          "claim": "新技术的回报，常要等任务重新分配",
+          "role": "interpretation",
+          "draft_supplement_id": "gse09-supp-reorg",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-qje",
+      "listed_title": "Generative AI at Work",
+      "listed_url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+      "title": "Generative AI at Work",
+      "source_url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+      "version": "QJE 140(2), May 2025, 889–942; DOI 10.1093/qje/qjae044",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/qje-web-retrieval.json",
+      "sha256": "4c4d9c4a76ddab5f890afc4b8a8d73a17cdc2bafb85a142ea1505afbf1952157",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "主站经 web 读取：Abstract、Introduction（73–113 行）、IV.B 样本与 Table I（176–210 行）、V.A 主效果与 Table II（276–316 行）、Conclusion 开头（709–717 行）"
+      ],
+      "scope_sections": [
+        "主站经 web 读取：Abstract、Introduction（73–113 行）、IV.B 样本与 Table I（176–210 行）、V.A 主效果与 Table II（276–316 行）、Conclusion 开头（709–717 行）"
+      ],
+      "scope_reason": "仅核对当前讲义 5,172 人/约 15% 例证的样本、指标、识别方法与限制；没有整篇阅读全文。",
+      "scope_boundary": "其他实证节、完整附录及 Conclusion 后续未读；full 只指上述声明片段。原始 curl 403，经官方网页抓取工具实际读取，原工具响应保存在该 JSON。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "当前讲义补充：AI 生产率研究",
+          "location": "QJE 2025：Abstract、IV.B、V.A Table II 与 Conclusion 开头",
+          "claim": "15% 是特定客服工作的指标，不是通用工程效率",
+          "role": "result_boundary",
+          "draft_supplement_id": "gse09-supp-qje",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-denning",
+      "listed_title": "Working Sets Past and Present",
+      "listed_url": "https://denninginstitute.com/pjd/PUBS/Workingsets.html",
+      "title": "Working Sets Past and Present",
+      "source_url": "https://denninginstitute.com/pjd/PUBS/Workingsets.html",
+      "version": "Peter J. Denning 作者文献索引页",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/denning.html",
+      "sha256": "5a1be5cf336fbd6a0c68025c5c240ded53ac63d610a4fd2840094e3336e38bb6",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "作者网站此页面全文"
+      ],
+      "scope_sections": [
+        "作者网站此页面全文"
+      ],
+      "scope_reason": "读取作者关于 working set/thrashing 的背景说明；本课不要求 1968 论文全文。",
+      "scope_boundary": "这是作者索引和摘要说明，不能记作 The Working Set Model 原论文全文。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": []
+    },
+    {
+      "id": "gse09-cgroup",
+      "listed_title": "Control Group v2 — memory.max",
+      "listed_url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+      "title": "Control Group v2 — memory.max",
+      "source_url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+      "version": "Linux Kernel 文档当前快照",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/kernel-cgroup.html",
+      "sha256": "b478c1bae99899df476d6b4989cbb516f7ca93c5f009cdff64b802bbc24f3d4b",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "memory.max 小节全文"
+      ],
+      "scope_sections": [
+        "memory.max 小节全文"
+      ],
+      "scope_reason": "只用于核对内存硬限制和 OOM 的精确边界。",
+      "scope_boundary": "未读完整 cgroup v2 管理指南。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": []
+    },
+    {
+      "id": "gse09-apache",
+      "listed_title": "Apache Module mod_proxy_wstunnel",
+      "listed_url": "https://httpd.apache.org/docs/2.4/mod/mod_proxy_wstunnel.html",
+      "title": "Apache Module mod_proxy_wstunnel",
+      "source_url": "https://httpd.apache.org/docs/2.4/mod/mod_proxy_wstunnel.html",
+      "version": "Apache HTTP Server 2.4 文档当前快照",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/apache-websocket.html",
+      "sha256": "88de45c4c34b34cc5fa1e0b9793da30fdc0f101a248b16831e825b744a2be8fd",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "模块页全文"
+      ],
+      "scope_sections": [
+        "模块页全文"
+      ],
+      "scope_reason": "当前讲义的反例：Apache 可代理 WebSocket，问题在典型部署/状态模型。",
+      "scope_boundary": "该模块自 2.4.47 起可由 mod_proxy_http 更好处理；不将旧模块作为新项目推荐。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "架构假设改变：从表单网站到在线协作",
+          "location": "PHP-FPM：pm/max_children/timeout；Apache mod_proxy_wstunnel",
+          "claim": "长连接改变的是容量与状态假设",
+          "role": "clarification",
+          "draft_supplement_id": "gse09-supp-lamp",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-pacioli",
+      "listed_title": "Under the Tuscan Sum: The Italian Tradition",
+      "listed_url": "https://exhibits.lib.ku.edu/exhibits/show/keeping-the-books--the-rubinst/under-the-tuscan-sum---the-ita",
+      "title": "Under the Tuscan Sum: The Italian Tradition",
+      "source_url": "https://exhibits.lib.ku.edu/exhibits/show/keeping-the-books--the-rubinst/under-the-tuscan-sum---the-ita",
+      "version": "University of Kansas Libraries 当前展览页",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/pacioli.html",
+      "sha256": "8dcf990b18c9a1fafc596974a75d5e367b1e9a969bc8bb62c2fcdffd7067dd7b",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "KU 图书馆展览此页面全文"
+      ],
+      "scope_sections": [
+        "KU 图书馆展览此页面全文"
+      ],
+      "scope_reason": "当前讲义用账簿作 Session 事实/投影类比，只核对历史描述。",
+      "scope_boundary": "不主张 Pacioli 发明 Event Sourcing，也没有声称读完原始 1494 年著作。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": []
+    },
+    {
+      "id": "gse09-toolkits",
+      "listed_title": "User Toolkits for Innovation",
+      "listed_url": "https://web.mit.edu/people/evhippel/papers/Toolkits%20JPIM%20final.pdf",
+      "title": "User Toolkits for Innovation",
+      "source_url": "https://web.mit.edu/people/evhippel/papers/Toolkits%20JPIM%20final.pdf",
+      "version": "Eric von Hippel；官方 slides 所链作者 PDF，29 物理页；确切手稿修订号未标",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/toolkits.pdf",
+      "sha256": "e32e1906006a15c1e591549243ea5f310eedf58d42348887d75350242f472c74",
+      "total_pages": 29,
+      "reading_status": "full",
+      "read_pages": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "read_sections": [
+        "摘要；Benefits from shifting design activities；Toolkits as a way to transfer design capability；Repartitioning product development tasks；Elements of a Toolkit（五项要素及例子）"
+      ],
+      "scope_sections": [
+        "摘要；Benefits from shifting design activities；Toolkits as a way to transfer design capability；Repartitioning product development tasks；Elements of a Toolkit（五项要素及例子）"
+      ],
+      "scope_reason": "Creator Mode 核心补充仅需现场试错、任务重分配和工具箱五条件章节；未扩成创新管理全文。",
+      "scope_boundary": "物理页 1、3–4、22–29 未读，不声称整篇全文；PDF 物理页不能冒充期刊页码。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [],
+      "visual_checks": [
+        {
+          "page": 12,
+          "asset": "sources/toolkits-p12.png",
+          "detail": "已实际查看物理页 12，核对五条件列表和完整上下文。"
+        }
+      ],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "把试错留在用户现场",
+          "location": "von Hippel 作者 PDF，物理页 5–21，尤其第 12 页五项条件",
+          "claim": "Creator Mode 需要可试错的工具箱",
+          "role": "mechanism",
+          "draft_supplement_id": "gse09-supp-toolkits",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-vba",
+      "listed_title": "Getting started with VBA in Office",
+      "listed_url": "https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office/",
+      "title": "Getting started with VBA in Office",
+      "source_url": "https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office/",
+      "version": "Microsoft Learn 当前快照",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/vba.html",
+      "sha256": "4a895cf41035cc099a283f71311bce0696832d1b03f7ee16b1f7f211750575fa",
+      "total_pages": null,
+      "reading_status": "full",
+      "read_pages": [],
+      "read_sections": [
+        "Introduction；When to use VBA and why；Doing things another way；VBA Programming 101 至 Properties"
+      ],
+      "scope_sections": [
+        "Introduction；When to use VBA and why；Doing things another way；VBA Programming 101 至 Properties"
+      ],
+      "scope_reason": "说明成熟应用早有对象、方法、属性接口，本课小抽象层接在现有能力上。",
+      "scope_boundary": "后续编辑器、录制宏、安全和详细案例未完整阅读。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "大型 App AI 增强与双向 GenUI",
+          "location": "Shneiderman 1983，物理页 6–10，特别第 8 页；VBA Programming 101 至 Properties",
+          "claim": "GenUI 还需要对象可见、反馈及时与可逆性",
+          "role": "design_boundary",
+          "draft_supplement_id": "gse09-supp-direct",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-direct",
+      "listed_title": "Direct Manipulation: A Step Beyond Programming Languages",
+      "listed_url": "https://www.cs.umd.edu/~ben/papers/Shneiderman1983Direct.pdf",
+      "title": "Direct Manipulation: A Step Beyond Programming Languages",
+      "source_url": "https://www.cs.umd.edu/~ben/papers/Shneiderman1983Direct.pdf",
+      "version": "Ben Shneiderman，1983，作者站扫描 PDF",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/direct-manipulation.pdf",
+      "sha256": "4dc29926c05033d1cdb702444158bf8d154d8a152cad1b4a430ffd0403d3af33",
+      "total_pages": 13,
+      "reading_status": "full",
+      "read_pages": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "read_sections": [
+        "图形/空间表示的问题；Direct Manipulation 概念和四原则；应用与适用边界"
+      ],
+      "scope_sections": [
+        "图形/空间表示的问题；Direct Manipulation 概念和四原则；应用与适用边界"
+      ],
+      "scope_reason": "GenUI 只需对象可见、动作反馈、可逆性和视觉表达边界，限定物理页 6–10。",
+      "scope_boundary": "物理页 1–5、11–13 未读；可交互 HTML 不自动满足直接操纵原则。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [],
+      "visual_checks": [
+        {
+          "page": 8,
+          "asset": "sources/direct-manipulation-p08.png",
+          "detail": "已实际查看物理页 8（印刷页 64），核对是四项原则及相邻问题讨论。"
+        }
+      ],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": [
+        {
+          "item": "lecture-09",
+          "suggested_topic": "大型 App AI 增强与双向 GenUI",
+          "location": "Shneiderman 1983，物理页 6–10，特别第 8 页；VBA Programming 101 至 Properties",
+          "claim": "GenUI 还需要对象可见、反馈及时与可逆性",
+          "role": "design_boundary",
+          "draft_supplement_id": "gse09-supp-direct",
+          "integration_status": "pending_parent_binding"
+        }
+      ]
+    },
+    {
+      "id": "gse09-nasa",
+      "listed_title": "Mars Climate Orbiter Mishap Investigation Board Phase I Report / lesson 641",
+      "listed_url": "https://llis.nasa.gov/lesson/641",
+      "title": "Mars Climate Orbiter Mishap Investigation Board Phase I Report / lesson 641",
+      "source_url": "https://llis.nasa.gov/lesson/641",
+      "version": "NASA LLIS 当前页面骨架",
+      "identity_status": "unverified",
+      "identity_note": "已确认 NASA LLIS 链接与课程标注；SPA 壳未提供实际事故报告正文与标题，不能据此核实原文身份。",
+      "path": "sources/nasa.html",
+      "sha256": "713e07dbd3f2ae3ec4fc04f85e8f661753b94d0933657f3722f81c1c5f00e62c",
+      "total_pages": null,
+      "reading_status": "blocked",
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "scope_reason": "当前讲义背景引用；核心 gap 例子可归于讲义。NASA 页面仅返回 SPA 壳，不能作为已读事故报告。",
+      "scope_boundary": null,
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [
+        "HTTP 200 但只有 1,733 字节应用壳，未取得事故报告正文。"
+      ],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": []
+    },
+    {
+      "id": "gse09-interaction",
+      "listed_title": "Feature Interaction（讲义所链期刊条目）",
+      "listed_url": "https://www.sciencedirect.com/science/article/abs/pii/S1389128613001527",
+      "title": "Feature Interaction（讲义所链期刊条目）",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1389128613001527",
+      "version": null,
+      "identity_status": "unverified",
+      "identity_note": null,
+      "path": null,
+      "sha256": null,
+      "total_pages": null,
+      "reading_status": "blocked",
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "scope_reason": "电话功能冲突背景引用，不升级为本课必读论文；补充不采用未读论文的细节。",
+      "scope_boundary": null,
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [
+        "出版社返回 HTTP 403；标题、作者及正文尚未独立核实。"
+      ],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": []
+    },
+    {
+      "id": "gse09-rdd-paper",
+      "listed_title": "Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing",
+      "listed_url": "https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia",
+      "title": "Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing",
+      "source_url": "https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia",
+      "version": "NSDI 2012 USENIX 条目",
+      "identity_status": "verified",
+      "identity_note": null,
+      "path": "sources/rdd-paper.html",
+      "sha256": "81cb360c2bdb8b611339c11eaa26a38504c19f480617700402f8c71467a828b2",
+      "total_pages": null,
+      "reading_status": "abstract_only",
+      "read_pages": [],
+      "read_sections": [
+        "USENIX 论文身份与摘要页"
+      ],
+      "scope_sections": [
+        "USENIX 论文身份与摘要页"
+      ],
+      "scope_reason": "当前幻灯片提供的延伸原论文链接；本课缓存与重算机制由明确链接的 Spark 官方相关节支撑，不将该条目视为全文。",
+      "scope_boundary": "只读身份/摘要页，没有读取 2012 论文全文。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "known_gaps": [],
+      "visual_checks": [],
+      "related_items": [
+        "lecture-09"
+      ],
+      "contributions": []
+    }
+  ],
+  "completion_boundary": "阅读范围与原始来源已审查；contributions 尚未绑定最终 notes.json，材料整合状态必须保持 pending，不能直接当最终 validator passed。",
+  "source_version_boundary": "官方当前讲义/幻灯片与课堂口述区分；aigc 不表示课后。固定仓库版本和当前网页均不声称等于录制 checkout。"
+}

@@ -1,0 +1,45 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/yjzhao/Downloads/需求和架构 (1) [06-Raw 26生成式软件工程 NJU].mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.100
+    description     : Packed by Bilibili XCoder v2.0.2
+  Duration: 01:36:50.13, start: 0.000000, bitrate: 381 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x410, 253 kb/s, 30 fps, 30 tbr, 16k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 117 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+  Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    description     : Packed by Bilibili XCoder v2.0.2
+    encoder         : Lavf62.12.100
+  Stream #0:0(und): Video: wrapped_avframe, yuv420p(tv, bt709, progressive), 1280x410, q=2-31, 200 kb/s, 30 fps, 30 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 wrapped_avframe
+      handler_name    : VideoHandler
+  Stream #0:1(und): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 pcm_s16le
+      handler_name    : SoundHandler
+frame= 2534 fps=0.0 q=-0.0 size=N/A time=00:01:24.46 bitrate=N/A speed= 168x elapsed=0:00:00.50    
+frame= 5312 fps=5276 q=-0.0 size=N/A time=00:02:57.13 bitrate=N/A speed= 176x elapsed=0:00:01.00    
+frame= 7898 fps=5234 q=-0.0 size=N/A time=00:04:23.23 bitrate=N/A speed= 174x elapsed=0:00:01.50    
+frame=10660 fps=5288 q=-0.0 size=N/A time=00:05:55.33 bitrate=N/A speed= 176x elapsed=0:00:02.01    
+frame=13277 fps=5270 q=-0.0 size=N/A time=00:07:22.56 bitrate=N/A speed= 176x elapsed=0:00:02.51    
+frame=15647 fps=5175 q=-0.0 size=N/A time=00:08:41.53 bitrate=N/A speed= 172x elapsed=0:00:03.02    
+frame=18408 fps=5217 q=-0.0 size=N/A time=00:10:13.60 bitrate=N/A speed= 174x elapsed=0:00:03.52    
+frame=21074 fps=5224 q=-0.0 size=N/A time=00:11:42.46 bitrate=N/A speed= 174x elapsed=0:00:04.03    
+frame=23253 fps=5125 q=-0.0 size=N/A time=00:12:55.10 bitrate=N/A speed= 171x elapsed=0:00:04.53    
+frame=25768 fps=5115 q=-0.0 size=N/A time=00:14:18.93 bitrate=N/A speed= 170x elapsed=0:00:05.03    
+[out#0/null @ 0xcb1028480] video:11217KiB audio:169312KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=27090 fps=5016 q=-0.0 Lsize=N/A time=00:15:03.00 bitrate=N/A speed= 167x elapsed=0:00:05.40    

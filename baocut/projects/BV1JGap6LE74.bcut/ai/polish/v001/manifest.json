@@ -1,0 +1,119 @@
+{
+  "stage": "polish",
+  "version": 1,
+  "protocolVersion": "file-v1",
+  "inputFingerprint": "25944:g1.0:g1175.0~11:si7y1qcyzmba",
+  "model": "agent",
+  "params": {
+    "coreWordsCeiling": 2200,
+    "workerSlots": 3
+  },
+  "pages": [
+    {
+      "id": "p002",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/p002.src.txt",
+      "out": "pages/p002.out.txt"
+    },
+    {
+      "id": "p003",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/p003.src.txt",
+      "out": "pages/p003.out.txt"
+    },
+    {
+      "id": "p001",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/p001.src.txt",
+      "out": "pages/p001.out.txt"
+    },
+    {
+      "id": "p005",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/p005.src.txt",
+      "out": "pages/p005.out.txt"
+    },
+    {
+      "id": "p004",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/p004.src.txt",
+      "out": "pages/p004.out.txt"
+    },
+    {
+      "id": "p006",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/p006.src.txt",
+      "out": "pages/p006.out.txt"
+    },
+    {
+      "id": "p008",
+      "status": "done",
+      "attempts": 2,
+      "src": "pages/p008.src.txt",
+      "out": "pages/p008.out.a2.txt"
+    },
+    {
+      "id": "p007",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/p007.src.txt",
+      "out": "pages/p007.out.txt"
+    },
+    {
+      "id": "p009",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/p009.src.txt",
+      "out": "pages/p009.out.txt"
+    },
+    {
+      "id": "p010",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/p010.src.txt",
+      "out": "pages/p010.out.txt"
+    },
+    {
+      "id": "p012",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/p012.src.txt",
+      "out": "pages/p012.out.txt"
+    },
+    {
+      "id": "p011",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/p011.src.txt",
+      "out": "pages/p011.out.txt"
+    },
+    {
+      "id": "sm1-001",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/sm1-001.src.txt",
+      "out": "pages/sm1-001.out.txt"
+    },
+    {
+      "id": "sn-001",
+      "status": "done",
+      "attempts": 1,
+      "src": "pages/sn-001.src.txt",
+      "out": "pages/sn-001.out.txt"
+    }
+  ],
+  "runs": [
+    {
+      "at": "2026-09-30T15:59:19Z",
+      "kind": "full",
+      "sentences": 878
+    }
+  ],
+  "status": "done"
+}

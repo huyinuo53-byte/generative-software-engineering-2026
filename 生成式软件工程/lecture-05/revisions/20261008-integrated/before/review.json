@@ -1,0 +1,97 @@
+{
+  "run_id": "BV1Nyeq6qEt8-20261002-quality-upgrade",
+  "outcome": "completed",
+  "summary": "完整阅读20块转写，491来源单元逐项覆盖；16节、40图。内容与逐图复核、最终HTML结构/桌面/390px窄屏/打印保真检查通过。未做真实手机或逐秒音频听审。",
+  "validation": {
+    "content": {
+      "status": "passed",
+      "evidence": [
+        "audit.json",
+        "cross-review.json"
+      ]
+    },
+    "image_integrity": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_static": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "desktop": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "narrow": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "real_phone": {
+      "status": "not_requested",
+      "evidence": "未做真实手机设备实测；390px仅浏览器模拟"
+    },
+    "pdf": {
+      "status": "not_requested",
+      "evidence": "临时PDF只用于HTML打印检查，不作为完整PDF交付"
+    },
+    "project_strict": {
+      "status": "passed",
+      "evidence": "project-check.json"
+    },
+    "source_coverage": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "html_print": {
+      "status": "passed",
+      "evidence": "qa/print.json"
+    },
+    "package": {
+      "status": "not_requested",
+      "evidence": "逐视频独立单文件HTML"
+    }
+  },
+  "blocker": null,
+  "resume_condition": null,
+  "source_hashes": {
+    "transcript.json": "5ab5641c1152557735a50fa6ea56715c84488f6a5ad2f474e61bc88bf1bfa33c",
+    "chunks/index.json": "c253d81f1480c50d2f623f8bfaf74b1b7adfc273416bc6504eefcb04f2cb494f",
+    "notes.json": "cf6a373f3c3c710dfc5b65f139991cb29a334660d974bd74fefab4427d0b08d1",
+    "课堂笔记.html": "99d2384846c87f6097f06505fd5438602b50ea0ed203ac43d83f6d8e83eee477",
+    "image-audit.json": "89484ba304fa68b05ead15360cbbf439649c8650ebc5a8744eb6cb9d29df60a9",
+    "qa/browser.json": "f5984e2c83b5d80befd40a70b512e51a755ec8f80d75ce6a4ce783bc4c5aa1a3",
+    "qa/print.json": "0b62dee63d06eb455f006ac776785d3cbdc2e6eeb33e1d4b045336d01dea840b"
+  },
+  "audit": [
+    "audit.json",
+    "cross-review.json"
+  ],
+  "trace_snapshot": "trace-final.json",
+  "scope_revision": 1,
+  "delivered_files": [
+    "课堂笔记.html"
+  ],
+  "lessons": [
+    {
+      "status": "candidate",
+      "scope": "jyywiki.cn GSE2026 HTML讲义",
+      "finding": "官方完整页面可逐页show(n)捕获并按原序汇编PDF；其中视频页可能仅占位，必须单独用实际媒体状态补证。",
+      "evidence": "第7页视频占位与1274.79秒真实视频帧比较",
+      "next_action": "每课逐页目视，动态内容不得仅以图片加载成功验收。"
+    }
+  ],
+  "metrics": {
+    "wall_seconds": null,
+    "active_seconds": null,
+    "tokens": null,
+    "cost": null,
+    "source_units": 491,
+    "transcript_chunks": 20,
+    "selected_images": 40,
+    "official_slide_pages": 39,
+    "sections": 16,
+    "text_blocks": 213
+  },
+  "snapshot_revision_reason": "静态检查区分40正文图与1个运行时lightbox占位图；未改notes或HTML",
+  "finished_at": "2026-10-02T15:35:09.808278+00:00"
+}

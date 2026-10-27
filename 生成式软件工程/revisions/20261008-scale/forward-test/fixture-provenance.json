@@ -1,0 +1,8 @@
+{
+  "fixture": true,
+  "source_image": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-01/frames/slide-38.jpg",
+  "source_image_sha256": "cf09c3a4a25a8527f28bca06f4b3357d1c99e04dd10b3501ea043fdf4db6b06e",
+  "image_reuse_reason": "仅验证 PDF 页面跨节邻接与图片呈现，来源清楚标为 fixture",
+  "notes_sha256": "3db4dfb5595b2de1ea6e8fb0f534cb14d8de99dccbac531ffedde9755664aeb0",
+  "index_scope": "合成时间与来源单元，不对应真实录音"
+}

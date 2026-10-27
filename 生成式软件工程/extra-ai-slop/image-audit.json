@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6",
+  "actor": "lecture05-agent-authoring-extra",
+  "method": "17候选帧每10秒采样全部目视，8最终图又各自单独目视；验收对象是原视频画面的忠实记录，不是其AI生成论点的正确性。",
+  "source_visual_limitations": [
+    "未取得未遮挡原始信息图；没有声称还原头像后方文字",
+    "90秒简历是原视频已有局部，不冒充完整PDF",
+    "正文和补充列明图文偏移、重复及日期来源问题"
+  ],
+  "images": [
+    {
+      "section": 1,
+      "frame": 1,
+      "path": "frames/010.jpg",
+      "sha256": "6e64fdc713bb9b4c74ef5bb9692dcf328e5e1b05ff6e60bcf4c6e9df0283688a",
+      "purpose": "保存AI改编短片的真实画面及其可见质量问题，支持正文的图文差异复核",
+      "expected_information": "四格图含在线课程、权威、文凭能力与多米诺链；数字人位于右下，原图局部文字被覆盖。",
+      "observed_information": "单图实际目视确认：四格图含在线课程、权威、文凭能力与多米诺链；数字人位于右下，原图局部文字被覆盖。",
+      "comparison_evidence": "ffmpeg在10秒提取完整1920×1072帧；view_image单独检查此帧，并与本节source_ids原文对照。",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/失败的AI Slop数字永生尝试.mp4",
+          "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+          "detail": "本短片原MP4的10秒；画面遮挡和重复内容均原有"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "完整保留本次已取得原视频的实际像素。原短片质量问题作为证据明确标出，非修复后的权威讲义；正文旁白要点来自全文转写，不从被挡文字猜测。"
+    },
+    {
+      "section": 2,
+      "frame": 1,
+      "path": "frames/020.jpg",
+      "sha256": "6c59d604628ab8f17dadc1eb58326ab2b52995583e9a48dfad3ce1168e5344a6",
+      "purpose": "保存AI改编短片的真实画面及其可见质量问题，支持正文的图文差异复核",
+      "expected_information": "三方豆包出题做题改题循环可见；第4与5块重复同一标题，第5块讲焦虑，右下有遮挡。",
+      "observed_information": "单图实际目视确认：三方豆包出题做题改题循环可见；第4与5块重复同一标题，第5块讲焦虑，右下有遮挡。",
+      "comparison_evidence": "ffmpeg在20秒提取完整1920×1072帧；view_image单独检查此帧，并与本节source_ids原文对照。",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/失败的AI Slop数字永生尝试.mp4",
+          "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+          "detail": "本短片原MP4的20秒；画面遮挡和重复内容均原有"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "完整保留本次已取得原视频的实际像素。原短片质量问题作为证据明确标出，非修复后的权威讲义；正文旁白要点来自全文转写，不从被挡文字猜测。"
+    },
+    {
+      "section": 3,
+      "frame": 1,
+      "path": "frames/040.jpg",
+      "sha256": "88f539f4b62965e9faeefbd27584968efac8273af1e9c36dbac958c165b5f137",
+      "purpose": "保存AI改编短片的真实画面及其可见质量问题，支持正文的图文差异复核",
+      "expected_information": "短期省力、同伴比较与长期基础图可见；科研项目字样重复，底部一部分被头像覆盖。",
+      "observed_information": "单图实际目视确认：短期省力、同伴比较与长期基础图可见；科研项目字样重复，底部一部分被头像覆盖。",
+      "comparison_evidence": "ffmpeg在40秒提取完整1920×1072帧；view_image单独检查此帧，并与本节source_ids原文对照。",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/失败的AI Slop数字永生尝试.mp4",
+          "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+          "detail": "本短片原MP4的40秒；画面遮挡和重复内容均原有"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "完整保留本次已取得原视频的实际像素。原短片质量问题作为证据明确标出，非修复后的权威讲义；正文旁白要点来自全文转写，不从被挡文字猜测。"
+    },
+    {
+      "section": 4,
+      "frame": 1,
+      "path": "frames/060.jpg",
+      "sha256": "7fef6a6b03422f1d6554a0a21532fd780e0f194874ccf1c0d52dcfd9a117c185",
+      "purpose": "保存AI改编短片的真实画面及其可见质量问题，支持正文的图文差异复核",
+      "expected_information": "题头“标准简历的力量”和右下标准简历建议清楚可见，能直接比较旁白是否有此建议。",
+      "observed_information": "单图实际目视确认：题头“标准简历的力量”和右下标准简历建议清楚可见，能直接比较旁白是否有此建议。",
+      "comparison_evidence": "ffmpeg在60秒提取完整1920×1072帧；view_image单独检查此帧，并与本节source_ids原文对照。",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/失败的AI Slop数字永生尝试.mp4",
+          "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+          "detail": "本短片原MP4的60秒；画面遮挡和重复内容均原有"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "完整保留本次已取得原视频的实际像素。原短片质量问题作为证据明确标出，非修复后的权威讲义；正文旁白要点来自全文转写，不从被挡文字猜测。"
+    },
+    {
+      "section": 5,
+      "frame": 1,
+      "path": "frames/090.jpg",
+      "sha256": "91be45eccb62c2ac4fe1bc1974a2c45bf4528a15dddb4f8632349eb7df2bd380",
+      "purpose": "保存AI改编短片的真实画面及其可见质量问题，支持正文的图文差异复核",
+      "expected_information": "带原始黑块的匿名简历盖在信息图上，底部简历超出画幅；没有尝试补造或恢复个人信息。",
+      "observed_information": "单图实际目视确认：带原始黑块的匿名简历盖在信息图上，底部简历超出画幅；没有尝试补造或恢复个人信息。",
+      "comparison_evidence": "ffmpeg在90秒提取完整1920×1072帧；view_image单独检查此帧，并与本节source_ids原文对照。",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/失败的AI Slop数字永生尝试.mp4",
+          "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+          "detail": "本短片原MP4的90秒；画面遮挡和重复内容均原有"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "完整保留本次已取得原视频的实际像素。原短片质量问题作为证据明确标出，非修复后的权威讲义；正文旁白要点来自全文转写，不从被挡文字猜测。"
+    },
+    {
+      "section": 5,
+      "frame": 2,
+      "path": "frames/110.jpg",
+      "sha256": "98a3be48562326881bfe65d9cdb10482211acfc62b76e606a1f8396e081c4536",
+      "purpose": "保存AI改编短片的真实画面及其可见质量问题，支持正文的图文差异复核",
+      "expected_information": "背景图重新显露，学术裁缝、拼接项目与Galgame对照可见；右下仍保留原头像遮挡。",
+      "observed_information": "单图实际目视确认：背景图重新显露，学术裁缝、拼接项目与Galgame对照可见；右下仍保留原头像遮挡。",
+      "comparison_evidence": "ffmpeg在110秒提取完整1920×1072帧；view_image单独检查此帧，并与本节source_ids原文对照。",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/失败的AI Slop数字永生尝试.mp4",
+          "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+          "detail": "本短片原MP4的110秒；画面遮挡和重复内容均原有"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "完整保留本次已取得原视频的实际像素。原短片质量问题作为证据明确标出，非修复后的权威讲义；正文旁白要点来自全文转写，不从被挡文字猜测。"
+    },
+    {
+      "section": 6,
+      "frame": 1,
+      "path": "frames/130.jpg",
+      "sha256": "af45fdc7ae8238c02edb422ea60e94f44adb9db8af63f5c5affc12b97251827e",
+      "purpose": "保存AI改编短片的真实画面及其可见质量问题，支持正文的图文差异复核",
+      "expected_information": "六格简历内卷图；硕果累累重复；底部2024.11.16署记可见，未当成课程日期。",
+      "observed_information": "单图实际目视确认：六格简历内卷图；硕果累累重复；底部2024.11.16署记可见，未当成课程日期。",
+      "comparison_evidence": "ffmpeg在130秒提取完整1920×1072帧；view_image单独检查此帧，并与本节source_ids原文对照。",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/失败的AI Slop数字永生尝试.mp4",
+          "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+          "detail": "本短片原MP4的130秒；画面遮挡和重复内容均原有"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "完整保留本次已取得原视频的实际像素。原短片质量问题作为证据明确标出，非修复后的权威讲义；正文旁白要点来自全文转写，不从被挡文字猜测。"
+    },
+    {
+      "section": 7,
+      "frame": 1,
+      "path": "frames/150.jpg",
+      "sha256": "1c596b1e2bb90b2d3e17ae7b73654fb188ba7fc74a5e30cc7745037a26de0332",
+      "purpose": "保存AI改编短片的真实画面及其可见质量问题，支持正文的图文差异复核",
+      "expected_information": "启蒙、挑战、驾驭AI、实践与讨论的图式完整画幅保留；右下部分文字被原头像覆盖。",
+      "observed_information": "单图实际目视确认：启蒙、挑战、驾驭AI、实践与讨论的图式完整画幅保留；右下部分文字被原头像覆盖。",
+      "comparison_evidence": "ffmpeg在150秒提取完整1920×1072帧；view_image单独检查此帧，并与本节source_ids原文对照。",
+      "sources": [
+        {
+          "path": "/Users/yjzhao/Downloads/失败的AI Slop数字永生尝试.mp4",
+          "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+          "detail": "本短片原MP4的150秒；画面遮挡和重复内容均原有"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "完整保留本次已取得原视频的实际像素。原短片质量问题作为证据明确标出，非修复后的权威讲义；正文旁白要点来自全文转写，不从被挡文字猜测。"
+    }
+  ]
+}

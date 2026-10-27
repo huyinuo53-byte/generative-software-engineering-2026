@@ -1,0 +1,84 @@
+{
+  "status": "ok",
+  "project": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-09-BV144nc6KEA4.bcut",
+  "changed": [],
+  "next": "bcut polish '/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-09-BV144nc6KEA4.bcut'",
+  "data": {
+    "attention": [],
+    "manifest": {
+      "formatVersion": "0.1",
+      "language": "zh",
+      "media": {
+        "duration": 5363.541375,
+        "fps": 30.0,
+        "hash": "sha256-d2139e87060b0a3752eac6843bc60765a6f57a5650af6d6ba6687c4c01459d6a",
+        "height": 410,
+        "path": "/Users/yjzhao/Downloads/DeepSeek Harness (1) [09-Raw 26生成式软件工程 NJU].mp4",
+        "probeStamp": "213549316:1792976660246",
+        "rotation": 0,
+        "sourceMetadata": {
+          "chapters": [
+            {
+              "end": 1407.0,
+              "start": 0.0,
+              "title": "需求"
+            },
+            {
+              "end": 2301.0,
+              "start": 1407.0,
+              "title": "架构"
+            },
+            {
+              "end": 3956.0,
+              "start": 2301.0,
+              "title": "设计"
+            },
+            {
+              "end": 5364.0,
+              "start": 3956.0,
+              "title": "生态"
+            }
+          ],
+          "extractor": "BiliBili",
+          "id": "BV144nc6KEA4",
+          "thumbnail": "http://i0.hdslb.com/bfs/archive/42232c3515ecb0e7b27b1bfb1744f611a0ba78f6.jpg",
+          "title": "DeepSeek Harness (1) [09-Raw/26生成式软件工程/NJU]",
+          "uploadDate": "20261020",
+          "uploader": "绿导师原谅你了",
+          "url": "https://www.bilibili.com/video/BV144nc6KEA4",
+          "viewCount": 29154
+        },
+        "sourceUrl": "https://www.bilibili.com/video/BV144nc6KEA4",
+        "width": 1280
+      },
+      "stages": {
+        "transcribe": {
+          "engine": "moss-transcribe-diarize",
+          "input_fingerprint": "sha256-db546093d8ef05f0d433011d07c226f7a07fd9591f1d318846a79852cb210b1b",
+          "status": "done"
+        }
+      },
+      "title": "DeepSeek Harness (1) [09-Raw/26生成式软件工程/NJU]",
+      "url": "https://www.bilibili.com/video/BV144nc6KEA4"
+    },
+    "stages": {
+      "asr": "fresh",
+      "asrLayout": "fresh",
+      "chapters": "never",
+      "polish": "never",
+      "segment": "never",
+      "translations": {}
+    },
+    "suggestedNext": [
+      "bcut polish '/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-09-BV144nc6KEA4.bcut'",
+      "bcut translate '/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-09-BV144nc6KEA4.bcut' --lang zh"
+    ],
+    "transcript": {
+      "chapters": 0,
+      "lang": "zh",
+      "orphanOverrides": [],
+      "speakers": 1,
+      "words": 23657
+    }
+  }
+}

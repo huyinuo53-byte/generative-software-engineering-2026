@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "reviewer": "root",
+  "html_sha256": "c53214a052ee6b68c6fe49c119c448b27084fb3dc2739dd75f49909936c9b5ab",
+  "journey_sha256": "97c6abdfc8d4d827edfbc5622fde95e88d3c14a873ac0200f2eade88990b83b8",
+  "screenshots_viewed": [
+    {
+      "path": "1280-top.png",
+      "sha256": "38ca3d2994482cfd04b6657018a0dc113d13083854de4b91c32eeee763dcff56"
+    },
+    {
+      "path": "390-top.png",
+      "sha256": "9b0eb2cfa3029b7002a74e09623b3cb86d0ec5a1b41a0efba95915b2c3e5874e"
+    },
+    {
+      "path": "390-native-pan.png",
+      "sha256": "6eaa385a1ade8194ab4722c76e3c0f512325651962ec486d873f82b3c3c2ad6c"
+    },
+    {
+      "path": "320-fit.png",
+      "sha256": "3c63f7785740a0664806e97651dfdc057eaf5145260a937b267617a08c2c7a6a"
+    },
+    {
+      "path": "390-quiz.png",
+      "sha256": "8fa3fbdd0bcb0db0e650d63cec91921efc947ca58bc90eb3499285638f495c9d"
+    },
+    {
+      "path": "390-repo.png",
+      "sha256": "65487995e34bc8703e30dc8f20130693d4f25243be4cd6b0e2fecc94ddbb9f30"
+    }
+  ],
+  "observations": [
+    "桌面标题09期号与32节目录清晰",
+    "390px摘要、目录和长英文标题换行正常",
+    "原尺寸全幅图在独立容器横向平移，关闭和适合屏幕可用",
+    "320px适合屏幕不产生整页溢出",
+    "自测问题与参考答案分层，回查第1节正常",
+    "固定源码补充、flush边界与讲义图邻接，长标识可换行"
+  ],
+  "scope": "代表截图实际目视+3视口完整读者路径；未做真实手机或原生打印。"
+}

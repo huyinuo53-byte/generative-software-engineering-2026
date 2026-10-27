@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "ids_unique": true,
+  "anchors_valid": true,
+  "embedded_images": 53,
+  "all_content_images_offline": true,
+  "sentences_coverage": 533,
+  "omitted": 0,
+  "ui_scope": "not checked here; coordinator owns browser QA"
+}

@@ -1,0 +1,706 @@
+{
+  "schema_version": 1,
+  "notes_sha256": "5023817b0fa063e8ba806226ad39444be5eac4d826b367605496423658d295ee",
+  "images": [
+    {
+      "section": 1,
+      "frame": 1,
+      "path": "frames/page-001.webp",
+      "sha256": "ddc128f22eb3c671e323a9dbfb57eac92c6b12b727df154c79f3e0be9812f9cc",
+      "purpose": "复习与 Lab 1：会成长的个人助手。",
+      "expected_information": "Lab1目标与成长验收文字",
+      "observed_information": "逐图目视：Lab1目标与成长验收文字",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第1页/网页第1页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 2,
+      "frame": 1,
+      "path": "frames/page-002.webp",
+      "sha256": "bbb9f396677eb552b753ac05794e43570dd4d7bf7ad44817649e64e53564ba09",
+      "purpose": "项目文件包含意图、规约、实现、测试、记忆与说明。",
+      "expected_information": "intent/spec/code/test/memory/README文件图",
+      "observed_information": "逐图目视：intent/spec/code/test/memory/README文件图",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第2页/网页第2页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 2,
+      "frame": 2,
+      "path": "frames/page-003.webp",
+      "sha256": "374b2529b18790cac280cc4207f17d6f1ed535294f7a766ce2c133cbacad4dcb",
+      "purpose": "文件之外的关联：修改提醒时间需要复查哪些实现和测试？",
+      "expected_information": "意图规约实现测试之间箭头及10改30分钟问题",
+      "observed_information": "逐图目视：意图规约实现测试之间箭头及10改30分钟问题",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第3页/网页第3页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 3,
+      "frame": 1,
+      "path": "frames/page-004.webp",
+      "sha256": "0b0ed0f2fa37a94a718dd168fc3926638aa9fc022ecf0871069613da97b5d01b",
+      "purpose": "工具演化与 AI 时代软件形态：本页结论是推论。",
+      "expected_information": "压缩包SVN Git与AI时代推论",
+      "observed_information": "逐图目视：压缩包SVN Git与AI时代推论",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第4页/网页第4页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 3,
+      "frame": 2,
+      "path": "frames/page-005.webp",
+      "sha256": "d157bd79059b6904b2aff173e045891251ac079bc9e02dfb1fb1c5016975a885",
+      "purpose": "Git 保存文件、目录、快照和快照关系；merge 汇合历史，rebase 在新起点重放修改。",
+      "expected_information": "快照/merge/rebase关系说明",
+      "observed_information": "逐图目视：快照/merge/rebase关系说明",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第5页/网页第5页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 4,
+      "frame": 1,
+      "path": "frames/page-006.webp",
+      "sha256": "6e687047ef3493e375817b6066a042a06ec4d7fc2b56bad0797154fd579962e4",
+      "purpose": "学生留言引出的学习方法：接触社区规范，形成自己的理解。",
+      "expected_information": "学生留言截图、学习目的与first principles",
+      "observed_information": "逐图目视：学生留言截图、学习目的与first principles",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第6页/网页第6页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 5,
+      "frame": 1,
+      "path": "frames/page-007.webp",
+      "sha256": "3e293982b71069461b01fbd90b92a093eb6c6f716eefd30dfaad9e5edd969cab",
+      "purpose": "我们真正想操作的是 change；Git 常通过 commit 表示一次修改。",
+      "expected_information": "commit之间delta和change一等概念",
+      "observed_information": "逐图目视：commit之间delta和change一等概念",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第7页/网页第7页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 6,
+      "frame": 1,
+      "path": "frames/page-008.webp",
+      "sha256": "3a047ad91c4e0da1633b346b6be1c03b7ffc4f7308540660661f4b52a3cd9882",
+      "purpose": "change ID 通常延续，commit ID 随重写改变。",
+      "expected_information": "两种ID在重写时变化图示",
+      "observed_information": "逐图目视：两种ID在重写时变化图示",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第8页/网页第8页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 6,
+      "frame": 2,
+      "path": "frames/page-009.webp",
+      "sha256": "829584e629a08f78c07ca366cfbfc36cf36abd92a7b70879b8878308fdb87e02",
+      "purpose": "工作副本与冲突：把未完成工作保存为可继续操作的状态。",
+      "expected_information": "工作副本commit与冲突可存储状态",
+      "observed_information": "逐图目视：工作副本commit与冲突可存储状态",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第9页/网页第9页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 7,
+      "frame": 1,
+      "path": "frames/page-010.webp",
+      "sha256": "5d002620fb6ef03823eda3713d2989133a912ed34f3a9d3ab4802f025085a554",
+      "purpose": "肌肉记忆会限制注意力；先理解设计，再理解历史。",
+      "expected_information": "肌肉记忆和先理解好设计再理解历史",
+      "observed_information": "逐图目视：肌肉记忆和先理解好设计再理解历史",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第10页/网页第10页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 7,
+      "frame": 2,
+      "path": "frames/page-011.webp",
+      "sha256": "9778c1ebc6d3c97a49e872b322ec9a215b31db79d28c52dab436fff087e1612a",
+      "purpose": "人类的单线程类比与 stash、branch 的使用场景。",
+      "expected_information": "single-threaded I/O与stash/branch",
+      "observed_information": "逐图目视：single-threaded I/O与stash/branch",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第11页/网页第11页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 8,
+      "frame": 1,
+      "path": "frames/page-012.webp",
+      "sha256": "48a0b165a52020ba8ac170c61d6d59c33a6c2c5abfa5d3b836da0b2158220cd8",
+      "purpose": "Agent 更快且可并行：共享工作目录容易暴露中间态。",
+      "expected_information": "分钟级生成、并行以及共享目录中间态",
+      "observed_information": "逐图目视：分钟级生成、并行以及共享目录中间态",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第12页/网页第12页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 8,
+      "frame": 2,
+      "path": "frames/demo-2782-screen.webp",
+      "sha256": "5b428c1c0de8701549168d9e014c5b1d0aa02e2b7ac7580444cdf27d9ca96b8e",
+      "purpose": "46:22 原视频：主 Agent 派发任务、两个会话并行生成大量代码；日志自报不等于独立验证。（右侧屏幕裁切；原始全画幅留存于证据目录。）",
+      "expected_information": "主Agent任务表与两个并行生成会话",
+      "observed_information": "逐图目视：主Agent任务表与两个并行生成会话",
+      "comparison_evidence": "原视频同秒全幅与右侧裁图对照，未改变时码；正文补齐可读的关键文字",
+      "sources": [
+        {
+          "path": "frames/demo-2782.png",
+          "sha256": "c3f22136ab740e021525f2c0247bccc3b0d9c4ad2b61702877bd984388605160",
+          "detail": "视频2782秒全幅1280×410，裁切x549..1280/y0..410保留屏幕区"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "用途与图示范围一致，未将视口内局部画面声称为整个软件/完整架构；原全幅和文字观察记录一并保留"
+    },
+    {
+      "section": 9,
+      "frame": 1,
+      "path": "frames/page-013.webp",
+      "sha256": "6de76b944029b78c29f19312b62850e7ccde2363deed45ad092f1e4b7016485b",
+      "purpose": "一个仓库、多个工作目录；共享对象不代表自动合并。",
+      "expected_information": "每worktree独立HEAD/index、共享对象及两条命令",
+      "observed_information": "逐图目视：每worktree独立HEAD/index、共享对象及两条命令",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第13页/网页第13页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 9,
+      "frame": 2,
+      "path": "frames/demo-2905-screen.webp",
+      "sha256": "dab507a226a2246db02db1470e8ad9fef1d5585e7873e49bc533269a7186b31b",
+      "purpose": "48:25 原视频：进程工作目录与独立分支状态。（右侧屏幕裁切；原始全画幅留存于证据目录。）",
+      "expected_information": "进程cwd、worktree分支与提交历史",
+      "observed_information": "逐图目视：进程cwd、worktree分支与提交历史",
+      "comparison_evidence": "原视频同秒全幅与右侧裁图对照，未改变时码；正文补齐可读的关键文字",
+      "sources": [
+        {
+          "path": "frames/demo-2905.png",
+          "sha256": "75f16edafe0a4a9fff60a3f783c9996cd2c3cbf10960347134c6c9ac50ab042f",
+          "detail": "视频2905秒全幅1280×410，裁切x549..1280/y0..410保留屏幕区"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "用途与图示范围一致，未将视口内局部画面声称为整个软件/完整架构；原全幅和文字观察记录一并保留"
+    },
+    {
+      "section": 9,
+      "frame": 3,
+      "path": "frames/demo-2990-screen.webp",
+      "sha256": "0e185f11a0972f7868034c977a90199c7e33028ccc2c64b98ab77d0ba6657646",
+      "purpose": "49:50 原视频：.git 文本中的 gitdir 指向主仓库 worktrees 管理目录。（右侧屏幕裁切；原始全画幅留存于证据目录。）",
+      "expected_information": ".git文件的gitdir行指向主仓库worktrees/slave-b",
+      "observed_information": "逐图目视：.git文件的gitdir行指向主仓库worktrees/slave-b",
+      "comparison_evidence": "原视频同秒全幅与右侧裁图对照，未改变时码；正文补齐可读的关键文字",
+      "sources": [
+        {
+          "path": "frames/demo-2990.png",
+          "sha256": "c663f61bb1fcf2cd2327f7314e28ce6a366c406aa1ccc9325b4c640bc0912c98",
+          "detail": "视频2990秒全幅1280×410，裁切x549..1280/y0..410保留屏幕区"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "用途与图示范围一致，未将视口内局部画面声称为整个软件/完整架构；原全幅和文字观察记录一并保留"
+    },
+    {
+      "section": 9,
+      "frame": 4,
+      "path": "frames/demo-3020-screen.webp",
+      "sha256": "d5f409f5b913f4d9ee1b4bbf54a721d351e88f4bf94827811522b6c9d1d988dd",
+      "purpose": "50:20 原视频：管理目录里的 HEAD、index、logs 等文件。（右侧屏幕裁切；原始全画幅留存于证据目录。）",
+      "expected_information": "linked worktree管理目录内HEAD/index/logs/commondir",
+      "observed_information": "逐图目视：linked worktree管理目录内HEAD/index/logs/commondir",
+      "comparison_evidence": "原视频同秒全幅与右侧裁图对照，未改变时码；正文补齐可读的关键文字",
+      "sources": [
+        {
+          "path": "frames/demo-3020.png",
+          "sha256": "ae88e0be80fa1672b799d5423d6a4c21773dac2a722ef5ff2ecc0bd8308bb452",
+          "detail": "视频3020秒全幅1280×410，裁切x549..1280/y0..410保留屏幕区"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "用途与图示范围一致，未将视口内局部画面声称为整个软件/完整架构；原全幅和文字观察记录一并保留"
+    },
+    {
+      "section": 10,
+      "frame": 1,
+      "path": "frames/page-014.webp",
+      "sha256": "afb4669b22963512a44ecfe8a66bf3f806e85c3de34e25c3d784e18b3526ecc1",
+      "purpose": "人的限制塑造工具；版本历史可以服务定位、恢复与教训。",
+      "expected_information": "人的限制及归责转恢复与NASA类比",
+      "observed_information": "逐图目视：人的限制及归责转恢复与NASA类比",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第14页/网页第14页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 11,
+      "frame": 1,
+      "path": "frames/page-015.webp",
+      "sha256": "fe3ca9d0e12c11343bde63a378621930dcf2e1b4821d04b1f57302c2acdacc13",
+      "purpose": "主 Agent 规划、子 Agent 上锁干活：把部分冲突转成等待。",
+      "expected_information": "主Agent规划、子Agent锁定与事后MVCC类比",
+      "observed_information": "逐图目视：主Agent规划、子Agent锁定与事后MVCC类比",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第15页/网页第15页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 11,
+      "frame": 2,
+      "path": "frames/page-016.webp",
+      "sha256": "99afd5a9332296849d319be2b6cd30c8e42de4dc1fd4cc9f204fb889e3266a3d",
+      "purpose": "锁的边界、最新状态、验证与可恢复快照。",
+      "expected_information": "锁保护共享状态、五步流程与advisory协议",
+      "observed_information": "逐图目视：锁保护共享状态、五步流程与advisory协议",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第16页/网页第16页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 12,
+      "frame": 1,
+      "path": "frames/page-017.webp",
+      "sha256": "ecb15127f503713c85ce8bb4568ddb0e7982cc079aabbc9152966a54c94a1ad5",
+      "purpose": "版本控制只是工具；团队管理仍需任务分解与协调。",
+      "expected_information": "团队管理与AI斩杀线条件讨论",
+      "observed_information": "逐图目视：团队管理与AI斩杀线条件讨论",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第17页/网页第17页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 12,
+      "frame": 2,
+      "path": "frames/page-018.webp",
+      "sha256": "ceb067415f7dd46b55d7cd7d2971a56309f2e7079a4cf83c8d6364109ae3f647",
+      "purpose": "沟通关系与四类团队摩擦。",
+      "expected_information": "n(n−1)/2公式与四种团队摩擦",
+      "observed_information": "逐图目视：n(n−1)/2公式与四种团队摩擦",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第18页/网页第18页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 12,
+      "frame": 3,
+      "path": "frames/page-019.webp",
+      "sha256": "aeaac9fb84fdc8a81da2ca1720e580f7a458588c422d6f2bc1d8a38b843f0e9c",
+      "purpose": "记住历史、并行探索、汇合成果；失败尝试也留下教训。",
+      "expected_information": "并行探索A/B图、失败教训与汇合成果",
+      "observed_information": "逐图目视：并行探索A/B图、失败教训与汇合成果",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第19页/网页第19页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 13,
+      "frame": 1,
+      "path": "frames/demo-4320-screen.webp",
+      "sha256": "a3a2795046e497a32108e3b26bb7cfe0930bfb9328296cea65341def6a67f5df",
+      "purpose": "72:00 原视频：单向汉诺塔源码、塔状态和调用轨迹；移动方向为 A→B→C→A。（右侧屏幕裁切；原始全画幅留存于证据目录。）",
+      "expected_information": "单向Hanoi完整可见递归函数、三塔、变量及调用轨迹",
+      "observed_information": "逐图目视：单向Hanoi完整可见递归函数、三塔、变量及调用轨迹",
+      "comparison_evidence": "原视频同秒全幅与右侧裁图对照，未改变时码；正文补齐可读的关键文字",
+      "sources": [
+        {
+          "path": "frames/demo-4320.png",
+          "sha256": "51bd05046db863c2021abe609f1e270ecbf088d30393e8281c92bf7d5a82a334",
+          "detail": "视频4320秒全幅1280×410，裁切x549..1280/y0..410保留屏幕区"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "用途与图示范围一致，未将视口内局部画面声称为整个软件/完整架构；原全幅和文字观察记录一并保留"
+    },
+    {
+      "section": 14,
+      "frame": 1,
+      "path": "frames/page-020.webp",
+      "sha256": "087542dc4d7a9ed30f5f5011a220b38633845fd35498b8f7c13ff565bb7a0687",
+      "purpose": "常规模型方案：API、数据库、对象存储与按需后台任务。",
+      "expected_information": "Pico增值服务与模型数据库栈建议",
+      "observed_information": "逐图目视：Pico增值服务与模型数据库栈建议",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第20页/网页第20页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 14,
+      "frame": 2,
+      "path": "frames/page-021.webp",
+      "sha256": "a474cf91397fb32d47fb21dd3f766ab8a9dfab113137c0242ad3928bd28f02b1",
+      "purpose": "把探索过程、版本差异与点评关联起来。",
+      "expected_information": "Git版本历史/diff/notes与动作轨迹",
+      "observed_information": "逐图目视：Git版本历史/diff/notes与动作轨迹",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第21页/网页第21页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 15,
+      "frame": 1,
+      "path": "frames/page-022.webp",
+      "sha256": "54a6b4e87de5abdbf95ae539836dc64757b8bbf62326a17723fc5f799348cc29",
+      "purpose": "从零开始连需求也未对齐；确定得越早，越可能把误解固定下来。",
+      "expected_information": "包工头、Intent–Spec–Impl Gap与需求变化",
+      "observed_information": "逐图目视：包工头、Intent–Spec–Impl Gap与需求变化",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第22页/网页第22页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 16,
+      "frame": 1,
+      "path": "frames/page-023.webp",
+      "sha256": "1eb10820d1fcb9b9ed9eeee06d617a16b0233ae269cf516031467a8b23eca9fa",
+      "purpose": "代码保留结果，决策记录保留原因与走不通的路。",
+      "expected_information": "反复对话到聊天消失只剩代码的循环图",
+      "observed_information": "逐图目视：反复对话到聊天消失只剩代码的循环图",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第23页/网页第23页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 17,
+      "frame": 1,
+      "path": "frames/demo-5460-screen.webp",
+      "sha256": "18f620ea5dab61969486b7251bbb6c7ba5c592cc42eafbf7d4686008c6a8c7d0",
+      "purpose": "91:00 原视频：demo 日志与尚未初始化 Git 的报错；日志中的 sent 不代表真实发信。（右侧屏幕裁切；原始全画幅留存于证据目录。）",
+      "expected_information": "demo日志sent/receipt与右侧not a git repository",
+      "observed_information": "逐图目视：demo日志sent/receipt与右侧not a git repository",
+      "comparison_evidence": "原视频同秒全幅与右侧裁图对照，未改变时码；正文补齐可读的关键文字",
+      "sources": [
+        {
+          "path": "frames/demo-5460.png",
+          "sha256": "19c85c4df6396517771997cd8bb37977048e52f24a3fa1cd6554d780680b3dfc",
+          "detail": "视频5460秒全幅1280×410，裁切x549..1280/y0..410保留屏幕区"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "用途与图示范围一致，未将视口内局部画面声称为整个软件/完整架构；原全幅和文字观察记录一并保留"
+    },
+    {
+      "section": 17,
+      "frame": 2,
+      "path": "frames/demo-5520-screen.webp",
+      "sha256": "c80c8078cd59466cb73f467008631efaed564a6802086ce7a1599d71eabee90b",
+      "purpose": "92:00 原视频：模型明确说明 demo 用替身数据、live 尚未验证，并展示分层架构。（右侧屏幕裁切；原始全画幅留存于证据目录。）",
+      "expected_information": "左侧fixture/live边界说明完整、右侧架构局部；图的用途是记录可替换传输与核心层，数据层底部超出原视频视口，未作为完整架构全图",
+      "observed_information": "逐图目视：左侧fixture/live边界说明完整、右侧架构局部；图的用途是记录可替换传输与核心层，数据层底部超出原视频视口，未作为完整架构全图",
+      "comparison_evidence": "原视频同秒全幅与右侧裁图对照，未改变时码；正文补齐可读的关键文字",
+      "sources": [
+        {
+          "path": "frames/demo-5520.png",
+          "sha256": "093578b26792ae26cffd71d420bb3e9ffc94417908180845b0a99961c80f091c",
+          "detail": "视频5520秒全幅1280×410，裁切x549..1280/y0..410保留屏幕区"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "用途与图示范围一致，未将视口内局部画面声称为整个软件/完整架构；原全幅和文字观察记录一并保留"
+    },
+    {
+      "section": 18,
+      "frame": 1,
+      "path": "frames/page-024.webp",
+      "sha256": "59271abf828730d49012a81564cda9f3e995bf51132c7a2bf21b88bc7413bff3",
+      "purpose": "MVP 验证需求：立即可用但不完备，先验证最关键假设。",
+      "expected_information": "MVP定义、风险和选择假设",
+      "observed_information": "逐图目视：MVP定义、风险和选择假设",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第24页/网页第24页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 19,
+      "frame": 1,
+      "path": "frames/page-025.webp",
+      "sha256": "c15687855fbd1eceaf686d2fa12fd311f42dee568704531140211dadae454b0b",
+      "purpose": "早期 Prompt 影响方向；可用版本和可回查历史帮助重新检查设计。",
+      "expected_information": "早期prompt/technical debt/留历史与架构反思",
+      "observed_information": "逐图目视：早期prompt/technical debt/留历史与架构反思",
+      "comparison_evidence": "官方逐页DOM全文、相邻页、原始PNG与压缩后WebP逐图对照",
+      "sources": [
+        {
+          "path": "sources/source-slides.pdf",
+          "sha256": "f42a92eca2f56bbe8cd58fe937f9a82d9c23223db4cca437c96ada2d172d1d01",
+          "detail": "汇编PDF物理第25页/网页第25页"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "关闭过渡并隐藏inactive slide后重抓25页；最终压缩图逐页核对，无叠页和遗漏"
+    },
+    {
+      "section": 19,
+      "frame": 2,
+      "path": "frames/demo-5760-screen.webp",
+      "sha256": "7624819802aee013d4ffdb05dddeeaa02d47d70700ab01bac685644d3da1c8d2",
+      "purpose": "96:00 原视频：模型展示确认执行、幂等与工作流设计说明，未独立验证实现。（右侧屏幕裁切；原始全画幅留存于证据目录。）",
+      "expected_information": "执行入口、冻结payload、幂等/队列及组合流程文字",
+      "observed_information": "逐图目视：执行入口、冻结payload、幂等/队列及组合流程文字",
+      "comparison_evidence": "原视频同秒全幅与右侧裁图对照，未改变时码；正文补齐可读的关键文字",
+      "sources": [
+        {
+          "path": "frames/demo-5760.png",
+          "sha256": "95017708e5e3fab9a856bb045f5986d818a344b465f56db7a19299291b4f96bf",
+          "detail": "视频5760秒全幅1280×410，裁切x549..1280/y0..410保留屏幕区"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "用途与图示范围一致，未将视口内局部画面声称为整个软件/完整架构；原全幅和文字观察记录一并保留"
+    },
+    {
+      "section": 19,
+      "frame": 3,
+      "path": "frames/demo-5820-screen.webp",
+      "sha256": "0b1dfe4a6dcd1f8b01f12037253f37d5d77117984470036c90d111e60951a94e",
+      "purpose": "97:00 原视频：云同步数据分类表，区分资料、邮件、索引、状态、游标与凭据。（右侧屏幕裁切；原始全画幅留存于证据目录。）",
+      "expected_information": "六行云同步分类表完整，底部为架构局部",
+      "observed_information": "逐图目视：六行云同步分类表完整，底部为架构局部",
+      "comparison_evidence": "原视频同秒全幅与右侧裁图对照，未改变时码；正文补齐可读的关键文字",
+      "sources": [
+        {
+          "path": "frames/demo-5820.png",
+          "sha256": "e379f104e6a495c95a6b94cc13e4996a69b14e6330273ad126f8b658198a67dd",
+          "detail": "视频5820秒全幅1280×410，裁切x549..1280/y0..410保留屏幕区"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "用途与图示范围一致，未将视口内局部画面声称为整个软件/完整架构；原全幅和文字观察记录一并保留"
+    },
+    {
+      "section": 19,
+      "frame": 4,
+      "path": "frames/demo-5880-screen.webp",
+      "sha256": "d3188b4ef60328de194b032198c360979ee92f341e648d2111f027abd720166c",
+      "purpose": "98:00 原视频：追加文件冲突、单写者/分片及三种云盘接入方案。（右侧屏幕裁切；原始全画幅留存于证据目录。）",
+      "expected_information": "修改位置清单、三种方案完整表格与两条底线建议",
+      "observed_information": "逐图目视：修改位置清单、三种方案完整表格与两条底线建议",
+      "comparison_evidence": "原视频同秒全幅与右侧裁图对照，未改变时码；正文补齐可读的关键文字",
+      "sources": [
+        {
+          "path": "frames/demo-5880.png",
+          "sha256": "4763df1226a54c78c101515d88a4b199d321f4c0ad0c44c90805691d2acf3af4",
+          "detail": "视频5880秒全幅1280×410，裁切x549..1280/y0..410保留屏幕区"
+        }
+      ],
+      "status": "passed",
+      "known_gap": false,
+      "resolution": "用途与图示范围一致，未将视口内局部画面声称为整个软件/完整架构；原全幅和文字观察记录一并保留"
+    }
+  ]
+}

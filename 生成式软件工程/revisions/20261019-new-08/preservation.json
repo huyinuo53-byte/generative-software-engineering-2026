@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "scope": "原有八篇HTML逐一与上次交付hash比较，未重转写或重写。",
+  "files": [
+    {
+      "path": "lecture-01/课堂笔记.html",
+      "sha256": "67151db592f02e0fdb9889b9a79472e768d7e887a5dea9a965fa3cf2a4b62e47"
+    },
+    {
+      "path": "lecture-02/课堂笔记.html",
+      "sha256": "f063e934af755a45e5fef94ee73327ff1ebc8a6527f497089c21931a2387b269"
+    },
+    {
+      "path": "lecture-03/课堂笔记.html",
+      "sha256": "6b76b3a70d3c1c00d3b0840616ddb20cee79bd2384b605462dcdd913a9699df8"
+    },
+    {
+      "path": "lecture-04/课堂笔记.html",
+      "sha256": "0e67d593f33b35aac8e7990afc0d9ee83777c73213dab4ada1e035a38eb865bd"
+    },
+    {
+      "path": "lecture-05/课堂笔记.html",
+      "sha256": "87b8ef114786b34e310ebd00288827716ebeab2f15044f888a8456aad79105f4"
+    },
+    {
+      "path": "lecture-06/课堂笔记.html",
+      "sha256": "a341918f8775d2b03c7c2270daf6585ab283f1a984eb17453f99da3895939dee"
+    },
+    {
+      "path": "lecture-07/课堂笔记.html",
+      "sha256": "85980aafc6cfa2911dc2b38afce0523a9e453cded8b705eb9bc8a89e03a74cc5"
+    },
+    {
+      "path": "extra-ai-slop/课堂笔记.html",
+      "sha256": "68fa80956bb84708b683ae88a6b24e4c406f0055b77a10e25712710a22483e68"
+    }
+  ],
+  "checked_at": "2026-10-19T02:00:24.898526+00:00"
+}

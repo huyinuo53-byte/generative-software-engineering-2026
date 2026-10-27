@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>Continuous Delivery vs Continuous Deployment - Continuous Delivery</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/ico" href="/assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="/assets/favicons/cd-center-57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/cd-center-72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/cd-center-114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/cd-center-144.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/cd-center-192.png" />
+  <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="/assets/css/styles.css" type='text/css' />
+  <!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.js"></script>
+    <script src="/assets/js/respond.js"></script>
+  <![endif]-->
+</head>
+
+
+  <body>
+
+    <div class="container">
+      <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+
+      <header role="banner">
+
+        <div class="wrap">
+
+
+          <h1 class="site-title"><a class="title-link" href="/">Continuous Delivery</a></h1>
+
+
+        </div>
+
+      </header>
+
+      <div class="wrap content">
+
+        <section id="main" class="main-content" role="main">
+          <h2>Continuous Delivery vs Continuous Deployment</h2>
+          <em>Published 13 August 2010</em>
+<p><strong>Translations: </strong><a href="http://cdkr.egloos.com/1556409">한국말</a></p>
+<p>Timothy Fitz's <a href="http://timothyfitz.wordpress.com/2009/02/08/continuous-deployment/">blog entry</a> on continuous deployment came out over a year before Dave and I published our book on continuous delivery. So why did we choose a different name? Is there actually a difference or are we just being bloody-minded?</p>
+<p>We decided to call the book <em>Continuous Delivery</em> for a few reasons. First of all, there's the somewhat pedantic fact that deployment does not imply release. As we say in the book, you can continuously deploy to UAT - no big deal. What makes continuous deployment special is deploying every change that passes the automated tests (and optionally a short QA gate) <em>to production</em>. Continuous deployment is the practice of releasing every good build to users - a more accurate name might have been "continuous release".</p>
+<p>While continuous deployment implies continuous delivery the converse is not true. Continuous delivery is about putting the release schedule in the hands of the business, not in the hands of IT. Implementing continuous delivery means making sure your software is always production ready throughout its entire lifecycle - that any build could <em>potentially</em> be released to users at the touch of a button using a fully automated process in a matter of seconds or minutes.</p>
+<p><a id="more"></a><a id="more-138"></a></p>
+<p>This in turn relies on comprehensive automation of the build, test and deployment process, and excellent collaboration between everyone involved in delivery - developers, testers, DBAs, systems administrators, users, and the business.</p>
+<p>In the world of continuous delivery, developers aren't done with a feature when they hand some code over to testers, or when the feature is "QA passed". They are done when it is working in production. That means no more testing or deployment phases, even within a sprint (if you're using Scrum). If you're using Kanban and you want to do continuous delivery, you can't bring a new story into play until the one you're working on is released to users.</p>
+<p>However it doesn't always make sense to release every good build to users. In particular, this is usually impossible for embedded products when there is coupling between a software change and a hardware change. In the world of COTS, there are good marketing and support reasons why you'd not want to have more than a few "released" versions of your software in play at any given time (although you could still do regular "developer" or "early access" builds as Eclipse and the Omni Group do). There are probably other good reasons too - the important point is that they must be <em>business</em> reasons.</p>
+<p>So when can you say you're doing continuous delivery? I'd say it's when you could flip a switch to go to continuous deployment if you decided that was the best way to deliver value to your customers. In particular, if you can't release every good build to users, what does it mean to be "done" with a story? I think at least the following conditions must apply:</p>
+<ul>
+<li>You have run your entire test suite against the build containing the story. This validates that the story is delivering the expected business value, and that no regressions have been introduced in the process of developing it. In order to be efficient, that means having comprehensive automated tests at the unit, component and acceptance level.</li>
+<li>The story has been demonstrated to customers from a production-like environment. Production-like means identical with production, within the bounds of reason. Even if you're deploying to an enormous cluster, you can use a technique like <a href="http://martinfowler.com/bliki/BlueGreenDeployment.html">blue-green deployments</a> to run a different version of your app in parallel on the production environment without affecting users.</li>
+<li>There are no obstacles to deploying to production. In other words, you could deploy the build to users using a fully automated process at the push of a button if you decided to. In particular, that means you've also tested it fulfills its cross-functional characteristics such as capacity, availability and security. If you're using an SOA or you have dependencies between your application and other systems, it means ensuring there are no integration problems.</li>
+</ul>
+
+
+          <ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcontinuousdelivery.com%2F2010%2F08%2Fcontinuous-delivery-vs-continuous-deployment%2F&t=Continuous+Delivery+vs+Continuous+Deployment" title="Share on Facebook" target="_blank"><img src="/images/flat_web_icon_set/color/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fcontinuousdelivery.com%2F2010%2F08%2Fcontinuous-delivery-vs-continuous-deployment%2F&text=https%3A%2F%2Fcontinuousdelivery.com%2F2010%2F08%2Fcontinuous-delivery-vs-continuous-deployment%2F%20by%20%40jezhumble" target="_blank" title="Tweet"><img src="/images/flat_web_icon_set/color/Twitter.png"></a></li>
+  <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcontinuousdelivery.com%2F2010%2F08%2Fcontinuous-delivery-vs-continuous-deployment%2F" target="_blank" title="Share on LinkedIn"><img src="/images/flat_web_icon_set/color/LinkedIn.png"></a></li>
+</ul>
+
+	</section>
+
+        <aside>
+  <p class="intro"></p>
+  <nav class="sidebar-nav" role="navigation">
+    <ul>
+        <li class="group ">
+          <a href="/"  
+            title="Introduction">Introduction</a>
+          
+      
+
+        </li>
+        <li class="group ">
+          <a href="/principles/"  
+            title="Principles">Principles</a>
+          
+      
+
+        </li>
+        <li class="group ">
+          <a href="/foundations/"  
+            title="Foundations">Foundations</a>
+          
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-3">+</button>
+<ul class="nav-children" id="nav-collapsible-3"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/foundations/configuration-management/"
+        title="Configuration management">Configuration management</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/foundations/continuous-integration/"
+        title="Continuous integration">Continuous integration</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/foundations/test-automation/"
+        title="Continuous testing">Continuous testing</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+        </li>
+        <li class="group ">
+          <a href="/implementing/"  
+            title="Implementing continuous delivery">Implementing continuous delivery</a>
+          
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-4">+</button>
+<ul class="nav-children" id="nav-collapsible-4"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/implementing/architecture/"
+        title="Architecture">Architecture</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/implementing/culture/"
+        title="Culture">Culture</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/implementing/patterns/"
+        title="Patterns">Patterns</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+        </li>
+        <li class="group ">
+          <a href="/evidence-case-studies/"  
+            title="Evidence & case studies">Evidence & case studies</a>
+          
+      
+
+        </li>
+        <li class="group sidebar-nav-active">
+          <a href="/blog/"  
+            title="Current Page
+                  ">Blog</a>
+          
+      
+
+        </li>
+        <li class="group ">
+          <a href="/about/"  
+            title="About">About</a>
+          
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-7">+</button>
+<ul class="nav-children" id="nav-collapsible-7"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/about/talks/"
+        title="Talks">Talks</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/about/workshops/"
+        title="Workshops">Workshops</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+        </li>
+    </ul>
+  </nav>
+          <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="https://continuousdelivery.us5.list-manage.com/subscribe/post?u=e13fdabe5914affc6cc0ea6d0&amp;id=38443693cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL"><h2>Subscribe</h2></label>
+      <p><i>Get discounts and free excerpts from my videos and books when you subscribe to my low-volume mailing list.</i></p> 
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e13fdabe5914affc6cc0ea6d0_38443693cb" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color:#fc7f00"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+    <h2>Video training</h2>
+
+    <div><a href="https://leanagile.study/"><img src="/images/leanagile.png" style="float:left;padding-right:10px;"/></a>
+      <p><a href="https://leanagile.study/">5h video training: "Creating High Performance Organizations"</a></p><br clear="all"/></div>
+    
+    <div><a href="https://learning.oreilly.com/videos/-/9780134389363/"><img src="https://www.informit.com/ShowCover.aspx?isbn=9780134390710&type=d" style="float:left;padding-right:10px;"/></a>
+      <p><a href="https://learning.oreilly.com/videos/-/9780134389363/">My 4.5h continuous delivery video training course</a></p><br clear="all"/></div>
+
+    <div><a href="https://learning.oreilly.com/course/continuous-delivery-expert/9780133412246/"><img src="https://www.informit.com/ShowCover.aspx?isbn=9780321913180&type=d" style="float:left;padding-right:10px;"/></a>
+      <p><a href="https://learning.oreilly.com/course/continuous-delivery-expert/9780133412246/">Interviews with Eric Ries, Elisabeth Hendrickson, John Allspaw, Jesse Robbins and Gary Gruver</a> (royalties go to <a href="http://www.blackgirlscode.com/">Black Girls Code</a>)</p></div>
+
+    <h2>Books</h2>
+
+    <p><i>I earn a commission if you buy through the links below, at no extra cost to you.</i></p> 
+
+    <div><a href="https://bookshop.org/a/125653/9781942788331"><img width="90" src="/images/accelerate.jpg" style="float:left;padding-right:10px;"/></a>
+      <p><em>Accelerate</em> (2018)<br/><a href="https://bookshop.org/a/125653/9781942788331"><strong>Bookshop.org</strong> (paperback)</a><br/>
+    Translations: <a href="https://www.amazon.co.jp/dp/4295004901?tag=devopscd-20">日本語</a> | <a href="http://acornpub.co.kr/book/accelerate">한국어</a> | <a href="https://product.dangdang.com/11723624546.html">简体中文</a> | <a href="https://www.flag.com.tw/books/product/F2652">繁體中文</a> | <a href="https://www.amazon.de/dp/3800659638?tag=devopscd-20">Deutsch</a> | <a href="https://www.casadellibro.com/libro-acelerar-la-ciencia-del-desarrollo-lean-y-devops/9788441543591/12176325">español</a> | <a href="https://helion.pl/ksiazki/przyspieszenie-lean-i-devops-w-rozwoju-firm-technologicznych-nicole-forsgren-phd-jez-humble-gene-kim,przylv.htm">polski</a> | <a href="https://www.chitai-gorod.ru/product/uskoryaysya-nauka-devops-kak-sozdavat-i-masshtabirovat-vysokoproizvoditelnye-cifrovye-organizacii-2773529">русский</a></p>
+    <br clear="all"/></div>
+    
+    <div><a href="https://bookshop.org/a/125653/9781950508402"><img width="90" src="/images/devops-handbook.jpg" style="float:left;padding-right:10px;"/></a>
+      <p><em>DevOps Handbook</em> (2016)<br/><a href="https://bookshop.org/a/125653/9781950508402"><strong>Bookshop.org</strong> (paperback)</a><br/>
+    Translations: <a href="https://www.amazon.co.jp/dp/4822285480?tag=devopscd-20">日本語</a> | <a href="https://product.kyobobook.co.kr/detail/S000213304452">한국어</a> | <a href="https://item.jd.com/12350780.html">简体中文</a> | <a href="https://www.kingstone.com.tw/Basic/2014941813818">繁體中文</a> | <a href="https://www.amazon.de/dp/3960091990?tag=devopscd-20">Deutsch</a> | <a href="https://helion.pl/ksiazki/devops-swiatowej-klasy-zwinnosc-niezawodnosc-i-bezpieczenstwo-w-twojej-organizacji-wydanie-ii-gene-kim-jez-humble-patrick-debois-john-willis,devop2.htm">polski</a> | <a href="https://www.amazon.com.br/dp/8550802697?tag=devopscd-20">português</a> | <a href="https://www.mann-ivanov-ferber.ru/catalog/product/rukovodstvo-po-devops/">русский</a></p>
+    <br clear="all"/></div>
+  
+<div><a
+  href="https://bookshop.org/a/125653/9781492091776"><img
+  width="90" src="/images/lean-enterprise.png"
+  style="float:left;padding-right:10px;"/></a><p><em>Lean Enterprise</em> book (2015)<br/><a
+  href="https://bookshop.org/a/125653/9781492091776"><strong>Bookshop.org</strong>
+  (paperback)</a><br /><a
+  Translations: <a href="https://www.amazon.co.jp/dp/4873117747?tag=devopscd-20">日本語</a> | <a href="https://read.douban.com/ebook/31793596/">简体中文</a> | <a href="https://www.amazon.de/dp/396009020X?tag=devopscd-20">Deutsch</a> | <a href="https://helion.pl/ksiazki/metoda-lean-enterprise-w-poszukiwaniu-innowacji-jez-humble-joanne-molesky-barry-o-reilly,meleen.htm">polski</a> | <a href="https://www.casadocodigo.com.br/products/livro-lean-enterprise">português</a>
+</p><br clear="all"/></div>
+
+<div><a href="https://bookshop.org/a/125653/9780321601919"><img border="0" width="90" src="/images/cd-book.png" style="float:left;padding-right:10px"/></a>
+<p><em>Continuous Delivery</em> book (2010)<br/><a href="https://bookshop.org/a/125653/9780321601919"><strong>Bookshop.org</strong>(hardback)</a><br />
+<a  href="http://bit.ly/jez-cd-ebook"><strong>InformIT</strong> (pdf, epub, mobi)</a><br />
+Translations: <a href="https://www.amazon.co.jp/dp/4048707876?tag=devopscd-20">日本語</a> | <a href="http://acornpub.co.kr/book/continuous-delivery">한국말</a> | <a href="https://product.dangdang.com/22513036.html">简体中文</a> | <a href="https://www.amazon.com.br/dp/8582601034?tag=devopscd-20">português</a> | <a href="https://litres.com/book/dzhez-hambl/nepreryvnoe-razvertyvanie-po-avtomatizaciya-processov-sborki-t-48613766/">русский</a></p></div>
+
+<h2>My Workshops</h2>
+<ul>
+<li><a href="/about/workshops">Foundations of DevOps and Continuous Delivery</a></li>
+<li><a href="/about/workshops">High Performance Product Development</a></li>
+<li><a href="/about/workshops">Deploying Cloud Native Systems with Terraform and AWS</a></li>
+</ul>
+
+  
+</aside>
+
+
+      </div><!-- /.wrap content -->
+
+      <footer role="contentinfo">
+  <div class="wrap">
+    <p>Copyright &copy; 2010-2026 Jez Humble. Header image &copy; 2008
+  Stewart Hardy.</p>
+    <p>All content licensed under the <a
+  href="https://creativecommons.org/licenses/by-sa/3.0/us/">Creative
+  Commons Attribution-Share Alike 3.0 United States</a> License (CC
+    BY-SA 3.0 US).</p>
+    <p>Template derived from <a
+  href="https://pages.18f.gov/guides-template/">18F Guides Template.</p>
+  </div><!--/.wrap -->
+</footer>
+
+
+    </div> <!-- /.container -->
+
+  </body>
+<script src="/assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="/assets/js/accordion.js"></script>
+<script src="/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/js/vendor/private-eye-1.0.0.js"></script>
+<script src="/assets/js/18f-guide.js"></script>
+
+</html>

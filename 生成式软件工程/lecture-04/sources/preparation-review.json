@@ -1,0 +1,35 @@
+{
+  "official_article_full_read": true,
+  "slide_text_full_read_pages": 25,
+  "slide_visual_audit_pages": 25,
+  "audit_evidence": [
+    "sources/audit-sheet-01.jpg",
+    "sources/audit-sheet-02.jpg",
+    "sources/audit-sheet-03.jpg",
+    "sources/audit-sheet-04.jpg",
+    "sources/audit-sheet-05.jpg",
+    "sources/audit-sheet-06.jpg",
+    "sources/audit-sheet-07.jpg",
+    "sources/audit-sheet-08.jpg",
+    "sources/audit-sheet-09.jpg"
+  ],
+  "screenshot_issue_resolved": "Disabled transition and hid inactive slides; re-captured all 25 pages to remove overlapping previous slide. All compressed WebP pages were viewed in contact sheets.",
+  "source_pdf_label": "官方网页讲义截图汇编（非官方原生 PDF）",
+  "media_streams": [
+    {
+      "type": "video",
+      "duration": "5909.366000",
+      "width": 1280,
+      "height": 410
+    },
+    {
+      "type": "audio",
+      "duration": "5909.376000",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tail60_decode": "exit0; log empty",
+  "transcript_status": "existing pipeline queued, no restart or duplicate request",
+  "ui_qa": "pending parent"
+}

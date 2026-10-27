@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1fKtN6DErG-20261002-complete-notes",
+  "basis": "observed_build",
+  "captured_at": "2026-10-02T15:39:50.027615+00:00",
+  "root": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/extra-ai-slop",
+  "spec_sha256": "46bfe08937d4f223136071359095900e627022b957e42ee88d346bf10b9e53a4",
+  "artifacts": [
+    {
+      "id": "audit.json",
+      "path": "audit.json",
+      "depends_on": [],
+      "sha256": "4a2bc897f6dac237d63d7261ec23caa4b2ff0f06eb37ff467d4b2b7782965c3f",
+      "bytes": 3997
+    },
+    {
+      "id": "chunks/chunk-0001.json",
+      "path": "chunks/chunk-0001.json",
+      "depends_on": [],
+      "sha256": "7cc810ee1e5a536ade02f5f146033da0f1427571a21571e174438680111b85d9",
+      "bytes": 4150
+    },
+    {
+      "id": "chunks/index.json",
+      "path": "chunks/index.json",
+      "depends_on": [],
+      "sha256": "add9ee85575c954925886514d79b3eb6818c4f10bceacc54e6ca9a1b80e1b590",
+      "bytes": 1677
+    },
+    {
+      "id": "cross-review.json",
+      "path": "cross-review.json",
+      "depends_on": [],
+      "sha256": "843a8730dda1d198adf7471bbfc0d38c868ec57ebb107bee8d1e1bcaf6be66a5",
+      "bytes": 1203
+    },
+    {
+      "id": "events.jsonl",
+      "path": "events.jsonl",
+      "depends_on": [],
+      "sha256": "2c0425c0e286dfcafd85c7e9d62f32f979b94e327ab387ffba5fe66e90ebcb19",
+      "bytes": 4044
+    },
+    {
+      "id": "frames/000.jpg",
+      "path": "frames/000.jpg",
+      "depends_on": [],
+      "sha256": "8de60f44f4f18a071fa276fdaaa18dda0eb7b10026dd6fa3ba69adf6fbca697f",
+      "bytes": 175208
+    },
+    {
+      "id": "frames/010.jpg",
+      "path": "frames/010.jpg",
+      "depends_on": [],
+      "sha256": "6e64fdc713bb9b4c74ef5bb9692dcf328e5e1b05ff6e60bcf4c6e9df0283688a",
+      "bytes": 178494
+    },
+    {
+      "id": "frames/020.jpg",
+      "path": "frames/020.jpg",
+      "depends_on": [],
+      "sha256": "6c59d604628ab8f17dadc1eb58326ab2b52995583e9a48dfad3ce1168e5344a6",
+      "bytes": 181631
+    },
+    {
+      "id": "frames/030.jpg",
+      "path": "frames/030.jpg",
+      "depends_on": [],
+      "sha256": "81ae3a937ce85dd2302dbe594aba77946c5d0da25eede74009aea3f161f50181",
+      "bytes": 181889
+    },
+    {
+      "id": "frames/040.jpg",
+      "path": "frames/040.jpg",
+      "depends_on": [],
+      "sha256": "88f539f4b62965e9faeefbd27584968efac8273af1e9c36dbac958c165b5f137",
+      "bytes": 189781
+    },
+    {
+      "id": "frames/050.jpg",
+      "path": "frames/050.jpg",
+      "depends_on": [],
+      "sha256": "dee3e72d21be90fb4635cd2f119cf47f87e26b1f5f0733263574e33e5d702265",
+      "bytes": 190171
+    },
+    {
+      "id": "frames/060.jpg",
+      "path": "frames/060.jpg",
+      "depends_on": [],
+      "sha256": "7fef6a6b03422f1d6554a0a21532fd780e0f194874ccf1c0d52dcfd9a117c185",
+      "bytes": 190511
+    },
+    {
+      "id": "frames/070.jpg",
+      "path": "frames/070.jpg",
+      "depends_on": [],
+      "sha256": "f1fd913590dff0cac5ba95eff3287a8d73aecc90390f19fcd73a61e0a6b58db4",
+      "bytes": 190420
+    },
+    {
+      "id": "frames/080.jpg",
+      "path": "frames/080.jpg",
+      "depends_on": [],
+      "sha256": "46f3ac60399c31f85a4963b9222f8bbf9f7a3f0f0214fa787493346266acedd2",
+      "bytes": 150191
+    },
+    {
+      "id": "frames/090.jpg",
+      "path": "frames/090.jpg",
+      "depends_on": [],
+      "sha256": "91be45eccb62c2ac4fe1bc1974a2c45bf4528a15dddb4f8632349eb7df2bd380",
+      "bytes": 150237
+    },
+    {
+      "id": "frames/100.jpg",
+      "path": "frames/100.jpg",
+      "depends_on": [],
+      "sha256": "c9d6e825433d8f96231e102254605700d6fff7005cf3c450eb617b7e1c2bcf5c",
+      "bytes": 150568
+    },
+    {
+      "id": "frames/110.jpg",
+      "path": "frames/110.jpg",
+      "depends_on": [],
+      "sha256": "98a3be48562326881bfe65d9cdb10482211acfc62b76e606a1f8396e081c4536",
+      "bytes": 179622
+    },
+    {
+      "id": "frames/120.jpg",
+      "path": "frames/120.jpg",
+      "depends_on": [],
+      "sha256": "33f67e1b90bcacc63b832a0985d5d30e8c0a65ea5e0222b1e8c81cd025cfa8d8",
+      "bytes": 179573
+    },
+    {
+      "id": "frames/130.jpg",
+      "path": "frames/130.jpg",
+      "depends_on": [],
+      "sha256": "af45fdc7ae8238c02edb422ea60e94f44adb9db8af63f5c5affc12b97251827e",
+      "bytes": 201939
+    },
+    {
+      "id": "frames/140.jpg",
+      "path": "frames/140.jpg",
+      "depends_on": [],
+      "sha256": "cc29d9a8679a0405aeea37b7fbd673673354ef6797955b1793d291b16351c3f3",
+      "bytes": 159074
+    },
+    {
+      "id": "frames/150.jpg",
+      "path": "frames/150.jpg",
+      "depends_on": [],
+      "sha256": "1c596b1e2bb90b2d3e17ae7b73654fb188ba7fc74a5e30cc7745037a26de0332",
+      "bytes": 173347
+    },
+    {
+      "id": "frames/160.jpg",
+      "path": "frames/160.jpg",
+      "depends_on": [],
+      "sha256": "b690279b1f81b1c8711556666561f0b1f37a549431e0ac28416842ca356a7c5e",
+      "bytes": 173274
+    },
+    {
+      "id": "image-audit.json",
+      "path": "image-audit.json",
+      "depends_on": [],
+      "sha256": "ba704fbd9755e135fb252db76ea97d3bbe5f20a68bd534c6c5045310fed3d4ca",
+      "bytes": 11215
+    },
+    {
+      "id": "notes.json",
+      "path": "notes.json",
+      "depends_on": [
+        "transcript.json",
+        "chunks/index.json"
+      ],
+      "sha256": "71ffe3eaa084d13cb6604181d9b35eddd8e6f43a547edeb2a7e048238fe46cd6",
+      "bytes": 13838
+    },
+    {
+      "id": "qa/browser.json",
+      "path": "qa/browser.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ],
+      "sha256": "8a017c683e72f1623036a4305657b320bbc05a7c9343bd998fd426d85111c1d4",
+      "bytes": 2220
+    },
+    {
+      "id": "qa/contact-1.jpg",
+      "path": "qa/contact-1.jpg",
+      "depends_on": [],
+      "sha256": "9b2da11ae9ce846cc6663442def830ab303cfee8452c5ac419a9a5c07c97b5ef",
+      "bytes": 518596
+    },
+    {
+      "id": "qa/contact-2.jpg",
+      "path": "qa/contact-2.jpg",
+      "depends_on": [],
+      "sha256": "4b1a1f87e98015dbc95103c1b0f6103a85a7976bf36d11569281d76878d78b66",
+      "bytes": 463301
+    },
+    {
+      "id": "qa/contact-3.jpg",
+      "path": "qa/contact-3.jpg",
+      "depends_on": [],
+      "sha256": "f0f018945aa4dfcea872e0b106f456706f6e3ddc6f51f45068f02bbb9cee3267",
+      "bytes": 413064
+    },
+    {
+      "id": "qa/desktop-body.png",
+      "path": "qa/desktop-body.png",
+      "depends_on": [],
+      "sha256": "dfee284e4b44818566f2323be3515d2624f5ad5830608b10f5e6ff021542fef2",
+      "bytes": 1256847
+    },
+    {
+      "id": "qa/desktop-top.png",
+      "path": "qa/desktop-top.png",
+      "depends_on": [],
+      "sha256": "992a0a6fb968fdf59f040ac2899370f40cfb0b0c64d15ff39fad0c83d9fd9be9",
+      "bytes": 254698
+    },
+    {
+      "id": "qa/desktop-zoom.png",
+      "path": "qa/desktop-zoom.png",
+      "depends_on": [],
+      "sha256": "74a877edab124721e58a77170314de826aba060c060d77523adf98e6a282da82",
+      "bytes": 1428526
+    },
+    {
+      "id": "qa/desktop-zoom3.png",
+      "path": "qa/desktop-zoom3.png",
+      "depends_on": [],
+      "sha256": "efb757feffc0db16a4c4e2e8830d767da09eaa194ef503b4cdc4824e675ddaf0",
+      "bytes": 1126303
+    },
+    {
+      "id": "qa/final-static.json",
+      "path": "qa/final-static.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ],
+      "sha256": "c884b2dae9481180feab9d856d4f28d52847498e536c330affaaa54b726aadc2",
+      "bytes": 312
+    },
+    {
+      "id": "qa/mobile-body.png",
+      "path": "qa/mobile-body.png",
+      "depends_on": [],
+      "sha256": "bc4c309bd34b0b9a4140eb16e797f40599c69c47c6fa0811a98db3d0683e00dd",
+      "bytes": 508597
+    },
+    {
+      "id": "qa/mobile-top.png",
+      "path": "qa/mobile-top.png",
+      "depends_on": [],
+      "sha256": "b0e9290005e8818c23d375a3a55470e8166b4cb0295a4e84af8c40fa3241893b",
+      "bytes": 216618
+    },
+    {
+      "id": "qa/mobile-zoom.png",
+      "path": "qa/mobile-zoom.png",
+      "depends_on": [],
+      "sha256": "aa4680c9ea217226589bc7f109b44de88b57fcd5dd5fb9d5ac0b2b69bfa9a38d",
+      "bytes": 586489
+    },
+    {
+      "id": "qa/mobile-zoom3.png",
+      "path": "qa/mobile-zoom3.png",
+      "depends_on": [],
+      "sha256": "2941ace09b9b91624cb20b3546238729d70296cd7628f5e4a8bb60aca919c3da",
+      "bytes": 710206
+    },
+    {
+      "id": "qa/print.json",
+      "path": "qa/print.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ],
+      "sha256": "7c781223214d935468de88a3d865c41b7625080104701f6d38ded519344a4a14",
+      "bytes": 1203
+    },
+    {
+      "id": "qa/project-check.json",
+      "path": "qa/project-check.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ],
+      "sha256": "533a8221fddcc81af478488d9be261926d46809de5230614036cad7f0651387b",
+      "bytes": 560
+    },
+    {
+      "id": "qa/static-check.json",
+      "path": "qa/static-check.json",
+      "depends_on": [
+        "课堂笔记.html"
+      ],
+      "sha256": "316698618858741cf099f458d40deabf2d38d7f063c666360aaba25f32f16b3a",
+      "bytes": 370
+    },
+    {
+      "id": "review.json",
+      "path": "review.json",
+      "depends_on": [
+        "notes.json",
+        "课堂笔记.html",
+        "image-audit.json",
+        "qa/browser.json",
+        "qa/print.json"
+      ],
+      "sha256": "df76e7b88a9a93626f7220c63a1e49057533a73afcdf8109ee8a982abdd17d0b",
+      "bytes": 3064
+    },
+    {
+      "id": "run.json",
+      "path": "run.json",
+      "depends_on": [],
+      "sha256": "123a860b228cad1bdef2ea8eacdbc60d00e5f81d0873699c5e71bb21d0d3024b",
+      "bytes": 2465
+    },
+    {
+      "id": "sources/media-info.json",
+      "path": "sources/media-info.json",
+      "depends_on": [],
+      "sha256": "eb5e58681e30e32b73d145d8efc75a70a9fc7e36552fd60bc347be2030d06eb5",
+      "bytes": 324
+    },
+    {
+      "id": "sources/media-probe.json",
+      "path": "sources/media-probe.json",
+      "depends_on": [],
+      "sha256": "8717d417f4b2e1f04c5b6f0ad42ac52385458908dff05789490911b107f54589",
+      "bytes": 3618
+    },
+    {
+      "id": "transcript.json",
+      "path": "transcript.json",
+      "depends_on": [],
+      "sha256": "4ccc403e04cc7d201636f7f0ea074e38bcec3889195379d5d207af1424b8e693",
+      "bytes": 154693
+    },
+    {
+      "id": "课堂笔记.html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "notes.json",
+        "chunks/index.json",
+        "frames/010.jpg",
+        "frames/020.jpg",
+        "frames/040.jpg",
+        "frames/060.jpg",
+        "frames/090.jpg",
+        "frames/110.jpg",
+        "frames/130.jpg",
+        "frames/150.jpg"
+      ],
+      "sha256": "abb0116d211e8eaf64637819460d6552d8b647d31c84570408d6a1a8d2c89e7f",
+      "bytes": 1948944
+    }
+  ],
+  "claim": "File snapshot only; dependencies are declarations, not proof of execution or quality."
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "run_id": "lecture-02-20261002",
+  "batch_id": "GSE-20261002",
+  "item_id": "lecture-02",
+  "scope_revision": 1,
+  "source_url": "https://www.bilibili.com/video/BV1CQt365EzW/",
+  "requested_outputs": [
+    "complete_mobile_html",
+    "quality_review"
+  ],
+  "required_checks": [
+    "content",
+    "source_coverage",
+    "image_integrity",
+    "html_static",
+    "desktop",
+    "narrow"
+  ],
+  "sources": [
+    {
+      "path": "transcript.json",
+      "kind": "original_export",
+      "transcript_origin": "reused"
+    }
+  ]
+}

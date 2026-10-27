@@ -1,0 +1,172 @@
+{
+  "html_sha256": "48a1278dbae1d157bd35ec4a077a3079667a6266ad110198fa8c2dbf251377d9",
+  "method": "Local Chrome headless reader journeys: actual clicks, pointer wheel pan, keyboard Escape, screenshot inspection separate",
+  "viewports": [
+    {
+      "width": 1280,
+      "screenshots": [
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/1280-top.png",
+          "sha256": "6996f712873b2e7456d4c559e120c1ba203c35e56f048e3a4c7980fb9d64c204"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/1280-bilingual.png",
+          "sha256": "ad4fc674af7b1f4286d1918cd52410ca5a2f57765b6879a17966ea9fd9b83f3e"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/1280-native-pan.png",
+          "sha256": "f1db229dfd7d8589b766faea9ae052230879e6f73126c60b9638f892239a3296"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/1280-fit.png",
+          "sha256": "43d42999942338f6e2dcb582c4401e32bee6d7bd1615384d0133eb32d5b3ded1"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/1280-quiz.png",
+          "sha256": "a2eb5ffc72ec21bf09797c5be72928f9087fa7267454e41883322040552e5645"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/1280-repo.png",
+          "sha256": "0ba73e8684dcce5835dc25b024ad2c2f3008adf9b450e09687a9ee2e6e4dcbdc"
+        }
+      ],
+      "toc_jump": true,
+      "native": {
+        "viewport": 1176,
+        "content": 1280,
+        "scrollLeft": 104,
+        "imgWidth": 1280,
+        "natural": 1280
+      },
+      "fit": true,
+      "closed": true,
+      "escape": true,
+      "answer_open": true,
+      "quiz_back": true,
+      "answer_closed": true,
+      "source": "来源与时间\n\n视频原帧 01:10:30 · 现场Agent解释双语文档三件套与配对门禁。",
+      "source_has_timestamp": true,
+      "page": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "images": 69,
+        "inline": true,
+        "quiz": 16
+      }
+    },
+    {
+      "width": 390,
+      "screenshots": [
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/390-top.png",
+          "sha256": "66768fb5df5126af7333dc5ae4fb22514cb3290a1674e392e44a815751a4e818"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/390-bilingual.png",
+          "sha256": "33f083f6356178664c9833bbe94b14e3c29157d127c340152c8c12c28c1f24da"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/390-native-pan.png",
+          "sha256": "2c9816d54bada97cb9b3d7a3408904be689fe851636a242783a9d6380ef5c7dd"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/390-fit.png",
+          "sha256": "5ad31f83687be575230bba1960d20f034490095f486de29b1f3bf4e3b8ae3008"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/390-quiz.png",
+          "sha256": "eac484c80e175cea561b411f507c804d833801881d8ab7eedfa536a0d7ae5073"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/390-repo.png",
+          "sha256": "8909e059aad990b72716d0ed89609b3907c6eac133bddd3914a84373971a21cb"
+        }
+      ],
+      "toc_jump": true,
+      "native": {
+        "viewport": 331,
+        "content": 1280,
+        "scrollLeft": 450,
+        "imgWidth": 1280,
+        "natural": 1280
+      },
+      "fit": true,
+      "closed": true,
+      "escape": true,
+      "answer_open": true,
+      "quiz_back": true,
+      "answer_closed": true,
+      "source": "来源与时间\n\n视频原帧 01:10:30 · 现场Agent解释双语文档三件套与配对门禁。",
+      "source_has_timestamp": true,
+      "page": {
+        "width": 390,
+        "scrollWidth": 390,
+        "images": 69,
+        "inline": true,
+        "quiz": 16
+      }
+    },
+    {
+      "width": 320,
+      "screenshots": [
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/320-top.png",
+          "sha256": "02e3c52536cbd194def27931d0f178b436b547790c78f6c0fd5e5088fd1f2bf3"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/320-bilingual.png",
+          "sha256": "e06abb8e3b804f3f89f2e00c4cf16c9893b9ab63392c3bd2e5fba4d152b8c16e"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/320-native-pan.png",
+          "sha256": "23842ed853848be242ce6fb5f55f103452192515fc2c31c66e15abeb1e94b55f"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/320-fit.png",
+          "sha256": "98aa817f64104af8b0f0263cc87cec70b9f50bfde1c7d9b31f05dd62bc0fade2"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/320-quiz.png",
+          "sha256": "afc65aba331c8148a2bd10855c582caa17ec61cc6e6877a29cf0d8c97766a1ec"
+        },
+        {
+          "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-08/qa/reader/320-repo.png",
+          "sha256": "a1e217510a977aad0f1b9746c7f80901ad2dfbf42e0f3f77818b22a41bc44f72"
+        }
+      ],
+      "toc_jump": true,
+      "native": {
+        "viewport": 264,
+        "content": 1280,
+        "scrollLeft": 450,
+        "imgWidth": 1280,
+        "natural": 1280
+      },
+      "fit": true,
+      "closed": true,
+      "escape": true,
+      "answer_open": true,
+      "quiz_back": true,
+      "answer_closed": true,
+      "source": "来源与时间\n\n视频原帧 01:10:30 · 现场Agent解释双语文档三件套与配对门禁。",
+      "source_has_timestamp": true,
+      "page": {
+        "width": 320,
+        "scrollWidth": 320,
+        "images": 69,
+        "inline": true,
+        "quiz": 16
+      }
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "print_media": {
+    "answers": 16,
+    "allOpen": true,
+    "visible": true
+  },
+  "status": "pending_visual_inspection",
+  "real_phone": "not_tested",
+  "native_print": "not_tested"
+}

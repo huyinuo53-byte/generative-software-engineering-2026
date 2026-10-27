@@ -1,0 +1,40 @@
+{
+  "revision": "20261008-scale",
+  "scope": "layout-only",
+  "notes_sha256": "6d9e5bd7b6a19755898203f4fb10e98dba185e43cd102ad4a40aecf596317558",
+  "reading_scope": {
+    "all_sections": 28,
+    "paragraphs": 86,
+    "examples": 9,
+    "editor_notes": 14,
+    "frame_captions": 44,
+    "supplements": 0,
+    "scope_statement": "完整阅读本次现有 notes.json 的正文、例子、整理者注释、补充文字与全部图注；未重读原始转写或重听视频。",
+    "visually_reopened_frames": [
+      "frames/slide-023.png",
+      "frames/slide-024.png",
+      "frames/slide-025.png",
+      "frames/slide-018.png",
+      "frames/slide-019.png",
+      "frames/slide-020.png"
+    ]
+  },
+  "placement_rationale": [
+    "本课没有全局 supplements，主要将讲义补充注释、例子、现场帧与对应段落相邻排列。",
+    "第11、12节保留现场输出与讲义版本的区别，并把各自例子与对应截图配对，避免将两个版本混读。",
+    "第16节论文总结演示与真实视频帧相邻，第25页承接作者框架风险；第24页三条独立审稿路线移至第17节方法说明之后，来源仍为 PDF 讲义补充。"
+  ],
+  "verification": {
+    "notes_unchanged": true,
+    "all_content_tokens_exactly_once": true,
+    "terms_exact_substrings": true,
+    "video_frames_keep_section_ownership": true,
+    "browser_checked": false
+  },
+  "remaining_issues": [
+    "所有讲义图仍保留既有通用图注，来源和页码可追溯；本次未逐图重新视觉审查。",
+    "第16节整理者注释说明第23–25页是讲义补充，跨节后的第24页仍需保持来源可见，不能渲染为现场已完成的审查。",
+    "既有论文未独立全文阅读和未复现实验等边界不变；浏览器、窄屏与打印由父任务验收。"
+  ],
+  "navigation_copy_changes": []
+}

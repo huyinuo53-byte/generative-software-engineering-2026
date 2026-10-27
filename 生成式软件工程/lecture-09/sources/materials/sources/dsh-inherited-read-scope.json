@@ -1,0 +1,652 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "repository_url": "https://github.com/deepseek-ai/deepseek-harness",
+    "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+    "commit_time": "2026-10-17T15:22:43+08:00",
+    "retrieved_and_read_date": "2026-10-19",
+    "packaged_at": "2026-10-19T01:47:05.922318+00:00",
+    "recorded_lesson_date": "2026-10-13",
+    "relationship_to_recorded_version": "current commit is later than lesson; no identity to recorded checkout is claimed",
+    "url_discovery": {
+      "official_html_result": "saved lect8.html and slides8.html contain no DeepSeek Harness repository href",
+      "primary_evidence": "real video README source clone URL at 4230s / 70:30",
+      "frame_original": "/tmp/gse08-visual/scan/sample-02116.jpg"
+    },
+    "execution": "Static source reading only. No dependency install, repository script, test, application, or unknown code executed.",
+    "scope": "Teaching mechanisms: bilingual pairing, terminology/style calibration, hierarchical standing instructions, Agent Notes lifecycle, skill entrypoints, documentation gates. Not all product source or repository history.",
+    "working_tree_status": ""
+  },
+  "files": [
+    {
+      "source_path": "README.md",
+      "snapshot_path": "source-snapshot/README.md",
+      "sha256": "0f5516be2acde776f05572cbc8c3093c90549afe04ce118e11157d073d5d15f4",
+      "git_blob": "7941e30f7bdca9391befe39b9115d211157fa42d",
+      "line_count": 77,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          77
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/README.md"
+    },
+    {
+      "source_path": "README.zh.md",
+      "snapshot_path": "source-snapshot/README.zh.md",
+      "sha256": "8f19db1b217e8ef30cf413b07056cc791048bc2ba2ec51ba104e383dcfb43c61",
+      "git_blob": "3adc57ce89b3c30e6a6dbaa14dc35df944d52926",
+      "line_count": 96,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          96
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/README.zh.md"
+    },
+    {
+      "source_path": "README.i18n.yaml",
+      "snapshot_path": "source-snapshot/README.i18n.yaml",
+      "sha256": "700422df48df27704707a6832b7ba7234f1f44c42494ceffb3b8ee2210f989af",
+      "git_blob": "5ce56b7a613a0709b4ccde53711317f34e5abdb0",
+      "line_count": 34,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          34
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/README.i18n.yaml"
+    },
+    {
+      "source_path": "AGENTS.md",
+      "snapshot_path": "source-snapshot/AGENTS.md",
+      "sha256": "1eea3932544766e8a4ccc2d88dcba14ad0a3bd4e28fa660f920b9183f63e7196",
+      "git_blob": "7bae0a79c1de1c4ce76edf3c21b4f005934409ae",
+      "line_count": 185,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          185
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/AGENTS.md"
+    },
+    {
+      "source_path": "docs/AGENTS.md",
+      "snapshot_path": "source-snapshot/docs/AGENTS.md",
+      "sha256": "cc76a90dfbdcdbf1db71b83675744c1c4039d9ccca8f38ad58a96ab56521578d",
+      "git_blob": "39ebd5cd9c0c3963793cf4d87b7738e2732f68a2",
+      "line_count": 77,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          77
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/AGENTS.md"
+    },
+    {
+      "source_path": "scripts/AGENTS.md",
+      "snapshot_path": "source-snapshot/scripts/AGENTS.md",
+      "sha256": "dc1d3dc9bdc599106ba183465a85c323bf9122e1f5199bb0e25e8fa525206ff9",
+      "git_blob": "d7ec185e341003faaf5fcb7a203ed4f8c466baf5",
+      "line_count": 5,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/AGENTS.md"
+    },
+    {
+      "source_path": "packages/AGENTS.md",
+      "snapshot_path": "source-snapshot/packages/AGENTS.md",
+      "sha256": "9954e1827bcee42e0637a1328972317476bfed6b2f12a7042b0d4c197b521c67",
+      "git_blob": "50f203586c870998b2776e919eff6ce09c784953",
+      "line_count": 29,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          29
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/AGENTS.md"
+    },
+    {
+      "source_path": "docs/architecture.md",
+      "snapshot_path": "source-snapshot/docs/architecture.md",
+      "sha256": "95a7722c7096d665d8adedeb733b8f5ad7740e67cb5c6e9dc91ec05f430cb760",
+      "git_blob": "03d88148c7992f1c856efc44df0a930470f90f70",
+      "line_count": 165,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          165
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/architecture.md"
+    },
+    {
+      "source_path": "docs/i18n/README.md",
+      "snapshot_path": "source-snapshot/docs/i18n/README.md",
+      "sha256": "85f271cf30cf3710533e61d70879b8a428d813c8923bddbf68a4241d5f3a2b81",
+      "git_blob": "7ed0a4bf7c36c6a2e927caf40f880b969ae95c04",
+      "line_count": 69,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          69
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/i18n/README.md"
+    },
+    {
+      "source_path": "docs/i18n/translation-rules.md",
+      "snapshot_path": "source-snapshot/docs/i18n/translation-rules.md",
+      "sha256": "4ce7dfea77c4a4bbab5f466820e3d8e471029ff024e22a90892eb451f8e01f48",
+      "git_blob": "f268a09cf02e1a079065441271ffb304eb81d3ee",
+      "line_count": 69,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          69
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/i18n/translation-rules.md"
+    },
+    {
+      "source_path": "docs/i18n/style-samples.md",
+      "snapshot_path": "source-snapshot/docs/i18n/style-samples.md",
+      "sha256": "d57b411b3da9795856cccda90b9cab226d8e63c0bb97703e0882d4a5e1a6760b",
+      "git_blob": "b177b105233f9844abed5ce00a69f7fecdfe6210",
+      "line_count": 87,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          87
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/i18n/style-samples.md"
+    },
+    {
+      "source_path": "docs/i18n/terminology.md",
+      "snapshot_path": "source-snapshot/docs/i18n/terminology.md",
+      "sha256": "b3e56d9b2c6c2cf2bcd6a48aa622b65cafc7755433490758d4346844c0ead4cc",
+      "git_blob": "5971f886009f9b3c3da21b4b5237ecf8d6e4d744",
+      "line_count": 215,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          215
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/i18n/terminology.md"
+    },
+    {
+      "source_path": ".agents/notes/README.md",
+      "snapshot_path": "source-snapshot/.agents/notes/README.md",
+      "sha256": "089a84df7751fa993630302cb0ea1bf3ac10bf3f4bcca70ee95e55208b071f37",
+      "git_blob": "518851d6723f83866ac46375d5cd7e89c7efeef1",
+      "line_count": 125,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          125
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/notes/README.md"
+    },
+    {
+      "source_path": ".agents/notes/AGENTS.md",
+      "snapshot_path": "source-snapshot/.agents/notes/AGENTS.md",
+      "sha256": "1c1b4a6d771ed1a7b0e4fd83776dd0cfb0567f4e89f2c7b3bc8b61b73e9a01d2",
+      "git_blob": "66997859a832bb56332e660972fcc28e2730c842",
+      "line_count": 7,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/notes/AGENTS.md"
+    },
+    {
+      "source_path": ".agents/notes/implemented/AGENTS.md",
+      "snapshot_path": "source-snapshot/.agents/notes/implemented/AGENTS.md",
+      "sha256": "d01c6586ab5f807ccdda2e6ec30185416356b13d1f2fddb40d05cdac6d35189c",
+      "git_blob": "5a22674a96a4cd01a8d6c1c8d29e8d3a92670ebe",
+      "line_count": 13,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          13
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/notes/implemented/AGENTS.md"
+    },
+    {
+      "source_path": ".agents/notes/archived/AGENTS.md",
+      "snapshot_path": "source-snapshot/.agents/notes/archived/AGENTS.md",
+      "sha256": "63d728ce615c3a8109f0467a32525ca00c4c553e76a532fe90f13642e6986b34",
+      "git_blob": "d013ed068e651ad5462dd5608a4811f844ca7be0",
+      "line_count": 9,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/notes/archived/AGENTS.md"
+    },
+    {
+      "source_path": ".agents/skills/dsh-doc/SKILL.md",
+      "snapshot_path": "source-snapshot/.agents/skills/dsh-doc/SKILL.md",
+      "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de",
+      "git_blob": "5e32d4c07ec5fe26b2407b8d408713f4f9cb7457",
+      "line_count": 132,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          132
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/skills/dsh-doc/SKILL.md"
+    },
+    {
+      "source_path": ".agents/skills/dsh-translate-docs/SKILL.md",
+      "snapshot_path": "source-snapshot/.agents/skills/dsh-translate-docs/SKILL.md",
+      "sha256": "a72d26e988a6f9be29a09d6776bda0539ead49c42a447d327636fe4de0da83e7",
+      "git_blob": "6ff2650c74c7f581e6ff7f095b36eb82584c785c",
+      "line_count": 74,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          74
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/skills/dsh-translate-docs/SKILL.md"
+    },
+    {
+      "source_path": ".agents/skills/dsh-archive-agent-notes/SKILL.md",
+      "snapshot_path": "source-snapshot/.agents/skills/dsh-archive-agent-notes/SKILL.md",
+      "sha256": "298e95629ade953ba5e0e4fd4c50e5205389ac6adc5d55dea1ef26617a323f84",
+      "git_blob": "6052cbf1fc51460533b0443eab9e282104cce6d9",
+      "line_count": 68,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          68
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/skills/dsh-archive-agent-notes/SKILL.md"
+    },
+    {
+      "source_path": ".agents/notes/implemented/process/2026-07-26-frozen-agent-note-archive.md",
+      "snapshot_path": "source-snapshot/.agents/notes/implemented/process/2026-07-26-frozen-agent-note-archive.md",
+      "sha256": "34712f1c14fcec7504c292f89d9728049e79fa8c27aace0d821e66a3beaebddf",
+      "git_blob": "8e4ae6beab2663a572394668b52c683ad4957874",
+      "line_count": 45,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          45
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/notes/implemented/process/2026-07-26-frozen-agent-note-archive.md"
+    },
+    {
+      "source_path": "scripts/verify-md-links.ts",
+      "snapshot_path": "source-snapshot/scripts/verify-md-links.ts",
+      "sha256": "b1b6e1fefcd9321fa4c2b09bcedaf1acc58928495e2c38f5f4b1e261afea3809",
+      "git_blob": "f06041b13e0a21936d1d5d8637e934ab5efd8859",
+      "line_count": 254,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          254
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/verify-md-links.ts"
+    },
+    {
+      "source_path": "scripts/verify-type-equiv.ts",
+      "snapshot_path": "source-snapshot/scripts/verify-type-equiv.ts",
+      "sha256": "770a2a11e9de003352136e2ab9cecf58e85ac11af2c2a59e9b8f44f32428040a",
+      "git_blob": "fdb739ed8f0f75cf2763523463aff325012b2f40",
+      "line_count": 391,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          391
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/verify-type-equiv.ts"
+    },
+    {
+      "source_path": "scripts/doc-typecheck.ts",
+      "snapshot_path": "source-snapshot/scripts/doc-typecheck.ts",
+      "sha256": "c0cb2e255fa8950d5dfe571d5e34552ad61ad8756d75615364e4d8f6324b3db9",
+      "git_blob": "87de14ea6f7f141de6221ddc23a9653e2987b1cf",
+      "line_count": 252,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          252
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/doc-typecheck.ts"
+    },
+    {
+      "source_path": "scripts/translation-pairing-record.ts",
+      "snapshot_path": "source-snapshot/scripts/translation-pairing-record.ts",
+      "sha256": "c9f4d4ebb35e87b264c09604d33c6fe789bfadc0b03f932cf05f74bcce89dca8",
+      "git_blob": "89b2bd5a46e762384f3c06359b86c6cada11ec96",
+      "line_count": 299,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          299
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/translation-pairing-record.ts"
+    },
+    {
+      "source_path": "scripts/translation-pairing.ts",
+      "snapshot_path": "source-snapshot/scripts/translation-pairing.ts",
+      "sha256": "30d75155b43208ebc089fed9632336dfc3d24526916654e3c4e9ad1f72c95d4b",
+      "git_blob": "04ea0e72a6bd1a21c17e42da9aa2a6f14c6116a8",
+      "line_count": 419,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          419
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/translation-pairing.ts"
+    },
+    {
+      "source_path": "scripts/verify-translation-pairing.ts",
+      "snapshot_path": "source-snapshot/scripts/verify-translation-pairing.ts",
+      "sha256": "2f555134b09c87443967d263ca7316299a8495d76780ee4b54a86c79feecde01",
+      "git_blob": "2d950ab8ecfbea62073fb280eaa2a45c7fd3949b",
+      "line_count": 368,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          368
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/verify-translation-pairing.ts"
+    },
+    {
+      "source_path": "scripts/translation-pairing.manifest.json",
+      "snapshot_path": "source-snapshot/scripts/translation-pairing.manifest.json",
+      "sha256": "9944a604474c609318ec2793512661aa0dfc67f124d6789df4f285e8c5910153",
+      "git_blob": "f9bb1549a2395e139e66d2f7e51f1c5df482c97e",
+      "line_count": 13,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          13
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/translation-pairing.manifest.json"
+    },
+    {
+      "source_path": "scripts/verify-agent-note-format.ts",
+      "snapshot_path": "source-snapshot/scripts/verify-agent-note-format.ts",
+      "sha256": "055a2db5d15d7dfd59bb6b2b09795348c59e707f3d33bcb31cf5afb4a8d586fa",
+      "git_blob": "0ca93b298e3febde8c4e14608a295ef1259fe34d",
+      "line_count": 94,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          94
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/verify-agent-note-format.ts"
+    },
+    {
+      "source_path": "scripts/verify-agent-note-classification.ts",
+      "snapshot_path": "source-snapshot/scripts/verify-agent-note-classification.ts",
+      "sha256": "828a39ae61536d5986a421e07e20e7e51d81ad4fd8358c0339dae39dbe256903",
+      "git_blob": "588a32c3fc5f518fa4114081f18b3e812d6c8fac",
+      "line_count": 27,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          27
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/verify-agent-note-classification.ts"
+    },
+    {
+      "source_path": "scripts/verify-archived-agent-notes.ts",
+      "snapshot_path": "source-snapshot/scripts/verify-archived-agent-notes.ts",
+      "sha256": "d9d051c957d1ee33604265a69ed71e01dea8db865dc68de3c28e9ed8f387df4e",
+      "git_blob": "d2f12f826e04f83221cadd3864129f5b775f88fc",
+      "line_count": 115,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          115
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/verify-archived-agent-notes.ts"
+    },
+    {
+      "source_path": "scripts/archived-agent-notes.ts",
+      "snapshot_path": "source-snapshot/scripts/archived-agent-notes.ts",
+      "sha256": "f7e8e314e83b0baaeb6ffee319d20139506a78537389a9f1d6810d20ca1967ed",
+      "git_blob": "ee5f3f66170e77c2468255fe078b950a879c7a84",
+      "line_count": 204,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          204
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/archived-agent-notes.ts"
+    },
+    {
+      "source_path": "scripts/agent-note-tree.ts",
+      "snapshot_path": "source-snapshot/scripts/agent-note-tree.ts",
+      "sha256": "a10e1c12568a4afefaa09db92651163dae309cd4e1d054db16b18806b3fab40a",
+      "git_blob": "5cde40dacdc08888ce07253b989e51a156e977c0",
+      "line_count": 83,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          83
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/agent-note-tree.ts"
+    },
+    {
+      "source_path": "scripts/verify-doc-budgets.ts",
+      "snapshot_path": "source-snapshot/scripts/verify-doc-budgets.ts",
+      "sha256": "0ec5c8fb92f88c504ec4c0fb2d65c9427597250f2a41d9e5e645915f968ace2c",
+      "git_blob": "854d8d105faa9a8f6ecdea6e53b9466c62b8a0fc",
+      "line_count": 58,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          58
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/verify-doc-budgets.ts"
+    },
+    {
+      "source_path": "scripts/doc-budgets.manifest.json",
+      "snapshot_path": "source-snapshot/scripts/doc-budgets.manifest.json",
+      "sha256": "d04affb1a4faea04c8d169755f76d043b77d8899838016925d671132696e7258",
+      "git_blob": "f301060236f9261dbee351ff6b97c586e12c9ea8",
+      "line_count": 9,
+      "reading_scope": "full_file",
+      "read_ranges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/doc-budgets.manifest.json"
+    },
+    {
+      "source_path": "scripts/run-gates.ts",
+      "snapshot_path": "source-snapshot/scripts/run-gates.ts",
+      "sha256": "44c15c4cf4fec1e9cae78b15526f6c4e67839ab341268785babdfddf87f61a73",
+      "git_blob": "3e5fd4c41806792904fb7b15820216c099cb6f82",
+      "line_count": 1697,
+      "reading_scope": "declared_line_ranges_only",
+      "read_ranges": [
+        [
+          1,
+          145
+        ],
+        [
+          255,
+          292
+        ],
+        [
+          340,
+          370
+        ],
+        [
+          800,
+          883
+        ],
+        [
+          1140,
+          1218
+        ],
+        [
+          1220,
+          1290
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/run-gates.ts"
+    },
+    {
+      "source_path": "package.json",
+      "snapshot_path": "source-snapshot/package.json",
+      "sha256": "12bb41cd8212021a784b33a20c2b84372189a9505b42081d5e3869e21ff5cffc",
+      "git_blob": "a5e45dbf91d13035b4ef1ab2aea79455c544cd0c",
+      "line_count": 295,
+      "reading_scope": "declared_line_ranges_only",
+      "read_ranges": [
+        [
+          85,
+          140
+        ],
+        [
+          185,
+          210
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/package.json"
+    },
+    {
+      "source_path": "scripts/type-equiv.manifest.json",
+      "snapshot_path": "source-snapshot/scripts/type-equiv.manifest.json",
+      "sha256": "7fcaafbfc748500bd111c8bb877a4535e254582c3f58f5078a8d043f6de1902e",
+      "git_blob": "637c9d7bf5018356e19b7f7205fb1fa9027cefc9",
+      "line_count": 2486,
+      "reading_scope": "declared_line_ranges_only",
+      "read_ranges": [
+        [
+          1,
+          32
+        ]
+      ],
+      "reading_status": "complete_for_declared_scope",
+      "permalink": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/scripts/type-equiv.manifest.json"
+    }
+  ],
+  "scope_count": {
+    "fully_read_files": 34,
+    "partially_read_files": 3
+  },
+  "not_read_or_verified": [
+    "Whole product source and runtime behavior",
+    "Recorded checkout commit and historical working tree",
+    "Full type-equiv.manifest catalog (only schema/comment and initial sample entries read)",
+    "run-gates scheduler complete implementation and CI branch-protection settings",
+    "Referenced skill subsidiary templates/references and unrelated skill entrypoints",
+    "Translation prompt renderer and extended briefing implementation",
+    "External style-guide bodies and product paper",
+    "Execution of doc-sync, typecheck, pairing or any repository tests"
+  ]
+}

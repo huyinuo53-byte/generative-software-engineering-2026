@@ -1,0 +1,6 @@
+{
+  "claim_corrected": "课堂当时展示整文件hash",
+  "evidence": "visual/full/v0499-4350.jpg",
+  "observation": "实际画面已为per heading section，SHA256前16位；不要将现行算法误说成课后才出现。",
+  "source_sample_version_difference": "style-samples.md仍含旧整文件Git blob样例，现行配对按标题分节；两者权威范围不同。"
+}

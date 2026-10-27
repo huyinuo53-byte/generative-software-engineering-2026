@@ -1,0 +1,196 @@
+{
+  "fixture_dir": "/tmp/course-template-forward-test",
+  "tests": [
+    {
+      "name": "without-optional-summary-selftest",
+      "command": [
+        "python3",
+        "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261008-scale/skill-staging/scripts/course_notes.py",
+        "render",
+        "--notes",
+        "/tmp/course-template-forward-test/without-optional-summary-selftest-notes.json",
+        "--index",
+        "/tmp/course-template-forward-test/chunks/index.json",
+        "--layout",
+        "/tmp/course-template-forward-test/without-optional-summary-selftest-layout.json",
+        "--require-layout",
+        "--out",
+        "/tmp/course-template-forward-test/without-optional-summary-selftest.html"
+      ],
+      "exit_code": 0,
+      "expected_success": true,
+      "passed": true,
+      "stdout": "{\n  \"style\": \"editorial\",\n  \"output\": \"/private/tmp/course-template-forward-test/without-optional-summary-selftest.html\",\n  \"sections\": 3,\n  \"images\": 1,\n  \"coverage_declared\": 3,\n  \"omitted\": 0,\n  \"semantic_and_browser_qa\": \"required by agent\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "stale-hash-rejected",
+      "command": [
+        "python3",
+        "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261008-scale/skill-staging/scripts/course_notes.py",
+        "render",
+        "--notes",
+        "/tmp/course-template-forward-test/stale-hash-rejected-notes.json",
+        "--index",
+        "/tmp/course-template-forward-test/chunks/index.json",
+        "--layout",
+        "/tmp/course-template-forward-test/stale-hash-rejected-layout.json",
+        "--require-layout",
+        "--out",
+        "/tmp/course-template-forward-test/stale-hash-rejected.html"
+      ],
+      "exit_code": 1,
+      "expected_success": false,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: Stale reading layout: notes_sha256 does not match notes.json\n"
+    },
+    {
+      "name": "missing-supplement-rejected",
+      "command": [
+        "python3",
+        "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261008-scale/skill-staging/scripts/course_notes.py",
+        "render",
+        "--notes",
+        "/tmp/course-template-forward-test/missing-supplement-rejected-notes.json",
+        "--index",
+        "/tmp/course-template-forward-test/chunks/index.json",
+        "--layout",
+        "/tmp/course-template-forward-test/missing-supplement-rejected-layout.json",
+        "--require-layout",
+        "--out",
+        "/tmp/course-template-forward-test/missing-supplement-rejected.html"
+      ],
+      "exit_code": 1,
+      "expected_success": false,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: Section 2 emphasis terms not found in displayed prose: ['反馈距离', '下一步调整']\n"
+    },
+    {
+      "name": "duplicate-supplement-rejected",
+      "command": [
+        "python3",
+        "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261008-scale/skill-staging/scripts/course_notes.py",
+        "render",
+        "--notes",
+        "/tmp/course-template-forward-test/duplicate-supplement-rejected-notes.json",
+        "--index",
+        "/tmp/course-template-forward-test/chunks/index.json",
+        "--layout",
+        "/tmp/course-template-forward-test/duplicate-supplement-rejected-layout.json",
+        "--require-layout",
+        "--out",
+        "/tmp/course-template-forward-test/duplicate-supplement-rejected.html"
+      ],
+      "exit_code": 1,
+      "expected_success": false,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: Duplicate layout reference: x0\n"
+    },
+    {
+      "name": "invalid-term-rejected",
+      "command": [
+        "python3",
+        "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261008-scale/skill-staging/scripts/course_notes.py",
+        "render",
+        "--notes",
+        "/tmp/course-template-forward-test/invalid-term-rejected-notes.json",
+        "--index",
+        "/tmp/course-template-forward-test/chunks/index.json",
+        "--layout",
+        "/tmp/course-template-forward-test/invalid-term-rejected-layout.json",
+        "--require-layout",
+        "--out",
+        "/tmp/course-template-forward-test/invalid-term-rejected.html"
+      ],
+      "exit_code": 1,
+      "expected_success": false,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: Section 1 emphasis terms not found in displayed prose: ['并不存在的术语']\n"
+    },
+    {
+      "name": "missing-supplement-only-rejected",
+      "command": [
+        "python3",
+        "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261008-scale/skill-staging/scripts/course_notes.py",
+        "render",
+        "--notes",
+        "/tmp/course-template-forward-test/notes.json",
+        "--index",
+        "/tmp/course-template-forward-test/chunks/index.json",
+        "--layout",
+        "/tmp/course-template-forward-test/missing-supplement-only-layout.json",
+        "--require-layout",
+        "--out",
+        "/tmp/course-template-forward-test/missing-supplement-only.html"
+      ],
+      "exit_code": 1,
+      "expected_success": false,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: Reading layout omits content: [('x', -1, 0)]\n"
+    }
+  ],
+  "html_static": {
+    "all_paragraphs_present": true,
+    "all_examples_present": true,
+    "all_editor_notes_present": true,
+    "supplement_present": true,
+    "special_characters_preserved": true,
+    "script_not_emitted_as_markup": true,
+    "unique_ids": true,
+    "image_embedded": true,
+    "supplement_before_image": true,
+    "source_label_preserved": true,
+    "answer_present": true,
+    "answer_closed_by_default": true,
+    "one_content_image": true
+  },
+  "limitations": [
+    "未做真实浏览器渲染/交互验证。iab unavailable；Chrome 文件 URL 被浏览器协议策略拒绝，未绕过。",
+    "特定 escaped script 字符串的检查仅证明输出标记转义正确，不代替浏览器运行期测试。"
+  ],
+  "instruction_feedback": [
+    {
+      "severity": "none",
+      "finding": "SKILL 与 editorial-layout 指令足以独立构造新课程布局，未复制既有课堂 layout。仅为构造 synthetic fixture 查阅 contract.md 与索引结构。"
+    },
+    {
+      "severity": "minor",
+      "finding": "editorial-layout 样例 flow 是示意而非可运行完整 fixture，文档已有明确提示；第一次调用应保留实际 notes/index 的来源覆盖验证。"
+    }
+  ],
+  "staged_dependencies": {
+    "SKILL.md": "0e152dd499d424f148ea143036e1a08fab201c41ed7feb99bde42be682bc79b3",
+    "references/editorial-layout.md": "ce1f0f7ea8fe54e9cd700d5069d1ee3e746270a591642663501c399be3efa40a",
+    "scripts/course_notes.py": "1de4abde3012dcd8024916baa92fba751ace4ac1d8b3569170d689ed80d77b0a",
+    "scripts/reading_layout.py": "d1a6ab8027f6b314edc133c4c9d74e7ba92f865efebfbbf8df8aeef46277b343"
+  },
+  "artifacts": {
+    "notes.json": "3db4dfb5595b2de1ea6e8fb0f534cb14d8de99dccbac531ffedde9755664aeb0",
+    "reading-layout.json": "34ec91175184f41c5aa3f7aab230b7eadb6f97103326d6858d91b1dc47ce07e8",
+    "index.json": "cd6d70d0019d81d88f639a7b7d5ab6460c6fb45bd854d2b98f3b3f7719909e8e",
+    "课堂笔记.html": "0763c5b5fe0759d033a7a42a76297c7f25a4a5d50f1c90ae49845f3042b94b9f",
+    "fixture-provenance.json": "a88fe443a5fcd1f1abaf881aa0160ee582d49e7fa78b1983f8c0ef6b2cf49bd6"
+  },
+  "test_harness_corrections": [
+    "初始检查误把无 src 的 lightbox img 占位符计为正文图片，已改为只计实际含 src 的内容图片；不是模板缺陷。",
+    "将答案默认折叠检查精确匹配实际 quiz-answer，避免用不存在的 self 类名造成空集通过。",
+    "遗漏补充的诊断使用内部元组 (x,-1,0) 而非字符串 x0，故按实际 omits content 诊断断言。"
+  ],
+  "browser_attempts": [
+    {
+      "entry": "cua.createBrowserTab iab",
+      "outcome": "unavailable",
+      "message": "Browser is not available: iab"
+    },
+    {
+      "entry": "cua.createBrowserTab Chrome file URL",
+      "outcome": "policy_blocked",
+      "message": "Allowed protocols http and https; file URL blocked. No workaround attempted."
+    }
+  ]
+}

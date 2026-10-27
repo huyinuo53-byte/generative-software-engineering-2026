@@ -1,0 +1,37 @@
+[
+  {
+    "lesson": "lecture-01",
+    "pages": 54,
+    "image": "生成式软件工程/lecture-01/revisions/20261008-scale/print-last-page.png"
+  },
+  {
+    "lesson": "lecture-02",
+    "pages": 47,
+    "image": "生成式软件工程/lecture-02/revisions/20261008-scale/print-last-page.png"
+  },
+  {
+    "lesson": "lecture-03",
+    "pages": 50,
+    "image": "生成式软件工程/lecture-03/revisions/20261008-scale/print-last-page.png"
+  },
+  {
+    "lesson": "lecture-04",
+    "pages": 41,
+    "image": "生成式软件工程/lecture-04/revisions/20261008-scale/print-last-page.png"
+  },
+  {
+    "lesson": "lecture-06",
+    "pages": 40,
+    "image": "生成式软件工程/lecture-06/revisions/20261008-scale/print-last-page.png"
+  },
+  {
+    "lesson": "lecture-07",
+    "pages": 52,
+    "image": "生成式软件工程/lecture-07/revisions/20261008-scale/print-last-page.png"
+  },
+  {
+    "lesson": "extra-ai-slop",
+    "pages": 12,
+    "image": "生成式软件工程/extra-ai-slop/revisions/20261008-scale/print-last-page.png"
+  }
+]

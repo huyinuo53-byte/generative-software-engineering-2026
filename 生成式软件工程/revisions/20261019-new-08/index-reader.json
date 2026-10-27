@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "method": "Actual card click from course index to new offline HTML at desktop and narrow viewport; screenshots reviewed separately",
+  "index_sha256": "a84ef2d87a0706f518a2f881a6eba636f01780ef2583e67ebc40dc70718e0f95",
+  "lesson_html_sha256": "48a1278dbae1d157bd35ec4a077a3079667a6266ad110198fa8c2dbf251377d9",
+  "rows": [
+    {
+      "width": 1280,
+      "cards": 9,
+      "title": "生成式软件工程 08｜Agent-native 开发",
+      "target": "file:///Users/yjzhao/Documents/ChatGPT/learning-machine/%E7%94%9F%E6%88%90%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/lecture-08/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.html",
+      "screenshot": {
+        "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261019-new-08/index-1280-new-card.png",
+        "sha256": "c7520e34816d92d16a41af0b8fade376500fb84b02485439704a7316f486e0e6"
+      }
+    },
+    {
+      "width": 390,
+      "cards": 9,
+      "title": "生成式软件工程 08｜Agent-native 开发",
+      "target": "file:///Users/yjzhao/Documents/ChatGPT/learning-machine/%E7%94%9F%E6%88%90%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/lecture-08/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.html",
+      "screenshot": {
+        "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261019-new-08/index-390-new-card.png",
+        "sha256": "fe3b3618d44a011b0c7424424c347f32be2e282a528fb0f2edd74434caf09f2f"
+      }
+    }
+  ]
+}

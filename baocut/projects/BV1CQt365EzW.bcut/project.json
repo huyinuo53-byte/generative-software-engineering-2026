@@ -1,0 +1,51 @@
+{
+  "formatVersion": "0.1",
+  "language": "zh",
+  "media": {
+    "duration": 5905.536,
+    "fps": 30.0,
+    "hash": "sha256-83cf986f46d89be1af5ec362e8325a954f4c554d095453018f4b6a470cc49ad2",
+    "height": 410,
+    "path": "/Users/yjzhao/Downloads/提示词工程 [02-Raw 26生成式软件工程 NJU].mp4",
+    "probeStamp": "305004213:1790667421280",
+    "rotation": 0,
+    "sourceMetadata": {
+      "chapters": [
+        {
+          "end": 1987.0,
+          "start": 0.0,
+          "title": "Prompt (Context) Engineering"
+        },
+        {
+          "end": 4530.0,
+          "start": 1987.0,
+          "title": "使模型遵循指令的技巧"
+        },
+        {
+          "end": 5906.0,
+          "start": 4530.0,
+          "title": "更长程任务的建议"
+        }
+      ],
+      "extractor": "BiliBili",
+      "id": "BV1CQt365EzW",
+      "thumbnail": "http://i1.hdslb.com/bfs/archive/7cb300cfcc64cbaeb9c7bf74c41de28f3a558318.jpg",
+      "title": "提示词工程 [02-Raw/26生成式软件工程/NJU]",
+      "uploadDate": "20260901",
+      "uploader": "绿导师原谅你了",
+      "url": "https://www.bilibili.com/video/BV1CQt365EzW/?spm_id_from=333.1387.collection.video_card.click&vd_source=abb5da006a35c5bef8fab8f9fa774175",
+      "viewCount": 47118
+    },
+    "sourceUrl": "https://www.bilibili.com/video/BV1CQt365EzW/?spm_id_from=333.1387.collection.video_card.click&vd_source=abb5da006a35c5bef8fab8f9fa774175",
+    "width": 1280
+  },
+  "stages": {
+    "transcribe": {
+      "engine": "moss-transcribe-diarize",
+      "input_fingerprint": "sha256-e9f13a3069361f55d242a3317046d14801b1cc6d0ed1b55cebb3b96165705e46",
+      "status": "done"
+    }
+  },
+  "title": "提示词工程 [02-Raw/26生成式软件工程/NJU]",
+  "url": "https://www.bilibili.com/video/BV1CQt365EzW/?spm_id_from=333.1387.collection.video_card.click&vd_source=abb5da006a35c5bef8fab8f9fa774175"
+}

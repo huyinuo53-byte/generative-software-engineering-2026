@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "lecture": "04",
+  "reviewer": "independent agent /root/lecture07",
+  "author_is_reviewer": false,
+  "reviewed_at": "2026-10-02T15:40:37.975941+00:00",
+  "scope": "完整阅读19节主稿；对原始转写指定区间、官方讲义相关页与冻结Git/jj官方文档做8项独立抽查。未逐秒审听，也未运行课堂项目。",
+  "outcome": "passed_targeted_review",
+  "source_hashes_sha256": {
+    "notes.json": "5023817b0fa063e8ba806226ad39444be5eac4d826b367605496423658d295ee",
+    "transcript.json": "b4dbe241056eab779de3231cfbe0fbf3c7c2d6413271f83b3289514347c96e2d",
+    "chunks/index.json": "a7e393677f02a2e869c4bae303dcd276a422bd5f6f44d726236d3d975abcdf79",
+    "sources/slides-text.json": "718ef12e8bdcf5801f7f337b52f989547413aa2a1234452a0b81cc83a662b8b8",
+    "sources/jj-glossary.md": "6bf1624c2a3b7a4b607569e5d49d3976917f5c01054bc6b782c1939d3e49fb2b",
+    "sources/jj-working-copy.md": "d7c31dd75ba6f9c4a272c50da4cd2973751e95cee2f3dc571ba032da9bec6875",
+    "sources/git-merge.adoc": "8ef01610c3356215cd36ed18acf1fa460a7afbd8ac02b23b75d373b9765cece9",
+    "sources/git-worktree.adoc": "ee8a368564ace74a07e4a034e080b26fb1c3b35d17ef1fe41dcbfcc5595fe8dc"
+  },
+  "checks_count": 8,
+  "checks": [
+    {
+      "id": "04-01",
+      "sections": [
+        5
+      ],
+      "claim": "merge/rebase、作者归属与修改身份",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          1373,
+          1498
+        ],
+        [
+          1680,
+          1731
+        ]
+      ],
+      "evidence": [
+        "s-g247.0~1",
+        "s-g255.0~3",
+        "s-g302.0",
+        "s-g305.0~41",
+        "sources/git-merge.adoc:DESCRIPTION/TRUE MERGE",
+        "讲义页7"
+      ],
+      "finding": "作者已明确校正：merge新增合并提交，既有提交作者不会普遍改成合并者；冲突解决的新内容和原历史分开。rebase重放产生新commit ID，稳定修改身份问题表述准确。",
+      "required_change": null
+    },
+    {
+      "id": "04-02",
+      "sections": [
+        6
+      ],
+      "claim": "jj change/object与snapshot触发时机",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          1730,
+          2040
+        ]
+      ],
+      "evidence": [
+        "s-g314.0~69",
+        "s-g362.0",
+        "s-g368.0~5",
+        "sources/jj-glossary.md:Change/Rewrite/Visible commits/Working copy",
+        "sources/jj-working-copy.md:Introduction/Conflicts",
+        "讲义页8–9"
+      ],
+      "finding": "独立读官方冻结文档确认：change是commit演化，change ID是属性，不存在独立change对象；多数jj命令才记录工作副本，非每字节后台立即提交；被重写旧commit隐藏并非立即物理删除。正文与校注均已准确区分。",
+      "required_change": null
+    },
+    {
+      "id": "04-03",
+      "sections": [
+        9
+      ],
+      "claim": "worktree隔离范围与共享对象",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          2818,
+          3067
+        ]
+      ],
+      "evidence": [
+        "s-g571.0",
+        "s-g574.0",
+        "s-g578.0~17",
+        "s-g581.0",
+        "s-g584.0~8",
+        "sources/git-worktree.adoc:REFS/DETAILS",
+        "讲义页13"
+      ],
+      "finding": "工作文件、HEAD/index独立，常规分支引用和对象库共享，.git文本gitdir间接指向管理目录；本地可见不等于已经整合。笔记还区分文件/仓库隔离与操作系统安全沙箱。",
+      "required_change": null
+    },
+    {
+      "id": "04-04",
+      "sections": [
+        11
+      ],
+      "claim": "乐观并发类比与提前上锁的责任",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          3332,
+          3460
+        ],
+        [
+          3640,
+          3837
+        ]
+      ],
+      "evidence": [
+        "s-g654.0~4",
+        "s-g657.0~7",
+        "s-g702.0~3",
+        "s-g703.0~26",
+        "s-g708.0~13",
+        "讲义页15–16"
+      ],
+      "finding": "类比仅用于协调时机，未声称Git有数据库完整事务语义。锁需覆盖所依赖共享状态、参与者遵约，上锁后读最新值再修改/验证/留快照；未承诺只锁写文件就无逻辑冲突，也未把低冲突个人数据推广到共享课程容量。",
+      "required_change": null
+    },
+    {
+      "id": "04-05",
+      "sections": [
+        10,
+        14,
+        16
+      ],
+      "claim": "长流程保留状态、历史与教训",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          3100,
+          3200
+        ],
+        [
+          4360,
+          4675
+        ],
+        [
+          5400,
+          5448
+        ]
+      ],
+      "evidence": [
+        "s-g605.0~52",
+        "s-g902.0",
+        "s-g903.0~40",
+        "s-g904.0",
+        "s-g910.0",
+        "s-g1092.0",
+        "讲义页14/19/21/23"
+      ],
+      "finding": "当前状态、探索过程、失败原因分别保存；学生运行/暂停等节点关联版本与点评，而非仅最终盘面。取消追责的修辞未被写成不需要定位回归；关系数据库与版本轨迹按职责选择，并非Git普遍取代数据库。",
+      "required_change": null
+    },
+    {
+      "id": "04-06",
+      "sections": [
+        17
+      ],
+      "claim": "助手端到端demo是fixtures而非live验证",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          5448,
+          5574
+        ]
+      ],
+      "evidence": [
+        "s-g1098.0",
+        "s-g1101.0",
+        "s-g1102.0",
+        "s-g1105.0",
+        "frames/demo-5460-screen.webp",
+        "frames/demo-5520-screen.webp"
+      ],
+      "finding": "逐张目视：5460秒日志sent/receipt同时右侧不是git仓库；5520秒模型明确demo使用替身、真实邮箱/CAS最后一公里未验证。笔记未误报真实发送/办理成功，亦限定讲师未review全部实现。",
+      "required_change": null
+    },
+    {
+      "id": "04-07",
+      "sections": [
+        17,
+        19
+      ],
+      "claim": "确认状态、幂等及云盘同步的证据强度",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          5743,
+          5909.4
+        ]
+      ],
+      "evidence": [
+        "s-g1162.0~3",
+        "s-g1177.0",
+        "frames/demo-5760-screen.webp",
+        "frames/demo-5820-screen.webp",
+        "frames/demo-5880-screen.webp"
+      ],
+      "finding": "独立目视确认executeConfirmation、pending→approved→executed、冻结payload、Message-ID/idempotency_key属于屏幕模型设计说明。云同步分类与一事一文件、单写者/分片是方案；正文明确未独立验实现/多设备同步，未把SQLite本地缓存目标夸大为现成事件重放保证。",
+      "required_change": null
+    },
+    {
+      "id": "04-08",
+      "sections": [
+        13
+      ],
+      "claim": "单向汉诺塔规则与有限规模验证",
+      "status": "pass",
+      "transcript_ranges_seconds": [
+        [
+          4109,
+          4349
+        ]
+      ],
+      "evidence": [
+        "s-g753.0~28",
+        "s-g767.0",
+        "s-g792.0~1",
+        "s-g820.0~16",
+        "frames/demo-4320-screen.webp",
+        "verify_hanoi.py",
+        "sources/hanoi-check.json"
+      ],
+      "finding": "目视源码确认A→B→C→A方向，区别第06课普通汉诺塔。检查作者重建递归和BFS脚本逻辑，并独立用状态空间BFS重算n=3：A到B15步、A到C21步；笔记保留有限规模检查不等于一般性最优证明。",
+      "required_change": null
+    }
+  ],
+  "independently_viewed_frames": [
+    "frames/demo-4320-screen.webp",
+    "frames/demo-5460-screen.webp",
+    "frames/demo-5520-screen.webp",
+    "frames/demo-5760-screen.webp",
+    "frames/demo-5820-screen.webp",
+    "frames/demo-5880-screen.webp"
+  ],
+  "independent_calculation": {
+    "method": "Separate BFS over n=3 directed legal states; not author recursion execution",
+    "states_visited": 27,
+    "A_to_B": 15,
+    "A_to_C": 21
+  },
+  "material_errors_found": [],
+  "body_modified": false,
+  "limitations": [
+    "资料中的第三方技术文档为作者本次冻结副本，本审计未再联网刷新。",
+    "抽查验证主要针对结论边界与关键演示；不是全片视频复核。",
+    "UI与实际手机由主协调分别记录。"
+  ]
+}

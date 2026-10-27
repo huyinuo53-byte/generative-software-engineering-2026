@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "bcut",
+    "auto",
+    "https://www.bilibili.com/video/BV1Rch76WEfQ",
+    "--project",
+    "/Users/yjzhao/Library/Application Support/BaoCut/projects/06 需求和架构（1）.bcut",
+    "--llm",
+    "agent",
+    "--source-lang",
+    "auto",
+    "--jsonl"
+  ],
+  "cwd": "/Users/yjzhao/Library/Application Support/BaoCut/agent/_scratch",
+  "finishedAtMs": 1790837799705,
+  "pid": 75514,
+  "startedAtMs": 1790837615097,
+  "taskId": "t-mup6h7g8"
+}

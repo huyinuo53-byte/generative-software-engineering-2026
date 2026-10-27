@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "run_id": "BV1Nyeq6qEt8-20261002-quality-upgrade",
+  "batch_id": "gse-2026-course-20261002",
+  "item_id": "lecture-05",
+  "scope_revision": 1,
+  "scope_changes": [],
+  "video_id": "BV1Nyeq6qEt8",
+  "source_url": "https://www.bilibili.com/video/BV1Nyeq6qEt8/",
+  "requested_outputs": [
+    "按视频的完整离线HTML",
+    "时间码",
+    "完整讲义图",
+    "内容与图片质量复核",
+    "手机窄屏阅读"
+  ],
+  "required_checks": [
+    "transcript_full_read",
+    "evidence_coverage",
+    "content_review",
+    "image_audit",
+    "html_static",
+    "desktop",
+    "narrow"
+  ],
+  "actor": "lecture05-author",
+  "created_at": "2026-10-02T15:11:22.552628+00:00",
+  "transcript_origin": "reused",
+  "reuse_basis": {
+    "source_run": "/Users/yjzhao/Downloads/课堂笔记/BV1Nyeq6qEt8/20261001T063030Z",
+    "source_sha256": "5ab5641c1152557735a50fa6ea56715c84488f6a5ad2f474e61bc88bf1bfa33c",
+    "reason": "同一BV与项目的原始BaoCut导出、首尾完整覆盖约100分钟；本次保留字节原样并全文重读，没有重转写"
+  },
+  "project_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/05 软件工程的来龙去脉.bcut",
+  "media_path": "/Users/yjzhao/Downloads/软件工程的来龙去脉 [05-Raw 26生成式软件工程 NJU].mp4",
+  "toolchain": {
+    "cli_path": "/Users/yjzhao/Downloads/BaoCut.app/Contents/Resources/skills/baocut/bin/bcut-cli",
+    "coordinator_reported_version": "2.1.0",
+    "coordinator_reported_spec": "1.249",
+    "asr_model": null,
+    "language": "zh",
+    "skill": "baocut-course-notes"
+  },
+  "sources": [
+    {
+      "id": "original-transcript",
+      "kind": "transcript",
+      "path": "transcript.json",
+      "origin": "reused",
+      "known_gaps": [
+        "没有重新逐秒听审，因此不保证原ASR无漏词或错词"
+      ]
+    },
+    {
+      "id": "official-slides",
+      "kind": "official-html-slides",
+      "path": "sources/slides5.html",
+      "url": "https://jyywiki.cn/GSE/2026/slides5.html",
+      "pages": 39,
+      "retrieved_date": "2026-10-02",
+      "known_gaps": [
+        "第7页包含动态视频，截图为占位；不用于最终笔记，该演示以真实视频帧替换"
+      ]
+    },
+    {
+      "id": "official-lecture",
+      "kind": "official-html-lecture",
+      "path": "sources/lect5.html",
+      "url": "https://jyywiki.cn/GSE/2026/lect5.md"
+    },
+    {
+      "id": "slide-pdf",
+      "kind": "webpage-screenshot-compilation",
+      "path": "sources/source-slides.pdf",
+      "pages": 39,
+      "note": "按官方原序排列的网页截图PDF，不是官方原生PDF，也不代表其动态视频已纳入PDF"
+    }
+  ]
+}

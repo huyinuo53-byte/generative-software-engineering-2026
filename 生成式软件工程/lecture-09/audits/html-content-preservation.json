@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "html_sha256": "c53214a052ee6b68c6fe49c119c448b27084fb3dc2739dd75f49909936c9b5ab",
+  "notes_sha256": "f85761ff3e017654e4ceec419479a4e531feb726955bf465b1bb19774a2a9d3c",
+  "text_blocks_checked": 269,
+  "missing": [],
+  "source_units": 518,
+  "unique_assignment": true,
+  "scope": "All authored prose and captions retained; this mechanical check is separate from semantic review."
+}

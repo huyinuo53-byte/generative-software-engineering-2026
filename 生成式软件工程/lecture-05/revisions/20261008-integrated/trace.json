@@ -1,0 +1,510 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1Nyeq6qEt8-20261008-integrated-pilot",
+  "basis": "observed_build",
+  "captured_at": "2026-10-07T19:10:04.658578+00:00",
+  "root": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/revisions/20261008-integrated",
+  "spec_sha256": "40aea63cf79db45c33c6f9fc0fc843ea6ec54906d1e8cce067a7e5907999b4ed",
+  "artifacts": [
+    {
+      "id": "notes",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/notes.json",
+      "depends_on": [
+        "index"
+      ],
+      "sha256": "dc8f00c56d59111dae9d0d92843d625cf10b9c63a9fe0523927e62d72e80a658",
+      "bytes": 79101
+    },
+    {
+      "id": "transcript",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/transcript.json",
+      "depends_on": [],
+      "sha256": "5ab5641c1152557735a50fa6ea56715c84488f6a5ad2f474e61bc88bf1bfa33c",
+      "bytes": 4948316
+    },
+    {
+      "id": "index",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/chunks/index.json",
+      "depends_on": [
+        "transcript"
+      ],
+      "sha256": "c253d81f1480c50d2f623f8bfaf74b1b7adfc273416bc6504eefcb04f2cb494f",
+      "bytes": 54682
+    },
+    {
+      "id": "frozen-slides",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/sources/slides5.html",
+      "depends_on": [],
+      "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff",
+      "bytes": 3024186
+    },
+    {
+      "id": "slides-text",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/sources/slides-text.json",
+      "depends_on": [
+        "frozen-slides"
+      ],
+      "sha256": "dbc327e496a5cf596b023070ed47c8c9c8ec5c158be386c8702b2f8efc4e9f02",
+      "bytes": 23165
+    },
+    {
+      "id": "base-renderer",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/scripts/course_notes.py",
+      "depends_on": [],
+      "sha256": "6d0833e602a13777c788cac8b167d1f21557265d5cfc3cfbaec28ac08e238cdd",
+      "bytes": 15390
+    },
+    {
+      "id": "base-template",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/template.html",
+      "depends_on": [],
+      "sha256": "4e7715e38f0530897e2d882f4d75e1d64dbff859fbc95ddfb0dfa88668f9b693",
+      "bytes": 2804
+    },
+    {
+      "id": "renderer",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/render_integrated.py",
+      "depends_on": [],
+      "sha256": "bee7004f39e3bf2e8d8807fed08ede21813e29f590c36334a3b7d072c0686492",
+      "bytes": 8844
+    },
+    {
+      "id": "map",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/revisions/20261008-integrated/integration-map.json",
+      "depends_on": [],
+      "sha256": "63fda68b991440507fab74b50af496a6b7e9d1b7835df0aac25da971a44c94b2",
+      "bytes": 2413
+    },
+    {
+      "id": "image-0",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-01.jpg",
+      "depends_on": [],
+      "sha256": "877ace84d6edf984aaf955760e6551d38092d80f6c250d892e2072be9e9411fa",
+      "bytes": 166524
+    },
+    {
+      "id": "image-1",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-02.jpg",
+      "depends_on": [],
+      "sha256": "fba56cc30ffe63fbcb398d700cf8b06eb38e9f9fe0032488cddc7d3c6f561abd",
+      "bytes": 172300
+    },
+    {
+      "id": "image-2",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-03.jpg",
+      "depends_on": [],
+      "sha256": "c0d0e4ef3fd5a66b7ee8ab9e2091bd0af1fa62d73335cc69b25dd9016b67ccf6",
+      "bytes": 174994
+    },
+    {
+      "id": "image-3",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-04.jpg",
+      "depends_on": [],
+      "sha256": "5ea0f1fd37ad4c0ed871938bdc484bb843e57de8af54bad938fd2df997005c00",
+      "bytes": 178879
+    },
+    {
+      "id": "image-4",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-05.jpg",
+      "depends_on": [],
+      "sha256": "c705b2d9c3bb0271416d3769d65eaa95957c3ce6f53bbb1541d08880229bbfb9",
+      "bytes": 168919
+    },
+    {
+      "id": "image-5",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-06.jpg",
+      "depends_on": [],
+      "sha256": "e82575a2e27e9bee7267c8c6cdfbe6e94ad4f64f06d919402e6624545f1c83af",
+      "bytes": 162182
+    },
+    {
+      "id": "image-6",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-38.jpg",
+      "depends_on": [],
+      "sha256": "657ad927cd39ebce36e0a90b11792221d9a81ec9f4154f83ea7bafd4ffe13d31",
+      "bytes": 255383
+    },
+    {
+      "id": "image-7",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-1274.79.png",
+      "depends_on": [],
+      "sha256": "ac2cb1011eff12c6943f80694b346b0c4ff344d4480494326dfdd02d7e17ca7f",
+      "bytes": 118995
+    },
+    {
+      "id": "image-8",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-08.jpg",
+      "depends_on": [],
+      "sha256": "a7bb7bccaa95db43b81c24e093a65fe271783152dc2d4c391c332bb8abd52622",
+      "bytes": 94661
+    },
+    {
+      "id": "image-9",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-09.jpg",
+      "depends_on": [],
+      "sha256": "34973e4bedd0b40c112d5198ae5df469188ab2f4c8e11da315c9413f4eedfa1b",
+      "bytes": 229614
+    },
+    {
+      "id": "image-10",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-10.jpg",
+      "depends_on": [],
+      "sha256": "c64f72681108a0a7977fce38d3dbfbc180463d2a2cc410f12571dbe046c9f190",
+      "bytes": 200055
+    },
+    {
+      "id": "image-11",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-11.jpg",
+      "depends_on": [],
+      "sha256": "c34aeb52b29179bf2b539d5a9d2a55868ca7ab0404120f3877d1e675212118bc",
+      "bytes": 235327
+    },
+    {
+      "id": "image-12",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-12.jpg",
+      "depends_on": [],
+      "sha256": "6c7fa6324a4ac595aa600f75f1b929564240f5e48582e5709bb363002da551f6",
+      "bytes": 207008
+    },
+    {
+      "id": "image-13",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-13.jpg",
+      "depends_on": [],
+      "sha256": "9fbb357688406eed94329c6a6a92cdc450f9a843c62b83880a3dbaa1d448f9bd",
+      "bytes": 229823
+    },
+    {
+      "id": "image-14",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-14.jpg",
+      "depends_on": [],
+      "sha256": "1a2c2edb998f7982dba3eaf9faf0a8b463bb388408cf3867a283701f2ecd4a98",
+      "bytes": 244781
+    },
+    {
+      "id": "image-15",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-15.jpg",
+      "depends_on": [],
+      "sha256": "b8aa4c3e6269d91d72ce828bd8fffc6f3d4d64a072bfe6f204d75bba66c3ab12",
+      "bytes": 194205
+    },
+    {
+      "id": "image-16",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-16.jpg",
+      "depends_on": [],
+      "sha256": "ca1fec7b2a4d734846593fdd8f3e277579a06beb6194407ce6ecf4b86ef1ab8e",
+      "bytes": 213128
+    },
+    {
+      "id": "image-17",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-17.jpg",
+      "depends_on": [],
+      "sha256": "5d1505ee4a1350fc244effa3a495a08e83aa39641678ee3c7bb7040a785330af",
+      "bytes": 211299
+    },
+    {
+      "id": "image-18",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-19.jpg",
+      "depends_on": [],
+      "sha256": "1aec1e0e04eb41deb0d321deae41a2237133149185c8429d1dbe63e54c264d60",
+      "bytes": 194342
+    },
+    {
+      "id": "image-19",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-18.jpg",
+      "depends_on": [],
+      "sha256": "2564e779923ed1beca05a59de34ac7241b908e4e8ac9239579ff17ab8538008c",
+      "bytes": 174306
+    },
+    {
+      "id": "image-20",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-20.jpg",
+      "depends_on": [],
+      "sha256": "633830b9c7ea7de7e2e354dffb9bb37acd632bf2deb4b44d5e3c8c9dd3f7340c",
+      "bytes": 204417
+    },
+    {
+      "id": "image-21",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-23.jpg",
+      "depends_on": [],
+      "sha256": "1438fd735e2d865f60b6ec9c3b346f4459861d859f60e5b52d37cb95c1473edb",
+      "bytes": 167583
+    },
+    {
+      "id": "image-22",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-21.jpg",
+      "depends_on": [],
+      "sha256": "add25426f9de7b42b6ba67768544bce1e31a9871de316bf8c3fba6a9506eb1fe",
+      "bytes": 216741
+    },
+    {
+      "id": "image-23",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-22.jpg",
+      "depends_on": [],
+      "sha256": "11a35c6e75b09f81210c9821ca5353034c5fa7fb44ba0928b4add1b4387b3a12",
+      "bytes": 207881
+    },
+    {
+      "id": "image-24",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/full-4274.29.png",
+      "depends_on": [],
+      "sha256": "88055630138de5ac917e09a87b82b66ed9c142a3f2cc4caf8d74205b664c2684",
+      "bytes": 262051
+    },
+    {
+      "id": "image-25",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-24.jpg",
+      "depends_on": [],
+      "sha256": "7f7ecb5acb6fea493495c6cd754551e498bdf3a1feaf8d9f44af5b6e9c8db686",
+      "bytes": 214300
+    },
+    {
+      "id": "image-26",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-25.jpg",
+      "depends_on": [],
+      "sha256": "c608629ddee261c22c63db294dbc8836356ac630c12808ab03a3c87b104256fa",
+      "bytes": 232369
+    },
+    {
+      "id": "image-27",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-39.jpg",
+      "depends_on": [],
+      "sha256": "4837a16834cd14bc2898bfb1d6390269741486a1289334374e7019be48280161",
+      "bytes": 289614
+    },
+    {
+      "id": "image-28",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-26.jpg",
+      "depends_on": [],
+      "sha256": "09dfe70f175627222795c990cefbd2380f8c752f8e7b5e98a3bdd9a51a54efe8",
+      "bytes": 248683
+    },
+    {
+      "id": "image-29",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-27.jpg",
+      "depends_on": [],
+      "sha256": "6689ceb28707c3bef32dc9730bfda81b0f54034cd5e161ec09c0911dcedb54ed",
+      "bytes": 147410
+    },
+    {
+      "id": "image-30",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-33.jpg",
+      "depends_on": [],
+      "sha256": "84dd3fe29de960319511f2b9550db25f811c4a7577170301d24cbe866eb1feca",
+      "bytes": 244997
+    },
+    {
+      "id": "image-31",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-28.jpg",
+      "depends_on": [],
+      "sha256": "d6a6831e3d5b60d021501bbe8a55b3f5f22cef308ff1f2ab4b3831165008824f",
+      "bytes": 221520
+    },
+    {
+      "id": "image-32",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-31.jpg",
+      "depends_on": [],
+      "sha256": "151b99ef81b12166b6c694f399c2604634d20240aa37c2b9390cfa188a652592",
+      "bytes": 203290
+    },
+    {
+      "id": "image-33",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-32.jpg",
+      "depends_on": [],
+      "sha256": "95a9142ca327d4b9256c9bb44461c660ad89c72d8528708a08c58112237511d9",
+      "bytes": 239443
+    },
+    {
+      "id": "image-34",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-35.jpg",
+      "depends_on": [],
+      "sha256": "ed5299c9f67204046c5d2f3feadf990bce0c9505aa480176826fa8df3d9d7180",
+      "bytes": 253600
+    },
+    {
+      "id": "image-35",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-36.jpg",
+      "depends_on": [],
+      "sha256": "ad88eb77ffaa3adbe52a2e0e780015a6592d4f369307b97d3cef13a02fa4077e",
+      "bytes": 259214
+    },
+    {
+      "id": "image-36",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-37.jpg",
+      "depends_on": [],
+      "sha256": "b9b2e9c9e4f18eb225421854b2733603495b4992e38ca2fded992a572475e582",
+      "bytes": 240596
+    },
+    {
+      "id": "image-37",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-29.jpg",
+      "depends_on": [],
+      "sha256": "5944790a801b3399a94ae9969c60446e8b8e3b84f78e8bd013a11f6a139cfc9b",
+      "bytes": 158215
+    },
+    {
+      "id": "image-38",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-30.jpg",
+      "depends_on": [],
+      "sha256": "32025e13210d9ce6fc85d1d2f0bbdf197744d8a7c72655a754a315ed39880ba1",
+      "bytes": 222449
+    },
+    {
+      "id": "image-39",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/frames/slide-34.jpg",
+      "depends_on": [],
+      "sha256": "1ad682bfabfe1742e96e1a43caae8c6feedb9802b871804e55fbba31d6656504",
+      "bytes": 218586
+    },
+    {
+      "id": "html",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/课堂笔记.html",
+      "depends_on": [
+        "notes",
+        "index",
+        "base-renderer",
+        "base-template",
+        "renderer",
+        "map",
+        "image-0",
+        "image-1",
+        "image-2",
+        "image-3",
+        "image-4",
+        "image-5",
+        "image-6",
+        "image-7",
+        "image-8",
+        "image-9",
+        "image-10",
+        "image-11",
+        "image-12",
+        "image-13",
+        "image-14",
+        "image-15",
+        "image-16",
+        "image-17",
+        "image-18",
+        "image-19",
+        "image-20",
+        "image-21",
+        "image-22",
+        "image-23",
+        "image-24",
+        "image-25",
+        "image-26",
+        "image-27",
+        "image-28",
+        "image-29",
+        "image-30",
+        "image-31",
+        "image-32",
+        "image-33",
+        "image-34",
+        "image-35",
+        "image-36",
+        "image-37",
+        "image-38",
+        "image-39"
+      ],
+      "sha256": "12bd9e824d5a7e8720f0c7eb5440623ae8b8dd422cdeac0cf53a343aa5a3d32c",
+      "bytes": 11133357
+    },
+    {
+      "id": "image-audit",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/image-audit.json",
+      "depends_on": [
+        "notes",
+        "image-0",
+        "image-1",
+        "image-2",
+        "image-3",
+        "image-4",
+        "image-5",
+        "image-6",
+        "image-7",
+        "image-8",
+        "image-9",
+        "image-10",
+        "image-11",
+        "image-12",
+        "image-13",
+        "image-14",
+        "image-15",
+        "image-16",
+        "image-17",
+        "image-18",
+        "image-19",
+        "image-20",
+        "image-21",
+        "image-22",
+        "image-23",
+        "image-24",
+        "image-25",
+        "image-26",
+        "image-27",
+        "image-28",
+        "image-29",
+        "image-30",
+        "image-31",
+        "image-32",
+        "image-33",
+        "image-34",
+        "image-35",
+        "image-36",
+        "image-37",
+        "image-38",
+        "image-39"
+      ],
+      "sha256": "6616749ae4e39b34ac3b2105bcfce73eb7d1dca4c4b1af95fca2f1faf3bbb01d",
+      "bytes": 66632
+    },
+    {
+      "id": "browser.json",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/revisions/20261008-integrated/browser.json",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "9d2853e3f4357e44809edef0ef72f0225283873c1c5af067d2d6edbb37e3e2bf",
+      "bytes": 3358
+    },
+    {
+      "id": "content-review.json",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/revisions/20261008-integrated/content-review.json",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "da616efe477a3c2eb951e34de9529972eec0140c10310fb6b853927e6ce00a11",
+      "bytes": 1997
+    },
+    {
+      "id": "print.json",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/revisions/20261008-integrated/print.json",
+      "depends_on": [
+        "html"
+      ],
+      "sha256": "7ce2bf851c94c7ba6a8b2db3aa18baec576c7e9e18de731c99541e0802426c1b",
+      "bytes": 270
+    },
+    {
+      "id": "verify_ui.cjs",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/revisions/20261008-integrated/verify_ui.cjs",
+      "depends_on": [],
+      "sha256": "29fe50cecbd21b35729c04caf474a228e0e896f16dd45950656675bd35e23d16",
+      "bytes": 5430
+    },
+    {
+      "id": "review",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-05/review.json",
+      "depends_on": [
+        "html",
+        "browser.json",
+        "content-review.json",
+        "print.json",
+        "image-audit"
+      ],
+      "sha256": "4007d55f71666ee43d335a010bef464c980448e8760682ef635275a6f600867b",
+      "bytes": 3475
+    }
+  ],
+  "claim": "File snapshot only; dependencies are declarations, not proof of execution or quality."
+}

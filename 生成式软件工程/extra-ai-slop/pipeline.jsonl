@@ -1,0 +1,96 @@
+{"detail":"读取媒体 URL 元数据","event":"progress","pct":0,"phase":"media-metadata","stage":"transcribe"}
+{"detail":"检查模型并准备转录","event":"progress","granular":{},"pct":0.0,"phase":"transcribing","stage":"transcribe"}
+{"detail":"下载媒体 0%","event":"progress","pct":0,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 1%","event":"progress","pct":0,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 3%","event":"progress","pct":1,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 6%","event":"progress","pct":1,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 8%","event":"progress","pct":1,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 13%","event":"progress","pct":2,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 19%","event":"progress","pct":3,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 23%","event":"progress","pct":3,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 25%","event":"progress","pct":4,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 28%","event":"progress","pct":4,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 33%","event":"progress","pct":5,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 40%","event":"progress","pct":6,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 45%","event":"progress","pct":7,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 51%","event":"progress","pct":8,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 58%","event":"progress","pct":9,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 65%","event":"progress","pct":10,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 69%","event":"progress","pct":10,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 74%","event":"progress","pct":11,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 81%","event":"progress","pct":12,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 85%","event":"progress","pct":13,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 92%","event":"progress","pct":14,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 98%","event":"progress","pct":15,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 100%","event":"progress","pct":15,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 0%","event":"progress","pct":0,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 1%","event":"progress","pct":0,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 3%","event":"progress","pct":0,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 6%","event":"progress","pct":1,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 13%","event":"progress","pct":2,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 26%","event":"progress","pct":4,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 53%","event":"progress","pct":8,"phase":"media-download","stage":"transcribe"}
+{"detail":"下载媒体 100%","event":"progress","pct":15,"phase":"media-download","stage":"transcribe"}
+{"detail":"媒体下载并验证完成","event":"progress","pct":15,"phase":"media-download","stage":"transcribe"}
+{"detail":"检查模型","event":"progress","pct":15,"phase":"model","stage":"transcribe"}
+{"detail":"解码媒体","event":"progress","pct":34,"phase":"decode","stage":"transcribe"}
+{"detail":"解码媒体 0:01 / 2:49","event":"progress","pct":34,"phase":"decode","stage":"transcribe"}
+{"detail":"推理排队中 · 前面还有 1 条任务","event":"progress","pct":15,"phase":"queue","stage":"transcribe"}
+{"end":4.35,"event":"artifact","kind":"segment","stage":"transcribe","start":0.15,"text":"现在大学的崩溃是系统性的，我对这有一个自己的理解"}
+{"detail":"MOSS 转录 0:04 / 2:49","event":"progress","pct":43,"phase":"transcribe","stage":"transcribe"}
+{"end":11.15,"event":"artifact","kind":"segment","stage":"transcribe","start":4.68,"text":"大家都知道网上可能有更好的资料，比如Stanford，MIT，哪个不比我二流大学牛逼多了"}
+{"detail":"MOSS 转录 0:11 / 2:49","event":"progress","pct":45,"phase":"transcribe","stage":"transcribe"}
+{"end":19.21,"event":"artifact","kind":"segment","stage":"transcribe","start":11.52,"text":"所以你会本能的拒绝你的老师，但同时如果没有人督促你，人的天性就是摸鱼，比如我的梦想就是做一条咸鱼"}
+{"detail":"MOSS 转录 0:19 / 2:49","event":"progress","pct":47,"phase":"transcribe","stage":"transcribe"}
+{"end":28.99,"event":"artifact","kind":"segment","stage":"transcribe","start":19.58,"text":"但这样就等于你同时拒绝了你的老师和牛逼的网课，进入一种老师用豆包出题，学生用豆包做作业，助教再用豆包改作业的恶性循环"}
+{"detail":"MOSS 转录 0:29 / 2:49","event":"progress","pct":50,"phase":"transcribe","stage":"transcribe"}
+{"end":36.92,"event":"artifact","kind":"segment","stage":"transcribe","start":29.41,"text":"整个流程都很丝滑，但大家肯定也焦虑。第一种焦虑是怎么平衡短期和长期的利益"}
+{"detail":"MOSS 转录 0:37 / 2:49","event":"progress","pct":52,"phase":"transcribe","stage":"transcribe"}
+{"end":47.18,"event":"artifact","kind":"segment","stage":"transcribe","start":37.34,"text":"AI戳我上大学的诱惑力实在太大了，以前我那种折磨人的魔鬼实验bug，天天调到凌晨，现在豆包都能搞定了，你去做实验吧，觉得很不值"}
+{"detail":"MOSS 转录 0:47 / 2:49","event":"progress","pct":54,"phase":"transcribe","stage":"transcribe"}
+{"end":54.83,"event":"artifact","kind":"segment","stage":"transcribe","start":47.48,"text":"凭什么宿舍老哥秒交了作业就去找女朋友了，我还要干代码，不做实验吧，你又担心自己没学懂，后面的课就学不会了"}
+{"detail":"MOSS 转录 0:55 / 2:49","event":"progress","pct":56,"phase":"transcribe","stage":"transcribe"}
+{"end":63.82,"event":"artifact","kind":"segment","stage":"transcribe","start":55.23,"text":"另一种焦虑是怎么找到毕业的出路，延续了中学时代听老师话的状态，结果却没有得到想要的东西"}
+{"detail":"MOSS 转录 1:04 / 2:49","event":"progress","pct":58,"phase":"transcribe","stage":"transcribe"}
+{"end":70.88,"event":"artifact","kind":"segment","stage":"transcribe","start":64.13,"text":"可能你宿舍老哥有了AI，学东西贼快，说的话自己都听不懂了，要保研了，你就更焦虑了"}
+{"detail":"MOSS 转录 1:11 / 2:49","event":"progress","pct":60,"phase":"transcribe","stage":"transcribe"}
+{"end":76.83,"event":"artifact","kind":"segment","stage":"transcribe","start":71.72,"text":"比如大家要保研套导师，我会收到好多简历，有些就是海投的"}
+{"detail":"MOSS 转录 1:17 / 2:49","event":"progress","pct":62,"phase":"transcribe","stage":"transcribe"}
+{"end":85.84,"event":"artifact","kind":"segment","stage":"transcribe","start":77.55,"text":"这边给大家看一份简历，经过匿名处理，当然也是agent来定的，我让他直接把PDF里带信息的都换成unicode方块"}
+{"detail":"MOSS 转录 1:26 / 2:49","event":"progress","pct":64,"phase":"transcribe","stage":"transcribe"}
+{"end":92.76,"event":"artifact","kind":"segment","stage":"transcribe","start":86.07,"text":"乍一看，这是一份非常完美的简历，成绩不错，有项目有奖项，还有一篇accepted的论文"}
+{"detail":"MOSS 转录 1:33 / 2:49","event":"progress","pct":66,"phase":"transcribe","stage":"transcribe"}
+{"end":99.28,"event":"artifact","kind":"segment","stage":"transcribe","start":93.73,"text":"没有github论阶，没有个人主页，没有preprint，就是干巴巴的做了个学术裁缝"}
+{"detail":"MOSS 转录 1:39 / 2:49","event":"progress","pct":67,"phase":"transcribe","stage":"transcribe"}
+{"end":104.62,"event":"artifact","kind":"segment","stage":"transcribe","start":99.71,"text":"B站还有专门叫你做学术裁缝的视频，我甚至怀疑简历出自辅导工厂"}
+{"detail":"MOSS 转录 1:45 / 2:49","event":"progress","pct":69,"phase":"transcribe","stage":"transcribe"}
+{"end":114.16,"event":"artifact","kind":"segment","stage":"transcribe","start":105.04,"text":"正常人如果不是为了利益，我觉得不可能喜欢一个开局就注定死掉的，基于A的B问题，C限定下的D方法，还硬要搞一篇论文"}
+{"detail":"MOSS 转录 1:54 / 2:49","event":"progress","pct":71,"phase":"transcribe","stage":"transcribe"}
+{"end":118.61,"event":"artifact","kind":"segment","stage":"transcribe","start":114.34,"text":"对我来说，可能一个说自己做了个galgame的简历都感觉会更好一些"}
+{"detail":"MOSS 转录 1:59 / 2:49","event":"progress","pct":72,"phase":"transcribe","stage":"transcribe"}
+{"end":123.31,"event":"artifact","kind":"segment","stage":"transcribe","start":119.04,"text":"你更像是为了自己学习，而不是疯狂的被评价体系逼着reward hacking"}
+{"detail":"MOSS 转录 2:03 / 2:49","event":"progress","pct":73,"phase":"transcribe","stage":"transcribe"}
+{"end":132.17,"event":"artifact","kind":"segment","stage":"transcribe","start":123.74,"text":"但你的简历如果不长成标准化的样子，非常努力的包装出自己做过科研，做过项目，参加一大堆竞赛，用slop写满就找不到下家"}
+{"detail":"MOSS 转录 2:12 / 2:49","event":"progress","pct":76,"phase":"transcribe","stage":"transcribe"}
+{"end":138.76,"event":"artifact","kind":"segment","stage":"transcribe","start":132.63,"text":"本质上，大家对自己的硬实力不自信，就疯狂在能加分的地方找补，进入无意义的内卷状态"}
+{"detail":"MOSS 转录 2:19 / 2:49","event":"progress","pct":77,"phase":"transcribe","stage":"transcribe"}
+{"end":146.53,"event":"artifact","kind":"segment","stage":"transcribe","start":139.28,"text":"我一直都觉得大学最需要的是启蒙课程，这样一门课程会带大家打好学科的基础，找到自信，解锁一个新的人生可能性"}
+{"detail":"MOSS 转录 2:27 / 2:49","event":"progress","pct":79,"phase":"transcribe","stage":"transcribe"}
+{"end":154.94,"event":"artifact","kind":"segment","stage":"transcribe","start":146.86,"text":"我以前上计算机系统基础和操作系统都是这个思路，虽然建立自信的过程实话说挺痛苦的，第一节课就要教你read the friendly manual"}
+{"detail":"MOSS 转录 2:35 / 2:49","event":"progress","pct":81,"phase":"transcribe","stage":"transcribe"}
+{"end":164.28,"event":"artifact","kind":"segment","stage":"transcribe","start":155.04,"text":"啊哈哈，我们在这一个学期的时间里一起学习怎么驾驭AI，做一些真正有趣的东西，因为这是一个全新的主题，所以课程所有都是我自己的个人理解"}
+{"detail":"MOSS 转录 2:44 / 2:49","event":"progress","pct":84,"phase":"transcribe","stage":"transcribe"}
+{"end":168.28,"event":"artifact","kind":"segment","stage":"transcribe","start":164.42,"text":"我非常欢迎大家提出反对的意见和建议，我也都会认真考虑的"}
+{"detail":"MOSS 转录 2:48 / 2:49","event":"progress","pct":85,"phase":"transcribe","stage":"transcribe"}
+{"detail":"MOSS 转录完成","event":"progress","pct":85,"phase":"transcribe","stage":"transcribe"}
+{"detail":"合并跨段说话人","event":"progress","pct":86,"phase":"speakers","stage":"transcribe"}
+{"detail":"对齐器缓存未就绪，保留行级时间","event":"progress","pct":86,"phase":"refine","stage":"transcribe"}
+{"detail":"校验并写入项目","event":"progress","pct":96,"phase":"write","stage":"transcribe"}
+{"detail":"校验媒体指纹 4%","event":"progress","pct":96,"phase":"write","stage":"transcribe"}
+{"event":"artifact","path":"/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-extra-BV1fKtN6DErG.bcut/ai/asr-rows.json"}
+{"event":"artifact","path":"/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-extra-BV1fKtN6DErG.bcut/transcript.json"}
+{"event":"artifact","path":"/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-extra-BV1fKtN6DErG.bcut/project.json"}
+{"event":"artifact","path":"/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-extra-BV1fKtN6DErG.bcut/studio/edits.json"}
+{"event":"artifact","path":"/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-extra-BV1fKtN6DErG.bcut/studio/data.json"}
+{"event":"artifact","path":"/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-extra-BV1fKtN6DErG.bcut/studio/data.json"}
+{"changed":["auto"],"data":{"langs":[],"polished":false,"refine":[],"refineMode":"fast","refineOffer":[],"steps":["transcribe"]},"event":"done","next":"bcut check '/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-extra-BV1fKtN6DErG.bcut'","project":"/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-extra-BV1fKtN6DErG.bcut","status":"ok"}

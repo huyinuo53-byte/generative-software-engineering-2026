@@ -1,0 +1,219 @@
+{
+  "status": "passed",
+  "content_units": 131,
+  "figures": 35,
+  "supplements": 4,
+  "placements": [
+    {
+      "source_section": 1,
+      "frame": 0,
+      "display_section": 1,
+      "path": "frames/page-001.webp"
+    },
+    {
+      "source_section": 2,
+      "frame": 0,
+      "display_section": 2,
+      "path": "frames/page-002.webp"
+    },
+    {
+      "source_section": 2,
+      "frame": 1,
+      "display_section": 2,
+      "path": "frames/page-003.webp"
+    },
+    {
+      "source_section": 3,
+      "frame": 0,
+      "display_section": 3,
+      "path": "frames/page-004.webp"
+    },
+    {
+      "source_section": 3,
+      "frame": 1,
+      "display_section": 3,
+      "path": "frames/page-005.webp"
+    },
+    {
+      "source_section": 4,
+      "frame": 0,
+      "display_section": 4,
+      "path": "frames/page-006.webp"
+    },
+    {
+      "source_section": 5,
+      "frame": 0,
+      "display_section": 5,
+      "path": "frames/page-007.webp"
+    },
+    {
+      "source_section": 6,
+      "frame": 0,
+      "display_section": 6,
+      "path": "frames/page-008.webp"
+    },
+    {
+      "source_section": 6,
+      "frame": 1,
+      "display_section": 6,
+      "path": "frames/page-009.webp"
+    },
+    {
+      "source_section": 7,
+      "frame": 0,
+      "display_section": 7,
+      "path": "frames/page-010.webp"
+    },
+    {
+      "source_section": 7,
+      "frame": 1,
+      "display_section": 7,
+      "path": "frames/page-011.webp"
+    },
+    {
+      "source_section": 8,
+      "frame": 0,
+      "display_section": 8,
+      "path": "frames/page-012.webp"
+    },
+    {
+      "source_section": 8,
+      "frame": 1,
+      "display_section": 8,
+      "path": "frames/demo-2782-screen.webp"
+    },
+    {
+      "source_section": 9,
+      "frame": 1,
+      "display_section": 9,
+      "path": "frames/demo-2905-screen.webp"
+    },
+    {
+      "source_section": 9,
+      "frame": 2,
+      "display_section": 9,
+      "path": "frames/demo-2990-screen.webp"
+    },
+    {
+      "source_section": 9,
+      "frame": 3,
+      "display_section": 9,
+      "path": "frames/demo-3020-screen.webp"
+    },
+    {
+      "source_section": 9,
+      "frame": 0,
+      "display_section": 9,
+      "path": "frames/page-013.webp"
+    },
+    {
+      "source_section": 10,
+      "frame": 0,
+      "display_section": 10,
+      "path": "frames/page-014.webp"
+    },
+    {
+      "source_section": 11,
+      "frame": 0,
+      "display_section": 11,
+      "path": "frames/page-015.webp"
+    },
+    {
+      "source_section": 11,
+      "frame": 1,
+      "display_section": 11,
+      "path": "frames/page-016.webp"
+    },
+    {
+      "source_section": 12,
+      "frame": 0,
+      "display_section": 12,
+      "path": "frames/page-017.webp"
+    },
+    {
+      "source_section": 12,
+      "frame": 1,
+      "display_section": 12,
+      "path": "frames/page-018.webp"
+    },
+    {
+      "source_section": 12,
+      "frame": 2,
+      "display_section": 12,
+      "path": "frames/page-019.webp"
+    },
+    {
+      "source_section": 13,
+      "frame": 0,
+      "display_section": 13,
+      "path": "frames/demo-4320-screen.webp"
+    },
+    {
+      "source_section": 14,
+      "frame": 0,
+      "display_section": 14,
+      "path": "frames/page-020.webp"
+    },
+    {
+      "source_section": 14,
+      "frame": 1,
+      "display_section": 14,
+      "path": "frames/page-021.webp"
+    },
+    {
+      "source_section": 15,
+      "frame": 0,
+      "display_section": 15,
+      "path": "frames/page-022.webp"
+    },
+    {
+      "source_section": 16,
+      "frame": 0,
+      "display_section": 16,
+      "path": "frames/page-023.webp"
+    },
+    {
+      "source_section": 17,
+      "frame": 0,
+      "display_section": 17,
+      "path": "frames/demo-5460-screen.webp"
+    },
+    {
+      "source_section": 17,
+      "frame": 1,
+      "display_section": 17,
+      "path": "frames/demo-5520-screen.webp"
+    },
+    {
+      "source_section": 18,
+      "frame": 0,
+      "display_section": 18,
+      "path": "frames/page-024.webp"
+    },
+    {
+      "source_section": 19,
+      "frame": 2,
+      "display_section": 19,
+      "path": "frames/demo-5820-screen.webp"
+    },
+    {
+      "source_section": 19,
+      "frame": 1,
+      "display_section": 19,
+      "path": "frames/demo-5760-screen.webp"
+    },
+    {
+      "source_section": 19,
+      "frame": 3,
+      "display_section": 19,
+      "path": "frames/demo-5880-screen.webp"
+    },
+    {
+      "source_section": 19,
+      "frame": 0,
+      "display_section": 19,
+      "path": "frames/page-025.webp"
+    }
+  ],
+  "boundary": "Structural coverage and version binding only; requires semantic and browser review."
+}

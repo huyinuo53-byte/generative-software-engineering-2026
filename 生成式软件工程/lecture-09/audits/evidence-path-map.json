@@ -1,0 +1,11 @@
+{
+  "purpose": "保留独立报告原始路径，不改其审查声明；以下映射提供长期回查。",
+  "mapping": {
+    "/tmp/gse09-visual/": "visual/",
+    "/tmp/gse09-materials/": "sources/materials/",
+    "/tmp/gse09-slides/": "sources/official-capture/",
+    "/tmp/gse09-content-review/": "audits/initial-content-review/",
+    "/tmp/gse09-asr.jsonl": "logs/asr.jsonl"
+  },
+  "final_content_report": "audits/content-review.json"
+}

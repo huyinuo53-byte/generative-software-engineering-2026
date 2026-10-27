@@ -1,0 +1,10 @@
+[
+  {
+    "path": "生成式软件工程/sources/projects.json",
+    "original_sha256": "925da115972fa53440e5fa70c633d58f1a7b3b2e466fdaa30e55f2962072baff",
+    "archived_sha256": "cd6e426e13c4f28ac87649b490aa6b3a3f0fd01ce974e9d9ba5c59415a68cfa4",
+    "reason": "Historical inventory scoped to course videos; unrelated BaoCut project records omitted",
+    "original_project_count": 26,
+    "archived_project_count": 4
+  }
+]

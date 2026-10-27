@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "reviewer": "root",
+  "index_sha256": "5818d6f7204e1eae6ba20d37f3ba48abaf84576757f6269011e6b9020f2bdf57",
+  "screenshots": [
+    {
+      "path": "index-1280-new-card.png",
+      "sha256": "224cebb3ab4b85ea4fc041834ac5d0c6d57fdbc3ef3921e515f1e5ca96915e4d"
+    },
+    {
+      "path": "index-390-new-card.png",
+      "sha256": "1816e3794f9885019f332d58a1c6b1bcab0a6b131dba566128d15ef1c9fbb99f"
+    }
+  ],
+  "observation": "两视口实际目视，09卡片位于08后、短片前；32节92图15自测可读，真实点击进入正确新课。",
+  "initial_check_issue": "初次读者脚本在导航后立即统计未完成解析的DOM，已保留失败记录；等待load后两视口均92图且通过。"
+}

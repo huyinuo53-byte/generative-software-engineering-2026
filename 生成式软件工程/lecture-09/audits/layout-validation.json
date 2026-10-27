@@ -1,0 +1,561 @@
+{
+  "status": "passed",
+  "content_units": 236,
+  "figures": 92,
+  "supplements": 17,
+  "placements": [
+    {
+      "source_section": 1,
+      "frame": 0,
+      "display_section": 1,
+      "path": "visual/full/v0009-0180.jpg"
+    },
+    {
+      "source_section": 1,
+      "frame": 1,
+      "display_section": 1,
+      "path": "sources/official-capture/page-01.png"
+    },
+    {
+      "source_section": 1,
+      "frame": 2,
+      "display_section": 1,
+      "path": "sources/official-capture/page-02.png"
+    },
+    {
+      "source_section": 2,
+      "frame": 0,
+      "display_section": 2,
+      "path": "visual/full/v0013-0210.jpg"
+    },
+    {
+      "source_section": 2,
+      "frame": 1,
+      "display_section": 2,
+      "path": "visual/full/v0019-360.jpg"
+    },
+    {
+      "source_section": 2,
+      "frame": 2,
+      "display_section": 2,
+      "path": "sources/official-capture/page-03.png"
+    },
+    {
+      "source_section": 3,
+      "frame": 0,
+      "display_section": 3,
+      "path": "visual/full/v0029-0400.jpg"
+    },
+    {
+      "source_section": 3,
+      "frame": 1,
+      "display_section": 3,
+      "path": "visual/full/v0030-0402.jpg"
+    },
+    {
+      "source_section": 3,
+      "frame": 2,
+      "display_section": 3,
+      "path": "visual/full/v0042-0458.jpg"
+    },
+    {
+      "source_section": 3,
+      "frame": 3,
+      "display_section": 3,
+      "path": "visual/full/v0048-0470.jpg"
+    },
+    {
+      "source_section": 3,
+      "frame": 4,
+      "display_section": 3,
+      "path": "visual/full/v0068-0550.jpg"
+    },
+    {
+      "source_section": 3,
+      "frame": 5,
+      "display_section": 3,
+      "path": "sources/official-capture/page-04.png"
+    },
+    {
+      "source_section": 5,
+      "frame": 0,
+      "display_section": 5,
+      "path": "sources/official-capture/page-05.png"
+    },
+    {
+      "source_section": 6,
+      "frame": 0,
+      "display_section": 6,
+      "path": "visual/full/v0092-0928.jpg"
+    },
+    {
+      "source_section": 6,
+      "frame": 1,
+      "display_section": 6,
+      "path": "visual/full/v0098-0992.jpg"
+    },
+    {
+      "source_section": 6,
+      "frame": 2,
+      "display_section": 6,
+      "path": "visual/full/v0100-0996.jpg"
+    },
+    {
+      "source_section": 6,
+      "frame": 3,
+      "display_section": 6,
+      "path": "visual/full/v0107-1024.jpg"
+    },
+    {
+      "source_section": 6,
+      "frame": 4,
+      "display_section": 6,
+      "path": "sources/official-capture/page-06.png"
+    },
+    {
+      "source_section": 6,
+      "frame": 5,
+      "display_section": 6,
+      "path": "sources/official-capture/page-07.png"
+    },
+    {
+      "source_section": 7,
+      "frame": 0,
+      "display_section": 7,
+      "path": "visual/full/v0121-1156.jpg"
+    },
+    {
+      "source_section": 7,
+      "frame": 1,
+      "display_section": 7,
+      "path": "sources/official-capture/page-08.png"
+    },
+    {
+      "source_section": 7,
+      "frame": 2,
+      "display_section": 7,
+      "path": "sources/official-capture/page-09.png"
+    },
+    {
+      "source_section": 8,
+      "frame": 0,
+      "display_section": 8,
+      "path": "sources/official-capture/page-10.png"
+    },
+    {
+      "source_section": 9,
+      "frame": 0,
+      "display_section": 9,
+      "path": "visual/full/v0142-1470.jpg"
+    },
+    {
+      "source_section": 9,
+      "frame": 1,
+      "display_section": 9,
+      "path": "sources/official-capture/page-11.png"
+    },
+    {
+      "source_section": 10,
+      "frame": 0,
+      "display_section": 10,
+      "path": "visual/full/v0152-1680.jpg"
+    },
+    {
+      "source_section": 10,
+      "frame": 1,
+      "display_section": 10,
+      "path": "sources/official-capture/page-14.png"
+    },
+    {
+      "source_section": 10,
+      "frame": 2,
+      "display_section": 10,
+      "path": "sources/official-capture/page-15.png"
+    },
+    {
+      "source_section": 10,
+      "frame": 3,
+      "display_section": 10,
+      "path": "sources/official-capture/page-16.png"
+    },
+    {
+      "source_section": 10,
+      "frame": 4,
+      "display_section": 10,
+      "path": "sources/official-capture/page-17.png"
+    },
+    {
+      "source_section": 11,
+      "frame": 0,
+      "display_section": 11,
+      "path": "sources/official-capture/page-12.png"
+    },
+    {
+      "source_section": 11,
+      "frame": 1,
+      "display_section": 11,
+      "path": "sources/official-capture/page-13.png"
+    },
+    {
+      "source_section": 12,
+      "frame": 0,
+      "display_section": 12,
+      "path": "visual/full/v0180-2040.jpg"
+    },
+    {
+      "source_section": 12,
+      "frame": 1,
+      "display_section": 12,
+      "path": "visual/full/v0184-2104.jpg"
+    },
+    {
+      "source_section": 12,
+      "frame": 2,
+      "display_section": 12,
+      "path": "visual/full/v0194-2144.jpg"
+    },
+    {
+      "source_section": 12,
+      "frame": 3,
+      "display_section": 12,
+      "path": "visual/full/v0198-2170.jpg"
+    },
+    {
+      "source_section": 12,
+      "frame": 4,
+      "display_section": 12,
+      "path": "sources/official-capture/page-18.png"
+    },
+    {
+      "source_section": 13,
+      "frame": 0,
+      "display_section": 13,
+      "path": "sources/official-capture/page-19.png"
+    },
+    {
+      "source_section": 14,
+      "frame": 0,
+      "display_section": 14,
+      "path": "sources/official-capture/page-20.png"
+    },
+    {
+      "source_section": 15,
+      "frame": 0,
+      "display_section": 15,
+      "path": "visual/full/v0225-2546.jpg"
+    },
+    {
+      "source_section": 15,
+      "frame": 1,
+      "display_section": 15,
+      "path": "visual/full/v0230-2580.jpg"
+    },
+    {
+      "source_section": 15,
+      "frame": 2,
+      "display_section": 15,
+      "path": "visual/full/v0237-2638.jpg"
+    },
+    {
+      "source_section": 15,
+      "frame": 3,
+      "display_section": 15,
+      "path": "sources/official-capture/page-21.png"
+    },
+    {
+      "source_section": 16,
+      "frame": 0,
+      "display_section": 16,
+      "path": "visual/full/v0250-2790.jpg"
+    },
+    {
+      "source_section": 16,
+      "frame": 1,
+      "display_section": 16,
+      "path": "sources/official-capture/page-25.png"
+    },
+    {
+      "source_section": 17,
+      "frame": 0,
+      "display_section": 17,
+      "path": "visual/full/v0262-2905-final.jpg"
+    },
+    {
+      "source_section": 17,
+      "frame": 1,
+      "display_section": 17,
+      "path": "visual/full/v0269-2920.jpg"
+    },
+    {
+      "source_section": 17,
+      "frame": 2,
+      "display_section": 17,
+      "path": "visual/full/v0274-2934.jpg"
+    },
+    {
+      "source_section": 17,
+      "frame": 3,
+      "display_section": 17,
+      "path": "visual/full/v0275-2936.jpg"
+    },
+    {
+      "source_section": 17,
+      "frame": 4,
+      "display_section": 17,
+      "path": "visual/full/v0276-2938.jpg"
+    },
+    {
+      "source_section": 17,
+      "frame": 5,
+      "display_section": 17,
+      "path": "visual/full/v0284-3024.jpg"
+    },
+    {
+      "source_section": 17,
+      "frame": 6,
+      "display_section": 17,
+      "path": "sources/official-capture/page-22.png"
+    },
+    {
+      "source_section": 18,
+      "frame": 0,
+      "display_section": 18,
+      "path": "sources/official-capture/page-23.png"
+    },
+    {
+      "source_section": 19,
+      "frame": 0,
+      "display_section": 19,
+      "path": "visual/full/v0296-3164.jpg"
+    },
+    {
+      "source_section": 19,
+      "frame": 1,
+      "display_section": 19,
+      "path": "sources/official-capture/page-24.png"
+    },
+    {
+      "source_section": 20,
+      "frame": 0,
+      "display_section": 20,
+      "path": "sources/official-capture/page-26.png"
+    },
+    {
+      "source_section": 21,
+      "frame": 0,
+      "display_section": 21,
+      "path": "visual/full/v0324-3421.jpg"
+    },
+    {
+      "source_section": 21,
+      "frame": 1,
+      "display_section": 21,
+      "path": "visual/full/v0334-3450.jpg"
+    },
+    {
+      "source_section": 21,
+      "frame": 2,
+      "display_section": 21,
+      "path": "visual/full/v0335-3480.jpg"
+    },
+    {
+      "source_section": 22,
+      "frame": 0,
+      "display_section": 22,
+      "path": "visual/full/v0347-3524.jpg"
+    },
+    {
+      "source_section": 22,
+      "frame": 1,
+      "display_section": 22,
+      "path": "visual/full/v0363-3636.jpg"
+    },
+    {
+      "source_section": 22,
+      "frame": 2,
+      "display_section": 22,
+      "path": "visual/full/v0386-3700.jpg"
+    },
+    {
+      "source_section": 22,
+      "frame": 3,
+      "display_section": 22,
+      "path": "visual/full/v0390-3712.jpg"
+    },
+    {
+      "source_section": 22,
+      "frame": 4,
+      "display_section": 22,
+      "path": "visual/full/v0396-3738.jpg"
+    },
+    {
+      "source_section": 23,
+      "frame": 0,
+      "display_section": 23,
+      "path": "sources/official-capture/page-27.png"
+    },
+    {
+      "source_section": 24,
+      "frame": 0,
+      "display_section": 24,
+      "path": "visual/full/v0421-3946.jpg"
+    },
+    {
+      "source_section": 24,
+      "frame": 1,
+      "display_section": 24,
+      "path": "sources/official-capture/page-28.png"
+    },
+    {
+      "source_section": 25,
+      "frame": 0,
+      "display_section": 25,
+      "path": "visual/full/v0448-4198.jpg"
+    },
+    {
+      "source_section": 25,
+      "frame": 1,
+      "display_section": 25,
+      "path": "visual/full/v0455-4244.jpg"
+    },
+    {
+      "source_section": 25,
+      "frame": 2,
+      "display_section": 25,
+      "path": "visual/full/v0457-4260.jpg"
+    },
+    {
+      "source_section": 25,
+      "frame": 3,
+      "display_section": 25,
+      "path": "sources/official-capture/page-29.png"
+    },
+    {
+      "source_section": 26,
+      "frame": 0,
+      "display_section": 26,
+      "path": "visual/full/v0462-4302.jpg"
+    },
+    {
+      "source_section": 26,
+      "frame": 1,
+      "display_section": 26,
+      "path": "visual/full/v0467-4330.jpg"
+    },
+    {
+      "source_section": 27,
+      "frame": 0,
+      "display_section": 27,
+      "path": "visual/full/v0486-4478.jpg"
+    },
+    {
+      "source_section": 27,
+      "frame": 1,
+      "display_section": 27,
+      "path": "sources/official-capture/page-30.png"
+    },
+    {
+      "source_section": 28,
+      "frame": 0,
+      "display_section": 28,
+      "path": "visual/full/v0490-4501.jpg"
+    },
+    {
+      "source_section": 28,
+      "frame": 1,
+      "display_section": 28,
+      "path": "visual/full/v0504-4540.jpg"
+    },
+    {
+      "source_section": 28,
+      "frame": 2,
+      "display_section": 28,
+      "path": "visual/full/v0515-4606.jpg"
+    },
+    {
+      "source_section": 28,
+      "frame": 3,
+      "display_section": 28,
+      "path": "visual/full/v0521-4632.jpg"
+    },
+    {
+      "source_section": 29,
+      "frame": 0,
+      "display_section": 29,
+      "path": "visual/full/v0524-4658-final.jpg"
+    },
+    {
+      "source_section": 29,
+      "frame": 1,
+      "display_section": 29,
+      "path": "visual/full/v0539-4701.jpg"
+    },
+    {
+      "source_section": 29,
+      "frame": 2,
+      "display_section": 29,
+      "path": "visual/full/v0544-4710.jpg"
+    },
+    {
+      "source_section": 29,
+      "frame": 3,
+      "display_section": 29,
+      "path": "visual/full/v0551-4774.jpg"
+    },
+    {
+      "source_section": 30,
+      "frame": 0,
+      "display_section": 30,
+      "path": "visual/full/v0567-4828.jpg"
+    },
+    {
+      "source_section": 30,
+      "frame": 1,
+      "display_section": 30,
+      "path": "visual/full/v0573-4840.jpg"
+    },
+    {
+      "source_section": 30,
+      "frame": 2,
+      "display_section": 30,
+      "path": "visual/full/v0581-4896.jpg"
+    },
+    {
+      "source_section": 30,
+      "frame": 3,
+      "display_section": 30,
+      "path": "visual/full/v0593-4998.jpg"
+    },
+    {
+      "source_section": 30,
+      "frame": 4,
+      "display_section": 30,
+      "path": "visual/full/v0604-5034.jpg"
+    },
+    {
+      "source_section": 30,
+      "frame": 5,
+      "display_section": 30,
+      "path": "visual/full/v0608-5044.jpg"
+    },
+    {
+      "source_section": 30,
+      "frame": 6,
+      "display_section": 30,
+      "path": "visual/full/v0616-5070.jpg"
+    },
+    {
+      "source_section": 31,
+      "frame": 0,
+      "display_section": 31,
+      "path": "visual/full/v0622-5110.jpg"
+    },
+    {
+      "source_section": 32,
+      "frame": 0,
+      "display_section": 32,
+      "path": "visual/full/v0633-5340.jpg"
+    }
+  ],
+  "boundary": "Structural coverage and version binding only; requires semantic and browser review."
+}

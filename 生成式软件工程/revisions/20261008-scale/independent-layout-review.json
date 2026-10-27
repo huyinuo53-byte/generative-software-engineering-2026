@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "review_kind": "independent editorial layout review against frozen notes",
+  "reviewer_role": "delegated agent not author of lecture01–04 layouts",
+  "status": "completed_with_two_minor_adjacency_findings",
+  "scope": {
+    "lectures": [
+      "01",
+      "02",
+      "03",
+      "04"
+    ],
+    "sections": 95,
+    "content_units": 620,
+    "figures": 180,
+    "original_primary_sources_reread": false,
+    "transcript_reread": false,
+    "image_pixels_reinspected": false,
+    "ui_tested": false,
+    "boundary": "All existing prose, captions, supplements, self-tests and complete layout plans were read. This is semantic placement and synthesis review against existing notes, not renewed original-source or visual-content verification."
+  },
+  "items": [
+    {
+      "lecture": "01",
+      "notes_sha256": "0763f27425195a1e41a62be1baccb16dbc44994435d9a181d5ec23481d00bdbb",
+      "layout_sha256": "92313bd0d07494c414a6380e31d7da318caa5bbdce30e34ef6ecfa5fc6115b4c",
+      "read_scope": {
+        "paragraphs": 106,
+        "examples": 3,
+        "editor_notes": 5,
+        "frames": 48,
+        "sections": 23,
+        "supplements": 6,
+        "self_test": 12
+      },
+      "read_completely": [
+        "summary",
+        "limitations",
+        "paragraphs",
+        "examples",
+        "editor_notes",
+        "frame_captions_and_metadata",
+        "supplements",
+        "self_test",
+        "layout_header_groups_short_takeaway_terms_flow"
+      ],
+      "structural_validation": {
+        "status": "passed",
+        "content_units": 168,
+        "figures": 48,
+        "supplements": 6
+      },
+      "cross_section_pdf_moves": [
+        {
+          "source_section": 23,
+          "frame": 5,
+          "display_section": 18,
+          "path": "frames/slide-40.jpg"
+        },
+        {
+          "source_section": 23,
+          "frame": 4,
+          "display_section": 20,
+          "path": "frames/slide-39.jpg"
+        },
+        {
+          "source_section": 23,
+          "frame": 3,
+          "display_section": 21,
+          "path": "frames/slide-38.jpg"
+        }
+      ],
+      "semantic_result": "No unsupported takeaway, loss of provenance, missing units or invalid cross-section video moves found. Minor adjacency issues listed separately where present."
+    },
+    {
+      "lecture": "02",
+      "notes_sha256": "6d9e5bd7b6a19755898203f4fb10e98dba185e43cd102ad4a40aecf596317558",
+      "layout_sha256": "40ac4692b64c3dcfd411bb18de65001c029df04183be274940baa266354522ed",
+      "read_scope": {
+        "paragraphs": 86,
+        "examples": 9,
+        "editor_notes": 14,
+        "frames": 44,
+        "sections": 28,
+        "supplements": 0,
+        "self_test": 5
+      },
+      "read_completely": [
+        "summary",
+        "limitations",
+        "paragraphs",
+        "examples",
+        "editor_notes",
+        "frame_captions_and_metadata",
+        "supplements",
+        "self_test",
+        "layout_header_groups_short_takeaway_terms_flow"
+      ],
+      "structural_validation": {
+        "status": "passed",
+        "content_units": 153,
+        "figures": 44,
+        "supplements": 0
+      },
+      "cross_section_pdf_moves": [
+        {
+          "source_section": 16,
+          "frame": 1,
+          "display_section": 17,
+          "path": "frames/slide-024.png"
+        }
+      ],
+      "semantic_result": "No unsupported takeaway, loss of provenance, missing units or invalid cross-section video moves found. Minor adjacency issues listed separately where present."
+    },
+    {
+      "lecture": "03",
+      "notes_sha256": "49148a7337fc6f38cd2923a239f514f3d8caef72cc987373c1c912233c9078e5",
+      "layout_sha256": "c391b892a6b6603c0a5e06ab6d5090fe668290258c52806c320bf8540479c324",
+      "read_scope": {
+        "paragraphs": 98,
+        "examples": 2,
+        "editor_notes": 12,
+        "frames": 53,
+        "sections": 25,
+        "supplements": 3,
+        "self_test": 5
+      },
+      "read_completely": [
+        "summary",
+        "limitations",
+        "paragraphs",
+        "examples",
+        "editor_notes",
+        "frame_captions_and_metadata",
+        "supplements",
+        "self_test",
+        "layout_header_groups_short_takeaway_terms_flow"
+      ],
+      "structural_validation": {
+        "status": "passed",
+        "content_units": 168,
+        "figures": 53,
+        "supplements": 3
+      },
+      "cross_section_pdf_moves": [],
+      "semantic_result": "No unsupported takeaway, loss of provenance, missing units or invalid cross-section video moves found. Minor adjacency issues listed separately where present."
+    },
+    {
+      "lecture": "04",
+      "notes_sha256": "5023817b0fa063e8ba806226ad39444be5eac4d826b367605496423658d295ee",
+      "layout_sha256": "266b50e45cb99c6bf6bf10a1b54fe389408b4efb810df0a9aa91ce521128c822",
+      "read_scope": {
+        "paragraphs": 64,
+        "examples": 1,
+        "editor_notes": 27,
+        "frames": 35,
+        "sections": 19,
+        "supplements": 4,
+        "self_test": 7
+      },
+      "read_completely": [
+        "summary",
+        "limitations",
+        "paragraphs",
+        "examples",
+        "editor_notes",
+        "frame_captions_and_metadata",
+        "supplements",
+        "self_test",
+        "layout_header_groups_short_takeaway_terms_flow"
+      ],
+      "structural_validation": {
+        "status": "passed",
+        "content_units": 131,
+        "figures": 35,
+        "supplements": 4
+      },
+      "cross_section_pdf_moves": [],
+      "semantic_result": "No unsupported takeaway, loss of provenance, missing units or invalid cross-section video moves found. Minor adjacency issues listed separately where present."
+    }
+  ],
+  "findings": [
+    {
+      "id": "L03-F17-placement",
+      "severity": "minor",
+      "lecture": "03",
+      "section": 13,
+      "reference": "f0 (official page17)",
+      "evidence": "Caption says 让 Agent 逐文件解释变化，作为学习约定而非自动放行; current p3 discusses git blame as a clue rather than root-cause proof. Section14 p3 explicitly discusses AI explaining each concrete change.",
+      "recommendation": "Remove f0 from section13 flow; insert cross-section PDF token f13:0 immediately after p3 in section14. Keep original frame ownership and captions.",
+      "suggested_flows": {
+        "section13": "p0 f1 p1 p2 p3",
+        "section14": "p0 p1 p2 f0 p3 f13:0 n0"
+      },
+      "notes_change_required": false
+    },
+    {
+      "id": "L04-video5760-placement",
+      "severity": "minor",
+      "lecture": "04",
+      "section": 19,
+      "reference": "f1 (96:00 original video frame)",
+      "evidence": "Caption identifies confirmation execution, idempotency and workflow design, while current preceding p0 introduces cloud sync. Later p1 explicitly lists drafts, confirmation, tasks and audit as mirrored state.",
+      "recommendation": "Keep the video frame within section19 and place it alongside that state classification instead of directly after the new cloud-sync request.",
+      "suggested_flow": "p0 p1 f2 f1 n0 p2 f3 p3 f0 n1",
+      "notes_change_required": false
+    }
+  ],
+  "positive_findings": [
+    "All four layouts passed the exact current reading_layout.validate contract, including SHA binding, exact-once content preservation, displayed-prose keywords and no cross-section video move.",
+    "Lecture01 discussion supplements retain explicit non-endorsed AIGC boundaries even after moving into related arguments.",
+    "Lecture02 distinguishes classroom versus slide poetry versions and preserves the real-tool versus detached microbenchmark distinction.",
+    "Lecture03 keeps future VCS proposals distinct from completed classroom demonstrations; branch/rebase supplement retains its explicit incomplete-demonstration boundary.",
+    "Lecture04 preserves jj terminology corrections, worktree isolation limits, fixture/live boundaries and untested cloud-sync proposals."
+  ],
+  "changes_made_to_reviewed_notes_or_layouts": false
+}

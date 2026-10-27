@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "links": [
+        "lecture-01/课堂笔记.html",
+        "lecture-02/课堂笔记.html",
+        "lecture-03/课堂笔记.html",
+        "lecture-04/课堂笔记.html",
+        "lecture-05/课堂笔记.html",
+        "lecture-06/课堂笔记.html",
+        "lecture-07/课堂笔记.html",
+        "extra-ai-slop/课堂笔记.html"
+      ],
+      "errors": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "links": [
+        "lecture-01/课堂笔记.html",
+        "lecture-02/课堂笔记.html",
+        "lecture-03/课堂笔记.html",
+        "lecture-04/课堂笔记.html",
+        "lecture-05/课堂笔记.html",
+        "lecture-06/课堂笔记.html",
+        "lecture-07/课堂笔记.html",
+        "extra-ai-slop/课堂笔记.html"
+      ],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "links": [
+        "lecture-01/课堂笔记.html",
+        "lecture-02/课堂笔记.html",
+        "lecture-03/课堂笔记.html",
+        "lecture-04/课堂笔记.html",
+        "lecture-05/课堂笔记.html",
+        "lecture-06/课堂笔记.html",
+        "lecture-07/课堂笔记.html",
+        "extra-ai-slop/课堂笔记.html"
+      ],
+      "errors": []
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "links": [
+        "lecture-01/课堂笔记.html",
+        "lecture-02/课堂笔记.html",
+        "lecture-03/课堂笔记.html",
+        "lecture-04/课堂笔记.html",
+        "lecture-05/课堂笔记.html",
+        "lecture-06/课堂笔记.html",
+        "lecture-07/课堂笔记.html",
+        "extra-ai-slop/课堂笔记.html"
+      ],
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 2,
+  "run_id": "BV1pb8o6yE8f-20261002-complete-notes",
+  "batch_id": "gse-2026-course-20261002",
+  "item_id": "lecture-01",
+  "scope_revision": 1,
+  "scope_changes": [],
+  "video_id": "BV1pb8o6yE8f",
+  "source_url": "https://www.bilibili.com/video/BV1pb8o6yE8f/",
+  "requested_outputs": [
+    "单课完整离线HTML",
+    "时间码和完整讲义图",
+    "内容及逐图复核",
+    "手机窄屏阅读"
+  ],
+  "required_checks": [
+    "transcript_full_read",
+    "evidence_coverage",
+    "content_review",
+    "image_audit",
+    "html_static",
+    "desktop",
+    "narrow"
+  ],
+  "actor": "lecture05-agent-authoring-01",
+  "created_at": "2026-10-02T15:28:26.688786+00:00",
+  "transcript_origin": "reused_completed_batch_asr",
+  "reuse_basis": {
+    "project_asr": "fresh/done confirmed before export",
+    "engine": "moss-transcribe-diarize",
+    "cues": 2716,
+    "words": 27158,
+    "source_sha256": "03a43af30f673fee7cd28445031175a8c5924a752eb3e0084d5d90dbb36f889b",
+    "reason": "主协调者刚完成本课ASR；本代理仅导出复用，没有启动重复转写"
+  },
+  "project_path": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-01-BV1pb8o6yE8f.bcut",
+  "media_path": "/Users/yjzhao/Downloads/欢迎来到未来 [01-Raw 26生成式软件工程 NJU].mp4",
+  "media_metadata": {
+    "duration_seconds": 5999.317375,
+    "width": 1280,
+    "height": 410,
+    "fps": 30,
+    "project_media_hash": "sha256-a5b0b91ce241e51706496b428003b963d9b6c1e9df3c98ff79ba05cde8f2c8e7"
+  },
+  "toolchain": {
+    "cli_path": "/Users/yjzhao/Downloads/BaoCut.app/Contents/Resources/skills/baocut/bin/bcut-cli",
+    "coordinator_reported_version": "2.1.0",
+    "coordinator_reported_spec": "1.249",
+    "asr_engine": "moss-transcribe-diarize",
+    "language": "zh",
+    "skill": "baocut-course-notes"
+  },
+  "sources": [
+    {
+      "id": "transcript",
+      "kind": "transcript",
+      "path": "transcript.json",
+      "known_gaps": [
+        "未逐秒听审，ASR错词仍可能存在；正文关键术语结合官方讲义校正"
+      ]
+    },
+    {
+      "id": "official-slides",
+      "kind": "official-html-slides",
+      "path": "sources/slides1.html",
+      "url": "https://jyywiki.cn/GSE/2026/slides1.html",
+      "pages": 44,
+      "retrieved_date": "2026-10-02",
+      "known_gaps": [
+        "第13页原源链式分解公式显示不完整，该图未入选成品"
+      ]
+    },
+    {
+      "id": "official-lecture",
+      "kind": "official-html-lecture",
+      "path": "sources/lect1.html",
+      "url": "https://jyywiki.cn/GSE/2026/lect1.md"
+    },
+    {
+      "id": "slide-pdf",
+      "kind": "webpage-screenshot-compilation",
+      "path": "sources/source-slides.pdf",
+      "pages": 44,
+      "note": "逐页完整网页截图按原页序汇编，非官方原生PDF；物理页码等于原页序"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "index_sha256": "5818d6f7204e1eae6ba20d37f3ba48abaf84576757f6269011e6b9020f2bdf57",
+  "rows": [
+    {
+      "width": 1280,
+      "text": "09\nDeepSeek Harness (1)\n\n本课用 DeepSeek Harness 说明：一个150行Agent循环能做原型，但真实产品还需要恢复、权限、共享状态和适应需求变化的架构。\n\n32 节 · 92 幅配图 · 15 道自测\n↗",
+      "title": "生成式软件工程 09｜DeepSeek Harness (1)",
+      "url": "file:///Users/yjzhao/Documents/ChatGPT/learning-machine/%E7%94%9F%E6%88%90%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/lecture-09/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.html",
+      "metrics": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "images": 92
+      },
+      "screenshot": {
+        "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261026-new-09/index-1280-new-card.png",
+        "sha256": "224cebb3ab4b85ea4fc041834ac5d0c6d57fdbc3ef3921e515f1e5ca96915e4d"
+      },
+      "passed": true
+    },
+    {
+      "width": 390,
+      "text": "09\nDeepSeek Harness (1)\n\n本课用 DeepSeek Harness 说明：一个150行Agent循环能做原型，但真实产品还需要恢复、权限、共享状态和适应需求变化的架构。\n\n32 节 · 92 幅配图 · 15 道自测\n↗",
+      "title": "生成式软件工程 09｜DeepSeek Harness (1)",
+      "url": "file:///Users/yjzhao/Documents/ChatGPT/learning-machine/%E7%94%9F%E6%88%90%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/lecture-09/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.html",
+      "metrics": {
+        "width": 390,
+        "scrollWidth": 390,
+        "images": 92
+      },
+      "screenshot": {
+        "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/revisions/20261026-new-09/index-390-new-card.png",
+        "sha256": "1816e3794f9885019f332d58a1c6b1bcab0a6b131dba566128d15ef1c9fbb99f"
+      },
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+[
+  {
+    "label": "入口、原则与 playbooks",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/poteto-mode/SKILL.md#L13-L79",
+    "path": "pstack/skills/poteto-mode/SKILL.md"
+  },
+  {
+    "label": "Feature 流程",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/poteto-mode/playbooks/feature.md#L1-L21",
+    "path": "pstack/skills/poteto-mode/playbooks/feature.md"
+  },
+  {
+    "label": "how：区分复杂度",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/how/SKILL.md#L3-L20",
+    "path": "pstack/skills/how/SKILL.md"
+  },
+  {
+    "label": "why：证据与动机",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/why/SKILL.md#L3-L27",
+    "path": "pstack/skills/why/SKILL.md"
+  },
+  {
+    "label": "TDD 的适用和跳过条件",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/tdd/SKILL.md#L3-L26",
+    "path": "pstack/skills/tdd/SKILL.md"
+  },
+  {
+    "label": "候选与重新设计信号",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/architect/SKILL.md#L27-L75",
+    "path": "pstack/skills/architect/SKILL.md"
+  },
+  {
+    "label": "先验证共同前提",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/principle-attack-the-premise/SKILL.md#L3-L21",
+    "path": "pstack/skills/principle-attack-the-premise/SKILL.md"
+  },
+  {
+    "label": "从调用者体验推导设计",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/architect/references/rationale-template.md#L1-L35",
+    "path": "pstack/skills/architect/references/rationale-template.md"
+  },
+  {
+    "label": "比较、整合与输出",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/arena/SKILL.md#L11-L48",
+    "path": "pstack/skills/arena/SKILL.md"
+  },
+  {
+    "label": "生成并实际执行验证技能",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/create-verification-skill/SKILL.md#L11-L40",
+    "path": "pstack/skills/create-verification-skill/SKILL.md"
+  },
+  {
+    "label": "范围、三类问题与结果",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/maintain-verification-skill/SKILL.md#L11-L39",
+    "path": "pstack/skills/maintain-verification-skill/SKILL.md"
+  },
+  {
+    "label": "验证检查确实会失败",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/create-formal-verification-skill/SKILL.md#L23-L37",
+    "path": "pstack/skills/create-formal-verification-skill/SKILL.md"
+  },
+  {
+    "label": "重新确认代码与模型对应",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/maintain-formal-verification-skill/SKILL.md#L28-L46",
+    "path": "pstack/skills/maintain-formal-verification-skill/SKILL.md"
+  },
+  {
+    "label": "技能写作与结构校验",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/poteto-mode/playbooks/authoring-a-skill.md#L1-L12",
+    "path": "pstack/skills/poteto-mode/playbooks/authoring-a-skill.md"
+  },
+  {
+    "label": "从实际行为评估技能",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/poteto-mode/playbooks/eval.md#L1-L25",
+    "path": "pstack/skills/poteto-mode/playbooks/eval.md"
+  },
+  {
+    "label": "反思后的结构检查与批准",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/reflect/SKILL.md#L41-L58",
+    "path": "pstack/skills/reflect/SKILL.md"
+  },
+  {
+    "label": "第 05 讲 67:33：先做通一条小路径",
+    "local": "../../生成式软件工程/lecture-05/课堂笔记.html#s11"
+  },
+  {
+    "label": "第 08 讲 05:58：每层都有多个候选",
+    "local": "../../生成式软件工程/lecture-08/课堂笔记.html#s4"
+  },
+  {
+    "label": "至少两种结构候选",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/architect/SKILL.md#L27-L39",
+    "path": "pstack/skills/architect/SKILL.md"
+  },
+  {
+    "label": "分成可验证的小单元",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/poteto-mode/playbooks/feature.md#L15-L18",
+    "path": "pstack/skills/poteto-mode/playbooks/feature.md"
+  },
+  {
+    "label": "面向 PM 的状态图与复现要求",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/statechart/SKILL.md#L9-L36",
+    "path": "pstack/skills/statechart/SKILL.md"
+  },
+  {
+    "label": "第 07 讲 89:49：显式依赖与纠错",
+    "local": "../../生成式软件工程/lecture-07/课堂笔记.html#s23"
+  },
+  {
+    "label": "第 08 讲 40:58：检查状态变化",
+    "local": "../../生成式软件工程/lecture-08/课堂笔记.html#s14"
+  },
+  {
+    "label": "状态归属与手工同步清单",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/architect/references/design-red-flags.md#L35-L57",
+    "path": "pstack/skills/architect/references/design-red-flags.md"
+  },
+  {
+    "label": "以局部上下文贡献者为设计条件",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/architect/SKILL.md#L33-L37",
+    "path": "pstack/skills/architect/SKILL.md"
+  },
+  {
+    "label": "第 07 讲 10:51：边界与约束",
+    "local": "../../生成式软件工程/lecture-07/课堂笔记.html#s4"
+  },
+  {
+    "label": "第 08 讲 52:37：代码与文档关系容易丢失",
+    "local": "../../生成式软件工程/lecture-08/课堂笔记.html#s18"
+  },
+  {
+    "label": "第 07 讲 83:08：结构平衡不等于事实正确",
+    "local": "../../生成式软件工程/lecture-07/课堂笔记.html#s21"
+  },
+  {
+    "label": "动作、状态与副作用的证据",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/create-verification-skill/SKILL.md#L25-L40",
+    "path": "pstack/skills/create-verification-skill/SKILL.md"
+  },
+  {
+    "label": "原模板的目标读者",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/how/references/explainer-prompt.md#L7-L23",
+    "path": "pstack/skills/how/references/explainer-prompt.md"
+  },
+  {
+    "label": "广覆盖及跳过门槛",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/why/SKILL.md#L29-L75",
+    "path": "pstack/skills/why/SKILL.md"
+  },
+  {
+    "label": "宿主、角色与自主设置",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/poteto-mode/SKILL.md#L81-L101",
+    "path": "pstack/skills/poteto-mode/SKILL.md"
+  },
+  {
+    "label": "合成结果仍需验证",
+    "url": "https://github.com/cursor/plugins/blob/eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10/pstack/skills/arena/SKILL.md#L42-L48",
+    "path": "pstack/skills/arena/SKILL.md"
+  }
+]

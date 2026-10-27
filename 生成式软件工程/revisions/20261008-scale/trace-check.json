@@ -1,0 +1,85 @@
+{
+  "course": {
+    "run_id": "gse-20261008-editorial-scale",
+    "basis": "observed_build",
+    "status": "unchanged",
+    "changed_files": [],
+    "unavailable_files": [],
+    "requires_revalidation": [],
+    "checked_files": 21,
+    "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+  },
+  "lessons": [
+    {
+      "run_id": "extra-ai-slop-20261008-editorial-scale",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 38,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    },
+    {
+      "run_id": "lecture-01-20261008-editorial-scale",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 78,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    },
+    {
+      "run_id": "lecture-02-20261008-editorial-scale",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 72,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    },
+    {
+      "run_id": "lecture-03-20261008-editorial-scale",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 83,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    },
+    {
+      "run_id": "lecture-04-20261008-editorial-scale",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 65,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    },
+    {
+      "run_id": "lecture-06-20261008-editorial-scale",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 67,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    },
+    {
+      "run_id": "lecture-07-20261008-editorial-scale",
+      "basis": "observed_build",
+      "status": "unchanged",
+      "changed_files": [],
+      "unavailable_files": [],
+      "requires_revalidation": [],
+      "checked_files": 74,
+      "claim": "Unchanged does not mean complete, correct, visually reviewed, or generated from the declared dependencies."
+    }
+  ],
+  "claim": "Dependency hashes, not proof of content quality; semantic and browser evidence recorded separately"
+}

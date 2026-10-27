@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "source_sha256": "031a3f4410589e96f9dc6c4e879dfd94ac33534d341ef9118a20ba024ea9afe7",
+  "chunks": [
+    {
+      "id": "fixture-0001",
+      "file": "fixture-0001.json",
+      "start": 0,
+      "end": 90,
+      "source_ids": [
+        "fixture-s1",
+        "fixture-s2",
+        "fixture-s3"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "fixture-s1",
+      "start": 0,
+      "end": 30
+    },
+    {
+      "id": "fixture-s2",
+      "start": 30,
+      "end": 60
+    },
+    {
+      "id": "fixture-s3",
+      "start": 60,
+      "end": 90
+    }
+  ]
+}

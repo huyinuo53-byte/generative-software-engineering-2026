@@ -1,0 +1,42 @@
+[
+  {
+    "id": "dsh-core",
+    "url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/core.md",
+    "path": "/tmp/gse09-materials/sources/dsh-core.md",
+    "sha256": "c465d63b40da9be9109be67fdfc89fb90bfdb14d5afff7b80c1386bd10c006c6",
+    "bytes": 58511,
+    "status": "retrieved"
+  },
+  {
+    "id": "dsh-session",
+    "url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/session.md",
+    "path": "/tmp/gse09-materials/sources/dsh-session.md",
+    "sha256": "7feaa7cc6451fc016bddb4871fc849b9f75890dbcd38a7fa11b87deace10b194",
+    "bytes": 75849,
+    "status": "retrieved"
+  },
+  {
+    "id": "dsh-system-prompt",
+    "url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/system-prompt.md",
+    "path": "/tmp/gse09-materials/sources/dsh-system-prompt.md",
+    "sha256": "f316bed51c243dcd3be9ad037864c83e3970b884705fffe97d246dc7c15d1b95",
+    "bytes": 13000,
+    "status": "retrieved"
+  },
+  {
+    "id": "dsh-cordis",
+    "url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/687f282e8625c6b8d11ff58211a90524be2e4317/docs/cordis-primer.md",
+    "path": "/tmp/gse09-materials/sources/dsh-cordis.md",
+    "sha256": "f0cc573cc10b60d1bd76039fb0bd666edfb32c9b18027d4dc301c042a9e65d58",
+    "bytes": 4136,
+    "status": "retrieved"
+  },
+  {
+    "id": "dsh-bot-readme",
+    "url": "https://raw.githubusercontent.com/Nothing1024/dsh-bot/3acc759fc634d5d5c55792614b6bca03c630a345/README.md",
+    "path": "/tmp/gse09-materials/sources/dsh-bot-readme.md",
+    "sha256": "6ad670b47bef19017e4682dc11178789c6e41b86708ae6afdc57d1dfe8a5d832",
+    "bytes": 9118,
+    "status": "retrieved"
+  }
+]

@@ -1,0 +1,13 @@
+<h1>Event Sourcing：能回放什么？</h1>
+<h2>接受事件历史，获得审计与重建</h2>
+<ul>
+<li><span class="aigc">约束：把已发生的事实作为记录，状态由事件推导；纠错也要说明发生了什么。</span></li>
+<li><span class="aigc">例如校园卡：<code>充值 100 → 消费 12 → 退款 12</code>，既能计算余额，也能回答“为什么是这个数”。</span></li>
+<li><span class="aigc">便利：从同一份历史重建余额、生成流水、查询过去状态。<a href="https://martinfowler.com/eaaDev/EventSourcing.html">Event Sourcing</a></span></li>
+</ul>
+<h2>“重新计算”遇上现实世界</h2>
+<ul>
+<li><span class="aigc">重算余额可以，回放事件时再扣一次钱就错了；外部调用必须区分真实执行与历史回放。<a href="https://martinfowler.com/eaaDev/EventSourcing.html#ExternalUpdates">外部副作用</a></span></li>
+<li><span class="aigc">历史外币消费不能按今天的汇率重算；需要保存当时的输入，并处理规则、事件格式的版本变化。<a href="https://martinfowler.com/eaaDev/EventSourcing.html#ExternalQueries">外部查询与代码变化</a></span></li>
+<li><span class="aigc">事件保存了历史事实；重现当时的结果，还依赖解释这些事实所需的上下文。</span></li>
+</ul>

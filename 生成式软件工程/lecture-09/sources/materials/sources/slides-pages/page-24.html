@@ -1,0 +1,15 @@
+<h1>Hooks: 参与执行决策</h1>
+<h2>5. 在执行前介入</h2>
+<ul>
+<li>插件能 hook（改写）pending 决策</li>
+</ul>
+<pre><code class="language-ts">ctx.on('agent/pre-step', async (payload, next) =&gt; {
+  const decision = await next()
+  return decision
+})
+</code></pre>
+<h2>已经发生的事实，与尚未执行的决策</h2>
+<ul>
+<li><span class="aigc"><code>session/event</code>：观察已提交的事实；要补充或纠正，追加新事件。</span></li>
+<li><span class="aigc"><code>agent/pre-step</code>：参与待执行的决策；调用 <code>next()</code> 才会委托后续处理链。</span></li>
+</ul>

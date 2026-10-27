@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "run_id": "BV1fKtN6DErG-20261002-complete-notes",
+  "basis": "observed_build",
+  "root": ".",
+  "artifacts": [
+    {
+      "id": "audit.json",
+      "path": "audit.json",
+      "depends_on": [
+        "notes.json",
+        "write_audit.py"
+      ]
+    },
+    {
+      "id": "build_notes.py",
+      "path": "build_notes.py",
+      "depends_on": []
+    },
+    {
+      "id": "chunks/chunk-0001.json",
+      "path": "chunks/chunk-0001.json",
+      "depends_on": [
+        "transcript.json"
+      ]
+    },
+    {
+      "id": "chunks/index.json",
+      "path": "chunks/index.json",
+      "depends_on": [
+        "transcript.json"
+      ]
+    },
+    {
+      "id": "frames/000.jpg",
+      "path": "frames/000.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/010.jpg",
+      "path": "frames/010.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/020.jpg",
+      "path": "frames/020.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/030.jpg",
+      "path": "frames/030.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/040.jpg",
+      "path": "frames/040.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/050.jpg",
+      "path": "frames/050.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/060.jpg",
+      "path": "frames/060.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/070.jpg",
+      "path": "frames/070.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/080.jpg",
+      "path": "frames/080.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/090.jpg",
+      "path": "frames/090.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/100.jpg",
+      "path": "frames/100.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/110.jpg",
+      "path": "frames/110.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/120.jpg",
+      "path": "frames/120.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/130.jpg",
+      "path": "frames/130.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/140.jpg",
+      "path": "frames/140.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/150.jpg",
+      "path": "frames/150.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "frames/160.jpg",
+      "path": "frames/160.jpg",
+      "depends_on": [
+        "original-media"
+      ]
+    },
+    {
+      "id": "image-audit.json",
+      "path": "image-audit.json",
+      "depends_on": [
+        "notes.json",
+        "write_audit.py"
+      ]
+    },
+    {
+      "id": "notes.json",
+      "path": "notes.json",
+      "depends_on": [
+        "chunks/index.json",
+        "build_notes.py",
+        "sources/media-info.json",
+        "frames/010.jpg",
+        "frames/020.jpg",
+        "frames/040.jpg",
+        "frames/060.jpg",
+        "frames/090.jpg",
+        "frames/110.jpg",
+        "frames/130.jpg",
+        "frames/150.jpg"
+      ]
+    },
+    {
+      "id": "qa/contact-1.jpg",
+      "path": "qa/contact-1.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "qa/contact-2.jpg",
+      "path": "qa/contact-2.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "qa/contact-3.jpg",
+      "path": "qa/contact-3.jpg",
+      "depends_on": []
+    },
+    {
+      "id": "qa/project-check.json",
+      "path": "qa/project-check.json",
+      "depends_on": []
+    },
+    {
+      "id": "qa/static-check.json",
+      "path": "qa/static-check.json",
+      "depends_on": [
+        "课堂笔记.html",
+        "write_audit.py"
+      ]
+    },
+    {
+      "id": "review.json",
+      "path": "review.json",
+      "depends_on": [
+        "notes.json",
+        "课堂笔记.html",
+        "audit.json",
+        "image-audit.json",
+        "qa/static-check.json",
+        "qa/project-check.json"
+      ]
+    },
+    {
+      "id": "run.json",
+      "path": "run.json",
+      "depends_on": []
+    },
+    {
+      "id": "sources/media-info.json",
+      "path": "sources/media-info.json",
+      "depends_on": []
+    },
+    {
+      "id": "sources/media-probe.json",
+      "path": "sources/media-probe.json",
+      "depends_on": []
+    },
+    {
+      "id": "transcript.json",
+      "path": "transcript.json",
+      "depends_on": []
+    },
+    {
+      "id": "write_audit.py",
+      "path": "write_audit.py",
+      "depends_on": []
+    },
+    {
+      "id": "课堂笔记.html",
+      "path": "课堂笔记.html",
+      "depends_on": [
+        "notes.json",
+        "chunks/index.json",
+        "renderer",
+        "template",
+        "mobile-finalizer",
+        "frames/010.jpg",
+        "frames/020.jpg",
+        "frames/040.jpg",
+        "frames/060.jpg",
+        "frames/090.jpg",
+        "frames/110.jpg",
+        "frames/130.jpg",
+        "frames/150.jpg"
+      ]
+    },
+    {
+      "id": "renderer",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/scripts/course_notes.py",
+      "depends_on": []
+    },
+    {
+      "id": "template",
+      "path": "/Users/yjzhao/.codex/skills/baocut-course-notes/assets/template.html",
+      "depends_on": []
+    },
+    {
+      "id": "mobile-finalizer",
+      "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/finalize_html.py",
+      "depends_on": []
+    },
+    {
+      "id": "original-media",
+      "path": "/Users/yjzhao/Downloads/失败的AI Slop数字永生尝试.mp4",
+      "depends_on": []
+    }
+  ]
+}

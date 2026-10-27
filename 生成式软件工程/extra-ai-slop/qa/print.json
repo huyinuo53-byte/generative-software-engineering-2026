@@ -1,0 +1,12 @@
+{
+  "html_sha256": "abb0116d211e8eaf64637819460d6552d8b647d31c84570408d6a1a8d2c89e7f",
+  "method": "isolated Chrome headless print; all text blocks checked against pdftotext; representative page visual inspection recorded separately",
+  "temporary_pdf": "/tmp/gse-extra-ai-slop-print.pdf",
+  "pdf_sha256": "78e416ba7eb497160ce531a53d152dd19ce99390bb297343fee918f4d3fdc378",
+  "text_blocks": 42,
+  "missing_blocks": [],
+  "printed_images": 8,
+  "expected_images": 8,
+  "pdfinfo": "Title:           合集短片｜失败的 AI Slop 数字永生尝试：教育焦虑与改编失真\nCreator:         Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36\nProducer:        Skia/PDF m154\nCreationDate:    Fri Oct  2 23:38:18 2026 CST\nModDate:         Fri Oct  2 23:38:18 2026 CST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          yes\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           11\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       1761572 bytes\nOptimized:       no\nPDF version:     1.4\n",
+  "status": "passed"
+}

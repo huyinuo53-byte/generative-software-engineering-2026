@@ -1,0 +1,12 @@
+{
+  "html_sha256": "99d2384846c87f6097f06505fd5438602b50ea0ed203ac43d83f6d8e83eee477",
+  "method": "isolated Chrome headless print; all text blocks checked against pdftotext; representative page visual inspection recorded separately",
+  "temporary_pdf": "/tmp/gse-lecture-05-print.pdf",
+  "pdf_sha256": "6dd75af56f8e854a4761ce3a2be72c4a2b2858210b38e649ebdaefcc29047f9f",
+  "text_blocks": 213,
+  "missing_blocks": [],
+  "printed_images": 40,
+  "expected_images": 40,
+  "pdfinfo": "Title:           第 05 课｜软件工程的来龙去脉：从需求鸿沟到可检查的承诺\nCreator:         Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36\nProducer:        Skia/PDF m154\nCreationDate:    Fri Oct  2 23:31:03 2026 CST\nModDate:         Fri Oct  2 23:31:03 2026 CST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          yes\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           63\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       9067287 bytes\nOptimized:       no\nPDF version:     1.4\n",
+  "status": "passed"
+}

@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-19T01:16:04.207713+00:00",
+  "images": [
+    {
+      "path": "minions-blueprint.png",
+      "sha256": "0cb377160d455ea27f79615e58bf9b60c4fc3835802467cd7485d13ec6898cc1",
+      "visual_check": "full original image inspected",
+      "status": "passed_with_source_caveat",
+      "detail": "Full diagram preserved, but prose says Fix CI failures is agentic while diagram uses rectangle. Do not infer deterministic role solely from shape."
+    },
+    {
+      "path": "strongdm-scenarios.png",
+      "sha256": "41b713773d34035f785ab0383c7ffd4bbfe1c448b2e1f56d10a7910d47315a5d",
+      "visual_check": "full original image inspected",
+      "status": "passed",
+      "detail": "Five-step synthetic Okta provisioning conversation plus per-step annotations fully visible; illustrates scenario curation, not quantitative success evidence."
+    }
+  ]
+}

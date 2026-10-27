@@ -1,0 +1,214 @@
+[
+  {
+    "id": "aws-idempotent",
+    "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+    "final_url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+    "path": "/tmp/gse09-materials/sources/aws-idempotent.html",
+    "sha256": "dac49ae09f6936dae933ebc547a1f8b7f82fbe641403a2ac1d048ec5b8cc4516",
+    "bytes": 455504,
+    "content_type": "text/html;charset=utf-8",
+    "status": "retrieved"
+  },
+  {
+    "id": "fowler-event",
+    "url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+    "final_url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+    "path": "/tmp/gse09-materials/sources/fowler-event.html",
+    "sha256": "ff817ecc7b176c9456b8381687437e93f38bb8be6c6c3b4e4403b664818f8a02",
+    "bytes": 57156,
+    "content_type": "text/html",
+    "status": "retrieved"
+  },
+  {
+    "id": "mapreduce",
+    "url": "https://usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean_html/index.html",
+    "final_url": "https://usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean_html/index.html",
+    "path": "/tmp/gse09-materials/sources/mapreduce.html",
+    "sha256": "15d609d9f22fa37fe3963d34f667e7a59f1b0d3d648276fb38b36e4255e58fab",
+    "bytes": 81274,
+    "content_type": "text/html",
+    "status": "retrieved"
+  },
+  {
+    "id": "spark-rdd",
+    "url": "https://spark.apache.org/docs/latest/rdd-programming-guide.html",
+    "final_url": "https://spark.apache.org/docs/latest/rdd-programming-guide.html",
+    "path": "/tmp/gse09-materials/sources/spark-rdd.html",
+    "sha256": "1b605c22f5fed33500566154094609c544c5dbe7d57e3133a7188e62cb49349f",
+    "bytes": 166938,
+    "content_type": "text/html",
+    "status": "retrieved"
+  },
+  {
+    "id": "flink-time",
+    "url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/time/",
+    "final_url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/time/",
+    "path": "/tmp/gse09-materials/sources/flink-time.html",
+    "sha256": "022591aa4486a416233cba34daf2fb2007f848a3be34ba03f417addc1de734d5",
+    "bytes": 104645,
+    "content_type": "text/html",
+    "status": "retrieved"
+  },
+  {
+    "id": "flink-state",
+    "url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/stateful-stream-processing/",
+    "final_url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/stateful-stream-processing/",
+    "path": "/tmp/gse09-materials/sources/flink-state.html",
+    "sha256": "c066713d1e5232832c0980fea0bb67a540a52de7eaab3ff1daf636e0c08a89a3",
+    "bytes": 114351,
+    "content_type": "text/html",
+    "status": "retrieved"
+  },
+  {
+    "id": "java-gc",
+    "url": "https://docs.oracle.com/en/java/javase/25/gctuning/ergonomics.html",
+    "final_url": "https://docs.oracle.com/en/java/javase/25/gctuning/ergonomics.html",
+    "path": "/tmp/gse09-materials/sources/java-gc.html",
+    "sha256": "a174115a2641be0b924634c184e4f8dc7e7997be28967b4f3c265b0de2bd0dab",
+    "bytes": 17821,
+    "content_type": "text/html",
+    "status": "retrieved"
+  },
+  {
+    "id": "php-fpm",
+    "url": "https://www.php.net/manual/en/install.fpm.configuration.php",
+    "final_url": "https://www.php.net/manual/en/install.fpm.configuration.php",
+    "path": "/tmp/gse09-materials/sources/php-fpm.html",
+    "sha256": "af3d73c1a23ac5c1530d2f424ba573e088d362bf9cce265da97e47facb9e082e",
+    "bytes": 81218,
+    "content_type": "text/html; charset=utf-8",
+    "status": "retrieved"
+  },
+  {
+    "id": "apache-websocket",
+    "url": "https://httpd.apache.org/docs/2.4/mod/mod_proxy_wstunnel.html",
+    "final_url": "https://httpd.apache.org/docs/2.4/mod/mod_proxy_wstunnel.html",
+    "path": "/tmp/gse09-materials/sources/apache-websocket.html",
+    "sha256": "88de45c4c34b34cc5fa1e0b9793da30fdc0f101a248b16831e825b744a2be8fd",
+    "bytes": 10897,
+    "content_type": "text/html",
+    "status": "retrieved"
+  },
+  {
+    "id": "vba",
+    "url": "https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office/",
+    "final_url": "https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office",
+    "path": "/tmp/gse09-materials/sources/vba.html",
+    "sha256": "4a895cf41035cc099a283f71311bce0696832d1b03f7ee16b1f7f211750575fa",
+    "bytes": 82271,
+    "content_type": "text/html",
+    "status": "retrieved"
+  },
+  {
+    "id": "nasa",
+    "url": "https://llis.nasa.gov/lesson/641",
+    "final_url": "https://llis.nasa.gov/lesson/641",
+    "path": "/tmp/gse09-materials/sources/nasa.html",
+    "sha256": "713e07dbd3f2ae3ec4fc04f85e8f661753b94d0933657f3722f81c1c5f00e62c",
+    "bytes": 1733,
+    "content_type": "text/html; charset=utf-8",
+    "status": "retrieved"
+  },
+  {
+    "id": "brooks",
+    "url": "https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf",
+    "final_url": "https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf",
+    "path": "/tmp/gse09-materials/sources/brooks.pdf",
+    "sha256": "fcbd318dbaa31c5b14b782b02ae25f53fc8aa33779d18ba1b4f126994c99b9ae",
+    "bytes": 266288,
+    "content_type": "application/pdf",
+    "status": "retrieved"
+  },
+  {
+    "id": "david",
+    "url": "https://gwern.net/doc/economics/automation/1990-david.pdf",
+    "final_url": "https://gwern.net/doc/economics/automation/1990-david.pdf",
+    "path": "/tmp/gse09-materials/sources/david.pdf",
+    "sha256": "11291f658da048e3486e2474b31ee07cfc8fb0d1711222e90f90a1d9fe98494d",
+    "bytes": 178607,
+    "content_type": "application/pdf",
+    "status": "retrieved"
+  },
+  {
+    "id": "ai-work-qje",
+    "url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+    "status": "blocked",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "denning",
+    "url": "https://denninginstitute.com/pjd/PUBS/Workingsets.html",
+    "final_url": "https://denninginstitute.com/pjd/PUBS/Workingsets.html",
+    "path": "/tmp/gse09-materials/sources/denning.html",
+    "sha256": "5a1be5cf336fbd6a0c68025c5c240ded53ac63d610a4fd2840094e3336e38bb6",
+    "bytes": 7122,
+    "content_type": "text/html",
+    "status": "retrieved"
+  },
+  {
+    "id": "kernel-cgroup",
+    "url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+    "final_url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+    "path": "/tmp/gse09-materials/sources/kernel-cgroup.html",
+    "sha256": "b478c1bae99899df476d6b4989cbb516f7ca93c5f009cdff64b802bbc24f3d4b",
+    "bytes": 172967,
+    "content_type": "text/html; charset=utf-8",
+    "status": "retrieved"
+  },
+  {
+    "id": "rdd-paper",
+    "url": "https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia",
+    "final_url": "https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia",
+    "path": "/tmp/gse09-materials/sources/rdd-paper.html",
+    "sha256": "81cb360c2bdb8b611339c11eaa26a38504c19f480617700402f8c71467a828b2",
+    "bytes": 47214,
+    "content_type": "text/html; charset=utf-8",
+    "status": "retrieved"
+  },
+  {
+    "id": "pacioli",
+    "url": "https://exhibits.lib.ku.edu/exhibits/show/keeping-the-books--the-rubinst/under-the-tuscan-sum---the-ita",
+    "final_url": "https://exhibits.lib.ku.edu/exhibits/show/keeping-the-books--the-rubinst/under-the-tuscan-sum---the-ita",
+    "path": "/tmp/gse09-materials/sources/pacioli.html",
+    "sha256": "8dcf990b18c9a1fafc596974a75d5e367b1e9a969bc8bb62c2fcdffd7067dd7b",
+    "bytes": 24214,
+    "content_type": "text/html; charset=utf-8",
+    "status": "retrieved"
+  },
+  {
+    "id": "feature-interaction",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1389128613001527",
+    "status": "blocked",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "toolkits",
+    "url": "https://web.mit.edu/people/evhippel/papers/Toolkits%20JPIM%20final.pdf",
+    "final_url": "https://web.mit.edu/people/evhippel/papers/Toolkits%20JPIM%20final.pdf",
+    "path": "/tmp/gse09-materials/sources/toolkits.pdf",
+    "sha256": "e32e1906006a15c1e591549243ea5f310eedf58d42348887d75350242f472c74",
+    "bytes": 213601,
+    "content_type": "application/pdf",
+    "status": "retrieved"
+  },
+  {
+    "id": "direct-manipulation",
+    "url": "https://www.cs.umd.edu/~ben/papers/Shneiderman1983Direct.pdf",
+    "final_url": "https://www.cs.umd.edu/~ben/papers/Shneiderman1983Direct.pdf",
+    "path": "/tmp/gse09-materials/sources/direct-manipulation.pdf",
+    "sha256": "4dc29926c05033d1cdb702444158bf8d154d8a152cad1b4a430ffd0403d3af33",
+    "bytes": 6545129,
+    "content_type": "application/pdf",
+    "status": "retrieved"
+  },
+  {
+    "id": "dsh-bot-commit",
+    "url": "https://api.github.com/repos/Nothing1024/dsh-bot/commits?per_page=1",
+    "final_url": "https://api.github.com/repos/Nothing1024/dsh-bot/commits?per_page=1",
+    "path": "/tmp/gse09-materials/sources/dsh-bot-commit.json",
+    "sha256": "98e36d01f296c40ee16659d5d7db754c088846f81ba25b5784ed44c7c526dcc6",
+    "bytes": 1519,
+    "content_type": "application/json; charset=utf-8",
+    "status": "retrieved"
+  }
+]

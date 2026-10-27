@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "width": 1280,
+      "nav": true,
+      "answer": true,
+      "closed": true,
+      "overflow": false,
+      "tables": [
+        {
+          "client": 878,
+          "scroll": 878,
+          "left": 0,
+          "end": true
+        },
+        {
+          "client": 878,
+          "scroll": 878,
+          "left": 0,
+          "end": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "nav": true,
+      "answer": true,
+      "closed": true,
+      "overflow": false,
+      "tables": [
+        {
+          "client": 344,
+          "scroll": 680,
+          "left": 334,
+          "end": true
+        },
+        {
+          "client": 344,
+          "scroll": 680,
+          "left": 336,
+          "end": true
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "nav": true,
+      "answer": true,
+      "closed": true,
+      "overflow": false,
+      "tables": [
+        {
+          "client": 274,
+          "scroll": 680,
+          "left": 406,
+          "end": true
+        },
+        {
+          "client": 274,
+          "scroll": 680,
+          "left": 406,
+          "end": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "url": "file:///Users/yjzhao/Documents/ChatGPT/learning-machine/%E7%94%9F%E6%88%90%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/lecture-05/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.html#s11",
+    "sectionText": "第 11 节01:07:33—01:15:16 · 课堂时间敏捷与数据依赖图：为何小步迭代有效关键判断 · 整理者提炼比较流程时，既看反馈来得多晚，也看此前堆积了多少依赖该假设的工作。教师把敏捷解释为“do it infinite many times”：第一版甚至只要模块能互相打招呼、关键路径能跑通，然后持续演进。核心不是仪式，而是让关键假设尽早接触证据。他用计算机科学语言重述瀑布：需求分析、设计、实现、测试、交付都是产生 artif",
+    "targetExists": true
+  },
+  "restored": "pstack Skills 写法与生成式软件工程启发"
+}

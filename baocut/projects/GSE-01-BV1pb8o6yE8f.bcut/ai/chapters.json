@@ -1,0 +1,49 @@
+{
+  "fingerprint": "27158:g1.0:g779.0~5:3aq6jmlh3a5cj",
+  "parts": {
+    "count": 0,
+    "outlineAttempts": 0,
+    "outlineFallback": false,
+    "pages": []
+  },
+  "review": true,
+  "rows": [
+    {
+      "end": 1784.16,
+      "id": "c-mur4tpl1-0",
+      "start": 0.0,
+      "title": "课程简介"
+    },
+    {
+      "end": 2914.48,
+      "id": "c-mur4tpl1-1",
+      "start": 1784.16,
+      "title": "实操 (1"
+    },
+    {
+      "end": 3911.01,
+      "id": "c-mur4tpl1-2",
+      "start": 2914.48,
+      "title": "视频恢复—实操 (2"
+    },
+    {
+      "end": 4479.05,
+      "id": "c-mur4tpl1-3",
+      "start": 3911.01,
+      "title": "实操 (3"
+    },
+    {
+      "end": 5999.317375,
+      "id": "c-mur4tpl1-4",
+      "start": 4479.05,
+      "title": "软件工程"
+    }
+  ],
+  "source": {
+    "ambiguous": 1,
+    "entries": 5,
+    "matched": 4,
+    "snapped": 0,
+    "unanchored": 0
+  }
+}

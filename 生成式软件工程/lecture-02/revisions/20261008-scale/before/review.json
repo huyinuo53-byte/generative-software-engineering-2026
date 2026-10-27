@@ -1,0 +1,82 @@
+{
+  "run_id": "lecture-02-20261002",
+  "lessons": [],
+  "outcome": "completed",
+  "summary": "完整阅读20块转写，458来源单元逐项覆盖；28节、44图。内容与逐图复核、最终HTML结构/桌面/390px窄屏/打印保真检查通过。未做真实手机或逐秒音频听审。",
+  "blocker": null,
+  "resume_condition": null,
+  "finished_at": "2026-10-02T15:35:09.583677+00:00",
+  "delivered_files": [
+    "课堂笔记.html"
+  ],
+  "audit": [
+    "audit-independent07.json"
+  ],
+  "validation": {
+    "content": {
+      "status": "passed",
+      "evidence": [
+        "audit-independent07.json"
+      ]
+    },
+    "source_coverage": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "image_integrity": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_static": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "desktop": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "narrow": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "html_print": {
+      "status": "passed",
+      "evidence": "qa/print.json"
+    },
+    "real_phone": {
+      "status": "not_requested",
+      "evidence": "未做真实手机设备实测；390px仅浏览器模拟"
+    },
+    "pdf": {
+      "status": "not_requested",
+      "evidence": "临时PDF只用于HTML打印检查，不作为完整PDF交付"
+    },
+    "package": {
+      "status": "not_requested",
+      "evidence": "逐视频独立单文件HTML"
+    },
+    "project_strict": {
+      "status": "passed",
+      "evidence": "project-check.json"
+    }
+  },
+  "metrics": {
+    "sections": 28,
+    "source_units": 458,
+    "transcript_chunks": 20,
+    "selected_images": 44,
+    "text_blocks": 156,
+    "tokens": null,
+    "cost": null
+  },
+  "source_hashes": {
+    "transcript.json": "ed68f1b8de531a0d0a51287798f26e67cf86aa08a18765107ac6b39b2d84f418",
+    "chunks/index.json": "5722e91d0c71d57f01b67696dd9a48267cf46089c671bd0f67c7793aaa4f7343",
+    "notes.json": "6d9e5bd7b6a19755898203f4fb10e98dba185e43cd102ad4a40aecf596317558",
+    "课堂笔记.html": "fc4bb4234b9af966e41c5fac789217ad3afbc31b65dc654e3fa55bc33089e0a2",
+    "image-audit.json": "26d372b1894acb3aedf446696d9518265c678caed678d49c932bf3c94548f935",
+    "qa/browser.json": "7b7ec9ecc868bebc5a319e4b6bb4ec86c60c9ea47eb60e948dd2d23a419ed35b",
+    "qa/print.json": "004351e24e9f5e320cd6d20b080a6d90743a26452048bb72ea7969f75b4e53b0"
+  },
+  "trace_snapshot": "trace-final.json"
+}

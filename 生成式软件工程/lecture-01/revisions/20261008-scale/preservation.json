@@ -1,0 +1,22 @@
+{
+  "lesson": "lecture-01",
+  "status": "passed",
+  "changes": [
+    {
+      "path": "/sections/10/editor_notes/0",
+      "before": "官方讲义第18页补充“追踪论证、对抗阅读、主动回忆、重新组织”四种方法，见本课补充区；本次没有声称已读完上述两本书。",
+      "after": "官方讲义第18页补充“追踪论证、对抗阅读、主动回忆、重新组织”四种方法，见本节下方的讲义补充；本次没有声称已读完上述两本书。"
+    },
+    {
+      "path": "/sections/22/editor_notes/0",
+      "before": "第38–42页的细化内容含讲义 AIGC 扩展，本视频没有逐条展开；图注不绑定精确课堂时间，补充区单独记录。",
+      "after": "第38–42页的细化内容含讲义 AIGC 扩展，本视频没有逐条展开；图注不绑定精确课堂时间，相关补充已放在对应知识点旁并保留来源标注。"
+    }
+  ],
+  "all_other_notes_fields_unchanged": true,
+  "all_image_bytes_match_previous_audit": true,
+  "images": 48,
+  "transcript_and_index_unchanged": true,
+  "html_sha256": "67151db592f02e0fdb9889b9a79472e768d7e887a5dea9a965fa3cf2a4b62e47",
+  "layout_sha256": "92313bd0d07494c414a6380e31d7da318caa5bbdce30e34ef6ecfa5fc6115b4c"
+}

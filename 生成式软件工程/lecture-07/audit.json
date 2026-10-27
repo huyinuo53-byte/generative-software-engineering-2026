@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "actor": "lecture07-agent",
+  "method": "完成主稿后独立进行第二遍关键证据复查；不是独立第三方审稿",
+  "coverage": {
+    "transcript_chunks": "1–20全读",
+    "sentences": 909,
+    "omitted": 0,
+    "official_slide_pages": "1–39全读并目视",
+    "lecture_article": "全文阅读",
+    "cited_classics": "未全文外延阅读"
+  },
+  "issues": [
+    {
+      "issue_id": "07-01",
+      "issue": "资料混课风险",
+      "before": "父协调提供的旧lecture07_slide_evidence.json实际是CMU Computer Use Agents",
+      "after": "排除；只使用NJU当前官方lect7/slides7和BV1JGap6LE74",
+      "evidence": "sources/slides-text.json",
+      "status": "prevented",
+      "verification": "原转写、当前讲义或实际像素复查"
+    },
+    {
+      "issue_id": "07-02",
+      "issue": "ASR状态误述",
+      "before": "project显示ASR stale，不能称fresh转写",
+      "after": "明确stale且原因未确认；原媒体hash匹配后复用导出",
+      "evidence": "sources/media-validation.json",
+      "status": "prevented",
+      "verification": "原转写、当前讲义或实际像素复查"
+    },
+    {
+      "issue_id": "07-03",
+      "issue": "历史年份口误",
+      "before": "s-g477.0~19 / 3059.9–3070.27说管道大概1983年引入UNIX",
+      "after": "不把该口述年份作为确定史实；保留1964年备忘录比喻",
+      "evidence": "notes.json 第12节",
+      "status": "clarified",
+      "verification": "原转写、当前讲义或实际像素复查"
+    },
+    {
+      "issue_id": "07-04",
+      "issue": "现场模型类比不等于事实",
+      "before": "1954秒AI将MINISIM映射React Scheduler/Fiber",
+      "after": "保留图但标记类比未经源码逐项验证",
+      "evidence": "notes.json 第8节",
+      "status": "clarified",
+      "verification": "原转写、当前讲义或实际像素复查"
+    },
+    {
+      "issue_id": "07-05",
+      "issue": "报表校验过度承诺",
+      "before": "5229–5240相信AI与校验；5599–5606纠错无代价",
+      "after": "明确平衡不保证业务真实、解释与规则仍需审核、纠错不是没有成本",
+      "evidence": "notes.json 第21–23节",
+      "status": "clarified",
+      "verification": "原转写、当前讲义或实际像素复查"
+    },
+    {
+      "issue_id": "07-06",
+      "issue": "静态截图字过小",
+      "before": "官方第34页银行报表图横长、整页留白多",
+      "after": "同时提供完整页与原始内嵌图，数字复核22.07-75=-52.93",
+      "evidence": "frames/ledger-detail.webp",
+      "status": "fixed",
+      "verification": "原转写、当前讲义或实际像素复查"
+    },
+    {
+      "issue_id": "07-07",
+      "issue": "当前状态模型绝对化",
+      "before": "SQL Billion Dollar Mistake可误读为SQL没有view或约束",
+      "after": "界定为讲师调侃及跨应用计算依赖视角，保留讲义修正",
+      "evidence": "notes.json 第25节",
+      "status": "clarified",
+      "verification": "原转写、当前讲义或实际像素复查"
+    },
+    {
+      "issue_id": "07-08",
+      "issue": "演示只保留起点",
+      "before": "文件选择列表不能证明已成功打开",
+      "after": "加入3232和3254两帧，后一帧可见GNU nano打开p1/lect/index.md",
+      "evidence": "frames/video-3254.jpg",
+      "status": "fixed",
+      "verification": "原转写、当前讲义或实际像素复查"
+    }
+  ],
+  "math_checks": [
+    {
+      "expression": "Decimal(22.07)-Decimal(75)",
+      "result": "-52.93",
+      "status": "passed"
+    }
+  ],
+  "source_hashes": {
+    "transcript.json": "ebd3c6335ba9ce3e8f2df278562d25aec14c59ae787b28f91743785ef955e752",
+    "chunks/index.json": "63150906724b3e42af26ba5847261e4d5f76d968b09b8f2e3176eb39c81545fc",
+    "notes.json": "dc6c3e8b0390646246587a16c904ebe64cc2b40dfe4084c6b3a9c7a0c0749c60",
+    "sources/slides7.html": "4e6a907308facde06c8ea3e35e1c157732e72ed4cd7aeeae13f26569bcda0d7b",
+    "sources/lect7.md": "ae15e036faa5e36043476eb66caaa3acdbc6371f5a1eacfcabec92a72e02f974"
+  },
+  "conclusion": "主稿保留论证、反例、具体代码语义和现场演示；课堂与官网补充已标注；未逐秒听审。"
+}

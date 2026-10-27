@@ -1,0 +1,65 @@
+{
+  "run_id": "BV11LWw6VEHW-20261019",
+  "batch_id": "GSE-weekly-20261019",
+  "item_id": "lecture-08",
+  "scope_revision": 1,
+  "video_id": "BV11LWw6VEHW",
+  "source_url": "https://www.bilibili.com/video/BV11LWw6VEHW",
+  "title": "Agent-native 开发",
+  "duration_seconds_observed": 5830,
+  "project": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-08-BV11LWw6VEHW.bcut",
+  "project_id": "p-d76a3199f469d340",
+  "requested_outputs": [
+    "offline mobile HTML",
+    "notes.json",
+    "image-audit.json",
+    "visual-coverage.json",
+    "review.json"
+  ],
+  "required_checks": [
+    "content",
+    "source_coverage",
+    "materials",
+    "visual_coverage",
+    "image",
+    "html_static",
+    "desktop",
+    "narrow",
+    "print"
+  ],
+  "created_at": "2026-10-19T01:09:05.374304+00:00",
+  "toolchain": {
+    "app": "2.1.0",
+    "spec": "1.249.0",
+    "engine": "moss-transcribe-diarize"
+  },
+  "transcript_reuse": {
+    "matched_existing_project": false,
+    "projects_examined": 66
+  },
+  "preview": "unavailable: web_service_off HTTP503; CLI operational",
+  "media": {
+    "video_id": "BV11LWw6VEHW",
+    "path": "/Users/yjzhao/Downloads/GSE-08-BV11LWw6VEHW.mp4",
+    "sha256": "dee8d8992246a868d973678ab85c152e3eaf3e07ccef70eb5a674556386552b7",
+    "bytes": 237738826,
+    "video_duration_seconds": 5829.666625,
+    "audio_duration_seconds": 5829.674667,
+    "duration_seconds": 5829.674667,
+    "tail_decode": {
+      "status": "passed",
+      "range_seconds": 30,
+      "method": "ffmpeg -v error -sseof -30 -i media -f null -",
+      "exit_code": 0
+    },
+    "provenance": "existing yt-dlp; canonical Bilibili URL; metadata ID and title verified",
+    "checked_at": "2026-10-19T01:18:34.332736+00:00"
+  },
+  "asr_job_id": "transcribe:75514:1792372643004450000:796",
+  "asr_attempt": "asr-02",
+  "source_reading": {
+    "official": "sources/official-20261019/HANDOFF.md",
+    "lab2": "sources/lab2.html",
+    "humanize": "sources/lab2-humanize-20261019/README.md"
+  }
+}

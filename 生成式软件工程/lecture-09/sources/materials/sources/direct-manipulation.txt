@@ -1,0 +1,813 @@
+Direct manipulation systems offer the satisfying experience
+of operating on visible objects. The computer becomes transparent,
+and users can concentrate on their tasks.
+
+
+
+
+Direct Manipulation:
+A Step Beyond Programming
+Languages
+Ben Shneiderman, University of Maryland
+
+
+
+
+    Leibniz sought to make the form of a symbol reflect its                  Examples of direct manipulation systems
+    content. "In signs," he wrote, "one sees an adsantage for
+    discovery that is greatest wshen they express the exact
+    nature of a thinlg briefly and, as it were, picture it; then, in-          No single system has all the attributes or design fea-
+    deed, the labor of thought is sonderfully diminished."                  tures that I admire-that may be impossible-but those
+                                  Frederick Kreiling, "Leibniz,"            described below have enough to win the enthusiastic sup-
+                                  Scientific A merican, M ay 1 968          port of many users.
+
+                                                                                Display editors. "Once you've used a display editor,
+   Certain interactive systems generate glowing en-                         you'll never want to go back to a line editor. You'll be
+thusiasm among users-in marked contrast with the                            spoiled." This reaction is typical of those who use full-
+more common reaction of grudging acceptance or out-                         page display editors, who are great advocates of their
+right hostility. The enthusiastic users' reports are filled                 systems over line-oriented text editors. I heard similar
+with positive feelings regarding                                            comments from users of stand-alone word processors
+                                                          such as the Wang system and from users of display
+  * mastery of the system,                                editors such as EMACS on the MIT/Honeywell Multics
+  * competence in the performance of their task,          system or "vi" (for visual editor) on the Unix system. A
+  * ease in learning the system originally and in assimi- beaming advocate called EMACS "the one true editor."
+    lating advanced features,                                Robertsl found that the overall performance time of
+  * confidence in their capacity to retain mastery over   display editors is only half that of line-oriented editors,
+     time,                                                and since display editors also reduce training time, the
+   * enjoyment in using the system,                       evidence   supports the enthusiasm of display editor devo-
+   * eagerness to show it off to novices, and             tees. Furthermore, office automation evaluations consis-
+   * desire to explore more powerful aspects of the tently favor full-page display editors for secretarial and
+     system.                                              executive use.
+                                                             The advantages of display editors include
+These feelings   are not, of  course,  universal, but the    Display of a full 24 to 66 lines of text. This full display
+amalgam does convey an image of the truly pleased user. enables viewing each sentence in context and simplifies
+As I talked with these enthusiasts and examined the sys- reading and scanning the document. By contrast, the
+tems they used, I began to develop a model of the fea-
+tures that produced such delight. The central ideas
+seemed to be visibility of the object of interest; rapid, A portion of this article was derived from the author's keynote address at
+reversible, incremental actions; and replacement of com- the   NYU Symposium on User Interfaces, "The Future of Interactive
+                                                           Systems and the Emergence of Direct Manipulation," published in
+plex command language syntax by       direct manipulation Human Factors in Interactiue Computer Systems, Y. Vassiliou, ed.,
+of the object of interest-hence the term "direct manip- Ablex Publishing Co., Norwood, N.J., 1983.
+ulation. "
+
+August 1983                                           s 9162 83 08( )-00'-15(I -00   1i983   LEEF                                       57
+     one-line-at-a-time view offered by line editors is like see-  Cursor motion through physically obvious and intui-
+     ing the world through a narrow cardboard tube.             tively natural means. Arrow keys or devices such as a
+       Display of the document in its final form. Eliminat-     mouse, joystick, or graphics tablet provide natural
+     ing the clutter of formatting commands also simplifies     physical mechanisms for moving the cursor. This is in
+     reading and scanning the document. Tables, lists, page     marked contrast with commands such as UP 6, which re-
+     breaks, skipped lines, section headings, centered text,    quire an operator to convert the physical action into cor-
+     and figures can be viewed in the form that will be printed.rect syntactic form and which may be difficult to learn,
+     The annoyance and delay of debugging the format com-       hard to recall, and a source of frustrating errors.
+     mands is eliminated because the errors are immediately       Labeled buttons for action. Many display editors
+     apparent.                                                  have buttons etched with commands such as INSERT,
+       Cursor action that is visible to the user. Seeing an ar- DELETE, CENTER, UNDERLINE, SUPERSCRIPT,
+     row, underscore, or blinking box on the screen gives the BOLD, or LOCATE. They act as a permanent mehu se-
+     operator a clear sense of where to focus attention and ap- lection display, reminding the operator of the features
+     ply action.                                                and obviating memorization of a complex command-lan-
+
+
+
+             EDIT --- SPFDEMO.MYLIB.PLI(COINS)        -    01.04 ------------------- COLUMNS 001 072
+             COMMAND INPUT =>                                                        SCROLL ===> HALF
+             *X****    *********************~******       TOP OF DATA *
+             000100    COINS:
+             000Z00      PROCEDURE OPTIONS (MAIN);
+             000*300       DECLARE
+             000400           CCUNT     FIXED BINARY (31) AUTOMATIC INIT (1),
+             000500           HALVES    FIXED BINARY (31),
+             000600           QUARTERS FIXED BINARY (31),
+             000700           DIMES     FIXED BINARY (31),
+             I3               NICKELS FIXED BINARY (31),
+             000900           SYSPRINT FILE STREAM OUTPUT PRINT;
+             001000        DO HALVES = 100 TO 0 BY -50;
+             001100           DO QUARTERS = (100 - HALVES) TO 0 BY -25;
+             001200             DO DIMES = ((100 - HALVES - QUARTERS)/10)*10 TO 0 BY -10;
+             001300                NICKELS = 100 - HALVES - QUARTERS - DIMES;
+             D                     PUT FILE(SYSPRINT) DATA(COUNT,HALVES,QUARTERS,DIMES,NICKELS);
+             001500                COUNT = COUNT + 1;
+             001600             END;
+             001700           END;
+             001800        END;
+             001900      END COINS;
+             ******                                       BOTTOM OF DATA ******      ********      *
+
+
+
+
+                                              EDIT --- SPFDEMO.MYLIB.PLI(COINS) - 01.04 ------------------- COLUMNS 001 072
+                                              COMMAND INPUT =                                               SCROLL =    HALF
+                                              ***** ***************** ********** TOP OF DATA *****       **************
+                                              000100 COItS:
+                                              000200    PROCEDURE OPTIONS (MAIN);
+                                              000300      DECLARE
+                                              000400        COUNT     FIXED BINARY (31) AUTOMATIC INIT (1),
+                                              000500        HALVES    FIXED BINARY (31),
+                                              000600        QUARTERS FIXED BINARY (31),
+                                              000700        DIMES     FIXED BINARY (31),
+                                              000800        NICKELS FIXED BINARY (31),
+
+
+                                              000900              SYSPRINT FILE STREAM OUTPUT PRINT;
+                                              001000            DO HALVES    100 TO 0 BY -50;
+                                              001100              DO QUARTERS = (100 - HALVES) TO 0 BY -25;
+                                              001^00                DO DIMES    ((100 - HALVES - QUARTERS)/10)*10 TO 0 BY -10;
+                                              001300                   NICKELS = 100 - HALVES - QUARTERS - DIMES;
+                                              001500                   COUNT = COUNT 4 1;
+                                              001600                END;
+                                              001700              END;
+                                              001800            END;
+                                              001C00          END COINS;
+                                              ****** *************************** BOTTOM OF DATA ***              *******         *****
+
+
+
+
+58                                                                                                                          COMPUTER
+guage syntax. Some editors provide basic functionality           be stored for several sales districts and months so that the
+with only 10 or 15 labeled buttons, and a specially              impact of changes on profits is immediately apparent.
+marked button may be the gateway to advanced or infre-              Since Visicalc simulates an accountant's worksheet, it
+quently used features offered on the screen in menu              is easy for novices to comprehend. The display of 20 rows
+form.                                                            and up to nine columns, with the provision for multiple
+    Immediate display of the results of an action. When a        windows, gives the user sufficient visibility to easily scan
+button is pressed to move the cursor or center the text,         information and explore relationships among entries (see
+the results appear on the screen immediately. Deletions          Figure 2). The command language for setting up the
+are apparent at once, since the character, word, or line is      worksheet can be tricky for novices to learn and for infre-
+erased and the remaining text rearranged. Similarly, in-         quent users to remember, but most users need learn only
+sertions or text movements are shown after each key-             the basic commands. According to Visicalc's distributor,
+stroke or function button press. Line editors, on the            "It jumps," and the user's delight in watching this prop-
+other hand, require a print or display command before            agation of changes cross the screen helps explain its
+the results of a change can be seen.                             appeal.
+    Rapid action and display. Most display editors are
+designed to operate at high speeds: 120 characters per
+second (1200 baud), a full page in a second (9600 baud),
+or even faster. This high display rate coupled with short
+response time produces a thrilling sense of power and
+speed. Cursors can be moved quickly, large amounts of
+text can be scanned rapidly, and the results of commands
+can be shown almost instantaneously. Rapid action also
+reduces the need for additional commands, thereby sim-
+plifying product design and decreasing learning time.
+Line editors operating at 30 characters per second with
+three- to eight-second response times seem sluggish in
+comparison. Speeding up line editors adds to their attrac-
+tiveness, but they still lack features such as direct over-
+typing, deletion, and insertion.
+    Easily reversible commands. Mistakes in entering text
+can be easily corrected by backspacing and overstriking.
+Simple changes can be made by moving the cursor to the
+problem area and overstriking, inserting, or deleting
+characters, words, or lines. A useful design strategy is to
+include natural inverse operations for each operation.
+Carroll2 has shown that congruent pairs of operations
+are easy to learn. As an alternative, many display editors
+offer a simple UNDO command that cancels the previous
+command or command sequence and returns the text to
+ its previous state. This easy reversibility reduces user anx-
+iety about making mistakes or destroying a file.
+
+  The large market for display editors generates active
+competition, which accelerates evolutionary design re-
+finements. Figure I illustrates the current capabilities of
+an IBM display editor.
+
+   Visicaic. Visicorp's innovative financial forecasting
+program, called Visicalc, was the product of a Harvard
+MBA student, who was frustrated by the time needed to
+carry out multiple calculations in a graduate business
+course. Described as an "instantly calculating electronic        Figure 2. This simple Visicalc program display (top) shows four col-
+worksheet" in the user's manual, it permits computation          umns and 20 rows of home budget information. The cursor, an inverse
+and display of results across 254 rows and 63 columns            video light bar controlled by key presses, is in position C2. The top
+and is programmed without a traditional procedural con-          command line shows that C2 is a value (as opposed to a text string)
+trol structure. For example, positional declarations can         that has been set up to have the same value as position B2.
+prescribe that column 4 displays the sum of columns I            The second display (above) shows two windows over the home budget
+through 3; then every time a value in the first three col-       data with row sums to the right. The last row shows leisure dollar
+                                                                 amounts, which are established by the top command line formula as
+umns changes, the fourth column changes as well. Com-            the income minus the sum of expenses. A change to the income or ex-
+plex dependencies among manufacturing costs, distribu-           pense values would immediately propagate to all affected values.
+tion costs, sales revenue, commissions, and profits can          (Displays reproduced by permission of Visicorp.)
+
+ August 1983                                                                                                                        59
+                                                                      Spatial data management. The developers of the pro-
+                                                                   totype spatial data management system3 attribute the
+                                                                   basic idea to Nicholas Negroponte of MIT.
+                                                                      In one scenario, a user seated before a color graphics
+                                                                   display of the world zooms in on the Pacific to see
+                                                                   markers for military ship convoys. Moving a joystick fills
+                                                                   the screen with silhouettes of individual ships, which can
+                                                                   be zoomed in on to display structural details or, ultimate-
+                                                                   ly, a full-color picture of the captain. (See Figure 3.)
+                                                                      In another scenario, icons representing different
+                                                                   aspects of a corporation, such as personnel, organiza-
+                                                                   tion, travel, production, or schedules, are shown on a
+                                                                   screen. Moving the joystick and zooming in on objects
+                                                                   takes users through complex "information spaces" or
+                                                                   "I-spaces" to locate the item of interest. For example,
+                                                                   when they select a department from a building floor
+
+
+                                                                   Figure 3. A spatial data management system has been in-
+                                                                   stalled on the aircraft carrier USS Carl Vinson. In the
+                                                                   photo at top left, the operator has a world map on the left
+                                                                   screen and a videodisc map of selected areas on the
+                                                                   center screen. After some command selections with the
+                                                                   data tablet and puck, the operator can zoom in on specif-
+                                                                   ic data such as the set of ships shown in the second
+                                                                   photo. With further selections the operator can get de-
+                                                                   tailed information about each ship, such as the length,
+                                                                   speed, and fuel. (Photos courtesy of Computer Corporation of
+                                                                   America.)
+
+
+
+
+     In 1971, about the only people playing video games were students in computer science laboratories. By 1973, however,
+     millions of people were familiar with at least one video game-Pong (above left). A few years later came Breakout (above
+     right), which, according to many designers was the first true video game and the best one ever invented. Pong and other
+     early games imitated real life, but Breakout could not have existed in any medium other than video. In the game, a single
+     paddle directed a ball toward a wall of color bricks; contact made a brick vanish and changed the ball's speed.
+
+
+
+
+     When the first arcade video game, Computer Space, went on location in a Sears store, its joystick was torn of f before
+     the end of the first day. As a result, game designers have sought controls that were both easy to use and hard to
+     destroy. Centipede (above left) uses simple controls-a trackball and one button. On the other hand, Defender (above
+     right) has fIve buttons and a joystick; novice players are confused by these relatively complex controls and usually
+     give up after a few seconds.
+
+60
+                                                                                                                 COMPUTER
+plan, individual offices become visible. Moving the cur-        Contemporary games such as Missile Command, Don-
+sor into a room brings the room's details onto the screen.   key Kong, Pac Man, Tempest, Tron, Centipede, or
+If they choose the wrong room, they merely back out and      Space Invaders are far more sophisticated in their rules,
+try another. The lost effort is minimal, and no stigma is    color graphics, and sound effects (see sidebar below and
+attached to the error.                                       on facing page). The designers of these games have pro-
+   The success of a spatial data management system de-       vided stimulating entertainment, a challenge for novices
+pends on the designer's skill in choosing icons, graphical   and experts, and many intriguing lessons in the human
+representations, and data layouts that are natural and       factors of interface design-somehow they have found a
+easily understood. Even anxious users enjoy zooming in       way to get people to put coins into the sides of com-
+and out or gliding over data with a joystick, and they       puters. The strong attraction of these games contrasts
+quickly demand additional power and data.                    markedly with the anxiety and resistance many users ex-
+                                                             perience toward office automation equipment.
+                                                                Because their fields of action are abstractions of reali-
+   Video games. Perhaps the most exciting, well-engi-        ty, these games are easily understood-learning is by
+neered-certainly, the most successful-application of         analogy. A general idea of the game can be gained by
+direct manipulation is in the world of video games. An       watching the on-line automatic demonstration that runs
+early, but simple and popular, game called Pong re-          continuously on the screen, and the basic principles can
+quired the user to rotate a knob, which moved a white        be learned in a few minutes by watching a knowledgeable
+rectangle on the screen. A white spot acted as a Ping-       player. But there are ample complexities to entice many
+Pong ball, which ricocheted off the wall and had to be hit   hours and quarters from experts. The range of skill ac-
+back by the movable white rectangle. The user developed      commodated is admirable.
+skill involving speed and accuracy in placement of the          The commands are physical actions, such as button
+"paddle" to keep the increasingly speedy ball from get-      presses, joystick motions, or knob rotations, whose
+ting by, while the speaker emitted a ponging sound when      results appear immediately on the screen. Since there is
+the ball bounced. Watching someone else play for 30          no syntax, there are no syntax error messages. If users
+seconds was all the training needed to become a compe-       move their spaceships too far left, then they merely use
+tent novice, but many hours of practice were required to     the natural inverse operation of moving back to the right.
+become a skilled expert.                                     Error messages are unnecessary because the results of ac-
+     tions are so obvious and easily reversed. These principles   out of normal range. By pressing a single numbered but-
+     can be applied to office automation, personal comput-        ton (there are no commands to learn or remember), the
+     ing, and other interactive environments.                     operator can get a more detailed view of the troublesome
+        Every game that I have seen keeps a continuous score      component and, with a second press, move the tree struc-
+     so that users can measure their progress and compete         ture down to examine individual sensors or to reset valves
+     with their previous performance, with friends, or with       and circuits.
+     the highest scorers. Typicallv, the 10 highest scorers get      The design's basic strategy precludes the necessity of
+     to storc their initials in the game for regular display, a   recalling complex commands in once-a-year emergency
+     form of positive reinforcement that encourages mastery.      conditions. The plant schematic facilitates problem solv-
+     Malone's4 and our own studies with elementary school         ing by analogy, since the link between real-world high
+     children have shown that continuous display of scores is     temperatures or low pressures and screen representations
+     extremely v aluable. Machine-generated value judgments       is so close.
+        "Very good" or "You're doing great!" are not as
+     effective, since the same score means different things to        Further examples. Driving an automobile is my
+     different people. Users prefer to make their own subjec-      favorite example of direct manipulation. The scene is
+     tive judgments and may perceive machine-generated             directly visible through the windshield, and actions such
+     messages as an annoyance and a deception.                     as braking or steering have become common skills in our
+        Carroll and Thomas' draw productive analogies be-          culture. To turn to the left, simply rotate the steering
+     tween game-playing environments and application sys-          wheel to the left. The response is immediate, and the
+     tems. However, game players seek entertainment and the        changing scene provides feedback to refine the turn. Im-
+     challenge of mastery, while application-system users          agine trying to turn by issuing a LEFT 30 DEGREES
+     focus on the task and may resent forced learning of           command and then issuing another command to check
+     system constraints. The random events that occur in           your position, but this is the operational level of many
+     most games are meant to challenge the user, but predict-      office automation tools today.
+     able system behavior is preferable in nongame designs.           The term direct manipulation accurately describes the
+     Game players compete with the system, but application-        programming of some industrial robots. Here, the opera-
+     system users apparently prefer a strong internal locus of    tor holds the robot's "hand" and guides it through a
+     control, which gives them the sense of being in charge.       spray painting or welding task while the controlling com-
+                                                                   puter records every action. The control computer then
+                                                                  repeats the action to operate the robot automatically.
+                                                                      A large part of the success and appeal of the Query-
+        The pleasure in using these systems stems                  by-Example6 approach to data manipulation is due to its
+       from the capacity to manipulate the object                  direct representation of relations on the screen. The user
+       of interest directly and to generate multiple               moves a cursor through the columns of the relational
+                    alternatives rapidly.                          table and enters examples of what the result should look
+                                                                  like. Just a few single-letter keywords supplement this
+                                                                  direct manipulation style. Of course, complex Booleans
+                                                                  or mathematical operations require knowledge of syntac-
+         Computer-aided design/manufacturing. Many com-           tic forms. Still, the basic ideas and language facilities can
+     puter-aided design systems for automobiles, electronic       be learned within a half hour by many nonprogrammers.
+     circuitry, architecture, aircraft, or newspaper layout use   Query-by-Example succeeds because novices can begin
+     direct manipulation principles. The operator may see a       work with just a little training, yet there is ample power
+     schematic on the screen and with the touch of a lightpen     for the expert. Directly manipulating the cursor across
+     can move resistors or capacitors into or out of the pro-     the relation skeleton is a simple task, and how to provide
+     posed circuit. When the design is complete, the computer     an example that shows the linking variable is intuitively
+     can provide information about current, voltage drops,        clear to someone who understands tabular data. Zloof7
+     fabrication costs, and warnings about inconsistencies or     recently expanded his ideas into Office-by-Example,
+     manufacturing problems. Similarly, newspaper layout          which elegantly integrates database search with word
+     artists or automobile body designers can try multiple        processing, electronic mail, business graphics, and menu
+     designs in minutes and record promising approaches           creation.
+     until a better one is found.                                    Designers of advanced office automation systems have
+        The pleasure in using these systems stems from the        used direct manipulation principles. The Xerox Star8 of-
+     capacity to manipulate the object of interest directly and   fers sophisticated text formatting options, graphics,
+     to generate multiple alternatives rapidly. Some systems      multiple fonts, and a rapid, high-resolution, cursor-
+     have complex command languages, but others have              based user interface. Users can drag a document icon and
+     moved to cursor action and graphics-oriented commands.       drop it into a printer icon to generate a hardcopy print-
+        Another, related application is in computer-aided         out. Apple's recently announced Lisa system elegantly
+     manufacturing and process control. Honeywell's process       applies many of the principles of direct manipulation.
+     control system provides an oil refinery, paper mill, or         Researchers at IBM's Yorktown Heights facility have
+     power utility plant manager with a colored schematic         proposed a future office system, called Pictureworld, in
+     v iew of the plant. The schematic may be on eight            which graphic icons represent file cabinets, mailboxes,
+     displays, with red lines indicatine a sensor value that is   notebooks, phone messages, etc. The user could com-
+
+62                                                                                                               COMPUTER
+pose a memo on a display editor and then indicate distri-     "virtuality" -a representation of reality that can be ma-
+bution and filing operations by selecting from the menu       nipulated. RutkowskitI conveys a similar concept in his
+of icons. In another project, Yedwab et al.9 have de-         principle of transparency: "The user is able to apply in-
+scribed a generalized office system, which they call the      tellect directly to the task; the tool itself seems to disap-
+"automated desk."                                             pear." MacDonald12 proposes "visual programming" as
+   Direct manipulation can be applied to replace tradi-       a solution to the shortage of application progammers.
+tional question-and-answer computer-assisted instruc-         He feels that visual programming speeds system con-
+tion with more attractive alternatives. Several CDC Plato     struction and allows end users to generate or modify
+lessons employ direct manipulation concepts, enabling         applications systems to suit their needs.
+students to trace inherited characteristics by breeding          Each of these writers has helped increase awareness
+drosophilla, perform medical procedures to save an            of the new form that is emerging for interactive sys-
+emergency room patient, draw and move shapes by               tems. Much credit also goes to individual designers who
+finger touches, do chemistry lab projects (see Figure 4),     have created systems exemplifying aspects of direct
+or play games.                                                manipulation.
+
+Explanations of direct manipulation                              Problem-solving and learning research. Another
+                                                              perspective on direct manipulation comes from psychol-
+   Several people have attempted to describe the com-         ogy literature on problem solving. It shows that suitable
+ponent principles of direct manipulation. "What you see       representations of problems are crucial to solution find-
+is what you get," is a phrase used by Don Hatfield of         ing and to learning.
+IBM and others to describe the general approach. Hat-            PolyaI3 suggests drawing a picture to represent math-
+field is applying many direct manipulation principles in      ematical problems. This approach is in harmony with
+his work on an advanced office automation system. Ex-         Maria Montessori's teaching methods for children. 14 She
+panding Hatfield's premise, Harold Thimbleby of the           proposed use of physical objects such as beads or wood-
+University of York, England, suggests, "What you see is       en sticks to convey mathematical principles such as addi-
+what you have got." The display should indicate a com-        tion, multiplication, or size comparison. BrunerI5 ex-
+plete image of what the current status is, what errors have   tends the physical representation idea to cover polynom-
+occurred, and what actions are appropriate, according to      ial factoring and other mathematical principles. In a re-
+Thimbleby.                                                    cent experiment, Carroll, Thomas, and MalhotraI6
+   Another imaginative observer of interactive system         found that subjects given a spatial representation solved
+designs, Ted Nelson,10 has noticed user excitement over       problems more rapidly and successfully than subjects
+interfaces constructed by what he calls the principle of      given an isomorphic problem with temporal representa-
+
+
+
+                                                                                            -    -    C )r_DL -r J)9Fr + -
+                                                                                     ."IN   T   - 1        - e fre-t -r!     -           t:-   '
+
+
+
+    A                                                                       A    .
+   hA
+
+                                                                           iA
+                                                                            kA
+   hA                                                                      hkA
+   hA
+                                                                            hA
+                                                                           hA
+
+
+
+
+                                                                                                                                 -. -I             -: .l
+                                                    Is
+
+
+
+
+Figure 4. Computer-assisted instruction can become more appealing with direct manipulation, rather than simple question and
+answer scenarios. This CDC Plato lesson written by Stanley Smith of the Department of Chemistry at the University of Illinois
+allows students to construct a distillation apparatus by proper finger actions on a touch-sensitive screen (figure at left). Once the
+student has assembled the apparatus and begun the experiment, the real-time display gives a realistic view of the process with the
+graph of distillation temperature vs. volume. The student controls the experiment by touching light buttons. The figure at right
+shows that the student experimenter has gotten into trouble.
+
+August 1983                                                                                                                                                63
+tion. (Deeper understanding of visual perception can be         representation, but then make incorrect conclusions
+obtained from Arnheimt7 and McKim 18)                           about permissible operations. Designers must be cau-
+   Physical, spatial, or visual representations are also        tious in selecting the displayed representation and the op-
+easier to retain and manipulate. WertheimerI9 found that        erations. Ample testing must be carried out to refine the
+subjects who memorized the formula for the area of a            representation and minimize negative side effects.
+parallelogram, A = h x b, mastered such calculations               A fourth problem is that graphic representations may
+rapidly. On the other hand, subjects who were given a           take excessive screen display space. For experienced
+structural explanation (cut a triangle from one end and         users, a tabular textual display of 50 document names is
+place it on the other) retained the knowledge and applied       far more appealing than only 10 document graphic icons
+it in similar circumstances more effectively. In plane          with the names abbreviated to fit the icon size. Icons
+geometry theorem proving, a spatial representation facil-
+itates discovery of proof procedures more than an ax-
+iomatic representation. The diagram provides heuristics             Choosing the right representations and
+that are difficult to extract from the axioms. Similarly,         operations is not easy. Simple metaphors,
+studenits of algebra are often encouraged to draw a pic-          analogies, or models with a minimal set of
+ture to represent a word problem.                                      concepts seem most appropriate.
+   Papert's Logo language20 creates a mathematical
+microworld in which the principles of geometry are visi-
+ble. Influenced by the Swiss psychologist Jean Piaget's
+theory of child development, Logo offers students the        should be evaluated first for their power in displaying
+opportunitv to create line drawings with an electronic       static information about objects and their relationship,
+turtle displayed on a screen. In this environment, users     and second for their utility in the dynamic processes of
+can receive rapid feedback about their programs, can         selection, movement, and deletion.
+easily determine wFhat has happened, can quickly spot and       Choosing the right representations and operations is
+repair errors, and can experience creative satisfaction.     not easy. Simple metaphors, analogies, or models with a
+                                                             minimal set of concepts seem most appropriate. Mixing
+    Problems with direct manipulation. Some profession-      metaphors     from two sources adds complexity, which
+al programming tasks can be aided by the u.se of graphic     contributes    to confusion. The emotional tone of the
+representations such as high-level flowcharts, record        metaphor    should   be inviting rather than distasteful or in-
+structures, or database schema diagrams, but additionai appropriate16 sewage disposal systems are an inap-
+effort may be required to absorb the rules of the repre- propriate metaphor for electronic message systems.
+sentationi. Graphic representations can be especially Since users may not share the designer's metaphor, anal-
+helpful when there are multiple relationships among ob- ogy, or conceptual model, ample testing is required.
+jects andi when the representation is more compact than
+the detailed object. In these cases, selectively screening      The syntactic/semantic model. The attraction of sys-
+out detail and piesenrting a suitable abstraction can        tems   that use principles of direct manipulation is con-
+facilitate performaince.                                     firmed   by the enthusiasm of their users. The designers of
+   However, using spatial or graphic representations of the examples given had an innovative inspiration and an
+the problem does not necessarily improve performance. intuitive grasp of what users wanted. Each example has
+In a series of studies, subjects given a detailed flowchart features that could be criticized, but it seems more pro-
+did no better in conmprehension, debugging, or modifica- ductive to construct an integrated portrait of direct
+tion thani those given the code only.2t In a program com- manipulation:
+prehensioni task, subjects given a graphic representation       * Continuous representation of the object of interest.
+of control flow or data structure did no better than those      * Physical actions (movement and selection by mouse,
+giv%en a tex tual description.-2 On the other hand, subjects      joystick, touch screen, etc.) or labeled button
+given the data structure documenitationi consistently did         presses instead of complex syntax.
+better than subjects given the control flow documenta-          * Rapid, incremental, reversible operations whose im-
+tioIl. This study sllgeests that the content of graphic           pact on the object of interest is immediately visible.
+represenitations is a critical determinant of their utility.    * Layered or spiral approach to learning that permits
+The wrong information, or a cluttered presentation, can           usage with minimal knowledge. Novices can learn a
+lead to greater confusioni.                                       modest and useful set of commands, which they can
+   A second problem is that users must learn the meaning          exercise till they become an "expert" at level I of the
+of the components of the graphic representation. A                system. After obtaining reinforcing feedback from
+graphic iconi, although meaningful to the designer, may           successful operation, users can gracefully expand
+require as much or more learning time as a word.                  their knowledge of features and gain fluency.23
+Some airports serving multilingual communities use
+graphic icons extensively, but their meaning may not be        By using these four principles, it is possible to design
+obvious. Similarly, some computer terminals designed systems that have these beneficial attributes:
+for international use have icons in place of names, but
+the meaning is not always clear.                               * Novices can learn basic functionality quickly, usual-
+   A third problem is that the graphic represenltation may        ly through a demonstration by a more experienced
+be misleadine. The Lisci mav rapidly grasp the analogical         user.
+
+                                                                                                              COMPUTER
+  * Experts can work extremely rapidly to carry out a            lines, moving sentences, centering, indenting, etc.) are
+    wide range of tasks, even defining new functions             generally available in text editors, although the syntax
+    and features.                                                varies. Semantic knowledge, which is acquired through
+  * Knowledgeable intermittent users can retain opera-           general explanation, analogy, and example, is easily an-
+    tional concepts.                                             chored to familiar concepts and is therefore stable in
+  * Error messages are rarely needed.                            memory.
+  * Users can immediately see if their actions are fur-
+    thering their goals, and if not, they can simply                The command formulation process in the syntactic/
+    change the direction of their activity.                      semantic model proceeds from the user's perception of
+  * Users experience less anxiety because the system is          the task in the high-level problem domain to the decom-
+    comprehensible and because actions are so easily             position into multiple, lower level semantic operations
+    reversible.                                                  and the conversion into a set of commands. The syntax
+  * Users gain confidence and mastery because they in-           of text editors may vary, but the decomposition from
+    iti-ate an action, feel in control, and can predict          problem domain into low-level semantics is largely the
+    system responses.                                            same. At the syntax level the user must recall whether
+                                                                 spaces are permitted, whether program function keys are
+   My own understanding of direct manipulation was               available, or whether command abbreviations are per-
+facilitated by considering the syntactic/semantic model          mitted.
+of user behavior. The cognitive model was first devel-              As a user of a half-dozen text editors during a week, I
+oped in the context of programming language experi-              am very aware of the commonality of my thought pro-
+mentation24'25 and has been applied to database query            cesses in problem solving and the diversity of syntactic
+language questions.26                                            forms with which I must cope. Especially annoying are
+   The basic idea is that there are two kinds of knowledge       syntactic clashes such as the different placement of
+in long-term memory: syntactic and semantic (see                 special characters on keyboards, the multiple approaches
+Figure 5).                                                       to backspacing (backspace key, cursor control key, or a
+                                                                 mouse), and the fact that one text editor uses "K" for
+   Syntactic knowledge. In a text editor, syntactic              keeping a file while another uses "K" for killing a file.
+knowledge-the details of command syntax-include
+permissible item delimiters (space, comma, slash, or col-          Implications of the syntactic/semantic model. Novices
+on), insertion of a new line after the third line (13, 1 3, or   begin with a close link between syntax and semantics;
+31), or the keystroke necessary for erasing a character          their attention focuses on the command syntax as they
+(delete key, CONTROL-H, or ESCAPE). This knowl-                  seek to remember the command functions and syntax. In
+edge is arbitrary and therefore acquired by rote memori-         fact, for novice users, the syntax of a precise, concise
+zation. Syntactic knowledge is volatile in memory and
+easily forgotten unless frequently used.27 This
+knowledge is system dependent with some possible over-
+lap among systems.
+                                                                             High-Level
+   Semantic knowledge. The concepts or functionality-                     Problem Domain
+semantic knowledge-are hierarchically structured from
+low-level functions to higher level concepts. In text
+editors, lower level functions might be cursor movement,
+insertion, deletion, changes, text copying, centering, and
+indentation. These lower level concepts are close to the
+syntax of the command language. A middle-level seman-
+tic concept for text editing might be the process for cor-
+recting a misspelling: produce a display of the misspelled                                                                 Unix
+
+word, move the cursor to the appropriate spot, and issue                                                    Micro         Editor
+the change command or key in the correct characters. A                                                      Editor
+higher level concept might be the process for moving a                       Low-Level
+sentence from one paragraph to another: move the cur-                     Program Domain
+sor to the beginning of the sentence, mark this position,
+move the cursor to the end of the sentence, mark this se-               Semantic Knowledge                Syntactic Knowledge
+cond position, copy the sentence to a buffer area, clean
+up the source paragraph, move the cursor to the target                                   Long-Term Knowledge
+location, copy from the buffer, check that the target
+paragraph is satisfactory, and clear the buffer area.            Figure 5. The semantic knowledge in long-term memory goes from
+   The higher level concepts in the problem domain               high-level problem domain concepts down to numerous low-level pro-
+(moving a sentence) are decomposed, by the expert user,          gram domain details. Semantic knowledge is well-structured, relative-
+top-down into multiple, lower level concepts (move               ly stable, and meaningfully acquired. Syntactic knowledge is arbitrary,
+                                                                 relatively volatile unless frequently rehearsed, and acquired by rote
+cursor, copy from buffer, etc.) closer to the program or         memorization. There is usually little overlap between the syntax of dif-
+syntax domain. Semantic knowledge is largely system              ferent text editors, but they often share semantic concepts about in-
+independent; text editing functions (inserting/deleting          serting, deleting, and changing lines of text.
+
+August 1983                                                                                                                           65
+     commllanid language pros ides the cues for- recallirnL thc      mathematics and programming require abstract thilnik-
+     semllanitics. Novices revies the command names, in their       ing, thex are difficult for childreni, and a greater effort
+     memorv5 or in a mainual, which act as the stimuli for          must be made to linek the symbolic representation to the
+     recalling the related semaintics. Each comnmaind is thein      actual object. Direct mnanipulationi is an attempt to bring
+     exaluated tor its applicability to the problem. Novices        activity to the concrete operational stage or exen1 to the
+     may hase a haid time figuring out hbos to move a               preoperational stage, thus making some tasks easier flor
+     sentence of text, even if they understand each of the com-     children and adults.
+     mands. Novices using editors that have a "CHANGE                   It is eass to ens ision direct manipulation in cases s here
+     lold string/nexv string /" command must still be taught         the physical action is conifined to a small number of ob-
+     hows to use this command to delete a word or insert a          jects and simple comminiands, but the approach rmav be
+     xx1ord inlto a linie.                                           unsuitable f'or some complex applications. On the other
+                                                                     hand, display editors proside impressixe functionality in
+                                                                    a natural xas. The limits of direct manipulation xill be
+       Manuals that have alphabetically arranged                    determined by the imagination and skill ot' the designer.
+       sections make it difficult for the novice to                 With more examples and experience, researchers should
+          anchor material to familiar concepts.                     be able to test competing theories about the most effec-
+                                                                    tive metaphors or analogies. Familiar sisual analogies
+                                                                    may be more appealing in the early stages of learning the
+         As users gain experience, thev increasingly think in       ssstem, xshile more specific abstract models may be more
+      higher lexel semantic terwns,xhich are freer from the syn-    useful during regular use.
+      tactic detail and more svstem independent. In addition to        The syntactic/semantic model prosides a simple model
+      facilitating learninig, direct mallipulationi of a Visual     of human cognitive activitv. It must be refined and cx-
+      representation may aid retentioni.                            tended to enlhance its explanatory and predictive posver.
+         The syntactic/semantic model suggests that trainine        Empirical tests and car-eful measurements of' human per-
+      rmaniuals should be w ritten f'rom the more familiar , high-  formance x ith a X aricty of syxstems are needed to X alidate
+      level, problem domain viesspoint. The titles of section.s     the improved model. Cognitive models of user behavior
+     should describe problem domaini operations that the user-      and mental models or system images of computer-sup-
+     deals sith regularly. Then the details of' the comnmanids      plied funlctions are rapidly expanding areas of research in
+      used to accomplish the task can be presented, and finally,    computer science anid psychology.
+     the actual svntax can be shoxn. M\anuals that have
+     alphabetically arranged sectionis devoted to each coIml-
+     rnand are sers difficult for the noxvice to lea-rn fromii, Potential applications of direct
+     because it is difficult to anchor the materiall to famililar manipulation
+     conlcepts.
+         The sucCess of direct mlanlipulation is unlderstanidable     The trick in creating a direct manipulation syvstcm is to
+     in the context of the svintactic/semantic mocdel. The ob- comi-e up with an appropriate representation or model ot'
+     ject of interest is displayed so that actions are directls in reality. I t'ound it dif ficult to thilnk about int'ormiiation
+     the high-level problemll domain. There is little need for- problems in a visual f'orm, but xith practice it becamne
+     decompositioni into multiple commiiiiands with a complex more natural. With many applications, the jump to a
+     svintactic t'orm. On the contrary, each comminiaind pro- visual language sas initialls a struggle, but later I couldi
+     duces a comprehenlsible action in the problem domain hardly imagine xxhy anyone xould xant to use a com-
+     that is immediately X isible. The closeness of' the problem plex syntactic notation to descr-ibe an essentially x isual
+     domain to the comminiand action reduces operator process.
+     problem-solving load and stress.                                 One application that se explored was a personal ad-
+         Dealing with representations of objects may be more dress list program that displays a Rolodex-like dcx ice (see
+     "natural' and closer to ininate human capabilities: Figure 6). The most recently retrieved address card ap-
+     action anid visual skills emerged xsell before language pears on the screen, and the top line of the next two ap-
+     in humani e olution. Psvchologists hase long knos n pear behind, follosed by the image of a pack of remain-
+     that spatial relationshipps and actions are nmore quicklx ing cards. As the joystick is pushed forward, the Rolodex
+       Frasped sith visual rather thani linguistic representa- appears to rotate and successive cards appear in f'ront. As
+     tions. [Iurthermorc, intuition an-d discovery are often the joystick is pushed ftirther-, the cards pass by more
+     promoted by suitable sisual representations of formal quickly; as the joystick is reversed, the direction of moxe-
+     mathemiiatical svstems.                                       ment rex erses. To change an entry, users merely mox e the
+         Piaget described t'our stages ot' crosth: senisorimotor cursor over the field to be updated and and type the cor-
+     (from birth to approximately 2 sears), preoperational (2 rection. To delete an etry, ulsers merely blank out the
+     to 7 years), concrete operational (7 to 11 vears), and f'or- fields. Blank cards night be let't at the top of' the file, but
+     mal operations (beginninv at approximately 11 syears).> xhen the ftields are f'illed in, proper alphabetic placement
+     Phssical actions on anl object are conmprehenisible duringP is prosided. To find all enltries xith a specific zip code,
+     the concrete operational stage, and childreni acquire the users merely type the zip code in the proper t'ield and
+     concept of conservation or invariance. At arounid age 1 1, enter a question mark.
+     children ente- the f'orral operations stage of symbol           Checkbook maintenlance andl searchine mieht be donc
+     manipulation to r epr esent actions on objects. Since in a simila- fashion, by displaying a checkbook reuister-
+66                                                                                                                  COMPUTER
+with labeled columns for check number, date, payee, and
+amount. The joystick might be used to scan earlier en-
+tries. Changes could be made in place, new entries could
+be made at the first blank line, and a check mark could be
+made to indicate verification against a monthly report.
+Searches for a particular payee could be made by filling
+in a blank payee field and then typing a question mark.
+   Bibliographic searching has more elaborate re-
+quirements, but a basic system could be built by first                                D        J   PHC-
+showing the user a wall of labeled catalog index drawers.
+A cursor in the shape of a human hand might be moved
+over to the section labeled "Author Index" and to the                     }          S54 2847
+drawer labeled "F-L." Depressing the button on the
+joystick or mouse would cause the drawer to open up and
+reveal an array of index cards with tabs offering a finer
+index. Moving the cursor-finger and depressing the selec-
+tion button would cause the actual index cards to appear.
+Depressing the button while holding a card would cause
+copying of the card into the user's notebook, also               Figure 6. This electronic Rolodex or phone-number card file gives
+represented on the screen. Entries in the notebook might         users rapid control over the card motion by a forward or backward
+bepredintedto crathe asprienEntriedbib    phynork
+                                                combin
+be edited to create a printed bibliography or combine            joystick press. Different commands can be displayed by moving the
+                                                                 joystick left or right. The lively motion of the cards and the natural
+with other entries to perform set intersections or unions.       commands appeal to many users. Implemented by Gary Patterson in
+Copies of entries could be stored on user files or trans-        Basic on an Apple 11, this system was part of a course project at the
+mitted to colleagues by electronic mail. It is easy to           University of Maryland.
+visualize many alternate approaches, so careful design
+and experimental testing will be necessary to sort out the            P<t     5 s:
+successful, comprehensible approaches from the idiosyn-                                             /t mnS>
+cratic ones.                                                                                       -Os)
+   It is possible to apply direct manipulation to en-                                                                   ed tor          Cc>
+                                                                                                         >
+vironments for which there is no obvious physical
+parallel. Imagine a job control language that shows the          |                                       >
+                                                                                                         c
+
+
+file directory continuously, along with representations of                                              Sp>              s>            'posh>
+computer components. A new file is created by typing its
+name into the first free spot in the directory listing. A file
+name is deleted by blanking it out. Copies are made by                                                  icro>
+locking a cursor onto a file name and dragging it to a pic-           /,t//\
+ture of a tape drive or a printer. For a hierarchical direc-                  /                     /sstem>
+tory, the roots are displayed until a zoom command
+causes the next level of the tree to appear. With several                                                                >
+presses of the button labeled ZOOM a user should be                   c                   P>                 >
+able to find the right item in the directory, but if he goes     |          i \
+                                                                                                                                        os)
+                                                                                                                                        Os>
+
+down the wrong path, the UNZOOM button will return               |h                                                   old
+the previous level. (See Figure 7 for a different approach                                               et>
+to hierarchical directories.)                                                                           d,tor>
+   Why not make airline reservations by showing the user                              P                              aU?>>       \\        >
+a map and prompting for cursor motion to the departing           |                                                                \\
+and arriving cities? Then use a calendar to select the date,
+a clock to indicate the time, and the plane's seating plan                    \cro)                                    \\nx>            o e>
+(with diagonal lines across already reserved seats) to                                                           >
+                                                                                      e 0t
+select a seat.                                                                                      \   nternal>
+    Why not take inventory by showing the aisles of the
+warehouse with the appropriate number of boxes on each
+                                                                                                   t\\ta tes
+                                                                                                         tes)
+                                                                                                              >her>
+shelf? McDonald29 has combined videodisc and com-                                                       Ystem\s
+puter graphics technology in a medical supply inventory
+with a visual warehouse display.
+    Why not teach students about polynomial equations                Figure 7. The Dirtree (for directory tree) program on the Perq computer
+by letting them bend the curves and watch how the coef-              of Three Rivers Computer Corporation is built from left to right by             I
+
+
+
+
+ ficients change, where the x-axis intersects, and how the           puck selections. The details of lower level directories appear, and the
+ derivative equation reacts?30                                       items can then be selected by moving a cursor onto the item. In this
+                                                                                                                                                     I
+
+
+                                                                     figure, the current item is AU, shown in inverse video, but the user has
+    These ideas are sketches for real systems. Competent             moved the cursor to Boot, which is shown with a box around it. If the
+ designers and implementers must complete the sketches               button on the puck is pressed, Boot would become the current item.
+ and fill in the details. Direct manipulation has the power          (Figure courtesy of Three Rivers Computer Corporation)
+ A-ri-,5.*cot 1 CQ'2                                                                                                                            67
+  AugustI 1jbj
+    to attract users because it is comprehensible, natural,           command or programming languages may soon be acces-
+    rapid, and even enjoyable. If actions are simple, rever-          sible through lively, enjoyable interactive systems that
+    sibility ensured, and retention easy, then anxiety recedes        reduce learning time, speed performance, and increase
+    and satisfaction flows in.                                        satisfaction. C
+
+
+       The tremendous growth of interest in interactive               Acknowledgments
+    system design issues in the research community is en-
+    couraging. Similarly, the increased concern for improved             I am grateful to the Control Data Corporation for par-
+    human engineering in commercial products is a promis-             tial support (grant 80M 15) of my work and to the Univer-
+    ing sign. Academic and industrial researchers are apply-          sity of Maryland Computer Science Center for computer
+    ing controlled, psychologically oriented experimenta-             resources to prepare this report. I thank Gordon
+    tion25 to develop a finer understanding of human perfor-          Braudaway, Jim Foley, John Gannon, Roger Knights,
+    mance and to generate a set of practical guidelines. Com-         John Lovgren, Harlan Mills, Phyllis Reisner, Sherry
+    mercial designers and implementers are eagerly awaiting           Weinberg, and Mark Weiser for their constructive and
+    improved guidelines and increasingly using pilot studies          supportive comments on draft versions. Gio Wie-
+    and acceptance tests to refine their designs.                     derhold, Stephen Yau, and the reviewers provided useful
+       Interactive systems that display a representation of the       guidance in shaping the final article.
+    object of interest and permit rapid, incremental, revers-
+    ible operations through physical actions rather than com-
+    mand syntax are attracting enthusiastic users. Immediate
+    visibility of the results of operations and a layered or          References
+    spiral approach to learning contribute to the attraction.
+    Each of these features needs research to refine our                I. Teresa L. Roberts, "Evaluation of Computer Text
+    understanding of its contributions and limitations. But               Editors," PhD dissertation, Stanford University, 1980.
+    even while such research is in progress, astute designers             Available from University Microfilms, Ann Arbor,
+                                                                          Michigan, order number AAD 80-11699.
+    can explore this approach.
+       The future of direct manipulation is promising. Tasks           2. John M. Carroll, "Learning, Using and Designing Com-
+                                                                          mand Paradigms," Human Learning, Vol. 1, No. 1, 1982,
+    that could have been performed only with tedious                      pp. 31 -62.
+                                                                       3. Christopher F. Herot, "Spatial Management of Data,"
+                                                                          ACM Trans. Dutabase Systems, Vol. 5, No. 4, Dec. 1980,
+                                                                          pp. 493-513.
+THE NAVAL COASTAL SYSTEMS CENTER                                       4. Thomas W. Malone, "What Makes Computer Games
+                                                                          Fun?" Byte, Vol. 6, No. 12, Dec. 1981, pp. 258-277.
+  Panama City, Florida Offers                                          5. John M. Carroll and John C. Thomas, "Metaphor and the
+                                                                          Cognitive Representation of Computing Systems, IEEE
+SOFTWARE and SONAR ENGINEERING POSITIONS                                  Trans. Systems, Man, and Cybernetics, Vol. SMC-12, No.
+           520,256 - $53,661 Depending on Qualifications                  2, Mar./Apr. 1982, pp. 107-116.
+               **CHALLENGING ASSIGNMENTS**                             6. Moshe M. Zloof, "Query-by-Example," AFIPS Conj..
+                      **CAREER GROWTH**                                   Proc., Vol. 44, 1975 NCC, AFIPS Press, Montvale, N.J.
+                    **LOW COST OF LIVING**                                1975.
+                **BEAUTIFUL ENVIRONMENT**                              7. Moshe M. Zloof, "Office-by-Example: A Business
+          Join a rapidly expanding team of scientists and engineers       Language that Unifies Data and Word Processing and
+  engaged in Research, Development, Test and Evaluation of major          Electronic Mail, IBM Sys. J., Vol. 21, No. 3, 1982, pp.
+  Navy Systems, Supporting Mine Countermeasures, Swimmer Oper-            272-304.
+  ations, Diving and Salvage, Coastal and Inshore Defense, and Am-     8. Cranfield Smith et al., "Designing the Star User
+  phibious Warfare.                                                       Interface," Byte, Vol. 7, No. 4, Apr. 1982, pp. 242-282.
+Qualifications                                                        9. Laura Yedwab, Christopher F. Herot, and Ronni L.
+  Bachelors Degree, Engineering, Computer Science, or Physics.           Rosenberg, "The Automated Desk," Sigsmall Newsletter,
+  U. S. Citizenship
+                                                                          Vol. 7, No. 2, Oct. 1981, pp. 102-108.
+  Significant Experience in:                                          10. Ted Nelson, "Interactive Systems and the Design of Vir-
+        Development or Life Cycle Support of Embedded Computer            tuality," Creative Computing, Vol. 6, No. 11, Nov. 1980,
+           Softwvare ---- or----                                          pp. 56 ff., and Vol. 6, No. 12, Dec. 1980, pp. 94 ff.
+        Sonar Desigii and System Development                          11. Chris Rutkowski, "An Introduction to the Human Ap-
+                           APPLY IMMEDIATELY                              plications Standard Computer Interface, Part 1: Theory
+                                                                          and Principles," Byte, Vol. 7, No. 11, Oct. 1982, pp.
+NAVAL COASTAL SYSTEMS CENTER                                              291 -310.
+  Dr. D. P. Skinner                       *OR DS MAOSTA               12. Alan MacDonald, "Visual Programming," Datamnation,
+  Code 03 (83-18)                                                         Vol. 28, No. 11, Oct. 1982, pp. 132-140.
+  Panama City, Florida 32407                                          13. George Polya, How to Solve It, Doubleday, New York,
+                                                                          1957.
+An Equdal OQcort(ninty Employer
+                                                                      14. Maria Montessori, The Montessori Method, Schocken,
+                                                                          New York, 1964.
+
+                                                                                                                      COMPUTER
+15. James Bruner, Toward a Theory of Instruction, Harvard          26. Ben Shneiderman, "A Note on Human Factors Issues of
+     University Press, Cambridge, Mass., 1966.                         Natural Language Interaction with Database Systems,"
+ 16. John M. Carroll, J. C. Thomas, and A. Malhotra,                   Information Systems, Vol. 6, No. 2, Feb. 1981, pp.
+     "Presentation and Representation in Design Problem-               125-129.
+     Solving," British J. Psych., Vol. 71, 1980, pp. 143-153.      27. D. P. Ausubel, Educational Psychology: A Cognitive Ap-
+17. Rudolf Arnheim, Visual Thinking, University of Califor-            proach, Holt, Rinehart and Winston, New York, 1968.
+     nia Press, Berkeley, Calif., 1972.                            28. Richard W. Copeland, How Children Learn Mathematics,
+18. Robert H. McKim, Experiences in Visual Thinking,                   third ed., MacMillan, New York, 1979.
+     Brooks/Cole Publishing Co., Monterey, Calif., 1972.           29. Nancy McDonald, "Multi-media Approach to User Inter-
+19. Max Wertheimer, Productive Thinking, Harper and Row,               face," Human Factors in Interactive Computer Systems,
+     New York, 1959.                                                   Yannis Vassiliou, ed., Ablex Publishing Co., Norwood,
+                                                                       N.J., to appear in 1983.
+20. Seymour Papert, Mindstorms: Children, Computers, and
+     Powerful Ideas, Basic Books, Inc., New York, 1980.            30. Ben Shneiderman, "A Computer Graphics System for
+                                                                       Polynomials," The Mathematics Teacher, Vol. 67, No. 2,
+21. Ben Shneiderman, R. Mayer, D. McKay, and P. Heller,                Feb. 1974, pp. 111-113.
+     "Experimental Investigations of the Utility of Detailed
+     Flowcharts in Programming," Comm. ACM, Vol. 20,
+     No. 6, June 1977, pp. 373-381.
+22. Ben Shneiderman, "Control Flow and Data Structure
+     Documentation: Two Experiments," Comm. ACM, Vol.
+     25, No. 1, Jan. 1982, pp. 55-63.                                                  Ben Shneiderman is an associate professor
+23. Michael L. Schneider, "Models for the Design of Static                             of computer science at the University of
+     Software User Assistance," Directions in Human-                                   Maryland, where he is pursuing research
+     Computer Interaction, Albert Badre and Ben Shneider-                              in the design of interactive computer sys-
+     man, eds., Ablex Publishing Co., Norwood, N.J., 1982.                             tems. He is the head of the recently formed
+                                                                                       Laboratory for Human-Computer Inter-
+24. Ben Shneiderman and Richard Mayer, "Syntactic/Seman-                               action within the Center for Automation
+     tic Interactions in Programmer Behavior: A Model and                              Research.
+     Experimental Results," Int'l J. Computer and Informa-                               Shneiderman is the author of Software
+     tion Sciences, Vol. 8, No. 3, 1979, pp. 219-239.                                  Psychology: Human Factors in Computer
+25. Ben Shneiderman, Software Psychology: Human Factors           and Information Systems, the coauthor of several textbooks,
+     in Computer and Information Systems, Little, Brown and       and the editor of three collections of papers. He has published
+     Co., Boston, Mass., 1980.                                    more than 80 research journal and conference articles.
+
+
+
+r
+                                                    'FORBES SAYS000
+                                                     "Before even tallcing to the
+                        I.,
+                                                     salesman spend some time with
+                                                     The Software Catalog. *uly4,1983)
+                                                     Indexed 8 different ways, by:
+          i!!..mmmmmm!.L
+          .mmmmmmmmmmmmm.
+         .'mmmmmmmmmmmmmm.                               * Application * Subject * Computer System . Operating System
+          mm mm mm mm mm mm qmm
+                                                         * Programming Language * Microprocessor
+                                                         * Package Name * Software Vendor
+    Published every 6 months with supplemental updates three months later.
+                                                                             Single Copy                                      Standing Order
+    MICROCOMPUTERS                                                               $69.00                                           $58.50
+      Supplemental Update (Micro)                                                $15.00                                           $12.75
+    MINICOMPUTERS                                                                $95.00                                           $80.75
+      Supplemental Update (Mini)                                                 $15.00                                           $12.75
+    *
+    "... it gives concise descriptions of packages that will interest professionals in
+    the accounting, legal, architectural, medical, and dental fields."
+    Call 1-800-223-2115 (in New York State) 1-212-867-9040 Ext. 307
+    EISEVIER/INTERNATIONAL SOFTWARE DATABASE.m
+    Elsevier Science Publishing, Inc., Box CR, 52 Vanderbilt Ave., New York, New York 10017
+                                                                Reader Service Number 6
+

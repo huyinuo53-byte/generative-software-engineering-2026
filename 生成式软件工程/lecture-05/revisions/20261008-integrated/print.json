@@ -1,0 +1,14 @@
+{
+  "method": "Chrome headless PDF print, text extraction for all expected blocks and answers, image count; not native print dialog",
+  "blocks": 204,
+  "missing": [],
+  "images": 40,
+  "answer_pages": [
+    54,
+    55,
+    56,
+    57,
+    58
+  ],
+  "status": "passed"
+}

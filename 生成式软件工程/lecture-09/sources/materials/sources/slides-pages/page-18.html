@@ -1,0 +1,13 @@
+<h1>MapReduce：接受计算形式，换取集群能力</h1>
+<h2>案例：<a href="https://usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean_html/index.html">MapReduce</a></h2>
+<ul>
+<li>MapReduce 要求把计算组织成 <code>map → 按 key 分组 → reduce</code></li>
+<li>接受这个形式，就能获得自动并行、任务调度、负载均衡、失败重试</li>
+<li><span class="aigc">例如统计网站访问量：每条日志输出 <code>(URL, 1)</code>，按 URL 分组求和；某台机器坏了，就重新执行它的任务。</span></li>
+</ul>
+<h2>哪些细节仍要自己处理？</h2>
+<ul>
+<li><span class="aigc">热门 key：大量数据汇聚到同一个 reduce 调用，自动调度无法替你拆开任意的归约逻辑；可能需要预聚合或重新设计 key。</span></li>
+<li><span class="aigc">外部副作用：若 map 顺手发邮件，重试可能重复发送。原论文 §4.5 就要求应用作者保证额外副作用的原子性与幂等性。</span></li>
+<li><span class="aigc">“失败就重算”的便利，建立在重新执行仍能得到正确结果的约束上。</span></li>
+</ul>

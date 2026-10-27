@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "bcut",
+    "ai",
+    "summary",
+    "/Users/yjzhao/Library/Application Support/BaoCut/projects/BV1CQt365EzW.bcut",
+    "--llm",
+    "agent",
+    "--lang",
+    "zh-Hans",
+    "--instructions",
+    "生成完整、详细、可回查的中文课堂笔记，不要做简短摘要。必须覆盖全片三个官方章节：Prompt (Context) Engineering、使模型遵循指令的技巧、更长程任务的建议。按时间顺序组织，保留关键时间码；区分核心论点、机制解释、课堂演示与案例、可操作方法、风险与限制、结尾社会思考。保留重要专有名词和作者的论证链，去除口头赘词但不要遗漏观点。结尾给出可执行清单与值得质疑或验证的观点。",
+    "--jsonl"
+  ],
+  "cwd": "/Users/yjzhao/Library/Application Support/BaoCut/agent/_scratch",
+  "finishedAtMs": 1790690040183,
+  "pid": 75514,
+  "startedAtMs": 1790689853358,
+  "taskId": "t-mumqi5rh"
+}

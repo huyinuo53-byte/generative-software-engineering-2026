@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "before": {
+    "notes.json": "f85761ff3e017654e4ceec419479a4e531feb726955bf465b1bb19774a2a9d3c",
+    "reading-layout.json": "5a04c759f2e546b74efe77f992d48bd7b567845b7d1929490a2f805c89e609a3",
+    "materials.json": "f8022090ff01853fd1d52094cb3d624812bb09747452d4eebd97aff4e1fca2f1",
+    "\u8bfe\u5802\u7b14\u8bb0.html": "c53214a052ee6b68c6fe49c119c448b27084fb3dc2739dd75f49909936c9b5ab"
+  },
+  "after": {
+    "notes.json": "f85761ff3e017654e4ceec419479a4e531feb726955bf465b1bb19774a2a9d3c",
+    "reading-layout.json": "5a04c759f2e546b74efe77f992d48bd7b567845b7d1929490a2f805c89e609a3",
+    "materials.json": "f8022090ff01853fd1d52094cb3d624812bb09747452d4eebd97aff4e1fca2f1",
+    "\u8bfe\u5802\u7b14\u8bb0.html": "c53214a052ee6b68c6fe49c119c448b27084fb3dc2739dd75f49909936c9b5ab"
+  },
+  "scope": "Permanent build/render reproduces current notes, layout, material subset and HTML byte-for-byte; no re-ASR."
+}

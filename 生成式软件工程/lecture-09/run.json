@@ -1,0 +1,25 @@
+{
+  "run_id": "BV144nc6KEA4-20261026",
+  "item_id": "lecture-09",
+  "scope_revision": 1,
+  "video_id": "BV144nc6KEA4",
+  "source_url": "https://www.bilibili.com/video/BV144nc6KEA4",
+  "title": "DeepSeek Harness (1)",
+  "requested_outputs": [
+    "课堂笔记.html"
+  ],
+  "required_checks": [
+    "transcript_reading",
+    "reading_materials",
+    "material_integration",
+    "visual_coverage",
+    "images",
+    "content",
+    "html_static",
+    "desktop",
+    "narrow_screen",
+    "zoom_pan_close",
+    "console"
+  ],
+  "started_at": "2026-10-26T01:03:45.555192+00:00"
+}

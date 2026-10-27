@@ -1,0 +1,103 @@
+{
+  "run_id": "BV1JGap6LE74-20261002",
+  "outcome": "completed",
+  "summary": "完整阅读20块转写，909来源单元逐项覆盖；25节、46图。内容与逐图复核、最终HTML结构/桌面/390px窄屏/打印保真检查通过。未做真实手机或逐秒音频听审。",
+  "validation": {
+    "content": {
+      "status": "passed",
+      "evidence": [
+        "audit.json",
+        "cross-review.json"
+      ]
+    },
+    "images": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_static": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "desktop": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "narrow": {
+      "status": "passed",
+      "evidence": "qa/browser.json"
+    },
+    "real_phone": {
+      "status": "not_requested",
+      "evidence": "未做真实手机设备实测；390px仅浏览器模拟"
+    },
+    "pdf": {
+      "status": "not_requested",
+      "evidence": "临时PDF只用于HTML打印检查，不作为完整PDF交付"
+    },
+    "source_coverage": {
+      "status": "passed",
+      "evidence": "qa/final-static.json"
+    },
+    "image_integrity": {
+      "status": "passed",
+      "evidence": "image-audit.json"
+    },
+    "html_print": {
+      "status": "passed",
+      "evidence": "qa/print.json"
+    },
+    "package": {
+      "status": "not_requested",
+      "evidence": "逐视频独立单文件HTML"
+    },
+    "project_strict": {
+      "status": "passed",
+      "evidence": "sources/project-check.json"
+    }
+  },
+  "blocker": null,
+  "resume_condition": null,
+  "source_hashes": {
+    "transcript.json": "ebd3c6335ba9ce3e8f2df278562d25aec14c59ae787b28f91743785ef955e752",
+    "chunks/index.json": "63150906724b3e42af26ba5847261e4d5f76d968b09b8f2e3176eb39c81545fc",
+    "notes.json": "dc6c3e8b0390646246587a16c904ebe64cc2b40dfe4084c6b3a9c7a0c0749c60",
+    "课堂笔记.html": "bcef494ed0c1d7890c3634865660bc3de198f18904a426030fb7f548a242651c",
+    "image-audit.json": "43757c454daa867cce0679bd26505ce481d6a8e1bd800b0e5c00ac7e2bd74dd8",
+    "qa/browser.json": "8fdaedbe3c0e0c561c243a55f2454958104b6a0bdf66b9c7900975fb529f8392",
+    "qa/print.json": "27f2e1a3ab669af579f6c1635eee217d6ffa671e7f8b287ab84d1fa39252dd62"
+  },
+  "scope_revision": 1,
+  "audit": [
+    "audit.json",
+    "cross-review.json"
+  ],
+  "delivered_files": [
+    "课堂笔记.html"
+  ],
+  "trace_snapshot": "trace-final.json",
+  "lessons": [
+    {
+      "status": "candidate",
+      "scope": "课程复用证据识别",
+      "finding": "同名lecture07旧证据实际属于另一门课，必须核对课程/视频身份",
+      "evidence": "audit.json 07-01",
+      "next_action": "复用前检查标题、URL和视频ID"
+    }
+  ],
+  "metrics": {
+    "wall_seconds": null,
+    "active_seconds": null,
+    "tokens": null,
+    "cost": null,
+    "media_hours": 1.6614222222222221,
+    "transcript_chunks": 20,
+    "sentences": 909,
+    "slide_pages": 39,
+    "images": 46,
+    "sections": 25,
+    "source_units": 909,
+    "selected_images": 46,
+    "text_blocks": 187
+  },
+  "finished_at": "2026-10-02T15:35:10.637994+00:00"
+}

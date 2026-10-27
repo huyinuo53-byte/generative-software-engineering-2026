@@ -1,0 +1,185 @@
+{
+  "checked_at": "2026-10-19T01:15:01.191907+00:00",
+  "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+  "source_html_sha256": "1950a022ffca0ca6d47018f832ad23a52ffdbec3255fa983f0f2eba729d77061",
+  "label": "官方网页讲义截图汇编（2026-10-19冻结，非官方原生PDF，非录制时同秒画面）",
+  "method": "Chrome via cua_repl; each slide key navigation then reload restores same page with no-anim; full viewport 961x772 JPEG; all24 visually inspected",
+  "repair": "Early animation-shifted images replaced; final 1–24 captured after reload, no-anim.",
+  "pdf": {
+    "path": "source-slides.pdf",
+    "sha256": "b1e4df635216044644080207826a6eaec99b2edc9dc4e238355a8a5b85a8caed",
+    "pages": 24,
+    "method": "lossless embedding of the24 full JPEG screenshots, same order, no crop"
+  },
+  "images": [
+    {
+      "page": 1,
+      "path": "slides/slide-01.jpg",
+      "sha256": "f30fd76e264a76d3a4f3c91a27cda7e80b774504a5c9a696985f23c436c76d3e",
+      "status": "passed",
+      "detail": "复习两组主题：项目管理、需求与架构；标题和列表完整。"
+    },
+    {
+      "page": 2,
+      "path": "slides/slide-02.jpg",
+      "sha256": "6ab1d4a0efe2219bf80531c3300a1c5bdb8f0710b1d55afe8ac1c38f4ef04fb3",
+      "status": "passed",
+      "detail": "原型与假设；紫色 AIGC 区含 NASA 莱特兄弟例子，清晰完整。"
+    },
+    {
+      "page": 3,
+      "path": "slides/slide-03.jpg",
+      "sha256": "02befbb4045cee731132327e51e1024db9cc7e71dbc889f7a2e825c70144efcf",
+      "status": "passed",
+      "detail": "Agent 自主性与模型能力限制；两组标题及条目完整。"
+    },
+    {
+      "page": 4,
+      "path": "slides/slide-04.jpg",
+      "sha256": "c1d15aef33ab2a68db5fed8411226054c3e75534948ffd5c0fb4f7ad3dd01568",
+      "status": "passed",
+      "detail": "Ralph 命名解释和人物插画；人物脚部保留、非讲者现场图。"
+    },
+    {
+      "page": 5,
+      "path": "slides/slide-05.jpg",
+      "sha256": "3d6705d01be2461b0f5dbbd7af95e691fdbe2395f4caedd6653a3d27a68c72f9",
+      "status": "passed",
+      "detail": "循环示例三行代码完整，停止条件补充与原文链接可辨。"
+    },
+    {
+      "page": 6,
+      "path": "slides/slide-06.jpg",
+      "sha256": "fa614935a5b4818897595fe4769d0c620421c3efb8de16c92783e97135e54231",
+      "status": "passed",
+      "detail": "Workspace/State，Agent/Transition；完整显示末行长任务说明。"
+    },
+    {
+      "page": 7,
+      "path": "slides/slide-07.jpg",
+      "sha256": "49b7c35e2b59dce14ccdf3578ebc2c6e2361ec497bc77b9772399dbf64e57efe",
+      "status": "passed",
+      "detail": "每次迁移验证；不可信开发者及可执行条件完整。"
+    },
+    {
+      "page": 8,
+      "path": "slides/slide-08.jpg",
+      "sha256": "8f695dbbc515514a9be66300d07843aa08a36f0228646b9d3e839485715c69e3",
+      "status": "passed",
+      "detail": "CI 历史和 CI/两种 CD 区别；底部三条定义保留。"
+    },
+    {
+      "page": 9,
+      "path": "slides/slide-09.jpg",
+      "sha256": "02ef706f76b0deaeb4a7d0d7bff5a6f902b5b4e2b60b8e3919469b7f1b151c56",
+      "status": "passed",
+      "detail": "Hook 事件、pre-commit 与远端门控两组完整。"
+    },
+    {
+      "page": 10,
+      "path": "slides/slide-10.jpg",
+      "sha256": "f52a8c102cdcc8da12d84b48143992fcff4cf2b246eef73a7995db559dd7b48c",
+      "status": "passed",
+      "detail": "琐碎规则含并行PR、flaky测试、override、部署倒序；末行 Spec 条件完整。"
+    },
+    {
+      "page": 11,
+      "path": "slides/slide-11.jpg",
+      "sha256": "97f3d9c1e10913f3f64d15103810d7e5915ac04f7144be5f43d41928b5ea38d7",
+      "status": "passed",
+      "detail": "合并与发布条件；底部失败路径验收行完整。"
+    },
+    {
+      "page": 12,
+      "path": "slides/slide-12.jpg",
+      "sha256": "8bb62a3a02991169d039b76997c21e185351f3721187143fe35d8537464b91bc",
+      "status": "passed",
+      "detail": "Agent 偏执清单、CI纠正、jidoka类比及不可降标准完整。"
+    },
+    {
+      "page": 13,
+      "path": "slides/slide-13.jpg",
+      "sha256": "9551a8a07f3c495cd66d23fec43e9853a39d2f18cb2909e46782ce0cbbab9d86",
+      "status": "passed",
+      "detail": "纯图六行表：20KB文档/冗余抽象/扩大重构/可读性/改测试/关CI，各有自动检查与人工判断；表头和阈值脚注完整。"
+    },
+    {
+      "page": 14,
+      "path": "slides/slide-14.jpg",
+      "sha256": "a356677dfb404abef2e6f33160a753cd509f23bc81f7d497d33500b8123d5efe",
+      "status": "passed",
+      "detail": "OpenAI来源、空仓库、知识外部化、独立应用实例；底部bug换行完整。"
+    },
+    {
+      "page": 15,
+      "path": "slides/slide-15.jpg",
+      "sha256": "b8455176c7c4abe21e8a20518f975b240044ffeb6616d4ee5a74b5d3e0e39ca2",
+      "status": "passed",
+      "detail": "架构约束和持续清理；ClosedAI吐槽澄清原文确有lint/结构测试/CI。"
+    },
+    {
+      "page": 16,
+      "path": "slides/slide-16.jpg",
+      "sha256": "35bd431017375406ad81634a85f14c3bfd521c81c8d244cbfd3092f3fbf4239c",
+      "status": "passed",
+      "detail": "Stripe确定节点与Agent节点及最多两轮完整CI说明，紫色表示当前讲义补充。"
+    },
+    {
+      "page": 17,
+      "path": "slides/slide-17.jpg",
+      "sha256": "baa8b3198293dc975f0e881000ab0e81a9752eabc2e14ccbe93220dda03b5898",
+      "status": "passed",
+      "detail": "Anthropic16Agent同一Bug、GCC参照、组合失败边界完整。"
+    },
+    {
+      "page": 18,
+      "path": "slides/slide-18.jpg",
+      "sha256": "9d27b2cb6ec7a33f61e0459c9040d2700681900fb75a714350d5cdc8dc8338f2",
+      "status": "passed",
+      "detail": "StrongDM场景和DTU；末尾选课例子完整。"
+    },
+    {
+      "page": 19,
+      "path": "slides/slide-19.jpg",
+      "sha256": "1279ae14aaeca77bf5a5db6d68846963a8ccda615fd0b7e502645b0ba2d4184d",
+      "status": "passed",
+      "detail": "Deepseek Harness人物装备隐喻全身图完整；无架构数据，不能推断实际系统。"
+    },
+    {
+      "page": 20,
+      "path": "slides/slide-20.jpg",
+      "sha256": "ea1f35ba887d8e8041a2566566603234d0ff0e2a13cf122178607dfa79157471",
+      "status": "passed",
+      "detail": "经验、架构假设、垃圾回收的边界完整。"
+    },
+    {
+      "page": 21,
+      "path": "slides/slide-21.jpg",
+      "sha256": "c4ee36d1c39a59d809f90679cdf49ba583f8b774054fe473e5051b4a5708925d",
+      "status": "passed",
+      "detail": "Friendster读副本负载与按用户分片；组织实施的推论完整。"
+    },
+    {
+      "page": 22,
+      "path": "slides/slide-22.jpg",
+      "sha256": "87b696212278b8dad01296308422346edba3c8784a0d280fd5476b9c5fa3850c",
+      "status": "passed",
+      "detail": "Webvan/Quibi背景材料；容量百分比与管理层自述归因可辨。"
+    },
+    {
+      "page": 23,
+      "path": "slides/slide-23.jpg",
+      "sha256": "fbbf6c650fc0128d4ce21a205e1895d6e5f7d4a822c403ae12bb9359be4eb05e",
+      "status": "passed",
+      "detail": "Token实践机会、学习动机能力、教育风险推论完整。"
+    },
+    {
+      "page": 24,
+      "path": "slides/slide-24.jpg",
+      "sha256": "6b5e4b2b8c0dc366bb033ca514f35d5ac9eb0e53bce34b5dca7374d1bfece83c",
+      "status": "passed",
+      "detail": "纯图：Token=0，尝试/失败在左，反馈/重构/未来大学在右；学习机会被截断，完整保留图中标注。"
+    }
+  ],
+  "boundary": "This verifies current official slide image legibility/completeness only. Does not prove video visual coverage or oral attribution."
+}

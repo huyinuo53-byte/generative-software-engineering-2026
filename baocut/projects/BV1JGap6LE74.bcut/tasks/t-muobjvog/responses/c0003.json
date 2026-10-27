@@ -1,0 +1,7 @@
+{
+  "callId": "c0003",
+  "text": "<<<CONTEXT-BEFORE 只读，勿修改>>>\n<<<EDIT-BEGIN>>>\n这时候我就用了一番索性，我就用了 Event Sourcing，我干了这样的一件事：我不再是记录当前的状态，而是我记录所有状态的迁移。\n\n就是说，我记录一个数据结构有很多办法嘛，我可以记录这个数据结构当前的状态，我也可以记录这个数据结构是怎么来的。所以我其实就是一笔流水账。\n<<<EDIT-END>>>\n<<<CONTEXT-AFTER 只读，勿修改>>>\n",
+  "workerId": "codex-final-polish-3",
+  "leaseId": "l8c5aa33804334a80b465d622ab4c0817",
+  "atMs": 1790785730659
+}

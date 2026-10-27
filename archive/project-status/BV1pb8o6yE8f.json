@@ -1,0 +1,89 @@
+{
+  "status": "ok",
+  "project": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-01-BV1pb8o6yE8f.bcut",
+  "changed": [],
+  "next": "bcut polish '/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-01-BV1pb8o6yE8f.bcut'",
+  "data": {
+    "attention": [],
+    "manifest": {
+      "formatVersion": "0.1",
+      "language": "zh",
+      "media": {
+        "duration": 5999.317375,
+        "fps": 30.0,
+        "hash": "sha256-a5b0b91ce241e51706496b428003b963d9b6c1e9df3c98ff79ba05cde8f2c8e7",
+        "height": 410,
+        "path": "/Users/yjzhao/Downloads/欢迎来到未来 [01-Raw 26生成式软件工程 NJU].mp4",
+        "probeStamp": "221824807:1790953253794",
+        "rotation": 0,
+        "sourceMetadata": {
+          "chapters": [
+            {
+              "end": 1784.0,
+              "start": 0.0,
+              "title": "课程简介"
+            },
+            {
+              "end": 2914.0,
+              "start": 1784.0,
+              "title": "实操 (1"
+            },
+            {
+              "end": 3910.0,
+              "start": 2914.0,
+              "title": "视频恢复—实操 (2"
+            },
+            {
+              "end": 4480.0,
+              "start": 3910.0,
+              "title": "实操 (3"
+            },
+            {
+              "end": 6000.0,
+              "start": 4480.0,
+              "title": "软件工程"
+            }
+          ],
+          "extractor": "BiliBili",
+          "id": "BV1pb8o6yE8f",
+          "thumbnail": "http://i0.hdslb.com/bfs/archive/d6c6e9f0534276d739e7ba3c8ae84473fd58c784.jpg",
+          "title": "欢迎来到未来 [01-Raw/26生成式软件工程/NJU]",
+          "uploadDate": "20260826",
+          "uploader": "绿导师原谅你了",
+          "url": "https://www.bilibili.com/video/BV1pb8o6yE8f",
+          "viewCount": 98270
+        },
+        "sourceUrl": "https://www.bilibili.com/video/BV1pb8o6yE8f",
+        "width": 1280
+      },
+      "stages": {
+        "transcribe": {
+          "engine": "moss-transcribe-diarize",
+          "input_fingerprint": "sha256-03f097826f1ea64f930461ca9c731095a1a04473b19da92bbf2277aacdaee9c4",
+          "status": "done"
+        }
+      },
+      "title": "欢迎来到未来 [01-Raw/26生成式软件工程/NJU]",
+      "url": "https://www.bilibili.com/video/BV1pb8o6yE8f"
+    },
+    "stages": {
+      "asr": "fresh",
+      "asrLayout": "fresh",
+      "chapters": "fresh",
+      "polish": "never",
+      "segment": "never",
+      "translations": {}
+    },
+    "suggestedNext": [
+      "bcut polish '/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-01-BV1pb8o6yE8f.bcut'",
+      "bcut translate '/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-01-BV1pb8o6yE8f.bcut' --lang zh"
+    ],
+    "transcript": {
+      "chapters": 5,
+      "lang": "zh",
+      "orphanOverrides": [],
+      "speakers": 4,
+      "words": 27158
+    }
+  }
+}

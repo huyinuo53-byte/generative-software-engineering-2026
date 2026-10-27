@@ -1,0 +1,110 @@
+<HTML>  
+<HEAD>
+  <TITLE>Peter J. Denning -- Working Set Publications</TITLE>
+  <style type="text/css">
+<!--
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #333333;
+	width: 6.5in;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 5em;
+}
+p {
+	font-size: 12pt;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+h4 {
+	font-size: 12pt;
+}
+.qp {
+	font-size: 10pt;
+}
+-->
+  </style>
+</HEAD>
+<body>
+<h1>Working Set Publications</h1>
+<br>
+<H3>Peter J. Denning</H3>
+<P><HR ALIGN=LEFT></P>
+<br>
+<p><a href="working-set-analytics-2021.pdf">Working Set Analytics</a>.  2021.  (In <em>Computing Surveys</em>)
+  The working set model for program behavior was invented in 1965.  It has stood the test of time in virtual memory management for over fifty years.  It is considered the ideal for managing memory in operating systems and caches.  Its superior performance was based on the principle of locality, which was discovered at the same time; locality is the observed tendency of programs to use distinct subsets of their pages over extended periods of time.  This tutorial traces the development of working set theory from its origins to the present day.  We will discuss the principle of locality and its experimental verification.  We will show why working set memory management resists thrashing and generates near-optimal system throughput.  We will present the powerful, linear-time algorithms for computing working set statistics and applying them to the design of memory systems.  We will debunk several myths about locality and the performance of memory systems.  We will conclude with a discussion of the application of the working set model in parallel systems, modern shared CPU caches, network edge caches, and inventory and logistics management. </p>
+<p><a href="TACO-2019.pdf">Relational Theory of Locality</a>.  2019.  (With Liang Yuan, Chen Ding, Wesley
+  Smith, Yunquan Zhang).  In many areas of program and system analysis and optimization, locality is a common concept and has been defined andmeasured in many ways. This article aims to formally establish relations between these previously disparate types of locality. It categorizes locality definitions in three groups and shows whether and how they can be interconverted. For the footprint, a recent metric, it gives a new measurement algorithm that is asymptotically more time/space efficient than previous approaches. Using the conversion relations, the new algorithm derives with the same efficiency different locality metrics developed and used in program analysis, memory management, and cache design.</p>
+<p><a href="WSModel_1968.pdf">The Working Set Model for Program Behavior</a>.  1968.
+  This classic paper, which received the ACM Best Paper Award for Systems, laid out
+  the concept of locality of reference and the working set model as a means of estimating
+  the current locality sets.  It also described a scheduling mechanism that would
+  avoid thrashing by protecting the working sets of loaded programs. </p><p><a href="thrashing-1968.pdf">Thrashing: Its Causes and Prevention</a>.  1968.
+  This classic paper explained the then-mysterious phenomenon of thrashing, the operating
+  system state in which throughput drops to a low value because the virtual memory
+  is spending all its time swapping pages.  The solution was to use working set memory
+  management, which keeps each process's working set safe from being stolen by
+  other processes.  The paper contains a clever analysis showing that the large
+  "traverse time" (gap between main and secondary memory) is the primary source of
+  sensitivity to thrashing.  The paper ends with the amazing statement, "Even the
+  best-designed systems can be dragged by thrashing into dawdling languor." </p>
+<p><a href="VirtMem_1970.pdf">Virtual Memory</a>.  1970.  This classic paper
+  laid out a coherent scientific and engineering framework for the architecture
+  and performance of virtual memory.  It settled the controversies about the
+  viability of virtual memory.  It was widely used as a reading in operating
+  systems courses well into the 1980s, when the material was finally integrated
+  into operating systems textbooks. </p>
+<p><a href="WSProp_1972.pdf">Properties of the Working Set Model</a>.  1972.
+  This paper, co-authored with Stuart Schwartz, further developed the mathematical
+  theory of working sets and showed how to apply it to taking dynamic working
+  set and locality measurements. </p>
+<p><a href="dynamic-storage-partition-1973.pdf">Dynamic Storage Partitioning</a> (with J
+  Spirn).  1973. A variable storage partition policy varies the memory allocated to
+  a task dynamically.  If the fault-rate curve or the efficiency curve is concave up,
+  almost any variation of storage will increase processing efficiency relative to
+  a fixed partition. </p>
+  <p><a href="WSGen_1978.pdf">Generalized Working Sets for Segment
+  Reference Strings</a>.  1978.  This paper, co-authored with Donald Slutz,
+  continued the development of the mathematical theory of working sets and
+  locality, here showing how to apply the concept to segment reference strings
+  as well as page reference strings, and showing that the generalized working
+  set models the entire class of "stack algorithm" replacement policies. </p>
+<p><a href="WSPastPresent_1980.pdf">Working Sets Past and Present</a>.  1980.
+  This paper gave a complete historical summary of the extensive research stimulated
+  by the working set model over the previous decade, in which over 200 researchers
+  participated.  By this time the theory had been strongly validated by many
+  experiments and was an accepted basis for the architecture of virtual memory
+  systems.  Among the new conclusions articulated here are: none of the plethora
+  of simple stochastic models of locality fit data; locality has a phase
+  transition structure that can be modeled with a semi-Markov model; working set
+  memory management is near optimal among all policies without perfect lookahead. </p>
+<p><a href="vm.pdf">  Virtual Memory.</a> 1996. From ACM <i>Computing
+  Surveys</i>, December 1996.  An overview of virtual memory that
+  shows its timelessness and utility in the age of the Internet. </p>
+<p><a href="bvm.pdf">  Before Memory was Virtual.</a>  1997.  From the book
+  <i>In the Beginning: Recollections of Software Pioneers</i>, edited by
+Robert Glass, IEEE Press, 1997.  A belated eyewitness account of the
+invention of virtual memory, one of the engineering triumphs of the
+computer age. </p>
+<p><a href="locality_2006.pdf"> The Locality Principle</a>.  2006.  This chapter
+  for a book in honor of Erol Gelenbe gives a historical account of
+  the discovery and development of the locality principle.  Locality
+  is one of the great principles of computing.  It was discovered in
+  1966 and is behind the success of many modern systems from CPU
+  and memory caches, to web caches, to Google, and downloading
+  into mobile devices. </p>
+</body>
+</html>
+

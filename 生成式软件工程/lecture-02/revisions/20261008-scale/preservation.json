@@ -1,0 +1,11 @@
+{
+  "lesson": "lecture-02",
+  "status": "passed",
+  "changes": [],
+  "all_other_notes_fields_unchanged": true,
+  "all_image_bytes_match_previous_audit": true,
+  "images": 44,
+  "transcript_and_index_unchanged": true,
+  "html_sha256": "f063e934af755a45e5fef94ee73327ff1ebc8a6527f497089c21931a2387b269",
+  "layout_sha256": "40ac4692b64c3dcfd411bb18de65001c029df04183be274940baa266354522ed"
+}

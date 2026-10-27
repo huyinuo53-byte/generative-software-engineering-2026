@@ -1,0 +1,17 @@
+{
+  "video_id": "BV11LWw6VEHW",
+  "path": "/Users/yjzhao/Downloads/GSE-08-BV11LWw6VEHW.mp4",
+  "sha256": "dee8d8992246a868d973678ab85c152e3eaf3e07ccef70eb5a674556386552b7",
+  "bytes": 237738826,
+  "video_duration_seconds": 5829.666625,
+  "audio_duration_seconds": 5829.674667,
+  "duration_seconds": 5829.674667,
+  "tail_decode": {
+    "status": "passed",
+    "range_seconds": 30,
+    "method": "ffmpeg -v error -sseof -30 -i media -f null -",
+    "exit_code": 0
+  },
+  "provenance": "existing yt-dlp; canonical Bilibili URL; metadata ID and title verified",
+  "checked_at": "2026-10-19T01:18:34.332736+00:00"
+}

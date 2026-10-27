@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "file": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/课堂笔记.html",
+  "html_sha256": "c53214a052ee6b68c6fe49c119c448b27084fb3dc2739dd75f49909936c9b5ab",
+  "auditor_sha256": "2168ef6afa247f3c4dbb548961373c2cf931f578be1bc6865fa2f12fe22e3828",
+  "profile": "generic",
+  "dependencies": {
+    "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/课堂笔记.html": "c53214a052ee6b68c6fe49c119c448b27084fb3dc2739dd75f49909936c9b5ab"
+  },
+  "viewports": [
+    {
+      "width": 1280,
+      "viewportWidth": 1280,
+      "scrollWidth": 1280,
+      "title": "生成式软件工程 09｜DeepSeek Harness (1)",
+      "images": 93,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "brokenAnchors": [],
+      "interactions": {
+        "navigation": "PASS",
+        "details": "PASS",
+        "comparison": "NOT_APPLICABLE",
+        "zoom": "PASS"
+      },
+      "errors": [],
+      "screenshot": {
+        "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/browser/1280-top.png",
+        "sha256": "88e77fe9d653d3fe5d985c57b5902e83ae4575707fead46613ac0b9757c1edee"
+      }
+    },
+    {
+      "width": 390,
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "title": "生成式软件工程 09｜DeepSeek Harness (1)",
+      "images": 93,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "brokenAnchors": [],
+      "interactions": {
+        "navigation": "PASS",
+        "details": "PASS",
+        "comparison": "NOT_APPLICABLE",
+        "zoom": "PASS"
+      },
+      "errors": [],
+      "screenshot": {
+        "path": "/Users/yjzhao/Documents/ChatGPT/learning-machine/生成式软件工程/lecture-09/qa/browser/390-top.png",
+        "sha256": "a022ef62e3ab0e2a8ad475cf57633ae6eacc30e57341d1123c47555367c2e97e"
+      }
+    }
+  ],
+  "reused_viewports": [],
+  "status": "PASS",
+  "scope": "mechanical browser checks; no semantic, source, video, real-device or native-print certification",
+  "issues": []
+}

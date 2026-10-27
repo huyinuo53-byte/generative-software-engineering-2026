@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "reviewer": "root",
+  "index_sha256": "a84ef2d87a0706f518a2f881a6eba636f01780ef2583e67ebc40dc70718e0f95",
+  "screenshots": [
+    "index-1280-new-card.png",
+    "index-390-new-card.png"
+  ],
+  "observation": "实际目视两张新课卡片区域截图，排序08位于07之后、短片之前；30节/69图/16自测标识和手机换行清楚；两视口点击均进入正确新课。"
+}

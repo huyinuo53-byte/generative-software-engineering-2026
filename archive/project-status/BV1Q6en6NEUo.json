@@ -1,0 +1,79 @@
+{
+  "status": "ok",
+  "project": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-04-BV1Q6en6NEUo.bcut",
+  "changed": [],
+  "next": "bcut polish '/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-04-BV1Q6en6NEUo.bcut'",
+  "data": {
+    "attention": [],
+    "manifest": {
+      "formatVersion": "0.1",
+      "language": "zh",
+      "media": {
+        "duration": 5909.376,
+        "fps": 30.0,
+        "hash": "sha256-57a92325fb43bc99b8d1a331e5364ae0771300245bcf70bd31134bebda10f0e7",
+        "height": 410,
+        "path": "/Users/yjzhao/Downloads/软件仓库管理 (2) [04-Raw 26生成式软件工程 NJU].mp4",
+        "probeStamp": "297347438:1790953992226",
+        "rotation": 0,
+        "sourceMetadata": {
+          "chapters": [
+            {
+              "end": 2153.0,
+              "start": 0.0,
+              "title": "重新设计版本管理系统"
+            },
+            {
+              "end": 3828.0,
+              "start": 2153.0,
+              "title": "为Agent设计版本管理系统"
+            },
+            {
+              "end": 5909.0,
+              "start": 3828.0,
+              "title": "从零开始一个新项目"
+            }
+          ],
+          "extractor": "BiliBili",
+          "id": "BV1Q6en6NEUo",
+          "thumbnail": "http://i2.hdslb.com/bfs/archive/168d8b60cc63f056d15486450260509004e0b559.jpg",
+          "title": "软件仓库管理 (2) [04-Raw/26生成式软件工程/NJU]",
+          "uploadDate": "20260915",
+          "uploader": "绿导师原谅你了",
+          "url": "https://www.bilibili.com/video/BV1Q6en6NEUo",
+          "viewCount": 14575
+        },
+        "sourceUrl": "https://www.bilibili.com/video/BV1Q6en6NEUo",
+        "width": 1280
+      },
+      "stages": {
+        "transcribe": {
+          "engine": "moss-transcribe-diarize",
+          "input_fingerprint": "sha256-587a3cf9f0db88523b41a8d83648fdeb959e145b2fd00d8693a1f6a430648d52",
+          "status": "done"
+        }
+      },
+      "title": "软件仓库管理 (2) [04-Raw/26生成式软件工程/NJU]",
+      "url": "https://www.bilibili.com/video/BV1Q6en6NEUo"
+    },
+    "stages": {
+      "asr": "fresh",
+      "asrLayout": "fresh",
+      "chapters": "fresh",
+      "polish": "never",
+      "segment": "never",
+      "translations": {}
+    },
+    "suggestedNext": [
+      "bcut polish '/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-04-BV1Q6en6NEUo.bcut'",
+      "bcut translate '/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-04-BV1Q6en6NEUo.bcut' --lang zh"
+    ],
+    "transcript": {
+      "chapters": 3,
+      "lang": "zh",
+      "orphanOverrides": [],
+      "speakers": 1,
+      "words": 26079
+    }
+  }
+}

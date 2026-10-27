@@ -1,0 +1,85 @@
+[
+  {
+    "path": "sources/assets/aws-idempotent-flow.png",
+    "bytes": 68732,
+    "sha256": "8e69e457716607cecb8b3e4b86dbbfcc63f4b2918547b0468aa14b246c248910",
+    "source_url": "https://d1.awsstatic.com/builderslibrary/architecture-images/making-retries-safe-2.75b41b5b444aa53dbf460396495e3f30b5c6af49.png"
+  },
+  {
+    "path": "sources/assets/flink-checkpoint-white.png",
+    "bytes": 320273,
+    "sha256": "b6ec6d1df2f4bf59e429c10400c00441626c7bcf4162cfee3dd322e72bf9a465",
+    "provenance": "white background raster rendering of same-named original SVG"
+  },
+  {
+    "path": "sources/assets/flink-checkpoint.png",
+    "bytes": 291408,
+    "sha256": "62cb8ba700242b9762788075dcbe7fb5550c71a3c21da84525e423b0a751bcde",
+    "provenance": "raster rendering of same-named original SVG"
+  },
+  {
+    "path": "sources/assets/flink-checkpoint.svg",
+    "bytes": 166718,
+    "sha256": "a7f169fdc627a3002d2bde4e55bffe0e3b72b153180f285c8cf069968e04243f",
+    "source_url": "https://nightlies.apache.org/flink/flink-docs-release-2.3/fig/checkpointing.svg"
+  },
+  {
+    "path": "sources/assets/flink-watermark-white.png",
+    "bytes": 85685,
+    "sha256": "e2c904079e4d6a749ea5689f2e3a2d5cd7f917e96d4308138223f128196b2046",
+    "provenance": "white background raster rendering of same-named original SVG"
+  },
+  {
+    "path": "sources/assets/flink-watermark.png",
+    "bytes": 75549,
+    "sha256": "e106e47ba51a96e24ba8137f79becaab952f7154162152ce7db73baf815c9538",
+    "provenance": "raster rendering of same-named original SVG"
+  },
+  {
+    "path": "sources/assets/flink-watermark.svg",
+    "bytes": 16351,
+    "sha256": "c9f1f7740574b6218a35952f46118578a15d46f4d965c891182f6c3fe81eaf25",
+    "source_url": "https://nightlies.apache.org/flink/flink-docs-release-2.3/fig/stream_watermark_out_of_order.svg"
+  },
+  {
+    "path": "sources/assets/mapreduce-figure1.png",
+    "bytes": 11062,
+    "sha256": "6f5ad860df5a863aeff557b53de6495839babfd05c8da10630c64c307249f70e",
+    "source_url": "https://www.usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean_html/img2.png"
+  },
+  {
+    "path": "sources/assets/page-03-asset-01.webp",
+    "bytes": 20072,
+    "sha256": "a9d8e75e47a3674ce1c7d5d654bcb6be6acdb96e9f6db491a3ecdea41c258d65",
+    "source_url": "https://jyywiki.cn/GSE/2026/slides9.html",
+    "provenance": "decoded original data:image/webp from matching slide HTML"
+  },
+  {
+    "path": "sources/assets/page-07-asset-01.webp",
+    "bytes": 21500,
+    "sha256": "53a8451d1f63f4335031138c70ec4afda4f915543b117411d44ccfb81f7ef21a",
+    "source_url": "https://jyywiki.cn/GSE/2026/slides9.html",
+    "provenance": "decoded original data:image/webp from matching slide HTML"
+  },
+  {
+    "path": "sources/assets/page-08-asset-01.webp",
+    "bytes": 97646,
+    "sha256": "575abbfe804e3e0ee23934511fc6a2818da5af04ad4bfc0ac808cdf871fb70b2",
+    "source_url": "https://jyywiki.cn/GSE/2026/slides9.html",
+    "provenance": "decoded original data:image/webp from matching slide HTML"
+  },
+  {
+    "path": "sources/assets/page-09-asset-01.webp",
+    "bytes": 104270,
+    "sha256": "b19f3e3846e4e3b8bea8c570ec9d51aafaf0e8c115d4d7184bec65d7d2ec34d8",
+    "source_url": "https://jyywiki.cn/GSE/2026/slides9.html",
+    "provenance": "decoded original data:image/webp from matching slide HTML"
+  },
+  {
+    "path": "sources/assets/page-25-asset-01.webp",
+    "bytes": 38016,
+    "sha256": "9b3364b885a7af0bb997672f115c14cab1d367f0583105768389d85a0d522be5",
+    "source_url": "https://jyywiki.cn/GSE/2026/slides9.html",
+    "provenance": "decoded original data:image/webp from matching slide HTML"
+  }
+]

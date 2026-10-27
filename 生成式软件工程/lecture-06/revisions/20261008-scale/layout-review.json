@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "scope": "editorial layout only; source notes unchanged",
+  "notes_sha256": "4debf37d2cfbb2a3fc91a1f59fa85946936e4cd863c70ef05cce584a1fd14b43",
+  "read_scope": {
+    "all_sections": 20,
+    "all_paragraphs": 68,
+    "all_examples": 1,
+    "all_editor_notes": 13,
+    "all_frame_captions_and_metadata": 37,
+    "all_supplements": 2,
+    "summary_self_test_limitations": "all read",
+    "frozen_primary_sources_reread": false,
+    "new_transcript_or_visual_review": false
+  },
+  "placement_decisions": [
+    "Supplement x0 moved to section17 next to decision provenance, followed by PDF frame from original section20 (page44).",
+    "Supplement x1 remains with concluding CQRS/DDD discussion and pages45–46 for concurrency and migration.",
+    "Hanoi representations, IR stages and event replay boundaries now each sit next to their corresponding figures. All video frames remain in their source sections."
+  ],
+  "checks": {
+    "all_p_e_n_f_x_exactly_once": true,
+    "source_notes_unchanged": true,
+    "video_frames_not_moved": true,
+    "ui_tested": false,
+    "all_keywords_exact_existing_substrings": true,
+    "keyword_scope": "displayed prose only; excludes titles and frame captions",
+    "reading_layout_validator": "passed"
+  },
+  "concerns": [
+    "This review covers editorial placement against existing frozen notes and captions, not new fact checking, original-source reading or image content inspection.",
+    "Parent must render and validate desktop/narrow widths, interactions and print."
+  ],
+  "navigation_wording_changes": [
+    {
+      "section": 20,
+      "field": "paragraphs",
+      "index": 2,
+      "old": "本页及下方补充保留官方现行讲义结尾扩展内容，并明确区分口述。",
+      "new": "本节及相关知识点保留官方现行讲义结尾扩展内容，并明确区分口述。",
+      "reason": "原来末尾追溯补充及第44页现并入第17节；去除误导的下方补充位置引用。"
+    }
+  ]
+}

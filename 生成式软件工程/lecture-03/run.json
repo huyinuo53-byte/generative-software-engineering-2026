@@ -1,0 +1,52 @@
+{
+  "run_id": "BV1kybV6DE47-20261002",
+  "batch_id": "GSE-20261002",
+  "item_id": "lecture-03",
+  "scope_revision": 1,
+  "video_id": "BV1kybV6DE47",
+  "source_url": "https://www.bilibili.com/video/BV1kybV6DE47",
+  "requested_outputs": [
+    "per-video detailed mobile-readable offline HTML",
+    "timecodes",
+    "slides and demonstrations",
+    "quality review"
+  ],
+  "required_checks": [
+    "content",
+    "images",
+    "html_static",
+    "desktop",
+    "narrow"
+  ],
+  "project": "/Users/yjzhao/Library/Application Support/BaoCut/projects/GSE-03-BV1kybV6DE47.bcut",
+  "media_fingerprint": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+  "sources": [
+    {
+      "id": "transcript",
+      "path": "transcript.json",
+      "origin": "coordinator-created ASR job reused after done",
+      "reuse": "project ASR/layout fresh; mediahash matched;533 sentences from0.28 to6012.51;no repeated transcription"
+    },
+    {
+      "id": "slides",
+      "path": "official-slides.html",
+      "origin": "coordinator frozen official webpage",
+      "url": "https://jyywiki.cn/GSE/2026/slides3.html",
+      "pages": 35
+    },
+    {
+      "id": "article",
+      "path": "official-lecture.html",
+      "origin": "coordinator frozen official article",
+      "url": "https://jyywiki.cn/GSE/2026/lect3.md"
+    }
+  ],
+  "toolchain": {
+    "cli": "/Users/yjzhao/Downloads/BaoCut.app/Contents/Resources/skills/baocut/bin/bcut-cli",
+    "app": "2.1.0 (coordinator preflight)",
+    "spec": "1.249 (coordinator preflight)",
+    "transcription_engine": "moss-transcribe-diarize",
+    "model": null
+  },
+  "recorded_at": "2026-10-02T15:35:05.431099+00:00"
+}

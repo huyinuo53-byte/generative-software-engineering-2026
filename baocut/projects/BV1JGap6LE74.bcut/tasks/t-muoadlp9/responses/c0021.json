@@ -1,0 +1,7 @@
+{
+  "callId": "c0021",
+  "text": "{\"sentences\":[{\"startWordIndex\":4788,\"correctedText\":\"呃，我想阅读，啊，这个《结构化程序设计》，能先帮我总结一下全书？\"},{\"startWordIndex\":5707,\"correctedText\":\"所以这里面，I have a very small head and I had better to learn to live with it and to respect my limitations and give them full credit rather than trying to，所以，呃，这里就有很多，呃，有意思的想法，对吧？\"},{\"startWordIndex\":19016,\"correctedText\":\"然后，output by present user with manuals are the meanings of given commands and data.\"}]}\n",
+  "workerId": "codex-polish-repair-1",
+  "leaseId": "lf26de7247e774bfa98ad18205a645309",
+  "atMs": 1790784714312
+}

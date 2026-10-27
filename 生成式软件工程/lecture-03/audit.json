@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "reviewer": "lecture07-agent (lecture03 author second pass)",
+  "independent_reviewer": false,
+  "method": "全文阅读后，回查关键原句、现行讲义与实际画面；这是作者第二遍核对。",
+  "coverage": {
+    "chunks_read": [
+      "chunk-0001",
+      "chunk-0002",
+      "chunk-0003",
+      "chunk-0004",
+      "chunk-0005",
+      "chunk-0006",
+      "chunk-0007",
+      "chunk-0008",
+      "chunk-0009",
+      "chunk-0010",
+      "chunk-0011",
+      "chunk-0012",
+      "chunk-0013",
+      "chunk-0014",
+      "chunk-0015",
+      "chunk-0016",
+      "chunk-0017",
+      "chunk-0018",
+      "chunk-0019",
+      "chunk-0020"
+    ],
+    "sentences": 533,
+    "omitted": 0,
+    "slide_pages_visual": 35,
+    "article": "full",
+    "video_candidates_visual": 19,
+    "video_frames_selected": 18,
+    "whole_audio_manual": false,
+    "external_cited_papers": "not independently read"
+  },
+  "issues": [
+    {
+      "id": "03-01",
+      "issue": "未来VCS被误作当堂讲授",
+      "evidence": "s-g1234.0~3 5999.47–6012.51明确下一课再讨论",
+      "resolution": "页32–35标为讲义补充，区分开场问题与完整方案",
+      "status": "prevented"
+    },
+    {
+      "id": "03-02",
+      "issue": "SWE-bench/Astropy未在转写展开",
+      "evidence": "官方页27–28与5488.51–5610的gh/glab口述对照",
+      "resolution": "完整保存案例但明确课堂未展开、未独立执行PR",
+      "status": "prevented"
+    },
+    {
+      "id": "03-03",
+      "issue": "分支引用与tree混淆",
+      "evidence": "s-g1043.0~7 4530.64–4539.58，官方全文，4520/4678帧",
+      "resolution": "分支通常指commit，commit关联根tree；标明整理者校正",
+      "status": "corrected"
+    },
+    {
+      "id": "03-04",
+      "issue": "AI表格错误不能照抄",
+      "evidence": "2380秒表格；int main() {}",
+      "resolution": "C99语法小检查通过，注明不能因无include/return便推断无法编译",
+      "status": "corrected"
+    },
+    {
+      "id": "03-05",
+      "issue": "提示音hook结果不确定",
+      "evidence": "s-g839.0–s-g844.0 3722.9–3762.47",
+      "resolution": "记录听感不确定且未继续修复，不能称功能验收通过",
+      "status": "clarified"
+    },
+    {
+      "id": "03-06",
+      "issue": "SVN/delta比较过度简化",
+      "evidence": "s-g412.0~8–s-g439.0~21 1886.69–1978.18",
+      "resolution": "只保留帮助理解Git的直觉，不据此描述其他VCS的完整实现",
+      "status": "clarified"
+    },
+    {
+      "id": "03-07",
+      "issue": "现场演示仅有静态概念图",
+      "evidence": "3950、4349、4409、4520、4640、4678、4906、4919、4985、5048帧",
+      "resolution": "补全真实bytes→对象、分支→冲突→合并、可视化前后阶段",
+      "status": "added_evidence"
+    },
+    {
+      "id": "03-08",
+      "issue": "AI能力与研究预测被扩大",
+      "evidence": "0–406.78开场、5019–5186学习讨论",
+      "resolution": "限定课堂时点个人经历，无统一benchmark或普遍模型排名",
+      "status": "clarified"
+    },
+    {
+      "id": "03-09",
+      "issue": "历史重写授权条件过窄",
+      "evidence": "2935–2962现场确认无remote",
+      "resolution": "说明无remote仅为练习线索，还应确认是否有人以其他途径依赖历史",
+      "status": "clarified"
+    },
+    {
+      "id": "03-10",
+      "issue": "future lock方案错误扩大",
+      "evidence": "官方32–35页",
+      "resolution": "快照/文本可交换不等于不变量成立，发布需针对验证过确切版本，未承诺测试全绿绝对正确",
+      "status": "clarified"
+    }
+  ],
+  "small_experiments": [
+    {
+      "code": "int main() {}",
+      "command": "cc -std=c99 -fsyntax-only",
+      "exit_code": 0,
+      "scope": "单一语法反例，不验证整个课堂工程"
+    }
+  ],
+  "source_hashes": {
+    "notes.json": "0f3722fcc99ff72b5d56790c3374dfe1cd80c24fdf8dd9a0db6153b9ad4c6cc8",
+    "transcript.json": "c05e8ba684c753d41ba4f67397ca868902d700b077410dffc43294f53a429d54",
+    "chunks/index.json": "a3ef44af54e2ef85dfe52d0c47f3784d31559c4c62f9834aab3eec70bf8e0bf4",
+    "official-lecture.html": "6b04caae3148f7558d19a7215e5c3da1d2620a076f76e9136de679d21c90f78b",
+    "official-slides.html": "cb977e9e19c15f9d6ab0dd3a82abfae56babbb8377880584ad70546276af5bd4"
+  },
+  "conclusion": "关键案例、操作结果和补充来源已保留并限定范围。"
+}

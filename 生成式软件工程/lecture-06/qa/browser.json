@@ -1,0 +1,92 @@
+{
+  "method": "Actual Chrome iframe viewport; complete inline artifact in srcdoc; monitor added before scripts",
+  "html_sha256": "c44c7dc08f5a54e38ef6fb952a0862a49eed1f0805d4d68409d914d33984f25e",
+  "viewports": {
+    "mobile": {
+      "state": {
+        "width": 390,
+        "scrollWidth": 390,
+        "images": 37,
+        "brokenImages": 0,
+        "duplicateIds": [],
+        "badAnchors": 0,
+        "errors": [],
+        "title": "第06课｜需求和架构（1）：让变化有地方可去"
+      },
+      "interaction": {
+        "tocOpened": true,
+        "anchorJump": true,
+        "bodyWidth": 390
+      },
+      "zoom": {
+        "open": true,
+        "imageLoaded": true,
+        "width": 382.1953125,
+        "scales": [
+          {
+            "style": "200%",
+            "actualWidth": 724.390625,
+            "dialogWidth": 382
+          },
+          {
+            "style": "300%",
+            "actualWidth": 1086.5859375,
+            "dialogWidth": 382
+          },
+          {
+            "style": "100%",
+            "actualWidth": 362.1953125,
+            "dialogWidth": 382
+          }
+        ]
+      },
+      "close": {
+        "closed": true,
+        "errors": []
+      }
+    },
+    "desktop": {
+      "state": {
+        "width": 900,
+        "scrollWidth": 900,
+        "images": 37,
+        "brokenImages": 0,
+        "duplicateIds": [],
+        "badAnchors": 0,
+        "errors": [],
+        "title": "第06课｜需求和架构（1）：让变化有地方可去"
+      },
+      "interaction": {
+        "tocOpened": true,
+        "anchorJump": true,
+        "bodyWidth": 900
+      },
+      "zoom": {
+        "open": true,
+        "imageLoaded": true,
+        "width": 855,
+        "scales": [
+          {
+            "style": "200%",
+            "actualWidth": 1630,
+            "dialogWidth": 855
+          },
+          {
+            "style": "300%",
+            "actualWidth": 2445,
+            "dialogWidth": 855
+          },
+          {
+            "style": "100%",
+            "actualWidth": 815,
+            "dialogWidth": 855
+          }
+        ]
+      },
+      "close": {
+        "closed": true,
+        "errors": []
+      }
+    }
+  }
+}

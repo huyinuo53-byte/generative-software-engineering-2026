@@ -1,0 +1,33 @@
+{
+  "speakerNames": {
+    "candidates": [],
+    "wave": {
+      "calls": 0,
+      "named": 0,
+      "names": [],
+      "proposed": 0,
+      "rejected": false,
+      "skipped": "scoped-run",
+      "targets": 0,
+      "unknown": 0
+    }
+  },
+  "speakerRepair": {
+    "rowRealign": null,
+    "wave": {
+      "boundariesMoved": 0,
+      "calls": 0,
+      "islands": 0,
+      "islandsKeptByLexicon": 0,
+      "islandsMerged": 0,
+      "relabelledWords": 0,
+      "skipped": "single-speaker",
+      "unnaturalBoundaries": 0,
+      "windows": 0,
+      "windowsCapped": 0,
+      "windowsChanged": 0,
+      "windowsConfirmed": 0,
+      "windowsRejected": 0
+    }
+  }
+}
