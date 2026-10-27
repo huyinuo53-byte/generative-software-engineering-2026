@@ -134,8 +134,8 @@
     },
     {
       "path": "archive/publication-review.json",
-      "bytes": 2308,
-      "sha256": "f642efebfddc081e469e32dcab87dc266d58cb0e6d3817df72f20f48c3dd2680"
+      "bytes": 2605,
+      "sha256": "f7dfb3cd76e99591938f6d50839f31db177e82b9e67b3a583689c130c5d61195"
     },
     {
       "path": "archive/qa/guide-browser/1280-top.png",
@@ -299,8 +299,13 @@
     },
     {
       "path": "archive/release-assets-verification.json",
-      "bytes": 2626,
-      "sha256": "04c3567432dff449740869b7c7382fc711dfd6c28cabbcdcf214653f9890ff7b"
+      "bytes": 2691,
+      "sha256": "f3e4b6865033bc7bdd4d5f3e9a398da1f2aa8e6afe60ddca258d85396ba1f8d9"
+    },
+    {
+      "path": "archive/remote-verification.json",
+      "bytes": 3464,
+      "sha256": "b02361f6f2d3ed4800830014ef2d303137a9845f2f107e05c0bce9c4dd2af651"
     },
     {
       "path": "archive/render-guide.cjs",
@@ -341,6 +346,11 @@
       "path": "archive/verifier-initial.json",
       "bytes": 22579,
       "sha256": "e0a5082dd2408ea6b68a24501f4fe3b24f4fb536ab8be38ade21bf9d25ac1ebc"
+    },
+    {
+      "path": "archive/verify-remote.py",
+      "bytes": 3340,
+      "sha256": "44179cd1f2750bdbf223fea466c0a2ff01862d963e43bc79ad834be1f670ca89"
     },
     {
       "path": "baocut/projects/05 软件工程的来龙去脉.bcut/.bcut/history/journal.jsonl",
@@ -47453,5 +47463,5 @@
       "sha256": "5818d6f7204e1eae6ba20d37f3ba48abaf84576757f6269011e6b9020f2bdf57"
     }
   ],
-  "bytes": 1742130751
+  "bytes": 1742137917
 }

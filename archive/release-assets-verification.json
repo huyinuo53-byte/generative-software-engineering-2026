@@ -78,5 +78,5 @@
   "expected_manifest": "archive/media-manifest.json and archive/reading-package.json",
   "asset_count": 12,
   "checked": "every state uploaded; every byte size and GitHub sha256 digest equals local expected",
-  "public_access": "pending visibility switch"
+  "public_access": "Published Release and reading ZIP anonymously accessible; archive/remote-verification.json"
 }

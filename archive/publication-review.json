@@ -1,6 +1,6 @@
 {
   "date": "2026-10-27",
-  "status": "local_acceptance_complete",
+  "status": "completed",
   "scope": "Archive packaging and preservation, not new course semantic review",
   "original_source_files_copied": 9420,
   "native_projects": 10,
@@ -28,7 +28,8 @@
     "verifier_initial": "archive/verifier-initial.json",
     "public_scope": "archive/public-release-scope.json",
     "verifier_final": "archive/verifier-final.json",
-    "release_server_digests": "archive/release-assets-verification.json"
+    "release_server_digests": "archive/release-assets-verification.json",
+    "public_remote": "archive/remote-verification.json"
   },
   "visual_review": {
     "reviewer": "root",
@@ -46,7 +47,7 @@
     "OCR secret scan of course imagery",
     "new full-course semantic/audio review"
   ],
-  "remote_status": "12 Release assets uploaded and server hashes matched; public-state readback will be added after visibility switch",
+  "remote_status": "Public repository and published Release verified by unauthenticated HTTPS; all content-commit Git blobs matched; every Release asset size and server digest matched",
   "persona_gate_recomputed": {
     "coverage_complete": true,
     "blocking_findings": 0,
@@ -54,5 +55,6 @@
     "current_html_sha256": "e5b9b9f8b6e859ce335c6cbf3839e5ec0afb12bc1d2f69ae31c51fdf2e401a8a",
     "author_and_reviewer_distinct": true,
     "result": "pass"
-  }
+  },
+  "finalization_scope": "After verified content commit, only this review, remote verification evidence, asset public-access note and file manifest are added or updated; course and guide content unchanged"
 }
