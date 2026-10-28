@@ -8,22 +8,27 @@
   },
   "scope": {
     "requested": "单课完整课堂笔记 + 手绘图解，只依据原始转写与原视频重写",
-    "materials": false,
-    "changes": [],
+    "materials": true,
+    "changes": [
+      "增量补充官方讲义与推荐材料"
+    ],
     "assumptions": [
       "无人值守：不追问，按 skill 默认交付完整笔记、图解层、外部保真评测和 HTML。",
       "转写复用 ./raw/transcript.json 的副本，不改 raw，不调用 BaoCut，不联网，不读推荐材料。",
       "图解用手绘信息图；生图用 codex exec -m gpt-6.1-sol。写作模型为 Grok，评测用不同家族的 GPT 独立进程。",
-      "产物目录为 课堂笔记/BV144nc6KEA4/20261027T1611Z。"
+      "产物目录为 课堂笔记/BV144nc6KEA4/20261027T1611Z。",
+      "增量补充：不重写已交付的小节、takeaway 和图解。AIGC 批注里的链接不写成讲师明确推荐。",
+      "QJE 与 Feature Interaction 打不开，只保留 slides 上可见的句子。Cordis 论文没有对上，不读插件框架教程。",
+      "静态幻灯片用本机 headless Chrome 1600×900 截官方 slides。演示、黑板和滚动文档仍用视频帧。"
     ]
   },
   "toolchain": {
     "baocut": null,
     "asr_model": null,
-    "skill_commit": null,
+    "skill_commit": "28981d8",
     "ffmpeg": "local",
     "image_model": "gpt-6.1-sol",
-    "writer_model": "grok-4.7"
+    "writer_model": "grok-4.7-high"
   },
   "artifacts": [
     {
@@ -68,7 +73,7 @@
     },
     {
       "id": "renderer",
-      "path": "../../../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+      "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
       "depends_on": [],
       "role": "tool"
     },
@@ -88,6 +93,224 @@
         "transcript",
         "frames"
       ]
+    },
+    {
+      "id": "materials",
+      "path": "materials.json",
+      "depends_on": [
+        "notes"
+      ],
+      "role": "derived"
+    },
+    {
+      "id": "src-lect9",
+      "path": "sources/lect9.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://jyywiki.cn/GSE/2026/lect9.md"
+    },
+    {
+      "id": "src-slides9",
+      "path": "sources/slides9-official.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://jyywiki.cn/GSE/2026/slides9.html"
+    },
+    {
+      "id": "src-nasa-mco",
+      "path": "sources/files/nasa-641-dom.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://llis.nasa.gov/lesson/641"
+    },
+    {
+      "id": "src-brooks-1986",
+      "path": "sources/files/brooks-1986.pdf",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf"
+    },
+    {
+      "id": "src-aws-idempotent",
+      "path": "sources/files/aws-idempotent.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/"
+    },
+    {
+      "id": "src-office-agent-spec",
+      "path": "sources/office-agent-spec.md",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://jyywiki.cn/GSE/2026/slides9.html"
+    },
+    {
+      "id": "src-dsh-bot",
+      "path": "sources/files/dsh-bot-readme.md",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://github.com/Nothing1024/dsh-bot"
+    },
+    {
+      "id": "src-david-1990",
+      "path": "sources/files/david-1990.pdf",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://gwern.net/doc/economics/automation/1990-david.pdf"
+    },
+    {
+      "id": "src-denning-workingsets",
+      "path": "sources/files/denning-dom.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://denninginstitute.com/pjd/PUBS/Workingsets.html"
+    },
+    {
+      "id": "src-cgroup-v2",
+      "path": "sources/files/cgroup-v2.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://docs.kernel.org/admin-guide/cgroup-v2.html"
+    },
+    {
+      "id": "src-hotspot-ergonomics",
+      "path": "sources/files/hotspot-ergonomics.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://docs.oracle.com/en/java/javase/25/gctuning/ergonomics.html"
+    },
+    {
+      "id": "src-php-fpm",
+      "path": "sources/files/php-fpm.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://www.php.net/manual/en/install.fpm.configuration.php"
+    },
+    {
+      "id": "src-apache-wstunnel",
+      "path": "sources/files/apache-wstunnel.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://httpd.apache.org/docs/2.4/mod/mod_proxy_wstunnel.html"
+    },
+    {
+      "id": "src-fowler-es",
+      "path": "sources/files/fowler-es.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://martinfowler.com/eaaDev/EventSourcing.html"
+    },
+    {
+      "id": "src-mapreduce",
+      "path": "sources/files/mapreduce.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean_html/index.html"
+    },
+    {
+      "id": "src-spark-rdd",
+      "path": "sources/files/spark-rdd.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://spark.apache.org/docs/latest/rdd-programming-guide.html#rdd-persistence"
+    },
+    {
+      "id": "src-flink-time",
+      "path": "sources/files/flink-time.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/time/"
+    },
+    {
+      "id": "src-flink-state",
+      "path": "sources/files/flink-state.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/stateful-stream-processing/"
+    },
+    {
+      "id": "src-zaharia-rdd",
+      "path": "sources/files/zaharia-pdf.pdf",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia"
+    },
+    {
+      "id": "src-pacioli",
+      "path": "sources/files/pacioli.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://exhibits.lib.ku.edu/exhibits/show/keeping-the-books--the-rubinst/under-the-tuscan-sum---the-ita"
+    },
+    {
+      "id": "src-hippel-2001",
+      "path": "sources/files/hippel-2001.pdf",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://web.mit.edu/people/evhippel/papers/Toolkits%20JPIM%20final.pdf"
+    },
+    {
+      "id": "src-shneiderman-1983",
+      "path": "sources/files/shneiderman-1983.pdf",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://www.cs.umd.edu/~ben/papers/Shneiderman1983Direct.pdf"
+    },
+    {
+      "id": "src-vba",
+      "path": "sources/files/vba.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office/"
+    },
+    {
+      "id": "src-qje-2025",
+      "path": "sources/files/qje-2025-author.pdf",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://danielle.li/assets/docs/GenerativeAIatWork.pdf"
+    },
+    {
+      "id": "src-feature-interaction",
+      "path": "sources/files/feature-interaction-ia.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "downloaded",
+      "basis": "https://web.archive.org/web/20240415143707/https://www.sciencedirect.com/science/article/abs/pii/S1389128613001527"
+    },
+    {
+      "id": "src-qje-fig4",
+      "path": "frames/papers/qje-2025-p25.jpg",
+      "depends_on": [
+        "src-qje-2025"
+      ],
+      "role": "source",
+      "origin": "generated",
+      "basis": "qje-2025-author.pdf 物理第 25 页 Figure IV"
     }
   ],
   "log": [
@@ -300,18 +523,62 @@
       "job_id": null,
       "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
       "evidence": "/private/var/folders/j6/0wknd5xs1sj5_xnqkgjdj8zm0000gn/T/tmp_uscvpm0/html-check.json"
+    },
+    {
+      "at": "2026-10-28T03:57:30.252052+00:00",
+      "occurred_at": null,
+      "stage": "reading_materials",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "validate_materials.py passed; 27 materials, blocked QJE and feature-interaction are not required",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-09/supp-cursor/ws/课堂笔记/materials.json"
+    },
+    {
+      "at": "2026-10-28T03:57:30.271796+00:00",
+      "occurred_at": null,
+      "stage": "material_integration",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "supplements and slide frames written into notes.json",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-09/supp-cursor/ws/课堂笔记/notes.json"
+    },
+    {
+      "at": "2026-10-28T03:57:30.291413+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 0.9745, recall 0.9674; reviewer gpt-6.1-sol",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-09/supp-cursor/ws/课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-28T03:57:30.311021+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-09/supp-cursor/ws/课堂笔记/qa/html-check.json"
     }
   ],
   "issues": [],
   "status": {
     "outcome": "completed",
     "known_gaps": [
-      "换页不是逐帧看完：frames.py 场景检测后再对幻灯片区域抽帧",
-      "没有读推荐材料",
-      "页面检查是无头 Chrome 模拟 390 与 1280 宽，不是真手机",
-      "精度仍有 5 条 partial、1 条 unsupported：自测 q5 在增量包里没带上第16节转写；s17 图注把选择工具写成了箭头；图上「从消息派生」容易读反"
+      "换页不是逐秒看完：静态页改用官方 slides 截图，演示和黑板仍是抽帧。",
+      "QJE 期刊 PDF 54 页已读，Online Appendix 未取得。Feature Interaction 只读到存档预览里的引言，第 2、3 节在句中截断。Cordis 只听到讲师说今天不讲，公开检索没有对上那篇带公式的论文。没有课外推荐视频条目，这一轮未下载视频。精度复核只重答了范围变了的 7 道召回题；上一轮没有抽到这两条补充，新补充的论文数字没有进入这一轮精度抽样。",
+      "HotSpot、Spark、Flink、Apache 是抓取当日的现行文档。Denning 页是文献目录，不是 1968 年论文正文。",
+      "页面检查是无头 Chrome 模拟 390 与 1280 宽，不是真手机。",
+      "精度 0.9745 仍有 partial：s9 把「可能会成为阻力」写成了「就会」；s12 图上「从消息派生」方向含混；s13 的长文档案例和 s15 的 dsh-better-sidebar 全名，指定帧没有一并出示。",
+      "召回 0.9674 有 3 条 partial：q04 少了公司场景那句，q30 少了完整的 ctx.on('session/event', ...)，q31 少了完整 API 前缀。没有 missing 或 wrong。"
     ],
-    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors"
+    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+    "reading_materials": "passed",
+    "material_integration": "passed"
   },
   "revisions": [
     {
@@ -379,6 +646,579 @@
         "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
       },
       "prev_sha256": null
+    },
+    {
+      "rev": 2,
+      "at": "2026-10-28T03:57:30.348050+00:00",
+      "reason": "增量补充官方讲义与推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "transcript.json",
+          "sha256": "9cc30fd953bd2371033336eb6da563564d8709e934ac74893e9b98541b5976e4",
+          "bytes": 4235447
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "cc08bf727ed170282cf435d540b76b1c2b1985eff5465e388e97e200fb903fd7",
+          "bytes": 56929
+        },
+        "frames": {
+          "path": "frames/candidates.json",
+          "sha256": "58ecc4f047ddd0df2030e1f3959cf957558f0c0cbbdf6b558274bb139e48f132",
+          "bytes": 10159
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "cadd39b3ea02e69f37033713e695f6fcb02feb449a845166dd91ff27b842036d",
+          "bytes": 156148
+        },
+        "visuals": {
+          "path": "visuals/index.json",
+          "sha256": "86f663f75ca3a578212d9b0d0ec9bbc429184458e1a53fc1818156152f513127",
+          "bytes": 1693
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "fac821064a95e6c68b76cb51dbf5813d6e3016ce49ee44d5206f9df362655453",
+          "bytes": 19286041
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "47298b21ebafc13836c9a64adb4f0efd2f65ec66973953c058d224fa84f60517",
+          "bytes": 59601
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "91e675d1008eee975a581826574ba413edac44441f27bccf0aaf22ee51ea9fec",
+          "bytes": 35974
+        },
+        "src-lect9": {
+          "path": "sources/lect9.html",
+          "sha256": "360dd61b64d3ed88fc31caaa0c16691ec0f2ab6490768791b5be1a783ebf5530",
+          "bytes": 70886
+        },
+        "src-slides9": {
+          "path": "sources/slides9-official.html",
+          "sha256": "78eafd2f8cefe2da6e7bdd77881814ea79b99eda3da99acaaf142fc972e49931",
+          "bytes": 490438
+        },
+        "src-nasa-mco": {
+          "path": "sources/files/nasa-641-dom.html",
+          "sha256": "d970a37bf443045bfabe24fee6a969390cb0e4a455689e6ba384133806d18a52",
+          "bytes": 17309
+        },
+        "src-brooks-1986": {
+          "path": "sources/files/brooks-1986.pdf",
+          "sha256": "fcbd318dbaa31c5b14b782b02ae25f53fc8aa33779d18ba1b4f126994c99b9ae",
+          "bytes": 266288
+        },
+        "src-aws-idempotent": {
+          "path": "sources/files/aws-idempotent.html",
+          "sha256": "43335d70fc0595c83131a40f6cdfc6471ca340660c9c9d869054d4cadbe52fce",
+          "bytes": 456055
+        },
+        "src-office-agent-spec": {
+          "path": "sources/office-agent-spec.md",
+          "sha256": "9102f90c0dea90a50d91cf7dd9ebe4706f53fdf1dd46c1f8fcbc6d953ad5dfbb",
+          "bytes": 38024
+        },
+        "src-dsh-bot": {
+          "path": "sources/files/dsh-bot-readme.md",
+          "sha256": "6ad670b47bef19017e4682dc11178789c6e41b86708ae6afdc57d1dfe8a5d832",
+          "bytes": 9118
+        },
+        "src-david-1990": {
+          "path": "sources/files/david-1990.pdf",
+          "sha256": "11291f658da048e3486e2474b31ee07cfc8fb0d1711222e90f90a1d9fe98494d",
+          "bytes": 178607
+        },
+        "src-denning-workingsets": {
+          "path": "sources/files/denning-dom.html",
+          "sha256": "676a5c5eb5c91d6802bffd24a480e084ba5d3b63c488dea772b206c57e04d78a",
+          "bytes": 7129
+        },
+        "src-cgroup-v2": {
+          "path": "sources/files/cgroup-v2.html",
+          "sha256": "b478c1bae99899df476d6b4989cbb516f7ca93c5f009cdff64b802bbc24f3d4b",
+          "bytes": 172967
+        },
+        "src-hotspot-ergonomics": {
+          "path": "sources/files/hotspot-ergonomics.html",
+          "sha256": "a174115a2641be0b924634c184e4f8dc7e7997be28967b4f3c265b0de2bd0dab",
+          "bytes": 17821
+        },
+        "src-php-fpm": {
+          "path": "sources/files/php-fpm.html",
+          "sha256": "b38ec7642b81ddf0c8e4481b1b00caa0c48d1187bf335fab7c9cbbd7ba209d93",
+          "bytes": 81417
+        },
+        "src-apache-wstunnel": {
+          "path": "sources/files/apache-wstunnel.html",
+          "sha256": "88de45c4c34b34cc5fa1e0b9793da30fdc0f101a248b16831e825b744a2be8fd",
+          "bytes": 10897
+        },
+        "src-fowler-es": {
+          "path": "sources/files/fowler-es.html",
+          "sha256": "ff817ecc7b176c9456b8381687437e93f38bb8be6c6c3b4e4403b664818f8a02",
+          "bytes": 57156
+        },
+        "src-mapreduce": {
+          "path": "sources/files/mapreduce.html",
+          "sha256": "f5ab102b0951d005e8336760b22b5482d7b0a38ca2175145588e4ed3156de8cc",
+          "bytes": 80907
+        },
+        "src-spark-rdd": {
+          "path": "sources/files/spark-rdd.html",
+          "sha256": "1b605c22f5fed33500566154094609c544c5dbe7d57e3133a7188e62cb49349f",
+          "bytes": 166938
+        },
+        "src-flink-time": {
+          "path": "sources/files/flink-time.html",
+          "sha256": "65c8c85b02ef4d065d680a200913f9605f4716691aa05f920578244b10304557",
+          "bytes": 104645
+        },
+        "src-flink-state": {
+          "path": "sources/files/flink-state.html",
+          "sha256": "c80038096b92c5815aec6d6b19edbb30b1638355d865293bfc13c995681568a2",
+          "bytes": 114351
+        },
+        "src-zaharia-rdd": {
+          "path": "sources/files/zaharia-pdf.pdf",
+          "sha256": "64bf8651757c0696b5fc75cdcbed117f82e0f70396744b537c53c5530d4938a2",
+          "bytes": 886315
+        },
+        "src-pacioli": {
+          "path": "sources/files/pacioli.html",
+          "sha256": "8dcf990b18c9a1fafc596974a75d5e367b1e9a969bc8bb62c2fcdffd7067dd7b",
+          "bytes": 24214
+        },
+        "src-hippel-2001": {
+          "path": "sources/files/hippel-2001.pdf",
+          "sha256": "e32e1906006a15c1e591549243ea5f310eedf58d42348887d75350242f472c74",
+          "bytes": 213601
+        },
+        "src-shneiderman-1983": {
+          "path": "sources/files/shneiderman-1983.pdf",
+          "sha256": "4dc29926c05033d1cdb702444158bf8d154d8a152cad1b4a430ffd0403d3af33",
+          "bytes": 6545129
+        },
+        "src-vba": {
+          "path": "sources/files/vba.html",
+          "sha256": "2934af07b5cc85598c6e3c894cd077fc3d076bf1fa3052809befcc78c5b6cb61",
+          "bytes": 82273
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9745,
+        "recall": 0.9674,
+        "precision_items": 98,
+        "recall_items": 46,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "a17f8beea8cdf685d08c9669c772c24a84bc0899c4d9f6174b56fb451a76b542"
+    },
+    {
+      "rev": 3,
+      "at": "2026-10-28T04:09:49.661588+00:00",
+      "reason": "讲义截图改为 JPEG 以控制页面体积",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "transcript.json",
+          "sha256": "9cc30fd953bd2371033336eb6da563564d8709e934ac74893e9b98541b5976e4",
+          "bytes": 4235447
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "cc08bf727ed170282cf435d540b76b1c2b1985eff5465e388e97e200fb903fd7",
+          "bytes": 56929
+        },
+        "frames": {
+          "path": "frames/candidates.json",
+          "sha256": "58ecc4f047ddd0df2030e1f3959cf957558f0c0cbbdf6b558274bb139e48f132",
+          "bytes": 10159
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "06226e442e5d8f6f2f862920c1202b622d6a62a79474c78d23ee1335f5534a77",
+          "bytes": 156148
+        },
+        "visuals": {
+          "path": "visuals/index.json",
+          "sha256": "86f663f75ca3a578212d9b0d0ec9bbc429184458e1a53fc1818156152f513127",
+          "bytes": 1693
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "5855fb4f4d45fed192d4782d9d2cd0b66e7fed5add7d7cae7fe6d97cc8e49584",
+          "bytes": 11627855
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "2b0abaa4d98447358b9cbe446fd45a8b8b66311aa65333b752bc216836d707cf",
+          "bytes": 59972
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "91e675d1008eee975a581826574ba413edac44441f27bccf0aaf22ee51ea9fec",
+          "bytes": 35974
+        },
+        "src-lect9": {
+          "path": "sources/lect9.html",
+          "sha256": "360dd61b64d3ed88fc31caaa0c16691ec0f2ab6490768791b5be1a783ebf5530",
+          "bytes": 70886
+        },
+        "src-slides9": {
+          "path": "sources/slides9-official.html",
+          "sha256": "78eafd2f8cefe2da6e7bdd77881814ea79b99eda3da99acaaf142fc972e49931",
+          "bytes": 490438
+        },
+        "src-nasa-mco": {
+          "path": "sources/files/nasa-641-dom.html",
+          "sha256": "d970a37bf443045bfabe24fee6a969390cb0e4a455689e6ba384133806d18a52",
+          "bytes": 17309
+        },
+        "src-brooks-1986": {
+          "path": "sources/files/brooks-1986.pdf",
+          "sha256": "fcbd318dbaa31c5b14b782b02ae25f53fc8aa33779d18ba1b4f126994c99b9ae",
+          "bytes": 266288
+        },
+        "src-aws-idempotent": {
+          "path": "sources/files/aws-idempotent.html",
+          "sha256": "43335d70fc0595c83131a40f6cdfc6471ca340660c9c9d869054d4cadbe52fce",
+          "bytes": 456055
+        },
+        "src-office-agent-spec": {
+          "path": "sources/office-agent-spec.md",
+          "sha256": "9102f90c0dea90a50d91cf7dd9ebe4706f53fdf1dd46c1f8fcbc6d953ad5dfbb",
+          "bytes": 38024
+        },
+        "src-dsh-bot": {
+          "path": "sources/files/dsh-bot-readme.md",
+          "sha256": "6ad670b47bef19017e4682dc11178789c6e41b86708ae6afdc57d1dfe8a5d832",
+          "bytes": 9118
+        },
+        "src-david-1990": {
+          "path": "sources/files/david-1990.pdf",
+          "sha256": "11291f658da048e3486e2474b31ee07cfc8fb0d1711222e90f90a1d9fe98494d",
+          "bytes": 178607
+        },
+        "src-denning-workingsets": {
+          "path": "sources/files/denning-dom.html",
+          "sha256": "676a5c5eb5c91d6802bffd24a480e084ba5d3b63c488dea772b206c57e04d78a",
+          "bytes": 7129
+        },
+        "src-cgroup-v2": {
+          "path": "sources/files/cgroup-v2.html",
+          "sha256": "b478c1bae99899df476d6b4989cbb516f7ca93c5f009cdff64b802bbc24f3d4b",
+          "bytes": 172967
+        },
+        "src-hotspot-ergonomics": {
+          "path": "sources/files/hotspot-ergonomics.html",
+          "sha256": "a174115a2641be0b924634c184e4f8dc7e7997be28967b4f3c265b0de2bd0dab",
+          "bytes": 17821
+        },
+        "src-php-fpm": {
+          "path": "sources/files/php-fpm.html",
+          "sha256": "b38ec7642b81ddf0c8e4481b1b00caa0c48d1187bf335fab7c9cbbd7ba209d93",
+          "bytes": 81417
+        },
+        "src-apache-wstunnel": {
+          "path": "sources/files/apache-wstunnel.html",
+          "sha256": "88de45c4c34b34cc5fa1e0b9793da30fdc0f101a248b16831e825b744a2be8fd",
+          "bytes": 10897
+        },
+        "src-fowler-es": {
+          "path": "sources/files/fowler-es.html",
+          "sha256": "ff817ecc7b176c9456b8381687437e93f38bb8be6c6c3b4e4403b664818f8a02",
+          "bytes": 57156
+        },
+        "src-mapreduce": {
+          "path": "sources/files/mapreduce.html",
+          "sha256": "f5ab102b0951d005e8336760b22b5482d7b0a38ca2175145588e4ed3156de8cc",
+          "bytes": 80907
+        },
+        "src-spark-rdd": {
+          "path": "sources/files/spark-rdd.html",
+          "sha256": "1b605c22f5fed33500566154094609c544c5dbe7d57e3133a7188e62cb49349f",
+          "bytes": 166938
+        },
+        "src-flink-time": {
+          "path": "sources/files/flink-time.html",
+          "sha256": "65c8c85b02ef4d065d680a200913f9605f4716691aa05f920578244b10304557",
+          "bytes": 104645
+        },
+        "src-flink-state": {
+          "path": "sources/files/flink-state.html",
+          "sha256": "c80038096b92c5815aec6d6b19edbb30b1638355d865293bfc13c995681568a2",
+          "bytes": 114351
+        },
+        "src-zaharia-rdd": {
+          "path": "sources/files/zaharia-pdf.pdf",
+          "sha256": "64bf8651757c0696b5fc75cdcbed117f82e0f70396744b537c53c5530d4938a2",
+          "bytes": 886315
+        },
+        "src-pacioli": {
+          "path": "sources/files/pacioli.html",
+          "sha256": "8dcf990b18c9a1fafc596974a75d5e367b1e9a969bc8bb62c2fcdffd7067dd7b",
+          "bytes": 24214
+        },
+        "src-hippel-2001": {
+          "path": "sources/files/hippel-2001.pdf",
+          "sha256": "e32e1906006a15c1e591549243ea5f310eedf58d42348887d75350242f472c74",
+          "bytes": 213601
+        },
+        "src-shneiderman-1983": {
+          "path": "sources/files/shneiderman-1983.pdf",
+          "sha256": "4dc29926c05033d1cdb702444158bf8d154d8a152cad1b4a430ffd0403d3af33",
+          "bytes": 6545129
+        },
+        "src-vba": {
+          "path": "sources/files/vba.html",
+          "sha256": "2934af07b5cc85598c6e3c894cd077fc3d076bf1fa3052809befcc78c5b6cb61",
+          "bytes": 82273
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9745,
+        "recall": 0.9674,
+        "precision_items": 98,
+        "recall_items": 46,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "9047a7cdca7fc53d0d7c1021d351f7c06a82671b8c22672ee2e1d352ce77a63b"
+    },
+    {
+      "rev": 4,
+      "at": "2026-10-28T07:35:49.845715+00:00",
+      "reason": "补读上一轮未取得的推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "transcript.json",
+          "sha256": "9cc30fd953bd2371033336eb6da563564d8709e934ac74893e9b98541b5976e4",
+          "bytes": 4235447
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "cc08bf727ed170282cf435d540b76b1c2b1985eff5465e388e97e200fb903fd7",
+          "bytes": 56929
+        },
+        "frames": {
+          "path": "frames/candidates.json",
+          "sha256": "58ecc4f047ddd0df2030e1f3959cf957558f0c0cbbdf6b558274bb139e48f132",
+          "bytes": 10159
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "6ffc10fb4cc2e06c8cca03d62d506987f6ef5e30f4fea2a0ff44e6a924c5e795",
+          "bytes": 162686
+        },
+        "visuals": {
+          "path": "visuals/index.json",
+          "sha256": "86f663f75ca3a578212d9b0d0ec9bbc429184458e1a53fc1818156152f513127",
+          "bytes": 1693
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "6616320ffda9579d2794444d8d6303f030349f8a77e8ad0bf9c023f576215220",
+          "bytes": 11720169
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "e6f1de2bb8b68a60abc64733eb97200084c725c3816cbcc36143735c15f8daad",
+          "bytes": 61021
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "abe130c15d599dba1108caa170af9bf0f8c585fe6e11b2100ebfcee61ff97ac3",
+          "bytes": 42064
+        },
+        "src-lect9": {
+          "path": "sources/lect9.html",
+          "sha256": "360dd61b64d3ed88fc31caaa0c16691ec0f2ab6490768791b5be1a783ebf5530",
+          "bytes": 70886
+        },
+        "src-slides9": {
+          "path": "sources/slides9-official.html",
+          "sha256": "78eafd2f8cefe2da6e7bdd77881814ea79b99eda3da99acaaf142fc972e49931",
+          "bytes": 490438
+        },
+        "src-nasa-mco": {
+          "path": "sources/files/nasa-641-dom.html",
+          "sha256": "d970a37bf443045bfabe24fee6a969390cb0e4a455689e6ba384133806d18a52",
+          "bytes": 17309
+        },
+        "src-brooks-1986": {
+          "path": "sources/files/brooks-1986.pdf",
+          "sha256": "fcbd318dbaa31c5b14b782b02ae25f53fc8aa33779d18ba1b4f126994c99b9ae",
+          "bytes": 266288
+        },
+        "src-aws-idempotent": {
+          "path": "sources/files/aws-idempotent.html",
+          "sha256": "43335d70fc0595c83131a40f6cdfc6471ca340660c9c9d869054d4cadbe52fce",
+          "bytes": 456055
+        },
+        "src-office-agent-spec": {
+          "path": "sources/office-agent-spec.md",
+          "sha256": "9102f90c0dea90a50d91cf7dd9ebe4706f53fdf1dd46c1f8fcbc6d953ad5dfbb",
+          "bytes": 38024
+        },
+        "src-dsh-bot": {
+          "path": "sources/files/dsh-bot-readme.md",
+          "sha256": "6ad670b47bef19017e4682dc11178789c6e41b86708ae6afdc57d1dfe8a5d832",
+          "bytes": 9118
+        },
+        "src-david-1990": {
+          "path": "sources/files/david-1990.pdf",
+          "sha256": "11291f658da048e3486e2474b31ee07cfc8fb0d1711222e90f90a1d9fe98494d",
+          "bytes": 178607
+        },
+        "src-denning-workingsets": {
+          "path": "sources/files/denning-dom.html",
+          "sha256": "676a5c5eb5c91d6802bffd24a480e084ba5d3b63c488dea772b206c57e04d78a",
+          "bytes": 7129
+        },
+        "src-cgroup-v2": {
+          "path": "sources/files/cgroup-v2.html",
+          "sha256": "b478c1bae99899df476d6b4989cbb516f7ca93c5f009cdff64b802bbc24f3d4b",
+          "bytes": 172967
+        },
+        "src-hotspot-ergonomics": {
+          "path": "sources/files/hotspot-ergonomics.html",
+          "sha256": "a174115a2641be0b924634c184e4f8dc7e7997be28967b4f3c265b0de2bd0dab",
+          "bytes": 17821
+        },
+        "src-php-fpm": {
+          "path": "sources/files/php-fpm.html",
+          "sha256": "b38ec7642b81ddf0c8e4481b1b00caa0c48d1187bf335fab7c9cbbd7ba209d93",
+          "bytes": 81417
+        },
+        "src-apache-wstunnel": {
+          "path": "sources/files/apache-wstunnel.html",
+          "sha256": "88de45c4c34b34cc5fa1e0b9793da30fdc0f101a248b16831e825b744a2be8fd",
+          "bytes": 10897
+        },
+        "src-fowler-es": {
+          "path": "sources/files/fowler-es.html",
+          "sha256": "ff817ecc7b176c9456b8381687437e93f38bb8be6c6c3b4e4403b664818f8a02",
+          "bytes": 57156
+        },
+        "src-mapreduce": {
+          "path": "sources/files/mapreduce.html",
+          "sha256": "f5ab102b0951d005e8336760b22b5482d7b0a38ca2175145588e4ed3156de8cc",
+          "bytes": 80907
+        },
+        "src-spark-rdd": {
+          "path": "sources/files/spark-rdd.html",
+          "sha256": "1b605c22f5fed33500566154094609c544c5dbe7d57e3133a7188e62cb49349f",
+          "bytes": 166938
+        },
+        "src-flink-time": {
+          "path": "sources/files/flink-time.html",
+          "sha256": "65c8c85b02ef4d065d680a200913f9605f4716691aa05f920578244b10304557",
+          "bytes": 104645
+        },
+        "src-flink-state": {
+          "path": "sources/files/flink-state.html",
+          "sha256": "c80038096b92c5815aec6d6b19edbb30b1638355d865293bfc13c995681568a2",
+          "bytes": 114351
+        },
+        "src-zaharia-rdd": {
+          "path": "sources/files/zaharia-pdf.pdf",
+          "sha256": "64bf8651757c0696b5fc75cdcbed117f82e0f70396744b537c53c5530d4938a2",
+          "bytes": 886315
+        },
+        "src-pacioli": {
+          "path": "sources/files/pacioli.html",
+          "sha256": "8dcf990b18c9a1fafc596974a75d5e367b1e9a969bc8bb62c2fcdffd7067dd7b",
+          "bytes": 24214
+        },
+        "src-hippel-2001": {
+          "path": "sources/files/hippel-2001.pdf",
+          "sha256": "e32e1906006a15c1e591549243ea5f310eedf58d42348887d75350242f472c74",
+          "bytes": 213601
+        },
+        "src-shneiderman-1983": {
+          "path": "sources/files/shneiderman-1983.pdf",
+          "sha256": "4dc29926c05033d1cdb702444158bf8d154d8a152cad1b4a430ffd0403d3af33",
+          "bytes": 6545129
+        },
+        "src-vba": {
+          "path": "sources/files/vba.html",
+          "sha256": "2934af07b5cc85598c6e3c894cd077fc3d076bf1fa3052809befcc78c5b6cb61",
+          "bytes": 82273
+        },
+        "src-qje-2025": {
+          "path": "sources/files/qje-2025-author.pdf",
+          "sha256": "b59b45b650ad75640735e4a44bc58dae8aa1133f7886c820fb4e815f08a4df9f",
+          "bytes": 2053024
+        },
+        "src-feature-interaction": {
+          "path": "sources/files/feature-interaction-ia.html",
+          "sha256": "c4085e56eacff6ba65fac4e68e65f5c1e82d6ea39cd610bff9b6cb53801be08b",
+          "bytes": 204888
+        },
+        "src-qje-fig4": {
+          "path": "frames/papers/qje-2025-p25.jpg",
+          "sha256": "64dc98a78539fc4fc4289a09cfb8963d72ee5d1e56254553970eab8d4380f1b1",
+          "bytes": 62763
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9745,
+        "recall": 0.9674,
+        "precision_items": 98,
+        "recall_items": 46,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "af84453461ebab506935dcad0e235ed5505f0367e91c2361ef7d40b7af0d14e3"
     }
   ]
 }

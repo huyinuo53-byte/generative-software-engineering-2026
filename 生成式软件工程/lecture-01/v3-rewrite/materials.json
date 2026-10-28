@@ -1,0 +1,1049 @@
+{
+  "schema_version": 1,
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "lecture_url": "https://jyywiki.cn/GSE/2026/lect1.md",
+  "slides_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+  "video_id": "BV1pb8o6yE8f",
+  "checked_at": "2026-10-28T02:30:13-04:00",
+  "assumptions": [
+    "公开视频标题与官网第 1 讲「欢迎来到未来」对应，按标题映射，不把 Part 编号另作一课。",
+    "slides 页码 = slides-data 数组下标 + 1。span.aigc 内的链接记为 AIGC 批注，不写成讲师明确推荐。",
+    "相对链接 lect/cv.pdf、lect/OS2026-02.pdf、lect/qrgen.xlsx 按幻灯片所在目录解析到 https://jyywiki.cn/GSE/2026/lect/ 。",
+    "课程 git 主机 git.nju.edu.cn/jyy/GenSE 对同名文件返回人机验证，未把验证页当成文件，也未阅读该仓库里的笔记。",
+    "2026-10-28 补读：原链接出现 403、验证页或 404 时，只改找作者页、出版社开放获取或同一 URL 的 Internet Archive 存档。未授权的全书扫描没有使用。没有伪装 User-Agent，没有用浏览器过检查。材料清单里没有 kind=video 的课外视频；Feynman 录音页保持 blocked，录音不下载。"
+  ],
+  "expected_material_ids": [
+    "lect1-notes",
+    "slides1",
+    "freeman-2014",
+    "react-2022",
+    "webrobot-2022",
+    "engelbart-1962",
+    "elish-2019",
+    "nasa-langley",
+    "icse-2027",
+    "pi-dev",
+    "openclaw-docs",
+    "hermes-home",
+    "brooks-mmm",
+    "feynman-recordings",
+    "zhihu-installer",
+    "unix-streams",
+    "inception-chat",
+    "inception-home",
+    "cv-pdf",
+    "os2026-02-pdf",
+    "qrgen-xlsx",
+    "jyy-home",
+    "ehall"
+  ],
+  "materials": [
+    {
+      "id": "lect1-notes",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [],
+      "listed_title": "欢迎来到未来",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lect1.md",
+      "title": "欢迎来到未来",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect1.md",
+      "version": null,
+      "identity_note": "页面由官网渲染。正文后部有一句「第二讲已经说明，当然不会真的让大家退学」，属于讲义页在第 1 讲之后的补写。",
+      "path": "课堂笔记/sources/lect1.html",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "课程官网本课讲义页，是这节课的官方文本，不是课外阅读清单。",
+      "scope_sections": [
+        "开篇",
+        "交叉路口",
+        "从语言模型到Agent",
+        "先用好再理解原理",
+        "工具可以组合",
+        "编程能力的边界",
+        "二维码Excel为什么掉进泥潭",
+        "Intent-Spec-Impl",
+        "及时反馈",
+        "生产变便宜以后"
+      ],
+      "read_sections": [
+        "开篇",
+        "交叉路口",
+        "从语言模型到Agent",
+        "先用好再理解原理",
+        "工具可以组合",
+        "编程能力的边界",
+        "二维码Excel为什么掉进泥潭",
+        "Intent-Spec-Impl",
+        "及时反馈",
+        "生产变便宜以后"
+      ],
+      "scope_reason": "讲义页是单页文章，以上为页面上的实际章节，已整页读完。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "讲义页 token 政策段",
+          "claim": "讲义页把退学称为狠话，并补写第二讲已说明不会真的退学",
+          "role": "boundary",
+          "note_target": "supplements lect1"
+        }
+      ],
+      "sha256": "737434434cb1a4f797668a37a34e1ef6cffaf3a857b4ff56620aad7da72dc6f2"
+    },
+    {
+      "id": "slides1",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [],
+      "listed_title": "第 1 讲幻灯片",
+      "listed_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+      "title": "第 1 讲 · Welcome to GenSE",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+      "version": null,
+      "identity_note": "单页应用。44 页内容在 script#slides-data 的 JSON 数组里，页码为下标加 1。紫色 span.aigc 记为 AIGC 批注。",
+      "path": "课堂笔记/sources/slides1.html",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "课程官网本课幻灯片，是课堂画面的官方源。",
+      "scope_sections": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-04",
+        "slide-05",
+        "slide-06",
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15",
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-20",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29",
+        "slide-30",
+        "slide-31",
+        "slide-32",
+        "slide-33",
+        "slide-34",
+        "slide-35",
+        "slide-36",
+        "slide-37",
+        "slide-38",
+        "slide-39",
+        "slide-40",
+        "slide-41",
+        "slide-42",
+        "slide-43",
+        "slide-44"
+      ],
+      "read_sections": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-04",
+        "slide-05",
+        "slide-06",
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15",
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-20",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29",
+        "slide-30",
+        "slide-31",
+        "slide-32",
+        "slide-33",
+        "slide-34",
+        "slide-35",
+        "slide-36",
+        "slide-37",
+        "slide-38",
+        "slide-39",
+        "slide-40",
+        "slide-41",
+        "slide-42",
+        "slide-43",
+        "slide-44"
+      ],
+      "scope_reason": "44 页全部从 slides-data 逐页读过，并截成 1600×900 JPEG。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "slides 第 1–44 页",
+          "claim": "静态幻灯片改用官方页，AIGC 批注与正文链接分开登记",
+          "role": "lecture-source",
+          "note_target": "frames"
+        }
+      ],
+      "sha256": "1e076988a10af24f9bb0234ad91ace624ce6b8a877ca3e57d98c23f853ea88b5"
+    },
+    {
+      "id": "freeman-2014",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [
+        {
+          "page": "PMC HTML 摘要与结果段",
+          "detail": "核对 225、0.47 SD（n=158）、优势比 1.95（n=67）、失败率 21.8% 与 33.8%、约 6%、自愿实施的限制"
+        }
+      ],
+      "listed_title": "一项汇总 225 项本科 STEM 研究的研究",
+      "listed_url": "https://doi.org/10.1073/pnas.1319030111",
+      "title": "Active learning increases student performance in science, engineering, and mathematics",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4060654/",
+      "version": "PNAS 2014, 111(23)",
+      "identity_note": "DOI 指向 Freeman 等人 PNAS 2014。PDF 直链返回 reCAPTCHA。实际阅读的是 PMC 全文 HTML，标题、作者和 DOI 与批注一致。",
+      "path": "课堂笔记/sources/readings/freeman.html",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第 7 页 AIGC 批注用它支撑「225 项研究、主动学习提高成绩并降低失败率」。这是该数字的直接原文，讲师口述没有点名这篇论文，所以不是老师明确推荐。",
+      "scope_sections": [
+        "abstract",
+        "results",
+        "discussion"
+      ],
+      "read_sections": [
+        "abstract",
+        "results",
+        "discussion"
+      ],
+      "scope_reason": "幻灯片引用的是主文结果。SI 附录 PDF 未下载，不纳入本次范围。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "PMC HTML 摘要与结果、讨论中的资格说明",
+          "claim": "0.47 SD、失败率 21.8% 对 33.8%、自愿实施的开放问题",
+          "role": "result",
+          "note_target": "supplements[0]"
+        }
+      ],
+      "sha256": "1c8c9053acec8d045a2914fc56a3ae8368e4667f387231950c84cba5ac4b1502"
+    },
+    {
+      "id": "react-2022",
+      "kind": "pdf",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "摘要中的交替生成、Wikipedia API、ALFWorld/WebShop 上 34% 与 10%"
+        },
+        {
+          "page": 10,
+          "detail": "主实验使用当时未公开的 PaLM；动作限于 Wikipedia 与 WebShop"
+        }
+      ],
+      "listed_title": "ReAct",
+      "listed_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "source_url": "https://arxiv.org/abs/2210.03629",
+      "version": "arXiv:2210.03629v3, ICLR 2023",
+      "identity_note": "幻灯片正文和口述只使用名称 ReAct，没有给 URL。打开的 PDF 页眉为 ICLR 2023，arXiv:2210.03629v3，作者 Shunyu Yao 等。",
+      "path": "课堂笔记/sources/readings/react.pdf",
+      "total_pages": 33,
+      "scope_pages": [
+        1,
+        10
+      ],
+      "read_pages": [
+        1,
+        10
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "幻灯片第 12 页正文写 ReAct 型 Agent，AIGC 批注写 2022 年已有的推理—行动—观察。这篇是该名称的原始论文。讲师没有说「去读这篇」，所以不是明确推荐。",
+      "scope_reason": "幻灯片和口述只用了方法和名称。声明范围是 PDF 物理页 1 的摘要与引言开头，以及物理页 10 的结论、可复现性与伦理声明。物理页 2–9 和 11–33 的实验表、提示词附录未读。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 6,
+          "location": "PDF 物理页 1 摘要，物理页 10 伦理声明",
+          "claim": "交替生成推理与动作；34% 与 10% 的绝对成功率差及其条件",
+          "role": "mechanism",
+          "note_target": "supplements[1]"
+        }
+      ],
+      "sha256": "f285b0971ae4a790e402fb93966bed3adde2cf0a04977d08b2b40d6ab0cace69"
+    },
+    {
+      "id": "webrobot-2022",
+      "kind": "pdf",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "摘要写 76 个 web RPA 基准、大多数被自动完成、相对 egg 基线更好、小型用户研究说可用"
+        }
+      ],
+      "listed_title": "WebRobot",
+      "listed_url": "https://web.eecs.umich.edu/~xwangsd/pubs/pldi22.pdf",
+      "title": "WebRobot: Web Robotic Process Automation using Interactive Programming-by-Demonstration",
+      "source_url": "https://web.eecs.umich.edu/~xwangsd/pubs/pldi22.pdf",
+      "version": "PLDI 2022, 16 pages",
+      "identity_note": "PDF 首页作者与幻灯片链接一致：Dong, Huang, Lam, Chen, Wang。",
+      "path": "课堂笔记/sources/readings/webrobot.pdf",
+      "total_pages": 16,
+      "scope_pages": [
+        1
+      ],
+      "read_pages": [
+        1
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第 21 页 AIGC 批注把教务页脚本化称作 Programming by Demonstration，并给出这篇 PDF。它是这个例子的直接原文，不是讲师口述的明确推荐。",
+      "scope_reason": "批注只点名 WebRobot。声明范围是 PDF 物理页 1。物理页 2–16 的算法、76 个基准的精确成功率和用户研究设计未读，补充不写这些数字。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "PDF 物理页 1 摘要",
+          "claim": "76 个基准上自动完成大多数，并有小型用户研究",
+          "role": "mechanism",
+          "note_target": "supplements[3]"
+        }
+      ],
+      "sha256": "41a3151e8cd934daffa8c853bbb55b8c15552ffd3cd46a6f0f290624a6a2059a"
+    },
+    {
+      "id": "engelbart-1962",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [
+        {
+          "page": "H-LAM/T 段",
+          "detail": "系统是受过训练的人加上人工物、语言和方法；缩写含 Training"
+        }
+      ],
+      "listed_title": "Augmenting Human Intellect",
+      "listed_url": "https://www.dougengelbart.org/content/view/138/",
+      "title": "Augmenting Human Intellect: A Conceptual Framework",
+      "source_url": "https://www.dougengelbart.org/content/view/138/",
+      "version": "1962",
+      "identity_note": "页面标题与 1962 年报告一致。",
+      "path": "课堂笔记/sources/readings/engelbart.html",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第 19 页 AIGC 批注用 1962 年这篇支撑「人 + 工具 + 语言 + 方法」。它是该句的直接原文，不是讲师口述的明确推荐。",
+      "scope_sections": [
+        "definition",
+        "h-lam-t"
+      ],
+      "read_sections": [
+        "definition",
+        "h-lam-t"
+      ],
+      "scope_reason": "批注引用的是增强智能来自整套系统这一主张。声明范围是报告开头的定义和 H-LAM/T 那一节，不是 1962 年全文。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 13,
+          "location": "报告定义与 H-LAM/T 段",
+          "claim": "报告把训练单列，缩写是 H-LAM/T",
+          "role": "definition",
+          "note_target": "supplements[2]"
+        }
+      ],
+      "sha256": "c33f871fc85c6216ce2cc1838ba48e720cc454b0dfdda5957ca76cdcbda79442"
+    },
+    {
+      "id": "elish-2019",
+      "kind": "pdf",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [
+        {
+          "page": "1-21",
+          "detail": "21 个物理页都是文字。没有图、表或公式。定义、三里岛、法航 447、Uber/Tesla、Therac-25 和结论在物理页 1–16；作者介绍与参考文献从物理页 17 起。"
+        }
+      ],
+      "listed_title": "moral crumple zone",
+      "listed_url": "https://doi.org/10.17351/ESTS2019.260",
+      "title": "Moral Crumple Zones: Cautionary Tales in Human-Robot Interaction",
+      "source_url": "https://estsjournal.org/index.php/ests/article/download/260/177/",
+      "version": "ESTS Vol. 5 (2019), journal pp. 40–60; publisher PDF, 21 physical pages",
+      "identity_note": "开放获取 PDF 与 DOI 10.17351/ESTS2019.260、作者 Madeleine Clare Elish、期刊 ESTS 第 5 卷一致。文件名 260-Article Text-921-1-10-20190323.pdf。上一轮 article 页的 PDF 链接返回 Invalid file id；这一轮同一期刊的 download/260/177/ 返回的是 PDF。不是其他转载。",
+      "path": "课堂笔记/sources/readings/elish-2019.pdf",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第 44 页 AIGC 批注用这个词描述没有停止权、只负责背锅的人，并给出 DOI。它是该术语的直接原文，不是讲师口述的明确推荐。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 22,
+          "location": "PDF 物理页 1–16，定义、三个事故、Therac-25 与结论",
+          "claim": "责任会落到控制有限的操作者身上；不是每个系统都如此，作者也没有讨论招聘",
+          "role": "concept",
+          "note_target": "supplements[8]"
+        }
+      ],
+      "sha256": "70471d33dfcda4c0ba5c60ffe589c8181fafac28384cc60ec663d1474a7dbf7a",
+      "total_pages": 21,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "id": "nasa-langley",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [
+        {
+          "page": "正文",
+          "detail": "1935 年 Tucker 与首批 5 名女性计算员；电子计算机出现后 human computers 承担编程"
+        }
+      ],
+      "listed_title": "human computers",
+      "listed_url": "https://www.nasa.gov/history/langleys-computers-1935-1970/",
+      "title": "When the Computer Wore a Skirt: Langley’s Computers, 1935–1970",
+      "source_url": "https://www.nasa.gov/history/langleys-computers-1935-1970/",
+      "version": null,
+      "identity_note": "页面标题与作者署名 Sarah McLennan、Mary Gainer 与链接一致。",
+      "path": "课堂笔记/sources/readings/nasa.html",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 43 页 AIGC 批注用 Langley 的 human computers 作为职业史背景，不是讲师口述的明确推荐，也不是本课方法的原始论文。",
+      "scope_sections": [
+        "article-body"
+      ],
+      "read_sections": [
+        "article-body"
+      ],
+      "scope_reason": "批注引用的是「computer 曾是职业」这一历史背景。声明范围是该页正文，不是 NASA 历史栏目的其他文章。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 22,
+          "location": "NASA 页面正文",
+          "claim": "computer 曾是手算职业；电子计算机出现后承担编程",
+          "role": "background",
+          "note_target": "supplements[7]"
+        }
+      ],
+      "sha256": "7e4357baa1aa9cb861c74ef0133a27b153ae47152b25beee3d85ca40c5e4dc01"
+    },
+    {
+      "id": "icse-2027",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [
+        {
+          "page": "征稿页",
+          "detail": "摘要 2026-06-23、全文 2026-06-30；虚构参考文献 desk-reject；生成式 AI 须披露且 ACM 规定不能列为作者"
+        }
+      ],
+      "listed_title": "ICSE 2027 Call for Papers",
+      "listed_url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+      "title": "ICSE 2027 Research Track Call for Papers",
+      "source_url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+      "version": "页面于 2026-10-28 抓取",
+      "identity_note": "页面标题为 ICSE 2027 Research Track。九个方向名称与幻灯片对应。",
+      "path": "课堂笔记/sources/readings/icse.html",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第 36 页正文给出征稿链接，用来列出软件工程的研究方向。这是幻灯片那份名单的直接来源。",
+      "scope_sections": [
+        "call",
+        "research-areas",
+        "review-criteria",
+        "generative-ai"
+      ],
+      "read_sections": [
+        "call",
+        "research-areas",
+        "review-criteria",
+        "generative-ai"
+      ],
+      "scope_reason": "幻灯片引用的是方向名单。声明范围是征稿说明、九个方向、审稿标准和页面上的生成式 AI 规定。程序委员会名单未当作本课内容。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 21,
+          "location": "征稿页截稿与参考文献、生成式 AI 规定",
+          "claim": "单一截稿周期与虚构参考文献直接拒稿",
+          "role": "policy",
+          "note_target": "supplements[6]"
+        }
+      ],
+      "sha256": "f24408d781848f76e731baadd018ec4112a0bea35c9c0aa4a3214b786e38fe1c"
+    },
+    {
+      "id": "pi-dev",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [
+        {
+          "page": "首页",
+          "detail": "AGENTS.md 从 ~/.pi/agent/、上级目录和当前目录加载"
+        }
+      ],
+      "listed_title": "Pi",
+      "listed_url": "https://pi.dev",
+      "title": "Pi",
+      "source_url": "https://pi.dev",
+      "version": "首页于 2026-10-28 抓取，页上写 Pi 1.0",
+      "identity_note": "首页称 Pi 是 minimal agent harness，Earendil Inc.，并写明 AGENTS.md 的加载位置。",
+      "path": "课堂笔记/sources/readings/pi.html",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第 14 页正文链接，课堂演示使用的就是这个工具。",
+      "scope_sections": [
+        "homepage"
+      ],
+      "read_sections": [
+        "homepage"
+      ],
+      "scope_reason": "课堂用到的是 Pi 与 AGENTS.md。声明范围是 pi.dev 首页，不是整个文档站。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "pi.dev 首页 Context engineering",
+          "claim": "AGENTS.md 的三处启动加载位置",
+          "role": "mechanism",
+          "note_target": "supplements[4]"
+        }
+      ],
+      "sha256": "ba5ddcbf40b91e9fe9c371daafb28b54f2c1e7287b10120861eb1a58d6941846"
+    },
+    {
+      "id": "openclaw-docs",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [],
+      "listed_title": "OpenClaw",
+      "listed_url": "https://docs.openclaw.ai/",
+      "title": "OpenClaw",
+      "source_url": "https://docs.openclaw.ai/",
+      "version": null,
+      "identity_note": "口述和幻灯片只说了名字。打开的是官方文档概述，不是第三方比较文。",
+      "path": "课堂笔记/sources/readings/openclaw.html",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "讲师口述和 slides 第 22–23 页把它当作现象级产品的例子，没有指定文档章节，也不是方法论文。",
+      "scope_sections": [
+        "what-is-openclaw"
+      ],
+      "read_sections": [
+        "what-is-openclaw"
+      ],
+      "scope_reason": "只读官方文档里「OpenClaw 是什么」的概述段。安装、通道和安全模型的其余文档不在本课范围。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 15,
+          "location": "OpenClaw 文档概述",
+          "claim": "自托管 gateway，把聊天应用接到编程代理",
+          "role": "background",
+          "note_target": "supplements[5]"
+        }
+      ],
+      "sha256": "31c525025602ef95da76b2df0dbfaa5e86d1ed1adcd8be782b2790fa68613d17"
+    },
+    {
+      "id": "hermes-home",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [],
+      "listed_title": "Hermes",
+      "listed_url": "https://hermes-agent.nousresearch.com/",
+      "title": "Hermes Agent",
+      "source_url": "https://hermes-agent.nousresearch.com/",
+      "version": null,
+      "identity_note": "口述说 Hermes。打开的官网标题是 Hermes Agent，Nous Research。",
+      "path": "课堂笔记/sources/readings/hermes.html",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "与 OpenClaw 一样，是产品举例，不是指定阅读的论文或书章。",
+      "scope_sections": [
+        "homepage"
+      ],
+      "read_sections": [
+        "homepage"
+      ],
+      "scope_reason": "首页较短，已读完首页上的功能说明和许可证句子。文档站其余页面不在本课范围。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 15,
+          "location": "Hermes 首页",
+          "claim": "MIT 开源，持久记忆，并列出聊天渠道与执行后端",
+          "role": "background",
+          "note_target": "supplements[5]"
+        }
+      ],
+      "sha256": "a91646e4d29ba3f81295d17f8e6d5e9181064f0453f04fe9bd3fb7822ad04380"
+    },
+    {
+      "id": "brooks-mmm",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": true,
+      "reading_status": "blocked",
+      "known_gaps": [
+        "2026-10-28 再查作者主页 https://www.cs.unc.edu/~brooks/ ：列出 1995 年 20 周年纪念版，没有全书 PDF。",
+        "UNC 技术报告 86-020 是 No Silver Bullet，不是焦油坑那一章，没有拿来代替。",
+        "Internet Archive 条目 MythicalManMonth 是用户上传的 Addison-Wesley 版权扫描（folkscanomy），版权页要求事先书面许可。它不是作者或出版社的开放获取，也不是某个被挡住的 URL 的存档。没有下载。",
+        "没有找到 arXiv、PMC 或出版社样章。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "recommendation_kind": "core_source",
+      "contributions": [],
+      "listed_title": "The Mythical Man-Month / 人月神话",
+      "listed_url": null,
+      "title": "The Mythical Man-Month",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+      "identity_note": "口述点名 Fred Brooks 的 mythical man month，幻灯片第 35 页引用焦油坑段落。这一轮仍没有合法的公开全文。未授权扫描没有使用。",
+      "path": null,
+      "recommendation_basis": "讲师口述讲解人月，并引用这本书的焦油坑段落。它是该比喻的原始书，不是一份「请去读完全书」的书单。因为全书打不开，不能把未读章节写进笔记。",
+      "scope_reason": "公开的作者页和出版社渠道没有给出可通读的全文。幻灯片上的焦油坑引文已在课堂笔记里。没有把 No Silver Bullet 写成焦油坑章节。",
+      "sha256": null
+    },
+    {
+      "id": "feynman-recordings",
+      "kind": "web",
+      "identity_status": "unverified",
+      "required": false,
+      "reading_status": "blocked",
+      "known_gaps": [
+        "2026-10-28 原站 recordings.html 与站点首页都是 Cloudflare 403。没有伪装 User-Agent，没有用浏览器过检查。",
+        "archive.org 的 wayback available 返回空存档；CDX 返回 AdministrativeAccessControlException: Blocked Site Error。",
+        "课外视频待用户确认是否处理。录音文件没有下载。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "recommendation_kind": "background_citation",
+      "contributions": [],
+      "listed_title": "Feynman Lectures",
+      "listed_url": "https://www.feynmanlectures.caltech.edu/recordings.html",
+      "title": null,
+      "source_url": "https://www.feynmanlectures.caltech.edu/recordings.html",
+      "recommendation_basis": "slides 第 5 页 AIGC 批注把费曼讲义当作课堂录音被整理成长期课程的历史类比。不是讲师口述的明确推荐，也没有要求观看录音。",
+      "scope_reason": "页面仍是 403，Archive 也拒绝这个站点。没有把未打开的录音页或未下载的录音当成已读。",
+      "sha256": null
+    },
+    {
+      "id": "zhihu-installer",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": false,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "recommendation_kind": "background_citation",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 9,
+          "location": "专栏正文，2021.7.16 与 2023 年 3 月各节",
+          "claim": "装机仙人当时做的是 NOILinux 最小系统和优盘量产；文中的 AI 没有解决 live usb",
+          "role": "background",
+          "note_target": "supplements[10]"
+        }
+      ],
+      "listed_title": "装机仙人",
+      "listed_url": "https://zhuanlan.zhihu.com/p/619237809",
+      "source_url": "https://web.archive.org/web/20230425003911id_/https://zhuanlan.zhihu.com/p/619237809",
+      "recommendation_basis": "slides 第 16 页正文给「装机仙人」加了这个链接。讲师口头用了这个说法，没有念出 URL。",
+      "scope_reason": "幻灯片链接的是这一篇专栏，声明范围是存档正文的全部分节。文中嵌了一段安装失败的知乎视频，这一轮不下载。课外视频待用户确认是否处理。",
+      "sha256": "2f28f49a6bbc6a81349539c1f02fce15f75c2fdf1bdd56f2e905eab02ef617e8",
+      "title": "如何驯服野生的 NOILinux 2.0",
+      "version": "Internet Archive 20230425003911；文章 created 2023-04-04T07:52:36Z",
+      "identity_note": "原链接 2026-10-28 仍是 403，没有伪装请求头，也没有用浏览器过墙。读的是 Internet Archive 对同一 URL 的存档。标题、作者蒋炎岩与专栏 ID 619237809 一致。课堂上的「2021 年 7 月」对应文中 2021.7.16 那一节，不是发表日。",
+      "path": "课堂笔记/sources/readings/zhihu-619237809.html",
+      "scope_sections": [
+        "开篇",
+        "Day -624 外传 (2021.7.16)",
+        "Day -154 更新 (2022.10.29)",
+        "Day -10 起意 (2023.3.21)",
+        "Day -5 瘦身 (2023.3.26)",
+        "Day -4 量产 (2023.3.27)",
+        "Day 0 试机 (2023.3.31)",
+        "Day 1 与 Day 2 省选",
+        "Flag"
+      ],
+      "read_sections": [
+        "开篇",
+        "Day -624 外传 (2021.7.16)",
+        "Day -154 更新 (2022.10.29)",
+        "Day -10 起意 (2023.3.21)",
+        "Day -5 瘦身 (2023.3.26)",
+        "Day -4 量产 (2023.3.27)",
+        "Day 0 试机 (2023.3.31)",
+        "Day 1 与 Day 2 省选",
+        "Flag"
+      ],
+      "visual_checks": [
+        {
+          "page": "正文",
+          "detail": "存档正文里的配图是竞赛机房、优盘和安装画面。没有把选手照片放进笔记。数字（30MB、1284 次 open、5.5GB、150 个优盘）在正文里。"
+        }
+      ]
+    },
+    {
+      "id": "unix-streams",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": false,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "recommendation_kind": "background_citation",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 15,
+          "location": "存档页正文",
+          "claim": "pipe 被写成把数据流像花园水管一样接起来；概念归 McIlroy，实现归 Thompson",
+          "role": "background",
+          "note_target": "supplements[11]"
+        }
+      ],
+      "listed_title": "Unix pipe",
+      "listed_url": "https://s3-us-west-2.amazonaws.com/belllabs-microsite-unixhistory/streams.html",
+      "source_url": "https://web.archive.org/web/20250221180231id_/https://s3-us-west-2.amazonaws.com/belllabs-microsite-unixhistory/streams.html",
+      "recommendation_basis": "slides 第 22 页 AIGC 批注把窄接口比作 Unix pipe，并给出这个链接。历史背景，不是本课方法的原始论文。",
+      "scope_reason": "幻灯片只链了 streams.html 这一页。页尾 Next 指向站内另一页，没有扩读整个 Unix 历史站。",
+      "sha256": "132c7f912ed988195848422d4d3a08d94e5cb5d5d69162800d760b92e5a611ac",
+      "title": "The Creation of the UNIX* Operating System: Connecting streams like a garden hose",
+      "version": "Lucent archival page, copyright 2002；Internet Archive 20191119150216 与 20250221180231 正文相同",
+      "identity_note": "原 S3 链接 2026-10-28 返回 301，没有拿到对象。读的是 Internet Archive 对同一 URL 的存档，不是 Dennis Ritchie 的另一篇 Early Unix history。标题与幻灯片的 Unix pipe 指向一致。",
+      "path": "课堂笔记/sources/readings/unix-streams.html",
+      "scope_sections": [
+        "connecting-streams"
+      ],
+      "read_sections": [
+        "connecting-streams"
+      ],
+      "visual_checks": [
+        {
+          "page": "全文",
+          "detail": "一页短文，没有图。McIlroy、Thompson、花园水管和 switchyard 都在正文里。"
+        }
+      ]
+    },
+    {
+      "id": "inception-chat",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": false,
+      "reading_status": "blocked",
+      "known_gaps": [
+        "原链接 429，带 Vercel challenge。没有绕过。",
+        "同一 URL 的 2025 年存档只有标题为 Mercury Coder 的启动壳，没有可读的产品说明。",
+        "没有用公司首页的时延或成本数字代替这个聊天页。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "recommendation_kind": "background_citation",
+      "contributions": [],
+      "listed_title": "Diffusion LM",
+      "listed_url": "https://chat.inceptionlabs.ai/",
+      "source_url": "https://chat.inceptionlabs.ai/",
+      "recommendation_basis": "slides 第 13 页正文把 Diffusion LM 链到这个聊天页。",
+      "scope_reason": "聊天页本身没有读到。存档只够核对页面标题，不够写补充。",
+      "sha256": null,
+      "title": "Mercury Coder",
+      "identity_note": "原链接 2026-10-28 返回 429，响应头 x-vercel-mitigated: challenge。没有用浏览器过验证。同一 URL 的 Internet Archive 存档（读了 20250402115003，2025-02 至 2025-04 的抓取都是短 HTML）里，apple-mobile-web-app-title 和 description 是 Mercury Coder。正文是启动壳，没有聊天记录，也没有模型说明。"
+    },
+    {
+      "id": "inception-home",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": false,
+      "reading_status": "out_of_scope",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "recommendation_kind": "background_citation",
+      "contributions": [],
+      "listed_title": "Inception 公司首页（不是幻灯片上的聊天链接）",
+      "listed_url": "https://www.inceptionlabs.ai/",
+      "source_url": "https://www.inceptionlabs.ai/",
+      "title": "Inception – When Every Millisecond Matters",
+      "identity_note": "首页标题与 Inception 公司站一致，但 URL 不是幻灯片上的 chat.inceptionlabs.ai。首页介绍名为 Mercury 的 diffusion LLM。营销数字不写入笔记。",
+      "path": "课堂笔记/sources/readings/inception.html",
+      "recommendation_basis": "检索聊天页失败后打开的公司首页，用来核对 Diffusion LM 指什么，不把它当成幻灯片链接本身。",
+      "scope_sections": [
+        "homepage"
+      ],
+      "read_sections": [
+        "homepage"
+      ],
+      "scope_reason": "只读首页。营销数字不写入笔记，因为讲师链的是聊天页，而且这些数字不是课堂测量。",
+      "not_adopted_reason": "首页与幻灯片链接不是同一个 URL。Mercury 的时延和成本数字是公司首页的营销句，没有放进课堂补充。",
+      "sha256": "391f882291dcddc0915ad625faf02ad7eb450c8fbc7a1514b4463cc81989e2fe"
+    },
+    {
+      "id": "cv-pdf",
+      "kind": "pdf",
+      "identity_status": "unverified",
+      "required": false,
+      "reading_status": "blocked",
+      "known_gaps": [
+        "2026-10-28 官网 https://jyywiki.cn/GSE/2026/lect/cv.pdf 仍是 404。另试了 /GSE/2026/lect1/cv.pdf，也是 404。",
+        "Wayback 没有这个 URL 的 200 存档。",
+        "git.nju.edu.cn 上一轮是人机验证，这一轮没有再打开，也没有绕过。没有打开 zhao-d-r 仓库里的笔记。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "recommendation_kind": "background_citation",
+      "contributions": [],
+      "listed_title": "简历",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lect/cv.pdf",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect/cv.pdf",
+      "recommendation_basis": "slides 第 3 页正文「简历」的相对链接。按幻灯片页面解析后，官网返回 404。",
+      "scope_reason": "简历 PDF 仍没有公开副本。笔记继续不转录简历里的个人信息。",
+      "sha256": null
+    },
+    {
+      "id": "os2026-02-pdf",
+      "kind": "pdf",
+      "identity_status": "unverified",
+      "required": false,
+      "reading_status": "blocked",
+      "known_gaps": [
+        "2026-10-28 官网 https://jyywiki.cn/GSE/2026/lect/OS2026-02.pdf 仍是 404。另试了 /OS/2026/lect/OS2026-02.pdf 和 /OS/2026/OS2026-02.pdf，都是 404。",
+        "Wayback 没有这个 URL 的 200 存档。",
+        "操作系统课页面 https://jyywiki.cn/OS/2026/ 是另一套 lectN.md 目录，没有这份 PDF。没有把那门课的网页当成这个文件。",
+        "没有绕过 git.nju.edu.cn 的人机验证，也没有打开 zhao-d-r 仓库里的笔记。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "recommendation_kind": "background_citation",
+      "contributions": [],
+      "listed_title": "读 B 站生成的讲义",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lect/OS2026-02.pdf",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect/OS2026-02.pdf",
+      "recommendation_basis": "slides 第 18 页把这份 PDF 当作「读 B 站、生成讲义」的例子，不是要求阅读另一门操作系统课。",
+      "scope_reason": "幻灯片上的生成讲义 PDF 仍没有公开副本。课堂视频里的那一帧继续作为画面，不把另一门课的网页当成同一份 PDF。",
+      "sha256": null
+    },
+    {
+      "id": "qrgen-xlsx",
+      "kind": "web",
+      "identity_status": "unverified",
+      "required": false,
+      "reading_status": "blocked",
+      "known_gaps": [
+        "2026-10-28 官网 https://jyywiki.cn/GSE/2026/lect/qrgen.xlsx 仍是 404。另试了 /GSE/2026/lect1/qrgen.xlsx，也是 404。",
+        "Wayback 没有这个 URL 的 200 存档。github.com/jiangyy/GenSE 返回 404。",
+        "git.nju.edu.cn 上一轮是人机验证，这一轮没有再打开，也没有绕过。没有打开 zhao-d-r 仓库里的笔记。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "recommendation_kind": "core_source",
+      "contributions": [],
+      "listed_title": "qrgen.xlsx",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lect/qrgen.xlsx",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect/qrgen.xlsx",
+      "recommendation_basis": "slides 第 27 页正文链接的课堂案例文件。",
+      "scope_reason": "工作簿仍没有公开副本。案例过程仍以口述和幻灯片为准。",
+      "sha256": null
+    },
+    {
+      "id": "jyy-home",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": false,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "recommendation_kind": "background_citation",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "首页 index 与 bio",
+          "claim": "主页写他是南大副教授，并写 2026 秋开这门课、操作系统课播放超过 500 万",
+          "role": "background",
+          "note_target": "supplements[12]"
+        }
+      ],
+      "listed_title": "我的主页",
+      "listed_url": "https://jiangyy.github.io/",
+      "source_url": "https://jiangyy.github.io/",
+      "path": "课堂笔记/sources/readings/jyy-home.md",
+      "recommendation_basis": "slides 第 9 页正文把个人主页当作作品证据的例子。",
+      "scope_reason": "幻灯片把这个主页当作可以打开的作品。声明范围是首页会打开的这六份文档，不是论文清单里每一篇 PDF，也不是 jyywiki 全站。",
+      "sha256": "21c72fe4eabc0379e90301ddda280c705e7959a5b35b7be2d0af968da175bfcb",
+      "title": "蒋炎岩",
+      "version": "站点 last update 2026-07-31；正文取作者仓库 content/*.md，与线上脚本中的句子一致",
+      "identity_note": "线上页面 200，noscript 的首页与 content/index.md 一致。bio、papers、team、alumni、help 在前端包里，读的是同一仓库 jiangyy/jiangyy.github.io 的 content 目录，不是另一份简历。",
+      "scope_sections": [
+        "index",
+        "bio",
+        "papers",
+        "team",
+        "alumni",
+        "help"
+      ],
+      "read_sections": [
+        "index",
+        "bio",
+        "papers",
+        "team",
+        "alumni",
+        "help"
+      ],
+      "visual_checks": [
+        {
+          "page": "index",
+          "detail": "首页是文字和一张字符画。没有把字符画当作数据。"
+        }
+      ]
+    },
+    {
+      "id": "ehall",
+      "kind": "web",
+      "identity_status": "verified",
+      "required": false,
+      "reading_status": "blocked",
+      "known_gaps": [
+        "2026-10-28 再次打开，跳到 /ywtb-portal/official/index.html。静态 HTML 仍是浏览器兼容性提示和空的应用壳。",
+        "/jsonp/constant.json 返回 403。没有登录，没有用浏览器把单页应用渲染出来。",
+        "Wayback 没有 https://ehall.nju.edu.cn/ 的 200 存档。办事流程没有读到。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "recommendation_kind": "background_citation",
+      "contributions": [],
+      "listed_title": "ehall",
+      "listed_url": "https://ehall.nju.edu.cn/",
+      "source_url": "https://ehall.nju.edu.cn/",
+      "path": "课堂笔记/sources/readings/ehall.html",
+      "title": "南京大学网上办事服务大厅",
+      "recommendation_basis": "slides 第 21 页正文链接，是课堂演示要自动化的系统，不是阅读材料。",
+      "scope_reason": "公开页面仍只有兼容性提示和应用壳。没有进入登录后的办事流程。",
+      "sha256": "fa3e8b963073767743f9d70ac8c24c395117cfde2e9e7505e2092b6d9e9f08b0"
+    }
+  ]
+}

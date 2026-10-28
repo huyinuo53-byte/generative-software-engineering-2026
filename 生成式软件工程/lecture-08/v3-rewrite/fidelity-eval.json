@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
-  "notes_sha256": "f93acce67e9f994848ecc5d7329c91a2530d185c3884c8be76e779bca9d068ee",
+  "mode": "full",
+  "notes_sha256": "4447ffb686186eb7c3c289a9cc9304563c384b6e757c71fd1a4f650b16235213",
   "writer_model": "grok-4.7-high",
   "precision": {
     "items": [
@@ -103,13 +104,6 @@
         "hash": "13dfebd3da6a41e9"
       },
       {
-        "ref": "s3:f1",
-        "verdict": "supported",
-        "evidence": "frames/v000700867.jpg; s-g104.0~19–s-g200.0~3",
-        "note": "画面中的标题、文字、代码或数字与该项描述相符；相关口播补充亦有依据。",
-        "hash": "b6e97664cfb9b672"
-      },
-      {
         "ref": "s4:takeaway",
         "verdict": "supported",
         "evidence": "s-g226.0–s-g291.0~5; frames/v001060867.jpg",
@@ -159,13 +153,6 @@
         "hash": "3bfbf90769910ea1"
       },
       {
-        "ref": "s5:f1",
-        "verdict": "supported",
-        "evidence": "frames/v001435133.jpg; s-g335.0–s-g445.0~11",
-        "note": "画面中的标题、文字、代码或数字与该项描述相符；相关口播补充亦有依据。",
-        "hash": "9f5557472f13a7f8"
-      },
-      {
         "ref": "s6:takeaway",
         "verdict": "supported",
         "evidence": "s-g468.0~1–s-g555.0~5; frames/v001675133.jpg",
@@ -185,13 +172,6 @@
         "evidence": "s-g493.0~3–s-g525.0~6",
         "note": "工作区状态、分步迁移、提交、检查和更换模型均有口播依据。",
         "hash": "895d66d505f48079"
-      },
-      {
-        "ref": "s6:f0",
-        "verdict": "supported",
-        "evidence": "frames/v001675133.jpg; s-g468.0~1–s-g555.0~5",
-        "note": "画面中的标题、文字、代码或数字与该项描述相符；相关口播补充亦有依据。",
-        "hash": "8fb9c83cd34f2a57"
       },
       {
         "ref": "s7:takeaway",
@@ -278,13 +258,6 @@
         "hash": "fe361367ad8d3ac2"
       },
       {
-        "ref": "s9:f0",
-        "verdict": "supported",
-        "evidence": "frames/v002564533.jpg; s-g716.0–s-g848.0~7",
-        "note": "画面中的标题、文字、代码或数字与该项描述相符；相关口播补充亦有依据。",
-        "hash": "badab0d29030bbca"
-      },
-      {
         "ref": "s10:takeaway",
         "verdict": "supported",
         "evidence": "s-g904.0~9–s-g1136.0~6; frames/v002864533.jpg",
@@ -304,13 +277,6 @@
         "evidence": "s-g1082.0–s-g1136.0~6",
         "note": "事件钩子、lint 及 agent 不可信的表述符合口播；保留了额度和订阅说法的不确定性。",
         "hash": "472eefc4d560ff76"
-      },
-      {
-        "ref": "s10:f1",
-        "verdict": "supported",
-        "evidence": "frames/v002864533.jpg; s-g904.0~9–s-g1136.0~6",
-        "note": "画面中的标题、文字、代码或数字与该项描述相符；相关口播补充亦有依据。",
-        "hash": "18790841e802b0b8"
       },
       {
         "ref": "s11:takeaway",
@@ -355,13 +321,6 @@
         "hash": "c808c179e02b1029"
       },
       {
-        "ref": "s12:f1",
-        "verdict": "supported",
-        "evidence": "frames/v003824533.jpg; s-g1336.0~9–s-g1390.0~4",
-        "note": "画面中的标题、文字、代码或数字与该项描述相符；相关口播补充亦有依据。",
-        "hash": "b720b0effbceebf1"
-      },
-      {
         "ref": "s13:takeaway",
         "verdict": "supported",
         "evidence": "s-g1400.0~1–s-g1457.0~8; frames/v003884533.jpg",
@@ -381,13 +340,6 @@
         "evidence": "s-g1451.0~2, s-g1457.0~8",
         "note": "并行冲突、架构图与 logbook，以及尝试主 agent 的意向均有依据。",
         "hash": "e622dc3eac895493"
-      },
-      {
-        "ref": "s13:f0",
-        "verdict": "supported",
-        "evidence": "frames/v003884533.jpg; s-g1400.0~1–s-g1457.0~8",
-        "note": "画面中的标题、文字、代码或数字与该项描述相符；相关口播补充亦有依据。",
-        "hash": "fdcbdb9d78dba390"
       },
       {
         "ref": "s14:takeaway",
@@ -509,13 +461,6 @@
         "hash": "74c627177a0cb2d1"
       },
       {
-        "ref": "s17:f0",
-        "verdict": "supported",
-        "evidence": "frames/v005384567.jpg; s-g1807.0~15–s-g1903.0~5",
-        "note": "画面中的标题、文字、代码或数字与该项描述相符；相关口播补充亦有依据。",
-        "hash": "9c9cf0e85bbed6b5"
-      },
-      {
         "ref": "q1",
         "verdict": "supported",
         "evidence": "s-g31.0~9, s-g37.0~11, s-g51.0~11, s-g56.0",
@@ -600,13 +545,6 @@
         "hash": "2440964c1dd0bbb5"
       },
       {
-        "ref": "s11:f0",
-        "verdict": "supported",
-        "evidence": "frames/v003464533.jpg",
-        "note": "表题及所列六行问题、自动检查与人工批准要求均可在画面中直接确认。",
-        "hash": "3f6e0e226f2a17c1"
-      },
-      {
         "ref": "s4:e0",
         "verdict": "supported",
         "evidence": "frames/v001060867.jpg",
@@ -619,38 +557,336 @@
         "evidence": "frames/v001060867.jpg",
         "note": "画面直接显示 command 为必填 string，以及 subprocess.run、stderr=subprocess.STDOUT 和 timeout=60。",
         "hash": "9d181cb575c548c0"
+      },
+      {
+        "ref": "s10:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-08.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "63bc3d50a7f879f8"
+      },
+      {
+        "ref": "s10:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-09.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "ecaa5689362b037a"
+      },
+      {
+        "ref": "s10:f2",
+        "verdict": "supported",
+        "evidence": "frames/slide-10.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "03ad53519baace27"
+      },
+      {
+        "ref": "s10:f3",
+        "verdict": "supported",
+        "evidence": "frames/slide-11.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "285df8dc6bf8ef4d"
+      },
+      {
+        "ref": "s10:n1",
+        "verdict": "supported",
+        "evidence": "sources/fowler-ci-2000.txt",
+        "note": "摘录明确列出构建步骤、2000-09-10、两位作者、约 20 万行、50 人、每日几十次构建及约 15 分钟。",
+        "hash": "a3ce4189e915f97b"
+      },
+      {
+        "ref": "s11:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-12.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "f10a103cacaecbde"
+      },
+      {
+        "ref": "s11:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-13.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "9c191cc8f2a52208"
+      },
+      {
+        "ref": "s11:f2",
+        "verdict": "supported",
+        "evidence": "frames/slide-14.jpg",
+        "note": "标题、正文链接、引文及全部说明均直接出现在图片中；链接属于正文，紫色补充文字带 AIGC 标记。",
+        "hash": "01e41ea4b71fd9da"
+      },
+      {
+        "ref": "s11:n1",
+        "verdict": "supported",
+        "evidence": "sources/toyota-tps.txt; sources/slides-aigc.txt; frames/slide-12.jpg; s-g1219.0~1–s-g1317.0~1",
+        "note": "第 12 页紫色批注出现 jidoka；丰田摘录支持其含义，s11 口播未讲丰田。",
+        "hash": "4ab9b63687ce5dc4"
+      },
+      {
+        "ref": "s12:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-15.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "e6b51ef2fa1c3fed"
+      },
+      {
+        "ref": "s12:f2",
+        "verdict": "supported",
+        "evidence": "frames/slide-16.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "e8a43d700a134713"
+      },
+      {
+        "ref": "s12:n1",
+        "verdict": "supported",
+        "evidence": "sources/openai-harness.txt; s-g1380.0~8; s-g1385.0~9",
+        "note": "摘录支持日期、Wayback 获取说明和 minimal blocking merge gates，未附可复用工作流；口播的 ClosedAI 指向讲者确信存在的未公开门控，而非文件缺失的定义。",
+        "hash": "7b243a2ad125a354"
+      },
+      {
+        "ref": "s13:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-17.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "d4b0a237348697e1"
+      },
+      {
+        "ref": "s13:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-18.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "335626b5a56e18d6"
+      },
+      {
+        "ref": "s13:n1",
+        "verdict": "supported",
+        "evidence": "sources/anthropic.txt; sources/strongdm.txt; sources/strongdm-dtu.txt; frames/slide-17.jpg; frames/slide-18.jpg; s-g1400.0~1–s-g1457.0~8",
+        "note": "文章支持实验参数；s-g1400.0~1 仅讲 16 个 agent 撞车，GCC 与 StrongDM 的展开见幻灯片而非该段口播。",
+        "hash": "69eb8c64f7a369c7"
+      },
+      {
+        "ref": "s14:n1",
+        "verdict": "supported",
+        "evidence": "sources/deepseek-readme.txt",
+        "note": "README 明示 developer preview、不兼容变更、AGENTS.md，并给出题名、DeepSeek-AI 和 2026；包中没有 4245 秒帧可独立核对画面。",
+        "hash": "db733d31901bb02c"
+      },
+      {
+        "ref": "s17:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-20.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "da2cfb5165f53db3"
+      },
+      {
+        "ref": "s17:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-22.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "45eafbc4e1f6e061"
+      },
+      {
+        "ref": "s17:f2",
+        "verdict": "supported",
+        "evidence": "frames/slide-23.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "de424af5583c9c33"
+      },
+      {
+        "ref": "s17:f3",
+        "verdict": "supported",
+        "evidence": "frames/slide-21.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "f50c5773159dffe2"
+      },
+      {
+        "ref": "s17:n1",
+        "verdict": "supported",
+        "evidence": "sources/webvan-10k.txt; sources/webvan-sec.txt; frames/slide-22.jpg",
+        "note": "年报分别写 distribution center <40%、CFC <70%，并明确尚无设施实现现金流盈利；SEC 文件日期及破产日期一致。",
+        "hash": "fe470aae9a99b41c"
+      },
+      {
+        "ref": "s1:n1",
+        "verdict": "supported",
+        "evidence": "sources/lect8.txt; sources/slides-aigc.txt",
+        "note": "讲义摘录与 slides-aigc 的页面来源及 AIGC 标记说明相符；静态页替换属于编辑流程说明。",
+        "hash": "a510a906cf8289ac"
+      },
+      {
+        "ref": "s3:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-02.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "d44754b43079a2bf"
+      },
+      {
+        "ref": "s3:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-03.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "a518894c5bcd796e"
+      },
+      {
+        "ref": "s3:n1",
+        "verdict": "supported",
+        "evidence": "sources/nasa-wright-1901.txt; sources/slides-aigc.txt; frames/slide-02.jpg",
+        "note": "NASA 摘录明确写 Lilienthal 数据、1/3、自行车试验后建风洞；图片中的 NASA 链接位于紫色 AIGC 注释。",
+        "hash": "db7fd20d54fe9ebd"
+      },
+      {
+        "ref": "s5:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-04.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "bc2f48368e98c56e"
+      },
+      {
+        "ref": "s5:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-05.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "0fc6d878ff93328d"
+      },
+      {
+        "ref": "s5:n1",
+        "verdict": "supported",
+        "evidence": "sources/ralph-huntley.txt; sources/slides-aigc.txt; frames/slide-05.jpg",
+        "note": "摘录包含 while : 与 claude-code；幻灯片用 while true 与 claude -p，并显示该英文句及紫色原文链接，摘录中无该英文句。",
+        "hash": "a0f33ae9cbeebc05"
+      },
+      {
+        "ref": "s6:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-06.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "2d1bf6f2250b3fbc"
+      },
+      {
+        "ref": "s9:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-07.jpg",
+        "note": "指定幻灯片的标题、正文及批注支持本项表述，页序与所述一致。",
+        "hash": "18d171b972d14e05"
+      },
+      {
+        "ref": "x0",
+        "verdict": "supported",
+        "evidence": "sources/nasa-wright-1901.txt; frames/slide-02.jpg; s-g104.0~19–s-g200.0~3",
+        "note": "NASA 摘录支持 1/3、两种 Smeaton 系数、自行车试验、100–200 个模型与约 30 个详细试验；第 2 页为 AIGC 批注，s3 未口述该案例。",
+        "hash": "4519b82536381dc5"
+      },
+      {
+        "ref": "x1",
+        "verdict": "supported",
+        "evidence": "sources/ralph-huntley.txt; sources/slides-aigc.txt; s-g401.0~2; s-g410.0~3",
+        "note": "摘录支持循环、每轮重载计划与规格、约 170k、新上下文、测试 backpressure 和反复删除 TODO；没有自动判定无法改进的退出条件。英文总结在口播出现，未在文章摘录出现。",
+        "hash": "a9f3a64140009fb5"
+      },
+      {
+        "ref": "x10",
+        "verdict": "supported",
+        "evidence": "sources/strongdm.txt; sources/strongdm-dtu.txt; frames/slide-18.jpg; s-g1400.0~1–s-g1457.0~8",
+        "note": "两份摘录支持 return true、库外 scenarios、satisfaction、六种服务替身、对照真实依赖及高频重放；选课练习见第 18 页，s13 未讲 StrongDM。",
+        "hash": "afb1dab967582e68"
+      },
+      {
+        "ref": "x11",
+        "verdict": "supported",
+        "evidence": "sources/friendster-2006.txt; sources/wired-friendster.txt; frames/slide-21.jpg; s-g1818.0~17",
+        "note": "工程师摘录支持复制瓶颈、500GB、分片与复制环、内部阻力及 Flickr；Wired 摘录确为 Socializr 访谈且引言提到 Friendster 延迟宕机；口播只简述架构崩溃。",
+        "hash": "684edcab502d63ce"
+      },
+      {
+        "ref": "x12",
+        "verdict": "supported",
+        "evidence": "sources/webvan-10k.txt; sources/webvan-sec.txt; sources/quibi.txt",
+        "note": "摘录支持容量比例、8000/2500 单、亏损与赤字；SEC 程序明确 Webvan 于 2001-07-13 在特拉华申请 Chapter 11，加州北区属于 JTS。Quibi 的两种原因被准确保留为管理层推测，获取方式亦有记录；末尾明确标为讲义提炼。",
+        "hash": "fe45b8b91961e980"
+      },
+      {
+        "ref": "x13",
+        "verdict": "supported",
+        "evidence": "sources/deepseek-readme.txt",
+        "note": "README 支持架构、Cordis、文档站、预览警告、命令、AGENTS.md、引用块及三个 README 文件；未把首页内容冒充脚本实现审计。",
+        "hash": "64460ca123bc9cc8"
+      },
+      {
+        "ref": "x14",
+        "verdict": "supported",
+        "evidence": "sources/toyota-tps.txt; frames/slide-12.jpg",
+        "note": "Toyota 摘录支持两支柱、异常停线、andon、织机渊源与人力节省；软件 CI 类比在第 12 页 AIGC 批注，口播未讲丰田。",
+        "hash": "cd455011f7e43e09"
+      },
+      {
+        "ref": "x2",
+        "verdict": "supported",
+        "evidence": "sources/linearb-ralph.txt; frames/slide-04.jpg",
+        "note": "转写 00:06:04 明确说 dumb、lovable、never gives up 并命名 Ralph Wiggum；00:04:04 说明 vomiting 和睡觉时做软件。",
+        "hash": "f240f4ff27bfbf35"
+      },
+      {
+        "ref": "x3",
+        "verdict": "supported",
+        "evidence": "sources/fowler-ci-2000.txt",
+        "note": "日期、作者、五项构建过程、150 测试类、Trebuchet、Ant、五分钟前版本、15 分钟、邮件纪律与先补失败测试均见摘录。",
+        "hash": "2b79fa85c4b777bc"
+      },
+      {
+        "ref": "x4",
+        "verdict": "supported",
+        "evidence": "sources/fowler-ci-history.txt; sources/thoughtworks-history.txt; sources/cd-2010-intro.txt; frames/slide-08.jpg",
+        "note": "三份摘录支持 Kent Beck/1990s、CruiseControl/2001、Continuous Delivery/2010 及 deployment pipeline；2000 年原文信息另见对应摘录与第 8 页。",
+        "hash": "a4f95771c7b29d9f"
+      },
+      {
+        "ref": "x5",
+        "verdict": "supported",
+        "evidence": "sources/cd-vs-deployment.txt",
+        "note": "摘录明确区分 deployment/release、delivery/deployment，支持秒到分钟、业务决定发布节奏及完整验收条件。",
+        "hash": "3db7cb2fe795be25"
+      },
+      {
+        "ref": "x6",
+        "verdict": "supported",
+        "evidence": "sources/gh-branch-protection.txt; sources/git-hooks.txt; sources/gh-actions-events.txt; sources/gh-deploy.txt; sources/gh-pages.txt; sources/claude-code-action.txt; sources/slides-9-11-15.txt; frames/slide-09.jpg; frames/slide-11.jpg",
+        "note": "摘录支持分支保护、strict、管理员绕过、merge queue、pre-commit、PR 合并结果检查和部署并发的描述。第 11 页明确写出失败保留上一版，文本正确区分其与 Pages 文档；Marketplace 摘录也支持功能和非 GitHub 认证的说明。",
+        "hash": "0acf400fde09db61"
+      },
+      {
+        "ref": "x7",
+        "verdict": "supported",
+        "evidence": "sources/openai-harness.txt; sources/slides-9-11-15.txt; frames/slide-15.jpg",
+        "note": "文章摘录支持日期、作者、实验数字、评审循环、知识库、worktree 可观测性、架构依赖顺序、合并策略与持续清理等描述。获取记录支持使用 Wayback 快照的说明；文本保留内部实验自述与不可直接泛化的限制。第 15 页明确限定吐槽为未附完整可复用门控配置，而非没有门控。",
+        "hash": "ae47094e8310ff5c"
+      },
+      {
+        "ref": "x8",
+        "verdict": "supported",
+        "evidence": "sources/stripe-minions.txt; items.json sections.s12.transcript",
+        "note": "Stripe 摘录支持作者日期、1300 个 PR、确定性与 agent 节点、两次推送后的人工交接、隔离 devbox、规则作用域和 Toolshed 等描述；末句是有依据且明确标为讲义用途的归纳。所给课堂节选未提 Stripe；因 transcript.txt 缺失，无法独立核实全课均未提及 Stripe。",
+        "hash": "e66b4a2bfe39ee6e"
+      },
+      {
+        "ref": "x9",
+        "verdict": "supported",
+        "evidence": "sources/anthropic.txt; s-g1400.0~1",
+        "note": "摘录支持作者日期、16 个 agent、Rust、会话与费用、10 万行、容器锁文件、GCC oracle 与 delta debugging、限制以及无编排 agent 的原型定位。",
+        "hash": "8f5997fc9a6d6d3c"
+      },
+      {
+        "ref": "s3:e0",
+        "verdict": "supported",
+        "evidence": "frames/slide-02.jpg; s-g104.0~19–s-g200.0~3",
+        "note": "图片逐项显示标题、spec、Let it fail、1901 年升力 1/3、自建风洞和 NASA；本节转录未讲莱特兄弟案例。",
+        "hash": "f6999a3b464a1499"
       }
     ],
     "reviewer": "independent_agent",
     "reviewer_model": "gpt-6.1-sol",
-    "method": "prepare packets: all takeaways/explainers + per-section sample; 88 judged in latest round; 2 judged in latest round; 4 judged in latest round"
+    "method": "prepare packets: all takeaways/explainers + per-section sample; 88 judged in latest round; 2 judged in latest round; 4 judged in latest round; 46 judged in latest round"
   },
   "recall": {
     "items": [
-      {
-        "id": "q01",
-        "question": "第二个实验为什么要同时考虑宽度优先和深度优先搜索？",
-        "expected": "浅层不同方案会显著影响结果；一条路线深挖可能错过更好的解；算力有限，需要平衡两种搜索。",
-        "evidence": "s-g40.0~29–s-g56.0",
-        "from": "transcript",
-        "answer": "算力有限，而设计空间浅层的分叉会大幅影响结果。宽度优先用于探索不同方向，深度优先用于把选中的方案做深，避免沿第一个合理想法一路走到底。",
-        "found_in": "s1:p2",
-        "verdict": "correct",
-        "note": "涵盖浅层分叉影响、避免单路线深挖及有限算力下的平衡。",
-        "hash": "bce4bfdd5729b316"
-      },
-      {
-        "id": "q02",
-        "question": "讲师介绍的多模型协作经验中，哪两个模型互相做什么？为什么强调不同模型？",
-        "expected": "GPT 与 Claude 互相 review、挑刺；不同模型带有不同偏见，能形成互补、拓宽探索。",
-        "evidence": "s-g60.0~3–s-g68.0~20",
-        "from": "transcript",
-        "answer": "让 GPT 和 Claude 互相 review、互相挑刺。不同模型带着不同偏见，能把搜索岔开；只用一个模型容易一条路走到黑。",
-        "found_in": "s1:p3",
-        "verdict": "correct",
-        "note": "准确指出 GPT 与 Claude 互评及不同偏见带来的互补。",
-        "hash": "bce4bfdd5729b316"
-      },
       {
         "id": "q03",
         "question": "从 intent 到 spec，再到 implementation，它们是什么映射关系？这对软件开发意味着什么？",
@@ -662,42 +898,6 @@
         "verdict": "correct",
         "note": "两段一对多映射及讨论、评审、迭代的意义齐全。",
         "hash": "8b58299460e561fc"
-      },
-      {
-        "id": "q04",
-        "question": "讲师自己开发时把终端分成几份、最多同时监工几个 Agent？给出的限制原因是什么？",
-        "expected": "四份、四个 Agent；再多大脑就跟不上 AI 输出速度。",
-        "evidence": "s-g101.0~7–s-g104.0~19",
-        "from": "transcript",
-        "answer": "一个 tmux 窗口分成四份，开四个 Agent；再多大脑就跟不上输出速度，四个的输出已经快过他监工的速度。",
-        "found_in": "s2:p2, s3:p0",
-        "verdict": "correct",
-        "note": "四份终端、四个 Agent 及认知跟不上输出的原因准确。",
-        "hash": "95ffb64431890fa9"
-      },
-      {
-        "id": "q05",
-        "question": "讲师认为，在设计还没想清楚时，AI 生成原型有什么具体价值？",
-        "expected": "先实现一个版本，再构造典型 use case 评审；暴露模块交互或架构中此前没想到的问题。",
-        "evidence": "s-g110.0~4–s-g126.0~18",
-        "from": "transcript",
-        "answer": "先低成本做出一个版本，暴露只有实现后才会发现的设计问题，例如用户变多或模块之间未想到的交互；再用典型 use case 评审，比较版本变好还是变坏，继续讨论和迭代。",
-        "found_in": "s2:p2, s3:p0",
-        "verdict": "correct",
-        "note": "涵盖先做原型、典型用例评审和暴露模块交互问题。",
-        "hash": "95ffb64431890fa9"
-      },
-      {
-        "id": "q06",
-        "question": "为什么讲师认为当前 Agent 容易只做较短的宽度搜索，找到路线后就往下走？",
-        "expected": "强化学习奖励完成任务，完成更快也有奖励；因此有尽快完成的压力，倾向较短的探索。",
-        "evidence": "s-g162.0~1–s-g186.0~12",
-        "from": "transcript",
-        "answer": "讲师认为强化学习给了完成任务、快速完成任务很强的奖励，因此 Agent 倾向于较短的宽度搜索，一旦找到自认为合适的路线就继续往下做。",
-        "found_in": "s3:p2",
-        "verdict": "correct",
-        "note": "准确说明完成及快速完成的强化学习奖励导致探索较短。",
-        "hash": "7c50498e342b07f1"
       },
       {
         "id": "q07",
@@ -722,54 +922,6 @@
         "verdict": "correct",
         "note": "timeout=60 和 stderr 合并至 subprocess.STDOUT 均正确。",
         "hash": "005de46e80230e8a"
-      },
-      {
-        "id": "q09",
-        "question": "讲师用 harness 这个词指什么？",
-        "expected": "把模型能够做的事情约束在开发者认为较好的范围内。",
-        "evidence": "s-g335.0–s-g352.0",
-        "from": "transcript",
-        "answer": "harness 是把模型能做的事约束在你认为比较好的范围内、管理其搜索与行动的机制。",
-        "found_in": "s5:p0",
-        "verdict": "correct",
-        "note": "准确表达将模型行动约束在开发者认为较好的范围。",
-        "hash": "66148adf9f9af3d1"
-      },
-      {
-        "id": "q10",
-        "question": "【画面题】Ralph Wiggum Loop 幻灯片写明，是谁借用了《辛普森一家》中 Ralph Wiggum 的名字？",
-        "expected": "Geoffrey Huntley。",
-        "evidence": "v001375133.jpg",
-        "from": "visual",
-        "answer": "Geoffrey Huntley。",
-        "found_in": "s5:f0",
-        "verdict": "correct",
-        "note": "姓名 Geoffrey Huntley 正确。",
-        "hash": "66148adf9f9af3d1"
-      },
-      {
-        "id": "q11",
-        "question": "Ralph Loop 中“the prompt stays the same, but the world changes”是什么意思？",
-        "expected": "反复把同一个任务提示交给 Agent；每轮修改工作区，使下一轮面对的实际状态发生变化。",
-        "evidence": "s-g401.0~2–s-g410.0~3; s-g507.0–s-g525.0~6",
-        "from": "transcript",
-        "answer": "每轮送入同一个任务提示，但上一轮的检查、修改和进展保存在工作区里，下一轮面对的工作区已经改变，因此能继续推进。",
-        "found_in": "s5:p2, s5:e0",
-        "verdict": "correct",
-        "note": "准确区分不变的提示与每轮改变的工作区状态。",
-        "hash": "66148adf9f9af3d1"
-      },
-      {
-        "id": "q12",
-        "question": "把开发看作状态机时，state 对应什么？同一个 state 下可以选择哪些不同操作？",
-        "expected": "state 是 workspace 的状态；可以让不同模型开发、让另一模型 review，或进行重构等操作。",
-        "evidence": "s-g493.0~3–s-g548.0",
-        "from": "transcript",
-        "answer": "state 对应 workspace，包括需求文档、部分实现、测试、运行日志和 TODO。同一状态可以让 GPT 做一轮、换 Claude review、让 DeepSeek 干活，也可以进行架构评审或重构，形成不同搜索分支。",
-        "found_in": "s6:p1, s6:p2, s6:e0",
-        "verdict": "correct",
-        "note": "workspace 状态及不同模型开发、review、重构操作齐全。",
-        "hash": "ca492507a2132743"
       },
       {
         "id": "q13",
@@ -832,162 +984,6 @@
         "hash": "74a9a018b2451356"
       },
       {
-        "id": "q18",
-        "question": "为什么 Ralph Loop 的提示词要求每轮只推进一个明确步骤，再验证和评估？",
-        "expected": "当前 Agent 可能发生思路或上下文漂移；小步迁移后停下检查，可用其他 Agent review 或测试阻止偏离。",
-        "evidence": "s-g716.0–s-g736.0",
-        "from": "transcript",
-        "answer": "因为 Agent 训练还不够好，或会在当前上下文中漂移、做不该做的事。把任务拆成较小状态迁移，每步后停下来测试、跑检查或让另一模型 review，能及时发现问题并修正。",
-        "found_in": "s9:p0",
-        "verdict": "correct",
-        "note": "涵盖上下文漂移风险、小步迁移及测试或其他模型 review。",
-        "hash": "6a8ad2eb5e467a2e"
-      },
-      {
-        "id": "q19",
-        "question": "讲师回顾计算机系统基础时提到的两条“公理”是什么？",
-        "expected": "机器永远是对的，不要怀疑机器；未测代码永远是错的。",
-        "evidence": "s-g746.0~3–s-g754.2~1",
-        "from": "transcript",
-        "answer": "第一，机器永远是对的，不要怀疑机器；第二，未测代码永远是错的。",
-        "found_in": "s9:p1",
-        "verdict": "correct",
-        "note": "两条公理均准确。",
-        "hash": "6a8ad2eb5e467a2e"
-      },
-      {
-        "id": "q20",
-        "question": "讲师用状态迁移解释 CI/CD：检查不通过和所有检查都通过时，分别应该怎样处理？",
-        "expected": "不通过就拒绝该轮结束，返回修复；足够的检查全部通过后可以发布，检查和发布均可自动化。",
-        "evidence": "s-g793.0~1–s-g818.0~3",
-        "from": "transcript",
-        "answer": "检查不通过就拒绝结束本轮，回去修好问题；每步都做足够多的检查，全部通过、找不到问题时就可以发布，检查和发布都可以自动化。",
-        "found_in": "s9:p2",
-        "verdict": "correct",
-        "note": "涵盖检查失败返回修复、全部通过后发布及自动化。",
-        "hash": "6a8ad2eb5e467a2e"
-      },
-      {
-        "id": "q21",
-        "question": "课堂追问“什么是 lint”时，讲师给出的定义是什么？他把 lint 放在软件工程的什么位置？",
-        "expected": "不运行程序、通过静态分析发现问题的代码检查；软件工程最基础一级的守门员。",
-        "evidence": "s-g1041.0–s-g1072.0~7",
-        "from": "transcript",
-        "answer": "lint 泛指不运行程序、通过静态分析就能发现问题的代码检查，包括缩进、换行、空格等。它是软件工程最基础一级的守门员。",
-        "found_in": "s10:p2",
-        "verdict": "correct",
-        "note": "静态分析且不运行程序的定义及基础守门员定位均准确。",
-        "hash": "70446f9944630ddb"
-      },
-      {
-        "id": "q22",
-        "question": "为什么仅把检查脚本写好、再要求实习生自行运行还不够？",
-        "expected": "开发者不可信，可能投机或省略测试；检查应由事件触发的自动化流程强制执行。",
-        "evidence": "s-g826.0~7–s-g878.0~9",
-        "from": "transcript",
-        "answer": "人会偷懒、投机，不能让实习生自行决定跑不跑。应把检查接到流程事件的 hook 上自动运行，并在独立环境检查；远程还要配合 required checks 和分支保护，失败才能真正阻止合并。",
-        "found_in": "s9:p2, s10:p0, s10:e1",
-        "verdict": "correct",
-        "note": "涵盖开发者可能投机省略检查及事件触发的强制自动化。",
-        "hash": "7bc85fbe3afa1a36"
-      },
-      {
-        "id": "q23",
-        "question": "为什么只在 AGENTS.md 写“文档禁止膨胀”不够？讲师给出的可执行门禁例子是什么？",
-        "expected": "上下文增长会使 Agent 注意力涣散；用代码检查文档长度，超过字数上限就让 CI 失败、阻止合入主分支。",
-        "evidence": "s-g1260.0–s-g1308.0~10",
-        "from": "transcript",
-        "answer": "Agent 随上下文膨胀会注意力涣散，不能始终记住 AGENTS.md 的要求。可以把文档字数上限做成硬门禁，例如直接计算字符串长度，超过一千字就让 CI fail，禁止合入主分支，本地 pre-commit 也可检查。",
-        "found_in": "s11:p1, s11:p2",
-        "verdict": "correct",
-        "note": "涵盖上下文膨胀导致注意力涣散及长度超限使 CI 失败阻止合入。",
-        "hash": "a49c1af502ab2977"
-      },
-      {
-        "id": "q24",
-        "question": "【画面题】“把 Agent 的偏执变成可执行的约束”表格中，针对“小任务变成大重构”，自动检查和人工判断分别是什么？",
-        "expected": "自动检查：改动范围白名单、Diff 预算；人工判断：超出范围是否批准。",
-        "evidence": "v003464533.jpg",
-        "from": "visual",
-        "answer": "自动检查是改动范围白名单和 Diff 预算；人工判断是是否批准超出范围的改动。",
-        "found_in": "s11:e0",
-        "verdict": "correct",
-        "note": "自动检查与人工判断两部分均准确。",
-        "hash": "a49c1af502ab2977"
-      },
-      {
-        "id": "q25",
-        "question": "【画面题】同一表格针对“顺手关闭 CI 规则”，要求什么审批规则，又如何划分角色？",
-        "expected": "规则文件变更须指定人批准；批准者与开发者分离。",
-        "evidence": "v003464533.jpg",
-        "from": "visual",
-        "answer": "规则文件变更必须由指定的人批准，且批准者与开发者分离。",
-        "found_in": "s11:e0",
-        "verdict": "correct",
-        "note": "指定人批准规则变更及批准者与开发者分离均准确。",
-        "hash": "a49c1af502ab2977"
-      },
-      {
-        "id": "q26",
-        "question": "讲师介绍 Anthropic 的 16 个 Agent 编译 Linux 案例时，协作遇到了什么问题？由此提出需要什么？",
-        "expected": "大家撞上同一个 bug，重复修复并覆盖彼此改动；需要 orchestration／调度 Agent 协同进展。",
-        "evidence": "s-g1390.0~4–s-g1405.0~2",
-        "from": "transcript",
-        "answer": "16 个 Agent 撞上同一个 bug，重复修复并覆盖彼此改动。因此需要 orchestration 调度 Agent 协同进展，并让进展可见；还需要能独立验证的任务拆分和组合检查。",
-        "found_in": "s13:p0",
-        "verdict": "correct",
-        "note": "同一 bug 重复修复、覆盖改动及调度协作需求齐全。",
-        "hash": "4a58a82738af95ca"
-      },
-      {
-        "id": "q27",
-        "question": "讲师自己项目的 Agent dashboard 如何帮助总架构师了解项目？",
-        "expected": "结合 architecture.md 的架构图与 logbook 任务；图上显示各模块正在进行的任务、Agent 和估计进度，支持预判和调整。",
-        "evidence": "s-g1412.0~5–s-g1445.0~6",
-        "from": "transcript",
-        "answer": "architecture.md 自动生成架构图，logbook 记录任务及完成或 ongoing 状态；进行中的任务推到 GitLab CI，图上显示各模块在做什么、有几个 Agent、估计完成百分比。总架构师据此了解进展、预估之后的项目状态并决定调整。",
-        "found_in": "s13:p1",
-        "verdict": "correct",
-        "note": "涵盖架构图、logbook、模块任务、Agent、进度及预判调整。",
-        "hash": "4a58a82738af95ca"
-      },
-      {
-        "id": "q28",
-        "question": "课堂向 Agent 提问中英文文档如何保持一致后，讲师介绍的“三套件”分别是什么？两种语言谁有权威？",
-        "expected": "同目录的中文 Markdown、英文 Markdown、i18n YAML 配对契约；两侧权威对等，谁先修改谁就是该次源。",
-        "evidence": "s-g1530.0; s-g1542.0–s-g1567.0~3",
-        "from": "transcript",
-        "answer": "同目录三份文件：中文 Markdown、英文 Markdown 和 i18n.yaml，例如 foo.zh.md、foo.md、foo.i18n.yaml，再配 verify-translation-pairing 门禁。中英文权威对等，谁先写谁就是这次更新的源，另一侧由 Agent 翻译同步。",
-        "found_in": "s14:p2, s14:f1",
-        "verdict": "correct",
-        "note": "三类配对文件及中英文对等、先改一侧为本次源均准确。",
-        "hash": "445580188ab0e1ba"
-      },
-      {
-        "id": "q29",
-        "question": "双语文档配对机制如何利用 hash 和 Git 历史判断新旧？更新另一种语言时遵循什么纪律？",
-        "expected": "通过当前 hash 与 Git 历史中的 hash 比较判断哪侧变化；只对差异做对应的最小补丁，其他部分保持一致，避免整篇重新翻译。",
-        "evidence": "s-g1575.0~10–s-g1608.0~1; s-g1657.0~4",
-        "from": "transcript",
-        "answer": "利用两侧 hash 与 Git 历史中的旧 hash 比较，判断哪份变了、谁先变、谁新谁旧；新旧不匹配时同步翻译。更新遵循 patch based 最小补丁，只修改对应差异，其他部分保持一致，不整篇重译。",
-        "found_in": "s14:p3, s14:p4",
-        "verdict": "correct",
-        "note": "涵盖当前与历史 hash 比较及只同步差异的最小补丁纪律。",
-        "hash": "445580188ab0e1ba"
-      },
-      {
-        "id": "q30",
-        "question": "文档规范为什么要渐进式披露、按需加载，而不是全塞进 AGENTS.md？",
-        "expected": "规范会不断膨胀，甚至很大的上下文也装不下；只在写文档或翻译等需要时加载对应规范。",
-        "evidence": "s-g1666.0–s-g1682.0~18",
-        "from": "transcript",
-        "answer": "规范与案例数量会不断增长，全放进 AGENTS.md 连百万上下文也可能装不下。应渐进式披露，只在翻译或写文档时加载相关材料；根 AGENTS.md 只放每次会话必须知道的规则。",
-        "found_in": "s14:p4, s16:e0",
-        "verdict": "correct",
-        "note": "涵盖规范持续膨胀、上下文容量限制及按需加载。",
-        "hash": "e42ed5513060fb63"
-      },
-      {
         "id": "q31",
         "question": "讲师举术语出现频率门控的例子时，对决策边界提出了什么要求？",
         "expected": "中英文段落或章节可比较对应术语频率；阈值要谨慎调整，不能误筛本应通过的内容，所举加减三只是示例。",
@@ -1012,16 +1008,280 @@
         "hash": "a2cb8cc90fa14053"
       },
       {
+        "id": "q01",
+        "question": "第二个实验为什么要同时考虑宽度优先和深度优先搜索？",
+        "expected": "浅层不同方案会显著影响结果；一条路线深挖可能错过更好的解；算力有限，需要平衡两种搜索。",
+        "evidence": "s-g40.0~29–s-g56.0",
+        "from": "transcript",
+        "answer": "Agent 已能完成长程任务，但解决问题的方向直觉仍不足，容易沿第一个合理方案一路深入。设计空间浅层的不同分叉会显著影响最终结果，所以需要宽度探索再结合深度推进；算力有限，必须平衡两者。",
+        "found_in": "s1:p2, s1:e1",
+        "verdict": "correct",
+        "note": "涵盖浅层分叉影响、单一路线的局限和有限算力下的宽深平衡。",
+        "hash": "854f7320457558b8"
+      },
+      {
+        "id": "q02",
+        "question": "讲师介绍的多模型协作经验中，哪两个模型互相做什么？为什么强调不同模型？",
+        "expected": "GPT 与 Claude 互相 review、挑刺；不同模型带有不同偏见，能形成互补、拓宽探索。",
+        "evidence": "s-g60.0~3–s-g68.0~20",
+        "from": "transcript",
+        "answer": "让 GPT 和 Claude 互相 review、互相挑刺。不同模型有不同偏见，会提出不同方向，使搜索岔开；只用同一个模型容易达成单一路线、一条路走到黑。",
+        "found_in": "s1:p3",
+        "verdict": "correct",
+        "note": "明确 GPT 与 Claude 互相 review，并解释不同模型偏见的互补价值。",
+        "hash": "854f7320457558b8"
+      },
+      {
+        "id": "q04",
+        "question": "讲师自己开发时把终端分成几份、最多同时监工几个 Agent？给出的限制原因是什么？",
+        "expected": "四份、四个 Agent；再多大脑就跟不上 AI 输出速度。",
+        "evidence": "s-g101.0~7–s-g104.0~19",
+        "from": "transcript",
+        "answer": "他把一个 tmux 窗口分成四份，开四个 Agent；再多，大脑就跟不上它们的输出和监工速度。",
+        "found_in": "s2:p2, s3:p0",
+        "verdict": "correct",
+        "note": "准确回答四份、四个 Agent，以及人脑跟不上输出的限制。",
+        "hash": "8de5b02f5661ae8a"
+      },
+      {
+        "id": "q05",
+        "question": "讲师认为，在设计还没想清楚时，AI 生成原型有什么具体价值？",
+        "expected": "先实现一个版本，再构造典型 use case 评审；暴露模块交互或架构中此前没想到的问题。",
+        "evidence": "s-g110.0~4–s-g126.0~18",
+        "from": "transcript",
+        "answer": "即使没想清楚，也能先低成本做出一个版本，预测用户增加、模块交互等情形，暴露只有做出来才意识到的设计问题；再用典型 use case 评审，比较版本变好还是变坏，继续讨论和迭代。",
+        "found_in": "s2:p2, s3:p0",
+        "verdict": "correct",
+        "note": "涵盖先实现原型、典型 use case 评审，以及暴露交互和设计问题。",
+        "hash": "8de5b02f5661ae8a"
+      },
+      {
+        "id": "q06",
+        "question": "为什么讲师认为当前 Agent 容易只做较短的宽度搜索，找到路线后就往下走？",
+        "expected": "强化学习奖励完成任务，完成更快也有奖励；因此有尽快完成的压力，倾向较短的探索。",
+        "evidence": "s-g162.0~1–s-g186.0~12",
+        "from": "transcript",
+        "answer": "强化学习给模型很强的完成任务压力，完成得快还会得到奖励，所以它倾向于只做较短的宽度探索，一旦找到自认为合适的路线就往下推进。",
+        "found_in": "s3:p2",
+        "verdict": "correct",
+        "note": "准确说明完成任务及快速完成的强化学习奖励导致探索较短。",
+        "hash": "320ae61ea29801b9"
+      },
+      {
+        "id": "q09",
+        "question": "讲师用 harness 这个词指什么？",
+        "expected": "把模型能够做的事情约束在开发者认为较好的范围内。",
+        "evidence": "s-g335.0–s-g352.0",
+        "from": "transcript",
+        "answer": "harness 是围绕模型、把它能做的事约束在你认为比较好的范围内的机制，用流程、工具和循环管理它的行动与搜索。",
+        "found_in": "s5:p0, s5:p1",
+        "verdict": "correct",
+        "note": "准确说明 harness 将模型行动约束在开发者认为较好的范围内。",
+        "hash": "a887d995d38d56b1"
+      },
+      {
+        "id": "q10",
+        "question": "【画面题】Ralph Wiggum Loop 幻灯片写明，是谁借用了《辛普森一家》中 Ralph Wiggum 的名字？",
+        "expected": "Geoffrey Huntley。",
+        "evidence": "v001375133.jpg",
+        "from": "visual",
+        "answer": "Geoffrey Huntley。",
+        "found_in": "s5:f0",
+        "verdict": "correct",
+        "note": "准确给出 Geoffrey Huntley。",
+        "hash": "a887d995d38d56b1"
+      },
+      {
+        "id": "q11",
+        "question": "Ralph Loop 中“the prompt stays the same, but the world changes”是什么意思？",
+        "expected": "反复把同一个任务提示交给 Agent；每轮修改工作区，使下一轮面对的实际状态发生变化。",
+        "evidence": "s-g401.0~2–s-g410.0~3; s-g507.0–s-g525.0~6",
+        "from": "transcript",
+        "answer": "每轮仍输入同一份任务提示，但上一轮已修改工作区，并把进展保存在文件里；下一轮重新开始对话时读到的是更新后的状态，因此提示没变，所面对的世界变了。",
+        "found_in": "s5:f1, s6:p1",
+        "verdict": "correct",
+        "note": "涵盖重复相同提示与每轮工作区变化，使下一轮面对更新状态。",
+        "hash": "f644f725424d101f"
+      },
+      {
+        "id": "q12",
+        "question": "把开发看作状态机时，state 对应什么？同一个 state 下可以选择哪些不同操作？",
+        "expected": "state 是 workspace 的状态；可以让不同模型开发、让另一模型 review，或进行重构等操作。",
+        "evidence": "s-g493.0~3–s-g548.0",
+        "from": "transcript",
+        "answer": "state 是 workspace 的状态，包括需求与文档、当前部分实现和测试、运行日志及 TODO。同一状态可以让 GPT 做一轮、让 Claude review、让 DeepSeek 干活，也可选择模块重构或架构评审等不同操作；版本控制还支持分叉并行后合并。",
+        "found_in": "s6:p1, s6:p2, s6:f0, s7:p0",
+        "verdict": "correct",
+        "note": "明确 state 是 workspace 状态，并列出不同模型开发、review 和重构操作。",
+        "hash": "ffdc4ac8f26a2f6a"
+      },
+      {
+        "id": "q18",
+        "question": "为什么 Ralph Loop 的提示词要求每轮只推进一个明确步骤，再验证和评估？",
+        "expected": "当前 Agent 可能发生思路或上下文漂移；小步迁移后停下检查，可用其他 Agent review 或测试阻止偏离。",
+        "evidence": "s-g716.0–s-g736.0",
+        "from": "transcript",
+        "answer": "因为 Agent 还训练得不够好，也会随上下文漂移并做不该做的事。每轮只做一次小的状态迁移，随后停下来用另一 Agent/模型 review、测试或检查脚本验证，可以及时发现问题，避免一头扎下去做完整个任务。",
+        "found_in": "s9:p0",
+        "verdict": "correct",
+        "note": "涵盖上下文漂移风险，以及小步迁移后通过 review 和测试阻止偏离。",
+        "hash": "2966c8653da34312"
+      },
+      {
+        "id": "q19",
+        "question": "讲师回顾计算机系统基础时提到的两条“公理”是什么？",
+        "expected": "机器永远是对的，不要怀疑机器；未测代码永远是错的。",
+        "evidence": "s-g746.0~3–s-g754.2~1",
+        "from": "transcript",
+        "answer": "第一，机器永远是对的，不要怀疑机器；第二，未测代码永远是错的。",
+        "found_in": "s9:p1",
+        "verdict": "correct",
+        "note": "完整复述两条公理。",
+        "hash": "2966c8653da34312"
+      },
+      {
+        "id": "q20",
+        "question": "讲师用状态迁移解释 CI/CD：检查不通过和所有检查都通过时，分别应该怎样处理？",
+        "expected": "不通过就拒绝该轮结束，返回修复；足够的检查全部通过后可以发布，检查和发布均可自动化。",
+        "evidence": "s-g793.0~1–s-g818.0~3",
+        "from": "transcript",
+        "answer": "检查不通过，就拒绝本轮结束，退回去把问题修好；每次迁移后都做足够多的检查，检查到找不到问题就可以发布，检查和发布都可以自动化。",
+        "found_in": "s9:p2",
+        "verdict": "correct",
+        "note": "涵盖检查失败后退回修复、全部检查通过后发布，以及流程自动化。",
+        "hash": "2966c8653da34312"
+      },
+      {
+        "id": "q21",
+        "question": "课堂追问“什么是 lint”时，讲师给出的定义是什么？他把 lint 放在软件工程的什么位置？",
+        "expected": "不运行程序、通过静态分析发现问题的代码检查；软件工程最基础一级的守门员。",
+        "evidence": "s-g1041.0–s-g1072.0~7",
+        "from": "transcript",
+        "answer": "lint 泛指不运行程序、只靠静态分析就能发现问题的代码检查，包括缩进、换行、空格等。他把它看作软件工程最基础一级的守门员；连 lint 都过不了，就不要谈软件工程。",
+        "found_in": "s10:p2",
+        "verdict": "correct",
+        "note": "准确说明 lint 是不运行程序的静态检查，并定位为最基础的守门员。",
+        "hash": "18da22bc9dc972b7"
+      },
+      {
+        "id": "q22",
+        "question": "为什么仅把检查脚本写好、再要求实习生自行运行还不够？",
+        "expected": "开发者不可信，可能投机或省略测试；检查应由事件触发的自动化流程强制执行。",
+        "evidence": "s-g826.0~7–s-g878.0~9",
+        "from": "transcript",
+        "answer": "开发者不可信，会自信地认为小改动没事，也会投机偷懒，觉得先交再等反馈。因此不能让实习生自行决定是否运行脚本，必须把检查接入流程和事件钩子，自动执行门禁。",
+        "found_in": "s9:p1, s9:p2, s10:p0, s10:p1",
+        "verdict": "correct",
+        "note": "涵盖开发者可能省略测试或投机，以及事件触发的自动强制检查。",
+        "hash": "a0cf27b6a67b70eb"
+      },
+      {
+        "id": "q23",
+        "question": "为什么只在 AGENTS.md 写“文档禁止膨胀”不够？讲师给出的可执行门禁例子是什么？",
+        "expected": "上下文增长会使 Agent 注意力涣散；用代码检查文档长度，超过字数上限就让 CI 失败、阻止合入主分支。",
+        "evidence": "s-g1260.0–s-g1308.0~10",
+        "from": "transcript",
+        "answer": "Agent 随上下文膨胀会注意力涣散，无法始终记住 AGENTS.md 的要求。可把文档长度做成硬门禁，例如用 len 检查文档是否超过一千字，超过就让 CI fail、禁止合入主分支，也可在本地 pre-commit 检查。",
+        "found_in": "s11:p1, s11:p2",
+        "verdict": "correct",
+        "note": "涵盖上下文增长导致注意力涣散，以及文档长度超限使 CI 失败并阻止合入。",
+        "hash": "e82c300e3fce2139"
+      },
+      {
+        "id": "q24",
+        "question": "【画面题】“把 Agent 的偏执变成可执行的约束”表格中，针对“小任务变成大重构”，自动检查和人工判断分别是什么？",
+        "expected": "自动检查：改动范围白名单、Diff 预算；人工判断：超出范围是否批准。",
+        "evidence": "v003464533.jpg",
+        "from": "visual",
+        "answer": "自动检查：改动范围白名单和 Diff 预算。人工判断：是否批准超出范围的改动。",
+        "found_in": "s11:f1",
+        "verdict": "correct",
+        "note": "完整给出范围白名单、Diff 预算和超范围改动的人工审批。",
+        "hash": "e82c300e3fce2139"
+      },
+      {
+        "id": "q25",
+        "question": "【画面题】同一表格针对“顺手关闭 CI 规则”，要求什么审批规则，又如何划分角色？",
+        "expected": "规则文件变更须指定人批准；批准者与开发者分离。",
+        "evidence": "v003464533.jpg",
+        "from": "visual",
+        "answer": "规则文件变更必须由指定人批准，并且批准者与开发者分离。",
+        "found_in": "s11:f1",
+        "verdict": "correct",
+        "note": "完整给出指定人审批规则文件变更，以及批准者与开发者分离。",
+        "hash": "e82c300e3fce2139"
+      },
+      {
+        "id": "q26",
+        "question": "讲师介绍 Anthropic 的 16 个 Agent 编译 Linux 案例时，协作遇到了什么问题？由此提出需要什么？",
+        "expected": "大家撞上同一个 bug，重复修复并覆盖彼此改动；需要 orchestration／调度 Agent 协同进展。",
+        "evidence": "s-g1390.0~4–s-g1405.0~2",
+        "from": "transcript",
+        "answer": "16 个 Agent 开始编译 Linux 时撞上同一个 bug，重复修复并覆盖彼此的改动。因此真正实现 Ralph Loop 仍需要一个负责 orchestration 的调度 Agent 来协同进展，并让进展可见。",
+        "found_in": "s13:p0",
+        "verdict": "correct",
+        "note": "涵盖撞上同一 bug、重复修复和覆盖改动，以及 orchestration 调度需求。",
+        "hash": "f979635ed6ee689e"
+      },
+      {
+        "id": "q27",
+        "question": "讲师自己项目的 Agent dashboard 如何帮助总架构师了解项目？",
+        "expected": "结合 architecture.md 的架构图与 logbook 任务；图上显示各模块正在进行的任务、Agent 和估计进度，支持预判和调整。",
+        "evidence": "s-g1412.0~5–s-g1445.0~6",
+        "from": "transcript",
+        "answer": "architecture.md 自动生成架构图，logbook 记录各 task 的完成和 ongoing 状态；进行中的任务自动推到 GitLab CI，dashboard 在架构图上显示每个模块在做什么、几个 Agent 参与及估计完成百分比。总架构师据此了解全局、预估一小时后或当天的状态并调整。",
+        "found_in": "s13:p1",
+        "verdict": "correct",
+        "note": "涵盖架构图与 logbook 结合，显示模块任务、Agent 和进度，支持预判调整。",
+        "hash": "f979635ed6ee689e"
+      },
+      {
+        "id": "q28",
+        "question": "课堂向 Agent 提问中英文文档如何保持一致后，讲师介绍的“三套件”分别是什么？两种语言谁有权威？",
+        "expected": "同目录的中文 Markdown、英文 Markdown、i18n YAML 配对契约；两侧权威对等，谁先修改谁就是该次源。",
+        "evidence": "s-g1530.0; s-g1542.0–s-g1567.0~3",
+        "from": "transcript",
+        "answer": "同目录的中文 Markdown、英文 Markdown、i18n.yaml 三个兄弟文件组成配对契约，再用 verify-translation-pairing 门禁检查。两种语言权威对等，谁先写谁就是当次的源，另一侧由 Agent 翻译。",
+        "found_in": "s14:p2, s14:f1",
+        "verdict": "correct",
+        "note": "完整给出同目录双语 Markdown 与 i18n YAML 契约，以及两侧对等、先修改者为当次源。",
+        "hash": "c06bad40400735f6"
+      },
+      {
+        "id": "q29",
+        "question": "双语文档配对机制如何利用 hash 和 Git 历史判断新旧？更新另一种语言时遵循什么纪律？",
+        "expected": "通过当前 hash 与 Git 历史中的 hash 比较判断哪侧变化；只对差异做对应的最小补丁，其他部分保持一致，避免整篇重新翻译。",
+        "evidence": "s-g1575.0~10–s-g1608.0~1; s-g1657.0~4",
+        "from": "transcript",
+        "answer": "配对记录中的 hash 与 Git 历史里的旧 hash 对照，用来判断哪侧变了、谁先变、谁更新或更旧；没见过的新 hash 表示新内容。新旧不匹配时翻译另一侧，但必须采用最小补丁，只修改对应差异，其他部分保持一致，不能整篇重新翻译。",
+        "found_in": "s14:p3, s14:p4",
+        "verdict": "correct",
+        "note": "涵盖 hash 与 Git 历史对比判断变化，以及只对差异做最小补丁、避免整篇重译。",
+        "hash": "c06bad40400735f6"
+      },
+      {
+        "id": "q30",
+        "question": "文档规范为什么要渐进式披露、按需加载，而不是全塞进 AGENTS.md？",
+        "expected": "规范会不断膨胀，甚至很大的上下文也装不下；只在写文档或翻译等需要时加载对应规范。",
+        "evidence": "s-g1666.0–s-g1682.0~18",
+        "from": "transcript",
+        "answer": "全部塞进 AGENTS.md 会让规范暴涨，甚至一百万上下文都装不下，也会加重注意力负担。应把案例、风格样例和术语等材料单独存放，只在翻译或写文档时按需加载；根 AGENTS.md 只放每次会话必须知道的规则。",
+        "found_in": "s14:p4, s16:e0",
+        "verdict": "correct",
+        "note": "涵盖规范持续膨胀和上下文容量限制，以及按写作或翻译任务加载规范。",
+        "hash": "419bd31c1bb41ae3"
+      },
+      {
         "id": "q33",
         "question": "如果项目架构已经烂掉，讲师给学生的迁移建议是什么？他认为重构可以在哪些范围进行？",
         "expected": "开一份新的空白项目，把旧功能一点点迁入并保持良好架构；可做模块级或整个项目级重构。",
         "evidence": "s-g1814.0~78–s-g1817.1",
         "from": "transcript",
-        "answer": "先开一份新的空白，再一点一点把旧功能迁进去，保持好架构。必要时可以模块级重构，也可以整个项目级重构；持续清理技术债无法解决所有失效的设计假设。",
+        "answer": "先开一份新的空白，再一点一点把旧功能迁进去，保持一个好架构。持续清理技术债不能解决所有失效的设计假设，必要时既可以做模块级重构，也可以做整个项目级重构。",
         "found_in": "s17:p1",
         "verdict": "correct",
-        "note": "涵盖新空白项目逐步迁移、良好架构及模块或项目级重构。",
-        "hash": "f11da2289e5a8999"
+        "note": "涵盖新建空白项目、逐步迁移旧功能并保持良好架构，以及模块级和项目级重构。",
+        "hash": "89cdde0a2a61d145"
       },
       {
         "id": "q34",
@@ -1029,11 +1289,11 @@
         "expected": "退学说法是玩笑；缺少 token 会减少试错机会；企业可能选择 senior 加大量 token，而不愿培养需要多年才能赶上 Agent 的新人。",
         "evidence": "s-g1822.0~56–s-g1828.0",
         "from": "transcript",
-        "answer": "“没有 token 的学生应该立即退学”是玩笑。真正担心的是 token 和实践机会不平等：没有 token 就少了尝试、失败和积累判断力的机会；企业可能选择 senior 加大量 token 而不培养新人，若经验和 harness 只留在公司内部，这种差距会进一步扩大。",
-        "found_in": "s17:p2, s17:p3, s17:p4",
+        "answer": "“没有 token 的学生应该立即退学”是玩笑；认真说的是，没有 token 就比别人少了尝试与失败的机会。他担心实践机会差距会积累成判断力差距，而企业更愿用 senior 加大量 token，减少培养新人的动力；若经验和 harness 又只留在公司内部，更多学生和新人会被淘汰。",
+        "found_in": "s17:p2, s17:p3, s17:p4, s17:e1",
         "verdict": "correct",
-        "note": "涵盖玩笑澄清、缺少 token 减少试错及 senior 加 token 挤压新人培养。",
-        "hash": "f11da2289e5a8999"
+        "note": "涵盖退学说法是玩笑、缺少 token 减少试错机会，以及企业偏好 senior 加 token 而减少新人培养。",
+        "hash": "89cdde0a2a61d145"
       },
       {
         "id": "q35",
@@ -1041,11 +1301,11 @@
         "expected": "从 DeepSeek Harness 开始；自己对这些实践的理解和授课能力来自在开源社区看到的优秀项目与经验。",
         "evidence": "s-g1881.0–s-g1903.0~5",
         "from": "transcript",
-        "answer": "建议从 deepseek-harness 开始。开源社区让他看到来自真实试错的优秀设计，形成今天的理解并能来上这门课；公开这些经验也让更多人有机会学习。",
-        "found_in": "s17:p5, s17:p4",
+        "answer": "建议从 deepseek-harness 开始。他感谢开源社区，因为自己的理解来自看到社区里的优秀实践；这些来自真实经验、很难凭空想出的机制被公开后，大家才有机会学习和尝试，否则他也不会有今天的理解和这门课。",
+        "found_in": "s17:p1, s17:p4, s17:p5",
         "verdict": "correct",
-        "note": "DeepSeek Harness 项目及从开源优秀实践获得理解与授课能力均准确。",
-        "hash": "f11da2289e5a8999"
+        "note": "准确给出 deepseek-harness，并说明理解与授课能力来自开源社区的优秀实践。",
+        "hash": "89cdde0a2a61d145"
       }
     ],
     "question_author": "independent_agent",

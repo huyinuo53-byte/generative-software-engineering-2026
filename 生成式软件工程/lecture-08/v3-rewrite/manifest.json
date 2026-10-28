@@ -8,12 +8,17 @@
   },
   "scope": {
     "requested": "单课完整笔记、手绘图解、外部保真评测",
-    "materials": false,
+    "materials": true,
     "changes": [
       {
         "at": "2026-10-27T18:14:00Z",
         "request": "无人值守；不联网、不读推荐材料；chunks 与 frames 扫描结果直接使用；图解用 codex gpt-6.1-sol；评审用 gpt-6.1-sol",
         "added_work": "无额外材料"
+      },
+      {
+        "at": "2026-10-28T05:40:00Z",
+        "request": "增量补充官方讲义与推荐材料",
+        "added_work": "在已交付笔记上加入 lect8.md、slides8.html 和转写或讲义点到的材料。静态讲义帧换成官方 slides 页。AIGC 批注不写成讲师口述。"
       }
     ]
   },
@@ -67,7 +72,8 @@
       "path": "notes.json",
       "depends_on": [
         "index",
-        "frames"
+        "frames",
+        "materials"
       ],
       "role": "notes",
       "origin": "generated"
@@ -204,6 +210,267 @@
       ],
       "role": "eval",
       "origin": "generated"
+    },
+    {
+      "id": "src-gse-lect8",
+      "path": "sources/lect8.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://jyywiki.cn/GSE/2026/lect8.md"
+    },
+    {
+      "id": "src-gse-slides8",
+      "path": "sources/slides8.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://jyywiki.cn/GSE/2026/slides8.html"
+    },
+    {
+      "id": "src-nasa-wright-1901",
+      "path": "sources/web/nasa-wright-1901.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://www.grc.nasa.gov/WWW/k-12/airplane/wrights/test1901.html"
+    },
+    {
+      "id": "src-linearb-ralph-podcast",
+      "path": "sources/web/linearb-ralph-podcast.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://linearb.io/dev-interrupted/podcast/inventing-the-ralph-wiggum-loop"
+    },
+    {
+      "id": "src-ralph-huntley",
+      "path": "sources/web/ralph-huntley.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://ghuntley.com/ralph/"
+    },
+    {
+      "id": "src-fowler-ci-history",
+      "path": "sources/web/fowler-ci-history.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://martinfowler.com/articles/continuousIntegration.html"
+    },
+    {
+      "id": "src-fowler-ci-2000",
+      "path": "sources/web/fowler-ci-2000.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://martinfowler.com/articles/originalContinuousIntegration.html"
+    },
+    {
+      "id": "src-thoughtworks-history",
+      "path": "sources/web/thoughtworks-history.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://www.thoughtworks.com/about-us/history"
+    },
+    {
+      "id": "src-cd-2010-intro",
+      "path": "sources/web/cd-2010-intro.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://continuousdelivery.com/2010/02/continuous-delivery/"
+    },
+    {
+      "id": "src-cd-vs-deployment",
+      "path": "sources/web/cd-vs-deployment.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/"
+    },
+    {
+      "id": "src-gh-actions-events",
+      "path": "sources/web/gh-actions-events.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows"
+    },
+    {
+      "id": "src-claude-code-action",
+      "path": "sources/web/claude-code-action.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://github.com/marketplace/actions/claude-code-github-integration"
+    },
+    {
+      "id": "src-git-hooks",
+      "path": "sources/web/git-hooks.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://git-scm.com/docs/githooks"
+    },
+    {
+      "id": "src-gh-branch-protection",
+      "path": "sources/web/gh-branch-protection.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches"
+    },
+    {
+      "id": "src-gh-deploy-concurrency",
+      "path": "sources/web/gh-deploy-concurrency.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/control-deployments"
+    },
+    {
+      "id": "src-gh-pages-workflows",
+      "path": "sources/web/gh-pages-workflows.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages"
+    },
+    {
+      "id": "src-toyota-tps",
+      "path": "sources/web/toyota-tps.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://global.toyota/en/company/vision-and-philosophy/production-system/"
+    },
+    {
+      "id": "src-openai-harness",
+      "path": "sources/web/openai-harness-wayback.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://web.archive.org/web/20260212020647id_/https://openai.com/index/harness-engineering/"
+    },
+    {
+      "id": "src-stripe-minions",
+      "path": "sources/web/stripe-minions.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2"
+    },
+    {
+      "id": "src-anthropic-c-compiler",
+      "path": "sources/web/anthropic-c-compiler.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://www.anthropic.com/research/building-c-compiler"
+    },
+    {
+      "id": "src-strongdm",
+      "path": "sources/web/strongdm.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://factory.strongdm.ai/"
+    },
+    {
+      "id": "src-strongdm-dtu",
+      "path": "sources/web/strongdm-dtu.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://factory.strongdm.ai/techniques/dtu"
+    },
+    {
+      "id": "src-wired-friendster",
+      "path": "sources/web/wired-friendster.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://www.wired.com/2007/04/what-i-learned-from-friendster-jonathan-abrams-new-startup/"
+    },
+    {
+      "id": "src-friendster-2006",
+      "path": "sources/web/friendster-2006.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://mysqldba.blogspot.com/2006/11/unorthodox-approach-to-database-design.html"
+    },
+    {
+      "id": "src-webvan-10k",
+      "path": "sources/web/webvan-10k-retry.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://www.sec.gov/Archives/edgar/data/1092657/000101287001001485/0001012870-01-001485.txt"
+    },
+    {
+      "id": "src-webvan-sec-order",
+      "path": "sources/web/webvan-sec-order.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://www.sec.gov/litigation/admin/34-50771-o-2.htm"
+    },
+    {
+      "id": "src-quibi-letter",
+      "path": "sources/web/quibi-letter-wayback.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://web.archive.org/web/20201022021321id_/https://quibi-hq.medium.com/an-open-letter-from-quibi-8af6b415377f"
+    },
+    {
+      "id": "src-deepseek-harness-repo",
+      "path": "sources/web/deepseek-harness-repo.bin",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "https://github.com/deepseek-ai/deepseek-harness"
+    },
+    {
+      "id": "materials",
+      "path": "materials.json",
+      "depends_on": [
+        "src-gse-lect8",
+        "src-gse-slides8",
+        "src-nasa-wright-1901",
+        "src-linearb-ralph-podcast",
+        "src-ralph-huntley",
+        "src-fowler-ci-history",
+        "src-fowler-ci-2000",
+        "src-thoughtworks-history",
+        "src-cd-2010-intro",
+        "src-cd-vs-deployment",
+        "src-gh-actions-events",
+        "src-claude-code-action",
+        "src-git-hooks",
+        "src-gh-branch-protection",
+        "src-gh-deploy-concurrency",
+        "src-gh-pages-workflows",
+        "src-toyota-tps",
+        "src-openai-harness",
+        "src-stripe-minions",
+        "src-anthropic-c-compiler",
+        "src-strongdm",
+        "src-strongdm-dtu",
+        "src-wired-friendster",
+        "src-friendster-2006",
+        "src-webvan-10k",
+        "src-webvan-sec-order",
+        "src-quibi-letter",
+        "src-deepseek-harness-repo"
+      ],
+      "role": "source",
+      "origin": "generated",
+      "basis": "validate_materials.py passed; required items are full within declared scope"
     }
   ],
   "log": [
@@ -436,6 +703,26 @@
       "job_id": null,
       "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
       "evidence": "/private/var/folders/j6/0wknd5xs1sj5_xnqkgjdj8zm0000gn/T/tmphfkslter/html-check.json"
+    },
+    {
+      "at": "2026-10-28T05:50:57.703951+00:00",
+      "occurred_at": null,
+      "stage": "reading_materials",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "28 materials, validate_materials passed, required items full in declared scope",
+      "evidence": "课堂笔记/materials.json"
+    },
+    {
+      "at": "2026-10-28T05:50:57.723520+00:00",
+      "occurred_at": null,
+      "stage": "material_integration",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "15 supplements and editor notes placed by flow; fidelity re-review included every xN",
+      "evidence": "课堂笔记/notes.json"
     }
   ],
   "issues": [],
@@ -443,11 +730,16 @@
     "outcome": "completed",
     "known_gaps": [
       "不是逐秒观看。换页候选来自预先扫描：场景差 0.3，最长 60 秒一张，共 103 张，再从中选帧。",
-      "没有联网，也没有读推荐材料。拿不准的听写保持原样。",
+      "OpenAI 文章和 Quibi 告别信当次打不开正文，读的是 Wayback 快照（20260212020647、20201022021321）。Webvan 10-K、Fowler 的 CI 长文、GitHub 文档和 LinearB 网页转写都只读了讲义用到的章节；LinearB 没有听音频。deepseek-harness 只读了首页 README。",
+      "slides 里 span.aigc 的链接记为官方 slides AIGC 批注，不是讲师口述，也没有记成明确推荐。第 1、19、24 页没有嵌进笔记。",
       "页面在 headless Chrome 里看过 390 和 1280 宽，并切换了图解速读和完整笔记。不是真机。",
-      "精度 0.9773，还有 4 条 partial：第 1 节「几轮以后找到更好的 solution」的指代，第 6 节把搜索条件写得更确定，第 15 节把没说完的 lint 收成一句，第 11 节例子末尾把 20 KB 和口播例子对应起来。召回 35 题全部 correct。"
+      "精度 0.984（125 条），上一版留下的 4 条 partial 仍在：第 1 节「几轮以后找到更好的 solution」的指代，第 6 节把搜索条件写得更确定，第 15 节把没说完的 lint 收成一句，第 11 节例子末尾把 20 KB 和口播例子对应起来。召回 35 题全部 correct。本次新增补充、新图注和改过的例句已复核。"
     ],
-    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors"
+    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+    "reading_materials": "passed",
+    "reading_materials_evidence": "课堂笔记/materials.json",
+    "material_integration": "passed",
+    "material_integration_evidence": "课堂笔记/notes.json"
   },
   "revisions": [
     {
@@ -575,6 +867,277 @@
         "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
       },
       "prev_sha256": null
+    },
+    {
+      "rev": 2,
+      "at": "2026-10-28T05:50:57.839380+00:00",
+      "reason": "增量补充官方讲义与推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "86537376a861cc701650b49b37b9ad245b240aa12a337fc4453f32b84fbf8ad1",
+          "bytes": 4332589
+        },
+        "video": {
+          "path": "../raw/BV11LWw6VEHW.mp4",
+          "sha256": "dee8d8992246a868d973678ab85c152e3eaf3e07ccef70eb5a674556386552b7",
+          "bytes": 237738826
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "8d84da84df52fb2573edfcc43d6100a6332489b3f51d102899494d7620cbe2cc",
+          "bytes": 44381
+        },
+        "frames": {
+          "path": "frames/candidates.json",
+          "sha256": "7d39a2aee69577f2eb8d6f7de2da7a767254bdadb9fa04a6656fa90e2f5ac01b",
+          "bytes": 10672
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "4447ffb686186eb7c3c289a9cc9304563c384b6e757c71fd1a4f650b16235213",
+          "bytes": 144021
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "63fff408016da7386d130084f33b3809c9fee22b7df4b051744c06589f1d43e0",
+          "bytes": 11894648
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "cfc4bd7646b51d785dee9374387aa9195b498e595d32923975473c17fbe111e7",
+          "bytes": 67570
+        },
+        "visual_map": {
+          "path": "visuals/map.jpg",
+          "sha256": "96c0058981a7d0b06e94b7fcd8b28ec10ddf679c45628eb804a2357f5d048b75",
+          "bytes": 345602
+        },
+        "visual_s01": {
+          "path": "visuals/s01.jpg",
+          "sha256": "e437601e096a36b69e2df79fb37a56d874b0e4053d18fd87707d8eaf13dea86e",
+          "bytes": 386014
+        },
+        "visual_s02": {
+          "path": "visuals/s02.jpg",
+          "sha256": "3725b9bf6f2193cdde52bc520f97547bc7478f7153706503e0648f5b5742e908",
+          "bytes": 255610
+        },
+        "visual_s04": {
+          "path": "visuals/s04.jpg",
+          "sha256": "5cebd43676db85150787c959820236677e7eac76c0ea84619dfec55c1358a378",
+          "bytes": 249339
+        },
+        "visual_s05": {
+          "path": "visuals/s05.jpg",
+          "sha256": "b3207842f01a715be2e45a2bcdbb0cf14c3f37a80dd0efc2ca905c835ef0dfd7",
+          "bytes": 305310
+        },
+        "visual_s06": {
+          "path": "visuals/s06.jpg",
+          "sha256": "bdce9f99cc3b6f3a267f7a68481a18aa4516cdd4953a615bc3b50d4ea77b3d4b",
+          "bytes": 330998
+        },
+        "visual_s09": {
+          "path": "visuals/s09.jpg",
+          "sha256": "a2fa3f2866a814cb9be911856e2884412764176cd19eb336c19181bb888ee623",
+          "bytes": 351006
+        },
+        "visual_s11": {
+          "path": "visuals/s11.jpg",
+          "sha256": "3f1f0ba5a52a40ffe2f0317853c2b727ff09c48d9ca1c0b1d82d05b07157ce3a",
+          "bytes": 275625
+        },
+        "visual_s14": {
+          "path": "visuals/s14.jpg",
+          "sha256": "f08d47af6bc86929a1bfaf1e9ccb9d86127a059e960020582bbf0882bbeeea16",
+          "bytes": 272977
+        },
+        "visual_s16": {
+          "path": "visuals/s16.jpg",
+          "sha256": "ce6580c149adbab85d97d6381637e3c22a6e033bbf277f350f5c804ca102d087",
+          "bytes": 239009
+        },
+        "visual_s17": {
+          "path": "visuals/s17.jpg",
+          "sha256": "ff5795d4f8d4ae4943ec9e4140d53e915dff10d4ca26e306a856abe51f455a64",
+          "bytes": 273583
+        },
+        "html_check": {
+          "path": "qa/html-check.json",
+          "sha256": "5a322c20ccaafa1eb23fdd6053f8f049a7be400ddd5122207cba55bfb17227b8",
+          "bytes": 1078
+        },
+        "src-gse-lect8": {
+          "path": "sources/lect8.html",
+          "sha256": "d799467198428b428ffe25fe48bea649dff8fba94b7c44b77817f04a278641af",
+          "bytes": 56512
+        },
+        "src-gse-slides8": {
+          "path": "sources/slides8.html",
+          "sha256": "1950a022ffca0ca6d47018f832ad23a52ffdbec3255fa983f0f2eba729d77061",
+          "bytes": 239699
+        },
+        "src-nasa-wright-1901": {
+          "path": "sources/web/nasa-wright-1901.bin",
+          "sha256": "73f1e2b98fe5defe89c517423403ddff39a7f05314be452f163290a2fc21fe0a",
+          "bytes": 12309
+        },
+        "src-linearb-ralph-podcast": {
+          "path": "sources/web/linearb-ralph-podcast.bin",
+          "sha256": "bfe82fb29a9fce0223e600b74ddc8cd0fcb81363453782e6446e2494a7c696de",
+          "bytes": 1456449
+        },
+        "src-ralph-huntley": {
+          "path": "sources/web/ralph-huntley.bin",
+          "sha256": "ea2876e9743c9e3b60ce4375011dc32fe56b76d610cff95e737b61a5dd65b11c",
+          "bytes": 89133
+        },
+        "src-fowler-ci-history": {
+          "path": "sources/web/fowler-ci-history.bin",
+          "sha256": "3ad2de243def62892458a058b4e8b0a9b98a76b3507bdf0ecc835da551e9787d",
+          "bytes": 138101
+        },
+        "src-fowler-ci-2000": {
+          "path": "sources/web/fowler-ci-2000.bin",
+          "sha256": "8a4c0f392e03bf6e8c51c48fe7b26fb78274ef82500cd3ec128f06d22502fbce",
+          "bytes": 40949
+        },
+        "src-thoughtworks-history": {
+          "path": "sources/web/thoughtworks-history.bin",
+          "sha256": "1f3c1ec26001e6919bc8f331569d4e32f26e1309210cc1216a9544b3307129b0",
+          "bytes": 196282
+        },
+        "src-cd-2010-intro": {
+          "path": "sources/web/cd-2010-intro.bin",
+          "sha256": "77493aae0255280a67fb0a753fa1e67db29a20ab8ca7f9670bbfcb31c72c1425",
+          "bytes": 19324
+        },
+        "src-cd-vs-deployment": {
+          "path": "sources/web/cd-vs-deployment.bin",
+          "sha256": "473b20083fef02e2161d21868270b1bef914fcc62b7f1e74c6a76ca65e94e860",
+          "bytes": 17893
+        },
+        "src-gh-actions-events": {
+          "path": "sources/web/gh-actions-events.bin",
+          "sha256": "28e86f5655d3b00b9a4b5a1ff641ec612d32f5aebc10126320f64c6db95b4f2c",
+          "bytes": 1076248
+        },
+        "src-claude-code-action": {
+          "path": "sources/web/claude-code-action.bin",
+          "sha256": "45ffef6f658d8a7faaf27269e06b543cf5a210094049eef19d763c4897fae34f",
+          "bytes": 262755
+        },
+        "src-git-hooks": {
+          "path": "sources/web/git-hooks.bin",
+          "sha256": "35cd9ffb1b2ab64ba4bfac355f02895e24e48ff477f283dae0bed6579e938df5",
+          "bytes": 97494
+        },
+        "src-gh-branch-protection": {
+          "path": "sources/web/gh-branch-protection.bin",
+          "sha256": "c6570069e29b1e64ce280024a5407d4a41539b20df7f8ffa2885036693afcdb0",
+          "bytes": 279901
+        },
+        "src-gh-deploy-concurrency": {
+          "path": "sources/web/gh-deploy-concurrency.bin",
+          "sha256": "a97ef2f2a3a0252b80c9622cc3d261cdce54ae6a252eba4106a88dd78ac17278",
+          "bytes": 382473
+        },
+        "src-gh-pages-workflows": {
+          "path": "sources/web/gh-pages-workflows.bin",
+          "sha256": "766837e5fb173c82adee8106ecf9f8d68a4cc8a3370a84245aed501b5df3b9a8",
+          "bytes": 141818
+        },
+        "src-toyota-tps": {
+          "path": "sources/web/toyota-tps.bin",
+          "sha256": "57bd54b6dfe58966af9d171d7127ecf06747536eeec0f775c5449a69b694a1f9",
+          "bytes": 27296
+        },
+        "src-openai-harness": {
+          "path": "sources/web/openai-harness-wayback.html",
+          "sha256": "2297e472e5362dfea269c4161f7690fe33d62f72694c17ee6a376c65e286f696",
+          "bytes": 446353
+        },
+        "src-stripe-minions": {
+          "path": "sources/web/stripe-minions.bin",
+          "sha256": "8f7ccfdadaa8d51fb77bbd76c8095d04293745bc927d5c14c78345c0f9f7ce5d",
+          "bytes": 89482
+        },
+        "src-anthropic-c-compiler": {
+          "path": "sources/web/anthropic-c-compiler.bin",
+          "sha256": "d7e634805d5e308b416304cecf7caf5ad800e71787de7e7e659d162edc10263a",
+          "bytes": 223596
+        },
+        "src-strongdm": {
+          "path": "sources/web/strongdm.bin",
+          "sha256": "f0953954fdd57189b4ac8f9eb2f91858a34402a7005dcc042959d840e17d68a8",
+          "bytes": 27337
+        },
+        "src-strongdm-dtu": {
+          "path": "sources/web/strongdm-dtu.bin",
+          "sha256": "01666eeb02ce3239748ca864fbabb815ba36d4f503ef926bc30c9af7fa4928e7",
+          "bytes": 20694
+        },
+        "src-wired-friendster": {
+          "path": "sources/web/wired-friendster.bin",
+          "sha256": "2a16371cd2e4fcb8a72246a40608fe17178c66bc7d9afe258f2d8cba3ed4b81b",
+          "bytes": 1422296
+        },
+        "src-friendster-2006": {
+          "path": "sources/web/friendster-2006.bin",
+          "sha256": "c9ba3fa67be095fefe1974a0bc27e445783d60380b1fa69377efcb07429fc58e",
+          "bytes": 80219
+        },
+        "src-webvan-10k": {
+          "path": "sources/web/webvan-10k-retry.bin",
+          "sha256": "1fa9948622c6eeb5a8b15ce05ad98b0fe0b7060afae75ec17a8de4d430909e28",
+          "bytes": 235197
+        },
+        "src-webvan-sec-order": {
+          "path": "sources/web/webvan-sec-order.bin",
+          "sha256": "321e149365d8795b972a7b0ac3e055c2efc4d339a42c2cd8f41aa6366884df72",
+          "bytes": 11698
+        },
+        "src-quibi-letter": {
+          "path": "sources/web/quibi-letter-wayback.html",
+          "sha256": "a838c20ae37315a6eea09232a4351934ed7f92e816836e4dd20ad359968969d6",
+          "bytes": 123021
+        },
+        "src-deepseek-harness-repo": {
+          "path": "sources/web/deepseek-harness-repo.bin",
+          "sha256": "0b1caf8b261579c7e8f4de5e42fd01014f4237d322d4bc6c1ef03254ae4b451b",
+          "bytes": 412852
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "61c0a241eaf202db0d0d4bbf698cbdac511dbc81b909f1cea0ba2abc8c866c94",
+          "bytes": 48069
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.984,
+        "recall": 1.0,
+        "precision_items": 125,
+        "recall_items": 35,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "42ee135e98d30729702028311fe2ecfbfd7fd18ff299805f26850dd88ec98180"
     }
   ]
 }

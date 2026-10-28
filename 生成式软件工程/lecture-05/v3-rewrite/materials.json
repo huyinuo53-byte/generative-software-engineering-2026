@@ -1,0 +1,1458 @@
+{
+  "schema_version": 1,
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "lecture_url": "https://jyywiki.cn/GSE/2026/lect5.md",
+  "slides_url": "https://jyywiki.cn/GSE/2026/slides5.html",
+  "video_url": "https://www.bilibili.com/video/BV1Nyeq6qEt8",
+  "checked_at": "2026-10-28T02:55:00-04:00",
+  "assumptions": [
+    "course-root 用工作区根目录，contribution.item 为「课堂笔记」，这样 notes.json 落在 ./课堂笔记/notes.json。",
+    "slides 页码记成 pdf_page.page。渲染器会标成「PDF物理页」，来源文字写明是官方 slides。",
+    "紫色 span.aigc 记为 AIGC 批注，不记成讲师口头推荐。",
+    "Royce 仍用上一轮 slides 嵌入的转录。ACM 页面这一轮没有再打开。",
+    "DoReMi 这一轮读完 arXiv v4 的 27 页。UML 2.5.1 的范围是讲义点名的节，含跨页，不是 796 页全文。",
+    "Meyer 的 IEEE 原链接仍是空页，读的是 ETH Zurich 上的作者 PDF。Technology Review 读的是同一 URL 的 Internet Archive 存档。",
+    "两段 B 站视频这一轮不下载，保持 blocked。"
+  ],
+  "expected_material_ids": [
+    "gse2026-lect5",
+    "gse2026-slides5",
+    "typesafe-system-one",
+    "bitter-lesson",
+    "doremi",
+    "dijkstra-goto",
+    "humble-programmer",
+    "boys-life-1968-09",
+    "nato-1968",
+    "hamilton-nasa",
+    "apollo-1201",
+    "royce-1970",
+    "ries-mvp",
+    "agile-principles",
+    "istqb-ctfl-4.0.1",
+    "quickcheck",
+    "eiffel-dbc",
+    "dafny",
+    "verus",
+    "nasa-req",
+    "uml-2.5.1",
+    "omg-why-uml",
+    "meyer-dbc-ieee",
+    "techreview-hamilton",
+    "jev-video",
+    "ai-speed-video",
+    "silicon-valley",
+    "proj101"
+  ],
+  "materials": [
+    {
+      "id": "gse2026-lect5",
+      "listed_title": "生成式软件工程 2026 · lect5 软件工程的来龙去脉",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lect5.md",
+      "title": "软件工程的来龙去脉",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect5.md",
+      "kind": "web",
+      "path": "课堂笔记/sources/lect5.md",
+      "reading_status": "full",
+      "scope_sections": [
+        "不断移动的能力边界",
+        "从空项目出发，AI 补全了什么",
+        "软件危机从哪里来",
+        "在约束下，让系统继续工作",
+        "Royce 真正在担心什么",
+        "把开发流程看成数据依赖",
+        "方法和工具怎样减少返工",
+        "契约：调用者与实现者各自承诺什么",
+        "重新阅读 UML",
+        "图与模型：意义保存在哪里",
+        "契约与实现：这次成立，还是每次都应成立",
+        "留白也是一种决定",
+        "不同的含义，需要不同的表达",
+        "模型本身也需要检查",
+        "LLM 时代，差距移到了哪里"
+      ],
+      "read_sections": [
+        "不断移动的能力边界",
+        "从空项目出发，AI 补全了什么",
+        "软件危机从哪里来",
+        "在约束下，让系统继续工作",
+        "Royce 真正在担心什么",
+        "把开发流程看成数据依赖",
+        "方法和工具怎样减少返工",
+        "契约：调用者与实现者各自承诺什么",
+        "重新阅读 UML",
+        "图与模型：意义保存在哪里",
+        "契约与实现：这次成立，还是每次都应成立",
+        "留白也是一种决定",
+        "不同的含义，需要不同的表达",
+        "模型本身也需要检查",
+        "LLM 时代，差距移到了哪里"
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "课程官网本课讲义页，正文链接与 slides 对照过。",
+      "scope_reason": "讲义页就是本课讲义，按页上全部二级标题阅读。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "讲义页开头",
+          "claim": "讲义把 prefill only 标成对实现方式的猜测，并链到 Jev 的技术介绍。",
+          "role": "mechanism",
+          "note_target": "supplements[0]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "bb9aaeadc434fe3b58cbbc402be6a4afa73b9803659a3eceaa255743688e8421"
+    },
+    {
+      "id": "gse2026-slides5",
+      "listed_title": "slides5.html",
+      "listed_url": "https://jyywiki.cn/GSE/2026/slides5.html",
+      "title": "软件工程的来龙去脉 slides",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides5.html",
+      "kind": "web",
+      "path": "课堂笔记/sources/slides5.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-04",
+        "slide-05",
+        "slide-06",
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15",
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-20",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29",
+        "slide-30",
+        "slide-31",
+        "slide-32",
+        "slide-33",
+        "slide-34",
+        "slide-35",
+        "slide-36",
+        "slide-37",
+        "slide-38",
+        "slide-39"
+      ],
+      "read_sections": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-04",
+        "slide-05",
+        "slide-06",
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15",
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-20",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29",
+        "slide-30",
+        "slide-31",
+        "slide-32",
+        "slide-33",
+        "slide-34",
+        "slide-35",
+        "slide-36",
+        "slide-37",
+        "slide-38",
+        "slide-39"
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "课程官网本课 slides。每页文字和链接从 slides-data JSON 逐页读出；截图的页另做了画面核对。",
+      "scope_reason": "39 页全部列入阅读范围。紫色 AIGC 批注与正文分开登记。",
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 2,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 3,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 5,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 6,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 7,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 8,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 9,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 10,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 11,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 12,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 13,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 14,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 15,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 17,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 19,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 20,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 21,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 22,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 24,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 25,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 26,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 27,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 28,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 29,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 32,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 34,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        },
+        {
+          "page": 36,
+          "detail": "1600×900 截图，核对标题与批注颜色"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "slides 第 1 页",
+          "claim": "Jev 的技术介绍链接在紫色 AIGC 批注里，prefill only 是讲师自注。",
+          "role": "mechanism",
+          "note_target": "supplements[0]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "sha256": "e84cb50a6f542a1b9dd0b0a1bcf0e4b5a466ee43b631c6a83f492264d991d9ff"
+    },
+    {
+      "id": "typesafe-system-one",
+      "listed_title": "Introducing System One Models & Jev",
+      "listed_url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "title": "Introducing System One Models & Jev",
+      "source_url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "kind": "web",
+      "path": "课堂笔记/sources/web/typesafe.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "parallel-output",
+        "latency-and-type-errors",
+        "naming"
+      ],
+      "read_sections": [
+        "parallel-output",
+        "latency-and-type-errors",
+        "naming"
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页正文链接；slides 第 1 页同一链接在 AIGC 批注内。不是口头推荐语。",
+      "scope_reason": "只读公告里和课堂猜测直接对应的三段：并行输出、时延与类型错误、命名。页面其余导航和演示细节不记为阅读范围。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "公告正文",
+          "claim": "Jev 一次并行输出全部概率，端到端 70–500 毫秒，类型错误被写成数学上不可能；名字来自 Jevons。",
+          "role": "mechanism",
+          "note_target": "supplements[0]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "452f84fe8779ef1b3b4145040ff3c5ef015ff7a96f40d8d9cd4afd1526f56656"
+    },
+    {
+      "id": "bitter-lesson",
+      "listed_title": "The Bitter Lesson",
+      "listed_url": "https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf",
+      "title": "The Bitter Lesson",
+      "source_url": "https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/papers/bitter-lesson.pdf",
+      "total_pages": 2,
+      "reading_status": "full",
+      "read_pages": [
+        1,
+        2
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页与 slides 正文链接；讲师口述提到过篇名。",
+      "version": "2019-03-13",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "PDF 物理页 1–2",
+          "claim": "通用方法靠计算扩展，可扩展的两类是搜索和学习；文中没有数据分布工程这个词。",
+          "role": "mechanism",
+          "note_target": "supplements[1]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "required": true,
+      "read_sections": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "2c5df195e068f6f1b7113ec634552493339a6d48eff94851119118c96d71618c"
+    },
+    {
+      "id": "doremi",
+      "listed_title": "DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining",
+      "listed_url": "https://arxiv.org/abs/2305.10429",
+      "title": "DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining",
+      "source_url": "https://arxiv.org/pdf/2305.10429v4",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/papers/doremi.pdf",
+      "total_pages": 27,
+      "reading_status": "full",
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "required": false,
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "官方 slides AIGC 批注推荐，非课堂口述。",
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "全文；图在物理页 7 Figure 4 与 Table 1，局限在物理页 12，模拟在 Appendix D",
+          "claim": "280M proxy 配 8B。摘要写 few-shot 高 6.5 个百分点；实验节是生成式 one-shot exact match，Table 5 平均 20.03 对 26.56。降权后各领域 log-perplexity 仍更好，作者把原因写成熵和正迁移的假设。跨规模迁移和能耗的绝对下降都还没被论文说死。",
+          "role": "mechanism",
+          "note_target": "supplements[2]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": "本地 PDF 首页印着 arXiv:2305.10429v4 [cs.CL] 21 Nov 2023。标题、作者与 abs 页一致。上一轮只声明了物理页 1、7、12。这一轮读了方法、实验、局限和附录；物理页 13–18 是参考文献。",
+      "version": "arXiv:2305.10429v4 (21 Nov 2023)",
+      "read_sections": [],
+      "visual_checks": [
+        {
+          "page": 7,
+          "detail": "看了 Figure 4 和 Table 1。纵轴 log ppl 约 0 到 1.5，红柱 Baseline (8B)，蓝柱 DoReMi (280M→8B)，蓝柱在图上的每个领域都不高于红柱。图注写尽管降权，所有领域的 log-perplexity 都更好。表上核对了 Pile-CC 0.1121→0.6057、Wikipedia (en) 0.0919→0.0699、GitHub 0.0427→0.0179、ArXiv 0.1052→0.0036、PubMed Central 0.1071→0.0046。"
+        }
+      ],
+      "sha256": "fff8029cac22d2c1586d91707c4629bd32ced6c474d9893e46927a59a7e3e4e7"
+    },
+    {
+      "id": "dijkstra-goto",
+      "listed_title": "Go To Statement Considered Harmful",
+      "listed_url": "https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf",
+      "title": "Go To Statement Considered Harmful",
+      "source_url": "https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/papers/dijkstra68.pdf",
+      "total_pages": 2,
+      "reading_status": "full",
+      "read_pages": [
+        1,
+        2
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页与 slides 正文链接的 1968 年读者来信。",
+      "version": "CACM 11(3), March 1968, 147–148",
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "扫描页：质量是 goto 密度的递减函数，以及房间人数的坐标论证。"
+        },
+        {
+          "page": 2,
+          "detail": "扫描页：alarm exit 的建议 far from new，作者没能核出出处。"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 13,
+          "location": "PDF 物理页 1–2",
+          "claim": "论证是静态文本对不上动态过程；把 goto 限制在 alarm exit 不是这封信的新结论。",
+          "role": "mechanism",
+          "note_target": "supplements[3]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "required": true,
+      "read_sections": [],
+      "known_gaps": [],
+      "sha256": "77ac8201569e5d72640ff571f85fa6bb274a328883f8c12d46d458363333db1d"
+    },
+    {
+      "id": "humble-programmer",
+      "listed_title": "The Humble Programmer (EWD340)",
+      "listed_url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html",
+      "title": "The Humble Programmer",
+      "source_url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html",
+      "kind": "web",
+      "path": "课堂笔记/sources/web/ewd340.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "marriage-1957",
+        "machines-and-ambition",
+        "testing-shows-presence",
+        "goto-as-language-rule"
+      ],
+      "read_sections": [
+        "marriage-1957",
+        "machines-and-ambition",
+        "testing-shows-presence",
+        "goto-as-language-rule"
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页与 slides 第 12 页正文链接。1957 年那段在 slides 第 9 页的 AIGC 批注里。",
+      "scope_reason": "课堂用到职业登记、机器能力增长一千倍以上与野心、测试只能表明 bug 存在、语言可以排除 goto。演讲其余历史段落不在这次范围里。",
+      "version": "EWD340, 1972 Turing Award lecture",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "EWD340 上述四段",
+          "claim": "结婚证书写成 theoretical physicist；机器能力增长超过一千倍，野心按比例上涨；测试表明存在，不能表明不存在。",
+          "role": "mechanism",
+          "note_target": "supplements[4]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "320abd9a7bf81feb99577b1e582b6b0a53f11045f95a0d33a81b8731095a392d"
+    },
+    {
+      "id": "boys-life-1968-09",
+      "listed_title": "Boys' Life, September 1968, Computerized School House",
+      "listed_url": "https://books.google.com/books?id=gmA305LImsYC&pg=PA24",
+      "title": "Computerized School House",
+      "source_url": "https://books.google.com/books?id=gmA305LImsYC&pg=PA24",
+      "kind": "web",
+      "path": "课堂笔记/sources/text/boyslife-p24.jpg",
+      "reading_status": "full",
+      "scope_sections": [
+        "printed-page-24"
+      ],
+      "read_sections": [
+        "printed-page-24"
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页与 slides 第 10 页 AIGC 批注指向这一页。讲师口述提到 Boys' Life 九月号，并说明杂志是 slides skill 自己找到的。",
+      "scope_reason": "点名的是 1968 年 9 月号第 24 页，不是整本杂志。Google Books 正文页需要登录，读的是这一页扫描。",
+      "identity_note": "扫描页题为 COMPUTERIZED SCHOOL HOUSE，作者 Samuel Moffat，页脚 BOYS' LIFE · SEPTEMBER 1968。",
+      "visual_checks": [
+        {
+          "page": 24,
+          "detail": "电传终端即时判分，答对打出 CONGRATULATIONS；文中写到计算机很贵，并不是到处都有 computer specialist。"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 11,
+          "location": "原刊第 24 页",
+          "claim": "印出的题目是 Computerized School House，作者 Samuel Moffat。口播的 Tomorrow School 不是这一页的标题。",
+          "role": "mechanism",
+          "note_target": "supplements[5]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "sha256": "f5a4747e5dcd9d4eda4e86ab7c527207eb6e41145dbf53cd3e14a79396224af2"
+    },
+    {
+      "id": "nato-1968",
+      "listed_title": "Software Engineering: Report on a conference sponsored by the NATO Science Committee",
+      "listed_url": "https://www.scrummanager.com/files/nato1968e.pdf",
+      "title": "NATO Software Engineering Conference report, Garmisch, 7–11 October 1968",
+      "source_url": "https://www.scrummanager.com/files/nato1968e.pdf",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/papers/nato1968.pdf",
+      "total_pages": 136,
+      "reading_status": "full",
+      "scope_pages": [
+        3,
+        8,
+        71
+      ],
+      "read_pages": [
+        3,
+        8,
+        71
+      ],
+      "scope_reason": "讲师说可以直接去读原始 summary，课上不读。slides AIGC 批注指向 Background、前言和 §7.1.2。Highlights（物理页 3）、§1 Background（物理页 8）和 §7.1.2 里 Kolence 的发言（物理页 71）覆盖这三处。报告其余页和 working papers 不在范围内。",
+      "recommendation_kind": "explicit_recommendation",
+      "recommendation_basis": "讲师口述建议去读原 summary。页码范围来自 slides AIGC 批注，不是他当堂指定的页码。",
+      "version": "Naur and Randell, January 1969; OCR reprint",
+      "identity_note": "再版说明分页与原版不同，原版页界印在正文里。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "物理页 3、8、71",
+          "claim": "software engineering 是故意带挑衅的名称。Kolence 反对把 crisis 用到排序和工资处理上。",
+          "role": "mechanism",
+          "note_target": "supplements[6]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "required": true,
+      "read_sections": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "4239e00ef601438dccbf662510d30a83cdf9d0d923d3762f2220a706777ee7c7"
+    },
+    {
+      "id": "hamilton-nasa",
+      "listed_title": "Margaret Hamilton",
+      "listed_url": "https://science.nasa.gov/people/margaret-hamilton/",
+      "title": "Margaret Hamilton",
+      "source_url": "https://science.nasa.gov/people/margaret-hamilton/",
+      "kind": "web",
+      "path": "课堂笔记/sources/web/hamilton.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "bio"
+      ],
+      "read_sections": [
+        "bio"
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页正文链接的人物页。slides 第 14 页同一链接在 AIGC 批注里。",
+      "scope_reason": "读人物简介里的职务、1961 年合同和 software engineering 的流传。页面其余栏目没有读。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 15,
+          "location": "人物简介",
+          "claim": "她领导 MIT Instrumentation Laboratory 的 Software Engineering Division，被归功于让 software engineering 这个概念流传开来。",
+          "role": "mechanism",
+          "note_target": "supplements[7]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "ace3163099c8ce65afc49b2df267be7718457540b60d24071895b8e52b35c6bc"
+    },
+    {
+      "id": "apollo-1201",
+      "listed_title": "Apollo 11 1201 and 1202 program alarms",
+      "listed_url": "https://history.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11.1201-pa.html",
+      "title": "1201 and 1202 program alarms during the Apollo 11 lunar landing",
+      "source_url": "https://history.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11.1201-pa.html",
+      "kind": "web",
+      "path": "课堂笔记/sources/web/apollo.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "eyewitness-letter"
+      ],
+      "read_sections": [
+        "eyewitness-letter"
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页正文用来解释 1201 和 1202。slides 第 14 页同一链接在 AIGC 批注里。",
+      "scope_reason": "读亲历者说明 1201、1202、雷达开关和重启。页面其他航行日志没有展开。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 15,
+          "location": "亲历者说明",
+          "claim": "1202 是 12 字 core set 用尽，1201 是 44 字 VAC 用尽。重启拉起下降发动机和 DSKY，不再拉起错误的雷达任务。",
+          "role": "mechanism",
+          "note_target": "supplements[7]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "0327a591ca63ce38b9ea1d913616064466ec16bc5ff0061d4ceff8ccad2ad543"
+    },
+    {
+      "id": "royce-1970",
+      "listed_title": "Managing the Development of Large Software Systems",
+      "listed_url": "https://dl.acm.org/doi/10.5555/41765.41801",
+      "title": "Managing the Development of Large Software Systems",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides5.html",
+      "kind": "web",
+      "path": "课堂笔记/sources/text/royce-text.md",
+      "reading_status": "full",
+      "scope_sections": [
+        "page-1",
+        "page-2",
+        "page-3",
+        "page-4",
+        "page-5",
+        "page-6",
+        "page-7",
+        "page-8",
+        "page-9",
+        "page-10",
+        "page-11"
+      ],
+      "read_sections": [
+        "page-1",
+        "page-2",
+        "page-3",
+        "page-4",
+        "page-5",
+        "page-6",
+        "page-7",
+        "page-8",
+        "page-9",
+        "page-10",
+        "page-11"
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 正文链到 ACM，并在第 18 页嵌入 royce.md。讲师口述提到题目，并说这篇文章是在批评那张图。",
+      "scope_reason": "ACM 页面返回 403。读完的是 slides 嵌入转录的 11 个页标记。图示摘要是整理 slides 的人写的，正文句子按转录引用。",
+      "identity_note": "不是 ACM 排版件。题目、航天器软件背景和 I believe in this concept 等句子在转录正文里。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 17,
+          "location": "转录中 Figure 2 之后的正文，以及 do it twice 一段",
+          "claim": "测试第一次经历 timing、storage、I/O；可以预期到 100% 的进度或成本超支。30 个月工期的 pilot 约 10 个月，12 个月工期的 pilot 约 3 个月。",
+          "role": "mechanism",
+          "note_target": "supplements[8]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "c6c47d7b43c4b00bfa8ec9f51e708868710787f03ae100302548a394d6cda261"
+    },
+    {
+      "id": "ries-mvp",
+      "listed_title": "Good Enough Never Is — or Is It?",
+      "listed_url": "https://www.startuplessonslearned.com/2010/09/good-enough-never-is-or-is-it.html",
+      "title": "Good Enough Never Is — or Is It?",
+      "source_url": "https://www.startuplessonslearned.com/2010/09/good-enough-never-is-or-is-it.html",
+      "kind": "web",
+      "path": "课堂笔记/sources/web/ries.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "mvp-definition"
+      ],
+      "read_sections": [
+        "mvp-definition"
+      ],
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "官方 slides AIGC 批注推荐，非课堂口述。",
+      "required": true,
+      "scope_reason": "批注用这篇给 MVP 下定义。读定义段和 minimum 不是尽早乱发货那一句。博文后半的质量争论没有整段写进笔记。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "文中对 MVP 的定义",
+          "claim": "用最少努力收集最多经过验证的学习；它检验假设，minimum 不是尽早把随便什么发出去。",
+          "role": "mechanism",
+          "note_target": "supplements[9]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "version": null,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "6b3c2e6e913934a0e2843305369117bc3a45a168dc13a91290950315ed28889c"
+    },
+    {
+      "id": "agile-principles",
+      "listed_title": "Principles behind the Agile Manifesto",
+      "listed_url": "https://agilemanifesto.org/principles.html",
+      "title": "Principles behind the Agile Manifesto",
+      "source_url": "https://agilemanifesto.org/principles.html",
+      "kind": "web",
+      "path": "课堂笔记/sources/web/agile.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "principles"
+      ],
+      "read_sections": [
+        "principles"
+      ],
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "官方 slides AIGC 批注推荐，非课堂口述。",
+      "scope_reason": "原则页很短，十二条都读了。笔记引用的是前三条。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "原则页前三条",
+          "claim": "尽早并持续交付；后期仍欢迎需求变化；经常交付可工作的软件，从几周到一两个月，偏好更短。",
+          "role": "mechanism",
+          "note_target": "supplements[9]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "efe1d58c7729d5698a3aa25a7bb991aa3f74edd387734c77db29798f1b9c89ee"
+    },
+    {
+      "id": "istqb-ctfl-4.0.1",
+      "listed_title": "ISTQB CTFL Syllabus v4.0.1 §4.2.3",
+      "listed_url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "title": "Certified Tester Foundation Level (CTFL) Syllabus v4.0.1",
+      "source_url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/papers/istqb-ctfl-4.0.1.pdf",
+      "total_pages": 78,
+      "reading_status": "full",
+      "scope_pages": [
+        41
+      ],
+      "read_pages": [
+        41
+      ],
+      "scope_reason": "slides AIGC 只指向 §4.2.3 决策表，不是整本大纲。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "官方 slides AIGC 批注推荐，非课堂口述。",
+      "version": "v4.0.1, 2024-09-15",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 22,
+          "location": "物理页 41，4.2.3 Decision Table Testing",
+          "claim": "100% 覆盖是测完所有可行的列，覆盖率是已执行列数除以可行列数。官方 slides 写的是 §4.2.3。",
+          "role": "mechanism",
+          "note_target": "supplements[10]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "required": true,
+      "read_sections": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1"
+    },
+    {
+      "id": "quickcheck",
+      "listed_title": "QuickCheck: A Lightweight Tool for Random Testing of Haskell Programs",
+      "listed_url": "https://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf",
+      "title": "QuickCheck: A Lightweight Tool for Random Testing of Haskell Programs",
+      "source_url": "https://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/papers/quickcheck.pdf",
+      "total_pages": 12,
+      "reading_status": "full",
+      "scope_pages": [
+        1,
+        2
+      ],
+      "read_pages": [
+        1,
+        2
+      ],
+      "scope_reason": "slides AIGC 用它说明性质测试。笔记采用的是前两页的 reverse 反例和默认 100 次测试。生成器和后文案例没有读完，不进入笔记。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "官方 slides AIGC 批注推荐，非课堂口述。",
+      "version": "ICFP 2000, Claessen and Hughes",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 22,
+          "location": "物理页 1–2",
+          "claim": "quickCheck 默认 100 个随机参数。写反的 reverse 分配律给出 xs=[2]、ys=[-2,1]。排序空数组的例子不在这两页。",
+          "role": "mechanism",
+          "note_target": "supplements[10]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "required": true,
+      "read_sections": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "bfddcaa648f836e50804910fc0956cc037c1a8b3e3d6716fb12e4e1ffdcb5172"
+    },
+    {
+      "id": "eiffel-dbc",
+      "listed_title": "Design by Contract, Eiffel introduction",
+      "listed_url": "https://www.eiffel.com/values/design-by-contract/introduction/",
+      "title": "Building bug-free O-O software: An introduction to Design by Contract",
+      "source_url": "https://www.eiffel.com/values/design-by-contract/introduction/",
+      "kind": "web",
+      "path": "课堂笔记/sources/web/eiffel.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "contract-definition",
+        "airline-example",
+        "require-ensure"
+      ],
+      "read_sections": [
+        "contract-definition",
+        "airline-example",
+        "require-ensure"
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页链接；slides 第 26 页同一链接在 AIGC 批注里。",
+      "scope_reason": "读契约两侧的义务、航空例子，以及 require / ensure / old count。页面后部的更多语言机制没有整段写进笔记。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 23,
+          "location": "契约定义与航空表、表项例子",
+          "claim": "客户保证前置条件，供应商保证后置条件。old count 表示进入例程时的 count。",
+          "role": "mechanism",
+          "note_target": "supplements[11]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "599aa5b11c1a11d1e2fef345beec701358d1e6e698f0f6e1e840ddcba5b8722e"
+    },
+    {
+      "id": "dafny",
+      "listed_title": "Dafny",
+      "listed_url": "https://dafny.org/",
+      "title": "The Dafny Programming and Verification Language",
+      "source_url": "https://dafny.org/",
+      "kind": "web",
+      "path": "课堂笔记/sources/web/dafny.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "homepage-definition"
+      ],
+      "read_sections": [
+        "homepage-definition"
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页与 slides 第 27 页正文链接。口播是 daphne virus。",
+      "scope_reason": "读首页对语言和编译目标的定义。手册和教程没有打开。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 23,
+          "location": "首页定义",
+          "claim": "规约写在语言里，静态验证器对照实现，并可编译到 C#、Java、JavaScript、Go、Python。",
+          "role": "mechanism",
+          "note_target": "supplements[11]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "af8c44e63b652c32465943fc37972937be3939d1a6d934430b7463979ea1df55"
+    },
+    {
+      "id": "verus",
+      "listed_title": "Verus",
+      "listed_url": "https://github.com/verus-lang/verus",
+      "title": "Verus",
+      "source_url": "https://github.com/verus-lang/verus",
+      "kind": "web",
+      "path": "课堂笔记/sources/web/verus.md",
+      "reading_status": "full",
+      "scope_sections": [
+        "readme-intro"
+      ],
+      "read_sections": [
+        "readme-intro"
+      ],
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页与 slides 第 27 页正文链接。",
+      "scope_reason": "读 README 开头：验证 Rust 子集，用求解器做静态证明，而不是运行时检查。后面的安装和示例没有读。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 23,
+          "location": "README 开头",
+          "claim": "开发者写规格，Verus 用求解器静态证明，目前支持 Rust 的一个子集。",
+          "role": "mechanism",
+          "note_target": "supplements[11]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "faa585b7f3463e7a837fbd3364ea3e751b207fa141268d60fa011515d20a99ba"
+    },
+    {
+      "id": "nasa-req",
+      "listed_title": "6.2 Requirements Management",
+      "listed_url": "https://www.nasa.gov/reference/6-2-requirements-management/",
+      "title": "6.2 Requirements Management",
+      "source_url": "https://www.nasa.gov/reference/6-2-requirements-management/",
+      "kind": "web",
+      "path": "课堂笔记/sources/web/nasa-req.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "traceability-definitions"
+      ],
+      "read_sections": [
+        "traceability-definitions"
+      ],
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "讲义页链接；slides 第 25 页同一链接在 AIGC 批注里。",
+      "scope_reason": "读 traceability 与 bidirectional traceability 的定义，以及这一节列出的识别、分配和变更管理。NASA 站点其余过程页没有读。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 22,
+          "location": "6.2 定义",
+          "claim": "追踪是需求、系统元素、验证或任务之间可以辨认的关联。双向是既能追到父需求，也能追到分派下去的子需求。",
+          "role": "mechanism",
+          "note_target": "supplements[13]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "4111d90ef929e0595ced6a771743e4d4e7278de84ef8db4171b1caccd55d2c0e"
+    },
+    {
+      "id": "uml-2.5.1",
+      "listed_title": "OMG Unified Modeling Language 2.5.1",
+      "listed_url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "title": "OMG Unified Modeling Language, version 2.5.1",
+      "source_url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/papers/uml-2.5.1.pdf",
+      "total_pages": 796,
+      "reading_status": "full",
+      "read_pages": [
+        45,
+        57,
+        58,
+        243,
+        244,
+        245,
+        246,
+        470,
+        471,
+        607,
+        608,
+        609,
+        625,
+        626
+      ],
+      "scope_pages": [
+        45,
+        57,
+        58,
+        243,
+        244,
+        245,
+        246,
+        470,
+        471,
+        607,
+        608,
+        609,
+        625,
+        626
+      ],
+      "scope_reason": "讲义按节引用 §2、§6.3.3、§11.5.4、ObjectFlow、§17.1.2、§17.2.3.1、§17.6.3.11，slides 的 AIGC 批注给出页锚。这些条款跨页，范围含同一条款的相邻物理页。规范其余图种、附录和未点名的元模型不在这课的问题里。讲师说备课让模型读过规范，不是要求学生读完 796 页。",
+      "required": false,
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页按节引用；slides AIGC 批注给出 PDF 页锚。讲师说备课让模型读过规范，不是要求学生读完 796 页。",
+      "known_gaps": [],
+      "version": "formal/2017-12-05",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 24,
+          "location": "物理页 45、57–58、243–246、470–471、607–609、625–626",
+          "claim": "XMI 冲突时以机器可读文件为准。五种 conformance 里，未规定的语义可以做不冲突的领域定制。轨迹集不必盖住全部轨迹。seq 是弱顺序，参与者不相交时退化成平行合并。图上没画多重性不能推断模型。Figure 11.26 的点表示端由另一端的类拥有。ObjectFlow 有三条不能写成 OCL 的约束。§6.3.3 把前后置条件的一致交给建模者，这一节没有定义 isSubstitutable。",
+          "role": "mechanism",
+          "note_target": "supplements[12]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "read_sections": [],
+      "visual_checks": [
+        {
+          "page": 244,
+          "detail": "看了 Figure 11.26。实心点在 A 这一端。图旁写 endA 由 Classifier B 拥有，endB 由 BinaryAssociationAB 拥有。两端都标了多重性 *。同页正文写没画多重性就不能推断模型。"
+        }
+      ],
+      "sha256": "416b57e1933780eb48bd60fe513e031da220c28a521bdd334a366bebc78a463e"
+    },
+    {
+      "id": "omg-why-uml",
+      "listed_title": "Why UML is important",
+      "listed_url": "https://www.omg.org/uml/why-uml-is-important.htm",
+      "title": "Why UML is important",
+      "source_url": "https://www.omg.org/uml/why-uml-is-important.htm",
+      "kind": "web",
+      "path": "课堂笔记/sources/web/omg-why.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "fusion-history",
+        "language-not-process"
+      ],
+      "read_sections": [
+        "fusion-history",
+        "language-not-process"
+      ],
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "官方 slides AIGC 批注推荐，非课堂口述。",
+      "scope_reason": "读 Booch、OMT、OOSE 的合并时间和「统一的是语言不是过程」。页面其余宣传段没有写进笔记。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 24,
+          "location": "历史段",
+          "claim": "1994 年末 Booch 与 Rumbaugh 开始合并，1995 年秋 Jacobson 加入并并入 OOSE。统一的是语言和元模型。",
+          "role": "mechanism",
+          "note_target": "supplements[12]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_status": "verified",
+      "identity_note": null,
+      "version": null,
+      "required": true,
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": [],
+      "sha256": "cc4f9105c7456d3714d61a884f628ef0bd02b6fdf3ef1de59618856210b84c39"
+    },
+    {
+      "id": "meyer-dbc-ieee",
+      "listed_title": "Applying “Design by Contract”",
+      "listed_url": "https://ieeexplore.ieee.org/document/161279",
+      "title": "Applying “Design by Contract”",
+      "source_url": "https://se.inf.ethz.ch/~meyer/publications/computer/contract.pdf",
+      "kind": "pdf",
+      "reading_status": "full",
+      "required": false,
+      "identity_status": "verified",
+      "identity_note": "IEEE Xplore 原链接这次用 curl 打开仍是空正文，沿用的 ieee-meyer.html 是 0 字节。没有伪装 User-Agent，也没有用浏览器过人机验证。改读作者在 ETH Zurich 出版物页上的 PDF。首页题为 Applying “Design by Contract”，作者 Bertrand Meyer，Interactive Software Engineering，页眉 October 1992，印刷页 40–51。他的出版物列表把同一 URL 标成 Computer (IEEE), 25, 10, October 1992, pages 40-51，并写这是更早一篇的 slightly revised version；PDF 链接旁写 as published。讲师口播的 1986 不是这篇的年份。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第 26 页正文链接。讲师说有一篇文章他不打开。这一轮读的是作者机构主页上的同一篇，不是 Eiffel 介绍页。",
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 23,
+          "location": "PDF 12 页；Figure 1–2 与 Table 2 在物理页 2–3",
+          "claim": "1992 年 10 月的文章把可靠性定义成正确性加健壮性。require 与例程体里的同一检查不要重复。重定义用 require else 减弱或保持前提，用 ensure then 加强或保持后置。rescue 里没有 Retry 就失败，并要恢复不变量。",
+          "role": "mechanism",
+          "note_target": "supplements[11]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "version": "IEEE Computer 25(10), October 1992, pp. 40–51",
+      "read_sections": [],
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visual_checks": [
+        {
+          "page": 3,
+          "detail": "看了 Figure 1 和 Figure 2、Table 2。Figure 1 的骨架是 require、do、ensure、end。Figure 2 的 require 是 new /= Void，ensure 含 new.parent = Current 和 child_count = old child_count + 1。Table 2 写前提不成立时供应方不必做任何事。印刷页是 42。"
+        },
+        {
+          "page": 2,
+          "detail": "看了 Table 1。客户义务包括不超过 5 kg、每边不超过 2 米、付 100 法郎；供应方在四小时内送到。页眉 October 1992，印刷页 41。"
+        }
+      ],
+      "path": "课堂笔记/sources/papers/meyer-dbc-1992.pdf",
+      "total_pages": 12,
+      "sha256": "bc1bab86f8753e5eafb40b7558e961b2c4bc9938c061e8dd8c141b839873ac07"
+    },
+    {
+      "id": "techreview-hamilton",
+      "listed_title": "The woman who sent us to the moon",
+      "listed_url": "https://www.technologyreview.com/2019/08/16/579/",
+      "title": "Margaret Hamilton",
+      "source_url": "https://web.archive.org/web/20211223225747/https://www.technologyreview.com/2019/08/16/579/margaret-hamilton/",
+      "kind": "web",
+      "path": "课堂笔记/sources/web/techreview-ia-20211223.html",
+      "reading_status": "full",
+      "required": false,
+      "identity_status": "verified",
+      "identity_note": "现行 technologyreview.com 是计量墙，上一轮只稳定读到导语。没有绕过计量。这一轮读 Internet Archive 2021-12-23 对同一 URL 的存档。h1 是 Margaret Hamilton，导语是 By relentlessly rooting out errors, the original software engineer helped send astronauts to the moon。作者 Cara Giaimo，SM ’15，2019-08-16。存档没有核对现行页标注的 2024-08-22 修改。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 14 页正文链接。讲师当堂让模型朗读的就是这句导语的中文。",
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "Internet Archive 2021-12-23 存档的文章正文",
+          "claim": "导语就是课堂上让模型朗读的那句。文中她说自己提出了 software engineer 这个词。Lauren 在模拟器里输入 P01，Apollo 8 上出现了同样的操作。Apollo 11 的五条警报在这篇里只说成算力不够。",
+          "role": "mechanism",
+          "note_target": "supplements[14]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "version": "Internet Archive 2021-12-23 snapshot of the 2019-08-16 article",
+      "read_sections": [
+        "article"
+      ],
+      "read_pages": [],
+      "visual_checks": [
+        {
+          "detail": "存档 HTML 里的图注写 Hamilton with Apollo code, 1969，署名 MIt Museum。没有另下载这张照片。"
+        }
+      ],
+      "sha256": "77544d5c64cca88bc25e0cfc5a054c2b4469af4357ead97851b3626630f3c2b7",
+      "scope_sections": [
+        "article"
+      ],
+      "scope_reason": "存档里的文章正文，从开头的童年开车到结尾的 Why not。页眉、推荐阅读和订阅框没有写进笔记。"
+    },
+    {
+      "id": "jev-video",
+      "listed_title": "Jev 演示",
+      "listed_url": "https://www.bilibili.com/video/BV1x1ex6TEFu/",
+      "title": null,
+      "source_url": "https://www.bilibili.com/video/BV1x1ex6TEFu/",
+      "kind": "web",
+      "reading_status": "blocked",
+      "required": false,
+      "identity_status": "unverified",
+      "identity_note": "B 站接口返回 412，没有打开播放页。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 1 页正文里的课上演示。B 站页面返回 412。本课视频里已经有这段画面，不另做课外全片复核。",
+      "known_gaps": [
+        "课外视频待用户确认是否处理"
+      ],
+      "contributions": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "version": null,
+      "read_sections": [],
+      "read_pages": [],
+      "visual_checks": []
+    },
+    {
+      "id": "ai-speed-video",
+      "listed_title": "AI 进化的速度",
+      "listed_url": "https://www.bilibili.com/video/BV1B6YR6gEyd/",
+      "title": null,
+      "source_url": "https://www.bilibili.com/video/BV1B6YR6gEyd/",
+      "kind": "web",
+      "reading_status": "blocked",
+      "required": false,
+      "identity_status": "unverified",
+      "identity_note": "B 站接口返回 412，没有打开播放页。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 1 页正文里的课上演示。B 站页面返回 412。不另做课外全片复核。",
+      "known_gaps": [
+        "课外视频待用户确认是否处理"
+      ],
+      "contributions": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "version": null,
+      "read_sections": [],
+      "read_pages": [],
+      "visual_checks": []
+    },
+    {
+      "id": "silicon-valley",
+      "listed_title": "Silicon Valley, Pied Piper",
+      "listed_url": "https://www.bilibili.com/bangumi/play/ep817870/?share_source=copy_web&t=1374",
+      "title": null,
+      "source_url": "https://www.bilibili.com/bangumi/play/ep817870/",
+      "reading_status": "out_of_scope",
+      "required": false,
+      "identity_status": "unverified",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 1 页正文里的剧集片段，用来感受就业市场，不是阅读材料。",
+      "scope_reason": "课上的旁证画面，不展开成另一部剧的阅读。",
+      "contributions": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_note": null,
+      "version": null,
+      "read_sections": [],
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": []
+    },
+    {
+      "id": "proj101",
+      "listed_title": "101 计划",
+      "listed_url": "https://www.proj101.cn/",
+      "title": null,
+      "source_url": "https://www.proj101.cn/",
+      "reading_status": "out_of_scope",
+      "required": false,
+      "identity_status": "unverified",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 18 页正文里的一句玩笑。",
+      "scope_reason": "和 Royce 的论文阅读无关，不打开。",
+      "contributions": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "identity_note": null,
+      "version": null,
+      "read_sections": [],
+      "read_pages": [],
+      "known_gaps": [],
+      "visual_checks": []
+    }
+  ]
+}

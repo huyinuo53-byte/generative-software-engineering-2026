@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
-  "notes_sha256": "f4291e233a58217d27611657cd53fdacdc303129c6d331267574fbe5e5bf20f2",
+  "mode": "full",
+  "notes_sha256": "5db9252de94a84693965c14aea0d3db4b00654f8af2134b4d08eac3449936a81",
   "writer_model": "grok-4.7-high",
   "precision": {
     "items": [
@@ -110,13 +111,6 @@
         "hash": "5c67cc4668077cb5"
       },
       {
-        "ref": "s4:f0",
-        "verdict": "supported",
-        "evidence": "frames/v000499100.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "36daea74119f467b"
-      },
-      {
         "ref": "s5:takeaway",
         "verdict": "supported",
         "evidence": "s-g108.1, s-g110.0~36, s-g116.0, s-g123.0, s-g124.0, s-g124.0~43",
@@ -129,13 +123,6 @@
         "evidence": "s-g119.0~2, s-g124.0~43, s-g125.0~37, s-g128.0",
         "note": "学习顺序及新领域数据量的猜测均有对应口播。",
         "hash": "f0eb5ad30963b58a"
-      },
-      {
-        "ref": "s5:n0",
-        "verdict": "supported",
-        "evidence": "s-g108.1, s-g132.0~78, s-g142.0~3",
-        "note": "与本节口播一致。",
-        "hash": "5bae2d2ddef4fb6f"
       },
       {
         "ref": "s5:p1",
@@ -166,13 +153,6 @@
         "hash": "ae511c9206c48a57"
       },
       {
-        "ref": "s6:f0",
-        "verdict": "supported",
-        "evidence": "frames/v001026633.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "0dee10e1cc3764f0"
-      },
-      {
         "ref": "s7:takeaway",
         "verdict": "supported",
         "evidence": "s-g229.0~11, s-g250.0~1, s-g257.0~7, s-g265.0~5",
@@ -201,13 +181,6 @@
         "hash": "df943f14b19d5c13"
       },
       {
-        "ref": "s7:f0",
-        "verdict": "supported",
-        "evidence": "frames/v001146633.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "c68c5436a68baa63"
-      },
-      {
         "ref": "s8:takeaway",
         "verdict": "supported",
         "evidence": "s-g284.0~1, s-g300.0~17, s-g304.0~18, s-g365.0",
@@ -227,13 +200,6 @@
         "evidence": "s-g284.0~1, s-g289.0~10, s-g292.0~16, s-g295.0, s-g300.0~17, s-g304.0~18, s-g309.0~8",
         "note": "与本节口播一致。",
         "hash": "e2a55fd7d2bb2a90"
-      },
-      {
-        "ref": "s8:f2",
-        "verdict": "supported",
-        "evidence": "frames/v001516633.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "6228e7882a75dbb1"
       },
       {
         "ref": "s9:takeaway",
@@ -306,13 +272,6 @@
         "hash": "3c6f151c1c50f5a7"
       },
       {
-        "ref": "s11:f0",
-        "verdict": "supported",
-        "evidence": "frames/v002167967.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "7cbc9ed9929e119f"
-      },
-      {
         "ref": "s12:takeaway",
         "verdict": "supported",
         "evidence": "s-g447.0~49, s-g449.0~64, s-g453.0~36, s-g457.0~3, s-g462.0~110",
@@ -332,13 +291,6 @@
         "evidence": "s-g447.0~49, s-g449.0~64, s-g450.0~55, s-g452.0~56, s-g453.0~36, s-g453.0~116, s-g457.0~3",
         "note": "与本节口播一致。",
         "hash": "ea7df450e6604794"
-      },
-      {
-        "ref": "s12:f1",
-        "verdict": "supported",
-        "evidence": "frames/v002347967.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "e98fb49d1ebf6d1f"
       },
       {
         "ref": "s13:takeaway",
@@ -409,13 +361,6 @@
         "evidence": "s-g523.0~34, s-g526.0~14, s-g534.0~1, s-g539.0~15, s-g544.0~3, s-g550.0~5, s-g556.0~15",
         "note": "与本节口播一致。",
         "hash": "0bcffec077294743"
-      },
-      {
-        "ref": "s15:f0",
-        "verdict": "supported",
-        "evidence": "frames/v002979300.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "66bf24971b7c6299"
       },
       {
         "ref": "s16:takeaway",
@@ -495,13 +440,6 @@
         "hash": "8a488b7106246617"
       },
       {
-        "ref": "s18:f0",
-        "verdict": "supported",
-        "evidence": "frames/v003899233.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "890d2cac44a20769"
-      },
-      {
         "ref": "s19:takeaway",
         "verdict": "supported",
         "evidence": "s-g932.0~9, s-g936.0, s-g937.0, s-g940.0, s-g944.0, s-g946.0",
@@ -528,13 +466,6 @@
         "evidence": "s-g932.0~9, s-g936.0, s-g937.0, s-g938.0~9, s-g939.0~31, s-g940.0, s-g940.2~55, s-g942.0~8, s-g944.0, s-g946.0, s-g947.0, s-g947.0~80",
         "note": "数据依赖图被明确标为讲师个人理解，归属准确。",
         "hash": "d6b49e0344388aef"
-      },
-      {
-        "ref": "s19:f0",
-        "verdict": "supported",
-        "evidence": "frames/v004199233.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "1ea508f95daa2300"
       },
       {
         "ref": "s20:takeaway",
@@ -565,13 +496,6 @@
         "hash": "d79b97be188bd50d"
       },
       {
-        "ref": "s20:f0",
-        "verdict": "supported",
-        "evidence": "frames/v004419233.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "e29ad7ac8bc60264"
-      },
-      {
         "ref": "s21:takeaway",
         "verdict": "supported",
         "evidence": "s-g991.0~47, s-g995.0~4, s-g1050.0~7, s-g1057.0~2, s-g1066.0~1, s-g1072.0~5",
@@ -591,13 +515,6 @@
         "evidence": "s-g988.0~55, s-g993.0~7, s-g1006.0~12",
         "note": "各规范术语与转写中的对应形式可在本节找到。",
         "hash": "fec92aae20ec16af"
-      },
-      {
-        "ref": "s21:f0",
-        "verdict": "supported",
-        "evidence": "frames/v004839233.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "cdfd5429c3a0c7c5"
       },
       {
         "ref": "s22:takeaway",
@@ -621,13 +538,6 @@
         "hash": "6b927f643e6b879b"
       },
       {
-        "ref": "s22:f0",
-        "verdict": "supported",
-        "evidence": "frames/v005079233.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "243a45af44cd794f"
-      },
-      {
         "ref": "s23:takeaway",
         "verdict": "supported",
         "evidence": "s-g1169.0, s-g1170.0, s-g1171.0, s-g1173.0, s-g1176.0~2, s-g1178.0~1",
@@ -647,20 +557,6 @@
         "evidence": "s-g1194.0~14, s-g1197.0~13, s-g1200.0~50, s-g1202.0~5, s-g1204.2~2, s-g1204.2~28, s-g1206.1, s-g1208.0~13, frames/v005379233.jpg",
         "note": "与本节口播一致。",
         "hash": "c9e0b2e68889d5d4"
-      },
-      {
-        "ref": "s23:n0",
-        "verdict": "supported",
-        "evidence": "s-g1167.0, s-g1188.0~2, s-g1194.0~14, s-g1197.0~13, frames/v005379233.jpg",
-        "note": "与本节口播一致。",
-        "hash": "c54263ff6277ba90"
-      },
-      {
-        "ref": "s23:f0",
-        "verdict": "supported",
-        "evidence": "frames/v005379233.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "66d307c97cf7a5bf"
       },
       {
         "ref": "s24:takeaway",
@@ -689,13 +585,6 @@
         "evidence": "s-g1263.0~2, s-g1269.0, s-g1277.0, s-g1287.0~7, s-g1296.0~3, s-g1303.0, s-g1309.0~1, s-g1316.0~5, s-g1326.0~2, s-g1333.0~3, s-g1339.0~7, s-g1346.0~4, s-g1353.0~3",
         "note": "备课流程、套餐数额和五块三均按口播记录，未当作独立核算结果。",
         "hash": "a7c28e03e94cee20"
-      },
-      {
-        "ref": "s24:f0",
-        "verdict": "supported",
-        "evidence": "frames/v005679233.jpg",
-        "note": "画面中的标题、文字或可见对象支持该描述。",
-        "hash": "d93c2b04448471b2"
       },
       {
         "ref": "q1",
@@ -759,122 +648,406 @@
         "evidence": "s-g1250.0~9, s-g1257.0~9, s-g1353.0~3, s-g1361.0~7, s-g1309.0~1",
         "note": "与本节口播一致。",
         "hash": "c2d0db0112db2479"
+      },
+      {
+        "ref": "s11:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-09.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "2ca2bb7a03af9182"
+      },
+      {
+        "ref": "s12:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-12.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "b22d3057249874c8"
+      },
+      {
+        "ref": "s15:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-15.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "863bcd48e14c4473"
+      },
+      {
+        "ref": "s18:f0",
+        "verdict": "partial",
+        "evidence": "frames/slide-20.jpg",
+        "note": "正文及两组紫色批注均与图片一致；图片可见 MVP 链接，但不能确认链接目标是一篇博客。",
+        "hash": "f0f459bda13da2fa"
+      },
+      {
+        "ref": "s19:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-21.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "b14a549a30368c0c"
+      },
+      {
+        "ref": "s20:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-22.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "ca21ca24c5efeb01"
+      },
+      {
+        "ref": "s21:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-24.jpg",
+        "note": "所列幻灯片直接支持该图注的内容。",
+        "hash": "82e0dee826183c52"
+      },
+      {
+        "ref": "s22:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-25.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "46d1ed9333988a45"
+      },
+      {
+        "ref": "s23:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-26.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "efe537a491a54a98"
+      },
+      {
+        "ref": "s24:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-28.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "a4d021f879df63cc"
+      },
+      {
+        "ref": "s4:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-02.jpg",
+        "note": "所列幻灯片直接支持该图注的内容。",
+        "hash": "0d401f37a0ef6d10"
+      },
+      {
+        "ref": "s5:n0",
+        "verdict": "partial",
+        "evidence": "x1; x2",
+        "note": "摘录支持讲师提到 The Bitter Lesson，且提供该原文和标为 AIGC only 的 DoReMi 实验资料；未提供 RSI loop、E Ecler 的口播依据，也不能据此核实其会议指代。",
+        "hash": "5acbd1679ea56b01"
+      },
+      {
+        "ref": "s6:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-05.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "7ba8153b633d666a"
+      },
+      {
+        "ref": "s7:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-06.jpg",
+        "note": "所列幻灯片直接支持该图注的内容。",
+        "hash": "e0c0cf461f80316b"
+      },
+      {
+        "ref": "s8:f2",
+        "verdict": "supported",
+        "evidence": "frames/slide-07.jpg",
+        "note": "所列幻灯片直接支持该图注的内容。",
+        "hash": "1a1cad7b9cfacb84"
+      },
+      {
+        "ref": "s1:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-01.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "2bac658509f02fb3"
+      },
+      {
+        "ref": "s1:n1",
+        "verdict": "supported",
+        "evidence": "x0",
+        "note": "摘录明确标为 AIGC 外链，载有并行输出、70–500ms 及 Jev 取名自 Jevons，并明确 prefill-only 是猜测。",
+        "hash": "0ca8d9019e4e638a"
+      },
+      {
+        "ref": "s5:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-03.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "753544cfe30dec83"
+      },
+      {
+        "ref": "s8:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-08.jpg",
+        "note": "所列幻灯片直接支持该图注的内容。",
+        "hash": "b7eeed5dc46a03d6"
+      },
+      {
+        "ref": "s11:n1",
+        "verdict": "supported",
+        "evidence": "x5",
+        "note": "摘录明确记载印刷题目、作者、1968 年 9 月号第 24 页的核查范围，并将“明日学校”标为幻灯片标题。",
+        "hash": "7419df801d178c8a"
+      },
+      {
+        "ref": "s11:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-10.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "3b44607c1aae63c0"
+      },
+      {
+        "ref": "s12:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-11.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "9ad0b54c7672b747"
+      },
+      {
+        "ref": "s13:n1",
+        "verdict": "partial",
+        "evidence": "x3; x4",
+        "note": "摘录支持 1968 年来信、1972 年图灵演讲、末段 alarm exits 非新发现，以及统一释放资源是讲师自己的用法；但摘录未列出 Go To Statement Considered Harmful 和 The Humble Programmer 这两个篇名，无法仅据指定摘录核实篇名对应。",
+        "hash": "84940a7b7426896c"
+      },
+      {
+        "ref": "s14:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-13.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "513cec12e879d6a9"
+      },
+      {
+        "ref": "s15:n0",
+        "verdict": "partial",
+        "evidence": "x7",
+        "note": "摘录明确支持 1201 对应 VAC 无可用区域、1202 对应 core set 无可用区域，以及优先级和重启恢复机制；未提供 2979 秒幻灯片上的 IEEE 英文或口播走样的对照，不能核实前半段编辑说明。",
+        "hash": "4cd9386e5c49c33d"
+      },
+      {
+        "ref": "s15:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-14.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "f78c38b78aa387ba"
+      },
+      {
+        "ref": "s16:n1",
+        "verdict": "supported",
+        "evidence": "x8",
+        "note": "摘录明确标注 ACM 返回 403、来源为 slides 内嵌转录，正文包含测试阶段首次实际经历 timing、storage、I/O 的论述及五条补救措施。",
+        "hash": "5459130abb7715a3"
+      },
+      {
+        "ref": "s16:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-17.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "ef3a7c6818b2bf3c"
+      },
+      {
+        "ref": "s17:f0",
+        "verdict": "supported",
+        "evidence": "frames/slide-19.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "ce5f4810c53c8583"
+      },
+      {
+        "ref": "s22:p0",
+        "verdict": "supported",
+        "evidence": "s-g1095.0~8; s-g1104.0~5; s-g1114.0; s-g1122.0~5; s-g1131.0~2; frames/slide-25.jpg",
+        "note": "课堂叙述与口播一致；末尾明确归于幻灯片的决策表说明和优惠例子均见紫色批注。",
+        "hash": "f314538c2d2e4420"
+      },
+      {
+        "ref": "s22:n1",
+        "verdict": "partial",
+        "evidence": "x10",
+        "note": "摘录支持 v4.0.1 第 41 页标题为 4.2.3 Decision Table Testing、QuickCheck 前两页用 reverse，以及 sort/empty-array 来自 slide AIGC 批注；未提供旧视频帧误读、官方 slides 的具体节号写法或批注颜色的依据。",
+        "hash": "2b2c9773f7973bc3"
+      },
+      {
+        "ref": "s23:p1",
+        "verdict": "supported",
+        "evidence": "s-g1176.0~2; s-g1178.0~1; s-g1181.0~23; s-g1182.0~66; s-g1188.0~2; s-g1190.0~14; s-g1194.0~14; frames/slide-27.jpg",
+        "note": "段落忠实转述讲师的判断与愿景，并明确区分 daphne virus 听写和幻灯片上的 Dafny、Verus。",
+        "hash": "2b08b30b8030b2fb"
+      },
+      {
+        "ref": "s23:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-27.jpg",
+        "note": "标题、正文和批注内容与所列幻灯片一致；未将 AIGC 批注冒充为口播。",
+        "hash": "ecc654fa48545f17"
+      },
+      {
+        "ref": "s24:f1",
+        "verdict": "supported",
+        "evidence": "frames/slide-29.jpg",
+        "note": "所列幻灯片直接支持该图注的内容。",
+        "hash": "832403dd69b7de81"
+      },
+      {
+        "ref": "s24:f2",
+        "verdict": "partial",
+        "evidence": "frames/slide-32.jpg",
+        "note": "图与模型、XMI 优先及 UML DI 均见图片，§2 也可见；图片未显示链接目标为 PDF 第 45 页。",
+        "hash": "c356e7dcc974c316"
+      },
+      {
+        "ref": "s24:f3",
+        "verdict": "partial",
+        "evidence": "frames/slide-34.jpg",
+        "note": "集合、三行轨迹示例及语义变化点的区分均见图片；图片未显示链接目标为 PDF 第 609 页。",
+        "hash": "29ebdcbed1500892"
+      },
+      {
+        "ref": "s24:f4",
+        "verdict": "partial",
+        "evidence": "frames/slide-36.jpg",
+        "note": "弱序、交错、短信与备货及 strict 的说明均与图片一致；图片未显示 seq 链接目标为 PDF 第 625 页。",
+        "hash": "354a7a8735399902"
+      },
+      {
+        "ref": "x0",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts[x0]",
+        "note": "摘录支持并行概率输出、类型错误声明、70–500 ms、命名来源，并明确 AIGC 链接和 prefill-only 猜测的属性。",
+        "hash": "4e35a1dc36626cda"
+      },
+      {
+        "ref": "x3",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts[x3]",
+        "note": "静态文本与动态过程的坐标论证、alarm exits 的来源保留，以及讲师自己的统一释放用法均有对应支持，未混淆归属。",
+        "hash": "ff906f3f6cbfd801"
+      },
+      {
+        "ref": "x4",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts[x4]",
+        "note": "婚姻登记、机器能力和社会野心增长、语言纪律以及证明与程序共同发展均由摘录支持，正文链接与 AIGC 归属亦一致。",
+        "hash": "d7d2a4edba234e4a"
+      },
+      {
+        "ref": "x5",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts[x5]",
+        "note": "刊物、页码、标题、作者、即时判分及成本人手限制均有支持，并正确区分原文与 slide AIGC 对个性化学习的概括。",
+        "hash": "6dfcc1a535256c86"
+      },
+      {
+        "ref": "x6",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts[x6]",
+        "note": "会议信息、人数国家数、挑衅性命名、Kolence 对危机一词的反对及讲师未在课堂读 summary 均与摘录一致。",
+        "hash": "d0c81fb8820ee5e7"
+      },
+      {
+        "ref": "x8",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts[x8]",
+        "note": "风险与失败的原句、最多 100% 超支、五步措施及 30/10、12/3 个月的 pilot 例子均有支持，转录图示摘要与论文正文的归属区分正确。",
+        "hash": "fbedea03bb19cb3a"
+      },
+      {
+        "ref": "x10",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts[x10]",
+        "note": "决策表可行列覆盖率、指数增长、精简与风险策略、QuickCheck 的 100 次随机测试及反例均有支持，排序例子正确归于 AIGC。",
+        "hash": "308e8085ac38a547"
+      },
+      {
+        "ref": "x13",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts[x13]",
+        "note": "追踪及双向追踪定义、WBS 需求管理和基线变更均有支持，退课例子正确归于 slide AIGC 而非 NASA 正文。",
+        "hash": "12184677c2ab3933"
+      },
+      {
+        "ref": "x1",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts.x1",
+        "note": "日期、两页篇幅、计算扩展的长期优势、搜索与学习、各领域例子及人类知识方法的短期收益和长期瓶颈均有依据；摘录亦注明数据分布工程是课堂用语。",
+        "hash": "82c186eb35b00512"
+      },
+      {
+        "ref": "x7",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts.x7",
+        "note": "职务、签约年份、core set 与 VAC 的大小及警报对应、雷达任务误调度和选择性重启均与摘录一致。",
+        "hash": "58b4d3800bb35b79"
+      },
+      {
+        "ref": "x9",
+        "verdict": "partial",
+        "evidence": "sections.external.excerpts.x9",
+        "note": "MVP 定义、假设验证、敏捷原则及 Pilot/MVP 分工属于 AIGC 批注而非口述的归属均有支持。但摘录未提供文章的 2010 年 9 月日期、幻灯片第 20 页或紫色信息；原文 couple of months 也未明确给出一至两个月的范围。",
+        "hash": "a6aaf4096b595e47"
+      },
+      {
+        "ref": "s14:n0",
+        "verdict": "supported",
+        "evidence": "s-g495.0~30; s-g498.0~14; s-g499.0; s-g501.0; s-g502.0; frames/slides/slide-13.jpg; frames/v002674600.jpg",
+        "note": "口播分别出现 1969 年 Apollo 代码照片和 2019 年 8 月的传记导语，并有让模型阅读的上下文；NATO summary 明说不读。挑衅性会名及危机争议见紫色批注，笔记没有归为课堂朗读；Technology Review 正文也明确作为外部补充。",
+        "hash": "da965c40032c3487"
+      },
+      {
+        "ref": "s23:n0",
+        "verdict": "supported",
+        "evidence": "s-g1167.0; s-g1168.0; s-g1188.0~2; s-g1194.0~14; s-g1197.0~13; frames/slides/slide-26.jpg; frames/slides/slide-27.jpg",
+        "note": "口播听写与幻灯片拼写、取款公式及年份的区分均有证据。",
+        "hash": "c0c2bac7b5d64f1d"
+      },
+      {
+        "ref": "x11",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts.x11（Eiffel introduction、Dafny homepage、Verus README、publication list、Meyer PDF pp. 40–51，Figures 1–2、12，Table 2）; frames/slides/slide-26.jpg; frames/slides/slide-27.jpg",
+        "note": "契约义务、old、静态验证与编译目标、论文元数据、避免重复检查、违约责任、不变量、继承及 rescue/retry 规则均有摘录支持。五次尝试准确区分了图注及 failures < 5 的代码条件；链接位置与帧图一致，1992 年论文信息没有冒充约 1986 年的口播。",
+        "hash": "1b49373dc45307a9"
+      },
+      {
+        "ref": "x12",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts.x12",
+        "note": "历史、符合性、稳定状态、关联端所有权、ObjectFlow 约束和交互轨迹及弱顺序规则均与指定摘录一致；未把 AIGC 页码锚点当作口播。",
+        "hash": "47b96d0bb92aabae"
+      },
+      {
+        "ref": "x2",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts.x2",
+        "note": "算法三步、截零的 token excess loss、模型规模、计算量、任务和表格数字均有据；将降权解释标为假设，并保留实验范围与能耗限制。",
+        "hash": "e93ac52189f7292a"
+      },
+      {
+        "ref": "x14",
+        "verdict": "supported",
+        "evidence": "sections.external.excerpts.x14",
+        "note": "存档元数据、记者与 Hamilton 的话、两次任务事件及照片图注均吻合；正确区分朗读导语与未朗读正文，也未添加报错编号等原文没有的细节。",
+        "hash": "f42d1018faba82cf"
+      },
+      {
+        "ref": "s5:f1",
+        "verdict": "supported",
+        "evidence": "frames/papers/doremi-p7.jpg",
+        "note": "图轴、图例、柱形、图注及列出的五组领域权重均能由该图核实。",
+        "hash": "7679c4fc9a5382ba"
+      },
+      {
+        "ref": "s24:f5",
+        "verdict": "supported",
+        "evidence": "frames/papers/uml-fig-11-26.jpg",
+        "note": "点位于 A 端；相邻正文明确说明 endA 归 B、endB 归关联所有，图题也吻合。",
+        "hash": "78661a99104eb149"
       }
     ],
     "reviewer": "independent_agent",
     "reviewer_model": "gpt-6.1-sol",
-    "method": "prepare packets: all takeaways/explainers + per-section sample; 108 judged in latest round"
+    "method": "prepare packets: all takeaways/explainers + per-section sample; 108 judged in latest round; 53 judged in latest round; 8 judged in latest round"
   },
   "recall": {
     "items": [
-      {
-        "id": "q01",
-        "question": "讲座开头，讲师认为约 100 毫秒的小决策模型可以怎样改善数字人与人的交流？",
-        "expected": "根据对话实时生成脸部微表情；降低延迟、增强实时性和人感。",
-        "evidence": "s-g22.0~34, s-g24.0, s-g25.0",
-        "from": "transcript",
-        "answer": "根据对话在约100—200毫秒内作决策，实时生成脸部微表情，降低数字人的延迟，让交流更实时、更有人感。",
-        "found_in": "s1:p1",
-        "verdict": "correct",
-        "note": "涵盖实时微表情、降低延迟和增强人感。",
-        "hash": "9e1cc69598d42798"
-      },
-      {
-        "id": "q02",
-        "question": "讲师如何解释模型当前“品位”方面的短板？",
-        "expected": "对接下来应该做什么的直觉不足；倾向立即反馈和最快完成任务，长期结果可能不理想。",
-        "evidence": "s-g88.0~2, s-g88.0~22, s-g91.0~6, s-g93.0~46",
-        "from": "transcript",
-        "answer": "品位是对“接下来该做什么”的直觉。模型过度迎合 prompt，又受即时 reward 驱动，倾向最快、最脏地完成任务，缺少长远判断，长期产物可能令人不满意；讲师认为可用更多合成数据训练它想得更远。",
-        "found_in": "s4:p0",
-        "verdict": "correct",
-        "note": "涵盖下一步判断不足、即时反馈倾向及长期结果问题。",
-        "hash": "108896288cd105bf"
-      },
-      {
-        "id": "q03",
-        "question": "讲师为什么说数学即使形式化了，也不代表验证一定容易？",
-        "expected": "自然语言问题转换为形式语言时仍存在 gap；可能证明的是被错误定义的、近似“一等于一”的问题。",
-        "evidence": "s-g97.0~9, s-g100.0~5, s-g103.0~27, s-g106.0~28",
-        "from": "transcript",
-        "answer": "自然语言题目到形式语言题目的 autoformalization 仍有 gap，形式化证明可能证明了错误定义的问题。他举例说，有证明把问题定义成不存在的东西，几千页最后像是在证明一等于一。",
-        "found_in": "s4:p1",
-        "verdict": "correct",
-        "note": "指出自然语言到形式化的 gap，以及证明错误定义的问题。",
-        "hash": "108896288cd105bf"
-      },
-      {
-        "id": "q04",
-        "question": "关于在强基座上加入新领域，讲师对所需数据量提出了什么猜测？",
-        "expected": "新领域可能需要更少而非更多的数据；已有语言、数学、编程能力有助于新领域泛化。",
-        "evidence": "s-g123.0, s-g124.0, s-g124.0~43",
-        "from": "transcript",
-        "answer": "这是他的猜测：当基座已经会语言、数学、编程时，每加入一个新的人类领域，可能只需更少而非更多的数据就能泛化。",
-        "found_in": "s5:p2",
-        "verdict": "correct",
-        "note": "涵盖强基座帮助新领域泛化、所需数据可能更少。",
-        "hash": "2be53d76573ec404"
-      },
-      {
-        "id": "q05",
-        "question": "讲师如何对比人类与大模型学习世界、语言和数学的顺序？",
-        "expected": "人类先学世界模型，再语言、数学；大模型大致从语言、数学走向多模态和空间感知。",
-        "evidence": "s-g119.0~2, s-g125.0~37, s-g128.0",
-        "from": "transcript",
-        "answer": "人从婴儿起先与世界交互、学世界模型，再学语言、数学，后来训练 research taste；大模型反过来，先学语言和数学，再学多模态和空间感知。",
-        "found_in": "s5:p1, s5:p2",
-        "verdict": "correct",
-        "note": "正确对比人类与模型的学习顺序。",
-        "hash": "2be53d76573ec404"
-      },
-      {
-        "id": "q06",
-        "question": "讲师说构造软件的世纪性难题涉及哪三个层次之间的 gap？",
-        "expected": "Intent（想要什么）、Specification（规格）、Implementation（实现）之间的 gap。",
-        "evidence": "s-g229.0~11, s-g238.0~1",
-        "from": "transcript",
-        "answer": "intent（想要什么）、specification（规格）和 implementation（实现）三层之间的 gap。",
-        "found_in": "s7:p0",
-        "verdict": "correct",
-        "note": "准确列出 intent、specification、implementation 三层。",
-        "hash": "c57adcd0f8252cd6"
-      },
-      {
-        "id": "q07",
-        "question": "针对“从零开始构造系统该怎么做”，讲师给出的当代答案是什么，为什么？",
-        "expected": "先做 MVP/最小原型；以少量实现验证 intent 和 spec，再迭代，减少试错成本。",
-        "evidence": "s-g244.0~8, s-g250.0~1, s-g257.0~7, s-g265.0~5",
-        "from": "transcript",
-        "answer": "直接做一个 MVP，即最小可行产品或最小原型。做得少错得少，AI 实现成本低、可以扔掉；用最少且接近最终产品的东西暴露 intent 和 specification 的问题，迭代几版后再正式做。",
-        "found_in": "s7:p0, s7:p1",
-        "verdict": "correct",
-        "note": "涵盖先做最小原型、验证意图与规格及低成本迭代。",
-        "hash": "c57adcd0f8252cd6"
-      },
-      {
-        "id": "q08",
-        "question": "在办公室设备案例中，讲师希望扫描仪和打印机分别抽象成什么接口？",
-        "expected": "扫描仪为 scan，可指定朝向、单双面、DPI；打印机为 print(image)，使软件层面向干净接口。",
-        "evidence": "s-g295.0, s-g300.0~17, s-g304.0~18",
-        "from": "transcript",
-        "answer": "扫描仪抽象成 scan，参数说明正面朝上或朝下、单面或双面、DPI；打印机抽象成 print 一个 image。",
-        "found_in": "s8:p0",
-        "verdict": "correct",
-        "note": "准确给出 scan 参数与 print(image) 接口。",
-        "hash": "68270fda13cc3b91"
-      },
-      {
-        "id": "q09",
-        "question": "AI 如何在看不到打印结果的情况下调试热转印打印机的深度参数？",
-        "expected": "反复打印带尝试编号的标签；询问讲师颜色偏淡还是偏浓，再调整。",
-        "evidence": "s-g352.0~25, s-g359.0",
-        "from": "transcript",
-        "answer": "AI 反复打印带尝试编号的标签，询问讲师结果是淡了还是浓了，再据此调整加热程度或图像深度参数；模型本身看不到结果。讲师说若接摄像头，还能自动观察并迭代。",
-        "found_in": "s8:e0",
-        "verdict": "correct",
-        "note": "涵盖编号标签、人反馈浓淡及据此调参。",
-        "hash": "68270fda13cc3b91"
-      },
       {
         "id": "q10",
         "question": "对于电子墨水屏，讲师除了 computer use 之外，实际采用了什么办法？",
@@ -900,16 +1073,100 @@
         "hash": "79d64ec4e76a584b"
       },
       {
+        "id": "q01",
+        "question": "讲座开头，讲师认为约 100 毫秒的小决策模型可以怎样改善数字人与人的交流？",
+        "expected": "根据对话实时生成脸部微表情；降低延迟、增强实时性和人感。",
+        "evidence": "s-g22.0~34, s-g24.0, s-g25.0",
+        "from": "transcript",
+        "answer": "用约100—200毫秒的小模型根据对话实时决策，生成脸部微表情，降低数字人的延迟，使交流更实时、更有人感。",
+        "found_in": "s1:p1",
+        "verdict": "correct",
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "ac712eb5014bc561"
+      },
+      {
+        "id": "q02",
+        "question": "讲师如何解释模型当前“品位”方面的短板？",
+        "expected": "对接下来应该做什么的直觉不足；倾向立即反馈和最快完成任务，长期结果可能不理想。",
+        "evidence": "s-g88.0~2, s-g88.0~22, s-g91.0~6, s-g93.0~46",
+        "from": "transcript",
+        "answer": "“品位”是对接下来该做什么的直觉。模型太紧盯prompt，又受即时奖励驱动，容易用最快最脏的办法完成任务、发生reward hacking，长期产物却未必令人满意。",
+        "found_in": "s4:p0",
+        "verdict": "correct",
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "c1617382a21a2f5d"
+      },
+      {
+        "id": "q03",
+        "question": "讲师为什么说数学即使形式化了，也不代表验证一定容易？",
+        "expected": "自然语言问题转换为形式语言时仍存在 gap；可能证明的是被错误定义的、近似“一等于一”的问题。",
+        "evidence": "s-g97.0~9, s-g100.0~5, s-g103.0~27, s-g106.0~28",
+        "from": "transcript",
+        "answer": "自然语言问题转成形式语言的autoformalization仍有gap；即使形式证明成立，也可能形式化错了问题，实际证明的是不存在的定义或类似“一等于一”的东西。",
+        "found_in": "s4:p1",
+        "verdict": "correct",
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "c1617382a21a2f5d"
+      },
+      {
+        "id": "q06",
+        "question": "讲师说构造软件的世纪性难题涉及哪三个层次之间的 gap？",
+        "expected": "Intent（想要什么）、Specification（规格）、Implementation（实现）之间的 gap。",
+        "evidence": "s-g229.0~11, s-g238.0~1",
+        "from": "transcript",
+        "answer": "intent（想要什么）、specification（规格）和implementation（实现）三个层次之间的gap。",
+        "found_in": "s7:p0",
+        "verdict": "correct",
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "d5038e93cab31852"
+      },
+      {
+        "id": "q07",
+        "question": "针对“从零开始构造系统该怎么做”，讲师给出的当代答案是什么，为什么？",
+        "expected": "先做 MVP/最小原型；以少量实现验证 intent 和 spec，再迭代，减少试错成本。",
+        "evidence": "s-g244.0~8, s-g250.0~1, s-g257.0~7, s-g265.0~5",
+        "from": "transcript",
+        "answer": "直接做MVP：做最少但接近最终产品的原型。AI生成实现成本低，可以随时扔掉；借原型发现意图和规格、架构的问题，再迭代几版后正式实现。",
+        "found_in": "s7:p0, s7:p1",
+        "verdict": "correct",
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "d5038e93cab31852"
+      },
+      {
+        "id": "q08",
+        "question": "在办公室设备案例中，讲师希望扫描仪和打印机分别抽象成什么接口？",
+        "expected": "扫描仪为 scan，可指定朝向、单双面、DPI；打印机为 print(image)，使软件层面向干净接口。",
+        "evidence": "s-g295.0, s-g300.0~17, s-g304.0~18",
+        "from": "transcript",
+        "answer": "扫描仪抽象成scan，参数说明正面朝上或朝下、单面或双面、DPI；打印机抽象成print一个image，让上层软件只依赖干净接口。",
+        "found_in": "s8:p0",
+        "verdict": "correct",
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "433c06380fe26d9d"
+      },
+      {
+        "id": "q09",
+        "question": "AI 如何在看不到打印结果的情况下调试热转印打印机的深度参数？",
+        "expected": "反复打印带尝试编号的标签；询问讲师颜色偏淡还是偏浓，再调整。",
+        "evidence": "s-g352.0~25, s-g359.0",
+        "from": "transcript",
+        "answer": "反复打印带尝试编号的标签，询问讲师结果是淡了还是浓了，再调整加热程度或图像深度参数。模型看不到成品，由人提供反馈；若接摄像头，他认为可自动完成。",
+        "found_in": "s8:e0",
+        "verdict": "correct",
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "433c06380fe26d9d"
+      },
+      {
         "id": "q12",
         "question": "选课系统的例子中，“有先修课程”为什么还不是完整需求？",
         "expected": "必须确定是硬限制还是软限制、谁可 override；还需处理教师特批或毕业前的例外。",
         "evidence": "s-g457.0~3, s-g458.1~62, s-g460.0~45, s-g462.0~30",
         "from": "transcript",
-        "answer": "还必须明确先修课是硬限制还是软限制，不满足时能否特批、谁有权 override，以及临近毕业等例外如何处理；业务规则和责任边界也是需求的一部分。",
-        "found_in": "s12:p1, s12:f0",
+        "answer": "还必须说明先修是硬限制还是软限制、谁能override、老师能否特批，以及临近毕业等例外如何处理；业务规则和责任边界尚未确定。",
+        "found_in": "s12:p1",
         "verdict": "correct",
-        "note": "涵盖软硬限制、override 权限和毕业等例外。",
-        "hash": "a4a3bde76f1474e8"
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "110e230748924f4d"
       },
       {
         "id": "q13",
@@ -917,11 +1174,11 @@
         "expected": "进度、成本、质量；表现包括进度不可预测、成本失控和延期交付。",
         "evidence": "s-g462.0~110",
         "from": "transcript",
-        "answer": "进度、成本、质量一起失控：进度无法预测，成本崩溃，质量和维护都有问题。",
+        "answer": "进度、成本、质量一起失控：进度不可预测、成本崩溃，质量和维护也有问题。",
         "found_in": "s12:p1, s12:f1",
-        "verdict": "correct",
-        "note": "准确列出进度、成本、质量三方面失控。",
-        "hash": "a4a3bde76f1474e8"
+        "verdict": "partial",
+        "note": "包含进度、成本、质量及失控表现，但未提到延期交付。",
+        "hash": "110e230748924f4d"
       },
       {
         "id": "q14",
@@ -929,47 +1186,11 @@
         "expected": "集中 goto release 进行资源检查和释放；中途退出统一跳到该处，并为新增资源补上释放。",
         "evidence": "s-g469.0~13, s-g471.0~29, s-g472.0, s-g478.0",
         "from": "transcript",
-        "answer": "认可 C 中用 goto 跳到统一 release 位置清理资源的惯用法。前提是不能中途直接退出，提前退出必须 goto release，并在 release 中逐个检查和释放所有申请的资源。",
+        "answer": "允许goto跳到函数末尾统一的release处，逐一检查并释放所有已申请资源；前提是不能中途直接退出，提前退出必须经过release，新增资源也要加入对应检查和释放。",
         "found_in": "s13:p0, s13:p1",
         "verdict": "correct",
-        "note": "涵盖统一跳转 release、检查并释放全部资源的约定。",
-        "hash": "19960df0ec52701d"
-      },
-      {
-        "id": "q15",
-        "question": "讲师为什么说只写 Online Judge 小程序不会遇到同样的软件危机？",
-        "expected": "题目程序调对后通常无需维护；现实软件随机器能力增强而承载更多 intent，需求和不确定性持续膨胀。",
-        "evidence": "s-g486.0, s-g486.1~29, s-g487.0",
-        "from": "transcript",
-        "answer": "OJ 小程序算完就结束，调对后通常无需维护；现实软件会不断承担更多世界中的意图，需求膨胀、不确定性增加，实现和维护也更复杂。",
-        "found_in": "s14:p0",
-        "verdict": "correct",
-        "note": "涵盖 OJ 无需持续维护与现实需求、不确定性不断膨胀。",
-        "hash": "a7ddbabaaca02430"
-      },
-      {
-        "id": "q16",
-        "question": "讲师提到哪一年的 NATO 会议是软件工程诞生的重要节点？",
-        "expected": "1968 年的 NATO 软件工程会议。",
-        "evidence": "s-g495.0~30",
-        "from": "transcript",
-        "answer": "1968 年的 NATO 软件工程会议。",
-        "found_in": "s14:p1",
-        "verdict": "correct",
-        "note": "年份与会议均正确。",
-        "hash": "a7ddbabaaca02430"
-      },
-      {
-        "id": "q17",
-        "question": "“The never going to happen can happen”在 Apollo 11 案例中体现为什么设计？",
-        "expected": "将不可能事件和硬件不可靠也纳入考虑；通过优先级与 recovery，让警报下关键下降控制任务继续。",
-        "evidence": "s-g508.0, s-g509.0~44, s-g511.0~16, s-g512.0~17",
-        "from": "transcript",
-        "answer": "把硬件不可靠、程序 crash 等原本认为不该发生的情况也纳入防御和恢复设计。Apollo 11 下降时发生警报，软件通过优先级和 recovery，仍让关键下降控制任务继续。",
-        "found_in": "s15:p0",
-        "verdict": "correct",
-        "note": "涵盖异常与硬件不可靠，以及优先级和恢复保证关键任务继续。",
-        "hash": "171d64196be08ad7"
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "5c1da90044a5e199"
       },
       {
         "id": "q18",
@@ -977,11 +1198,11 @@
         "expected": "在成本、时间等约束下，把人的意图变为能工作、能维护、随需求变化生存的软件。",
         "evidence": "s-g513.0~34, s-g515.0~15, s-g516.0~30",
         "from": "transcript",
-        "answer": "在成本、时间和团队等约束下，把人的意图或客户要求变成能够工作、维护和生存，并能应对需求变化的软件；用系统化、有纪律、可量化的方法覆盖开发、运行和维护。",
-        "found_in": "s15:p0, s15:p1",
+        "answer": "在成本、时间和团队等约束下，把人的意图或客户要求变成能工作、能维护、能生存并适应需求变化的软件。",
+        "found_in": "s15:p0",
         "verdict": "correct",
-        "note": "涵盖成本时间约束、意图落地、可运行维护及适应变化。",
-        "hash": "171d64196be08ad7"
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "84ded650f254bb47"
       },
       {
         "id": "q19",
@@ -989,11 +1210,11 @@
         "expected": "常见瀑布图来自该论文；论文实际批判单向瀑布流程，而非简单推荐照此执行。",
         "evidence": "s-g581.0, s-g617.0~6, s-g624.0~12, s-g701.0~26",
         "from": "transcript",
-        "answer": "Royce 1970 年论文虽然画出了后来被称为瀑布模型的阶段图，正文却是在批判这种做法风险高、容易失败，并提出 pilot／do it twice；不能把它理解为提倡一次走完的瀑布流程。",
-        "found_in": "s16:p1, s17:p1",
+        "answer": "论文虽画出后来被称为瀑布模型的经典阶段图，正文却是在批评这种实施方式风险高、容易失败，并非推荐照着瀑布做到底。",
+        "found_in": "s16:p1",
         "verdict": "correct",
-        "note": "准确指出瀑布图来源及论文实际批判单向流程。",
-        "hash": "1df1bafaa394bdfc"
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "1258c05b284eef37"
       },
       {
         "id": "q20",
@@ -1001,11 +1222,11 @@
         "expected": "此前设计和报告不能真正运行；测试才直接观察程序行为，晚发现漂移会导致回头修改与超支。",
         "evidence": "s-g656.0~25, s-g670.0~6, s-g674.0~15, s-g679.0~13",
         "from": "transcript",
-        "answer": "此前需求和设计主要是不能运行的报告、文档，正确性没有强保证；测试时程序才真正跑起来，实际行为和此前的漂移才被暴露。",
-        "found_in": "s16:p2, s17:p0",
+        "answer": "测试以前只有文档、报告和分析，程序尚不能运行；测试时才真正跑起来，第一次经历timing、storage、I/O等实际行为并知道是否满足约束。",
+        "found_in": "s16:p2, s17:p0, s17:f0",
         "verdict": "partial",
-        "note": "解释了测试首次运行并暴露漂移，但未说明晚发现会导致回头修改与超支。",
-        "hash": "1df1bafaa394bdfc"
+        "note": "解释了测试首次观察实际运行行为，但遗漏晚发现漂移会导致返工与超支。",
+        "hash": "0173e37011af8226"
       },
       {
         "id": "q21",
@@ -1013,11 +1234,11 @@
         "expected": "先做不完备但体现系统功能的原型；以低成本迭代，将反馈用于系统设计，提前发现问题。",
         "evidence": "s-g683.0~28, s-g687.0~2, s-g693.0~6",
         "from": "transcript",
-        "answer": "先做一个不完备但能体现系统功能的 preliminary pilot，尽早经历关键问题。即使失败，迭代成本也低，可把反馈用于修订系统设计，再完善产品；讲师用今天的 MVP 来理解它。",
+        "answer": "先做不完备但能体现系统功能的preliminary pilot，尽早经历关键问题；允许它失败，以低迭代成本把经验反馈进设计，再完善正式产品。讲师把它理解为今天的MVP。",
         "found_in": "s17:p1, s18:p2",
         "verdict": "correct",
-        "note": "涵盖不完备原型、低成本迭代及反馈修订设计。",
-        "hash": "ca9cca16b71c1cbc"
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "032444422fb53c36"
       },
       {
         "id": "q22",
@@ -1025,11 +1246,11 @@
         "expected": "先确定测试用例的输入、流程与输出；在大量编码前检验设计或算法假设。",
         "evidence": "s-g830.1~10, s-g840.0~14, s-g847.0~1",
         "from": "transcript",
-        "answer": "先把测试用例作为需求与设计定好，明确输入、应经历的流程和预期输出，并立刻对照算法，而不是错误算法写完才跑样例，从而更早发现设计错误、减少返工。",
+        "answer": "先定测试用例，写清输入应经历的流程和输出，立即对照算法设计，避免用错误算法写完代码后才从样例失败发现整个设计不对。",
         "found_in": "s18:p2",
         "verdict": "correct",
-        "note": "涵盖先明确测试输入、流程与输出，提前检验算法假设。",
-        "hash": "77d2812c473a7120"
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "f0fe3433487967fb"
       },
       {
         "id": "q23",
@@ -1037,11 +1258,11 @@
         "expected": "可以只有 Hello World 或各模块自报家门；只要模块串通，就可让关键假设尽早遇到证据并持续演进。",
         "evidence": "s-g887.0~11, s-g895.0, s-g902.0~9",
         "from": "transcript",
-        "answer": "第一个版本可以只有 hello world、打印一行，或每个模块自报家门并串起来。它仍是有价值的原型，可以让关键假设尽早遇到证据，立即验证不确定性，再不断演进。",
+        "answer": "可以只有hello world、只打印一行，或各模块自报家门并能串起来；仍能作为原型让关键假设尽早遇到证据，立即验证不确定性，再不断演进。",
         "found_in": "s19:p0",
         "verdict": "correct",
-        "note": "涵盖 Hello World 或模块自报家门、串通模块及验证假设的价值。",
-        "hash": "33c63ef2f7c79ef8"
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "96ad42c956a2f3d3"
       },
       {
         "id": "q24",
@@ -1049,11 +1270,11 @@
         "expected": "各阶段的产物组成有向无环依赖图；依赖会传递，上游设计出错会影响所有依赖它的下游产物。",
         "evidence": "s-g936.0, s-g940.0, s-g942.0~8, s-g944.0, s-g946.0",
         "from": "transcript",
-        "answer": "各阶段及产物组成有向无环的数据依赖图，关联会向下传递。测试失败若追溯到上游设计错误，所有依赖该设计的下游产物都要推倒重来，因此返工成本高。",
+        "answer": "他把各阶段产物看成有向无环的数据依赖图，关联会传递；测试失败若追溯到上游设计错误，依赖该设计的下游产物都得推翻重做，因此返工昂贵。",
         "found_in": "s19:p2",
         "verdict": "correct",
-        "note": "涵盖有向无环依赖图、依赖传递与下游返工。",
-        "hash": "33c63ef2f7c79ef8"
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "96ad42c956a2f3d3"
       },
       {
         "id": "q25",
@@ -1061,11 +1282,11 @@
         "expected": "避免一次产生大量依赖；先走通优先级最高的最小端到端流程，再扩展，类比从宽度优先变为深度优先。",
         "evidence": "s-g948.1~9, s-g951.0, s-g952.1~13, s-g953.0~20",
         "from": "transcript",
-        "answer": "把依赖切小，不要一次产生大量 dependency；先做 MVP，走通优先级最高的一条依赖链，再向右扩展、不断迭代，尽早拿反馈。他先讲逐层做的宽度优先，随后改说 depth search／DFS；笔记保留了这两截不一致的说法。",
+        "answer": "把依赖切小，不一次产生大量依赖；先做MVP，走通优先级最高的一条dependency，再向右扩展，尽早得到反馈。他先提宽度优先逐层做，随后改说depth search、DFS式迭代；笔记保留了这两截不一致的说法。",
         "found_in": "s20:p0, s20:n0",
         "verdict": "correct",
-        "note": "涵盖缩小依赖、优先走通最小链路及从宽度优先转向深度优先。",
-        "hash": "fc6a1e1f18a85727"
+        "note": "包含减少依赖、优先走通最小流程再扩展，以及宽度优先转向深度优先。",
+        "hash": "3c635f0e19a8768f"
       },
       {
         "id": "q26",
@@ -1073,11 +1294,11 @@
         "expected": "有逐条格式、每项勾叉等规范；具有较确定的语义，比自由文档更容易对齐。",
         "evidence": "s-g1033.0~6, s-g1042.0~9, s-g1050.0~7",
         "from": "transcript",
-        "answer": "它虽用自然语言，却规定逐条列出、每条必须打勾或打叉，具有格式规范和由人检查的语义。人对勾叉比对普通文档更容易对齐，因此介于自然语言和形式语言之间。",
+        "answer": "checklist虽用自然语言，却有格式规范，必须逐条列出并打勾或打叉，具有由人检查的确定语义，介于自然语言和形式语言之间，比自由文档更容易对齐。",
         "found_in": "s21:p2",
         "verdict": "correct",
-        "note": "涵盖逐条勾叉规范、较确定语义及更易对齐。",
-        "hash": "d9300b934d95cf99"
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "427604fd70c73deb"
       },
       {
         "id": "q27",
@@ -1085,11 +1306,11 @@
         "expected": "人描述性质/property；工具生成大量输入寻找反例，测试通过增加对代码的信心。",
         "evidence": "s-g1139.0~7, s-g1146.0, s-g1148.0",
         "from": "transcript",
-        "answer": "人描述程序应该满足的性质，工具自动生成输入、寻找反例，把 property 转成许多测试用例，用独立检查提高对代码正确性的信心。",
+        "answer": "人描述程序应满足的性质，工具据此生成输入和测试用例、寻找反例；通过这些独立检查增加对实现正确性的信心。",
         "found_in": "s22:p1",
         "verdict": "correct",
-        "note": "正确说明人描述性质、工具生成输入找反例并提高信心。",
-        "hash": "48c677c84a2370b5"
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "a53f56d6499ff4cb"
       },
       {
         "id": "q28",
@@ -1097,11 +1318,83 @@
         "expected": "代码与需求点对应；需求之间、需求与设计之间对应，以交叉检查提高质量信心。",
         "evidence": "s-g1156.0, s-g1157.0",
         "from": "transcript",
-        "answer": "每段代码与需求点、需求与需求、需求与设计都要能通过链接或文档对上；追踪矩阵还维护需求、设计与测试的关联，用于检查覆盖、交叉检验和分析变更影响。",
+        "answer": "通过链接或文档，把每段代码与需求点、需求与需求、需求与设计对应起来；追踪矩阵还维护需求、设计与测试的关联，检查覆盖并分析变更影响。",
         "found_in": "s22:p2",
         "verdict": "correct",
-        "note": "涵盖代码与需求、需求之间、需求与设计的对应及交叉检查。",
-        "hash": "48c677c84a2370b5"
+        "note": "答案包含 expected 的全部关键点，无矛盾。",
+        "hash": "a53f56d6499ff4cb"
+      },
+      {
+        "id": "q36",
+        "question": "Data Dependency 比较图中，MVP / Pilot 一行的三个蓝框依次写什么，反馈回到哪个粉色框？",
+        "expected": "蓝框依次为“假设→最小实现→验证”；粉色框为“修订需求 / 设计”。",
+        "evidence": "v004419233.jpg",
+        "from": "visual",
+        "answer": "笔记将MVP / Pilot流程记为“假设、最小实现、验证”，然后反馈修订需求或设计；但没有记录三个蓝框和粉色框的精确图中文字，无法仅凭笔记确认其逐字标签。",
+        "found_in": "s20:p1",
+        "verdict": "correct",
+        "note": "已给出三个蓝框的正确顺序及反馈修订需求或设计；对逐字标签的保留不影响要点齐全。",
+        "hash": "3c635f0e19a8768f"
+      },
+      {
+        "id": "q04",
+        "question": "关于在强基座上加入新领域，讲师对所需数据量提出了什么猜测？",
+        "expected": "新领域可能需要更少而非更多的数据；已有语言、数学、编程能力有助于新领域泛化。",
+        "evidence": "s-g123.0, s-g124.0, s-g124.0~43",
+        "from": "transcript",
+        "answer": "他猜测，在已经会语言、数学、编程的强基座上，每加入一个新的人类领域，达到泛化所需的数据可能反而更少，而不是更多。这是他的猜测。",
+        "found_in": "s5:p2",
+        "verdict": "correct",
+        "note": "包含新领域可能需要更少数据，以及强基座已有能力促进泛化。",
+        "hash": "f92568ac73e95f05"
+      },
+      {
+        "id": "q05",
+        "question": "讲师如何对比人类与大模型学习世界、语言和数学的顺序？",
+        "expected": "人类先学世界模型，再语言、数学；大模型大致从语言、数学走向多模态和空间感知。",
+        "evidence": "s-g119.0~2, s-g125.0~37, s-g128.0",
+        "from": "transcript",
+        "answer": "人先通过婴儿时期与世界交互学习世界模型，再学语言、数学，之后才可能训练 research taste；大模型则先学语言和数学，再学空间感知，把人的顺序倒了过来。",
+        "found_in": "s5:p1, s5:p2",
+        "verdict": "correct",
+        "note": "准确对比人类先世界模型后语言、数学，与大模型先语言、数学后空间感知的顺序。",
+        "hash": "f92568ac73e95f05"
+      },
+      {
+        "id": "q15",
+        "question": "讲师为什么说只写 Online Judge 小程序不会遇到同样的软件危机？",
+        "expected": "题目程序调对后通常无需维护；现实软件随机器能力增强而承载更多 intent，需求和不确定性持续膨胀。",
+        "evidence": "s-g486.0, s-g486.1~29, s-g487.0",
+        "from": "transcript",
+        "answer": "Online Judge 小程序只是算一个东西，算完就结束；一旦调对就不需要长期维护。现实软件则随机器能力增强承担更多现实世界意图，需求膨胀，不确定性和实现复杂度随之增加。",
+        "found_in": "s14:p0",
+        "verdict": "correct",
+        "note": "包含调对后通常无需维护，以及现实软件意图、需求和不确定性持续增长。",
+        "hash": "e4241d538ce77159"
+      },
+      {
+        "id": "q16",
+        "question": "讲师提到哪一年的 NATO 会议是软件工程诞生的重要节点？",
+        "expected": "1968 年的 NATO 软件工程会议。",
+        "evidence": "s-g495.0~30",
+        "from": "transcript",
+        "answer": "1968 年。",
+        "found_in": "s14:p1",
+        "verdict": "correct",
+        "note": "年份准确：1968 年。",
+        "hash": "e4241d538ce77159"
+      },
+      {
+        "id": "q17",
+        "question": "“The never going to happen can happen”在 Apollo 11 案例中体现为什么设计？",
+        "expected": "将不可能事件和硬件不可靠也纳入考虑；通过优先级与 recovery，让警报下关键下降控制任务继续。",
+        "evidence": "s-g508.0, s-g509.0~44, s-g511.0~16, s-g512.0~17",
+        "from": "transcript",
+        "answer": "把看似绝不可能的故障也当作可能，假设硬件不可靠、程序可能 crash，并在软件中设计兜底、任务优先级和 recovery。Apollo 11 下降时出现警报，系统仍能让关键的下降控制任务继续执行。",
+        "found_in": "s14:p2, s15:p0",
+        "verdict": "correct",
+        "note": "包含对意外故障和硬件不可靠的考虑，以及通过优先级和 recovery 保持关键下降任务执行。",
+        "hash": "60b75e7bf4efbd0e"
       },
       {
         "id": "q29",
@@ -1109,11 +1402,11 @@
         "expected": "require 是前置条件，do 是实现，ensure 是后置保证；可先空着 do，先写模块文档及前后置条件。",
         "evidence": "s-g1169.0, s-g1170.0, s-g1171.0",
         "from": "transcript",
-        "answer": "require 是前置条件；do 是实现代码；ensure 是后置条件，即完成后保证什么。他建议先写模块文档、require 和 ensure，把 do 暂时留空。",
+        "answer": "require 是前置条件，do 是代码实现，ensure 是完成后保证的后置条件。他建议先写各模块的文档、precondition 和 postcondition，也就是先写 require、ensure，把 do 暂时留空。",
         "found_in": "s23:p0",
         "verdict": "correct",
-        "note": "准确解释 require、do、ensure，并说明先写契约、暂空实现。",
-        "hash": "48319ffa17de2d30"
+        "note": "准确解释 require、do、ensure，并说明先写文档和前后置条件、暂空实现。",
+        "hash": "31aa8ede6a7ac5c9"
       },
       {
         "id": "q30",
@@ -1121,11 +1414,11 @@
         "expected": "断言无法被证明就不能编译，通过编译意味着保证能证明；从原先三十年改为自原时间点算十到十五年。",
         "evidence": "s-g1197.0~13, s-g1200.0~50, s-g1202.0~5, s-g1204.2~28",
         "from": "transcript",
-        "answer": "编译器应自动证明程序员写出的业务 assert（包括前置和后置条件）；不能证明就不允许编译。他原来在约2020年、又改口约2022年预言三十年后实现，现在改为从当时起十年或十五年可能就够。",
-        "found_in": "s23:p2",
+        "answer": "他设想编译器必须证明程序员写出的业务逻辑 assert（也可写成前置、后置条件），不能证明就不允许编译，通过编译则百分之百保证该断言可被证明。他原先在约 2020 年、又改口约 2022 年预测要三十年，如今改为从当时算十年或十五年可能就能解决。",
+        "found_in": "s23:p2, s23:n0",
         "verdict": "correct",
-        "note": "涵盖断言证明作为编译条件，以及从三十年改为原时间点起十至十五年。",
-        "hash": "48319ffa17de2d30"
+        "note": "包含无法证明断言则不能编译，以及预测从原时间点算三十年缩短为十到十五年。",
+        "hash": "31aa8ede6a7ac5c9"
       },
       {
         "id": "q31",
@@ -1133,11 +1426,11 @@
         "expected": "他认为 AI 能对齐自然语言与其他表示，削弱层层中间语言的必要性；UML 减少语义漂移、对齐意图的 first principles 仍有价值。",
         "evidence": "s-g1250.0~9, s-g1257.0~9, s-g1263.0~2",
         "from": "transcript",
-        "answer": "UML 依赖的前提是自然语言不能与形式语言对齐，需要多层中间语言；他认为 AI 已使自然语言能对齐并通过追问澄清，因此 UML 作为中间语言已死。但其 first principles 仍有价值：固定可对齐的语义、保留不能对齐的部分，减少语义漂移。",
+        "answer": "他认为 UML 的前提是自然语言与形式语言无法直接对齐，因而需要层层中间语言；如今自然语言可以借助 AI 与各种表达对齐，AI 还能追问，所以这层中间语言成了历史。但设计 UML 的 first principles 仍有价值：明确哪些意图和语义必须定死，哪些可以留白，减少歧义和语义漂移，解决对齐问题。",
         "found_in": "s24:p1, s24:p3",
         "verdict": "correct",
-        "note": "涵盖 AI 对齐削弱中间语言必要性，以及减少语义漂移的原则价值。",
-        "hash": "cb3885b53753f23a"
+        "note": "包含 AI 对齐自然语言与其他表示削弱中间语言必要性，以及减少语义漂移、对齐意图的原则价值。",
+        "hash": "0a6a18ec3c9fe110"
       },
       {
         "id": "q32",
@@ -1145,11 +1438,11 @@
         "expected": "每个读约 50 页；切片带 overlap，提取软件工程智慧并结合讲义总结成课件。",
         "evidence": "s-g1296.0~3, s-g1303.0",
         "from": "transcript",
-        "answer": "每个 sub-agent 约读50页，把长文档切片，并让相邻切片有 overlap，以免切分处接不上；各自提取软件工程智慧，再结合 lecture notes 总结课件。",
+        "answer": "每个 sub-agent 大约读 50 页；把长文档切片，并在相邻切片间保留 overlap，避免切分处衔接不上。",
         "found_in": "s24:p2",
-        "verdict": "correct",
-        "note": "涵盖每个约五十页、重叠切片及结合讲义提炼课件。",
-        "hash": "cb3885b53753f23a"
+        "verdict": "partial",
+        "note": "准确回答约 50 页和相邻切片 overlap；未提取软件工程智慧并结合讲义总结成课件这一安排。",
+        "hash": "0a6a18ec3c9fe110"
       },
       {
         "id": "q33",
@@ -1157,11 +1450,11 @@
         "expected": "哪些 intention 必须定死、哪些可以留白；通过半形式语言确定可对齐的语义。",
         "evidence": "s-g1353.0~3, s-g1361.0~7",
         "from": "transcript",
-        "answer": "哪些 intention（意图）必须定死，哪些可以留白？",
+        "answer": "哪些 intention（意图）必须定死，哪些留白？",
         "found_in": "s24:p3",
         "verdict": "partial",
-        "note": "准确给出哪些意图定死、哪些留白的问题，但未提通过半形式语言确定可对齐语义。",
-        "hash": "cb3885b53753f23a"
+        "note": "准确给出哪些意图必须定死、哪些留白；未说明通过半形式语言确定可对齐的语义。",
+        "hash": "0a6a18ec3c9fe110"
       },
       {
         "id": "q34",
@@ -1172,8 +1465,8 @@
         "answer": "0 < amount ≤ balance。",
         "found_in": "s23:f0",
         "verdict": "correct",
-        "note": "精确包含严格正数与不超过余额两个限制。",
-        "hash": "48319ffa17de2d30"
+        "note": "精确包含 amount 严格大于 0 且不超过 balance。",
+        "hash": "31aa8ede6a7ac5c9"
       },
       {
         "id": "q35",
@@ -1181,23 +1474,11 @@
         "expected": "balance = balance_old − amount；类不变量为 balance ≥ 0。",
         "evidence": "v005379233.jpg",
         "from": "visual",
-        "answer": "正常返回后 balance = balance_old − amount，其中 balance_old 是调用前余额；类不变量为 balance ≥ 0，在对象对外可用时成立。",
-        "found_in": "s23:f0",
+        "answer": "正常返回后：balance = balance_old − amount，其中 balance_old 是调用前余额；类不变量：balance ≥ 0，在对象对外可用时成立。",
+        "found_in": "s23:p2, s23:f0",
         "verdict": "correct",
-        "note": "余额后置公式与类不变量均正确。",
-        "hash": "48319ffa17de2d30"
-      },
-      {
-        "id": "q36",
-        "question": "Data Dependency 比较图中，MVP / Pilot 一行的三个蓝框依次写什么，反馈回到哪个粉色框？",
-        "expected": "蓝框依次为“假设→最小实现→验证”；粉色框为“修订需求 / 设计”。",
-        "evidence": "v004419233.jpg",
-        "from": "visual",
-        "answer": "三个框依次是“假设”“最小实现”“验证”，反馈回到“修订需求或设计”。",
-        "found_in": "s20:f0",
-        "verdict": "correct",
-        "note": "三个蓝框顺序和反馈目标均正确。",
-        "hash": "fc6a1e1f18a85727"
+        "note": "余额更新公式与 balance ≥ 0 类不变量均准确。",
+        "hash": "31aa8ede6a7ac5c9"
       }
     ],
     "question_author": "independent_agent",

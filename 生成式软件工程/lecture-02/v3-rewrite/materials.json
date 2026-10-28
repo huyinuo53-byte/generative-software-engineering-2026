@@ -1,0 +1,1551 @@
+{
+  "schema_version": 1,
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "checked_at": "2026-10-28T06:32:02.616815+00:00",
+  "course_term": "2026 秋，每周二 10:00–12:00",
+  "video_id": "BV1CQt365EzW",
+  "assumptions": [
+    "官网目录第二项「提示词与上下文工程」对应 lect2.md 与 slides2.html，和视频标题一致。讲义页没有写本讲的日历日期。",
+    "slides 页码等于 slides-data 数组下标加 1。紫色 span.aigc 记为 AIGC 批注，不记成讲师明确推荐。",
+    "agent small 保持口播，不对齐到标题不同的安全事件。"
+  ],
+  "expected_material_ids": [
+    "gse2026-lect2",
+    "gse2026-slides2",
+    "sutton-big-world",
+    "stanford-ai-index-2025-rd",
+    "longitude-acts-1714",
+    "openai-codex-rules",
+    "toyota-tps",
+    "homepage-jiangyy",
+    "openai-codex-approvals",
+    "liu-2024-lost-in-the-middle",
+    "brooks-1986-no-silver-bullet",
+    "cadar-2008-klee",
+    "zhang-2023-repocoder",
+    "wang-2025-coderag-bench",
+    "reynolds-2021-prompt-programming",
+    "liu-2021-prompt-survey",
+    "roediger-2006-retrieval",
+    "silver-2017-alphago-zero",
+    "homepage-jm233333",
+    "demo-nfs-arena",
+    "gpt2-2019-blog",
+    "chi-1989-self-explanation",
+    "cve-2025-54558",
+    "nam-light-brigade-order",
+    "wegner-1987-white-bear",
+    "tversky-kahneman-1974-anchoring",
+    "bainbridge-1983-ironies",
+    "simon-1978-satisficing",
+    "oral-agent-small-hf",
+    "oral-design-books",
+    "oral-nature-classics",
+    "oral-icse27-901"
+  ],
+  "materials": [
+    {
+      "id": "gse2026-lect2",
+      "required": true,
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "官网本课讲义页，是这一讲的正式文本，不是课外论文。",
+      "origin": "讲义页正文",
+      "listed_title": "提示词与上下文工程",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lect2.md",
+      "title": "提示词与上下文工程",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect2.md",
+      "version": "2026-10-28 抓取的讲义页",
+      "identity_status": "verified",
+      "identity_note": "页面 h1 与官网目录第二项一致。",
+      "path": "课堂笔记/sources/lect2.html",
+      "sha256": "3b83b9fbbb39af7a9d4adaf8fd2f9b266802b0abf6f4f3fdfc3db1f428fad132",
+      "reading_status": "full",
+      "scope_sections": [
+        "intro",
+        "context-not-only-the-last-sentence",
+        "lowering-the-cost-of-starting",
+        "what-done-means",
+        "one-step-is-shallow",
+        "rules-compete-for-attention",
+        "reviewer-is-not-enough",
+        "large-repos",
+        "tokens-without-progress",
+        "where-to-look",
+        "exploring-uncertainty"
+      ],
+      "read_sections": [
+        "intro",
+        "context-not-only-the-last-sentence",
+        "lowering-the-cost-of-starting",
+        "what-done-means",
+        "one-step-is-shallow",
+        "rules-compete-for-attention",
+        "reviewer-is-not-enough",
+        "large-repos",
+        "tokens-without-progress",
+        "where-to-look",
+        "exploring-uncertainty"
+      ],
+      "scope_reason": "讲义页是一讲的正文，范围是页面上从开场到「在不确定性中探索」的全部可见章节，不含页脚许可。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 2,
+          "location": "讲义页「模型看到的，远不止你刚输入的一句话」",
+          "claim": "工具返回可以只是材料，不因此成为指令；模型自述不能代替配置和代码。",
+          "role": "mechanism",
+          "note_target": "supplements[0]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "known_gaps": []
+    },
+    {
+      "id": "gse2026-slides2",
+      "required": true,
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "官网本课 slides，37 页都在 slides-data 里，是课堂投影的原页。",
+      "origin": "slides 正文",
+      "listed_title": "slides2.html",
+      "listed_url": "https://jyywiki.cn/GSE/2026/slides2.html",
+      "title": "提示词与上下文工程 slides",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides2.html",
+      "version": "2026-10-28 抓取",
+      "identity_status": "verified",
+      "identity_note": "script#slides-data 有 37 项，页码按下标加 1。",
+      "path": "课堂笔记/sources/slides2.html",
+      "sha256": "919ce9b64d435b2da3b1152224cf8c3634b829e24769087acfda9bf6f94c497e",
+      "reading_status": "full",
+      "scope_sections": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-04",
+        "slide-05",
+        "slide-06",
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15",
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-20",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29",
+        "slide-30",
+        "slide-31",
+        "slide-32",
+        "slide-33",
+        "slide-34",
+        "slide-35",
+        "slide-36",
+        "slide-37"
+      ],
+      "read_sections": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-04",
+        "slide-05",
+        "slide-06",
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15",
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-20",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29",
+        "slide-30",
+        "slide-31",
+        "slide-32",
+        "slide-33",
+        "slide-34",
+        "slide-35",
+        "slide-36",
+        "slide-37"
+      ],
+      "scope_reason": "范围是 37 页幻灯片的可见文字，含紫色 AIGC 批注；批注不记成讲师口述。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 6,
+          "location": "slides 第 12 页 AIGC 批注",
+          "claim": "五个选择维度和 k_i 的乘积写在批注里，口播没有念这道公式。",
+          "role": "mechanism",
+          "note_target": "supplements[3]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "known_gaps": []
+    },
+    {
+      "id": "sutton-big-world",
+      "required": true,
+      "kind": "pdf",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲师口述点名 Richard Sutton 的 big world hypothesis，slides 第 36 页正文给出 PDF 链接。这是该段的直接原文，不是 AIGC 批注。",
+      "origin": "slides 正文",
+      "listed_title": "Richard Sutton's Big World Hypothesis",
+      "listed_url": "http://incompleteideas.net/papers/The_Big_World_Hypothesis.pdf",
+      "title": "The Big World Hypothesis and its Ramifications for Artificial Intelligence",
+      "source_url": "http://incompleteideas.net/papers/The_Big_World_Hypothesis.pdf",
+      "version": "抓取到的 PDF，5 页，作者为 Khurram Javed 与 Richard S. Sutton",
+      "identity_status": "verified",
+      "identity_note": "slides 只写了 Sutton 的名字；PDF 的第一作者是 Javed。两名作者都保留，不把论文改成只有 Sutton。",
+      "path": "课堂笔记/sources/sutton-big-world.pdf",
+      "sha256": "f9f445f629d42aad50db31ecc6a07eab4deb99304bb34854664758d123313068",
+      "reading_status": "full",
+      "total_pages": 5,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "标题、作者和摘要中的假设陈述与正文第 1 节一致。"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 24,
+          "location": "PDF 第 1–5 页",
+          "claim": "假设是世界比单个智能体大、只能近似；「偏见相加大于二」不是论文里的句子。",
+          "role": "boundary",
+          "note_target": "supplements[14]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "known_gaps": []
+    },
+    {
+      "id": "stanford-ai-index-2025-rd",
+      "required": true,
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只出现在 slides 第 37 页 AIGC 批注，用来给墙里墙外配一个数字。不是讲师口述的阅读，也不能写成老师明确推荐。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "Stanford AI Index 2025",
+      "listed_url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/research-and-development",
+      "title": "Research and Development | The 2025 AI Index Report | Stanford HAI",
+      "source_url": "https://hai.stanford.edu/ai-index/2025-ai-index-report/research-and-development",
+      "version": "2025 AI Index 研发章概述页，2026-10-28 抓取",
+      "identity_status": "verified",
+      "identity_note": "批注链的是研发章概述，不是整份 AI Index。",
+      "path": "课堂笔记/sources/ai-index-2025-rd.html",
+      "sha256": "8e9a1482c91c6ae18832351d0137f9f6d19607b3178e12ae9159d7c5a61f43b1",
+      "reading_status": "full",
+      "scope_sections": [
+        "rd-overview-highlights"
+      ],
+      "read_sections": [
+        "rd-overview-highlights"
+      ],
+      "scope_reason": "AIGC 批注引用的是这一章概述页上的产业界占比。声明范围是该 URL 页面正文里的 8 条 highlight，不是整份报告，也不是报告 PDF。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 24,
+          "location": "概述页 highlight 1 与 highlight 4–5",
+          "claim": "2024 年近 90% 的 notable models 来自产业界，2023 年是 60%。同一页没有训练成本的美元区间。",
+          "role": "boundary",
+          "note_target": "supplements[15]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "known_gaps": []
+    },
+    {
+      "id": "longitude-acts-1714",
+      "required": true,
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 11 页 AIGC 批注用 1714 年经度法说明验收条件。不是讲师口述。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "Longitude Acts 原文转录",
+      "listed_url": "https://www.royalobservatorygreenwich.org/articles.php?article=1311",
+      "title": "Transcripts of the Longitude Acts",
+      "source_url": "https://www.royalobservatorygreenwich.org/articles.php?article=1311",
+      "version": "皇家格林尼治天文台汇编页",
+      "identity_status": "verified",
+      "identity_note": "页面汇编了 23 部法令。批注对应的是 1714 年 12 Anne 的奖金条款。",
+      "path": "课堂笔记/sources/longitude-acts.html",
+      "sha256": "1f149e4a4c52625378308c874f214b901da88bcae6efcd4ef9c6487bda21aad1",
+      "reading_status": "full",
+      "scope_sections": [
+        "1714-12-anne-reward"
+      ],
+      "read_sections": [
+        "1714-12-anne-reward"
+      ],
+      "scope_reason": "AIGC 只用 1714 年法令把悬赏写成误差分档和西印度群岛航线。声明范围是汇编页上 12 Anne 第三条的奖金分档、80 地理英里近岸检验，以及驶往委员指定西印度群岛港口的另一半奖金。后面的修正案不在范围内。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 6,
+          "location": "12 Anne 第三条",
+          "claim": "一万、一万五千、两万英镑按 1 度、三分之二和一半误差分档；另一半奖金要求英国到西印度群岛的实测航线。",
+          "role": "example",
+          "note_target": "supplements[4]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "known_gaps": []
+    },
+    {
+      "id": "openai-codex-rules",
+      "required": true,
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 9 页 AIGC 批注给出 Codex Rules 链接，用来解释不弹窗不等于无限权限。课堂演示是另一套两层分流。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "Codex Rules",
+      "listed_url": "https://learn.chatgpt.com/docs/agent-configuration/rules",
+      "title": "Rules",
+      "source_url": "https://learn.chatgpt.com/docs/agent-configuration/rules",
+      "version": "2026-10-28 的 rules.md",
+      "identity_status": "verified",
+      "identity_note": "HTML 外壳没有正文，读的是同一 URL 加 .md 得到的 Markdown。",
+      "path": "课堂笔记/sources/codex-rules.md",
+      "sha256": "4ecdfe26ece03895220808a7aa4f05c91d837492300262baf5a5df35c3f44ce7",
+      "reading_status": "full",
+      "scope_sections": [
+        "create-a-rules-file",
+        "understand-rule-fields",
+        "shell-wrappers",
+        "test-a-rule-file",
+        "rules-language"
+      ],
+      "read_sections": [
+        "create-a-rules-file",
+        "understand-rule-fields",
+        "shell-wrappers",
+        "test-a-rule-file",
+        "rules-language"
+      ],
+      "scope_reason": "AIGC 引用的是命令规则如何匹配 allow、prompt、forbidden。声明范围是 rules.md 的全部小节。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "rules.md 的 Understand rule fields 与 Shell wrappers",
+          "claim": "多条规则命中时 forbidden 严于 prompt 严于 allow；简单 shell 链会拆开，最严的结果生效。",
+          "role": "mechanism",
+          "note_target": "supplements[2]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "known_gaps": []
+    },
+    {
+      "id": "toyota-tps",
+      "required": true,
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 32 页 AIGC 批注用丰田自働化类比少干预。不是讲师口述。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "Toyota Production System",
+      "listed_url": "https://global.toyota/en/company/vision-and-philosophy/production-system/",
+      "title": "Toyota Production System",
+      "source_url": "https://global.toyota/en/company/vision-and-philosophy/production-system/",
+      "version": "丰田全球官网页面，2026-10-28",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/toyota-tps.html",
+      "sha256": "262932e487a520c1306fbb6561f1e7ea08ae4fc04f70dcdd7f55d2c7cc673d28",
+      "reading_status": "full",
+      "scope_sections": [
+        "jidoka"
+      ],
+      "read_sections": [
+        "jidoka"
+      ],
+      "scope_reason": "AIGC 用的是自働化和 andon，不是整页的准时化历史。声明范围是页面上 Jidoka 一节及其 andon 图注。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 22,
+          "location": "官网 Jidoka 一节与 andon 图注",
+          "claim": "异常时机器自己停或人拉停止绳，andon 亮起来叫人，因此不必一直盯着设备。",
+          "role": "example",
+          "note_target": "supplements[12]"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "known_gaps": []
+    },
+    {
+      "id": "homepage-jiangyy",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 14 页正文里「我的个人主页」的链接，是例子不是阅读作业。",
+      "origin": "slides 正文",
+      "listed_title": "我的个人主页",
+      "listed_url": "http://jiangyy.github.io/",
+      "title": "蒋炎岩 ~jyy",
+      "source_url": "http://jiangyy.github.io/",
+      "version": "页面自标 Last update: Fri Jul 31 2026",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/homepage-jiang.html",
+      "sha256": "078ae628375bbb50abc00c81048864bd6d9a12e7f6e5d305b1266bb95ffd5336",
+      "reading_status": "full",
+      "scope_sections": [
+        "home"
+      ],
+      "read_sections": [
+        "home"
+      ],
+      "scope_reason": "链接打开的就是这一张落地页。",
+      "contributions": [],
+      "not_adopted_reason": "落地页是 slides 上「写出具体样式」那个例子的地址。课堂正文已经写了现代风格和具体约束的差别，页上的职务和 ASCII 图不再单写一段。",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "known_gaps": [],
+      "required": false
+    },
+    {
+      "id": "openai-codex-approvals",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 9 页 AIGC 批注的 Agent approvals & security 链接。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "Agent approvals & security",
+      "listed_url": "https://learn.chatgpt.com/docs/agent-approvals-security",
+      "title": "Agent approvals & security",
+      "source_url": "https://learn.chatgpt.com/docs/agent-approvals-security",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/codex-approvals.md",
+      "sha256": "595db3a5a3276996071dcc2442e2cfcfef2c11c50cf46fccfd1de4a869a82017",
+      "reading_status": "full",
+      "scope_sections": [
+        "sandbox-and-approvals",
+        "migrate-untrusted",
+        "cloud",
+        "network",
+        "defaults",
+        "os-sandbox",
+        "monitoring"
+      ],
+      "read_sections": [
+        "sandbox-and-approvals",
+        "migrate-untrusted",
+        "cloud",
+        "network",
+        "defaults",
+        "os-sandbox",
+        "monitoring"
+      ],
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "identity_note": "上一轮只读了开头。这一轮用文档站声明的同一页 markdown（URL 后加 .md）读完沙箱、审批、云环境和网络策略。",
+      "scope_reason": "AIGC 链接的是这一页。范围是该 markdown 从退休的 untrusted 策略、沙箱与审批、云环境、网络、默认组合、操作系统沙箱到遥测的全部小节。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "审批页的 Sandbox and approvals 与 Network access",
+          "claim": "沙箱决定碰得了什么，审批决定何时问人；网络代理默认关闭，deny 压过 allow。",
+          "role": "mechanism",
+          "note_target": "supplements[2]"
+        }
+      ]
+    },
+    {
+      "id": "liu-2024-lost-in-the-middle",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 21 页和第 33 页 AIGC 批注用来解释末尾提示词更容易被用到。论文测的是资料位置，不是讲师说的指令丢失率。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "Lost in the Middle",
+      "listed_url": "https://aclanthology.org/2024.tacl-1.9/",
+      "title": "Lost in the Middle: How Language Models Use Long Contexts",
+      "source_url": "https://aclanthology.org/2024.tacl-1.9.pdf",
+      "version": "TACL vol. 12, pp. 157–173, 2024",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/lost-in-the-middle.pdf",
+      "sha256": "f37f6fabe0fe0d8c73b67579cd115dbf14e282cfb7b7af655ae8109638402c9b",
+      "reading_status": "full",
+      "total_pages": 17,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "known_gaps": [],
+      "visual_checks": [
+        {
+          "page": 2,
+          "detail": "图 1 的图注写明 U 形：相关信息在开头或结尾更好，在中部变差。"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 23,
+          "location": "PDF 物理页 1–3、8、10–11",
+          "claim": "U 形测的是资料位置；训练窗口内的编码器–解码器更稳，多检索的开放域问答在读者侧先饱和。",
+          "role": "boundary",
+          "note_target": "supplements[13]"
+        }
+      ]
+    },
+    {
+      "id": "brooks-1986-no-silver-bullet",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 15 页 AIGC 批注引用 No Silver Bullet 原始技术报告。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "No Silver Bullet 原始技术报告",
+      "listed_url": "https://www.cs.unc.edu/techreports/86-020.pdf",
+      "title": "No Silver Bullet: Essence and Accidents of Software Engineering",
+      "source_url": "https://www.cs.unc.edu/techreports/86-020.pdf",
+      "version": "UNC TR86-020, September 1986",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/brooks-nsb.pdf",
+      "sha256": "a4a11dcb6ff7dcdfcc680e27760126d86c568cbb99a53a2bf58dc9041fbb190e",
+      "reading_status": "full",
+      "total_pages": 21,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "PDF 物理页 4 摘要，第 16–20 页",
+          "claim": "9/10 是偶然工作占比的条件；四条建议是买、原型、生长和伟大设计者。",
+          "role": "mechanism",
+          "note_target": "supplements[5]"
+        }
+      ]
+    },
+    {
+      "id": "cadar-2008-klee",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 31 页 AIGC 批注用 KLEE 说明应把符号执行的机制拆开测量。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "KLEE",
+      "listed_url": "https://www.usenix.org/conference/osdi-08/presentation/klee-unassisted-and-automatic-generation-high-coverage-tests-complex",
+      "title": "KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs",
+      "source_url": "https://www.usenix.org/legacy/event/osdi08/tech/full_papers/cadar/cadar.pdf",
+      "version": "OSDI 2008",
+      "identity_status": "verified",
+      "identity_note": "slides 链的是 USENIX 演讲页；读的是同题论文 PDF。",
+      "path": "课堂笔记/sources/klee.pdf",
+      "sha256": "59594fde5ff5b6c654410fb37d7ed3f8132d41f16dd15421dd58d38bcd90d621",
+      "reading_status": "full",
+      "total_pages": 16,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 21,
+          "location": "PDF 物理页 1–2、6–7",
+          "claim": "覆盖率要分开总行和按工具平均；搜索是随机路径和覆盖优化轮转。",
+          "role": "mechanism",
+          "note_target": "supplements[11]"
+        }
+      ]
+    },
+    {
+      "id": "zhang-2023-repocoder",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 29 页 AIGC 批注用 RepoCoder 的超过 10% 支持好示例有用。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "RepoCoder",
+      "listed_url": "https://aclanthology.org/2023.emnlp-main.151/",
+      "title": "RepoCoder: Repository-Level Code Completion",
+      "source_url": "https://aclanthology.org/2023.emnlp-main.151.pdf",
+      "version": "EMNLP 2023",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/repocoder.pdf",
+      "sha256": "73468800045932b56a43eb61feead593a3b4e23fd681143f3670ec289f7fb5e2",
+      "reading_status": "full",
+      "total_pages": 14,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 19,
+          "location": "PDF 物理页 6–7，表 2 与表 3",
+          "claim": "同一仓库的迭代检索相对只看当前文件，精确匹配绝对提升超过 10%。",
+          "role": "boundary",
+          "note_target": "supplements[10]"
+        }
+      ]
+    },
+    {
+      "id": "wang-2025-coderag-bench",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 29 页 AIGC 批注用 CodeRAG-Bench 说明找对片段和用好片段仍是瓶颈。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "CodeRAG-Bench",
+      "listed_url": "https://aclanthology.org/2025.findings-naacl.176/",
+      "title": "CodeRAG-Bench: Can Retrieval Augment Code Generation?",
+      "source_url": "https://aclanthology.org/2025.findings-naacl.176.pdf",
+      "version": "NAACL 2025 Findings",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/coderag.pdf",
+      "sha256": "edc8bb5feee4b2ca802ae8a95bce8ba072f3a7b6b43ce0472730a8a97b9c266d",
+      "reading_status": "full",
+      "total_pages": 16,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 19,
+          "location": "PDF 物理页 6–9，表 5",
+          "claim": "gold 文档和真正检索到的文档不是一回事；Python、普通检索是作者写明的限制。",
+          "role": "boundary",
+          "note_target": "supplements[10]"
+        }
+      ]
+    },
+    {
+      "id": "reynolds-2021-prompt-programming",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 3 页 AIGC 批注用它标记 2021 年 prompt programming 成为研究对象。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "prompt programming",
+      "listed_url": "https://arxiv.org/abs/2102.07350",
+      "title": "Prompt Programming for Large Language Models: Beyond the Few-Shot Paradigm",
+      "source_url": "https://arxiv.org/pdf/2102.07350.pdf",
+      "version": "arXiv:2102.07350v1",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/prompt-programming.pdf",
+      "sha256": "785676c7849e4889f4915a75ef7347cd35dc5c9b1fd0152961a75a3cd0769442",
+      "reading_status": "full",
+      "total_pages": 10,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "PDF 物理页 3，表 1",
+          "claim": "Curie 上简单冒号零样本 BLEU 33.3，高于复现的 OpenAI 零样本 18.7；1-shot 可以更差。",
+          "role": "mechanism",
+          "note_target": "supplements[16]"
+        }
+      ]
+    },
+    {
+      "id": "liu-2021-prompt-survey",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 3 页 AIGC 批注用它标记 prompt-based learning 这个说法。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "prompt-based learning",
+      "listed_url": "https://arxiv.org/abs/2107.13586",
+      "title": "Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing",
+      "source_url": "https://arxiv.org/pdf/2107.13586.pdf",
+      "version": "arXiv:2107.13586v1，2021-07-28",
+      "identity_status": "verified",
+      "identity_note": "身份同时对过 arXiv 摘要页和已下载 PDF 的首页。v1，2021-07-28。",
+      "path": "课堂笔记/sources/prompt-survey.pdf",
+      "sha256": "be4e306377703c5bc9bc6f7b4ef95a842fe8a767f37778284bb54f2865301f3b",
+      "reading_status": "full",
+      "total_pages": 46,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "read_sections": [],
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "PDF 物理页 3–5，表 2；第 29 页",
+          "claim": "prompt-based learning 是用带 [X] 和 [Z] 的模板把任务改成填空。",
+          "role": "mechanism",
+          "note_target": "supplements[16]"
+        }
+      ]
+    },
+    {
+      "id": "roediger-2006-retrieval",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 7 页 AIGC 批注列出的 retrieval practice。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "retrieval practice",
+      "listed_url": "https://www.psychologicalscience.org/journals/psychological-science/j.1467-9280.2006.01693.x/",
+      "title": "Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention",
+      "source_url": "http://psychnet.wustl.edu/memory/wp-content/uploads/2018/04/Roediger-Karpicke-2006_PsychSci.pdf",
+      "version": "Psychological Science, 2006, 17(3), 249–255",
+      "identity_status": "verified",
+      "identity_note": "期刊页只有摘要。全文是作者所在的华盛顿大学记忆实验室 PDF。实验室网站这次超时，文件取自 Internet Archive 对该 PDF 网址的存档。首页标题、作者 Henry L. Roediger, III 与 Jeffrey D. Karpicke，与 DOI 10.1111/j.1467-9280.2006.01693.x 一致。",
+      "path": "课堂笔记/sources/roediger-2006.pdf",
+      "sha256": "c957ab90e2fa8ce4139af6bedeacdb2ffeee80dc46e08011d625a37f52c11aec",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "total_pages": 7,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "visual_checks": [
+        {
+          "page": 5,
+          "detail": "看了物理页 5 的 JPEG。图 2 是 5 分钟与 1 周、SSSS/SSST/STTT 的 idea units 比例，误差线为标准误。图 3 是一周比例遗忘。正文写 52%、28%、14%，以及交互 F(2,174)=18.48。"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 4,
+          "location": "PDF 物理页 2–3、5，图 2 与图 3",
+          "claim": "没有反馈的测验在一周后高于反复重读；刚测完时重读更好。",
+          "role": "mechanism",
+          "note_target": "supplements[1]"
+        }
+      ]
+    },
+    {
+      "id": "silver-2017-alphago-zero",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 27 页 AIGC 批注用 Nature 2017 类比可验证的棋盘。课堂没有展开这篇论文，笔记也不把摘要写成方法。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "Nature, 2017",
+      "listed_url": "https://doi.org/10.1038/nature24270",
+      "title": "Mastering the Game of Go without Human Knowledge",
+      "source_url": "https://discovery.ucl.ac.uk/id/eprint/10045895/1/agz_unformatted_nature.pdf",
+      "version": "UCL Discovery eprint 10045895，作者手稿，非 Nature 排版页",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/alphago-zero.pdf",
+      "sha256": "a23add75aa06054c5a008befff55fb23af5da70a88c99004e0ff863eadf60ca1",
+      "reading_status": "full",
+      "known_gaps": [],
+      "not_adopted_reason": null,
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "total_pages": 42,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "identity_note": "列出的 DOI 页面只有摘要。读的是伦敦大学学院机构库中的未排版 Nature 手稿，作者为 David Silver 等，DeepMind，标题与 DOI 10.1038/nature24270 的论文相同。手稿页码不是 Nature 550 卷的印刷页。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "手稿第 1 页摘要，第 12 页评估",
+          "claim": "100 比 0 是对此前发表的 AlphaGo；对 Master 的 2 小时对局是 89 比 11。棋盘规则不能挪到代码测试上。",
+          "role": "boundary",
+          "note_target": "supplements[20]"
+        }
+      ]
+    },
+    {
+      "id": "homepage-jm233333",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 14 页正文把这个地址标成 AI 味例子。",
+      "origin": "slides 正文",
+      "listed_title": "AI 味",
+      "listed_url": "https://jm233333.github.io/",
+      "title": "JM233333's Homepage",
+      "source_url": "https://jm233333.github.io/",
+      "identity_status": "verified",
+      "identity_note": "落地页是刘瀚之的主页，南京大学，导师蒋炎岩。",
+      "path": "课堂笔记/sources/homepage-jm.html",
+      "sha256": "f617cb1a5a04cea9ad03b032c871442d1b4ae4872828e1cab788888e550d8f55",
+      "reading_status": "full",
+      "read_sections": [
+        "bio",
+        "selected-publications",
+        "honors",
+        "academic-services",
+        "talks"
+      ],
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "scope_sections": [
+        "bio",
+        "selected-publications",
+        "honors",
+        "academic-services",
+        "talks"
+      ],
+      "scope_reason": "slides 链接的是这张落地页。页上的完整论文列表指向另一页，不在这个 URL 的正文里，所以不把那一页算进本页。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 7,
+          "location": "落地页的简介和选出的两篇论文",
+          "claim": "现在打开是刘瀚之的研究主页，不是一张自述为生成结果的页面。",
+          "role": "boundary",
+          "note_target": "supplements[18]"
+        }
+      ]
+    },
+    {
+      "id": "demo-nfs-arena",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 12 页正文「一句话生成极品飞车」的链接，是演示地址，不是论文。",
+      "origin": "slides 正文",
+      "listed_title": "一句话生成极品飞车",
+      "listed_url": "https://019f6b8d-821e-7c15-98ab-16f3bd7f7409.arena.site/",
+      "title": "极速追击 · Velocity Pursuit",
+      "source_url": "https://019f6b8d-821e-7c15-98ab-16f3bd7f7409.arena.site/",
+      "identity_status": "unverified",
+      "identity_note": "本轮重读了保存的落地页。标题是「极速追击 · Velocity Pursuit」，页脚写 Built with Arena，以及 Content is user-generated and unverified。没有「极品飞车」。",
+      "path": "课堂笔记/sources/arena-velocity.html",
+      "sha256": "b34fc26a30bd15f19c1a44f3b79ac4dede6d6f6ad335a8091d6590f380cf3da1",
+      "reading_status": "partial",
+      "read_sections": [
+        "landing-title",
+        "footer-unverified"
+      ],
+      "known_gaps": [
+        "落地页可见文字已读。标题已不是极品飞车，并标明用户生成、未核验，不能确认是课堂上的那一次生成。交互部分没有当成那次演示来操作。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "not_adopted_reason": "身份对不上课堂演示，页面正文也没有可核对的规格或玩法说明。"
+    },
+    {
+      "id": "gpt2-2019-blog",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 3 页 AIGC 批注的 GPT-2 发布页。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "GPT-2, 2019",
+      "listed_url": "https://openai.com/index/better-language-models/",
+      "title": "Better Language Models and Their Implications",
+      "source_url": "https://web.archive.org/web/20201219132206/https://openai.com/blog/better-language-models/",
+      "identity_status": "verified",
+      "identity_note": "列出的 https://openai.com/index/better-language-models/ 不直接重试绕过 Cloudflare。2026-10-23 对该 URL 的存档没有文章正文。读的是 Internet Archive 2020-12-19 对同一篇博文旧址 https://openai.com/blog/better-language-models/ 的存档。",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "version": "OpenAI 博文，发布 2019-02-14；所用存档含至 2020-09-03 的修订",
+      "path": "课堂笔记/sources/gpt2-blog-2020.html",
+      "sha256": "8f53f54c8e86c0d1eaa4b26d61b8d3fa67b80a2175199515d1cdcc66a7a56ec8",
+      "scope_sections": [
+        "opening",
+        "samples",
+        "zeroshot",
+        "policyimplications",
+        "releasestrategy",
+        "stagedrelease",
+        "partnerships",
+        "outputdataset",
+        "talktous"
+      ],
+      "read_sections": [
+        "opening",
+        "samples",
+        "zeroshot",
+        "policyimplications",
+        "releasestrategy",
+        "stagedrelease",
+        "partnerships",
+        "outputdataset",
+        "talktous"
+      ],
+      "scope_reason": "AIGC 点名的是这篇 GPT-2 发布文。范围是 2020-12-19 存档页上从开头到 Talk to Us 的全部小节，含后来补上的分阶段发布。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "零样本一节",
+          "claim": "原句是 simply by prompting the trained model in the right way；问答等任务当时仍低于专用系统。",
+          "role": "mechanism",
+          "note_target": "supplements[16]"
+        }
+      ]
+    },
+    {
+      "id": "chi-1989-self-explanation",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 7 页 AIGC 批注的 self-explanation。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "self-explanation",
+      "listed_url": "https://doi.org/10.1207/s15516709cog1302_1",
+      "title": "Self-Explanations: How Students Study and Use Examples in Learning to Solve Problems",
+      "source_url": "https://education.asu.edu/sites/g/files/litvpz656/files/lcl/chibassoklewisreimannglaser_0.pdf",
+      "identity_status": "verified",
+      "identity_note": "DOI 10.1207/s15516709cog1302_1 返回 403，没有绕过。读的是亚利桑那州立大学 Mary Lou Fulton 学院页面上的作者机构扫描件。首页 OCR 为 Michelene T. H. Chi、Miriam Bassok、Matthew W. Lewis、Peter Reimann、Robert Glaser，Cognitive Science 13, 145–182 (1989)。扫描件没有文本层，20 个物理页用页面 OCR 读完。",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "path": "课堂笔记/sources/chi-1989.pdf",
+      "sha256": "65506f4da574c4ff182abbc20f2f2ae968bfef6cfa344456fb2ef801e796c61f",
+      "total_pages": 20,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "version": "Cognitive Science 13, 145–182, 1989",
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "首页是标题、五位作者和摘要，期刊为 Cognitive Science 13, 145–182 (1989)。"
+        },
+        {
+          "page": 7,
+          "detail": "图 4 是绳子例题的四道同构：改重力、改力的方向、新表面等，不是数据表。"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 4,
+          "location": "扫描件物理页 8–9",
+          "claim": "Good 与 Poor 按解题成绩事后划分；读例题时的解释量不同，文章没有做随机干预。",
+          "role": "boundary",
+          "note_target": "supplements[1]"
+        }
+      ]
+    },
+    {
+      "id": "cve-2025-54558",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 9 页 AIGC 批注的 CVE。笔记不补充触发步骤。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "CVE-2025-54558",
+      "listed_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54558",
+      "title": "CVE-2025-54558",
+      "source_url": "https://cveawg.mitre.org/api/cve/CVE-2025-54558",
+      "identity_status": "verified",
+      "identity_note": "NVD 详情页仍然不是这条漏洞记录。cve.org 的 HTML 只有空壳。读的是 MITRE CVE 服务公布的同一条 CVE 记录。",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "path": "课堂笔记/sources/cve-2025-54558.json",
+      "sha256": "ad26e71a98c69ae2b9f45913a4beb755a8788eced36f96a46f6d6f7c41671bad",
+      "version": "CVE record 5.1，发布 2025-07-25",
+      "scope_sections": [
+        "cve-record"
+      ],
+      "read_sections": [
+        "cve-record"
+      ],
+      "scope_reason": "AIGC 点名的是这条 CVE。范围是记录里的描述、受影响版本、CVSS 和参考链接，不含利用步骤。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "CVE 记录的 description",
+          "claim": "0.9.0 之前 rg 即使带 --pre、-z 等参数也会被自动批准。",
+          "role": "boundary",
+          "note_target": "supplements[2]"
+        }
+      ]
+    },
+    {
+      "id": "nam-light-brigade-order",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 13 页 AIGC 批注的轻骑兵命令。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "英国国家陆军博物馆：原始命令",
+      "listed_url": "https://collection.nam.ac.uk/detail.php?acc=1962-11-4-3",
+      "title": "The order that launched the Charge of the Light Brigade, 1854",
+      "source_url": "https://web.archive.org/web/20241102232445/https://collection.nam.ac.uk/detail.php?acc=1962-11-4-3",
+      "identity_status": "verified",
+      "identity_note": "馆藏页这次再次超时。读的是同一 URL 的 Internet Archive 存档。登录号与列出的 acc=1962-11-4-3 一致。",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "version": "NAM. 1962-11-4-3，Internet Archive 2024-11-02",
+      "path": "课堂笔记/sources/nam-ia.html",
+      "sha256": "eb26f2ace45041cbcfb3e2d86a51428fdf65ddda2e340662e2d3a87eabc621aa",
+      "scope_sections": [
+        "long-caption"
+      ],
+      "read_sections": [
+        "long-caption"
+      ],
+      "scope_reason": "AIGC 用的是这件原始命令。范围是馆藏说明里的命令引文和该说明对冲锋的叙述，不是整座博物馆。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 6,
+          "location": "馆藏说明中的命令引文",
+          "claim": "命令写 the guns，没有指明哪一组炮；死伤数字是馆方说明。",
+          "role": "mechanism",
+          "note_target": "supplements[17]"
+        }
+      ]
+    },
+    {
+      "id": "wegner-1987-white-bear",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 22 页 AIGC 批注的白熊论文。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "不要想白熊",
+      "listed_url": "https://doi.org/10.1037/0022-3514.53.1.5",
+      "title": "Paradoxical Effects of Thought Suppression",
+      "source_url": "https://dtg.sites.fas.harvard.edu/DANWEGNER/pub/Wegner%2CSchneider%2CCarter%2C%26White%201987.pdf",
+      "identity_status": "verified",
+      "identity_note": "DOI 被 Incapsula 拦住，没有绕过。读的是哈佛大学网站上 Daniel Wegner 出版物目录中的 PDF。首页作者为 Daniel M. Wegner、David J. Schneider、Samuel R. Carter III、Teri L. White。",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "path": "课堂笔记/sources/wegner-1987.pdf",
+      "sha256": "7a370630fff2cec15472523fabd814eff1684c09c53e0521991a87c5d05a309e",
+      "total_pages": 9,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "version": "Journal of Personality and Social Psychology, 1987, 53(1), 5–13",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 13,
+          "location": "PDF 第 1 页摘要",
+          "claim": "先压制再去想，白熊念头多于一开始就去想；给人一个替代念头可以减轻事后占据。对象是人。",
+          "role": "boundary",
+          "note_target": "supplements[8]"
+        }
+      ]
+    },
+    {
+      "id": "tversky-kahneman-1974-anchoring",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 25 页 AIGC 批注的锚定效应。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "锚定效应",
+      "listed_url": "https://pubmed.ncbi.nlm.nih.gov/17835457/",
+      "title": "Judgment under Uncertainty: Heuristics and Biases",
+      "source_url": "https://web.archive.org/web/20250104013005/https://pubmed.ncbi.nlm.nih.gov/17835457/",
+      "identity_status": "verified",
+      "identity_note": "PubMed 原页上次是浏览器检查，没有改用浏览器伪装再试。读的是同一 URL 在 2025-01-04 的存档，页面本身是摘要。作者 A. Tversky 与 D. Kahneman。Unpaywall 对 DOI 10.1126/science.185.4157.1124 标成非开放获取，没有采用其他教师主页上的转载。",
+      "reading_status": "abstract_only",
+      "known_gaps": [
+        "存档页只有摘要。全文不是开放获取。摘要没有实验步骤和数字。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "path": "课堂笔记/sources/anchoring-ia.html",
+      "sha256": "8d62cd64b89b7c187ad607c1e425f875ca5f66bcc35612b7c876f78cd2492a14",
+      "version": "Science, 1974; PubMed 17835457 的摘要",
+      "read_sections": [
+        "pubmed-abstract"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "PubMed 摘要",
+          "claim": "摘要只列出代表性、可得性和从锚调整三种启发式。",
+          "role": "boundary",
+          "note_target": "supplements[19]"
+        }
+      ]
+    },
+    {
+      "id": "bainbridge-1983-ironies",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 30 页 AIGC 批注的 Bainbridge 1983。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "Ironies of Automation",
+      "listed_url": "https://doi.org/10.1016/0005-1098(83)90046-8",
+      "title": "Ironies of Automation",
+      "source_url": "https://doi.org/10.1016/0005-1098(83)90046-8",
+      "identity_status": "unverified",
+      "identity_note": "DOI 仍只有跳转页。Crossref 记录为 Lisanne Bainbridge，Automatica 19(6):775–779，1983，出版方 Elsevier。Unpaywall 标 is_oa=false。没有找到作者或机构库里的这篇 PDF。",
+      "reading_status": "blocked",
+      "known_gaps": [
+        "本轮没有绕过 DOI。Crossref 与 Unpaywall 都表明它不是开放获取。剑桥机构库检索没有这篇原文。没有使用课程转载。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "path": "课堂笔记/sources/bainbridge.html",
+      "sha256": "5e3fa191cdfa7dd0c70b6cef413da079d4fe79010ea0d001d0349772df45522c",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "未取得全文",
+          "claim": "slides 第 30 页的反讽没有用论文正文补上。",
+          "role": "boundary",
+          "note_target": "editor_notes"
+        }
+      ]
+    },
+    {
+      "id": "simon-1978-satisficing",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 34 页 AIGC 批注把「给我几种」比成 Simon 的满意化。",
+      "origin": "slides AIGC 批注",
+      "listed_title": "满意化",
+      "listed_url": "https://www.nobelprize.org/prizes/economic-sciences/1978/simon/lecture/",
+      "title": "Rational Decision-Making in Business Organizations",
+      "source_url": "https://www.nobelprize.org/uploads/2018/06/simon-lecture.pdf",
+      "identity_status": "verified",
+      "identity_note": "列出的讲稿 HTML 没有正文，检索不到 satisficing。读的是该页所链的诺贝尔奖官方 PDF。作者 Herbert A. Simon，Carnegie-Mellon University，29 页。",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false,
+      "path": "课堂笔记/sources/simon-1978.pdf",
+      "sha256": "a2a1b45e6196e2e3e7e2f5d58e69e7e841788f07482ace7b761cd7e29e9c6ede",
+      "total_pages": 29,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "version": "Nobel Memorial Lecture, 8 December 1978",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 24,
+          "location": "PDF 第 14 页与第 20 页",
+          "claim": "满意化是 Aspiration 达到了就停止搜索；批注里的方案个数 k 不是演讲里的句子。",
+          "role": "boundary",
+          "note_target": "supplements[21]"
+        }
+      ]
+    },
+    {
+      "id": "oral-agent-small-hf",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "讲师口述「最近有一个非常有趣的复盘是 OpenAI 的 agent small」，通过很长的多轮对话攻破 Hugging Face 的漏洞。没有 URL。已有笔记写明不改口播名字。本次不把这句话对到任何标题不同的安全报告。",
+      "origin": "讲师口述",
+      "listed_title": "OpenAI 的 agent small 复盘",
+      "listed_url": null,
+      "title": null,
+      "source_url": null,
+      "identity_status": "unverified",
+      "identity_note": "转写句是 s-g406.0~67。本轮仍没有标题对得上 agent small 的公开原文。",
+      "reading_status": "blocked",
+      "known_gaps": [
+        "本轮检索到 OpenAI 的 The Hugging Face incident and the road ahead，以及 Hugging Face 的技术时间线。两份标题都不是 agent small，不把口播改写成这两份报告。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false
+    },
+    {
+      "id": "oral-design-books",
+      "kind": "web",
+      "recommendation_kind": "explicit_recommendation",
+      "required": false,
+      "recommendation_basis": "讲师说要读很多前端的书和设计的书，并看好的网页。这是明确的学习建议，但没有书名或章节。",
+      "origin": "讲师口述",
+      "listed_title": "很多前端的书、设计的书",
+      "listed_url": null,
+      "title": null,
+      "source_url": null,
+      "identity_status": "unverified",
+      "identity_note": "转写 s-g 附近「你们需要读很多前端的书，甚至要读很多设计的书」。",
+      "reading_status": "out_of_scope",
+      "scope_reason": "讲师没有点名任何一本前端书或设计书，无法对应到一份原文。建议本身已经在课堂正文里，不另造一份不存在的书单。",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "known_gaps": []
+    },
+    {
+      "id": "oral-nature-classics",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "讲师说自己读过一套《自然》百年科学经典，是他的阅读经历，不是布置给本课的章节。",
+      "origin": "讲师口述",
+      "listed_title": "自然百年科学经典",
+      "listed_url": null,
+      "title": null,
+      "source_url": null,
+      "identity_status": "unverified",
+      "reading_status": "out_of_scope",
+      "scope_reason": "没有指定卷次或篇目，不扩展成一套书的阅读。",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "known_gaps": [],
+      "required": false
+    },
+    {
+      "id": "oral-icse27-901",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 23 页和口播用 icse27-901.pdf 当堂演示审稿。讲义页和 slides 都没有给出公开 URL。不把检索到的同题论文当成这一份。",
+      "origin": "讲师口述",
+      "listed_title": "icse27-901.pdf",
+      "listed_url": null,
+      "title": null,
+      "source_url": null,
+      "identity_status": "unverified",
+      "identity_note": "文件名来自 slides 第 23 页。没有在讲义页或 slides 上找到可下载链接。",
+      "reading_status": "blocked",
+      "known_gaps": [
+        "本轮又核对了讲义页和 slides，仍然没有 icse27-901.pdf 的下载链接。没有把检索到的其他 ICSE 论文当成这一份。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": false
+    }
+  ]
+}

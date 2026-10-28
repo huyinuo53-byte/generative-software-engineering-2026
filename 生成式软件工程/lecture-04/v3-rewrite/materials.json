@@ -1,0 +1,1146 @@
+{
+  "schema_version": 1,
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "lecture_url": "https://jyywiki.cn/GSE/2026/lect4.md",
+  "slides_url": "https://jyywiki.cn/GSE/2026/slides4.html",
+  "video_id": "BV1Q6en6NEUo",
+  "video_url": "https://www.bilibili.com/video/BV1Q6en6NEUo",
+  "checked_at": "2026-10-28T03:05:09-04:00",
+  "mapping_note": "官网目录第 4 项是 lect4.md「版本管理 (2)」和 slides4.html。公开视频标题是「生成式软件工程 04｜软件仓库管理 (2)」。按官网顺序、标题和内容视为同一课。",
+  "inventory_note": "slides 共 25 页。链接从 script#slides-data 的 JSON 逐页提取，并按是否位于 span.aigc 区分。讲义页正文链接另计。页脚的知识共享协议和备案号不登记为阅读材料。",
+  "expected_material_ids": [
+    "lab1",
+    "traceability-2014",
+    "git-objects",
+    "git-rebase",
+    "progit-rebasing",
+    "jj-home",
+    "jj-glossary",
+    "jj-working-copy",
+    "jj-conflicts",
+    "jj-tutorial",
+    "git-worktree",
+    "git-bisect",
+    "git-blame",
+    "git-notes",
+    "git-notes-242",
+    "fowler-quadrant",
+    "ries-good-enough",
+    "lean-mvp",
+    "einstellung-2008",
+    "nasa-asrs-555",
+    "pg-advisory-locks",
+    "brooks-man-month",
+    "adr-nygard"
+  ],
+  "materials": [
+    {
+      "id": "lab1",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/lab1.html",
+      "sha256": "bb809f97c517dcbb1f61e78f36696142c5d538dffe521af77f3a580744c279f2",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "实验一 / Lab1：会成长的个人助手",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lab1.md",
+      "title": "实验 (1)：会成长的个人助手",
+      "source_url": "https://jyywiki.cn/GSE/2026/lab1.md",
+      "version": null,
+      "identity_note": "讲义页正文链「实验一」，slides 第 1 页正文链 Lab1，都指向这页。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 正文把实验一当作本课要落到的作业，讲师用开场在讲它。这是作业规格，不是另开的阅读清单，也不是 slides AIGC 批注。",
+      "scope_sections": [
+        "背景",
+        "实验要求",
+        "为什么要布置这个实验"
+      ],
+      "scope_reason": "实验页就是这三节，已整页读完。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "实验页「实验要求」与「为什么要布置这个实验」",
+          "claim": "建议性质、不记分；五项能力的确认边界；新会话里复用「报名截止时间不是活动开始时间」",
+          "role": "mechanism",
+          "note_target": "supplements x0 / editor_notes"
+        }
+      ],
+      "read_sections": [
+        "背景",
+        "实验要求",
+        "为什么要布置这个实验"
+      ]
+    },
+    {
+      "id": "traceability-2014",
+      "kind": "pdf",
+      "listed_title": "Software Traceability: Trends and Future Directions",
+      "listed_url": "https://dl.acm.org/doi/10.1145/2593882.2593891",
+      "title": "Software Traceability: Trends and Future Directions",
+      "source_url": "http://selab.netlab.uky.edu/homepage/publications/2014-ICSE-FOSE.pdf",
+      "version": "ICSE 2014 FOSE, open PDF",
+      "identity_status": "verified",
+      "identity_note": "DOI 10.1145/2593882.2593891 的 ACM 页面返回 403。Semantic Scholar 给出的开放 PDF 与 DOI、题目、作者一致。读的是这份 PDF，不是 ACM HTML。",
+      "path": "课堂笔记/sources/readings/traceability.pdf",
+      "sha256": "4624df4f792056a20eaaf4534e24cbd2e81c6ccc166f16c44a8f5e18d8e452db",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "讲义页正文、slides 第 3 页正文和讲师口述都点了这篇 2014 年综述，用来给 traceability 这个词一个出处。没有把它布置成必读，课堂也不讲论文里的研究议程。",
+      "required": false,
+      "total_pages": 15,
+      "reading_status": "full",
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "scope_pages": null,
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "目视标题、五位作者、摘要和右栏 CoEST 定义"
+        },
+        {
+          "page": 3,
+          "detail": "目视表 1 的七个目标加 Ubiquitous，以及图 1 的计划、建立、维护、使用循环"
+        },
+        {
+          "page": 4,
+          "detail": "目视图 2 的六层技术结构，并核对同页正文里的 72 篇分类百分比"
+        },
+        {
+          "page": 5,
+          "detail": "目视图 3 三张柱状图的轴、类别名和 0%–60% 刻度"
+        },
+        {
+          "page": 13,
+          "detail": "目视双栏参考文献，从 [8] 续到 [34] 一带，确认这一段是引文而不是正文"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 3,
+          "location": "开放 PDF 物理页 1 的 CoEST 定义，物理页 4–5 的 72 篇分类，物理页 8 与 12",
+          "claim": "可追踪性的定义；2003–2013 年 72 篇里建立链接占大头，当时的自动化仍是半自动",
+          "role": "mechanism",
+          "note_target": "supplements x1"
+        }
+      ]
+    },
+    {
+      "id": "git-objects",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/git-objects.html",
+      "sha256": "f2286c7d25096ce435054125fe6eb8c8a7b110c5a7f2316e8f8c21a1c2b039ca",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "Git Objects",
+      "listed_url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects",
+      "title": "10.2 Git Internals - Git Objects",
+      "source_url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects",
+      "version": "Pro Git 2nd edition web, fetched 2026-10-28",
+      "identity_note": "讲义页正文「参见 Git Objects」。页面导航标明 2nd Edition。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义用这一章说明 Git 的对象模型。课堂讲快照时没有拆 blob、tree、commit。不是 slides AIGC。",
+      "scope_sections": [
+        "Git Objects",
+        "blob",
+        "tree",
+        "commit",
+        "object storage header"
+      ],
+      "scope_reason": "讲义参见的是对象模型。这一章从内容寻址到 commit 对象格式、再到 zlib 存储已读完。",
+      "visual_checks": [
+        {
+          "page": null,
+          "detail": "网页无单独公式页；对象图在文中称为 Figure 175，本次读的是周围正文，没有另存原图"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 7,
+          "location": "Pro Git Git Objects：blob、tree、commit 与对象头",
+          "claim": "快照由 blob 和 tree 组成，commit 指向顶层 tree 和父提交；对象名是「类型+长度+内容」的 SHA-1",
+          "role": "mechanism",
+          "note_target": "supplements x2"
+        }
+      ],
+      "read_sections": [
+        "Git Objects",
+        "blob",
+        "tree",
+        "commit",
+        "object storage header"
+      ]
+    },
+    {
+      "id": "git-rebase",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/git-rebase.html",
+      "sha256": "b6dfb34be8e8c71f6b0418b7edb2af7da620957c7d8ac358582cfac79b9ab02b",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "Rebase",
+      "listed_url": "https://git-scm.com/docs/git-rebase",
+      "title": "git-rebase - Reapply commits on top of another base tip",
+      "source_url": "https://git-scm.com/docs/git-rebase",
+      "version": "git-scm docs as fetched 2026-10-28",
+      "identity_note": "讲义页正文的 Rebase 链接。slides 第 5 页 AIGC 批注链的是另一本 Pro Git 章节，分开登记为 progit-rebasing。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义用命令文档说明 rebase 把提交移到新起点。课堂已经讲了换 commit ID，文档补的是停在第一处冲突。",
+      "scope_sections": [
+        "DESCRIPTION",
+        "transplant and conflict stop",
+        "continue abort skip"
+      ],
+      "scope_reason": "讲义参见的是命令在做什么。DESCRIPTION 里的移植、A'B'C'、冲突时停止，以及 --continue/--abort/--skip 已读。后面的选项表和交互模式没有列入范围。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 7,
+          "location": "git-rebase DESCRIPTION",
+          "claim": "逐个重放得到 A'B'C'；冲突时停在第一处，要用 continue、abort 或 skip",
+          "role": "mechanism",
+          "note_target": "supplements x3"
+        }
+      ],
+      "read_sections": [
+        "DESCRIPTION",
+        "transplant and conflict stop",
+        "continue abort skip"
+      ]
+    },
+    {
+      "id": "progit-rebasing",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/git-rebasing.html",
+      "sha256": "2627ece261e1aea13a90e7f98da70e3149c989ee7e7be5a355a3e4f5290aa78d",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "rebase",
+      "listed_url": "https://git-scm.com/book/en/v2/Git-Branching-Rebasing",
+      "title": "Git Branching - Rebasing",
+      "source_url": "https://git-scm.com/book/en/v2/Git-Branching-Rebasing",
+      "version": "Pro Git 2nd edition web, fetched 2026-10-28",
+      "identity_note": "链接文字在 slides 第 5 页的 span.aigc 里。讲义正文链的是 git-rebase 命令页，不是这一章。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides AIGC 批注给 rebase 补了一章书。不是讲师口述的阅读要求。章节解释了重放和「不要 rebase 已经公开、且别人基于其上工作的提交」。",
+      "scope_sections": [
+        "basic replay",
+        "perils",
+        "rebase versus merge"
+      ],
+      "scope_reason": "AIGC 链接没有指定小节。与课堂「rebase 得到新提交、历史被重写」直接对应的是基本重放、Perils 的那条禁令和 Rebase vs. Merge。多分支 --onto 的逐步例图没有列入范围。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 7,
+          "location": "Pro Git Rebasing：基本重放、Perils、Rebase vs. Merge",
+          "claim": "最终快照可以和 merge 相同，历史不同；rebase 是放弃旧提交并新建提交",
+          "role": "mechanism",
+          "note_target": "supplements x3"
+        }
+      ],
+      "read_sections": [
+        "basic replay",
+        "perils",
+        "rebase versus merge"
+      ]
+    },
+    {
+      "id": "jj-home",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/jj-home.html",
+      "sha256": "67b21bf76bbdbcdb3123829a32c02d74d7825e00488c540e21c6a01beb05f712",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "Jujutsu—a version control system",
+      "listed_url": "https://www.jj-vcs.dev/latest/",
+      "title": "Jujutsu—a version control system",
+      "source_url": "https://www.jj-vcs.dev/latest/",
+      "version": "docs site /latest/ as fetched 2026-10-28",
+      "identity_note": "讲义页和 slides 第 8 页正文都链到这里。打开后是文档首页，不是设计论文。页上把已发布版和 main 上未发布的文档分开。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "这是讲义和 slides 正文给出的 Jujutsu 官方入口。首页本身几乎没有机制，机制在术语表、工作副本和冲突页。",
+      "scope_sections": [
+        "docs index",
+        "released versus unreleased"
+      ],
+      "scope_reason": "这一页就是导航，已读完。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "jj-vcs.dev/latest/ 首页",
+          "claim": "该 URL 是文档入口，并区分已发布文档和 main 上尚未发布的文档",
+          "role": "identity",
+          "note_target": "editor_notes / supplements x4"
+        }
+      ],
+      "read_sections": [
+        "docs index",
+        "released versus unreleased"
+      ]
+    },
+    {
+      "id": "jj-glossary",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/jj-glossary.md",
+      "sha256": "96016d8ef043bbc62675458f08b298ae5d6fca8ba08feecccccea10ad2d7c8ca",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "术语说明",
+      "listed_url": "https://github.com/jj-vcs/jj/blob/main/docs/glossary.md",
+      "title": "Glossary",
+      "source_url": "https://github.com/jj-vcs/jj/blob/main/docs/glossary.md",
+      "version": "GitHub main raw snapshot 2026-10-28",
+      "identity_note": "讲义页「参见官方的术语说明」。原文从 GitHub main 的 raw 取得，不是 /latest/ 站点上的已发布快照。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义用术语表区分 change 和 commit。这是课堂「change 保留身份」的直接文档来源。",
+      "scope_sections": [
+        "Change",
+        "Change ID",
+        "Commit",
+        "Commit ID",
+        "Rewrite",
+        "Divergent change",
+        "View",
+        "Working copy",
+        "Workspace"
+      ],
+      "scope_reason": "术语表整页已读。补充只用和课堂 change、commit、view、工作副本对应的条目。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "glossary.md 的 Change、Rewrite、View",
+          "claim": "change 不是独立对象，change ID 是 commit 的属性；改写更换 commit ID；官方 View 不是课堂说的那块视图",
+          "role": "mechanism",
+          "note_target": "supplements x4"
+        }
+      ],
+      "read_sections": [
+        "Change",
+        "Change ID",
+        "Commit",
+        "Commit ID",
+        "Rewrite",
+        "Divergent change",
+        "View",
+        "Working copy",
+        "Workspace"
+      ]
+    },
+    {
+      "id": "jj-working-copy",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/jj-working-copy.md",
+      "sha256": "d7c31dd75ba6f9c4a272c50da4cd2973751e95cee2f3dc571ba032da9bec6875",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "Working Copy",
+      "listed_url": "https://github.com/jj-vcs/jj/blob/main/docs/working-copy.md",
+      "title": "Working copy",
+      "source_url": "https://github.com/jj-vcs/jj/blob/main/docs/working-copy.md",
+      "version": "GitHub main raw snapshot 2026-10-28",
+      "identity_note": "讲义页正文和 slides 第 9 页 AIGC 批注都链到这份 working-copy.md。原文取自 GitHub main。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义用这一页说明工作副本本身是可以修订的提交。slides 上的紫色链接与讲义相同，不另算成讲师口述。",
+      "scope_sections": [
+        "Introduction",
+        "Conflicts",
+        "Ignored files",
+        "Workspaces",
+        "Stale working copy"
+      ],
+      "scope_reason": "这一页已整篇读完。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "working-copy.md 开头三步，以及 Workspaces",
+          "claim": "快照发生在几乎每条 jj 命令开始时；多个 workspace 共用一个仓库",
+          "role": "mechanism",
+          "note_target": "supplements x5"
+        }
+      ],
+      "read_sections": [
+        "Introduction",
+        "Conflicts",
+        "Ignored files",
+        "Workspaces",
+        "Stale working copy"
+      ]
+    },
+    {
+      "id": "jj-conflicts",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/jj-conflicts.html",
+      "sha256": "4b9195fefd12e9d3c47e34ddef950ce23ae334af574a0db903b85e1527f3ef32",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "First-class Conflicts",
+      "listed_url": "https://www.jj-vcs.dev/latest/conflicts/",
+      "title": "First-class conflicts",
+      "source_url": "https://www.jj-vcs.dev/latest/conflicts/",
+      "version": "jj docs /latest/ as fetched 2026-10-28",
+      "identity_note": "讲义页正文「参见 First-class Conflicts」。slides 第 9 页 AIGC「冲突管理」链的是同一 URL。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义用这一页说明冲突可以留在提交里，rebase 不必停在半路。这是课堂 killer feature 的文档来源。",
+      "scope_sections": [
+        "Introduction",
+        "Advantages",
+        "Conflict markers",
+        "marker styles"
+      ],
+      "scope_reason": "冲突页从介绍、好处到标记样式已读完。",
+      "visual_checks": [
+        {
+          "page": null,
+          "detail": "标记示例是页面上的文本块，不是单独插图；grape/grapefruit 例子已按正文读过"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "conflicts 页 Introduction 与 Conflict markers",
+          "claim": "冲突以逻辑形式存在提交里，rebase 可以先完成；工作副本里才变成标记",
+          "role": "mechanism",
+          "note_target": "supplements x5"
+        }
+      ],
+      "read_sections": [
+        "Introduction",
+        "Advantages",
+        "Conflict markers",
+        "marker styles"
+      ]
+    },
+    {
+      "id": "jj-tutorial",
+      "kind": "web",
+      "listed_title": "设计说明",
+      "listed_url": "https://github.com/jj-vcs/jj/blob/main/docs/tutorial.md",
+      "title": "Tutorial",
+      "source_url": "https://github.com/jj-vcs/jj/blob/main/docs/tutorial.md",
+      "version": "GitHub main raw snapshot 2026-10-28",
+      "identity_status": "verified",
+      "identity_note": "URL 打开的就是 jj 仓库 docs/tutorial.md，标题是 Tutorial，开头写明假定读者已经会 Git。slides 第 8 页 AIGC 的链接文字写成「设计说明」，和文件标题不一致；listed_title 保留「设计说明」，正文不把教程当成设计说明来总结。",
+      "path": "课堂笔记/sources/readings/jj-tutorial.md",
+      "sha256": "d672f8692e4fa18e10d88baa5c8b9b7e7251381ccd609b402bcb58d9bea0d19d",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只有 slides AIGC 批注给出这个链接，讲师没有说去读教程。change 的定义以术语表为准；教程开头用一行日志展示两个 ID，作为例子保留。",
+      "required": false,
+      "reading_status": "full",
+      "scope_sections": [
+        "Preparation",
+        "Cloning a Git repository",
+        "Changes",
+        "Creating our first change",
+        "The log command and \"revsets\"",
+        "Conflicts",
+        "The operation log",
+        "Moving content changes between commits",
+        "Using an existing Git repository"
+      ],
+      "read_sections": [
+        "Preparation",
+        "Cloning a Git repository",
+        "Changes",
+        "Creating our first change",
+        "The log command and \"revsets\"",
+        "Conflicts",
+        "The operation log",
+        "Moving content changes between commits",
+        "Using an existing Git repository"
+      ],
+      "scope_reason": "slides 第 8 页 AIGC 的链接文字是「设计说明」，打开的是 tutorial.md。教程后半的冲突、操作日志和已有 Git 仓库，和本课的 change、rebase、冲突直接对应，所以范围扩到全部小节，不是因为后半太长才切开。文首指向 Steve Klabnik 和 Jujutsu for everyone 的另外两份教程没有追读。脚注里的 Meld 只是可选的 diff 编辑器。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "tutorial.md 的 Creating our first change、Conflicts 与 The operation log",
+          "claim": "改 README 后 change ID 不变；rebase 带着冲突完成，jj new 再 squash 把解决写回；jj undo 撤回上一次操作",
+          "role": "example",
+          "note_target": "supplements x4"
+        }
+      ]
+    },
+    {
+      "id": "git-worktree",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/git-worktree.html",
+      "sha256": "cf843ea6e3edda3fdda65877063f6c9b8a8e91b54041bc39d0bc89246a6bc72d",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "git worktree",
+      "listed_url": "https://git-scm.com/docs/git-worktree",
+      "title": "git-worktree - Manage multiple working trees",
+      "source_url": "https://git-scm.com/docs/git-worktree",
+      "version": "git-scm docs as fetched 2026-10-28",
+      "identity_note": "讲义页正文和 slides 第 13 页正文都链到这页。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "课堂和 slides 正文都把 git worktree 当作 Agent 隔离目录的办法。文档补的是共享引用和同一分支不能检出两次。",
+      "scope_sections": [
+        "DESCRIPTION",
+        "linked versus main",
+        "already checked out",
+        "per-worktree HEAD and index"
+      ],
+      "scope_reason": "讲义参见的是命令的工作方式。DESCRIPTION、add 的几种形式、默认拒绝重复检出，以及 HEAD/index 按工作树分开、refs/ 共享，已读。其余子命令的每个选项没有列入范围。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 11,
+          "location": "git-worktree DESCRIPTION 与 add 的默认拒绝",
+          "claim": "链接工作树共享对象和 refs/，HEAD 与 index 各自一份；默认不能把同一分支检出到两个 worktree",
+          "role": "mechanism",
+          "note_target": "supplements x7"
+        }
+      ],
+      "read_sections": [
+        "DESCRIPTION",
+        "linked versus main",
+        "already checked out",
+        "per-worktree HEAD and index"
+      ]
+    },
+    {
+      "id": "git-bisect",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/git-bisect.html",
+      "sha256": "5125248026d177a803a9c49054b7c0fca2c339d702cd3d858560cef953d48cf8",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "bisect",
+      "listed_url": "https://git-scm.com/docs/git-bisect",
+      "title": "git-bisect - Use binary search to find the commit that introduced a bug",
+      "source_url": "https://git-scm.com/docs/git-bisect",
+      "version": "git-scm docs as fetched 2026-10-28",
+      "identity_note": "讲义页正文在讲 bisect 时链到这页。slides 没有单独再链。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义用它说明怎样用好坏判断缩小引入问题的提交。课堂只讲了用途，文档写的是二分和 good/bad。",
+      "scope_sections": [
+        "DESCRIPTION"
+      ],
+      "scope_reason": "讲义参见的是这条命令如何缩小范围。DESCRIPTION 开头的二分过程已读，子命令选项没有列入范围。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 12,
+          "location": "git-bisect DESCRIPTION",
+          "claim": "在已知 bad 和更早的 good 之间二分，直到找出引入变化的提交；也可以找修好问题或改变性能的那一次",
+          "role": "mechanism",
+          "note_target": "supplements x8"
+        }
+      ],
+      "read_sections": [
+        "DESCRIPTION"
+      ]
+    },
+    {
+      "id": "git-blame",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/git-blame.html",
+      "sha256": "5058bdfe2ef636792aa2cce47a288c52f04fb37d89e7bc963871f987a9177baa",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "blame",
+      "listed_url": "https://git-scm.com/docs/git-blame",
+      "title": "git-blame - Show what revision and author last modified each line of a file",
+      "source_url": "https://git-scm.com/docs/git-blame",
+      "version": "git-scm docs as fetched 2026-10-28",
+      "identity_note": "讲义页正文在讲 blame 时链到这页。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义用它说明怎样把当前行连回历史修改。命令标的是最后修改该行的修订，课堂把它放进追责的讨论。",
+      "scope_sections": [
+        "DESCRIPTION"
+      ],
+      "scope_reason": "讲义参见的是命令标出什么。DESCRIPTION 的任务说明已读，标注选项没有列入范围。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 12,
+          "location": "git-blame DESCRIPTION",
+          "claim": "每一行标的是最后修改该行的修订和作者",
+          "role": "mechanism",
+          "note_target": "supplements x8"
+        }
+      ],
+      "read_sections": [
+        "DESCRIPTION"
+      ]
+    },
+    {
+      "id": "git-notes",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/git-notes.html",
+      "sha256": "3ef302b7a60ea5b63da09708dcdf93c2476978c8b2b975307620981fad014920",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "git notes",
+      "listed_url": "https://git-scm.com/docs/git-notes",
+      "title": "git-notes - Add or inspect object notes",
+      "source_url": "https://git-scm.com/docs/git-notes",
+      "version": "git-scm docs as fetched 2026-10-28",
+      "identity_note": "讲义页正文的 git notes 链接。slides AIGC 钉的是 2.42.0，分开登记。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义用它说明点评可以后补且不改原提交。",
+      "scope_sections": [
+        "DESCRIPTION"
+      ],
+      "scope_reason": "讲义参见的是笔记不改对象。DESCRIPTION 已读。选项、配置和改写策略没有列入范围。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 16,
+          "location": "git-notes DESCRIPTION",
+          "claim": "笔记默认在 refs/notes/commits，添加时不改对象本身，因此不改 commit ID",
+          "role": "mechanism",
+          "note_target": "supplements x12"
+        }
+      ],
+      "read_sections": [
+        "DESCRIPTION"
+      ]
+    },
+    {
+      "id": "git-notes-242",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/git-notes-242.html",
+      "sha256": "ff2522a21bc8b6e7a157f567a1717e51fa9356f0ace54c3c4a6e6ce642ae3d72",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "git notes",
+      "listed_url": "https://git-scm.com/docs/git-notes/2.42.0.html",
+      "title": "git-notes - Add or inspect object notes (2.42.0)",
+      "source_url": "https://git-scm.com/docs/git-notes/2.42.0.html",
+      "version": "2.42.0",
+      "identity_note": "slides 第 21 页 AIGC 批注把链接钉在 2.42.0。讲义正文链的是不带版本号的文档页。两页 DESCRIPTION 开头一致。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "这是 slides AIGC 批注给出的版本钉。用来核对「不改对象」这句在 2.42.0 里已经如此，不是讲师口述的版本文档。",
+      "scope_sections": [
+        "DESCRIPTION"
+      ],
+      "scope_reason": "批注没有指定小节。与「后补点评、不改原提交」对应的 DESCRIPTION 开头已读，并与当前文档页对照。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 16,
+          "location": "git-notes 2.42.0 DESCRIPTION 开头",
+          "claim": "2.42.0 同样写明笔记不触碰对象，默认引用是 refs/notes/commits",
+          "role": "mechanism",
+          "note_target": "supplements x12"
+        }
+      ],
+      "read_sections": [
+        "DESCRIPTION"
+      ]
+    },
+    {
+      "id": "fowler-quadrant",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/fowler.html",
+      "sha256": "1e0fe2d8e73924e740f746eb224fdd67a49843cc0049e8ebf14ac2a6280d2f57",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "Technical Debt Quadrant",
+      "listed_url": "https://martinfowler.com/bliki/TechnicalDebtQuadrant.html",
+      "title": "Technical Debt Quadrant",
+      "source_url": "https://martinfowler.com/bliki/TechnicalDebtQuadrant.html",
+      "version": "2009-10-14, reposted 2014-11-19",
+      "identity_note": "讲义页正文在「从零开始」一段引用。作者 Martin Fowler。课堂口述只说了 technical debt。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义用这篇区分「当时认真设计、后来才发现结构落后」。这是讲义里技术债讨论的直接出处，不是 slides AIGC。",
+      "scope_sections": [
+        "prudent versus reckless",
+        "deliberate versus inadvertent",
+        "prudent inadvertent"
+      ],
+      "scope_reason": "博文整篇已读，包括四个格子和他承认的解释困难。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "Technical Debt Quadrant 全文",
+          "claim": "四个格子；谨慎而无意的债是做完之后才看出更好的设计，优秀团队也会有",
+          "role": "mechanism",
+          "note_target": "supplements x13"
+        }
+      ],
+      "read_sections": [
+        "prudent versus reckless",
+        "deliberate versus inadvertent",
+        "prudent inadvertent"
+      ]
+    },
+    {
+      "id": "ries-good-enough",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/ries.html",
+      "sha256": "6b3c2e6e913934a0e2843305369117bc3a45a168dc13a91290950315ed28889c",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "MVP 的解释",
+      "listed_url": "https://www.startuplessonslearned.com/2010/09/good-enough-never-is-or-is-it.html",
+      "title": "Good enough never is (or is it?)",
+      "source_url": "https://www.startuplessonslearned.com/2010/09/good-enough-never-is-or-is-it.html",
+      "version": "2010-09-27",
+      "identity_note": "讲义页把链接文字写成「MVP 的解释」。打开后的标题是 Good enough never is (or is it?)，作者 Eric Ries，文中确实给出 MVP 定义。不把标题改成讲义上的链接文字。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义用这一页作为 Eric Ries 对 MVP 的解释。slides AIGC 另有一页，分开登记。",
+      "scope_sections": [
+        "good enough never is",
+        "MVP definition",
+        "two misunderstandings",
+        "what to do the day after"
+      ],
+      "scope_reason": "博文正文已读完。页面后部是同一篇文章的重复渲染，不另算内容。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "2010-09-27 文中的 MVP 定义段",
+          "claim": "MVP 是用最少努力收集最大量 validated learning 的那个版本，用来检验一组假设；minimum 指能够学习，不是尽快发出任何东西",
+          "role": "mechanism",
+          "note_target": "supplements x14"
+        }
+      ],
+      "read_sections": [
+        "good enough never is",
+        "MVP definition",
+        "two misunderstandings",
+        "what to do the day after"
+      ]
+    },
+    {
+      "id": "lean-mvp",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/lean-mvp.html",
+      "sha256": "61bbdecd149cf3ead3b3b6d718803b08d57b88da3e95d70962051af37dff1bf7",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "Eric Ries：MVP",
+      "listed_url": "https://leanstartup.co/resources/articles/what-is-an-mvp/",
+      "title": "What is an MVP?",
+      "source_url": "https://leanstartup.co/resources/articles/what-is-an-mvp/",
+      "version": "republished page, fetched 2026-10-28",
+      "identity_note": "slides 第 24 页 AIGC 批注的链接。页首声明文章原载 Startup Lessons Learned、作者 Eric Ries。抓到的 HTML 在定义前有残句 most understood Lean Startup techniques，不把它当成作者的完整句子。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只有 slides AIGC 批注链到这页。定义句与讲义所链的 2010 年文章同核，并多了 about customers。不是讲师口述。",
+      "scope_sections": [
+        "definition",
+        "not minimal products",
+        "IMVU six months",
+        "two-week feature"
+      ],
+      "scope_reason": "转载页的文章正文已读。页上的培训广告和脚本没有当作文章内容。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "What is an MVP? 的定义段和 IMVU 例子",
+          "claim": "定义包含 about customers；MVP 不是做最小产品；IMVU 的第一版用了六个月，另一次两周功能可以用更小的测试提前否定",
+          "role": "mechanism",
+          "note_target": "supplements x14"
+        }
+      ],
+      "read_sections": [
+        "definition",
+        "not minimal products",
+        "IMVU six months",
+        "two-week feature"
+      ]
+    },
+    {
+      "id": "einstellung-2008",
+      "kind": "pdf",
+      "listed_title": "Einstellung effect，2008 年眼动实验",
+      "listed_url": "https://pubmed.ncbi.nlm.nih.gov/18565505/",
+      "title": "Why good thoughts block better ones: The mechanism of the pernicious Einstellung (set) effect",
+      "source_url": "https://bura.brunel.ac.uk/bitstream/2438/2276/1/Einstellung-Cognition.pdf",
+      "version": "Brunel BURA accepted manuscript, Cognition in press; not journal pages 652-661",
+      "identity_status": "verified",
+      "identity_note": "slides 第 10 页 AIGC 批注的原链接是 PubMed 18565505，页面只有摘要。出版社全文没有打开。这次用的是 Brunel University Research Archive 的作者稿，记录页 https://bura.brunel.ac.uk/handle/2438/2276 写明作者 Bilalić、McLeod、Gobet，题名与 PubMed 一致，引用格式是 Cognition (in press)。PDF 共 36 个物理页，不是期刊排版后的 Cognition 2008 Sep;108(3):652-661。作者主页 cognition.aau.at 上的另一份 PDF 本次连接超时，没有改用那一份。没有伪装 User-Agent，也没有用无头浏览器去过检查。",
+      "path": "课堂笔记/sources/readings/einstellung-2008.pdf",
+      "sha256": "4b816254ca05dd7fcc25e1d6978036a76747db6ede403887e878f064c5d6f3fc",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只有 slides AIGC 批注给出这篇论文。讲师讲肌肉记忆时没有展开实验。摘要可以说明批注里的「眼动」指什么，不能写成老师推荐精读。",
+      "required": false,
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "目视首页：三位作者、Oxford/Oxford/Brunel，以及 Cognition (in press) 的题头"
+        },
+        {
+          "page": 29,
+          "detail": "目视表 1：实验 1 两组 Candidate Master 各 n=5，Elo 2066±28 与 2113±54"
+        },
+        {
+          "page": 34,
+          "detail": "按页面旋转后目视图 2：2-solution 熟悉解格子全程更高，1-solution 最后 5 秒最优解格子升过 40%"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "作者稿物理页 11–13 的实验 1 结果，物理页 29 表 1，物理页 34 图 2",
+          "claim": "两组各 5 名 Candidate Master；口头说在找更短的解，注视仍停在熟悉解的格子上",
+          "role": "boundary",
+          "note_target": "supplements x6"
+        }
+      ],
+      "total_pages": 36,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "scope_pages": null
+    },
+    {
+      "id": "nasa-asrs-555",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/nasa.html",
+      "sha256": "371db6a829d5e39894091bbc3a07071026ab7b83c9c209800b267c75c28bf875",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "NASA 航空安全报告系统",
+      "listed_url": "https://asrs.arc.nasa.gov/publications/callback/cb_555.html",
+      "title": "ASRS CALLBACK Issue 555 - April 2026, 50 Years of Turning Safety Reports Into Safer Skies",
+      "source_url": "https://asrs.arc.nasa.gov/publications/callback/cb_555.html",
+      "version": "CALLBACK issue 555, April 2026",
+      "identity_note": "slides 第 14 页 AIGC 批注的链接。打开的是 2026 年 4 月的第 555 期，不是制度的原始立法文本。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只有 slides AIGC 批注链到这一期。课堂画面上有这行字，讲师没有讲 514 航班或四条原则的来历。",
+      "scope_sections": [
+        "50 years",
+        "TWA 514",
+        "four principles",
+        "volume and products"
+      ],
+      "scope_reason": "新闻信正文已读，含 1974 年事故、四条原则和报告量。页末当月警报分类表已看到合计 36 条，没有逐条当作本课内容。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 12,
+          "location": "CALLBACK 555 的 In the Beginning",
+          "claim": "四条原则是自愿、保密、非惩罚、独立；源于 1974-12-01 的 514 航班，1976-04-15 开始运行",
+          "role": "background",
+          "note_target": "supplements x9"
+        }
+      ],
+      "read_sections": [
+        "50 years",
+        "TWA 514",
+        "four principles",
+        "volume and products"
+      ]
+    },
+    {
+      "id": "pg-advisory-locks",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/pg-locks.html",
+      "sha256": "40cb5a062d13eac78b0a8e00653a0301cd16e21538498dfef39921cd39913ac3",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "advisory locks",
+      "listed_url": "https://www.postgresql.org/docs/17/explicit-locking.html#ADVISORY-LOCKS",
+      "title": "13.3. Explicit Locking — 13.3.5 Advisory Locks",
+      "source_url": "https://www.postgresql.org/docs/17/explicit-locking.html#ADVISORY-LOCKS",
+      "version": "PostgreSQL 17",
+      "identity_note": "slides 第 16 页 AIGC 批注的链接带 #ADVISORY-LOCKS。页面是整篇显式锁，锚点指向 13.3.5。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只有 slides AIGC 批注把课堂的锁比作 PostgreSQL advisory lock。讲师说的是操作系统和数据库课里的互斥，没有点这份文档。",
+      "scope_sections": [
+        "13.3.5 Advisory Locks"
+      ],
+      "scope_reason": "AIGC 链接的锚点就是这一节。13.3.5 已读完。同一页前面的表锁、行锁没有列入范围。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 13,
+          "location": "PostgreSQL 17 文档 13.3.5",
+          "claim": "锁的含义由应用定义，数据库不强制使用；会话级锁不随事务回滚释放",
+          "role": "mechanism",
+          "note_target": "supplements x10"
+        }
+      ],
+      "read_sections": [
+        "13.3.5 Advisory Locks"
+      ]
+    },
+    {
+      "id": "brooks-man-month",
+      "kind": "pdf",
+      "listed_title": "Brooks《人月神话》",
+      "listed_url": "https://www.cs.virginia.edu/~evans/greatworks/mythical.pdf",
+      "title": "The Mythical Man-Month, chapter excerpt titled as the 20th anniversary edition",
+      "source_url": "https://www.cs.virginia.edu/~evans/greatworks/mythical.pdf",
+      "version": "PDF metadata: 20th anniversary ed.; file has 16 pages",
+      "identity_status": "verified",
+      "identity_note": "slides 把链接写成整本书。PDF 元数据标题也写成 20 周年全集，但文件只有 16 页，正文是第 2 章 The Man-Month。页眉印刷页：物理页 4 为 14，物理页 8 为 18，物理页 16 为 26。身份按这份 16 页文件核对，不是 20 周年全集。",
+      "path": "课堂笔记/sources/readings/brooks.pdf",
+      "sha256": "32db2ded6a4eb4205e5f9c673c72d69c2c3cf9312db62b8a623dc6939758cf21",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "讲师口述点了《人月神话》和两两沟通按平方增长，没有给出 PDF。PDF 链接在 slides 第 18 页的 AIGC 批注里。这一章可以核对公式，不能写成老师指定读完全书。",
+      "required": false,
+      "total_pages": 16,
+      "reading_status": "full",
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "scope_pages": null,
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "visual_checks": [
+        {
+          "page": 8,
+          "detail": "书页 18，目视公式为 n(n-1)/2；3 人是 2 人的 3 倍，4 人是 2 人的 6 倍；图 2.3 曲线下降后变平"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "PDF 物理页 8 与 15–16",
+          "claim": "相互沟通按 n(n-1)/2 增长；书中的倍数例子是 3 与 4 人，不是 slides 上的 5 人 10 条、10 人 45 条",
+          "role": "boundary",
+          "note_target": "supplements x11"
+        }
+      ]
+    },
+    {
+      "id": "adr-nygard",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/readings/adr.html",
+      "sha256": "01bdb22a561924b5eb072b501b530d14157d4a674561dac25cfff3197eb04faf",
+      "reading_status": "full",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "required": true,
+      "listed_title": "决策记录",
+      "listed_url": "https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions",
+      "title": "Documenting Architecture Decisions",
+      "source_url": "https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions",
+      "version": "2011-11-15",
+      "identity_note": "slides 第 23 页 AIGC 批注的链接文字是「决策记录」。打开后是 Michael Nygard 2011-11-15 的文章。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只有 slides AIGC 批注把「为什么这样做、哪些路走不通」指到这篇文章。讲师讲的是记住教训，没有指定 ADR 格式。",
+      "scope_sections": [
+        "Context",
+        "Decision",
+        "Status",
+        "Consequences",
+        "Experience Report"
+      ],
+      "scope_reason": "文章正文已读完，包括五块格式和放在 GitHub 上给非开发者看的处理。页脚人员名单不是文章。",
+      "visual_checks": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "Nygard 2011-11-15 的五块格式",
+          "claim": "一条 ADR 只记一个决定；被取代的旧记录保留并标 superseded；后果要写负面和中性",
+          "role": "mechanism",
+          "note_target": "supplements x15"
+        }
+      ],
+      "read_sections": [
+        "Context",
+        "Decision",
+        "Status",
+        "Consequences",
+        "Experience Report"
+      ]
+    }
+  ]
+}

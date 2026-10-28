@@ -7,9 +7,31 @@
     "title": "生成式软件工程 补充｜失败的AI Slop数字永生尝试"
   },
   "scope": {
-    "requested": "单课完整笔记 + 手绘图解 + 外部模型保真评测",
-    "materials": false,
-    "changes": []
+    "requested": "单课完整笔记 + 手绘图解 + 外部模型保真评测；在已交付版本上增量补充官方讲义与推荐材料",
+    "materials": [
+      "gse-2026-index",
+      "gse-slides1-p3",
+      "gse-slides1-cv",
+      "os-2025-lect1",
+      "ics-2021-intro",
+      "ics-2021-pa0",
+      "oral-stanford-mit",
+      "oral-doubao",
+      "oral-bilibili-tailor",
+      "oral-reward-hacking"
+    ],
+    "changes": [
+      {
+        "at": "2026-10-28T04:25:00+00:00",
+        "request": "增量补充官方讲义与推荐材料",
+        "added_work": "materials.json、supplements、第1讲 slides 第3页对照图；未重写已有小节、takeaway 和图解"
+      },
+      {
+        "at": "2026-10-28T07:29:46+00:00",
+        "request": "补读上一轮未取得的推荐材料",
+        "added_work": "豆包产品页改读 Internet Archive 20241208192626；lect/cv.pdf 仍无公开副本。没有下载课外视频。"
+      }
+    ]
   },
   "toolchain": {
     "baocut": null,
@@ -62,7 +84,10 @@
       "depends_on": [
         "index",
         "frame_scan",
-        "video"
+        "video",
+        "materials",
+        "slide-page",
+        "src-doubao-archive"
       ],
       "role": "notes"
     },
@@ -86,8 +111,91 @@
       "depends_on": [
         "notes",
         "transcript",
-        "frame_scan"
+        "frame_scan",
+        "materials"
       ]
+    },
+    {
+      "id": "src-gse-index",
+      "path": "sources/gse-2026-index.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 保存的课程目录页"
+    },
+    {
+      "id": "src-gse-slides1",
+      "path": "sources/gse-2026-slides1.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "第1讲 slides 单页应用，第3页在 slides-data 下标 2"
+    },
+    {
+      "id": "src-os-lect1",
+      "path": "sources/os-2025-lect1.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "操作系统原理 2025 春第1讲，读了 1.4 与 1.5 正文"
+    },
+    {
+      "id": "src-ics-2021",
+      "path": "sources/ics-2021-index.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "计算机系统基础习题课 2021 秋首页，读了课程简介"
+    },
+    {
+      "id": "src-ics-pa0",
+      "path": "sources/ics-2021-pa0.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "PA0 开发环境配置，整页已读"
+    },
+    {
+      "id": "src-doubao",
+      "path": "sources/doubao-volcengine.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 现场产品页外壳，没有可阅读正文；2026-10-23 存档解压后同为 169633 字节"
+    },
+    {
+      "id": "src-doubao-archive",
+      "path": "sources/doubao-volcengine-20241208.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "同一产品 URL 的 Internet Archive 20241208192626 存档，已读产品栏目"
+    },
+    {
+      "id": "slide-page",
+      "path": "frames/slides1-p03.jpg",
+      "depends_on": [
+        "src-gse-slides1"
+      ],
+      "role": "source",
+      "origin": "generated",
+      "basis": "headless Chrome 1600×900 截第1讲 slides 第3页，JPEG 质量 82"
+    },
+    {
+      "id": "materials",
+      "path": "materials.json",
+      "depends_on": [
+        "src-gse-index",
+        "src-gse-slides1",
+        "src-os-lect1",
+        "src-ics-2021",
+        "src-ics-pa0",
+        "src-doubao",
+        "src-doubao-archive"
+      ],
+      "role": "source",
+      "origin": "generated",
+      "basis": "阅读登记；补读豆包存档与简历公开副本；validate_materials.py --course-root ."
     }
   ],
   "log": [
@@ -250,18 +358,106 @@
       "job_id": null,
       "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
       "evidence": "/private/var/folders/j6/0wknd5xs1sj5_xnqkgjdj8zm0000gn/T/tmpjvnm0n5i/html-check.json"
+    },
+    {
+      "at": "2026-10-28T04:26:12.702736+00:00",
+      "occurred_at": null,
+      "stage": "reading",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "官网无本视频讲义；读了第1讲 slides 第3页、OS 2025 第1讲 1.4–1.5、ICS 2021 简介和 PA0",
+      "evidence": "课堂笔记/materials.json"
+    },
+    {
+      "at": "2026-10-28T04:26:12.722569+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "notes passed; materials passed",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-28T04:26:12.742358+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 1.0, recall 1.0; delta 10 precision items and 26 recall items, reviewer gpt-6.1-sol",
+      "evidence": "课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-28T04:26:12.762007+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "课堂笔记/qa/html-check.json"
+    },
+    {
+      "at": "2026-10-28T07:40:20.241132+00:00",
+      "occurred_at": null,
+      "stage": "reading",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "补读：豆包改读 Internet Archive 20241208192626；lect/cv.pdf 仍无公开副本",
+      "evidence": "课堂笔记/materials.json"
+    },
+    {
+      "at": "2026-10-28T07:40:20.263101+00:00",
+      "occurred_at": null,
+      "stage": "validate",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "notes passed; materials passed",
+      "evidence": null
+    },
+    {
+      "at": "2026-10-28T07:40:20.283302+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 1.0, recall 1.0; delta reviewer gpt-6.1-sol",
+      "evidence": "课堂笔记/fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-28T07:40:20.302871+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+      "evidence": "课堂笔记/qa/html-check.json"
     }
   ],
   "issues": [],
   "status": {
-    "outcome": "completed",
+    "outcome": "partial",
     "known_gaps": [
       "无头 Chrome 在 390 与 1280 宽下点过两种阅读模式和展开全部，没有用真机。",
       "没有逐秒听写。换页用预先的 frames.py scan（阈值 0.3）加上每秒缩小帧的平均绝对差；55.0–55.6 秒的变暗不当作内容页。",
       "黄块小字、5 秒图右侧平板小字、裁缝图自我驱动后两条的后半，看不清，图注里没有补字。",
-      "candidates.json 里的视频路径在工作目录外，没有打开；截帧只用 ./raw/BV1fKtN6DErG.mp4。"
+      "官网没有这条补充视频的讲义。第1讲只读了 slides 第3页；第2–10讲只做了关键词和链接盘点，没有当成本视频的讲义读完。",
+      "操作系统 2025 第1讲的 slides 图片没有逐张看。OSTEP 和 Harley Hahn 没有打开。",
+      "豆包现场页和 2026-10-23 存档仍无正文。已读同一 URL 的 2024-12-08 存档，那是企业模型介绍，不是口播里的作业循环，也不是 2026 年现场页。",
+      "第1讲 slides 的 lect/cv.pdf 再次 404。Internet Archive 无此 URL，同站路径和作者主页 cv.pdf 也是 404。没有改读其他简历。",
+      "Stanford/MIT、B 站学术裁缝视频和 reward hacking 都没有具体文献，没有自行指定一份来读。",
+      "简历上被涂掉的论文没有核对原文。",
+      "课外视频待用户确认是否处理。materials.json 里没有 kind=video 的条目；课程目录的直播/回放和第1讲第5页费曼录音本轮未下载。"
     ],
-    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors"
+    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+    "reading_materials": "passed",
+    "material_integration": "passed"
   },
   "revisions": [
     {
@@ -329,6 +525,223 @@
         "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
       },
       "prev_sha256": null
+    },
+    {
+      "rev": 2,
+      "at": "2026-10-28T04:26:12.801618+00:00",
+      "reason": "增量补充官方讲义与推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "4ccc403e04cc7d201636f7f0ea074e38bcec3889195379d5d207af1424b8e693",
+          "bytes": 154693
+        },
+        "video": {
+          "path": "../raw/BV1fKtN6DErG.mp4",
+          "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+          "bytes": 29783462
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "add9ee85575c954925886514d79b3eb6818c4f10bceacc54e6ca9a1b80e1b590",
+          "bytes": 1677
+        },
+        "frame_scan": {
+          "path": "frames/candidates.json",
+          "sha256": "4653ee599338a79256889568745b888a918c55f397ad261653086e3586542b35",
+          "bytes": 812
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "2361b8d1be7ee4f24ad43b5889864b54830115af18a9124e6d9eacc13fb41590",
+          "bytes": 40541
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "bf70777071446de8d99321e30522e5eb5843c574b70236010500ee957f003594",
+          "bytes": 8730907
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "689267976647b38da3dde7c25920907aee0e646a5b14d14fb43e9198afa42505",
+          "bytes": 31511
+        },
+        "src-gse-index": {
+          "path": "sources/gse-2026-index.html",
+          "sha256": "b34520e1f9c2cbfa313125b2422b0669332cfc201891a8f7647707a72caf0383",
+          "bytes": 19874
+        },
+        "src-gse-slides1": {
+          "path": "sources/gse-2026-slides1.html",
+          "sha256": "1e076988a10af24f9bb0234ad91ace624ce6b8a877ca3e57d98c23f853ea88b5",
+          "bytes": 458494
+        },
+        "src-os-lect1": {
+          "path": "sources/os-2025-lect1.html",
+          "sha256": "ab97d223dc028bf543be51eb297260967ee132598534a51fa40daed62037bf13",
+          "bytes": 23084
+        },
+        "src-ics-2021": {
+          "path": "sources/ics-2021-index.html",
+          "sha256": "143ead1ff0240a6fc9be596970aa5af0bd342c288671988c6148c37e5988b7e3",
+          "bytes": 12875
+        },
+        "src-ics-pa0": {
+          "path": "sources/ics-2021-pa0.html",
+          "sha256": "6ecd0b89dc618dcb428651f7d0fd4d9de5b4b7e774783c6f5d1528d8fb94981a",
+          "bytes": 8086
+        },
+        "src-doubao": {
+          "path": "sources/doubao-volcengine.html",
+          "sha256": "6986a998c792fa9b46e3ace10e16f64b04c11b69b6f22dc9c471ea5ec23bd6da",
+          "bytes": 169633
+        },
+        "slide-page": {
+          "path": "frames/slides1-p03.jpg",
+          "sha256": "dd28a0699ad43e63e07cd567d17714e7319547c18168a21a3eb830d2d26c36bb",
+          "bytes": 118276
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "61ef10696b83a155d39a7f74beb892490b3221647a313c257e407609335157e6",
+          "bytes": 13721
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 1.0,
+        "recall": 1.0,
+        "precision_items": 48,
+        "recall_items": 29,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "5a07ff0e6bacb8dd88c841a18298469403c0845497f5d43399e9ed9d3c7df6b6"
+    },
+    {
+      "rev": 3,
+      "at": "2026-10-28T07:40:20.343210+00:00",
+      "reason": "补读上一轮未取得的推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "4ccc403e04cc7d201636f7f0ea074e38bcec3889195379d5d207af1424b8e693",
+          "bytes": 154693
+        },
+        "video": {
+          "path": "../raw/BV1fKtN6DErG.mp4",
+          "sha256": "d67083cd67d8e073a997341220e39def0a7047ce91db330c2bc6e4ee12f7b55b",
+          "bytes": 29783462
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "add9ee85575c954925886514d79b3eb6818c4f10bceacc54e6ca9a1b80e1b590",
+          "bytes": 1677
+        },
+        "frame_scan": {
+          "path": "frames/candidates.json",
+          "sha256": "4653ee599338a79256889568745b888a918c55f397ad261653086e3586542b35",
+          "bytes": 812
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "518a28111eb4c55e4f72349da41925a35e40ea02d1d9d70dcd814a2df113d6d3",
+          "bytes": 45790
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "bd8c00087dba37ab1a150c1e31aa4c0755970d9d9800fef4f4b49a9845293215",
+          "bytes": 8736627
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "8f5c1970571dcd6a87bfdfcb75fb52552c29f2f0632e5b7af924b7a2494a0359",
+          "bytes": 32235
+        },
+        "src-gse-index": {
+          "path": "sources/gse-2026-index.html",
+          "sha256": "b34520e1f9c2cbfa313125b2422b0669332cfc201891a8f7647707a72caf0383",
+          "bytes": 19874
+        },
+        "src-gse-slides1": {
+          "path": "sources/gse-2026-slides1.html",
+          "sha256": "1e076988a10af24f9bb0234ad91ace624ce6b8a877ca3e57d98c23f853ea88b5",
+          "bytes": 458494
+        },
+        "src-os-lect1": {
+          "path": "sources/os-2025-lect1.html",
+          "sha256": "ab97d223dc028bf543be51eb297260967ee132598534a51fa40daed62037bf13",
+          "bytes": 23084
+        },
+        "src-ics-2021": {
+          "path": "sources/ics-2021-index.html",
+          "sha256": "143ead1ff0240a6fc9be596970aa5af0bd342c288671988c6148c37e5988b7e3",
+          "bytes": 12875
+        },
+        "src-ics-pa0": {
+          "path": "sources/ics-2021-pa0.html",
+          "sha256": "6ecd0b89dc618dcb428651f7d0fd4d9de5b4b7e774783c6f5d1528d8fb94981a",
+          "bytes": 8086
+        },
+        "src-doubao": {
+          "path": "sources/doubao-volcengine.html",
+          "sha256": "6986a998c792fa9b46e3ace10e16f64b04c11b69b6f22dc9c471ea5ec23bd6da",
+          "bytes": 169633
+        },
+        "src-doubao-archive": {
+          "path": "sources/doubao-volcengine-20241208.html",
+          "sha256": "5f314ca7708c488d4335d28f65c39c7de448e537f3f19bede6d15b3a3a76da5a",
+          "bytes": 630387
+        },
+        "slide-page": {
+          "path": "frames/slides1-p03.jpg",
+          "sha256": "dd28a0699ad43e63e07cd567d17714e7319547c18168a21a3eb830d2d26c36bb",
+          "bytes": 118276
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "78cfb1317bdf9dafac68635d3f6b9e140884b1950bdc8537c8a55f657f4fd824",
+          "bytes": 16834
+        }
+      },
+      "issues": {},
+      "outcome": "partial",
+      "eval": {
+        "status": "passed",
+        "precision": 1.0,
+        "recall": 1.0,
+        "precision_items": 49,
+        "recall_items": 29,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "6846a0c6167a9f4a60dba320ec2a5fe13e63a67081d14be6b7d921519d0a93d9"
     }
   ]
 }

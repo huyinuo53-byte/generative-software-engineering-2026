@@ -1,0 +1,1253 @@
+{
+  "schema_version": 1,
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "checked_at": "2026-10-28T01:30:42-04:00",
+  "assumptions": [
+    "课程首页第 6 项《需求和架构 (1)》对应 lect6.md 与 slides6.html，并按标题对应视频 BV1Rch76WEfQ。首页 HTML 存在 sources/course-index.html，只用于这次对照，不登记为阅读材料。",
+    "slides 页码等于 slides-data JSON 下标加 1。span.aigc 内的链接 source_label 固定为“官方 slides AIGC 批注推荐，非课堂口述”。",
+    "同一 URL 若讲义页正文已经引用，就按讲义页登记，不降成纯 AIGC 推荐。",
+    "Royce PDF 是 Wayback Machine 保存的 UMD 课程扫描件。作者行 OCR 错误不改变论文身份。",
+    "DDD Reference 的范围停在讲义页使用的限界上下文和普遍语言，不把整份模式目录扩成必读。",
+    "微信文章只采用短正文。Nayuki 只采用 README。",
+    "2026-10-28 补读：excel-let 改读同一 articleGuid 的微软规范页；zhang-norman-1994 与 cheney-provenance-2007 读完已有 PDF；rittel-webber-1973 用 Webber 机构页的 Internet Archive 存档。materials.json 里没有课外视频条目。"
+  ],
+  "expected_material_ids": [
+    "gse-lect6",
+    "gse-slides6",
+    "royce-1970",
+    "brooks-1987",
+    "parnas-1972",
+    "excel-calc-performance",
+    "excel-let",
+    "nayuki-qr-readme",
+    "zhang-norman-1994",
+    "weixin-2024-07-10",
+    "fowler-event-sourcing",
+    "ms-event-sourcing",
+    "fowler-cqrs",
+    "ms-cqrs",
+    "fowler-bitemporal",
+    "evans-ddd-reference-2015",
+    "fowler-bounded-context",
+    "fowler-strangler",
+    "cheney-provenance-2007",
+    "rittel-webber-1973"
+  ],
+  "materials": [
+    {
+      "id": "gse-lect6",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/lect6.html",
+      "sha256": "974590f5d01c6275c4b81c2db23eef5cef719b9bae837e9ab7de012a292fed24",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "需求和架构 (1)",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lect6.md",
+      "title": "需求和架构 (1)",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect6.md",
+      "version": "2026-10-28 抓取的讲义页 HTML",
+      "identity_note": "课程首页第 6 项指向这一页。保存的是渲染后的 HTML。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "这是本课讲义页本身，不是课外推荐。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "代码便宜以后，什么变得更重要",
+        "教务系统为什么会陷入需求泥潭",
+        "MVP 帮助发现需求，也会掩盖困难",
+        "几行代码也有架构",
+        "十行汉诺塔背后的三种看法",
+        "两千行二维码程序：原来我们需要一个编译器",
+        "五十万行教务系统：当前状态里藏着什么",
+        "计算机系变成计算机学院，ID 要不要变",
+        "把历史保存下来：事件溯源",
+        "恢复历史与按新规则重算",
+        "CQRS：怎样做决定，怎样看结果",
+        "DDD：让业务概念决定边界",
+        "让下一次需求变化有地方可去"
+      ],
+      "read_sections": [
+        "代码便宜以后，什么变得更重要",
+        "教务系统为什么会陷入需求泥潭",
+        "MVP 帮助发现需求，也会掩盖困难",
+        "几行代码也有架构",
+        "十行汉诺塔背后的三种看法",
+        "两千行二维码程序：原来我们需要一个编译器",
+        "五十万行教务系统：当前状态里藏着什么",
+        "计算机系变成计算机学院，ID 要不要变",
+        "把历史保存下来：事件溯源",
+        "恢复历史与按新规则重算",
+        "CQRS：怎样做决定，怎样看结果",
+        "DDD：让业务概念决定边界",
+        "让下一次需求变化有地方可去"
+      ],
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "整理者说明",
+          "claim": "用讲义页校准 Royce 口播、银弹比喻，以及后半段没有在口播里展开的 CQRS、DDD 和两个时间。",
+          "role": "mechanism",
+          "note_target": "editor_notes[1]"
+        }
+      ]
+    },
+    {
+      "id": "gse-slides6",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/slides6.html",
+      "sha256": "3e580d390cf6e819675302dcef2c2bd624caed96ae178258a33e23e02a9c6520",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "slides6",
+      "listed_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+      "title": "需求和架构 (1) slides",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+      "version": "2026-10-28 抓取，47 页",
+      "identity_note": "单页应用。每页是 slides-data JSON 的一项，页码等于下标加 1。紫色 span.aigc 记为 AIGC 批注。插入笔记的页另有 1600×900 JPEG。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "这是本课官方 slides，不是课外推荐。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-04",
+        "slide-05",
+        "slide-06",
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15",
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-20",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29",
+        "slide-30",
+        "slide-31",
+        "slide-32",
+        "slide-33",
+        "slide-34",
+        "slide-35",
+        "slide-36",
+        "slide-37",
+        "slide-38",
+        "slide-39",
+        "slide-40",
+        "slide-41",
+        "slide-42",
+        "slide-43",
+        "slide-44",
+        "slide-45",
+        "slide-46",
+        "slide-47"
+      ],
+      "read_sections": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-04",
+        "slide-05",
+        "slide-06",
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15",
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-20",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29",
+        "slide-30",
+        "slide-31",
+        "slide-32",
+        "slide-33",
+        "slide-34",
+        "slide-35",
+        "slide-36",
+        "slide-37",
+        "slide-38",
+        "slide-39",
+        "slide-40",
+        "slide-41",
+        "slide-42",
+        "slide-43",
+        "slide-44",
+        "slide-45",
+        "slide-46",
+        "slide-47"
+      ],
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 4,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 6,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 9,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 12,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 13,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 15,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 18,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 19,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 20,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 25,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 27,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 32,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 33,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 37,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 39,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 40,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 41,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 42,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 43,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        },
+        {
+          "page": 44,
+          "detail": "1600×900 渲染截图，文字与 JSON 一致"
+        }
+      ],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "整理者说明",
+          "claim": "静态页改用这份 slides；AIGC 批注与正文链接分开登记。",
+          "role": "mechanism",
+          "note_target": "editor_notes[1]"
+        }
+      ]
+    },
+    {
+      "id": "royce-1970",
+      "kind": "pdf",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/royce-1970.pdf",
+      "sha256": "9f7db065bd1c911a8d17590eec548478f944c8b05c408f101911cde57d815a78",
+      "total_pages": 11,
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_sections": [],
+      "listed_title": "Royce 的那篇老论文",
+      "listed_url": "https://web.archive.org/web/20081120024315/http://www.cs.umd.edu/class/spring2003/cmsc838p/Process/waterfall.pdf",
+      "title": "Managing the Development of Large Software Systems",
+      "source_url": "https://web.archive.org/web/20081120024315/http://www.cs.umd.edu/class/spring2003/cmsc838p/Process/waterfall.pdf",
+      "version": "IEEE WESCON, August 1970, pages 1-9; course scan via Wayback",
+      "identity_note": "直接的 UMD 与另一转载地址返回 403。作者行 OCR 为 Dr. Winston W. Rovce，按论文身份记为 Winston W. Royce。版权页写明 1970 IEEE，最初由 TRW 出版。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "口播说看了 Royce 的老论文。这是那篇论文，不是 slides 上的链接。",
+      "required": true,
+      "reading_status": "full",
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "文字层有题名、作者行 OCR 和 Figure 1、Figure 2 的说明"
+        },
+        {
+          "page": 6,
+          "detail": "主要是图，OCR 很碎，没有另做版面核对"
+        },
+        {
+          "page": 9,
+          "detail": "主要是图，没有另做版面核对"
+        }
+      ],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "补充 x0，物理页 2、4、5、7、8",
+          "claim": "他相信分阶段概念，批判的是不加五步的实现。",
+          "role": "mechanism",
+          "note_target": "supplements[0]"
+        }
+      ],
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "brooks-1987",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/brooks-no-silver-bullet.html",
+      "sha256": "1dae5ae9a62c65e39b4083621c3c95855a6d48592c667c1101d72984dfba5d4d",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "Brooks, 1987",
+      "listed_url": "https://cgi.csc.liv.ac.uk/~coopes/comp319/2016/papers/NoSilverBullet-Brooks1987.htm",
+      "title": "No Silver Bullet: Essence and Accidents of Software Engineering",
+      "source_url": "https://cgi.csc.liv.ac.uk/~coopes/comp319/2016/papers/NoSilverBullet-Brooks1987.htm",
+      "version": "Computer Magazine, April 1987; HTML reprint. First published Information Processing 1986.",
+      "identity_note": "HTML 在正文前有 Brad Cox 的序，正文后有狼人传说附录。两者都不是纳入范围的 Brooks 正文。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第 11、13 页 AIGC 批注用它解释银弹比喻和快速原型。口播用了比喻，没有点名。按核心概念的直接出处纳入，source_label 仍标明不是口述推荐。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "opening-no-single-development",
+        "essence-complexity",
+        "rapid-prototyping"
+      ],
+      "read_sections": [
+        "opening-no-single-development",
+        "essence-complexity",
+        "rapid-prototyping"
+      ],
+      "scope_reason": "slides 用这篇说明银弹比喻和快速原型。已读开篇、复杂性这一本质困难，以及快速原型攻击本质困难的那一节。Ada、面向对象、人工智能综述和文后附录不在范围内。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 9,
+          "location": "补充 x1",
+          "claim": "没有单一技术能单独带来一个数量级；银弹在正文里只打狼人。",
+          "role": "mechanism",
+          "note_target": "supplements[1]"
+        }
+      ]
+    },
+    {
+      "id": "parnas-1972",
+      "kind": "pdf",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/parnas-1972.pdf",
+      "sha256": "b3eafb67d5a9f91d5996ccf953e44297b72cee4b8e732dbf28caa3c29e233001",
+      "total_pages": 6,
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_sections": [],
+      "listed_title": "Parnas, 1972",
+      "listed_url": "https://ckrybus.com/static/papers/decomposing_systems_into_modules_1972.pdf",
+      "title": "On the Criteria To Be Used in Decomposing Systems into Modules",
+      "source_url": "https://ckrybus.com/static/papers/decomposing_systems_into_modules_1972.pdf",
+      "version": "Communications of the ACM, December 1972, Volume 15 Number 12",
+      "identity_note": "slides 第 45 页另有一个 lafayette.edu 的 HTML 链接，指向同一篇，没有另存。作者是 D. L. Parnas，Carnegie-Mellon University。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第 14、27、45 页 AIGC 批注用它作为信息隐藏的出处。不是课堂口述。",
+      "required": true,
+      "reading_status": "full",
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "文字层有作者和摘要。KWIC 图没有另做版面核对。"
+        }
+      ],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "补充 x2，物理页 6",
+          "claim": "不要从流程图开始切模块；先隐藏会变的决定。",
+          "role": "mechanism",
+          "note_target": "supplements[2]"
+        }
+      ],
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "excel-calc-performance",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/excel-performance.html",
+      "sha256": "52b929ec8e7a6095b624f30439f2157c66f1f5cc201c09cb4778528840fd02b1",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "Excel 性能指南",
+      "listed_url": "https://learn.microsoft.com/en-us/office/vba/excel/concepts/excel-performance/excel-improving-calculation-performance",
+      "title": "Excel performance: Improving calculation performance",
+      "source_url": "https://learn.microsoft.com/en-us/office/vba/excel/concepts/excel-performance/excel-improving-calculation-performance",
+      "version": "learn.microsoft.com 页面，2026-10-28 抓取",
+      "identity_note": "同一 URL 既在讲义页正文，也在 slides 第 29 页 AIGC 批注。按讲义页引用登记。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页用它说明减少重复计算和辅助单元格。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "full-and-recalculation",
+        "remove-duplicated-calculations"
+      ],
+      "read_sections": [
+        "full-and-recalculation",
+        "remove-duplicated-calculations"
+      ],
+      "scope_reason": "讲义引用的是重算方式和“去掉重复计算、用辅助单元格”。已读这两部分。页内 VBA 与数据透视等其余条目不在范围内。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "补充 x3",
+          "claim": "F9 是按依赖重算；重复计算应挪到辅助单元格，只存一次。",
+          "role": "mechanism",
+          "note_target": "supplements[3]"
+        }
+      ]
+    },
+    {
+      "id": "excel-let",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/excel-let.html",
+      "sha256": "f6d0156eafc51b1425eb4d50cbcefadf3aef9e0bc4a2b25d99dc37c4bbedd5de",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "LET function",
+      "listed_url": "https://support.microsoft.com/en-us/excel/functions/let-function",
+      "title": "LET function",
+      "source_url": "https://support.microsoft.com/en-us/office/let-function-34842dd8-b92b-4d3f-b325-b8b8f9908999",
+      "version": "Microsoft Support，articleGuid 34842dd8-b92b-4d3f-b325-b8b8f9908999，2026-10-28 抓取",
+      "identity_note": "原链接的静态 HTML 标题已是 LET function，正文在函数目录之后，articleGuid 与规范地址相同。这次读的是出版方规范页 https://support.microsoft.com/en-us/office/let-function-34842dd8-b92b-4d3f-b325-b8b8f9908999 。没有伪装 User-Agent，也没有用浏览器去过检查。页面元数据作者是 AlexJerabek。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 29 页 AIGC 批注用它作为公式内复用的链接。页面没有给出条目正文，不能当成已推荐且已读的方法说明。",
+      "required": false,
+      "reading_status": "full",
+      "scope_sections": [
+        "applies-to",
+        "syntax-and-limits",
+        "examples"
+      ],
+      "read_sections": [
+        "applies-to",
+        "syntax-and-limits",
+        "examples"
+      ],
+      "scope_reason": "批注指向 LET 函数条目。已读适用范围、语法与限制、两条好处和两个例子。页面导航、相关函数目录和反馈表不是条目正文。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "补充 x17",
+          "claim": "LET 的名字只在这一条公式里有效；同一段式子用名字引用就只算一次。例 1 得到 6。页面说例 2 比把 FILTER 写两遍快一倍，这是该例子自己的说法。",
+          "role": "mechanism",
+          "note_target": "supplements[17]"
+        }
+      ]
+    },
+    {
+      "id": "nayuki-qr-readme",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/nayuki-readme.md",
+      "sha256": "eea862d8e975c6df197b050e5bd6c93b70c046952ac704b4ee1d213f2393f52a",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "Nayuki QR Code Generator",
+      "listed_url": "https://github.com/nayuki/QR-Code-generator",
+      "title": "QR Code generator library",
+      "source_url": "https://github.com/nayuki/QR-Code-generator",
+      "version": "GitHub API 返回的 README；master/README.md 直接路径为 404",
+      "identity_note": "只保存 README。项目主页 nayuki.io 没有抓取。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 28 页 AIGC 批注把它当作独立实现的例子，不是要求读完这个库。",
+      "required": false,
+      "reading_status": "full",
+      "scope_sections": [
+        "readme"
+      ],
+      "read_sections": [
+        "readme"
+      ],
+      "scope_reason": "批注需要的是“另一套实现”这个例子。已读 README 对语言、版本、纠错和许可的说明。源码不在范围内。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "补充 x4",
+          "claim": "README 覆盖 6 种语言、40 个版本和 4 级纠错；源码未读。",
+          "role": "mechanism",
+          "note_target": "supplements[4]"
+        }
+      ]
+    },
+    {
+      "id": "zhang-norman-1994",
+      "kind": "pdf",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/zhang-norman-1994.pdf",
+      "sha256": "9acb6b2ffb8df5c9176e56bb293e35dd5bca94fae0f014d85dda8a7760cad55e",
+      "total_pages": 36,
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_sections": [],
+      "listed_title": "Zhang & Norman, 1994",
+      "listed_url": "https://pages.ucsd.edu/~scoulson/203/zhang.pdf",
+      "title": "Representations in Distributed Cognitive Tasks",
+      "source_url": "https://pages.ucsd.edu/~scoulson/203/zhang.pdf",
+      "version": "Cognitive Science 18, 87-122 (1994)",
+      "identity_note": "Jiajie Zhang（Ohio State）与 Donald A. Norman（Apple）。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 17 页 AIGC 批注用它说明表示会改变难度。不是课堂展开的方法，不要求读完实验。",
+      "required": false,
+      "reading_status": "full",
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "scope_reason": "slides 第 17 页用汉诺塔同构实验说明表示会改变难度。这次读完物理页 1–36，包括四组实验和文末的外部表示五条性质。参考文献页也读过，不另摘。",
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "核对标题、作者和 Cognitive Science 18, 87–122 (1994)"
+        },
+        {
+          "page": 4,
+          "detail": "图 1：内部表示空间与外部表示空间合成分布式表示空间，指向抽象任务空间"
+        },
+        {
+          "page": 18,
+          "detail": "图 10：1A 方块在三条规则处最高，1B 圆点较低，错误贴在零；纵轴已除以最短步数"
+        },
+        {
+          "page": 21,
+          "detail": "核对讨论原句：最易与最难的解题时间可以差到一比十；1B 没有错误"
+        },
+        {
+          "page": 24,
+          "detail": "图 13 三条线下降；表 2 的 Fisher PLSD 读过，标准汉诺塔对咖啡杯三项都大于 .2"
+        },
+        {
+          "page": 29,
+          "detail": "图 16 位置档的时间和错误更低；表 3 写明比较的是维度，交互不显著"
+        }
+      ],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 11,
+          "location": "补充 x5，图 10、图 13、图 16",
+          "claim": "同构汉诺塔的难度会变：规则全在指令里时，最易和最难的解题时间可以差到大约一比十；外部规则越多，实验 2 越容易，但标准汉诺塔和咖啡杯的差别不显著。",
+          "role": "mechanism",
+          "note_target": "supplements[5]"
+        }
+      ]
+    },
+    {
+      "id": "weixin-2024-07-10",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/weixin-nandameixila.html",
+      "sha256": "f6830671aad9c221f8b41a170d1d6cdf2d056f27d8c89bb45f799cd9c7db8812",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "南大没系啦",
+      "listed_url": "https://mp.weixin.qq.com/s/ibm6hFMc_JaMOWlqg7RF7A",
+      "title": "速报丨南大没系了！见证历史！",
+      "source_url": "https://mp.weixin.qq.com/s/ibm6hFMc_JaMOWlqg7RF7A",
+      "version": "create_time 2024-07-10 13:54",
+      "identity_note": "文章正文很短，HTML 的其余部分是微信界面。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第 36 页正文给出链接，用来说明院系调整。不是 AIGC 批注。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "article-body"
+      ],
+      "read_sections": [
+        "article-body"
+      ],
+      "scope_reason": "新闻正文就是三组系院名单。微信界面不在阅读范围内。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 17,
+          "location": "补充 x6",
+          "claim": "2024-07-10 撤销数学系、计算机科学与技术系、哲学系（宗教学系），成立对应学院。",
+          "role": "mechanism",
+          "note_target": "supplements[6]"
+        }
+      ]
+    },
+    {
+      "id": "fowler-event-sourcing",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/fowler-event-sourcing.html",
+      "sha256": "ff817ecc7b176c9456b8381687437e93f38bb8be6c6c3b4e4403b664818f8a02",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "Event Sourcing",
+      "listed_url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "title": "Event Sourcing",
+      "source_url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "version": "Martin Fowler, 12 December 2005, draft",
+      "identity_note": "讲义页同时链到本页的 External Updates 锚点，是同一篇文章。slides 第 39 页正文也有这个链接。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 正文用它定义事件溯源，并说明重放时不要触发外部更新。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "definition-and-capture",
+        "reversal",
+        "external-updates"
+      ],
+      "read_sections": [
+        "definition-and-capture",
+        "reversal",
+        "external-updates"
+      ],
+      "scope_reason": "引用的是定义、回退和外部更新。已读这三部分。文中其余示例不在范围内。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "补充 x7",
+          "claim": "变化记成事件序列；重放时关掉外部 Gateway，避免重复通知和付款。",
+          "role": "mechanism",
+          "note_target": "supplements[7]"
+        }
+      ]
+    },
+    {
+      "id": "ms-event-sourcing",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/ms-event-sourcing.html",
+      "sha256": "dba957a623aab602c652c3b86021cdc789fe0b3a2f971eb9e0073402e66951f2",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "Event Sourcing pattern",
+      "listed_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing",
+      "title": "Event Sourcing pattern",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing",
+      "version": "learn.microsoft.com 页面，2026-10-28 抓取",
+      "identity_note": "讲义页引用版本化与补偿。slides 第 40、41、45 页的 AIGC 批注也链到同一 URL。按讲义页引用登记。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页用它说明补偿事件、版本和重放的代价。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "when-to-adopt",
+        "replay",
+        "optimistic-concurrency",
+        "compensating-and-versioning",
+        "snapshots",
+        "when-not-to-use"
+      ],
+      "read_sections": [
+        "when-to-adopt",
+        "replay",
+        "optimistic-concurrency",
+        "compensating-and-versioning",
+        "snapshots",
+        "when-not-to-use"
+      ],
+      "scope_reason": "已读取舍、重放与物化视图、乐观并发、补偿与版本、快照，以及不适合采用的情形。示例代码不在范围内。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "补充 x8",
+          "claim": "旧事件不改，用补偿事件；快照不是事实来源；Kafka 不是事件存储。",
+          "role": "mechanism",
+          "note_target": "supplements[8]"
+        }
+      ]
+    },
+    {
+      "id": "fowler-cqrs",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/fowler-cqrs.html",
+      "sha256": "11cf46ce308805e94e4b110016b09d004fbf8c47669a7041080f661c798b2f29",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "CQRS",
+      "listed_url": "https://martinfowler.com/bliki/CQRS.html",
+      "title": "CQRS",
+      "source_url": "https://martinfowler.com/bliki/CQRS.html",
+      "version": "Martin Fowler, 14 July 2011",
+      "identity_note": "只出现在 slides 第 42 页 AIGC 批注。讲义页“参见”的是微软 CQRS 页。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 用它解释读写模型可以不同，以及事件溯源是进一步选择。AIGC 批注，不是口述。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "definition-and-risk",
+        "shared-or-separate-database",
+        "eventual-consistency",
+        "fit-with-event-sourcing-and-ddd"
+      ],
+      "read_sections": [
+        "definition-and-risk",
+        "shared-or-separate-database",
+        "eventual-consistency",
+        "fit-with-event-sourcing-and-ddd"
+      ],
+      "scope_reason": "已读定义、风险判断、共用或分开数据库、最终一致，以及它和事件溯源、DDD 的关系。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "补充 x9",
+          "claim": "对大多数系统，CQRS 增加有风险的复杂度；可以共用一个数据库。",
+          "role": "mechanism",
+          "note_target": "supplements[9]"
+        }
+      ]
+    },
+    {
+      "id": "ms-cqrs",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/ms-cqrs.html",
+      "sha256": "f0bfebfb51ba9e26807950bde80458d8222b1ea30936edf1529178c2726bc84f",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "CQRS pattern",
+      "listed_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs",
+      "title": "CQRS pattern",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs",
+      "version": "learn.microsoft.com 页面，2026-10-28 抓取",
+      "identity_note": "讲义页正文“参见”。slides 第 42 页 AIGC 的“实现方式”也链到这里。按讲义页引用登记。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页用它说明查询不改数据，以及存储可以仍是一个。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "separate-models",
+        "shared-or-separate-store",
+        "queries-do-not-alter",
+        "last-room-race"
+      ],
+      "read_sections": [
+        "separate-models",
+        "shared-or-separate-store",
+        "queries-do-not-alter",
+        "last-room-race"
+      ],
+      "scope_reason": "已读模型分开、存储可合可分、查询不改数据，以及最后一间房要由应用处理。示例代码不在范围内。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "补充 x10",
+          "claim": "查询返回 DTO 且不改数据；分开的存储要用 outbox，并允许重复消费。",
+          "role": "mechanism",
+          "note_target": "supplements[10]"
+        }
+      ]
+    },
+    {
+      "id": "fowler-bitemporal",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/fowler-bitemporal.html",
+      "sha256": "219788b635999875084999cdde36ea2bc483b2e71b53ebc7bbb86cd58eab9c99",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "双时态历史",
+      "listed_url": "https://martinfowler.com/articles/bitemporal-history.html",
+      "title": "Bitemporal History",
+      "source_url": "https://martinfowler.com/articles/bitemporal-history.html",
+      "version": "Martin Fowler article",
+      "identity_note": "名字来自 slides 第 44 页 AIGC。讲义页自己写了 6 月 1 日生效、6 月 3 日录入，没有链到这篇。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 用 actual/record 这组术语解释两个时间。AIGC 批注，不是口述。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "actual-and-record-time",
+        "salary-examples"
+      ],
+      "read_sections": [
+        "actual-and-record-time",
+        "salary-examples"
+      ],
+      "scope_reason": "已读 actual time 与 record time 的定义，以及 Sally 工资的两个例子。文中其余工资表不在范围内。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "补充 x11",
+          "claim": "actual time 是事情何时为真，record time 是系统何时知道。",
+          "role": "mechanism",
+          "note_target": "supplements[11]"
+        }
+      ]
+    },
+    {
+      "id": "evans-ddd-reference-2015",
+      "kind": "pdf",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/ddd-reference-2015.pdf",
+      "sha256": "cf82dc7b4736bb24f4a1b69a3213c25cbd38aa98e37b99c2facfb94ff5cacb99",
+      "total_pages": 59,
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_sections": [],
+      "listed_title": "DDD Reference",
+      "listed_url": "https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf",
+      "title": "Domain-Driven Design Reference: Definitions and Pattern Summaries",
+      "source_url": "https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf",
+      "version": "Eric Evans, Domain Language, Inc., 2015-03, CC BY 4.0",
+      "identity_note": "讲义页写“可以参考”，没有要求读完每一条模式。",
+      "recommendation_kind": "explicit_recommendation",
+      "recommendation_basis": "讲义页说领域驱动设计的定义可以参考这份摘要。范围限在讲义实际使用的限界上下文和普遍语言。",
+      "required": true,
+      "reading_status": "full",
+      "scope_pages": [
+        1,
+        2,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "read_pages": [
+        1,
+        2,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "scope_reason": "讲义页说可以参考这份定义摘要，并使用 Bounded Context 与 Ubiquitous Language。已读封面、目录和这些条目的开头。物理页 3–7 与 16–59 的其余模式不在推荐范围内。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "补充 x12，PDF 物理页 8–11",
+          "claim": "多个模型不可避免；边界内使用同一种语言，语言一变就是模型变了。",
+          "role": "mechanism",
+          "note_target": "supplements[12]"
+        }
+      ]
+    },
+    {
+      "id": "fowler-bounded-context",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/fowler-bounded-context.html",
+      "sha256": "5f6bbdd9567aeb45cb81d536a9e01a7636f2792ba41fa0abeff5603b74d46184",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "领域模型与语言",
+      "listed_url": "https://martinfowler.com/bliki/BoundedContext.html",
+      "title": "BoundedContext",
+      "source_url": "https://martinfowler.com/bliki/BoundedContext.html",
+      "version": "Martin Fowler, 15 January 2014",
+      "identity_note": "只出现在 slides 第 43 页 AIGC 批注。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 用它解释一个边界内语言必须一致。AIGC 批注，不是口述。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "definition",
+        "polysemy",
+        "unification-not-feasible"
+      ],
+      "read_sections": [
+        "definition",
+        "polysemy",
+        "unification-not-feasible"
+      ],
+      "scope_reason": "已读定义、meter 等多义词，以及大领域无法完全统一。文末若有上下文地图的展开，不在已读范围。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "补充 x13",
+          "claim": "普遍语言只在一个限界上下文内保持一致。",
+          "role": "mechanism",
+          "note_target": "supplements[13]"
+        }
+      ]
+    },
+    {
+      "id": "fowler-strangler",
+      "kind": "web",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/fowler-strangler.html",
+      "sha256": "264358d8955591a8c06d21ba79e2d8d0432ca4cacb4da63791c753af0989a347",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "listed_title": "Strangler Fig",
+      "listed_url": "https://martinfowler.com/bliki/StranglerFigApplication.html",
+      "title": "StranglerFigApplication",
+      "source_url": "https://martinfowler.com/bliki/StranglerFigApplication.html",
+      "version": "Martin Fowler, 22 August 2024",
+      "identity_note": "名字只在 slides 第 46 页 AIGC。讲义页描述逐步换轨时没有用这个名字。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 用这个名字称呼讲义页已经描述的逐步替换。AIGC 批注，不是口述。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "gradual-replacement",
+        "four-activities",
+        "why-big-bang-fails"
+      ],
+      "read_sections": [
+        "gradual-replacement",
+        "four-activities",
+        "why-big-bang-fails"
+      ],
+      "scope_reason": "已读改名原因、逐步替换、四件事不是固定顺序，以及一次性替换为何失败。",
+      "visual_checks": [],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "补充 x14",
+          "claim": "一段一段替换；四件事是对齐结果、拆开、交付一块、改变组织。",
+          "role": "mechanism",
+          "note_target": "supplements[14]"
+        }
+      ]
+    },
+    {
+      "id": "cheney-provenance-2007",
+      "kind": "pdf",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/arxiv-0708.2173.pdf",
+      "sha256": "7e240c0a7ec74e92421f04b4f03b105d7e0b90bea1c31e7214e5533d30f0c958",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "listed_title": "结果对输入的依赖",
+      "listed_url": "https://arxiv.org/abs/0708.2173",
+      "title": "Provenance as Dependency Analysis",
+      "source_url": "https://arxiv.org/pdf/0708.2173v2",
+      "version": "arXiv:0708.2173v2，页边 22 Dec 2009；首页 Received 3 June 2018",
+      "identity_note": "读的是 arXiv PDF。页边印 arXiv:0708.2173v2 [cs.DB] 22 Dec 2009。首页另有 Received 3 June 2018，脚注写这是 Cheney、Ahmed、Acar 2007 年 DBPL 论文的修订扩展，投 Math. Struct. in Comp. Science。作者单位是爱丁堡、印第安纳和马普所软件系统。摘要页仍保留，不把它当成另一篇。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 44 页 AIGC 批注用它指向依赖来源。不是本课展开的方法。",
+      "required": false,
+      "reading_status": "full",
+      "read_sections": [],
+      "scope_reason": "slides 第 44 页用这篇说明结果对输入的依赖。这次读完 PDF 物理页 1–35，包括不可计算性的证明条件和动态、静态近似。参考文献页读过，不另摘。",
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "核对标题、三位作者、arXiv 竖排版本号，以及 Received 3 June 2018"
+        },
+        {
+          "page": 14,
+          "detail": "命题 3.3：布尔 NRC 查询是否为常数不可判定，因此最少依赖注解不可计算；旁边的例子 G 在 x 不为 0 时丢掉 y 的颜色"
+        }
+      ],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "补充 x15，定义 3.4 与命题 3.3，物理页 13–14",
+          "claim": "最少的依赖注解不可计算，因为布尔查询是不是常数不可判定。动态跟踪正确但可以偏多，例如 x 减 x 仍带着颜色。",
+          "role": "mechanism",
+          "note_target": "supplements[15]"
+        }
+      ],
+      "total_pages": 35
+    },
+    {
+      "id": "rittel-webber-1973",
+      "kind": "pdf",
+      "identity_status": "verified",
+      "path": "课堂笔记/sources/rittel-webber-1973.pdf",
+      "sha256": "73bbbcd28aed545cb86f8ca655ae06ab8463256364b6231dfdd303a9c9b1b1d9",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "listed_title": "Wicked Problems (Rittel & Webber, 1973)",
+      "listed_url": "https://doi.org/10.1007/BF01405730",
+      "title": "Dilemmas in a General Theory of Planning",
+      "source_url": "https://web.archive.org/web/20070930021510/http://www.uctc.net/mwebber/Rittel+Webber+Dilemmas+General_Theory_of_Planning.pdf",
+      "version": "Policy Sciences 4 (1973), 155–169；Internet Archive 2007-09-30 保存的机构 PDF",
+      "identity_note": "DOI https://doi.org/10.1007/BF01405730 仍经 Cloudflare 转到 Springer，PDF 链接再转到 idp.springer.com 登录，没有绕过。doi.org 在 Internet Archive 没有快照。作者机构页 http://www.uctc.net/mwebber/Rittel+Webber+Dilemmas+General_Theory_of_Planning.pdf 返回 Cloudflare 验证。采用 Internet Archive 2007-09-30 对该机构 URL 的原始文件。物理页 1 是 Horst W. J. Rittel 与 Melvin M. Webber，加州大学伯克利，Policy Sciences 4 (1973), 155–169。不是另一本书章。",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 3、8 页 AIGC 批注作城市规划对照。不是课堂口述，也不是本课方法的原始定义。",
+      "required": false,
+      "reading_status": "full",
+      "read_sections": [],
+      "scope_reason": "slides 第 3、8 页用这篇对照“什么算成功没有共识”。这次读完存档 PDF 的 15 个物理页。",
+      "visual_checks": [
+        {
+          "page": 1,
+          "detail": "核对刊名、卷期 155–169、两位作者及伯克利头衔、摘要和 1969 年 AAAS 脚注"
+        },
+        {
+          "page": 6,
+          "detail": "第 III 节标题 Planning Problems are Wicked Problems；社会问题 at best only re-solved；wicked 不是道德恶劣"
+        },
+        {
+          "page": 15,
+          "detail": "结尾：没有理论能定位社会之善，也没有理论能消除 wickedness；让一人满足的方案可能正在给另一人制造问题"
+        }
+      ],
+      "known_gaps": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "补充 x16，物理页 1 与第 3、9 条",
+          "claim": "政策问题的解不是真或假，而是好或坏；没有无可争议的公共利益。问题怎样表述，本身就指定了处理方向。",
+          "role": "mechanism",
+          "note_target": "supplements[16]"
+        }
+      ],
+      "total_pages": 15
+    }
+  ]
+}

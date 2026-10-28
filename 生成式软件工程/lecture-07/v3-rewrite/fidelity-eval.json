@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
-  "notes_sha256": "17c5461cf7fb58931112be34bf6e97e099ddbaf47aa45833b67951944d6c1c9a",
+  "mode": "full",
+  "notes_sha256": "d8aeb0d81b0363c128506863fd5bd1205b6f9be0aafb5dbab8cab982647d6346",
   "writer_model": "grok-4.7-high",
   "precision": {
     "items": [
@@ -33,13 +34,6 @@
         "hash": "7f79689ba890a49b"
       },
       {
-        "ref": "s1:f0",
-        "verdict": "supported",
-        "evidence": "frames/v000060000.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "70d5ee15d16fc7c3"
-      },
-      {
         "ref": "s2:takeaway",
         "verdict": "supported",
         "evidence": "s-g30.0; s-g34.0; s-g43.0~12; frames/v000240000.jpg",
@@ -68,13 +62,6 @@
         "hash": "3e57b2e74ffe3903"
       },
       {
-        "ref": "s2:f0",
-        "verdict": "supported",
-        "evidence": "frames/v000240000.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "76f6244c2cba9cd2"
-      },
-      {
         "ref": "s3:takeaway",
         "verdict": "supported",
         "evidence": "s-g56.1~2; s-g57.1~1; s-g68.0",
@@ -94,13 +81,6 @@
         "evidence": "frames/v000420000.jpg; s-g56.1~2; s-g57.1~1",
         "note": "与对应讲稿或指定画面一致。",
         "hash": "be1074c53411346c"
-      },
-      {
-        "ref": "s3:f0",
-        "verdict": "supported",
-        "evidence": "frames/v000420000.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "d241f82865a3627e"
       },
       {
         "ref": "s4:takeaway",
@@ -131,13 +111,6 @@
         "hash": "3461dba7c79909df"
       },
       {
-        "ref": "s4:f0",
-        "verdict": "supported",
-        "evidence": "frames/v000660000.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "144b626724b99d19"
-      },
-      {
         "ref": "s5:takeaway",
         "verdict": "supported",
         "evidence": "s-g211.0~51; s-g214.0; s-g216.0~44",
@@ -164,13 +137,6 @@
         "evidence": "s-g201.0~35; s-g203.0; s-g206.0~9; s-g206.0~36; s-g206.0~94; s-g207.0~17; s-g207.0~95",
         "note": "与对应讲稿或指定画面一致。",
         "hash": "b00394d54e6b7f92"
-      },
-      {
-        "ref": "s5:f1",
-        "verdict": "supported",
-        "evidence": "frames/v001260000.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "0d93b6519bfb3c50"
       },
       {
         "ref": "s6:takeaway",
@@ -243,13 +209,6 @@
         "hash": "8a7b60aa8892261b"
       },
       {
-        "ref": "s8:f0",
-        "verdict": "supported",
-        "evidence": "frames/v002100000.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "e7575b4ac7e35d99"
-      },
-      {
         "ref": "s9:takeaway",
         "verdict": "supported",
         "evidence": "s-g451.0~44; s-g452.0~34; s-g453.0~4; s-g460.0; s-g464.1~54",
@@ -299,13 +258,6 @@
         "hash": "6e79759b36fc5664"
       },
       {
-        "ref": "s10:f2",
-        "verdict": "supported",
-        "evidence": "frames/v003230000.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "0de0ec1319adc09a"
-      },
-      {
         "ref": "s11:takeaway",
         "verdict": "supported",
         "evidence": "s-g512.0; s-g513.0; s-g515.0; s-g520.0~50; s-g526.0~33",
@@ -325,13 +277,6 @@
         "evidence": "s-g522.0~17; s-g523.0; s-g524.1~6; s-g525.0; s-g526.0; s-g526.0~33",
         "note": "与对应讲稿或指定画面一致。",
         "hash": "9ff34be0fc3d69f9"
-      },
-      {
-        "ref": "s11:f0",
-        "verdict": "supported",
-        "evidence": "frames/v003360000.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "15c86622e9012b7b"
       },
       {
         "ref": "s12:takeaway",
@@ -355,13 +300,6 @@
         "hash": "7e8f68e9e0bde9dd"
       },
       {
-        "ref": "s12:f0",
-        "verdict": "supported",
-        "evidence": "frames/v003704333.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "ade4562a3d96a65f"
-      },
-      {
         "ref": "s13:takeaway",
         "verdict": "supported",
         "evidence": "s-g687.0; s-g700.0; s-g704.0~24; s-g721.0; s-g801.0~2; s-g805.0",
@@ -381,13 +319,6 @@
         "evidence": "s-g673.0; s-g681.0",
         "note": "口述支持系统名单；3824 秒时间线未提供，具体年份、Smalltalk/Web 名称和逐轮抽象说明缺少证据。",
         "hash": "24c801c1e5f2eaf6"
-      },
-      {
-        "ref": "s13:f1",
-        "verdict": "supported",
-        "evidence": "frames/v004004333.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "50e885ba18663d2e"
       },
       {
         "ref": "s14:takeaway",
@@ -446,13 +377,6 @@
         "hash": "a4c2929d2b75184d"
       },
       {
-        "ref": "s15:f1",
-        "verdict": "supported",
-        "evidence": "frames/v004724333.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "4b99b8122a62d166"
-      },
-      {
         "ref": "s16:takeaway",
         "verdict": "supported",
         "evidence": "s-g914.0~26; s-g938.0; s-g939.0; s-g982.0; s-g985.0~2; s-g987.0",
@@ -479,13 +403,6 @@
         "evidence": "s-g914.0~26; s-g917.0; s-g919.0; s-g920.0; s-g922.0; s-wmuoazyls-1906",
         "note": "与对应讲稿或指定画面一致。",
         "hash": "50e9de820c38682c"
-      },
-      {
-        "ref": "s16:f0",
-        "verdict": "supported",
-        "evidence": "frames/v004784333.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "58cb773a4c33b2a1"
       },
       {
         "ref": "s17:takeaway",
@@ -565,13 +482,6 @@
         "hash": "7d33196b7c0ea0d7"
       },
       {
-        "ref": "s19:f0",
-        "verdict": "supported",
-        "evidence": "frames/v005444333.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "deceabcd72157023"
-      },
-      {
         "ref": "s20:takeaway",
         "verdict": "supported",
         "evidence": "s-g1160.0~19; s-g1166.0~36; s-g1167.2~1; s-g1168.1~26; s-g1169.0~16",
@@ -591,13 +501,6 @@
         "evidence": "frames/v005804333.jpg; s-g1160.0~19; s-g1166.0~36",
         "note": "与对应讲稿或指定画面一致。",
         "hash": "b015383430d46f1c"
-      },
-      {
-        "ref": "s20:f0",
-        "verdict": "supported",
-        "evidence": "frames/v005804333.jpg",
-        "note": "与对应讲稿或指定画面一致。",
-        "hash": "78bc9fa7a9e1f62b"
       },
       {
         "ref": "q1",
@@ -682,110 +585,476 @@
         "evidence": "s-g1166.0~36; s-g1167.2~1; s-g1168.1~26; s-g1169.0~16",
         "note": "准确保留讲师借用 Hoare 类比及不直接称为设计缺陷的限定。",
         "hash": "dd28100caf5b4fdb"
+      },
+      {
+        "ref": "s10:f0",
+        "verdict": "supported",
+        "evidence": "frames/p14.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "9699d2ea59c822f6"
+      },
+      {
+        "ref": "s10:f1",
+        "verdict": "supported",
+        "evidence": "frames/p15.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "f9f5a7e7c6a3c20d"
+      },
+      {
+        "ref": "s10:f2",
+        "verdict": "supported",
+        "evidence": "frames/p16.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "1c84f9e21ea8eb25"
+      },
+      {
+        "ref": "s10:n2",
+        "verdict": "supported",
+        "evidence": "“October 11, 1964”; “connecting programs like garden hose”; “historical background ... Unix pipe notation”; “very nearly exercised managerial control”; 附录口播：“应该是一九八三年”。",
+        "note": "备忘录页与口播的归属区分准确；1983 仅见于附录口播。",
+        "hash": "27629745b50bdb75"
+      },
+      {
+        "ref": "s11:f0",
+        "verdict": "supported",
+        "evidence": "frames/p17.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "44b6e300aacd7af5"
+      },
+      {
+        "ref": "s11:f1",
+        "verdict": "supported",
+        "evidence": "frames/p18.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "abe323e554a893e0"
+      },
+      {
+        "ref": "s12:f0",
+        "verdict": "supported",
+        "evidence": "frames/p19.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "163e9d94c7ef1818"
+      },
+      {
+        "ref": "s12:f1",
+        "verdict": "supported",
+        "evidence": "frames/p20.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "6c7b807f49929e42"
+      },
+      {
+        "ref": "s13:f0",
+        "verdict": "supported",
+        "evidence": "frames/p21.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "d701031e43984500"
+      },
+      {
+        "ref": "s13:f1",
+        "verdict": "supported",
+        "evidence": "frames/p22.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "c968dc43b6167210"
+      },
+      {
+        "ref": "s13:f2",
+        "verdict": "supported",
+        "evidence": "frames/p23.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "528ad38e6ff16efa"
+      },
+      {
+        "ref": "s13:f3",
+        "verdict": "supported",
+        "evidence": "frames/p24.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "4e78ecdbeb5be80c"
+      },
+      {
+        "ref": "s14:f1",
+        "verdict": "supported",
+        "evidence": "frames/p25.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "e5cf3026372d2a3e"
+      },
+      {
+        "ref": "s14:f2",
+        "verdict": "supported",
+        "evidence": "frames/p26.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "0b83be33d7074930"
+      },
+      {
+        "ref": "s14:n2",
+        "verdict": "supported",
+        "evidence": "sources/s14:n2.txt; frames/p25.jpg; frames/p26.jpg",
+        "note": "原文摘录明确 View 向 Model 提问、Controller 向 View 传消息；Web 图的分工与编辑保留说明也有据。",
+        "hash": "63c1564592383e2a"
+      },
+      {
+        "ref": "s15:f0",
+        "verdict": "supported",
+        "evidence": "frames/p27.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "c1475205064297cf"
+      },
+      {
+        "ref": "s15:f1",
+        "verdict": "supported",
+        "evidence": "frames/p28.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "c7d3ccab2132dd68"
+      },
+      {
+        "ref": "s15:f2",
+        "verdict": "supported",
+        "evidence": "frames/p29.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "e080dfa36361e54f"
+      },
+      {
+        "ref": "s15:f3",
+        "verdict": "supported",
+        "evidence": "frames/p30.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "320aae1082228ec5"
+      },
+      {
+        "ref": "s16:f0",
+        "verdict": "supported",
+        "evidence": "frames/p31.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "f65db977e0041617"
+      },
+      {
+        "ref": "s17:f0",
+        "verdict": "supported",
+        "evidence": "frames/p32.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "a96e98d1e19d28b9"
+      },
+      {
+        "ref": "s18:f1",
+        "verdict": "supported",
+        "evidence": "frames/p33.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "039904dee709a947"
+      },
+      {
+        "ref": "s19:f0",
+        "verdict": "supported",
+        "evidence": "frames/p35.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "fe8e78ee678e053e"
+      },
+      {
+        "ref": "s19:f1",
+        "verdict": "supported",
+        "evidence": "frames/p36.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "d20f03f73358985a"
+      },
+      {
+        "ref": "s1:f0",
+        "verdict": "supported",
+        "evidence": "frames/p01.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "1704573bcf3ad360"
+      },
+      {
+        "ref": "s1:f1",
+        "verdict": "supported",
+        "evidence": "frames/p02.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "dc55ec2665dbdfea"
+      },
+      {
+        "ref": "s1:n1",
+        "verdict": "supported",
+        "evidence": "sources/s1:n1.txt; frames/p01.jpg; frames/p02.jpg; s-g2.0; s-g18.0",
+        "note": "两页标题、图示和口播主题相符；保留段落属于编辑记录，没有增加讲课事实。",
+        "hash": "1605693140e5ef6d"
+      },
+      {
+        "ref": "s20:f0",
+        "verdict": "supported",
+        "evidence": "frames/p37.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "0b218436a5eb94d6"
+      },
+      {
+        "ref": "s20:f1",
+        "verdict": "supported",
+        "evidence": "frames/p38.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "81a1979227f2a02c"
+      },
+      {
+        "ref": "s20:f2",
+        "verdict": "supported",
+        "evidence": "frames/p39.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "69f8271a20fe6ba3"
+      },
+      {
+        "ref": "s2:f0",
+        "verdict": "supported",
+        "evidence": "frames/p03.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "044101e6ebd90b13"
+      },
+      {
+        "ref": "s2:n1",
+        "verdict": "supported",
+        "evidence": "sources/s2:n1.txt; frames/p03.jpg; s-g30.0",
+        "note": "摘录明确区分口播、幻灯片批注和外部补充的来源范围。",
+        "hash": "08b871d3751bc49f"
+      },
+      {
+        "ref": "s3:f0",
+        "verdict": "supported",
+        "evidence": "frames/p04.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "e87646d23afcac01"
+      },
+      {
+        "ref": "s4:f0",
+        "verdict": "supported",
+        "evidence": "frames/p05.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "d69928d1d6af1846"
+      },
+      {
+        "ref": "s5:f0",
+        "verdict": "supported",
+        "evidence": "frames/p06.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "b0bbe0cac9fdc028"
+      },
+      {
+        "ref": "s5:f1",
+        "verdict": "supported",
+        "evidence": "frames/p07.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "5e87ea8eb1f22e9d"
+      },
+      {
+        "ref": "s5:n2",
+        "verdict": "supported",
+        "evidence": "摘录保留了 line[0 : 49]，并明确说明：the type “image” is composed of an array of 50 elements of type “line”, numbered from 0 through 49。",
+        "note": "image 由编号 0 至 49 的五十个 line 元素组成，有明确文字支持。",
+        "hash": "5666431c47ff0851"
+      },
+      {
+        "ref": "s7:f0",
+        "verdict": "supported",
+        "evidence": "frames/p08.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "99e39a928255ed92"
+      },
+      {
+        "ref": "s7:f1",
+        "verdict": "supported",
+        "evidence": "frames/p09.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "9fee3fb6e43738f2"
+      },
+      {
+        "ref": "s7:n1",
+        "verdict": "supported",
+        "evidence": "sources/s7:n1.txt; frames/p08.jpg; frames/p09.jpg",
+        "note": "摘录明确印刷页与物理页对应，以及讲义和 slides 各自引用范围。",
+        "hash": "e3d58f9d01309278"
+      },
+      {
+        "ref": "s8:f0",
+        "verdict": "supported",
+        "evidence": "frames/p10.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "6fe19eee6fa9f3b5"
+      },
+      {
+        "ref": "s8:f1",
+        "verdict": "supported",
+        "evidence": "frames/p11.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "20f884520ac88d3a"
+      },
+      {
+        "ref": "s8:f2",
+        "verdict": "supported",
+        "evidence": "frames/p12.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "982938d4eeb50a6f"
+      },
+      {
+        "ref": "s8:n3",
+        "verdict": "supported",
+        "evidence": "sources/s8:n3.txt; frames/p10.jpg; frames/p11.jpg; s-g323.0~30",
+        "note": "拼写、页码对应、SE 7/SE 8 的差别及作者履历性质均有明确支持。",
+        "hash": "bd7bf63a438e7f1b"
+      },
+      {
+        "ref": "s9:f0",
+        "verdict": "supported",
+        "evidence": "frames/p13.jpg",
+        "note": "图注的标题、文字、数字及图示内容与指定画面一致，紫色 AIGC 亦可见。",
+        "hash": "6443795b1834d84b"
+      },
+      {
+        "ref": "x0",
+        "verdict": "supported",
+        "evidence": "“TR86-020 / September 1986”; “complexity, conformity, changeability, and invisibility”; “more than 9/10 of all effort”; “at least a factor of five”; “The two concepts are orthogonal”; “I doubt it”; “dummy subprograms”。",
+        "note": "摘录支持四种困难、数量级条件、高阶语言收益、面向对象的限制和逐步生长的描述。",
+        "hash": "c73411bb82420057"
+      },
+      {
+        "ref": "x1",
+        "verdict": "partial",
+        "evidence": "摘录支持小型演示与大型程序的规模差异、孩子与飞机的比喻、有限头脑、操作的 what/how 抽象、珍珠及其替换、LONGREP/SHORTREP，以及 image 的 50 个 line 元素；但没有说明行表示是在设计中很晚才承诺的。",
+        "note": "标题中的“行是很晚才承诺的表示”超出摘录；不能由摘录中段落的排列顺序推得设计承诺的时机。",
+        "hash": "2157e7d332ee80db"
+      },
+      {
+        "ref": "x10",
+        "verdict": "partial",
+        "evidence": "摘录明确写有 computed properties are cached based on their reactive dependencies，author.books 未变时复用结果，Date.now() 不是响应式依赖；React 快照段、序列化文本中的 setNumber(0 + 5); 与 alert(0);、最小状态和购物清单例子也均存在。",
+        "note": "“和方法相比，计算结果可以一样”在摘录中没有对应内容；不能借完整文档补足。",
+        "hash": "e8824a2fe7baa2cb"
+      },
+      {
+        "ref": "x11",
+        "verdict": "supported",
+        "evidence": "“Represent the state and behavior ... independently of the GUI controls”; “Application Model, MVVM”; “model class that is part of the presentation”; “not a GUI friendly facade to a specific domain object”。",
+        "note": "呈现状态独立于领域对象的概括与摘录一致，标题是该分层关系的合理概括。",
+        "hash": "7860db1f28451041"
+      },
+      {
+        "ref": "x12",
+        "verdict": "supported",
+        "evidence": "Step 4 明确为 prepare an unadjusted trial balance。HTML data-alt 包含 January 1、Accounts Receivable 借方 $200、Cleaning Revenue 贷方 $200，以及 Printing Plus 两边 $34,000；另有股息误记贷方 $100、设备 $3,500/$5,300 和 $1,800/9 = $200。正文明确说 We can have errors and still be mathematically in balance。",
+        "note": "具体金额、账户方向和查错方法均获支持；HTML 属性中的信息也计入证据。",
+        "hash": "2e2320ec765d774c"
+      },
+      {
+        "ref": "x13",
+        "verdict": "supported",
+        "evidence": "摘录明确说明不能直接更新、保存生成查询、用 REFRESH MATERIALIZED VIEW 刷新；解析器将其视为 relation，查询直接返回已存数据，规则仅用于填充。另写明 often much faster、data is not always current，并在销售示例中使用 WHERE invoice_date &lt; CURRENT_DATE。",
+        "note": "持久存储、刷新、读取机制及历史销售例子均与摘录一致。",
+        "hash": "ed037341640c9e8c"
+      },
+      {
+        "ref": "x14",
+        "verdict": "supported",
+        "evidence": "HTML meta description：“enhancements to the API and syntax of generators ... usable as simple coroutines”；目录含 send(value)、Yield Expressions、throw、GeneratorExit、close；Go：“automatically satisfies any interface that specifies a subset of its methods”; “no type hierarchy to manage”。",
+        "note": "PEP 的 HTML 元数据和目录也计入证据；Go 的隐式接口、事后添加接口及 io.Writer 例子均有据。",
+        "hash": "caede8b52dba9d11"
+      },
+      {
+        "ref": "x15",
+        "verdict": "supported",
+        "evidence": "sources/x15.txt",
+        "note": "技能指令明确支持设计树、逐轮 frontier、编号与建议答案、等待用户、事实自行查找及确认理解后行动；没有提供购物车或认证的标准答案。",
+        "hash": "92a1a7cf580aaba3"
+      },
+      {
+        "ref": "x16",
+        "verdict": "supported",
+        "evidence": "A JSP page is translated into a Java servlet, typically at the time that it is requested from a client；.jsp 扩展名触发翻译，翻译后的页处理 HTTP 请求并生成响应。摘录也明确支持 JSP 与 servlet 双向 include 输出或 forward。",
+        "note": "标题的请求时翻译由正文的“通常”限定，整体忠实于摘录。",
+        "hash": "b5236d918a6d39ce"
+      },
+      {
+        "ref": "x17",
+        "verdict": "supported",
+        "evidence": "表头「每 1 元的增减；合计与明细不重复相加」。计提营业成本/销售费用：应付、流动负债、负债 +1，未分配利润与所有者权益 −1，费用 +1，营业利润、利润总额、净利润 −1，现金流不变。计提营业外支出：营业外支出 +1，利润总额与净利润 −1，不经过营业利润。结算不重复确认费用。",
+        "note": "表头、营业成本及销售费用的全部所述增减、营业外支出不经过营业利润、现金流不变，以及结算不重复确认费用，均在摘录中明确出现。",
+        "hash": "607b277ba9459255"
+      },
+      {
+        "ref": "x18",
+        "verdict": "supported",
+        "evidence": "jq 段明确说明 filter、管道、数组收集及逐元素执行；fzf 段明确 STDIN/STDOUT、find * -type f | fzf > selected 和无管道时遍历当前目录。xdotool 段包含 X11 XTEST、Firefox search/windowactivate/key 示例，以及 Wayland 功能限制和 ydotool、dotool 链接。",
+        "note": "各工具的具体行为和命令均有支持；人的选择成为管道一步，是对交互式 STDIN/STDOUT 行为的直接概括。",
+        "hash": "c6cad6888758cd57"
+      },
+      {
+        "ref": "x2",
+        "verdict": "supported",
+        "evidence": "物理页 10：“4. COROUTINES”；页 11：games-playing、two-pass compiler、resume(X)；页 12–13：detach、call、返回义务和对象生命周期；页 34–35：TWLIST 和 concept hierarchies；页 38、42–43：MINISIM 和 job shop。",
+        "note": "页码、机制、前提条件及车间例子均与摘录一致。",
+        "hash": "e45692b5093a4a5d"
+      },
+      {
+        "ref": "x3",
+        "verdict": "supported",
+        "evidence": "页 3：“all the words of one syllable”; “must first define it”；页 8：“from The Oregon Experiment”; “learned to say these words by rote”；页 9：“holes, or slots”; “a design space”。",
+        "note": "规则、英语偶然性、Alexander 引文的归属与模式中延后选择的描述均有据。",
+        "hash": "064e9842b8f1b6cb"
+      },
+      {
+        "ref": "x4",
+        "verdict": "supported",
+        "evidence": "HTML 注释：“username Ritchie, Dennis”；“tenth page ... internal Bell Labs memo”; “October 11, 1964”; 四条关切；“historical background”; “very nearly exercised managerial control”。",
+        "note": "作者身份可由 HTML 注释确认；摘录没有把 1964 或 1983 写成管道进入 Unix 的年份。",
+        "hash": "5527c91febbb7141"
+      },
+      {
+        "ref": "x5",
+        "verdict": "supported",
+        "evidence": "Guideline 9：“All options should precede operands”；Guideline 10：“first -- ... not an option-argument”；sort：“items separated by ASCII NUL ... terminate output items with ASCII NUL”。",
+        "note": "选项结束符与 NUL 分隔的描述均符合摘录，文件名用途也由 sort 段明确支持。",
+        "hash": "b742174bc2f9364f"
+      },
+      {
+        "ref": "x7",
+        "verdict": "supported",
+        "evidence": "sources/x7.txt",
+        "note": "Constant Change 的数字、指南定位、城市比喻、small spanning set、变化触发及 Kelvin 引语均明确出现；末段将协议例子与 RFC 原文作了区分。",
+        "hash": "b90d9dc9ffc9aaa7"
+      },
+      {
+        "ref": "x8",
+        "verdict": "supported",
+        "evidence": "sources/x8.txt",
+        "note": "两页原文完整支持日期、Model/View/Controller/Editor 的具体职责；末段明确区分课堂 Web 用法与本文的输入翻译对象。",
+        "hash": "7b69c87f88f79a00"
+      },
+      {
+        "ref": "x9",
+        "verdict": "supported",
+        "evidence": "“Martin Fowler”; “12 December 2005”; “very much in draft form”; “PaymentGateway.send”; “December 5th ... December 20th”; “response to every external query”; “Code Changes”。",
+        "note": "事件日志、网关重放、查询响应历史、混合调用及代码变化的边界均有据。",
+        "hash": "f41c8db9af10a06b"
+      },
+      {
+        "ref": "s11:n1",
+        "verdict": "supported",
+        "evidence": "sources/s11:n1.txt：开头的链接与来源记录、两份 PDF 卷头记录、物理页 7 的第 2 节标题记录，以及末尾的编辑阅读记录。",
+        "note": "链接归属、DOI、作者机构与出版年月、11 个物理页、第 2 节起页、先前摘录范围及 IBM 落地页用途均有明确记录。",
+        "hash": "2a97dbfb994d421f"
+      },
+      {
+        "ref": "x6",
+        "verdict": "partial",
+        "evidence": "sources/x6.txt：开头的版本与页数说明；物理页 1 摘要及 1.1–1.2；物理页 2–4 的 1.2–1.3；物理页 5 的 1.4；末尾补入的物理页 7 第 2 节开头。",
+        "note": "论文内容、实现不在讨论范围的声明、规范化示例和第 2 节标题及起页均获支持；但该摘录没有提供“关联第 11 节”的课程归属记录。",
+        "hash": "5a9f469fec4cd6c7"
+      },
+      {
+        "ref": "x19",
+        "verdict": "partial",
+        "evidence": "sources/x19.txt：开头的存档元数据及物理页 1 的 1.1 末句；物理页 5–6 的 1.5–1.6；物理页 7–9 的 2.1 与 Figure 5–7、10–11；物理页 9–10 的 2.2；物理页 10–11 的 2.3；物理页 11 的 2.4 与收稿修订日期。",
+        "note": "技术内容、表格数字和实现不在讨论范围的声明均有支持。摘录未记录与宾大转载卷头的比较、先前笔记已经写入的范围、关联第 11 节或“课堂上那句”的课堂归属；不能仅凭本摘录确认这些具体来源与编辑历史陈述。",
+        "hash": "9a6556f556515c2c"
       }
     ],
     "reviewer": "independent_agent",
     "reviewer_model": "gpt-6.1-sol",
-    "method": "prepare packets: all takeaways/explainers + per-section sample; 97 judged in latest round"
+    "method": "prepare packets: all takeaways/explainers + per-section sample; 97 judged in latest round; 65 judged in latest round; 3 judged in latest round"
   },
   "recall": {
     "items": [
-      {
-        "id": "q01",
-        "question": "讲师如何区分 essential complexity 与 accidental complexity？各用课堂中的一个例子说明。",
-        "expected": "1. 前者来自问题领域、无法消除，如选课容量/先修/时间冲突；2. 后者来自技术选型，如文件系统或数据库带来的额外复杂性。",
-        "evidence": "s-g34.0; s-g35.2~3; s-g37.0~26; s-g54.0",
-        "from": "transcript",
-        "answer": "Essential complexity 是问题领域本身无法消除的复杂性，例如选课必须处理课程容量、先修要求和时间冲突，即使人工办理也存在。Accidental complexity 是实现和技术选型额外带来的复杂性，例如选择文件系统管理数据会带来并发控制和缺少原子事务的问题，换实现就会有不同取舍。",
-        "found_in": "s2:p0, s2:p1, s2:f0, s3:p0",
-        "verdict": "correct",
-        "note": "完整区分领域固有复杂性与技术选型复杂性，并给出选课约束和文件系统例子。",
-        "hash": "e0ac8cf37593499d"
-      },
-      {
-        "id": "q02",
-        "question": "文件系统与数据库的取舍中，讲师所说的原子性 transaction 是什么意思？文件系统缺少什么保证？",
-        "expected": "1. 多次读写整体 all or nothing、看起来不可分割；2. 文件系统本身不保证这种跨多个读写的事务。",
-        "evidence": "s-g45.2~3; s-g47.0; s-g47.2~3; s-g49.0",
-        "from": "transcript",
-        "answer": "原子性 transaction 指 all or nothing：一次读取多个数据、写入多个数据，整个读写看起来是一个不可分割的原子操作，像上了一把锁、stop-the-world。文件系统本身不提供这种整体读写的原子性保证，因此还要面对并发控制问题。",
-        "found_in": "s2:p1",
-        "verdict": "correct",
-        "note": "说明多次读写整体不可分割、全有或全无，以及文件系统缺少该事务保证。",
-        "hash": "1020da8708d7cedc"
-      },
-      {
-        "id": "q03",
-        "question": "为什么讲师认为只说“我要 login”让 GPT 实现，可能让需求陷入泥潭？复述其用户名密码登录的后续问题链。",
-        "expected": "1. GPT 会自行猜测注册方案；2. 用户忘记密码需恢复功能；3. 恢复又涉及短信或邮件及如何发送。",
-        "evidence": "s-g62.0; s-g62.0~36; s-g63.0~14; s-g64.0~22; s-g64.0~67; s-g65.0",
-        "from": "transcript",
-        "answer": "只说“我要 login”，GPT 会自行猜测需求，而每一步都会引出新的选择和维护负担。问题链是：登录→注册用户→用户名和密码→首次密码确认→忘记密码→用短信还是邮件找回→邮件用什么发送。不做找回，用户忘记密码就无法访问已有数据；改用微信或支付宝登录又涉及费用、个人开发者资格和公司主体。仅登录就有无穷细节，盲目自建容易陷入泥潭。",
-        "found_in": "s3:p1, s3:p2",
-        "verdict": "correct",
-        "note": "覆盖 GPT 猜测注册方案、忘记密码恢复、短信或邮件及发送方式的问题链。",
-        "hash": "e60ca21c71ad1c6b"
-      },
-      {
-        "id": "q04",
-        "question": "讲师怎样同时使用需求探索中的深度优先和广度优先？",
-        "expected": "1. 深度优先做 MVP，尽快验证最重要功能是否满足及满足程度；2. 广度优先思考登录方式、界面布局等不同决策；3. 两者需要平衡而非互斥。",
-        "evidence": "s-g68.0~40; s-g69.0~29; s-g69.0~116; s-g71.0~4; s-g71.0~22; s-g83.0~1",
-        "from": "transcript",
-        "answer": "深度优先先做 MVP，快速验证最重要的功能是否满足需求、满足多少，并决定是否重做；同时用广度优先思考登录方式、界面布局、首页展示等需求空间中的选择。二者不矛盾，要通过动手做、比较不同设计的后果来平衡，并最终把需求写出来。",
-        "found_in": "s3:p3, s3:p5",
-        "verdict": "correct",
-        "note": "覆盖深度优先验证 MVP、广度优先比较决策，以及两者的平衡。",
-        "hash": "e60ca21c71ad1c6b"
-      },
-      {
-        "id": "q05",
-        "question": "需求与架构分别收缩哪几个 space？确定设计后会背上什么？",
-        "expected": "1. 需求收缩 intent space 的不确定性；2. 架构收缩 specification 与 implementation space 的可能性；3. 确定选择会产生技术债。",
-        "evidence": "s-g154.0; s-g157.0~2",
-        "from": "transcript",
-        "answer": "需求收缩 intent space 的不确定性；架构收缩 specification space 和 implementation space 的可能性，以减少意图到规格再到实现的漂移。设计一旦选定，就背上需要长期承担和偿还的技术债。",
-        "found_in": "s4:p2, s4:takeaway, s1:p2",
-        "verdict": "correct",
-        "note": "准确列出 intent、specification、implementation space 及技术债。",
-        "hash": "7ed2bad2af27aeb8"
-      },
-      {
-        "id": "q06",
-        "question": "讲师介绍 Dijkstra 时，哪三种程序结构被认为足以表达程序逻辑，从而不需要什么？",
-        "expected": "1. 顺序、选择、循环；2. 不需要 GOTO。",
-        "evidence": "s-g178.0~12; s-g178.0~26; s-g179.2~1",
-        "from": "transcript",
-        "answer": "顺序结构、选择结构、循环结构足以表达任何程序逻辑，因此不需要 GOTO。",
-        "found_in": "s5:p0",
-        "verdict": "correct",
-        "note": "准确列出顺序、选择、循环与无需 GOTO。",
-        "hash": "bcc5caa83d7a373b"
-      },
-      {
-        "id": "q07",
-        "question": "讲师将哪些领域的哪一段年份称作 golden age？他让 AI 收集了多少篇值得读的文献？",
-        "expected": "1. 操作系统、PL、软件工程相关领域；2. 1980—2010 年；3. 1000 篇。",
-        "evidence": "s-g195.0; s-g198.2~13; s-g200.0",
-        "from": "transcript",
-        "answer": "他把操作系统、编程语言（PL）和软件工程三个领域的 1980—2010 年称为 golden age；让 AI 收集了 1000 篇值得读的 systems 文献，大概每个领域两三百篇。",
-        "found_in": "s5:p1",
-        "verdict": "correct",
-        "note": "领域、1980—2010 年及 1000 篇均准确。",
-        "hash": "bcc5caa83d7a373b"
-      },
-      {
-        "id": "q08",
-        "question": "Dijkstra 的 mental aids 包括哪三项？项链与珍珠的比喻说明了什么？",
-        "expected": "1. 枚举、归纳、抽象；2. 将复杂系统拆成可逐个理解的部分，再组合起来。",
-        "evidence": "s-g217.0~33; s-g218.0~8; s-g219.0~20; s-g219.0~70; s-g220.0~3",
-        "from": "transcript",
-        "answer": "三项 mental aids 是枚举、归纳、抽象。软件像由珍珠串成的项链：把整体复杂性分解成可以逐个理解的部分，再组合成系统；每颗珍珠承载独立设计决策，决定顺序会影响其他层需要知道多少细节。",
-        "found_in": "s5:p4, s5:f1",
-        "verdict": "correct",
-        "note": "列出枚举、归纳、抽象，并解释拆分理解后组合的比喻。",
-        "hash": "bcc5caa83d7a373b"
-      },
       {
         "id": "q09",
         "question": "针对“为什么 dynamic programming 程序难调试”这一课堂设问，讲师给出的原因和改进办法是什么？",
@@ -799,16 +1068,112 @@
         "hash": "69fb30f0b6edf9e7"
       },
       {
+        "id": "q01",
+        "question": "讲师如何区分 essential complexity 与 accidental complexity？各用课堂中的一个例子说明。",
+        "expected": "1. 前者来自问题领域、无法消除，如选课容量/先修/时间冲突；2. 后者来自技术选型，如文件系统或数据库带来的额外复杂性。",
+        "evidence": "s-g34.0; s-g35.2~3; s-g37.0~26; s-g54.0",
+        "from": "transcript",
+        "answer": "Essential complexity 是问题领域本身消不掉的复杂性，如选课必须处理容量、先修要求和时间冲突，即使人工办理也存在；accidental complexity 是实现选型额外引入的复杂性，如选文件系统管理数据会带来并发控制和缺少原子事务的问题。",
+        "found_in": "s2:p0, s2:p1, s2:f0",
+        "verdict": "correct",
+        "note": "涵盖领域固有复杂性与技术选型引入的复杂性，并给出选课和文件系统例子。",
+        "hash": "3df70be61b07b29c"
+      },
+      {
+        "id": "q02",
+        "question": "文件系统与数据库的取舍中，讲师所说的原子性 transaction 是什么意思？文件系统缺少什么保证？",
+        "expected": "1. 多次读写整体 all or nothing、看起来不可分割；2. 文件系统本身不保证这种跨多个读写的事务。",
+        "evidence": "s-g45.2~3; s-g47.0; s-g47.2~3; s-g49.0",
+        "from": "transcript",
+        "answer": "原子性 transaction 是 all or nothing：对多个数据的读写作为一个整体，看起来是不可分割的，像上了一把锁、stop-the-world。文件系统本身不保证这一整组读写的原子性。",
+        "found_in": "s2:p1",
+        "verdict": "correct",
+        "note": "说明多次读写整体 all or nothing，且文件系统不保证跨读写事务。",
+        "hash": "3df70be61b07b29c"
+      },
+      {
+        "id": "q03",
+        "question": "为什么讲师认为只说“我要 login”让 GPT 实现，可能让需求陷入泥潭？复述其用户名密码登录的后续问题链。",
+        "expected": "1. GPT 会自行猜测注册方案；2. 用户忘记密码需恢复功能；3. 恢复又涉及短信或邮件及如何发送。",
+        "evidence": "s-g62.0; s-g62.0~36; s-g63.0~14; s-g64.0~22; s-g64.0~67; s-g65.0",
+        "from": "transcript",
+        "answer": "只说“我要 login”，GPT 会替你猜未决定的需求，选择会不断引出新的成本。问题链是：注册用户→用户名和密码→首次密码确认→是否支持忘记密码（否则用户可能无法再访问已有数据）→短信还是邮件找回→邮件用什么发送。转而选微信或支付宝登录，又要面对费用、个人开发者限制和可能需要公司主体的问题。",
+        "found_in": "s3:p2",
+        "verdict": "correct",
+        "note": "完整复述 GPT 猜测注册方案、忘记密码、短信或邮件恢复及发送方式的问题链。",
+        "hash": "4dd9b0b7520fdc68"
+      },
+      {
+        "id": "q04",
+        "question": "讲师怎样同时使用需求探索中的深度优先和广度优先？",
+        "expected": "1. 深度优先做 MVP，尽快验证最重要功能是否满足及满足程度；2. 广度优先思考登录方式、界面布局等不同决策；3. 两者需要平衡而非互斥。",
+        "evidence": "s-g68.0~40; s-g69.0~29; s-g69.0~116; s-g71.0~4; s-g71.0~22; s-g83.0~1",
+        "from": "transcript",
+        "answer": "用深度优先快速做 MVP，验证最重要的功能满足到什么程度、是否需要一轮轮重做；同时用广度优先审视登录方式、界面布局、首页呈现等需求选项。通过动手、比较替代设计的好坏，在两者之间取得平衡，最终把需求写出来。",
+        "found_in": "s3:p3, s3:p5",
+        "verdict": "correct",
+        "note": "涵盖深度优先验证 MVP、广度优先比较决策及两者平衡。",
+        "hash": "4dd9b0b7520fdc68"
+      },
+      {
+        "id": "q05",
+        "question": "需求与架构分别收缩哪几个 space？确定设计后会背上什么？",
+        "expected": "1. 需求收缩 intent space 的不确定性；2. 架构收缩 specification 与 implementation space 的可能性；3. 确定选择会产生技术债。",
+        "evidence": "s-g154.0; s-g157.0~2",
+        "from": "transcript",
+        "answer": "需求收缩 Intent Space 的不确定性；架构收缩 Specification / Implementation Space 的可能性。设计一旦选定就背上技术债，并要持续承担。",
+        "found_in": "s3:f0, s4:takeaway, s1:p2",
+        "verdict": "correct",
+        "note": "准确对应三个 space，并指出设计选择带来技术债。",
+        "hash": "afb1bc04261dad34"
+      },
+      {
+        "id": "q06",
+        "question": "讲师介绍 Dijkstra 时，哪三种程序结构被认为足以表达程序逻辑，从而不需要什么？",
+        "expected": "1. 顺序、选择、循环；2. 不需要 GOTO。",
+        "evidence": "s-g178.0~12; s-g178.0~26; s-g179.2~1",
+        "from": "transcript",
+        "answer": "顺序结构、选择结构、循环结构足以表达任何程序逻辑，因此不需要 GOTO。",
+        "found_in": "s5:p0",
+        "verdict": "correct",
+        "note": "准确列出顺序、选择、循环及不需要 GOTO。",
+        "hash": "b71443fc4f8a36f9"
+      },
+      {
+        "id": "q07",
+        "question": "讲师将哪些领域的哪一段年份称作 golden age？他让 AI 收集了多少篇值得读的文献？",
+        "expected": "1. 操作系统、PL、软件工程相关领域；2. 1980—2010 年；3. 1000 篇。",
+        "evidence": "s-g195.0; s-g198.2~13; s-g200.0",
+        "from": "transcript",
+        "answer": "他把操作系统、编程语言（PL）、软件工程三个领域的 1980—2010 年称为 golden age；让 AI 收集了 1000 篇值得读的 systems 文献，大概每个领域两三百篇。",
+        "found_in": "s5:p1",
+        "verdict": "correct",
+        "note": "领域、1980—2010 年及 1000 篇均正确。",
+        "hash": "b71443fc4f8a36f9"
+      },
+      {
+        "id": "q08",
+        "question": "Dijkstra 的 mental aids 包括哪三项？项链与珍珠的比喻说明了什么？",
+        "expected": "1. 枚举、归纳、抽象；2. 将复杂系统拆成可逐个理解的部分，再组合起来。",
+        "evidence": "s-g217.0~33; s-g218.0~8; s-g219.0~20; s-g219.0~70; s-g220.0~3",
+        "from": "transcript",
+        "answer": "Mental aids 是枚举、归纳、抽象。软件像由珍珠串成的项链：把复杂性拆成可以逐个理解的部分，再组合成系统；幻灯片进一步说每颗珍珠承载一项独立设计决策。",
+        "found_in": "s5:p4, s5:f1",
+        "verdict": "correct",
+        "note": "准确列出枚举、归纳、抽象，并解释拆分理解后组合。",
+        "hash": "b71443fc4f8a36f9"
+      },
+      {
         "id": "q10",
         "question": "《Growing a Language》演讲发生在哪一年、哪个会议？演讲对英文用词设了什么规则？",
         "expected": "1. 1998 年 OOPSLA keynote；2. 只用单音节英文词；3. 双音节及以上词须当场定义。",
         "evidence": "s-g327.0; s-g359.0; s-g378.0",
         "from": "transcript",
-        "answer": "1998 年 OOPSLA 的 keynote。演讲从只用单音节英文词开始，遇到双音节及以上的词必须当场定义。",
-        "found_in": "s8:p0, s8:p1, s8:p2",
+        "answer": "1998 年的 OOPSLA keynote。演讲从单音节英文词开始，多音节词必须先当场定义，或由已说明的构词规则生成，让听众亲自经历语言的生长。",
+        "found_in": "s8:p0, s8:p1, s8:f1",
         "verdict": "correct",
-        "note": "年份、会议及单音节词与多音节词现场定义规则均准确。",
-        "hash": "435b7de891281e58"
+        "note": "年份、会议及单音节词和多音节词定义规则均涵盖。",
+        "hash": "496dc75921f5f891"
       },
       {
         "id": "q11",
@@ -816,11 +1181,11 @@
         "expected": "1. 出路是生长；2. 扩展是一等公民；3. 扩展之间可组合，提供原语与组合机制。",
         "evidence": "s-g423.0~5; s-g423.0~31; s-g431.1~32; s-g450.0~14; s-g454.0~55",
         "from": "transcript",
-        "answer": "小语言容易移植却难满足膨胀的需求，一次设计好大语言又体量大、交付慢，可能在成功前被小而丑的语言取代。出路是让语言和架构能够生长：提供原语与组合机制，使扩展成为一等公民，而且扩展之间能够组合，以应对需求变化。",
+        "answer": "小语言难以满足膨胀的需求，一次设计大语言又体量大、交付慢；出路是让语言和架构能够生长。扩展必须是一等公民，而且扩展之间能够组合，提供原语与组合机制，而不只是实现一份需求清单。",
         "found_in": "s8:p4, s8:p5, s8:p6, s9:p0",
         "verdict": "correct",
-        "note": "覆盖生长、扩展作为一等公民，以及原语和可组合机制。",
-        "hash": "f8f785ee822cc49a"
+        "note": "涵盖生长、扩展为一等公民及原语与组合机制。",
+        "hash": "92b0eea104f2b3ce"
       },
       {
         "id": "q12",
@@ -828,11 +1193,11 @@
         "expected": "1. 容易把人训练成解题机器、倾向用后即扔的代码；2. 题目做对后通常无需维护或扩展，减少对扩展性的思考。",
         "evidence": "s-g451.0~44; s-g452.0~34; s-g453.0~4; s-g453.0~11",
         "from": "transcript",
-        "answer": "他批评疯狂刷 OJ 容易把人训练成解题机器，形成代码“用后即扔”的倾向。因为题做对就结束，无需维护或扩展，容易忽略可生长架构和组合机制的思考。",
+        "answer": "他批评疯狂做 OJ 会把人训练成解题机器，形成代码用后即扔的倾向：题做对就不再维护，也不需要扩展，因而减少了对可维护性、可扩展性和组合设计的思考。",
         "found_in": "s9:p0",
         "verdict": "correct",
-        "note": "准确说明解题机器和用后即扔倾向，以及缺少维护扩展需求的原因。",
-        "hash": "368dbade3949d917"
+        "note": "涵盖解题机器、用后即扔及缺乏维护扩展需求的原因。",
+        "hash": "cf8e726189a7cf0b"
       },
       {
         "id": "q13",
@@ -840,11 +1205,11 @@
         "expected": "1. 每个工具做好一件事；2. 程序能协作，处理文本流；3. 文本统一人和程序、程序和程序的接口。",
         "evidence": "s-g469.0; s-g470.0",
         "from": "transcript",
-        "answer": "三条原则：Do one thing and do it well；Write programs to work together；Write programs to handle text streams。文本流是通用接口，统一人和程序、程序和程序之间的接口，让小工具自由组合，也便于人理解并检查中间结果。",
-        "found_in": "s10:p0, s10:f0",
+        "answer": "三条原则是：每个工具只做一件事并做好；程序要能协作；程序要处理文本流。文本流是精髓，因为它统一了人和程序、程序和程序的接口，既便于人阅读，也让工具通过管道组合复用。",
+        "found_in": "s10:p0, s10:p1",
         "verdict": "correct",
-        "note": "完整列出三条原则，并解释文本统一人与程序及程序间接口。",
-        "hash": "52626e179c8334af"
+        "note": "三条原则及文本统一人与程序、程序之间接口的意义均完整。",
+        "hash": "7d21f1dad2098777"
       },
       {
         "id": "q14",
@@ -852,11 +1217,11 @@
         "expected": "1. 可以把独立工具组合成自定义文件选择菜单，再由 nano 打开选中文件；2. shell、文本接口与管道提供组合复用空间。",
         "evidence": "s-g495.0~6; s-g496.0~8; s-g497.0~37; s-g498.0~8; s-g498.0~44",
         "from": "transcript",
-        "answer": "演示说明 Unix 工具的可组合性与复用能力：通过 shell、文本接口和管道，把各自做好一件事的小工具组合起来，就能为 nano 配自己的文件选择菜单，再打开第一课的 index，从而生长出原工具之外的功能。",
-        "found_in": "s10:p2, s10:p3, s10:e0",
+        "answer": "说明 Unix 小工具的可组合性：可以把菜单选择与 nano 等编辑器拼接起来，不必等待应用或操作系统内置一个满意的菜单。shell、文本接口和管道提供了无限组合与复用的空间。",
+        "found_in": "s10:p2, s10:p3",
         "verdict": "correct",
-        "note": "说明组合独立工具生成文件菜单并交给 nano 打开，覆盖 shell、文本和管道复用。",
-        "hash": "52626e179c8334af"
+        "note": "说明菜单工具与 nano 的组合，以及 shell、文本接口和管道的复用能力。",
+        "hash": "7d21f1dad2098777"
       },
       {
         "id": "q15",
@@ -864,11 +1229,11 @@
         "expected": "1. connectivity/连通性；2. 不预设上层应用，其他问题交给上层；3. RFC 1958，1996 年 6 月。",
         "evidence": "s-g532.0; s-g535.1; s-g544.0; s-g548.0",
         "from": "transcript",
-        "answer": "重点做好 connectivity，即连通和数据传输；至于上面跑什么应用，不做预设，把其他变化留给上层。引用 RFC 1958《Architectural Principles of the Internet》，时间是 1996 年 6 月。",
+        "answer": "重点做好 connectivity，即连通和数据传输；对上层应用不作预设，能支持什么就支持什么，把其余变化交给上层。引用 RFC 1958《Architectural Principles of the Internet》，1996 年 6 月。",
         "found_in": "s12:p0, s12:p1",
         "verdict": "correct",
-        "note": "覆盖连通性、不预设上层应用，以及 RFC 1958 和 1996 年 6 月。",
-        "hash": "f5ac915ed899982e"
+        "note": "连通性、对上层应用不作预设、RFC 1958 和 1996 年 6 月均正确。",
+        "hash": "e5c77f36a5cd072e"
       },
       {
         "id": "q16",
@@ -876,11 +1241,11 @@
         "expected": "1. 用模板语言替代 A+B+C 的字符串拼接；2. Jinja2；3. 渲染时传 instructions、日期等变量，便于维护。",
         "evidence": "s-g760.0~19; s-g771.0; s-g777.0; s-g780.0; s-g782.0",
         "from": "transcript",
-        "answer": "推荐模板语言，而不是把 A、B、C、D 用字符串加法拼起来。Python 中以 Jinja2 为例，把 prompt 写成包含 instructions 等变量的模板，渲染时传入 instructions 字符串、今天的日期等，模板会把它们填入相应位置，便于维护。",
-        "found_in": "s13:p3",
+        "answer": "推荐模板语言，避免用 A+B+C+D 拼字符串。以 Python 的 Jinja2 为例，把 prompt 写成包含“you are …”和 instructions 的模板，渲染时传入 instructions、今天的日期等变量，使 prompt 更好维护。",
+        "found_in": "s13:p3, s13:e1",
         "verdict": "correct",
-        "note": "覆盖模板替代字符串拼接、Jinja2，以及 instructions 和日期变量渲染。",
-        "hash": "013d7b208d6d509a"
+        "note": "涵盖模板语言、Jinja2 及渲染时传入 instructions 和日期变量。",
+        "hash": "54297ded457575e2"
       },
       {
         "id": "q17",
@@ -888,11 +1253,11 @@
         "expected": "1. Model 表示当前世界知识/状态；2. View 是状态的视觉投射，不应修改状态；3. Controller 连接用户和系统，将修改操作转为 transaction。",
         "evidence": "s-g831.0~2; s-g834.0; s-g835.0; s-g837.0; s-g840.0; s-g846.0",
         "from": "transcript",
-        "answer": "Model 是当前世界的 single point of knowledge，封装课程、选课记录等数据、状态与业务规则；View 展示 Model，是状态到界面的投射；Controller 接收用户输入，把修改需求译成事务并协调 Model 与 View。讲师把 View 描述为 pure function，是因为它只根据状态计算展示，不应有改变世界的副作用；修改交给 Controller。",
+        "answer": "按讲师的划分，Model 是当前世界的 single point of knowledge，保存课程、选课记录等数据和业务规则；View 把状态投射成界面；Controller 接收用户操作，把修改译成事务并协调 Model 与 View。View 是 pure function，因为它只是状态的函数，不应有改变世界的副作用。",
         "found_in": "s14:p0, s14:p1, s14:f1",
         "verdict": "correct",
-        "note": "准确说明三者职责、Controller 将修改转为事务及 View 无修改状态的副作用。",
-        "hash": "22d605cd102c54b0"
+        "note": "准确描述 MVC 职责及 View 不修改状态的纯函数性质。",
+        "hash": "131f5aa63d43da5e"
       },
       {
         "id": "q18",
@@ -900,11 +1265,11 @@
         "expected": "1. 每次点击后整页刷新更新时成立；2. 现代界面有独立于数据库 Model 的临时 view state；3. 这类状态也需建模，但不应放进数据库，引出 MVVM。",
         "evidence": "s-g861.0; s-g866.0; s-g885.0; s-g889.0; s-g892.0; s-g892.0~13; s-g893.0",
         "from": "transcript",
-        "answer": "当只有一个 HTML 页面、每次点击按钮都重新刷新和更新整页时，传统 MVC 的理解成立。展开菜单、在已有列表上过滤、hover 高亮等交互，只改变界面的临时状态，不必修改数据库或再次查询业务 Model，却仍需要模型来管理，因此要把 view state 也当作 Model，引出 MVVM。",
-        "found_in": "s14:p2",
-        "verdict": "correct",
-        "note": "覆盖整页刷新条件、独立的临时 view state、无需写数据库及 MVVM。",
-        "hash": "22d605cd102c54b0"
+        "answer": "只有一个 HTML 页面、每次点击按钮都整页刷新更新时，传统 MVC 的理解成立。展开菜单、对已有列表过滤、hover 高亮会改变界面自身的临时状态，却不改变业务 Model，也不应都进数据库；因此需要把 ViewState 也建模。",
+        "found_in": "s14:p2, s15:f0",
+        "verdict": "partial",
+        "note": "涵盖整页刷新条件、临时 ViewState 及不应进入数据库，但未明确指出由此引出 MVVM。",
+        "hash": "693221264df7b4e4"
       },
       {
         "id": "q19",
@@ -912,11 +1277,11 @@
         "expected": "1. React 对开发者直观且更纯粹；2. React 将 DOM 看成状态的纯函数，并用 Virtual DOM 隐藏更新复杂性；3. Vue 更像建立依赖图并保持同步。",
         "evidence": "s-g894.0~38; s-g894.0~72; s-g895.0~14; s-g903.0; s-g907.0~13; s-g908.0~37; s-g909.0~17",
         "from": "transcript",
-        "answer": "他个人更偏向 React，因为 View 对开发者直观、容易上手，模型更纯粹。React 把 DOM tree 看成全部界面状态的纯函数，开发者声明状态与变化，系统用 Virtual DOM 等机制隐藏整页重算和更新的复杂性；Vue 更像建立依赖关系图，并沿依赖保持同步。两者都由状态决定界面，只是更新模型略有不同；他也说明自己 Vue 用得较少。",
+        "answer": "他更偏向 React，是因为其 View 对开发者直观，写过一点前端就容易上手，模型也更纯粹。React 声明 DOM tree 是当前状态的纯函数，以 Virtual DOM 等机制隐藏整页重算的更新复杂性；Vue 更像建立依赖图，追踪依赖并保持同步。两者都由状态决定界面，只是更新模型不同；这是他的偏好，他也说自己 Vue 用得少。",
         "found_in": "s15:p0, s15:p1, s15:p2",
         "verdict": "correct",
-        "note": "覆盖 React 直观纯粹、状态纯函数与 Virtual DOM，以及 Vue 依赖图同步。",
-        "hash": "9bade0e02609711b"
+        "note": "涵盖 React 直观纯粹、状态纯函数与 Virtual DOM，以及 Vue 依赖图同步。",
+        "hash": "da90696ddb181742"
       },
       {
         "id": "q20",
@@ -924,11 +1289,11 @@
         "expected": "1. 锁库存、算优惠、支付；2. 风控、发货、退款、售后、对账；3. 支付需用户确认。",
         "evidence": "s-g922.0; s-wmuoazyls-1906",
         "from": "transcript",
-        "answer": "下单后依次是锁库存、计算优惠、支付、风控、发货、退款、售后、对账；明确需要用户确认的是支付。",
+        "answer": "下单之后依次是锁库存、计算优惠、支付、风控、发货、退款、售后、对账；支付明确需要用户确认。",
         "found_in": "s16:p0, s16:e0",
         "verdict": "correct",
-        "note": "流程环节顺序完整，并明确支付需要用户确认。",
-        "hash": "1b239de79f0d21e4"
+        "note": "流程顺序完整，明确支付需要用户确认。",
+        "hash": "3e979d2a278e0761"
       },
       {
         "id": "q21",
@@ -936,11 +1301,11 @@
         "expected": "1. 同时计入两个或以上账户；2. 金额相等、方向相反；3. 防错并通过平衡校验检查不一致。",
         "evidence": "s-g996.0; s-g997.0; s-g997.0~23; s-g1003.0~6",
         "from": "transcript",
-        "answer": "每笔交易必须同时计入两个或以上账户，金额相等、方向相反。主要为了防错和发现数据库当前状态的不一致，通过自平衡校验、试算平衡帮助找出账为什么对不上。",
-        "found_in": "s17:p0",
+        "answer": "每笔交易同时计入两个或更多账户，金额相等、方向相反。主要为了防错，通过自平衡和试算平衡发现当前状态或数据库不一致，但平衡并不保证所有业务记录都正确。",
+        "found_in": "s17:p0, s18:f1",
         "verdict": "correct",
-        "note": "覆盖两个以上账户、金额相等方向相反，以及防错和平衡校验。",
-        "hash": "1014f6944e02bb95"
+        "note": "涵盖至少两个账户、金额相等方向相反及平衡校验防错。",
+        "hash": "9868988ca8a0b867"
       },
       {
         "id": "q22",
@@ -948,11 +1313,11 @@
         "expected": "1. 将 persistent history 中的流水条目编译为小操作；2. 对所有操作按时间顺序 reduce/replay；3. 得到当前状态和报表。",
         "evidence": "s-g1031.0~13; s-g1033.0~3; s-g1035.0~66; s-g1038.0; s-g1041.0~2; s-g1051.0",
         "from": "transcript",
-        "answer": "LLM 编译器把不可篡改历史中的原始凭证或流水账事件，编译成可执行的分录、小操作，说明各张报表如何改变。当前状态由这些操作 reduce 得到，按时间顺序全部 replay，就生成当前可提交的资产负债表等报表。",
+        "answer": "LLM 编译器把不可变的原始凭证／流水账事件编译成可执行的小操作或分录，描述各张报表怎样变化。当前状态由所有操作 reduce 得到，按时间顺序 replay 后生成资产负债表等当前报表。",
         "found_in": "s18:p1, s18:p2, s18:f1",
         "verdict": "correct",
-        "note": "覆盖历史流水编译为小操作、按时间顺序 reduce/replay 及产生当前状态和报表。",
-        "hash": "be9f015b99f67555"
+        "note": "涵盖历史流水编译为小操作、按时间 reduce/replay 及产生当前状态和报表。",
+        "hash": "d1d9402ff782c855"
       },
       {
         "id": "q23",
@@ -960,11 +1325,11 @@
         "expected": "1. 影响学分、毕业/准出、后续课程资格；2. ICS 通过后已选操作系统，改为不通过会产生依赖冲突；3. 显式保留计算与依赖，可重新计算并追踪受影响结论。",
         "evidence": "s-g1099.0; s-g1103.0; s-g1105.0; s-g1106.0; s-g1140.0; s-g1143.0; s-g1146.0~6",
         "from": "transcript",
-        "answer": "及格改成不及格会减少学分，连带影响毕业、准出和下一门课的选课资格；例如计算机系统基础原先通过，已选上操作系统，改成挂科后先修关系就不一致。Event Sourcing 显式保留原始事实及其计算依赖，事实反转后可以重放全部计算，并通过数据流分析识别受影响的结论，减少手改当前库的遗漏。",
+        "answer": "成绩改为不及格会减少学分，连带影响毕业、准出和下一门课资格；例如计算机系统基础原先通过，已据此选上操作系统，改成挂科后选课关系就可能不一致。Event Sourcing 显式保留事实与计算依赖，事实更正后重放全部计算，追踪受影响的结论，减少手改当前库时的遗漏。",
         "found_in": "s19:p1, s19:p2, s19:p3",
         "verdict": "correct",
-        "note": "覆盖学分和毕业等连锁影响、ICS 与操作系统依赖冲突，以及重算和依赖追踪。",
-        "hash": "6e47559217d923a7"
+        "note": "涵盖学分与毕业及后续课程影响、ICS 与操作系统依赖冲突，以及重放追踪结论。",
+        "hash": "a5b938f1fbe15882"
       },
       {
         "id": "q24",
@@ -972,11 +1337,11 @@
         "expected": "1. 不能消除已有依赖复杂性；2. 将事实、view、预期分开；3. 追加特批/override 事实，而非让工程师直接手改当前数据库。",
         "evidence": "s-g1157.0~24; s-g1158.0~38; s-g1159.0~3; s-g1159.0~29; s-g1159.0~109",
         "from": "transcript",
-        "answer": "不能消除 essential complexity，先修和毕业条件等依赖仍然存在。它把事实、视图和预期分开；领导特批毕业时，应在不可变历史中追加“领导允许该学生毕业”的 override 事实，让允许毕业的结果由此产生，而不是让工程师直接修改当前数据库。",
-        "found_in": "s19:p5, s18:e1",
-        "verdict": "correct",
-        "note": "明确不能消除固有复杂性，并区分事实、视图、预期和追加特批事实。",
-        "hash": "87949dd20d7b5887"
+        "answer": "不能消除 essential complexity，先修与毕业等依赖仍然存在。应在不可变历史中追加“领导特批该学生毕业”的事实／override，让毕业结论由此算出，而不是让工程师直接手改当前数据库。",
+        "found_in": "s19:p5, s18:p1",
+        "verdict": "partial",
+        "note": "涵盖不能消除固有复杂性及追加特批事实替代手改数据库，但未明确说明事实、view、预期三者分开。",
+        "hash": "d4fbec08aef5f2d7"
       },
       {
         "id": "q25",
@@ -984,11 +1349,11 @@
         "expected": "1. 没把任意图灵可计算关系当作一等公民管理；2. 派生状态如毕业标志可能成为不一致点；3. MVVM、React、data flow、Event Sourcing 试图显式化 derived state 与 dependency。",
         "evidence": "s-g1166.0~36; s-g1169.0~16; s-g1172.0~59; s-g1173.0~22",
         "from": "transcript",
-        "answer": "局限是没有把任意图灵可计算的计算关系、跨数据库与应用代码的任意依赖作为一等公民统一管理，导致派生状态可能不一致。他借 Hoare 的 billion-dollar mistake 作类比，同时口述保留了“不直接叫设计缺陷”的态度。弥补它的框架或思路包括 MVVM、React、Dataflow 和 Event Sourcing，把 derived state 与 dependency 显式化。",
-        "found_in": "s20:p1, s20:p2, s20:f1",
+        "answer": "他批评 SQL／relational algebra 没有把任意图灵可计算的计算关系、派生状态与依赖作为一等公民统一管理，容易让存下来的派生值成为不一致点；列出 MVVM、React、data flow、Event Sourcing 在弥补。他借用了 Hoare 对空指针的 billion-dollar mistake 说法，同时承认关系模型当时非常好，不愿直接称其为设计缺陷。",
+        "found_in": "s20:p1, s20:p2",
         "verdict": "correct",
-        "note": "覆盖任意可计算关系未成为一等公民、派生状态不一致及四种弥补框架。",
-        "hash": "872a754ae42972ce"
+        "note": "涵盖图灵可计算关系未作为一等公民、派生状态不一致风险及所列四类框架。",
+        "hash": "e0802222f0d2330f"
       },
       {
         "id": "q26",
@@ -997,10 +1362,10 @@
         "evidence": "v004184333.jpg",
         "from": "visual",
         "answer": "JSTL 1.0 是 2002 年，提供标准标签与 EL；JSP 2.0 是 2003 年，把 EL 纳入页面语言。",
-        "found_in": "s13:f2",
+        "found_in": "s13:f3",
         "verdict": "correct",
-        "note": "两项年份及 JSTL 标准标签与 EL、JSP 纳入 EL 均准确。",
-        "hash": "013d7b208d6d509a"
+        "note": "两项年份及各自带来的标准标签、EL 和页面语言变化均正确。",
+        "hash": "54297ded457575e2"
       },
       {
         "id": "q27",
@@ -1008,11 +1373,11 @@
         "expected": "1. 列表换周历主要改 View；2. 选课限制变化主要改 Model。",
         "evidence": "v004364333.jpg",
         "from": "visual",
-        "answer": "课表从列表换成周历主要改 View；选课限制变化主要改 Model，因为 Model 包含容量、冲突等业务规则。",
+        "answer": "课表从列表换成周历主要改 View；选课限制变化主要改 Model，Model 包含容量与冲突等业务规则。",
         "found_in": "s14:f1",
         "verdict": "correct",
-        "note": "准确对应周历改 View、选课限制改 Model。",
-        "hash": "22d605cd102c54b0"
+        "note": "准确对应 View 与 Model。",
+        "hash": "131f5aa63d43da5e"
       },
       {
         "id": "q28",
@@ -1020,11 +1385,11 @@
         "expected": "1. pay_payroll；2. state, category, amount, *, kind；3. 星号后是 kind。",
         "evidence": "v005264333.jpg",
         "from": "visual",
-        "answer": "函数是 pay_payroll，参数顺序为 pay_payroll(state, category, amount, *, kind)；星号之后的参数是 kind。",
-        "found_in": "s18:e0, s18:f1",
+        "answer": "函数叫 pay_payroll，签名为 pay_payroll(state, category, amount, *, kind)，参数顺序是 state、category、amount、kind；星号之后的是 kind。",
+        "found_in": "s18:f1, s18:e0",
         "verdict": "correct",
-        "note": "函数名、参数顺序及星号后的 kind 均准确。",
-        "hash": "be9f015b99f67555"
+        "note": "函数名、参数顺序及星号后的 kind 均正确。",
+        "hash": "d1d9402ff782c855"
       },
       {
         "id": "q29",
@@ -1035,8 +1400,8 @@
         "answer": "过去：合同签订；现在：等待打款；未来：货物交接、潜在坏账。",
         "found_in": "s19:f0",
         "verdict": "correct",
-        "note": "过去、现在、未来的四个对应例子均准确。",
-        "hash": "6e47559217d923a7"
+        "note": "过去、现在、未来的例子均完整正确。",
+        "hash": "a5b938f1fbe15882"
       }
     ],
     "question_author": "independent_agent",

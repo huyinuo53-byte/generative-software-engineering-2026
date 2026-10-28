@@ -8,13 +8,24 @@
   },
   "scope": {
     "requested": "单课完整笔记、手绘图解、外部模型保真评测。只依据本地转写和原视频，不读推荐材料。",
-    "materials": false,
-    "changes": []
+    "materials": true,
+    "changes": [
+      {
+        "at": "2026-10-28T01:10:00-04:00",
+        "request": "增量补充官方讲义与推荐材料",
+        "added_work": "官网 lect4.md、slides4.html 与转写里点到的材料；materials.json、supplements、slides 原页"
+      },
+      {
+        "at": "2026-10-28T03:05:09-04:00",
+        "request": "补读上一轮未取得的推荐材料",
+        "added_work": "traceability-2014 全文、jj-tutorial 全文、einstellung-2008 的 Brunel 作者稿"
+      }
+    ]
   },
   "toolchain": {
     "baocut": null,
     "asr_model": null,
-    "skill_commit": null,
+    "skill_commit": "28981d8",
     "writer_model": "grok-4.7-high",
     "image_model": "gpt-6.1-sol",
     "reviewer_model": "gpt-6.1-sol"
@@ -61,7 +72,9 @@
       "path": "notes.json",
       "depends_on": [
         "index",
-        "frame_candidates"
+        "frame_candidates",
+        "materials",
+        "readings"
       ],
       "role": "notes",
       "origin": "generated"
@@ -80,10 +93,27 @@
       "path": "fidelity-eval.json",
       "depends_on": [
         "notes",
-        "transcript"
+        "transcript",
+        "materials"
       ],
       "role": "eval",
       "origin": "generated"
+    },
+    {
+      "id": "materials",
+      "path": "materials.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "generated",
+      "basis": "讲义页、slides 与口述材料的阅读登记，validate_materials.py 已通过"
+    },
+    {
+      "id": "readings",
+      "path": "sources/readings-index.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "generated",
+      "basis": "讲义、slides 原文和阅读材料、slides 截图的 SHA-256 清单"
     }
   ],
   "log": [
@@ -242,13 +272,18 @@
   ],
   "status": {
     "outcome": "completed",
+    "reading_materials": "passed",
+    "material_integration": "passed",
+    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
     "known_gaps": [
-      "换页候选是预先扫描（阈值 0.3，60 秒兜底，118 帧），不是逐秒看片；幻灯片小字没有逐字 OCR。",
-      "未读推荐材料。",
+      "换页候选是预先扫描（阈值 0.3，60 秒兜底，118 帧），不是逐秒看片。",
       "浏览器检查是 headless Chrome 模拟 390 与 1280 宽度，不是真机。",
-      "精度 91 条里 6 条为 partial，没有 unsupported 或 distorted：s1、s4、s5 的 takeaway 把讲师的“可能/如果”说得更确定；s5 图解“无关的部分不动”比原话更强；s14 的例子和自测把“一百人大约是十人团队的两到三倍”放在第 14 节，原句在第 12 节。"
-    ],
-    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors"
+      "Brooks 的 PDF 元数据写成 20 周年全集，文件是 16 页的第 2 章。",
+      "jj 术语表、工作副本和教程取自 GitHub main 的快照，冲突页和首页取自 jj-vcs.dev/latest，没有对成同一发布版。",
+      "Einstellung 读的是 Brunel 机构库的 Cognition 录用稿，36 个物理页，不是期刊排版后的 652–661 页。",
+      "materials.json 里没有 kind=video 的条目。lean-mvp 正文提到一场谈话视频，摘录没有可下载地址，该条仍是 full。课外视频待用户确认是否处理。",
+      "精度 107 条里 3 条为 partial，没有 unsupported 或 distorted：s15:n0 里的 Pickle 出现在相邻转写而不是本节指定画面；s14:n2 的一百人例子原句在更早的转写段；x11 的 PDF 元数据标题和图 2.3 曲线没有留在文本摘录里。"
+    ]
   },
   "revisions": [
     {
@@ -313,6 +348,152 @@
         "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
       },
       "prev_sha256": null
+    },
+    {
+      "rev": 2,
+      "at": "2026-10-28T05:15:01.990557+00:00",
+      "reason": "增量补充官方讲义与推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "b4dbe241056eab779de3231cfbe0fbf3c7c2d6413271f83b3289514347c96e2d",
+          "bytes": 4623969
+        },
+        "video": {
+          "path": "../raw/BV1Q6en6NEUo.mp4",
+          "sha256": "57a92325fb43bc99b8d1a331e5364ae0771300245bcf70bd31134bebda10f0e7",
+          "bytes": 297347438
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "a7e393677f02a2e869c4bae303dcd276a422bd5f6f44d726236d3d975abcdf79",
+          "bytes": 51549
+        },
+        "frame_candidates": {
+          "path": "frames/candidates.json",
+          "sha256": "aed36a2acc052366abd91a40960f73547e7720c933ad311b7bcda5b0f25e894e",
+          "bytes": 11940
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "30050e608feff6c84876a57de5992c6c31783dd29c6a26dd8137b6c19e9eb658",
+          "bytes": 152715
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "b60b2e981cf7ece5fe8da4e4b2cd67c2e5c03b3bc424dd3f99b8ba66ad31786f",
+          "bytes": 10073764
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "434805e0432d5acbbb0d8841d63a79aac26357abe9eb98d478b87f178a7ed59d",
+          "bytes": 66821
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "ff6cb0fbb45026e9b2e928ae89b9ff70db64da7dc4df099bf01704ff5dadd445",
+          "bytes": 44667
+        },
+        "readings": {
+          "path": "sources/readings-index.json",
+          "sha256": "bf940161a532ccf249990309ae685d622edb2a987d98a59b2f6309258170b746",
+          "bytes": 8464
+        }
+      },
+      "issues": {
+        "i-001": "fixed"
+      },
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9813,
+        "recall": 1.0,
+        "precision_items": 107,
+        "recall_items": 49,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "e2e574aaeae48744729d3ec898a65c8b89193361b40ece80d3995fd1015cdc2a"
+    },
+    {
+      "rev": 3,
+      "at": "2026-10-28T07:12:06.389180+00:00",
+      "reason": "补读上一轮未取得的推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "b4dbe241056eab779de3231cfbe0fbf3c7c2d6413271f83b3289514347c96e2d",
+          "bytes": 4623969
+        },
+        "video": {
+          "path": "../raw/BV1Q6en6NEUo.mp4",
+          "sha256": "57a92325fb43bc99b8d1a331e5364ae0771300245bcf70bd31134bebda10f0e7",
+          "bytes": 297347438
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "a7e393677f02a2e869c4bae303dcd276a422bd5f6f44d726236d3d975abcdf79",
+          "bytes": 51549
+        },
+        "frame_candidates": {
+          "path": "frames/candidates.json",
+          "sha256": "aed36a2acc052366abd91a40960f73547e7720c933ad311b7bcda5b0f25e894e",
+          "bytes": 11940
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "d9e8bcd1709575b16ca4c4f5b2c02e133592d73b306118b98874a10b33e87899",
+          "bytes": 163424
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "f53408b2c7bad675d9927b3b7e6ee5cf269fc875016aa4257a9421046e45f82a",
+          "bytes": 10518120
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "b8507262dad0215018e78ae38026acf58af7217e784f4c666605dd97b2f77d0b",
+          "bytes": 68189
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "9e4d2b8bad54c069583458d829daff615012dc048ca3962a0b8ea13fed79f002",
+          "bytes": 47078
+        },
+        "readings": {
+          "path": "sources/readings-index.json",
+          "sha256": "6ee289567d9bb64a65561a8cbe678b786a3aaa5592511949e614697905b51ead",
+          "bytes": 8984
+        }
+      },
+      "issues": {
+        "i-001": "fixed"
+      },
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.986,
+        "recall": 1.0,
+        "precision_items": 107,
+        "recall_items": 49,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "c0ac6aae913e9a382e06939de998559aa58335902c4ad6f29e2ba40c60278373"
     }
   ]
 }

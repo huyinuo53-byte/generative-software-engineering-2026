@@ -32,7 +32,7 @@
   "limitations": [
     "完整阅读全部 19 个转写块（chunk-0001 到 chunk-0019，486 句）。章节按口播里的主题转折重分，不是按五分钟切块。",
     "画面使用预先生成的 frames.py 结果：场景阈值 0.3、60 秒兜底，137 个候选、12 张联系表。联系表全部看过，只打开拟选用的候选并截了原分辨率帧。不是逐秒观看，也没有对未选中的候选逐张做 OCR。",
-    "未读课程推荐材料，未联网核对 Royce 原文、排名或校史。幻灯片上口播没有逐条念出的规则，写入对应课堂案例或图注，并标明来自画面。",
+    "这一版补读了讲义页 gse-lect6、slides gse-slides6，以及下面 materials.json 里登记的原文。Royce 用的是 Wayback Machine 上的课程扫描件，作者行 OCR 成 Rovce，图页没有另做版面核对。Rittel 与 Webber 1973 用的是 Webber 在加州大学交通中心页面上的 PDF，经 Internet Archive 2007-09-30 存档取得；DOI 和 Springer PDF 仍是验证页或登录页，没有绕过。LET 读的是微软支持页同一 articleGuid 的规范地址。张与 Norman 1994 读完 36 页，包括四组实验。Cheney、Ahmed 与 Acar 读的是 arXiv:0708.2173v2 全文；页边日期是 2009-12-22，首页另有 Received 3 June 2018。Brooks 1987 没读文前序、文后传说附录，也没读 Ada、面向对象和人工智能那几节综述。幻灯片上口播没有逐条念出的规则，写入对应课堂案例、图注或补充，并标明来自画面或外部材料。",
     "讲者没有在转写里自报姓名。笔记称讲师。幻灯片上的“绿导师”只作为他给自己那段汉诺塔代码的标题。",
     "转写有明显同音错误。校正写在各节整理者说明里；听不清且画面不能核对的缩写，保持不确定，不升格成事实。"
   ],
@@ -121,7 +121,8 @@
       ],
       "examples": [],
       "editor_notes": [
-        "转写把 Royce 写成 “Royce”，把 intent、spec、implementation、artifact、data dependency、taint、traceability、UML 用英文夹在中文里。笔记按口播保留这些词。幻灯片标题把上一讲收成三个关键词：Intent-Spec-Impl Gap、瀑布模型、Data-Dependency Graph，并写“需求分析、系统设计、代码实现，各自有方法和工具”“UML 试图对齐全世界”。"
+        "转写把 Royce 写成 “Royce”，把 intent、spec、implementation、artifact、data dependency、taint、traceability、UML 用英文夹在中文里。笔记按口播保留这些词。幻灯片标题把上一讲收成三个关键词：Intent-Spec-Impl Gap、瀑布模型、Data-Dependency Graph，并写“需求分析、系统设计、代码实现，各自有方法和工具”“UML 试图对齐全世界”。",
+        "材料 gse-lect6 是 2026 秋课程官网《需求和架构 (1)》讲义页，材料 gse-slides6 是同课 47 页 slides。静态幻灯片改用 slides 原页；第 1 节这张视频帧留着，因为画面左侧黑板上有 Intent 的手绘，官方第 1 页没有这幅手绘。口播说 Royce 批判了瀑布式模式。材料 royce-1970 里他写的是：图 2 那种分阶段概念他相信，但上面那种实现有风险、会招致失败；他接着加了五步，而不是否定分阶段本身。正文仍保留口播。"
       ],
       "frames": [
         {
@@ -152,7 +153,8 @@
           "traceability",
           "UML"
         ]
-      }
+      },
+      "flow": "p0 p1 p2 p3 p4 n0 n1 x0 f0"
     },
     {
       "title": "软件一点都不软：一个比特就能让程序垮掉",
@@ -308,10 +310,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000840000.jpg",
-          "time": 840.0,
-          "caption": "幻灯片标题“Agentic AI：软件生产力的杠杆”。要点：生产目标明确的代码，极为便宜；甚至拥有 Agent Swarm 并行的能力；Agent 也能写测试用例、断言、甚至是证明。下一栏：需求、产品设计、架构成为撬动软件生产力的杠杆；如果不认真对待，就会成为 AI Slop 的堆积。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p04.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 4,
+          "related_time": 840.0,
+          "caption": "官方 slides 第 4 页，标题“Agentic AI：软件生产力的杠杆”。生产目标明确的代码极为便宜，甚至有 Agent Swarm 并行；Agent 也能写测试用例、断言、甚至证明。需求、产品设计、架构成为撬动软件生产力的杠杆；如果不认真对待，就会成为 AI Slop 的堆积。页码 4/47。"
         }
       ],
       "visual": {
@@ -406,14 +411,18 @@
         "现场打开的是南京大学网上办事服务大厅，以及登录后的“我的教学任务”。办事大厅顶部导航是本科生迎新、研究生迎新；入口里能看见本-停调课、本科毕业论文、学生成绩管理、我的助教、我的教学任务。教学任务页顶部有当前教学学期、最新排课学期、历史授课信息，并有横幅“全新智汇南雍在线教学平台已启用”。一条教学班写着：周二 3-4 节、2-18 周、仙 I-107，以及周二 3-4 节、1 周、逸 B-212；总容量/开放人数 150/28；选课人数 298；年级专业里能看见 2023、2024 的计算机科学与技术（含强基计划、拔尖计划等字样）；考试信息暂无。按钮包括编辑教学班、编辑周历、学生名单、查看大纲、编辑教材、期末考试签到表。另有“编辑联系方式”，并注明这里填的联系方式只有本科生院和选课学生可以看到。上课地点说明里，A/B/C 指仙林校区逸夫楼。"
       ],
       "editor_notes": [
-        "转写“stop”出现在“用 stop 来填满教学周”里，听感像在说用某种方式把空格填满，笔记按口播写成用 AI 填满，不另造工具名。电话号码是讲师说点开会显示，他没有点开，笔记不列出任何号码。容量 150/28 与选课人数 298 来自 20:13 的教学任务画面，口播没有念，办事大厅那一帧上没有这两个数字。"
+        "转写“stop”出现在“用 stop 来填满教学周”里，听感像在说用某种方式把空格填满，笔记按口播写成用 AI 填满，不另造工具名。电话号码是讲师说点开会显示，他没有点开，笔记不列出任何号码。容量 150/28 与选课人数 298 来自 20:13 的教学任务画面，口播没有念，办事大厅那一帧上没有这两个数字。",
+        "slides 第 3 页和第 8 页的紫色 AIGC 批注用 Rittel 与 Webber 1973 说明：不同参与者可能连“什么算成功”都没有共识，问题怎样定义也取决于各方的利益。材料 rittel-webber-1973 这次读的是 Webber 机构页 PDF 的 Internet Archive 存档，不是课堂口述。本节口播没有提到 Rittel 或 Webber。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v001076133.jpg",
-          "time": 1076.133,
-          "caption": "幻灯片标题“来看看教务系统吧”。要点：史诗级的需求爆炸；甚至还有隐藏的 AI 功能，有懂哥告诉我花了多少钱？下一栏“用魔法打败魔法”：让 GPT-6 Astra 先去调研一下教务系统的需求，然后直接实现一个；一个 /goal，一小时完成任务。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p06.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 6,
+          "related_time": 1076.133,
+          "caption": "官方 slides 第 6 页，标题“来看看教务系统吧”。史诗级的需求爆炸；甚至还有隐藏的 AI 功能，有懂哥告诉我花了多少钱？用魔法打败魔法：让 GPT-6 Astra 先去调研教务系统的需求，然后直接实现一个；一个 /goal，一小时完成任务。页码 6/47。"
         },
         {
           "source_type": "video_frame",
@@ -427,7 +436,8 @@
           "time": 1396.167,
           "caption": "浏览器打开“南京大学网上办事服务大厅”。顶部导航是本科生迎新、研究生迎新。入口里能看见本-停调课、本科毕业论文、学生成绩管理、免修不免考办理、年度考核、我的助教、我的教学任务。左侧边缘是教师短期因公出国（境）。搜索框里是助教。通知日期可见 2026-09-21。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 p5 p6 p7 e0 n0 n1 x16 f0 f1 f2"
     },
     {
       "title": "需求说明书把每一条都编上号",
@@ -610,17 +620,21 @@
         }
       ],
       "examples": [
-        "幻灯片把这个虚构案例写成“培养方案：学分够了，就能毕业吗？”，小标题是“一个虚构但可能发生的案例”。画面上的规则包括：一名 2024 级春季同学在 2026 年转入计算机专业，适用目标专业的 2024 版方案；毕业至少 160 学分，其中通识 40、专业必修 72、专业选修 28、实践 20，各类分别达标；数学必修组二选一，高数 A（5 学分），或高数 B（4 学分）加桥接课（1 学分）；算法课须先修数据结构，缓考生可暂选，开课前仍未通过则撤销；两门交换课程获批合抵算法课，认定 4 学分，不能再计入专业选修；重修学分只计一次，成绩单保留历次记录，绩点按较高成绩算。最后一栏标题是“暗箱操作”：管理员凭线下审批，点“视为满足”覆盖指定学生的未达标项，记录理由、批准人和适用方案。这些学分数字是幻灯片上的虚构规则，口播没有逐条念。口播展开的是离散数学从一门拆成两门、或关系、抵扣和打电话改数据库。"
+        "幻灯片把这个虚构案例写成“培养方案：学分够了，就能毕业吗？”，小标题是“一个虚构但可能发生的案例”。画面上的规则包括：2024 级李同学在 2026 年转入计算机专业，适用目标专业的 2024 版方案；毕业至少 160 学分，其中通识 40、专业必修 72、专业选修 28、实践 20，各类分别达标；数学必修组二选一，高数 A（5 学分），或高数 B（4 学分）加桥接课（1 学分）；算法课须先修数据结构，缓考生可暂选，开课前仍未通过则撤销；两门交换课程获批合抵算法课，认定 4 学分，不能再计入专业选修；重修学分只计一次，成绩单保留历次记录，绩点按较高成绩算。最后一栏标题是“暗箱操作”：管理员凭线下审批，点“视为满足”覆盖指定学生的未达标项，记录理由、批准人和适用方案。这些学分数字是幻灯片上的虚构规则，口播没有逐条念。口播展开的是离散数学从一门拆成两门、或关系、抵扣和打电话改数据库。"
       ],
       "editor_notes": [
-        "转写“按向操作”与幻灯片标题“暗箱操作”对得上，笔记用暗箱操作，并保留口播里的 override。转写“软院好像还是这个一一门的离散数学课”保留为讲师对软件学院那门课门数的不确定说法。"
+        "转写“按向操作”与幻灯片标题“暗箱操作”对得上，笔记用暗箱操作，并保留口播里的 override。转写“软院好像还是这个一一门的离散数学课”保留为讲师对软件学院那门课门数的不确定说法。",
+        "上一版把这一页的“李同学”记成“春季同学”。官方 slides 第 9 页写的是 2024 级李同学。学分规则和“视为满足”要记录理由、批准人和适用方案，与这一页一致。口播展开的仍是离散数学拆课，没有逐条念这些学分数字。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v002191067.jpg",
-          "time": 2191.067,
-          "caption": "幻灯片“培养方案：学分够了，就能毕业吗？”。虚构案例：2024 级春季同学 2026 年转入计算机专业，适用 2024 版方案。毕业至少 160 学分：通识 40、专业必修 72、专业选修 28、实践 20。数学必修组二选一：高数 A（5 学分）或高数 B（4 学分）+ 桥接课（1 学分）。算法课须先修数据结构。交换课程合抵算法课，认定 4 学分，不能再计入专业选修。重修学分只计一次。最后“暗箱操作”：管理员凭线下审批点“视为满足”。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p09.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 9,
+          "related_time": 2191.067,
+          "caption": "官方 slides 第 9 页，标题“培养方案：学分够了，就能毕业吗？”，小标题“一个虚构但可能发生的案例”。2024 级李同学在 2026 年转入计算机专业，适用目标专业的 2024 版方案。毕业至少 160 学分：通识 40、专业必修 72、专业选修 28、实践 20，各类分别达标。数学必修组二选一：高数 A（5 学分），或高数 B（4 学分）加桥接课（1 学分）。算法课须先修数据结构；缓考生可暂选，开课前仍未通过则撤销。两门交换课程获批合抵算法课，认定 4 学分，不能再计入专业选修。重修学分只计一次，成绩单保留历次记录，绩点按较高成绩算。最后“暗箱操作”：管理员凭线下审批，点“视为满足”覆盖指定学生的未达标项；记录理由、批准人和适用方案。页码 9/47。"
         }
       ],
       "visual": {
@@ -681,16 +695,30 @@
       ],
       "examples": [],
       "editor_notes": [
-        "转写 “五零零” 写成 HTTP 500。“silver bullet” 口播里重复了 bullet。幻灯片标题就是 There’s No Silver Bullet。幻灯片还写：需求变更会穿透整个软件工程的 dependency graph；“允许两门交换课程合抵一门必修课”时，课程对应、学分统计、毕业审核、成绩单与测试用例都可能要改；新规则上线后，已认定的学分、已批准的特例怎么办，旧决定也成了新需求的约束。这些是画面上的推论，口播用离散数学和银弹故事来讲同一件事。"
+        "转写 “五零零” 写成 HTTP 500。“silver bullet” 口播里重复了 bullet。幻灯片标题就是 There’s No Silver Bullet。幻灯片还写：需求变更会穿透整个软件工程的 dependency graph；“允许两门交换课程合抵一门必修课”时，课程对应、学分统计、毕业审核、成绩单与测试用例都可能要改；新规则上线后，已认定的学分、已批准的特例怎么办，旧决定也成了新需求的约束。这些是画面上的推论，口播用离散数学和银弹故事来讲同一件事。",
+        "口播把银弹说成吸血鬼和狼人都能用的武器。材料 brooks-1987 的正文开篇只写狼人。slides 第 13 页的紫色批注也只写狼人，并点名 Brooks, 1987。课堂口述没有说出 Brooks 这个名字。正文保留口播。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v002611067.jpg",
-          "time": 2611.067,
-          "caption": "幻灯片标题 There’s No Silver Bullet。问：需求变了，又该如何应对？需求变更会穿透整个软件工程的 dependency graph。例子：“允许两门交换课程合抵一门必修课”，课程对应、学分统计、毕业审核、成绩单与测试用例都可能要改。随着软件增长，维护成本不断增加：新规则上线，已认定的学分、已批准的特例怎么办？旧决定也成了新需求的约束。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p12.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 12,
+          "related_time": 2611.067,
+          "caption": "官方 slides 第 12 页，标题 There’s No Silver Bullet。问：需求变了，又该如何应对？需求的变更会穿透整个软件工程的 dependency graph。例子：“允许两门交换课程合抵一门必修课”，课程对应、学分统计、毕业审核、成绩单与测试用例都可能要改。随着软件增长，维护成本不断增加：新规则上线后，已认定的学分、已批准的特例怎么办？旧决定也成了新需求的约束。页码 12/47。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p13.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 13,
+          "related_time": 2620.0,
+          "caption": "官方 slides 第 13 页，标题“银弹：传说中的‘一招制胜’”。紫色 AIGC 批注写：西方流行传说中，普通子弹奈何不了狼人，银弹却能将其制服；Brooks 用它比喻人们期待的“软件工程万能药”，并链到 Brooks, 1987。这一句是 slides 上的批注，不是课堂口述。页码 13/47。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 n0 n1 f0 x1 f1"
     },
     {
       "title": "架构就是把复杂性拆开：从 getopt 说起",
@@ -774,7 +802,8 @@
         "48 分 31 秒的画面是一份命令的手册页，和 getopt 的 SYNOPSIS 放在一起。手册左侧能看见长选项，例如 --total-size、--octal-permissions、--no-permissions、--no-filesize，以及 --git、--no-git、--git-repos。右侧是 C 标准库：#include <unistd.h>，int getopt(int argc, char * const argv[], const char *optstring)，以及 getopt.h 里的 getopt_long、getopt_long_only。还能看见特性测试宏，要求 _POSIX_C_SOURCE 大于等于 2，或者 _XOPEN_SOURCE。讲师当场还提过自己敲的 npm help、npm run。"
       ],
       "editor_notes": [
-        "转写 “arg C / arg V” 校正为 argc、argv，“get opt” 校正为 getopt，“posics” 校正为 POSIX，“passer / passingstate” 校正为 parser、parser state。转写 “record is 怎么实现的，这 LS” 紧挨着 ls 的手册页，笔记写成 ls 一类命令，不把听不清的前半句改成 Redis。转写 “pre-aram 时代” 听感不清，不改写。lambda 的写法按口播 “AB 等于返回 return a 加 b” 记成 [](a, b) { return a + b; }，画面没有单独给出这一行。"
+        "转写 “arg C / arg V” 校正为 argc、argv，“get opt” 校正为 getopt，“posics” 校正为 POSIX，“passer / passingstate” 校正为 parser、parser state。转写 “record is 怎么实现的，这 LS” 紧挨着 ls 的手册页，笔记写成 ls 一类命令，不把听不清的前半句改成 Redis。转写 “pre-aram 时代” 听感不清，不改写。lambda 的写法按口播 “AB 等于返回 return a 加 b” 记成 [](a, b) { return a + b; }，画面没有单独给出这一行。",
+        "slides 第 14 页的紫色 AIGC 批注把“把容易变化的设计决策藏在模块内部”标成 Parnas, 1972。这不是口播。getopt 那一帧是现场手册页，不是课程 slides，所以留着。材料 parnas-1972 的结论见本节补充。"
       ],
       "frames": [
         {
@@ -782,6 +811,15 @@
           "path": "frames/v002911067.jpg",
           "time": 2911.067,
           "caption": "左侧是命令手册，能看见 --total-size、--octal-permissions、--no-permissions、--no-filesize、--git、--no-git、--git-repos。右侧 SYNOPSIS：unistd.h 的 getopt(argc, argv, optstring)，getopt.h 的 getopt_long 与 getopt_long_only，以及 _POSIX_C_SOURCE >= 2 或 _XOPEN_SOURCE。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p15.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 15,
+          "related_time": 2800.0,
+          "caption": "官方 slides 第 15 页，标题“好的架构：复杂性有归处，变化有边界”。画面是若干透明外壳的机械模块串在同一根轴上，其中一个橙色模块被从轴上拿开，弯箭头指向旁边的替换模块。页上没有课程术语标注。页码 15/47。"
         }
       ],
       "visual": {
@@ -801,7 +839,8 @@
           "switch case",
           "抵抗需求变化"
         ]
-      }
+      },
+      "flow": "p0 p1 p2 p3 p4 p5 p6 e0 n0 n1 f0 x2 f1"
     },
     {
       "title": "十行代码的四种汉诺塔",
@@ -852,32 +891,69 @@
         "CSDN 那一帧是一篇非递归汉诺塔博客，代码区很长，评论区有多条看起来很积极的留言。讲师指出这段代码里的 move 和标准库的 move 撞在一起。他没有把博客里的算法当成正确实现来讲。"
       ],
       "editor_notes": [
-        "转写 “tabofhanoi / Talbot Hana” 统一为汉诺塔。“布号”按本节 GPT-6 幻灯片上印着的“步号”校正。“DeepSeek v4flash” 记为 DeepSeek V4 Flash。转写 “NPI 在数学道路上狂奔” 听感不清，笔记只保留“在数学道路上狂奔”。豆包的具体错误他没有展示，笔记不补。"
+        "转写 “tabofhanoi / Talbot Hana” 统一为汉诺塔。“布号”按本节 GPT-6 幻灯片上印着的“步号”校正。“DeepSeek v4flash” 记为 DeepSeek V4 Flash。转写 “NPI 在数学道路上狂奔” 听感不清，笔记只保留“在数学道路上狂奔”。豆包的具体错误他没有展示，笔记不补。",
+        "slides 第 17 页的紫色 AIGC 批注用材料 zhang-norman-1994 说明：同一个问题换一种表示，难度就可能改变。这次读完论文。时间可以差到大约一比十，是“只有规则 1”对“规则 1、2、3”那一对，而且时间已经除以最短步数；不是任意两种画法。CSDN 那一帧是浏览器里的博客，不是课程 slides。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003151067.jpg",
-          "time": 3151.067,
-          "caption": "幻灯片“GPT-6：数学规律”。引语：反正我不做人类了，你写不出来是因为你的数学不如我好。规则：盘号 = 1 + 步号二进制末尾的 0 的个数。代码里 direction = (n - disk) % 2 == 0 ? -1 : 1，to = (from + direction + 3) % 3。下方是 uint64_t 步数循环和 Move disk 的打印。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p18.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 18,
+          "related_time": 3151.067,
+          "caption": "官方 slides 第 18 页，标题“GPT-6：数学规律”。引语：反正我不做人类了，你写不出来是因为你数学不如我好。紫色 AIGC 批注写：盘号 = 1 + 步号二进制末尾的 0 的个数；每个盘子的移动方向固定。代码是 uint64_t 步数循环，用右移数末尾的 0；direction = (n - disk) % 2 == 0 ? -1 : 1；to = (from + direction + 3) % 3；然后打印 Move disk 并更新 position[disk]。页码 18/47。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v003211067.jpg",
-          "time": 3211.067,
-          "caption": "幻灯片“DeepSeek：任务栈”。引语：人类语料里似乎让我这么干。代码：push 初始任务；while 栈不空则 pop；n==1 时 printf 移动；否则 push 三步 n-1、1、n-1。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p19.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 19,
+          "related_time": 3211.067,
+          "caption": "官方 slides 第 19 页，标题“DeepSeek：任务栈”。引语：人类语料里似乎让我这么干。代码先 push(n, A, B, C)。while 栈不空就 pop；n 等于 1 时打印 src 到 dst。否则按源码顺序压入三步：push(n-1, aux, src, dst)、push(1, src, aux, dst)、push(n-1, src, dst, aux)。栈后进先出，最后压入的那步先执行。页码 19/47。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v003271067.jpg",
-          "time": 3271.067,
-          "caption": "幻灯片“绿导师：抽象机器”。引语：这是理解 C 语言形式语义的好机会。可见 call/ret 宏、while 取栈顶帧、switch 的 case 0 到 case 4，n==1 时打印并 ret，否则三次 call，default 为 assert(0)。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p20.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 20,
+          "related_time": 3271.067,
+          "caption": "官方 slides 第 20 页，标题“绿导师：抽象机器”。引语：这是理解 C 语言“形式语义”的好机会。代码用 call 宏把帧压栈、ret 弹栈。while 取栈顶，switch 从 case 0 到 case 4：case 0 在 n 等于 1 时打印并 ret；case 1 call(n-1, from, aux, to)；case 2 call(1, from, to)；case 3 call(n-1, aux, to, from)；case 4 ret；default 是 assert(0)。页码 20/47。"
         },
         {
           "source_type": "video_frame",
           "path": "frames/v003391067.jpg",
           "time": 3391.067,
           "caption": "浏览器打开一篇 CSDN 非递归汉诺塔。左侧是大段代码，能看见 move、other 一类标识；右侧是评论列表，日期看起来在 2026 年 3 月，有多条短评。讲师认为这里的 move 和 std::move 冲突。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/papers/zhang-fig10.jpg",
+          "source_label": "论文补充 zhang-norman-1994，Cognitive Science 18 (1994)，非课堂口述",
+          "source_url": "https://pages.ucsd.edu/~scoulson/203/zhang.pdf",
+          "page": 18,
+          "related_time": 3200,
+          "caption": "论文补充，材料 zhang-norman-1994，物理页 18，印刷页 104，图 10。实验 1A（方块，规则写在指令里）和 1B（圆点，除规则 1 外做成外部约束）。横轴是规则条数 1 到 4。三条纵轴都已经除以该条件的最短步数：时间/最短步数，刻度到 25；步数/最短步数，刻度到 3；错误/最短步数，刻度到 0.3。图注写最短步数是 2、4、7、8。方块在三条规则处升到最高，四条规则略回落；圆点随规则变多上升，错误一条贴在零上。图上没有逐点标出读数。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/papers/zhang-fig13.jpg",
+          "source_label": "论文补充 zhang-norman-1994，Cognitive Science 18 (1994)，非课堂口述",
+          "source_url": "https://pages.ucsd.edu/~scoulson/203/zhang.pdf",
+          "page": 24,
+          "related_time": 3220,
+          "caption": "论文补充，材料 zhang-norman-1994，物理页 24，印刷页 110，图 13 和表 2。三个条件从左到右：三条规则都在指令里、标准汉诺塔（规则 3 外部）、咖啡杯（规则 2 和 3 外部）。时间、步数、错误三条线都下降。图注原文：问题难度随外部规则变多而下降。图上没有逐点标数。表 2 是 Fisher PLSD 的 p 值：主效应时间 < .05、步数 < .05、错误 < .005；三条都内部对标准汉诺塔，时间 < .1、步数 < .1、错误 < .03；三条都内部对咖啡杯，时间 < .01、步数 < .02、错误 < .001；标准汉诺塔对咖啡杯，时间 > .3、步数 > .4、错误 > .2。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/papers/zhang-fig16.jpg",
+          "source_label": "论文补充 zhang-norman-1994，Cognitive Science 18 (1994)，非课堂口述",
+          "source_url": "https://pages.ucsd.edu/~scoulson/203/zhang.pdf",
+          "page": 29,
+          "related_time": 3240,
+          "caption": "论文补充，材料 zhang-norman-1994，物理页 29，印刷页 115，图 16 和表 3。横轴是名义维：颜色、大小、位置。三条线是序数维：方块为颜色，圆点为大小，三角为位置。时间刻度到 250 秒，步数刻度到 20，错误刻度到 5。位置那一档在时间和错误上低于颜色和大小；步数三条更接近。图上没有逐点标数。表 3 用的是维度比较，不是九个条件逐对相比。时间、步数、错误：O(size) 对 O(location) 为 < .01、< .05、< .03；O(size) 对 O(color) 为 > .17、> .53、> .15；O(location) 对 O(color) 为 < .0007、> .2、< .004；N(size) 对 N(location) 为 < .003、> .24、< .0001；N(size) 对 N(color) 为 > .66、> .62、> .96；N(location) 对 N(color) 为 < .016、> .17、< .007。表注写交互都不显著。"
         }
       ],
       "visual": {
@@ -902,7 +978,8 @@
           "四种表达",
           "形式语义"
         ]
-      }
+      },
+      "flow": "p0 p1 p2 p3 p4 e0 e1 e2 e3 n0 n1 x5 f4 f5 f6 f0 f1 f2 f3"
     },
     {
       "title": "架构能力从每一次压缩和一次共情里来",
@@ -1080,14 +1157,27 @@
         "幻灯片标题是“我们其实要实现的是编译器”。跳出问题看问题：二维码算法容易用伪代码或编程语言描述，但它们不能原样变成 Excel 公式；先用中间语言（IR）表达计算规则，再决定怎样落到 Excel 上。用高级语言构造中间语言：Python 的函数和循环负责构造计算图，按选定容量展开有限的计算步骤；字符串输入保留为符号，用户改动单元格后由 Excel 重新计算二维码；输入决定的分支写成 Select(cond, a, b) 节点，留到运行时判断。"
       ],
       "editor_notes": [
-        "转写 “LRM / lm” 在“从 LRM 翻译成中间语言”里按上下文校正为 LLM。Select(cond, a, b)、IR、计算图这些字是幻灯片上的，口播讲的是表达式树、每个节点一条 Excel 规则、Python 验证、Excel 交付。笔记把两边都写下，不把幻灯片上的 Select 说成口播原句。"
+        "转写 “LRM / lm” 在“从 LRM 翻译成中间语言”里按上下文校正为 LLM。Select(cond, a, b)、IR、计算图这些字是幻灯片上的，口播讲的是表达式树、每个节点一条 Excel 规则、Python 验证、Excel 交付。笔记把两边都写下，不把幻灯片上的 Select 说成口播原句。",
+        "第 13 节的演示画面把 Base64 记在 A3，名称框停在 A6。官方 slides 第 27 页写的是另一套绑定：算法只认识 Input(\"text\")，布局模块才知道它在 Input!B2。两套都留下：A3、A6 是当时演示，Input!B2 是这页 slides 的例子。材料 excel-let 读的是微软支持页上的 LET 条目，articleGuid 34842dd8-b92b-4d3f-b325-b8b8f9908999。slides 第 29 页自己写着：公式内复用可用 LET；跨公式共享，或目标版本不支持 LET，可用辅助单元格。后半句是 slides 批注。文档写的是名字只在这个 LET 里有效，适用范围是 Microsoft 365、Excel 2021 和 Excel 2024。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v004109967.jpg",
-          "time": 4109.967,
-          "caption": "幻灯片“我们其实要实现的是编译器”。二维码算法容易用伪代码描述，但不能原样变成 Excel 公式。先用中间语言（IR）表达计算规则，再决定怎样落到 Excel 上。Python 的函数和循环构造计算图；字符串输入保留为符号；分支写成 Select(cond, a, b)，留到运行时判断。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p25.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 25,
+          "related_time": 4109.967,
+          "caption": "官方 slides 第 25 页，标题“我们其实要实现的是‘编译器’”。二维码算法容易用伪代码或编程语言描述，但不能原样变成 Excel 公式。先用中间语言（IR）表达计算规则，再决定怎样落到 Excel 上。Python 的函数和循环负责构造计算图，按选定容量展开有限的计算步骤；字符串输入保留为符号，用户改动单元格后由 Excel 重新计算；输入决定的分支写成 Select(cond, a, b)，留到运行时判断。页码 25/47。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p27.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 27,
+          "related_time": 4200.0,
+          "caption": "官方 slides 第 27 页，标题“让需求变更找到自己的位置”。算法只认识 Input(\"text\")；输入绑定与布局模块才知道它在 Input!B2。兼容不同 Excel 版本、移动二维码、改变计算方式、增加字符串单元格，各有负责修改的部分。紫色 AIGC 批注指向 Parnas 1972：围绕困难、可能变化的设计决策划分模块，并把这些决策隐藏在接口后面。页码 27/47。"
         }
       ],
       "visual": {
@@ -1109,7 +1199,8 @@
           "算子",
           "需求的变化"
         ]
-      }
+      },
+      "flow": "p0 p1 p2 p3 p4 e0 n0 n1 f0 x3 x17 x4 f1"
     },
     {
       "title": "五十万行看起来能维护，本质仍是 CRUD",
@@ -1167,10 +1258,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v004409967.jpg",
-          "time": 4409.967,
-          "caption": "幻灯片“新增功能，越来越像拆盲盒”。GPT-6 Astra xhigh 还认为能维护，但业务逻辑挤在几个大文件里；再不拆分和统一规则，新增功能就会越来越像拆盲盒。配图台词：我…不当人类了！JoJo！"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p32.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 32,
+          "related_time": 4409.967,
+          "caption": "官方 slides 第 32 页，标题“新增功能，越来越像拆盲盒”。GPT-6 Astra xhigh 还认为：能维护，但现在是把业务逻辑挤在几个大文件里的演示原型；再不拆分和统一规则，新增功能就会越来越像拆盲盒。配图台词是“我…不当人类了！JoJo！”。页码 32/47。"
         },
         {
           "source_type": "video_frame",
@@ -1179,10 +1273,13 @@
           "caption": "代码编辑器中的教务 demo。文件树里有 App.tsx。编辑区是一个很长的 function applications，单行被拉得很长。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v004769167.jpg",
-          "time": 4769.167,
-          "caption": "幻灯片“CRUD 架构 / 用当前状态描述整个世界”。当前状态的快照包括学生、教师、选课。数据库课要求 normal form，防止不一致。每个需求点写状态查询或修改。Everything is a state machine 的诱惑。架构是一种看待问题的方式。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p33.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 33,
+          "related_time": 4769.167,
+          "caption": "官方 slides 第 33 页，标题“CRUD 架构”，小标题“用‘当前状态’描述整个世界”。任何时候系统都有一个当前状态快照：学生、教师、选课。数据库课要求消除表中冗余（normal form），防止不一致。为每个需求点写状态查询或修改的业务逻辑。下面写着 Everything is a state machine 的诱惑。底部：架构是一种看待问题的方式。页码 33/47。"
         }
       ],
       "visual": {
@@ -1306,7 +1403,8 @@
         "85 分 12 秒的幻灯片标题是“同一个 dept_id，还是新的 dept_id？”。两个选择都在承诺一种业务语义。沿用旧 ID、覆盖名称：学生、课程、权限关联继续有效；旧报表一 JOIN，历史上的“计算机系”也变成“计算机学院”。新建 ID：旧组织得以保留；不迁关联，新学院像个空壳；全量迁关联，学生和课程过去的归属又被改写。跨年统计、权限继承、培养方案适用范围，都需要定义旧组织与新组织的关系。下一栏：先判断身份是否延续，再给变化建模。如果业务认定组织身份延续，保留稳定的 org_id，名称、层级、隶属关系按有效期保存版本。如果业务认定产生了新组织，建立新 ID，记录带日期的承继关系；学生、课程按业务决定转移，保留原归属。查询明确选择“当时归属”或“按今天口径汇总”；培养方案单独绑定版本，不能让新名称自动触发新规则。"
       ],
       "editor_notes": [
-        "转写“先医这一片”按语境和教室地点校正为仙林。转写“南大没戏了”保留为讲师的感叹，不是一个系统功能的名字；紧接着画面上的提示是“当前环境异常”。二零一一年、计算机系改成计算机学院，是口播。幻灯片上的 dept_id、org_id、JOIN、有效期版本是画面文字，口播没有逐条念，正文放在课堂案例里并标明是幻灯片。二零零零年成立、二三十万、室友和研究生院系统，都是讲师的回忆。"
+        "转写“先医这一片”按语境和教室地点校正为仙林。转写“南大没戏了”保留为讲师的感叹，不是一个系统功能的名字；紧接着画面上的提示是“当前环境异常”。二零一一年、计算机系改成计算机学院，是口播。幻灯片上的 dept_id、org_id、JOIN、有效期版本是画面文字，口播没有逐条念，正文放在课堂案例里并标明是幻灯片。二零零零年成立、二三十万、室友和研究生院系统，都是讲师的回忆。",
+        "材料 weixin-2024-07-10 是 2024-07-10 的微信文章《速报丨南大没系了！见证历史！》。正文写的是数学系、计算机科学与技术系、哲学系（宗教学系）撤销，数学学院、计算机学院、哲学学院成立。讲义页和 slides 第 36 页链到这篇文章。口播只说计算机系变成计算机学院，没有念这三组名单和日期。"
       ],
       "frames": [
         {
@@ -1316,10 +1414,13 @@
           "caption": "屏幕右侧灰色遮罩上的提示：标题“环境异常”。较小的一行从“当前环境异常”写起，并写完成验证后即可继续访问。绿色按钮是“验证”。下方白卡片是安全检查提示。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005112567.jpg",
-          "time": 5112.567,
-          "caption": "幻灯片“同一个 dept_id，还是新的 dept_id？”。选择一：沿用旧 ID、覆盖名称，历史报表里的计算机系也会变成计算机学院。选择二：新建 ID，不迁关联则新学院像空壳，全量迁移又会改写过去的归属。先判断组织身份是否延续，再按有效期或带日期的承继关系建模。查询要明确“当时归属”还是“按今天口径汇总”。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p37.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 37,
+          "related_time": 5112.567,
+          "caption": "官方 slides 第 37 页，标题“同一个 dept_id，还是新的 dept_id？”。沿用旧 ID、覆盖名称：关联继续有效，但旧报表一 JOIN，历史上的“计算机系”也变成“计算机学院”。新建 ID：不迁关联则新学院像空壳，全量迁关联又会改写过去的归属。先判断组织身份是否延续：延续则保留稳定 org_id，名称和隶属按有效期保存版本；新组织则建新 ID，并记录带日期的承继关系。查询要明确“当时归属”还是“按今天口径汇总”。页码 37/47。"
         }
       ],
       "visual": {
@@ -1341,7 +1442,8 @@
           "CRUD",
           "single point of truth"
         ]
-      }
+      },
+      "flow": "p0 p1 p2 p3 p4 p5 e0 e1 n0 n1 f0 x6 f1"
     },
     {
       "title": "把历史记下来：event sourcing",
@@ -1390,20 +1492,64 @@
         "95 分 12 秒的幻灯片标题是“Event Sourcing：从事件历史生成状态”。流程是：选课需求（可能被拒绝）→ 校验规则 + 并发检查 → 已选课事件（已接受的事实）→ 只追加的事件历史（权威记录）。示例事件按顺序是：张三已选 GSE，张三已退 GSE，张三已选 OS。同一份历史生成多种视图：投影 / Replay 得到“当前选课：OS”和“教师点名册”。小字：被接受的变更留下事实；决策事件保存适用规则与依据；事件格式需版本化；重放重建视图，不重发通知；不按新规则改写过去的既成决定。底部：按顺序应用已经接受的事实；新事件增量更新，历史事件支持重建。"
       ],
       "editor_notes": [
-        "转写 “local headed 的这个 right headed 的 journal”“数据数据库操行课” 听感含糊。笔记只保留他明确的三点等价：日志回放、git/SVN 的 delta、CRUD 的当前状态，不把听不清的日志形容词改写成 write-ahead log。2007 入学、2011 毕业、2024 年计算机系改为计算机学院，是口播里的例子。GSE、OS 和“张三已退 GSE”是幻灯片上的示例，不是口播。CQRS 的英文全称 command query responsibility segregation 是口播展开的。"
+        "转写 “local headed 的这个 right headed 的 journal”“数据数据库操行课” 听感含糊。笔记只保留他明确的三点等价：日志回放、git/SVN 的 delta、CRUD 的当前状态，不把听不清的日志形容词改写成 write-ahead log。2007 入学、2011 毕业、2024 年计算机系改为计算机学院，是口播里的例子。GSE、OS 和“张三已退 GSE”是幻灯片上的示例，不是口播。CQRS 的英文全称 command query responsibility segregation 是口播展开的。",
+        "口播只点出 CQRS 和 domain driven design 是和 event sourcing 独立的词，并说不必先记住。读写怎么拆、限界上下文、6 月 1 日生效和 6 月 3 日才录入，是讲义页 gse-lect6 和 slides 第 42–44 页上的，不是这一段口播。材料 fowler-bitemporal 用 actual time 和 record time 解释两个时间；Sally 的工资例子是那篇文章自己的，不要和 slides 上的豁免日期当成同一个故事。",
+        "材料 cheney-provenance-2007 读的是 arXiv:0708.2173v2 全文。不可计算的是最少的依赖注解，不是“不能把依赖记下来”。slides 第 44 页要显式记下结果对输入的依赖，那是紫色批注，不是这篇论文的原话。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v005412567.jpg",
-          "time": 5412.567,
-          "caption": "幻灯片“把依赖变成 First-Class Citizens”。dependency 为什么不能变成 first-class citizens？数据结构可以记当前状态，也可以记操作历史。例子：张三选修了《生成式软件工程》。状态由 replay 事件序列决定。底部：你发明了 event sourcing。余额是结果，逐笔记录让我们知结果从何而来。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p39.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 39,
+          "related_time": 5412.567,
+          "caption": "官方 slides 第 39 页，标题“把依赖变成 First-Class Citizens”。引语：既然都知道 dependency 是问题，为什么不能直接把它们变成 first-class citizens？数据结构可以记当前状态，也可以记操作历史，例子是张三选修了《生成式软件工程》。状态由 replay 事件序列决定，语义等于状态机。底部“祝贺，你发明了 event sourcing”，链到 Fowler 的 Event Sourcing。紫色 AIGC 批注：账本的直觉是余额是结果，逐笔记录让我们知道结果从何而来。页码 39/47。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005712567.jpg",
-          "time": 5712.567,
-          "caption": "幻灯片“Event Sourcing：从事件历史生成状态”。选课需求经校验规则成为已选课事件，进入只追加的事件历史。示例：1 张三已选 GSE，2 张三已退 GSE，3 张三已选 OS。投影/Replay 得到当前选课 OS 和教师点名册。小字写明重放不重发通知，也不按新规则改写过去的既成决定。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p40.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 40,
+          "related_time": 5712.567,
+          "caption": "官方 slides 第 40 页，标题“Event Sourcing：从事件历史生成状态”。流程：选课需求（可能被拒绝）→ 校验规则 + 并发检查 → 已选课事件（已接受的事实）→ 只追加的事件历史。示例按顺序是：1 张三已选 GSE，2 张三已退 GSE，3 张三已选 OS。投影 / Replay 得到“当前选课：OS”和“教师点名册”。小字：决策事件保存适用规则与依据；事件格式需版本化；重放重建视图，不重发通知；不按新规则改写过去的既成决定。紫色 AIGC 批注写按顺序应用已经接受的事实，并链到 Event Sourcing。页码 40/47。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p41.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 41,
+          "related_time": 5720.0,
+          "caption": "官方 slides 第 41 页，标题“Replay 时，究竟重放什么？”。恢复历史是还原当时记录的事实和决定；“当年已授予学位”不能因今天重算不通过就消失。重新计算是在新投影里回答“按新方案会怎样”；要改变正式结论，再走审核并记录新决定。紫色 AIGC 批注分开两条链接：版本演进，以及重放时隔离通知、扣费等副作用。页码 41/47。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p42.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 42,
+          "related_time": 5778.32,
+          "caption": "官方 slides 第 42 页，标题“CQRS：读与写，可以有不同的模型”，副标题 Command Query Responsibility Segregation。Command 表达业务意图，例如申请选课，检查资格、容量、冲突后接受或拒绝。Query 按使用者组织信息，例如学生课表、教师点名册、教务统计。紫色 AIGC 批注写：读写模型可以共享进程和数据库；是否使用 Event Sourcing，是另一项选择。异步更新时，选课已确认但课表还没刷新，界面应能解释这个间隙。页码 42/47。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p43.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 43,
+          "related_time": 5787.0,
+          "caption": "官方 slides 第 43 页，标题“DDD：让业务概念决定软件边界”。开发者与教务人员共同建立模型，让“选课”“学分认定”“毕业审批”成为代码中的概念。紫色 AIGC 批注写统一语言：在一个明确边界内，同一个词具有一致含义。“学生”在选课、财务、毕业审核里不是同一种模型，各自维护，通过明确接口对接。页底写三者可以组合：DDD 安排语义和边界，CQRS 分开读写，Event Sourcing 选择如何保存历史。页码 43/47。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p44.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides6.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides6.html",
+          "page": 44,
+          "related_time": 5795.0,
+          "caption": "官方 slides 第 44 页，标题“实践：让一个结论带着它的依据”。一次毕业审核记录：输入记录 ID 与版本（或快照）+ 规则版本 + 结论 + 审批依据。例：豁免 6 月 1 日生效，6 月 3 日才录入；这两个时间都要保留，才能分别回答“6 月 2 日豁免是否已生效”和“6 月 2 日系统为何拒绝毕业”。紫色 AIGC 批注把前一个时间问题链到双时态历史，并写还要显式记录结果对输入的依赖。页码 44/47。"
         }
       ],
       "visual": {
@@ -1425,11 +1571,184 @@
           "计算机系",
           "2024 年"
         ]
-      }
+      },
+      "flow": "p0 p1 p2 p3 p4 e0 e1 n0 n1 n2 f0 f1 x7 x8 f2 x9 x10 f3 x12 x13 f4 x11 x15 f5 x14"
     }
   ],
-  "bridges": {},
-  "supplements": [],
+  "bridges": {
+    "x0": "口播说看过 Royce 的那篇老论文，并说他批判了这种模式。下面是论文里他自己的句子。",
+    "x1": "口播用银弹收束需求这一半。slides 第 11 页和第 13 页的批注指向下面这篇，课堂没有说出作者名字。",
+    "x2": "getopt 是口播里的小架构。slides 把“变化藏进模块”标到下面这篇，放在这张架构图旁边。",
+    "x3": "中间语言要落到 Excel 的格子上。讲义页用下面这份指南说明重复计算和辅助单元格。",
+    "x4": "同一页批注还建议用另一套二维码实现来核对。下面只是那份 README 里写明的范围。",
+    "x5": "汉诺塔这一节的批注用一篇认知科学论文说明表示会改变难度。下面只写读过的框架。",
+    "x6": "口播说计算机系变成了计算机学院。讲义页链出的短讯写了当时一起调整的三个系。",
+    "x7": "口播从 persistent data structure 走到 event sourcing。讲义页和 slides 正文给出的定义在下面。",
+    "x8": "同一处讲义还指出重放、补偿和版本这些代价。下面是那一页读过的取舍。",
+    "x9": "口播说 CQRS 和 event sourcing 相互独立。slides 批注指向的说明在下面，并写了它自己的风险判断。",
+    "x10": "讲义页“参见”的是微软这一页。它和上一篇一起，说明读写分开不等于必须换成事件存储。",
+    "x11": "slides 第 44 页要同时留下两个时间。批注用的术语在下面，例子不要和豁免日期混成一个故事。",
+    "x12": "口播把 domain driven design 当成不必先记的词。讲义页说定义可以参考下面这份摘要。",
+    "x13": "同一页 slides 的批注另外链了一篇短文，解释为什么一个大领域不能只有一个模型。",
+    "x14": "讲义页写了逐步换轨，没有用这个名字。名字出现在 slides 第 46 页的批注里。",
+    "x15": "第 44 页还要显式记下结果依赖哪些输入。批注指向的论文这次只读了摘要。",
+    "x16": "需求这一节的 slides 用一篇规划论文作对照。全文没有打开，下面只说明边界。"
+  },
+  "supplements": [
+    {
+      "title": "Royce 1970：他相信分阶段，批判的是不加这五步的实现",
+      "source_label": "讲师口述提到的论文，非 slides 链接",
+      "source_url": "https://web.archive.org/web/20081120024315/http://www.cs.umd.edu/class/spring2003/cmsc838p/Process/waterfall.pdf",
+      "pages": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8
+      ],
+      "text": "材料 royce-1970，Winston W. Royce，Managing the Development of Large Software Systems，IEEE WESCON 1970 年 8 月，第 1–9 页；这份文件是课程扫描件的存档，作者行被 OCR 成 Rovce。物理页 1：分析和编码两步只够小的、由建造者自己运行的内部程序；更大的系统要在前面加两层需求，中间加程序设计，后面加测试。物理页 2 的原句是他相信这个概念，但上面描述的实现有风险、会招致失败。测试发生在最后，时间和存储这时才被经历而不是被分析；一旦不满足外部约束，就常常要大改，开发过程回到原点，进度或成本可以超支到一倍。他接着说这个图示方法从根本上仍是对的，要加五步才能去掉大部分风险。物理页 4 的第一步是分析开始前先做初步程序设计，由程序设计者而不是分析员开头，并写一份人人能看懂的概述。物理页 5：文档要很多，管理软件的第一条规则是毫不留情地执行文档要求；五百万美元硬件他预期大约 30 页规格就够控制，同规模软件要厚得多。扫描件这一句的页数 OCR 是碎的，这里不引用那个页数。物理页 7：第一次做的关键部分要做两遍，先做一次缩小的试点或仿真。他给的例子是 30 个月的项目试点或可排到 10 个月，12 个月的项目试点或可压到 3 个月。物理页 8：测试交给没写这部分的人；明显错误靠第二个人目视检查，不要先用计算机抓丢了的负号；每条逻辑路径至少用数值检查一次；客户要在需求定义之后、最终交付之前正式参与。他的总结是这五步都要花钱，但更简单的做法在他经历的大型开发里没有成功过，事后补救更贵。图的线条这一版没有逐张核对，补充只采用文字层里读得清的句子。"
+    },
+    {
+      "title": "Brooks 1987：没有单一技术能单独带来一个数量级，但路还在",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://cgi.csc.liv.ac.uk/~coopes/comp319/2016/papers/NoSilverBullet-Brooks1987.htm",
+      "text": "材料 brooks-1987，Frederick P. Brooks, Jr.，No Silver Bullet: Essence and Accidents of Software Engineering。这篇 HTML 开头有 Brad Cox 的序，下面的话只来自 Brooks 正文，不把序当成他的话。开篇写的是狼人：熟悉的东西会突然变成可怕的东西，于是人们找能把它制服的银弹。软件项目在非技术经理看来也是这样。往后十年，他看不到任何一项技术或管理手法，能单靠自己把生产率、可靠性和简单性同时提高一个数量级。他紧接着写：怀疑不是悲观。许多改进合在一起、有纪律地用下去，确实应该带来一个数量级；没有御道，但有路。本质困难是软件本身：数据、关系、算法和函数调用咬合在一起的概念构造。难的是这个构造的规格、设计和测试，不是把它写下来、再核对写法是否忠实。他列出四项不可约的性质：复杂性、顺从性、可变性和不可见性。复杂性这一节读过：没有两块是一样的，否则就会收成子程序；放大不是把同一块重复得更大，而是不同部件变多，部件之间常以非线性方式相互作用。快速原型那一节也读过：客户即使和工程师一起，也不可能在试用一些版本之前，把现代软件产品的需求完全、精确、正确地写出来。原型模拟重要界面并完成主要功能，通常不做例外、非法输入和干净中止。它的用途是让概念结构变得可试。文中关于 Ada、面向对象和人工智能的综述，以及文后的狼人传说附录，这次没有纳入已读范围。"
+    },
+    {
+      "title": "Parnas 1972：先藏会变的决定，不要先按流程图切模块",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://ckrybus.com/static/papers/decomposing_systems_into_modules_1972.pdf",
+      "pages": [
+        1,
+        6
+      ],
+      "text": "材料 parnas-1972，D. L. Parnas，On the Criteria To Be Used in Decomposing Systems into Modules，Communications of the ACM，1972 年 12 月。他用 KWIC 索引比较两种切法。第一种按处理步骤切：输入、循环移位、字母排序、输出，再加一个主控。这是常见的流程图切法。第二种按要隐藏的决定切：例如行存储把字符怎么放藏起来，外面调用 CHAR 取字符、SETCHAR 设字符，WORDS(r) 返回第 r 行的词数。物理页 6 的结论是：不要从流程图开始分解。先找出困难的、或很可能改变的设计决定，让每个模块隐藏这样一个决定。这样切出来的模块不会对应处理步骤。层次结构和切得干不干净是两件事。论文也写明：如果仍假设一个模块就是若干子程序，这种非常规切法在多数情况下会更慢；他另给了一种不靠这个假设的实现。slides 第 14 页和第 27 页用的就是这个准则，不是课堂口述。"
+    },
+    {
+      "title": "Excel 重算：先去掉重复计算，再用辅助单元格",
+      "source_label": "官方讲义页引用，非课堂口述",
+      "source_url": "https://learn.microsoft.com/en-us/office/vba/excel/concepts/excel-performance/excel-improving-calculation-performance",
+      "text": "材料 excel-calc-performance。讲义页和 slides 第 29 页都用这份指南说明：拆开巨型公式、减少重复计算、用辅助单元格保存中间结果。读过的部分是计算依赖和重算，以及“去掉重复计算”这一规则。Excel 会跟踪单元格的前序，F9 做的是按依赖的智能重算；Ctrl+Alt+F9 是完整计算；Shift+Ctrl+Alt+F9 会重建依赖。第一条规则是删掉重复的、反复的、不必要的计算，把它们挪到辅助单元格；多出来的行和列用来把中间结果只存一次。易失函数每次都会重算。页内其余的 VBA 和数据透视优化这次没有逐节读，不写进这里。"
+    },
+    {
+      "title": "Nayuki 的二维码库：用来做另一套实现，不是课堂作业",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://github.com/nayuki/QR-Code-generator",
+      "text": "材料 nayuki-qr-readme 只读了 GitHub 上这份 README，没有读库的源码，也没有读项目主页。README 写的目标是选项灵活，并且绝对正确。它覆盖六种语言（Java、TypeScript/JavaScript、Python、Rust、C++、C），QR Model 2 的全部 40 个版本和 4 级纠错，可以输出原始模块，许可是 MIT。slides 第 28 页的紫色批注用它做例子：用另一套实现或一个解码器来核对，避免 Python 和 Excel 两个后端共享同一个算法错误；逐像素比较之前先固定版本、纠错等级、分段和掩码，否则改为比较解码内容。这是批注里的检查方法，不是讲师口述的阅读要求。"
+    },
+    {
+      "title": "Zhang 与 Norman 1994：同构的汉诺塔，难度可以差一个数量级",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://pages.ucsd.edu/~scoulson/203/zhang.pdf",
+      "pages": [
+        1,
+        16,
+        18,
+        21,
+        24,
+        29,
+        32
+      ],
+      "text": "材料 zhang-norman-1994，Jiajie Zhang（Ohio State）与 Donald A. Norman（Apple），Representations in Distributed Cognitive Tasks，Cognitive Science 18（1994），印刷页 87–122。期刊印刷页是 87–122。分布式表示是内部表示加外部表示，合在一起表示任务的抽象结构；表示分析把一个有层次的任务拆开，看每一层换一种同构写法，行为会不会变。他们拿三盘汉诺塔做这件事。规则可以写在指令里（内部），也可以做进物体：圆环套在柱子上，较小的拿不出来，这条规则就不必再说。实验 1A 和 1B 各 24 名加州大学圣迭戈分校本科生，修学分。每人做四种条件，顺序随机；因为人数不够，开局和终局位置没有完全随机，作者写这不预期造成系统偏差。最短步数分别是 2、4、7、8。时间、步数和错误都除以这个最短步数再比。1A 的规则全写在指令里。按时间和错误，从易到难是：只有规则 1，然后规则 1 和 3，然后四条规则，最难的是中间那档（规则 1、2、3）。四条和三条的差别不显著。按步数，次序相同，但“规则 1 和 3”与“四条规则”的差别不显著。讨论里写，最容易的（只有规则 1）和最难的（规则 1、2、3）解题时间可以差到大约一比十。1B 除规则 1 以外都做成外部约束：吸管保证只能先动最外面的，咖啡杯用“不能洒”和“上面有杯子就拿不起来”，茶杯再加大小杯子不能互相叠。按时间，从易到难是规则 1，然后只外化规则 3，然后外化规则 2 和 3，然后三条都外化；中间两档的差别不显著。按步数，最后两档的差别不显著。这一组没有错误。规则全在脑子里时，最难的不是规则最多的那一档；规则做进物体以后，约束越紧越难，但仍然比对应的内部规则版本容易。图 10 里方块是 1A，圆点是 1B，纵轴已经除以最短步数。1B 的错误贴在零上。实验 2 有 18 名同样来源的学生，三条规则不变，只改放在内部还是外部。从难到易：三条都写在指令里，然后标准汉诺塔（规则 3 由圆环和柱子保证），然后咖啡杯（规则 2 和 3 是外部的）。后两者的差别不显著。图 13 三条线都往下。表 2 用 Fisher PLSD：主效应时间、步数、错误分别小于 .05、.05、.005；三条都内部对标准汉诺塔，时间小于 .1、步数小于 .1、错误小于 .03；三条都内部对咖啡杯，时间小于 .01、步数小于 .02、错误小于 .001；标准汉诺塔对咖啡杯，时间大于 .3、步数大于 .4、错误大于 .2。错误都出在内部规则上，外部规则没有错误。作者说明，咖啡那条“不能把小杯放在大杯上”靠的是服务员不该洒咖啡，不是刚性的物理挡板，他们仍把它算作外部规则。18 人共 54 局，最后三步在 52 局里就是三步，只有 2 局用了五步。咖啡杯 18 局里 16 局先把最小的杯子送到终点；三条都内部的是 11 局先送最小的、7 局先送中等的；标准汉诺塔是 10 和 8。实验 3 有 36 名付费本科生，九种同构，序数维用大小、位置或颜色。颜色的顺序（红大于绿大于黄）必须记住，所以算内部；大小和位置的顺序长在物体上，算外部。图 16 的时间和错误里，位置那一档明显更低。讨论写：序数维上，位置的时间和错误显著好于大小和颜色，大小好于颜色但不显著；步数上位置显著好于大小，没有显著好于颜色。名义维上，位置的时间和错误显著好于大小和颜色，大小和颜色之间不显著；步数三项都不显著。交互不显著。他们把大小对颜色没有拉开，归到“记住红绿黄也许太轻”。位置更好，他们归到空间维度，而不只是“外部”这一条。slides 第 17 页用这篇支持“同一个问题，换一种表示，难度就可能改变”。这个差别依赖规则写在指令里还是做进物体，也依赖看时间、错误还是步数；不是任意换一种画法都会变难。"
+    },
+    {
+      "title": "2024-07-10：三个系撤销，三个学院成立",
+      "source_label": "官方讲义页与 slides 正文引用，非课堂口述",
+      "source_url": "https://mp.weixin.qq.com/s/ibm6hFMc_JaMOWlqg7RF7A",
+      "text": "材料 weixin-2024-07-10，标题《速报丨南大没系了！见证历史！》，创建时间 2024-07-10 13:54。正文写：南京大学数学系、计算机科学与技术系、哲学系（宗教学系）撤销，数学学院、计算机学院、哲学学院成立。后面还有一句宣传：天空轰隆一声巨响，哲院、数院、计院闪亮登场。再往后是预览、不喜欢这类微信界面。创建时间写在页面脚本的 create_time 里，是 2024-07-10 13:54。"
+    },
+    {
+      "title": "Fowler 2005：事件是事实的序列，重放时不要再通知外部世界",
+      "source_label": "官方讲义页与 slides 正文引用，非课堂口述",
+      "source_url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "text": "材料 fowler-event-sourcing，Martin Fowler，Event Sourcing，2005-12-12，页面自己标成草稿。讲义页和 slides 第 39 页正文都链到这篇，不是只出现在紫色批注里。读过的部分是定义、回退和 External Updates。定义是：把应用状态的全部变化记成一系列事件。航运例子里，King Roy 和 Prince Trevor 的货物移动不是只改一张当前表，而是留下事件；系统同时保存应用状态和事件日志。回退可以靠差额，也可以靠快照再重放。外部更新那一节的要点是：重放会再次碰到“发通知、付款”这类动作。做法是把外部系统包进 Gateway，重放期间关掉它，避免把通知和付款再发一遍。草稿状态意味着这不是定稿规范。文中其余例子没有逐段读完。"
+    },
+    {
+      "title": "微软的事件溯源：多数 CRUD 不该迁，冲突靠补偿和版本",
+      "source_label": "官方讲义页引用，非课堂口述",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing",
+      "text": "材料 ms-event-sourcing。讲义页用它说明版本化和补偿事件。读过的是取舍、重放、乐观并发、补偿与版本、快照，以及不该使用的情形；页内示例代码没有逐行读。它写明：迁到事件溯源代价高，不适合大多数 CRUD。每个实体一条事件流，用重放得到物化视图，视图是最终一致的。乐观并发是：追加时如果流已经变了，就拒绝这次追加，重新加载再判断。记错了不改旧事件，追加补偿事件，原来的事件还在。事件要有版本，用 upcaster 读旧格式；存下来的事件不可变。快照只是优化，不是事实来源。不要把 Kafka 当成事件存储。跨实体的“最后一个名额”仍然要由应用自己处理，模式名字解决不了。"
+    },
+    {
+      "title": "Fowler 的 CQRS：多数系统会因此更险，事件溯源是进一步的选择",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://martinfowler.com/bliki/CQRS.html",
+      "text": "材料 fowler-cqrs，Martin Fowler，CQRS，2011-07-14。他写自己是从 Greg Young 那里听到的。更新模型和读取模型可以不同。原文有一句判断：对大多数系统，CQRS 增加的是有风险的复杂度。两个模型可以共用一个数据库，也可以分成两个库，后者接近报表库。它和事件协作合得来，也可以使用事件溯源，但那是再往前的一项选择，不是 CQRS 的定义。分开以后常会遇到最终一致。他把它放在复杂领域上，并说这类领域也适合领域驱动设计。slides 第 42 页的紫色批注链的是这篇。讲义页正文写“参见”时给的是微软那一页，不是这篇 bliki。"
+    },
+    {
+      "title": "微软的 CQRS：查询不改数据，最后一个房间不是模式能保证的",
+      "source_label": "官方讲义页引用，非课堂口述",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs",
+      "text": "材料 ms-cqrs。讲义页说参见这一页。读过的是模型分开、存储可合可分、查询不改数据，以及最后一间房的竞争；没有把整页示例都读完。查询不改变数据，返回的是为这次查询准备的 DTO。基础做法可以共用一个数据库，只是读写模型分开。存储真的分开以后就要同步；因为消息代理和数据库不是同一个事务，他们写到事务性 outbox，消费端要能重复执行。最后一个房间两个人同时订，模式本身不裁决，应用还得做候补名单这类处理。这和 slides 第 42 页的说法一致：读写可以共享进程和数据库。"
+    },
+    {
+      "title": "Fowler 的双时态：事情发生的时间，和系统记下的时间",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://martinfowler.com/articles/bitemporal-history.html",
+      "text": "材料 fowler-bitemporal。slides 第 44 页的紫色批注用“双时态历史”称呼两个时间。Fowler 在这篇里不用 valid time / transaction time 这组词，因为他觉得那组词在讨论里把人弄混了；他用 actual time 和 record time。例子是：3 月 25 日，我们认为 Sally 在 2 月 25 日的工资是 6500。接口形状是 salaryAt(actual, record)。未来的值允许存在：5 月 5 日被告知，5 月 12 日才加薪。记错了也可以追溯更正：2 月 15 日的加薪在 4 月 5 日被记成 6400。这次读的是这组术语和这两个例子，没有逐格核对文中其余工资表。slides 上“豁免 6 月 1 日生效、6 月 3 日才录入”是讲义页和这一页自己的例子，不是 Sally 的工资。"
+    },
+    {
+      "title": "Evans 2015：先有边界，再在边界里说同一种话",
+      "source_label": "官方讲义页引用，非课堂口述",
+      "source_url": "https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf",
+      "pages": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "text": "材料 evans-ddd-reference-2015，Eric Evans，DDD Reference，Domain Language, Inc.，2015，CC BY 4.0。讲义页说定义可以参考这份摘要，没有要求读完全部模式。这次读的物理页是封面到目录，以及印刷页 1 起的总述、Bounded Context、Ubiquitous Language、Continuous Integration、Model-Driven Design 和 Hands-on Modelers 的开头。印刷页和 PDF 物理页差 7 页：下面用物理页。物理页 8 的三点是：抓住核心域；领域人员和软件人员一起探索模型；在一个明确划界的上下文里说同一种普遍语言。物理页 9：多个模型不可避免；边界要显式划出，边界可以落在团队、应用的一部分、代码库或数据库模式上；边界内部持续集成，不要和边界外面的模型混用。物理页 10–11：把模型当成图表、文字、谈话和代码里的语言骨干；语言一变，就是模型变了。物理页 14：改代码的人必须能说出模型，做模型的人必须碰到代码。物理页 16 以后的模式条目没有读。"
+    },
+    {
+      "title": "限界上下文：一个大领域装不下唯一的模型",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://martinfowler.com/bliki/BoundedContext.html",
+      "text": "材料 fowler-bounded-context，Martin Fowler，Bounded Context，2014-01-15。slides 第 43 页的紫色批注链到这篇。他把它写成领域驱动设计的核心战略模式：普遍语言必须在内部一致。大的领域做不到一个统一模型。Evans 的原意是，完全统一并不可行。他用的多义词是 meter，在不同上下文里不是同一个东西；Customer 和 Product 也会这样。边界常常跟着人实际说话的方式走。这篇是在解释 Evans 的概念，不是替代上面那份 2015 年的定义摘要。"
+    },
+    {
+      "title": "Strangler Fig：一段一段换，不是一次换掉",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://martinfowler.com/bliki/StranglerFigApplication.html",
+      "text": "材料 fowler-strangler，Martin Fowler，Strangler Fig Application，2024-08-22。他把旧名 Strangler Application 改掉，是为了避开那个词的暴力意味。做法是逐渐替换，而不是一次性重写。他转述 Cartwright、Horn 和 Lewis 的四件事：对齐结果、把问题拆开、交付其中一块、改变组织。这四件不是一条固定顺序。一次性替换常常失败，因为行为很难事先写全，而且其中很大一部分其实是不想要的。这个名字只出现在 slides 第 46 页的紫色批注里。讲义页描述的是同一件事：先从一条业务链接管写入，旧系统提供切换时的基线快照，缺失的历史不要伪造，一条业务只认一个权威来源。课堂口述没有用这个名字。"
+    },
+    {
+      "title": "依赖来源：最少的那种注解不可计算",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://arxiv.org/abs/0708.2173",
+      "text": "材料 cheney-provenance-2007，James Cheney（爱丁堡）、Amal Ahmed（印第安纳）、Umut A. Acar（马普所软件系统）。这一版 PDF 共 35 页，页边印着 arXiv:0708.2173v2 [cs.DB] 22 Dec 2009，首页另有 Received 3 June 2018，脚注写这是 2007 年 DBPL 那篇的修订扩展，投 Mathematical Structures in Computer Science。下面的话属于这一版 PDF，不把 2018 年的收稿日期说成 2007 年会议上已经有的句子。他们把“输出的哪一块依赖输入的哪一块”定义成：只改输入里标成颜色 c 的那一处，输出里可能跟着变的，也应该只是标了 c 的部分（定义 3.4，dependency-correct）。注解可以正确但很粗：把输入上所有颜色都抄到每一块输出，也算正确，只是什么都没告诉你。最少注解是再删任何一个颜色就会破坏这条性质。命题 3.3：布尔值的嵌套关系演算查询是不是常数，不可判定，因为查询等价不可判定；于是最少的依赖注解，或最少的切片，也不可计算。即便只看布尔表达式、等价性可以判定的那一块，最少依赖仍然难，他们说可以归约到有效性问题。最少注解是否唯一，留成猜想。能做的是过近似。动态跟踪（第 4 节，定理 4.1）对嵌套关系演算是 dependency-correct，但不必最少：x 减 x 恒为空，跟踪结果仍带着 x 的颜色。差集和相等测试会把两边的颜色都收进来。常量没有颜色。let 里如果名字后来没用到，构造这个名字的依赖可以不传到结果，他们写这是因为查询没有副作用、也不会不停机。静态分析（第 5 节）不看具体数据。带颜色的类型把注解解释成上界。定理 5.2 说，如果带注解的类型判断成立，动态跟踪 P[[e]] 的结果就落在这个类型里。原型是一个小的 NRC 解释器，用 HTML 和 JavaScript 高亮反向切片，没有大库实验，也没有报精度数字。最坏情况一条输出会依赖全部输入，例如一串自己减自己的表再并上真正的查询；优化器能化简，他们的跟踪不会。他们写还没接到大规模数据库上。和 Buneman 等人的 where-provenance 不同：那里跟踪值从哪一格拷来，平均分子量这种算出来的字段没有 where-provenance，但依赖很多输入。引言里的例子是蛋白质分子量出现负数：要查的包括被加总的分子量，以及选择和分组拿来比较的 ID；蛋白质和反应的名字改了也不影响这个平均数。slides 第 44 页要“显式记下结果对输入的依赖”。这篇给的界限是：最少的那种依赖一般算不出来，记下来的是一种过近似，不是从结果反推出来的精确算法。",
+      "pages": [
+        1,
+        13,
+        14,
+        16,
+        23,
+        28,
+        32
+      ]
+    },
+    {
+      "title": "Rittel 与 Webber 1973：没有客观的成功，问题表述本身就是解的方向",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://web.archive.org/web/20070930021510/http://www.uctc.net/mwebber/Rittel+Webber+Dilemmas+General_Theory_of_Planning.pdf",
+      "text": "材料 rittel-webber-1973。这次读的是 Melvin M. Webber 在加州大学交通中心页面上的 PDF，Internet Archive 2007-09-30 的存档。现场的机构 URL 返回 Cloudflare 验证；doi.org 没有存档；Springer 的 PDF 转到登录页。没有绕过这些检查，也没有用别的转载站。物理页 1 核对过：Policy Sciences 4 (1973), 155–169，Elsevier Scientific Publishing Company；Horst W. J. Rittel，加州大学伯克利，Science of Design；Melvin M. Webber，同校 City Planning。脚注：修改自 1969 年 12 月 AAAS 波士顿政策科学小组的发言。下面按这份扫描件的物理页引用。摘要写：找科学基础来对付社会政策问题，会因为问题本身的性质而失败。它们是 wicked，科学对付的是 tame。政策问题不能最终描述。多元社会里没有无可争议的公共利益，也没有客观的公平定义。回应社会问题的政策不能有意义地说对或错。除非先加上很强的限定，谈最优解没有意义。没有确定、客观意义上的解。正文把规划问题和数学、分析化合物、五步以内将死分开：那些任务清楚，也清楚是否已经解开。社会问题至少不是 solved，最多是一次次 re-solved。他们列了至少十条，并说 wicked 不是道德上恶劣，而是恶性、难缠，像恶性循环，不是说规划者心怀恶意。把 wicked 问题当成 tame 问题来处理，他们写成在道德上说不过去。和这课直接相关的是这几条。1. 没有最终的问题表述。要把问题说全，就得事先想过全部可设想的解；找问题和找解是同一件事。第一代系统方法先理解问题、再搜集信息、再求解，对这种问题不成立。运筹的优化要等解空间、约束和性能指标已经定下来，而那一步才是 wicked 的部分。2. 没有内在的停止规则。停下来是因为时间、钱或耐心用完。3. 解不是真或假，而是好或坏，或者更好、更坏、够好。很多同样有资格的人按各自的利益、价值和意识形态判断，没有人能规定哪一种算正确。9. 同一个差距可以有很多种解释，选哪一种解释就决定了怎么处理。没有科学那种唯一的否证手续，选择靠的是觉得哪一种说得通、手里有什么行动，不是逻辑上的正确解释。第 IV 节：没有一个客观、非党派的社会福利函数。让一个人满足的，可能正是在给另一个人制造问题。把判断交给专家，也得不到价值中立的真假答案。规划是政治的一部分。slides 第 3 页和第 8 页的紫色批注用的就是这组判断：难的不只是怎么测量，参与者可能对什么算成功没有共识；问题怎样定义，也取决于各方的利益和价值。这是 1973 年城市规划论文里的论证，不是课堂口述，也不是他们给软件需求下的定义。",
+      "pages": [
+        1,
+        6,
+        7,
+        8,
+        12,
+        14,
+        15
+      ]
+    },
+    {
+      "title": "LET：名字只活在这一条公式里，同一段式子只算一次",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://support.microsoft.com/en-us/office/let-function-34842dd8-b92b-4d3f-b325-b8b8f9908999",
+      "text": "材料 excel-let。slides 第 29 页的紫色批注写“公式内复用可用 LET”。原链接的静态页标题就是 LET function，正文在一长串函数目录后面；这次读的是同一篇文章的规范地址，articleGuid 34842dd8-b92b-4d3f-b325-b8b8f9908999，页面元数据里的作者是 AlexJerabek。适用于 Excel for Microsoft 365、Microsoft 365 的 Mac 版、Excel 2024、Excel 2024 的 Mac 版、Excel 2021、Excel 2021 的 Mac 版。LET 在一条公式内部给计算或值起名，名字只在这个 LET 里有效。至少一对名字和值，最多 126 对。最后一个参数必须是算出结果的计算。名字要以字母开头，不能是另一个公式的输出，也不能和区域写法冲突；页面举的例子是 a 可以，c 不行，因为和 R1C1 冲突。好处写了两条：同一段式子写多次时，Excel 会算多次，用名字引用就只算一次；名字也让公式更好读。例 1：=LET(x, 5, SUM(x, 1)) 得到 6。例 2 用 FILTER 只留 Fred，空单元格换成短横。不用 LET 时 FILTER 写了两次：=IF(ISBLANK(FILTER(A2:D8,A2:A8=\"Fred\")),\"-\",FILTER(A2:D8,A2:A8=\"Fred\"))。用 LET 时，filterCriteria 是 \"Fred\"，filteredRange 是 FILTER(A2:D8,A2:A8=filterCriteria)，再 IF(ISBLANK(filteredRange),\"-\",filteredRange)。样例表是 Rep、Region、Product、Profit，从 Amy/East/Apple/$1.33 到 Fred/North/Mango/$0.54，放在 A1。页面写这个例子用 LET 更好读，并且比不用 LET 快一倍。这是这一则例子自己的说法，不是一份独立的基准测试。名字不出这条公式，所以跨公式共享仍然是另一件事。批注里“目标版本不支持 LET 就用辅助单元格”是 slides 自己的句子；这篇文档列出的是上面那些版本，没有把那句建议写进去。"
+    }
+  ],
   "self_test": [
     {
       "question": "Royce 希望的路径是什么？他为什么批判瀑布式开发？",

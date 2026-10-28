@@ -8,13 +8,40 @@
   },
   "scope": {
     "requested": "单课完整笔记 + 手绘图解 + 外部模型保真评测",
-    "materials": false,
+    "materials": true,
     "changes": [
       {
         "at": "2026-10-27T18:02:00+00:00",
         "request": "无人值守。只依据 ./raw 的转写和视频重写，不参考旧笔记或推荐材料。chunks 与 frames 扫描已预先生成，直接使用。图解用 codex exec -m gpt-6.1-sol。评审用同一模型家族的独立进程。",
         "added_work": "run 目录固定为 ./课堂笔记"
+      },
+      {
+        "at": "2026-10-28T01:30:42-04:00",
+        "request": "用新版 baocut skills 为现有课堂笔记增量补充官方讲义与推荐材料",
+        "added_work": "增量补充官方讲义与推荐材料"
       }
+    ],
+    "material_ids": [
+      "gse-lect6",
+      "gse-slides6",
+      "royce-1970",
+      "brooks-1987",
+      "parnas-1972",
+      "excel-calc-performance",
+      "excel-let",
+      "nayuki-qr-readme",
+      "zhang-norman-1994",
+      "weixin-2024-07-10",
+      "fowler-event-sourcing",
+      "ms-event-sourcing",
+      "fowler-cqrs",
+      "ms-cqrs",
+      "fowler-bitemporal",
+      "evans-ddd-reference-2015",
+      "fowler-bounded-context",
+      "fowler-strangler",
+      "cheney-provenance-2007",
+      "rittel-webber-1973"
     ]
   },
   "toolchain": {
@@ -69,7 +96,8 @@
         "index",
         "frames_scan",
         "frames_selected",
-        "visuals"
+        "visuals",
+        "materials"
       ],
       "role": "notes"
     },
@@ -105,7 +133,7 @@
       ],
       "role": "source",
       "origin": "generated",
-      "basis": "从候选帧里选定并 grab 的 23 张原分辨率画面及其 SHA-256"
+      "basis": "选定的视频帧，以及本轮插入的官方 slides JPEG 及其 SHA-256"
     },
     {
       "id": "visuals",
@@ -136,6 +164,249 @@
         "frames_selected"
       ],
       "role": "eval"
+    },
+    {
+      "id": "src-arxiv-0708-2173-abs-html",
+      "path": "sources/arxiv-0708.2173-abs.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-arxiv-0708-2173-pdf",
+      "path": "sources/arxiv-0708.2173.pdf",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-brooks-no-silver-bullet-html",
+      "path": "sources/brooks-no-silver-bullet.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-course-index-html",
+      "path": "sources/course-index.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-ddd-reference-2015-pdf",
+      "path": "sources/ddd-reference-2015.pdf",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-excel-let-listed-html",
+      "path": "sources/excel-let-listed.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-excel-let-html",
+      "path": "sources/excel-let.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-excel-performance-html",
+      "path": "sources/excel-performance.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-fowler-bitemporal-html",
+      "path": "sources/fowler-bitemporal.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-fowler-bounded-context-html",
+      "path": "sources/fowler-bounded-context.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-fowler-cqrs-html",
+      "path": "sources/fowler-cqrs.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-fowler-event-sourcing-html",
+      "path": "sources/fowler-event-sourcing.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-fowler-strangler-html",
+      "path": "sources/fowler-strangler.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-lect6-html",
+      "path": "sources/lect6.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-ms-cqrs-html",
+      "path": "sources/ms-cqrs.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-ms-event-sourcing-html",
+      "path": "sources/ms-event-sourcing.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-nayuki-readme-md",
+      "path": "sources/nayuki-readme.md",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-parnas-1972-pdf",
+      "path": "sources/parnas-1972.pdf",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-rittel-crossref-json",
+      "path": "sources/rittel-crossref.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-rittel-doi-html",
+      "path": "sources/rittel-doi.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-rittel-s2-json",
+      "path": "sources/rittel-s2.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-royce-1970-pdf",
+      "path": "sources/royce-1970.pdf",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-slides6-html",
+      "path": "sources/slides6.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-weixin-nandameixila-html",
+      "path": "sources/weixin-nandameixila.html",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "src-zhang-norman-1994-pdf",
+      "path": "sources/zhang-norman-1994.pdf",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "2026-10-28 抓取的讲义、slides 或推荐材料原文"
+    },
+    {
+      "id": "materials",
+      "path": "materials.json",
+      "depends_on": [
+        "src-arxiv-0708-2173-abs-html",
+        "src-arxiv-0708-2173-pdf",
+        "src-brooks-no-silver-bullet-html",
+        "src-course-index-html",
+        "src-ddd-reference-2015-pdf",
+        "src-excel-let-listed-html",
+        "src-excel-let-html",
+        "src-excel-performance-html",
+        "src-fowler-bitemporal-html",
+        "src-fowler-bounded-context-html",
+        "src-fowler-cqrs-html",
+        "src-fowler-event-sourcing-html",
+        "src-fowler-strangler-html",
+        "src-lect6-html",
+        "src-ms-cqrs-html",
+        "src-ms-event-sourcing-html",
+        "src-nayuki-readme-md",
+        "src-parnas-1972-pdf",
+        "src-rittel-crossref-json",
+        "src-rittel-doi-html",
+        "src-rittel-s2-json",
+        "src-royce-1970-pdf",
+        "src-slides6-html",
+        "src-weixin-nandameixila-html",
+        "src-zhang-norman-1994-pdf",
+        "src-rittel-webber-1973-pdf"
+      ],
+      "role": "source",
+      "origin": "generated",
+      "basis": "本课材料登记：身份、已读范围、哈希和笔记落点"
+    },
+    {
+      "id": "src-rittel-webber-1973-pdf",
+      "path": "sources/rittel-webber-1973.pdf",
+      "depends_on": [],
+      "role": "source",
+      "origin": "fetched",
+      "basis": "Webber 机构页的 Internet Archive 2007-09-30 存档；DOI 与 Springer 登录墙没有绕过"
     }
   ],
   "log": [
@@ -268,6 +539,16 @@
       "job_id": null,
       "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
       "evidence": "/private/var/folders/j6/0wknd5xs1sj5_xnqkgjdj8zm0000gn/T/tmpabl_dfwm/html-check.json"
+    },
+    {
+      "at": "2026-10-28T07:14:25.020980+00:00",
+      "occurred_at": null,
+      "stage": "reading",
+      "status": "reused",
+      "attempt": null,
+      "job_id": null,
+      "detail": "补读上一轮未取得的推荐材料",
+      "evidence": "课堂笔记/materials.json"
     }
   ],
   "issues": [
@@ -286,11 +567,14 @@
     "outcome": "completed",
     "known_gaps": [
       "非逐秒观看",
-      "未读推荐材料",
-      "真实手机未测",
-      "二维码说明框记为 Base64 保存到 A3、按住 F9；名称框是 A6。出题期望的 A6 输入和 A3:Y3 在说明文字里没有读到，笔记没有改成那组格子。"
+      "真实手机未测，只做了 390/1280 的 headless Chrome",
+      "Brooks 1987 未读文前序、文后附录，以及 Ada、面向对象和人工智能综述",
+      "Royce 扫描件的图页没有另做版面核对，作者行 OCR 为 Rovce",
+      "二维码说明框记为 Base64 保存到 A3、按住 F9；名称框是 A6。旧题期望的 A6 输入和 A3:Y3 仍不在说明文字里"
     ],
-    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors"
+    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+    "reading_materials": "passed",
+    "material_integration": "passed"
   },
   "revisions": [
     {
@@ -385,6 +669,461 @@
         "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
       },
       "prev_sha256": null
+    },
+    {
+      "rev": 2,
+      "at": "2026-10-28T05:49:07.251930+00:00",
+      "reason": "增量补充官方讲义与推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "3307c7c4be10cf564b613a1963757aff0d7b76ab28d4d81a4369c7f767a13026",
+          "bytes": 4659136
+        },
+        "video": {
+          "path": "../raw/BV1Rch76WEfQ.mp4",
+          "sha256": "356231c7c0f6b4ba6697c75c7db54498f12622d216394aed982916b46da817be",
+          "bytes": 277223433
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "265c761a2ca8a855ccf56a0ca3f0ecff125952afb0d800b7c0ef25f3a6d4b5b6",
+          "bytes": 53894
+        },
+        "frames_scan": {
+          "path": "frames/candidates.json",
+          "sha256": "fb977f9705ffef799541d4e77c30e17a498a8ede0925f346783a0affefe7edc3",
+          "bytes": 14059
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "5193085e6d4648023b017c2dd5dd17ae6096360156b7be57b259c65c1e414cb8",
+          "bytes": 158865
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "template_html": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/assets/layered.html",
+          "sha256": "b2ec0c1f288099d4559a55b530a882e543e7d5f97cafdd49e6bf208ae0360661",
+          "bytes": 1481
+        },
+        "template_css": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/assets/layered.css",
+          "sha256": "e257c3bb296f76298411278c5779aaa0597947deea302fbe3dddce713e44cb05",
+          "bytes": 2897
+        },
+        "template_js": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/assets/layered.js",
+          "sha256": "f68d3fc1c505bf40992bc124b03f5c564b4755ebad6b6ddd7ae66dc85060d72e",
+          "bytes": 941
+        },
+        "frames_selected": {
+          "path": "frames/selected.json",
+          "sha256": "10146477616c8b3c8fa71b23e8ae4133c51831744fbca98b846d955a122b18dd",
+          "bytes": 6799
+        },
+        "visuals": {
+          "path": "visuals/index.json",
+          "sha256": "bf8c56aa1e51151182fd2594a218a84e3bbe3c559d8cc8b79d8153ce4135f6d0",
+          "bytes": 1694
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "33b80ccdba01c3b2413c8ca1a4b40c9fca6747949da687ec640451aab1182e01",
+          "bytes": 11183092
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "68ac112e6d7ab6a93f77913f6af998cc720e548218e3a1834dc143b29eec153e",
+          "bytes": 67542
+        },
+        "src-arxiv-0708-2173-abs-html": {
+          "path": "sources/arxiv-0708.2173-abs.html",
+          "sha256": "0fc06d5c75b624b9c4df37730ecf32b648b8ebdabf1f473d4e70d6a8b5b77bd6",
+          "bytes": 41266
+        },
+        "src-arxiv-0708-2173-pdf": {
+          "path": "sources/arxiv-0708.2173.pdf",
+          "sha256": "7e240c0a7ec74e92421f04b4f03b105d7e0b90bea1c31e7214e5533d30f0c958",
+          "bytes": 375760
+        },
+        "src-brooks-no-silver-bullet-html": {
+          "path": "sources/brooks-no-silver-bullet.html",
+          "sha256": "1dae5ae9a62c65e39b4083621c3c95855a6d48592c667c1101d72984dfba5d4d",
+          "bytes": 50258
+        },
+        "src-course-index-html": {
+          "path": "sources/course-index.html",
+          "sha256": "b34520e1f9c2cbfa313125b2422b0669332cfc201891a8f7647707a72caf0383",
+          "bytes": 19874
+        },
+        "src-ddd-reference-2015-pdf": {
+          "path": "sources/ddd-reference-2015.pdf",
+          "sha256": "cf82dc7b4736bb24f4a1b69a3213c25cbd38aa98e37b99c2facfb94ff5cacb99",
+          "bytes": 483985
+        },
+        "src-excel-let-listed-html": {
+          "path": "sources/excel-let-listed.html",
+          "sha256": "fdecf227177282965d136d7fad61a145070147dec4090dc105f9a9197a3a0b52",
+          "bytes": 220947
+        },
+        "src-excel-let-html": {
+          "path": "sources/excel-let.html",
+          "sha256": "ba1c5a2aaaf9e07fdbf166311099844f3fb6f79501c63f7fdb3c568e7d43c1e7",
+          "bytes": 220933
+        },
+        "src-excel-performance-html": {
+          "path": "sources/excel-performance.html",
+          "sha256": "52b929ec8e7a6095b624f30439f2157c66f1f5cc201c09cb4778528840fd02b1",
+          "bytes": 88699
+        },
+        "src-fowler-bitemporal-html": {
+          "path": "sources/fowler-bitemporal.html",
+          "sha256": "219788b635999875084999cdde36ea2bc483b2e71b53ebc7bbb86cd58eab9c99",
+          "bytes": 40204
+        },
+        "src-fowler-bounded-context-html": {
+          "path": "sources/fowler-bounded-context.html",
+          "sha256": "5f6bbdd9567aeb45cb81d536a9e01a7636f2792ba41fa0abeff5603b74d46184",
+          "bytes": 18948
+        },
+        "src-fowler-cqrs-html": {
+          "path": "sources/fowler-cqrs.html",
+          "sha256": "11cf46ce308805e94e4b110016b09d004fbf8c47669a7041080f661c798b2f29",
+          "bytes": 21864
+        },
+        "src-fowler-event-sourcing-html": {
+          "path": "sources/fowler-event-sourcing.html",
+          "sha256": "ff817ecc7b176c9456b8381687437e93f38bb8be6c6c3b4e4403b664818f8a02",
+          "bytes": 57156
+        },
+        "src-fowler-strangler-html": {
+          "path": "sources/fowler-strangler.html",
+          "sha256": "264358d8955591a8c06d21ba79e2d8d0432ca4cacb4da63791c753af0989a347",
+          "bytes": 20366
+        },
+        "src-lect6-html": {
+          "path": "sources/lect6.html",
+          "sha256": "974590f5d01c6275c4b81c2db23eef5cef719b9bae837e9ab7de012a292fed24",
+          "bytes": 76174
+        },
+        "src-ms-cqrs-html": {
+          "path": "sources/ms-cqrs.html",
+          "sha256": "f0bfebfb51ba9e26807950bde80458d8222b1ea30936edf1529178c2726bc84f",
+          "bytes": 69680
+        },
+        "src-ms-event-sourcing-html": {
+          "path": "sources/ms-event-sourcing.html",
+          "sha256": "dba957a623aab602c652c3b86021cdc789fe0b3a2f971eb9e0073402e66951f2",
+          "bytes": 80184
+        },
+        "src-nayuki-readme-md": {
+          "path": "sources/nayuki-readme.md",
+          "sha256": "eea862d8e975c6df197b050e5bd6c93b70c046952ac704b4ee1d213f2393f52a",
+          "bytes": 4032
+        },
+        "src-parnas-1972-pdf": {
+          "path": "sources/parnas-1972.pdf",
+          "sha256": "b3eafb67d5a9f91d5996ccf953e44297b72cee4b8e732dbf28caa3c29e233001",
+          "bytes": 586637
+        },
+        "src-rittel-crossref-json": {
+          "path": "sources/rittel-crossref.json",
+          "sha256": "893f3efa699a44ae4e3ce18e14fa52485b8348ae558a1f1520c3266b5303a274",
+          "bytes": 2426
+        },
+        "src-rittel-doi-html": {
+          "path": "sources/rittel-doi.html",
+          "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+          "bytes": 3038
+        },
+        "src-rittel-s2-json": {
+          "path": "sources/rittel-s2.json",
+          "sha256": "fb3de3542e36f980f3bbb00d0fa856d0c2345131b09f678a1515c1d21b569999",
+          "bytes": 963
+        },
+        "src-royce-1970-pdf": {
+          "path": "sources/royce-1970.pdf",
+          "sha256": "9f7db065bd1c911a8d17590eec548478f944c8b05c408f101911cde57d815a78",
+          "bytes": 443950
+        },
+        "src-slides6-html": {
+          "path": "sources/slides6.html",
+          "sha256": "3e580d390cf6e819675302dcef2c2bd624caed96ae178258a33e23e02a9c6520",
+          "bytes": 1180745
+        },
+        "src-weixin-nandameixila-html": {
+          "path": "sources/weixin-nandameixila.html",
+          "sha256": "f6830671aad9c221f8b41a170d1d6cdf2d056f27d8c89bb45f799cd9c7db8812",
+          "bytes": 3451815
+        },
+        "src-zhang-norman-1994-pdf": {
+          "path": "sources/zhang-norman-1994.pdf",
+          "sha256": "9acb6b2ffb8df5c9176e56bb293e35dd5bca94fae0f014d85dda8a7760cad55e",
+          "bytes": 2211785
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "66a069b02e52a8ce7d70898b4e9f67ded968ae4e25a417f3c9191e28709648e3",
+          "bytes": 41521
+        }
+      },
+      "issues": {
+        "i-001": "fixed"
+      },
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9659,
+        "recall": 0.9688,
+        "precision_items": 132,
+        "recall_items": 32,
+        "recall_misses": [
+          "q32"
+        ],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "e393f80b1a43bbc9a4fab982e9caff5871a32805ad9137634d440fdbab9fe9d8"
+    },
+    {
+      "rev": 3,
+      "at": "2026-10-28T07:14:25.151474+00:00",
+      "reason": "补读上一轮未取得的推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "3307c7c4be10cf564b613a1963757aff0d7b76ab28d4d81a4369c7f767a13026",
+          "bytes": 4659136
+        },
+        "video": {
+          "path": "../raw/BV1Rch76WEfQ.mp4",
+          "sha256": "356231c7c0f6b4ba6697c75c7db54498f12622d216394aed982916b46da817be",
+          "bytes": 277223433
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "265c761a2ca8a855ccf56a0ca3f0ecff125952afb0d800b7c0ef25f3a6d4b5b6",
+          "bytes": 53894
+        },
+        "frames_scan": {
+          "path": "frames/candidates.json",
+          "sha256": "fb977f9705ffef799541d4e77c30e17a498a8ede0925f346783a0affefe7edc3",
+          "bytes": 14059
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "a03606b36963abd05ac2476d9fbf21e47a03106c4e3cea28bd41436ad824240f",
+          "bytes": 173044
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "template_html": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/assets/layered.html",
+          "sha256": "b2ec0c1f288099d4559a55b530a882e543e7d5f97cafdd49e6bf208ae0360661",
+          "bytes": 1481
+        },
+        "template_css": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/assets/layered.css",
+          "sha256": "e257c3bb296f76298411278c5779aaa0597947deea302fbe3dddce713e44cb05",
+          "bytes": 2897
+        },
+        "template_js": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/assets/layered.js",
+          "sha256": "f68d3fc1c505bf40992bc124b03f5c564b4755ebad6b6ddd7ae66dc85060d72e",
+          "bytes": 941
+        },
+        "frames_selected": {
+          "path": "frames/selected.json",
+          "sha256": "71b6863ed09909bb6e39f2a1d13e3a2a4519de2930b817109705a991b319d3f8",
+          "bytes": 7294
+        },
+        "visuals": {
+          "path": "visuals/index.json",
+          "sha256": "bf8c56aa1e51151182fd2594a218a84e3bbe3c559d8cc8b79d8153ce4135f6d0",
+          "bytes": 1694
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "2dc9107ca28780353dd53f6bd2c560be1034f4cd5e47a6e7487fc815ff9fa0dc",
+          "bytes": 11390577
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "bef604b56bd556a5e213d1c0625b0e63ec43fddc3c837f6ba13a28fd2c39b49d",
+          "bytes": 69644
+        },
+        "src-arxiv-0708-2173-abs-html": {
+          "path": "sources/arxiv-0708.2173-abs.html",
+          "sha256": "0fc06d5c75b624b9c4df37730ecf32b648b8ebdabf1f473d4e70d6a8b5b77bd6",
+          "bytes": 41266
+        },
+        "src-arxiv-0708-2173-pdf": {
+          "path": "sources/arxiv-0708.2173.pdf",
+          "sha256": "7e240c0a7ec74e92421f04b4f03b105d7e0b90bea1c31e7214e5533d30f0c958",
+          "bytes": 375760
+        },
+        "src-brooks-no-silver-bullet-html": {
+          "path": "sources/brooks-no-silver-bullet.html",
+          "sha256": "1dae5ae9a62c65e39b4083621c3c95855a6d48592c667c1101d72984dfba5d4d",
+          "bytes": 50258
+        },
+        "src-course-index-html": {
+          "path": "sources/course-index.html",
+          "sha256": "b34520e1f9c2cbfa313125b2422b0669332cfc201891a8f7647707a72caf0383",
+          "bytes": 19874
+        },
+        "src-ddd-reference-2015-pdf": {
+          "path": "sources/ddd-reference-2015.pdf",
+          "sha256": "cf82dc7b4736bb24f4a1b69a3213c25cbd38aa98e37b99c2facfb94ff5cacb99",
+          "bytes": 483985
+        },
+        "src-excel-let-listed-html": {
+          "path": "sources/excel-let-listed.html",
+          "sha256": "fdecf227177282965d136d7fad61a145070147dec4090dc105f9a9197a3a0b52",
+          "bytes": 220947
+        },
+        "src-excel-let-html": {
+          "path": "sources/excel-let.html",
+          "sha256": "f6d0156eafc51b1425eb4d50cbcefadf3aef9e0bc4a2b25d99dc37c4bbedd5de",
+          "bytes": 220931
+        },
+        "src-excel-performance-html": {
+          "path": "sources/excel-performance.html",
+          "sha256": "52b929ec8e7a6095b624f30439f2157c66f1f5cc201c09cb4778528840fd02b1",
+          "bytes": 88699
+        },
+        "src-fowler-bitemporal-html": {
+          "path": "sources/fowler-bitemporal.html",
+          "sha256": "219788b635999875084999cdde36ea2bc483b2e71b53ebc7bbb86cd58eab9c99",
+          "bytes": 40204
+        },
+        "src-fowler-bounded-context-html": {
+          "path": "sources/fowler-bounded-context.html",
+          "sha256": "5f6bbdd9567aeb45cb81d536a9e01a7636f2792ba41fa0abeff5603b74d46184",
+          "bytes": 18948
+        },
+        "src-fowler-cqrs-html": {
+          "path": "sources/fowler-cqrs.html",
+          "sha256": "11cf46ce308805e94e4b110016b09d004fbf8c47669a7041080f661c798b2f29",
+          "bytes": 21864
+        },
+        "src-fowler-event-sourcing-html": {
+          "path": "sources/fowler-event-sourcing.html",
+          "sha256": "ff817ecc7b176c9456b8381687437e93f38bb8be6c6c3b4e4403b664818f8a02",
+          "bytes": 57156
+        },
+        "src-fowler-strangler-html": {
+          "path": "sources/fowler-strangler.html",
+          "sha256": "264358d8955591a8c06d21ba79e2d8d0432ca4cacb4da63791c753af0989a347",
+          "bytes": 20366
+        },
+        "src-lect6-html": {
+          "path": "sources/lect6.html",
+          "sha256": "974590f5d01c6275c4b81c2db23eef5cef719b9bae837e9ab7de012a292fed24",
+          "bytes": 76174
+        },
+        "src-ms-cqrs-html": {
+          "path": "sources/ms-cqrs.html",
+          "sha256": "f0bfebfb51ba9e26807950bde80458d8222b1ea30936edf1529178c2726bc84f",
+          "bytes": 69680
+        },
+        "src-ms-event-sourcing-html": {
+          "path": "sources/ms-event-sourcing.html",
+          "sha256": "dba957a623aab602c652c3b86021cdc789fe0b3a2f971eb9e0073402e66951f2",
+          "bytes": 80184
+        },
+        "src-nayuki-readme-md": {
+          "path": "sources/nayuki-readme.md",
+          "sha256": "eea862d8e975c6df197b050e5bd6c93b70c046952ac704b4ee1d213f2393f52a",
+          "bytes": 4032
+        },
+        "src-parnas-1972-pdf": {
+          "path": "sources/parnas-1972.pdf",
+          "sha256": "b3eafb67d5a9f91d5996ccf953e44297b72cee4b8e732dbf28caa3c29e233001",
+          "bytes": 586637
+        },
+        "src-rittel-crossref-json": {
+          "path": "sources/rittel-crossref.json",
+          "sha256": "893f3efa699a44ae4e3ce18e14fa52485b8348ae558a1f1520c3266b5303a274",
+          "bytes": 2426
+        },
+        "src-rittel-doi-html": {
+          "path": "sources/rittel-doi.html",
+          "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+          "bytes": 3038
+        },
+        "src-rittel-s2-json": {
+          "path": "sources/rittel-s2.json",
+          "sha256": "fb3de3542e36f980f3bbb00d0fa856d0c2345131b09f678a1515c1d21b569999",
+          "bytes": 963
+        },
+        "src-royce-1970-pdf": {
+          "path": "sources/royce-1970.pdf",
+          "sha256": "9f7db065bd1c911a8d17590eec548478f944c8b05c408f101911cde57d815a78",
+          "bytes": 443950
+        },
+        "src-slides6-html": {
+          "path": "sources/slides6.html",
+          "sha256": "3e580d390cf6e819675302dcef2c2bd624caed96ae178258a33e23e02a9c6520",
+          "bytes": 1180745
+        },
+        "src-weixin-nandameixila-html": {
+          "path": "sources/weixin-nandameixila.html",
+          "sha256": "f6830671aad9c221f8b41a170d1d6cdf2d056f27d8c89bb45f799cd9c7db8812",
+          "bytes": 3451815
+        },
+        "src-zhang-norman-1994-pdf": {
+          "path": "sources/zhang-norman-1994.pdf",
+          "sha256": "9acb6b2ffb8df5c9176e56bb293e35dd5bca94fae0f014d85dda8a7760cad55e",
+          "bytes": 2211785
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "7592a81af99087482735524d13e84d208f76868454a60eb3c630234fff815927",
+          "bytes": 46847
+        },
+        "src-rittel-webber-1973-pdf": {
+          "path": "sources/rittel-webber-1973.pdf",
+          "sha256": "73bbbcd28aed545cb86f8ca655ae06ab8463256364b6231dfdd303a9c9b1b1d9",
+          "bytes": 1362031
+        }
+      },
+      "issues": {
+        "i-001": "fixed"
+      },
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9672,
+        "recall": 0.9688,
+        "precision_items": 137,
+        "recall_items": 32,
+        "recall_misses": [
+          "q32"
+        ],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "676301027f7fa1d8960976090331f48690ef881f4238d73100f2d149bb4bc118"
     }
   ]
 }

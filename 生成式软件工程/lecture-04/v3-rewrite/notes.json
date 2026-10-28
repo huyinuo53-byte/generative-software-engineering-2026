@@ -33,9 +33,11 @@
   "limitations": [
     "完整阅读了预先切好的 20 个转写块（chunk-0001 到 chunk-0020），并按主题重分了 18 节。分块本身不是章节。",
     "画面使用预先生成的 frames.py 结果：场景阈值 0.3，60 秒兜底，共 118 个候选。先看了 10 张联系表，再打开可能入选的候选，不是逐秒观看，也没有逐帧 OCR。",
-    "定稿帧用 frames.py grab 按原分辨率截取。图注只写在该帧上能看清的内容；课件小字和一闪而过的终端输出，看不清的不补。",
-    "用户要求不读推荐材料，因此没有课外补充。课件上出现、口述没展开的句子（例如 NASA 报告系统、Einstellung effect）只写在对应画面和图注里。",
-    "转写有明显音近错误。校正写在各节的整理者说明里，依据是同一时刻的课件或终端，不另查外部资料。"
+    "定稿的视频帧仍用 frames.py grab 按原分辨率截取。黑板上的推演、终端和现场演示保留这些帧；图注只写当时能看清的内容。原来被视频拍糊的静态课件页，改用官网 slides 原页，图注按原页上的文字重写。",
+    "转写有明显音近错误。校正写在各节的整理者说明里，依据是同一时刻的课件或终端，不另查外部资料。",
+    "本次在已交付笔记上增量补充，没有重写小节、takeaway、图解和课程地图。静态课件页改用官网 slides 第 4 讲的原页截图；黑板上的推演、终端和 Playground 仍用原来的视频帧。",
+    "官网查询时间见 materials.json 的 checked_at。视频标题是「软件仓库管理 (2)」，官网第 4 讲标题是「版本管理 (2)」，按顺序和内容视为同一课。讲义页 https://jyywiki.cn/GSE/2026/lect4.md ，slides https://jyywiki.cn/GSE/2026/slides4.html ，共 25 页，链接从 slides-data 的 JSON 逐页清点，并区分正文和 span.aigc。",
+    "slides 截图用本机 headless Chrome 打开本地 slides-shot.html，窗口 1600×900，再转成 JPEG（质量 82）。不是逐页人工翻拍。ACM 原文页 403，综述用的是开放 PDF，且只逐段读了物理页 1、2、8、12。Einstellung 论文只有 PubMed 摘要。Brooks 的 PDF 元数据写成全集，文件是 16 页的第 2 章。jj 的术语表、工作副本和教程取自 GitHub main，冲突页和首页取自 jj-vcs.dev/latest，两边没有对成同一发布版。"
   ],
   "summary": [
     "这节课继续讲版本管理，并用 Lab 1「会成长的个人助手」当例子：直接把整份需求交给模型，会得到看起来合理、却越来越难维护的决定。",
@@ -106,14 +108,17 @@
       "editor_notes": [
         "转写多次写成 webcode。后半课件标题是 Vibe Coding，现场也是把需求直接交给模型写代码，笔记按这个理解。",
         "转写里的 smail 邮箱，和课件上的写法一致，笔记不改成 Gmail。办理事务时口述像“一号”，课件写的是 ehall.nju.edu.cn。",
-        "转写写成“紫禁城”，笔记不把它当成术语。同一节里的 AISLAP，按这一课后来说的 AI slop 来记。"
+        "转写写成“紫禁城”，笔记不把它当成术语。同一节里的 AISLAP，按这一课后来说的 AI slop 来记。",
+        "官网实验页 lab1 写明这个实验是建议性质、不记分。课堂口述仍是：选做、自愿完成，但最后也许要交成绩，由讲师的机器人验收。两句都留着。实验页还写了可以配一个 Grill Me 之类的技能，让模型先追问需求。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000300000.jpg",
-          "time": 300,
-          "caption": "右侧课件标题 Review & Comments。Lab1：会成长的个人助手。两条要点：一个非常“时髦”的需求；以能帮上自己为目标。下面一行写成长的验收：这次纠正，下次还能生效。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p01.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 1,
+          "related_time": 300,
+          "caption": "官方 slides 第 1 页，标题 Review & Comments。Lab1：会成长的个人助手。要点：一个非常“时髦”的需求；以能帮上自己为目标。紫色 AIGC 批注写着“成长”的验收：这次纠正，下次还能生效。页码 1/25。"
         },
         {
           "source_type": "video_frame",
@@ -152,7 +157,8 @@
         "s-g22.0~4"
       ],
       "start": 1.05,
-      "end": 321.29
+      "end": 321.29,
+      "flow": "p0 p1 p2 p3 p4 p5 p6 e0 e1 n0 n1 n2 n3 f0 f1 x0"
     },
     {
       "title": "项目是一堆文件：短 README 只写 intent",
@@ -173,10 +179,12 @@
       "editor_notes": [],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000360000.jpg",
-          "time": 360,
-          "caption": "课件「项目是各种文件的集合」，下面写 Intent, Spec, Code, ...。一个文件夹「会成长的个人助手」里有六格：intent.md 想解决什么，spec.md 约定行为，assistant.py 实现，test_assistant.py 测试，memory.md 记忆，README.md 使用说明。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p02.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 2,
+          "related_time": 360,
+          "caption": "官方 slides 第 2 页，标题「项目是各种文件的集合」，副题 Intent、Spec、Code、…。文件夹「会成长的个人助手」里六格：intent.md 想解决什么，spec.md 约定行为，assistant.py 实现，test_assistant.py 测试，memory.md 记忆，README.md 使用说明。页码 2/25。"
         }
       ],
       "source_ids": [
@@ -209,14 +217,26 @@
         "课件「文件装得下什么？」写：文件其实是文件系统的方便；其他形式（例如数据库）对人和工具都不太友好；但丢失了很多文件不适合表达的信息，例如 artifact 之间的 traceability。图上是 intent.md（不漏掉重要事情）细化为 spec.md（提前 10 分钟提醒），再实现为 reminder.py（调度提醒），下面 test_reminder.py（检查提醒时机）用来验证。页底问：10 分钟改成 30 分钟，哪些实现和测试需要复查？"
       ],
       "editor_notes": [
-        "转写把 linked list 说成 link list，把 Markdown 说成马克档。笔记按链表和 Markdown 文档来写。"
+        "转写把 linked list 说成 link list，把 Markdown 说成马克档。笔记按链表和 Markdown 文档来写。",
+        "讲义页把 traceability 写成制品之间要能互相找到、并用来回答项目里的问题，链到综述 traceability-2014。课堂口述只说这是 2014 年的一篇 review，没有念定义。CoEST 的原句在补充里，不写进课堂段落。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000600000.jpg",
-          "time": 600,
-          "caption": "课件「文件装得下什么？」。要点：文件是文件系统的方便；数据库等形式对人和工具不太友好；丢失了 artifact 之间的 traceability。图从 intent.md「不漏掉重要事情」细化到 spec.md「提前 10 分钟提醒」，再实现为 reminder.py「调度提醒」，test_reminder.py「检查提醒时机」负责验证。底部问题：10 分钟改成 30 分钟，哪些实现和测试需要复查？"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p03.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 3,
+          "related_time": 600,
+          "caption": "官方 slides 第 3 页「文件装得下什么？」。文件只是文件系统的方便；其他形式（例如 db）对人和工具都不太友好；丢失了 artifact 之间的 traceability，这个词是页上的链接。图从 intent.md「不漏掉重要事情」细化为 spec.md「提前 10 分钟提醒」，实现为 reminder.py「调度提醒」，test_reminder.py「检查提醒时机」向上标着验证。底部：10 分钟 → 30 分钟：哪些实现和测试需要复查？页码 3/25。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/readings/traceability-p05.jpg",
+          "source_label": "论文补充 traceability-2014，ICSE 2014 FOSE 开放 PDF",
+          "source_url": "http://selab.netlab.uky.edu/homepage/publications/2014-ICSE-FOSE.pdf",
+          "page": 5,
+          "related_time": 540,
+          "caption": "论文补充 traceability-2014，开放 PDF 物理页 5，Figure 3。标题是 Traceability Research by Perspective over the past decade (2003–2013)。三张柱状图，纵轴都是 0% 到 60%。(a) Goal perspective 的类别是 Unassigned、Purposed、Cost-Effective、Configurable、Trusted、Scalable、Portable、Valued。(b) Process perspective 是 Planning and Managing、Creating、Maintaining、Using，Using 下面再分 General、Human、Tool。(c) Technical perspective 是 Planning、Unassigned、Storage、Workflows、Queries、Trace Algorithms、Usage。柱高对应物理页 4 写明的份额：目标视角超过一半只能归到 ubiquitous，26% 是 purposed，11% 是 trusted，其余目标各不超过 5%；过程视角是计划 10%、建立 44%、维护 15%、使用 31%；技术视角是算法 54%、用户交互 28%，其余各类不超过 5%。这是综述自己的文献计数，课堂没有念这些百分比。"
         }
       ],
       "visual": {
@@ -250,7 +270,8 @@
         "s-g100.0"
       ],
       "start": 421.09,
-      "end": 620.3
+      "end": 620.3,
+      "flow": "p0 p1 p2 p3 x1 f1 e0 n0 n1 f0"
     },
     {
       "title": "将错就错之后：从文件树到带环的对象图",
@@ -278,7 +299,7 @@
           "source_type": "video_frame",
           "path": "frames/v000720000.jpg",
           "time": 720,
-          "caption": "课件「将错就错，然后呢？」。基于文件的工具：从压缩包到 SVN、Git；人类只能将错就错。另一条是推论：AI 时代软件的形态会发生根本变化。讲师背对镜头，黑板上开始画方框，这一帧还看不清框里的字。"
+          "caption": "这一帧左边是黑板，框里能看见 Readme.md、docs/、hello.c，以及 object、entity。右边课件是「将错就错，然后呢？」：基于文件的工具，从压缩包到 SVN、Git；人类只能将错就错。推论：AI 时代“软件”的形态会发生根本变化。讲师背对镜头。"
         },
         {
           "source_type": "video_frame",
@@ -287,10 +308,12 @@
           "caption": "同一页课件还在。黑板上能看出 README、文档、hello.c 和 repo.db 几块，讲师指着它们之间的连线。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v000840000.jpg",
-          "time": 840,
-          "caption": "课件换成「Git 管理了什么？」。文件、目录、快照和快照之间的关系：一条是 A 加 feat 到 B，一条是 Merge A, B 到 C。并行开发与冲突：不同人在快照上分别开发，自然会带来冲突。Merge 与 rebase 对照：Merge 汇合历史；rebase 把修改依次重放到新的起点。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p05.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 5,
+          "related_time": 840,
+          "caption": "官方 slides 第 5 页「Git 管理了什么？」。文件、目录、快照和快照之间的关系：A + feat: ... → B；Merge A, B → C。并行开发与冲突：不同人在快照上分别开发，自然会带来冲突。Merge 汇合历史；rebase 把修改依次重放到新的起点。rebase 一词在紫色 AIGC 批注里。页码 5/25。"
         }
       ],
       "visual": {
@@ -439,10 +462,12 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v001260000.jpg",
-          "time": 1260,
-          "caption": "课件「同学产生的疑问」，小标题「从信任老师到自己的理解」。能看清的要点：典型学生思维是老师不教的就不用会、考试不考的就不用学；学习目的是形成自己的理解（first principles）。上方有一段评论截图，正文小字这一帧读不全。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p06.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 6,
+          "related_time": 1260,
+          "caption": "官方 slides 第 6 页「同学产生的疑问 / 从信任老师到自己的理解」。评论截图写着：关于 git rebase 0/10，学生时代大多数人不会和他人共同合作，多数是单分支开发，rebase、merge 的场景就少很多。时间 2026-09-08 19:20，28 个赞。回复提到 CONTRIBUTING.md，以及斩杀线以下价值为零。下方要点：老师不教的就是我不需要会的，考试不考的就是我不用学的；学习的目的是形成自己的理解（first principles）。页码 6/25。"
         }
       ],
       "source_ids": [
@@ -556,7 +581,8 @@
         "s-g307.0~30"
       ],
       "start": 1373.37,
-      "end": 1725.11
+      "end": 1725.11,
+      "flow": "p0 p1 p2 p3 p4 x2 x3 e0 f0"
     },
     {
       "title": "Jujutsu：change 保留身份，未完成的工作也是提交",
@@ -580,27 +606,43 @@
         "课件「这就是为什么 AI Native 能淘汰老登」写：讲师已经形成 Git 的肌肉记忆，即便能理解，也没有足够时间训练另一套。熟悉的解法会锁住注意力，并提到 Einstellung effect 和 2008 年的眼动实验。同学们的方向是反过来的：先理解正确的设计，再回望历史，理解我们是如何一路走来的。"
       ],
       "editor_notes": [
-        "转写里的 jujits、机器组，按课件 Jujutsu 校正。Einstellung effect 和 2008 年眼动实验出现在课件上，口述没有展开这项实验，笔记不把实验结论说成讲师证明过的事实。",
-        "“改一个字节就立即 commit，再抹掉上一次”是讲师对 Jujutsu 工作副本的理解，他说这好像是它在做的事，不是一份命令手册。"
+        "转写里的 jujits、机器组，按课件 Jujutsu 校正。Einstellung effect 和 2008 年眼动实验出现在课件上，口述没有展开这项实验，笔记不把实验结论说成讲师证明过的事实。 样本数、注视和检验来自 Brunel 机构库的作者稿，写在补充 einstellung-2008，不写进课堂段落。",
+        "“改一个字节就立即 commit，再抹掉上一次”是讲师对 Jujutsu 工作副本的理解，他说这好像是它在做的事，不是一份命令手册。",
+        "材料 jj-working-copy 写的是：几乎每条 jj 命令开始时，先把工作副本里已经发生的修改拍成新的 working-copy commit。课堂那句「但凡改了一个字节就立即 commit」仍按讲师的「好像」保留。材料 jj-home 的 /latest/ 首页只是文档入口，并列出已发布版和 main 上未发布版两条文档；术语表和工作副本是 2026-10-28 从 GitHub main 取的原文，和 /latest/ 已发布页不一定是同一版。官方术语里的 View 是书签、匿名 head 和工作副本提交的一份快照；课堂说的 view 是一次对话里看的那一块仓库。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v001800000.jpg",
-          "time": 1800,
-          "caption": "课件「把 Change 作为 First-Class Citizen」，副题是祝贺你发明了 Jujutsu。两条：rebase 不该让同一次 change 失去身份；commit ID 会变，change ID 延续。下方左右两图：Git 视角重写后是新的 commit 串；jj 视角里同一次 change 的身份还在。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p08.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 8,
+          "related_time": 1800,
+          "caption": "官方 slides 第 8 页「把 Change 作为 First-Class Citizen」。副题：祝贺，你发明了 Jujutsu—a version control system。Rebase 不应该让同一次 change 失去身份。紫色 AIGC 批注：Commit ID 会变，change ID 延续；同一次修改可以有不同的修订版本，链到「设计说明」。左图 Git 视角：重写前 A→B→C→D，重写后 A→B'→C'→D'，说明重写后得到的是一组新的 commit，系统本身不显式记录 C' 是 C 的下一版。右图 jj 视角：重写前后 B、C、D 下面都标着 change:B、change:C、change:D，说明 commit 变了，change 身份延续。页码 8/25。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v001920000.jpg",
-          "time": 1920,
-          "caption": "课件「让未完成的工作也有位置」。连 staging area 都不需要了：工作副本本身就是一个 commit。冲突直接进 commit。带着冲突的 commit 仍能继续 rebase、merge。尚未解决被写成一种可保存、可继续操作的状态。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p09.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 9,
+          "related_time": 1920,
+          "caption": "官方 slides 第 9 页「让未完成的工作也有位置」。连 staging area 都不需要了，仿佛一直在 commit + amend。工作副本本身就是一个 commit；多数 jj 命令会自动记录文件修改，更新这个 commit。「工作副本」是紫色链接。冲突直接存进 commit（killer feature）。Rebase 可以直接完成，之后再统一处理冲突。保存的是冲突的逻辑表示；带着冲突的 commit 仍能继续 rebase、merge。「冲突管理」是紫色链接。设计启发：把“尚未解决”表达成一种可保存、可继续操作的状态。页码 9/25。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v002100000.jpg",
-          "time": 2100,
-          "caption": "课件「这就是为什么 AI Native 能淘汰老登」。已形成 Git 的肌肉记忆，没有足够时间再训练一套。课件提到 Einstellung effect 和 2008 年眼动实验：熟悉的解法锁住注意力。同学们反过来：先理解正确的设计，再回望历史。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p10.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 10,
+          "related_time": 2100,
+          "caption": "官方 slides 第 10 页「这就是为什么 AI Native 能淘汰老登」。已经形成的肌肉记忆：即便能理解，也没有足够的时间训练另一个肌肉记忆。紫色 AIGC 批注：熟悉的解法会锁住注意力，棋手说在寻找更优解，目光却仍围绕旧套路；Einstellung effect，2008 年眼动实验。同学们的学习方向是反过来的：先理解正确的设计，再回望历史。页码 10/25。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/readings/einstellung-fig2.jpg",
+          "source_label": "论文补充 einstellung-2008，Brunel 机构库作者稿，不是期刊页码",
+          "source_url": "https://bura.brunel.ac.uk/bitstream/2438/2276/1/Einstellung-Cognition.pdf",
+          "page": 34,
+          "related_time": 2100,
+          "caption": "论文补充 einstellung-2008，Brunel 作者稿物理页 34，Figure 2。纵轴是注视时间的百分比，刻度 0、10、20、30、40、50、60。横轴六段：First 10s、First quarter、Second quarter、Third quarter、Fourth quarter、Last 5s。空心圆是 Familiar solution squares，实心三角是 Optimal solution squares，误差线是标准误。左图 a 是 2-solution problem：空心圆全程高于实心三角，最后 5 秒升到 40 的刻度附近，实心三角停在 10 与 20 之间。右图 b 是 1-solution problem：最后 5 秒实心三角升过 40 的刻度，空心圆落到 10 以下。正文的检验是：左图交互 F(5, 20)=0.6，不显著；右图交互 F(5, 20)=11.9，p < .001。这是 slides AIGC 批注所链论文的图，不是课堂画面，也不是期刊排版后的页码。"
         }
       ],
       "visual": {
@@ -652,7 +694,8 @@
         "s-g444.0~3"
       ],
       "start": 1725.11,
-      "end": 2164.94
+      "end": 2164.94,
+      "flow": "p0 x4 f0 p1 p2 p3 x5 p4 p5 e0 e1 e2 n0 n1 n2 f1 f2 x6 f3"
     },
     {
       "title": "版本控制假设使用者是单线程的人",
@@ -675,10 +718,12 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v002280000.jpg",
-          "time": 2280,
-          "caption": "课件「Agent 时代，再次重新设计版本管理系统」。人类是 single-threaded 生物，只有一份 I/O：一双手、一张嘴、一对眼睛。Git 基本够一个人用：stash 把手头工作放一边；branch 保留不同方向，切换着推进；Jujutsu 就更好用了。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p11.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 11,
+          "related_time": 2280,
+          "caption": "官方 slides 第 11 页「Agent 时代，再次重新设计版本管理系统」。人类是 “Single-Threaded” 生物，只有一份 I/O：一双手、一张嘴、一对眼睛。Git 基本够一个人用了：stash 把手头的工作放一边；branch 保留不同方向的尝试。Jujutsu 就更好用了。页码 11/25。"
         }
       ],
       "source_ids": [
@@ -731,10 +776,12 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v002520000.jpg",
-          "time": 2520,
-          "caption": "课件「但如果是 Agent Team (Swarm) 呢？」。单个 agent 快，还可以并行；分钟级产生一个原子提交。Git 为人设计的模型跟不上：同一个工作目录里 A 正在改，B 可能读到一半。还要一起加速的是协调、验证与整合。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p12.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 12,
+          "related_time": 2520,
+          "caption": "官方 slides 第 12 页「但如果是 Agent Team (Swarm) 呢？」。单个 Agent 快，还可以并行；分钟级产生一个原子提交。Git “为人设计” 的模型跟不上这个速度了。一个工作目录里，A 正在修改，B 就可能读到一半的结果。现在需要一起加速的，还有协调、验证与整合。页码 12/25。"
         },
         {
           "source_type": "video_frame",
@@ -813,10 +860,12 @@
           "caption": "右半屏是仓库概览。当前在 /tmp/fancy-worktrees/slave-a。说明 .git 不是独立仓库，而是文件，gitdir 指向 /tmp/fancy-project/.git/worktrees/slave-a。HEAD 303bfe8，主仓库 69b482f，另一个 worktree slave-b 是 fd896c8。一条提交写着 slop: add 5000+ lines of generated filler。文件列表有 README.md、assets、docs、p1 到 p5、scripts、AGENTS.md、CLAUDE.md、Makefile。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v003053167.jpg",
-          "time": 3053.167,
-          "caption": "课件「把每个 Agent 当成独立开发者」。每个 agent 一台开发计算机，用 remote 同步；git worktree 让一个仓库有多个工作目录。每个 worktree 有自己的工作文件、HEAD 和 index，共享对象库，本地提交互相可见，不必 push/pull。给 A、B 各建分支和目录，冲突时才 merge 或 rebase。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p13.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 13,
+          "related_time": 3053.167,
+          "caption": "官方 slides 第 13 页「把每个 Agent 当成独立开发者」。每个 Agent 有自己的开发计算机，用 Remote 同步。git worktree：一个仓库，多个工作目录；每个 worktree 有自己的工作文件、HEAD 和 index，共享对象库和分支引用，提交在本地直接可见，无需互相 push/pull。命令写成 git worktree add -b agent-a ../gense-agent-a 和 git worktree add -b agent-b ../gense-agent-b。各自干活；修改仍需 merge/rebase 才会汇合。页码 13/25。"
         }
       ],
       "source_ids": [
@@ -842,7 +891,8 @@
         "s-g588.1~17"
       ],
       "start": 2790.02,
-      "end": 3065.82
+      "end": 3065.82,
+      "flow": "p0 p1 p2 x7 e0 e1 n0 n1 f0 f1"
     },
     {
       "title": "人的沟通缺口塑造了 blame；agent 也许不再需要它",
@@ -867,10 +917,12 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003293167.jpg",
-          "time": 3293.167,
-          "caption": "课件「回到为什么需要版本控制」。人的限制塑造了工具：生产效率有限，沟通缺口大，沟通了也会出错。快照和小步的例子写成 bisect、blame。若 agent 不能被开除或坐牢，就不再 blame，只要修掉缺陷。历史的价值从谁写错了，转向哪次变化破坏了什么、怎样恢复。底部一条是 NASA 航空安全报告系统：自愿、保密、非惩罚，用来防止重演。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p14.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 14,
+          "related_time": 3293.167,
+          "caption": "官方 slides 第 14 页「回到为什么需要版本控制」。人的生产效率有限；人之间有 communication gap；人就算沟通了，也可能出错。快照、小步前进：bisect、blame。如果没有 Agent 能被开除、能坐牢，是不是可以再也不要 blame，只要把问题默默修了？历史的价值可以从“谁写错了”转向“哪次变化破坏了什么，怎样恢复”。底部紫色 AIGC 批注：NASA 航空安全报告系统通过自愿、保密、非惩罚性的报告收集安全隐患。页码 14/25。"
         }
       ],
       "source_ids": [
@@ -895,7 +947,8 @@
         "s-g632.0~25"
       ],
       "start": 3066.68,
-      "end": 3348.33
+      "end": 3348.33,
+      "flow": "p0 p1 p2 x8 p3 x9 e0 n0 n1 f0"
     },
     {
       "title": "乐观合并会撞车，agent 也许该先上锁",
@@ -929,10 +982,12 @@
           "caption": "课件「主 Agent 规划，子 Agent 上锁开干」。主 agent 规划，子 agent 上互斥锁，干完解锁。Git/Jujutsu 被写成事后的多版本并发控制，靠冲突检测。互斥锁是事先约定谁能碰这份共享状态，冲突变成等待。黑板有 lock 和 unlock。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v003773167.jpg",
-          "time": 3773.167,
-          "caption": "课件「学《操作系统》、《数据库》有用了吧」。锁保护的是一件事依赖的共享状态。顺序写成：上锁，读取最新状态，修改，验证并留下可恢复的快照，解锁。类比数据库的 advisory locks。锁不会自动把错误修改变成正确修改。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p16.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 16,
+          "related_time": 3773.167,
+          "caption": "官方 slides 第 16 页「学《操作系统》、《数据库》有用了吧」。锁保护的是一件事依赖的共享状态；只锁正在写的文件，可能漏掉别人正在改的接口。约定：上锁 → 读取最新状态 → 修改 → 验证并留下可恢复的快照 → 解锁。紫色 AIGC 批注：和数据库的 advisory locks 一样，参与访问的 Agent 都要遵守协议；锁不会自动让错误的修改变正确。页码 16/25。"
         }
       ],
       "visual": {
@@ -993,7 +1048,8 @@
         "s-g723.0~7"
       ],
       "start": 3350.48,
-      "end": 3836.43
+      "end": 3836.43,
+      "flow": "p0 p1 p2 p3 x10 p4 e0 e1 n0 n1 n2 f0 f1"
     },
     {
       "title": "版本控制只是工具，难的是把团队拆开",
@@ -1014,20 +1070,33 @@
       ],
       "editor_notes": [
         "转写把 scaling law 听成 skinlock。课件写的是 Moore's Law，也是一种 Scaling Law。",
-        "口述说的是平方级和《人月神话》，没有念出具体条数。"
+        "口述说的是平方级和《人月神话》，没有念出具体条数。",
+        "slides 第 18 页的公式例子是 5 人 10 条、10 人 45 条，链接在紫色 AIGC 批注里。材料 brooks-man-month 这份 PDF 的元数据标题写成 20 周年全集，文件只有 16 页。物理页 4 的页眉是书页 14，物理页 8 的页眉是书页 18，印着 n(n−1)/2；例子是 3 人相对 2 人是 3 倍、4 人相对 2 人是 6 倍。物理页 16 的页眉是书页 26。课堂口述的「一百人大约是十人团队的两到三倍」仍留在原来的例子里。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003893167.jpg",
-          "time": 3893.167,
-          "caption": "课件「团队协作」。版本控制只是工具，真正困难的是进度和团队管理。AI 是一条斩杀线：一句话就能做出高质量产品，软件工程就死了。摩尔定律也被写成一种 scaling law，模型还会更强、更小、更快。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p17.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 17,
+          "related_time": 3893.167,
+          "caption": "官方 slides 第 17 页「团队协作」。版本控制只是工具，真正的困难还是进度（团队）管理。AI 是一条“斩杀线”：如果一句话就能直出高质量产品，软件工程就直接死了。Moore's Law（也是一种 Scaling Law）还成立，模型就有机会更强、更小、更快。如果一个岗位 100% 的工作都能被 AI 替代，这个人在这个岗位上的价值在哪里？页码 17/25。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v003953167.jpg",
-          "time": 3953.167,
-          "caption": "课件「团队的复杂性」。人数增加，沟通平方级上升。公式写着 n(n-1)/2，并举例 5 人是 10 条、10 人是 45 条，见 Brooks《人月神话》。下面四条：目标不一致；依赖在等待；完成的定义不同；责任落在缝隙里。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p18.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 18,
+          "related_time": 3953.167,
+          "caption": "官方 slides 第 18 页「团队的复杂性」。人数增加，沟通关系平方级上升。公式写成 n(n−1)/2：5 人是 10 条，10 人是 45 条，见 Brooks《人月神话》，这行在紫色 AIGC 批注里。下面四条也是紫色批注：“我的部分已经好了”；目标不一致（你要赶紧上线，我要趁机重构）；依赖在等待（前端等接口，后端等需求，关键路径却没动）；完成的定义不同；责任落在缝隙里（接口、测试、部署都“有人负责”，跨模块的问题却没人认领）。页码 18/25。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p19.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 19,
+          "related_time": 4040,
+          "caption": "官方 slides 第 19 页「版本控制留给我们的启发」。项目可以不仅是“当前状态”。图从初始版本到共同起点，分成探索 A 和探索 B，再汇成整合版本；失败的一支下面写着失败尝试也留下教训。条带：记住历史 · 并行探索 · 汇合成果。技术会过时，First Principles 会留下。能够看到开发的历史、记住教训（也许会被 Agent Memory 替代），也能管理多个并行探索，并最终合并。页码 19/25。"
         }
       ],
       "source_ids": [
@@ -1051,7 +1120,8 @@
         "s-g750.0"
       ],
       "start": 3836.43,
-      "end": 4107.34
+      "end": 4107.34,
+      "flow": "p0 p1 x11 p2 e0 e1 n0 n1 n2 f0 f1 f2"
     },
     {
       "title": "单向汉诺塔：用一个能卖的 playground 引出信息系统",
@@ -1077,10 +1147,12 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v004193167.jpg",
-          "time": 4193.167,
-          "caption": "课件「再次回到 Pico Playground」。Tower of Hanoi 被写成一个不容易的小学生题目。若要挣钱，就该做增值服务，把做题记录放在服务器。引用的 GPT 方案是：API 应用、关系数据库、对象存储、异步点评和后台任务；关系和记录进数据库，大课程包与完整轨迹进对象存储；任务量小则任务表就够。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p20.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 20,
+          "related_time": 4193.167,
+          "caption": "官方 slides 第 20 页「再次回到 Pico Playground」。小学生的 Tower of Hanoi 考了个不容易的题目，一片哀嚎。如果为了挣钱，就该在服务器端保存做题记录。GPT 的方案：一个 API 应用、一个关系数据库、一个对象存储；需要异步点评时再加后台任务进程。数据库存关系和记录，大课程包与完整轨迹放对象存储。任务量小时，数据库任务表就够用。页码 20/25。"
         },
         {
           "source_type": "video_frame",
@@ -1138,10 +1210,12 @@
       "editor_notes": [],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v004506733.jpg",
-          "time": 4506.733,
-          "caption": "课件「但 Git 不刚好适合这个吗？」。GPT 没想到三件事：树状版本历史，做到哪一步都能留下；免费的 diff，比较前后提交；用 git notes 把点评挂到当时的版本，不改原提交。汉诺塔若只存最终盘面，看不出卡在哪里；动作要存成序列才能回放和点评。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p21.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 21,
+          "related_time": 4506.733,
+          "caption": "官方 slides 第 21 页「但 Git 不刚好适合这个吗？」。树状的版本历史：做到哪一步、从哪里重试，都可以留下来。免费的 Diff：前后两次提交到底改了什么。Comment Commit：把点评关联到当时的版本；紫色 AIGC 批注写 git notes 可以后补点评，不改原提交。汉诺塔只保存最终盘面，看不出孩子在哪里卡住；保存动作序列，才能回放、比较和点评。把动作保存成逐行文本，Git 就能提供版本与差异；“哪一步值得表扬”仍然要由应用理解。页码 21/25。"
         }
       ],
       "source_ids": [
@@ -1163,7 +1237,8 @@
         "s-g915.0"
       ],
       "start": 4502.58,
-      "end": 4711.44
+      "end": 4711.44,
+      "flow": "p0 p1 p2 x12 e0 f0"
     },
     {
       "title": "现场把实验要求丢进去：字面都对，却不是想要的",
@@ -1267,20 +1342,42 @@
       ],
       "editor_notes": [
         "转写“手机端是真 HDD 服务”。这一帧没有看清 HDD 这几个字母，按上下文理解成手机端服务是真接上的，邮箱那一块仍是模拟。笔记不把 HDD 当成一种存储架构。",
-        "“维护性的人物”按维护性的任务理解。“人民奖学金申请”和“准备退课”是他看着模型生成的界面念出来的条目。"
+        "“维护性的人物”按维护性的任务理解。“人民奖学金申请”和“准备退课”是他看着模型生成的界面念出来的条目。",
+        "讲义页「MVP 的解释」链的是 Ries 2010-09-27 的文章 ries-good-enough，题目是 Good enough never is (or is it?)。slides 第 24 页紫色批注另链 lean-mvp，那一页声明自己原先发在 Startup Lessons Learned。两页都有同一条 MVP 定义的核心句，讲义那篇还写了「够好永远不够」和「发布垃圾」这两头。",
+        "讲义页在「从零开始」一段引用 Fowler 的 Technical Debt Quadrant（材料 fowler-quadrant），用来讲认真做完之后才发现当时的结构已经落后。课堂口述只说了 technical debt，没有讲四个格子。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v005374267.jpg",
-          "time": 5374.267,
-          "caption": "课件「Vibe Coding：回到原点，又踩一遍坑」。三条：记住现在、记住历史、记住教训。路径是反复对话（误解、纠正、再误解），终于能用，聊天记录消失，只剩代码因而决策和教训丢失，再回到原点犯同样的错。底部写：代码记住结果，决策记录记住为什么这样做、哪些路走不通。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p22.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 22,
+          "related_time": 5300,
+          "caption": "官方 slides 第 22 页「开始做一个项目」。你就是包工头。任何时候，开始都比不开始强。从零开始：连需求都还没对齐。“从零开始做产品”的难度比“参与一个成熟开源项目”大（intent-spec-impl gap）。任何“确定”的东西，都可能是把对需求的误解固定下来。准则：没有什么是不能变的，能不能以不变应万变？其实就是：你的软件能否抵抗需求的变化？页码 22/25。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005754633.jpg",
-          "time": 5754.633,
-          "caption": "课件「用 MVP 验证需求」。Minimum Viable Product，用一个最小的版本去验证。英文句子：The biggest risk in product development is building something nobody wants。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p23.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 23,
+          "related_time": 5374.267,
+          "caption": "官方 slides 第 23 页「Vibe Coding：回到原点，又踩一遍坑」。记住现在、记住历史、记住教训。图从左到右：反复对话（误解 → 纠正 → 再误解）→ 终于能用（软件已正常运行）→ 聊天记录消失 → 只剩代码（标着 slop，决策与教训丢失）。红色回路：回到原点，同样的错误再来一遍。紫色 AIGC 批注：代码记住结果，决策记录记住“为什么这样做、哪些路走不通”。页码 23/25。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p24.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 24,
+          "related_time": 5754.633,
+          "caption": "官方 slides 第 24 页「用 MVP 验证需求」。Minimum Viable Product：用一个最小的版本验证。英文句子：The biggest risk in product development is building something nobody wants. MVP 会给你一个立即能使用、不完备的版本，帮助你考虑未来潜在的变化、评估软件的设计。紫色 AIGC 批注：先选一个最值得验证的假设，再做能验证它的最小版本。（Eric Ries：MVP）。页码 24/25。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p25.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides4.html",
+          "page": 25,
+          "related_time": 5860,
+          "caption": "官方 slides 第 25 页「早期的 Prompt，影响最大」。每一次“确定”，都在影响项目的走向。早期的 prompt 对项目的走向影响最大。任何“确定”的设计 → 潜在的 technical debt。留下历史，让可用版本反过来帮助设计。自动提交 & push → 可留痕的历史。可用的版本还可以帮助你重新整理架构设计。页码 25/25。"
         },
         {
           "source_type": "video_frame",
@@ -1361,11 +1458,152 @@
         "s-g1201.0~14"
       ],
       "start": 5261.95,
-      "end": 5904.99
+      "end": 5904.99,
+      "flow": "p0 f0 p1 x13 x15 f1 p2 p3 x14 f2 f3 p4 e0 e1 e2 n0 n1 n2 n3 f4"
     }
   ],
-  "supplements": [],
-  "bridges": {},
+  "supplements": [
+    {
+      "title": "实验页把五项能力和一条验收例子写清楚了",
+      "source_label": "课程官网实验页 lab1，讲义页与 slides 正文都链到这里；补充课堂没有逐条念完的规格",
+      "source_url": "https://jyywiki.cn/GSE/2026/lab1.md",
+      "text": "材料 lab1。官网实验 (1) 写明：实验是建议性质，不记分。做法上可以直接把实验要求交给模型，并配一个 Grill Me 之类的技能，让它先追问需求，再一起做完。五项能力与课堂画面上的实验要求一致，实验页把验收收得更具体：个人数据库推荐 Markdown 加目录，回答要定位到原文；smail 邮箱可以起草，发出去的必须是你确认的最终稿，重复检查不能把同一封信再发一次；ehall.nju.edu.cn 上至少完成一种事务的材料准备和填表，提交前展示关键字段和后果，退课、撤销申请不能由 Agent 自己决定；手机端可以是 App、网页，或用 AppleScript 操纵备忘录再同步，任务不能依赖桌面端一个始终开着的对话窗口；五项要能共享上下文，至少做出一条你愿意反复使用的流程。它给的例子是：收到办事通知后检索个人资料、整理待补材料、在手机上追问、准备 ehall 表单和邮件草稿，核对后再分别提交、发送，结果归档。成功流程和你的纠正要存成可阅读、可修改的脚本、技能或记忆，并用 Git 管理。验收例子写着：你指出“不要把报名截止时间当成活动开始时间”，助手应当能在新会话里把这条规则用到另一份通知上。页末把直接把需求丢给 Agent 得到的一团乱麻称作 AI slop，并比作《人月神话》里的软件焦油坑；同时又写，一旦找到更好的架构，AI 重构会很快。这句是实验页的判断，不是课堂测量。"
+    },
+    {
+      "title": "2014 年综述里的可追踪性定义，以及它承认人还在回路里",
+      "source_label": "讲义页正文与 slides 正文引用的综述；讲师口述只说这是 2014 年的 review，没有逐段讲论文",
+      "source_url": "http://selab.netlab.uky.edu/homepage/publications/2014-ICSE-FOSE.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        12
+      ],
+      "text": "材料 traceability-2014。ACM 页面返回 403，读的是 Kentucky 实验室主页上的开放 PDF，15 个物理页，题为 Software Traceability: Trends and Future Directions，作者 Jane Cleland-Huang、Olly Gotel、Jane Huffman Hayes、Patrick Mäder、Andrea Zisman，ICSE 2014，Hyderabad。物理页 1 目视核对过标题、作者和定义。论文引用 CoEST 的定义：把任何可唯一标识的软件工程制品和其他制品关联起来，随时间维护所需的链接，并用得到的网络回答产品和开发过程中的问题。摘要写：实践中追踪常常是事后、临时做的，收益因此不一定实现。物理页 2 把实践分成一谱：快节奏、业务向的项目里，很多人甚至不理解这个词，文中举例荷兰一家公司八位 IT 项目经理里有五位不理解，英国一家公司的老板称之为 made up problem；受监管、安全关键的一端理解更完整，但 FDA 送审材料里链接不完整、不正确、互相冲突，而且常常是认证前才补出来，这一点得到一位医疗器械公司员工的访谈印证。也有做成的例子：Panis 报告 Teradyne 用 TeamCenter，系统工程师 20%、子系统工程师 70%、设计工程师 80% 认为追踪值得做。物理页 3 的表 1 列出七个目标：Purposed、Cost-effective、Configurable、Trusted、Scalable、Portable、Valued，再加上 Grand Challenge：Ubiquitous，追踪总在那里、接近零成本。图 1 把过程分成计划与管理、建立、维护、使用。物理页 4 的图 2 是技术层：仓库、追踪信息模型、查询层、工作流、追踪引擎、用户交互。他们用 DBLP 检索 2003–2013 年 TSE、ASE、ICSE、RE、Software、ICSM 里的 Trace，筛掉无关之后剩 72 篇。物理页 4 写明、物理页 5 的图 3 画出：目标视角里超过一半只能归到 ubiquitous，26% 是 purposed，11% 是 trusted，其余目标各不超过 5%；过程视角是计划 10%、建立 44%、维护 15%、使用 31%；技术视角是算法 54%、用户交互 28%，其余各类不超过 5%。作者写，不能把论文数量当成问题有多重要：数据集好找、好做实验的建立链接吸引了更多工作。56 名实践者的调查里，追踪主要用于需求、项目管理和合规，较少用于设计、实现和维护。物理页 8 写，评估过的追踪论文里超过一半集中在自动建立或维护链接；当时只是半自动，把人完全排除既不太可能，也可能并不希望如此。信息检索路线从 Antoniol 等人的概率方法，到 VSM、LSI、LDA，召回了大部分相关制品，但也带回很多假阳性，精度的改进后来变平，主因是两边用词对不上。文中引用 Lohar 等人：在若干大型工业数据集上，按项目状态做增量配置，链接质量有时比标准 VSM 高出多达 100%；这是综述转述的别人的结果，不是这篇综述自己跑的实验。物理页 9 写，维护链接的研究不到建立链接的三分之一；工业工具常把过时链接标成 suspect。人工反馈大约有 25% 是错的，而且起始矩阵质量越高，分析员的判断有时反而越差。物理页 12 写，四种常见可视化里，矩阵和图更适合管理任务，超链接更适合实现和测试；矩阵适合看总览，图适合沿着链接走。结论把后续工作分成算法、过程和技术基础设施，实验环境叫 TraceLab。物理页 12 底部到物理页 15 是参考文献 [1]–[92]，只核过这是引文目录，没有打开被引文献。认证标准 DO-178C 和 FDA 是论文里的例子，课堂没有讲。"
+    },
+    {
+      "title": "Git 对象：内容寻址的 blob、tree 和 commit",
+      "source_label": "讲义页正文「参见 Git Objects」，Pro Git 第 2 版网页；课堂讲的是快照，没有拆这三种对象",
+      "source_url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects",
+      "text": "材料 git-objects。这一章把 Git 说成内容寻址的文件系统：放进内容，拿回一把以后能取回它的钥匙。git hash-object -w 把数据写进 .git/objects，文件名是 SHA-1，前两个字符做子目录。只存内容、不存文件名的那种对象叫 blob。tree 像目录项，每条是某个 blob 或子 tree 的 SHA-1，加上 mode、类型和文件名；文件在 Git 里合法的 mode 只有有限几种。commit-tree 用一棵 tree 的 SHA-1，以及可选的父 commit，做出 commit 对象。commit 对象里有顶层 tree、父提交（第一个可以没有）、作者和提交者、时间，然后空一行，再是说明。对象入库时，头是「类型、空格、字节数、空字节」再拼上内容，对这一整段做 SHA-1，再用 zlib 压缩，按哈希的前两位分子目录。blob、tree、commit 都是这套存法，只是头的类型不同。章里用 Ruby 演示的那次哈希，echo -n \"what is up, doc?\" 得到 bd9dbf5aae1a3862dd1526723246b20206e5fc37。这些是对象模型，不是课堂要求当场手写的命令。"
+    },
+    {
+      "title": "rebase 把提交挪到新起点上，冲突时 Git 会停住",
+      "source_label": "讲义页正文参见 git-rebase；slides 第 5 页 AIGC 批注另链 Pro Git 的 Rebasing 一章，不是课堂口述",
+      "source_url": "https://git-scm.com/docs/git-rebase",
+      "text": "材料 git-rebase 与 progit-rebasing。git-rebase 的 DESCRIPTION 把这件事叫做把一串提交移植到另一个起点。例子是 topic 上的 A、B、C 接到 master 的 G 之后，变成 A'、B'、C'。它先列出当前分支自分叉以来、在上游还没有等价物的提交，再相当于 git checkout --detach 到上游，然后逐个重放，类似对每个提交做 git cherry-pick，最后把分支指到新的末端。冲突时停在第一个有问题的提交上，留下冲突标记；处理完用 git add 标记，再 git rebase --continue，或者 --abort 回到原分支，或者 --skip 丢掉引起冲突的那个提交。开始时 ORIG_HEAD 指向将被重写的分支尖，但 rebase 过程中如果另有命令改了 ORIG_HEAD，它不一定还指着那里；原来的尖端还可以从当前分支的 reflog（@{1}）找到。Pro Git 同一章写的操作顺序是：找到共同祖先，取出本分支每个提交引入的 diff，把当前分支重置到要接到的那个提交，再逐个应用。它明确写：最后那个提交指向的快照，可以和一次 merge 得到的快照相同，不同的是历史看起来是线性的。危险写在一句里：不要 rebase 已经存在于你的仓库之外、而且别人可能已经基于它们继续工作的提交。rebase 是放弃现有提交、造出相似但不同的新提交。只重写从未离开自己电脑的提交，它认为是安全的；已经推送、但还没有人基于它们做提交，也还可以；已经公开、而且别人基于它们工作了，再改写就会让对方不得不重新合并。讲义页链的是 git-scm 的命令文档，slides 上的书本章节是 AIGC 批注。"
+    },
+    {
+      "title": "jj 里 change 不是单独的对象，change ID 挂在 commit 上",
+      "source_label": "讲义页正文参见的官方术语；slides 第 8 页 AIGC「设计说明」实际链到教程，不是课堂口述",
+      "source_url": "https://github.com/jj-vcs/jj/blob/main/docs/glossary.md",
+      "text": "材料 jj-glossary、jj-home、jj-tutorial。术语表写：change 是一个 commit 随时间演化的那一面；change 本身不是数据模型里的对象，存在的是 change ID，它是 commit 的一个属性。改写（rewrite）会做出新 commit，因此 commit ID 变，change ID 通常不变；改说明、rebase、改工作副本，都算改写。用 Git 后端时 commit ID 就是 Git 的 commit ID，长度 20 字节；change ID 常常是 16 字节，jj log 默认显示成 12 个 k–z 的字母。同一个 change ID 如果对应不止一个可见 commit，就叫 divergent change，日志里标 divergent。commit 存的仍是快照；jj diff 和 jj rebase 使用的是相对父提交的差异，多个父提交时，差异是相对「先把父提交合并之后」的结果。材料 jj-home 的 https://www.jj-vcs.dev/latest/ 打开后是文档首页，不是设计说明；页上把已发布版文档和 main 分支上尚未发布的文档分成两条。材料 jj-tutorial 的文件名是 tutorial.md。slides 把链接文字写成「设计说明」。教程开头假定读者会 Git，并声明教程写完之后 jj 又多了功能。已读到 Preparation、Cloning a Git repository、Changes，以及 Creating our first change 里改 README 的那一段。克隆后的工作副本是 change ID kntqzsqt、commit ID d7439b06，当时是空提交。Changes 一节把 change 定义成可以演化、同时保持稳定标识的 commit。Creating our first change 的开头：jj describe 写成 Say goodbye 之后，同一 change ID 的 commit ID 变成 e427edcf；用 sed 把 README 里的 Hello 改成 Goodbye，再 jj st，commit ID 变成 5d39e19d。教程写这两次都是在 amend 当前的 working-copy commit，父提交不变。jj new 会在当前提交之上再放一个空的工作副本提交：例子里新的 change ID 是 mpqrykyp、commit ID aef4df99，父提交仍是 kntqzsqt 5d39e19d。想把新的修改并回上一个 change，用 jj squash，教程写它作用在工作副本时很像 git commit --amend；也可以 jj edit 回到那个提交再改。教程建议：如果这个 change 差不多做完了，先 jj new，用 jj diff 看调整，再 jj squash。jj evolog 列出同一 change 上工作副本、说明、squash、rebase 的历次记录。jj log 一行上第一个 ID 是 change ID，第二个是 commit ID；命令接受两种 ID，教程建议优先用 change ID，因为改写之后它还在。@ 是工作副本。图里的 ~ 表示被省略的父提交。root() 是每个仓库都有的虚拟根，例子里 change ID zzzzzzzz、commit ID 00000000。Conflicts 一节用同一条 file1 做例子：jj rebase -s B2 -o A 会连后代 C 一起搬，输出写 Rebased 2 commits。B2 和 A 改了同一处，于是 B2 和 C 都标 (conflict)，file1 是 2-sided conflict，但 rebase 已经完成，没有停在半截状态。教程自己的提示是：在冲突提交上 jj new，改掉标记或用 jj resolve，再 jj squash 把解决移回那个冲突提交；只改了另一个文件的 C 会跟着变回已解决。这和 jj-vcs.dev/latest 冲突页写的「检出冲突提交再 amend」不是同一串命令。两份文档不是同一发布版，补充并列，不把其中一套说成另一套的改写。标记示例里能看到三边：从 B1 到变基目标 A 的 diff，加上被变基的 B2。操作日志 jj op log 记下每次命令。jj undo 撤销上一次。例子里撤销的是把解决 squash 进 B2 的那一次：B2 和 C 重新标上 conflict；工作副本回到 squash 之前的 zxoosnnp 63874fe6，这一行本身没有 conflict 标记，冲突在它的父提交 B2 上。jj log --at-op 可以按某次操作之后的样子看仓库。jj squash -i 只把一部分 diff 移到父提交，子提交的内容状态不变，所以即使改到同一个词也不会因此产生冲突。jj diffedit 直接改某个提交的内容、不必先检出，子提交的状态会变，后代可能因此出现冲突。已有 Git 检出目录里运行 jj git init，会在 .git 旁边放 .jj，教程把这叫做 colocated workspace，jj 和 git 命令可以在同一目录里用。文首还指向 Steve Klabnik 的教程和 Jujutsu for everyone，这两份没有打开。slides 的链接文字仍是「设计说明」，文件标题仍是 Tutorial。"
+    },
+    {
+      "title": "工作副本自动快照，冲突可以留在提交里继续改写",
+      "source_label": "讲义页正文参见 Working Copy 与 First-class Conflicts；slides 第 9 页 AIGC 批注链的是同一组文档",
+      "source_url": "https://github.com/jj-vcs/jj/blob/main/docs/working-copy.md",
+      "text": "材料 jj-working-copy 与 jj-conflicts。工作副本文档写：大多数 jj 命令会在工作副本有改动时自动做成一次提交，新修订替换原来的工作副本修订。新文件默认被跟踪，除非匹配 .gitignore 或 snapshot.auto-track 排除了它们；没有单独的 .jjignore。一条命令通常三步：先给工作副本拍快照，再在内存里做新提交并记成一次 operation，最后把工作副本更新到这次 operation 说的 @。第三步没发生，工作副本就是 stale，用 jj workspace update-stale 补上。从另一个 workspace 改写了这个工作副本的提交，也会让它变 stale。jj workspace add 可以给同一个仓库再挂一个工作副本，各自检出不同的 commit；术语表说这就是 Git 叫的 worktree。冲突文档写：jj 可以在 commit 里记录冲突状态。rebase 撞上冲突时，冲突记在重写后的提交里，rebase 本身成功，以后再解决。存的是冲突的逻辑表示，不是标记文本，所以再 rebase 不会套出一层层标记。解决冲突的统一做法是：检出那个冲突提交，改完，再 amend。这样就不需要 git rebase --continue 那种半截状态。冲突提交还可以继续 rebase、merge，或把冲突解决本身当作 merge 提交里的变化再被 rebase。写进工作副本时才变成标记。默认标记是一份快照加若干要应用到它上面的 diff；示例是一边把 grape 改成 grapefruit，另一边把整文件改成大写，解决结果是把 diff 应用到大写快照上，得到 GRAPEFRUIT。两边以上的冲突也可以。另有 snapshot 和 git（diff3）两种标记样式，git 样式只保证两边冲突。这些是文档里的机制，课堂把它叫做 killer feature，没有演示标记格式。"
+    },
+    {
+      "title": "2008 年眼动实验的摘要：人说在找更好的解，眼睛仍停在旧解上",
+      "source_label": "官方 slides AIGC 批注里的链接，不是讲师口述，也不是讲义正文的推荐",
+      "source_url": "https://bura.brunel.ac.uk/bitstream/2438/2276/1/Einstellung-Cognition.pdf",
+      "text": "材料 einstellung-2008。slides 第 10 页 AIGC 批注的原链接是 PubMed 18565505。PubMed 只给出摘要。出版社全文没有打开，也没有伪装 User-Agent、用无头浏览器或解验证码去过墙。这次读的是 Brunel University Research Archive 上 Gobet 当时所在机构存档的作者稿 PDF，https://bura.brunel.ac.uk/bitstream/2438/2276/1/Einstellung-Cognition.pdf 。库记录和稿子首页都写 Bilalić、McLeod、Gobet，题为 Why good thoughts block better ones: The mechanism of the pernicious Einstellung (set) effect，期刊栏是 Cognition (in press)。这是录用稿，36 个物理页，不是 PubMed 上期刊排版后的 2008 年 9 月、108 卷 3 期、652–661 页。作者单位在稿子里是 Oxford、Oxford 和 Brunel；通信地址写成 Tübingen。DOI 10.1016/j.cognition.2008.05.005 来自 PubMed，稿子首页没有印这个 DOI。下面的数字都出自这份作者稿。Einstellung（set）效应是：熟悉特征唤起的第一个想法挡住更好的解。稿子把大约三个标准差的量化归于他们同年的另一篇 Cognitive Psychology 论文 Inflexibility of experts，不是这次眼动实验新测的：熟悉解把专家的解题表现压到大约低三个标准差的棋手；特级大师在图 1 这道题上都能找到最优解，但更难的题上仍会出现这个效应。效应能否被测到，取决于棋力和那条不显眼的解有多难。这次的实验 1 用眼动。两道题：2-solution 里熟悉的 smothered mate 五步将死，较短的不熟悉解三步将死；1-solution 只把黑方白格象从 c6 挪到 h5，熟悉解消失，短解还在。两组都是男性 Candidate Master，各 5 人。物理页 29 的表 1：只看 1-solution 的一组平均 Elo 2066±28、平均年龄 32±14；先看 2-solution 的一组平均 Elo 2113±54、平均年龄 39±10。只看 1-solution 的人全部找到短解，平均 79 秒（SD 25）。先看 2-solution 的人全部把 smothered mate 说成最短，平均 37 秒（SD 20），并且事后都说找到熟悉解之后还在找更短的；再给他们 1-solution 时全部找到短解，平均 148 秒（SD 90）。和只看 1-solution 的 79 秒比，这次变慢没有达到惯用显著水平，t(8)=1.67，p=.13，d=1.2。眼动是 SensoMotoric Instruments iView 3 RED II，50 Hz，误差 0.5–1 度；棋盘图 400×400 像素，格子大约 4.9×4.6 厘米，屏幕距离 70 厘米；只计至少 100 毫秒的注视。另一组 8 名没有参加实验的专家（平均 Elo 2294±192，其中两名女性）用 7 点量表标出格子对两种解的重要性。熟悉解的关键格是 f7、g5、g8，最优解的关键格是 b2、h6、h7、g7。物理页 34 的图 2：纵轴是注视时间百分比，刻度 0 到 60；横轴是前 10 秒、四个等分和最后 5 秒。空心圆是熟悉解的格子，实心三角是最优解的格子。2-solution 上，空心圆全程在实心三角之上，最后 5 秒升到 40 的刻度附近，实心三角停在 10 与 20 之间；和时间段的交互不显著，F(5, 20)=0.6。1-solution 上，最后 5 秒实心三角升过 40 的刻度，空心圆落到 10 以下；交互 F(5, 20)=11.9，p<.001，ηp²=.75。他们并不是完全没看最优解的格子；脚注写，后期在这些格子上的时间多于一组对照格，但不够让他们放弃熟悉解。实验 2 比较的是：没有先看过 2-solution 的人，和先在 2-solution 上失败过的人，解同一道 1-solution 要多久。后一组的数据来自那篇 Cognitive Psychology 论文，不是这次重新测的。物理页 31 的表标题是 Table 3；方法段写成 see Table 2，和前面那张格子重要性的 Table 2 重了号。两组各 23 人，含 International Master、Master、Candidate Master，都是男性。先失败过的人用的时间大约是没有该经验者的两倍，作者写 roughly half the time，t(44)=2.16，p=.036，d=.65；水平和组别的交互不显著，F(2, 40)=0.9，p>.40。讨论写：第一个被激活的 schema 把注意导向和自己相符的特征；人以为自己在开放地找更好的解。slides 用它说明肌肉记忆会锁住注意力。这是批注里的论文，不是讲师展开过的实验，也不能把三个标准差写成这次眼动实验的新测量。物理页 20–26 是参考文献，没有追读被引文献。",
+      "pages": [
+        1,
+        6,
+        11,
+        13,
+        15,
+        16,
+        29,
+        31,
+        34
+      ]
+    },
+    {
+      "title": "git worktree 共享对象库，默认不能把同一分支检出两次",
+      "source_label": "讲义页与 slides 正文参见的 git worktree 文档",
+      "source_url": "https://git-scm.com/docs/git-worktree",
+      "text": "材料 git-worktree。文档把附加的工作目录叫 linked worktree，git init 或 git clone 得到的那个叫 main worktree。一个仓库有一个主工作树和零个或多个链接工作树。git worktree add <path> 会用路径的最后一段做新分支名并检出；git worktree add <path> <branch> 则在新目录里检出已有分支；git worktree add -d <path> 做的是分离 HEAD 的一次性工作树。链接工作树和当前仓库共享内容，但不共享每个工作树自己的文件，文档举的例子是 HEAD 和 index。一般而言，HEAD 这类伪引用按工作树分开，refs/ 开头的引用是共享的。默认情况下，add 拒绝两件事：这个分支名已经在另一个 worktree 里被检出，或者目标路径已经分配给某个 worktree 但目录本身不见了。--force 可以越过这些保护。删目录时要用 git worktree remove；如果只是把目录删掉而没有用这条命令，工作树记录还在，之后可以 prune。课堂演示的 slave-a、slave-b 就是两个链接工作树，各自有 HEAD，对象库仍是主仓库那一份。文档多出来的限制是：不加大力，同一分支不能同时出现在两个 worktree 里。"
+    },
+    {
+      "title": "bisect 是二分查找，blame 标的是最后改过这一行的修订",
+      "source_label": "讲义页正文参见 git-bisect 与 git-blame；课堂用它们说明快照可以回溯",
+      "source_url": "https://git-scm.com/docs/git-bisect",
+      "text": "材料 git-bisect 与 git-blame。git-bisect 的 DESCRIPTION 写：用二分查找找出历史里引入某个 bug 的提交。先给一个已知有 bug 的 bad 提交，和一个已知在 bug 出现之前的 good 提交，它在两端之间取一个提交来问是 good 还是 bad，直到范围缩到引入变化的那一次。同一段还写，它也可以找任何性质的变化，例如修好 bug 的那一次，或让某项性能测试变好的那一次，不一定是「引入缺陷」。git-blame 的 DESCRIPTION 只有一句任务：给文件的每一行标上最后修改这一行的修订和作者；可以从给定修订开始标，也可以只标一个行范围。它标的是这一行最后一次被改动的修订，不是「谁该被开除」。课堂把 blame 说成对人的追责，把 agent 不能被开除当成重新考虑 blame 的理由；命令本身提供的是最后修改者。这两份是命令说明的 DESCRIPTION，不是整本选项手册。"
+    },
+    {
+      "title": "ASRS：自愿、保密、非惩罚，而且独立于执法",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://asrs.arc.nasa.gov/publications/callback/cb_555.html",
+      "text": "材料 nasa-asrs-555。打开的是 CALLBACK 第 555 期，2026 年 4 月，纪念 ASRS 运行 50 年。它把制度追溯到 1974-12-01 环球航空 514 航班在杜勒斯进近时撞山；六周前另一航班在同一进近、同一位置误解过同一份许可，但只在公司内部告诉了自己的飞行员。FAA 请 NASA 做一套和执法、调查分开的报告系统。NASA 艾姆斯的人因研究者定了四条，页面写这四条今天还在：自愿、保密、非惩罚、独立。运行从 1976-04-15 开始。页面写现在大约每月超过 10,000 份报告，累计超过 230 万；分析员去掉可识别身份的信息，保留事件细节。到该期为止发出过 8,150 份以上的安全警报。数据库在线检索自 2006 年以来超过 42 万次。同一期也写了机组资源管理、驾驶舱无菌规则、TCAS 等后来的变化里有 ASRS 的参与，这些是新闻信自己的历史叙述。slides 只用了「自愿、保密、非惩罚」来类比「不要 blame、只要防止重演」。讲师没有讲这期新闻信，也没有讲 514 航班。"
+    },
+    {
+      "title": "advisory lock 的含义由应用自己定，数据库不替你保证改对了",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://www.postgresql.org/docs/17/explicit-locking.html#ADVISORY-LOCKS",
+      "text": "材料 pg-advisory-locks。读的是 PostgreSQL 17 文档第 13.3.5 节 Advisory Locks，不是整篇显式锁文档。原文写：这种锁的含义由应用定义，系统不强制你使用它们，用得对不对是应用的事。它们适合和 MVCC 不太合拍的加锁策略，例如模仿「扁文件」系统里的悲观锁。和在表里放一个标志相比，advisory lock 更快，不会把表撑大，并且会在会话结束时由服务器清掉。取得方式有会话级和事务级。会话级一直持有到显式释放或会话结束；它不服从事务语义：事务回滚了，锁还在，解锁也不因为后面的事务失败而取消。同一进程可以重复加锁，每次加锁都要有对应的解锁才会真正放开。事务级则在事务结束时自动释放，没有单独的解锁。当前由哪些会话持有，可以看 pg_locks。锁和普通锁一样放在共享内存里，上限由 max_locks_per_transaction 和 max_connections 决定，耗尽之后服务器什么锁都发不出。slides 把这比作 Agent 之间的约定：上锁的人自己要遵守「先读最新状态再改」，锁不会把一次错误修改变成正确修改。这和文档里「系统不强制使用」是同一方向。课堂没有讲 PostgreSQL 的函数名或这两级锁的回滚差别。"
+    },
+    {
+      "title": "《人月神话》这一章怎样写沟通代价",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://www.cs.virginia.edu/~evans/greatworks/mythical.pdf",
+      "pages": [
+        8,
+        15,
+        16
+      ],
+      "text": "材料 brooks-man-month。slides 第 18 页把 n(n−1)/2 链到这份 PDF。文件元数据标题写成 Frederick P. Brooks《人月神话》20 周年全集，pypdf 计数是 16 页，抽出来的是第 2 章 The Man-Month。页眉上的印刷页号：物理页 4 是 14，物理页 8 是 18，物理页 16 是 26；物理页 3 底部标着 13。不能把它当成整本书已经读过。物理页 8（书页 18）目视核对过：沟通负担分成训练和相互沟通。训练不能再拆分，所以这部分随人数线性增加。相互沟通更糟：如果每一部分都要和其他每一部分分别协调，努力按 n(n−1)/2 增长。书上的例子是：3 个人所需的成对沟通是 2 个人的 3 倍，4 个人是 2 个人的 6 倍；如果还要三个人、四个人一起开会，会更糟。同页图 2.3 的标题是需要沟通的可拆分任务，纵轴是月数、横轴是人数，曲线下降后变平。物理页 15–16 写出 Brooks's Law：Adding manpower to a late software project makes it later。前面的例子是一项估成 12 人月、3 个人做 4 个月的任务，第一个里程碑拖了一个月之后，加人会把训练和重新划分任务的成本算进去，进度不会按加人的比例回来。课堂口述用了「平方级」和书名，没有念 3 人、4 人这两个倍数，也没有念 Brooks's Law。slides 上的 5 人 10 条、10 人 45 条是按公式算的例子，不在这一章的例句里。"
+    },
+    {
+      "title": "git notes 附在对象上，不改对象本身",
+      "source_label": "讲义页正文参见 git notes；slides 第 21 页 AIGC 批注另链 2.42.0 的同一命令文档",
+      "source_url": "https://git-scm.com/docs/git-notes",
+      "text": "材料 git-notes 与 git-notes-242。两份 DESCRIPTION 的开头一致：给对象添加、删除或阅读笔记，而不触碰对象本身。默认存在 refs/notes/commits，这个引用还不存在时，第一次需要存笔记会悄悄建出来。典型用途是给提交说明做补充，同时不改提交本身。git log 可以把笔记和原来的说明一起显示，笔记缩进，前面有一行不缩进的 Notes (<refname>):；默认引用则显示成 Notes:。format-patch 可以用 --notes 把笔记加在补丁里三条横线之后的评论位置。2.42.0 是 slides 批注钉死的旧版手册，当前未带版本号的文档页是这次打开的新页。课堂要用的那一点，两份说明写的是同一句：笔记不改 commit 对象。所以点评可以后补，提交 ID 不变。选项表里的改写策略、合并策略这次没有当成阅读范围。"
+    },
+    {
+      "title": "技术债象限：鲁莽或谨慎，故意或无意",
+      "source_label": "讲义页正文引用 Martin Fowler 的 Technical Debt Quadrant；课堂口述没有讲这四个格子",
+      "source_url": "https://martinfowler.com/bliki/TechnicalDebtQuadrant.html",
+      "text": "材料 fowler-quadrant。Martin Fowler，2009-10-14，页上注记 2014-11-19 重贴。他不同意把「债」只留给有意的取舍、把乱七八糟的代码排除在外。他认为隐喻是否有用，要看它能不能帮人决定怎么处理设计问题，以及能不能对不懂技术的人讲清楚。区别不在「是不是债」，而在谨慎的债和鲁莽的债。谨慎而故意：知道自己在借，并且想过提前发布的好处是否大于以后偿还的成本；很少被碰到的代码，利息很小，也许不值得马上还。鲁莽而故意：知道该怎么写干净，仍选择 quick and dirty，因为觉得没时间；他同意 Uncle Bob，这通常是鲁莽的，因为人会低估设计的回报线。鲁莽而无意：不懂设计，借了很多还不自知。第四格是谨慎而无意：项目交付了、客户也满意、代码也干净，但最好的设计是做了一段时间之后才看出来的。他写，常常要在一个项目上编一年，才明白当初最好的做法是什么；一旦明白，也就发现自己背着一笔无意的债。他认为这种债对优秀团队也不可避免，所以更不应该再用糟糕的代码去鲁莽地叠加。他同时承认，这种债很难对管理者解释，因为财务上很难想象一笔「谨慎又无意」的借款。讲义用这一格说明：第一版在当时有理由，用过之后才知道结构该怎么分。课堂说的 technical debt 是文档和代码失去联系，没有用这四个格子。"
+    },
+    {
+      "title": "Ries 对 MVP 的定义，以及讲义和 slides 各链了一页",
+      "source_label": "讲义页正文「MVP 的解释」；slides 第 24 页 AIGC 批注另链 leanstartup.co，不是课堂口述",
+      "source_url": "https://www.startuplessonslearned.com/2010/09/good-enough-never-is-or-is-it.html",
+      "text": "材料 ries-good-enough 与 lean-mvp。讲义链的是 Eric Ries 2010-09-27 的博客 Good enough never is (or is it?)。文章先并列两种说法：管理者常说 good enough never is，用来拒绝潦草交差；也有团队靠发出「已经够好」的东西取得突破，文中当作传闻的例子是 Google Maps 的早期 AJAX 地图，Larry 和 Sergey 说已经够好、发出去。Ries 认为 MVP 就是用来处理这个两难的，而且很难。文中的定义是：minimum viable product 是一个新产品的那个版本，它让团队用最少的努力收集最大量的 validated learning。换句话说，它是对一组特定假设的检验，目标是尽快证明或推翻它们。其中一条假设总是：顾客在乎什么、他们怎样定义质量。他写，minimum 不是「在最近的日期把任何东西发出去」，而是「一旦能够学到需要学的东西就发出去」。文章警告两件被混在一起的事：一是担心发出垃圾会永远得罪用户，这里面其实叠了很多尚未验证的假设（已经解决了分发、已经知道发给谁、已经知道他们用什么标准、已经知道他们会在乎到被冒犯）；二是担心早期失败会让创业者放弃愿景。他要求早期 MVP 不是营销发布：不要媒体，不要虚荣指标，有投资人的话要事先说明这些早期尝试是为了失败而设计的。文章末尾把纪律放在学习上：对「把构建—测量—学习跑快」这件事没有够好，对某一次发布则只问有没有一个能学习的强假设。材料 lean-mvp 是 leanstartup.co 上的转载页，声明原文写于 Startup Lessons Learned。定义句多了 about customers：用最少努力收集关于顾客的最大量 validated learning。同页写 MVP 不是为了做「最小的产品」；如果目标只是挠一个明确的痒处或快速转手，并不需要 MVP。它也不公式化。页上的经历是：IMVU 最初的 MVP 用了六个月，比上一家公司将近五年才发布要短；另一次用两周做了一个谁都不想要的功能，事后看两周也太长，一个 AdWords 的烟雾测试就能更早发现。这次抓到的 HTML 在定义前有一句字面是 most understood Lean Startup techniques，句子不完整，不像常见的 misunderstood；定义句本身是完整的，补充只用定义句和上面这些经历，不把那个残句当成他的主张。课堂英文句子 The biggest risk in product development is building something nobody wants 出现在 slides 上，这两篇文章的正文里没有这一句。"
+    },
+    {
+      "title": "架构决策记录：短文件，决定被替换也不删",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions",
+      "text": "材料 adr-nygard。Michael Nygard，2011-11-15，Documenting Architecture Decisions。他要记录的是架构上重要的决定：影响结构、非功能特性、依赖、接口或建造方式的那些。理由是新人面对旧决定，如果不知道当时的理由和后果，只能盲从或盲改。盲从会在上下文已经变了的时候不敢动；盲改可能拆掉一个还没被测试覆盖的非功能需求。格式故意短，放在仓库 doc/arch/adr-NNN.md，用 Markdown 或 Textile。编号单调递增，不回收。决定被推翻时，旧记录留着，标成 superseded。每一篇有五块：Title，短名词短语；Context，把技术、政治、社会、项目现场这些互相拉扯的力量写出来，语气保持价值中立；Decision，用完整句子、主动语态，写成 We will …；Status，还没共识是 proposed，同意了是 accepted，被后来的记录取代则是 deprecated 或 superseded，并指向替代者；Consequences，决定之后的新上下文，正面、负面、中性都写。一篇只写一个决定，一到两页，像在对未来的开发者说话。一篇的后果会变成下一篇的上下文。文中说他们从当年 8 月初开始用，已经有六到十个开发者轮转经过这些项目，反馈是读到了上下文。反对意见是：放在版本库里，不常进仓库的项目经理和客户不好读；他们的做法是仓库在 GitHub 上，链接打开就是渲染过的 Markdown。slides 用「决策记录」指「为什么这样做、哪些路走不通」。课堂讲的是记住教训、聊天记录会消失；没有规定文件名和这五块标题。"
+    }
+  ],
+  "bridges": {
+    "x0": "实验页把刚才那份作业的验收和五项能力写完整了，对照本节的开场。",
+    "x1": "综述给课堂说的可追踪性一个更长的定义，并说明当时的研究精力集中在自动建链接。",
+    "x2": "对象模型把课堂说的「快照」拆成 blob、tree 和 commit。",
+    "x3": "命令文档和 Pro Git 把 rebase 怎样换成新提交、冲突时会不会停住写清楚了。",
+    "x4": "教程把 change ID 不变做成一次可跟随的例子，并写出冲突可以先被搬走再解决。",
+    "x5": "工作副本和冲突两页对应「未完成的工作也是提交」。",
+    "x6": "作者稿说明 slides 上那条眼动实验测了谁，以及眼睛实际停在哪一类格子上。",
+    "x7": "命令文档补上 worktree 共享什么、默认不能怎样重复检出。",
+    "x8": "两条命令说明对应课堂用来回溯的 bisect 和 blame。",
+    "x9": "新闻信写明 slides 底部那套报告制度是怎样成立的。",
+    "x10": "数据库文档写明这种锁不替应用保证修改正确。",
+    "x11": "这一章里的公式和倍数，用来核对 slides 上的人数例子。",
+    "x12": "命令说明对应「点评后补、不改原提交」。",
+    "x13": "象限用来看讲义怎样区分「当时认真做、后来才发现该怎么设计」。",
+    "x14": "两篇 Ries 的文字用来核对 slides 上的 MVP 定义。",
+    "x15": "决策记录的五块，对应「代码只记住结果」之后还该留下什么。"
+  },
   "self_test": [
     {
       "section": 1,

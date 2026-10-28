@@ -34,7 +34,7 @@
     "通读全部 20 个转写块、821 句。章节按主题合并，没有把五分钟切块直接当成节。",
     "画面使用 frames.py 的场景阈值 0.3 加 60 秒兜底，共 131 个候选、11 张联系表。先看联系表，再打开与主题转折对应的候选，定稿 31 帧由 frames.py grab 按原分辨率截取。不是逐秒观看。",
     "良文峰/良文谷在口头出现时，抽到的帧没有那张价格图；稍后目录帧里能看到文件名 liangwenfeng.gif。150 个 bug 的项目缩写只存在于转写，候选帧上没有看到原文。简历画面含学生个人信息，笔记不转录涂黑字段，也不把该帧放进成稿。",
-    "不读课程推荐材料，也不另做网页核对。幻灯片上的 225 项研究、ICSE 2027 议题、0.9 的 10 次方和 GRPO 等句子，只作为课堂画面里出现的文字，不另补出处。",
+    "这一版在上一轮讲义和已打开材料之外，补读了打得开的缺口。Elish 2019 改读期刊开放获取 PDF 全文。知乎「装机仙人」用的是同一 URL 的 2023-04-25 存档。Unix streams 用的是同一 URL 的 Internet Archive 存档。教师主页用的是作者仓库里与线上页面一致的正文。人月神话没有使用未授权扫描。Feynman 录音页仍是 403，存档也被 Archive 拒绝，录音没有下载。Inception 聊天页仍是验证页，存档只有启动壳。cv.pdf、OS2026-02.pdf、qrgen.xlsx 仍是 404，没有绕过 git.nju.edu.cn 的人机验证。办事大厅仍只有页面壳。摘录图仍是原文句子重排，不是期刊扫描。slides 里 span.aigc 的链接记为官方 slides AIGC 批注，不是课堂口述。",
     "紫色或幻灯片独有、口头没有展开的句子，写在课堂案例里，并在整理者说明中标明。听写校正都写了转写原词和画面依据。"
   ],
   "summary": [
@@ -125,10 +125,13 @@
           "caption": "左半是教室，叠着成片字幕「第一课 无剪辑原版（不推荐观看）」和「开局即翻车：采集卡不稳定，视频到第二节课才恢复」。右半是讲义 lect1/index.md，标题 Welcome to GenSE，能看到 Why? 狠来了，以及 PC（1975，Altair 8800）、互联网（1993，Mosaic）、移动互联网（2007，iPhone）、AI（2022，ChatGPT）。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v000060000.jpg",
-          "time": 60.0,
-          "caption": "右屏幻灯片《我们站在一个重要的交叉路口》：四次把昂贵能力变成日用品。文字为 PC（1975，Altair 8800）、互联网（1993，Mosaic）、移动互联网（2007，iPhone）、AI（2022，ChatGPT）。配图从左到右是早期主机、带 CRT 的台式机、手机和笔记本电脑。底部写：真正的拐点，不是机器又强了一点；而是某种昂贵能力，突然变成了日用品。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p01.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 1,
+          "related_time": 60.0,
+          "caption": "官方 slides 第 1 页《我们站在一个重要的交叉路口》。小标题是四次把昂贵能力变成日用品。正文：PC（1975，Altair 8800）、互联网（1993，Mosaic）、移动互联网（2007，iPhone）、AI（2022，ChatGPT），在人类命运的交叉路口，需要一个非常实验性的课程。配图从左到右是早期主机、CRT 台式机、手机和笔记本电脑。底部紫色 AIGC 批注：真正的拐点，不是机器又强了一点；而是某种昂贵能力，突然变成了日用品。"
         }
       ],
       "visual": {
@@ -224,10 +227,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000240000.jpg",
-          "time": 240.0,
-          "caption": "右屏幻灯片《三种焦虑》：三个问题，一个共同的根。三条分别是 AI 帮我上大学最后什么都没学会、听话学习四年发现被大学骗了、为了刷出一份完美的简历输了人生。底部问：我是在增长能力，还是在增长「看起来有能力」的证据？"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p03.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 3,
+          "related_time": 240.0,
+          "caption": "官方 slides 第 3 页《三种焦虑》：三个问题，一个共同的根。三条是 AI 帮我上大学最后什么都没学会、听话学习四年发现被大学骗了、为了刷出一份完美的简历输了人生。页上「简历」链到 lect/cv.pdf。底部紫色批注问：我是在增长能力，还是在增长「看起来有能力」的证据？"
         }
       ]
     },
@@ -274,7 +280,17 @@
         "「可以坐牢」是他这段的原话。课快结束时的幻灯片把这句话收窄成：它只点出了责任，责任还要和决策权、停止权绑在一起。两处都保留，不把后一页倒回成他此刻已经这么说。",
         "转写里的「GPT 五点六 SO / saw」在这一段没有对应的屏幕型号后缀。正文记他口头说的 GPT-5.6。紫色是模型添写，这一点是他说的，不是整理者的猜测。"
       ],
-      "frames": []
+      "frames": [
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p04.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 4,
+          "related_time": 467.7,
+          "caption": "官方 slides 第 4 页《What? AI 时代还有用的软件工程智慧》。正文写软件工程研究的是怎么让工程不失败。紫色 AIGC 批注：AI 可以加速实现，却不会自动暴露未知、分配责任或验证结果；工程的目标是让系统在约束、变化和协作中继续活着。大学还能教的三条写成信息差、能坐牢、能驾驭。批注把 Mars Climate Orbiter 的单位接口事故当作提醒：风险常发生在团队边界。"
+        }
+      ]
     },
     {
       "title": "讲义是源，其余都是生成",
@@ -345,10 +361,22 @@
           "caption": "右屏主窗口是 make-slides 的提示词，路径 .agents/skills/make-slides/SKILL.md。Goal：只为给定 snippet 做幻灯片，不生成整份文件，不要标题页和结束页。三条 subagent 是历史回顾与教训、事实和开创性工作、第一性原理。最右侧还开着一个百度页面。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v000805767.jpg",
-          "time": 805.767,
-          "caption": "右屏幻灯片《Everything is code》。文本是 source of truth，其他模态都是 AIGC。流程是：完整讲义提供上下文，选中的 snippet 划定边界，Agent 扩写，Markdown slides，浏览器渲染。下面写：要永生的不是一份录像，而是可编辑、可 diff、可复现的源代码与构建过程。若成功，就永生他的操作系统课。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p06.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 6,
+          "related_time": 805.767,
+          "caption": "官方 slides 第 6 页《Everything is code》。文本是 source of truth，其他模态都是 AIGC。紫色批注把流程写成：完整讲义提供上下文，选中的 snippet 划定边界，Agent 扩写，Markdown slides，浏览器渲染。要永生的不是一份录像，而是可编辑、可 diff、可复现的源代码与构建过程。若成功，就永生他的操作系统课。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p05.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 5,
+          "related_time": 720.0,
+          "caption": "官方 slides 第 5 页《How? 案例为主的松散组织》。写探索一条杀死大学的路径：课堂自由讨论并完整记录（直播），课后重新整理，以切片形式公开，进而实现永生。紫色批注给了 Feynman Lectures 录音页的链接，并写直播只能保存现场，永生来自把一次性课堂变成可持续维护的知识资产。"
         }
       ],
       "visual": {
@@ -450,22 +478,59 @@
           "text": "幻灯片《How? 重新找回同学们心中的热情》上有：一项汇总 225 项本科 STEM 研究的研究显示，主动学习提高了成绩并降低了失败率；以及拒绝把「手敲实现」误当成学习目标。口头他只说了禁止古法编程、去实践、机试仍是小黑屋刷题。",
           "caveat": "幻灯片表述，讲师没有在这段口头展开这项研究。"
         },
-        "转写「deep pick with flash / deep pick」按后文屏幕上的 deepseek-v4-flash 记为 DeepSeek V4 Flash。「良文峰 / 良文谷」按他的口头梗保留：白天上课是峰，夜里做作业是谷，夜里更便宜。稍后的目录里能看到 lect1/liangwenfeng.gif，但讲这段时抽到的帧没有这张图本身。「cloud 飞过来」听不清型号，只保留他的比较：同一个任务，更强的模型比 Flash 又快又好。「DP」没有在画面上核对到机构名，笔记只保留「门槛比较高的地方」。"
+        "转写「deep pick with flash / deep pick」按后文屏幕上的 deepseek-v4-flash 记为 DeepSeek V4 Flash。「良文峰 / 良文谷」按他的口头梗保留：白天上课是峰，夜里做作业是谷，夜里更便宜。稍后的目录里能看到 lect1/liangwenfeng.gif，但讲这段时抽到的帧没有这张图本身。「cloud 飞过来」听不清型号，只保留他的比较：同一个任务，更强的模型比 Flash 又快又好。「DP」没有在画面上核对到机构名，笔记只保留「门槛比较高的地方」。",
+        "幻灯片第 7 页的 225 项研究是材料 freeman-2014。效应量、失败率和「实施者是自愿教师」写在补充里，口述没有这些数字。",
+        "官方讲义页 lect1-notes 把「没有 token 的 CS 学生应该立即退学」称为狠话，并写第二讲已经说明不会真的退学。本集口述仍是：没有付费 token 的同学就应该立即退学。",
+        "jiangyy.github.io 的正文写在补充里。主页没有幻灯片上那句「实现了 A, B, C, D」的简历例句。播放量是主页自己写的。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000925767.jpg",
-          "time": 925.767,
-          "caption": "右屏幻灯片《How? 重新找回同学们心中的热情》。写着鼓励多实践、禁止古法编程。一条是「一项汇总 225 项本科 STEM 研究的研究显示，主动学习提高了成绩并降低了失败率」。另一条写：「禁止古法编程」不是禁止理解代码，而是拒绝把「手敲实现」误当成学习目标。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p07.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 7,
+          "related_time": 925.767,
+          "caption": "官方 slides 第 7 页《How? 重新找回同学们心中的热情》。鼓励多实践、禁止古法编程。紫色 AIGC 批注写：一项汇总 225 项本科 STEM 研究的研究显示，主动学习提高了成绩并降低了失败率，链到 doi.org/10.1073/pnas.1319030111。另一条写：禁止古法编程不是禁止理解代码，而是拒绝把手敲实现误当成学习目标。新的练习闭环是：提出值得做的问题，调度 Agent，检验现实结果，复盘并提高下一次判断。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v001045767.jpg",
-          "time": 1045.767,
-          "caption": "右屏幻灯片《课程 Policy：尽量「通过 / 不通过」》。不验收作业，不评分。不评分不等于不评价。简历例句是在《生成式软件工程》课程中实现了 A，B，C，D，并带 github.io 链接。底部写最终证据不是分数，而是别人可以打开、运行、质疑并继续使用的作品。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p09.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 9,
+          "related_time": 1045.767,
+          "caption": "官方 slides 第 9 页《课程 Policy：尽量通过 / 不通过》。不验收作业，不评分。有建议的实验和反馈。紫色批注：不评分不等于不评价，去掉排名信号，把反馈留给下一次迭代。简历例句是在《生成式软件工程》课程中实现了 A, B, C, D，并带 github.io 链接。例子链到 jiangyy.github.io。底部写最终证据不是分数，而是别人可以打开、运行、质疑并继续使用的作品。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p08.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 8,
+          "related_time": 958.0,
+          "caption": "官方 slides 第 8 页《课程 Policy：Token 自费》。可见句子：没有 token 的 CS 学生应该立即退学，并标明这是个人观点。同页写不需要 tokenmaxxing，课程课堂全程 deepseek-v4-flash。紫色批注：token 是实验耗材；真正稀缺的是值得花 token 的问题、清晰约束和可靠验收。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/sources/freeman-abs.jpg",
+          "source_label": "PMC 全文 HTML 摘要摘录，非期刊 PDF 扫描",
+          "source_url": "https://doi.org/10.1073/pnas.1319030111",
+          "page": 1,
+          "related_time": 925.767,
+          "caption": "Freeman 等人 PNAS 2014 摘录，材料 freeman-2014，来自 PMC HTML 的摘要、结果和讨论，不是期刊扫描。可见：225 项本科 STEM 研究；考试与概念清单高 0.47 个标准差（n = 158）；传统讲授失败优势比 1.95（n = 67）；平均分大约高 6%；失败风险 1.5 倍；失败率 21.8% 对 33.8%。班额不超过 50 人时效应最大，51–110 人和超过 110 人的班也有统计上的提高。主动学习包括课堂解题、练习纸、应答器和工作室式课程。退课更少可能使 0.47 低估成绩变化。实施者是自愿的教师，强制推广是否同样大是开放问题。0.47 个标准差在三门入门课里大约相当于总评高 0.3 分，中位数可以从 B− 到 B，或从 B 到 B+。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/sources/lect1-token.jpg",
+          "source_label": "官方讲义页 lect1.md 段落摘录",
+          "source_url": "https://jyywiki.cn/GSE/2026/lect1.md",
+          "page": 1,
+          "related_time": 958.0,
+          "caption": "官方讲义页 lect1-notes 的一段。可见：没有 token 的 CS 学生应该立即退学，被写成课堂里的一句狠话。紧接着写：第二讲已经说明，当然不会真的让大家退学。它强调的是亲自使用工具、形成判断。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 e0 e1 n0 n1 n2 n3 n4 n5 x0 x9 x12 f0 f1 f2 f3 f4"
     },
     {
       "title": "下一个 token，以及把工具接回循环",
@@ -549,26 +614,54 @@
         "抛硬币「六次加起来是四十」按原话保留，他没有在黑板上把这道概率题算完。",
         "150 个 bug 的对象，转写是 GCLVM。抽到的帧没有打出这个缩写或论文题目，笔记不把它改成别的项目名。",
         "扔石头是他口头复述的、让他震惊的那版比方。幻灯片《GPT-4（2023）：给五岁孩子解释 SEM》上是铅笔扫月球地面的版本，是他所说的 GPT-5.6 写的更严谨解释。两版都保留，不合成一个实验原理。",
-        "转写 retracing 按他的比喻记为 ray tracing。窗口管理器转写是 swe，他随后说这是 tile based window manager；抽到的帧没有打出 Sway 这个拼写，正文保留 swe。e g a 按他后来说的、以及终端里可见的 eza 校正。work body 没有在画面上看到品牌原文，只保留「豆包那类 ReAct agent 的广告」。"
+        "转写 retracing 按他的比喻记为 ray tracing。窗口管理器转写是 swe，他随后说这是 tile based window manager；抽到的帧没有打出 Sway 这个拼写，正文保留 swe。e g a 按他后来说的、以及终端里可见的 eza 校正。work body 没有在画面上看到品牌原文，只保留「豆包那类 ReAct agent 的广告」。",
+        "幻灯片第 12 页和口述里的 ReAct，对应材料 react-2022。34% 和 10% 是论文摘要里的基准差，不是这门课现场测出来的。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v001285767.jpg",
-          "time": 1285.767,
-          "caption": "右屏幻灯片《LLM 和 Agent》。接口写成 LLM（autoregressive）：一个概率分布 Pr[token | context]。紫色字写预测下一个 token 是训练接口不是能力上限，自回归会把每个输出写回 context，以及「真正编程的是 context」。底部写：流畅只说明在这个上下文里像一个答案，它不是正确性的证据。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p10.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 10,
+          "related_time": 1285.767,
+          "caption": "官方 slides 第 10 页《LLM 和 Agent》。接口写成 LLM（autoregressive）：一个概率分布 Pr[token | context]。它很大、训练不崩很难。这门课是使用者视角，所以不需要任何 LLM 的知识。紫色批注写：预测下一个 token 是训练接口，不是能力上限；自回归会把每个输出写回 context；真正编程的是 context。底部：流畅只说明在这个上下文里像一个答案，它不是正确性的证据。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v001405767.jpg",
-          "time": 1405.767,
-          "caption": "右屏幻灯片《GPT-4（2023）：给五岁孩子解释 SEM》，小标题是「不只是知道，而是为听众重编码」。比方是黑屋里用电子铅笔一行行扫一块月球地面，小桶收集弹出的电子，亮暗拼成肉眼看不到的表面纹理。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p11.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 11,
+          "related_time": 1405.767,
+          "caption": "官方 slides 第 11 页《GPT-4（2023）：给五岁孩子解释 SEM》。小标题是不只是知道，而是为听众重编码。紫色批注把样品比成黑屋里的一小块月球地面，用电子铅笔一行行扫描，小桶接住弹出或弹回的电子，亮暗拼成肉眼看不到的表面纹理。另一条写因果骨架：电子束逐点扫描，探测二次/背散射电子，信号强弱映射成像素。SEM 不是拿更强的相机放大。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v001465767.jpg",
-          "time": 1465.767,
-          "caption": "右屏幻灯片《从 ChatGPT 到 Agent》。写着 Transformer、ChatGPT、reasoning、Agent 这条链，以及 GPT o-family 与 DeepSeek R1（2024–2025）、GPT-5 配合 search、Claude family（2025）。ReAct 的推理—行动—观察标注为 2022 年已有，2025 的变化是可靠性越过可用阈值。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p12.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 12,
+          "related_time": 1465.767,
+          "caption": "官方 slides 第 12 页《从 ChatGPT 到 Agent》。写 Transformer、ChatGPT、reasoning、Agent 这条链，以及 GPT o-family 与 DeepSeek R1（2024–2025）、GPT-5 配合 search、Claude family（2025）。正文写 ReAct 型 Agent 从不可用到能用。紫色批注写 ReAct 的推理—行动—观察在 2022 年已有；2025 的变化是可靠性、长上下文、工具接口和错误恢复越过可用阈值。若每步成功率 90%，连续 20 步全对大约 0.9 的 20 次方，约 12%。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/sources/react-abs.jpg",
+          "source_label": "ReAct 论文 PDF 物理页 1 摘要摘录",
+          "source_url": "https://arxiv.org/abs/2210.03629",
+          "page": 1,
+          "related_time": 1465.767,
+          "caption": "材料 react-2022，PDF 物理页 1 摘要。可见：推理轨迹和任务动作交替生成；HotpotQA 与 FEVER 上用一个简单的 Wikipedia API 对付思维链里的幻觉和错误传递；ALFWorld 与 WebShop 上，只给一到两个上下文例子，绝对成功率分别比模仿学习和强化学习高 34% 和 10%。页眉是 ICLR 2023，arXiv:2210.03629v3。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/sources/react-p10.jpg",
+          "source_label": "ReAct PDF 物理页 10 文字重排，PDF 阅读器截图为空白",
+          "source_url": "https://arxiv.org/abs/2210.03629",
+          "page": 10,
+          "related_time": 1465.767,
+          "caption": "材料 react-2022，PDF 物理页 10 的可复现性声明和伦理声明，因阅读器截图空白而重排。可见：主要实验用 PaLM，当时还不是可公开获取的模型；提示词在附录 C，GPT-3 的补充实验在附录 A.1。伦理声明写：把模型接到外部环境有风险；实验把交互限制在 Wikipedia 和 WebShop，模型并不能真的在 WebShop 下单，也不能改写 Wikipedia。"
         }
       ],
       "visual": {
@@ -586,7 +679,8 @@
           "结果送回循环",
           "流畅不是正确"
         ]
-      }
+      },
+      "flow": "p0 p1 p2 p3 p4 p5 e0 e1 e2 e3 n0 n1 n2 n3 n4 x1 f0 f1 f2 f3 f4"
     },
     {
       "title": "下一个 token 不是唯一的未来",
@@ -626,6 +720,15 @@
           "path": "frames/v001712733.jpg",
           "time": 1712.733,
           "caption": "右屏是 lect1/index.md 中《LLM 和 Agent》，能看到 Pr[token | context]，以及 GPT-4（2023）给五岁孩子解释 SEM。右侧 agent 回复写着路径 /home/jyy/Projects/GenSE，并称这是 2026 春季《生成式软件工程》课程仓库，工作区干净；回复在右缘被截断。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p13.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 13,
+          "related_time": 1676.4,
+          "caption": "官方 slides 第 13 页《不止 next token》。问为什么不是按整个 context 往前走的模型，并列出 Diffusion LM，链接 https://chat.inceptionlabs.ai/ ，以及 Self-modifying of context。紫色批注写自回归像用钢笔从左写到右，Diffusion LM 更像先铺开整份草稿，再多轮去噪。"
         }
       ]
     },
@@ -687,8 +790,18 @@
           "path": "frames/v001892733.jpg",
           "time": 1892.733,
           "caption": "右屏是 Pi 在回答「你不就是个模型吗，为什么还知道生成式软件工程」。它把「知道」分成训练时的统计规律，和这次对话注入的临时记忆 AGENTS.md。底部 Recap：知识等于训练语料中的统计规律，加上对话上下文注入。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/sources/pi-home.jpg",
+          "source_label": "pi.dev 首页句子摘录，非整站截图",
+          "source_url": "https://pi.dev",
+          "page": 1,
+          "related_time": 1892.733,
+          "caption": "材料 pi-dev，pi.dev 首页句子摘录。可见：Pi is a minimal agent harness，出品 Earendil Inc.，安装包 @earendil-works/pi-coding-agent。四种模式：interactive、print/JSON、RPC、SDK，并点名 OpenClaw 是一个真实集成。AGENTS.md 在启动时从 ~/.pi/agent/、上级目录和当前目录加载。技能 on-demand 加载，避免一次性撑破提示词缓存。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 e0 n0 x4 f0 f1"
     },
     {
       "title": "一句话把 Debian 装进 U 盘",
@@ -745,7 +858,8 @@
           "text": "「装机仙人已经被 AI 取代」是他用自己这一个 U 盘安装得出的说法。",
           "caveat": "一个他亲自下过指令的例子，没有比较旧流程的耗时。"
         },
-        "转写「得半十三」不记成一个确定的小版本号。讲义这一页的示例标题是 Debian on USB，他口述到 mirrors.nju.edu.cn 找镜像。转写「Q email」接的是在模拟器里启动并看到登录界面；画面没有打出模拟器程序的名字。prearm 出现在他说 2021 年 7 月的句子里。转写里的 New V 没有在画面上写成程序名，正文不另定编辑器名字。"
+        "转写「得半十三」不记成一个确定的小版本号。讲义这一页的示例标题是 Debian on USB，他口述到 mirrors.nju.edu.cn 找镜像。转写「Q email」接的是在模拟器里启动并看到登录界面；画面没有打出模拟器程序的名字。prearm 出现在他说 2021 年 7 月的句子里。转写里的 New V 没有在画面上写成程序名，正文不另定编辑器名字。",
+        "屏幕上的 2021 年 7 月是专栏里一节的日期（2021.7.16），不是这篇文章的发表日。存档里的 created 是 2023-04-04。文章标题是《如何驯服野生的 NOILinux 2.0》，幻灯片的链文写的是装机仙人。"
       ],
       "frames": [
         {
@@ -759,8 +873,18 @@
           "path": "frames/v002123733.jpg",
           "time": 2123.733,
           "caption": "右屏是 Pi 正在回答「你不就是个模型吗」。弹出的启动器列出 Chromium Web Browser、OBS Studio、Display Settings、Advanced Network Configuration、btop、Fcitx 5 Configuration、Foot 和 htop。底部状态栏写着 deepseek-v4-flash。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p16.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 16,
+          "related_time": 2003.7,
+          "caption": "官方 slides 第 16 页《Example 1：Debian on USB》。安装完全由 AI 完成，并且在 QEMU 中运行验证。终端和 nvim 的配置由自然语言完成。装机仙人彻底成为历史，链到知乎专栏。紫色批注：先用好不等于不验收，学习曲线从记住每一步变成判断结果是否正确。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 e0 n0 n1 n2 x10 f0 f1 f2"
     },
     {
       "title": "人剩下的事，是带着它做它还不会的事",
@@ -967,10 +1091,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v002483733.jpg",
-          "time": 2483.733,
-          "caption": "右屏幻灯片《Example 3：读书、读论文》。写从古法学习到电子版 Agent，扩展是读 B 站。紫色字写生成讲义不等于深度阅读，并列出追踪论证、对抗阅读、主动回忆和重新组织。主动回忆那条写着：摘要不能替你理解。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p18.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 18,
+          "related_time": 2483.733,
+          "caption": "官方 slides 第 18 页《Example 3：读书、读论文》。从古法学习到电子版 Agent。扩展是读 B 站、生成讲义，链到 lect/OS2026-02.pdf。紫色批注写生成讲义不等于深度阅读，并列出追踪论证、对抗阅读、主动回忆和重新组织。主动回忆那条写着：摘要不能替你理解。"
         },
         {
           "source_type": "video_frame",
@@ -1034,9 +1161,30 @@
       "examples": [],
       "editor_notes": [
         "五百到一千块是他对这套教室采集方案的估计，不是报价单。USB 那段他没有把具体的 Linux 命令念出来，笔记也不补命令。",
-        "转写 pad 按前后文和屏幕上的 Pi 记为 Pi。"
+        "转写 pad 按前后文和屏幕上的 Pi 记为 Pi。",
+        "幻灯片第 19 页的 Engelbart 链接是材料 engelbart-1962。报告自己的缩写是 H-LAM/T，训练单独算一项；幻灯片批注收成了人、工具、语言、方法。"
       ],
-      "frames": []
+      "frames": [
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p19.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 19,
+          "related_time": 3000.0,
+          "caption": "官方 slides 第 19 页《从白板 Agent 到完整生态》。写以上任务白板 Agent 就能完成，然后是 domain-specific 插件。紫色 AIGC 批注引用 Engelbart 1962：增强智能来自人、工具、语言、方法组成的系统，链到 dougengelbart.org。同页公式把 Agent 能力写成推理 × 可观测性 × 可操作性 × 反馈。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/sources/engelbart-abs.jpg",
+          "source_label": "Engelbart 1962 报告 H-LAM/T 定义摘录",
+          "source_url": "https://www.dougengelbart.org/content/view/138/",
+          "page": 1,
+          "related_time": 3000.0,
+          "caption": "材料 engelbart-1962 的定义摘录，不是 1962 年全文。可见：augmenting human intellect 指提高人处理复杂问题的能力，孤立的小技巧不算。要改进的系统是受过训练的人，加上人工物、语言和方法。报告自己的缩写是 H-LAM/T：Human using Language, Artifacts, Methodology, in which he is Trained。"
+        }
+      ],
+      "flow": "p0 p1 n0 n1 n2 x2 f0 f1"
     },
     {
       "title": "浏览器是给开发者留的口子，现在普通人也能用",
@@ -1158,8 +1306,27 @@
           "path": "frames/v003230633.jpg",
           "time": 3230.633,
           "caption": "右屏是 Chrome DevTools，停在 B 站播放页的 Network 面板。能看到请求列表，以及把请求复制成 cURL 的菜单。一条响应的状态是 200，旁边是响应头。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p21.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 21,
+          "related_time": 3400.0,
+          "caption": "官方 slides 第 21 页《在 ehall 上大杀四方》。链接 ehall.nju.edu.cn。紫色批注写这条路线已有名字 Programming by Demonstration，例子是 WebRobot 从网页操作示范合成 RPA 程序，链到 PLDI 2022 的 PDF。下面写 Agent 探路、脚本接管：昂贵的推理只付一次。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/sources/webrobot-abs.jpg",
+          "source_label": "WebRobot 论文 PDF 物理页 1 摘要摘录",
+          "source_url": "https://web.eecs.umich.edu/~xwangsd/pubs/pldi22.pdf",
+          "page": 1,
+          "related_time": 3400.0,
+          "caption": "材料 webrobot-2022，PDF 物理页 1 摘要。作者 Rui Dong、Zhicheng Huang、Ian Iong Lam、Yan Chen、Xinyu Wang，PLDI 2022。可见：在 76 个 web RPA 基准上，WebRobot 自动完成了其中的大多数；相对用 egg 实现的常规改写合成基线表现更好；另外有一个小型用户研究，说明它可用。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 e0 n0 n1 n2 x3 f0 f1 f2"
     },
     {
       "title": "技能可以接在一起，飞轮就转起来",
@@ -1229,16 +1396,48 @@
           "text": "「成百倍成千倍」和「现象级」是他的判断。幻灯片把组合的条件收成「接口足够窄、稳定」，这句是屏幕上的，不是他口头的原句。",
           "caveat": "放大倍数没有测量。"
         },
-        "转写「橘压」「ISS」「archive」「amaz」分别按口头和幻灯片处理：早报名保持橘压，未在画面核对；ISS 记为 RSS；archive 记为 arXiv；和 OpenClaw 并列的产品，幻灯片写的是 Hermes。淘宝、Box、iCloud 是幻灯片上的操作例子，口头没有逐个演示。"
+        "转写「橘压」「ISS」「archive」「amaz」分别按口头和幻灯片处理：早报名保持橘压，未在画面核对；ISS 记为 RSS；archive 记为 arXiv；和 OpenClaw 并列的产品，幻灯片写的是 Hermes。淘宝、Box、iCloud 是幻灯片上的操作例子，口头没有逐个演示。",
+        "水管和 switchyard 来自 Bell Labs 那一页的存档，不是他的口头原句。幻灯片紫色批注把窄接口称为 Unix pipe 留下的遗产。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003650767.jpg",
-          "time": 3650.767,
-          "caption": "右屏幻灯片《自由组合，无限复用》。链路是信息源、信息处理、操作。信息源写着网页、B 站、arXiv、Hacker News；操作写着淘宝下单、Box 上传、iCloud。点名 OpenClaw 和 Hermes。紫色字写组合的关键是接口足够窄、稳定，并称这是 Unix pipe 留下的遗产。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p22.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 22,
+          "related_time": 3650.767,
+          "caption": "官方 slides 第 22 页《自由组合，无限复用》。链路是信息源、信息处理、操作。信息源写着网页、B 站、arXiv、Hacker News；操作写着淘宝下单、Box 上传、iCloud。点名 OpenClaw 和 Hermes。紫色批注写组合的关键是接口足够窄、稳定，并称这是 Unix pipe 留下的遗产，链到 Bell Labs 的 streams 页。下面是工作流自举：观察操作，发现重复，生成自动化，回放验证，人确认，收集新异常。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p23.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 23,
+          "related_time": 3800.0,
+          "caption": "官方 slides 第 23 页《未来已来，Harness 未稳》。OpenClaw/Hermes 预见了这样的未来，可惜现在的模型或 Harness 还没有完全准备好。紫色批注：单步成功率即便是 99%，连续 100 步全成功也只有大约 0.99 的 100 次方，约 36.6%。长流程需要状态、权限、重试、验证和故障恢复。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/sources/openclaw-home.jpg",
+          "source_label": "OpenClaw 官方文档概述摘录",
+          "source_url": "https://docs.openclaw.ai/",
+          "page": 1,
+          "related_time": 3800.0,
+          "caption": "材料 openclaw-docs，文档概述里 “What is OpenClaw?” 的原句。可见：它是自托管 gateway，把 Discord、Google Chat、iMessage、Matrix、Microsoft Teams、Signal、Slack、Telegram、WhatsApp、Zalo 等接到编程代理；在自己的机器或服务器上跑一个 Gateway 进程。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/sources/hermes-home.jpg",
+          "source_label": "Hermes 官网句子摘录",
+          "source_url": "https://hermes-agent.nousresearch.com/",
+          "page": 1,
+          "related_time": 3800.0,
+          "caption": "材料 hermes-home，Nous Research 的 Hermes 首页句子。可见：接入 Telegram、Discord、Slack、WhatsApp、Signal、Email 和 CLI；one memory；会 auto-generate skills，并写它不会忘掉自己怎么解决过问题。五个后端：local、Docker、SSH、Singularity、Modal。MIT 许可证下免费开源；模型供应商和可选托管另有价格。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 e0 n0 n1 n2 x5 x11 f0 f1 f2 f3"
     },
     {
       "title": "统分：人只守加法会不会算错这一下",
@@ -1294,10 +1493,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003985567.jpg",
-          "time": 3985.567,
-          "caption": "右屏幻灯片《现场造工具：考试统分》。Phase 1 是按下回车拍照，Offline qwen3.8-27b 识别姓名、学号、小分。Phase 2 的例子算式是 11+12+13+14+15=65。下面写不是 OCR 而是证据链：照片是原始凭证，小分是中间表示，总分与 Excel 是派生结果。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p25.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 25,
+          "related_time": 3985.567,
+          "caption": "官方 slides 第 25 页《现场造工具：考试统分》。Phase 1：按下回车拍照，Offline qwen3.8-27b 识别姓名、学号、小分。Phase 2 的例子算式是 11+12+13+14+15=65，检验后誊写总分。分数汇总到教务系统的 Excel 模板，Agent 直接登记。紫色批注写不是 OCR 而是证据链：照片是原始凭证，小分是中间表示，总分与 Excel 是派生结果。反序加报算式被比成航空管制的 readback。"
         }
       ],
       "visual": {
@@ -1379,10 +1581,13 @@
           "caption": "右屏终端先有一条 sleep 15，随后是 eza --git --group-directories-first --icons=auto，列出 docs、lect1、scripts、tentative、AGENTS.md 和 Makefile，接着是 xdg-open lect1/qrgen.xlsx。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v004361800.jpg",
-          "time": 4361.8,
-          "caption": "右屏幻灯片《把远程桌面变成内网》。My Solution 写 qrgen.xlsx 用 Excel 公式算 QRCode，Rx = Mouse（抖鼠标），Tx = QRCode（QrGen），以及一个 Raw Socket 上的协议栈。下面写 QRCode 已有 Reed-Solomon 纠错，再加帧号、校验和、ACK/NAK 和重传。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p27.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 27,
+          "related_time": 4361.8,
+          "caption": "官方 slides 第 27 页《把远程桌面变成内网》。My Solution：qrgen.xlsx 用 Excel 公式算 QRCode，链到 lect/qrgen.xlsx。Rx = Mouse（抖鼠标），Tx = QRCode（QrGen），一个 Raw Socket 上的协议栈。紫色批注写 QRCode 已有同步与 Reed-Solomon 纠错，再加帧号、校验和、ACK/NAK 和重传。最关键的重解释：Excel 是可编程显示设备，鼠标是输入线路。"
         }
       ],
       "visual": {
@@ -1474,16 +1679,22 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v004592967.jpg",
-          "time": 4592.967,
-          "caption": "右屏幻灯片《Wow! AI 造航母？》。老梗是 idea 有了就差一个程序员，ABCD 轮都有了就差一个天使投资人。下面写产品是系统性工程，qrgen.xlsx 直接暴毙，ehall.nju.edu.cn 已经暴毙。紫色字：10 个环节各有 90% 可靠，整体只有 0.9 的 10 次方，约 35%。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p29.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 29,
+          "related_time": 4592.967,
+          "caption": "官方 slides 第 29 页《Wow! AI 造航母？》。老梗是 idea 有了就差一个程序员，ABCDE 轮都有了就差一个天使投资人。产品是系统性工程。qrgen.xlsx 直接暴毙，ehall.nju.edu.cn 已经暴毙。紫色批注：若 10 个环节各有 90% 可靠，整体大约 0.9 的 10 次方，约 35%。AI 提高单点产能，不会自动消除接口与协作风险。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v004772967.jpg",
-          "time": 4772.967,
-          "caption": "右屏幻灯片《跑出来，不等于做成》。GLM-5.3：25 分钟 CoT，超过 32K output token max，6 小时完成。DeepSeek V4 Pro 无法遵循指令，给了硬编码版本。引文是 This is a fundamental design flaw. I need to rethink。两者都是无法维护的 AI slop，一份 2 MB 的 Excel。同一页写：一个需求变化，就迫使整张表重新生成；2 MB 只是症状。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p31.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 31,
+          "related_time": 4772.967,
+          "caption": "官方 slides 第 31 页《跑出来，不等于做成》。GLM-5.3：第一次思考 25 分钟的 CoT，然后超过 32K output token max，6 小时终于完成。DeepSeek V4 Pro：已经无法遵循指令，最终给了一个硬编码版本。引文：This is a fundamental design flaw. I need to rethink. 两者都是无法维护的 AI slop，2 MB 的 Excel。紫色批注写硬编码把对所有输入都成立的程序，换成了让这一个输入通过；2 MB 只是症状，一个需求变化就迫使整张表重新生成。"
         }
       ]
     },
@@ -1542,10 +1753,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v004892967.jpg",
-          "time": 4892.967,
-          "caption": "右屏幻灯片《少量 Prompt，换一个架构》。GLM-5.3 在 200K 上下文内完成第一个正确版本。工作表不因为文本长度膨胀。转折被写成：从生成一个能跑的文件，切换到设计一个可复用的计算结构。公式模板和工作表结构保持 O(1)，数据、计算量和帧数按 O(n) 增长。检查题是输入从 1 KB 变成 10 KB 时，什么必须增长。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p32.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 32,
+          "related_time": 4892.967,
+          "caption": "官方 slides 第 32 页《少量 Prompt，换一个架构》。GLM-5.3 在 200K 上下文内完成第一个正确版本。工作表不因为文本长度膨胀，公式可复用。紫色批注把转折写成：从生成一个能跑的文件，切换到设计一个可复用的计算结构。公式模板和工作表结构应保持 O(1)；数据、计算量和帧数按 O(n) 增长。检查题：输入从 1 KB 变成 10 KB 时，究竟有哪些东西必须增长？"
         },
         {
           "source_type": "video_frame",
@@ -1653,10 +1867,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v005132967.jpg",
-          "time": 5132.967,
-          "caption": "右屏幻灯片《Intent、Spec 与 Impl》。三个空间分别是意图、规格和实现。旁边是一排树和秋千的小图。紫色字写：实现符合规格，只说明按规格正确，并不推出满足意图。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p33.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 33,
+          "related_time": 5132.967,
+          "caption": "官方 slides 第 33 页《Intent、Spec 与 Impl》。Intent：需求提出者也不 100% 确定他想要什么，例子是给我弄一个国民级的应用。Spec：从 Intent 到 Spec 已经曲解了很多。Impl：计算机程序只接受 100% 无歧义的指令。旁边是树和秋千的小图。紫色批注：实现符合规格，只说明按规格正确，并不推出满足意图。"
         },
         {
           "source_type": "video_frame",
@@ -1754,28 +1971,49 @@
           "text": "「加进去更多的人只会让它变得更失败」是他转述《人月神话》的论断，并类比到给已经产生 slop 的产品加 token。幻灯片《LLM 时代，失败的定义没有变》写着他相信这个问题会被「大力出奇迹」解决，这样人类就剩不下什么了。这是幻灯片上的判断，不是已经发生的结果。",
           "caveat": "后半是他对模型进步的判断。"
         },
-        "《死亡搁浅》、焦油等于耦合和验证债、ICSE 2027 的议题列表、GRPO 的 long-horizon reward 很弱，都是幻灯片上的句子。口头他讲了焦油坑、掠食者、加人会更糟、加 token 会更糟，以及强化学习对真正的长程奖励做得不够好。billions of dollars 是他说的。"
+        "《死亡搁浅》、焦油等于耦合和验证债、ICSE 2027 的议题列表、GRPO 的 long-horizon reward 很弱，都是幻灯片上的句子。口头他讲了焦油坑、掠食者、加人会更糟、加 token 会更糟，以及强化学习对真正的长程奖励做得不够好。billions of dollars 是他说的。",
+        "这一节口述把人月神话和焦油坑放在一起：大型动物一旦陷入这个焦油坑就很难逃脱。材料编号 brooks-mmm。",
+        "材料 icse-2027。征稿页摘录写明单一截稿周期和日期。参考文献会检查幻觉、编造或无法核验；确认是幻觉或编造的，desk-reject、不送审。口述没有念这些日期。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v005499800.jpg",
-          "time": 5499.8,
-          "caption": "右屏幻灯片《软件工程》，标题下引 The Mythical Man-Month。正文是大型动物一旦陷入焦油坑就很难逃脱，濒死的动物会引来掠食者。配图是沥青坑和大型动物。下面写 qrgen 已进入焦油坑，增加一点功能就要消耗巨额 token。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p35.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 35,
+          "related_time": 5499.8,
+          "caption": "官方 slides 第 35 页《软件工程》，标题下引 The Mythical Man-Month。正文：大型动物一旦陷入焦油坑就很难逃脱，而濒死的动物又会引来各种掠食者。配图是沥青坑和大型动物。也是《死亡搁浅》中的原型。qrgen 已经进入焦油坑：增加一点功能，都需要消耗巨额的 token。紫色批注：焦油不是代码量，而是耦合、隐含知识和验证债。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005619800.jpg",
-          "time": 5619.8,
-          "caption": "右屏幻灯片《软件工程研究什么？》。问题是怎么把一件大事在人和工具的协作下做成。列出 ICSE 2027 的方向，包括 AI4SE、架构与设计、可靠与安全、演化和 SE4AI。底部写工程能力是在稀疏、延迟的反馈下仍能维持方向。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p36.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 36,
+          "related_time": 5619.8,
+          "caption": "官方 slides 第 36 页《软件工程研究什么？》。问题是怎么把一件大事在人和工具的协作下做成。列出 ICSE 2027 Call for Papers 的方向：AI4SE、Analytics、Architecture and Design、Dependability and Security、Evolution、Human and Social Aspects、Requirements and Modeling、SE4AI、Testing and Analysis，链到 conf.researchr.org 的 research track。紫色批注写工程能力是在稀疏、延迟的反馈下仍能维持方向。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005799800.jpg",
-          "time": 5799.8,
-          "caption": "右屏幻灯片《LLM 时代，失败的定义没有变》。失败等于软件不满足 intent 和 constraints。写着 GRPO 的 long-horizon reward 信号其实很弱，以及他相信这个问题会被「大力出奇迹」解决，这样人类就剩不下什么了。紫色字：能通过测试不等于满足真实意图。这一页没有沥青坑配图。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p37.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 37,
+          "related_time": 5799.8,
+          "caption": "官方 slides 第 37 页《LLM 时代，失败的定义没有变》。失败等于软件不满足 intent 和 constraints。写着 GRPO 的 long-horizon reward 信号其实很弱。他相信这个问题会在不久的将来被大力出奇迹解决，这样人类就不剩下什么了。紫色批注：spec 不是真相，只是对 intent 的一次有损观测；能通过测试不等于满足真实意图。这一页没有沥青坑配图。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/sources/icse-abs.jpg",
+          "source_label": "ICSE 2027 Research Track 征稿页摘录",
+          "source_url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+          "page": 1,
+          "related_time": 5619.8,
+          "caption": "材料 icse-2027 征稿页摘录。可见单一截稿周期：摘要 2026-06-23，全文 2026-06-30，通知 2026-10-20，均为 AoE。参考文献会检查幻觉、编造或无法核验；确认是幻觉或编造的，desk-reject、不送审。九个方向的全称包括 AI for Software Engineering 和 Software Engineering for AI。ACM 规定生成式 AI 不能列为作者，使用必须披露；IEEE 要求在致谢中披露 AI 生成的文字。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 e0 e1 e2 n0 n1 n2 n3 x6 f0 f1 f2 f3"
     },
     {
       "title": "软件工程暂时还没有死",
@@ -1828,14 +2066,46 @@
           "caveat": "对模型下一步的估计，不是已完成的实验。"
         },
         "转写 CLOUD FABLE、DIPSYK、GM、DSR、CLOUD MAX、SOUL 按画面和前后文处理：Claude Fable、DeepSeek、GLM、中间表示、200 美元的 Claude Max。GPT-5.6 的后缀在转写里听成 SOUL，幻灯片这一页没有印出模型全名，正文仍记 GPT-5.6。moral crumple zone、方向×验证×责任是幻灯片上的句子；口头他复述并称赞的是那句 30 秒回答。",
-        "他说应该会先有一个生肉版，把今天上课的流程剪一下发出去。大家可以拿它和可能精修过的版本对比。"
+        "他说应该会先有一个生肉版，把今天上课的流程剪一下发出去。大家可以拿它和可能精修过的版本对比。",
+        "幻灯片第 44 页的 moral crumple zone 指向材料 elish-2019。论文正文里的事故、Therac-25 反例和认证边界写在补充里。幻灯片把这个词用在没有停止权、只负责背锅的人身上；论文没有写招聘或 Claude Max。",
+        "幻灯片第 43 页的 human computers 指向材料 nasa-langley。页面写的是：computer 曾是用手计算的职业，电子计算机出现后这些人承担了编程。批注里「历史奖励会把问题交给新机器的人」是 AIGC 批注的发挥，不是该页的原句。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v005979800.jpg",
-          "time": 5979.8,
-          "caption": "右屏幻灯片《软件工程暂时还没有死》。问题是：为什么要招你，而不是买一个 $200 的 Claude Max？幻灯片写不要和 Agent 比产能。稀缺性写成方向 × 验证 × 责任。紫色字把只背锅、没有停止权的人称为 moral crumple zone，并给出 30 秒回答：找到值得解决的问题，把未知拆成便宜的实验，用证据让坏方向及时停下，并对长期结果负责。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p44.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 44,
+          "related_time": 5979.8,
+          "caption": "官方 slides 第 44 页《软件工程暂时还没有死》。问题是：为什么要招你，而不是买一个 $200 的 Claude Max？紫色批注把稀缺性写成方向 × 验证 × 责任。另一条把只背锅、没有停止权的人称为 moral crumple zone，链到 doi.org/10.17351/ESTS2019.260。30 秒回答：找到值得解决的问题，把未知拆成便宜的实验，用证据让坏方向及时停下，并对长期结果负责。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p43.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides1.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides1.html",
+          "page": 43,
+          "related_time": 5927.4,
+          "caption": "官方 slides 第 43 页《古法编程死了》。紫色批注写更准确的分界：边界清楚、上下文装得下、结果能低成本验收的任务，已经进入机器的领地。另一条写 Computer 原本是一种职业，链到 NASA Langley human computers 1935–1970。批注接着写：历史奖励的是会把问题交给新机器的人。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/sources/nasa-abs.jpg",
+          "source_label": "NASA Langley human computers 页面摘录",
+          "source_url": "https://www.nasa.gov/history/langleys-computers-1935-1970/",
+          "page": 1,
+          "related_time": 5927.4,
+          "caption": "材料 nasa-langley。可见：电子计算机出现之前，computer 是职业名称，指用手做计算的人。Virginia Tucker 在 1935 年劳动节次日到 Langley，加入第一批 5 名女性计算员。电子计算机引进之后，这些 human computers 也承担了编程。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/sources/elish-abs.jpg",
+          "source_label": "Elish 2019 开放获取 PDF 的定义句摘录",
+          "source_url": "https://doi.org/10.17351/ESTS2019.260",
+          "page": 1,
+          "related_time": 5979.8,
+          "caption": "材料 elish-2019，摘要里的定义句。Madeleine Clare Elish，ESTS 2019。moral crumple zone：当控制被时间和空间转手，责任可能被算到一个对自动化系统只有有限控制的人身上。汽车的 crumple zone 保护驾驶员；道德上的 crumple zone 在系统失灵时保住技术系统，由最近的人类操作者承担。事故、反例和认证边界在补充里，不在这张摘录上。"
         }
       ],
       "visual": {
@@ -1854,10 +2124,90 @@
           "便宜的实验",
           "及时停下"
         ]
-      }
+      },
+      "flow": "p0 p1 p2 p3 e0 n0 n1 n2 n3 n4 x7 x8 f0 f1 f2 f3"
     }
   ],
-  "supplements": [],
+  "supplements": [
+    {
+      "title": "225 项研究实际量到的主动学习效应",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://doi.org/10.1073/pnas.1319030111",
+      "text": "材料 freeman-2014 是 Scott Freeman 等人 2014 年发在 PNAS 的元分析，DOI 10.1073/pnas.1319030111。幻灯片第 7 页的紫色批注只写了「225 项本科 STEM 研究，主动学习提高成绩并降低失败率」。PMC 全文里的摘要和结果写得更具体：比较的是至少含有一些主动学习的本科 STEM 课堂和传统讲授。考试、概念清单或其他同等测验上，主动学习平均高 0.47 个标准差（158 项研究），大约相当于平均分高 6 个百分点。失败的优势比在传统讲授下是 1.95（67 项研究），换算成风险大约是 1.5 倍：传统讲授班的学生更可能不及格。两组的失败率分别是主动学习 21.8%、讲授 33.8%。讨论里写，把 0.47 个标准差放进他们看过的三门入门课，总评大约高 0.3 分，中位数可以从 B− 到 B，或从 B 到 B+。班额不超过 50 人时效应更大，但更大的班也仍然有统计上的提高。作者写明两处边界：实施者是自愿尝试的教师，若强制所有教师改用，效应是否还这么大是开放问题；主动学习班退课更少，留下的学生里可能包括更多原本会退出的人，因此 0.47 有可能低估成绩变化。这项研究的主动学习指课堂上的解题、同伴讨论、应答器或工作室式教学，不是把作业交给 agent。"
+    },
+    {
+      "title": "ReAct 论文里的交替循环和两组成绩",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://arxiv.org/abs/2210.03629",
+      "text": "材料 react-2022 是 Shunyu Yao 等人的 ReAct: Synergizing Reasoning and Acting in Language Models，arXiv:2210.03629v3（2023-03-10），发表为 ICLR 2023。幻灯片第 12 页正文写 ReAct 型 Agent，紫色批注写「推理—行动—观察」在 2022 年已有；口述也把后来的编程代理叫成 react 式。PDF 物理页 1 的摘要把做法写成：推理轨迹和针对任务的动作交替产生。推理用来维持计划、处理例外；动作用来向知识库或环境要信息。具体结果写了两档。问答 HotpotQA 和事实验证 FEVER 上，它用一个简单的 Wikipedia API，减轻思维链里的幻觉和错误一路传下去。交互决策 ALFWorld 和 WebShop 上，只给一到两个上下文例子，绝对成功率分别比模仿学习和强化学习方法高 34 个和 10 个百分点。PDF 物理页 10 写主要实验用的是当时还不公开的 PaLM；提示词和 GPT-3 的补充实验放在附录。同一页的伦理声明写：把模型接到外部环境有风险，他们的实验把站点限制在 Wikipedia 和 WebShop，模型并不能真的下单，也不能改写 Wikipedia。34% 和 10% 是这篇论文摘要里的基准差，不是这门课现场测出来的。"
+    },
+    {
+      "title": "1962 年报告里的 H-LAM/T",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://www.dougengelbart.org/content/view/138/",
+      "text": "材料 engelbart-1962 是 Douglas C. Engelbart 1962 年的报告 Augmenting Human Intellect: A Conceptual Framework。幻灯片第 19 页的紫色批注把它收成：增强智能来自「人 + 工具 + 语言 + 方法」的系统，并链到这篇报告。报告开头写，augmenting human intellect 是提高人面对复杂问题、按自己的需要理解并得出解的能力；孤立的小技巧不算，它说的是一整套工作方式。后文把要改进的系统写成：一个受过训练的人，加上他的人工物、语言和方法。报告自己的缩写是 H-LAM/T，展开是 Human using Language, Artifacts, Methodology, in which he is Trained。训练是单独的一项，不包含在「人」这个字里。幻灯片用「工具」对应报告里的 artifacts。本次阅读范围是报告页上的这段定义，不是 1962 年全文。"
+    },
+    {
+      "title": "WebRobot 摘要里实际声称的范围",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://web.eecs.umich.edu/~xwangsd/pubs/pldi22.pdf",
+      "text": "材料 webrobot-2022 是 Rui Dong、Zhicheng Huang、Ian Iong Lam、Yan Chen 和 Xinyu Wang 的 WebRobot: Web Robotic Process Automation using Interactive Programming-by-Demonstration，PLDI 2022，16 页，DOI 10.1145/3519939.3523711。幻灯片第 21 页的紫色批注把「先让 agent 走一遍教务页，再沉淀成脚本」叫作 Programming by Demonstration，并举 WebRobot 为例。PDF 物理页 1 的摘要写：他们做了一个交互式合成器 WebRobot，在 76 个 web RPA 基准上评估，结果是自动完成了其中的大多数；相对一个用 egg 实现的常规改写合成基线更好；另外做了一个小型用户研究，说明它可用。同一页把 web RPA 写成数据与浏览器之间的交互，例子是录入半结构化数据、从网页抽出数据、在多个页面之间跳转。摘要没有给出 76 个基准里成功的精确比例，也没有写出用户研究的人数。"
+    },
+    {
+      "title": "Pi 首页写明的 AGENTS.md 加载位置",
+      "source_label": "官方 slides 正文链接，非 AIGC 批注",
+      "source_url": "https://pi.dev",
+      "text": "材料 pi-dev 是幻灯片第 14 页正文链接的 Pi。首页把 Pi 写成一个尽量小的 agent harness，出品是 Earendil Inc.，安装包名是 @earendil-works/pi-coding-agent。和这节课直接相关的是它怎么注入说明：AGENTS.md 在启动时加载，查找位置写了三处，~/.pi/agent/、上级目录、当前目录。技能按需加载，不一次性塞进提示词。首页还写它有交互、print/JSON、RPC 和 SDK 四种模式，并点名 OpenClaw 是一个真实集成。课堂上讲师让 Pi 读仓库里的 AGENTS.md，从而说出这门课的名字；三处查找路径是 pi.dev 首页的句子，口述没有报这三处路径。"
+    },
+    {
+      "title": "OpenClaw 和 Hermes 在官方页面上的自我介绍",
+      "source_label": "讲师口述与官方 slides 正文点名，非 AIGC 批注",
+      "source_url": "https://docs.openclaw.ai/",
+      "text": "材料 openclaw-docs 与 hermes-home。幻灯片第 22、23 页和口述把 OpenClaw、Hermes 称作现象级产品，并说现在的模型和 harness 还没准备好。OpenClaw 官方文档的概述写：它是一个自托管的 gateway，把 Discord、iMessage、Matrix、Teams、Signal、Slack、Telegram、WhatsApp 等聊天应用接到编程代理；你在自己的机器或服务器上跑一个 Gateway 进程。Hermes 官网（Nous Research）写：Hermes Agent 在 MIT 许可证下免费开源；它接 Telegram、Discord、Slack、WhatsApp、Signal、Email 和命令行，有持久记忆，会自己生成技能；执行后端列出了本机、Docker、SSH、Singularity 和 Modal。模型供应商和可选的托管服务另有价格。这些是产品页面的自我介绍。讲师没有在这节课上比较两家的架构，也没有推荐把哪一家当成课程作业。"
+    },
+    {
+      "title": "ICSE 2027 征稿页上多出来的三条规则",
+      "source_label": "官方 slides 正文链接，非 AIGC 批注",
+      "source_url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+      "text": "材料 icse-2027 是幻灯片第 36 页正文链接的 ICSE 2027 Research Track 征稿页。页上九个方向的全称是 AI for Software Engineering、Analytics、Architecture and Design、Dependability and Security、Evolution、Human and Social Aspects、Requirements and Modeling、Software Engineering for AI、Testing and Analysis。幻灯片把前两个 AI 方向写成 AI4SE 和 SE4AI。幻灯片没有念的、和这门课直接相关的有三条。截稿是单一周期：摘要 2026 年 6 月 23 日，全文 6 月 30 日，通知 10 月 20 日，时间都是 AoE。参考文献会检查幻觉、编造或无法核验；确认是幻觉或编造的，desk-reject，不送审。生成式 AI 按页面引用的 ACM 规定不能列为作者，使用必须在文中披露；页面引用的 IEEE 规定要求在致谢里披露 AI 生成的文字。这些日期和拒稿规则是征稿页的句子，不是讲师在这节课上念出来的。"
+    },
+    {
+      "title": "NASA 页面上的 human computers",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://www.nasa.gov/history/langleys-computers-1935-1970/",
+      "text": "材料 nasa-langley 是幻灯片第 43 页紫色批注所链的 NASA 页面 When the Computer Wore a Skirt: Langley’s Computers, 1935–1970，作者 Sarah McLennan 与 Mary Gainer。页面写：电子计算机出现之前，computer 是职业名称，指用手完成数学计算的人。Virginia Tucker 在 1935 年劳动节的第二天到 Langley，和另外四名女性组成第一批计算员；此后约 30 年里有数百名拥有数学或其他科学学位的女性加入。电子计算机引进之后，这些 human computers 也承担了编程工作。页面讲的是 Langley 的计算员群体，包括后来的 West Area Computers 和种族隔离时期的工作条件。幻灯片批注接着写的「历史奖励会把问题交给新机器的人」不是这一页的原句。"
+    },
+    {
+      "title": "moral crumple zone 在正文里的事故和边界",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://estsjournal.org/index.php/ests/article/download/260/177/",
+      "text": "材料 elish-2019 是 Madeleine Clare Elish 2019 年发表在 Engaging Science, Technology, and Society 第 5 卷的 Moral Crumple Zones: Cautionary Tales in Human-Robot Interaction，DOI 10.17351/ESTS2019.260，期刊页 40–60。这一轮读的是期刊自己的开放获取 PDF（下载路径 article/download/260/177/，文件名 260-Article Text-921-1-10-20190323.pdf），21 个物理页，许可 CC BY-NC-ND。上一轮期刊 HTML 只有摘要，直接下载曾返回 Invalid file id。作者单位是 Data & Society Research Institute。她写明这篇文章不重新查明事故原因，只给出一个概念，用来看复杂系统里责任怎么被放到控制有限的人身上。moral crumple zone 指：汽车的 crumple zone 吸收撞击、保护驾驶员；道德上的这个区域在整个系统失灵时保住技术系统，代价由最近的人类操作者承担。她还把这种操作者称作 liability sponges，用来填上新系统里的问责空隙。幻灯片第 44 页用这个词描述没有决策权和停止权、只负责背锅的人。论文没有写招聘，也没有写 Claude Max。正文用三个公开事故说明这个错位，并给了一个反例。三里岛：1979 年 3 月 28 日二号机组部分熔毁。维护时无意切断了二次冷却水，自动停堆之后泄压阀卡住不关，两天前测试留下的阀门又关着、控制室没有指示。操作员在一堆警报里把现象当成原因，关掉了已经自动启动的辅助泵。堆芯超过十六小时没有充分冷却，后来的报告说铀芯熔化了三分之一以上。事故后的标题把原因主要写成 human error，例如 Los Angeles Times 的 “Nuclear Accident Blamed Primarily on Human Error”。作者承认操作员的动作加重了事故，同时写设计让人看不清发生了什么。PBS 纪录片里 Mike Gray 说，如果操作员没有插手关掉水泵，电厂会自己救自己。她的判断是：行动受到约束，责任却被单独挑出来。法航 447：2009 年从里约飞巴黎，228 人全部遇难。皮托管结冰，自动驾驶退出，飞机从 Normal Law 掉进 Alternate Law。Normal Law 下计算机会挡住冲出飞行包线的操作；Alternate Law 把主控交回飞行员，并拿掉这些保护。一位较年轻的飞行员拉杆抬头。迎角本应在 3 度左右，失速大约在 10 度，混乱中到过 23 度，后来到 41 度。空客侧杆没有触觉反馈，两人可以同时相反操作而彼此不知道。改回 Alternate Law 之后 1 分 17 秒，飞机仍在 3 万英尺以上，理论上还能改出；皮托管冻结之后 4 分 20 秒坠入大西洋。BEA 报告写皮托管结冰触发了链条，机组的理解、配合和训练也是原因。CNN 的报道把标题放在飞行员不知道如何反应。作者对照 1986 年对 A320 的宣传：计算机会挡住飞行员的错误操作。她引用 14 CFR 91.3：机长对飞机的运行负直接责任，并且是最终权威。控制已经分散，责任没有跟着分散。她在脚注里写，这不是反对自动化本身；过去几十年的安全记录说明高度自动化总体上让飞行更安全。2018 年 3 月 18 日，一辆 Uber 自动驾驶车在亚利桑那州坦佩撞死一名推着自行车过马路的行人。车上的安全员可能面临车辆过失杀人指控。NTSB 两个月后的初步报告写了两类软件问题：系统把行人误认成别的物体；自动刹车被关掉。那是一辆改装的 Volvo XC90，跑的是 Uber 自己的软件，自动驾驶模式会禁用 Volvo 原有的安全功能，否则预期会在撞上之前刹车。坦佩警察局长对记者说，初步看 Uber 可能没有过错，但不排除指控那名备用驾驶员。作者问的是：交接问题已经知道，把最后一刻交给人这个角色本身合不合适。Tesla 在 2015 年的说法把两头都占了：Autosteer 几乎可以松开手，但 Elon Musk 说硬件和软件还没到可以放弃责任的地步，手必须留在方向盘上。Google 则因为解决不了 handoff，改了路线，不再做“平时机器开、最难的情况交给人”。2015 到 2017 年 Google 公开了自己的测试事故。作者转述当时的公告和报道：除一次以外，事故被说成是 Google 的车造成的；同时又说这些事故在某种意义上都是人类驾驶员的过错。其中追尾很多。作者接着写成推测：车也许比周围司机预期的更谨慎或更慢，其他司机预判错了，责任就被推到路上的人身上。反例是 Therac-25。1980 年代中期有六次已知的过量照射，后来被认定是软件错误，不是操作员错误。《纽约时报》的标题写成 Computer Mistake。作者用它说明 moral crumple zone 不是每个复杂系统都有。她写了两条更容易出现的条件：事故刚发生、高度公开，媒体叙述先于调查定调；操作者要么知道系统坏了但信息或权力不够（三里岛），要么信息够、却被系统设计得难以做对（法航 447）。Therac-25 是机器没有按设计工作。三里岛和法航 447 是系统按设计工作，事故仍然发生。她明确不展开具体的法律责任理论，写的是文化上的责备，尤其是美国语境。认证把自动驾驶当成封闭软件：只要按认证给人规定的接管时间，软件就算合格（她引用 FAA AC 23-17C）。人和软件之间的交互不在这项认证里，于是系统能够承认的故障就只剩下飞行员。深度学习和没有边界的系统怎么认证，她写成以后要研究的问题，不是已经得到的结论。参考文献从 PDF 物理页 17 开始，这一轮也翻过，没有另作论证。"
+    },
+    {
+      "title": "官方讲义页对「退学」这句话的后补限定",
+      "source_label": "官方讲义页正文，非课堂口述",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect1.md",
+      "text": "材料 lect1-notes 是课程官网本课讲义页。和 token 政策直接相关的一段写：「没有 token 的 CS 学生应该立即退学」也是课堂里的一句狠话。第二讲已经说明，当然不会真的让大家退学。它强调的是亲自使用工具、形成判断，而不是停在听别人评价。本集视频里的口述是「没有付费的 token 的同学就应该立即退学」，没有「第二讲已经说明」这一句。这一句是讲义页在第 1 讲之后写上的，不能当成这节课当场说过的话。"
+    },
+    {
+      "title": "装机仙人那篇专栏实际写的装机",
+      "source_label": "官方 slides 正文链接，非 AIGC 批注",
+      "source_url": "https://web.archive.org/web/20230425003911/https://zhuanlan.zhihu.com/p/619237809",
+      "text": "材料 zhihu-installer。幻灯片第 16 页正文把「装机仙人」链到 https://zhuanlan.zhihu.com/p/619237809 。2026-10-28 原链接返回 403。读的是 Internet Archive 对同一 URL 的存档，抓取时间 2023-04-25 00:39:11。页面标题是《如何驯服野生的 NOILinux 2.0》，作者蒋炎岩（知乎标识 jiang-yan-yan-75）。存档里的 created 与 updated 都是 2023-04-04 07:52:36 UTC，这一份存档没有更晚的修订。课堂上说屏幕上是 2021 年 7 月：那是文中一节的标题「Day -624 外传 (2021.7.16)」，不是整篇文章的发表日。2021 年那一节写 NOILinux 2.0 基于 Ubuntu 20.04，承办学校仍有很多 32 位 Windows 7，整套模拟 64 位桌面太慢。他的做法不是模拟整个桌面，而是在 Windows 上配接近的 vscode、Python 和 Dev-Cpp，再用 QEMU 跑从 NOILinux 里切出来的最小系统，安装包大约 30MB。第一级启动是只有 busybox 的 initramfs，第二级用 switch_root 换成真正的根，然后挂上 proc 和 sys、加载 e1000，最后进入 shell。他写 QEMU 的 tcg 模式几秒就能进系统，但速度不足真机的 1/10。万能头文件会造成 1284 次对 /usr/include 的 open，其中 505 次成功，老爷机上编译到分钟级；只引用常用库可以把 open 减到大约一半、编译时间减到 1/4。2023 年 3 月他改把系统做进优盘，大约 150 个，每个 40 元。ubuntu-noi-v2.0.iso 的 MBR 全是 0，虚拟机能装，真机 BIOS 不认。casper 报 unable to find a medium containing a live file system。他写 New Bing 和 ChatGPT 都没解决。读了 casper 之后发现它会扫所有磁盘，给内核加上 live-media=/dev/xxx 才装上；而 casper(7) 已经写了这个参数。他的原话是：AI 记得住，但没有让他去读文档。系统瘦到大约 5.5GB。量产脚本写三个分区：fat16 从 1MB 到 100MB，ext4 从 100MB 到 10GB、标签 /noilinux，ext4 从 10GB 到 14GB、标签 /home。两个 16 口 USB 3 hub，大约 6 分钟克隆 32 个，总共大约半小时。省选两天里，除了 402 机房 46 号机硬件重启两次，他写没有再出系统事故。文末他希望换一个人来背这个锅，下一句又写当然还是要做系统。课堂上「装机仙人被一句话取代，点睛是用模拟器验证」是 2026 年这节课的判断。这篇 2023 年的文章写的是他当时亲手做的竞赛系统；文中的 AI 只出现在没能解决 live usb 那一次。文中嵌了一段知乎视频，画面是安装失败，这一轮没有下载。"
+    },
+    {
+      "title": "Bell Labs 存档页上的水管比喻",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://web.archive.org/web/20250221180231/https://s3-us-west-2.amazonaws.com/belllabs-microsite-unixhistory/streams.html",
+      "text": "材料 unix-streams。幻灯片第 22 页的紫色批注把「接口足够窄、稳定」称为 Unix pipe 留下的遗产，链到 s3-us-west-2.amazonaws.com 上的 belllabs-microsite-unixhistory/streams.html。2026-10-28 这个对象返回 301，没有拿到正文。读的是 Internet Archive 对同一 URL 的存档。2019-11-19 和 2025-02-21 两次抓取的正文相同。页面标题是 The Creation of the UNIX* Operating System: Connecting streams like a garden hose，页首写 This is an archival site，页脚版权是 Copyright © 2002 Lucent Technologies。全文很短。它说 pipe 是 UNIX 的另一项创新，程序员可以把多个进程串起来，得到某一种输出。概念归 Doug McIlroy，当时是 Computing Science Research Center 的 department head；Dartmouth 也得到一份功劳；真正做出来的是 Thompson。McIlroy 回忆，1950 年代末做宏的时候，就把宏想成数据流的切换：遇到宏调用，就停止从这里取输入，改到那里取。他把宏称为 switchyard for data streams。他说 Brian Kernighan 办公室里有一张纸，是他自己写的，把 streams 比作花园水管，一根一根拧上去。页尾的 Next 指向 “Back to the chalkboards to work out the syntax”，那是站内另一页，不在幻灯片这个 URL 里，没有扩读。这一页没有写 agent，没有写插件数量，也没有测量。水管和 switchyard 是这一页的原话。窄而稳定的接口是幻灯片批注的引申。"
+    },
+    {
+      "title": "幻灯片所链主页上能打开的内容",
+      "source_label": "官方 slides 正文链接，非 AIGC 批注",
+      "source_url": "https://jiangyy.github.io/",
+      "text": "材料 jyy-home。幻灯片第 9 页把个人主页当作别人可以打开的作品例子，链到 https://jiangyy.github.io/ 。2026-10-28 这个 URL 返回 200。静态 HTML 的 noscript 有首页，其余文档在前端里。作者仓库 jiangyy/jiangyy.github.io 的 content 目录是同一站点的正文，部署中的脚本里能对上 “Generative Software Engineering”、播放量和 Cosmic Dawn 这些句子。读了 index、bio、papers、team、alumni、help。首页写蒋炎岩，南京大学计算机系副教授，Cosmic Dawn AI 的 Tech Lead，并把这个站做成一个 shell：bio、papers、team 是命令。最后更新日期写 2026-07-31。bio 写他 2011 年本科、2017 年博士毕业于南京大学，2015 年在俄亥俄州立大学待了半年；现在做 agentic AI 和 test-time scaling。2026 年秋季开 Generative Software Engineering，并停掉操作系统课和 Project-N。主页写那门课超出了课堂，播放超过 5,000,000 次，对应 USENIX ATC 2023 的 Hitchhiker’s Guide to OS。papers 一节按年份列了带 DOI 的论文，从 2013 年的系统软件到标成 Anno ChatGPT 5 (2026) 的条目。team 和 alumni 是学生名单。这些是主页上的自我介绍和出版物清单，不是这节课的评分规则。幻灯片上的简历例句「实现了 A, B, C, D」并带 github.io，是这一页批注写的例子，主页上没有这句。播放量是主页自己的句子，不是这节课测的。"
+    }
+  ],
   "self_test": [
     {
       "section": 1,
@@ -1912,5 +2262,20 @@
       "先做中间语言",
       "方向 验证 责任"
     ]
+  },
+  "bridges": {
+    "x0": "幻灯片用 225 项研究支持多实践。下面是这篇论文自己报告的数字和它划定的范围。",
+    "x1": "幻灯片和口述都用了 ReAct 这个名字。下面是论文摘要里的做法和它标出的实验条件。",
+    "x2": "幻灯片把增强智能收成四样东西。下面是 1962 年报告自己的用词。",
+    "x3": "幻灯片把教务页自动化叫作 Programming by Demonstration，并点名 WebRobot。下面只采用论文第 1 页摘要里的原话。",
+    "x4": "课堂上跑的是 Pi，并靠 AGENTS.md 注入课程身份。下面是 pi.dev 首页写的加载位置。",
+    "x5": "幻灯片和口述把 OpenClaw、Hermes 当成现象级产品。下面是两家官方页面怎么介绍自己。",
+    "x6": "幻灯片列出了 ICSE 2027 的方向名称。下面是征稿页上多出来的、和这门课直接相关的规则。",
+    "x7": "幻灯片用 human computers 讲职业名称的变迁。下面是 NASA 该页写明的史实。",
+    "x8": "幻灯片用 moral crumple zone 描述只背锅、没有停止权的人。下面是这个词在摘要里的定义。",
+    "x9": "口述把退学说成当场的要求。官方讲义页后来加了一句限定。",
+    "x10": "幻灯片把装机仙人链到一篇知乎专栏。下面是那篇文章自己写的装机过程，以及它和这节课「一句话加上模拟器验证」之间的时间差。",
+    "x11": "幻灯片把窄接口称为 Unix pipe 留下的遗产。下面是那个链接所在页面上的原话。",
+    "x12": "幻灯片把个人主页当作可以打开的作品。下面是这个主页自己写的身份和课程，不是简历例句。"
   }
 }

@@ -34,8 +34,11 @@
     "完整阅读全部 20 个转写块、909 句。章节按主题重分，没有把五分钟切块直接当成节。",
     "画面使用预先生成的 frames.py 结果：场景阈值 0.3，60 秒兜底，101 个候选、9 张联系表。讲者与幻灯片同在 1280×410 的画面里，整帧场景几乎不跳，所以候选主要按 60 秒落下。选帧时比较了幻灯片区域，再对选定时刻用 frames.py grab 截原分辨率。不是逐秒观看，短于一分钟的切换可能没被候选单独分开；代码和关键幻灯片按口述时间额外截了几帧。",
     "幻灯片上的数字和代码写入了对应帧的图注。密集的阅读助手长文只摘了讲师正在指认、或和后文架构直接相关的可见句子，没有把助手的整页转写进正文。",
-    "不读推荐论文和外链。讲师没有在本课口述中自报姓名；画面角标不写入正文。",
-    "1979 年 MVC 文稿、Codd 1970 和 RFC 1958 只记录本课画面和口述中出现的句子，没有另核对外篇原文。"
+    "本次在已交付笔记上增量补充，没有重写已有小节、takeaway 和图解。已有段落只在讲义或原文证明有误时才改；讲师说的「管道应该是 1983 年引入 Unix」仍留在第 10 节正文，1964 年备忘录写在整理者说明里。",
+    "官方材料核对时间是 2026-10-28。课程页为 https://jyywiki.cn/GSE/2026/ ，本课讲义 https://jyywiki.cn/GSE/2026/lect7.md ，slides https://jyywiki.cn/GSE/2026/slides7.html （39 页）。首页在第 7 讲旁边还有 Lab2，讲义、slides 和转写都没有把它列为本课阅读，因此没有登记。",
+    "slides 截图用本机 headless Chrome 打开官方 HTML 的本地副本，1600×900。先按 JPEG 质量 82 截取，整页超过 12MB，所以把这些截图重压到质量 64，页内容没有改。副本只加了用 URL 哈希选择起始页，方便逐页截图；页内容来自官方 slides-data。紫色 AIGC 批注里的链接不写成讲师明确推荐。",
+    "Codd 1970 的 ACM 落地页仍返回 403。出版方 PDF 用 Internet Archive 2023-09-27 对 https://dl.acm.org/doi/pdf/10.1145/362384.362685 的存档，读完 11 个物理页；此前宾大转载只写入物理页 1–5。Brooks 的 TR86-020 读了全文 21 页。Dahl–Hoare 只读了与印刷页 184–187、208–218 对应的物理页。Steele 的页码引用对应所下 PDF 的物理页 3–4 与 8–9。RFC 1958 只读了第 1 节。",
+    "Scheme 报告、Common Lisp: The Language 和 Java 语言规范只作为 Steele 的履历被引用，没有通读。System R 本轮重试后仍只有摘要，没有当成已读全文。RFC 1122、Shell 命令语言全书、POSIX 环境变量章、Spring 现行 sequence 页和几条产品史链接没有当成必读。jq、fzf、xdotool、Vue、React、OpenStax、JSP 和记账规则表按与课堂相关的章节阅读，不表示整本手册已读。"
   ],
   "summary": [
     "复杂产品从意图到规格再到实现会漂移。需求工程直面消不掉的本质复杂性，把意图空间问窄；架构把本质复杂性拆进模块，并减少选型带来的偶然复杂性。选定的那一刻就背上技术债。",
@@ -108,7 +111,8 @@
         }
       ],
       "editor_notes": [
-        "口述的规模是十行，以及五十万行、一百万行、一千万行。60 秒处的幻灯片把例子写成 10 行 Tower of Hanoi、20,000 行 QRGen、500,000 行教务系统（今天继续），并写「脑子一热」的可行架构往往还有改进的空间。这些例子在这一段口述里没有逐条点名，记在该帧图注里。"
+        "口述的规模是十行，以及五十万行、一百万行、一千万行。60 秒处的幻灯片把例子写成 10 行 Tower of Hanoi、20,000 行 QRGen、500,000 行教务系统（今天继续），并写「脑子一热」的可行架构往往还有改进的空间。这些例子在这一段口述里没有逐条点名，记在该帧图注里。",
+        "材料 lect7、材料 slides7。讲义页和 39 页 slides 的主线与口播一致，已有段落没有改写。60 秒一张的视频帧原先落在「架构无处不在」；Intent → Spec → Impl 那张图现在用官方 slides 第 1 页。"
       ],
       "start": 0.96,
       "end": 180.91,
@@ -140,10 +144,22 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000060000.jpg",
-          "time": 60.0,
-          "caption": "幻灯片标题「架构无处不在」。引用「代码之外有客户的规律：客户之外有社会的规律：社会之外有宇宙的规律」。从 10 行到 500,000 行：10 行的架构是 Tower of Hanoi；20,000 行的架构是 QRGen；500,000 行的架构是教务系统（今天继续）。下面写着可行架构仍有改进的空间，「脑子一热」的可行架构往往还有改进的空间。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p01.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 1,
+          "related_time": 30,
+          "caption": "标题 Intent → Spec → Impl。副标题「看似明确的需求，其实都有很多开放的空间」。三列是 Intent · 意图（想达成什么目标）、Spec · 规格（承诺什么行为）、Impl · 实现（具体如何做到）。例子：意图「公平分配稀缺名额」连到规格「同优先级随机抽签」和「按需求紧迫度排序」，抽签下面写着「同优先级如何定义？」；实现列有数据库集中抽签、队列批量抽签、规则表判定优先级、策略模块判定优先级。另一意图「让空余名额被利用」连到「退课后候补递补」和「到期后释放预留」。底部：「未确认的假设可能使目标漂移——需要回溯原意」。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p02.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 2,
+          "related_time": 60,
+          "caption": "标题「架构无处不在」。引用「代码之外有客户的规律；客户之外有社会的规律；社会之外有宇宙的规律」。从 10 行到 500,000 行：10 行的架构是 Tower of Hanoi；20,000 行的架构是 QRGen；500,000 行的架构是教务系统（今天继续）。下面写着可行架构仍有改进的空间，「脑子一热」的可行架构往往还有改进的空间。"
         }
       ],
       "examples": []
@@ -165,7 +181,8 @@
         }
       ],
       "editor_notes": [
-        "240 秒的幻灯片把本质复杂性的例子写成课程容量、先修要求、时间冲突，并写即使换成人工办理这些约束仍在；偶然复杂性的例子是重复数据、格式转换、缓存同步、部署配置。它把这一区分明确归到 Brooks 的 No Silver Bullet。口述这一段举的是选课、借教室，以及文件系统和数据库，没有念出 No Silver Bullet 这个篇名。"
+        "240 秒的幻灯片把本质复杂性的例子写成课程容量、先修要求、时间冲突，并写即使换成人工办理这些约束仍在；偶然复杂性的例子是重复数据、格式转换、缓存同步、部署配置。它把这一区分明确归到 Brooks 的 No Silver Bullet。口述这一段举的是选课、借教室，以及文件系统和数据库，没有念出 No Silver Bullet 这个篇名。",
+        "材料 brooks-nsb。口播把驾驭复杂性归到 Brooks。No Silver Bullet 这个篇名和 PDF 在官方 slides 第 3 页的紫色 AIGC 批注里。论文里的四条性质和 9/10 的数量级条件写在补充里，口播没有逐条念出。"
       ],
       "visual": {
         "path": "visuals/s02.jpg",
@@ -209,13 +226,17 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000240000.jpg",
-          "time": 240.0,
-          "caption": "幻灯片标题「软件工程的本质：驾驭复杂性」。Problem Domain 的 Essential Complexity：所选问题本身要处理的复杂性，例子是课程容量、先修要求、时间冲突；即使换成人工办理，这些约束仍然存在。技术实现的 Accidental Complexity：实现方式额外引入重复数据、格式转换、缓存同步、部署配置；业务规则没变，换一种实现就可能省掉许多麻烦。这一区分来自 Brooks 的 No Silver Bullet，区分问题本身的困难与表达、实现它时附带的困难。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p03.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 3,
+          "related_time": 240,
+          "caption": "标题「软件工程的本质：驾驭复杂性」。Problem Domain → Essential Complexity。紫色 AIGC：所选问题本身要求处理的复杂性，例子是课程容量、先修要求、时间冲突；即使换成人工办理，这些约束仍然存在。技术实现 → Accidental Complexity。紫色 AIGC：实现方式额外引入重复数据、格式转换、缓存同步、部署配置；业务规则没变，换一种实现就可能省掉许多麻烦。这一区分来自 Brooks 的 No Silver Bullet，区分问题本身的困难与表达、实现它时附带的困难。"
         }
       ],
-      "examples": []
+      "examples": [],
+      "flow": "p0 p1 p2 n0 n1 x0 f0"
     },
     {
       "title": "需求工程要直面本质复杂性",
@@ -305,12 +326,16 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000420000.jpg",
-          "time": 420.0,
-          "caption": "幻灯片标题「需求工程：直面 Essential Complexity」，收缩 Intent Space 的不确定性。需求越完备，歧义越小；例子是「课程容量 100 人」：候补算不算？跨院预留名额能否借用？但管理代价也越大：每个需求点都带来审计的代价；换到今天，是 token 开销（和模型潜在的错误发挥）；每补上一条约束，也多了一条需要持续核对的承诺。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p04.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 4,
+          "related_time": 420,
+          "caption": "标题「需求工程：直面 Essential Complexity」，收缩 Intent Space 的不确定性。需求越完备，歧义越小。紫色 AIGC：「课程容量 100 人」：候补算不算？跨院预留名额能否借用？但管理代价也越大：每个需求点都带来审计的代价；换到今天，是 token 开销（和模型潜在的错误发挥）；每补上一条约束，也多了一条需要持续核对的承诺。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 p5 e0 n0 x15 f0"
     },
     {
       "title": "架构收缩规格和实现的可能空间",
@@ -382,10 +407,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000660000.jpg",
-          "time": 660.0,
-          "caption": "幻灯片标题「架构设计」。分解 Essential Complexity、减少 Accidental Complexity：好的架构能更容易地实现需求、承受需求的变更；把容量、资格、时间冲突分开建模，让每一部分都能单独理解；让页面、批处理共用规则接口，减少重复实现与口径不一。收缩 Spec/Impl Space 的可能性：明确模块职责、数据归属和接口约定，排除大量随意组合。实用判断：需求改一处，需要跟着改多少处？"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p05.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 5,
+          "related_time": 660,
+          "caption": "标题「架构设计」。分解 Essential Complexity、减少 Accidental Complexity：好的架构能更容易地实现需求、承受需求的变更。紫色 AIGC：把容量、资格、时间冲突分开建模，让每一部分都能单独理解；让页面、批处理共用规则接口，减少重复实现与口径不一。收缩 Spec / Impl Space 的可能性：明确模块职责、数据归属和接口约定，排除大量随意组合。一个实用判断：需求改一处，需要跟着改多少处？"
         }
       ],
       "examples": []
@@ -410,7 +438,8 @@
       ],
       "editor_notes": [
         "1200 秒幻灯片上的英文引文以 rather than to try to ignore them 收束，作者写作 O.-J. Dahl, E. W. Dijkstra, and C. A. R. Hoare，1972。口述在 rather than trying to 处没有把后半句念完。1260 秒的幻灯片补充：每颗 pearl 是一项独立设计决策；过早把 image 解释成 lines，中间各层都要理解 lines。口述只讲了项链和珍珠，没有讲 image 和 lines。",
-        "「参数有限的大模型」是讲师打比方，不是在给人类智能下定义。Grok 额度、云电脑、1000 篇和每个领域两三百篇，都是他描述自己前两天那次收集文献的经历。"
+        "「参数有限的大模型」是讲师打比方，不是在给人类智能下定义。Grok 额度、云电脑、1000 篇和每个领域两三百篇，都是他描述自己前两天那次收集文献的经历。",
+        "材料 ewd249。LINER 把 image 定义成 line[0 : 49]，也就是五十行。"
       ],
       "visual": {
         "path": "visuals/s05.jpg",
@@ -537,19 +566,26 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v001200000.jpg",
-          "time": 1200.0,
-          "caption": "幻灯片标题 On Our Inability to Do Much，出处 Structured Programming（O.-J. Dahl, E. W. Dijkstra, and C. A. R. Hoare），1972。引用大意：I have a very small head and I had better learn to live with it and to respect my limitations and give them full credit, rather than to try to ignore them。图示「尊重有限的注意力」，分成输入、处理、输出，标注此刻关注的层次，底部写「细节仍在，只是暂时封装」。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p06.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 6,
+          "related_time": 1200,
+          "caption": "标题 On Our Inability to Do Much。出处 Structured Programming（O.-J. Dahl, E. W. Dijkstra, and C. A. R. Hoare），紫色 AIGC 注明 1972 并链向书目页。引文：I have a very small head and I had better learn to live with it and to respect my limitations and give them full credit, rather than to try to ignore them。图的说明：尊重有限的注意力，此刻关注输入、处理、输出三个概念，更多实现细节封装在各层之下。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v001260000.jpg",
-          "time": 1260.0,
-          "caption": "幻灯片标题 Our Mental Aids：枚举、归纳、抽象。Dijkstra 的 Part I 讨论 our mental aids。案例在今天看来都是小程序，但 necklace（pearls）的比喻就是在分解复杂性。每颗 pearl 承载一项独立设计决策，决定的先后会改变其他层必须知道多少细节。过早把 image 解释成 lines，中间各层就都要理解 lines；推迟表示决策，更多层才能独立于它。底部指向原文 On What We Have Achieved。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p07.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 7,
+          "related_time": 1260,
+          "caption": "标题 Our Mental Aids：枚举、归纳、抽象。Dijkstra 的 Part I 讨论 our mental aids。案例在今天看来都是小程序，但 necklace（pearls）的比喻就是在分解复杂性。紫色 AIGC：每颗 pearl 承载一项独立设计决策，决定的先后会改变其他层必须知道多少细节。过早把 image 解释成 lines，中间各层就都要理解 lines；推迟表示决策，更多层才能独立于它。原文标题写成 On What We Have Achieved，链到 EWD249。"
         }
       ],
-      "examples": []
+      "examples": [],
+      "flow": "p0 p1 p2 p3 p4 p5 p6 p7 n0 n1 n2 x1 f0 f1"
     },
     {
       "title": "把丢掉的抽象放回代码里",
@@ -640,7 +676,8 @@
         "他觉得这门课讲什么都不够，因为没有办法把那一千篇都讲掉。如果在他这里读 system software 的 PhD，得把它们多多少少都读了。这仍是一件很恐怖的事情。得到的启发是：读书也许没有那么困难。他在准备今天的课时又去找了一些有点老的材料。刚才那是 1972 年，接着想如果到 1980 年、1990 年，又怎么看这件事。"
       ],
       "editor_notes": [
-        "hold、wait、activate、simulate 是讲师从书里点出的四个名字。画面上的阅读笔记把它们展开成离散事件仿真的步骤，包括仿真时间变量、按唤醒时刻排序的表，以及「等了几小时可能只算了几微秒」。那些展开步骤讲师没有逐条讲，笔记不把助手笔记当成他的原话。"
+        "hold、wait、activate、simulate 是讲师从书里点出的四个名字。画面上的阅读笔记把它们展开成离散事件仿真的步骤，包括仿真时间变量、按唤醒时刻排序的表，以及「等了几小时可能只算了几微秒」。那些展开步骤讲师没有逐条讲，笔记不把助手笔记当成他的原话。",
+        "材料 dahl-hoare。讲义页点名第四节印刷页 184–185；slides AIGC 另外标了印刷页 208–220。这份 PDF 的物理页 10 页眉印着 184，物理页 34 页眉印着 208。"
       ],
       "start": 1837.46,
       "end": 2070.2,
@@ -680,8 +717,28 @@
         "s-g321.0",
         "s-g322.0~2"
       ],
-      "frames": [],
-      "examples": []
+      "frames": [
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p08.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 8,
+          "related_time": 1900,
+          "caption": "标题 Hierarchical Program Structures。Small Head。引文：Part III，precise thinking is possible only in terms of a small number of elements at a time。SIMULA class/object abstraction。控制流解耦：Subroutine vs. Coroutine。紫色 AIGC：原书的例子是两个下棋程序互相对弈，谁应当是主程序；子程序服从调用—返回，协程让双方保留各自的执行位置并交替恢复。标注 Part III, §4, pp. 184–185。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p09.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 9,
+          "related_time": 2000,
+          "caption": "标题「让 AI 带我们读第七章」。Part III, §7: Concept Hierarchies。紫色 AIGC：原文 pp. 208–220，逐层缩短问题概念与机器概念之间的距离；给 AI 的任务是沿 TWLIST → MINISIM → Job Shop Model 阅读，每层新增了什么概念、让使用者暂时忘掉什么细节，并用原文和页码说明。站在今天：有些想法成功、有些失败；Python 协程保留了什么，Go 不采用类型继承层次又舍弃了什么。"
+        }
+      ],
+      "examples": [],
+      "flow": "p0 p1 p2 p3 n0 n1 x2 x14 f0 f1"
     },
     {
       "title": "语言要能生长，而不是一次做完",
@@ -707,7 +764,8 @@
       "editor_notes": [
         "2100 秒的幻灯片把作者写成 Guy L. Steele Jr.，并写他与 Gerald Jay Sussman 共同设计 Scheme，是 SICP 所用语言的创造者之一，也是 Common Lisp: The Language 的作者和 The Java Language Specification 的合著者。口述只说了 Scheme 的设计者和 Java Language Specification 的合著者。幻灯片篇名拼写是 Growing a langauge，OOPSLA '98 Keynote。SICP 前言的引文在图注里。",
         "2378 秒的画面上，阅读助手写着 Java 直到 2014 年的 Java 8 才有泛型。讲师口述没有给出泛型进入 Java 的年份，只说运算符重载至今没有加入，以及轻量用户自定义类型现在是有的。笔记不把助手屏幕上的 2014 年当成讲师的结论。",
-        "qsort 手册页在 2432 秒可见，包括 qsort_r 和 _GNU_SOURCE。讲师点名的是 compare 指针、const void，以及后面补上的 nmemb 和 size。"
+        "qsort 手册页在 2432 秒可见，包括 qsort_r 和 _GNU_SOURCE。讲师点名的是 compare 指针、const void，以及后面补上的 nmemb 和 size。",
+        "材料 steele-growing。讲义页链的是同一份 PDF。slides 第 10 页正文把篇名印成 Growing a langauge。AIGC 写的 pp. 3–4 与 pp. 8–9 对得上这份 PDF 的物理页，页 8 底部印着 8。紫色批注里的 Scheme、Common Lisp 和 Java 语言规范是作者履历，讲义页同样只把它们写成 Steele 做过的东西。slides AIGC 的 Java 规范链到 SE 8，讲义页链到 SE 7。"
       ],
       "visual": {
         "path": "visuals/s08.jpg",
@@ -831,10 +889,31 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v002100000.jpg",
-          "time": 2100.0,
-          "caption": "幻灯片标题「阅读经典（1990s）」。引用 SICP 前言，Guy L. Steele Jr.：One thing the human mind seems to do well is to name things; we have powerful associative memories. Given a name, we can quickly recall some associated thing to mind。要点：与 Gerald Jay Sussman 共同设计了 Scheme，也是 SICP 所用语言的创造者之一；Common Lisp: The Language 的作者；The Java Language Specification 的合著者。然后写着意外发现 Growing a langauge（OOPSLA '98 Keynote）。幻灯片上的篇名拼写作 langauge。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p10.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 10,
+          "related_time": 2100,
+          "caption": "标题「阅读经典（1990s）」。引文来自 SICP 前言，Guy L. Steele Jr.：One thing the human mind seems to do well is to name things; we have powerful associative memories. Given a name, we can quickly recall some associated thing to mind。紫色 AIGC：与 Gerald Jay Sussman 共同设计 Scheme，也是 SICP 所用语言的创造者之一；Common Lisp: The Language 的作者；The Java Language Specification 的合著者。正文链接 Growing a langauge（原文拼写），OOPSLA'98 Keynote。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p11.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 11,
+          "related_time": 2200,
+          "caption": "标题 Growing a Language。引文：It is good to design a thing, but it can be far better (and far harder) to design a pattern... a language design as being a pattern for language designs, a tool for making more tools of the same kind。让听众经历语言的生长。紫色 AIGC：演讲从单音节词开始，多音节词要先定义或用已说明的构词规则生成，原文 pp. 3–4。使用模式是长程任务中积累的顶级人类智慧，保留 slots、允许以后选择和演化的 design space。紫色 AIGC：Steele 引用 Christopher Alexander《俄勒冈实验》，预先定死总体规划会夺走使用者塑造未来的机会，原文 pp. 8–9。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p12.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 12,
+          "related_time": 2300,
+          "caption": "标题「好的架构：设计解空间」。固定协作规则，保留局部选择。正文：好的架构不是选出一个解，而是设计开放需求空间对应的解空间。图的说明：开放需求经由架构的约束、接口与组合规则，对应一族可选择、可演化的解。"
         },
         {
           "source_type": "video_frame",
@@ -848,7 +927,8 @@
           "time": 2432.0,
           "caption": "右侧是 qsort 的手册页。标题 qsort, qsort_r - sort an array，库是 Standard C Library。原型里 qsort 的参数包括 void base、size_t nmemb、size_t size，以及 int (*compar)(const void *, const void *)；另有 qsort_r，比较函数多一个 void * 参数，并要求 _GNU_SOURCE。说明文字写 qsort 排序 nmemb 个、每个大小为 size 的元素，base 指向数组起点。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 p5 p6 e0 e1 n0 n1 n2 n3 x3 f0 f1 f2 f3 f4"
     },
     {
       "title": "用后即扔的训练，和被埋住的经典",
@@ -906,7 +986,17 @@
         "s-g466.0~11",
         "s-g466.2~19"
       ],
-      "frames": [],
+      "frames": [
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p13.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 13,
+          "related_time": 2800,
+          "caption": "标题「阅读经典，建立品味」。Comment：有太多宝藏被埋在这个快速发展的时代了。海量人类产物（CSDN、防自学教科书）和 AI slop 在污染品味。阅读经典是成长必备的道路。正文还有「我真的很期待一个大学毁灭计划」，所有学校的改进空间都实在太大了。把经典读进自己的设计。紫色 AIGC：拿自己的系统追问，作者把哪些判断交还给了使用者，这些选择需要什么共同规则才能彼此兼容。"
+        }
+      ],
       "examples": []
     },
     {
@@ -928,7 +1018,8 @@
       ],
       "editor_notes": [
         "口述的「PR」紧接着 Adobe 全家桶和带预览的打开菜单。笔记按口述保留 PR，不另定是哪一个产品名。",
-        "3000 秒幻灯片把第三条写成 Write programs to handle text streams, because that is a universal interface，并把 1964 年的花园水管归于 McIlroy。3120 秒的幻灯片补充了口述没有展开的共同约定：-- 结束选项、stdin/stdout/stderr、退出状态 0 与 grep 的 1、一行一条、TSV 与 JSON、不要把颜色和进度条混进数据流、NUL 分隔文件名、LC_ALL=C。3230 秒的画面是文件选择列表，计数 208/208。"
+        "3000 秒幻灯片把第三条写成 Write programs to handle text streams, because that is a universal interface，并把 1964 年的花园水管归于 McIlroy。3120 秒的幻灯片补充了口述没有展开的共同约定：-- 结束选项、stdin/stdout/stderr、退出状态 0 与 grep 的 1、一行一条、TSV 与 JSON、不要把颜色和进度条混进数据流、NUL 分隔文件名、LC_ALL=C。3230 秒的画面是文件选择列表，计数 208/208。",
+        "材料 mcilroy。正文仍保留讲师说的「管道应该是 1983 年引入 Unix」。Ritchie 重录的备忘录日期是 1964 年 10 月 11 日，第 1 点是用花园水管把程序接起来；同一页说这是 Unix 管道记号的历史背景，并说 McIlroy 几乎用管理手段把管道装进系统。备忘录页没有写 1983。"
       ],
       "visual": {
         "path": "visuals/s10.jpg",
@@ -1008,16 +1099,31 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003000000.jpg",
-          "time": 3000.0,
-          "caption": "幻灯片标题「设计解空间：UNIX Philosophy」。三条原则：Do one thing and do it well；Write programs to work together；Write programs to handle text streams, because that is a universal interface。精髓是第三条：文本接口统一了人-程序、程序-程序的接口，使用者可以自由组合程序、随时检查程序的中间结果。McIlroy 在 1964 年就提出：像连接花园水管一样连接程序。画面上的姓氏拼写接近 McIroy。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p14.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 14,
+          "related_time": 3000,
+          "caption": "标题「设计解空间：UNIX Philosophy」。三条原则：Do one thing and do it well；Write programs to work together；Write programs to handle text streams, because that is a universal interface。精髓是第三条：文本接口统一了人-程序、程序-程序的接口，使用者可以自由组合程序、随时检查中间结果。紫色 AIGC：McIlroy 在 1964 年就提出，像连接花园水管一样连接程序，并链向原始备忘录。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v003120000.jpg",
-          "time": 3120.0,
-          "caption": "幻灯片标题「UNIX：组合需要共同约定」。POSIX：短选项、选项参数、操作数，-- 结束选项解析（个别工具有历史例外）；stdin 输入、stdout 输出、stderr 诊断，管道默认连接前者的标准输出与后者的标准输入；退出状态单独传递，0 通常表示成功，例如 grep 的 1 表示未匹配。社区实践：简单记录常用一行一条、固定字段，复杂结构用 TSV、JSON；机器模式保持稳定，彩色、进度条、提示语不混入数据流；文件名可以包含换行，传文件列表可用 NUL 分隔；排序和字符分类受 locale 影响，需要可复现时可固定 LC_ALL=C。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p15.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 15,
+          "related_time": 3120,
+          "caption": "标题「UNIX：组合需要共同约定」。POSIX：短选项、选项参数、操作数，-- 结束选项解析（个别工具有历史例外）；stdin、stdout、stderr，管道默认连接前者的标准输出与后者的标准输入；退出状态单独传递，0 通常表示成功，例如 grep 的 1 表示未匹配。社区实践：一行一条、TSV 或 JSON；机器模式保持稳定，彩色、进度条、提示语不混入数据流；文件名可以包含换行，传文件列表可用 NUL 分隔；排序和字符分类受 locale 影响，需要可复现时可固定 LC_ALL=C。这些细则都在紫色 AIGC 里，并分别链到 POSIX 与 GNU sort。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p16.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 16,
+          "related_time": 3180,
+          "caption": "标题「UNIX：使用者创造新的用途」。紫色 AIGC：jq 把 JSON 字段提取成文本流；fzf 从标准输入读候选、让人选择、再把结果写回标准输出；书目 JSON → jq 提取书名 → fzf 人工选择。xdotool 把窗口搜索、键盘和鼠标变成命令，适用于 X11；窗口 ID 列表 → fzf → xdotool windowactivate，组合出自己的窗口切换器。正文：设计者提供组合的规则，使用者可以创造设计者没有想到的用途。"
         },
         {
           "source_type": "video_frame",
@@ -1025,7 +1131,8 @@
           "time": 3230.0,
           "caption": "画面是一个文件选择列表，底部计数 208/208。可见路径包括 p6/jw-demo 下的 package-lock.json、index.html、README.md，p1/lect 下的 qrgen.xlsx、spec-gap.png、index.md，以及文件名里带「需求说明书」的 html。这是讲师给编辑器配打开文件菜单时的选择界面。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 e0 n0 n1 n2 x4 x5 x18 f0 f1 f2 f3"
     },
     {
       "title": "关系模型把世界收成表",
@@ -1042,7 +1149,8 @@
         "于是可以用这样的信息系统。数据库带起了整个人类世界数据信息化的一波很大的浪潮。图书馆里的书可以信息化，学籍管理系统可以信息化，财务信息可以信息化，在线商城的订单可以信息化，所有东西都可以用 relational database 来表示。它是逻辑关系，表示实体和实体之间的逻辑关系。只要把逻辑关系理清楚，就可以在现实世界里实现信息系统。这也是一个非常顶级的、隔离了复杂性的抽象，而且有无穷的扩展能力。它只规定世界里面有表、有 database schema，但 schema 是什么，可以由你来扩展、由你来决定，为这个应用来定制。"
       ],
       "editor_notes": [
-        "3360 秒的幻灯片把同一句 Codd 的意思写成保护使用者免受数据表示扰动，并点名数据独立性：谁借了哪本书保持不变，数据页、索引、访问路径可以改变；又写 System R（1976）把「声明要什么」落实成可选择的执行计划。3480 秒的图用读者号 S17、姓名小林、馆藏号 B42、书名操作系统，以及借阅表上的主键和外键，说明同一份事实可以回答两个问题，堆文件加索引可以更换。这些编号是画面上的例子，口述没有念。"
+        "3360 秒的幻灯片把同一句 Codd 的意思写成保护使用者免受数据表示扰动，并点名数据独立性：谁借了哪本书保持不变，数据页、索引、访问路径可以改变；又写 System R（1976）把「声明要什么」落实成可选择的执行计划。3480 秒的图用读者号 S17、姓名小林、馆藏号 B42、书名操作系统，以及借阅表上的主键和外键，说明同一份事实可以回答两个问题，堆文件加索引可以更换。这些编号是画面上的例子，口述没有念。材料 system-r 本轮仍只有 IBM 出版物页上的摘要。该页给出的 ACM PDF 返回 403，这个 PDF URL 在 Internet Archive 没有正文存档，作者与 IBM 主页也没有这份 1976 年 TODS 全文。幻灯片上「可选择的执行计划」仍只是紫色批注，不是这篇论文的结果。",
+        "材料 codd-1970，材料 codd-acm。讲义页链到 IBM 的出版物条目，slides 正文链到 ACM DOI 10.1145/362384.362685。两份 PDF 的卷头都是 CACM 1970 年 6 月、E. F. Codd、IBM Research Laboratory, San Jose。codd-acm 用的存档共 11 个物理页，第 2 节 Redundancy and Consistency 从物理页 7 开始。codd-1970 写入笔记的是物理页 1–5。IBM 页面只有引用元数据，落地页没有当作正文。"
       ],
       "start": 3302.07,
       "end": 3507.61,
@@ -1081,19 +1189,26 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003360000.jpg",
-          "time": 3360.0,
-          "caption": "幻灯片标题「案例二：关系数据库」，引用 E. F. Codd, 1970：用关系模型保护格式化数据系统的使用者，使其免受数据增长和访问变化所引起的数据表示扰动。要点：分离「数据的理解」与「数据在机器中的组织」；「谁借了哪本书」保持不变，数据页、索引、访问路径可以改变；SQL、查询优化器、事务实现使 CRUD 成为标准架构模式；System R（1976）把「声明要什么」落实为可选择的执行计划。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p17.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 17,
+          "related_time": 3360,
+          "caption": "标题「案例二：关系数据库」。引文：A relation model of data as a basis for protecting users of formatted data systems from the potentially disruptive changes in data representation caused by growth in the data bank and changes in traffic（E. F. Codd, 1970），这一链接在 slides 正文，指向 ACM DOI。把物理世界状态投射到关系数据库中，分离「数据的理解」与「数据在机器中的组织」。紫色 AIGC：「谁借了哪本书」保持不变，数据页、索引、访问路径可以改变。SQL、查询优化器、事务实现使 CRUD 成为标准架构 pattern。紫色 AIGC：System R（1976）把「声明要什么」落实为可选择的执行计划。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v003480000.jpg",
-          "time": 3480.0,
-          "caption": "幻灯片标题「关系数据库：现实、关系与存储」。同一份借阅数据要回答「借了什么」和「被谁借走」。图中读者号 S17、姓名小林；馆藏号 B42、书名操作系统；借阅把读者号 S17 和馆藏号 B42 连起来。下划线表示主键，连线表示外键。物理组织写成堆文件加索引、可更换，旁边还有分区加索引。底部：查询关心事实，存储可以改变。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p18.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 18,
+          "related_time": 3480,
+          "caption": "标题「关系数据库：现实、关系与存储」。同一份数据，支持不同的问题。紫色 AIGC：记录当前借阅，按读者查「借了什么」，按馆藏查「被谁借走」。图分三列：现实世界里小林在图书馆借《操作系统》；逻辑关系是读者（S17 小林）、图书（B42 操作系统）和借阅（读者号 S17、馆藏号 B42），下划线标主键，连线标外键；物理组织可以是堆文件加索引，也可以是分区加索引，中间写着可更换。底部：「查询关心事实，存储可以改变」。"
         }
       ],
-      "examples": []
+      "examples": [],
+      "flow": "p0 p1 p2 p3 n0 n1 x6 x19 f0 f1"
     },
     {
       "title": "Internet 只承诺连通，上面的应用可以换",
@@ -1168,13 +1283,26 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003704333.jpg",
-          "time": 3704.333,
-          "caption": "幻灯片标题「Internet：在持续变化中演化」，RFC 1958: Architectural Principles of the Internet（1996）。引文：In searching for Internet architectural principles, we must remember that technical change is continuous in the information technology industry。做好数据传输这一件事：Telnet 到 ssh；FTP/HTTP/… 到 HTTPS（许多常见用途迁移）；SMTP/IMAP 一直到今天还在使用。在共同规则之上持续更换局部。RFC 用城市作比喻：街道与建筑逐步更新，城市仍持续运转。少量合作规则可以生成庞大、多样、不断演化的技术空间。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p19.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 19,
+          "related_time": 3600,
+          "caption": "标题「案例三：The Internet」。手机与数据中心如何通信。紫色 AIGC 标了 TCP/IP 分层并链到 RFC 1122。图的示例是 HTTPS over TCP：手机一侧是应用 HTTP/TLS、传输 TCP、网络 IP、链路 Wi-Fi，经接入路由器和骨干路由器逐跳转发，到数据中心的以太网链路；两端之间标着端到端，两侧标着封装与解封装。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p20.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 20,
+          "related_time": 3704.333,
+          "caption": "标题「Internet：在持续变化中演化」。RFC 1958: Architectural Principles of the Internet（1996），链接在 slides 正文。引文：In searching for Internet architectural principles, we must remember that technical change is continuous in the information technology industry。做好数据传输这一件事。Telnet → ssh；FTP/HTTP/... → HTTPS，紫色 AIGC 注明许多常见用途的迁移；SMTP/IMAP 一直到今天还在使用。在共同规则之上持续更换局部。紫色 AIGC：RFC 用城市作比喻，街道与建筑逐步更新，城市仍持续运转；少量合作规则可以生成庞大、多样、不断演化的技术空间，并指向 RFC 1958 §1。"
         }
       ],
-      "examples": []
+      "examples": [],
+      "flow": "p0 p1 p2 p3 n0 x7 f0 f1"
     },
     {
       "title": "每个页面一张事务，模板把数据铺成 HTML",
@@ -1271,24 +1399,43 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003824333.jpg",
-          "time": 3824.333,
-          "caption": "幻灯片标题「Systems：每一轮浪潮的新抽象」，为通用应用搭建抽象层。时间线上可见：1964 IBM System/360，兼容机器家族，升级硬件、保留软件；1969 UNIX，进程与文本流，stdin 与 stdout，小工具自由组合；1970s Smalltalk，对象与消息，程序与界面共同生长；1989–91 Web，URL 与超链接，跨越机器、连接信息；2008 Android 1.0，应用与组件，统一平台、承载移动应用；2014 Kubernetes，资源与期望状态，声明需求、系统持续调谐。底部史料：IBM、UNIX 原作者、Alan Kay、CERN、Android、Kubernetes。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p21.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 21,
+          "related_time": 3824.333,
+          "caption": "标题「Systems：每一轮浪潮的新抽象」，为通用应用搭建抽象层。刚才三个都是 Systems。图的说明：从 System/360、UNIX、Smalltalk 到 Web、Android 和 Kubernetes。紫色 AIGC 列出史料链接：IBM、UNIX 原作者、Alan Kay、CERN、Android、Kubernetes。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v004004333.jpg",
-          "time": 4004.333,
-          "caption": "幻灯片标题「如果是面向客户需求的软件呢？」。操作系统、CRUD 数据库、Internet 连接了服务器和世界。最直接的想法：每个页面就是一个 SQL Transaction，就可以支持在线商城、社交网络、教务系统。选课请求写成：读课程，检查能否选，写选课记录，返回页面。业务代码应该放在哪里：学生选课页和管理员补选页都要遵守课程容量限制；把规则复制到每个页面，改一次规则就得找遍所有入口。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p22.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 22,
+          "related_time": 4004.333,
+          "caption": "标题「如果是面向客户需求的软件呢？」。操作系统、CRUD 数据库、Internet 连接了服务器和世界。最直接的想法：每个页面就是一个 SQL Transaction，就可以支持在线商城、社交网络、教务系统。紫色 AIGC：选课请求是读课程、检查能否选、写选课记录、返回页面。业务代码应该放在哪里：学生选课页和管理员补选页都要遵守课程容量限制；把规则复制到每个页面，改一次规则就得找遍所有入口。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v004184333.jpg",
-          "time": 4184.333,
-          "caption": "幻灯片标题「JSP：从 Java 片段到表达式与标签」，同一张页面的两代写法。<% … %> 执行 Java，<%= … %> 输出表达式。JSTL 1.0（2002）提供标准标签与 EL，JSP 2.0（2003）把 EL 纳入页面语言。示例里有 page contentType=\"text/html;charset=UTF-8\"、taglib 前缀 c、指向 http://java.sun.com/jsp/jstl/core，scriptlet 里 String msg = \"Hello, JSP!\"，用 <%= msg %> 输出，再用 c:forEach 遍历 users 输出 user.name。底部写：换成标签，不会自动得到 MVC，业务规则仍需要独立的归属。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p23.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 23,
+          "related_time": 4100,
+          "caption": "标题「Java Web：直接在 HTML 里写代码」。Java Web 浪潮（1990s 后期）。Java Virtual Machine: Write once, configure everywhere。自动内存管理，程序员的救星。页面模板：让 HTML 留在 HTML 里。紫色 AIGC：PHP/FI 的前身（1995）、ASP（1996）已探索在页面里嵌入服务器端脚本；Servlet 在 Java 中输出 HTML，JSP 1.0（1999）在 HTML 中嵌入 Java；JSP 由容器翻译成 Servlet，改变的是编写方式；页面结构清楚了，业务逻辑也很容易顺手写进页面。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p24.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 24,
+          "related_time": 4184.333,
+          "caption": "标题「JSP：从 Java 片段到表达式与标签」，同一张页面的两代写法。紫色 AIGC：<% ... %> 执行 Java，<%= ... %> 输出表达式；JSTL 1.0（2002）提供标准标签与 EL，JSP 2.0（2003）把 EL 纳入页面语言。示例含 page contentType、taglib 前缀 c、scriptlet 里的 Hello, JSP!，以及 c:forEach 配 ${user.name}。紫色 AIGC：换成标签，不会自动得到 MVC，业务规则仍需要独立的归属。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 e0 e1 n0 n1 x16 f0 f1 f2 f3"
     },
     {
       "title": "MVC 把修改和观看拆开",
@@ -1305,7 +1452,8 @@
       ],
       "editor_notes": [
         "关于 controller 输出的那一句英文，转写明显听拧了。4304 秒的文稿画面把 controller 写成用户和系统之间的链接，并通过安排 view 出现在屏幕上提供输入；同一页还写 view 既可以向模型提问，也可以用模型的术语发消息更新模型。这和讲师口述的「view 应是没有副作用的纯函数」不完全同一口气。笔记保留他的口述划分，文稿上多出来的句子只写在图注里。",
-        "4364 秒的幻灯片把 1979 年写成关注点分离，并给教务系统一个判断：课表从列表换成周历主要改 View，选课限制变化主要改 Model。Model 不只是数据库里的几张表，还包括容量与冲突规则。"
+        "4364 秒的幻灯片把 1979 年写成关注点分离，并给教务系统一个判断：课表从列表换成周历主要改 View，选课限制变化主要改 Model。Model 不只是数据库里的几张表，还包括容量与冲突规则。",
+        "材料 mvc1979。1979 年 12 月 10 日的笔记里，View 向模型提问，Controller 把用户的操作翻译成给 View 的消息。slides 第 25–26 页把 Web 里的 Controller 画成组织请求、由 Model 执行规则。两套分法都保留，视频帧仍是文稿原页。"
       ],
       "visual": {
         "path": "visuals/s14.jpg",
@@ -1375,13 +1523,26 @@
           "caption": "画面是 1979-12-10 的 MVC 文稿。MODELS：Models represent knowledge；模型与其部分，应当和拥有者所感知的世界一一对应；节点应处在同一问题层次，把日历预约这类问题节点和段落这类实现细节混在一起是不好的形式。VIEWS：A view is a (visual) representation of its model，突出某些属性、压掉另一些，像表示过滤器；向模型提问取得数据，也可以用模型的术语发消息更新模型，例如可以要 identifier 并期望得到 Text，但不能假设模型的类就是 Text。CONTROLLERS：A controller is the link between a user and the system，通过安排相关 view 出现在屏幕的适当位置来提供输入。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v004364333.jpg",
-          "time": 4364.333,
-          "caption": "幻灯片标题「MVC：让不同的变化各有归属」，Separation of Concerns。Models-Views-Controllers（1979）。最初面向交互式界面：同一个业务对象可以有不同的展示和操作方式。教务系统：Model 封装数据、状态和业务逻辑，课程、选课记录、容量与冲突规则不只是数据库里的几张表；View 展示界面；Controller 接收用户输入，协调 Model 和 View。课表从列表换成周历，主要改 View；选课限制变化，主要改 Model。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p25.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 25,
+          "related_time": 4364.333,
+          "caption": "标题「MVC：让不同的变化各有归属」，Separation Of Concerns。Models–Views–Controllers（1979）链的是内嵌 PDF。紫色 AIGC：最初面向交互式界面，同一个业务对象可以有不同的展示和操作方式。教务系统：Model 封装数据、状态和业务逻辑，课程、选课记录、容量与冲突规则不只是数据库里的几张表；View 展示界面；Controller 接收用户输入，协调 Model 和 View。课表从列表换成周历主要改 View，选课限制变化主要改 Model。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p26.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 26,
+          "related_time": 4420,
+          "caption": "标题「MVC：一次选课请求」。Web MVC 中的业务流程与界面。紫色 AIGC：请求处理是 Controller 组织请求，Model 执行业务规则，View 呈现结果，并链到 Spring 的 sequence 文档。图的说明：浏览器界面、Controller、承载业务规则的 Model、事务数据库与 View。"
         }
       ],
-      "examples": []
+      "examples": [],
+      "flow": "p0 p1 p2 n0 n1 n2 x8 f0 f1 f2"
     },
     {
       "title": "React 声明整棵界面，Vue 跟着依赖更新",
@@ -1442,19 +1603,44 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v004544333.jpg",
-          "time": 4544.333,
-          "caption": "幻灯片标题「React：用状态快照描述界面」。每次 Render 都描述此刻应该显示什么。示例：const [query, setQuery] = useState(\"\")；组件根据本轮 query 筛选课程并返回 JSX，派生列表不必另存为 State；setQuery 请求下一次渲染，本轮拿到的状态仍是原来的快照。受控输入框：value={query}，onChange 里 setQuery(e.target.value)，链路是事件、更新状态、Render、界面。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p27.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 27,
+          "related_time": 4560,
+          "caption": "标题「把 ViewState 也当成 Model」。同一份业务数据，不同的界面。公式 View = render(Model, ViewState)。割裂之处：ViewState 通常不会进入业务数据库，例如展开的菜单、hover 的元素。紫色 AIGC：课程数据没变，只改筛选词 query，显示的列表就变了。为什么不把 ViewState 也当成一个 Model。Presentation Model（Fowler, 2004）：将界面状态与行为从具体控件中提取出来。是否持久化，与是否值得建模，是两件事。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v004724333.jpg",
-          "time": 4724.333,
-          "caption": "幻灯片标题「Vue 与 React：同一个课程选框」。都由状态决定界面，区别在如何表达更新。Vue 一侧 query 用 ref，例子值是「操作系统」，visibleCourses 用 computed 筛选课程，v-model 把 value 和 input 连到 query。React 一侧 query / setQuery 来自 useState，visibleCourses 由 courses 和 query 筛出，JSX 渲染 value 和列表，onChange 调用 setQuery 触发下一次渲染。共同点：状态驱动界面，事件改变状态；Vue 组件同样 props 向下、事件向上。v-model 的双向连接针对绑定点；Vue 的组件 Props 与 React 的组件数据流都是从父到子。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p28.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 28,
+          "related_time": 4620,
+          "caption": "标题「MVVM：让界面绑定状态」，用 Vue 理解 ViewModel。紫色 AIGC：Model 是课程数据，View 是筛选框与课程列表；ViewModel 是筛选词 query、派生列表 visibleCourses 及相关行为。用 ref 保存 query，用 computed 描述列表怎样依赖它。绑定关系写一次，变化由框架追踪。v-model 封装两条连接：状态到控件是 :value=\"query\"，输入到状态是 @input=\"query = $event.target.value\"。只保存 query 等必要状态，visibleCourses 从课程与筛选词派生。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p29.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 29,
+          "related_time": 4544.333,
+          "caption": "标题「React：用状态快照描述界面」。每次 Render 都描述此刻应该显示什么。紫色 AIGC：const [query, setQuery] = useState('')。组件根据本轮 query 筛选课程并返回 JSX，派生列表不必另存为 State。setQuery 请求下一次渲染，本轮拿到的状态仍是原来的快照。受控输入框：value={query}，onChange 里调用 setQuery(e.target.value)。事件更新状态，再 Render，再界面。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p30.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 30,
+          "related_time": 4724.333,
+          "caption": "标题「Vue 与 React：同一个课程筛选框」。都由状态决定界面，区别在如何表达更新。紫色 AIGC：Vue 用绑定语法连接输入与状态，React 在事件中显式调用状态更新函数。图的说明对比 Vue 的响应式状态与 v-model，以及 React 的状态快照、事件回调与显式更新。v-model 的双向连接针对绑定点；Vue 的组件 Props 与 React 的组件数据流都是从父到子。"
         }
       ],
-      "examples": []
+      "examples": [],
+      "flow": "p0 p1 p2 n0 x11 x10 f0 f1 f2 f3"
     },
     {
       "title": "长流程塞不进一个 status",
@@ -1545,10 +1731,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v004784333.jpg",
-          "time": 4784.333,
-          "caption": "幻灯片标题「应对复杂性」。MVC/CRUD 解决了许多业务系统的架构问题，例子是个人博客、社交网络、课程信息系统；特点是业务对象比较稳定、一次请求完成一小段局部操作。把复杂性放进 Model，不解决 Essential Complexity。长流程：下单、锁库存、优惠计算、支付、风控、发货、退款、售后、对账。强规则：修满学分、毕业设计、归还资产、特殊政策、毕业。会计账本：复式记账法。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p31.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 31,
+          "related_time": 4784.333,
+          "caption": "标题「应对复杂性」。MVC/CRUD 解决了许多业务系统的架构问题，例子是个人博客、社交网络、课程信息系统；特点是业务对象比较稳定、一次请求完成一小段局部操作。把复杂性放进 Model，不解决 Essential Complexity。长流程：下单、锁库存、优惠计算、支付、风控、发货、退款、售后、对账。强规则：修满学分、毕业设计、归还资产、特殊政策、毕业。会计账本：复式记账法。"
         }
       ]
     },
@@ -1595,9 +1784,20 @@
         "s-g1020.0~65",
         "s-g1021.0~2"
       ],
-      "frames": [],
+      "frames": [
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p32.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 32,
+          "related_time": 5050,
+          "caption": "标题「复式记账：同一笔业务，保持会计等式」。图题「复式记账：同一笔交易的两个方面」。例子：公司向银行借入 10,000 元，同一张记账凭证；借：银行存款 10,000 元，资产增加；贷：短期借款 10,000 元，负债增加。会计借方 = 会计贷方。下面是资产 +10,000 = 负债 +10,000 + 所有者权益保持不变。底部：借/贷是记账方向，不等于收入/支出。"
+        }
+      ],
       "examples": [],
-      "editor_notes": []
+      "editor_notes": [],
+      "flow": "p0 p1 p2 x12 f0"
     },
     {
       "title": "流水账编译成分录，再重放成报表",
@@ -1661,12 +1861,16 @@
           "caption": "画面是一张由记账动作展开的表格。可见条目包括计提应付账款、营业外支出、税收滞纳金、实付应付账款、营业成本、支付存货采购款、原材料、库存商品。说明文字：按费用类别确认损益与应付或现金；结算不重复确认费用；减免或退款冲回原费用；利息直接支出仅用于当期确认并付现；已计提的利息须结算应付利息。资产负债表行列包括流动负债合计、负债合计、未分配利润、所有者权益合计、货币资金、流动资产合计、资产合计、应付账款、负债和所有者权益总计，格内多次出现 +1.00 和 -1.00。利润表一侧有税收、利润、净利，并标着不变。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005264333.jpg",
-          "time": 5264.333,
-          "caption": "幻灯片标题「记账架构：Event Sourcing & LLM as a Compiler」，从原始凭证到可执行的分录。链路：原始凭证（事件）到分录（报表_支出_财务费用（CNY 75）…）再到 State Change。借贷平衡是可检查的约束，不代表业务真实，分录仍须核对凭证，并注明试算平衡的局限。代码带 curry：def pay_payroll(state, category, amount, *, kind)，文档字符串大意是按实际付款金额结算薪酬或个人劳务，代扣款先单独记账，再支付净额。函数体可见 flow = PAYROLL_FLOWS[category]，key = payable(flow, kind == \"个人劳务\")，state.require(key, amount)，cash(state, -amount, flow, balances={key: -amount})。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p33.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 33,
+          "related_time": 5264.333,
+          "caption": "标题「记账架构：Event Sourcing & LLM as a Compiler」。从原始凭证到可执行的分录：原始凭证（事件）→ 分录（报表_支出_财务费用(CNY(75)), ...）→ State Change，分录链接是内嵌的规则表。紫色 AIGC：借贷平衡是可检查的约束，不代表业务真实，分录仍须核对凭证，并指向试算平衡的局限。代码是 @Curry def pay_payroll(state, category, amount, *, kind)，文档字符串写明代扣款先单独记账再支付净额；flow = PAYROLL_FLOWS[category]，key = payable(...)，state.require(key, amount)，cash(state, -amount, flow, balances={key: -amount})。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 e0 e1 n0 x17 f0 f1"
     },
     {
       "title": "改事实，然后整段重算",
@@ -1777,18 +1981,25 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v005444333.jpg",
-          "time": 5444.333,
-          "caption": "幻灯片标题「记账为什么麻烦？」。当前状态同时编码了过去、现在、未来。过去：合同签订。现在：等待打款。未来：货物交接、潜在坏账。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p35.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 35,
+          "related_time": 5444.333,
+          "caption": "标题「记账为什么麻烦？」。当前状态同时编码了过去、现在、未来。过去：合同签订。现在：等待打款。未来：货物交接、潜在坏账。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005624333.jpg",
-          "time": 5624.333,
-          "caption": "幻灯片标题「Event Sourcing 和复杂性分解」。把事实、视图、预期分开：过去是事实，不可更改；现在是视图，是事实经 dependency 计算得到的；未来是预期，不是事实。如果世界没有按预期发展，就追加新的事实来矫正。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p36.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 36,
+          "related_time": 5624.333,
+          "caption": "标题「Event Sourcing 和复杂性分解」。把事实、视图、预期分开：过去是事实，不可更改；现在是视图，是事实经 dependency 计算得到的；未来是预期，不是事实。如果世界没有按预期发展，就追加新的事实来矫正。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 p5 e0 e1 n0 x9 f0 f1"
     },
     {
       "title": "现在是过去算出来的",
@@ -1844,23 +2055,228 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v005804333.jpg",
-          "time": 5804.333,
-          "caption": "幻灯片标题「跳出问题看问题：“现在”是“过去”的结果」。显式建模 Data Dependency：选课记录／成绩表推出当前已修课程集合和学分数；已通过课程集合加培养方案，判断是否满足课程准出的毕业条件。这是一个可查证、可溯源的计算过程，用来解决「反悔将导致多处修改，遗漏一处即崩溃」。复杂性仍然可能带来不一致，但容易发现、容易修复。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p37.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 37,
+          "related_time": 5804.333,
+          "caption": "标题「跳出问题看问题：“现在”是“过去”的结果」。显式建模 Data Dependency：选课记录／成绩表推出当前已修课程集合和学分数；已通过课程集合加培养方案，判断是否满足课程准出的毕业条件。这是一个可查证、可溯源的计算过程，用来解决「反悔将导致多处修改，遗漏一处即崩溃」。复杂性仍然可能带来不一致，但容易发现、容易修复。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005924333.jpg",
-          "time": 5924.333,
-          "caption": "幻灯片标题 SQL Billion Dollar Mistake。一个设计缺陷：任意计算关系没有成为 First-Class Citizen。SQL 没能把跨数据的任意计算关系作为 first-class citizen。SQL 已有视图／物化视图；这里追问的是，跨数据库与应用代码的任意计算依赖，谁来统一维护？现代框架以不同方式找补：MVVM、React、Dataflow、Event Sourcing，把 derived state / dependency 显式化。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p38.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 38,
+          "related_time": 5924.333,
+          "caption": "标题「SQL 的 Billion Dollar Mistake」。一个设计缺陷：任意计算关系没有成为 First-Class Citizen。紫色 AIGC：SQL 已有视图／物化视图；这里追问的是，跨数据库与应用代码的任意计算依赖，谁来统一维护？现代框架以不同方式找补：MVVM、React、Dataflow、Event Sourcing，把 derived state / dependency 显式化。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p39.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides7.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+          "page": 39,
+          "related_time": 5960,
+          "caption": "标题「从状态一致性到计算正确性」。保存足以重建其余信息的 Source of Truth，其他状态尽可能作为 computation 的结果。复杂性没有消失，但从 state consistency problem 变成了 computation correctness problem。计算可以重跑、测试、审计、依赖分析。逻辑错误也更好补救：修正规则，从某个点开始使用新规则计算。紫色 AIGC：复现当时的结果需要当时的规则与外部输入，例如哪一年的培养方案、哪一天的汇率，指向 Event Sourcing 的 External Queries；重放可以重算余额，不能再次打款，指向 External Updates。"
         }
       ],
-      "examples": []
+      "examples": [],
+      "flow": "p0 p1 p2 n0 n1 x13 f0 f1 f2"
     }
   ],
-  "bridges": {},
-  "supplements": [],
+  "bridges": {
+    "x0": "第 2 节口播把驾驭复杂性归到 Brooks。这篇把「本质」和「偶然」各自包含什么、以及什么样的改进才算一个数量级，补到同一段下面。",
+    "x1": "第 5 节的小脑袋和珍珠，原文把尺度差和「行是哪一层才承诺的表示」写得更具体。",
+    "x2": "第 7 节的下棋和车间，对应原文里 resume 与 request/hold 各管哪一层。",
+    "x3": "第 8 节「设计解空间」的原话在讲演的单音节规则和 Alexander 引文里。",
+    "x4": "第 10 节的花园水管有一份写了日期的备忘录。口播里的 1983 仍留在正文。",
+    "x5": "第 10 节 slides 上的 -- 和 NUL，分别能在 POSIX 指南和 GNU sort 的 -z 里对上。",
+    "x6": "第 11 节的数据独立性，在论文第 1 节被拆成顺序、索引和访问路径三件事。",
+    "x7": "第 12 节引用的 RFC 第 1 节，把「原则本身也会过时」和城市比喻放在一起。",
+    "x8": "第 14 节的 1979 原文里，Controller 对 View 说话。Web 那张图是后一步的分法。",
+    "x9": "第 19 节说重算要有当时的汇率、并且不能再次打款。Fowler 把这两类写成外部查询和外部更新。",
+    "x10": "第 15 节的筛选框，Vue 文档写缓存，React 文档写同一次渲染里的状态值不变。",
+    "x11": "第 15 节把 ViewState 也当成模型。Fowler 给这种呈现层模型的名字是 Presentation Model，并注明也称 MVVM。",
+    "x12": "第 17 节说试算平衡不等于记得对。OpenStax 写明两边相等仍可能有错，并给出它能抓住的抄写错误。",
+    "x13": "第 20 节批评的是跨应用的计算依赖没有统一维护者。PostgreSQL 说明物化视图能保存并刷新查询，同时数据可以不是当前的。",
+    "x14": "第 7 节 slides 请读者比较 Python 协程和 Go 的类型。PEP 342 与 Go FAQ 各回答一半。",
+    "x15": "第 3 节讲师建议试用 grill me。技能做的事是把还没定的决定问完再动手。",
+    "x16": "第 13 节的 JSP，Oracle 文档写的是请求时翻译成 Servlet，没有说业务规则会自动离开页面。",
+    "x17": "第 18 节的分录表把「每 1 元进三张报表」和「结算不再确认费用」写成行。",
+    "x18": "第 10 节后半的 jq、fzf、xdotool，文档写的是过滤器、STDIN/STDOUT，以及 X11 才可靠的窗口命令。"
+  },
+  "supplements": [
+    {
+      "title": "No Silver Bullet：四条本质困难，和一条很窄的数量级条件",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://www.cs.unc.edu/techreports/86-020.pdf",
+      "pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        16,
+        19
+      ],
+      "text": "材料 brooks-nsb，UNC TR86-020（1986 年 9 月）。关联第 2 节。Brooks 把本质任务写成构造抽象的概念结构：数据集、关系、算法和函数调用；把偶然任务写成用语言表示这些结构，再映射到受空间和速度约束的机器。本质有四条。复杂性：语句之上几乎没有两块相同的部分，否则就会收成一个子程序；规模变大不是把同一元件重复放大，部件以非线性的方式相互作用，状态数比计算机本身还高几个数量级，因此抽掉复杂性的描述往往把本质也抽掉了。一致性：复杂度里有一大块是任意的，来自必须迁就的既有机构和接口，不能靠只改这一个软件就简化掉。可变性：成功的软件会被用到原来领域的边上，也会在原来的机器退役之后继续改到新的磁盘、显示器和打印机上；软件是思想的材料，改起来比房子和汽车便宜，所以改得更勤。不可见性：控制流、数据流、依赖、时序和名字空间叠成好几张有向图，通常还不平面，几何图帮不上忙。数量级写在摘要和第一节：除非偶然工作已经超过全部努力的九成，否则把偶然耗时降到零也给不出一个数量级；看不到任何单项技术能单独把生产率、可靠性和简单性提高一个数量级。高阶语言被算成已经发生的偶然性收益，多数观察者归给它至少五倍生产率，上限是语言刚好提供抽象程序里的那些构造。面向对象在第 4.2 节被拆成两件正交的事：按名字、取值和操作定义类型并藏起存储（抽象数据类型），以及 Simula-67 那种可以再细化的类层次。两者去掉的仍是表达上的偶然困难；只有当今天语言里多余的类型说明本身占了设计工作的九成，面向对象才能带来一个数量级，作者写明他怀疑这一点。第 5.3 节写软件应当 grow，而不是只被建造：先让系统跑起来，调用一组空的子程序，再逐层填上。开篇写明怀疑不是悲观：看不到单项突破，但有纪律、持续地推进这些做法，仍可能积累出一个数量级。"
+    },
+    {
+      "title": "EWD249：脑袋很小，珍珠是设计决定，行是很晚才承诺的表示",
+      "source_label": "讲义页正文引用的原文",
+      "source_url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD249/EWD249.html",
+      "text": "材料 ewd249，关联第 5 节。On our inability to do much 先把演示程序必须很小、而他关心的程序文本可以有这本小书那么长，写成表达上的困难，并说相差一百倍以上的两件事就不能比。他反对「做得到一次就做得到任意多次」：一岁孩子爬行大约每小时一英里，一千倍的速度是超音速飞机，两者作为会动的物体无法互相替代。计算必须大到不值得用手做，程序却必须组织到有限的头脑仍能保证效果。本节末尾才是课堂上那句：作为一个反应慢的人，我的脑袋很小，最好学会与它共处、尊重它的限度并充分承认，而不是假装它不存在。On abstraction 把命名操作定义成只依赖「它做什么」、不管「它怎么做」，抽象让使用一个操作时只依赖它做什么。On what we have achieved 把程序看成项链上的珍珠：每一颗珍珠是一台机器加上它的精化，换程序就是换一颗或几颗珍珠，而不是在全部可能程序的字符流里做文本替换。LONGREP 和 SHORTREP 是两颗不同的珍珠，对上层和下层露出同一张脸。LINER 把 image 定义成 line[0 : 49]，也就是五十行。"
+    },
+    {
+      "title": "Dahl 与 Hoare：对等的协程，以及 TWLIST 上面的车间",
+      "source_label": "讲义页正文引用的原文；页码范围同时写在 slides AIGC 批注",
+      "source_url": "https://www.informatik.uni-bremen.de/agbkb/lehre/programmiersprachen/artikel/dahl-hoare-hierarchical.pdf",
+      "pages": [
+        10,
+        11,
+        12,
+        13,
+        34,
+        35,
+        38,
+        42,
+        43
+      ],
+      "text": "材料 dahl-hoare，关联第 7 节。印刷页 184 在这份 PDF 的物理页 10，第四节 Coroutines 从这一页后部开始：ALGOL 60 最强的组合是把一块程序声明成过程，由另一块反复调用；有些关系却不是主从，更适合看成同一层上的协程。印刷页 185（物理页 11）的 games-playing 例子是：每个程序计算自己的下一步、交给对手、读回应对，直到终局；让两个这样的程序互相对局时，完整程序由两个选手组成，结构是协程。同一页还有单向的两遍编译器：第二遍先跑到需要下一条消息，第一遍再跑到产出这条消息，如此交替；把哪一遍改成另一遍的子程序是任意的，所以仍把它们看成协程。转移指令写成 resume(X)，双方在全局或一方局部的变量里交接数据。物理页 12 说明刚生成的对象对生成者仍是从属的，所以另给一条无参数的 detach 回到生成者，生成者再用 call(X) 从上次 detach 之后继续；这种仍从属于主程序的对象叫 semicoroutine。物理页 13 把 resume(Y) 定义成：X 退出并把返回主程序的义务交给 Y。对象的一生是：生成后附着在生成者上，detach 后留下继续点，call 或 resume 再附着，穿过 end 则终止，终止后仍可作为数据被引用。第七节 Concept Hierarchies 从印刷页 208（物理页 34）的后部开始。问题概念和语言提供的机器概念之间有一段垂直距离，程序要逐段把距离补上。自底向上是在语言层上做出能抓住一类现象的抽象；自顶向下是先用尚未完全理解、但可以有多种实现的概念写出解。印刷页 209 说，有排队现象时可以把前面的 TWLIST 当作第一层：此后用有序集合思考，并可以忽略双向循环表的指针细节。TWLIST 在印刷页 208 被写成可靠的 mental platform：只要不直接给 suc 或 pred 赋值，列表不会因为上层的编程错误而悄悄坏掉；非法操作会立刻因为无效的远程标识而停下来。MINISIM 在印刷页 212（物理页 38）前缀于 TWLIST，于是模拟程序同时得到链表。车间模型在印刷页 216–217（物理页 42–43）：机器组记录可用台数和等待的订单，订单按日程对机器组 request、加工、release。底层词汇是链表，上层词汇是机器与订单。"
+    },
+    {
+      "title": "Growing a Language：先有词汇，模式里留下以后再填的空位",
+      "source_label": "讲义页正文与官方 slides 正文",
+      "source_url": "https://langev.com/pdf/steele99growing.pdf",
+      "pages": [
+        3,
+        4,
+        8,
+        9
+      ],
+      "text": "材料 steele-growing，关联第 8 节。物理页 3 立下讲演规则：原始词只收单音节词；要用两个或更多音节的词，必须先定义，或用已经说明的构词规则生成。他因此得先定义 syllable。man 是单音节，可以直接用；woman 有两个音节，必须定义。他写明这是英语的偶然：另一种语言里这两个意思也许都是一个音节，或者都是两个，那就得换一套起手式。物理页 4 说单音节词已经是一套相当富的词汇，但听众手里那些更长的词是传下来的，不能在这次讲演里白用。物理页 8 引用 Christopher Alexander《俄勒冈实验》：总体规划有两个额外的毛病，首先它使使用者疏离；总体规划的存在本身意味着社区成员对社区未来的形状几乎没有影响，因为重要决定已经做完；人们住在一个冻结的未来里，只能动相对琐碎的细节，于是失去对环境的责任。他写明自己并不确知这段引文的意思，因为 Alexander 用了很多超过一个音节、又没有先定义的词；他是把这些词按字面背下来的，引文里仍然有多音节词。他的读法是：让使用者买进并插手，对双方都好。物理页 9 接着说，这并不取消设计；要设计的是一种做法，这种做法现在作一些选择，把另一些选择留到以后。pattern 被定义成一张表明各部分如何面向彼此、如何接合或离开、如何被当成一个东西用于更高目标的计划。模式的某些部分可以是洞或槽，以后再放入别的东西。好的模式会说明时间进程中如何修改：有些选择做进模式，有些选择等到使用时。模式因此代表一个设计空间。"
+    },
+    {
+      "title": "1964 年的花园水管：想法、装进系统、和口播里的 1983",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://cm-bell-labs.github.io/who/dmr/mdmpipe.html",
+      "text": "材料 mcilroy，关联第 10 节。Dennis Ritchie 的页面说，贴在办公室墙上的是一份发黄的纸，显然是 Doug McIlroy 一份贝尔实验室内部备忘录的第 10 页，日期是 1964 年 10 月 11 日；其余页他没有。当时实验室的计算大多是 IBM 7090/7094 上的批处理。备忘录把最强的关切收成四条，第一条是：我们应当有办法像花园水管那样连接程序，需要以另一种方式按摩数据时再拧上一段；这也是 IO 的方式。后面三条分别是加载器要能做链接装入、库的归档要能做一般的索引和换代、以及能够拿到私有的系统部件来做试验。Ritchie 写明第一条是有意思的那条，它是 Doug 推动 Unix 管道记号的历史背景；访谈里 Doug 说他几乎动用了管理权才把管道装进去。页面没有把管道进入 Unix 的年份写成一九八三，也没有把 1964 年写成管道已经在 Unix 里。"
+    },
+    {
+      "title": "POSIX 把选项和操作数分开，GNU sort 用 NUL 保住文件名",
+      "source_label": "讲义页正文引用 POSIX 工具约定；GNU sort 的 -z 来自官方 slides AIGC 批注，非课堂口述",
+      "source_url": "https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html",
+      "text": "材料 posix-util，材料 gnu-sort，关联第 10 节。Guideline 9 要求所有选项出现在操作数之前，Guideline 10 要求把第一个并非选项参数的 -- 接受为选项结束符，它后面的参数即使以 - 开头也当作操作数。GNU coreutils 的 sort 手册把 -z 和 --zero-terminated 定义为按 ASCII NUL 分隔记录，而不是按换行。"
+    },
+    {
+      "title": "Codd 1970：程序不要依赖顺序、索引和访问路径",
+      "source_label": "讲义页正文与官方 slides 正文",
+      "source_url": "https://www.seas.upenn.edu/~zives/03f/cis550/codd.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "text": "材料 codd-1970，关联第 11 节。读的是物理页 1–5，即第 1 节到范式。第 2 节标题是 Redundancy and Consistency，从物理页 7 开始，不在这 5 页里。卷头是 CACM，Information Retrieval，P. Baxendale 编，E. F. Codd，IBM Research Laboratory, San Jose。摘要要求保护未来的大型数据库用户，使他们不必知道数据在机器里如何组织；终端活动和大多数应用程序在内部表示改变、甚至部分外部表示改变时仍应不受影响。这些改变来自查询、更新和报表流量，以及存储信息种类的自然增长。当时的格式化系统把树或稍一般的网络模型交给用户。第 1.1 节把要处理的问题命名为 data independence：应用程序和终端活动独立于数据类型的增长和表示的改变。关系视图只描述数据的自然结构，不为机器表示额外叠加结构，因此可以有一种高层数据语言，把程序与机器表示分开。论文写明它不讨论支持该模型的系统实现。第 1.2 节说数据描述表已经是向数据独立迈进的一步，但能改而不破坏程序的表示特征仍然很少，用户看到的模型仍沾着表示性质。还要去掉三种依赖。顺序依赖：程序如果假定记录呈现顺序等于硬件地址顺序或指针顺序，换一种存储顺序就会错；市场上的系统没有分清呈现顺序和存储顺序。索引依赖：索引是为性能而冗余的表示，查询和更新会变快，插入和删除会变慢；活动模式变了就需要建立和拆除索引。问题是程序能否在索引来去时保持不变。IMS 对每个文件只提供「完全不索引」或「只索引主键」；IDS 允许把索引链写进文件结构，用到这些链的程序必须点名，链以后拆除，程序就不能正确运行。第 1.3 节用数学关系：R 是 n 个集合的笛卡尔积的子集，每个 n 元组一行。数组只是讲解用的，不是关系视图的本质。行的顺序无关，行互不相同；列的顺序对应域的顺序，但用户不应被迫记住高次关系的域顺序（30 个域并不罕见）。两个列可以同名域而角色不同，例如 component 里的 part 既是子件也是父件，所以要用角色名 sub.part 与 super.part，用户面对的是不依赖位置的 relationship。数据银行是一组随时间变化的关系：插入、删除、修改分量。第 1.4 节的规范化是去掉非简单域。employee 的 jobhistory 和 children 若本身还是关系，就把父关系的主键抄进子关系，再从父关系删掉那些非简单域。Figure 3(a) 的树变成 Figure 3(b) 的 employee'、jobhistory'、salaryhistory'、children'。条件是非简单域的关系图是树，且主键的分量不是非简单域。规范化之后的数组通信形式里没有指针、散列地址、索引或顺序列表。用户模型因此可以独立于这些表示选择而演化。"
+    },
+    {
+      "title": "RFC 1958 第 1 节：会过时的原则，和一组很小的合作规则",
+      "source_label": "讲义页正文与官方 slides 正文",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc1958.html",
+      "text": "材料 rfc1958，关联第 12 节。这次读的是第 1 节 Constant Change，后面的原则条款不在范围内。开篇就是课堂上的那句：寻找互联网的架构原则时，必须记住信息技术行业的技术变化是连续的。自 ARPANET 起 25 年，骨干速率大约增至 1000 倍，主机数大约增至 1000000 倍。在这种环境里，有些架构原则必然改变：几年前看起来不可违反的原则今天被弃用，今天看起来神圣的原则明天会被弃用。也许只有「持续变化」这一条原则应当无限期存活。文档的目的因此不是规定协议必须如何设计、甚至不是规定它们必须如何拼在一起，而是传递过去有用、以后设计或评估新协议时也许仍然有用的指南。城市比喻的原文是：不断更新一座城市里的街道和建筑，而不是把城市夷平重建。架构原则要提供的是一个产生合作与标准的框架，作为一小套生成规则（small spanning set），生成一个大的、多样的、仍在演化的技术空间。当时列出的变化触发包括 IPv4 扩展的极限、千兆网络与多媒体、以及商业互联网上的服务质量和安全保证。Kelvin 1895 年「重于空气的飞行器不可能」被引来说明：若以为今天的原则已经是终极的，同样愚蠢。slides 上的 Telnet 到 SSH、若干文件传输转到 HTTPS、SMTP/IMAP 仍在，是这一节「局部更换、整体还在」的课堂例子，第 1 节正文没有逐个点这些协议的名字。"
+    },
+    {
+      "title": "1979 年 12 月 10 日：View 问模型，Controller 对 View 说话",
+      "source_label": "讲义页正文；官方 slides 第 25 页内嵌同一份 PDF",
+      "source_url": "https://jyywiki.cn/GSE/2026/p7/1979-12-MVC.pdf",
+      "pages": [
+        1,
+        2
+      ],
+      "text": "材料 mvc1979，关联第 14 节。Trygve Reenskaug，1979 年 12 月 10 日，两页。Model 表示知识，可以是一个对象或一组对象；实现设想接近语义网。模型和它的部分应当与拥有者所感知的世界一一对应。节点应当处在同一个问题层次上，把日历预约这种问题节点和段落这种实现细节混在一起是坏的形式。View 是模型的视觉表示，通常突出某些属性并压掉另一些，因此是一个呈现过滤器。View 附着在模型或模型的一部分上，通过向模型提问取得呈现所需的数据，也可以发送消息更新模型。问题和消息必须使用模型的术语，View 因此要知道它所呈现的属性的语义：它可以向模型要标识并期望得到一个 Text 实例，但不能假定模型的类就是 Text。Controller 是用户和系统之间的环节。它安排相关的 View 出现在屏幕的适当位置，从而给用户输入；它用菜单或其他方式接收用户的命令和数据，把这些用户输出翻译成消息，传给一个或多个 View。Controller 不应当补 View 的画面，例如不应当在节点的 View 之间画箭头。反过来，View 永远不应当知道鼠标和击键这类用户输入。应当总能在 Controller 里写一个方法，向 View 发送消息，精确重现任意一段用户命令。第二页的 Editor 是插在 Controller 和 View 之间的特殊控制器，让用户修改该 View 呈现的信息；编辑结束就把 Editor 从路径上拿掉并丢掉。Editor 通过所连接 View 的隐喻与用户沟通，Controller 向 View 要 Editor，没有别的合适来源。课堂上后一幅 Web 图把 Controller 画成接收选课请求、调用业务规则、再选择 View。1979 年这篇把用户输入的翻译对象写成 View，并禁止 View 知道输入设备。两页都没有出现数据库、URL 或服务器。"
+    },
+    {
+      "title": "Fowler：重放时外部系统分不清真跑和重算",
+      "source_label": "讲义页正文引用；External Queries 与 External Updates 的锚点在 slides AIGC 批注",
+      "source_url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "text": "材料 fowler-es，关联第 19 节。页面日期 2005 年 12 月 12 日，作者 Martin Fowler，并声明这是 2000 年代中期的草稿，他没有再改。开篇的意图句是：把对应用状态的全部变化捕获成一串事件。只查询当前状态能回答很多问题；有时还要知道怎样到达这里。事件日志可以重建过去的状态，也可以作为自动调整状态以应对追溯性变更的基础。External Updates：向不采用事件溯源的外部系统发送修改消息时，重放会出错，因为外部系统分不清真实处理和重放。做法是用 Gateway 包住外部系统。重建和按时间查询时，通常只要在重放期间禁用网关，并且让领域逻辑看不出来：领域逻辑照样调用 PaymentGateway.send，网关自己查看事件处理器是否处于重放模式，再决定要不要把调用送出去。若外部通知可以推迟到月底，则在那之前可以更自由地重处理。External Queries：外部查询的返回值会影响处理事件的结果。12 月 5 日问到的汇率，12 月 20 日重放时仍然需要 12 月 5 日的汇率。若外部系统能按日期给出过去的值并且可信，可以用它保证重放一致；若使用 Event Collaboration，则要保留变更历史。否则网关应记住每一次外部查询的响应，重放时用记住的响应。外部数据变得慢时，可以只在值变化时记录。既返回结果又修改外部状态的调用，例如提交订单并取回配送信息，同时碰上两类问题。页末 Code Changes 另起一节：前面的讨论假定处理事件的应用代码不变，代码变化是另一件事。"
+    },
+    {
+      "title": "Vue 的 computed 会缓存，React 的一次渲染是一份快照",
+      "source_label": "讲义页正文引用的文档；slides 第 28–30 页的紫色批注指向同一组页面",
+      "source_url": "https://vuejs.org/guide/essentials/computed.html",
+      "text": "材料 vue-computed，材料 vue-forms，材料 react-snap，材料 react-think，关联第 15 节。Vue 计算属性文档写明：和方法相比，计算结果可以一样，但 computed 按响应式依赖缓存，只有某个响应式依赖变了才重新求值。author.books 没变时，多次读取 publishedBooksMessage 直接返回上次的结果。依赖若不是响应式的，例如 getter 里读 Date.now()，计算属性不会更新。表单文档把 v-model 写成前面那段写法的简写。React 的 State as a Snapshot 写明：渲染就是调用组件函数，返回的 JSX 是当时的界面快照；props、事件处理和局部变量都用这次渲染时的状态算出来。同一次渲染里，文档把 number 为 0 时的 setNumber(number + 5) 写成 setNumber(0 + 5)，alert 看到的仍是这次快照里的 0。Thinking in React 的第三步把状态定义成应用需要记住的最小一组会变的数据，并要求其余一切按需计算。例子是购物清单可以把条目存在数组里，条目个数不要再存一份状态，读数组长度即可。父组件通过 props 传下来的不是状态；能从已有状态或 props 算出来的肯定不是状态。"
+    },
+    {
+      "title": "Presentation Model：界面自己的状态不必进业务库",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://martinfowler.com/eaaDev/PresentationModel.html",
+      "text": "材料 fowler-pm，关联第 15 节。读的是这篇的意图和开头，不是全文。意图句：把呈现的状态和行为表示出来，独立于界面里使用的 GUI 控件。Also Known As 写着 Application Model 和 MVVM（Model-View-ViewModel）。Presentation Model 把 View 的状态和行为拉到一个属于呈现层的模型类里。这个类协调 View，View 把状态放在 Presentation Model 中，或频繁地与它同步。它可以和多个领域对象打交道，但它本身不是领域对象的一种对 GUI 友好的改写。"
+    },
+    {
+      "title": "试算平衡：两边相等仍然可以记错",
+      "source_label": "讲义页链接 3-3；试算平衡的局限链接在 slides AIGC 批注（3-6）",
+      "source_url": "https://openstax.org/books/principles-financial-accounting/pages/3-6-prepare-a-trial-balance",
+      "text": "材料 openstax-33，材料 openstax-36，关联第 17 节。3-3 把会计循环的第四步写成编制未调整试算平衡：把总账里各账户的余额搬到一张表上，并确认这一期的借方合计等于贷方合计。同一页的例子是 1 月 1 日 200 美元：应收账款记在借方，清洁收入记在贷方，两边各 200。3-6 说明试算平衡的借方栏合计必须等于贷方栏合计；Printing Plus 的例子两边都是 34000 美元。同一页写明：栏位相等并保持平衡，仍然不能保证没有错误。后文的问题句是：试算平衡如果平衡，是不是所有数字都正确？答案是不一定，可以有错误而数学上仍然平衡。页面把「不平衡」用来找两类抄写错误：差额除以 2，去找被记到相反方向的金额（例子是股息 100 美元记到了贷方）；差额除以 9 若是整数，则怀疑数字抄反（例子是设备 3500 写成 5300，差额 1800，1800/9 = 200）。这两类是试算平衡能暴露的错。页面接着问：试算平衡如果平衡，是不是所有数字都正确？答案是不一定，可以有错误而数学上仍然平衡。"
+    },
+    {
+      "title": "物化视图把结果存下来，刷新之前可以是旧的",
+      "source_label": "讲义页正文与官方 slides AIGC 批注",
+      "source_url": "https://www.postgresql.org/docs/current/rules-materializedviews.html",
+      "text": "材料 pg-matview，关联第 20 节。读的是 PostgreSQL 当前文档里物化视图的机制段。物化视图把结果持久化成类似表的形式。它之后不能直接更新，生成它的查询被保存下来，因此可以用 REFRESH MATERIALIZED VIEW 重新生成数据。解析器把它看成关系，引用它时直接返回其中的数据，像读表；规则只在填充它时使用。访问存储下来的数据常常比直接访问底层表或通过普通视图更快，但数据并不总是当前的；有时并不需要当前数据。文档的销售例子把 invoice_date < CURRENT_DATE 放进物化视图，用来画历史销售，并写明可以不关心当天尚未完整的数据。"
+    },
+    {
+      "title": "Python 用生成器留下暂停点，Go 不建立类型继承树",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://peps.python.org/pep-0342/",
+      "text": "材料 pep342，材料 go-faq，关联第 7 节。PEP 342 的摘要说，它改进生成器的 API 和语法，使生成器能够当作简单协程使用。规范目录列出 send(value)、yield 表达式、throw 和 close / GeneratorExit。Go FAQ「Why is there no type inheritance?」写明：不要求程序员事先声明两个类型有关；一个类型只要具备接口所写的方法子集，就自动满足该接口。一个类型可以同时满足多个接口，而不处理传统的多继承。接口可以只有一个方法，甚至零个方法。新想法或测试可以事后增加接口，不必回去标注原类型。因为类型和接口之间没有显式关系，所以没有类型层次要管理。同一节把这个想法连到类似类型安全的 Unix 管道：fmt.Fprintf 可以向任何输出打印，bufio 可以和文件 IO 分开，image 包写出压缩文件，这些都来自单一接口。FAQ 写明没有事先声明的类型层次；接口可以事后再增加。"
+    },
+    {
+      "title": "grill-me：把还没决定的边界一次问完，再动手",
+      "source_label": "讲师口述推荐，非讲义页链接",
+      "source_url": "https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md",
+      "text": "材料 grill-me，材料 grilling，关联第 3 节。讲师在需求还没问清的时候说，与其直接让 GPT 写一份需求规格说明书，不如试用 Matt Pocock 的 grill me skill；购物车的例子是它会把细节问一遍，包括 authentication 到底怎么做。仓库里名为 grill-me 的技能文件只有一条指令：调用名为 grilling 的技能，并且 disable-model-invocation 为真，也就是要人自己唤起。grilling 把一次设计收成一棵设计树，每个决定挂着下一步决定。一轮只问 frontier：前提已经定下来、现在就能问、不必猜还没听到的答案的那些决定。同一轮把整个 frontier 编号问出，每题给出建议答案，并把题目写成回答「是」就等于接受建议答案。然后停下来等回答。用户的回答会改写这棵树，已经定下的决定把 frontier 向外推。依赖本轮尚未回答的问题的题目留到后面的轮次。找事实是提问者的工作，不拿文件系统或工具能查到的事去问用户。决定权留给用户。frontier 空了，每一枝都走过、没有剩下被默默假定的决定，会话才结束；在用户确认已经达成共同理解之前不要动手。这和第 3 节「课程容量 100 人仍要问候补和跨院名额」是同一种收缩：先把意图空间里还开着的决定问出来，再写会变成承诺的规格。技能文本没有给出购物车或认证的标准答案。"
+    },
+    {
+      "title": "JSP 页在请求时被翻译成 Servlet",
+      "source_label": "讲义页正文引用的文档",
+      "source_url": "https://docs.oracle.com/cd/B32110_01/web.1013/b28961/genlovw.htm",
+      "text": "材料 jsp-overview，关联第 13 节。读的是 Oracle Containers for J2EE 文档里「JSP Translation and Runtime Flow」附近的机制。文档写明：JSP 页被翻译成一个 Java Servlet，通常发生在客户端请求它的时候；.jsp 扩展名触发翻译器；翻译后的页再执行，像其他 Servlet 一样处理 HTTP 请求并生成响应。JSP 和 Servlet 可以互相 include 或 forward。"
+    },
+    {
+      "title": "记账规则表：每一元只进一次报表，结算不再确认费用",
+      "source_label": "讲义页正文",
+      "source_url": "https://jyywiki.cn/GSE/2026/p7/rules.html",
+      "text": "材料 account-rules，关联第 18 节。课程站点上的规则表标题是「记账规则 · AccountBook」，副标题是「每 1 元的增减；合计与明细不重复相加」。每一行是一个记账动作，右边并列资产负债表、利润表和现金流量表。读过的「计提应付账款」加上营业成本或销售费用时：应付账款、流动负债合计、负债合计各 +1.00，未分配利润和所有者权益合计各 -1.00，该费用 +1.00，营业利润、利润总额、净利润各 -1.00，现金流量写「不变」。计提营业外支出时，增加的是营业外支出，利润总额和净利润各 -1.00，这一行不经过营业利润。同一行反复出现的说明是：按费用类别确认损益与应付或现金；结算不重复确认费用；减免或退款冲回原费用；利息直接支出仅用于当期确认并付现；已计提的利息须结算应付利息。表因此把确认费用和结算拆开：计提触达利润表和负债，不触发现金流量。表很长，本次核对的是表头、营业成本、销售费用和营业外支出这几行，没有逐行核对每一种费用科目。"
+    },
+    {
+      "title": "jq 是过滤器，fzf 和 xdotool 把人或窗口接进同一条管道",
+      "source_label": "讲义页正文与官方 slides AIGC 批注",
+      "source_url": "https://jqlang.org/manual/",
+      "text": "材料 jq-manual，材料 fzf-readme，材料 xdotool-readme，关联第 10 节。jq 手册开篇把程序定义成 filter：接受一份输入，产生一份输出。过滤器可以管道相接，也可以把输出收进数组。有的过滤器产生多个结果，例如逐个产出数组元素；把这样的过滤器管道到下一个，下一个就对每个元素各跑一次。手册写明，别的语言里用循环做的事，在 jq 里通常是把过滤器粘起来。fzf README 的 Usage 写明：fzf 启动交互式查找器，从 STDIN 读列表，把选中的项写到 STDOUT；例子是 find * -type f | fzf > selected。没有 STDIN 管道时，它改去遍历当前目录下的文件。人的选择因此是管道中间的一步，而不是管道外面的菜单。xdotool README 写明它用 X11 的 XTEST 扩展模拟键盘和鼠标，并能搜索窗口；例子 xdotool search \"Mozilla Firefox\" windowactivate --sync key --clearmodifiers ctrl+l 先按窗口名搜索，再激活，再送键。同一页用一节说明 Wayland：输入、窗口搜索和许多其他功能不能正确工作，并指向 ydotool、dotool 作为另一条路。README 的例子用 windowactivate 激活窗口，并把适用范围写成 X11。"
+    },
+    {
+      "title": "Codd 1970 后半：声明关系，连接却不能沿指针去猜",
+      "source_label": "slides 正文给出的 ACM 论文；正文用 Internet Archive 对出版方 PDF 的存档，非课堂口述",
+      "source_url": "https://web.archive.org/web/20230927133214/https://dl.acm.org/doi/pdf/10.1145/362384.362685",
+      "pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "text": "材料 codd-acm，CACM 第 13 卷第 6 期，1970 年 6 月，印刷页 377–387，这份存档 PDF 有 11 个物理页。用的是 Internet Archive 对出版方 PDF https://dl.acm.org/doi/pdf/10.1145/362384.362685 的 2023-09-27 存档。卷头与材料 codd-1970 那份宾大转载一致：Information Retrieval，P. Baxendale 编，E. F. Codd，IBM Research Laboratory, San Jose。关联第 11 节。codd-1970 已经写下物理页 1–5、到 1.4 范式为止。这一则写这份额外读过的物理页 5 末尾到 11，并核对了物理页 7 和 9 上的表。1.5 节从物理页 5 末到物理页 6：关系模型允许做一种基于应用谓词演算的通用数据子语言；关系都已是范式时，一阶谓词演算就够。论文把这个语言叫 R，宿主语言叫 H。R 声明关系和域，每个关系声明标出主键，声明过的关系进入系统目录，供得到授权的用户使用。H 另外做可能不那么永久的声明，说明这些关系在存储里怎么放。R 可以指定取出数据银行的任一子集，取出要受安全约束。普遍性写在描述能力上，不在计算能力上；算术函数在 H 里定义，在 R 里调用。插入是往已声明的关系里加元素，不管机器表示里有没有顺序；对整个用户共同体生效的删除，是从已声明的关系里去掉元素。网络视图常常把名字安在路径上，关系视图把名字安在关系上。关系一旦存下来，用户会期望用任意一组自变量当已知、其余当未知来用它。论文把这叫作关系的对称利用，并写明性能上的对称并不在期望之内。若按有向路径来命名和控制，一个 n 元关系要 n 的阶乘条路径。第 1 节开头已经写明：支持该模型的系统实现不在本文讨论之内。1.6 节在物理页 6 把数据银行配上两个集合。named set 是用户能用简单名字指认的关系，授权用户一声明就进入，取消声明就离开。expressible set 是数据语言表达式能标出的全部关系，named set 通常只是它很小的子集。存储表示是另一件事：系统必须把关系模型语言里的请求，翻译成对当前存储表示的相应而且高效的动作。论文把这写成必须解决的设计问题，没有给出选择执行计划的算法，也没有实验数字。第 2 节从物理页 7 开始，标题是 Redundancy and Consistency。论文写大多数用户不会直接跟这些运算打交道，信息系统的设计者和管数据银行的人应当熟悉。两个二元关系 R、S，若存在三元关系 U 使 π12(U)=R 且 π23(U)=S，就称 R 与 S 可连接。若 π2(R)=π1(S)，自然连接一定存在：R*S = {(a,b,c) : R(a,b) 且 S(b,c)}，并且 π12(R*S)=R、π23(R*S)=S。物理页 7 的 Figure 5：R（supplier, part）是 (1,1)、(2,1)、(2,2)，S（part, project）是 (1,1)、(1,2)、(2,1)。Figure 6 的自然连接有五行：(1,1,1)、(1,1,2)、(2,1,1)、(2,1,2)、(2,2,1)。Figure 7 是另一个连接，只有三行：(1,1,2)、(2,1,1)、(2,2,1)。part 上的 1 在 R 和 S 下面都有不止一个相对，论文称它为这个连接的歧义点。若把 R 的两列对调后的投影、或 S 本身，是函数（一对一或多对一，不是一对多），歧义点不会出现，自然连接就是唯一的连接。自然复合是先做自然连接，再投掉中间那一列。Figure 10 把 Figure 5 的自然复合写成 (project, supplier) 四行：(1,1)、(1,2)、(2,1)、(2,2)。Figure 11 来自 Figure 7，只剩 (1,2) 和 (2,1)。connection trap 在物理页 9，没有单独的表：每个供应商用指针链到他所供应的零件，每个零件再链到使用该零件的项目。若以为把从某供应商出发的路径全部走完，就得到他所供应的全部项目，这个结论一般是错的。它只在目标关系恰好是另外两个关系的自然复合时才成立，而且论文写通常还要加上 for all time，因为主张路径跟踪的人常常带着这个意思。冗余分两层。named set 里的冗余和存储表示里的冗余不是一回事，这一节主要谈前者。说一个关系能被推导出来，要求这对所有时间都成立，因为关系会变。对非推理系统的 named set，论文写投影、自然连接、tie 和 restriction 是一套够用的运算；自然复合可以由自然连接再加投影得到，所以不单列。强冗余是：集合里至少有一个关系，它的某个投影可以从其他关系的投影推导出来。例子是 employee(serial#, name, manager#, managername)，serial# 是主键，manager# 是外键，并且在每个时刻 manager# 的活动域含于 serial#、managername 的活动域含于 name；于是 managername 是多余的。强冗余可以留下来方便用户，一个情形是把半过时的关系留在 named set 里，让按名字引用它们的旧程序继续正确运行。知道 named set 里有哪些强冗余，管理员在为当前流量选择存储表示时更自由。若存储里照样留下强冗余，一般是多占存储和更新时间，换某些查询变快，并减轻中央处理器的负载。弱冗余没有这样的等式：某个投影不能从其他成员推导出来，但在任何时刻它都是其他投影的某个连接的投影。论文写弱冗余来自用户共同体的逻辑需要，管理员去不掉；它若出现，named set 和存储表示里都会有。一致性看的是瞬时状态。给随时间变化的关系集合 C、与时间无关的约束语句集 Z，以及 C 的一个瞬时值 V，状态 (C, Z, V) 是否一致，只看 V 满不满足 Z，不看这个状态是怎么来的。因此用户是因为漏做还是因为做错，定义上不加区分。例子写在物理页 11：原先没有供应商 2 对部门 5 的那条供应；用户把 (2, 5) 插进 P 的相应投影，状态变为不一致。这可能是漏记，输入是对的，还存在项目 j，使得供应商 2 供应 j 而且 j 分给部门 5，用户打算随后写入 Q 和 R。也可能 (2, 5) 本身就是错的。论文写系统通常无法分辨，除非去问环境，也许就是造成不一致的那个用户。一种做法是每次插入、删除或键更新都检查，不一致就记在内部，一段合理时间还不补救，就通知用户或负责安全与完整性的人；这种检查会拖慢这些操作。另一种是每天或更疏地成批检查，靠全部改变状态的事务日志去追输入；非暂时的不一致很少时，后一种更好。对很大、变得很快的关系做瞬时快照有实际困难，论文写明这里不讨论。2.4 节把第 1 节的目的再写一遍，就是课堂上那句：保护格式化数据系统的用户，使他们不必承受数据银行增长和流量变化所引起的数据表示扰动，并引入范式。第 2 节的运算和两种冗余用来把数据维持在一致状态。论文接着写许多问题提出了但没有回答：数据子语言只提到少数较重要的性质，并把这一处标成 Section 1.4；子语言的条目写在 1.5，1.4 末尾是名字形式 R(g).r.d。纯语言细节和实现问题都没有讨论。它希望有经验的系统程序员能据此想象出几种做法。收稿日期是 1969 年 9 月，修订于 1970 年 2 月。"
+    }
+  ],
   "self_test": [
     {
       "section": 2,

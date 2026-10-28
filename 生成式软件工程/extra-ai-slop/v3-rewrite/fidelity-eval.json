@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
-  "notes_sha256": "d1106a7e5fea949397dc3359f6ed181da5cdcf28bff44254f9fb7f2473897019",
+  "mode": "full",
+  "notes_sha256": "518a28111eb4c55e4f72349da41925a35e40ea02d1d9d70dcd814a2df113d6d3",
   "writer_model": "grok-4.7-high",
   "precision": {
     "items": [
@@ -38,13 +39,6 @@
         "evidence": "s-g1.0; s-g3.0~25; s-g5.0~5; v000005000.jpg",
         "note": "讲稿确实只列三种豆包用途，未进一步称为自动出题、一键回答或机器批改。",
         "hash": "1a48f6ba5efc8316"
-      },
-      {
-        "ref": "s1:f0",
-        "verdict": "supported",
-        "evidence": "v000005000.jpg",
-        "note": "画面中的文字与构图支持该描述；此处明确记述画面，未冒充口播。",
-        "hash": "b92a1392f022aa7a"
       },
       {
         "ref": "s2:takeaway",
@@ -269,122 +263,98 @@
         "evidence": "s-g19.0~29; s-g21.0~23; s-g22.0~53; frames/v000152000.jpg",
         "note": "准确区分了转写原句、口播的 read the friendly manual 与图中的 Read the Manual；补充的术语、学期目标及左右列文字均可在图中核实。",
         "hash": "4752d3018cfa69b1"
+      },
+      {
+        "ref": "x0",
+        "verdict": "supported",
+        "evidence": "摘录列出了目录标题、10 讲名称、Lab1/Lab2、slides1–slides10、六个返回 404 的地址，以及讲义正文和幻灯片逐页文字中未检出指定词语及视频编号的结果。",
+        "note": "条目将结论限定在本次查过的官网范围，所述核查细节均有摘录支持，也没有把外部页面内容当作本视频口述。",
+        "hash": "73a1de199e12e7a5"
+      },
+      {
+        "ref": "x2",
+        "verdict": "supported",
+        "evidence": "items.json: x2.source_excerpt; slides1-p03.jpg; s-g1.0–s-g22.0~53",
+        "note": "摘录支持两处 AIGC 文字及无链接，截图支持紫色虚线框；全文口播未说这两句，也未推荐其作为阅读。",
+        "hash": "9856fea2043f6f6b"
+      },
+      {
+        "ref": "x3",
+        "verdict": "supported",
+        "evidence": "items.json: x3.source_excerpt; s-g19.0~29; s-g21.0~23",
+        "note": "摘录支持课程年份、命令和 Prompt、书单、可选延伸阅读、官方文档建议及文字检索结果；条目保留可选条件并明确这些书未在本视频点名。",
+        "hash": "f8def3a3279197cf"
+      },
+      {
+        "ref": "x4",
+        "verdict": "supported",
+        "evidence": "source_excerpt 明确列出页面标题、教师、状态机与实验课内容、Linux 命令行训练、基于框架实现 RISC-V 全系统模拟器 NEMU 及其可运行的程序、PA0 链接与标题、阅读要求、截止时间、Online Judge 检查，以及两页均无 read the friendly manual；同时说明口播没有‘习题课’和年份。",
+        "note": "条目保留了摘录中的条件与具体事实，属于有支持的转述，无须逐字重复功能词。条目明确区分页面材料与视频口述，并提醒不能把 NEMU 和 PA0 写成该补充视频布置的实验，未将页面内容冒充视频发言，也未与摘录矛盾。",
+        "hash": "9abacf993319b806"
+      },
+      {
+        "ref": "s2:n1",
+        "verdict": "supported",
+        "evidence": "s-g5.0~16; s-g7.0~7",
+        "note": "所引原句与转写一致；本节口播未出现「被大学骗了」或「输了人生」。",
+        "hash": "a720699c6b83f114"
+      },
+      {
+        "ref": "s2:f1",
+        "verdict": "supported",
+        "evidence": "slides1-p03.jpg",
+        "note": "截图的标题、小标题、页码、两条紫色框文字及三条焦虑正文均与 caption 相符。",
+        "hash": "b10d3c3cfd53f2c0"
+      },
+      {
+        "ref": "s4:n3",
+        "verdict": "supported",
+        "evidence": "s-g13.0",
+        "note": "口播未给视频标题、账号或链接，随后确实说怀疑简历出自辅导工厂。",
+        "hash": "84e09f4b0528c32c"
+      },
+      {
+        "ref": "s6:n1",
+        "verdict": "supported",
+        "evidence": "s-g19.0~29; s-g21.0~23; s-g22.0~53",
+        "note": "以前两门课采用启蒙思路及第一节教 read the friendly manual 均有原句支持；本节未给具体书名、手册名或链接。",
+        "hash": "fab5f5460f5bc229"
+      },
+      {
+        "ref": "s1:n2",
+        "verdict": "supported",
+        "evidence": "s-g1.0; s-g3.0~25; s-g5.0~5; s1:n2.source_excerpt",
+        "note": "口播只以 Stanford、MIT 举例，未给课程题名或豆包链接；摘录支持同一产品 URL 的 2024-12-08 企业产品页存档，且条目明确区分补充材料与口播出处。",
+        "hash": "1ba4a6a48d8d1ca8"
+      },
+      {
+        "ref": "x1",
+        "verdict": "supported",
+        "evidence": "x1.source_excerpt; s-g5.0~16; s-g7.0~7; s-g8.0",
+        "note": "摘录支持 slides 第3页标题、三条焦虑、正文链接位置及所列访问结果；条目明确区分第1讲 slides 与本视频口播，口播焦虑的描述也与转写一致。",
+        "hash": "d4da5c6dcdf64442"
+      },
+      {
+        "ref": "x5",
+        "verdict": "supported",
+        "evidence": "x5.source_excerpt; s-g3.0~25",
+        "note": "产品、存档日期、正文与 meta 的用量差异、桌面与手机长文本差异、规格及所选价格组合均获摘录支持；条目保留价格适用条件，并明确不将存档产品说明归为本视频口播。",
+        "hash": "2e89c6ae8cfa2d9c"
+      },
+      {
+        "ref": "s1:f0",
+        "verdict": "supported",
+        "evidence": "v000005000.jpg",
+        "note": "四格标题、主要标签、底部文字和右下头像与画面一致；骨牌从左到右确为资源优势丧失、科研经费缩减、学生流失、管理僵化、教师士气低落、系统性，学生流失的前后顺序正确。",
+        "hash": "71a3cdadfb0a808b"
       }
     ],
     "reviewer": "independent_agent",
     "reviewer_model": "gpt-6.1-sol",
-    "method": "prepare packets: all takeaways/explainers + per-section sample; 38 judged in latest round; 3 judged in latest round"
+    "method": "prepare packets: all takeaways/explainers + per-section sample; 38 judged in latest round; 3 judged in latest round; 10 judged in latest round; 4 judged in latest round"
   },
   "recall": {
     "items": [
-      {
-        "id": "q01",
-        "question": "讲者开头如何判断当前大学的问题：是局部问题还是系统性问题？",
-        "expected": "明确认为大学的崩溃是系统性的。",
-        "evidence": "s-g1.0",
-        "from": "transcript",
-        "answer": "讲者认为当前大学的崩溃是系统性的，并说明这是他自己的理解。",
-        "found_in": "s1:p0",
-        "verdict": "correct",
-        "note": "明确指出大学的崩溃是系统性的。",
-        "hash": "2a738833869ec340"
-      },
-      {
-        "id": "q02",
-        "question": "讲者举了哪两所大学，说明网上可能有比本校更好的学习资料？",
-        "expected": "Stanford；MIT。",
-        "evidence": "s-g1.0",
-        "from": "transcript",
-        "answer": "Stanford（斯坦福大学）和 MIT（麻省理工学院）。",
-        "found_in": "s1:p0",
-        "verdict": "correct",
-        "note": "完整列出 Stanford 和 MIT。",
-        "hash": "2a738833869ec340"
-      },
-      {
-        "id": "q03",
-        "question": "为什么有顶尖网课，学生仍可能同时拒绝本校老师和网课？",
-        "expected": "因资源比较而本能拒绝老师；无人督促时容易摸鱼，连优质网课也不学。",
-        "evidence": "s-g1.0; s-g3.0~25",
-        "from": "transcript",
-        "answer": "学生觉得网上资料更好，会本能地拒绝本校老师；但没有人督促时又容易摸鱼，于是也拒绝了优质网课。",
-        "found_in": "s1:p0, s1:p1",
-        "verdict": "correct",
-        "note": "涵盖资源比较导致拒绝老师，以及无人督促时摸鱼、不学网课。",
-        "hash": "2a738833869ec340"
-      },
-      {
-        "id": "q04",
-        "question": "讲者所说的“豆包”恶性循环包含哪三个角色，各自用它做什么？",
-        "expected": "老师用豆包出题；学生用豆包做作业；助教用豆包改作业。",
-        "evidence": "s-g3.0~25",
-        "from": "transcript",
-        "answer": "老师用豆包出题，学生用豆包做作业，助教用豆包改作业。",
-        "found_in": "s1:p1",
-        "verdict": "correct",
-        "note": "三个角色及各自用途全部正确。",
-        "hash": "2a738833869ec340"
-      },
-      {
-        "id": "q05",
-        "question": "“豆包”循环的流程体验和参与者的心理感受分别如何？",
-        "expected": "流程很丝滑；大家仍然焦虑。",
-        "evidence": "s-g3.0~25; s-g5.0~5",
-        "from": "transcript",
-        "answer": "流程很丝滑，但参与者仍然焦虑。",
-        "found_in": "s1:p2",
-        "verdict": "correct",
-        "note": "涵盖流程丝滑和参与者仍焦虑。",
-        "hash": "2a738833869ec340"
-      },
-      {
-        "id": "q06",
-        "question": "讲者提出的第一种焦虑，要平衡哪两类利益？",
-        "expected": "短期利益与长期利益。",
-        "evidence": "s-g5.0~16",
-        "from": "transcript",
-        "answer": "短期利益和长期利益。",
-        "found_in": "s2:p0",
-        "verdict": "correct",
-        "note": "正确指出短期利益与长期利益。",
-        "hash": "611e49534d36ed3f"
-      },
-      {
-        "id": "q07",
-        "question": "讲者用过去的实验经历说明 AI 带来了什么诱惑？",
-        "expected": "过去实验调 bug 常到凌晨；现在豆包能搞定，诱惑学生把实验交给 AI。",
-        "evidence": "s-g5.0~16",
-        "from": "transcript",
-        "answer": "以前折磨人的实验 bug 要天天调到凌晨，现在豆包都能搞定，带来把实验和作业交给 AI 的诱惑。",
-        "found_in": "s2:p0",
-        "verdict": "correct",
-        "note": "涵盖过去调 bug 到凌晨，以及如今将实验交给 AI 的诱惑。",
-        "hash": "611e49534d36ed3f"
-      },
-      {
-        "id": "q08",
-        "question": "宿舍同学秒交作业去找女朋友的例子，说明亲自做实验的人为什么觉得“不值”？",
-        "expected": "别人迅速交作业就能娱乐；自己仍需花时间写代码，产生比较和不公平感。",
-        "evidence": "s-g5.0~16; s-g7.0~7",
-        "from": "transcript",
-        "answer": "自己还在写代码、做实验，宿舍同学却能秒交作业去找女朋友，因此觉得自己投入这些时间很不值。",
-        "found_in": "s2:p1",
-        "verdict": "correct",
-        "note": "涵盖同学秒交后娱乐与自己仍花时间写代码的比较。",
-        "hash": "611e49534d36ed3f"
-      },
-      {
-        "id": "q09",
-        "question": "如果选择不亲自做实验，讲者说学生又会担心什么？",
-        "expected": "担心自己没学懂；后面的课程学不会。",
-        "evidence": "s-g7.0~7",
-        "from": "transcript",
-        "answer": "担心自己没有学懂，导致后面的课学不会。",
-        "found_in": "s2:p1",
-        "verdict": "correct",
-        "note": "涵盖没学懂及后续课程学不会的担忧。",
-        "hash": "611e49534d36ed3f"
-      },
       {
         "id": "q10",
         "question": "第二种焦虑是什么？沿用中学的哪种做法却没有得到想要的结果？",
@@ -410,114 +380,6 @@
         "hash": "fb1ad08cce6ddea2"
       },
       {
-        "id": "q26",
-        "question": "开头四分区幻灯片中，“连锁反应”的多米诺骨牌在“学生流失”前后紧邻的两块分别写着什么？",
-        "expected": "前一块是“科研经费缩减”；后一块是“管理僵化”。",
-        "evidence": "v000005000.jpg",
-        "from": "visual",
-        "answer": "按笔记列出的骨牌顺序，“学生流失”前是“科研经费缩减”，后是“管理僵化”。",
-        "found_in": "s1:f0",
-        "verdict": "correct",
-        "note": "前后相邻骨牌均正确。",
-        "hash": "2a738833869ec340"
-      },
-      {
-        "id": "q12",
-        "question": "讲者在什么招生联系场景中收到很多简历？其中一些投递有什么特点？",
-        "expected": "学生为保研联系导师；有些简历是海投。",
-        "evidence": "s-g10.0~4",
-        "from": "transcript",
-        "answer": "在学生保研、套导师的联系场景中，他收到很多简历，其中一些是海投的。",
-        "found_in": "s4:p0",
-        "verdict": "correct",
-        "note": "涵盖保研联系导师及部分简历为海投。",
-        "hash": "3c73bb41126c11d6"
-      },
-      {
-        "id": "q13",
-        "question": "展示简历前，讲者让 agent 如何做匿名处理？",
-        "expected": "直接把 PDF 中带个人信息的内容换成 Unicode 方块。",
-        "evidence": "s-g11.0",
-        "from": "transcript",
-        "answer": "让 agent 直接把 PDF 里带信息的内容都替换成 unicode 方块。",
-        "found_in": "s4:e0",
-        "verdict": "correct",
-        "note": "准确说明将 PDF 中个人信息替换为 Unicode 方块。",
-        "hash": "3c73bb41126c11d6"
-      },
-      {
-        "id": "q14",
-        "question": "这份简历乍看“完美”，具有哪三方面的亮点？",
-        "expected": "成绩不错；有项目和奖项；有一篇 accepted 的论文。",
-        "evidence": "s-g11.0",
-        "from": "transcript",
-        "answer": "成绩不错；有项目、有奖项；还有一篇 accepted 的论文。",
-        "found_in": "s4:e0",
-        "verdict": "correct",
-        "note": "涵盖成绩、项目和奖项、已录用论文三方面亮点。",
-        "hash": "3c73bb41126c11d6"
-      },
-      {
-        "id": "q15",
-        "question": "讲者随后指出这份简历缺少哪三种可以进一步了解其工作的入口？",
-        "expected": "GitHub 链接；个人主页；preprint。",
-        "evidence": "s-g13.0",
-        "from": "transcript",
-        "answer": "GitHub 链接（转写为“GitHub 论阶”）、个人主页和 preprint。",
-        "found_in": "s4:p1, s4:n0",
-        "verdict": "correct",
-        "note": "完整列出 GitHub 链接、个人主页和 preprint。",
-        "hash": "3c73bb41126c11d6"
-      },
-      {
-        "id": "q16",
-        "question": "讲者用什么问题／方法的标题模板讽刺“学术裁缝”？",
-        "expected": "“基于 A 的 B 问题”；“C 限定下的 D 方法”。",
-        "evidence": "s-g13.0; s-g15.0~24",
-        "from": "transcript",
-        "answer": "“基于 A 的 B 问题，C 限定下的 D 方法”，还硬要搞一篇论文。",
-        "found_in": "s4:p2",
-        "verdict": "correct",
-        "note": "准确复述两种标题模板。",
-        "hash": "3c73bb41126c11d6"
-      },
-      {
-        "id": "q17",
-        "question": "讲者怀疑简历来自辅导工厂，这是已证实的事实还是他的怀疑？他提到哪个平台也有相关教程？",
-        "expected": "只是讲者的怀疑；提到 B 站有教做“学术裁缝”的视频。",
-        "evidence": "s-g13.0",
-        "from": "transcript",
-        "answer": "只是他的怀疑，并未证实；他提到 B 站还有专门教做“学术裁缝”的视频。",
-        "found_in": "s4:p1",
-        "verdict": "correct",
-        "note": "明确为未经证实的怀疑，并指出 B 站教程。",
-        "hash": "3c73bb41126c11d6"
-      },
-      {
-        "id": "q18",
-        "question": "相比“学术裁缝”，讲者说哪种项目的简历可能让他感觉更好？为什么？",
-        "expected": "自己做了一个 galgame；更像为了自己学习，而非被评价体系逼着 reward hacking。",
-        "evidence": "s-g15.0~24",
-        "from": "transcript",
-        "answer": "做了 galgame 的项目简历可能让他感觉更好，因为更像是为了自己学习，而不是被评价体系逼着 reward hacking。",
-        "found_in": "s4:p2",
-        "verdict": "correct",
-        "note": "指出 galgame 项目，并说明自主学习与评价体系驱动的区别。",
-        "hash": "3c73bb41126c11d6"
-      },
-      {
-        "id": "q19",
-        "question": "结合讲者的例子，“reward hacking”指怎样的学习／项目动机？",
-        "expected": "为迎合评价体系和获取利益、加分而包装产出；并非出于自身学习兴趣。",
-        "evidence": "s-g15.0~24; s-g18.0",
-        "from": "transcript",
-        "answer": "指被评价体系和利益驱动，为了获得评价上的加分而做项目、硬凑论文，即使题目开局就注定死掉，而不是出于自己的学习兴趣。",
-        "found_in": "s4:p1, s4:p2",
-        "verdict": "correct",
-        "note": "准确说明为评价加分和利益包装产出，而非自身学习兴趣。",
-        "hash": "3c73bb41126c11d6"
-      },
-      {
         "id": "q20",
         "question": "讲者为什么认为学生会拼命把科研、项目和竞赛塞进标准化简历？",
         "expected": "担心不按标准包装就找不到下家；对硬实力不自信，转而找加分项补偿。",
@@ -530,100 +392,316 @@
         "hash": "ba88d87df48c5f81"
       },
       {
+        "id": "q06",
+        "from": "transcript",
+        "question": "讲者提出的第一种焦虑，要平衡哪两类利益？",
+        "expected": "短期利益与长期利益。",
+        "evidence": "s-g5.0~16",
+        "answer": "短期利益和长期利益。",
+        "found_in": "s2:p0",
+        "verdict": "correct",
+        "note": "准确指出短期利益与长期利益。",
+        "hash": "812bc6c92f4e7e96"
+      },
+      {
+        "id": "q07",
+        "from": "transcript",
+        "question": "讲者用过去的实验经历说明 AI 带来了什么诱惑？",
+        "expected": "过去实验调 bug 常到凌晨；现在豆包能搞定，诱惑学生把实验交给 AI。",
+        "evidence": "s-g5.0~16",
+        "answer": "以前折磨人的实验 bug 要天天调到凌晨，现在豆包都能搞定，因此让 AI 代做实验、作业的诱惑很大。",
+        "found_in": "s2:p0",
+        "verdict": "correct",
+        "note": "涵盖过去调 bug 到凌晨，以及现在把实验交给 AI 的诱惑。",
+        "hash": "812bc6c92f4e7e96"
+      },
+      {
+        "id": "q08",
+        "from": "transcript",
+        "question": "宿舍同学秒交作业去找女朋友的例子，说明亲自做实验的人为什么觉得“不值”？",
+        "expected": "别人迅速交作业就能娱乐；自己仍需花时间写代码，产生比较和不公平感。",
+        "evidence": "s-g5.0~16; s-g7.0~7",
+        "answer": "同学秒交作业就去找女朋友，自己却还要花时间写代码，因此觉得亲自做实验很不值。",
+        "found_in": "s2:p1",
+        "verdict": "correct",
+        "note": "通过同学秒交作业去娱乐与自己耗时写代码的比较，说明不值的感受。",
+        "hash": "812bc6c92f4e7e96"
+      },
+      {
+        "id": "q09",
+        "from": "transcript",
+        "question": "如果选择不亲自做实验，讲者说学生又会担心什么？",
+        "expected": "担心自己没学懂；后面的课程学不会。",
+        "evidence": "s-g7.0~7",
+        "answer": "担心自己没学懂，后面的课就学不会了。",
+        "found_in": "s2:p1",
+        "verdict": "correct",
+        "note": "涵盖没学懂与后续课程学不会两点。",
+        "hash": "812bc6c92f4e7e96"
+      },
+      {
+        "id": "q12",
+        "from": "transcript",
+        "question": "讲者在什么招生联系场景中收到很多简历？其中一些投递有什么特点？",
+        "expected": "学生为保研联系导师；有些简历是海投。",
+        "evidence": "s-g10.0~4",
+        "answer": "学生保研套导师时，他收到很多简历，其中有些是海投的。",
+        "found_in": "s4:p0",
+        "verdict": "correct",
+        "note": "涵盖保研联系导师的场景及海投特点。",
+        "hash": "6fdb9872f9e70f97"
+      },
+      {
+        "id": "q13",
+        "from": "transcript",
+        "question": "展示简历前，讲者让 agent 如何做匿名处理？",
+        "expected": "直接把 PDF 中带个人信息的内容换成 Unicode 方块。",
+        "evidence": "s-g11.0",
+        "answer": "让 agent 直接把 PDF 里带信息的内容都换成 unicode 方块。",
+        "found_in": "s4:e0",
+        "verdict": "correct",
+        "note": "准确说明将 PDF 中个人信息替换为 Unicode 方块。",
+        "hash": "6fdb9872f9e70f97"
+      },
+      {
+        "id": "q14",
+        "from": "transcript",
+        "question": "这份简历乍看“完美”，具有哪三方面的亮点？",
+        "expected": "成绩不错；有项目和奖项；有一篇 accepted 的论文。",
+        "evidence": "s-g11.0",
+        "answer": "成绩不错；有项目、有奖项；还有一篇已被接受（accepted）的论文。",
+        "found_in": "s4:e0",
+        "verdict": "correct",
+        "note": "成绩、项目和奖项、已接收论文三方面均齐全。",
+        "hash": "6fdb9872f9e70f97"
+      },
+      {
+        "id": "q15",
+        "from": "transcript",
+        "question": "讲者随后指出这份简历缺少哪三种可以进一步了解其工作的入口？",
+        "expected": "GitHub 链接；个人主页；preprint。",
+        "evidence": "s-g13.0",
+        "answer": "没有 GitHub 链接、个人主页和 preprint（预印本）。笔记注明口播转写为“GitHub 论阶”，画面写作“GitHub链接”。",
+        "found_in": "s4:p1, s4:n0",
+        "verdict": "correct",
+        "note": "准确列出 GitHub 链接、个人主页和 preprint。",
+        "hash": "6fdb9872f9e70f97"
+      },
+      {
+        "id": "q16",
+        "from": "transcript",
+        "question": "讲者用什么问题／方法的标题模板讽刺“学术裁缝”？",
+        "expected": "“基于 A 的 B 问题”；“C 限定下的 D 方法”。",
+        "evidence": "s-g13.0; s-g15.0~24",
+        "answer": "“基于 A 的 B 问题，C 限定下的 D 方法”，还硬要搞一篇论文。",
+        "found_in": "s4:p2",
+        "verdict": "correct",
+        "note": "准确复述两个标题模板。",
+        "hash": "6fdb9872f9e70f97"
+      },
+      {
+        "id": "q17",
+        "from": "transcript",
+        "question": "讲者怀疑简历来自辅导工厂，这是已证实的事实还是他的怀疑？他提到哪个平台也有相关教程？",
+        "expected": "只是讲者的怀疑；提到 B 站有教做“学术裁缝”的视频。",
+        "evidence": "s-g13.0",
+        "answer": "只是他的怀疑，没有证实；他提到 B 站还有专门教做“学术裁缝”的视频。",
+        "found_in": "s4:p1",
+        "verdict": "correct",
+        "note": "明确区分怀疑与证实，并准确提到 B 站教程。",
+        "hash": "6fdb9872f9e70f97"
+      },
+      {
+        "id": "q18",
+        "from": "transcript",
+        "question": "相比“学术裁缝”，讲者说哪种项目的简历可能让他感觉更好？为什么？",
+        "expected": "自己做了一个 galgame；更像为了自己学习，而非被评价体系逼着 reward hacking。",
+        "evidence": "s-g15.0~24",
+        "answer": "做了一个 galgame 的项目简历可能让他感觉更好，因为更像是为了自己学习，而不是被评价体系逼着追逐奖励。",
+        "found_in": "s4:p2",
+        "verdict": "correct",
+        "note": "涵盖 galgame 项目及为自己学习而非迎合评价体系的原因。",
+        "hash": "6fdb9872f9e70f97"
+      },
+      {
+        "id": "q19",
+        "from": "transcript",
+        "question": "结合讲者的例子，“reward hacking”指怎样的学习／项目动机？",
+        "expected": "为迎合评价体系和获取利益、加分而包装产出；并非出于自身学习兴趣。",
+        "evidence": "s-g15.0~24; s-g18.0",
+        "answer": "被评价体系逼着，为利益和加分去拼装题目、硬凑论文或包装经历，而不是为了自己学习；对硬实力不自信，就在能加分的地方找补。",
+        "found_in": "s4:p1, s4:p2, s5:p1",
+        "verdict": "correct",
+        "note": "准确解释为利益和加分包装产出，而非出于自身学习兴趣。",
+        "hash": "c30f66a211217b8d"
+      },
+      {
         "id": "q21",
+        "from": "transcript",
         "question": "讲者认为大学最需要什么课程？这种课程应带来哪三个结果？",
         "expected": "启蒙课程；打好学科基础、找到自信、解锁新的人生可能性。",
         "evidence": "s-g19.0~29",
-        "from": "transcript",
-        "answer": "最需要启蒙课程，带来三个结果：打好学科基础、找到自信、解锁新的人生可能性。",
+        "answer": "启蒙课程：打好学科基础、找到自信、解锁新的人生可能性。",
         "found_in": "s6:p0",
         "verdict": "correct",
-        "note": "准确指出启蒙课程及三个预期结果。",
-        "hash": "8180ef09016a3035"
+        "note": "准确指出启蒙课程及基础、自信、人生可能性三个结果。",
+        "hash": "31a32f8a7654dd65"
       },
       {
         "id": "q22",
+        "from": "transcript",
         "question": "讲者以前在哪两门课中采用过这种启蒙和建立自信的思路？",
         "expected": "计算机系统基础；操作系统。",
         "evidence": "s-g19.0~29; s-g21.0~23",
-        "from": "transcript",
         "answer": "计算机系统基础和操作系统。",
         "found_in": "s6:p0",
         "verdict": "correct",
-        "note": "两门课程名称均正确。",
-        "hash": "8180ef09016a3035"
+        "note": "准确列出计算机系统基础和操作系统。",
+        "hash": "31a32f8a7654dd65"
       },
       {
         "id": "q23",
+        "from": "transcript",
         "question": "讲者如何形容建立自信的过程？第一节课就要学生做什么？",
         "expected": "过程挺痛苦；学习 read the friendly manual，即阅读手册。",
         "evidence": "s-g21.0~23",
-        "from": "transcript",
-        "answer": "他说建立自信的过程挺痛苦，第一节课就要教学生 read the friendly manual（读手册）。",
+        "answer": "他说建立自信的过程挺痛苦；第一节课就要教学生 read the friendly manual（阅读手册）。",
         "found_in": "s6:p1",
         "verdict": "correct",
         "note": "涵盖过程痛苦及第一节课学习阅读手册。",
-        "hash": "8180ef09016a3035"
+        "hash": "31a32f8a7654dd65"
       },
       {
         "id": "q24",
+        "from": "transcript",
         "question": "本课程计划用多长时间，一起学习什么并做什么？",
         "expected": "一个学期；学习驾驭 AI；做真正有趣的东西。",
         "evidence": "s-g21.0~23",
-        "from": "transcript",
-        "answer": "用一个学期，一起学习怎么驾驭 AI，并做一些真正有趣的东西。",
+        "answer": "用一个学期，一起学习怎么驾驭 AI，做一些真正有趣的东西。",
         "found_in": "s6:p2",
         "verdict": "correct",
-        "note": "涵盖一个学期、驾驭 AI 和做真正有趣的东西。",
-        "hash": "8180ef09016a3035"
+        "note": "涵盖一个学期、驾驭 AI、做真正有趣的东西。",
+        "hash": "31a32f8a7654dd65"
       },
       {
         "id": "q25",
+        "from": "transcript",
         "question": "讲者如何界定课程内容的权威性？对反对意见和建议持什么态度？",
         "expected": "主题全新，内容是自己的个人理解；欢迎反对意见和建议，并会认真考虑。",
         "evidence": "s-g21.0~23; s-g22.0~53",
-        "from": "transcript",
-        "answer": "因为主题全新，他把课程内容视为自己的个人理解；非常欢迎反对意见和建议，并会认真考虑。",
+        "answer": "这是全新的主题，他将课程所讲界定为自己的个人理解；非常欢迎反对意见和建议，也都会认真考虑。",
         "found_in": "s6:p2",
         "verdict": "correct",
-        "note": "涵盖主题全新、个人理解，以及欢迎并认真考虑反对意见和建议。",
-        "hash": "8180ef09016a3035"
+        "note": "涵盖全新主题、个人理解，以及欢迎并认真考虑反对意见和建议。",
+        "hash": "31a32f8a7654dd65"
       },
       {
         "id": "q27",
+        "from": "visual",
         "question": "展示的匿名简历中，毕业时间具体写的是哪年哪月？第一个科研项目的起止年月是什么？",
         "expected": "毕业时间为 2027.6；第一个科研项目为 2025.6–2026.1。",
         "evidence": "v000090000.jpg",
-        "from": "visual",
-        "answer": "毕业时间是 2027 年 6 月；第一个科研项目的起止时间是 2025 年 6 月至 2026 年 1 月。",
+        "answer": "毕业时间是 2027 年 6 月；第一个科研项目起止时间是 2025 年 6 月至 2026 年 1 月。",
         "found_in": "s4:n2, s4:f1",
         "verdict": "correct",
-        "note": "毕业年月和首个科研项目起止年月均准确。",
-        "hash": "3c73bb41126c11d6"
+        "note": "毕业年月及第一个科研项目起止年月均准确。",
+        "hash": "6fdb9872f9e70f97"
       },
       {
         "id": "q28",
+        "from": "visual",
         "question": "匿名简历第一个科研项目的职责段中，定制化 Hybrid MoE 结构混合了哪两种注意力？",
         "expected": "线性注意力；softmax 注意力。",
         "evidence": "v000090000.jpg",
-        "from": "visual",
         "answer": "线性注意力与 softmax 注意力。",
         "found_in": "s4:n2, s4:f1",
         "verdict": "correct",
         "note": "准确列出线性注意力和 softmax 注意力。",
-        "hash": "3c73bb41126c11d6"
+        "hash": "6fdb9872f9e70f97"
       },
       {
         "id": "q29",
+        "from": "visual",
         "question": "结尾幻灯片“学期目标”栏列出的三项目标分别是什么？",
         "expected": "驾驭工具；人机协作；激发潜能。",
         "evidence": "v000152000.jpg",
-        "from": "visual",
         "answer": "驾驭工具、人机协作、激发潜能。",
         "found_in": "s6:n0, s6:f0",
         "verdict": "correct",
-        "note": "完整列出驾驭工具、人机协作、激发潜能。",
-        "hash": "8180ef09016a3035"
+        "note": "准确列出驾驭工具、人机协作、激发潜能。",
+        "hash": "31a32f8a7654dd65"
+      },
+      {
+        "id": "q01",
+        "from": "transcript",
+        "question": "讲者开头如何判断当前大学的问题：是局部问题还是系统性问题？",
+        "expected": "明确认为大学的崩溃是系统性的。",
+        "evidence": "s-g1.0",
+        "answer": "讲者认为当前大学的崩溃是系统性的，并说明这是他自己的理解。",
+        "found_in": "s1:p0",
+        "verdict": "correct",
+        "note": "明确指出大学的崩溃是系统性的。",
+        "hash": "f2a23355f78b14e2"
+      },
+      {
+        "id": "q02",
+        "from": "transcript",
+        "question": "讲者举了哪两所大学，说明网上可能有比本校更好的学习资料？",
+        "expected": "Stanford；MIT。",
+        "evidence": "s-g1.0",
+        "answer": "Stanford（斯坦福大学）和 MIT（麻省理工学院）。",
+        "found_in": "s1:p0",
+        "verdict": "correct",
+        "note": "准确列出 Stanford 和 MIT。",
+        "hash": "f2a23355f78b14e2"
+      },
+      {
+        "id": "q03",
+        "from": "transcript",
+        "question": "为什么有顶尖网课，学生仍可能同时拒绝本校老师和网课？",
+        "expected": "因资源比较而本能拒绝老师；无人督促时容易摸鱼，连优质网课也不学。",
+        "evidence": "s-g1.0; s-g3.0~25",
+        "answer": "学生觉得网上有更好的资料，因而本能地拒绝本校老师；但没有人督促时又容易摸鱼，结果连优质网课也一起拒绝了。",
+        "found_in": "s1:p0, s1:p1",
+        "verdict": "correct",
+        "note": "涵盖资源比较导致拒绝老师，以及缺乏督促导致连优质网课也不学。",
+        "hash": "f2a23355f78b14e2"
+      },
+      {
+        "id": "q04",
+        "from": "transcript",
+        "question": "讲者所说的“豆包”恶性循环包含哪三个角色，各自用它做什么？",
+        "expected": "老师用豆包出题；学生用豆包做作业；助教用豆包改作业。",
+        "evidence": "s-g3.0~25",
+        "answer": "老师用豆包出题，学生用豆包做作业，助教再用豆包改作业。",
+        "found_in": "s1:p1",
+        "verdict": "correct",
+        "note": "准确对应老师出题、学生做作业、助教改作业三个角色。",
+        "hash": "f2a23355f78b14e2"
+      },
+      {
+        "id": "q05",
+        "from": "transcript",
+        "question": "“豆包”循环的流程体验和参与者的心理感受分别如何？",
+        "expected": "流程很丝滑；大家仍然焦虑。",
+        "evidence": "s-g3.0~25; s-g5.0~5",
+        "answer": "整个流程很丝滑，但大家仍然焦虑。",
+        "found_in": "s1:p2",
+        "verdict": "correct",
+        "note": "同时涵盖流程丝滑和参与者仍然焦虑。",
+        "hash": "f2a23355f78b14e2"
+      },
+      {
+        "id": "q26",
+        "from": "visual",
+        "question": "开头四分区幻灯片中，“连锁反应”的多米诺骨牌在“学生流失”前后紧邻的两块分别写着什么？",
+        "expected": "前一块是“科研经费缩减”；后一块是“管理僵化”。",
+        "evidence": "v000005000.jpg",
+        "answer": "“学生流失”前一块是“科研经费缩减”，后一块是“管理僵化”。",
+        "found_in": "s1:f0",
+        "verdict": "correct",
+        "note": "准确指出前一块为科研经费缩减，后一块为管理僵化。",
+        "hash": "f2a23355f78b14e2"
       }
     ],
     "question_author": "independent_agent",

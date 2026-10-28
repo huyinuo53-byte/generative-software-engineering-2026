@@ -31,7 +31,7 @@
   "limitations": [
     "19 个转写块已全部阅读，并按主题重新分节。无人值守，没有人可以回答歧义。",
     "画面使用预先生成的 frames.py 结果：场景阈值 0.3，最长 60 秒兜底，103 个候选，9 张联系表。先看联系表，再打开可能入选的候选，最后按选定时间从原视频截取原分辨率帧。不是逐秒观看，也没有逐帧 OCR。",
-    "没有读推荐材料，没有联网核对论文、仓库、博客或文章原文。专名、命令和数字以口播加课堂画面为准；只出现在讲义页上、口播没念的内容写在对应例子和原帧图注里。",
+    "2026-10-28 增量补了官网 lect8.md 和 slides8.html，以及二者与口播点到的材料。讲义页正文、slides 正文、slides 紫色 AIGC 批注、讲师口述分开写。AIGC 批注里的链接不写成老师明确推荐。openai.com 当次打不开正文，OpenAI 文章用 Wayback 2026-02-12 快照；Quibi 告别信用 Wayback 2020-10-22。Webvan 年报只读了配送中心容量和现金流盈利相关披露。LinearB 只读了网页转写里的命名段落，没有听音频。deepseek-harness 只读了仓库首页 README。Fowler 后来的长文和 GitHub 文档只读了讲义或 slides 点到的章节。没有把整份年报、整期播客或整个仓库当成已读。",
     "转写里的专名有多处同词异写。校正和保留的理由写在各节整理者说明里。拿不准的听写（humanize、go、Tibo、nguse、Gefa trend、mindstone）保持原样。",
     "讲师姓名蒋炎岩、南京大学计算机学院副教授、博士生导师，来自约 2222 秒的名片画面，口播没有自报全名。名片邮箱按画面写作 yanyanjiang@nju.edu.cn。录制水印「仙 I-107老师」不当作课程内容。"
   ],
@@ -147,7 +147,8 @@
         "约 100 秒的画面是 Yanyan's wiki for TOKEN：Morning Paper 区有一篇 arXiv cs.PL 的论文，标题为 A Simplified Layout Algebra for GPU Kernels，旁边还有 GitHub Trending。约 221 秒的实验要求页标题是「实现算力换智力的循环」：在 Agent 基本用法上增加一个 effort 选项，调节计算预算，用更多探索、查证和修改换更好的结果。同页写着，今天的 Agent 已能完成长程任务，但品味或解决问题方向的直觉仍待提升；有经验的 problem solver 会结合 breadth-first search 和 depth-first search，而 Agent 有时会沿着第一个想到的方案走到底。"
       ],
       "editor_notes": [
-        "口播「长城任务」按上下文记为长程任务；「breakfast」紧接着被他自己说成宽度优先；「Cloud Code」与后文 Claude Code 是同一产品；「GitHub training」与后文 trending 是同一件事。CSPR 没有在口播里展开，画面上的 Morning Paper 是 arXiv cs.PL 的 GPU kernel 论文，两边都保留。humanize、go、Tibo、OPUS 5.5 都按口播保留，没有改成别的拼写或版本号。"
+        "口播「长城任务」按上下文记为长程任务；「breakfast」紧接着被他自己说成宽度优先；「Cloud Code」与后文 Claude Code 是同一产品；「GitHub training」与后文 trending 是同一件事。CSPR 没有在口播里展开，画面上的 Morning Paper 是 arXiv cs.PL 的 GPU kernel 论文，两边都保留。humanize、go、Tibo、OPUS 5.5 都按口播保留，没有改成别的拼写或版本号。",
+        "官方讲义页是 https://jyywiki.cn/GSE/2026/lect8.md （gse-lect8），slides 是 https://jyywiki.cn/GSE/2026/slides8.html （gse-slides8）。slides 里紫色、带标记的句子是页面上的 AIGC 批注。后面若干静态讲义页换成了官方 slides 原页；演示、终端和黑板仍用视频帧。"
       ],
       "frames": [
         {
@@ -271,26 +272,34 @@
         "理论上，给一个足够好的模型一个 bash 或 Python 工具，就可以让它去造芯片、证明黎曼猜想。他想象把自己蒸馏进去：给他一个 bash，他能做的事似乎都能做，编辑文档、看文档。早期 Unix 还没有今天的图形界面，Knuth 还在写 The Art of Computer Programming 的时候，那些人就是在 shell 里和工具交互。所以你可以想象它做任何事。他接着把这句话收住：现在的模型还没有万能到和最好的人一样好，所以需要 agent loop。讲义上同一句判断旁边还有半句：尤其是目前品味还有点难学。"
       ],
       "examples": [
-        "约 641 秒的《开始：构建原型》写着：无论如何，在某个时刻都应该开始；构建一个符合当前 spec 的原型；Let it fail，但看看做出了什么。同页还有莱特兄弟的例子：1901 年，滑翔机的升力仅达设计的 1/3；他们随后自建风洞，重新测量翼型的升阻力。页上标注失败让他们重新检查设计所依据的数据，并写了 NASA。口播没有把这个例子念出来。",
+        "约 641 秒的《开始：构建原型》写着：无论如何，在某个时刻都应该开始；构建一个符合当前 spec 的原型；Let it fail，但看看做出了什么。同页还有莱特兄弟的例子：1901 年，滑翔机的升力仅达预测的 1/3；他们随后自建风洞，重新测量翼型的升阻力。页上标注失败让他们重新检查设计所依据的数据，并写了 NASA。口播没有把这个例子念出来。",
         "约 701 秒的 Agent Loop 页列着 ChatGPT、AutoGPT、Devin、Claude Code，并写 AI 越来越自主。理论上，「足够好」的模型给一个 bash tool 就够了，可以去造芯片、证明黎曼猜想。下一行问：如果模型还没有「万能」到和最好的人一样呢？下面写尤其是目前品味还有点难学。"
       ],
       "editor_notes": [
-        "口播 let it feel，提纲和原型页写的是 Let it fail。mindstone 只按口播保留，讲义产品名单里没有这个词，名单是 ChatGPT、AutoGPT、Devin、Claude Code。O one 记为 o1；breadthurs / deadthurs 是宽度优先和深度优先；share 记为 shell；立马猜想记为黎曼猜想；克鲁特记为 Knuth。"
+        "口播 let it feel，提纲和原型页写的是 Let it fail。mindstone 只按口播保留，讲义产品名单里没有这个词，名单是 ChatGPT、AutoGPT、Devin、Claude Code。O one 记为 o1；breadthurs / deadthurs 是宽度优先和深度优先；share 记为 shell；立马猜想记为黎曼猜想；克鲁特记为 Knuth。",
+        "NASA 页面写的是：按 Lilienthal 数据预测，1901 年滑翔机只产生了三分之一的升力；他们先做了自行车对比，再自建风洞重测升力和阻力（nasa-wright-1901）。slides 上写的是「升力仅达预测的 1/3」，是这句的压缩。这个链接在 slides 的 AIGC 批注里。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000640867.jpg",
-          "time": 640.867,
-          "caption": "讲义《开始：构建原型》。可见应开始、构建符合当前 spec 的原型、Let it fail。另有 1901 年莱特兄弟例子：升力仅达设计的 1/3，随后自建风洞；页上有 NASA。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-02.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 2,
+          "related_time": 640.867,
+          "caption": "页题「开始：构建原型」。无论如何，在某个时刻我们都应该开始；构建一个符合当前 spec 的原型；Let it fail... 但看看我们做出了个什么。紫色 AIGC 批注：符合 spec 并不保证 spec 中的假设成立；1901 年莱特兄弟滑翔机的升力仅达预测的 1/3，随后自建风洞，链接 NASA。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v000700867.jpg",
-          "time": 700.867,
-          "caption": "讲义 Agent Loop：ChatGPT、AutoGPT、Devin、Claude Code；足够好的模型加一个 bash tool 就够，可以造芯片、证明黎曼猜想；同时又问模型是否还没有万能到和最好的人一样，并写目前品味还有点难学。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-03.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 3,
+          "related_time": 700.867,
+          "caption": "页题 Agent Loop。ChatGPT, AutoGPT, Devin, Claude Code，AI 越来越自主。理论上足够好的模型，给一个 bash tool 就够了，可以去造芯片、证明黎曼猜想。同时又问：如果模型还没有万能到和最好的人一样？尤其是目前品味还有点难学。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 e0 e1 x0 n0 n1 f0 f1"
     },
     {
       "title": "一百五十行：一个 bash 工具加一个循环",
@@ -429,22 +438,30 @@
         "约 1435 秒的《Ralph Loop》写：同一个任务、检查、修改，直到无法改进。引文 The prompt stays the same, but the world changes 标着 Huntley 的原文，并写每轮把工作区里的进展留给下一轮。代码是 while true; do，然后 cat PROMPT.md | claude -p，done。页底另写 while true 本身不会判断「无法改进」，何时停止需要另行约定。"
       ],
       "editor_notes": [
-        "口播没有说出 Geoffrey Huntley，这个名字在讲义页上。三行循环的具体写法以 1435 秒的讲义为准。rough 与 ralph 在后文混用，这里统一写成 Ralph，并在后文第一次出现脚本文件名时再按画面拼写。"
+        "口播没有说出 Geoffrey Huntley，这个名字在讲义页上。三行循环的具体写法以 1435 秒的讲义为准。rough 与 ralph 在后文混用，这里统一写成 Ralph，并在后文第一次出现脚本文件名时再按画面拼写。",
+        "ghuntley.com/ralph 上的循环是 while :; do cat PROMPT.md | claude-code ; done（ralph-huntley）。slides 写成 while true 和 claude -p。抓到的文章页没有 The prompt stays the same, but the world changes 这句英文；这句印在 slides 上，旁边的「Huntley 的原文」是 AIGC 批注。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v001375133.jpg",
-          "time": 1375.133,
-          "caption": "讲义《Ralph Wiggum Loop》：Geoffrey Huntley 借用《辛普森一家》里 Ralph Wiggum 的名字；有点笨、有点可爱，但从不放弃。旁边是这个角色的画像。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-04.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 4,
+          "related_time": 1375.133,
+          "caption": "页题 Ralph Wiggum Loop。Geoffrey Huntley 借用《辛普森一家》里 Ralph Wiggum 的名字，形容这个方法有点笨、有点可爱，但从不放弃。紫色 AIGC 把「命名的由来」链到 LinearB 访谈。旁边是这个角色的画像。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v001435133.jpg",
-          "time": 1435.133,
-          "caption": "讲义《Ralph Loop》：同一个任务、检查、修改，直到无法改进。引文 The prompt stays the same, but the world changes。代码框为 while true; do / cat PROMPT.md | claude -p / done。页底写 while true 本身不会判断无法改进。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-05.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 5,
+          "related_time": 1435.133,
+          "caption": "页题 Ralph Loop。同一个任务、检查、修改，直到无法改进。引文 The prompt stays the same, but the world changes。紫色 AIGC 标注 Huntley 的原文，并写每轮重新开始对话，进展通过工作区里的文件留给下一轮。代码是 while true; do / cat PROMPT.md | claude -p / done。页底：while true 本身不会判断无法改进，何时停止需要另行约定。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 e0 x1 x2 n0 n1 f0 f1"
     },
     {
       "title": "工作区是状态，一轮只迁一步",
@@ -505,10 +522,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v001675133.jpg",
-          "time": 1675.133,
-          "caption": "讲义 Everything Is a State Machine：Workspace = State, Agent = Transition。列出需求与文档、当前实现与测试、运行结果日志与 TODO。写每次开发都是状态迁移，版本控制让状态可分叉，长程任务依赖上一轮留下的状态。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-06.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 6,
+          "related_time": 1675.133,
+          "caption": "页题 Everything Is a State Machine。Workspace = State，Agent = Transition。状态包括需求与文档、当前部分实现与测试用例、运行结果日志与 TODO。每一次开发都是状态迁移。版本控制让状态可以分叉，并行任务之间的依赖仍需要协调。Long-horizon task：任务可以比任何一次会话都长，前提是下一轮能从留下的状态继续。"
         }
       ]
     },
@@ -682,10 +702,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v002564533.jpg",
-          "time": 2564.533,
-          "caption": "讲义《每次 Transition，都检查》。Ralph Loop 提示：每轮验证并评估；开发者不可信。Workspace = state，Agent = transition。好的状态要能构建、旧功能没坏、符合项目约定。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-07.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 7,
+          "related_time": 2564.533,
+          "caption": "页题「每次 Transition，都检查」。Ralph Loop 的关键提示：每轮都验证并评估结果；开发者不可信，自以为只改一点点不会有事。Workspace = state，Agent = transition。希望每个状态都是好的，就在每次 transition 时检查；没问题还可以直接发布。把「好」写成可执行条件：能构建、旧功能没坏、符合项目约定。"
         }
       ]
     },
@@ -752,22 +775,48 @@
         "约 2865 秒的 Hook-Based CI/CD 写：事件发生就执行指定动作。事件包括 commit、push、pull request。例子是 PR 新增提交时自动跑 Lint 和测试，并写 GitHub Actions 甚至可以养 Claude Code。本地 pre-commit 便于及时反馈，但可以被 --no-verify 跳过。远程检查要配合 required checks 和分支保护，失败才能真正阻止合并。"
       ],
       "editor_notes": [
-        "口播 pre-ARM、大圆模型，按上下文和后面出现的 PRE LM 记为大模型之前、大语言模型。点 GitHub 记为 .github。两千分钟是口播里的「好像」，没有在当页看到这个数字。Gefa trend 按口播保留，当页没有对应标题。get 点有点 cn 没有在画面上读成一个确定域名，笔记里只记为他所说的学校侧 git 服务。"
+        "口播 pre-ARM、大圆模型，按上下文和后面出现的 PRE LM 记为大模型之前、大语言模型。点 GitHub 记为 .github。两千分钟是口播里的「好像」，没有在当页看到这个数字。Gefa trend 按口播保留，当页没有对应标题。get 点有点 cn 没有在画面上读成一个确定域名，笔记里只记为他所说的学校侧 git 服务。",
+        "Fowler 与 Foemmel 2000 年 9 月 10 日的原文把一次成功构建写成五步：取出全部最新源码、每个文件从头编译、链接并部署、启动系统、跑测试，中间不要人插手（fowler-ci-2000）。文中的例子是约 20 万行、约 50 人、一天构建几十次，一次干净构建大约 15 分钟。这是那篇文章里的项目情况。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v002744533.jpg",
-          "time": 2744.533,
-          "caption": "讲义「祝贺你，发明了 CI/CD」。可见 1990 年代 Kent Beck / XP，2000 年 Fowler / Foemmel，2001 年 CruiseControl，2010 年 Humble / Farley。并区分 Continuous Integration、Continuous Delivery、Continuous Deployment。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-08.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 8,
+          "related_time": 2744.533,
+          "caption": "页题「祝贺你，发明了 CI/CD」。1990s：Kent Beck / XP 推动频繁集成。2000：Fowler / Foemmel 总结 CI；2001：Thoughtworks 开源 CruiseControl。2010：Humble / Farley 的《Continuous Delivery》把自动验证延伸到发布。CI：频繁集成到主干并自动构建、验证。Continuous Delivery：保持随时可发布，何时上线可以由人决定。Continuous Deployment：通过检查的变更自动上线。上述年份链接都在紫色 AIGC 批注里。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v002864533.jpg",
-          "time": 2864.533,
-          "caption": "讲义 Hook-Based CI/CD：commit、push、pull request 等事件上执行动作；PR 可自动跑 Lint 和测试；本地 pre-commit 可被 --no-verify 跳过；远程要有 required checks 和分支保护。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-09.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 9,
+          "related_time": 2864.533,
+          "caption": "页题 Hook-Based CI/CD。事件节点包括 commit、push、pull request。例子：PR 新增提交，自动运行 Lint 和测试，紫色 AIGC 链到 GitHub Actions 的 pull_request。括号里的正文链接是 Claude Code 的 GitHub Action。本地 pre-commit 便于及时反馈，但可以被 --no-verify 跳过。远程检查配合 required checks 和分支保护，失败才能阻止合并。后两句的文档链接在 AIGC 批注里。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-10.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 10,
+          "related_time": 3100,
+          "caption": "页题「简单的机制，琐碎的业务规则」。两个 PR 单独都绿，合起来却坏了：合并前验证最新组合，忙碌的主干可用 merge queue。测试偶发失败：谁负责修、允许重跑几次、何时隔离。生产故障要紧急修复：谁能 override，放行后如何留痕、补检查。新版本先部署、旧任务后完成：如何避免旧版覆盖新版，链到部署并发控制。今天只要 Spec 能表达清楚，Agent 可以写配置；失败怎么办、谁有权例外，仍要成为需求的一部分。merge queue 和部署并发的链接在 AIGC 批注里。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-11.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 11,
+          "related_time": 3280,
+          "caption": "页题「把 CI/CD 写成 Spec」。合并条件：CI 必须要求 Lint 通过、测试通过；PR 有新提交就重新检查；合并前验证它与最新主干的组合；检查失败就禁止合并，并把要求落实为分支保护，约束直接 push 和绕过检查的权限。发布条件：通过 CI 后根据 main 生成页面，部署到 github.io；main 更新后对这次提交重新跑 Lint、测试和页面构建；全部成功才部署这次构建的产物，失败则保留上一版。验收时故意制造一次 Lint 错误、一次测试失败，确认真的合不了、发不出。分支保护和 GitHub Pages 的链接在 AIGC 批注里。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 e0 e1 x3 x4 x5 x6 n0 n1 f0 f1 f2 f3"
     },
     {
       "title": "还要人维护，就把偏好写成过不了的检查",
@@ -823,22 +872,39 @@
         "他收束时回顾：Ralph Loop 以 workspace 为状态，用 git 选择下一步，过程中可以做 pre-commit、post-commit、pre-push、pre-merge。然后他说这就是 agent native 开发，并开始提到 OpenAI。"
       ],
       "editor_notes": [
-        "一千字、一千六百字、大约一百万上下文、十万行，都是口播里的数量级，不是同一条规则的两个官方阈值。20 KB 出现在讲义表格里。十亿只狗是他复述的那篇推文，不是课堂统计。"
+        "一千字、一千六百字、大约一百万上下文、十万行，都是口播里的数量级，不是同一条规则的两个官方阈值。20 KB 出现在讲义表格里。十亿只狗是他复述的那篇推文，不是课堂统计。",
+        "丰田 jidoka 只出现在 slides 第 12 页的 AIGC 批注里（toyota-tps）。口播没有讲丰田。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003464533.jpg",
-          "time": 3464.533,
-          "caption": "表格「把 Agent 的偏执变成可执行的约束」。20 KB 文档对文档字数预算；多余抽象对重复率和未使用代码；大重构对 Diff 预算；难读对 Lint、类型和复杂度上限；改测试对受保护的回归测试；关闭 CI 规则要指定人批准，批准者与开发者分离。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-12.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 12,
+          "related_time": 3400,
+          "caption": "页题「CI 在 Agentic AI 时代的含金量」。First Principle：开发者是不可信的。Agent 的偏执包括一写就是 20 KB 文档、事无巨细产生冗余、在不重要的细枝末节上过度反应、写出人类无法阅读的代码。如果项目还需要人共同维护，就必须强行阻止。正好：CI 阻止，Agent 修正。紫色 AIGC 把停线类比丰田的 jidoka，链到 Toyota Production System。负责修改代码的 Agent，不能单方面降低过关标准。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v003584533.jpg",
-          "time": 3584.533,
-          "caption": "讲义已切到 Harness engineering: leveraging Codex in an agent-first world。可见引文 We started with an empty git repository，以及环境、约束、反馈和验证机制。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-13.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 13,
+          "related_time": 3464.533,
+          "caption": "页题「把 Agent 的偏执变成可执行的约束」。表头是常见问题、自动检查、人工判断。20 KB 文档对文档字数预算和重复段落检查，人判断内容是否值得保留。堆细节、造多余抽象，对重复率和未使用代码，人判断抽象是否必要。小任务变成大重构，对改动范围白名单和 Diff 预算，人判断超出范围是否批准。代码能跑但读不懂，对 Lint、类型检查和复杂度上限，人做命名与设计审查。改测试让失败消失，对受保护的回归测试和测试删除告警，人判断行为变更是否合理。顺手关闭 CI 规则，对规则文件变更须指定人批准，批准者与开发者分离。页底：阈值按项目约定；CI 拦住可判定的问题，例外由人批准。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-14.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 14,
+          "related_time": 3584.533,
+          "caption": "顶栏仍是「Agent Native 开发」。正文第一行是链接 Harness engineering: leveraging Codex in an agent-first world，在 slides 正文，不是 AIGC 批注。引文 We started with an empty git repository。不用写代码了，但还需要环境、约束、反馈和验证机制。让 Agent 找得到、看得见：人类脑中的工程知识必须外部化，并组织成 Agent 能发现的版本化状态。AGENTS.md 做目录；设计、计划和决策放进仓库，按需查阅。让 Agent 能直接观察程序行为，而不是依赖人类描述结果。每份工作区能独立启动应用；Agent 自己操作页面、查日志、复现 bug。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 e0 e1 x14 n0 n1 f0 f1 f2"
     },
     {
       "title": "空仓库可以开工，公开的门控却不像全部",
@@ -879,7 +945,8 @@
         "约 3825 秒的讲义标题是「Agent Native 开发：把品味做成机制」。它写：把重要的架构品味转成可检查的规则，而不只是写在规范文档中；依赖方向用 linter 检查，报错直接包含修复指导；技术债不是等到代码无法维护才清理，后台 Agent 定期扫描偏离规则的代码，提交小规模修复 PR。下面一节 “What we're still learning” 写：Codex 公开出来的 CI 看起来并不是全部；文章未附该内部项目可直接复用的完整门控配置，文中明确提到了 lint、结构测试和 CI。"
       ],
       "editor_notes": [
-        "Calko 按 source map 泄露这段记为 Claude Code。codecs 记为 Codex。closed AI / CLOSE 的 AI 是他的说法，不是文章标题。三层的文件名以画面笔记为准，口播只说了 PR 快速门禁、main 全量、发布第三层。"
+        "Calko 按 source map 泄露这段记为 Claude Code。codecs 记为 Codex。closed AI / CLOSE 的 AI 是他的说法，不是文章标题。三层的文件名以画面笔记为准，口播只说了 PR 快速门禁、main 全量、发布第三层。",
+        "文章页面日期是 2026-02-11（openai-harness）。文章写了 minimal blocking merge gates，也没有附上可直接复用的工作流文件。口播里的 ClosedAI 是他确信公开文章背后还有一整套没写出来的门控；缺工作流文件只是文章这一侧能核对到的事实，不是他把 ClosedAI 定义成「没有附文件」。文章里的人数、PR 数和行数都不是口播数字。本次正文来自 Wayback 快照 20260212020647，因为直接打开 openai.com 当次没有拿到正文。"
       ],
       "frames": [
         {
@@ -889,12 +956,25 @@
           "caption": "终端笔记讨论 /Projects/codex/.github：第一层是每次提交都跑的快速门禁；第二层是合进 main 后的全量验证，并出现 postmerge；第三层是打 tag 发布。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v003824533.jpg",
-          "time": 3824.533,
-          "caption": "讲义「把品味做成机制」，并有 What we're still learning。写明文章没有附上可直接复用的完整门控配置，文中明确提到 lint、结构测试和 CI。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-15.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 15,
+          "related_time": 3824.533,
+          "caption": "页题「Agent Native 开发：把品味做成机制」。将重要的架构品味转化为可检查的规则，而不只是写在规范文档中。依赖方向用 linter 检查，报错信息直接包含修复指导。技术债不是等到代码无法维护才清理，而是持续进行小规模修复。后台 Agent 定期扫描偏离规则的代码，提交小规模重构 PR。紫色 AIGC「原文中的实践」链回同一篇 OpenAI 文章。What we’re still learning。ClosedAI: 什么都没有…… 同页 AIGC 说明：这里吐槽的是文章未附该内部项目可直接复用的完整门控配置；文中明确提到了 lint、结构测试和 CI。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-16.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 16,
+          "related_time": 3840,
+          "caption": "页题 Stripe Minions：哪些步骤需要 Agent？固定工序写进工作流。紫色 AIGC：Stripe 的 Minions Blueprint 混合两类节点。实现任务、修复 CI 失败由 Agent 决定怎么做；运行 linter、推送分支直接执行普通代码，不调用模型。完整 CI 最多跑两轮：先在本地修 lint，再推送、跑 CI；无法自动修复的失败，交给 Agent 再修一次。第二次推送、CI 后，分支交回人类审查；团队认为继续重试的收益会递减。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 e0 e1 x7 x8 n0 n1 f0 f1 f2"
     },
     {
       "title": "十六个 agent 会撞车，所以要有一张能看见的图",
@@ -928,16 +1008,30 @@
         "约 3885 秒的讲义标题就是「Anthropic：16 个 Agent 卡在同一个 Bug」。正文写 C 编译器实验里 16 个 Agent 协作编译 Linux 时却卡住，先撞上同一个 bug，重复修复、覆盖彼此的改动；并用 GCC 构造可以独立验证的子任务。"
       ],
       "editor_notes": [
-        "十六个 agent 编译 Linux 是讲义页和口播都有的例子。GCC 二分文件集是讲义上的补充，口播没有展开这套编译器实验的步骤。gawkbot 记为 Grokbot。"
+        "十六个 agent 编译 Linux 是讲义页和口播都有的例子。GCC 二分文件集是讲义上的补充，口播没有展开这套编译器实验的步骤。gawkbot 记为 Grokbot。",
+        "16 个 agent 撞上同一个 bug、用 GCC 缩小文件集，口播和 slides 都有前半句，GCC 的步骤在 slides 上。语言、费用、会话次数、锁文件和容器来自 Carlini 2026-02-05 的文章（anthropic-c-compiler），口播没有逐条念。StrongDM 的 scenario 和 DTU 在讲义页里，不在口播里。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003884533.jpg",
-          "time": 3884.533,
-          "caption": "讲义「Anthropic：16 个 Agent 卡在同一个 Bug」。C 编译器实验：16 个 Agent 协作编译 Linux 时卡住，撞上同一个 bug，重复修复并覆盖彼此改动。同页写可用 GCC 把失败缩小到文件子集，并提醒文件组合仍要一起检查。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-17.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 17,
+          "related_time": 3884.533,
+          "caption": "页题 Anthropic：16 个 Agent 卡在同一个 Bug。紫色 AIGC 链到 C 编译器实验。16 个 Agent 协作，开始编译 Linux 时却卡住了：大家先撞上同一个 bug，重复修复、覆盖彼此的改动。用 GCC 构造可以独立验证的子任务：大部分文件用 GCC 编译，只把不同子集交给新编译器；失败后把部分文件换回 GCC，逐步缩小导致失败的集合。不同 Agent 因而能修不同文件暴露的问题。仍需检查文件组合：有些文件分别过关，放在一起却失败。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-18.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 18,
+          "related_time": 3960,
+          "caption": "页题 StrongDM：把验收环境也造出来。测试全绿，也可能只是在改卷子。紫色 AIGC：Agent 会用 return true 应付狭窄测试，也会修改测试来迁就代码。把端到端用户故事做成 scenarios，常放在代码库之外。对含 Agent 的软件，统计多条执行轨迹中有多少可能满足用户。Digital Twin Universe：为 Slack、Okta 等造行为替身，模拟 API 和边界情况；先与真实服务对照、修正差异，再高频重放场景、模拟故障。课堂尝试写在同页 AIGC 里：让 Agent 开发选课系统，用替身复现最后一个名额被抢走、提交成功但响应丢失。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 e0 x9 x10 n0 n1 f0 f1"
     },
     {
       "title": "中文和英文要同时真，就做成三个兄弟文件",
@@ -1012,7 +1106,8 @@
         "约 4065 秒，终端在 /Projects/deepseek-harness。目录里能看到 apps、benchmarks、docs、packages、scripts、python，以及成对的 README、AGENTS.md、CLAUDE.md，还有带 i18n 的 yaml。约 4245 秒把三个兄弟画成 foo.md、foo.zh.md、foo.i18n.yaml，命令写着 pnpm run verify-translation-pairing。同一屏的引用信息标题是 Everything is a Plugin，author 为 DeepSeek-AI，年份 2026，仓库写着 github.com/deepseek-ai/deepseek-harness。"
       ],
       "editor_notes": [
-        "口播有 deep sea、DeepSickHarmony、Dipsy Harnes、DIPSY 等多种听法。约 4065 秒的目录屏路径是 deepseek-harness，能看到带 i18n 的 yaml。hash 的具体十六进制没有抄进正文，避免看错字符。style samples 的文件名口播听成 style3 samples。"
+        "口播有 deep sea、DeepSickHarmony、Dipsy Harnes、DIPSY 等多种听法。约 4065 秒的目录屏路径是 deepseek-harness，能看到带 i18n 的 yaml。hash 的具体十六进制没有抄进正文，避免看错字符。style samples 的文件名口播听成 style3 samples。",
+        "仓库首页 README 写着开发者预览，会有不兼容变更，并要求 agent 遵循 AGENTS.md（deepseek-harness-repo）。引用块的标题、作者和年份与约 4245 秒画面上的 Everything is a Plugin、DeepSeek-AI、2026 一致。本次只读了首页 README。"
       ],
       "frames": [
         {
@@ -1027,7 +1122,8 @@
           "time": 4244.567,
           "caption": "三个兄弟文件示意为 foo.md、foo.zh.md、foo.i18n.yaml。命令为 pnpm run verify-translation-pairing。引用标题 Everything is a Plugin，DeepSeek-AI，2026，github.com/deepseek-ai/deepseek-harness。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 e0 x12 n0 n1 f0 f1"
     },
     {
       "title": "配对契约是项目早期长出来的",
@@ -1269,38 +1365,159 @@
         "约 5805 秒才把 Friendster 写成一页：扩容遇上架构边界，迅速吸引大量用户，随后延迟、宕机频发，在竞争中掉队。亲历工程师复盘：单主库带多个完整副本，每个副本都要重放写入，I/O 压力导致复制延迟，署名 Dathan Pattishall，2006。工程师提出按用户分片，但内部环境使方案无法推进，容量问题的根因没有解决。这套设计后来在 Flickr 落地。课堂推论：及时重构既要看清架构，也需要组织有能力改变它。口播只有「迅速吸引大量用户，然后架构崩溃」这一层。"
       ],
       "editor_notes": [
-        "ops 五点五、开头的 OPUS5.5 都按口播保留，不改成别的模型号。DPC 哈尼斯记为 deepseek-harness。Wi-Fi 是口播，正文只写成客户端 UI，不改成选定画面上没有逐字读清的脚本名。学而思的一百万和一千万、Friendster 之后被扶起，都是他的说法。Webvan、Quibi、Pattishall 2006 和 Flickr 只出现在讲义页，口播没有念这些细节。"
+        "ops 五点五、开头的 OPUS5.5 都按口播保留，不改成别的模型号。DPC 哈尼斯记为 deepseek-harness。Wi-Fi 是口播，正文只写成客户端 UI，不改成选定画面上没有逐字读清的脚本名。学而思的一百万和一千万、Friendster 之后被扶起，都是他的说法。Webvan、Quibi、Pattishall 2006 和 Flickr 只出现在讲义页，口播没有念这些细节。",
+        "2000 年年报里，低于原设计容量 40% 的是 distribution center；同一段里 CFC 是低于 70%（webvan-10k）。现金流盈利对应的原句是：至今没有一个 Webvan 设施在现金流意义上变得盈利。2001 年 7 月 13 日 Chapter 11 写在 2004 年 12 月 1 日的 SEC 12(j) 程序里（webvan-sec-order），不是年报正文。这个 SEC 链接在 slides 的 AIGC 批注里。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v005384567.jpg",
-          "time": 5384.567,
-          "caption": "讲义《真正的经验》：很难凭空想出；真实负载和异常会暴露隐藏的设计假设。Garbage collection 无法解决所有问题。失败用来理解架构该往哪改。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-20.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 20,
+          "related_time": 5384.567,
+          "caption": "页题「真正的经验」。很难凭空想出。紫色 AIGC：真实的负载、依赖和异常，会暴露原型里隐藏的设计假设。及时重构。Garbage collection 无法解决所有问题：持续清理技术债，也可能一直在维护一个已经失效的设计假设。失败使你理解架构的修正方向。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005444567.jpg",
-          "time": 5444.567,
-          "caption": "讲义《一个社会性的威胁》。Webvan：2000 年配送中心负载不足设计容量的 40%，2001 年 7 月破产。Quibi：2020 年关停。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-22.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 22,
+          "related_time": 5444.567,
+          "caption": "页题「一个社会性的威胁」。不做很多次、见很多个，就不可能做好。好的想法会 slop 化，最后产品失败。Webvan：网上买菜，仓配设施与订单规模失配。紫色 AIGC：2000 年报披露配送中心负载不足设计容量的 40%，尚无设施实现现金流盈利，链到公司年报；2001 年 7 月申请破产，链到 SEC 记录；课堂推论是订单密度不足时，重资产扩张会让每一轮试错更贵。Quibi：精品短视频。2020 年宣布关停；管理层认为构想不足以支撑独立流媒体服务与推出时机，可能共同造成失败，链到官方告别信。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005504567.jpg",
-          "time": 5504.567,
-          "caption": "讲义《推论》：没有 token 就没有很多次尝试的机会。学习动机和学习能力并提。同页写「现代新大学出现之前，被斩杀的一代」。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-23.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 23,
+          "related_time": 5504.567,
+          "caption": "页题「推论」。没有 token，就没有做很多次尝试的机会。紫色 AIGC：课堂推论是实践机会的差距会积累成判断力的差距。学习好的设计同时需要很强的学习动机和学习能力。同页写着：这不就斩杀了吗…… 现代新大学出现之前，被斩杀的一代。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005804567.jpg",
-          "time": 5804.567,
-          "caption": "讲义 Friendster：重放写入的多副本导致复制延迟，Dathan Pattishall，2006。分片方案当时推不动，类似设计后来在 Flickr 落地。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/slide-21.jpg",
+          "source_label": "官方 slides（页码为 slides JSON 下标 + 1，不是 PDF 印刷页） https://jyywiki.cn/GSE/2026/slides8.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+          "page": 21,
+          "related_time": 5804.567,
+          "caption": "页题 Friendster：重构没赶上用户离开。紫色 AIGC：社交网络先驱迅速吸引大量用户，随后延迟、宕机频发，在竞争中掉队，链到创始人访谈。亲历工程师复盘：单主库带多个完整副本，每个副本都要重放写入；I/O 压力导致复制延迟。署名 Dathan Pattishall，2006。工程师提出按用户分片，但内部环境使方案无法推进；容量问题的根因没有解决。这套设计后来在 Flickr 落地。课堂推论：及时重构既需要看清架构，也需要组织有能力改变它。"
         }
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 p5 e0 e1 e2 x11 x13 n0 n1 f0 f1 f2 f3"
     }
   ],
-  "supplements": [],
-  "bridges": {},
+  "supplements": [
+    {
+      "title": "1901 年升力只有预测的三分之一",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://www.grc.nasa.gov/WWW/k-12/airplane/wrights/test1901.html",
+      "text": "nasa-wright-1901。NASA Glenn 的 Wright 1901 Wind Tunnel Tests 写：1900 与 1901 年的滑翔机飞得没有预测好；按测量，1901 年的飞机只产生了用 Lilienthal 数据所预测升力的 1/3。他们接着怀疑升力和阻力公式里的 Smeaton 系数（常用 0.005，他们从飞行估计更接近 0.0033），但这仍解释不了全部差距。自行车轮上的小翼模型已经显示出升力低于 Lilienthal 数据，只是街上的风不好控制，所以 1901 年秋他们做了风洞，用自行车铺的材料做了一两百个翼型模型，先粗测，再挑约 30 个做参数试验。slides 第 2 页把这段压成「升力仅达预测的 1/3，随后自建风洞」。这是 AIGC 批注里的例子，口播没有念。"
+    },
+    {
+      "title": "Ralph 每一轮都重新装进同一份提示",
+      "source_label": "讲义页正文所引 Ralph 原文，非课堂口述",
+      "source_url": "https://ghuntley.com/ralph/",
+      "text": "ralph-huntley。Geoffrey Huntley 的文章标题是 Ralph Wiggum as a \"software engineer\"。页面上的循环是 while :; do cat PROMPT.md | claude-code ; done。他写每一轮都把计划（@fix_plan.md）和规格重新放进上下文；他在文中用大约 170k 的上下文窗口说明：规格每次都重新占用窗口，不跨轮复用。测试被他当成 backpressure。因为下一轮是新的上下文，他要求 Ralph 把测试在测什么、为什么重要写出来，否则下一轮不知道上一轮的判断。TODO 做完或跑偏时，他多次删掉 TODO 列表，把取舍留在自己手里。文章没有写 while true 会自己判断「无法改进」。slides 上的 claude -p 和那句 The prompt stays the same, but the world changes，以 slides 页面为准；抓到的这篇文章 HTML 里没有这句英文。"
+    },
+    {
+      "title": "Ralph 这个名字是怎么来的",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://linearb.io/dev-interrupted/podcast/inventing-the-ralph-wiggum-loop",
+      "text": "linearb-ralph-podcast。slides 第 4 页的「命名的由来」指向 LinearB 播客 Inventing the Ralph Wiggum Loop。本次读的是网页上的文字转写，没有播放音频。转写 00:06:04 附近，Huntley 说这个方法有点笨、有点可爱、从不放弃，所以叫 Ralph Wiggum；他也说 ralph 有「想吐」的意思，因为他已经看到软件会在自己睡觉时被做出来。slides 上的「有点笨、有点可爱，但从不放弃」和这句对得上。播客其余部分不在本次阅读范围内。"
+    },
+    {
+      "title": "2000 年：成功的构建要自己跑完测试",
+      "source_label": "讲义页正文所引 2000 年 CI 原文，非课堂口述",
+      "source_url": "https://martinfowler.com/articles/originalContinuousIntegration.html",
+      "text": "fowler-ci-2000。Martin Fowler 与 Matthew Foemmel，2000 年 9 月 10 日，Continuous Integration (original version)。页面注明这篇文章已被更新版取代。他们把成功构建定义成：从配置库取出全部最新源码，每个文件从头编译，链接并部署，启动系统，跑测试；任一步要人插手，或者有测试失败，就不算成功。他们自己的 BVT 大约 150 个测试类。主构建在一台叫 Trebuchet 的机器上轮询仓库，大约每几分钟看一次，检出「五分钟之前」的版本，以免截到别人提交到一半；用 Ant 做干净构建，约 20 万行大约 15 分钟。构建完给刚提交的人发邮件，他们把「提交后还没收到这封邮件就走」当成不好的习惯。集成频率上，他们写一天构建几十次，并主张开发者大约每天提交一次。漏过 BVT 的 bug，规则是先补一个会失败的测试再改。这些数字是文中那个 Thoughtworks 项目的情况。讲义用这篇文章支持「每天多次、可重复的自动构建和测试」。"
+    },
+    {
+      "title": "CI 年表在两页资料里各写了一截",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://martinfowler.com/articles/continuousIntegration.html",
+      "text": "fowler-ci-history、thoughtworks-history、cd-2010-intro。slides 第 8 页的年份链接都在 AIGC 批注里。Fowler 后来的长文只读了「Where did Continuous Integration come from」和文末致谢：他写 CI 作为实践是 Kent Beck 在 1990 年代随极限编程发展出来的，当时常见的是发布前才集成；Microsoft 的每日构建缺少这套测试和立刻修缺陷的要求；Grady Booch 只在一句话里用过这个词，没有把它做成实践。同一篇致谢说 CruiseControl 是第一种 CI 服务，但没有在读到的段落里写 2001。Thoughtworks 的 history 页在 2001 年下写了 Released CruiseControl open source software，并在 2010 年下写了出版 Continuous Delivery。Jez Humble 2010 年 2 月 2 日的短文把书的主线说成自动化和协作，核心模式是 deployment pipeline：每次提交触发构建，再走过后续环境；当时书还是 Safari 上的 Rough Cuts。slides 把这三件事排成 1990s / 2000 / 2001 / 2010。2000 年那篇的作者和日期以 fowler-ci-2000 为准。"
+    },
+    {
+      "title": "两个 CD：随时能发，和每次都发",
+      "source_label": "讲义页正文所引两种 CD 的说明，非课堂口述",
+      "source_url": "https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/",
+      "text": "cd-vs-deployment。Jez Humble，2010 年 8 月 13 日，Continuous Delivery vs Continuous Deployment。他写 deployment 不等于 release：可以持续部署到 UAT。Continuous deployment 是把每一个通过自动测试的变更发布给用户，他觉得更准确的名字也许是 continuous release。Continuous delivery 则把发布节奏交给业务：软件在整个生命周期里都保持可以发布，任何一次构建都能用全自动过程在几秒到几分钟内交给用户。做到 delivery 并不必然做到 deployment，反过来 deployment 包含 delivery。他列的完成条件包括：对包含该故事的构建跑完整套测试，在接近生产的环境里给客户看过，并且没有挡住上线的障碍，容量、可用性和安全性也测过。嵌入式软硬件绑在一起、或商业上不想同时维持太多已发布版本，都可以成为不每次都发给用户的业务理由。讲义用的就是这个区分：Delivery 保持可发布、上线可以由人决定；Deployment 把通过检查的变更自动发布。"
+    },
+    {
+      "title": "检查要挡得住合并，部署不要互相覆盖",
+      "source_label": "讲义页所链的 GitHub 分支保护文档；其余钩子、队列和部署链接在官方 slides AIGC 批注，非课堂口述",
+      "source_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "text": "gh-branch-protection、git-hooks、gh-actions-events、gh-deploy-concurrency、gh-pages-workflows、claude-code-action。分支保护文档写：可以要求状态检查通过才允许合并；strict 表示合并前分支必须包含最新主干，因此别人更新主干后要重新构建。默认这些限制不约束仓库管理员和带 bypass branch protections 的角色，除非打开 Do not allow bypassing the above settings。Require merge queue：PR 先通过保护规则，再进入队列；队列把这个 PR 应用到最新主干以及排在它前面的 PR 上，再跑必选检查。Git 文档写 pre-commit 在 git commit 写提交之前运行，非 0 就中止提交，并且可以被 --no-verify 跳过。Actions 文档写 pull_request 默认在 opened、synchronize、reopened 时触发；对可合并的 PR，GITHUB_REF 指向 merge 分支，actions/checkout 默认检出的是与基线合并后的结果，所以测试跑的是合并结果，不只是 PR 自己的头。有合并冲突时，pull_request 工作流不会跑，要先解决冲突。若使用 merge queue，工作流还要加上 merge_group，否则 PR 进队列时必选检查不会被触发，合并会失败。部署文档写：同一个 concurrency group 同时只跑一个作业；示例里，组里已有作业在跑时，新的会停在 pending，并取消其他 pending。另有 cancel-in-progress: true，用来取消同组里正在跑的那一个。Pages 的自定义工作流是先用 Actions 构建，再用 upload-pages-artifact 上传产物再部署；「失败则保留上一版」是 slides 第 11 页写的验收条件，这页文档没有用这句话。slides 第 9 页正文括号里的链接是 Marketplace 上的 Claude Code GitHub Integration，说明文字是用 Claude Code 按 issue 和 PR 评论改代码、做 PR review，并写明它不是 GitHub 官方认证的 Action。"
+    },
+    {
+      "title": "空仓库里的人改的是环境和反馈",
+      "source_label": "讲师口述并在课堂上打开的 OpenAI 文章；讲义页与官方 slides 正文都给出了同一链接",
+      "source_url": "https://web.archive.org/web/20260212020647id_/https://openai.com/index/harness-engineering/",
+      "text": "openai-harness。文章标题 Harness engineering: leveraging Codex in an agent-first world，作者 Ryan Lopopolo，页面日期 2026 年 2 月 11 日。本次读的是 Wayback 2026-02-12 快照，因为 openai.com 当次停在等待页。文章说过去五个月用 Codex 做内部 beta：应用逻辑、测试、CI、文档、可观测性和内部工具都由 Codex 写，人手写代码是 0 行；他们估计大约是手写时间的 1/10。第一笔提交在 2025 年 8 月下旬，初始骨架由 Codex CLI 用 GPT-5 和少量模板生成，最初的 AGENTS.md 也是 Codex 写的。五个月后仓库大约一百万行，大约 1500 个 PR，先是 3 名工程师驱动，后来 7 名；按 3 人算大约每人每天 3.5 个 PR。产品有内部日活和外部 alpha，内部用户到数百人。他们把一次评审循环叫做 Ralph Wiggum Loop：Codex 本地自审，再要本地和云上的 agent 评审，直到这些评审满意。AGENTS.md 被当成目录而不是百科，大约 100 行，知识放在 docs/ 的 design-docs、exec-plans、product-specs 等目录，由 linter 和 CI 检查交叉链接，另有 doc-gardening agent 提修复 PR。每个 git worktree 能单独启动应用，并通过 Chrome DevTools Protocol 看 DOM、截图和导航；日志和指标在该 worktree 的临时栈里，用 LogQL 和 PromQL 查询。文中的例子提示包括服务启动在 800ms 以内、四条关键路径上没有 span 超过两秒。单次 Codex 运行常见到六小时。架构约束是每个业务域只能沿 Types、Config、Repo、Service、Runtime、UI 向前依赖，横切如 auth 和 telemetry 从 Providers 进入，用定制 linter 和结构测试执行，报错里写修复说明。他们还静态检查结构化日志、命名和文件大小。合并哲学写成 minimal blocking merge gates，PR 短命，flaky 测试常用后续运行处理，而不是无限堵住。早期每周五用 20% 的时间清 AI slop，后来改成后台任务按「golden principles」提小重构 PR，多数不到一分钟看完。文末写：这套端到端行为依赖这个仓库的结构和工具，至少目前不能假设换一个仓库就成立；他们还不知道全由 agent 生成的系统在多年后架构会怎样。分层图没有单独打开原图，顺序按正文。这些数字是这一篇内部实验的自述。slides 第 15 页的吐槽，文章侧对应的事实是：门控被写成散文（lint、结构测试、偏少的阻塞合并门），没有附上可直接拿走的工作流文件。"
+    },
+    {
+      "title": "固定工序不要交给模型",
+      "source_label": "讲义页正文所引 Stripe 工程文章，非课堂口述",
+      "source_url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "text": "stripe-minions。Alistair Gray，日期 2026.2.19，Minions: Stripe’s one-shot, end-to-end coding agents—Part 2。文中说当时每周有超过 1300 个 PR 完全由 minion 产出、由人评审、里面没有人手写的代码，这个数字高于 Part 1 时的 1000。Blueprint 是写在代码里的工作流：一类节点跑 agent，一类节点只跑普通代码。示例里 Implement task 和 Fix CI failures 是 agent；Run configured linters 和 Push changes 不调用模型。本地先在 lint 节点上转，再推送；推送后跑一轮完整 CI，能自动修的失败就自动修，不能自动修的退回 agent 再修一次。第二次推送和 CI 之后，分支交回人。他们把理由写成：完整 CI 的轮次再增加，边际收益会下降，同时消耗 token、算力和时间。环境是标准化、可替换的 EC2 devbox，错误被限制在一台 devbox 里，所以 agent 以完整权限跑、不再要人类确认。规则文件按子目录或文件模式附上，避免一份全局规则先塞满上下文；他们用 Cursor 的规则格式，并同步给 Claude Code。内部 MCP 层 Toolshed 当时近 500 个工具，minion 默认只拿其中一小套。devbox 在 QA 环境，接触不到真实用户数据和生产服务。口播没有讲 Stripe。讲义用它说明：已经确定的步骤写成程序，模型留在需要选择的步骤上，重试要有次数。"
+    },
+    {
+      "title": "16 个编译器 agent 怎样才不再修同一个 bug",
+      "source_label": "讲师口述了 16 个 agent 撞车；步骤、费用和限制来自 Anthropic 工程文章，非口播逐条",
+      "source_url": "https://www.anthropic.com/engineering/building-c-compiler",
+      "text": "anthropic-c-compiler。讲义链接的 /engineering/building-c-compiler 打开后落在 /research/building-c-compiler，标题 Building a C compiler with a team of parallel Claudes，Nicholas Carlini，2026 年 2 月 5 日。他让 16 个 agent 从零写一个 Rust 的 C 编译器，目标是能编译 Linux。将近 2000 次 Claude Code 会话、API 费用 2 万美元，得到约 10 万行编译器，能构建 Linux 6.9 的 x86、ARM 和 RISC-V。实现是 clean-room：开发期间 Claude 没有网络，只依赖 Rust 标准库。并行时每个 agent 在自己的 Docker 里克隆仓库，做完再推回 upstream。为避免同时抢同一件事，agent 在 current_tasks/ 写一个文本文件当锁，例如 parse_if_statement.txt；冲突时第二个 agent 改领别的任务。做完后拉取、合并、推送、释放锁。编译 Linux 时所有 agent 会撞上同一个错误并互相覆盖。他的测试改成：大部分内核文件仍用 GCC，只把一个子集交给新编译器；内核能启动就说明问题不在这个子集，失败就把子集里的一部分换回 GCC，从而把失败缩小到不同文件，不同 agent 可以修不同文件。子集都能单独通过之后，仍要用 delta debugging 找「分开能过、放在一起失败」的文件对。限制写在文中：没有自己的 16 位 x86 代码生成来引导实模式，这一段调用 GCC；x86 的汇编器和链接器在演示里仍用 GCC，生成代码即使开优化也不如关掉优化的 GCC。ARM 和 RISC-V 可以不用这段 GCC。他把外层循环写成 while true，里面用 claude --dangerously-skip-permissions -p 读 AGENT_PROMPT.md，并说见过 Ralph-loop 的人会觉得眼熟。他也写这仍是早期原型：agent 之间没有别的通信，没有编排 agent。口播讲到的是 16 个 agent 编译 Linux 时撞车、重复修、互相覆盖。"
+    },
+    {
+      "title": "测试在仓库里，就可能被改成永远能过",
+      "source_label": "讲义页正文所引 StrongDM 工程自述，非课堂口述",
+      "source_url": "https://factory.strongdm.ai/",
+      "text": "strongdm、strongdm-dtu。StrongDM Software Factory 写：在加上测试之前，非交互的 agent 开发走不远；加上之后，agent 会用 return true 应付写得很窄的测试，测试放在代码库里时，也可能被改成迎合实现。他们把 scenario 定义成端到端用户故事，常常放在代码库之外，类比训练集之外的 holdout。对本身含有 agent 的软件，他们不用「测试全绿」这一个布尔值，而用 satisfaction：在所有 scenario 的已观察轨迹里，有多大比例看起来满足用户。Digital Twin Universe 那一页写：他们做了 Okta、Jira、Slack、Google Docs、Drive、Sheets 的行为替身，复制 API、边界和可观察行为。做法是在边界上仿行为，用 API 契约和观察到的边界情况做 test double，再拿真实依赖对照，直到不再发现行为差异。页上的使用方式包括每小时数千个 scenario、不碰真实服务的速率限制和 API 费用、重放同一组条件。讲义把「最后一个名额被抢走」「提交成功但响应丢失」写成迁到选课系统的练习，这两句是讲义的迁移，不是 StrongDM 页面上的实验。口播没有讲 StrongDM。"
+    },
+    {
+      "title": "Friendster 的副本每个都要重放全部写入",
+      "source_label": "讲义页正文所引 2006 年复盘，非课堂口述",
+      "source_url": "https://mysqldba.blogspot.com/2006/11/unorthodox-approach-to-database-design.html",
+      "text": "friendster-2006、wired-friendster。Dathan Pattishall，2006 年 11 月，Unorthodox approach to database design。他画的 Friendster 后端是单主库加多从库：主库上的 SQL 写进日志，从库再执行同一条 SQL。读不够就加从库，但每条写入都要在每个从库重放。I/O 不够时复制延迟变大。他写当时用户产生的数据大约 500GB，范围查询进一步吃掉 I/O。他要的改法是按用户把数据分到不同服务器，每台只持有一个 shard，再把每个 shard 放进复制环做备份，读写钉在环里的同一台，这样复制延迟不会直接被用户看见。文中说因为 Friendster 内部的动荡，这个设计没能推进；同一设计后来在 Flickr 使用。评论里有人问跨 shard 的好友页怎么查，帖子正文没有给出查询方案。slides 第 21 页 AIGC 另外链到 2007 年 Wired 对 Jonathan Abrams 的访谈。读到的访谈谈的是他后来的 Socializr、种子轮不到 100 万美元，以及钱多了更容易做无关的事；那篇不是这套复制和分片的工程复盘。口播只说到 Friendster 用户涨得快然后架构崩溃。"
+    },
+    {
+      "title": "仓配和短视频：想法落到订单和独立产品上",
+      "source_label": "讲义页正文所引年报与告别信；破产日期的 SEC 链接在官方 slides AIGC 批注，非课堂口述",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1092657/000101287001001485/0001012870-01-001485.txt",
+      "text": "webvan-10k、webvan-sec-order、quibi-letter。Webvan 2000 年报（数据截止 2000 年 12 月 31 日）写：按当时的日订单量，系统没有在接近设计容量处被验证过。CFC 设施当时低于其原设计容量的 70%，distribution center 低于原设计容量的 40%。配送中心的原设计容量在文中写为每天 8000 单，CFC 为每天 2500 单，实际日均订单显著低于这两者，也低于设施达到盈利所需的水平。同一风险因素写：To date no Webvan facility has become profitable on a cash-flow basis。截至 2000 年 12 月 31 日累计赤字 6.127 亿美元，该年净亏损 4.533 亿美元。年报没有写 2001 年破产。slides 第 22 页 AIGC 的 SEC 链接打开的是 2004 年 12 月 1 日的行政程序 File No. 3-11760，对象包括 Webvan Group, Inc.（WBVNQ）。其中指控：WBVNQ 于 2001 年 7 月 13 日向特拉华区破产法院（District of Delaware）申请 Chapter 11。同一份程序里，向加州北区申请 Chapter 11 的是另一家公司 JTS，不是 Webvan。这是一份关于拖欠定期报告、拟按交易所法第 12(j) 条处理的程序，不是破产申请书本身。Quibi 的告别信在 Medium 上当次被 Cloudflare 挡住，读的是 Wayback 2020-10-22。信中宣布结束业务并出售内容和技术资产，并写失败很可能是两个原因之一：想法本身不足以支撑一个独立的流媒体服务，或者推出时机。信里把这两点写成管理层的判断，没有写成实验结论。讲义对 Webvan 的工程提炼是：订单密度没有验证时，仓配会把一次判断错误变贵；对 Quibi 的提炼是：有内容和技术不等于用户需要一个独立服务。"
+    },
+    {
+      "title": "deepseek-harness 首页把插件写成架构",
+      "source_label": "讲师口述并在课堂上打开的仓库 README",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness",
+      "text": "deepseek-harness-repo。2026-10-28 读到的仓库首页 README：DeepSeek Harness（dsh）是 DeepSeek AI 的开源 agent harness，架构是 everything-is-a-plugin，底层是 Cordis。文档站写着 https://deepseek-harness.github.io/deepseek-harness/ 。首页标明 developer preview，会有不兼容变更，并要求先看安全说明。从源码运行的命令是 git clone、pnpm install、pnpm run build、pnpm dsh web。给 agent 的入口是 AGENTS.md。引用块为 title DeepSeek Harness: Everything is a Plugin，author DeepSeek-AI，year 2026，howpublished 即这个 GitHub 地址。首页文件名里同时有 README.md、README.zh.md 和 README.i18n.yaml，和课堂上的三文件配对是同一类结构。本次没有通读仓库里的脚本和门禁实现；课堂上念到的 1960、2400 和 verify-* 数量仍以当时的画面为准。"
+    },
+    {
+      "title": "jidoka：异常出现就停线",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://global.toyota/en/company/vision-and-philosophy/production-system/",
+      "text": "toyota-tps。Toyota Production System 页面把 jidoka 写成两根支柱之一，另一根是 Just-in-Time。页面的解释是：机器或作业出现异常时，设备自己停，或者人拉停线绳让线停下来，避免缺陷继续往下流；andon 亮起，人只在异常时过去。页面把 jidoka 解释成 automation with a human touch，并追溯到丰田佐吉的自动织机：机器自己判断，从而同时减少次品和看守机器的人。slides 第 12 页用它类比「CI 阻止，Agent 修正」：异常就停，而不是等一批做完再查。这是 AIGC 批注，口播没有讲丰田。页面没有讨论软件 CI。"
+    }
+  ],
+  "bridges": {
+    "x0": "这页 AIGC 用 1901 年的风洞说明：原型失败之后，要回到设计所依据的数据。",
+    "x1": "课堂的 while true 是循环的骨架；Huntley 原文把每一轮要重新装进上下文的东西写得更具体。",
+    "x2": "slides 上那句「有点笨、有点可爱，但从不放弃」，可以在播客转写里找到对应的原话。",
+    "x3": "课堂说每天多次自动构建和测试；2000 年原文写的是怎样才算一次成功的构建。",
+    "x4": "slides 上的 1990 年代、2001 和 2010，分别落在三份资料里，不都在 2000 年那一篇。",
+    "x5": "两个 CD 的差别，Humble 在这篇里用「随时可以发」和「每次都发给用户」分开。",
+    "x6": "口播的钩子要能挡住合并；这些文档写的是分支保护、合并队列和部署并发具体挡在哪里。",
+    "x7": "课堂上的空仓库和 ClosedAI，对应的是这篇文章自己写出的约束，以及它没有附上的配置。",
+    "x8": "哪些步骤不调用模型、CI 为什么只再给一轮，文章里有一套他们正在用的分法。",
+    "x9": "口播停在 16 个 agent 撞同一个 bug；文章补的是怎样把失败拆开，以及编译器仍然依赖 GCC 的地方。",
+    "x10": "开发者不可信如果只靠仓库里的测试，StrongDM 写了 agent 会把测试也改掉。",
+    "x11": "口播的「架构崩溃」，在 2006 年复盘里是主库写入要在每个副本上重放。",
+    "x12": "slides 上的 40% 和 Quibi 的两个原因，可以回到年报原句和告别信原句。",
+    "x13": "课堂上克隆下来觉得组织奇怪；首页 README 把这种组织和插件、AGENTS.md 写在一起。",
+    "x14": "CI 阻止、Agent 修正，slides 用停线作类比；类比的出处在丰田这页，不在口播里。"
+  },
   "self_test": [
     {
       "section": 1,

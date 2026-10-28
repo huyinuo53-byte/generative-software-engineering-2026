@@ -8,8 +8,10 @@
   },
   "scope": {
     "requested": "单课完整笔记 + 手绘图解 + 外部模型保真评测",
-    "materials": false,
-    "changes": []
+    "materials": true,
+    "changes": [
+      "增量补充官方讲义与推荐材料"
+    ]
   },
   "toolchain": {
     "baocut": null,
@@ -69,7 +71,8 @@
       "path": "notes.json",
       "depends_on": [
         "index",
-        "frames_used"
+        "frames_used",
+        "materials"
       ],
       "role": "notes"
     },
@@ -104,6 +107,14 @@
         "transcript",
         "frames_used"
       ]
+    },
+    {
+      "id": "materials",
+      "path": "materials.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "generated",
+      "basis": "讲义页、slides 逐页链接和转写口述材料的阅读登记"
     }
   ],
   "log": [
@@ -236,6 +247,36 @@
       "job_id": null,
       "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
       "evidence": "/private/var/folders/j6/0wknd5xs1sj5_xnqkgjdj8zm0000gn/T/tmp4616rgp9/html-check.json"
+    },
+    {
+      "at": "2026-10-28T05:03:12.828199+00:00",
+      "occurred_at": null,
+      "stage": "reading_materials",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "33 条材料已登记；validate_materials pending：swebench-paper、os2026-git-segment",
+      "evidence": "materials.json"
+    },
+    {
+      "at": "2026-10-28T05:03:12.847978+00:00",
+      "occurred_at": null,
+      "stage": "fidelity_eval",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: precision 0.9894, recall 0.9853；writer grok-4.7-high，reviewer/answerer/grader gpt-6.1-sol",
+      "evidence": "fidelity-eval.json"
+    },
+    {
+      "at": "2026-10-28T05:03:12.867361+00:00",
+      "occurred_at": null,
+      "stage": "browser_check",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "passed: 390/1280px headless Chrome",
+      "evidence": "qa/html-check.json"
     }
   ],
   "issues": [],
@@ -315,10 +356,178 @@
         "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
       },
       "prev_sha256": null
+    },
+    {
+      "rev": 2,
+      "at": "2026-10-28T05:03:12.985686+00:00",
+      "reason": "增量补充官方讲义与推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "c05e8ba684c753d41ba4f67397ca868902d700b077410dffc43294f53a429d54",
+          "bytes": 4697691
+        },
+        "video": {
+          "path": "../raw/BV1kybV6DE47.mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "bytes": 256449121
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "a3ef44af54e2ef85dfe52d0c47f3784d31559c4c62f9834aab3eec70bf8e0bf4",
+          "bytes": 59166
+        },
+        "frames_index": {
+          "path": "frames/candidates.json",
+          "sha256": "05966d4db5bf35a9b9227fdd8584947d034ac03bd8e23dd91fc7795743aa6fa8",
+          "bytes": 11478
+        },
+        "frames_used": {
+          "path": "frames/used.json",
+          "sha256": "9555bde2c9567cf30387df6c11a0472c8fbae7a5ae7dbe4622d2bcb57e440058",
+          "bytes": 5140
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "d66f8d05387d23338cbe11986986c29602d7b137e0f3d01ec95f1bc3e96b728a",
+          "bytes": 155858
+        },
+        "visuals": {
+          "path": "visuals/index.json",
+          "sha256": "f1d7b3150a1d4f0fc67dc5f55c9274b4dd47979277e2a166efff73b42e7e999b",
+          "bytes": 1763
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "3f4807ea0e4622919cfc68f737840dc99a89231356a7c2bd5a89eda6227b8f8e",
+          "bytes": 11664794
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "bee46995b774e5b212c1fd83a7aefdb3a3bb18570da5a076b6ffcc940e8ef160",
+          "bytes": 65798
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "10e57fc8813030b16995dc758022eda849ffcd40b14f89af2863b09477547ed8",
+          "bytes": 55289
+        }
+      },
+      "issues": {},
+      "outcome": "partial",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9894,
+        "recall": 0.9853,
+        "precision_items": 142,
+        "recall_items": 34,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "b6e3a6128f837e44100bc2a95161f98488e978d8f31166d93869c966083e959b"
+    },
+    {
+      "rev": 3,
+      "at": "2026-10-28T06:42:26.419004+00:00",
+      "reason": "补读上一轮未取得的推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "c05e8ba684c753d41ba4f67397ca868902d700b077410dffc43294f53a429d54",
+          "bytes": 4697691
+        },
+        "video": {
+          "path": "../raw/BV1kybV6DE47.mp4",
+          "sha256": "fcede16cd375e2d371e5a4e67c64cf39c840754674677f4fb06cabdb23d91d6a",
+          "bytes": 256449121
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "a3ef44af54e2ef85dfe52d0c47f3784d31559c4c62f9834aab3eec70bf8e0bf4",
+          "bytes": 59166
+        },
+        "frames_index": {
+          "path": "frames/candidates.json",
+          "sha256": "05966d4db5bf35a9b9227fdd8584947d034ac03bd8e23dd91fc7795743aa6fa8",
+          "bytes": 11478
+        },
+        "frames_used": {
+          "path": "frames/used.json",
+          "sha256": "9555bde2c9567cf30387df6c11a0472c8fbae7a5ae7dbe4622d2bcb57e440058",
+          "bytes": 5140
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "8776ee5b87e5b6ed9b11126e968ffe2743a1ad07a7b6c2842dadfe5029e27739",
+          "bytes": 174328
+        },
+        "visuals": {
+          "path": "visuals/index.json",
+          "sha256": "f1d7b3150a1d4f0fc67dc5f55c9274b4dd47979277e2a166efff73b42e7e999b",
+          "bytes": 1763
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "137f822fdaf49a35d34bc8f5f7b0941e11d86719fbff155fb424f1b299cca3ae",
+          "bytes": 11683213
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "9e82e2c5953365dc0745acd2e0d7f68fba9b298c60c48d9552e093cfa4054f89",
+          "bytes": 67915
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "3389b74ec20f42e8a3722407084bbb746550ecdc6f7fc284bf1b2fa20110db7f",
+          "bytes": 60078
+        }
+      },
+      "issues": {},
+      "outcome": "partial",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9931,
+        "recall": 0.9853,
+        "precision_items": 144,
+        "recall_items": 34,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "abd8c199229b50099089e77a4d0e5e0f1a17f0703786a1b94badb7c76d58a4fd"
     }
   ],
   "status": {
     "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
-    "outcome": "completed"
+    "outcome": "partial",
+    "reading_materials": "pending",
+    "material_integration": "pending",
+    "known_gaps": [
+      "课外视频待用户确认是否处理。os2026-git-segment 仍为 blocked 且 required；这一轮没有下载、转写，也没有用 lect25 代替。",
+      "精度复核里 x0、x11 仍为 partial：域名/三个英文节名，以及材料编号 glab-cli，没有写进给评审的摘录。这两条文本本轮没有改。"
+    ]
   }
 }

@@ -1,0 +1,1431 @@
+{
+  "schema_version": 1,
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "course_term": "2026 秋季",
+  "checked_at": "2026-10-28T02:40:00-04:00",
+  "video_id": "BV1kybV6DE47",
+  "lecture_page": "https://jyywiki.cn/GSE/2026/lect3.md",
+  "slides_page": "https://jyywiki.cn/GSE/2026/slides3.html",
+  "mapping_note": "官网第3讲标题是「版本管理 (1)」，视频标题是「软件仓库管理」。按官网课次 lect3 与用户指定的 lect3.md / slides3.html 对应，不按播放列表 Part 编号。",
+  "expected_material_ids": [
+    "progit-about-vc",
+    "progit-history",
+    "progit-what-is-git",
+    "progit-objects",
+    "progit-branch-merge",
+    "progit-rebase",
+    "git-add",
+    "gitignore",
+    "cc-v1",
+    "cc-beta",
+    "git-best-practices",
+    "gh-manual",
+    "glab-cli",
+    "postgres-iso",
+    "jj-tutorial",
+    "jj-conflicts",
+    "jj-oplog",
+    "rfc8174",
+    "gnu-make-preparing",
+    "github-secrets",
+    "hpl-ch5",
+    "learn-git-branching",
+    "cs61a-code",
+    "swebench-harness",
+    "astropy-issue-12906",
+    "astropy-pr-12907",
+    "astropy-pr-files",
+    "swebench-paper",
+    "simon-1973",
+    "hundhausen-2002",
+    "chi-1989",
+    "swebench-hf",
+    "os2026-git-segment"
+  ],
+  "materials": [
+    {
+      "id": "progit-about-vc",
+      "listed_title": "Pro Git 2nd ed., 1.1 About Version Control",
+      "listed_url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+      "title": "Pro Git 2nd ed., 1.1 About Version Control",
+      "source_url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "slides 第7、11页 AIGC 批注指向这一节，作为本地/集中/分布式三代的直接来源。不是口头推荐。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/progit-about-vc.html",
+      "sha256": "9439cd879e4caecaa0d96a009b2c3f388159f531f1fb1da4472f4b304a5ed603",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第7、11页 AIGC 批注指向这一节，作为本地/集中/分布式三代的直接来源。不是口头推荐。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "1.1"
+      ],
+      "read_sections": [
+        "1.1"
+      ],
+      "scope_reason": "slides 第7、11页 AIGC 批注指向这一节，作为本地/集中/分布式三代的直接来源。不是口头推荐。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "Pro Git 1.1 正文",
+          "claim": "版本管理记录变化以便取回；RCS 用补丁，CVCS 有单点故障，DVCS 每个克隆有完整历史",
+          "role": "mechanism",
+          "note_target": "x0"
+        }
+      ]
+    },
+    {
+      "id": "progit-history",
+      "listed_title": "Pro Git 2nd ed., 1.2 A Short History of Git",
+      "listed_url": "https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git",
+      "title": "Pro Git 2nd ed., 1.2 A Short History of Git",
+      "source_url": "https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页正文和 slides 第12页 AIGC 都指向 Git 简史。口述 s-g466.1 点了 Pro Git 的名字，但说可以让 agent 看、不必自己读，所以不是『老师要求学生通读』。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/progit-history.html",
+      "sha256": "3e7975c91ac35625e67614b0026d14a0e604cff49bf55e52c272485aed445fe4",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页正文和 slides 第12页 AIGC 都指向 Git 简史。口述 s-g466.1 点了 Pro Git 的名字，但说可以让 agent 看、不必自己读，所以不是『老师要求学生通读』。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "1.2"
+      ],
+      "read_sections": [
+        "1.2"
+      ],
+      "scope_reason": "讲义页正文和 slides 第12页 AIGC 都指向 Git 简史。口述 s-g466.1 点了 Pro Git 的名字，但说可以让 agent 看、不必自己读，所以不是『老师要求学生通读』。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "Pro Git 1.2",
+          "claim": "1991–2002 补丁，2002 BitKeeper，2005 免费使用权被收回后 Linus 等人开发 Git",
+          "role": "mechanism",
+          "note_target": "x0"
+        }
+      ]
+    },
+    {
+      "id": "progit-what-is-git",
+      "listed_title": "Pro Git 2nd ed., 1.3 What is Git?",
+      "listed_url": "https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F",
+      "title": "Pro Git 2nd ed., 1.3 What is Git?",
+      "source_url": "https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "slides 第13页 AIGC「快照与提交」指向这一节，是快照模型的直接来源。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/progit-what-is-git.html",
+      "sha256": "dfdf4a1064223759039f8d50041c1e2119f3fd15e3febd3d55dc2c9cb04c02da",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第13页 AIGC「快照与提交」指向这一节，是快照模型的直接来源。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "1.3"
+      ],
+      "read_sections": [
+        "1.3"
+      ],
+      "scope_reason": "slides 第13页 AIGC「快照与提交」指向这一节，是快照模型的直接来源。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "Pro Git 1.3 Snapshots, Not Differences 与 The Three States",
+          "claim": "Git 存快照；未改文件只存链接；modified / staged / committed",
+          "role": "mechanism",
+          "note_target": "x0"
+        }
+      ]
+    },
+    {
+      "id": "progit-objects",
+      "listed_title": "Pro Git 2nd ed., 10.2 Git Objects",
+      "listed_url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects",
+      "title": "Pro Git 2nd ed., 10.2 Git Objects",
+      "source_url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页「Git 对象」指向这一节。范围停在 blob、tree、commit 的定义和例子，这是本课目录树模型的直接来源；对象打包不在本课范围。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/progit-objects.html",
+      "sha256": "f2286c7d25096ce435054125fe6eb8c8a7b110c5a7f2316e8f8c21a1c2b039ca",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页「Git 对象」指向这一节。范围停在 blob、tree、commit 的定义和例子，这是本课目录树模型的直接来源；对象打包不在本课范围。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "blob-tree-commit"
+      ],
+      "read_sections": [
+        "blob-tree-commit"
+      ],
+      "scope_reason": "讲义页「Git 对象」指向这一节。范围停在 blob、tree、commit 的定义和例子，这是本课目录树模型的直接来源；对象打包不在本课范围。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 16,
+          "location": "Pro Git 10.2 blob / tree / commit",
+          "claim": "blob 只存内容，tree 存文件名和模式，commit 指向顶层 tree 和父提交",
+          "role": "mechanism",
+          "note_target": "x13"
+        }
+      ]
+    },
+    {
+      "id": "progit-branch-merge",
+      "listed_title": "Pro Git 2nd ed., 3.2 Basic Branching and Merging",
+      "listed_url": "https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging",
+      "title": "Pro Git 2nd ed., 3.2 Basic Branching and Merging",
+      "source_url": "https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页和 slides 第10页 AIGC 指向这一节，用来说明冲突标记和 both modified。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/progit-branch-merge.html",
+      "sha256": "35fb4188f1da8fea4611944453351253d9b1b988fe61476ad3ecad762299276f",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第10页 AIGC 指向这一节，用来说明冲突标记和 both modified。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "3.2"
+      ],
+      "read_sections": [
+        "3.2"
+      ],
+      "scope_reason": "讲义页和 slides 第10页 AIGC 指向这一节，用来说明冲突标记和 both modified。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "Pro Git 3.2 Basic Merge Conflicts",
+          "claim": "冲突时不自动提交；status 显示 both modified；文件内有 <<<<<<< ======= >>>>>>>",
+          "role": "mechanism",
+          "note_target": "x1"
+        }
+      ]
+    },
+    {
+      "id": "progit-rebase",
+      "listed_title": "Pro Git 2nd ed., 3.6 Rebasing",
+      "listed_url": "https://git-scm.com/book/en/v2/Git-Branching-Rebasing",
+      "title": "Pro Git 2nd ed., 3.6 Rebasing",
+      "source_url": "https://git-scm.com/book/en/v2/Git-Branching-Rebasing",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页链接 rebase 章。课堂只说面试 0/10，没有展开。范围是基本定义和 The Perils of Rebasing，不含中间每个图示练习。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/progit-rebase.html",
+      "sha256": "2627ece261e1aea13a90e7f98da70e3149c989ee7e7be5a355a3e4f5290aa78d",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页链接 rebase 章。课堂只说面试 0/10，没有展开。范围是基本定义和 The Perils of Rebasing，不含中间每个图示练习。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "basic-rebase",
+        "perils"
+      ],
+      "read_sections": [
+        "basic-rebase",
+        "perils"
+      ],
+      "scope_reason": "讲义页链接 rebase 章。课堂只说面试 0/10，没有展开。范围是基本定义和 The Perils of Rebasing，不含中间每个图示练习。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "Pro Git 3.6 The Basic Rebase 与 The Perils of Rebasing",
+          "claim": "rebase 是重放 diff；不要 rebase 已经公开、别人可能基于它工作的提交",
+          "role": "mechanism",
+          "note_target": "x1"
+        }
+      ]
+    },
+    {
+      "id": "git-add",
+      "listed_title": "git-add(1)",
+      "listed_url": "https://git-scm.com/docs/git-add",
+      "title": "git-add(1)",
+      "source_url": "https://git-scm.com/docs/git-add",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页和 slides 第15页 AIGC 指向该手册，要回答的是 add 之后又修改会提交哪一版。范围是 DESCRIPTION，不是选项大全。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/git-add.html",
+      "sha256": "eaf67a93d2ad75a6ef948b7895369ea53fc9c95165a3e46029211d2ab36a5fe0",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第15页 AIGC 指向该手册，要回答的是 add 之后又修改会提交哪一版。范围是 DESCRIPTION，不是选项大全。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "DESCRIPTION"
+      ],
+      "read_sections": [
+        "DESCRIPTION"
+      ],
+      "scope_reason": "讲义页和 slides 第15页 AIGC 指向该手册，要回答的是 add 之后又修改会提交哪一版。范围是 DESCRIPTION，不是选项大全。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "git-add DESCRIPTION",
+          "claim": "commit 提交的是 add 当时放进 index 的内容；之后的修改要再次 add",
+          "role": "mechanism",
+          "note_target": "x2"
+        }
+      ]
+    },
+    {
+      "id": "gitignore",
+      "listed_title": "gitignore(5)",
+      "listed_url": "https://git-scm.com/docs/gitignore",
+      "title": "gitignore(5)",
+      "source_url": "https://git-scm.com/docs/gitignore",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页和 slides 第18页 AIGC 指向该手册。范围是『已跟踪文件不受影响』以及模式放在哪里，不是每一条示例。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/gitignore.html",
+      "sha256": "c0706ab4dcc72d87519a2fb62a515b9210f224c6e21400b5f094b29bd110ea2f",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第18页 AIGC 指向该手册。范围是『已跟踪文件不受影响』以及模式放在哪里，不是每一条示例。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "DESCRIPTION",
+        "PATTERN-FORMAT",
+        "NOTES"
+      ],
+      "read_sections": [
+        "DESCRIPTION",
+        "PATTERN-FORMAT",
+        "NOTES"
+      ],
+      "scope_reason": "讲义页和 slides 第18页 AIGC 指向该手册。范围是『已跟踪文件不受影响』以及模式放在哪里，不是每一条示例。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "gitignore DESCRIPTION 与 NOTES",
+          "claim": "已跟踪文件不受 gitignore 影响；停止跟踪要用 git rm --cached",
+          "role": "mechanism",
+          "note_target": "x3"
+        }
+      ]
+    },
+    {
+      "id": "cc-v1",
+      "listed_title": "Conventional Commits 1.0.0",
+      "listed_url": "https://www.conventionalcommits.org/en/v1.0.0/",
+      "title": "Conventional Commits 1.0.0",
+      "source_url": "https://www.conventionalcommits.org/en/v1.0.0/",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页链接 1.0.0。口述 s-g1152.0 说今天可以找到这个很短的标准。这是明确指向的规格，但是 1.0.0，不是现场 slides 打开的 beta。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/cc-v1.html",
+      "sha256": "1f02d0f99e4a830daafa4cc75d92e1fe4aef50984c6c398aabd50d7c1214091f",
+      "recommendation_kind": "explicit_recommendation",
+      "recommendation_basis": "讲义页链接 1.0.0。口述 s-g1152.0 说今天可以找到这个很短的标准。这是明确指向的规格，但是 1.0.0，不是现场 slides 打开的 beta。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "1.0.0"
+      ],
+      "read_sections": [
+        "1.0.0"
+      ],
+      "scope_reason": "讲义页链接 1.0.0。口述 s-g1152.0 说今天可以找到这个很短的标准。这是明确指向的规格，但是 1.0.0，不是现场 slides 打开的 beta。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "Conventional Commits 1.0.0 Specification",
+          "claim": "1.0.0 允许任何类型带 BREAKING CHANGE，并可用 ! ；beta 没有叹号这条",
+          "role": "mechanism",
+          "note_target": "x8"
+        }
+      ]
+    },
+    {
+      "id": "cc-beta",
+      "listed_title": "Conventional Commits 1.0.0-beta",
+      "listed_url": "https://www.conventionalcommits.org/en/v1.0.0-beta/",
+      "title": "Conventional Commits 1.0.0-beta",
+      "source_url": "https://www.conventionalcommits.org/en/v1.0.0-beta/",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "slides 第24页正文链接就是这个 beta URL。口述的类型、冒号、空格与这一版规格一致。范围是 Summary 和 Specification，不是整站导航。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/cc-beta.html",
+      "sha256": "aa2da41edaaff35e09ad58079cd8d4ae716d069920c76914d90ea18d4c5b67b1",
+      "recommendation_kind": "explicit_recommendation",
+      "recommendation_basis": "slides 第24页正文链接就是这个 beta URL。口述的类型、冒号、空格与这一版规格一致。范围是 Summary 和 Specification，不是整站导航。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "beta-specification"
+      ],
+      "read_sections": [
+        "beta-specification"
+      ],
+      "scope_reason": "slides 第24页正文链接就是这个 beta URL。口述的类型、冒号、空格与这一版规格一致。范围是 Summary 和 Specification，不是整站导航。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "Conventional Commits 1.0.0-beta Specification",
+          "claim": "必须以 type 开头，冒号后有空格；BREAKING CHANGE 写在正文或页脚开头，且限于 fix 或 feat",
+          "role": "mechanism",
+          "note_target": "x8"
+        }
+      ]
+    },
+    {
+      "id": "git-best-practices",
+      "listed_title": "Commit Often, Perfect Later, Publish Once",
+      "listed_url": "https://sethrobertson.github.io/GitBestPractices/",
+      "title": "Commit Often, Perfect Later, Publish Once",
+      "source_url": "https://sethrobertson.github.io/GitBestPractices/",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "slides 第25页正文和讲义页链接此文，作为 commit / reflog 的直接来源。范围是开篇、Do commit early and often、Don’t panic。Don’t change published history 等节未读，不纳入。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/git-best-practices.html",
+      "sha256": "b22016524eef644ee283d990fd210ad63596a919b871832b4d7f486f555e2c95",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第25页正文和讲义页链接此文，作为 commit / reflog 的直接来源。范围是开篇、Do commit early and often、Don’t panic。Don’t change published history 等节未读，不纳入。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "opening",
+        "commit-early",
+        "dont-panic"
+      ],
+      "read_sections": [
+        "opening",
+        "commit-early",
+        "dont-panic"
+      ],
+      "scope_reason": "slides 第25页正文和讲义页链接此文，作为 commit / reflog 的直接来源。范围是开篇、Do commit early and often、Don’t panic。Don’t change published history 等节未读，不纳入。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "Git Best Practices: Do commit early and often; Don’t panic",
+          "claim": "不提交则 Git 不负责；丢失后先保护现场，再查 reflog、fsck、stash",
+          "role": "mechanism",
+          "note_target": "x9"
+        }
+      ],
+      "out_of_scope_note": [
+        "Don’t change published history 及之后各节未读"
+      ]
+    },
+    {
+      "id": "gh-manual",
+      "listed_title": "GitHub CLI manual",
+      "listed_url": "https://cli.github.com/manual/",
+      "title": "GitHub CLI manual",
+      "source_url": "https://cli.github.com/manual/",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页和 slides 第29页 AIGC 指向手册首页。范围是首页对 gh 的定义和 gh auth login，不是每条子命令。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/gh-manual.html",
+      "sha256": "238c1496d53d0d1a52e9bb80072d8d45a1fb79a8be2054310589f66d5c3fc4e5",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第29页 AIGC 指向手册首页。范围是首页对 gh 的定义和 gh auth login，不是每条子命令。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "overview"
+      ],
+      "read_sections": [
+        "overview"
+      ],
+      "scope_reason": "讲义页和 slides 第29页 AIGC 指向手册首页。范围是首页对 gh 的定义和 gh auth login，不是每条子命令。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "GitHub CLI manual 概述",
+          "claim": "gh 是在终端或脚本里使用的 GitHub 命令行界面",
+          "role": "mechanism",
+          "note_target": "x11"
+        }
+      ]
+    },
+    {
+      "id": "glab-cli",
+      "listed_title": "GitLab CLI (glab)",
+      "listed_url": "https://docs.gitlab.com/cli/",
+      "title": "GitLab CLI (glab)",
+      "source_url": "https://docs.gitlab.com/cli/",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页和 slides 第29页 AIGC 指向 glab 文档首页。范围是首页对 glab 能做的 issue、MR、CI 的说明。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/glab.html",
+      "sha256": "857df8d3f4fb99c1b52da695a3f445ad8048308d2abdb7f6d37a9ace6a6f4fc5",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第29页 AIGC 指向 glab 文档首页。范围是首页对 glab 能做的 issue、MR、CI 的说明。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "overview"
+      ],
+      "read_sections": [
+        "overview"
+      ],
+      "scope_reason": "讲义页和 slides 第29页 AIGC 指向 glab 文档首页。范围是首页对 glab 能做的 issue、MR、CI 的说明。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "GitLab CLI 首页",
+          "claim": "glab 把 issue、merge request 和 CI pipeline 带到终端",
+          "role": "mechanism",
+          "note_target": "x11"
+        }
+      ]
+    },
+    {
+      "id": "postgres-iso",
+      "listed_title": "PostgreSQL 13.2. Transaction Isolation",
+      "listed_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+      "title": "PostgreSQL 13.2. Transaction Isolation",
+      "source_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页和 slides 第33、34页 AIGC 指向这一节，用来对照快照与可串行化。整节已读。页面没有 write skew 一词。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/postgres-iso.html",
+      "sha256": "42a64110b076015643e964bb1bc4e72a4143111916376e4e12991e4b6980c8e9",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第33、34页 AIGC 指向这一节，用来对照快照与可串行化。整节已读。页面没有 write skew 一词。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "13.2"
+      ],
+      "read_sections": [
+        "13.2"
+      ],
+      "scope_reason": "讲义页和 slides 第33、34页 AIGC 指向这一节，用来对照快照与可串行化。整节已读。页面没有 write skew 一词。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 21,
+          "location": "PostgreSQL 13.2 Repeatable Read 与 Serializable",
+          "claim": "Repeatable Read 是快照隔离；Serializable 会因读写依赖中止其中一个事务。文档未使用 write skew",
+          "role": "mechanism",
+          "note_target": "x12"
+        }
+      ]
+    },
+    {
+      "id": "jj-tutorial",
+      "listed_title": "Jujutsu Tutorial",
+      "listed_url": "https://docs.jj-vcs.dev/latest/tutorial/",
+      "title": "Jujutsu Tutorial",
+      "source_url": "https://docs.jj-vcs.dev/latest/tutorial/",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页和 slides 第34页 AIGC 指向教程，用来说明稳定的 change ID。范围是教程中 change ID 与 commit ID 的定义，不是后续练习。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/jj-tutorial.html",
+      "sha256": "4d31cc7840bf64421ce8c5642747d89f65b7329b9efbdc30a5c5d7aee9fba0d3",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第34页 AIGC 指向教程，用来说明稳定的 change ID。范围是教程中 change ID 与 commit ID 的定义，不是后续练习。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "change-id"
+      ],
+      "read_sections": [
+        "change-id"
+      ],
+      "scope_reason": "讲义页和 slides 第34页 AIGC 指向教程，用来说明稳定的 change ID。范围是教程中 change ID 与 commit ID 的定义，不是后续练习。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 21,
+          "location": "Jujutsu Tutorial: Changes",
+          "claim": "change ID 在修改和 rebase 后保持不变，commit ID 会变",
+          "role": "mechanism",
+          "note_target": "x12"
+        }
+      ]
+    },
+    {
+      "id": "jj-conflicts",
+      "listed_title": "Jujutsu First-class conflicts",
+      "listed_url": "https://docs.jj-vcs.dev/latest/conflicts/",
+      "title": "Jujutsu First-class conflicts",
+      "source_url": "https://docs.jj-vcs.dev/latest/conflicts/",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页和 slides 第34页 AIGC 指向冲突模型。该页正文已读。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/jj-conflicts.html",
+      "sha256": "4b9195fefd12e9d3c47e34ddef950ce23ae334af574a0db903b85e1527f3ef32",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第34页 AIGC 指向冲突模型。该页正文已读。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "conflicts"
+      ],
+      "read_sections": [
+        "conflicts"
+      ],
+      "scope_reason": "讲义页和 slides 第34页 AIGC 指向冲突模型。该页正文已读。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 21,
+          "location": "Jujutsu conflicts 页",
+          "claim": "冲突可以记在提交里，标记只在物化到工作副本时出现",
+          "role": "mechanism",
+          "note_target": "x12"
+        }
+      ]
+    },
+    {
+      "id": "jj-oplog",
+      "listed_title": "Jujutsu Operation log",
+      "listed_url": "https://docs.jj-vcs.dev/latest/operation-log/",
+      "title": "Jujutsu Operation log",
+      "source_url": "https://docs.jj-vcs.dev/latest/operation-log/",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页和 slides 第34页 AIGC 指向操作日志。该页关于 undo 和无锁并发的正文已读。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/jj-oplog.html",
+      "sha256": "850e7eeac2fa3df179b89cc5a89d7b0f7fd68d1ef9c0f22e0554290a86521b03",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第34页 AIGC 指向操作日志。该页关于 undo 和无锁并发的正文已读。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "oplog"
+      ],
+      "read_sections": [
+        "oplog"
+      ],
+      "scope_reason": "讲义页和 slides 第34页 AIGC 指向操作日志。该页关于 undo 和无锁并发的正文已读。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 21,
+          "location": "Jujutsu operation log",
+          "claim": "jj undo / jj op restore；并发命令从最新操作装载，冲突事后可见",
+          "role": "mechanism",
+          "note_target": "x12"
+        }
+      ]
+    },
+    {
+      "id": "rfc8174",
+      "listed_title": "RFC 8174: Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words",
+      "listed_url": "https://www.rfc-editor.org/rfc/rfc8174",
+      "title": "RFC 8174: Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8174",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "slides 第20页 AIGC 用它类比大写关键词。它不是 Git 方法的原始论文，也不是口头推荐。全文 4 页已读。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/rfc8174.txt",
+      "sha256": "5ca0e2f90be0bc5928ee465f76518fee316dfa775aed885658a29a419cc293b7",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第20页 AIGC 用它类比大写关键词。它不是 Git 方法的原始论文，也不是口头推荐。全文 4 页已读。",
+      "required": false,
+      "reading_status": "full",
+      "scope_sections": [
+        "rfc8174"
+      ],
+      "read_sections": [
+        "rfc8174"
+      ],
+      "scope_reason": "slides 第20页 AIGC 用它类比大写关键词。它不是 Git 方法的原始论文，也不是口头推荐。全文 4 页已读。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 15,
+          "location": "RFC 8174 第2节",
+          "claim": "只有全大写的 MUST/SHOULD/MAY 才有 RFC 2119 的特殊含义",
+          "role": "mechanism",
+          "note_target": "x4"
+        }
+      ]
+    },
+    {
+      "id": "gnu-make-preparing",
+      "listed_title": "GNU Make: Preparing",
+      "listed_url": "https://www.gnu.org/software/make/manual/html_node/Preparing.html",
+      "title": "GNU Make: Preparing",
+      "source_url": "https://www.gnu.org/software/make/manual/html_node/Preparing.html",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "slides 第7页 AIGC 在 make submit 脚注旁链接这一页。它是 Make 手册的一页，不是课程提交命令的定义。该页已读完。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/gnu-make.html",
+      "sha256": "b3d4c53a7543f004992a97c70103b52074859a33a61888afc3bcd49cd873b83b",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第7页 AIGC 在 make submit 脚注旁链接这一页。它是 Make 手册的一页，不是课程提交命令的定义。该页已读完。",
+      "required": false,
+      "reading_status": "full",
+      "scope_sections": [
+        "preparing"
+      ],
+      "read_sections": [
+        "preparing"
+      ],
+      "scope_reason": "slides 第7页 AIGC 在 make submit 脚注旁链接这一页。它是 Make 手册的一页，不是课程提交命令的定义。该页已读完。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "GNU Make Preparing",
+          "claim": "这一页讲的是写 makefile 并用时间戳决定重编译，不定义 make submit",
+          "role": "mechanism",
+          "note_target": "n2"
+        }
+      ]
+    },
+    {
+      "id": "github-secrets",
+      "listed_title": "Removing sensitive data from a repository",
+      "listed_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository",
+      "title": "Removing sensitive data from a repository",
+      "source_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "slides 第18页 AIGC 用这一页支持『先轮换凭据』。范围是关于删除敏感数据和重写历史副作用的两节。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/github-secrets.html",
+      "sha256": "e1898bbf1ef022f7db6e44597ed75158785163c1b53dfe66883a9bd9cc043a08",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第18页 AIGC 用这一页支持『先轮换凭据』。范围是关于删除敏感数据和重写历史副作用的两节。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "about",
+        "side-effects"
+      ],
+      "read_sections": [
+        "about",
+        "side-effects"
+      ],
+      "scope_reason": "slides 第18页 AIGC 用这一页支持『先轮换凭据』。范围是关于删除敏感数据和重写历史副作用的两节。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "GitHub Docs: About removing sensitive data; Side effects",
+          "claim": "秘密应先撤销或轮换；重写历史改变后续哈希，且收不回别人的克隆",
+          "role": "mechanism",
+          "note_target": "x3"
+        }
+      ]
+    },
+    {
+      "id": "hpl-ch5",
+      "listed_title": "How People Learn (2000), chapter 5",
+      "listed_url": "https://www.nationalacademies.org/read/9853/chapter/5",
+      "title": "How People Learn (2000), chapter 5",
+      "source_url": "https://www.nationalacademies.org/read/9853/chapter/5",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "National Academies Press 页面，路径 /read/9853/chapter/5，标题 How Experts Differ from Novices。这是学习研究的背景引用，不是本课 Git 方法的原始来源，因此 required 为 false。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/hpl-ch5.html",
+      "sha256": "5cb5efe1f106cb90a0755787926af9406d00280f5309de14b2205301c79ec466",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第4页 AIGC 批注。这是学习研究的背景引用，不是本课 Git 方法的原始来源，因此 required 为 false。",
+      "required": false,
+      "reading_status": "full",
+      "scope_sections": [
+        "opening",
+        "meaningful-patterns",
+        "organization",
+        "context-and-access",
+        "fluent-retrieval",
+        "experts-and-teaching",
+        "adaptive-expertise",
+        "conclusion"
+      ],
+      "read_sections": [
+        "opening",
+        "meaningful-patterns",
+        "organization",
+        "context-and-access",
+        "fluent-retrieval",
+        "experts-and-teaching",
+        "adaptive-expertise",
+        "conclusion"
+      ],
+      "scope_reason": "slides 第4页 AIGC 指向 How People Learn 第5章，页面标题是 How Experts Differ from Novices。章内从六条原则到结论已读。页末参考文献表和网站按钮不是该章论证。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 6,
+          "location": "How People Learn 第5章：六条原则、知识组织、条件化知识与结论",
+          "claim": "专家的知识围绕核心概念组织；知识要带上适用条件，精通内容也不保证会教，不能只把专家做法摆给新手看",
+          "role": "mechanism",
+          "note_target": "x5"
+        }
+      ]
+    },
+    {
+      "id": "learn-git-branching",
+      "listed_title": "Learn Git Branching",
+      "listed_url": "https://learngitbranching.js.org/",
+      "title": "Learn Git Branching",
+      "source_url": "https://learngitbranching.js.org/",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "首页标题 Learn Git Branching。36 关的开场对白来自同一站点公开资源包，文件名与本地保存的 lgb.js 里的加载列表一致，摘录在 sources/readings/text/lgb-levels.txt。不是逐关玩完。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/lgb.html",
+      "sha256": "60542b56c8ce3aef3112ca08b0648227daead495ea67c1e98b191c5e5d6c7652",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第22页正文和讲义页把它当作对照用的模拟器。口述 s-g993.0 说它是模拟出来的模型。交互关卡在前端包里，没有逐关玩完，所以不把关卡对白写成已读。",
+      "required": false,
+      "reading_status": "full",
+      "scope_sections": [
+        "landing",
+        "level-openings"
+      ],
+      "read_sections": [
+        "landing",
+        "level-openings"
+      ],
+      "scope_reason": "slides 第22页正文和口述把它当作模拟器。已读首页自述，以及主包列出的 36 个关卡脚本里的英文开场对白。关卡后的逐步命令动画没有逐关操作；开场对白才是各关要教的话。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 19,
+          "location": "首页，以及 Introduction to Git Commits、The Staging Area、Rebase Introduction 的英文开场",
+          "claim": "开场把 commit 写成 snapshot，同时又写成可压缩成 delta；暂存区是后一关才讲，和课堂那一关没有 add 对得上",
+          "role": "mechanism",
+          "note_target": "x7"
+        }
+      ]
+    },
+    {
+      "id": "cs61a-code",
+      "listed_title": "61A Code",
+      "listed_url": "https://code.cs61a.org/",
+      "title": "61A Code",
+      "source_url": "https://code.cs61a.org/",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "2026-10-28 再次 GET https://code.cs61a.org/ ，Content-Length 405，标题 61A Code。另查看了公开的 /static/main.js 中的登录句，没有登录。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/cs61a.html",
+      "sha256": "5aa783baf9c17d17ecc3c15318816b5e5b57c661c8a0f9bf0bb4bd7571f3a58d",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第22页正文和讲义页把它当作『国模直出』的对照环境。页面是空的 IDE 壳，没有可阅读的课文。课堂里的汉诺塔和 Pico World 在视频里。",
+      "required": false,
+      "reading_status": "full",
+      "scope_sections": [
+        "landing-shell"
+      ],
+      "read_sections": [
+        "landing-shell"
+      ],
+      "scope_reason": "公开 URL 这次仍是 HTTP 200，正文 405 字节，只有标题 61A Code 和空的 initData。应用内作业要进页面加载的脚本之后才出现；脚本里的登录句是给课程工作人员分享代码用的。没有登录，也不绕过登录。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 19,
+          "location": "公开落地页",
+          "claim": "公开页没有课文，只有标题和一个空的 IDE 壳",
+          "role": "mechanism",
+          "note_target": "x7"
+        }
+      ]
+    },
+    {
+      "id": "swebench-harness",
+      "listed_title": "SWE-bench harness constants",
+      "listed_url": "https://www.swebench.com/SWE-bench/api/harness/",
+      "title": "SWE-bench harness constants",
+      "source_url": "https://www.swebench.com/SWE-bench/api/harness/",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页和 slides 第27页 AIGC 把『评测规则』指到 harness。范围是 FAIL_TO_PASS / PASS_TO_PASS 的定义和两个 compute 函数，不是生成出来的整站 API。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/swebench-harness.html",
+      "sha256": "0eeb7b9ecbf94fc9486cd7c949400ee1a8470dedac8512cb2f4ded8a122bd45c",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第27页 AIGC 把『评测规则』指到 harness。范围是 FAIL_TO_PASS / PASS_TO_PASS 的定义和两个 compute 函数，不是生成出来的整站 API。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "FAIL_TO_PASS",
+        "PASS_TO_PASS"
+      ],
+      "read_sections": [
+        "FAIL_TO_PASS",
+        "PASS_TO_PASS"
+      ],
+      "scope_reason": "讲义页和 slides 第27页 AIGC 把『评测规则』指到 harness。范围是 FAIL_TO_PASS / PASS_TO_PASS 的定义和两个 compute 函数，不是生成出来的整站 API。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "harness get_eval_tests_report",
+          "claim": "F2P 通过算解决，P2P 通过算保持原有通过",
+          "role": "mechanism",
+          "note_target": "x10"
+        }
+      ]
+    },
+    {
+      "id": "astropy-issue-12906",
+      "listed_title": "astropy issue 12906",
+      "listed_url": "https://github.com/astropy/astropy/issues/12906",
+      "title": "astropy issue 12906",
+      "source_url": "https://github.com/astropy/astropy/issues/12906",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "slides 第28页 AIGC 和讲义页指向这个 issue，是幻灯例子的原始报告。已读问题正文和矩阵例子。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/astropy-issue.html",
+      "sha256": "70d70ce3da6c889552aa0998c2260f450f041f274ef13f9090a25f18d2b97cce",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第28页 AIGC 和讲义页指向这个 issue，是幻灯例子的原始报告。已读问题正文和矩阵例子。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "issue-body"
+      ],
+      "read_sections": [
+        "issue-body"
+      ],
+      "scope_reason": "slides 第28页 AIGC 和讲义页指向这个 issue，是幻灯例子的原始报告。已读问题正文和矩阵例子。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "issue 12906 正文",
+          "claim": "嵌套 CompoundModel 后 separability_matrix 把两个线性模型标成互相依赖",
+          "role": "mechanism",
+          "note_target": "x10"
+        }
+      ]
+    },
+    {
+      "id": "astropy-pr-12907",
+      "listed_title": "astropy pull request 12907",
+      "listed_url": "https://github.com/astropy/astropy/pull/12907",
+      "title": "astropy pull request 12907",
+      "source_url": "https://github.com/astropy/astropy/pull/12907",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "讲义页和 slides 第28页 AIGC 指向这个 PR。已读作者说明、changelog 要求和 v5.0.x 回移记录。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/astropy-pr.html",
+      "sha256": "402f82a6f4495ace95d1ce1204bdf07a5344aab9b7a432ba9f3fb1377251cd10",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第28页 AIGC 指向这个 PR。已读作者说明、changelog 要求和 v5.0.x 回移记录。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "pr-discussion"
+      ],
+      "read_sections": [
+        "pr-discussion"
+      ],
+      "scope_reason": "讲义页和 slides 第28页 AIGC 指向这个 PR。已读作者说明、changelog 要求和 v5.0.x 回移记录。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "PR 12907 讨论",
+          "claim": "问题在 & 右侧又是复合模型；合并后回移到 v5.0.x，回移 PR 为 12918",
+          "role": "mechanism",
+          "note_target": "x10"
+        }
+      ]
+    },
+    {
+      "id": "astropy-pr-files",
+      "listed_title": "astropy pull request 12907 files",
+      "listed_url": "https://github.com/astropy/astropy/pull/12907/files",
+      "title": "astropy pull request 12907 files",
+      "source_url": "https://github.com/astropy/astropy/pull/12907/files",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "slides 第28页 AIGC『代码改动』指向文件页。已读 separable.py 的那一处 diff 和 changelog 句子。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/astropy-files.html",
+      "sha256": "21940111fb4bc249ce4cb4ddffaef9530aafc1310c5618ced526e50990fd98dd",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第28页 AIGC『代码改动』指向文件页。已读 separable.py 的那一处 diff 和 changelog 句子。",
+      "required": true,
+      "reading_status": "full",
+      "scope_sections": [
+        "separable.py"
+      ],
+      "read_sections": [
+        "separable.py"
+      ],
+      "scope_reason": "slides 第28页 AIGC『代码改动』指向文件页。已读 separable.py 的那一处 diff 和 changelog 句子。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "separable.py _cstack",
+          "claim": "右侧子块从赋值为 1 改成赋值为 right",
+          "role": "mechanism",
+          "note_target": "x10"
+        }
+      ]
+    },
+    {
+      "id": "swebench-paper",
+      "listed_title": "SWE-bench (arXiv:2310.06770)",
+      "listed_url": "https://arxiv.org/abs/2310.06770",
+      "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+      "source_url": "https://arxiv.org/pdf/2310.06770",
+      "version": "arXiv v3, 11 Nov 2024, ICLR 2024",
+      "identity_status": "verified",
+      "identity_note": "abs 页链接的论文。PDF 首页即 arXiv:2310.06770v3，ICLR 2024。slides 链接在 AIGC 批注。FAIL TO PASS 与 PASS TO PASS 的字段名在附录 A，不在先前读过的第 1–6 页和第 10 页。",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/readings/swebench.pdf",
+      "sha256": "f7e8e1df64129742b8199a21a042734519a823a1dafd6f48f8f3ddcfb48ee296",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第27页 AIGC 的『任务定义』指向这篇。",
+      "required": true,
+      "reading_status": "full",
+      "total_pages": 52,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "PDF 物理页 1–11 与附录 A（物理页 16–24）",
+          "claim": "2294 个任务；BM25 下 Claude 2 为 1.96%；一次任务算解决，当且仅当 FAIL TO PASS 与 PASS TO PASS 全部通过",
+          "role": "mechanism",
+          "note_target": "x10"
+        }
+      ],
+      "scope_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "scope_reason": "讲义页和 slides 第27页 AIGC 的「任务定义」指向基准如何从 issue 与 PR 建成，以及怎样算 Resolved。正文物理页 1–11 和附录 A（物理页 16–24）是这个定义。参考文献表、SWE-Llama 的训练超参、附录 C 起的额外结果表和提示词全文不是任务定义。"
+    },
+    {
+      "id": "simon-1973",
+      "listed_title": "The Structure of Ill Structured Problems",
+      "listed_url": "https://www.sciencedirect.com/science/article/pii/0004370273900118",
+      "title": "The Structure of Ill Structured Problems",
+      "source_url": "https://ojs.unbc.ca/index.php/design/article/download/1273/1090",
+      "version": "Artificial Intelligence 4 (1973) 181-201",
+      "identity_status": "verified",
+      "identity_note": "slides 原链接 ScienceDirect 这次仍返回 403，没有绕过。开放转载 PDF（UNBC 的 OJS 下载）21 页都读了。首页作者 Herbert A. Simon、标题、Artificial Intelligence 4 (1973) 181–201 与原链接一致。",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/readings/simon-oa.pdf",
+      "sha256": "b8bdb565a52b52ea332b9aa59dcd7bd1dd91053419bb6383aeb70db2ab598d47",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第2页 AIGC 脚注。它是设计问题边界的背景引用，不是本课版本管理方法的原始来源，故不是明确推荐，required 为 false。",
+      "required": false,
+      "reading_status": "full",
+      "total_pages": 21,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "scope_pages": null,
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "开放转载 PDF 全文，摘要与第 2–5 节",
+          "claim": "结构良好与结构不良的边界是 vague and fluid；问题是在准备给解题者时才被形式化，短时修订问题表征被他称为 feedback",
+          "role": "mechanism",
+          "note_target": "x6"
+        }
+      ]
+    },
+    {
+      "id": "hundhausen-2002",
+      "listed_title": "Hundhausen 等，2002",
+      "listed_url": "https://faculty.cc.gatech.edu/~stasko/papers/jvlc02.pdf",
+      "title": "A Meta-Study of Algorithm Visualization Effectiveness",
+      "source_url": "https://faculty.cc.gatech.edu/~stasko/papers/jvlc02.pdf",
+      "version": "Journal of Visual Languages and Computing 13 (2002) 259-290",
+      "identity_status": "verified",
+      "identity_note": "PDF 首页作者为 Hundhausen, Douglas, Stasko，与 slides 批注一致。",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/readings/hundhausen.pdf",
+      "sha256": "20f4d5fb271d884f449cece9eb79c3e5d3778833c015e5f54b5e2001bc9c2ba3",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第22页 AIGC。算法可视化效果的背景引用，不是 Git 对象模型的原始来源，required 为 false。",
+      "required": false,
+      "reading_status": "full",
+      "total_pages": 32,
+      "read_pages": [
+        1,
+        6,
+        7,
+        14,
+        15,
+        25,
+        26,
+        27,
+        28
+      ],
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 19,
+          "location": "PDF 物理页 1、6–7、14–15、25–28",
+          "claim": "24 项受控实验里 11 项显著、约 10 项不显著；只观看通常没有优势，活动形式比画面质量更要紧，作者对是否有效的回答是 qualified yes",
+          "role": "mechanism",
+          "note_target": "x7"
+        }
+      ],
+      "scope_pages": [
+        1,
+        6,
+        7,
+        14,
+        15,
+        25,
+        26,
+        27,
+        28
+      ],
+      "scope_reason": "slides 第22页 AIGC 引用的是元研究的总判断：怎样使用比画面展示了什么更影响效果。已读摘要、受控实验的范围、11/24 与约 10 项不显著的叙述、四种理论，以及第 6.1–6.4 节。逐项实验大表和参考文献不是这句批注所引用的判断。"
+    },
+    {
+      "id": "chi-1989",
+      "listed_title": "Chi et al. (1989)",
+      "listed_url": "https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog1302_1",
+      "title": "Self-Explanations: How Students Study and Use Examples in Learning to Solve Problems",
+      "source_url": "https://education.asu.edu/sites/g/files/litvpz656/files/lcl/chibassoklewisreimannglaser_0.pdf",
+      "version": "Cognitive Science 13 (1989) 145-182；ASU 公开 PDF，20 个物理页",
+      "identity_status": "verified",
+      "identity_note": "slides 原链接 Wiley 与 pdfdirect 这次仍是 403，没有伪装访问或解验证码。改用作者所在的亚利桑那州立大学 Mary Lou Fulton 学院公开 PDF。首页标题、作者 Chi、Bassok、Lewis、Reimann、Glaser，以及 Cognitive Science 13, 145–182 (1989) 与 DOI 10.1207/s15516709cog1302_1 所指的同一篇文章一致。",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/readings/chi-1989.pdf",
+      "sha256": "65506f4da574c4ff182abbc20f2f2ae968bfef6cfa344456fb2ef801e796c61f",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第9页 AIGC 把自我解释连到这篇。背景引用，不是口头推荐，required 为 false。打不开就不能写实验细节。",
+      "required": false,
+      "reading_status": "full",
+      "scope_reason": null,
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 7,
+          "location": "ASU PDF 物理页 1、5、8–15、17",
+          "claim": "Good 学生在例题上产生更多解释，并把动作连到课文里的原理；Poor 学生很少这样做。分组是事后按解题成绩切的，样本是 4 对 4",
+          "role": "mechanism",
+          "note_target": "x14"
+        }
+      ],
+      "total_pages": 20,
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "scope_pages": null,
+      "visual_checks": [
+        {
+          "page": 4,
+          "detail": "Figure 1 是绳子例题的步骤列表，正文写重量 W、三根绳子和 FA+FB+FC=0。"
+        },
+        {
+          "page": 9,
+          "detail": "Table 2 附近的正文写 Good 142 行对 Poor 21 行，学例题时间 13 分钟对 7.4 分钟。"
+        }
+      ]
+    },
+    {
+      "id": "swebench-hf",
+      "listed_title": "SWE-bench/SWE-bench dataset",
+      "listed_url": "https://huggingface.co/datasets/SWE-bench/SWE-bench",
+      "title": "SWE-bench/SWE-bench",
+      "source_url": "https://huggingface.co/datasets/SWE-bench/SWE-bench",
+      "version": null,
+      "identity_status": "verified",
+      "identity_note": "卡片标题是 SWE-bench/SWE-bench，并写 arXiv 2310.06770。摘要里的 2,294 对和页脚 Number of rows 2,519（test 约 2.29k 加 dev 225）同时出现，没有改成一个数。",
+      "kind": "web",
+      "path": "课堂笔记/sources/readings/swebench-hf.html",
+      "sha256": "b96c0ae66e9b7a7b185223d581b79e702a84b7fcd0b1ad0f53a138946852e0ef",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "AIGC 批注把任务实例指向数据集。任务定义已由论文和 harness 覆盖，数据集卡片不自动变成必读。required 为 false。",
+      "required": false,
+      "reading_status": "full",
+      "scope_reason": "slides 第28页 AIGC 指向这张数据集卡片。已读摘要、任务说明、语言和字段定义。Viewer 里被截断的逐行 diff 不是卡片要说明的任务定义。",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "数据集卡片的 Dataset Summary 与 Data Instances",
+          "claim": "摘要写 2,294 对；同一页又写 2,519 行，其中 dev 225。字段表里的 FAIL_TO_PASS 与后文「只含 problem_statement 和 base_commit」是卡片自己的两句话",
+          "role": "mechanism",
+          "note_target": "x15"
+        }
+      ],
+      "scope_sections": [
+        "dataset-summary",
+        "supported-tasks",
+        "languages",
+        "data-instances"
+      ],
+      "read_sections": [
+        "dataset-summary",
+        "supported-tasks",
+        "languages",
+        "data-instances"
+      ]
+    },
+    {
+      "id": "os2026-git-segment",
+      "listed_title": "操作系统课上讲 Git 的那一段",
+      "listed_url": "https://space.bilibili.com/202224425/lists/7587348",
+      "title": null,
+      "source_url": "https://jyywiki.cn/OS/2026/lect25.md",
+      "version": null,
+      "identity_status": "unverified",
+      "identity_note": "口述 s-g878.0~5 是明确但带『可能会』的推荐，指向操作系统课里讲 Git 的一段，没有给视频号。2026 秋操作系统播放列表是上面的 B 站列表。lect25.md 标题为文件系统 API，其中把 Git 写成持久化数据结构，和本课『只讲一个头』对得上，但不能据此确定单集 BV。本地没有该讲媒体、转写或画面，不能做音视频复核。配套讲义不能代替视频。",
+      "kind": "video",
+      "path": null,
+      "sha256": null,
+      "recommendation_kind": "explicit_recommendation",
+      "recommendation_basis": "s-g878.0~5 口头推荐。明确推荐默认 required。没有媒体文件，故 blocked，不能改成 required false。",
+      "required": true,
+      "reading_status": "blocked",
+      "known_gaps": [
+        "没有单集视频、转写、画面盘点或保真评测",
+        "课外视频待用户确认是否处理",
+        "这一轮没有下载、没有转写，也没有用 lect25 讲义代替视频。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [],
+      "scope_reason": null
+    }
+  ]
+}

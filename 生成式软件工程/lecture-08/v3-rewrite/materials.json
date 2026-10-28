@@ -1,0 +1,1203 @@
+{
+  "schema_version": 1,
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "course_term": "2026 秋",
+  "video_id": "BV11LWw6VEHW",
+  "lecture_mapping": "官网第 8 讲标题 Agent Native 开发，对应视频《生成式软件工程 08｜Agent-native 开发》。第 9 讲标题才是 Deepseek Harness。",
+  "checked_at": "2026-10-28T01:36:23.943144-04:00",
+  "assumptions": [
+    "讲义页中的链接记为讲义引用的核心来源或背景，不记成讲师口头明确推荐。",
+    "slides 中 span.aigc 内的链接 source_label 使用「官方 slides AIGC 批注推荐，非课堂口述」。",
+    "recommendation_kind=explicit_recommendation 没有使用：本课没有单独的必读清单，口播也没有说「请读这篇」。",
+    "core_source 是课堂论证直接依赖的原文；background_citation 是 AIGC 或 slides 上的历史、文档和类比。background 设 required=false，仍按声明范围读完并写入笔记。",
+    "没有打开 zhao-d-r/generative-software-engineering-2026。"
+  ],
+  "expected_material_ids": [
+    "gse-lect8",
+    "gse-slides8",
+    "nasa-wright-1901",
+    "linearb-ralph-podcast",
+    "ralph-huntley",
+    "fowler-ci-history",
+    "fowler-ci-2000",
+    "thoughtworks-history",
+    "cd-2010-intro",
+    "cd-vs-deployment",
+    "gh-actions-events",
+    "claude-code-action",
+    "git-hooks",
+    "gh-branch-protection",
+    "gh-deploy-concurrency",
+    "gh-pages-workflows",
+    "toyota-tps",
+    "openai-harness",
+    "stripe-minions",
+    "anthropic-c-compiler",
+    "strongdm",
+    "strongdm-dtu",
+    "wired-friendster",
+    "friendster-2006",
+    "webvan-10k",
+    "webvan-sec-order",
+    "quibi-letter",
+    "deepseek-harness-repo"
+  ],
+  "materials": [
+    {
+      "id": "gse-lect8",
+      "listed_title": "Agent Native 开发",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lect8.md",
+      "title": "Agent Native 开发",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect8.md",
+      "version": null,
+      "path": "课堂笔记/sources/lect8.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "总得从一个能运行的原型开始",
+        "同一个提示词，不断变化的世界",
+        "工作区是状态，Agent 是状态迁移",
+        "每次迁移都检查：重新发现 CI/CD",
+        "把发布流程也写成 Spec",
+        "CI 阻止，Agent 修正",
+        "Agent Native：把工程知识放进环境",
+        "三种把反馈做实的实践",
+        "真正的经验，以及垃圾回收解决不了的问题",
+        "好想法也会在落地中失败",
+        "实践机会，会变成判断力的差距"
+      ],
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "课程官网第 8 讲讲义页正文，本课的书面论证。不是口播里的课外阅读清单。",
+      "origin": "讲义页正文",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "讲义页全文",
+          "claim": "讲义把原型、Ralph、状态机、CI/CD、Harness、三种反馈实践和 Friendster/Webvan/Quibi 写成连续文章。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "d799467198428b428ffe25fe48bea649dff8fba94b7c44b77817f04a278641af",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "总得从一个能运行的原型开始",
+        "同一个提示词，不断变化的世界",
+        "工作区是状态，Agent 是状态迁移",
+        "每次迁移都检查：重新发现 CI/CD",
+        "把发布流程也写成 Spec",
+        "CI 阻止，Agent 修正",
+        "Agent Native：把工程知识放进环境",
+        "三种把反馈做实的实践",
+        "真正的经验，以及垃圾回收解决不了的问题",
+        "好想法也会在落地中失败",
+        "实践机会，会变成判断力的差距"
+      ]
+    },
+    {
+      "id": "gse-slides8",
+      "listed_title": "第 8 讲幻灯片",
+      "listed_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+      "title": "第 8 讲 · Agent Native 开发",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides8.html",
+      "version": "24 pages in slides-data",
+      "path": "课堂笔记/sources/slides8.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-04",
+        "slide-05",
+        "slide-06",
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15",
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-20",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24"
+      ],
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "课程官网本课 slides。每页是 slides-data JSON 的一项，页码=下标+1。紫色 span.aigc 是 AIGC 批注。",
+      "origin": "slides 正文",
+      "visual_checks": [
+        {
+          "page": 2,
+          "detail": "1600×900 截图可见紫色 AIGC 与 NASA 链接"
+        },
+        {
+          "page": 8,
+          "detail": "CI/CD 年表与两个 CD 的紫色链接"
+        },
+        {
+          "page": 13,
+          "detail": "偏执约束表为内嵌图片，截图可读出六行"
+        },
+        {
+          "page": 16,
+          "detail": "Stripe 两轮 CI 全在紫色 AIGC 中"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "slides-data 共 24 页",
+          "claim": "静态讲义页换成官方 slides 截图；AIGC 链接与正文链接分开登记。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "1950a022ffca0ca6d47018f832ad23a52ffdbec3255fa983f0f2eba729d77061",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-04",
+        "slide-05",
+        "slide-06",
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15",
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-20",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24"
+      ]
+    },
+    {
+      "id": "nasa-wright-1901",
+      "listed_title": "NASA",
+      "listed_url": "https://www.grc.nasa.gov/WWW/k-12/airplane/wrights/test1901.html",
+      "title": "Wright 1901 Wind Tunnel Tests",
+      "source_url": "https://www.grc.nasa.gov/WWW/k-12/airplane/wrights/test1901.html",
+      "version": null,
+      "path": "课堂笔记/sources/web/nasa-wright-1901.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "full-page"
+      ],
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "只出现在 slides 第 2 页 span.aigc，用来给 Let it fail 补一个历史例子。不是讲师口述，也不是讲义页正文。",
+      "origin": "slides AIGC 批注",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 3,
+          "location": "NASA Glenn 页，1901 升力段落",
+          "claim": "预测升力的三分之一来自 Lilienthal 数据，风洞在自行车试验之后。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "73f1e2b98fe5defe89c517423403ddff39a7f05314be452f163290a2fc21fe0a",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "full-page"
+      ]
+    },
+    {
+      "id": "linearb-ralph-podcast",
+      "listed_title": "命名的由来",
+      "listed_url": "https://linearb.io/dev-interrupted/podcast/inventing-the-ralph-wiggum-loop",
+      "title": "Inventing the Ralph Wiggum Loop",
+      "source_url": "https://linearb.io/dev-interrupted/podcast/inventing-the-ralph-wiggum-loop",
+      "version": null,
+      "path": "课堂笔记/sources/web/linearb-ralph-podcast.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "transcript-00:01:18",
+        "transcript-00:06:04"
+      ],
+      "scope_reason": "slides AIGC 只把这一集当作命名出处。读的是网页上的文字转写，没有播放音频，也没有读完整期转写。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "slides 第 4 页 AIGC。不是明确的课外视频推荐，因此不按课堂视频做全片采集。",
+      "origin": "slides AIGC 批注",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "网页转写 00:06:04",
+          "claim": "Huntley 说方法有点笨、有点可爱、从不放弃，所以用 Ralph Wiggum 这个名字。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "bfe82fb29a9fce0223e600b74ddc8cd0fcb81363453782e6446e2494a7c696de",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "transcript-00:01:18",
+        "transcript-00:06:04"
+      ]
+    },
+    {
+      "id": "ralph-huntley",
+      "listed_title": "Huntley 对 Ralph 的介绍",
+      "listed_url": "https://ghuntley.com/ralph/",
+      "title": "Ralph Wiggum as a \"software engineer\"",
+      "source_url": "https://ghuntley.com/ralph/",
+      "version": null,
+      "path": "课堂笔记/sources/web/ralph-huntley.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "full-page"
+      ],
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲义页正文把这篇文章当作 Ralph Loop 机制的原始介绍。slides 第 5 页 AIGC 也链到同一 URL。口播说了 Ralph Loop，没有念出 Huntley 或这个 URL。",
+      "origin": "讲义页正文",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "文章中的 while 循环与 backpressure 段",
+          "claim": "原文循环是 while :; do cat PROMPT.md | claude-code ; done；每一轮重新装入计划和规格。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "ea2876e9743c9e3b60ce4375011dc32fe56b76d610cff95e737b61a5dd65b11c",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "full-page"
+      ]
+    },
+    {
+      "id": "fowler-ci-history",
+      "listed_title": "CI 的发展",
+      "listed_url": "https://martinfowler.com/articles/continuousIntegration.html",
+      "title": "Continuous Integration",
+      "source_url": "https://martinfowler.com/articles/continuousIntegration.html",
+      "version": null,
+      "path": "课堂笔记/sources/web/fowler-ci-history.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "Where did Continuous Integration come from",
+        "acknowledgements-CruiseControl"
+      ],
+      "scope_reason": "slides 第 8 页 AIGC 用这一页支撑 1990 年代 Beck / XP 的年表。长文其余章节不是该链接在本课的用途。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "只在 slides AIGC。2000 年的机制原文是另一篇 originalContinuousIntegration。",
+      "origin": "slides AIGC 批注",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "Where did Continuous Integration come from",
+          "claim": "Beck 在 1990 年代把 CI 做成极限编程里的实践；CruiseControl 在致谢里被称作第一种 CI 服务。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "3ad2de243def62892458a058b4e8b0a9b98a76b3507bdf0ecc835da551e9787d",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "Where did Continuous Integration come from",
+        "acknowledgements-CruiseControl"
+      ]
+    },
+    {
+      "id": "fowler-ci-2000",
+      "listed_title": "2000 年的 CI 文章",
+      "listed_url": "https://martinfowler.com/articles/originalContinuousIntegration.html",
+      "title": "Continuous Integration (original version)",
+      "source_url": "https://martinfowler.com/articles/originalContinuousIntegration.html",
+      "version": "2000-09-10",
+      "path": "课堂笔记/sources/web/fowler-ci-2000.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "full-article"
+      ],
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲义页正文用它支持每天多次的自动构建和测试。slides 第 8 页 AIGC 也链到同一篇（带 www）。作者 Martin Fowler 与 Matthew Foemmel，2000-09-10。页面写明已被更新版取代。",
+      "origin": "讲义页正文",
+      "identity_note": "slides 链接写作 https://www.martinfowler.com/articles/originalContinuousIntegration.html ，与讲义页无 www 的链接是同一篇文章。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "What Is a Successful Build；The More Often the Better",
+          "claim": "成功构建包含启动系统并跑测试；文中例子是约 20 万行、约 50 人、一天几十次构建。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "8a4c0f392e03bf6e8c51c48fe7b26fb78274ef82500cd3ec128f06d22502fbce",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "full-article"
+      ]
+    },
+    {
+      "id": "thoughtworks-history",
+      "listed_title": "Thoughtworks 开源 CruiseControl",
+      "listed_url": "https://www.thoughtworks.com/about-us/history",
+      "title": "Our history | Thoughtworks",
+      "source_url": "https://www.thoughtworks.com/about-us/history",
+      "version": null,
+      "path": "课堂笔记/sources/web/thoughtworks-history.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "year-2001",
+        "year-2010"
+      ],
+      "scope_reason": "slides AIGC 只用这一页为 2001 年开源 CruiseControl 和 2010 年的书提供年份。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "只在 slides 第 8 页 AIGC。",
+      "origin": "slides AIGC 批注",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "history 页 2001 与 2010 两条",
+          "claim": "2001 年 Released CruiseControl open source software；2010 年出版 Continuous Delivery。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "1f3c1ec26001e6919bc8f331569d4e32f26e1309210cc1216a9544b3307129b0",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "year-2001",
+        "year-2010"
+      ]
+    },
+    {
+      "id": "cd-2010-intro",
+      "listed_title": "原作者介绍",
+      "listed_url": "https://continuousdelivery.com/2010/02/continuous-delivery/",
+      "title": "Continuous Delivery",
+      "source_url": "https://continuousdelivery.com/2010/02/continuous-delivery/",
+      "version": "2010-02-02",
+      "path": "课堂笔记/sources/web/cd-2010-intro.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "full-page"
+      ],
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "slides 第 8 页 AIGC，指向 Humble 介绍书和 deployment pipeline 的短文，不是两种 CD 的定义页。",
+      "origin": "slides AIGC 批注",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "2010-02-02 短文",
+          "claim": "书的主线是自动化和协作，deployment pipeline 从提交走到发布；当时还是 Rough Cuts。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "77493aae0255280a67fb0a753fa1e67db29a20ab8ca7f9670bbfcb31c72c1425",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "full-page"
+      ]
+    },
+    {
+      "id": "cd-vs-deployment",
+      "listed_title": "两种 CD 的说明",
+      "listed_url": "https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/",
+      "title": "Continuous Delivery vs Continuous Deployment",
+      "source_url": "https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/",
+      "version": "2010-08-13",
+      "path": "课堂笔记/sources/web/cd-vs-deployment.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "full-page"
+      ],
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲义页正文用来区分 Delivery 与 Deployment。slides 第 8 页 AIGC 链到同一篇。",
+      "origin": "讲义页正文",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "Humble 2010-08-13 全文",
+          "claim": "Delivery 是始终可发布、上线可由业务决定；Deployment 是每个通过检查的构建都发布给用户。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "473b20083fef02e2161d21868270b1bef914fcc62b7f1e74c6a76ca65e94e860",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "full-page"
+      ]
+    },
+    {
+      "id": "gh-actions-events",
+      "listed_title": "GitHub Actions 事件",
+      "listed_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request",
+      "title": "Events that trigger workflows",
+      "source_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows",
+      "version": null,
+      "path": "课堂笔记/sources/web/gh-actions-events.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "pull_request",
+        "merge_group"
+      ],
+      "scope_reason": "slides 第 9 页 AIGC 锚点是 pull_request。merge_group 是同一页里和 merge queue 必选检查直接相关的相邻说明。没有通读全部事件。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "只在 slides AIGC。",
+      "origin": "slides AIGC 批注",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "pull_request 与 merge_group 两节",
+          "claim": "默认同步 opened/synchronize/reopened，检出的是 merge 分支；进 merge queue 还要 merge_group 才会跑必选检查。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "28e86f5655d3b00b9a4b5a1ff641ec612d32f5aebc10126320f64c6db95b4f2c",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "pull_request",
+        "merge_group"
+      ]
+    },
+    {
+      "id": "claude-code-action",
+      "listed_title": "养 Claude Code",
+      "listed_url": "https://github.com/marketplace/actions/claude-code-github-integration",
+      "title": "Claude Code GitHub Integration",
+      "source_url": "https://github.com/marketplace/actions/claude-code-github-integration",
+      "version": null,
+      "path": "课堂笔记/sources/web/claude-code-action.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "marketplace-readme"
+      ],
+      "scope_reason": "slides 第 9 页正文括号里的链接，是一个 Marketplace Action 的说明，不是本课方法论文。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "slides 正文，不在 AIGC 里，也不在讲义页。页面上是一句「羊毛，甚至可以养 Claude Code」。",
+      "origin": "slides 正文",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "Marketplace 说明",
+          "claim": "这个 Action 按 issue 和 PR 评论调用 Claude Code 改代码，页面写明不是 GitHub 官方认证。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "45ffef6f658d8a7faaf27269e06b543cf5a210094049eef19d763c4897fae34f",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "marketplace-readme"
+      ]
+    },
+    {
+      "id": "git-hooks",
+      "listed_title": "Git Hooks",
+      "listed_url": "https://git-scm.com/docs/githooks#_pre_commit",
+      "title": "Git - githooks Documentation",
+      "source_url": "https://git-scm.com/docs/githooks",
+      "version": null,
+      "path": "课堂笔记/sources/web/git-hooks.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "pre-commit"
+      ],
+      "scope_reason": "slides AIGC 锚到 pre-commit。文档其余 hook 不是本课论点。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "slides 第 9 页 AIGC，用来说明本地钩子可以被 --no-verify 跳过。",
+      "origin": "slides AIGC 批注",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "githooks 的 pre-commit 节",
+          "claim": "pre-commit 在生成提交前运行，非 0 则中止，且可被 --no-verify 跳过。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "35cd9ffb1b2ab64ba4bfac355f02895e24e48ff477f283dae0bed6579e938df5",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "pre-commit"
+      ]
+    },
+    {
+      "id": "gh-branch-protection",
+      "listed_title": "GitHub 分支保护文档",
+      "listed_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "title": "About protected branches",
+      "source_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "version": null,
+      "path": "课堂笔记/sources/web/gh-branch-protection.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "about-protected-branches",
+        "require-status-checks",
+        "require-merge-queue",
+        "do-not-allow-bypassing"
+      ],
+      "scope_reason": "讲义页链接整页作为 GitHub 例子；本课用到的是状态检查、是否必须含最新主干、merge queue 和谁能绕过。页面上的签名提交、锁定分支等开关不在讲义论点里。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲义页正文给出这个链接。slides 第 9、10、11 页 AIGC 再次指向同一页及 #require-merge-queue。",
+      "origin": "讲义页正文",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "Require status checks 与 Require merge queue",
+          "claim": "strict 检查要求合并前包含最新主干；merge queue 会把 PR 应用到最新主干和队列中更早的 PR 上再跑检查。管理员默认可以绕过，除非打开不允许绕过。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "c6570069e29b1e64ce280024a5407d4a41539b20df7f8ffa2885036693afcdb0",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "about-protected-branches",
+        "require-status-checks",
+        "require-merge-queue",
+        "do-not-allow-bypassing"
+      ]
+    },
+    {
+      "id": "gh-deploy-concurrency",
+      "listed_title": "部署并发控制",
+      "listed_url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/control-deployments",
+      "title": "Control deployments",
+      "source_url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/control-deployments",
+      "version": null,
+      "path": "课堂笔记/sources/web/gh-deploy-concurrency.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "using-concurrency"
+      ],
+      "scope_reason": "slides 第 10 页 AIGC 用这一页回答旧部署会不会覆盖新版本。只读并发控制这一节。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "只在 slides AIGC。",
+      "origin": "slides AIGC 批注",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "Using concurrency",
+          "claim": "同一 concurrency group 同时只跑一个；可取消 pending，也可用 cancel-in-progress 取消正在跑的那一个。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "a97ef2f2a3a0252b80c9622cc3d261cdce54ae6a252eba4106a88dd78ac17278",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "using-concurrency"
+      ]
+    },
+    {
+      "id": "gh-pages-workflows",
+      "listed_title": "GitHub Pages 工作流",
+      "listed_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "title": "Using custom workflows with GitHub Pages",
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "version": null,
+      "path": "课堂笔记/sources/web/gh-pages-workflows.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "about-custom-workflows",
+        "upload-pages-artifact"
+      ],
+      "scope_reason": "slides 第 11 页 AIGC 指向用自定义工作流发布 Pages。没有把「失败保留上一版」这句话安到这页文档上。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "只在 slides AIGC。",
+      "origin": "slides AIGC 批注",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "About custom workflows",
+          "claim": "Pages 可以用 Actions 构建并上传产物再部署；失败则保留上一版是 slides 上的验收条件，不是这页文档的原句。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "766837e5fb173c82adee8106ecf9f8d68a4cc8a3370a84245aed501b5df3b9a8",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "about-custom-workflows",
+        "upload-pages-artifact"
+      ]
+    },
+    {
+      "id": "toyota-tps",
+      "listed_title": "Toyota Production System",
+      "listed_url": "https://global.toyota/en/company/vision-and-philosophy/production-system/",
+      "title": "Toyota Production System",
+      "source_url": "https://global.toyota/en/company/vision-and-philosophy/production-system/",
+      "version": null,
+      "path": "课堂笔记/sources/web/toyota-tps.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "jidoka"
+      ],
+      "scope_reason": "slides 第 12 页 AIGC 只用 jidoka 作停线类比。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "只在 slides AIGC。口播没有讲丰田。",
+      "origin": "slides AIGC 批注",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 11,
+          "location": "jidoka 一节",
+          "claim": "异常时自动停线或人拉停线绳，避免缺陷继续流出。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "57bd54b6dfe58966af9d171d7127ecf06747536eeec0f775c5449a69b694a1f9",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "jidoka"
+      ]
+    },
+    {
+      "id": "openai-harness",
+      "listed_title": "Harness engineering 文章",
+      "listed_url": "https://openai.com/index/harness-engineering/",
+      "title": "Harness engineering: leveraging Codex in an agent-first world",
+      "source_url": "https://web.archive.org/web/20260212020647id_/https://openai.com/index/harness-engineering/",
+      "version": "article 2026-02-11; wayback 20260212020647",
+      "path": "课堂笔记/sources/web/openai-harness-wayback.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "We started with an empty git repository",
+        "Redefining the role of the engineer",
+        "Increasing application legibility",
+        "We made repository knowledge the system of record",
+        "Agent legibility is the goal",
+        "Enforcing architecture and taste",
+        "Throughput changes the merge philosophy",
+        "What agent-generated actually means",
+        "Increasing levels of autonomy",
+        "Entropy and garbage collection",
+        "What we’re still learning"
+      ],
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲师口述了标题和 We started with an empty git repository。讲义页正文和 slides 第 14 页正文都给出同一链接。slides 第 15 页 AIGC 再次指向它。",
+      "origin": "讲师口述",
+      "identity_note": "2026-10-28 直接打开 openai.com 停在等待页，没有拿到正文。阅读的是 Wayback 2026-02-12 快照。分层图没有单独目视，顺序按正文。listed_url 仍是官网原链接。",
+      "visual_checks": [
+        {
+          "page": null,
+          "detail": "分层依赖以正文句子为准，未单独打开文中配图"
+        }
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 12,
+          "location": "空仓库、AGENTS.md、架构约束、合并哲学、垃圾回收各节",
+          "claim": "0 行手写、约一百万行、约 1500 个 PR、3 到 7 名工程师；minimal blocking merge gates；没有附上可复用的工作流文件。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "2297e472e5362dfea269c4161f7690fe33d62f72694c17ee6a376c65e286f696",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "We started with an empty git repository",
+        "Redefining the role of the engineer",
+        "Increasing application legibility",
+        "We made repository knowledge the system of record",
+        "Agent legibility is the goal",
+        "Enforcing architecture and taste",
+        "Throughput changes the merge philosophy",
+        "What agent-generated actually means",
+        "Increasing levels of autonomy",
+        "Entropy and garbage collection",
+        "What we’re still learning"
+      ]
+    },
+    {
+      "id": "stripe-minions",
+      "listed_title": "Minions 的工程介绍",
+      "listed_url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "title": "Minions: Stripe’s one-shot, end-to-end coding agents—Part 2",
+      "source_url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "version": "2026-02-19",
+      "path": "课堂笔记/sources/web/stripe-minions.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "full-page"
+      ],
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲义页正文的三种实践之一。slides 第 16 页整页是 AIGC 批注并链到这篇文章。口播没有讲 Stripe。作者 Alistair Gray。",
+      "origin": "讲义页正文",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 12,
+          "location": "Blueprints 与 CI 轮次两节",
+          "claim": "确定性节点跑 lint 和推送；完整 CI 本地先修，推送后再给一轮，然后交人。文中每周超过 1300 个此类 PR。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "8f7ccfdadaa8d51fb77bbd76c8095d04293745bc927d5c14c78345c0f9f7ce5d",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "full-page"
+      ]
+    },
+    {
+      "id": "anthropic-c-compiler",
+      "listed_title": "C 编译器实验",
+      "listed_url": "https://www.anthropic.com/engineering/building-c-compiler",
+      "title": "Building a C compiler with a team of parallel Claudes",
+      "source_url": "https://www.anthropic.com/research/building-c-compiler",
+      "version": "2026-02-05",
+      "path": "课堂笔记/sources/web/anthropic-c-compiler.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "full-page"
+      ],
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲师口述了 16 个 agent 编译 Linux 时撞上同一个 bug。讲义页和 slides 第 17 页 AIGC 给出文章链接。",
+      "origin": "讲师口述",
+      "identity_note": "讲义与 slides 的链接是 /engineering/building-c-compiler。2026-10-28 抓取时 200 跳转到 /research/building-c-compiler，标题与 16-agent 实验一致。两条 URL 都保留。作者 Nicholas Carlini。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 13,
+          "location": "Running Claude in parallel 与 Linux 内核一节",
+          "claim": "Rust 编译器、约 2000 次会话、2 万美元、约 10 万行；GCC 作参照缩小文件集；16 位实模式和演示用的汇编器仍调用 GCC。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "d7e634805d5e308b416304cecf7caf5ad800e71787de7e7e659d162edc10263a",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "full-page"
+      ]
+    },
+    {
+      "id": "strongdm",
+      "listed_title": "StrongDM 的工程自述",
+      "listed_url": "https://factory.strongdm.ai/",
+      "title": "StrongDM Software Factory",
+      "source_url": "https://factory.strongdm.ai/",
+      "version": null,
+      "path": "课堂笔记/sources/web/strongdm.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "full-page"
+      ],
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲义页正文的第三种实践。slides 第 18 页 AIGC 链到首页。口播没有讲 StrongDM。",
+      "origin": "讲义页正文",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 13,
+          "location": "scenario 与 satisfaction 段",
+          "claim": "return true 可以应付窄测试；scenario 常放在仓库外；satisfaction 是多条轨迹里看起来满足用户的比例。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "f0953954fdd57189b4ac8f9eb2f91858a34402a7005dcc042959d840e17d68a8",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "full-page"
+      ]
+    },
+    {
+      "id": "strongdm-dtu",
+      "listed_title": "Digital Twin Universe",
+      "listed_url": "https://factory.strongdm.ai/techniques/dtu",
+      "title": "Digital Twin Universe",
+      "source_url": "https://factory.strongdm.ai/techniques/dtu",
+      "version": null,
+      "path": "课堂笔记/sources/web/strongdm-dtu.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "full-page"
+      ],
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲义页正文用来说明外部服务的行为替身。slides 第 18 页 AIGC 链到同一页。",
+      "origin": "讲义页正文",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 13,
+          "location": "How It Works",
+          "claim": "替身包括 Okta、Jira、Slack 和 Google 文档三件套；对照真实依赖直到不再发现行为差异。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "01666eeb02ce3239748ca864fbabb815ba36d4f503ef926bc30c9af7fa4928e7",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "full-page"
+      ]
+    },
+    {
+      "id": "wired-friendster",
+      "listed_title": "创始人访谈及背景",
+      "listed_url": "https://www.wired.com/2007/04/what-i-learned-from-friendster-jonathan-abrams-new-startup/",
+      "title": "What I Learned From Friendster: Jonathan Abrams' New Startup",
+      "source_url": "https://www.wired.com/2007/04/what-i-learned-from-friendster-jonathan-abrams-new-startup/",
+      "version": "2007-04",
+      "path": "课堂笔记/sources/web/wired-friendster.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "abrams-interview"
+      ],
+      "scope_reason": "slides 第 21 页 AIGC 把这篇当作创始人访谈。读了访谈正文，没有跟读页面底部后来的推荐文章。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "只在 slides AIGC。复制延迟的工程细节在 2006 年博客，不在这篇访谈。",
+      "origin": "slides AIGC 批注",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 17,
+          "location": "访谈中关于资本和 Friendster 设想的问答",
+          "claim": "2007 年访谈谈的是后来的 Socializr 和不到 100 万美元的种子轮，不是主从复制的复盘。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "2a16371cd2e4fcb8a72246a40608fe17178c66bc7d9afe258f2d8cba3ed4b81b",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "abrams-interview"
+      ]
+    },
+    {
+      "id": "friendster-2006",
+      "listed_title": "2006 年的复盘",
+      "listed_url": "https://mysqldba.blogspot.com/2006/11/unorthodox-approach-to-database-design.html",
+      "title": "Unorthodox approach to database design",
+      "source_url": "https://mysqldba.blogspot.com/2006/11/unorthodox-approach-to-database-design.html",
+      "version": "2006-11",
+      "path": "课堂笔记/sources/web/friendster-2006.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "post-body"
+      ],
+      "scope_reason": "讲义引用的是 Pattishall 对复制和分片的复盘正文。评论区里跨 shard 查询没有被讲义当成结论，只记下正文没有回答。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲义页正文的 Friendster 工程论据。slides 第 21 页 AIGC 三次指向同一篇。口播只有「用户涨得快然后架构崩溃」。作者 Dathan Pattishall。",
+      "origin": "讲义页正文",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 17,
+          "location": "复制限制与按用户分片两段",
+          "claim": "每个从库重放全部写入；用户数据约 500GB；分片方案当时没能在 Friendster 推进，后来用于 Flickr。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "c9ba3fa67be095fefe1974a0bc27e445783d60380b1fa69377efcb07429fc58e",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "post-body"
+      ]
+    },
+    {
+      "id": "webvan-10k",
+      "listed_title": "2000 年年报",
+      "listed_url": "https://www.sec.gov/Archives/edgar/data/1092657/000101287001001485/0001012870-01-001485.txt",
+      "title": "Webvan Group, Inc. Form 10-K for the year ended December 31, 2000",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1092657/000101287001001485/0001012870-01-001485.txt",
+      "version": "year ended 2000-12-31",
+      "path": "课堂笔记/sources/web/webvan-10k-retry.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "distribution-center-capacity",
+        "cash-flow-profitability"
+      ],
+      "scope_reason": "讲义只把年报当作配送中心负载不足设计容量 40%、以及设施尚未现金流盈利这两处披露的出处。没有通读整份 10-K。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲义页正文和 slides 第 22 页 AIGC 都链到这份年报。口播没有念 Webvan。",
+      "origin": "讲义页正文",
+      "identity_note": "第一次用通用浏览器 UA 被 SEC 拒绝为未声明的自动工具。改用声明过的 User-Agent 后得到 2000 年报正文。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 17,
+          "location": "风险因素中的设施容量与现金流段落",
+          "claim": "distribution center 低于原设计容量的 40%，设计值每天 8000 单；CFC 是另一句，低于 70%、每天 2500 单。没有任何设施在现金流上盈利。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "1fa9948622c6eeb5a8b15ce05ad98b0fe0b7060afae75ec17a8de4d430909e28",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "distribution-center-capacity",
+        "cash-flow-profitability"
+      ]
+    },
+    {
+      "id": "webvan-sec-order",
+      "listed_title": "SEC 记录",
+      "listed_url": "https://www.sec.gov/litigation/admin/34-50771-o-2.htm",
+      "title": "Admin. Proc. File No. 3-11760, December 1, 2004",
+      "source_url": "https://www.sec.gov/litigation/admin/34-50771-o-2.htm",
+      "version": "2004-12-01",
+      "path": "课堂笔记/sources/web/webvan-sec-order.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "webvan-allegation"
+      ],
+      "scope_reason": "slides AIGC 用这个链接支持「2001 年 7 月申请破产」。文件本身是 2004 年的 12(j) 程序，只读了其中关于 Webvan 的指控段。",
+      "recommendation_kind": "background_citation",
+      "required": false,
+      "recommendation_basis": "只在 slides 第 22 页 AIGC。不是 2001 年的破产申请书。",
+      "origin": "slides AIGC 批注",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 17,
+          "location": "对 WBVNQ 的指控第 4 点",
+          "claim": "2001 年 7 月 13 日 Webvan 申请 Chapter 11。这句话出现在 2004-12-01 的程序里。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "321e149365d8795b972a7b0ac3e055c2efc4d339a42c2cd8f41aa6366884df72",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "webvan-allegation"
+      ]
+    },
+    {
+      "id": "quibi-letter",
+      "listed_title": "2020 年的告别信",
+      "listed_url": "https://quibi-hq.medium.com/an-open-letter-from-quibi-8af6b415377f",
+      "title": "An open letter from Quibi",
+      "source_url": "https://web.archive.org/web/20201022021321id_/https://quibi-hq.medium.com/an-open-letter-from-quibi-8af6b415377f",
+      "version": "wayback 20201022021321",
+      "path": "课堂笔记/sources/web/quibi-letter-wayback.html",
+      "reading_status": "full",
+      "scope_sections": [
+        "full-letter"
+      ],
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲义页正文用来说明 Quibi 管理层自己给出的两个可能原因。slides 第 22 页 AIGC 链到同一封信。口播没有念。",
+      "origin": "讲义页正文",
+      "identity_note": "Medium 当次返回 Cloudflare 拦截页。阅读的是 Wayback 2020-10-22 的信件正文。listed_url 仍是 Medium 原链接。",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 17,
+          "location": "告别信中 Likely for one of two reasons 一段",
+          "claim": "结束业务并出售内容和技术资产；两个可能原因是想法不足以支撑独立流媒体，或推出时机。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "a838c20ae37315a6eea09232a4351934ed7f92e816836e4dd20ad359968969d6",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "full-letter"
+      ]
+    },
+    {
+      "id": "deepseek-harness-repo",
+      "listed_title": "deepseek-harness",
+      "listed_url": "https://github.com/deepseek-ai/deepseek-harness",
+      "title": "DeepSeek Harness: Everything is a Plugin",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness",
+      "version": "homepage README read 2026-10-28",
+      "path": "课堂笔记/sources/web/deepseek-harness-repo.bin",
+      "reading_status": "full",
+      "scope_sections": [
+        "readme-homepage"
+      ],
+      "scope_reason": "讲师口头问同学有没有 clone 这个仓库，并在课堂上打开目录和文档预算。本课阅读范围是仓库首页 README。门禁脚本和全文文档留在当堂画面，不把整个仓库当成已读。下一讲标题是 Deepseek Harness。",
+      "recommendation_kind": "core_source",
+      "required": true,
+      "recommendation_basis": "讲师口述仓库名并建议 clone；画面上的引用是 DeepSeek-AI，2026，Everything is a Plugin。slides 第 19 页只有标题和一张图，没有这个 URL。",
+      "origin": "讲师口述",
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "首页 README 与引用块",
+          "claim": "everything-is-a-plugin，开发者预览会有不兼容变更，agent 入口是 AGENTS.md，引用作者 DeepSeek-AI，2026。",
+          "role": "mechanism"
+        }
+      ],
+      "sha256": "0b1caf8b261579c7e8f4de5e42fd01014f4237d322d4bc6c1ef03254ae4b451b",
+      "identity_status": "verified",
+      "known_gaps": [],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "kind": "web",
+      "read_sections": [
+        "readme-homepage"
+      ]
+    }
+  ]
+}

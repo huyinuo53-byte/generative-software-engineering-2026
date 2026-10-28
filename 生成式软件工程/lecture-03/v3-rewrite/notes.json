@@ -33,9 +33,12 @@
   "limitations": [
     "完整阅读 20 个转写块（chunk-0001 至 chunk-0020，共 533 句）。章节按主题合并了这些五分钟块，每句只进一节。",
     "画面使用预先生成的 frames.py 扫描：场景阈值 0.3，最长 60 秒兜底，112 个候选、10 张联系表。从联系表定位后打开了关键候选，并裁切幻灯区域核对文字；定稿帧用 frames.py grab 按原分辨率截取。不是逐秒观看。",
-    "没有读课程推荐材料，也没有把幻灯脚注里的论文补进外部资料。Simon 1973、Chi et al. 1989、Hundhausen 等 2002 只出现在画面上，写在对应图注里。",
-    "SWE-Bench 那一页和「Agent 快 1000 倍」页上超出口述的句子，同样只按画面记录，不写成已经讲完的结论。",
-    "转写听写错误只在对应节的整理者说明里校正；测量不到的 token 数、IDE 产品名没有补写。"
+    "本次在已交付笔记上增量加入讲义页、slides 和推荐材料。已有小节、takeaway 和图解没有重写。补读之后：Simon 1973 的开放转载 21 页已读；Chi 等 1989 用的是亚利桑那州立大学公开 PDF 的 20 个物理页；Hundhausen 等 2002 读了摘要、24 项实验的汇总、四种理论和第 6 节，逐项大表没有逐格抄入正文；SWE-bench 论文读了正文和附录 A 的任务定义，参考文献表和附录 C 以后的额外结果、训练超参、提示词没有写入。",
+    "SWE-Bench 那一页和「Agent 快 1000 倍」页上超出口述的句子，同样只按画面记录，不写成已经讲完的结论。 这些超出口述的测试名和数字现在写在外部资料里，并标明不是课堂口述。",
+    "转写听写错误只在对应节的整理者说明里校正；测量不到的 token 数、IDE 产品名没有补写。",
+    "发布版 slides3.html 共 35 页。回放里若干页脚是 /31。静态幻灯已换成发布页截图；终端演示、黑板和 Pico、Learn Git Branching 的浏览器画面仍用视频帧。",
+    "课程索引上与本课并列的 Lab1 没有出现在 lect3.md 和 slides3.html 的链接里，转写也没有布置它，所以没有纳入。",
+    "操作系统课上讲 Git 的那一段只有口头推荐。这一轮不下载、不转写该视频，保持 blocked，等用户确认是否处理。不能把操作系统讲义后半的内容写进本课。"
   ],
   "summary": [
     "这一课要记住的不是一份命令清单，而是软件仓库为什么要做成用原子变更推进的快照。",
@@ -102,20 +105,27 @@
       ],
       "editor_notes": [
         "转写「升很多 token」没有改写成「省」或「生成」。这句话紧挨着「做更复杂的任务时变得更快」，他又说特意 measure 过、结果确实如此；画面没有给出 token 数量，笔记不补数字。",
-        "「再苟活几个月」紧挨着开放的 intent、spec、implementation 空间，是他对自己还能纠正模型的判断，不是课程给出的时间表。"
+        "「再苟活几个月」紧挨着开放的 intent、spec、implementation 空间，是他对自己还能纠正模型的判断，不是课程给出的时间表。",
+        "发布版 slides 第 2 页的标题是「但设计上还是要骂」，页脚 2/35。Simon 1973 的链接在紫色 AIGC 批注里，不是讲师口头点名。simon-1973 的出版页仍是 403。读的是同一篇开放转载的 21 页。摘要那句边界 vague, fluid and not susceptible to formalization，文末又说了一遍。幻灯「每一次反馈都在把我想要变成更明确的约束」仍是幻灯自己的句子。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000000000.jpg",
-          "time": 0.0,
-          "caption": "片头右侧幻灯标题为「快讯：GPT-6 发布了」。配图是一只手把写着 Ultra / GPT-6 的卡片递给另一只手，图上中文是：当你被导师压力说上周什么都没做，你突然想起了一个不属于你的力量。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p01.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 1,
+          "related_time": 0.0,
+          "caption": "官方 slides 第 1 页，页脚 1/35。标题「快讯：GPT-6 发布了」。配图上方文字是「当你被导师压力说上周什么都没做 / 你突然想起了一个 / 不属于你的力量」。卡片上可见 Ultra、GPT-6 Astra 和 Select effort。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v000104867.jpg",
-          "time": 104.867,
-          "caption": "幻灯标题「但设计上还是要驾」。正文写「我好像还可以再苟活几个月」，原因是面对非常开放的 intent-spec-impl 空间；「做一个好用的界面」往往要看到第一版才说得清，实现会反过来改变需求。页脚脚注：Simon 在 1973 年指出，结构良好与结构不良的问题之间边界是流动的，并链到 The Structure of Ill-Structured Problems。另一行写：每一次反馈都在把「我想要」变成更明确的约束；今天还要驾，并不意味着这会是永久的能力边界。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p02.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 2,
+          "related_time": 104.867,
+          "caption": "官方 slides 第 2 页，页脚 2/35。标题「但设计上还是要骂」。正文「我好像还可以再苟活几个月」。原因是开放的 intent-spec-impl 空间；「做一个好用的界面」往往看到第一版才说得清，实现会反过来改变需求。紫色 AIGC 批注写 Simon 在 1973 年指出结构良好与结构不良的问题之间边界是流动的，并链到 The Structure of Ill Structured Problems；另一行写每一次反馈都在把「我想要」变成更明确的约束，今天还要骂并不意味着这是永久的能力边界。"
         }
       ],
       "start": 0.0,
@@ -132,7 +142,8 @@
         "s-g44.0~4",
         "s-g48.0~10",
         "s-g53.0~12"
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 n0 n1 n2 f0 f1 x6"
     },
     {
       "title": "先把数学学好，空间感知跟着来",
@@ -159,10 +170,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000164867.jpg",
-          "time": 164.867,
-          "caption": "幻灯标题「『理应当做到』的事就是能做到」。副题：我对 OpenAI AGI Roadmap 的理解——一切对齐到数学逻辑推理。一条写着直接杀死了比赛，括号里是具身赛道的人应该在瑟瑟发抖。中间是一台标着 INTRODUCING GPT-6 与 ASTRA 的设备照片。图下写「做了小半年的工作直接被超过了」，以及 baseline 应该是不可能比得过、心疼 PhD student。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p03.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 3,
+          "related_time": 164.867,
+          "caption": "官方 slides 第 3 页，页脚 3/35。标题「『理应当做到』的事就是能做到」。副题「我对 OpenAI AGI Roadmap 的理解：一切对齐到数学逻辑推理」。一条写「直接杀死了比赛」，括号里是具身赛道的人应该在瑟瑟发抖。中间是标着 INTRODUCING GPT-6 与 ASTRA 的设备照片。"
         }
       ],
       "visual": {
@@ -298,10 +312,22 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000644867.jpg",
-          "time": 644.867,
-          "caption": "幻灯标题「什么是一个软件工程的项目？」。副题「一个目录，一组文件，一个可交付的东西」。要点：目录里的文件混合了 intent、spec、impl；经过 build / 运行，可以得到 npm run dev 的本地窗口，也可以是一个 .exe。图从标着 intent、spec、impl 的项目文件夹指向齿轮 build，再分叉到「应用」窗口和一份 .exe。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p05.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 5,
+          "related_time": 644.867,
+          "caption": "官方 slides 第 5 页，页脚 5/35。标题「什么是一个软件工程项目？」。副题「一个目录，一组文件，一个可交付的东西」。目录里的文件混合了 intent、spec、impl；经过 build / 运行，可以得到 npm run dev 的本地窗口，也可以是一个 .exe。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p04.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 4,
+          "related_time": 560.0,
+          "caption": "官方 slides 第 4 页，页脚 4/35。标题「Anyway... 我们还是要学习的」。写创造力需要正确的概念和理解；专家的知识围绕核心概念组织，这种组织帮助在新情境中运用知识。紫色 AIGC 批注链到 How People Learn (2000)。底部写今天进入真正的软件工程任务：从零开始构建一个项目，首先什么是一个软件工程项目。"
         }
       ],
       "start": 545.72,
@@ -350,7 +376,8 @@
         "s-g157.2~3",
         "s-g157.2~16",
         "s-g157.2~44"
-      ]
+      ],
+      "flow": "f1 p0 p1 p2 p3 p4 e0 n0 n1 n2 f0"
     },
     {
       "title": "从优盘到 Git：历史要能回来",
@@ -370,20 +397,27 @@
       ],
       "editor_notes": [
         "转写「codecs」在「选择信任、看都不看」的语境里记为 Codex。make submit 被他说成「有点像 CI」，完整的 CI/CD 他明确留到以后的课，这一节没有展开流水线步骤。",
-        "824 秒幻灯标题「古早时期：That's All」，写一个优盘装着全部代码，并摘要了约 2012 年第一位 PhD student 的优盘故事，以及打包发邮件、现在似乎变成网页上传。1004 秒幻灯标题「今天：Git」，写项目版本管理有了标准答案：保存当前文件之外，还能保留、比较和恢复历史版本，并链到 Pro Git；作业发布是 git clone、git pull、make submit，make submit 由项目里的 Makefile 定义，链到 GNU Make。"
+        "824 秒幻灯标题「古早时期：That's All」，写一个优盘装着全部代码，并摘要了约 2012 年第一位 PhD student 的优盘故事，以及打包发邮件、现在似乎变成网页上传。1004 秒幻灯标题「今天：Git」，写项目版本管理有了标准答案：保存当前文件之外，还能保留、比较和恢复历史版本，并链到 Pro Git；作业发布是 git clone、git pull、make submit，make submit 由项目里的 Makefile 定义，链到 GNU Make。",
+        "gnu-make-preparing 指向的 GNU Make 手册「Preparing」只说明要写 makefile，让 make 按时间戳决定重新编译哪些文件。它没有定义本课的 make submit。make submit 仍是 slides 第 7 页自己写的课程约定。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v000824867.jpg",
-          "time": 824.867,
-          "caption": "幻灯标题「古早时期：That's All」。写「一个优盘，装着全部代码」。要点包括约 2012 年第一位 PhD student 的故事：大一把代码存在优盘上，优盘坏了，代码没了；交作业是打包发邮件，现在似乎变成网页上传。图下有「优盘坏了，代码没了」和「打包 → 发邮件」。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p06.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 6,
+          "related_time": 824.867,
+          "caption": "官方 slides 第 6 页，页脚 6/35。标题「古早时期：That's All」。写「一个优盘，装着全部代码」。第一个 PhD student 的故事（约 2012）：大一把代码保存在优盘上，优盘坏了，代码没了。交作业是打包发邮件，现在似乎变成网页上传。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v001004867.jpg",
-          "time": 1004.867,
-          "caption": "幻灯标题「今天：Git」。写项目版本管理有了标准答案：保存当前文件之外，还能保留、比较和恢复历史版本，链到 Pro Git。作业发布与提交：git clone 获取作业项目，git pull 获取后续更新，make submit 提交作业。脚注写 make submit 是课程项目约定的提交入口，由项目里的 Makefile 定义，链到 GNU Make。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p07.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 7,
+          "related_time": 1004.867,
+          "caption": "官方 slides 第 7 页，页脚 7/35。标题「今天：Git」。写项目版本管理有了标准答案：保存当前文件之外，还能保留、比较和恢复历史版本。紫色 AIGC 批注链到 Pro Git 和 GNU Make。作业发布与提交：git clone 获取作业项目，git pull 获取后续更新，make submit 提交作业。脚注写 make submit 是课程项目约定的提交入口，由项目里的 Makefile 定义。"
         }
       ],
       "start": 821.68,
@@ -406,7 +440,8 @@
         "s-g193.0~1",
         "s-g198.0~4",
         "s-g201.1"
-      ]
+      ],
+      "flow": "p0 p1 p2 e0 n0 n1 n2 f0 f1 x0"
     },
     {
       "title": "学习变容易以后，意识比知识点重要",
@@ -428,10 +463,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v001184867.jpg",
-          "time": 1184.867,
-          "caption": "幻灯标题「学习变容易以后，学习意识更重要」。写大量别人的项目就是学习素材：公众号上满天都是 GitHub 链接；哪怕没有人告诉哪个好、哪个不好，看得多了也会有感觉。另一节标题是「上课耽误学习」的本质：课外的信息量、信息密度巨大，但我们从未教过如何用好。脚注建议把一次浏览变成一个具体问题：这个项目里的哪一个细节，是我自己做时不会想到的？"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p08.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 8,
+          "related_time": 1184.867,
+          "caption": "官方 slides 第 8 页，页脚 8/35。标题「学习变容易以后，学习意识更重要」。大量别人的项目就是学习素材；公众号上满天都是 GitHub 链接，没有人告诉哪个好、哪个不好，看得多了也会有感觉。「上课耽误学习」的本质：课外的信息量、信息密度巨大，但我们从未教过如何用好。紫色批注建议把一次浏览变成一个具体问题：这个项目里的哪一个细节，是我自己做时不会想到的？"
         }
       ],
       "start": 1018.9,
@@ -462,7 +500,8 @@
         "s-g284.0~21",
         "s-g285.0~22",
         "s-g287.0~8"
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 n0 f0 x5"
     },
     {
       "title": "先在脑子里做一遍",
@@ -479,14 +518,18 @@
         "所以在 AI 时代更可以对细节保持注意力。看各种各样的 Git 仓库，读别人的东西，甚至 AI 生成的东西，都用感知细节的方式。这是他开的一个头。然后就可以讲 Git 的具体细节：首先为什么要 Git。"
       ],
       "editor_notes": [
-        "转写 virtuallyimplement 分写为 virtually implement。1424 秒幻灯把步骤写成：看到问题先问自己会怎么想、如何 approach；再看作者的做法；一致就很好；不一致就是一个学习的机会。页底还有 Chi et al. (1989) 和「自我解释」的脚注，口述没有念作者和年份，不写入课堂结论。"
+        "转写 virtuallyimplement 分写为 virtually implement。1424 秒幻灯把步骤写成：看到问题先问自己会怎么想、如何 approach；再看作者的做法；一致就很好；不一致就是一个学习的机会。页底还有 Chi et al. (1989) 和「自我解释」的脚注，口述没有念作者和年份，不写入课堂结论。",
+        "chi-1989 的 Wiley 页和 pdfdirect 这次仍是 403，没有绕过。读的是亚利桑那州立大学教学学院公开的同一篇 PDF。样本、成功率和协议行数写在外部资料里。slides 第 9 页把「把解题步骤和背后的原理联系起来」标成这篇，链接在 AIGC 批注里，口述没有念作者和年份。"
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v001424867.jpg",
-          "time": 1424.867,
-          "caption": "幻灯标题「留意：让每一次阅读都成为学习」。一节是 Virtually Implement：先在脑中做一遍。四条：看到问题，先问自己会怎么想、如何 approach；再看作者的做法；如果一致——很好；如果不一致——就是一个学习的机会。另一节「对细节保持注意力」：读别人的东西，甚至 AI 生成的东西，都要有感知细节的意识；哪怕只看到一段话，也可以预测下一段是什么；留意使你持续学习、水平持续上升。页脚脚注提到学习研究中的自我解释，并写 Chi et al. (1989)。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p09.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 9,
+          "related_time": 1424.867,
+          "caption": "官方 slides 第 9 页，页脚 9/35。标题「留意：让每一次阅读都成为学习」。Virtually Implement：先在脑中做一遍。看到问题先问自己会怎么想、如何 approach，再看作者的做法；一致就很好，不一致就是学习的机会。对细节保持注意力，读别人的东西甚至 AI 生成的东西也要能感知细节，哪怕只看到一段话也可以预测下一段。紫色 AIGC 批注把「自我解释」连到 Chi et al. (1989)。"
         }
       ],
       "visual": {
@@ -527,7 +570,8 @@
         "s-g299.0~3",
         "s-g299.0~30",
         "s-g300.0"
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 n0 n1 f0 x14"
     },
     {
       "title": "冲突发生时，信息要摊在原地",
@@ -551,10 +595,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v001604867.jpg",
-          "time": 1604.867,
-          "caption": "幻灯标题「Git：听说过，还是用过？」，一节是「上周的保研面试」。三条：解释什么是 Git，多多少少都能说两句；git rebase 是什么，0/10；git merge 冲突以后会观察到什么。下面写：竟然没有人说出，文本内容冲突时，双方内容和冲突标记会直接写入工作区文件，git status 显示 both modified。结论是「第一没用过，第二没有留意」。观察入口：打开冲突文件，看看 Git 留下了什么。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p10.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 10,
+          "related_time": 1604.867,
+          "caption": "官方 slides 第 10 页，页脚 10/35。标题「Git：听说过，还是用过？」。上周保研面试：解释什么是 Git，多多少少都能说两句；git rebase 是什么，0/10；git merge 冲突以后会观察到什么。下面写竟然没有人说出：文本内容冲突时，双方内容和冲突标记会直接写入工作区文件，git status 显示 both modified。紫色 AIGC 批注链到 Pro Git 的 Basic Branching and Merging，锚文字是「打开冲突文件，看看 Git 留下了什么」。"
         }
       ],
       "visual": {
@@ -597,7 +644,8 @@
         "s-g353.0~2",
         "s-g357.0~18",
         "s-g359.0~34"
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 e0 n0 f0 x1"
     },
     {
       "title": "补丁走不通，所以要快照",
@@ -621,16 +669,22 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v001784867.jpg",
-          "time": 1784.867,
-          "caption": "幻灯标题「Git 之前，版本怎么管？」。先把旧的留下来：直接复制整个目录，叫作业-v1、作业-v2、作业-最终版，能找回旧文件，但哪份从哪份改来、谁改了什么，要靠人记。用工具记：RCS 等工具替你保存文件的历史版本。再让大家一起改：CVS、SVN 把历史放在一台服务器，大家取出文件、修改、再交回去。Git：保存项目的一个个版本，也记录它们的来路，帮助大家汇合改动，通常每个人本地就有完整历史。底部链到 Pro Git 里版本管理的几种做法。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p11.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 11,
+          "related_time": 1784.867,
+          "caption": "官方 slides 第 11 页，页脚 11/35。标题「Git 之前，版本怎么管？」。复制整个目录，叫作业-v1、作业-v2、作业-最终版，能找回旧文件，但哪份从哪份改来要靠人记。RCS 等工具保存文件的历史版本。CVS、SVN 把历史放在一台服务器。Git 保存项目的一个个版本，也记录来路，通常每个人本地就有完整历史。紫色 AIGC 批注「版本管理的几种做法 · Pro Git」。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v001964867.jpg",
-          "time": 1964.867,
-          "caption": "幻灯标题「Git 从哪里来？」，副题「一个大项目，逼出了自己的工具」。三格时间线：1991—2002 补丁、打包文件，开发者传递改动，维护者收集、整合；2002 BitKeeper，采用分布式工具管理多人并行开发；2005 Git，免费使用，Linus 等人开发自己的工具。底部写需求一直是：保存来路，让许多人的改动汇成一个项目。链到 Pro Git 的 Git 简史。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p12.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 12,
+          "related_time": 1964.867,
+          "caption": "官方 slides 第 12 页，页脚 12/35。标题「Git 从哪里来？」，副题「一个大项目，逼出了自己的工具」。图题「Linux 内核：改动怎样汇到一起？」。三格：1991—2002 补丁、打包文件，开发者传递改动，维护者收集、整合；2002 BitKeeper，采用分布式工具管理多人并行开发；2005 Git，免费使用权被收回，Linus 等人开发自己的工具。底部写需求一直是保存来路，让许多人的改动汇成一个项目。整段时间线和「Git 简史 · Pro Git」都在紫色 AIGC 框里。"
         }
       ],
       "visual": {
@@ -701,6 +755,15 @@
           "path": "frames/v002384900.jpg",
           "time": 2384.9,
           "caption": "终端里模型还在 Thinking。它写道：这个 commit 不太符合 best practice，主要问题在提交信息，其次代码本身也有问题。表格三列是方面、现状、Best practice。提交信息可读性的现状是 I did some cool stuffs，完全看不出做了什么；建议说明做了什么以及为什么。格式规范建议遵循 Conventional Commits，例子有 feat:、fix:、refactor:。信息粒度的现状是只有一个新文件、粒度过小；建议一个 commit 应是一个逻辑完整的变更。代码内容写着 int main() {}，没有 include、没有 return，与 commit 规范无关，但属于质量问题的信号。更好的写法举例：feat: add hello program skeleton。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p15.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 15,
+          "related_time": 2120.0,
+          "caption": "官方 slides 第 15 页，页脚 15/35。标题「从空白开始」。git init 得到空 repository，可以和 GitHub、GitLab 建立关联。git clone 从远处下载代码，git add 添加到 Staging Area (Index)，git commit 提交一个快照。问：git add hello.c 之后又改了 hello.c，下一次 commit 会提交哪个版本？回答写「提交的是 add 时暂存的内容」。紫色 AIGC 批注链到 Git 官方说明 git-add。"
         }
       ],
       "start": 2088.35,
@@ -728,7 +791,8 @@
         "s-g516.0~8",
         "s-g524.0~5",
         "s-g528.0~8"
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 e0 n0 n1 f0 f1 x2"
     },
     {
       "title": "空提交偶尔可以，但不能当习惯",
@@ -932,10 +996,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003319033.jpg",
-          "time": 3319.033,
-          "caption": "幻灯标题「进组以后的高血压时刻」。清单：生成的文件不提交（dist/、log/ 等）；个人的配置不提交（.vscode 中的个人设置等）；判断的是用途，团队共享、可移植的配置可以提交，不能只看目录名；密钥不能提交，审稿的时候见过好多；临时文件不提交（.DS_Store 等）；规则是活的：package lock、generated header 等。另一节「忽略不等于遗忘」：.gitignore 不会让已经被跟踪的文件自动退出版本管理；密钥一旦泄露，删掉当前文件也不能收回别人拿到的副本，应先撤销或轮换凭据，再处理历史。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p18.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 18,
+          "related_time": 3319.033,
+          "caption": "官方 slides 第 18 页，页脚 18/35。标题「进组以后的高血压时刻」。生成的文件不提交（dist/、log 等）；个人配置不提交，但判断的是用途，团队共享、可移植的配置可以提交；密钥不能提交；临时文件如 .DS_Store 不提交；规则是活的：package lock、generated header。紫色 AIGC 批注写 .gitignore 不会让已被跟踪的文件自动退出，密钥一旦泄露应先撤销或轮换凭据，并链到 gitignore 文档和 GitHub 的 Removing sensitive data。"
         },
         {
           "source_type": "video_frame",
@@ -985,7 +1052,8 @@
         "s-g775.0~32",
         "s-g776.0",
         "s-g777.0"
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 e0 n0 f0 x3 f1"
     },
     {
       "title": "钩子、命名，以及值得追问的直觉",
@@ -1008,10 +1076,22 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v003619033.jpg",
-          "time": 3619.033,
-          "caption": "幻灯标题「大写还是小写？」。真实项目中的一个选择，并排写着 [TYPO-CHECK] Docs should be typo-free 与 [typo-check] Docs should be typo-free。问：Check-rule 的名字应该是大写还是小写？直觉也值得追问：大写似乎更好，但不是极强，但不太说得出原因。脚注：先想一想，方括号里的字符是一句话的一部分，还是一个可以被引用的规则名字？"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p19.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 19,
+          "related_time": 3619.033,
+          "caption": "官方 slides 第 19 页，页脚 19/35。标题「大写还是小写？」。并排 [TYPO-CHECK] Docs should be typo-free 与 [typo-check] Docs should be typo-free。问 check-rule 的名字应该大写还是小写。写直觉是大写似乎更好，但不是极强，不太说得出原因。先想方括号里的字符是一句话的一部分，还是一个可以被引用的规则名字。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p20.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 20,
+          "related_time": 3720.0,
+          "caption": "官方 slides 第 20 页，页脚 20/35。标题「这里，我会选 TYPO-CHECK」。[TYPO-CHECK] 是固定的规则标识，Docs should be typo-free 是解释规则的自然语言；大写让两者在视觉上分开。这是此处的设计判断，并非大写总是更可读。紫色 AIGC 批注用 RFC 8174 作类比：MUST 等关键词仅在大写时承载约定的特殊含义。批注同时写 RFC 没有规定 check-rule 必须大写；项目若已有小写规则体系，或工具要求小写，应优先保持一致。"
         }
       ],
       "start": 3577.84,
@@ -1032,7 +1112,8 @@
         "s-g844.0",
         "s-g857.0~1",
         "s-g864.0~2"
-      ]
+      ],
+      "flow": "p0 p1 p2 e0 n0 f0 f1 x4"
     },
     {
       "title": "目录树只复制到根的那一条路径",
@@ -1051,7 +1132,8 @@
         "黑板上他先画了版本链：几圈连到 V1，再到 V2，V2 旁标着 tag v0.1，并写了 hook 和 finalize。下板画了两棵树。一棵下面标着大量文件；另一棵是改过之后的版本，从改过的节点沿着到根的路径又画了一份，没改的枝用线指回旧树。"
       ],
       "editor_notes": [
-        "转写「快找」记为快照。「一百万个文件」和「一千层」是他用来说明增量很小的数量级，不是某个仓库的统计。3968 秒右侧幻灯此时停在「告别古法学习」，讲的是可视化，和黑板上的树不是同一张图的标题。"
+        "转写「快找」记为快照。「一百万个文件」和「一千层」是他用来说明增量很小的数量级，不是某个仓库的统计。3968 秒右侧幻灯此时停在「告别古法学习」，讲的是可视化，和黑板上的树不是同一张图的标题。",
+        "os2026-git-segment：s-g878.0~5 里讲师说「可能会推荐」去看操作系统课上讲 Git 的那一段，并说自己只讲一个头：Git 是持久化的数据结构，持久化的是目录树。2026 秋季操作系统 lect25.md 的标题是文件系统 API，其中有「Git: 这个题我懂，我就是一个持久化数据结构」。播放列表 https://space.bilibili.com/202224425/lists/7587348 没有定位到单集，本地也没有该讲媒体，所以没有做音视频复核，不能把 lect25 后面的 stash、worktree 写成本课内容。"
       ],
       "frames": [
         {
@@ -1090,7 +1172,8 @@
         "s-g939.0~17",
         "s-g940.0~30",
         "s-g945.0"
-      ]
+      ],
+      "flow": "p0 p1 p2 e0 n0 n1 f0 x13"
     },
     {
       "title": "三种对象，以及别人已经做好的可视化",
@@ -1278,10 +1361,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v004767000.jpg",
-          "time": 4767.0,
-          "caption": "幻灯标题「把真实的 Git Repo 展开给你看」。引用块是一段提示词：实现 gitv 命令行工具（nodejs），把一个真实的 git repo 可视化；可以使用 git 命令；展示任何对象之前都从文件系统里的真实文件、原始 bytes 出发，一步一步解析；持续监听目录中 git 的变化，并用 css 动画展示。下面写「直接生成，现场对比」：GPT-6 直出，对比 https://learngitbranching.js.org/ ，以及 https://code.cs61a.org/ 。页脚脚注提到算法可视化研究，写着 Hundhausen 等，2002。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p22.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 22,
+          "related_time": 4767.0,
+          "caption": "官方 slides 第 22 页，页脚 22/35。标题「把真实的 Git Repo 展开给你看」。引用块是实现 gitv 的提示词：nodejs，真实 git repo，展示对象前从文件系统里的真实文件和原始 bytes 出发，可拖动，明快极简，浅色背景，http server 持续监听并用 css 动画展示变化。对比一行写 GPT-6 直出 v.s. https://learngitbranching.js.org/ ；国模直出 v.s. https://code.cs61a.org/ 。这两条链接在正文里，不在 AIGC 框中。紫色 AIGC 批注写算法可视化研究的启发：学习者怎样使用可视化，比可视化展示了什么更影响学习效果，并链到 Hundhausen 等，2002。"
         },
         {
           "source_type": "video_frame",
@@ -1333,7 +1419,8 @@
         "s-g1139.0~15",
         "s-g1142.0~10",
         "s-g1147.0~8"
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 e0 n0 f0 x7 f1 f2"
     },
     {
       "title": "约定要短，提交要小",
@@ -1366,22 +1453,49 @@
           "caption": "浏览器打开 Conventional Commits 的首页，整页是品红色。标题 Conventional Commits，副题 A specification for adding human and machine readable meaning to commit messages。三个按钮：Quick Summary、Full Specification、Contribute。下方能看到 Conventional Commits 1.0.0 beta。右侧是一条白色的提交图。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005367500.jpg",
-          "time": 5367.5,
-          "caption": "幻灯标题「更多的 Best Practices」，问「比如，你会写 Commit Message 吗？」。第一条链到 Conventional Commits。例子是 fix(parser): accept repeated spaces between arguments。说明：类型 + 范围 + 行为变化，人可以浏览，工具可以分类、生成 changelog。另一节「Diff 留下改动，Message 留下理由」。正文示例：旧解析器把连续空格当成空参数，导致复制来的命令失败；现在忽略多余空格，保留引号内容。又写 fix: 只能说明修了 bug，触发条件、设计理由和 issue 链接，才能帮助后来的人判断这段代码能不能删。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p24.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 24,
+          "related_time": 5367.5,
+          "caption": "官方 slides 第 24 页，页脚 24/35。标题「更多的 Best Practices」，问「比如，你会写 Commit Message 吗？」。正文链接 Conventional Commits，例子 fix(parser): accept repeated spaces between arguments。说明类型 + 范围 + 行为变化，人可以浏览，工具可以分类、生成 changelog。Diff 留下改动，Message 留下理由。示例正文：旧解析器把连续空格当成空参数，导致复制来的命令失败；现在忽略多余空格，保留引号内空格。这条 Conventional Commits 链接在 slides 正文，URL 是 v1.0.0-beta，不在 AIGC 框里。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005487500.jpg",
-          "time": 5487.5,
-          "caption": "幻灯标题「SWE-Bench：接手已有项目的一次修改」。输入是项目现场，输出是补丁。写经典 SWE-bench 从真实 GitHub issue 和对应 PR 构建任务：给定仓库、起始提交 base_commit 和问题描述，产出 patch。日常工作顺序：理解现象、复现、找调用路径和已有约定、修改、验证、检查 diff。FAIL_TO_PASS：针对问题的测试由失败变为通过。PASS_TO_PASS：原来通过的测试，修改后仍然通过。小而完整的改动便于定位失败，固定起点让别人能重放修改。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p27.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 27,
+          "related_time": 5487.5,
+          "caption": "官方 slides 第 27 页，页脚 27/35。标题「SWE-Bench：接手已有项目的一次修改」。输入是项目现场，输出是补丁。写经典 SWE-bench 从真实 GitHub issue 和对应 PR 构建任务：给定仓库、起始提交 base_commit 和问题描述，产出 patch。日常顺序：理解现象、复现、找调用路径和已有约定、修改、验证、检查 diff。FAIL_TO_PASS：针对问题的测试由失败变为通过。PASS_TO_PASS：原来通过的测试修改后仍然通过。紫色 AIGC 批注把「任务定义」连到 arXiv:2310.06770，把「评测规则」连到 SWE-bench harness API。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v005547500.jpg",
-          "time": 5547.5,
-          "caption": "幻灯标题「Git 之外：gh 与 glab」。副题「从问题到合入，把流程接起来」，并写甚至为了管理 non-git 的部分，还专门有 gh、glab。流程图包括读 issue、复现与测试、保存快照、推送分支、发起 PR / MR、CI 与 review、合并。底部写 Git 保存和传输版本，gh / glab 操作平台上的 issue、PR/MR 与 CI 状态，让人和 Agent 都能从命令行完成协作。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p29.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 29,
+          "related_time": 5540.0,
+          "caption": "官方 slides 第 29 页，页脚 29/35。标题「Git 之外：gh 与 glab」。副题「从问题到合入，把流程接起来」。写甚至为了管理 non-git 的部分，还专门有 gh、glab。图中七步：读 issue、修改与测试、保存快照、推送分支、发起 PR/MR、CI 与 review、合并。紫色 AIGC 批注写：Git 保存和传输版本；gh / glab 操作平台上的 issue、PR/MR 与 CI 状态，人和 Agent 都能从命令行完成协作。批注里的 gh 和 glab 是带下划线的链接。图下写 git push 传输的是版本；PR/MR 还承载讨论、检查与合并决策。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p25.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 25,
+          "related_time": 5400.0,
+          "caption": "官方 slides 第 25 页，页脚 25/35。标题「Best Practices：让错误可恢复」。一、给自己留退路：及时 commit，只在工作区里的修改 Git 未必能救；误操作后先保护现场，再查 reflog；远端 clone 不包含未提交文件。二、把探索整理成别人能接手的变化：按一个意图拆分提交，修复和相应测试放在一起，顺手格式化另开提交；整理后的提交能构建、能测试，review、revert、bisect 才有可靠的单位。正文里的 best practice 链接到 Seth Robertson 的 Git Best Practices，不在 AIGC 框里。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p28.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 28,
+          "related_time": 5510.0,
+          "caption": "官方 slides 第 28 页，页脚 28/35。标题「一行修复，背后是一整套工程工作」。真实任务：Astropy 的嵌套模型。SWE-bench 任务 astropy__astropy-12907：把两个独立线性模型先打包再组合，依赖矩阵却把它们算成互相依赖。Issue #12906。根因：拼接矩阵时把右侧子模型的依赖矩阵填成了全 1，修复为保留原矩阵。真实 PR 还补了不同嵌套方式的测试和 changelog，经过 review 合并，再回移到 v5.0.x。紫色 AIGC 批注分别链到 Hugging Face 数据集、Issue #12906、PR 文件和 PR #12907。页末写 SWE-bench 主要验收补丁的测试结果，现实项目还要完成沟通、审查和交付。"
         }
       ],
       "start": 5212.3,
@@ -1422,7 +1536,8 @@
         "s-g1192.1~25",
         "s-g1193.0~4",
         "s-g1194.0"
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 e0 e1 e2 n0 n1 f0 f1 x8 f2 f3 x11 f4 x9 f5 x10 x15"
     },
     {
       "title": "原子变更，然后再交给多个 Agent",
@@ -1453,10 +1568,13 @@
       ],
       "frames": [
         {
-          "source_type": "video_frame",
-          "path": "frames/v005607500.jpg",
-          "time": 5607.5,
-          "caption": "幻灯标题「回到软件工程」。项目 = 由 Atomic Change 推进的快照。可以分支，可以合并。这是人类成功的经验。人无法处理一团混沌；必须分解成可以理解、可以审计的小任务；出了问题可以 bisect，发生冲突可以解决；有些项目要求 linear history，历史易于追溯，cherry-pick / blame 友好。下一节：AI-native 也要避免一团混沌。在无限大能力的模型到来之前，这条法则依然成立。一个 change 对应一个意图：出了问题，才能单独解释、验证、撤销。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p30.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 30,
+          "related_time": 5607.5,
+          "caption": "官方 slides 第 30 页，页脚 30/35。标题「回到软件工程」。项目 = 由 Atomic Change 推进的快照。可以分支，可以合并。这是人类成功的经验。人无法处理一团混沌，必须分解成可以理解、可以审计的小任务。出了问题可以 bisect，发生冲突可以解决。有些项目要求 linear history：历史易于追溯，cherry-pick / blame 友好。AI-native 也要避免一团混沌。一个 change 对应一个意图，出了问题才能单独解释、验证、撤销。"
         },
         {
           "source_type": "video_frame",
@@ -1465,10 +1583,31 @@
           "caption": "Pico Playground 的 Pico World。左侧仍是 drop metal 的三重循环和 drop(0, 0, \"rocket\")。右侧沙地上是灰色阶梯体。调试读数 z = 3、x = 3、y = 3，底部有红黄相间的时间轴。"
         },
         {
-          "source_type": "video_frame",
-          "path": "frames/v006007267.jpg",
-          "time": 6007.267,
-          "caption": "幻灯标题「当 Agent 快了 1000 倍」。一个思想实验：代码产能暴涨。Agent 可以 1000 倍更快地生产代码。Git 为人设计的使用方式，可能跟不上这个速度。生成一分钟，人工验收一小时：积压的是等待判断的变更。即使修改不同文件，也可能同时改变同一个接口约定。从零设计一个 Agent VCS：快照、变更，以及一个 change algebra。系统要回答哪些变更能组合、哪些必须排队、哪些需要重新验证。像数据库处理事务一样，让 Agent 提交基于某个版本的修改，由系统控制它何时生效。"
+          "source_type": "pdf_page",
+          "path": "frames/slides/p32.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 32,
+          "related_time": 5980.0,
+          "caption": "官方 slides 第 32 页，页脚 32/35。标题「当 Agent 快了 1000 倍」。一个思想实验：代码产能暴涨。Agent 可以 1000 倍更快地生产代码。Git 为人设计的使用方式可能跟不上这个速度。生成一分钟，人工验收一小时：积压的是等待判断的变更。即使修改不同文件，也可能同时改变同一个接口约定。从零设计一个 Agent VCS：快照、变更，以及一个 change algebra。系统要回答哪些变更能组合、哪些必须排队、哪些需要重新验证。像数据库处理事务一样，让 Agent 提交基于某个版本的修改，由系统控制它何时生效。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p33.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 33,
+          "related_time": 5860.0,
+          "caption": "官方 slides 第 33 页，页脚 33/35。标题「快照、变更与并发控制」。副题「在快照上并行工作，在发布时决定顺序」。图从同一快照 S0 分出 Agent A 的 ΔA 和 Agent B 的 ΔB，读取当前 H，组合成候选 C，用规格、测试、不变量验证；失败则交回 Agent 修订；通过则问短锁 / CAS：HEAD 仍为 H？是则发布新快照 C，否则重读、重组、重验。图注写 MVCC 管理并发版本，change algebra 描述变更如何组合，可交换的变更满足 ΔB(ΔA(S)) = ΔA(ΔB(S))，但组合结果仍需满足项目的不变量。紫色 AIGC 批注写生成与测试在锁外进行，只对验证过的确切版本做原子发布，并链到 PostgreSQL 并发控制。"
+        },
+        {
+          "source_type": "pdf_page",
+          "path": "frames/slides/p34.jpg",
+          "source_label": "官方 slides https://jyywiki.cn/GSE/2026/slides3.html",
+          "source_url": "https://jyywiki.cn/GSE/2026/slides3.html",
+          "page": 34,
+          "related_time": 5920.0,
+          "caption": "官方 slides 第 34 页，页脚 34/35。标题「合并成功之后，还要问什么？」。Jujutsu 已经靠近这个方向。稳定的 change ID：一个变更经过修改、rebase，仍能追踪其身份。冲突可以作为状态保存；operation log 记录仓库操作，并支持并发操作的协调。值班员例子：项目要求至少一名值班员在岗，甲乙都在岗；Agent A 看到乙在岗把甲改成离岗，Agent B 看到甲在岗把乙改成离岗，合并后无人值班。页上称这叫 write skew，只提供快照还不够。紫色 AIGC 批注链到 Jujutsu Tutorial、First-Class Conflicts、Operation Log 和 PostgreSQL 事务隔离。"
         }
       ],
       "visual": {
@@ -1545,11 +1684,204 @@
         "s-g1231.0~61",
         "s-g1233.0~1",
         "s-g1234.0~3"
-      ]
+      ],
+      "flow": "p0 p1 p2 p3 p4 e0 e1 e2 n0 n1 f0 f1 f2 f3 x12 f4"
     }
   ],
-  "bridges": {},
-  "supplements": [],
+  "bridges": {
+    "x0": "这三节把课堂上的快照、优盘故事和 2005 年时间线，对到 Pro Git 自己的定义和编年，并标出讲师说不必自己通读。",
+    "x1": "面试里没人说出的冲突现场，和手册里的标记、both modified、以及 rebase 不该重写已发布提交，放在同一处对照。",
+    "x2": "幻灯问 add 之后又改了会提交哪一版，手册的回答就放在这个提问旁边。",
+    "x3": "「不要提交密钥和生成文件」旁边补上：ignore 文件不管已经跟踪的路径，秘密要先轮换。",
+    "x4": "讲师说不大讲得出大写的原因。这一页用 RFC 作类比，同时写明 RFC 管的不是规则名。",
+    "x5": "「专家的知识围绕核心概念」这句的出处在幻灯批注里，放在学习意识这一节。",
+    "x6": "第 2 页脚注里的论文，只核对摘要里的那句边界，不把后文当成课堂结论。",
+    "x7": "第 22 页用这篇元研究支持「怎样用可视化更重要」，放在 gitv 和 Learn Git Branching 的对照旁边。",
+    "x8": "口述的 Conventional Commits 规则，要分清现场打开的 beta 和讲义页上的 1.0.0。",
+    "x9": "幻灯把 reflog 和及时 commit 算作 best practice，这里是那篇文章里对应的两节，以及它自己写的「没有唯一答案」。",
+    "x10": "SWE-bench 那一页上的测试名和数字来自论文与 harness；astropy 这个例子可以在 PR diff 里对上「全 1 改成保留原矩阵」。",
+    "x11": "gh / glab 只说明它们操作的是平台上的 issue、MR 和 CI，不把手册里的子命令表当成已讲内容。",
+    "x12": "思想实验里的 change algebra 和值班员例子，用 Jujutsu 文档和 PostgreSQL 隔离级别分开：文档没有写 write skew 这个词。",
+    "x13": "「目录树只复制到根的那条路径」对应到 blob 不含文件名、tree 指向 blob、commit 指向 tree。",
+    "x14": "第 9 页脚注里的「自我解释」指的是这篇；口述没有念作者和年份，实验数字不写进课堂结论。",
+    "x15": "第 28 页的任务实例指向这张数据集卡片。2,294 和 2,519 按卡片上的两处原文分开记。"
+  },
+  "supplements": [
+    {
+      "title": "Pro Git：本地、集中、分布式，以及 2005 年的目标",
+      "source_label": "讲义页正文链接的 Pro Git 章节；slides 上的 Pro Git 链接在 AIGC 批注里，不是老师口头布置的阅读。讲师在 s-g466.1 说 Pro Git 可以让 agent 看，自己不必再读。",
+      "source_url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+      "text": "progit-about-vc、progit-history、progit-what-is-git 是 git-scm.com 上 About Version Control、A Short History of Git、What is Git? 三节的英文正文。About Version Control 的定义是：version control records changes to a file or set of files over time so that you can recall specific versions later。RCS 把 patch sets 存在磁盘上，再把补丁加起来还原任一时刻的文件。集中式服务器最明显的缺点是 single point of failure。Git、Mercurial、Darcs 这类分布式系统里，客户端 fully mirror the repository, including its full history，Every clone is really a full backup of all the data。What is Git? 写：如果文件没变，Git 不再存一份，just a link to the previous identical file。三种状态是 modified、staged、committed：改了还没提交、已经标记进下一次提交、已经进了本地数据库。A Short History of Git 写：2002 年 Linux 内核开始用专有的 BitKeeper；2005 年 free-of-charge status was revoked，Linus Torvalds 等人自己做了工具。书上列的目标是 Speed、Simple design、Strong support for non-linear development、Fully distributed、Able to handle large projects like the Linux kernel。讲师口头说 Pro Git 可以让 agent 看，不必自己再读。这些是课堂已经在讲的快照和来路的出处，不是另一套结论。"
+    },
+    {
+      "title": "冲突标记和 rebase：Pro Git 怎么写",
+      "source_label": "讲义页正文链接；slides 第 10 页的合并链接在 AIGC 批注里，不是老师口头点名要读的章节。",
+      "source_url": "https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging",
+      "text": "progit-branch-merge 用 index.html 写出冲突现场。能沿着已有历史走到的提交，Git 只把指针向前移，这叫 fast-forward，因为没有分叉的工作要合并。分叉之后，Git 用两个分支尖端的快照和共同祖先做 three-way merge，并自动生成一个新提交，而不是只移动指针。冲突没有解决时，git status 把文件列在 Unmerged paths 下，并写 both modified: index.html。书上的标记例子是 <<<<<<< HEAD:index.html，中间是 =======；HEAD 一侧是上面那一块，也就是执行 merge 时所在分支的内容。解决每一处之后，对文件运行 git add，把冲突标成已解决。progit-rebase 把 rebase 定义成把一个分支上已经提交的改动 replay 到另一个分支。警告的原句是 Do not rebase commits that exist outside your repository and that people may have based work on。书给的折中是 rebase local changes before pushing，但 never rebase anything that you’ve pushed somewhere。"
+    },
+    {
+      "title": "add 一次，记的是当时那一版",
+      "source_label": "讲义页正文和 slides 第 15 页 AIGC 批注都指向 git-add 手册。AIGC 批注不是老师口头推荐。",
+      "source_url": "https://git-scm.com/docs/git-add",
+      "text": "git-add 手册的 DESCRIPTION 直接回答 slides 第 15 页的问题。index 也叫 staging area，是用来准备下一次提交内容的。不带其他参数的 git commit 只提交已经暂存的改动。这条命令可以在一次提交前运行多次，但每次只把指定文件在执行 add 那一刻的内容放进 index；如果之后又改了，想让新内容进入下一次提交，必须再运行一次 git add。默认不会添加被忽略的文件。课堂演示里模型盯着的是提交说明和产物，这一条是手册对「暂存」这两个字的操作定义。"
+    },
+    {
+      "title": "gitignore 不取消跟踪；密钥先轮换",
+      "source_label": "讲义页正文链接 gitignore；GitHub 指南只出现在 slides 第 18 页的 AIGC 批注里，不是老师口头推荐。",
+      "source_url": "https://git-scm.com/docs/gitignore",
+      "text": "gitignore 手册写明：已经被 Git 跟踪的文件不受 gitignore 影响。要停止跟踪，用 git rm --cached 把它从 index 里拿走，再把文件名写进 .gitignore，避免下次又加回来。模式可以来自命令行、仓库里的 .gitignore、$GIT_COMMON_DIR/info/exclude，以及 core.excludesFile。github-secrets 写：如果要删的是密码或令牌，第一步是 revoke and/or rotate；轮换之后旧秘密不能再用来访问，重写历史不一定值得做。重写会改变引入该秘密的提交以及之后所有提交的哈希。同事若拿改写前的克隆 pull 再 push，秘密会回到仓库。GitHub Support won't remove non-sensitive data, and will only assist where the risk can't be mitigated by rotating affected credentials。"
+    },
+    {
+      "title": "RFC 8174 只约束协议里的大写关键词",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8174.html",
+      "text": "rfc8174 是 2017 年 5 月的 BCP 14，Barry Leiba 写的 Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words，更新 RFC 2119。它澄清的是 IETF 文档里的要求用语：MUST、SHOULD、MAY 这些词只有在全部大写时才具有 RFC 2119 规定的特殊含义；不大写时就是普通英语，不受这份文档影响。它同时写，规范文本并不必须使用这些关键词。slides 第 20 页用它类比 [TYPO-CHECK] 和后面那句自然语言为什么要在字形上分开，并明确写了 RFC 没有规定 check-rule 必须大写。所以「大写似乎更好，但不是极强」仍然是这一页自己的设计判断，不能从 RFC 8174 推出项目规则名必须大写。"
+    },
+    {
+      "title": "How People Learn：专家把知识组织在核心概念上",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://www.nationalacademies.org/read/9853/chapter/5",
+      "text": "hpl-ch5 是 National Academies Press 上 How People Learn: Brain, Mind, Experience, and School: Expanded Edition 的一页，URL 路径是 /read/9853/chapter/5，页面标题是 How Experts Differ from Novices，并写 First released in the Spring of 1999。章首列出六条：专家注意到新手注意不到的有意义模式；专家的内容知识组织方式反映对学科的深入理解；这些知识不能还原成孤立事实，而是 conditionalized，带上适用情境；专家能以很少的注意努力灵活取回重要知识；精通学科不保证教得好；面对新情境的灵活程度并不一样。DeGroot (1965) 的棋手研究被用来说明大师并不是一律搜索得更宽或更深，而是认出有意义的棋局；Chi (1978) 写有经验的 10、11 岁棋手记得的棋子比不会下棋的大学生多，但记随机数字时反过来。知识组织一节写：专家的知识不是一列事实和公式，而是 organized around core concepts or big ideas。物理题分类里，专家按可使用的原理归堆，新手按表面特征归堆（Chi et al., 1981）。后半写：专家的知识是 conditionalized 的，不带适用条件的知识常常是 inert（Whitehead, 1929）；Simon (1980) 被引来说明教科书更会陈述定律，很少说明这些定律何时有用。流畅提取不等于专家总是比新手快：专家有时为了先理解问题而花更多时间（Getzels and Csikszentmihalyi, 1976）。精通内容也不保证会教。Shulman (1986, 1987) 把学科内容知识和 pedagogical content knowledge 分开，后者包括学生典型的困难、学习路径和应对办法。Hatano and Inagaki (1986) 用两种做寿司的人区分按固定食谱做的技能和 adaptive expertise；Miller (1978) 在信息系统设计里把接受客户原话的人叫做 artisans，把客户的问题陈述只当作出发点的人叫做 virtuosos。结论有两句限制：六条要一起看，不能单拎一条；也不能假定把专家的做法摆给新手看，新手就会学会，他们能学到什么取决于他们已经知道什么。slides 第 4 页「专家的知识围绕核心概念组织」是知识组织那一句的压缩。这一章不是 Git 方法的原始来源，链接在 AIGC 批注里。"
+    },
+    {
+      "title": "Simon 1973：结构不良问题的边界是流动的",
+      "source_label": "官方 slides AIGC 批注推荐，非课堂口述",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/0004370273900118",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "text": "simon-1973 的 slides 链接是 ScienceDirect 上 Herbert A. Simon, The Structure of Ill Structured Problems, Artificial Intelligence 4 (1973) 181–201。出版页这次仍返回 403。读到的是同一篇的开放转载，PDF 21 页都读了。首页作者、标题、期刊和 1973 年页码与原链接一致。摘要原句是 The boundary between well structured and ill structured problems is vague, fluid and not susceptible to formalization。同一页把 ill structured problem 定义成 residual concept。文末第 5 节又写：The boundary between well structured and ill structured problem solving is indeed a vague and fluid boundary。第 2 节说无法给 well structured problem 下形式定义，只能列条件，而且这些条件是相对于解题者的计算能力的。六条里包括：有明确的解的检验并且检验可以机械化；有问题空间能表示初态、目标态和可达状态；合法移动和可考虑的移动都能表示；解题者能获得的知识都能放进一个或多个问题空间；若要作用于外部世界，状态变化必须准确反映自然定律；这些过程只需要 practicable amounts of computation，信息也要实际上拿得到。他接着写，定理证明和象棋看起来像结构良好，但一旦允许解题中途引入原来问题空间里没有的资源，或者用可实践的计算代替原则上的可计算，它们就不是对所有解题者都结构良好。第 2.4 节的原意是：世界上交给解题者的问题最好看成 ISP；它们只是在被准备成给解题者用的形式时才变成 WSP。there are no WSPs, only ISPs that have been formalized for problem solvers。第 3.1–3.2 节用设计一所房子作例子：一开始没有明确的检验标准，问题空间也圈不住后来会冒出来的材料和做法。他引用 Reitman：许多问题一开始给出的约束很少，其余约束是从一次变换到下一次变换里生出来的。建筑师从长期记忆里唤出下一批属性和检验，于是在短时段里处理的是一个刚刚变得结构良好的子问题；in the small 可以是结构良好的，in the large 仍是结构不良的。第 3.4 节写机器人：内部表征既省略环境细节，又不能精确预测动作的后果，所以要不断用外部信息修订问题表征。若修订是短期、可逆的，他称为 adaptation 或 feedback；若比较永久，例如修订对自然定律的看法，他称为 learning。slides 第 2 页「边界是流动的」与摘要和文末那句相符；「每一次反馈都在把我想要变成更明确的约束」是幻灯自己的句子，不是论文原句。链接在 AIGC 批注里，不是口头点名。"
+    },
+    {
+      "title": "Hundhausen 等 2002：怎么用可视化，比画面本身更要紧",
+      "source_label": "Hundhausen 等 2002 的链接在 slides 第 22 页 AIGC 批注里，不是老师口头推荐。Learn Git Branching 和 code.cs61a.org 的网址在同一页正文里。",
+      "source_url": "https://faculty.cc.gatech.edu/~stasko/papers/jvlc02.pdf",
+      "pages": [
+        1,
+        6,
+        7,
+        14,
+        15,
+        25,
+        26,
+        27,
+        28
+      ],
+      "text": "hundhausen-2002 是 Christopher D. Hundhausen, Sarah A. Douglas, John T. Stasko, A Meta-Study of Algorithm Visualization Effectiveness, Journal of Visual Languages and Computing 13 (2002) 259–290。PDF 32 页。这次读了摘要、把范围限定在受控实验的方法、24 项的汇总结果、四种理论，以及第 6.1–6.4 节。逐项实验的大表没有逐格抄进笔记。数据是 24 项受控实验，作者写这接近已发表的算法可视化效果实验的全部。22 项看的是学习后的测验，2 项看的是用可视化做题。结果混杂：11 项得到统计显著的差别，大约 10 项没有。Lawrence 的两项里，学生用自己构造的输入探索动画，比看实验者给的数据或没有动画，后测更高；Price 让学生用带不带动画的调试器去查一个程序，调试成效没有显著差别；Stasko 等让一组看配对堆的动画、一组读文本，动画组后测更好，但差异不显著。四种理论被标成 Epistemic Fidelity、Dual-coding、Individual Differences 和 Cognitive Constructivism。Epistemic Fidelity 假定好的图形能把专家的心理模型传给观看者。Cognitive Constructivism 写：人不是靠被动观看来受益，无论图形和专家模型多么吻合，而要更主动地跟技术打交道。第 6.1 节的结论是 how students use AV technology, rather than what students see, appears to have the greatest impact on educational effectiveness。第 6.3 节对「可视化是否有效」的回答是 qualified yes。只观看可视化的研究，很少显示出比常规材料更好；更成功的用法是把可视化当成主动学习的载体，例子包括 what-if、预测练习和编程练习。作者写，这不是「一幅图抵一千字」那种效果；学习活动的形式比可视化的画面质量更重要，但在成功的活动里，设计得好的画面仍然有贡献。第 6.2 节另有两条限制：程序知识作为测量可能比概念知识更敏感；用前测到后测的进步来发现差异，可能让前测本身把算法教给了被试，而且这条发现主要来自同一组研究。论文没有把结论推广到 Git。slides 第 22 页的紫色 AIGC 批注把总判断压成「学习者怎样使用可视化，比可视化展示了什么更影响学习效果」。learn-git-branching 首页自述是 An interactive Git visualization tool to educate and challenge!。站点主包列出 36 个关卡脚本。这次读的是每一关英文开场对白，没有逐关点击命令、也没有看完关卡里的后续幻灯。Introduction to Git Commits 的开场写：一次 commit 记录目录里所有已跟踪文件的 snapshot，像一次巨大的复制；同时又写，Git 会在可能时把一次提交压成相对上一版的一组变更，也就是 delta。后一句是这个模拟器自己的简化，不是本课讲的「没改的文件用指针指回旧节点」。开场最后又说，眼下可以把 commit 想成项目的 snapshot。The Staging Area 是后面的一关，开场承认前面的关卡把「究竟怎样做成一次提交」滑过去了，然后才讲 working directory、staging area 和 repository，并提到不想把密钥打进历史。课堂上打开的那一关画面写着没有 add / staging 的概念，和「暂存区是后一关才讲」对得上。Rebase Introduction 把 rebase 写成把一组提交复制并放到别处，用来得到更线性的历史。它没有写「不要变基已经推送、别人可能基于其上工作的提交」。Clone Intro 把 remote 写成另一台计算机上的仓库副本，并把它说成备份。cs61a-code 的公开页这次仍是 HTTP 200、405 字节，标题只有 61A Code，initData 是空对象，页面只加载 /static/main.js。该脚本里有一句 You must log in as course staff to share code with students。没有登录，所以应用里的作业不在已读范围内。slides 第 22 页正文把这两个网址当作直出页面的对照。"
+    },
+    {
+      "title": "Conventional Commits：课堂上的 beta，讲义页上的 1.0.0",
+      "source_label": "slides 正文链接的是 v1.0.0-beta；讲义页 lect3.md 链接的是 v1.0.0。讲师口述的是类型、冒号和空格，见 s-g1152.0。",
+      "source_url": "https://www.conventionalcommits.org/en/v1.0.0/",
+      "text": "cc-beta 的地址是 https://www.conventionalcommits.org/en/v1.0.0-beta/ ，这是 slides 第 24 页正文里「Conventional Commits」的 href；画面上看得见的是这几个词，不是这串 URL。cc-v1 是讲义页 lect3.md 上的 https://www.conventionalcommits.org/en/v1.0.0/ 。两版共同的硬性规定是：提交必须以一个名词类型开头，feat 表示新功能，fix 表示修缺陷，类型后面是必须的冒号和空格。beta 写 BREAKING CHANGE: 放在可选正文或页脚的开头，并且 a breaking change can be part of either a fix: or feat: type。1.0.0 改成：BREAKING CHANGE 可以属于任何类型；可以在类型或 scope 后面加 ! ；正文如果有，必须空一行再开始。1.0.0 还写 BREAKING-CHANGE 与 BREAKING CHANGE 同义，除 BREAKING CHANGE 以外大小写不敏感，并提到 @commitlint/config-conventional 里的 build、chore、ci、docs、style、refactor、perf、test。1.0.0 的 FAQ 写：一条提交如果同时符合多种类型，尽可能拆成多次提交。beta 规格正文里没有 ! 这一条。两版规格都要求类型是名词，feat 与 fix 各有规定，并且冒号后面要有空格。"
+    },
+    {
+      "title": "Seth Robertson：先常提交，丢了先看 reflog",
+      "source_label": "slides 第 25 页正文和讲义页都链接这篇；第 26 页的同名链接在 AIGC 批注里。",
+      "source_url": "https://sethrobertson.github.io/GitBestPractices/",
+      "text": "git-best-practices 是 Seth Robertson 的 Commit Often, Perfect Later, Publish Once。开篇写 best practice 随环境变化，there is no One True Answer，这是 #git 上的一种共识。本次读了开篇、Do commit early and often、Don’t panic。Commit early 的理由是 Git only takes full responsibility for your data when you commit。他承认常提交会被看成丑、影响 bisect、让旁观者困惑，但写 don’t let tomorrow’s beauty stop you from performing continuous commits today，对外可以再整理，见文中的 Sausage Making。Don’t panic 写：只要提交过，很多情况下甚至只是 git add 过，数据至少两周内不会丢，除非你主动清除。找回前先 commit or stash 当前工作。三个藏身之处是 reflog（git log -g）、git fsck --unreachable、git stash list，reflog 是第一处要看的。文中 Don’t change published history 等后面的节本次没有读，所以不把那些节的禁令写进来。"
+    },
+    {
+      "title": "SWE-bench 论文、评测字段，和 astropy#12907",
+      "source_label": "讲义页链接论文、harness 和这个 PR；slides 上这些链接在 AIGC 批注里，不是老师口头推荐。论文数字不要写成课堂已经讲过的结论。",
+      "source_url": "https://arxiv.org/abs/2310.06770",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "text": "swebench-paper 是 arXiv:2310.06770v3，2024 年 11 月 11 日，ICLR 2024，Jimenez、Yang 等，SWE-bench: Can Language Models Resolve Real-World GitHub Issues?。PDF 52 页。这次读了物理页 1–11 和附录 A（物理页 16–24）。参考文献表，以及附录 C 以后的额外结果表、SWE-Llama 训练超参和提示词，没有写入。基准有 2,294 个任务，来自 12 个 Python 仓库。正文写从约 90,000 个 PR 筛到这 2,294 个。另有训练用的 SWE-bench-train：19,000 个非测试任务，来自 37 个仓库。任务是：给定问题陈述和代码库快照，模型生成补丁，再用仓库自己的测试评判。BM25 下最好的 Claude 2 解决 1.96%。Table 2 在 BM25、13k / 27k / 50k 下把 Claude 2 印成 1.96、1.87、1.22。后文一张汇总表把 Claude 2 印成 1.97。Oracle 检索下正文写 Claude 2 能解决 4.8%。Oracle-collapsed（只给金补丁改过的文件，并收起未直接修改的代码，两侧各留 15 行）里，Claude 2 的 Resolved 是 5.93、GPT-4 是 3.40、ChatGPT-3.5 是 1.09、Claude 3 Opus 是 9.39。GPT-4 从正文所说的 1.3% 升到 3.4%，Claude 2 从 4.8% 升到 5.9%。Table 7 在 Oracle 设定下按 2023 年前后分开：Claude 2 是 4.87 与 4.23，ChatGPT-3.5 是 0.49 与 0.77，SWE-Llama 13b 是 3.98 与 3.85；GPT-4 是 1.96 与 0.0，并且星号写明 GPT-4 只评了 25% 的随机子集。作者写，多数模型在这个日期切分上差别不大，并据此认为模型不太像是靠背出更新的仓库来过关。这是他们的解读。让模型重写整个文件而不是写补丁时，Claude 2 在 Oracle 下是 2.2%，低于写补丁的 4.8%。Table 8 里，能成功应用的模型补丁比对应的金补丁短。Claude 2 平均 19.6 行，其金补丁 44.1 行；全部金补丁平均 74.5 行。模型很少改到一个以上的文件。第 5.1 节抽了 11 个生成。sphinx-doc__sphinx-8713 里，模型改对了函数，却把 napoleon.use_param 当成永远为真，金补丁会先看配置。测试在该配置为 False 时抓住了这个错。作者归纳：模型倾向写很初级的 Python，很少用已有的第三方库或仓库里的其余代码；金补丁常常顺手做更大范围的结构修改。第 7 节写：任务全是 Python；实验只是最直接的基线，不打算限制以后用 agent 或工具；只靠测试不能保证生成的代码更完整、更快或更可读。附录 A 把任务实例的字段写成 base commit、problem statement、patch、test patch、FAIL TO PASS、PASS TO PASS 等。问题陈述由相关 issue 的标题和正文，加上 PR 第一次提交之前的评论拼成，以避免把解法漏进去。hints text 来自 PR 初次提交之前的评论；正文写这次实验没有使用 hints text。代码库不按明文存放，而是 repo 加 base commit，并镜像到 SWE-bench 组织，以免上游历史被改掉。测试补丁和金补丁按路径里是否含 testing 一类词拆开。候选实例要先安装、先跑测试、再打上金补丁再跑；至少要有一个测试从失败变成通过。若测试去调用金补丁里新起的函数或类名，该实例被丢掉，因为名字往往是任意的，问题陈述里通常也不写。A.4 写：一次任务算解决，当且仅当 FAIL TO PASS 和 PASS TO PASS 里的测试都能在预测补丁的日志里找到并且是 pass。缺测试或非 pass 都算失败。fail to fail 和 pass to fail 不进入评分。补丁打不上时会先试图删掉多余上下文并重算补丁头；再失败就记 0 分。A.5 写中位数大约是：问题描述 140 个词，代码库将近 1900 个文件、40 万行；金补丁通常改一个函数、大约 15 行，并带 1 个 fail to pass 测试和 51 个 pass to pass 测试。Table 13 把 issue 标签分成 Bug 442、Feature 167、Regression 39、Other 1641，并写绝对多数与修缺陷有关，但并不只有修缺陷。开发集有 225 个任务，来自 6 个仓库，收集步骤与测试集相同，并只保留 2019 年 1 月 1 日之后创建的。开发集上 F2P 平均 19.9、中位数 2；P2P 平均 171.3、中位数 79.0。这些数字写在论文上，不是课堂口述。slides 第 27 页 AIGC 把「任务定义」指到这篇，把「评测规则」指到 harness。swebench-harness 里 FAIL_TO_PASS 通过算 Resolution，PASS_TO_PASS 通过算 Maintenance；compute_fail_to_pass 在该类测试总数为 0 时返回 1。astropy-issue-12906 里 Linear1D(10) & Linear1D(5) 的矩阵是对角的；再嵌进 Pix2Sky_TAN() & cm 后，右下角变成全 True。astropy-pr-files 里 separable.py 把 cright 的那一块从 = 1 改成 = right。changelog 写修复的是 & 右边又是 CompoundModel 时的 separability。PR 讨论里 pllim 把里程碑设成 v5.1，Cadair 改成 v5.1 和 v5.0.2，回移 PR 是 #12918。astropy-pr-12907 是讨论页的材料编号。"
+    },
+    {
+      "title": "gh 和 glab 管的是平台，不是快照",
+      "source_label": "讲义页正文链接手册；slides 第 29 页的手册链接在 AIGC 批注里，不是老师口头推荐去通读手册。",
+      "source_url": "https://cli.github.com/manual/",
+      "text": "gh-manual 的概述句是：GitHub CLI, or gh, is a command-line interface to GitHub for use in your terminal or your scripts。认证是 gh auth login，或者沿用 GITHUB_TOKEN。本次采用的是这段概述，不是后面的命令索引。glab 首页写 GLab is an open source GitLab CLI tool，能看 issue 和 merge request，也能从命令行查看和重试 CI/CD pipeline，以及创建 changelog 和 release。材料编号是 gh-manual 与 glab-cli。"
+    },
+    {
+      "title": "Jujutsu 的 change ID，以及 PostgreSQL 页面上没有 write skew 这个词",
+      "source_label": "讲义页正文链接；slides 第 33–34 页的链接在 AIGC 批注里，不是老师口头推荐。",
+      "source_url": "https://docs.jj-vcs.dev/latest/tutorial/",
+      "text": "jj-tutorial 把每个提交同时标成 change ID 和 commit ID。commit ID 是 Git 用户熟悉的哈希。change ID 在你继续改这个 change 时保持不变，提交哈希会变；教程把它比作 Gerrit 的 Change-Id。工作副本本身也是一个提交，下一条 jj 命令会自动 amend 它。本次读的是这段定义。jj-conflicts 写 Jujutsu 可以把冲突状态记在提交里；保存的是冲突的逻辑表示，不是冲突标记。diff3 风格的标记由 ui.conflict-marker-style 设置，并且只支持两侧冲突。jj-oplog 写可以用 jj undo 逐步撤销，或 jj op restore 回到更早的仓库外观。一条 jj 命令从最新操作装载仓库，看不到同时进行的其他命令还没写完的结果；冲突会在之后的 jj st 或 jj log 里告诉你。postgres-iso 是 PostgreSQL 文档 13.2 节。页面没有 write skew 这个词。Repeatable Read 用的是 Snapshot Isolation。文档里的例子是：事务 A 对 class = 1 做 SUM 再插入 class = 2，事务 B 对 class = 2 做 SUM 再插入 class = 1；Repeatable Read 下两边都能提交，Serializable 会让其中一个以 could not serialize access due to read/write dependencies among transactions 失败，SQLSTATE 40001。谓词锁的模式是 SIReadLock，并且不阻塞。slides 第 34 页的值班员故事是幻灯自己的例子，文档里的例子是 class 和 SUM。"
+    },
+    {
+      "title": "blob、tree、commit：内容寻址，文件名不在 blob 里",
+      "source_label": "讲义页正文链接 Git Internals / Git Objects。讲师口头只讲到目录树这个头，并说底层可以去操作系统课上看。",
+      "source_url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects",
+      "text": "progit-objects 是 Pro Git 第 10.2 节 Git Objects。Git 在这里被写成 content-addressable filesystem：放进内容，得到以后能取回它的键。git hash-object -w 把对象写入 .git/objects；子目录名是 SHA-1 的前两个字符，文件名是其余 38 个。git cat-file -p 按类型打出内容，-t 只打印类型。blob 只存内容，不存文件名。tree 解决文件名：一条记录里有 mode、类型、SHA-1 和文件名。普通文件是 100644，可执行文件 100755，符号链接 120000，子目录在例子里是 040000 tree。commit 用 commit-tree 把一棵顶层 tree 和父提交绑在一起，并写入 author、committer、时间戳、空行和说明。书上写例子里的提交哈希含有作者和时间，读者自己重做会得到不同哈希。对象打包不在本次已读范围里。"
+    },
+    {
+      "title": "Chi 等 1989：好学生在例题上把步骤和原理连起来",
+      "source_label": "slides 第 9 页 AIGC 批注把「自我解释」连到这篇，不是老师口头点名。Wiley 页面打不开，用的是作者所在机构公开的 PDF。",
+      "source_url": "https://education.asu.edu/sites/g/files/litvpz656/files/lcl/chibassoklewisreimannglaser_0.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "text": "chi-1989 的原链接是 Wiley，DOI 10.1207/s15516709cog1302_1。该页和 pdfdirect 这次仍是 403。读到的 PDF 来自亚利桑那州立大学 Mary Lou Fulton 学院的公开文件，首页标题是 Self-Explanations: How Students Study and Use Examples in Learning to Solve Problems，作者为 Michelene T. H. Chi、Miriam Bassok、Matthew W. Lewis、Peter Reimann、Robert Glaser，期刊行是 Cognitive Science 13, 145–182 (1989)。PDF 共 20 个物理页，都读了。它不是 Git 研究。被试从校园广告里招了 10 人，5 男 5 女，都没有上过大学物理，除一人外都上过高中物理。一人既不说话也解不出题，被剔除，剩下 9 人。Good 和 Poor 是事后按 12 道同构题加 7 道章内题的成绩切的：最高的 4 人和最低的 4 人，中间 1 人的数据不用。两位评判的一致率在各项分析里是 86%–94%。Good 的平均成功率 82%（同构题 96%，章内题 68%），Poor 是 46%（同构题 62%，章内题 30%）。材料是 Halliday and Resnick (1981)。背景是前三章；第四章 Motion in a Plane 被省掉，因为和目标章关系不直接。目标是第 5 章 Particle Dynamics。三个例题类型是 strings、inclined plane 和 pulley。前三章会反复改到做对。目标章要求先答对陈述性和定性题，再学三个例题；该章的定量题留到后面。学生在实验室里出声思维，总学习时间 8–29 小时，跨好几周。实验者不给反馈。本文分析的是学例题时的协议，以及第一组 3 道同构题的解题协议。作者写，其余解题协议还没来得及系统分析。学例题时，Good 平均每题 142 行协议，Poor 21 行，t(6)=1.97，p<.05。学每个例题的时间是 13 分钟对 7.4 分钟。解题时双方的协议行数接近（141 对 122），所以作者不把学例题时的行数差解释成 Good 仅仅更会说。把多行收成一个 idea 之后，Good 是 51.9 个 idea，Poor 大约 18 个，t(6)=1.94，p<.05。Poor 的 idea 数和行数差不多（文中一处写 17.5 对 21 行）。其中物理学解释：Good 15.3 条，Poor 2.8 条，t(6)=4.75，p<.005；占各自 idea 的 29% 和 16%。解释条数和后来同构题的成功相关 r=.81，p<.02。解释被分成四类：细化或扩展一个动作的条件、推出动作的额外后果、给一组动作一个目标、给一组式子以含义。再只保留能从牛顿三定律推出来的解释：Good 的 15.3 条里有 4.75 条，Poor 的 2.8 条里有 0.7 条。学例题之前，两组在陈述题里举出的牛顿定律组分没有明显差别。学例题并解释之后，Good 用到的组分达到 8.5/12，Poor 是 5.75/12。作者写，不能排除另一种读法：Good 在读课文时已经懂了更多，只是陈述题没有说出来。同一段接着写，他们更倾向于相信「能把原理背出来却不懂怎么用」，而不太相信「背不全却其实更懂」；即便如此，这种读法仍排除不了。监控方面，Good 每个例题平均 9.3 次说出自己没懂，Poor 是 1.1 次，t(6)=2.32，p<.05。Good 这些「没懂」里 85%（8.0/9.3）后面跟着解释，Poor 是 60%（0.6/1.1）。Poor 仅有的没懂几乎都落在定量式子上；Figure 1 里「把三根绳子的结点当成物体」这一行，4 个 Good 里有 3 个表示没懂，Poor 没有人表示没懂。解题时双方都会回看例题：Good 在 12 道同构题里的 9 道回看，Poor 是 10 道。差别在怎么看。讨论里写，Good 在每次尝试里回看得更少，看的时候只读 1 或 2 行；Poor 大约读 13 行，像是在例题里找一份解。讨论把 Good 的做法概括成：解释会细化动作的条件、后果和目标，并把动作连到课文里的原理。Poor 很少这样解释；解释了也不怎么连到原理。作者同意 Larkin and Simon (1987) 的猜想：学生解不出题，部分是因为学了原理却没有把原理变成 inference rules。文末写，现有的 explanation-based learning 模型能从单个例子推广，但还要更细地看这些模型能不能装下这些协议。这篇没有给出 Git 或编程课的效应。slides 第 9 页「把解题步骤和背后的原理联系起来」对得上讨论里 relate the actions to the principles and concepts in the text 这一句。链接在 AIGC 批注里。"
+    },
+    {
+      "title": "Hugging Face 上的 SWE-bench 卡片：2,294 和 2,519 是两处写法",
+      "source_label": "slides 第 28 页 AIGC 批注指向这个数据集 URL，不是老师口头推荐。",
+      "source_url": "https://huggingface.co/datasets/SWE-bench/SWE-bench",
+      "text": "swebench-hf 是 Hugging Face 上 SWE-bench/SWE-bench 的数据集卡片，页面写 ArXiv 2310.06770。卡片摘要写：SWE-bench is a dataset that tests systems' ability to solve GitHub issues automatically. The dataset collects 2,294 Issue-Pull Request pairs from 12 popular Python repositories. Evaluation is performed by unit test verification using post-PR behavior as the reference solution。同一页的 Dataset Viewer 写 default 2.52k rows，其中 test 2.29k rows、dev 225 rows，页脚 Number of rows 是 2,519。2,294 加 225 等于 2,519。卡片没有把这两处数字说成同一个计数，笔记也不把它们合成一个数。字段说明里，FAIL_TO_PASS 是代表由该 PR 解决、并和 issue 的解决绑在一起的测试名列表；PASS_TO_PASS 是 PR 应用前后都应该通过的测试名列表。problem_statement 是 issue 的标题和正文，base_commit 是打上解法 PR 之前的提交。同一张卡片后文又写：This dataset only contains the problem_statement and the base_commit，若要按论文里的 Oracle 或 BM25 设定跑，去用 princeton-nlp/SWE-bench_oracle 以及若干 SWE-bench_bm25 数据集。所以「卡片只含两列」和「字段表里有 patch、test_patch、FAIL_TO_PASS」是这张卡片自己的两句话，没有在页内被消解。语言一节写文本主要是英语，但没有按语言过滤。支持的任务被写成：给定完整仓库和 GitHub issue 做 issue resolution，排行榜在 www.swebench.com。预览表里能看到 astropy 的 instance_id 和 FAIL_TO_PASS 列，但预览行被截断，不把截断的 diff 当成已读的补丁。这些是数据集卡片上的话，不是课堂口述，也不是论文 Table 2 的解决率。"
+    }
+  ],
   "self_test": [
     {
       "section": 1,

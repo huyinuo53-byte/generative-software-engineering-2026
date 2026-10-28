@@ -1,0 +1,1164 @@
+{
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "lecture_url": "https://jyywiki.cn/GSE/2026/lect9.md",
+  "slides_url": "https://jyywiki.cn/GSE/2026/slides9.html",
+  "checked_at": "2026-10-28T03:32:02-04:00",
+  "assumptions": [
+    "无人值守。AIGC 批注里的链接不写成讲师明确推荐。",
+    "同一链接既在讲义正文又在 slides AIGC 批注里时，以来源更强的讲义正文登记，并在依据里写明 slides 位置。",
+    "QJE 原链接仍是 Cloudflare 403。读的是 Danielle Li 主页上的期刊 PDF（CC BY-NC），不是 NBER 工作论文。Online Appendix 不在这份 PDF 里，猜的文件名是 404，full 只覆盖这 54 页。",
+    "Feature Interaction 原链接仍是 Cloudflare 403。身份用 Crossref alternative-id 核对。读的是 Internet Archive 对同一 abs URL 的 2024-04-15 预览：引言完整，第 2、3 节截断。没有用盗版站，也没有用无头浏览器过验证。",
+    "本课 materials.json 没有课外推荐视频。官网索引里的直播和回放是本课视频本身。这一轮不新增、不下载视频。",
+    "Cordis 论文身份未核验，不读插件框架教程。"
+  ],
+  "expected_material_ids": [
+    "lect9",
+    "slides9",
+    "nasa-mco",
+    "brooks-1986",
+    "aws-idempotent",
+    "office-agent-spec",
+    "dsh-bot",
+    "david-1990",
+    "denning-workingsets",
+    "cgroup-v2",
+    "hotspot-ergonomics",
+    "php-fpm",
+    "apache-wstunnel",
+    "fowler-es",
+    "mapreduce",
+    "spark-rdd",
+    "flink-time",
+    "flink-state",
+    "zaharia-rdd",
+    "pacioli",
+    "hippel-2001",
+    "shneiderman-1983",
+    "vba",
+    "qje-2025",
+    "feature-interaction",
+    "cordis-oral",
+    "lect8"
+  ],
+  "materials": [
+    {
+      "id": "lect9",
+      "title": "DeepSeek Harness（官方讲义 lect9）",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect9.md",
+      "path": "课堂笔记/sources/lect9.html",
+      "sha256": "360dd61b64d3ed88fc31caaa0c16691ec0f2ab6490768791b5be1a783ebf5530",
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "课程官网本课讲义，是这节课的书面底稿，不是课外推荐。",
+      "source_channel": "讲义页正文",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "150 行的 Agent，完全可以工作",
+        "一个小循环，被真实世界包围",
+        "需求还会突然改变",
+        "架构：用一部分自由，换一类便利",
+        "MapReduce：接受计算形式，获得集群能力",
+        "AI 加速的，也包括旧假设失效",
+        "Everything Is a Plugin，真正难的是协同",
+        "Session：同一份事实，不同的投影",
+        "Agent：补充信息、改变方向和开始工作",
+        "插件挂上总线，冲突也一起进来了",
+        "生态的价值：让用户在现场试错",
+        "大型 App 的 AI 增强：锁定、序列化、交互",
+        "GenUI：让界面成为对话的一部分"
+      ],
+      "read_sections": [
+        "150 行的 Agent，完全可以工作",
+        "一个小循环，被真实世界包围",
+        "需求还会突然改变",
+        "架构：用一部分自由，换一类便利",
+        "MapReduce：接受计算形式，获得集群能力",
+        "AI 加速的，也包括旧假设失效",
+        "Everything Is a Plugin，真正难的是协同",
+        "Session：同一份事实，不同的投影",
+        "Agent：补充信息、改变方向和开始工作",
+        "插件挂上总线，冲突也一起进来了",
+        "生态的价值：让用户在现场试错",
+        "大型 App 的 AI 增强：锁定、序列化、交互",
+        "GenUI：让界面成为对话的一部分"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 4,
+          "location": "supplements aws-idempotent",
+          "claim": "幂等是同一逻辑操作重复提交不产生额外业务效果"
+        },
+        {
+          "item": "课堂笔记",
+          "section": 13,
+          "location": "supplements lect9",
+          "claim": "followup 唤醒，inject 不唤醒空闲 Agent，steer 可唤醒"
+        },
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "supplements lect9",
+          "claim": "pre-step 的 next() 委托后续处理链"
+        },
+        {
+          "item": "课堂笔记",
+          "section": 17,
+          "location": "supplements lect9",
+          "claim": "Excalidraw：锁定选区，replace_selection 先暂存，失败解锁"
+        }
+      ]
+    },
+    {
+      "id": "slides9",
+      "title": "DeepSeek Harness（官方 slides9）",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides9.html",
+      "path": "课堂笔记/sources/slides9-official.html",
+      "sha256": "78eafd2f8cefe2da6e7bdd77881814ea79b99eda3da99acaaf142fc972e49931",
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "课程官网本课 slides，30 页都在 slides-data 里，是书面底稿。",
+      "source_channel": "slides 正文",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-04",
+        "slide-05",
+        "slide-06",
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15",
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-20",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29",
+        "slide-30"
+      ],
+      "read_sections": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-04",
+        "slide-05",
+        "slide-06",
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15",
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-20",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29",
+        "slide-30"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "frames source_label",
+          "claim": "静态页换成官方 slides 截图，页码为数组下标加一"
+        }
+      ]
+    },
+    {
+      "id": "nasa-mco",
+      "title": "Mars Climate Orbiter Mishap Investigation Board Phase I Report",
+      "source_url": "https://llis.nasa.gov/lesson/641",
+      "path": "课堂笔记/sources/files/nasa-641-dom.html",
+      "sha256": "d970a37bf443045bfabe24fee6a969390cb0e4a455689e6ba384133806d18a52",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只出现在 slides 第 1 页 AIGC 批注，用来举例接口单位写错，不是讲师口述推荐。",
+      "source_channel": "slides AIGC 批注",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "lesson-641-body"
+      ],
+      "read_sections": [
+        "lesson-641-body"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "supplements nasa-mco",
+          "claim": "SM_FORCES 用英制，轨迹大约低 170 公里"
+        }
+      ],
+      "identity_note": "原始 curl 只有空的前端壳。阅读和哈希用的是渲染后的 DOM，里面有事故正文。"
+    },
+    {
+      "id": "brooks-1986",
+      "title": "No Silver Bullet—Essence and Accident in Software Engineering",
+      "source_url": "https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf",
+      "path": "课堂笔记/sources/files/brooks-1986.pdf",
+      "sha256": "fcbd318dbaa31c5b14b782b02ae25f53fc8aa33779d18ba1b4f126994c99b9ae",
+      "kind": "pdf",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第 2 页 AIGC 批注引用的就是第 1 页那句 9/10；概念被课堂使用，但不是口述推荐。",
+      "source_channel": "slides AIGC 批注",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "total_pages": 16,
+      "scope_pages": [
+        1
+      ],
+      "read_pages": [
+        1
+      ],
+      "scope_reason": "AIGC 批注只引用第 1 页的 9/10 句，本次只读这一页。",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "supplements brooks-1986",
+          "claim": "偶然工作不超过九成时，全部消掉也换不来一个数量级"
+        }
+      ]
+    },
+    {
+      "id": "aws-idempotent",
+      "title": "Making retries safe with idempotent APIs",
+      "source_url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "path": "课堂笔记/sources/files/aws-idempotent.html",
+      "sha256": "43335d70fc0595c83131a40f6cdfc6471ca340660c9c9d869054d4cadbe52fce",
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义正文用来解释重试的接口设计；slides 第 5 页同一链接在 AIGC 批注里。",
+      "source_channel": "讲义页正文",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "client-request-identifier",
+        "semantic-equivalence",
+        "late-requests"
+      ],
+      "read_sections": [
+        "client-request-identifier",
+        "semantic-equivalence",
+        "late-requests"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 4,
+          "location": "supplements aws-idempotent",
+          "claim": "客户端请求标识与变更要一次 ACID 记下，响应语义等价"
+        }
+      ],
+      "scope_reason": "讲义引用的是用客户端请求标识把重试收成一次业务效果。文末 CLI 演示不进入笔记。"
+    },
+    {
+      "id": "office-agent-spec",
+      "title": "办公 Agent 产品需求规格说明书 1.0",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides9.html",
+      "path": "课堂笔记/sources/office-agent-spec.md",
+      "sha256": "9102f90c0dea90a50d91cf7dd9ebe4706f53fdf1dd46c1f8fcbc6d953ad5dfbb",
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第 6 页正文里的 data URI，是课上那份长规格的原文，不是 AIGC 批注。",
+      "source_channel": "slides 正文",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "FR09",
+        "FR10",
+        "FR11",
+        "FR12",
+        "FR13",
+        "FR14",
+        "FR15",
+        "FR16",
+        "FR17",
+        "FR18",
+        "section-7",
+        "section-8.1"
+      ],
+      "read_sections": [
+        "FR09",
+        "FR10",
+        "FR11",
+        "FR12",
+        "FR13",
+        "FR14",
+        "FR15",
+        "FR16",
+        "FR17",
+        "FR18",
+        "section-7",
+        "section-8.1"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "supplements office-agent-spec",
+          "claim": "暂停不启动新步骤；停止不撤销已发生的文件操作；默认 20 分钟、100 次工具、60 次模型请求"
+        }
+      ],
+      "scope_reason": "课堂用这份规格说明直接实现会 slop，以及暂停、未知写入、预算和权限。前面的场景清单不逐条搬进笔记。",
+      "identity_note": "原文是 slides 第 6 页里的 data:text/markdown;base64。解码后存成 markdown，kind 仍是 web，因为校验器会把非 web 当成 PDF。"
+    },
+    {
+      "id": "dsh-bot",
+      "title": "DSH Bot README",
+      "source_url": "https://github.com/Nothing1024/dsh-bot",
+      "path": "课堂笔记/sources/files/dsh-bot-readme.md",
+      "sha256": "6ad670b47bef19017e4682dc11178789c6e41b86708ae6afdc57d1dfe8a5d832",
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义正文和 slides 第 9 页正文都链到这个仓库，用来对照需求突然改变。",
+      "source_channel": "讲义页正文",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "why",
+        "personas",
+        "group",
+        "cron",
+        "send",
+        "ask",
+        "limits"
+      ],
+      "read_sections": [
+        "why",
+        "personas",
+        "group",
+        "cron",
+        "send",
+        "ask",
+        "limits"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 6,
+          "location": "supplements dsh-bot",
+          "claim": "默认 3 轮、每分钟 3 条、人设快照、排队只在内存"
+        }
+      ],
+      "scope_reason": "课堂用的是人设、小组、通信和限制。安装命令不进入笔记。"
+    },
+    {
+      "id": "david-1990",
+      "title": "The Dynamo and the Computer: An Historical Perspective on the Modern Productivity Paradox",
+      "source_url": "https://gwern.net/doc/economics/automation/1990-david.pdf",
+      "path": "课堂笔记/sources/files/david-1990.pdf",
+      "sha256": "11291f658da048e3486e2474b31ee07cfc8fb0d1711222e90f90a1d9fe98494d",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只出现在 slides 第 12 页 AIGC 批注，用来类比旧厂房和电，不是口述推荐。",
+      "source_channel": "slides AIGC 批注",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "total_pages": 7,
+      "scope_pages": [
+        3,
+        4
+      ],
+      "read_pages": [
+        3,
+        4
+      ],
+      "scope_reason": "slides 用的是传动轴和独立电机。第 3–4 页写 group drive 与 unit drive，其余页的生产率讨论不进入笔记。",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 9,
+          "location": "supplements david-1990",
+          "claim": "先是 group drive，unit drive 才让厂房可以改成单层并局部调整"
+        }
+      ]
+    },
+    {
+      "id": "denning-workingsets",
+      "title": "Working Set Publications",
+      "source_url": "https://denninginstitute.com/pjd/PUBS/Workingsets.html",
+      "path": "课堂笔记/sources/files/denning-dom.html",
+      "sha256": "676a5c5eb5c91d6802bffd24a480e084ba5d3b63c488dea772b206c57e04d78a",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只出现在 slides 第 14 页 AIGC 批注。打开的是文献目录，不是 1968 年论文。",
+      "source_channel": "slides AIGC 批注",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "bibliography"
+      ],
+      "read_sections": [
+        "bibliography"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "supplements denning-workingsets",
+          "claim": "目录把抖动写成换页占满时间，工作集不被偷走"
+        }
+      ]
+    },
+    {
+      "id": "cgroup-v2",
+      "title": "Control Group v2",
+      "source_url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+      "path": "课堂笔记/sources/files/cgroup-v2.html",
+      "sha256": "b478c1bae99899df476d6b4989cbb516f7ca93c5f009cdff64b802bbc24f3d4b",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只出现在 slides 第 14 页 AIGC 批注，用来说明限额环境里的 OOM。",
+      "source_channel": "slides AIGC 批注",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "memory.max"
+      ],
+      "read_sections": [
+        "memory.max"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "supplements cgroup-v2",
+          "claim": "memory.max 到顶且减不下去时，OOM killer 在该 cgroup 内被调用"
+        }
+      ],
+      "scope_reason": "页很长，slides 只用 memory.max 这一条硬上限。"
+    },
+    {
+      "id": "hotspot-ergonomics",
+      "title": "Garbage Collection Ergonomics",
+      "source_url": "https://docs.oracle.com/en/java/javase/25/gctuning/ergonomics.html",
+      "path": "课堂笔记/sources/files/hotspot-ergonomics.html",
+      "sha256": "a174115a2641be0b924634c184e4f8dc7e7997be28967b4f3c265b0de2bd0dab",
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义正文用来说明暂停、吞吐和内存占用的取舍；slides 第 15 页同一链接在 AIGC 批注里。抓取的是 Java SE 25 页。",
+      "source_channel": "讲义页正文",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "ergonomics-goals"
+      ],
+      "read_sections": [
+        "ergonomics-goals"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "supplements hotspot-ergonomics",
+          "claim": "先满足暂停或吞吐之一；两者都达到后再缩小堆"
+        }
+      ],
+      "scope_reason": "讲义和 slides 用的是目标之间的取舍，不是整本 GC 调优手册。"
+    },
+    {
+      "id": "php-fpm",
+      "title": "PHP-FPM Configuration",
+      "source_url": "https://www.php.net/manual/en/install.fpm.configuration.php",
+      "path": "课堂笔记/sources/files/php-fpm.html",
+      "sha256": "b38ec7642b81ddf0c8e4481b1b00caa0c48d1187bf335fab7c9cbbd7ba209d93",
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义正文用来推出进程池容量约束；slides 第 16 页同一链接在 AIGC 批注里。",
+      "source_channel": "讲义页正文",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "process-manager"
+      ],
+      "read_sections": [
+        "process-manager"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 9,
+          "location": "supplements php-fpm",
+          "claim": "static 把子进程数固定在 pm.max_children，等待中的 worker 占着名额"
+        }
+      ],
+      "scope_reason": "讲义推出的是等待占用名额。手册其余指令不进入笔记。"
+    },
+    {
+      "id": "apache-wstunnel",
+      "title": "Apache Module mod_proxy_wstunnel",
+      "source_url": "https://httpd.apache.org/docs/2.4/mod/mod_proxy_wstunnel.html",
+      "path": "课堂笔记/sources/files/apache-wstunnel.html",
+      "sha256": "88de45c4c34b34cc5fa1e0b9793da30fdc0f101a248b16831e825b744a2be8fd",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只出现在 slides 第 16 页 AIGC 批注。当前 2.4 文档把该模块标为自 2.4.47 起弃用。",
+      "source_channel": "slides AIGC 批注",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "module-summary"
+      ],
+      "read_sections": [
+        "module-summary"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 9,
+          "location": "supplements apache-wstunnel",
+          "claim": "可以代理 WebSocket；该模块在 2.4.47 之后的文档里标为弃用"
+        }
+      ]
+    },
+    {
+      "id": "fowler-es",
+      "title": "Event Sourcing",
+      "source_url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "path": "课堂笔记/sources/files/fowler-es.html",
+      "sha256": "ff817ecc7b176c9456b8381687437e93f38bb8be6c6c3b4e4403b664818f8a02",
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义正文用来说明回放不能再次扣款、历史汇率不能换成今天的汇率；slides 第 17 页锚点在 AIGC 批注里。",
+      "source_channel": "讲义页正文",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "ExternalUpdates",
+        "ExternalQueries"
+      ],
+      "read_sections": [
+        "ExternalUpdates",
+        "ExternalQueries"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 9,
+          "location": "supplements fowler-es",
+          "claim": "回放时网关不再把外部修改送出；历史查询要记住当时的响应"
+        }
+      ],
+      "scope_reason": "讲义点名的是外部副作用和历史输入。文章其余例子不进入笔记。"
+    },
+    {
+      "id": "mapreduce",
+      "title": "MapReduce: Simplified Data Processing on Large Clusters",
+      "source_url": "https://usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean_html/index.html",
+      "path": "课堂笔记/sources/files/mapreduce.html",
+      "sha256": "f5ab102b0951d005e8336760b22b5482d7b0a38ca2175145588e4ed3156de8cc",
+      "kind": "web",
+      "recommendation_kind": "explicit_recommendation",
+      "recommendation_basis": "讲师口播这篇文章看例子就行，并说出两千台和一百兆。讲义与 slides 第 18 页正文都链到这篇 HTML。",
+      "source_channel": "讲师口述",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "4.5 Side-effects",
+        "Worker Failure",
+        "9 Word Frequency"
+      ],
+      "read_sections": [
+        "4.5 Side-effects",
+        "Worker Failure",
+        "9 Word Frequency"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "supplements mapreduce",
+          "claim": "例子里 set_machines(2000) 且每个任务 100 MB；已完成的 map 因本地盘要重跑"
+        }
+      ],
+      "scope_reason": "讲师说看例子就行。slides 和第 4.5 节还用来说明副作用要原子、幂等。范围停在词频例子、worker 失败重执行和 4.5，不把实验扩进来。"
+    },
+    {
+      "id": "spark-rdd",
+      "title": "RDD Programming Guide",
+      "source_url": "https://spark.apache.org/docs/latest/rdd-programming-guide.html#rdd-persistence",
+      "path": "课堂笔记/sources/files/spark-rdd.html",
+      "sha256": "1b605c22f5fed33500566154094609c544c5dbe7d57e3133a7188e62cb49349f",
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义正文用来说明迭代时缓存、分区丢失按依赖重算。slides 第 19 页同一链接在 AIGC 批注里。抓取的是 Spark 4.2.0。",
+      "source_channel": "讲义页正文",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "rdd-persistence"
+      ],
+      "read_sections": [
+        "rdd-persistence"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "supplements spark-rdd",
+          "claim": "默认 MEMORY_ONLY；放不下的分区下次再算"
+        }
+      ],
+      "scope_reason": "讲义用的是持久化和丢失后重算。指南其余转换不进入笔记。"
+    },
+    {
+      "id": "flink-time",
+      "title": "Flink Time",
+      "source_url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/time/",
+      "path": "课堂笔记/sources/files/flink-time.html",
+      "sha256": "65c8c85b02ef4d065d680a200913f9605f4716691aa05f920578244b10304557",
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义正文用来区分事件时间和处理时间。slides 第 19 页同一链接在 AIGC 批注里。抓取的是 stable v2.3.0。",
+      "source_channel": "讲义页正文",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "event-time",
+        "watermarks"
+      ],
+      "read_sections": [
+        "event-time",
+        "watermarks"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "supplements flink-time",
+          "claim": "事件时间靠 watermark 推进，处理时间不提供确定性"
+        }
+      ],
+      "scope_reason": "讲义用的是乱序、迟到和水位线。其余窗口例子不进入笔记。"
+    },
+    {
+      "id": "flink-state",
+      "title": "Flink Stateful Stream Processing",
+      "source_url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/stateful-stream-processing/",
+      "path": "课堂笔记/sources/files/flink-state.html",
+      "sha256": "c80038096b92c5815aec6d6b19edbb30b1638355d865293bfc13c995681568a2",
+      "kind": "web",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义正文用来说明恢复时输入位置和算子状态一起回到检查点。抓取的是 stable v2.3.0。",
+      "source_channel": "讲义页正文",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "checkpointing"
+      ],
+      "read_sections": [
+        "checkpointing"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "supplements flink-state",
+          "claim": "检查点恢复是恢复算子状态并重放记录，间隔换的是开销和重放量"
+        }
+      ],
+      "scope_reason": "讲义用的是检查点与 exactly-once 恢复。状态后端细节不进入笔记。"
+    },
+    {
+      "id": "zaharia-rdd",
+      "title": "Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing",
+      "source_url": "https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia",
+      "path": "课堂笔记/sources/files/zaharia-pdf.pdf",
+      "sha256": "64bf8651757c0696b5fc75cdcbed117f82e0f70396744b537c53c5530d4938a2",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 19 页 AIGC 批注链到 USENIX 报告页。读的是同题 NSDI 2012 PDF。不是口述推荐。",
+      "source_channel": "slides AIGC 批注",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "total_pages": 14,
+      "scope_pages": [
+        1,
+        2
+      ],
+      "read_pages": [
+        1,
+        2
+      ],
+      "scope_reason": "AIGC 批注指向这篇论文的报告页。lineage 的定义在第 1–2 页。第 5.4 节的检查点做法不进入笔记。",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "supplements zaharia-rdd",
+          "claim": "第 1–2 页：粗粒度变换和 lineage，丢分区按来历重算"
+        }
+      ],
+      "identity_note": "listed_url 是 USENIX 报告页。保存的 PDF 是同一次会议的论文全文，标题与作者一致。"
+    },
+    {
+      "id": "pacioli",
+      "title": "Under the Tuscan Sum: The Italian double-entry accounting system",
+      "source_url": "https://exhibits.lib.ku.edu/exhibits/show/keeping-the-books--the-rubinst/under-the-tuscan-sum---the-ita",
+      "path": "课堂笔记/sources/files/pacioli.html",
+      "sha256": "8dcf990b18c9a1fafc596974a75d5e367b1e9a969bc8bb62c2fcdffd7067dd7b",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只出现在 slides 第 21 页 AIGC 批注，是日记账到分类账的历史类比。",
+      "source_channel": "slides AIGC 批注",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "double-entry"
+      ],
+      "read_sections": [
+        "double-entry"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 12,
+          "location": "supplements pacioli",
+          "claim": "备忘、日记、分类账记两次、划掉、索引"
+        }
+      ]
+    },
+    {
+      "id": "hippel-2001",
+      "title": "User Toolkits for Innovation",
+      "source_url": "https://web.mit.edu/people/evhippel/papers/Toolkits%20JPIM%20final.pdf",
+      "path": "课堂笔记/sources/files/hippel-2001.pdf",
+      "sha256": "e32e1906006a15c1e591549243ea5f310eedf58d42348887d75350242f472c74",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只出现在 slides 第 28 页 AIGC 批注，用来说明试错留在用户现场。",
+      "source_channel": "slides AIGC 批注",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "total_pages": 29,
+      "scope_pages": [
+        1,
+        2
+      ],
+      "read_pages": [
+        1,
+        2
+      ],
+      "scope_reason": "AIGC 批注只用工具包这一句。摘要在第 1–2 页，后面的案例不进入笔记。",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 17,
+          "location": "supplements hippel-2001",
+          "claim": "工具包把需求相关的设计交给用户，并保持设计可生产"
+        }
+      ]
+    },
+    {
+      "id": "shneiderman-1983",
+      "title": "Direct Manipulation: A Step Beyond Programming Languages",
+      "source_url": "https://www.cs.umd.edu/~ben/papers/Shneiderman1983Direct.pdf",
+      "path": "课堂笔记/sources/files/shneiderman-1983.pdf",
+      "sha256": "4dc29926c05033d1cdb702444158bf8d154d8a152cad1b4a430ffd0403d3af33",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只出现在 slides 第 30 页 AIGC 批注，用来给「直接操纵」一个出处。",
+      "source_channel": "slides AIGC 批注",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "total_pages": 13,
+      "scope_pages": [
+        1
+      ],
+      "read_pages": [
+        1
+      ],
+      "scope_reason": "AIGC 批注只用这个术语。定义在第 1 页，后面的编辑器和 CAD 不进入笔记。",
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "supplements shneiderman-1983",
+          "claim": "对象可见，动作快速、可逆、增量"
+        }
+      ]
+    },
+    {
+      "id": "vba",
+      "title": "Getting started with VBA in Office",
+      "source_url": "https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office/",
+      "path": "课堂笔记/sources/files/vba.html",
+      "sha256": "2934af07b5cc85598c6e3c894cd077fc3d076bf1fa3052809befcc78c5b6cb61",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只出现在 slides 第 29 页 AIGC 批注，用来说明 Office 把操作暴露成对象。",
+      "source_channel": "slides AIGC 批注",
+      "required": true,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "scope_sections": [
+        "intro",
+        "object-model"
+      ],
+      "read_sections": [
+        "intro",
+        "object-model"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "supplements vba",
+          "claim": "几乎每个鼠标操作都能用 VBA 做；Word 的层次是 Application、Document、Paragraph"
+        }
+      ],
+      "scope_reason": "slides 只用对象编程这一句。宏录制教程不进入笔记。"
+    },
+    {
+      "id": "qje-2025",
+      "title": "Generative AI at Work",
+      "source_url": "https://danielle.li/assets/docs/GenerativeAIatWork.pdf",
+      "path": "课堂笔记/sources/files/qje-2025-author.pdf",
+      "sha256": "b59b45b650ad75640735e4a44bc58dae8aa1133f7886c820fb4e815f08a4df9f",
+      "kind": "pdf",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只出现在 slides 第 13 页 AIGC 批注，不是讲师口述。批注写 5,172 名客服、每小时解决的问题数平均提高 15%。",
+      "source_channel": "slides AIGC 批注",
+      "required": false,
+      "reading_status": "full",
+      "identity_status": "verified",
+      "identity_note": "slides 原链接 https://academic.oup.com/qje/article/140/2/889/7990658 在 2026-10-28 仍返回 HTTP 403，Cloudflare（cf-mitigated: challenge）。没有改 User-Agent，没有用无头浏览器，没有解验证码。用的副本是作者 Danielle Li 主页上的同一篇期刊 PDF（CC BY-NC），不是 NBER 工作论文 w31161。页眉：Erik Brynjolfsson, Danielle Li, Lindsey Raymond, The Quarterly Journal of Economics (2025), 889–942, DOI 10.1093/qje/qjae044，Advance Access publication February 4, 2025。页脚写着从上述 OUP 链接下载。文中的 Online Appendix 不在这份 54 页 PDF 里。试过的附录地址 GenerativeAIatWork_Appendix.pdf、GenerativeAIatWork_OnlineAppendix.pdf、GenerativeAIatWork-Appendix.pdf 均为 404，作者文档目录页也没有附录链接，OUP 原文仍被挡住。full 只覆盖这 54 页，附录表没有打开。",
+      "total_pages": 54,
+      "scope_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "scope_reason": "slides 第 13 页只用 5,172、15% 和收益因经验而异。这份 PDF 是期刊正文，54 页全部阅读，没有因为篇幅改成只读摘要。Online Appendix 是另一份文件，不在这个 PDF 里，那句批注也不靠附录表；这次没有取得附录，所以不把它算进阅读范围。",
+      "visual_checks": [
+        {
+          "page": 25,
+          "detail": "看过 Figure IV（期刊第 913 页）。五幅按开通时工龄分组的系数图，带 95% 置信区间。正文给出的读数是不足一个月每小时解决数提高 0.7、超过一年没有效应。没有从图上另读坐标。"
+        }
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 9,
+          "location": "supplements qje-2025",
+          "claim": "5,172 名客服、每小时解决数约提高 15%，低技能和低工龄提高更多"
+        }
+      ]
+    },
+    {
+      "id": "feature-interaction",
+      "title": "Special Issue on Feature interaction in communications and software systems",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1389128613001527",
+      "path": "课堂笔记/sources/files/feature-interaction-ia.html",
+      "sha256": "c4085e56eacff6ba65fac4e68e65f5c1e82d6ea39cd610bff9b6cb53801be08b",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "只出现在 slides 第 27 页 AIGC 批注，用来给插件语义冲突一个电话例子。不是讲师口述。",
+      "source_channel": "slides AIGC 批注",
+      "required": false,
+      "reading_status": "partial",
+      "identity_status": "verified",
+      "identity_note": "身份用 Crossref 核对：DOI 10.1016/j.comnet.2013.05.006 的 alternative-id 为 S1389128613001527，作者 Kenneth J. Turner 与 Evan H. Magill，Computer Networks 第 57 卷第 12 期，2013 年 8 月，页 2395–2398，文献类型 editorial。原链接 2026-10-28 仍是 Cloudflare 403。读的副本是 Internet Archive 对同一 URL 的 2024-04-15 存档 https://web.archive.org/web/20240415143707/https://www.sciencedirect.com/science/article/abs/pii/S1389128613001527 ，内容是 ScienceDirect article preview，不是出版方 PDF。",
+      "scope_sections": [
+        "1",
+        "1.1",
+        "1.2",
+        "1.3",
+        "2",
+        "3"
+      ],
+      "read_sections": [
+        "1",
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "scope_reason": "editorial 正文是引言和第 2、3 节。参考文献和作者简介不进入笔记。第 2、3 节没有因为篇幅排除，存档预览在句中截断，所以还没读完。",
+      "known_gaps": [
+        "2026-10-28 原链接返回 HTTP 403，Cloudflare。没有改 User-Agent，没有用无头浏览器，没有解验证码。",
+        "Unpaywall 对 DOI 10.1016/j.comnet.2013.05.006 标 closed，没有开放获取 PDF。",
+        "https://kjt.stir.ac.uk/research/publications.html 没有这篇 editorial 的 PDF。2013 年同卷能下到的是另一篇：Maternaghan and Turner, Policy Conflicts in Home Automation。",
+        "https://www.stir.ac.uk/research/hub/publication/678938 只有第一段，没有 PDF。",
+        "dspace.stir.ac.uk 返回 Azure 的 JavaScript 检查页，没有绕过。",
+        "Internet Archive 对同一 abs URL 没有存档 PDF。2024-04-15 的 article preview 里，第 1 节及 1.1–1.3 已读；第 2 节截在 All the papers present novel；第 3 节截在 particularly software systems。"
+      ],
+      "related_items": [
+        "课堂笔记"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 16,
+          "location": "supplements feature-interaction",
+          "claim": "遇忙转接会把新来电转走，呼叫等待会让用户接起来；软件插件也会遇到同类冲突"
+        }
+      ]
+    },
+    {
+      "id": "cordis-oral",
+      "title": "讲师提到但拒绝讲授的 Cordis 论文",
+      "source_url": null,
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "讲师说有一篇叫 Cordis、公式很多的论文，并明确今天不讲。",
+      "source_channel": "讲师口述",
+      "required": false,
+      "reading_status": "out_of_scope",
+      "identity_status": "unverified",
+      "scope_reason": "讲师说今天不讲 Cordis。公开能对上的名字是 DeepSeek Harness 里的插件框架，不是一篇已核验的带公式论文，所以不读框架教程来冒充那篇论文。",
+      "related_items": [
+        "课堂笔记"
+      ]
+    },
+    {
+      "id": "lect8",
+      "title": "Agent Native 开发（上一讲讲义）",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect8.md",
+      "kind": "web",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "lect9 开头链回上一讲，用来交代工作区是状态。不是本课的阅读材料。",
+      "source_channel": "讲义页正文",
+      "required": false,
+      "reading_status": "out_of_scope",
+      "identity_status": "unverified",
+      "scope_reason": "这是上一讲的交叉链接。本课笔记只保留 lect9 里那句交代，不打开 lect8。",
+      "related_items": [
+        "课堂笔记"
+      ]
+    }
+  ]
+}

@@ -7,9 +7,15 @@
     "title": "生成式软件工程 05｜软件工程的来龙去脉"
   },
   "scope": {
-    "requested": "单课完整笔记加图解。只根据本地原始转写和原视频重写，不读推荐材料，不迁移旧笔记。",
-    "materials": false,
-    "changes": []
+    "requested": "在已交付的第5课笔记上增量补充官方讲义 lect5、slides5 和推荐材料。已有小节、takeaway、图解和课程地图保持不变，除非材料证明写错。",
+    "materials": "materials.json 的 28 条。必读项在声明范围内为 full。UML 2.5.1、DoReMi、IEEE、Technology Review 和两段 B 站视频不在必读全文里。",
+    "changes": [
+      "notes.json 增加 14 条 supplements，并改了 ISTQB 编号、Dafny/Verus 和若干整理者说明",
+      "与静态讲义重复的视频帧换成官方 slides 截图",
+      "materials.json",
+      "课堂笔记.html",
+      "fidelity-eval.json 只复核变化条目"
+    ]
   },
   "toolchain": {
     "baocut": null,
@@ -61,8 +67,17 @@
       "path": "notes.json",
       "depends_on": [
         "index",
-        "frames"
+        "frames",
+        "materials"
       ]
+    },
+    {
+      "id": "materials",
+      "path": "materials.json",
+      "depends_on": [],
+      "role": "source",
+      "origin": "created",
+      "basis": "官方讲义、slides 和点名材料的阅读登记"
     },
     {
       "id": "visuals",
@@ -256,20 +271,43 @@
       "job_id": null,
       "detail": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
       "evidence": "/private/var/folders/j6/0wknd5xs1sj5_xnqkgjdj8zm0000gn/T/tmpzfqoo0q5/html-check.json"
+    },
+    {
+      "at": "2026-10-28T05:14:35.019219+00:00",
+      "occurred_at": null,
+      "stage": "reading_materials",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "28 materials, required items full within declared scope",
+      "evidence": "materials.json"
+    },
+    {
+      "at": "2026-10-28T05:14:35.043169+00:00",
+      "occurred_at": null,
+      "stage": "material_integration",
+      "status": "completed",
+      "attempt": null,
+      "job_id": null,
+      "detail": "supplements placed beside the related sections",
+      "evidence": "notes.json"
     }
   ],
   "issues": [],
   "status": {
     "outcome": "completed",
     "known_gaps": [
-      "换页检测用的是预先生成的 frames.py scan（阈值 0.3，最长 60 秒兜底，171 张候选），不是逐秒看完全片，也没有逐帧 OCR。",
-      "论文和杂志里的小字没有逐字抄进笔记。",
-      "未打开推荐阅读，也没有把 The Bitter Lesson 的原文补进笔记。",
-      "口播里没有画面核对的专名（打帕、微博 50、E Ecler、daphne virus）保持原转写，不升格成事实。",
-      "召回 36 题里 q20、q33 被判 partial：后半句在笔记里（测试晚发现要回头改、会超支；UML 用半形式语言确定可对齐的语义），答题没有写全。",
+      "换页检测仍用预先生成的 frames.py scan，不是逐秒看完全片。已有手绘图没有重画。",
+      "slides 上紫色 AIGC 批注不记成讲师口头推荐。",
+      "Meyer 的 IEEE 页面是空的。Royce 的 ACM 页面返回 403，读的是 slides 嵌入的 royce.md。两段 B 站链接返回 412。Technology Review 只读到导语。",
+      "UML 2.5.1、NATO 报告、QuickCheck、DoReMi、ISTQB 按点名范围阅读，不是全书。Boys' Life 只核了 1968 年 9 月号第 24 页。",
+      "口播里没有画面核对的专名（打帕、微博 50、E Ecler）保持原转写。daphne virus 对照 slides 第 27 页记为 Dafny 和 Verus。",
+      "召回复核后 q13、q20、q32、q33 为 partial：对应内容在笔记里，答题没有写全。",
       "浏览器检查是 headless Chrome 模拟的 390 和 1280 宽度，不是真机。"
     ],
-    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors"
+    "browser_check": "passed: 390/1280px headless Chrome, modes + expand-all exercised, no overflow or script errors",
+    "reading_materials": "passed",
+    "material_integration": "passed"
   },
   "revisions": [
     {
@@ -342,6 +380,158 @@
         "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
       },
       "prev_sha256": null
+    },
+    {
+      "rev": 2,
+      "at": "2026-10-28T05:14:35.186561+00:00",
+      "reason": "增量补充官方讲义与推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "5ab5641c1152557735a50fa6ea56715c84488f6a5ad2f474e61bc88bf1bfa33c",
+          "bytes": 4948316
+        },
+        "video": {
+          "path": "../raw/BV1Nyeq6qEt8.mp4",
+          "sha256": "699cb51a044420fab1086e92e301863a306177f461d98d28f2895168182f2023",
+          "bytes": 293595133
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "c253d81f1480c50d2f623f8bfaf74b1b7adfc273416bc6504eefcb04f2cb494f",
+          "bytes": 54682
+        },
+        "frames": {
+          "path": "frames/candidates.json",
+          "sha256": "8c5598bbb3aaabdcb3aaf69dd76b3c653d8f928bcb2d391bdb0ce61f392655e1",
+          "bytes": 17332
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "88cf5cbc0b63afa6a572181cad50a142850496be7301b7d3e907c95b7a4533b8",
+          "bytes": 154486
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "d1e98f873d5db72fc1a0a9dfe5a8124b16f745b0f6f9db748839ba83f71ecc02",
+          "bytes": 49630
+        },
+        "visuals": {
+          "path": "visuals/index.json",
+          "sha256": "755746696127226d12628bec7451669c6e3b3886de571dd8d92108aaeeb5e5c9",
+          "bytes": 1328
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "dadaf19586d271d0102c16b27422d93aacc68bd0d97d1d5addf7de38bbcacc9f",
+          "bytes": 10601991
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "a897adb917448c1d6f582b09f8c1758f7ae4ee10663c2593e90e65f81e94ad62",
+          "bytes": 67384
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9655,
+        "recall": 0.9444,
+        "precision_items": 145,
+        "recall_items": 36,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "221d1af7f807f62b395b23b421a452985b0da13737fc353a9a066223d5a3a861"
+    },
+    {
+      "rev": 3,
+      "at": "2026-10-28T07:17:01.515135+00:00",
+      "reason": "补读上一轮未取得的推荐材料",
+      "delivered": true,
+      "files": {
+        "transcript": {
+          "path": "../raw/transcript.json",
+          "sha256": "5ab5641c1152557735a50fa6ea56715c84488f6a5ad2f474e61bc88bf1bfa33c",
+          "bytes": 4948316
+        },
+        "video": {
+          "path": "../raw/BV1Nyeq6qEt8.mp4",
+          "sha256": "699cb51a044420fab1086e92e301863a306177f461d98d28f2895168182f2023",
+          "bytes": 293595133
+        },
+        "index": {
+          "path": "chunks/index.json",
+          "sha256": "c253d81f1480c50d2f623f8bfaf74b1b7adfc273416bc6504eefcb04f2cb494f",
+          "bytes": 54682
+        },
+        "frames": {
+          "path": "frames/candidates.json",
+          "sha256": "8c5598bbb3aaabdcb3aaf69dd76b3c653d8f928bcb2d391bdb0ce61f392655e1",
+          "bytes": 17332
+        },
+        "notes": {
+          "path": "notes.json",
+          "sha256": "5db9252de94a84693965c14aea0d3db4b00654f8af2134b4d08eac3449936a81",
+          "bytes": 164189
+        },
+        "materials": {
+          "path": "materials.json",
+          "sha256": "b42f5d6f12af649ac93054ff21cdd04ca056ca2c68f6a45a329028858e231d3c",
+          "bytes": 54608
+        },
+        "visuals": {
+          "path": "visuals/index.json",
+          "sha256": "755746696127226d12628bec7451669c6e3b3886de571dd8d92108aaeeb5e5c9",
+          "bytes": 1328
+        },
+        "renderer": {
+          "path": "../baocut-course-notes/skills/baocut-course-notes/scripts/layered.py",
+          "sha256": "8ebb1066186a9999a4fdd0a41ec56c546651c026f343400f5fdd65345404d277",
+          "bytes": 16750
+        },
+        "html": {
+          "path": "课堂笔记.html",
+          "sha256": "3f37ac20d5a81d7d16c23d4907e5e9446cc5c8b6b5fdbc8fd5d5deb5aa1c8ad9",
+          "bytes": 10747172
+        },
+        "fidelity_eval": {
+          "path": "fidelity-eval.json",
+          "sha256": "1ccb9fcdce3d05931affcff9e93162e50cdbef3050e6de81157efc747bec2463",
+          "bytes": 69134
+        }
+      },
+      "issues": {},
+      "outcome": "completed",
+      "eval": {
+        "status": "passed",
+        "precision": 0.9696,
+        "recall": 0.9444,
+        "precision_items": 148,
+        "recall_items": 36,
+        "recall_misses": [],
+        "problems": [],
+        "roles": [
+          "independent_agent",
+          "independent_agent",
+          "independent_agent"
+        ],
+        "claim": "Scores restate reviewer judgments; they do not prove the reviewers read everything."
+      },
+      "prev_sha256": "90110a3a5d68a411280c79b3209d4eccea9c3d79c4a00e795e82e89b2a0fe1e2"
     }
   ]
 }

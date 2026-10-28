@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
-  "notes_sha256": "87e234abfcba8f9bfb4bb3d086605cff54cf4c46ab262e41b4c669e4c161e197",
+  "mode": "full",
+  "notes_sha256": "60c22b6d7ea6ae161f887d8ecaffad93c50b8f611af32eff6a779f339ce312af",
   "writer_model": "grok-4.7-high",
   "precision": {
     "items": [
@@ -131,13 +132,6 @@
         "hash": "23d6186c0692f650"
       },
       {
-        "ref": "s6:f1",
-        "verdict": "supported",
-        "evidence": "frames/v001457167.jpg",
-        "note": "截图中的标题、文字及黑板内容支持该描述。",
-        "hash": "01a791c861e4ead7"
-      },
-      {
         "ref": "s7:takeaway",
         "verdict": "supported",
         "evidence": "s-g435.0–s-g447.0~3; s-g458.0–s-g470.0",
@@ -215,13 +209,6 @@
         "hash": "67d644fb7a6ea80d"
       },
       {
-        "ref": "s10:f0",
-        "verdict": "supported",
-        "evidence": "frames/v002582400.jpg",
-        "note": "截图中的标题、文字及黑板内容支持该描述。",
-        "hash": "fd6df51c113e4ea0"
-      },
-      {
         "ref": "s11:takeaway",
         "verdict": "supported",
         "evidence": "s-g688.0~1–s-g768.0",
@@ -297,13 +284,6 @@
         "evidence": "s-g954.0~1–s-g983.0~6",
         "note": "与指定证据一致，保留了原话的条件和语气。",
         "hash": "e9d1a568be8f6504"
-      },
-      {
-        "ref": "s13:f0",
-        "verdict": "supported",
-        "evidence": "frames/v003182400.jpg",
-        "note": "截图中的标题、文字及黑板内容支持该描述。",
-        "hash": "e89448e150c15b9a"
       },
       {
         "ref": "s14:takeaway",
@@ -717,194 +697,336 @@
         "evidence": "s-g493.0~1",
         "note": "基本固定的品位及不控制时朝固定方向发散均直接对应原话。",
         "hash": "d3c057d758f3a93b"
+      },
+      {
+        "ref": "s10:f0",
+        "verdict": "supported",
+        "evidence": "s10:f0 evidence_excerpt；frames/p18.jpg",
+        "note": "图注与页面一致，明确标为 AIGC。",
+        "hash": "d8400a144a4979de"
+      },
+      {
+        "ref": "s13:f0",
+        "verdict": "supported",
+        "evidence": "s13:f0 evidence_excerpt；frames/p22.jpg",
+        "note": "准确区分课堂例子与紫色批注。",
+        "hash": "97c92907b8f64f48"
+      },
+      {
+        "ref": "s6:f1",
+        "verdict": "supported",
+        "evidence": "s6:f1 evidence_excerpt；frames/p12.jpg",
+        "note": "乘积公式及其归属均准确。",
+        "hash": "d70a05621db45962"
+      },
+      {
+        "ref": "x0",
+        "verdict": "supported",
+        "evidence": "x0 evidence_excerpt；s-g36.0~6—s-g79.0~1",
+        "note": "讲义区分与课堂对上下文的宽泛称呼分开呈现。",
+        "hash": "2ccbc09f287871e2"
+      },
+      {
+        "ref": "x3",
+        "verdict": "supported",
+        "evidence": "x3 evidence_excerpt；frames/p12.jpg；s-g415.0~2—s-g417.1~43",
+        "note": "正确将公式归于批注，未冒充口播。",
+        "hash": "57154cdbae7b03d4"
+      },
+      {
+        "ref": "x4",
+        "verdict": "partial",
+        "evidence": "x4 evidence_excerpt；frames/p11.jpg",
+        "note": "验收类比及奖金分档有据；两次付款的完整条件和指定航线细节未由摘录充分支持。",
+        "hash": "f9c069a8e2e8cf1c"
+      },
+      {
+        "ref": "x6",
+        "verdict": "supported",
+        "evidence": "x6 evidence_excerpt；frames/p16.jpg；s-g556.0~1；s-g569.2~6；s-g578.1~11",
+        "note": "页面内容、类比性质和口播纸笔例子对应准确。",
+        "hash": "468ee42440383a14"
+      },
+      {
+        "ref": "x7",
+        "verdict": "supported",
+        "evidence": "x7 evidence_excerpt；frames/p18.jpg",
+        "note": "字数、可见偏旁及批注归属准确；故事解释与页面相符。",
+        "hash": "243fded8456d18b0"
+      },
+      {
+        "ref": "x9",
+        "verdict": "supported",
+        "evidence": "x9 evidence_excerpt；frames/p24.jpg；s-g1113.0~34；s-g1121.0；s-g1140.0~18—s-g1150.0~2",
+        "note": "三条批注路线与课堂的对齐后推一步明确分开。",
+        "hash": "bf2ee75157840798"
+      },
+      {
+        "ref": "x14",
+        "verdict": "partial",
+        "evidence": "x14 evidence_excerpt；frames/p36.jpg",
+        "note": "大世界假设和偏见说法的归属有据；二次方程、过度参数化、两项间接证据及三条推论未包含在摘录中。",
+        "hash": "15ede4e3128fa37d"
+      },
+      {
+        "ref": "x15",
+        "verdict": "partial",
+        "evidence": "x15 evidence_excerpt；frames/p37.jpg",
+        "note": "产业占比、地区数量和算力翻倍有据；数据量每八个月翻倍及学术界高被引论文地位未在摘录中提供。",
+        "hash": "3e178fb247bccedc"
+      },
+      {
+        "ref": "s2:n1",
+        "verdict": "supported",
+        "evidence": "s2:n1 evidence_excerpt；s-g36.0~6—s-g79.0~1",
+        "note": "课堂宽泛用词与讲义的指令材料区分均准确。",
+        "hash": "f076b56ae69c3620"
+      },
+      {
+        "ref": "s3:n1",
+        "verdict": "supported",
+        "evidence": "s3:n1 evidence_excerpt；s-g133.0；s-g157.0~18",
+        "note": "正确限定模型自述的证据效力。",
+        "hash": "6681b66fc7247df4"
+      },
+      {
+        "ref": "s5:n1",
+        "verdict": "supported",
+        "evidence": "s5:n1 evidence_excerpt；s-g364.0~5—s-g387.0",
+        "note": "区分课堂风险评估演示与官方规则说明，保留模型可靠性警告。",
+        "hash": "80187740a16b346f"
+      },
+      {
+        "ref": "s6:n1",
+        "verdict": "supported",
+        "evidence": "s6:n1 evidence_excerpt；x4 evidence_excerpt；frames/p12.jpg；frames/p11.jpg",
+        "note": "公式和经度法均正确归于批注或外部补充。",
+        "hash": "25d1e293c12ad1b0"
+      },
+      {
+        "ref": "s8:n1",
+        "verdict": "supported",
+        "evidence": "s8:n1 evidence_excerpt；x5 evidence_excerpt",
+        "note": "本质与偶然任务、责任边界及 9/10 的来源区分准确。",
+        "hash": "093559c2e0e135b8"
+      },
+      {
+        "ref": "s9:n1",
+        "verdict": "supported",
+        "evidence": "s9:n1 evidence_excerpt；frames/p16.jpg；s-g556.0~1—s-g578.1~11",
+        "note": "纸带及复杂性说法保持类比性质。",
+        "hash": "9d604c67a53591b5"
+      },
+      {
+        "ref": "s10:n1",
+        "verdict": "supported",
+        "evidence": "s10:n1 evidence_excerpt；frames/p18.jpg",
+        "note": "机械验收句与偏旁部首区分均来自页面批注。",
+        "hash": "a6a6ece2a59ab3bb"
+      },
+      {
+        "ref": "s13:n1",
+        "verdict": "supported",
+        "evidence": "s13:n1 evidence_excerpt；x8 evidence_excerpt；s-g925.0~20—s-g935.0~7",
+        "note": "课堂注释例子与白熊、CSS 批注分开。",
+        "hash": "09551f16afc0c454"
+      },
+      {
+        "ref": "s15:n1",
+        "verdict": "supported",
+        "evidence": "s15:n1 evidence_excerpt；frames/p24.jpg；s-g1140.0~18—s-g1150.0~2",
+        "note": "没有把三条 AIGC 路线冒充课堂流程。",
+        "hash": "74e66a382287d4c2"
+      },
+      {
+        "ref": "s19:n1",
+        "verdict": "supported",
+        "evidence": "s19:n1 evidence_excerpt；frames/p29.jpg；s-g1367.0~16—s-g1393.0",
+        "note": "保留猜测、不确定性及设计冲突。",
+        "hash": "177d7f22d5c1baea"
+      },
+      {
+        "ref": "s21:n0",
+        "verdict": "supported",
+        "evidence": "s21:n0 evidence_excerpt；frames/p31.jpg；s-g1443.0~13—s-g1476.0~24",
+        "note": "编辑处理说明保留口播与官方批注的界线。",
+        "hash": "25672172b5ac84d0"
+      },
+      {
+        "ref": "s21:n1",
+        "verdict": "supported",
+        "evidence": "s21:n1 evidence_excerpt；frames/p31.jpg",
+        "note": "KLEE 机制正确归于批注，并未冒充博士生实验结果。",
+        "hash": "86afc45a37429e77"
+      },
+      {
+        "ref": "s22:n1",
+        "verdict": "supported",
+        "evidence": "s22:n1 evidence_excerpt；x12 evidence_excerpt",
+        "note": "准确限定为生产方式类比，未声称编程代理实验。",
+        "hash": "75928e3a521d44eb"
+      },
+      {
+        "ref": "s23:n1",
+        "verdict": "supported",
+        "evidence": "s23:n1 evidence_excerpt；x13 evidence_excerpt；s-g1512.0—s-g1515.0",
+        "note": "正确区分资料利用实验与指令遵循观察。",
+        "hash": "e702502381c11ee5"
+      },
+      {
+        "ref": "s24:n1",
+        "verdict": "supported",
+        "evidence": "s24:n1 evidence_excerpt；x14 evidence_excerpt；x15 evidence_excerpt；frames/p37.jpg",
+        "note": "论文、讲师发挥及仅见于批注的美元数字均明确区分。",
+        "hash": "1ba3a8edead5a527"
+      },
+      {
+        "ref": "s5:f1",
+        "verdict": "supported",
+        "evidence": "s5:f1 evidence_excerpt；frames/p09.jpg",
+        "note": "页面规则、CVE 例子和 AIGC 归属一致。",
+        "hash": "3c689536c1f1bbe8"
+      },
+      {
+        "ref": "s6:f2",
+        "verdict": "supported",
+        "evidence": "s6:f2 evidence_excerpt；frames/p11.jpg",
+        "note": "准确复述正文和批注。",
+        "hash": "f32fda7199d690f1"
+      },
+      {
+        "ref": "s7:f1",
+        "verdict": "partial",
+        "evidence": "s7:f1 evidence_excerpt；frames/p14.jpg",
+        "note": "可见文字与批注准确；两个具体域名无法从摘录或 JPEG 核实。",
+        "hash": "34be73bb20649764"
+      },
+      {
+        "ref": "s9:f0",
+        "verdict": "supported",
+        "evidence": "s9:f0 evidence_excerpt；frames/p16.jpg",
+        "note": "正文、纸带类比和可检查条件均准确。",
+        "hash": "b6c2ac76faba5f76"
+      },
+      {
+        "ref": "s15:f0",
+        "verdict": "supported",
+        "evidence": "s15:f0 evidence_excerpt；frames/p24.jpg",
+        "note": "三条路线及先独立后汇合均有据。",
+        "hash": "355174d688bdbb5a"
+      },
+      {
+        "ref": "s19:f0",
+        "verdict": "supported",
+        "evidence": "s19:f0 evidence_excerpt；frames/p29.jpg",
+        "note": "准确保留猜测与批注研究结论的边界。",
+        "hash": "7e22fa4e7d8f7ed4"
+      },
+      {
+        "ref": "s21:f1",
+        "verdict": "supported",
+        "evidence": "s21:f1 evidence_excerpt；frames/p31.jpg",
+        "note": "正文案例与问题诊断批注对应准确。",
+        "hash": "53818d80b4a8120a"
+      },
+      {
+        "ref": "s23:f0",
+        "verdict": "supported",
+        "evidence": "s23:f0 evidence_excerpt；frames/p33.jpg",
+        "note": "准确复述页面并标明紫色内容为 AIGC。",
+        "hash": "c3bf4c35ec29e445"
+      },
+      {
+        "ref": "s24:f1",
+        "verdict": "partial",
+        "evidence": "s24:f1 evidence_excerpt；frames/p36.jpg",
+        "note": "可见正文准确；具体 PDF 链接文件名未在 JPEG 或摘录中显示。",
+        "hash": "cc77a82b8498d9c8"
+      },
+      {
+        "ref": "x12",
+        "verdict": "supported",
+        "evidence": "摘录明确说明少干预、接口先审查、实现后修；紫色 AIGC 提出并行与低成本恢复两个前提，并按不可逆性和爆炸半径分配注意力。丰田段落支持异常停机、andon 通知及无需持续盯守。",
+        "note": "各项表述均有依据，且明确区分紫色 AIGC 与口播，没有将类比说成丰田的实验结论。",
+        "hash": "82da85933dfb1195"
+      },
+      {
+        "ref": "s24:f2",
+        "verdict": "supported",
+        "evidence": "摘录包含标题、墙内外图景、算力成为生产资料的正文、紫色 AIGC 的产业模型比例与训练成本，以及页脚 37/37。",
+        "note": "内容与摘录一致；“资本”是对“资本家”的合理转述，AIGC 归属清楚。",
+        "hash": "a1ad0e5706e610e2"
+      },
+      {
+        "ref": "s1:n1",
+        "verdict": "supported",
+        "evidence": "evidence/s1-n1.txt，SLIDE 3：“2019 年 GPT-2 的发布页面已经写下 prompting the trained model”；LINKS 列出 2102.07350、2107.13586。items.json 的 s1 transcript 未布置这些阅读。",
+        "note": "批注内容和链接吻合，未将其归为讲师口播。",
+        "hash": "94c28df3640a61a1"
+      },
+      {
+        "ref": "s4:n1",
+        "verdict": "supported",
+        "evidence": "evidence/s4-n1.txt，SLIDE 7：“这套飞轮有实证支点：self-explanation 与 retrieval practice”。items.json s4，s-g235.0~10：“你来看我哪里逻辑是不是有有错有漏”。",
+        "note": "课堂讲了角色反转学习法；实验依据明确归于 AIGC 批注。",
+        "hash": "d132de8c16da6ab9"
+      },
+      {
+        "ref": "x1",
+        "verdict": "supported",
+        "evidence": "evidence/x1.txt，Chi physical pages 8–9：“defined post hoc”“This left nine students”“82%”“46%”“51.9 vs. 18”；Roediger physical pages 2、5：“One hundred twenty”“256 and 275”“18.48”“52%”“28%”“14%”“61% vs. 40%”。",
+        "note": "分组、样本、时间、统计量和效应方向均吻合；明确保留人的实验与模型飞轮之间的边界。",
+        "hash": "6507d1e731bb43a7"
+      },
+      {
+        "ref": "x10",
+        "verdict": "supported",
+        "evidence": "evidence/x10.txt，RepoCoder 表 2a：“57.75 40.56 55.31”；表 3 All：“373 42.63 23.32 38.34 42.63”；CodeRAG 表 5 GPT-4o：“75.6 92.6”“2.3 30.7”，正文：“9-point gap”；transcript.txt s-g1379.0~2：“我不知道”，s-g1382.0~15：“不同的设计是会打架的”。",
+        "note": "检索机制、结果数字及局限均有依据，没有把同仓库检索推广成整份外来仓库已获验证。",
+        "hash": "99194e0cef7d49de"
+      },
+      {
+        "ref": "x11",
+        "verdict": "supported",
+        "evidence": "evidence/x11.txt，KLEE physical page 2：“84.5%”“90.5%”“89-hour”“16.8%”“56 serious bugs”；page 6：“queries by 40%”“reduced to 5%”“92%”“41%”；page 7：“round robin”“maximum number of instructions and a maximum amount of time”。",
+        "note": "区分总覆盖率与工具平均覆盖率；查询优化、缓存和调度描述吻合，未将 KLEE 结果挪给课堂研究项目。",
+        "hash": "eebeb52213b8dd42"
+      },
+      {
+        "ref": "x13",
+        "verdict": "supported",
+        "evidence": "evidence/x13.txt，physical page 3：“2655 queries”；page 2：“closed-book setting; 56.1%”；page 8：“1.9%”“300 key-value pairs”“45.6%”；page 17：“20-point”“10-point”；page 3：“50 documents instead of 20”“∼1.5%”“∼1%”。transcript.txt s-g1513.0、s-g1514.0：“最后的那个指令”“尤其是到中间的时候”。",
+        "note": "实验任务、数值、位置效应和后训练差异吻合；明确说明论文未测指令丢失率，批注与口播归属正确。",
+        "hash": "546ef979a9549741"
+      },
+      {
+        "ref": "x2",
+        "verdict": "supported",
+        "evidence": "evidence/x2.txt，rules：“decision (defaults to allow)”“forbidden > prompt > allow”；approvals：“retired setting can prevent either client from starting”“Linux uses bwrap plus seccomp”；CVE：“before 0.9.0 auto-approves ripgrep”“baseScore: 4.1”“CWE-829”。transcript.txt s-g376.0~39、s-g378.0~65：“沙箱内的低风险命令会直接执行”“inject 一小段话”。",
+        "note": "命令匹配、shell 拆分、沙箱审批、网络策略及 CVE 字段均吻合；正确区分文档机制与课堂描述。",
+        "hash": "0103aa7431a09b01"
+      },
+      {
+        "ref": "x5",
+        "verdict": "supported",
+        "evidence": "evidence/x5.txt，Brooks physical page 4：“Unless it is more than 9/10 of all effort”；page 16：“one hundred thousand dollars”“one programmer-year”；pages 18–20：“before having built and tried some versions”“Harlan Mills”“approach an order of magnitude”。SLIDE 15：“验收标准和失败责任不能一起外包”。",
+        "note": "比例被正确保留为条件；四项建议及其限制符合报告，未归为讲师讲过的内容。",
+        "hash": "f4d75af4d0b3007c"
+      },
+      {
+        "ref": "x8",
+        "verdict": "supported",
+        "evidence": "transcript.txt s-g911.0~1、s-g925.0~20：“白色的背景不要半透明”“注释是白色背景括号不要半透明”；evidence/x8.txt，SLIDE 22：“被禁止的词也成了可续写的模式”“background: #fff; opacity: 1”；Wegner page 1：“5-min period”“significantly more tokens of thought”“specific thought to use as a distractor”。",
+        "note": "课堂例子、批注建议与白熊实验均有依据；保持人类实验与模型机制类比的界限。",
+        "hash": "eee0b56a479b0aef"
       }
     ],
     "reviewer": "independent_agent",
     "reviewer_model": "gpt-6.1-sol",
-    "method": "prepare packets: all takeaways/explainers + per-section sample; 102 judged in latest round; 11 judged in latest round"
+    "method": "prepare packets: all takeaways/explainers + per-section sample; 102 judged in latest round; 11 judged in latest round; 46 judged in latest round; 9 judged in latest round"
   },
   "recall": {
     "items": [
-      {
-        "id": "q01",
-        "question": "讲者为什么说提示词工程实际上是上下文工程？除用户消息外，列出至少三类 agent 会看到的内容。",
-        "expected": "优化的是整个模型上下文；包括 system prompt、AGENTS.md/skills、工具定义与调用结果、对话历史或环境信息中的至少三类。",
-        "evidence": "s-g36.0~6; s-g43.0~5; s-g60.0~7; s-g79.0~1",
-        "from": "transcript",
-        "answer": "模型看到的不是聊天框里的一句话，而是整条线性上下文；优化提示词就是安排整段上下文。除用户消息外，还有系统提示词、分层 AGENTS.md、按需加载的 skills、工具定义及调用结果、对话历史、每次注入的环境变量和时间。",
-        "found_in": "s2:p0, s2:p1, s3:p1, s3:p2, s3:p3",
-        "verdict": "correct",
-        "note": "覆盖整个模型上下文及至少三类额外内容。",
-        "hash": "72d2cafe2b051e10"
-      },
-      {
-        "id": "q02",
-        "question": "讲者提到的“每句话后面加一个喵”有什么工程用途？如果“喵”消失，可能说明什么？",
-        "expected": "用作指令遵循的观察信号；可能因上下文截断、溢出或压缩等导致早期指令不再被遵循。",
-        "evidence": "s-g95.0~5; s-g99.0~27",
-        "from": "transcript",
-        "answer": "这是检查长时间工作后指令是否仍被遵循的探针。如果“喵”消失，可能是上下文溢出后被截断或被压缩，模型开始无法遵循早先指令，需要重新处理上下文。",
-        "found_in": "s2:p2",
-        "verdict": "correct",
-        "note": "说明观察信号及截断、溢出或压缩的可能原因。",
-        "hash": "58acb065e7ad0c54"
-      },
-      {
-        "id": "q03",
-        "question": "在课堂演示的全局 AGENTS.md 中，讲者设置了哪两项输出要求？",
-        "expected": "用中文回答；结尾必须写 recap。",
-        "evidence": "s-g164.0; s-g170.0~13",
-        "from": "transcript",
-        "answer": "用中文回答；结尾必须写一个 recap，总结这次做了什么。",
-        "found_in": "s3:p1",
-        "verdict": "correct",
-        "note": "中文回答和结尾 recap 均正确。",
-        "hash": "b2ee83103d2826a5"
-      },
-      {
-        "id": "q04",
-        "question": "按讲者对 skills 的介绍，模型最初看到什么，何时才读取完整的 SKILL.md？",
-        "expected": "最初只看到名称和简短描述等 metadata；匹配当前任务时才按需读取完整内容。",
-        "evidence": "s-g178.0~3; s-g185.0~14; s-g192.0~8",
-        "from": "transcript",
-        "answer": "最初只看到 skill 索引里的 metadata，即名字和简短描述；任务匹配时才按需读取完整 skill 文件。讲者还说该轮加载结束后 skill 会从上下文中被抹掉。",
-        "found_in": "s3:p2",
-        "verdict": "correct",
-        "note": "正确说明先看 metadata、任务匹配后按需读取全文。",
-        "hash": "b2ee83103d2826a5"
-      },
-      {
-        "id": "q05",
-        "question": "讲者如何建议用 AI 实践费曼学习法？AI 在反向讲解阶段要做什么？",
-        "expected": "先向 AI 请教并追问；自认为理解后自己当老师、让 AI 假装不懂的学生；AI 检查并纠正逻辑错漏。",
-        "evidence": "s-g211.0~2; s-g229.0~6; s-g235.0~10",
-        "from": "transcript",
-        "answer": "先把 AI 当老师，不懂就追问；自认为懂了，再由自己讲解，让 AI 扮演什么都不知道的学生，检查逻辑错误和遗漏，并及时纠正。",
-        "found_in": "s4:p0, s4:p1",
-        "verdict": "correct",
-        "note": "完整说明请教追问、角色反转及检查纠错。",
-        "hash": "f57778b49a01bdfe"
-      },
-      {
-        "id": "q06",
-        "question": "讲者为什么觉得 agent 在沙箱失败后请求确认会妨碍工作？他举了什么离开电脑的情境？",
-        "expected": "想先启动三个任务再去吃饭；回来发现 agent 只跑了一分钟就停在确认上，浪费无人值守时间。",
-        "evidence": "s-g280.0~5; s-g287.0~7; s-g294.0~11",
-        "from": "transcript",
-        "answer": "人希望安排好几个任务后离开，让 agent 自己运行；若它在沙箱失败后很快停下来等确认，回来才发现任务没推进，浪费双方时间。他举的是把三个任务跑起来后去吃饭，回来发现它跑了一分钟就问确认。",
-        "found_in": "s5:p0",
-        "verdict": "correct",
-        "note": "包含三个任务、去吃饭及一分钟后停在确认的情境。",
-        "hash": "851ff8ab6a0a1394"
-      },
-      {
-        "id": "q07",
-        "question": "在“为何有时执行 bash 要确认、有时不要”的现场提问中，代码检查给出了哪两类风险处理机制？",
-        "expected": "静态分流/命令解析与白名单，部分低风险命令直接放行；另有大模型参与风险评级。",
-        "evidence": "s-g355.0; s-g376.0~39; s-g377.1~24; s-g378.0~65",
-        "from": "transcript",
-        "answer": "一层是静态分流：沙箱内低风险命令、网络 allow list 等直接放行；另一层是对不确定的命令注入安全评估提示词，让大模型做风险评级。",
-        "found_in": "s5:p4, s5:f0",
-        "verdict": "correct",
-        "note": "覆盖静态分流与白名单，以及大模型风险评级。",
-        "hash": "851ff8ab6a0a1394"
-      },
-      {
-        "id": "q08",
-        "question": "如果不完全相信 agent 对安全评估代码的解释，讲者建议怎样获得行为层面的证据？",
-        "expected": "修改安全评估 prompt，使原来放行的命令被拒绝或反过来；观察实际行为是否随之改变。",
-        "evidence": "s-g380.0~4; s-g381.3~21; s-g384.0~42",
-        "from": "transcript",
-        "answer": "修改安全评估 prompt，把原先不拒绝的改成拒绝、原先拒绝的改成不拒绝，再观察实际行为是否随之变化；这些行为变化就是证据，也可以让 agent 来做。",
-        "found_in": "s5:p4",
-        "verdict": "correct",
-        "note": "正确提出修改安全 prompt 并观察放行或拒绝行为变化。",
-        "hash": "851ff8ab6a0a1394"
-      },
-      {
-        "id": "q09",
-        "question": "讲者为什么用“要求 C++ 却得到 Java”的例子说明 spec 和 verify 的作用？",
-        "expected": "明确写出实现语言后，不符合要求可直接判定；只给模糊 intent、不说语言，就可能发生漂移。",
-        "evidence": "s-g398.0~44; s-g401.0; s-g402.0~15; s-g403.0; s-g403.0~42",
-        "from": "transcript",
-        "answer": "明确 spec 写了用 C++，却交来 Java，人和模型都能核对出不合格；若只给模糊意图而没指定语言，模型自行选 Java 就可能偏离人的期待。spec 和 verify 让完成条件明确，从而发现并约束漂移。",
-        "found_in": "s6:p1, s6:e0",
-        "verdict": "correct",
-        "note": "说明明确语言可验收，模糊意图会导致漂移。",
-        "hash": "7b99833dfbcfa6cd"
-      },
-      {
-        "id": "q10",
-        "question": "针对“一句话生成赛车游戏”与心中想要的游戏不一致，讲者提出了什么具体地图方案？",
-        "expected": "明确要求复用真实地图和美术资产；可从 OpenStreetMap 获取开源地图，例子是在南大仙林校区开车。",
-        "evidence": "s-g415.0~2; s-g416.0; s-g416.0~22; s-g416.0~61; s-g417.0",
-        "from": "transcript",
-        "answer": "明确要求复用真实地图和公开可用的美术资产，例如从 OpenStreetMap 下载开源地图，找到南大仙林校区地图的文件格式并重建世界，实现校园内开车，再使用公开的车、城市、树等资产。",
-        "found_in": "s6:p4",
-        "verdict": "correct",
-        "note": "覆盖真实地图、美术资产、OpenStreetMap 和南大仙林校区。",
-        "hash": "7b99833dfbcfa6cd"
-      },
-      {
-        "id": "q11",
-        "question": "讲者自己的终端主页用了什么渲染后的处理来减轻“AI 味”？这体现了什么指令原则？",
-        "expected": "对 xterm.js 渲染结果做小幅后处理，使字形像打字机般不完美；把风格、前景背景、后处理和排版等说具体。",
-        "evidence": "s-g450.0; s-g452.0; s-g454.0~7; s-g458.0; s-g462.0~23",
-        "from": "transcript",
-        "answer": "在 xterm.js 渲染后做后处理，让字形不那么工整，像真实打字机的不完美。原则是把想要的终端、前景背景、渲染后处理、样式和排版说具体；指令越清楚，越能控制结果并减轻 AI 味。",
-        "found_in": "s7:p1, s7:p2",
-        "verdict": "correct",
-        "note": "覆盖 xterm.js 字形后处理及风格要求具体化。",
-        "hash": "f7f40259a10e8f86"
-      },
-      {
-        "id": "q12",
-        "question": "讲者用有限状态机和图灵机的类比，怎样解释思维链的作用及其局限？",
-        "expected": "上下文相当于纸笔/外部记忆，让有限的单次计算积累推理；只能 append-only 往后写，不能擦除，靠注意力忽略错误。",
-        "evidence": "s-g538.0~1; s-g556.0~1; s-g563.0~15; s-g569.2~6; s-g578.1~11",
-        "from": "transcript",
-        "answer": "每输出一个 token 只有固定、有限的计算，类似有限状态机；把上下文当纸和笔写下中间思考，就像加上纸带的图灵机，能试解并核对。局限是纸带只能往后追加、不能擦，写错的内容只能靠注意力忽略，写出的解也可能有错。",
-        "found_in": "s9:p0, s9:p1, s9:p2",
-        "verdict": "correct",
-        "note": "覆盖上下文作为外部记忆、只能追加及靠注意力忽略错误。",
-        "hash": "4edd3c03b3feeb35"
-      },
-      {
-        "id": "q13",
-        "question": "课堂藏头诗演示中，除押韵外，还要求讲什么主题的故事，以及哪八个字按顺序出现在八句里？",
-        "expected": "动物相关故事；“二零二六九月一日”八字按顺序分布在八句中。",
-        "evidence": "s-g624.0",
-        "from": "transcript",
-        "answer": "讲一个与动物有关的故事，并让“二零二六九月一日”八个字按顺序出现在八句里。",
-        "found_in": "s10:p0",
-        "verdict": "correct",
-        "note": "动物故事主题和八个指定字均正确。",
-        "hash": "c36d241017fb6717"
-      },
-      {
-        "id": "q14",
-        "question": "模型在藏头诗任务里不是一次直接写完，而是怎样尝试和纠错的？",
-        "expected": "先考虑韵脚并尝试写作；检查是否满足约束，不对就修改；多次不行时换韵脚重来。",
-        "evidence": "s-g630.0~5; s-g636.0~5; s-g642.2~1",
-        "from": "transcript",
-        "answer": "先考虑韵脚，写一版后判断是否满足条件，不对就改；试很久不行会从头推、换一个韵脚，不断验证和纠错。",
-        "found_in": "s10:p0",
-        "verdict": "correct",
-        "note": "覆盖选韵、检查修改及换韵重来。",
-        "hash": "c36d241017fb6717"
-      },
-      {
-        "id": "q15",
-        "question": "讲者认为模型主要在数学和编程上训练，却能完成复杂文字约束任务，这说明了什么？写 prompt 时最重要的因素是什么？",
-        "expected": "思维链/指令遵循能力可迁移到文字任务；强模型配合明确、可检查的 verify 是关键。",
-        "evidence": "s-g661.0~26; s-g685.0~12; s-g688.0~1; s-g694.0~8",
-        "from": "transcript",
-        "answer": "这显示了在数学、编程等有明确反馈的任务上训练出的能力，可以迁移到未在训练中出现过的复杂文字约束任务。写 prompt 最重要的是给出明确、可核对的 verify。",
-        "found_in": "s10:p2, s10:p4, s11:p0",
-        "verdict": "partial",
-        "note": "说明能力迁移和明确可检查的 verify，但遗漏强模型配合这一关键条件。",
-        "hash": "c3c8004aec3fecab"
-      },
       {
         "id": "q16",
         "question": "讲者为什么觉得教学数字切片比数学、编程任务更难做好？",
@@ -930,18 +1052,6 @@
         "hash": "2e2c4f4798ef28e9"
       },
       {
-        "id": "q18",
-        "question": "“白色背景，不要半透明效果”的例子中，模型做出了什么令讲者觉得不自然的行为？用更多规则修正它又有什么代价？",
-        "expected": "把“白色背景（不要半透明效果）”直接写进代码注释；再加 AGENTS.md 或 skill 规则会继续污染上下文、争夺注意力。",
-        "evidence": "s-g911.0~1; s-g925.0~20; s-g935.0~7; s-g954.0~1; s-g961.0~2",
-        "from": "transcript",
-        "answer": "模型实现白色背景后，还把“白色背景（不要半透明效果）”原样写成代码注释，把效果要求当成了需要保留的句子。可用 AGENTS.md 或 skill 规定注释写法，但这些规则又会污染上下文、争夺注意力，且可能陷入不断改规则的泥潭。",
-        "found_in": "s13:p1, s13:p2",
-        "verdict": "correct",
-        "note": "覆盖原样写入注释及新增规则污染上下文、争夺注意力。",
-        "hash": "f845225a65fa9ab3"
-      },
-      {
         "id": "q19",
         "question": "针对“读 paper.pdf 帮我做总结”这类提问，讲者认为论文自身的逻辑会给模型带来什么偏向？",
         "expected": "逻辑自洽的论文强烈影响上下文注意力；模型容易接受作者立场，产出作者观点的复述。",
@@ -952,42 +1062,6 @@
         "verdict": "correct",
         "note": "说明论文逻辑牵引注意力并导致复述作者立场。",
         "hash": "e5025156af0edfb1"
-      },
-      {
-        "id": "q20",
-        "question": "面对“怎样抵抗已有论文对上下文的污染”的课堂提问，讲者建议先对齐哪三个问题？",
-        "expected": "人类已有相关工作是什么；已解决到什么程度；本文试图解决哪些不同的增量问题。",
-        "evidence": "s-g1105.0; s-g1113.0~34; s-g1119.0~2; s-g1119.0~31; s-g1119.0~38; s-g1120.0~2",
-        "from": "transcript",
-        "answer": "先对齐：人类历史上相关的已解决内容是什么；已经解决到什么程度；这篇工作试图解决什么不同的、增量的问题。",
-        "found_in": "s15:p0",
-        "verdict": "correct",
-        "note": "三个对齐问题均完整。",
-        "hash": "663d25c70989f590"
-      },
-      {
-        "id": "q21",
-        "question": "学生让 AI 解释尚未理解的课程内容时，讲者建议先告诉 AI 哪些个人信息，再要求怎样解释？",
-        "expected": "说明自己课程学到哪里、编程水平等已有知识；要求用已经学过的知识重新表述内容。",
-        "evidence": "s-g1121.0; s-g1122.0; s-g1122.0~21; s-g1122.0~30",
-        "from": "transcript",
-        "answer": "先告诉 AI 自己这门课学到什么程度、编程水平是什么，把已有知识放进上下文；再要求它从这个基础出发，用自己学过的知识把内容换一种说法重新解释。",
-        "found_in": "s15:p0, s15:e0",
-        "verdict": "correct",
-        "note": "覆盖课程进度、编程水平及用已学知识重新解释。",
-        "hash": "663d25c70989f590"
-      },
-      {
-        "id": "q22",
-        "question": "讲者明确说自己通常因什么拒稿，而不是仅因什么拒稿？",
-        "expected": "主要检查是否给人类提供新知识、逻辑链是否断裂；几乎不会仅因实验不够好而拒稿。",
-        "evidence": "s-g1168.0~9; s-g1174.0~7; s-g1180.0~6",
-        "from": "transcript",
-        "answer": "他大部分拒稿是因为逻辑断开，站在人类立场看没有提供新的知识；几乎不会仅因实验不够好拒稿。",
-        "found_in": "s15:p3",
-        "verdict": "correct",
-        "note": "覆盖新知识、逻辑断裂及不单因实验不足拒稿。",
-        "hash": "663d25c70989f590"
       },
       {
         "id": "q23",
@@ -1002,18 +1076,6 @@
         "hash": "da009fd5d1c47b0e"
       },
       {
-        "id": "q24",
-        "question": "讲者所说的真正 long horizon 任务与 PA 作业有明确 verifier 的任务有何区别？",
-        "expected": "真正长程任务含未知与探索；可能只有大致意图，spec 和 implementation 都不清楚；明确验收的 PA 不算这种真正长程任务。",
-        "evidence": "s-g1296.0; s-g1299.1~4; s-g1299.2~14",
-        "from": "transcript",
-        "answer": "PA 作业有明确 verifier，知道怎样判定完成，不算真正 long horizon。真正长程任务包含未知和不确定性探索，可能只有初步 intent，spec 和 implementation 都不清楚，需要探索怎样交付高质量结果，不能指望模型一直沿已知核对条件做下去。",
-        "found_in": "s18:p0, s24:p0",
-        "verdict": "correct",
-        "note": "正确区分明确验收任务与包含未知探索的长程任务。",
-        "hash": "efe60d788eaee492"
-      },
-      {
         "id": "q25",
         "question": "讲者为何认为维护良好的大型项目，可能比从零写一个小游戏更适合 AI？",
         "expected": "大型项目有成熟的已有模式与上下文可参考；模型能加载文件、组合已有写法，而从零产品后续加功能容易成本上升和翻车。",
@@ -1026,16 +1088,208 @@
         "hash": "bc868559513abd97"
       },
       {
+        "id": "q01",
+        "question": "讲者为什么说提示词工程实际上是上下文工程？除用户消息外，列出至少三类 agent 会看到的内容。",
+        "expected": "优化的是整个模型上下文；包括 system prompt、AGENTS.md/skills、工具定义与调用结果、对话历史或环境信息中的至少三类。",
+        "evidence": "s-g36.0~6; s-g43.0~5; s-g60.0~7; s-g79.0~1",
+        "from": "transcript",
+        "answer": "因为模型看到的是整条线性上下文，提示词工程需要安排整段内容，而不只是用户在聊天框里输入的话。除用户消息外，还包括系统提示词、分层 AGENTS.md、按需加载的 skills、工具定义及调用结果、对话历史，以及每次注入的环境和时间。",
+        "found_in": "s2:p0, s2:p1, s3:p1, s3:p2, s3:p3",
+        "verdict": "correct",
+        "note": "说明优化整个上下文，并列出系统提示词、AGENTS.md、skills、工具和历史等内容。",
+        "hash": "6f21fd48d96ad8d5"
+      },
+      {
+        "id": "q02",
+        "question": "讲者提到的“每句话后面加一个喵”有什么工程用途？如果“喵”消失，可能说明什么？",
+        "expected": "用作指令遵循的观察信号；可能因上下文截断、溢出或压缩等导致早期指令不再被遵循。",
+        "evidence": "s-g95.0~5; s-g99.0~27",
+        "from": "transcript",
+        "answer": "它是检测长对话中指令遵循情况的标记。如果“喵”消失，可能说明上下文溢出后被截断或被压缩，模型开始不能遵循早先的指令，需要重新处理上下文。",
+        "found_in": "s2:p2",
+        "verdict": "correct",
+        "note": "说明了指令遵循观察信号及截断、压缩导致早期指令失效的可能性。",
+        "hash": "ace853519b42d22d"
+      },
+      {
+        "id": "q03",
+        "question": "在课堂演示的全局 AGENTS.md 中，讲者设置了哪两项输出要求？",
+        "expected": "用中文回答；结尾必须写 recap。",
+        "evidence": "s-g164.0; s-g170.0~13",
+        "from": "transcript",
+        "answer": "用中文回答；结尾必须写一个 recap，总结本次做了什么。",
+        "found_in": "s3:p1",
+        "verdict": "correct",
+        "note": "包含中文回答和结尾写 recap 两项要求。",
+        "hash": "75d1815e95da54fd"
+      },
+      {
+        "id": "q04",
+        "question": "按讲者对 skills 的介绍，模型最初看到什么，何时才读取完整的 SKILL.md？",
+        "expected": "最初只看到名称和简短描述等 metadata；匹配当前任务时才按需读取完整内容。",
+        "evidence": "s-g178.0~3; s-g185.0~14; s-g192.0~8",
+        "from": "transcript",
+        "answer": "模型最初只看到 skills 索引中的 metadata，包括名字和简略描述。只有任务匹配、需要使用时，才读取完整的 SKILL.md；讲者说这一轮加载使用后，skill 会从上下文中被抹掉。",
+        "found_in": "s3:p2",
+        "verdict": "correct",
+        "note": "包含先看 metadata、任务匹配时按需读取完整 SKILL.md；额外的“使用后抹掉”说法未获给定参考支持。",
+        "hash": "75d1815e95da54fd"
+      },
+      {
+        "id": "q06",
+        "question": "讲者为什么觉得 agent 在沙箱失败后请求确认会妨碍工作？他举了什么离开电脑的情境？",
+        "expected": "想先启动三个任务再去吃饭；回来发现 agent 只跑了一分钟就停在确认上，浪费无人值守时间。",
+        "evidence": "s-g280.0~5; s-g287.0~7; s-g294.0~11",
+        "from": "transcript",
+        "answer": "请求确认会让本想自动完成的任务停住，浪费 agent 和人的时间。他举例：把三个任务想好并启动后去吃饭，回来却发现 agent 只跑了一分钟就在等确认。",
+        "found_in": "s5:p0",
+        "verdict": "correct",
+        "note": "准确描述启动三个任务后去吃饭，回来发现仅运行一分钟便等待确认。",
+        "hash": "d8833ec6b34a7b7e"
+      },
+      {
+        "id": "q07",
+        "question": "在“为何有时执行 bash 要确认、有时不要”的现场提问中，代码检查给出了哪两类风险处理机制？",
+        "expected": "静态分流/命令解析与白名单，部分低风险命令直接放行；另有大模型参与风险评级。",
+        "evidence": "s-g355.0; s-g376.0~39; s-g377.1~24; s-g378.0~65",
+        "from": "transcript",
+        "answer": "两类机制是静态分流和大模型风险评级：沙箱内低风险命令、网络 allow list 等被认为安全的命令直接放行；其他不确定命令再注入一段安全评估提示词，让模型评级。",
+        "found_in": "s5:p4, s5:f0",
+        "verdict": "correct",
+        "note": "包含静态分流与安全命令放行，以及大模型风险评级。",
+        "hash": "d8833ec6b34a7b7e"
+      },
+      {
+        "id": "q08",
+        "question": "如果不完全相信 agent 对安全评估代码的解释，讲者建议怎样获得行为层面的证据？",
+        "expected": "修改安全评估 prompt，使原来放行的命令被拒绝或反过来；观察实际行为是否随之改变。",
+        "evidence": "s-g380.0~4; s-g381.3~21; s-g384.0~42",
+        "from": "transcript",
+        "answer": "修改安全评估提示词，让原来不会拒绝的操作变成拒绝，或让原来会拒绝的变成不拒绝，再观察实际行为是否随之变化，用行为变化作为证据；也可以让 agent 完成这个实验。",
+        "found_in": "s5:p4",
+        "verdict": "correct",
+        "note": "包含修改安全评估提示词，并观察放行或拒绝行为是否改变。",
+        "hash": "d8833ec6b34a7b7e"
+      },
+      {
+        "id": "q11",
+        "question": "讲者自己的终端主页用了什么渲染后的处理来减轻“AI 味”？这体现了什么指令原则？",
+        "expected": "对 xterm.js 渲染结果做小幅后处理，使字形像打字机般不完美；把风格、前景背景、后处理和排版等说具体。",
+        "evidence": "s-g450.0; s-g452.0; s-g454.0~7; s-g458.0; s-g462.0~23",
+        "from": "transcript",
+        "answer": "他在 xterm.js 渲染后做后处理，让字形不那么工整，像真正打字机打出的不完美文字，以减轻 AI 味。这体现了要把终端、背景、前景、渲染处理、样式和排版等具体约束说清楚。",
+        "found_in": "s7:p1, s7:p2",
+        "verdict": "correct",
+        "note": "包含 xterm.js 渲染后处理、打字机般不完美字形，以及具体化风格约束。",
+        "hash": "de20ab4ecfa4da89"
+      },
+      {
+        "id": "q12",
+        "question": "讲者用有限状态机和图灵机的类比，怎样解释思维链的作用及其局限？",
+        "expected": "上下文相当于纸笔/外部记忆，让有限的单次计算积累推理；只能 append-only 往后写，不能擦除，靠注意力忽略错误。",
+        "evidence": "s-g538.0~1; s-g556.0~1; s-g563.0~15; s-g569.2~6; s-g578.1~11",
+        "from": "transcript",
+        "answer": "每输出一个 token 只做有限计算，像有限状态机；加入可记录中间过程的纸笔，就像有纸带的图灵机。思维链把上下文当草稿纸，用更多 token 尝试、检查和纠错；局限是这张纸只能往后追加、不能擦除，写错的内容只能靠注意力忽略。",
+        "found_in": "s9:p0, s9:p1, s9:p2",
+        "verdict": "correct",
+        "note": "包含上下文作为外部记忆、有限计算累积推理，以及只能追加、靠注意力忽略错误的局限。",
+        "hash": "a78078bc0ae3fee1"
+      },
+      {
+        "id": "q13",
+        "question": "课堂藏头诗演示中，除押韵外，还要求讲什么主题的故事，以及哪八个字按顺序出现在八句里？",
+        "expected": "动物相关故事；“二零二六九月一日”八字按顺序分布在八句中。",
+        "evidence": "s-g624.0",
+        "from": "transcript",
+        "answer": "要求讲一个与动物有关的故事，并让“二零二六九月一日”八个字按顺序出现在八句里。",
+        "found_in": "s10:p0, s10:e0",
+        "verdict": "correct",
+        "note": "动物故事主题和“二零二六九月一日”八字顺序均准确。",
+        "hash": "af5d2d030c77d479"
+      },
+      {
+        "id": "q14",
+        "question": "模型在藏头诗任务里不是一次直接写完，而是怎样尝试和纠错的？",
+        "expected": "先考虑韵脚并尝试写作；检查是否满足约束，不对就修改；多次不行时换韵脚重来。",
+        "evidence": "s-g630.0~5; s-g636.0~5; s-g642.2~1",
+        "from": "transcript",
+        "answer": "它先考虑韵脚，试写一版，再判断是否满足约束；不符合就修改。尝试很久仍不行时，会换韵脚、从头重新推，不断验证和纠错。",
+        "found_in": "s10:p0",
+        "verdict": "correct",
+        "note": "包含选韵脚、试写、检查修改，以及失败后换韵脚重来。",
+        "hash": "af5d2d030c77d479"
+      },
+      {
+        "id": "q15",
+        "question": "讲者认为模型主要在数学和编程上训练，却能完成复杂文字约束任务，这说明了什么？写 prompt 时最重要的因素是什么？",
+        "expected": "思维链/指令遵循能力可迁移到文字任务；强模型配合明确、可检查的 verify 是关键。",
+        "evidence": "s-g661.0~26; s-g685.0~12; s-g688.0~1; s-g694.0~8",
+        "from": "transcript",
+        "answer": "这说明主要在数学和编程等有明确反馈任务上训练出的能力，能迁移到复杂文字约束任务，产生训练题目之外的意外效果。写 prompt 最重要的是明确的 verify，即能够核对是否满足要求的条件。",
+        "found_in": "s10:p2, s10:p4, s11:p0",
+        "verdict": "partial",
+        "note": "说明能力迁移和明确 verify，但未写出强模型配合这一关键因素。",
+        "hash": "3da082e613200858"
+      },
+      {
+        "id": "q18",
+        "question": "“白色背景，不要半透明效果”的例子中，模型做出了什么令讲者觉得不自然的行为？用更多规则修正它又有什么代价？",
+        "expected": "把“白色背景（不要半透明效果）”直接写进代码注释；再加 AGENTS.md 或 skill 规则会继续污染上下文、争夺注意力。",
+        "evidence": "s-g911.0~1; s-g925.0~20; s-g935.0~7; s-g954.0~1; s-g961.0~2",
+        "from": "transcript",
+        "answer": "模型虽然实现了白色背景，却把“白色背景（不要半透明效果）”原样写成代码注释，把效果要求当成了该写进代码的话。再用 AGENTS.md 或 skill 规定注释写法，会增加上下文污染和注意力争用，还可能陷入不断补规则、改规则的泥潭。",
+        "found_in": "s13:p1, s13:p2, s13:takeaway",
+        "verdict": "correct",
+        "note": "包含将要求原样写入代码注释，以及追加规则带来的上下文污染和注意力争用。",
+        "hash": "7fdd1800d439f24a"
+      },
+      {
+        "id": "q20",
+        "question": "面对“怎样抵抗已有论文对上下文的污染”的课堂提问，讲者建议先对齐哪三个问题？",
+        "expected": "人类已有相关工作是什么；已解决到什么程度；本文试图解决哪些不同的增量问题。",
+        "evidence": "s-g1105.0; s-g1113.0~34; s-g1119.0~2; s-g1119.0~31; s-g1119.0~38; s-g1120.0~2",
+        "from": "transcript",
+        "answer": "先对齐：人类历史上已经解决了哪些相关问题；已经解决到什么程度；这项工作试图解决哪些不同的、增量的问题。",
+        "found_in": "s15:p0",
+        "verdict": "correct",
+        "note": "完整列出相关工作、解决程度和本文增量问题三个对齐点。",
+        "hash": "7c61fbaa7cfddf87"
+      },
+      {
+        "id": "q21",
+        "question": "学生让 AI 解释尚未理解的课程内容时，讲者建议先告诉 AI 哪些个人信息，再要求怎样解释？",
+        "expected": "说明自己课程学到哪里、编程水平等已有知识；要求用已经学过的知识重新表述内容。",
+        "evidence": "s-g1121.0; s-g1122.0; s-g1122.0~21; s-g1122.0~30",
+        "from": "transcript",
+        "answer": "先告诉 AI 自己这门课学到什么程度、编程水平如何、已经掌握哪些知识，再要求它从这些基础出发，用自己学过的知识把内容换一种说法重新解释。",
+        "found_in": "s15:p0, s15:e0",
+        "verdict": "correct",
+        "note": "包含课程进度、编程水平与已有知识，并要求用学过的知识重新解释。",
+        "hash": "7c61fbaa7cfddf87"
+      },
+      {
+        "id": "q22",
+        "question": "讲者明确说自己通常因什么拒稿，而不是仅因什么拒稿？",
+        "expected": "主要检查是否给人类提供新知识、逻辑链是否断裂；几乎不会仅因实验不够好而拒稿。",
+        "evidence": "s-g1168.0~9; s-g1174.0~7; s-g1180.0~6",
+        "from": "transcript",
+        "answer": "他通常因为逻辑断开、没有为人类提供新的知识而拒稿，几乎不会仅因为实验不够好而拒稿。",
+        "found_in": "s15:p3",
+        "verdict": "correct",
+        "note": "包含新知识与逻辑链的拒稿标准，以及几乎不单因实验不够好拒稿。",
+        "hash": "7c61fbaa7cfddf87"
+      },
+      {
         "id": "q26",
         "question": "符号执行优化研究的失败案例中，哪句需求把模型引向 reward hacking？讲者纠正后的研究起点是什么？",
         "expected": "“想证明 A 方法有用”使模型执着于小 benchmark 上的结论；应从真实工具和最先进算法开始，耗时甚至 timeout 的搜索路径也有价值。",
         "evidence": "s-g1453.0~5; s-g1457.0; s-g1462.0~20; s-g1467.0~7; s-g1472.0~7; s-g1476.0~24",
         "from": "transcript",
-        "answer": "带偏它的是“我想证明这个 A 方法是有用的”，使它构造大量小 benchmark 来找正负结论，忘掉研究全局。纠正后应从真实工具和 state of the art 算法开始，即使运行数小时后 timeout，也分析超时留下的搜索路径，了解哪些程序结构让现有探索方法困难。",
-        "found_in": "s21:p1",
+        "answer": "带偏模型的需求是“我想证明这个 A 方法是有用的”，使它构造许多小 benchmark，用微小改动换取对研究无用的结论。纠正后的起点是实际工具和当前最好的算法；即使 benchmark 跑数小时后超时，也应分析留下的搜索路径，理解哪些程序结构不适合现有探索方法。",
+        "found_in": "s21:p1, s21:e0",
         "verdict": "correct",
-        "note": "覆盖诱导需求、真实工具和先进算法起点及超时路径价值。",
-        "hash": "eb2d9fede0f0f2c8"
+        "note": "包含“证明 A 方法有用”的误导，以及从真实工具、最先进算法和超时搜索路径出发。",
+        "hash": "7b6a3a465d005d02"
       },
       {
         "id": "q27",
@@ -1043,11 +1297,11 @@
         "expected": "即时注入领域知识通常更快，但更多 token 和时间也常能完成；纠正 AI 有心理奖励，应把精力留给学习未知和收益最高的事，已知且 AI 能做好就放手。",
         "evidence": "s-g1488.0~20; s-g1497.0; s-g1498.0; s-g1502.0; s-g1506.0; s-g1507.0; s-g1509.0",
         "from": "transcript",
-        "answer": "盯着并及时注入领域知识、纠正跑偏，可能更快；给它更多时间和 token，它通常也能完成，要权衡有限的人类精力。已知道怎么做、AI 能做好之事可以放手并验收；学生应把几乎全部时间放在把不知道变成知道、收益最大的学习上，避免为纠正 AI 的心理安慰而假努力。",
+        "answer": "盯着 AI、跑偏就纠正可能更快，但会占用人的精力；给它更多时间和 token，它往往也能完成。已经知道该怎么做、AI 能做好的事情，可以放手后验收；学生应把几乎全部时间用在把不知道变成知道、学习和明确方向上。",
         "found_in": "s22:p0, s22:p1",
-        "verdict": "correct",
-        "note": "覆盖即时纠正与自主运行的权衡、心理奖励及学习优先。",
-        "hash": "03a7e78a8fc5bafc"
+        "verdict": "partial",
+        "note": "包含即时纠正与更多时间、token 的权衡及学习未知的建议，但遗漏纠正 AI 带来心理奖励这一提醒。",
+        "hash": "29b56226c116cc43"
       },
       {
         "id": "q28",
@@ -1055,11 +1309,11 @@
         "expected": "最后的 prompt/末尾短窗口指令通常仍可遵循；靠前尤其是中间的指令更容易不被遵循。",
         "evidence": "s-g1512.0; s-g1513.0; s-g1514.0; s-g1515.0",
         "from": "transcript",
-        "answer": "最后的 prompt、留在末尾的具体任务通常仍能遵循；较前面的指令会丢，尤其上下文中间的指令容易被忽略。",
+        "answer": "上下文增长后，最后的 prompt、留在末尾的具体任务通常仍能遵循；前面的指令会跟丢，尤其是上下文中间的指令容易被忽略。",
         "found_in": "s23:p0",
         "verdict": "correct",
-        "note": "正确指出末尾指令较易遵循、中间指令易被忽略。",
-        "hash": "12faeb3058e81931"
+        "note": "准确区分末尾指令通常仍有效，以及靠前尤其是中间指令容易被忽略。",
+        "hash": "45b1959f49ba56d4"
       },
       {
         "id": "q29",
@@ -1067,11 +1321,11 @@
         "expected": "先系统调研/枚举并筛选读音，再用 subagent 逐个检查字和典籍偏好；分割搜索空间形成更明确可验证的子任务；直接生成可能大家得到相同名字，成为 AI 时代的“子涵”。",
         "evidence": "s-g1538.0~35; s-g1540.1; s-g1541.0; s-g1543.0~8; s-g1545.0",
         "from": "transcript",
-        "answer": "把起名空间拆成互不相交、可核对的小部分：先枚举和选择音、筛掉不好的音，再用 subagent 逐个检查字，也可限定在《诗经》词语中，靠更多算力扩大搜索。直接要一个名字会受模型固定偏见影响，大家用同一个模型可能得到同样的名字，形成 AI 时代的“子涵”。",
+        "answer": "把名字空间拆成可枚举、可核对的小块：先选音并筛掉不好的音，再用 subagent 逐个检查字，也可限定在《诗经》中选词。这样用更多算力扩大搜索。直接让 AI 给名字容易受模型固定偏好影响，大家用同一个模型可能得到相同名字，形成 AI 时代的“子涵”。",
         "found_in": "s24:p2, s24:p3",
         "verdict": "correct",
-        "note": "覆盖读音筛选、subagent 检查、搜索空间拆分及名字同质化。",
-        "hash": "947414ca09fc84e8"
+        "note": "包含读音筛选、subagent 检查字与典籍、拆分搜索空间，以及名字同质化风险。",
+        "hash": "7d812467339c7f31"
       },
       {
         "id": "q30",
@@ -1079,23 +1333,11 @@
         "expected": "若有价值的长程问题可用算力换智力，且 AI 比人类更高效，掌握无限计算资源者可垄断智力；资源之外的人难以追赶。",
         "evidence": "s-g1551.1~15; s-g1553.0; s-g1554.0~2; s-g1555.0~10",
         "from": "transcript",
-        "answer": "这是有条件的担忧：如果真正有价值的开放长程问题可以用算力换智力，而且 AI 比人类产生智力更高效，那么能获得无限计算资源的人可能筑起壁垒，成为墙内的“超人”，普通人永远赶不上其智力增长速度，落到墙外的“动物世界”。他明确说尚不知道，提出要思考怎样防止。",
-        "found_in": "s24:p4",
+        "answer": "他担忧：如果真正有价值的开放问题能通过算力换取智力，而且 AI 比人类产生智力更高效，那么拥有大量计算资源的人可能不断扩大优势，形成墙内的“超人”；墙外普通人无法追上，可能被任其自生自灭。这是他提出的有条件、尚不知道如何防止的未来问题。",
+        "found_in": "s24:p4, s24:n0",
         "verdict": "correct",
-        "note": "完整说明算力换智力成立时的资源垄断与追赶困难。",
-        "hash": "947414ca09fc84e8"
-      },
-      {
-        "id": "q31",
-        "question": "在“Intent → Spec → Impl: 漂移逐级放大”幻灯片中，若第 i 层留下 k_i 个默认选项，最终候选空间约为哪个公式？幻灯片列出的选择维度任选两个。",
-        "expected": "候选空间约为 ∏_i k_i；维度包括镜头、操控、地图、美术资产、胜负条件，任答两个。",
-        "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-02/cursor/ws/课堂笔记/frames/v001457167.jpg",
-        "from": "visual",
-        "answer": "笔记未记录候选空间公式及幻灯片所列的具体选择维度，无法仅据笔记回答。",
-        "found_in": null,
-        "verdict": "missing",
-        "note": "未提供候选空间公式或任何要求的选择维度。",
-        "hash": "0ad2486c7f28b33f"
+        "note": "包含算力换智力和 AI 更高效的前提，以及计算资源集中导致智力优势垄断、他人难以追赶的担忧。",
+        "hash": "7d812467339c7f31"
       },
       {
         "id": "q32",
@@ -1103,11 +1345,11 @@
         "expected": "“18 个汉字都含同一可见偏旁”；强调可见字形构件，而不是检字分类的部首。",
         "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-02/cursor/ws/课堂笔记/frames/v002582400.jpg",
         "from": "visual",
-        "answer": "笔记只记录“十八个字、相同偏旁或部首”的任务和幻灯片标题，未记录避免混用偏旁与部首的机器验收精确 spec。",
-        "found_in": null,
-        "verdict": "missing",
-        "note": "未提供“18 个汉字都含同一可见偏旁”的精确 spec。",
-        "hash": "0ad2486c7f28b33f"
+        "answer": "“18 个汉字都含同一可见偏旁”。这里检查的是可见的字形构件，而不是词典检字分类意义上的部首。",
+        "found_in": "s10:f0, x7",
+        "verdict": "correct",
+        "note": "准确给出“18 个汉字都含同一可见偏旁”，并区分字形构件与检字部首。",
+        "hash": "af5d2d030c77d479"
       },
       {
         "id": "q33",
@@ -1115,11 +1357,71 @@
         "expected": "Stanford AI Index 2025，引用 2024 年；近 90% 来自产业界；训练算力成本数千万到近两亿美元。",
         "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-02/cursor/ws/课堂笔记/frames/v005860767.jpg",
         "from": "visual",
-        "answer": "笔记未记录该幻灯片引用的报告、数据年份、产业界占比或前沿模型训练成本量级。",
-        "found_in": null,
-        "verdict": "missing",
-        "note": "未提供报告、年份、产业界占比或训练成本。",
-        "hash": "0ad2486c7f28b33f"
+        "answer": "引用 Stanford AI Index 2025，使用 2024 年数据：近 90% 的 notable models 来自产业界；若干前沿模型的训练算力成本已达数千万到近两亿美元。成本数字写在该幻灯片的紫色 AIGC 批注中。",
+        "found_in": "s24:f2, x15",
+        "verdict": "correct",
+        "note": "报告、数据年份、近 90% 的产业界占比，以及数千万到近两亿美元的成本量级均准确。",
+        "hash": "7d812467339c7f31"
+      },
+      {
+        "id": "q05",
+        "question": "讲者如何建议用 AI 实践费曼学习法？AI 在反向讲解阶段要做什么？",
+        "expected": "先向 AI 请教并追问；自认为理解后自己当老师、让 AI 假装不懂的学生；AI 检查并纠正逻辑错漏。",
+        "evidence": "s-g211.0~2; s-g229.0~6; s-g235.0~10",
+        "from": "transcript",
+        "answer": "先把 AI 当老师，不懂就追问，直到自认为弄懂；再反过来由自己当老师讲解，让 AI 扮演假装什么都不知道的学生。反向讲解时，AI 要检查你的讲解有哪些逻辑错误和遗漏，并及时纠正你。正着、反着各来一遍，检验自己是否真正理解。",
+        "found_in": "s4:p0, s4:p1",
+        "verdict": "correct",
+        "note": "覆盖先向 AI 请教追问、再反向教学让 AI 扮演不懂的学生，以及检查纠正逻辑错误与遗漏。",
+        "hash": "5524b9ee73e03057"
+      },
+      {
+        "id": "q09",
+        "question": "讲者为什么用“要求 C++ 却得到 Java”的例子说明 spec 和 verify 的作用？",
+        "expected": "明确写出实现语言后，不符合要求可直接判定；只给模糊 intent、不说语言，就可能发生漂移。",
+        "evidence": "s-g398.0~44; s-g401.0; s-g402.0~15; s-g403.0; s-g403.0~42",
+        "from": "transcript",
+        "answer": "这个例子说明明确的 spec 能让偏差被验证：若指定用 C++，却交来 Java，人一眼就能看出不符合要求，模型也应该认为不满意；若只给模糊 intent，没有指定语言，模型又不了解你的想法，就可能自行选择 Java 并认为任务完成。把要求写清楚，才能识别和控制从意图到实现的漂移。",
+        "found_in": "s6:p1, s6:e0",
+        "verdict": "correct",
+        "note": "说明明确指定语言后可直接验证是否符合要求，模糊 intent 未指定语言则可能产生漂移。",
+        "hash": "af072ff95dfafe2c"
+      },
+      {
+        "id": "q10",
+        "question": "针对“一句话生成赛车游戏”与心中想要的游戏不一致，讲者提出了什么具体地图方案？",
+        "expected": "明确要求复用真实地图和美术资产；可从 OpenStreetMap 获取开源地图，例子是在南大仙林校区开车。",
+        "evidence": "s-g415.0~2; s-g416.0; s-g416.0~22; s-g416.0~61; s-g417.0",
+        "from": "transcript",
+        "answer": "明确要求复用真实地图和美术资产，例如让 AI 从 OpenStreetMap 这类网站下载开源地图，找到南大仙林校区地图的文件格式并重新建模，做成能在仙林校区里开车的游戏；车辆、城市、树等也可以使用公开可用的资产。要把这些约束直接说出来。",
+        "found_in": "s6:p3, s6:p4",
+        "verdict": "correct",
+        "note": "覆盖复用真实地图和美术资产、从 OpenStreetMap 获取开源地图，以及南大仙林校区驾驶的例子。",
+        "hash": "af072ff95dfafe2c"
+      },
+      {
+        "id": "q24",
+        "question": "讲者所说的真正 long horizon 任务与 PA 作业有明确 verifier 的任务有何区别？",
+        "expected": "真正长程任务含未知与探索；可能只有大致意图，spec 和 implementation 都不清楚；明确验收的 PA 不算这种真正长程任务。",
+        "evidence": "s-g1296.0; s-g1299.1~4; s-g1299.2~14",
+        "from": "transcript",
+        "answer": "PA 作业有明确 verifier，要求和对错可核对，模型可以不断尝试直到通过，这是它擅长的确定任务。真正的 long horizon 带有未知：可能只有大概的 intent，specification 和 implementation 都不清楚，需要在不确定性中探索并最终交付高质量实现。它不能只靠思维链一直往后做；模型倾向于尽快满足要求、结束任务，只搜索有限方案，因此需要系统调研，并把开放空间拆成更明确、可验证的部分。",
+        "found_in": "s18:p0, s24:p0, s24:p3",
+        "verdict": "correct",
+        "note": "明确区分有 verifier 的 PA 确定任务与含未知和探索的真正长程任务，并指出后者可能仅有大致 intent，spec 和 implementation 均不清楚。",
+        "hash": "21936c5b033004c2"
+      },
+      {
+        "id": "q31",
+        "question": "在“Intent → Spec → Impl: 漂移逐级放大”幻灯片中，若第 i 层留下 k_i 个默认选项，最终候选空间约为哪个公式？幻灯片列出的选择维度任选两个。",
+        "expected": "候选空间约为 ∏_i k_i；维度包括镜头、操控、地图、美术资产、胜负条件，任答两个。",
+        "evidence": "/Users/evahu/model-eval/course-rerun/runs/lecture-02/cursor/ws/课堂笔记/frames/v001457167.jpg",
+        "from": "visual",
+        "answer": "最终候选空间约为 ∏ᵢ k_i（各层默认选项数量的乘积）。选择维度例如镜头、操控（还包括地图、美术资产、胜负条件）。这道公式和维度出自幻灯片第 12 页的紫色 AIGC 批注，并非讲者口播。",
+        "found_in": "s6:f1, s6:n1, x3",
+        "verdict": "correct",
+        "note": "正确给出候选空间公式 ∏ᵢ k_i，并列出镜头、操控等至少两个选择维度。",
+        "hash": "af072ff95dfafe2c"
       }
     ],
     "question_author": "independent_agent",

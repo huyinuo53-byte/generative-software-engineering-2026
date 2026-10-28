@@ -1,0 +1,2015 @@
+{
+  "schema_version": 1,
+  "course_url": "https://jyywiki.cn/GSE/2026/",
+  "course_semester": "2026 秋",
+  "lecture_url": "https://jyywiki.cn/GSE/2026/lect7.md",
+  "slides_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+  "video_url": "https://www.bilibili.com/video/BV1JGap6LE74",
+  "checked_at": "2026-10-28T03:31:10-04:00",
+  "assumptions": [
+    "课程首页在第 7 讲旁边列了 Lab2。讲义、slides 和转写都没有把它列为本课阅读，因此不登记。",
+    "紫色 span.aigc 里的链接 source_channels 写 slides AIGC 批注，recommendation_kind 不标 explicit_recommendation。",
+    "Codd 的 ACM 页面 403，IBM 页面是元数据。全文范围用标题和 CACM 1970 年 6 月卷头一致的 PDF 副本，官方链接都保留。",
+    "讲师口述的明确推荐只有 grill-me。grilling 是该文件点名要调用的技能，不是把整个仓库算成推荐。",
+    "2026-10-28 补读：materials.json 里没有 kind=video 的课外推荐，讲义页和 slides 链接里也没有课外视频，所以没有下载。课外视频待用户确认是否处理。",
+    "Codd 的 ACM 落地页仍 403。正文用 Internet Archive 对出版方 PDF URL https://dl.acm.org/doi/pdf/10.1145/362384.362685 的 2023-09-27 存档，不使用课程网站转载作为这一次的副本。System R 的课程镜像 PDF 不在允许的副本范围内，没有下载。"
+  ],
+  "expected_material_ids": [
+    "lect7",
+    "slides7",
+    "brooks-nsb",
+    "ewd249",
+    "dahl-hoare",
+    "steele-growing",
+    "mcilroy",
+    "posix-util",
+    "gnu-sort",
+    "codd-1970",
+    "rfc1958",
+    "mvc1979",
+    "fowler-es",
+    "fowler-pm",
+    "vue-computed",
+    "vue-forms",
+    "react-snap",
+    "react-think",
+    "openstax-33",
+    "openstax-36",
+    "pg-matview",
+    "pep342",
+    "go-faq",
+    "grill-me",
+    "grilling",
+    "jsp-overview",
+    "account-rules",
+    "jq-manual",
+    "fzf-readme",
+    "xdotool-readme",
+    "lect6",
+    "tue-structured-programming",
+    "scheme-r7rs",
+    "cltl2",
+    "jls-se7",
+    "jls-se8",
+    "posix-shell",
+    "posix-exit",
+    "posix-locale",
+    "rfc1122",
+    "ibm-s360",
+    "ritchie-hist",
+    "kay-smalltalk",
+    "cern-web",
+    "android-2008",
+    "k8s-10y",
+    "php-history",
+    "asp-1996",
+    "jsp-10-api",
+    "jstl-jsr52",
+    "jsp20-jsr152",
+    "spring-seq",
+    "vue-props",
+    "react-input",
+    "system-r",
+    "codd-acm"
+  ],
+  "materials": [
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "lecture-body"
+      ],
+      "scope_sections": [
+        "lecture-body"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "第 1 节整理者说明",
+          "claim": "讲义页已通读，既有小节没有改写",
+          "role": "context"
+        }
+      ],
+      "required": true,
+      "id": "lect7",
+      "kind": "web",
+      "path": "课堂笔记/sources/lect7.html",
+      "sha256": "8b4b11f32492cafec1777bbdff104d936c46530002d78f31b03145d332594c7b",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "生成式软件工程 07｜需求和架构 (2) 讲义",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lect7.md",
+      "title": "生成式软件工程 07｜需求和架构 (2)",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect7.md",
+      "version": "2026 秋课程页，2026-10-28 抓取",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "本课讲义页。正文链接与口播主线一致，既有段落没有改写。",
+      "source_channels": [
+        "讲义页正文"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "slides-1-39"
+      ],
+      "scope_sections": [
+        "slides-1-39"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 1,
+          "location": "第 1 节整理者说明与各节资料图",
+          "claim": "39 页已逐页盘点；静态页换成官方 slides 截图",
+          "role": "context"
+        }
+      ],
+      "required": true,
+      "id": "slides7",
+      "kind": "web",
+      "path": "课堂笔记/sources/slides7.html",
+      "sha256": "4e6a907308facde06c8ea3e35e1c157732e72ed4cd7aeeae13f26569bcda0d7b",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "slides7",
+      "listed_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+      "title": "生成式软件工程 07 slides",
+      "source_url": "https://jyywiki.cn/GSE/2026/slides7.html",
+      "version": "39 页，slides-data JSON，2026-10-28 抓取",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "本课官方 slides。逐页盘点了 slides-data，并区分正文链接与 span.aigc 批注。",
+      "source_channels": [
+        "slides 正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 2,
+          "location": "补充 x0，TR86-020 全文 21 个物理页",
+          "claim": "四条本质困难，以及偶然部分不足九成时单项技术给不出一个数量级",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "brooks-nsb",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/brooks-nsb.pdf",
+      "sha256": "a4a11dcb6ff7dcdfcc680e27760126d86c568cbb99a53a2bf58dc9041fbb190e",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "No Silver Bullet",
+      "listed_url": "https://www.cs.unc.edu/techreports/86-020.pdf",
+      "title": "No Silver Bullet: Essence and Accidents of Software Engineering",
+      "source_url": "https://www.cs.unc.edu/techreports/86-020.pdf",
+      "version": "UNC TR86-020, September 1986, Frederick P. Brooks, Jr.",
+      "total_pages": 21,
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲师口述把驾驭复杂性归到 Brooks，没有念出篇名。篇名和 PDF 在 slides 第 3 页 AIGC 批注。论文是这一区分的直接原文，因此作为核心来源读完，不写成老师明确推荐了这个 PDF。",
+      "source_channels": [
+        "slides AIGC 批注",
+        "讲师口述（只提到 Brooks 与驾驭复杂性）"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "on-our-inability-to-do-much",
+        "on-abstraction",
+        "on-what-we-have-achieved"
+      ],
+      "scope_sections": [
+        "on-our-inability-to-do-much",
+        "on-abstraction",
+        "on-what-we-have-achieved"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 5,
+          "location": "补充 x1，EWD249 上述三节",
+          "claim": "尺度差使一次不等于任意多次；LINER 才把 image 收成 lines",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "ewd249",
+      "kind": "web",
+      "path": "课堂笔记/sources/ewd249.html",
+      "sha256": "ea5cd36e1109f53e3c0dae9b2bbfd3cbdc48ae2c172204373fa5c47b12aed4ad",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Notes on Structured Programming",
+      "listed_url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD249/EWD249.html",
+      "title": "Notes on Structured Programming (EWD249)",
+      "source_url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD249/EWD249.html",
+      "version": "E. W. Dijkstra, EWD249 HTML 转录",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页把 EWD249 标成原文。slides 第 7 页 AIGC 把珍珠与 image/lines 指到 On What We Have Achieved。范围是这三节，不是整本 Structured Programming。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "课堂引用的是小脑袋、抽象和珍珠三节。EWD249 其余章节与 Dahl、Hoare 的书内部分不在这次范围。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [
+        10,
+        11,
+        12,
+        13,
+        34,
+        35,
+        38,
+        42,
+        43
+      ],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 7,
+          "location": "补充 x2，物理页 10–13 与 34、35、38、42、43",
+          "claim": "对等协程用 resume；车间模型用 request、hold、release",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "dahl-hoare",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/dahl-hoare.pdf",
+      "sha256": "e2bcbb844231f27515d2320c940119e8ebbb1046d401e199b2aa5a49ea0c1417",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Hierarchical Program Structures",
+      "listed_url": "https://www.informatik.uni-bremen.de/agbkb/lehre/programmiersprachen/artikel/dahl-hoare-hierarchical.pdf",
+      "title": "Hierarchical Program Structures",
+      "source_url": "https://www.informatik.uni-bremen.de/agbkb/lehre/programmiersprachen/artikel/dahl-hoare-hierarchical.pdf",
+      "version": "O.-J. Dahl, E. W. Dijkstra, C. A. R. Hoare, Structured Programming, Part III 的这份 PDF，共 46 个物理页",
+      "identity_note": "印刷页 184 在物理页 10，印刷页等于物理页加 174。讲义点名印刷页 184–185。slides AIGC 另标印刷页 208–220。",
+      "total_pages": 46,
+      "scope_pages": [
+        10,
+        11,
+        12,
+        13,
+        34,
+        35,
+        38,
+        42,
+        43
+      ],
+      "scope_reason": "讲义页点名第四节印刷页 184–185。slides 第 8–9 页 AIGC 另标印刷页 208–220，并指定沿 TWLIST、MINISIM、Job Shop 阅读。本次读了协程物理页 10–13，以及这三层对应的物理页 34、35、38、42、43。印刷页 219–220（物理页 45–46）的程序清单没有逐行读，所以不写入补充。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页给出 PDF 和印刷页 184–185。slides AIGC 给出第七章的阅读路径。这是协程和概念层次的直接原文。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [
+        3,
+        4,
+        8,
+        9
+      ],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 8,
+          "location": "补充 x3，物理页 3、4、8、9",
+          "claim": "多音节词必须先定义；模式留下以后再填的槽",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "steele-growing",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/steele-growing.pdf",
+      "sha256": "09e7783d86f4b8bb83f3ca1621f5dfba4b191439963a165f3bea9188df9c3b5a",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Growing a langauge",
+      "listed_url": "https://langev.com/pdf/steele99growing.pdf",
+      "title": "Growing a Language",
+      "source_url": "https://langev.com/pdf/steele99growing.pdf",
+      "version": "Guy L. Steele Jr., OOPSLA 1998 keynote PDF，PDFKit 14 个物理页",
+      "identity_note": "slides 第 10 页正文把篇名印成 Growing a langauge。AIGC 的 pp. 3–4 与 pp. 8–9 对得上这份 PDF 的物理页，物理页 8 底部印着 8。",
+      "total_pages": 14,
+      "scope_pages": [
+        3,
+        4,
+        8,
+        9
+      ],
+      "scope_reason": "讲义页链到整份讲演 PDF。slides 第 11 页 AIGC 把课堂用到的规则和 Alexander 引文标在 pp. 3–4 与 pp. 8–9。本次按这个范围读，不把其余物理页写成已读。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 正文都链到这份 PDF。单音节规则和模式空位是第 8 节「设计解空间」的直接原文。",
+      "source_channels": [
+        "讲义页正文",
+        "slides 正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "memo-page"
+      ],
+      "scope_sections": [
+        "memo-page"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "补充 x4，备忘录页全文",
+          "claim": "1964-10-11 提出花园水管；页面没有把管道进入 Unix 写成 1983",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "mcilroy",
+      "kind": "web",
+      "path": "课堂笔记/sources/mcilroy.html",
+      "sha256": "2f5d64d3aacbeda1ff61900d1e23b2399ea7e50717c493b4a92f4c0a897c74af",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "McIlroy 1964 memo, page 10",
+      "listed_url": "https://cm-bell-labs.github.io/who/dmr/mdmpipe.html",
+      "title": "Dennis Ritchie 重录的 McIlroy 备忘录第 10 页",
+      "source_url": "https://cm-bell-labs.github.io/who/dmr/mdmpipe.html",
+      "version": "页面所述备忘录日期 1964-10-11",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "slides 第 14 页 AIGC 用这页支持花园水管。讲师没有念出这个链接，也不把它写成老师明确推荐。它是管道比喻的直接出处，所以读了这一页。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "guideline-9",
+        "guideline-10"
+      ],
+      "scope_sections": [
+        "guideline-9",
+        "guideline-10"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "补充 x5，Guideline 9 与 10",
+          "claim": "选项在操作数之前；第一个不是选项参数的 -- 结束选项",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "posix-util",
+      "kind": "web",
+      "path": "课堂笔记/sources/posix-util.html",
+      "sha256": "b5d0f5c6643a8fc0d702aeb812f2fa501b9480e38a31ef8dc1d52ef1d151d4f3",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "POSIX Utility Conventions",
+      "listed_url": "https://pubs.opengroup.org/onlinepubs/9699919799.orig/basedefs/V1_chap12.html",
+      "title": "The Open Group Base Specifications Issue 7, 2018 Edition, Utility Conventions",
+      "source_url": "https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html",
+      "version": "IEEE Std 1003.1-2017",
+      "identity_note": "讲义页地址带 .orig，slides AIGC 地址不带。读的是不带 .orig 的页面。两份都下载过；补充只依据不带 .orig 的 Guideline 9 和 10。",
+      "scope_reason": "课堂和 slides 用到的是选项在操作数之前，以及 -- 结束选项。本章其余指南没有写入笔记。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页链到带 .orig 的工具约定。slides 第 15 页 AIGC 链到不带 .orig 的同一章，并写出短选项与 --。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "sort-z"
+      ],
+      "scope_sections": [
+        "sort-z"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "补充 x5，sort -z",
+          "claim": "-z 按 ASCII NUL 分隔记录，而不是按换行",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "gnu-sort",
+      "kind": "web",
+      "path": "课堂笔记/sources/gnu-sort.html",
+      "sha256": "c66bbb9ef45a4118e1e69a865ad1fa338e2307ff42e45f0f6d8eb1be8732519f",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "GNU sort invocation",
+      "listed_url": "https://www.gnu.org/software/coreutils/manual/html_node/sort-invocation.html",
+      "title": "GNU Coreutils sort invocation",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/sort-invocation.html",
+      "version": "coreutils 手册当前页，2026-10-28 抓取",
+      "scope_reason": "slides 第 15 页只用 NUL 分隔来避免文件名里的换行。只读 -z / --zero-terminated 这一节，不把 sort 的其余选项写成已读。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "只出现在 slides 第 15 页 AIGC，不是课堂口述。它直接解释页上的 NUL 分隔。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 11,
+          "location": "补充 x6，物理页 1–5",
+          "claim": "数据独立要去掉顺序依赖、索引依赖和访问路径依赖",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "codd-1970",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/codd.pdf",
+      "sha256": "fa2579f427a4da68466ef159a3ae0c3c1fe4eafec60f73c9f2f40378a65d8ef9",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "A Relational Model of Data for Large Shared Data Banks",
+      "listed_url": "https://research.ibm.com/publications/a-relational-model-of-data-for-large-shared-data-banks",
+      "title": "A Relational Model of Data for Large Shared Data Banks",
+      "source_url": "https://www.seas.upenn.edu/~zives/03f/cis550/codd.pdf",
+      "version": "E. F. Codd, CACM, June 1970；读本为 11 个物理页的 PDF 副本",
+      "identity_note": "讲义页链 IBM 出版物条目，该页只有引用元数据。slides 正文链 ACM DOI 10.1145/362384.362685，打开时返回 403。slides AIGC 再次链到 IBM 条目。读的 PDF 卷头是 CACM、Information Retrieval、P. Baxendale 编、E. F. Codd、IBM Research Laboratory, San Jose，标题与上述一致。没有用这份副本替换掉官方链接。",
+      "total_pages": 11,
+      "scope_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scope_reason": "课堂用的是数据独立性：表示可以变，程序仍不受影响。这个论证在第 1 节，物理页 1–5，到范式为止。第 2 节的连接与 connection trap 没有读，笔记不引用。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲师口述点名 Codd 1970。讲义页和 slides 都给出这篇论文的官方入口。",
+      "source_channels": [
+        "讲义页正文",
+        "slides 正文",
+        "slides AIGC 批注",
+        "讲师口述"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "section-1"
+      ],
+      "scope_sections": [
+        "section-1"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 12,
+          "location": "补充 x7，RFC 1958 第 1 节",
+          "claim": "持续变化本身可能是唯一应当长期留下的原则；城市是更新街道而不是推倒重建",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "rfc1958",
+      "kind": "web",
+      "path": "课堂笔记/sources/rfc1958.html",
+      "sha256": "34ad969998f56a142d2ea087075c85d184bd8916a0cbb336605b97e1fb9ee7d7",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "RFC 1958",
+      "listed_url": "https://www.rfc-editor.org/rfc/rfc1958.html",
+      "title": "Architectural Principles of the Internet",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc1958.html",
+      "version": "RFC 1958, B. Carpenter, June 1996",
+      "scope_reason": "slides 正文链整篇，AIGC 把城市比喻和 spanning set 指到第 1 节。本次只读第 1 节 Constant Change。后面的原则条款没有写入补充。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 正文都引用 RFC 1958。课堂上的引文在第 1 节。",
+      "source_channels": [
+        "讲义页正文",
+        "slides 正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [
+        1,
+        2
+      ],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 14,
+          "location": "补充 x8，两页全文",
+          "claim": "1979 年笔记里 View 向模型提问，Controller 把用户输出翻译成给 View 的消息",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "mvc1979",
+      "kind": "pdf",
+      "path": "课堂笔记/sources/mvc1979.pdf",
+      "sha256": "f8008c627dab4332b68beff2681a98984490621c455dca0626430a5c2984ff79",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "MODELS - VIEWS - CONTROLLERS",
+      "listed_url": "https://jyywiki.cn/GSE/2026/p7/1979-12-MVC.pdf",
+      "title": "MODELS - VIEWS - CONTROLLERS",
+      "source_url": "https://jyywiki.cn/GSE/2026/p7/1979-12-MVC.pdf",
+      "version": "Trygve Reenskaug, 10 December 1979, 2 pages",
+      "total_pages": 2,
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页链到课程站点上的这份 PDF。slides 第 25 页内嵌同一份 PDF。",
+      "source_channels": [
+        "讲义页正文",
+        "slides 正文"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "intent",
+        "ExternalUpdates",
+        "ExternalQueries"
+      ],
+      "scope_sections": [
+        "intent",
+        "ExternalUpdates",
+        "ExternalQueries"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 19,
+          "location": "补充 x9，External Updates 与 External Queries",
+          "claim": "重放时网关要停掉对外修改；12 月 5 日的汇率在 12 月 20 日重放时仍然要用当天的值",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "fowler-es",
+      "kind": "web",
+      "path": "课堂笔记/sources/fowler-es.html",
+      "sha256": "ff817ecc7b176c9456b8381687437e93f38bb8be6c6c3b4e4403b664818f8a02",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Event Sourcing",
+      "listed_url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "title": "Event Sourcing",
+      "source_url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "version": "Martin Fowler, 2005-12-12 draft",
+      "scope_reason": "讲义页链整页。slides 第 39 页 AIGC 把汇率和再次打款指到 External Queries 与 External Updates。读了开篇意图和这两节。Code Changes 只确认它另起一节，没有把代码演化写成已读完的机制。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页引用这篇。重放的两个前提对应作者自己的两节，而不是只重复 slides 上的句子。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "intent"
+      ],
+      "scope_sections": [
+        "intent"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 15,
+          "location": "补充 x11，意图段",
+          "claim": "Presentation Model 也叫 Application Model 和 MVVM，把界面状态从具体控件里提出来",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "fowler-pm",
+      "kind": "web",
+      "path": "课堂笔记/sources/fowler-pm.html",
+      "sha256": "e7ebba8f0d6726a76e7949c15bd6d34033aa8347b3ff79caeb119e2d284f3647",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Presentation Model",
+      "listed_url": "https://martinfowler.com/eaaDev/PresentationModel.html",
+      "title": "Presentation Model",
+      "source_url": "https://martinfowler.com/eaaDev/PresentationModel.html",
+      "version": "Martin Fowler, eaaDev",
+      "scope_reason": "slides 第 27 页 AIGC 用它命名「界面状态不必进业务库」。只读意图段和 Also Known As，没有把全文模式细节写成已读。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "只出现在 slides AIGC，不是课堂口述，因此 source_label 不写成老师明确推荐。它直接给 ViewState 这个课堂概念一个已有名字。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "computed-caching"
+      ],
+      "scope_sections": [
+        "computed-caching"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 15,
+          "location": "补充 x10，computed 缓存段",
+          "claim": "computed 只在响应式依赖变化时重算；Date.now() 不是响应式依赖",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "vue-computed",
+      "kind": "web",
+      "path": "课堂笔记/sources/vue-computed.html",
+      "sha256": "1d33d4b035e9796328ac5ec7375328ea944b79171a925816a6eb4aed32d101b6",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Computed Properties",
+      "listed_url": "https://vuejs.org/guide/essentials/computed.html",
+      "title": "Computed Properties",
+      "source_url": "https://vuejs.org/guide/essentials/computed.html",
+      "version": "Vue 文档当前页，2026-10-28 抓取；授课时的文档版本未另存",
+      "identity_note": "当前文档与授课时页面可能不同。补充只使用抓取页上仍然写着的缓存规则，不把页面其余 API 归于课堂。",
+      "scope_reason": "课堂和 slides 用 computed 表达派生列表。只读缓存与响应式依赖这一段。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第 28 页 AIGC 都链到这篇。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "v-model-value-and-input"
+      ],
+      "scope_sections": [
+        "v-model-value-and-input"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 15,
+          "location": "补充 x10，v-model 展开段",
+          "claim": "v-model 是 :value 加上把 event.target.value 写回状态的 @input",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "vue-forms",
+      "kind": "web",
+      "path": "课堂笔记/sources/vue-forms.html",
+      "sha256": "a820847d79b2cbd210b1f83837ed74f67acd94efa6de03b75160eb87e071fef7",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Form Input Bindings",
+      "listed_url": "https://vuejs.org/guide/essentials/forms.html",
+      "title": "Form Input Bindings",
+      "source_url": "https://vuejs.org/guide/essentials/forms.html",
+      "version": "Vue 文档当前页，2026-10-28 抓取",
+      "scope_reason": "slides 把 v-model 展开成 :value 和 @input。只读这一段展开，没有通读复选框、选择框等其余控件。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第 28 页 AIGC 都链到这篇。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "rendering-takes-a-snapshot",
+        "state-over-time"
+      ],
+      "scope_sections": [
+        "rendering-takes-a-snapshot",
+        "state-over-time"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 15,
+          "location": "补充 x10，快照两段",
+          "claim": "setNumber(number + 5) 不会改掉这次渲染里的 number",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "react-snap",
+      "kind": "web",
+      "path": "课堂笔记/sources/react-snap.html",
+      "sha256": "a367cc664145933a797e1efd3e3c270ae0adcaeee0ab9b714139e97953ac3f4e",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "State as a Snapshot",
+      "listed_url": "https://react.dev/learn/state-as-a-snapshot",
+      "title": "State as a Snapshot",
+      "source_url": "https://react.dev/learn/state-as-a-snapshot",
+      "version": "react.dev 当前页，2026-10-28 抓取",
+      "scope_reason": "课堂用「本轮渲染拿到的是当时的状态」。只读快照和同一次渲染里状态值不变这两段。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第 29 页 AIGC 都链到这篇。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "step-3-minimal-state"
+      ],
+      "scope_sections": [
+        "step-3-minimal-state"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 15,
+          "location": "补充 x10，Step 3",
+          "claim": "能从已有状态或 props 算出来的就不是 state；购物清单的个数读数组长度",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "react-think",
+      "kind": "web",
+      "path": "课堂笔记/sources/react-think.html",
+      "sha256": "3e234ace5c9cd6854695898168aa1514dde555ea3296a5b7ae38c4af7f3cfad2",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Thinking in React",
+      "listed_url": "https://react.dev/learn/thinking-in-react",
+      "title": "Thinking in React",
+      "source_url": "https://react.dev/learn/thinking-in-react",
+      "version": "react.dev 当前页，2026-10-28 抓取",
+      "scope_reason": "slides 第 29 页用这篇支持「派生列表不必另存为 State」。读了 Step 3。五步教程的其余步骤没有写入补充。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides AIGC 都链到这篇。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "step-4-unadjusted-trial-balance"
+      ],
+      "scope_sections": [
+        "step-4-unadjusted-trial-balance"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 17,
+          "location": "补充 x12，3.3 第四步",
+          "claim": "未调整试算平衡要把总账余额列成表，并核对借方合计等于贷方合计",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "openstax-33",
+      "kind": "web",
+      "path": "课堂笔记/sources/openstax-33.html",
+      "sha256": "1af11d9a5a2cc90e41b2b04a48fb10ff58b66253742989cdf002ad08ab3f76bb",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Define and Describe the Initial Steps in the Accounting Cycle",
+      "listed_url": "https://openstax.org/books/principles-financial-accounting/pages/3-3-define-and-describe-the-initial-steps-in-the-accounting-cycle",
+      "title": "Principles of Financial Accounting, 3.3",
+      "source_url": "https://openstax.org/books/principles-financial-accounting/pages/3-3-define-and-describe-the-initial-steps-in-the-accounting-cycle",
+      "version": "OpenStax Principles of Financial Accounting, 当前 HTML，2026-10-28 抓取",
+      "scope_reason": "讲义页用这一节说明会计循环里的试算平衡。读了第四步和 200 美元的分录例子，没有把整章会计循环写成已读。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页正文链接。",
+      "source_channels": [
+        "讲义页正文"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "trial-balance-equality",
+        "locating-errors"
+      ],
+      "scope_sections": [
+        "trial-balance-equality",
+        "locating-errors"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 17,
+          "location": "补充 x12，3.6",
+          "claim": "栏位相等仍不能保证没有错误；页面给出的是记反方向和数字抄反",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "openstax-36",
+      "kind": "web",
+      "path": "课堂笔记/sources/openstax-36.html",
+      "sha256": "538f1a1617eba3899bc0e093f23f1b90a2a29d6ab23cc33ccd162e253bac5479",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Prepare a Trial Balance",
+      "listed_url": "https://openstax.org/books/principles-financial-accounting/pages/3-6-prepare-a-trial-balance",
+      "title": "Principles of Financial Accounting, 3.6 Prepare a Trial Balance",
+      "source_url": "https://openstax.org/books/principles-financial-accounting/pages/3-6-prepare-a-trial-balance",
+      "version": "OpenStax 当前 HTML，2026-10-28 抓取",
+      "scope_reason": "slides 第 33 页 AIGC 用这篇说明借贷平衡仍可能有错。读了平衡不等于数字都对，以及差额除以 2、除以 9 的两类抄写错误。没有把讲师的「归错类、重复录入」写成这一页的原句。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "只出现在 slides AIGC，不是课堂口述。它直接说明试算平衡的检测边界。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "39.3-mechanism"
+      ],
+      "scope_sections": [
+        "39.3-mechanism"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 20,
+          "location": "补充 x13，39.3 机制段",
+          "claim": "物化视图持久化结果、不能直接更新，REFRESH 之前数据可以不是当前的",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "pg-matview",
+      "kind": "web",
+      "path": "课堂笔记/sources/pg-matview.html",
+      "sha256": "243e93039282f42ee61bc221a3fd27e38f3fcb992189fb634ef1bb7ae929de44",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Materialized Views",
+      "listed_url": "https://www.postgresql.org/docs/current/rules-materializedviews.html",
+      "title": "PostgreSQL Documentation, 39.3. Materialized Views",
+      "source_url": "https://www.postgresql.org/docs/current/rules-materializedviews.html",
+      "version": "docs/current 在 2026-10-28 指向 PostgreSQL 18",
+      "identity_note": "授课时的文档主版本不一定是 18。补充只使用机制段里仍然成立的持久化、不能直接更新和 REFRESH，不把第 18 版的其余规则归于课堂。",
+      "scope_reason": "讲义批评的是跨应用的计算依赖没有统一维护者。只读 39.3 开头的机制段和销售例子，不把规则系统的其余章节写成已读。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第 38 页 AIGC 都链到这篇。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "abstract",
+        "specification-headings"
+      ],
+      "scope_sections": [
+        "abstract",
+        "specification-headings"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 7,
+          "location": "补充 x14，PEP 342 摘要",
+          "claim": "生成器可以用 send 和 yield 留下暂停点，并没有要求 resume 互相点名",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "pep342",
+      "kind": "web",
+      "path": "课堂笔记/sources/pep342.html",
+      "sha256": "b48220ea8d3b947931c57a6273e2eafaf78acbb3ae717cda0afbc6289d04ae44",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "PEP 342",
+      "listed_url": "https://peps.python.org/pep-0342/",
+      "title": "PEP 342 – Coroutines via Enhanced Generators",
+      "source_url": "https://peps.python.org/pep-0342/",
+      "version": "PEP 342",
+      "scope_reason": "slides 第 9 页问 Python 协程保留了什么。读了摘要和规范标题所列的 send、yield、throw、close。没有把整篇 PEP 的每个例子写成已读。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "只出现在 slides 第 9 页 AIGC，不是课堂口述。它是该页比较题的直接依据。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "inheritance"
+      ],
+      "scope_sections": [
+        "inheritance"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 7,
+          "location": "补充 x14，inheritance 一问",
+          "claim": "类型只要具备方法就满足接口，没有事先声明的类型层次",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "go-faq",
+      "kind": "web",
+      "path": "课堂笔记/sources/go-faq.html",
+      "sha256": "e316586d6525aad8449c34ad75956ee341c1b70892abe94b7b1a524bac4ae9b0",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Why is there no type inheritance?",
+      "listed_url": "https://go.dev/doc/faq#inheritance",
+      "title": "Frequently Asked Questions (FAQ) — Why is there no type inheritance?",
+      "source_url": "https://go.dev/doc/faq#inheritance",
+      "version": "Go FAQ 当前页，2026-10-28 抓取",
+      "scope_reason": "slides 第 9 页只问 Go 不采用类型继承层次舍弃了什么。只读这一问，不把 FAQ 其余问题写成已读。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "只出现在 slides 第 9 页 AIGC，不是课堂口述。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "skill-body"
+      ],
+      "scope_sections": [
+        "skill-body"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 3,
+          "location": "补充 x15",
+          "claim": "grill-me 本身只要求调用 grilling，并且不要由模型自己唤起",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "grill-me",
+      "kind": "web",
+      "path": "课堂笔记/sources/grill-me.md",
+      "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "grill-me",
+      "listed_url": "https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md",
+      "title": "grill-me SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md",
+      "version": "mattpocock/skills 仓库中 skills/productivity/grill-me/SKILL.md，2026-10-28 抓取",
+      "identity_note": "讲师说的是 grill me 的 skill。仓库里还有 grill-with-docs，没有把它算进这次推荐。",
+      "recommendation_kind": "explicit_recommendation",
+      "recommendation_basis": "讲师口述「推荐大家去试用一下」Matt Pocock 的 grill me skill，并举了购物车和 authentication。讲义页没有这个链接。",
+      "source_channels": [
+        "讲师口述"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "design-tree"
+      ],
+      "scope_sections": [
+        "design-tree"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 3,
+          "location": "补充 x15，设计树与 frontier",
+          "claim": "一轮问完当前能问的决定，给出建议答案，确认共同理解之前不动手",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "grilling",
+      "kind": "web",
+      "path": "课堂笔记/sources/grilling.md",
+      "sha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "grilling",
+      "listed_url": "https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md",
+      "title": "grilling SKILL.md",
+      "source_url": "https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md",
+      "version": "2026-10-28 抓取的 grilling 技能正文",
+      "identity_note": "grill-me 写的是调用名为 grilling 的技能。仓库 README 把它放在 skills/productivity/grilling/SKILL.md。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲师点名的 grill-me 文件只包含一句调用。要知道它会问什么，必须读它调用的 grilling。这不是把整个 mattpocock/skills 仓库算成推荐。",
+      "source_channels": [
+        "讲师口述所点名技能的直接依赖"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "jsp-translation-and-runtime-flow"
+      ],
+      "scope_sections": [
+        "jsp-translation-and-runtime-flow"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 13,
+          "location": "补充 x16，翻译段",
+          "claim": "JSP 通常在被请求时翻译成 Servlet；.jsp 扩展名触发翻译器",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "jsp-overview",
+      "kind": "web",
+      "path": "课堂笔记/sources/jsp.html",
+      "sha256": "7871465750efd0080b26b204684c767690bea3209edbc37a8e225689086ef211",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "Getting Started with JSP",
+      "listed_url": "https://docs.oracle.com/cd/B32110_01/web.1013/b28961/genlovw.htm",
+      "title": "Oracle Containers for J2EE Support for JavaServer Pages Developer's Guide, Getting Started",
+      "source_url": "https://docs.oracle.com/cd/B32110_01/web.1013/b28961/genlovw.htm",
+      "version": "OC4J JSP guide, 抓取页指向 JSP 2.0 的综述",
+      "scope_reason": "课堂用的是「JSP 由容器翻译成 Servlet」。只读翻译与运行流程附近的段落，没有通读语法章。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页链接。slides 第 23 页 AIGC 也链到同一页。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "header",
+        "accrue-payable-pattern"
+      ],
+      "scope_sections": [
+        "header",
+        "accrue-payable-pattern"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 18,
+          "location": "补充 x17，表头与计提应付",
+          "claim": "计提触达利润表和负债，现金流量写不变；结算不重复确认费用",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "account-rules",
+      "kind": "web",
+      "path": "课堂笔记/sources/rules.html",
+      "sha256": "c9123b21ebdbe4518763e7c3c314c46e9bccf30bd3f15fdef26872c4051eb11c",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "记账规则 · AccountBook",
+      "listed_url": "https://jyywiki.cn/GSE/2026/p7/rules.html",
+      "title": "记账规则 · AccountBook",
+      "source_url": "https://jyywiki.cn/GSE/2026/p7/rules.html",
+      "version": "课程页 p7/rules.html，2026-10-28 抓取",
+      "scope_reason": "表按费用类别重复很多行。读了表头「每 1 元的增减；合计与明细不重复相加」和计提应付账款这一族的行。没有逐行核对每一种费用科目。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页链接。slides 第 33 页把同一份表内嵌成分录数据。",
+      "source_channels": [
+        "讲义页正文",
+        "slides 正文"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "filters"
+      ],
+      "scope_sections": [
+        "filters"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "补充 x18，手册开头",
+          "claim": "jq 程序是 filter；产生多个结果时，下一个 filter 对每个结果各跑一次",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "jq-manual",
+      "kind": "web",
+      "path": "课堂笔记/sources/jq.html",
+      "sha256": "20fac47d9ce06dee1f5fa40490ab6de81d4b306d7bccbe193f653766145f5f6a",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "jq Manual",
+      "listed_url": "https://jqlang.org/manual/",
+      "title": "jq Manual",
+      "source_url": "https://jqlang.org/manual/",
+      "version": "jqlang.org/manual 当前页，2026-10-28 抓取；页上同时列出多个版本",
+      "identity_note": "没有把某一版的全部算子归于课堂。补充只用开篇对 filter 的定义。",
+      "scope_reason": "slides 第 16 页只用「JSON 提取成文本流」。只读手册开头对 filter 和管道的定义。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第 16 页 AIGC 都链到手册。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "usage"
+      ],
+      "scope_sections": [
+        "usage"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "补充 x18，README Usage",
+          "claim": "fzf 从 STDIN 读列表，把选中项写到 STDOUT",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "fzf-readme",
+      "kind": "web",
+      "path": "课堂笔记/sources/fzf.md",
+      "sha256": "92f9ae224752ca3ff286fd53be56d258d4a7b49b6dadaa49d69209068de7b56e",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "fzf",
+      "listed_url": "https://github.com/junegunn/fzf",
+      "title": "fzf README",
+      "source_url": "https://github.com/junegunn/fzf",
+      "version": "README，2026-10-28 抓取",
+      "identity_note": "读的是 README 的 Usage，不是仓库源码。",
+      "scope_reason": "slides 只用 STDIN 读候选、STDOUT 写选择。README 其余安装和选项没有写入补充。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第 16 页 AIGC 都链到仓库。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [
+        "readme"
+      ],
+      "scope_sections": [
+        "readme"
+      ],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 10,
+          "location": "补充 x18，README",
+          "claim": "窗口搜索和送键走 X11 的 XTEST；Wayland 上这些功能不能正确工作",
+          "role": "mechanism"
+        }
+      ],
+      "required": true,
+      "id": "xdotool-readme",
+      "kind": "web",
+      "path": "课堂笔记/sources/xdotool.md",
+      "sha256": "ba7cd2e259e01a927f592c063b83a60ceec642f619751f066211fae896684ec5",
+      "reading_status": "full",
+      "identity_status": "verified",
+      "listed_title": "xdotool",
+      "listed_url": "https://github.com/jordansissel/xdotool",
+      "title": "xdotool README",
+      "source_url": "https://github.com/jordansissel/xdotool",
+      "version": "README，2026-10-28 抓取",
+      "scope_reason": "README 不长，本次读完。补充只用 XTEST、windowactivate 例子和 Wayland 一节。",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "讲义页和 slides 第 16 页 AIGC 都链到仓库。slides 已经写了适用于 X11。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "lect6",
+      "listed_title": "上一讲 lect6",
+      "listed_url": "https://jyywiki.cn/GSE/2026/lect6.md",
+      "title": "上一讲 lect6",
+      "source_url": "https://jyywiki.cn/GSE/2026/lect6.md",
+      "identity_status": "unverified",
+      "identity_note": "讲义页只是指向上一讲，不是本讲阅读。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "讲义页只是指向上一讲，不是本讲阅读。",
+      "source_channels": [
+        "讲义页正文"
+      ],
+      "scope_reason": "讲义页只是指向上一讲，不是本讲阅读。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "tue-structured-programming",
+      "listed_title": "Structured Programming, 1972 catalog entry",
+      "listed_url": "https://research.tue.nl/en/publications/structured-programming/",
+      "title": "Structured Programming, 1972 catalog entry",
+      "source_url": "https://research.tue.nl/en/publications/structured-programming/",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 6 页 AIGC 只把它当作 1972 年书目。EWD249 与 Dahl–Hoare 的相关章节另行阅读，书目页本身不是正文。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 6 页 AIGC 只把它当作 1972 年书目。EWD249 与 Dahl–Hoare 的相关章节另行阅读，书目页本身不是正文。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 6 页 AIGC 只把它当作 1972 年书目。EWD249 与 Dahl–Hoare 的相关章节另行阅读，书目页本身不是正文。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "scheme-r7rs",
+      "listed_title": "The Revised7 Report on the Algorithmic Language Scheme",
+      "listed_url": "https://standards.scheme.org/r7rs-html5/index.html",
+      "title": "The Revised7 Report on the Algorithmic Language Scheme",
+      "source_url": "https://standards.scheme.org/r7rs-html5/index.html",
+      "identity_status": "unverified",
+      "identity_note": "讲义页和 slides 第 10 页 AIGC 只把它写成 Steele 参与过的语言。没有通读报告，笔记不引用报告里的语义。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "讲义页和 slides 第 10 页 AIGC 只把它写成 Steele 参与过的语言。没有通读报告，笔记不引用报告里的语义。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "讲义页和 slides 第 10 页 AIGC 只把它写成 Steele 参与过的语言。没有通读报告，笔记不引用报告里的语义。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "cltl2",
+      "listed_title": "Common Lisp: The Language",
+      "listed_url": "https://www.cs.cmu.edu/Groups/AI/html/cltl/cltl2.html",
+      "title": "Common Lisp: The Language",
+      "source_url": "https://www.cs.cmu.edu/Groups/AI/html/cltl/cltl2.html",
+      "identity_status": "unverified",
+      "identity_note": "讲义页和 slides 第 10 页 AIGC 只把它写成 Steele 的履历。没有通读。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "讲义页和 slides 第 10 页 AIGC 只把它写成 Steele 的履历。没有通读。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "讲义页和 slides 第 10 页 AIGC 只把它写成 Steele 的履历。没有通读。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "jls-se7",
+      "listed_title": "The Java Language Specification, Java SE 7 Edition",
+      "listed_url": "https://docs.oracle.com/javase/specs/jls/se7/html/",
+      "title": "The Java Language Specification, Java SE 7 Edition",
+      "source_url": "https://docs.oracle.com/javase/specs/jls/se7/html/",
+      "identity_status": "unverified",
+      "identity_note": "讲义页链到 SE 7。slides AIGC 链到 SE 8。两版都没有通读，笔记不改写这个不一致，也不引用规范条文。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "讲义页链到 SE 7。slides AIGC 链到 SE 8。两版都没有通读，笔记不改写这个不一致，也不引用规范条文。",
+      "source_channels": [
+        "讲义页正文"
+      ],
+      "scope_reason": "讲义页链到 SE 7。slides AIGC 链到 SE 8。两版都没有通读，笔记不改写这个不一致，也不引用规范条文。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "jls-se8",
+      "listed_title": "The Java Language Specification, Java SE 8 Edition",
+      "listed_url": "https://docs.oracle.com/javase/specs/jls/se8/html/index.html",
+      "title": "The Java Language Specification, Java SE 8 Edition",
+      "source_url": "https://docs.oracle.com/javase/specs/jls/se8/html/index.html",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 10 页 AIGC 链到 SE 8，讲义页链到 SE 7。没有通读 SE 8，也不把 SE 8 悄悄换成讲义页的链接。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 10 页 AIGC 链到 SE 8，讲义页链到 SE 7。没有通读 SE 8，也不把 SE 8 悄悄换成讲义页的链接。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 10 页 AIGC 链到 SE 8，讲义页链到 SE 7。没有通读 SE 8，也不把 SE 8 悄悄换成讲义页的链接。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "posix-shell",
+      "listed_title": "Shell Command Language",
+      "listed_url": "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html",
+      "title": "Shell Command Language",
+      "source_url": "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html",
+      "identity_status": "unverified",
+      "identity_note": "讲义页和 slides 第 15 页 AIGC 都链到整章 Shell 命令语言。这一章没有按章阅读，笔记不从中写管道语法。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "讲义页和 slides 第 15 页 AIGC 都链到整章 Shell 命令语言。这一章没有按章阅读，笔记不从中写管道语法。",
+      "source_channels": [
+        "讲义页正文",
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "讲义页和 slides 第 15 页 AIGC 都链到整章 Shell 命令语言。这一章没有按章阅读，笔记不从中写管道语法。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "posix-exit",
+      "listed_title": "POSIX Rationale, Utility Exit Status",
+      "listed_url": "https://pubs.opengroup.org/onlinepubs/9799919799/xrat/V4_xcu_chap01.html",
+      "title": "POSIX Rationale, Utility Exit Status",
+      "source_url": "https://pubs.opengroup.org/onlinepubs/9799919799/xrat/V4_xcu_chap01.html",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 15 页 AIGC 用它支持退出状态。页面上看到 success 为 0 的句子，没有读到 grep 的 1。笔记不把「grep 的 1 表示未匹配」写成这一页的原文。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 15 页 AIGC 用它支持退出状态。页面上看到 success 为 0 的句子，没有读到 grep 的 1。笔记不把「grep 的 1 表示未匹配」写成这一页的原文。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 15 页 AIGC 用它支持退出状态。页面上看到 success 为 0 的句子，没有读到 grep 的 1。笔记不把「grep 的 1 表示未匹配」写成这一页的原文。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "posix-locale",
+      "listed_title": "POSIX Environment Variables",
+      "listed_url": "https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap08.html",
+      "title": "POSIX Environment Variables",
+      "source_url": "https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap08.html",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 15 页 AIGC 用它支持 LC_ALL=C。环境变量章没有读，笔记不另写 locale 规则。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 15 页 AIGC 用它支持 LC_ALL=C。环境变量章没有读，笔记不另写 locale 规则。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 15 页 AIGC 用它支持 LC_ALL=C。环境变量章没有读，笔记不另写 locale 规则。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "rfc1122",
+      "listed_title": "RFC 1122",
+      "listed_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+      "title": "RFC 1122",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 19 页 AIGC 把 TCP/IP 分层链到这篇。只看到目录里有 Internet Protocol Suite，没有读该节正文，笔记不写分层细节。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 19 页 AIGC 把 TCP/IP 分层链到这篇。只看到目录里有 Internet Protocol Suite，没有读该节正文，笔记不写分层细节。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 19 页 AIGC 把 TCP/IP 分层链到这篇。只看到目录里有 Internet Protocol Suite，没有读该节正文，笔记不写分层细节。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "ibm-s360",
+      "listed_title": "IBM System/360",
+      "listed_url": "https://www.ibm.com/history/system-360",
+      "title": "IBM System/360",
+      "source_url": "https://www.ibm.com/history/system-360",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 21 页 AIGC 的史料链接。时间线背景，没有读，笔记不补充 System/360 史实。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 21 页 AIGC 的史料链接。时间线背景，没有读，笔记不补充 System/360 史实。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 21 页 AIGC 的史料链接。时间线背景，没有读，笔记不补充 System/360 史实。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "ritchie-hist",
+      "listed_title": "The Evolution of the Unix Time-sharing System",
+      "listed_url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html",
+      "title": "The Evolution of the Unix Time-sharing System",
+      "source_url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 21 页 AIGC 的史料链接。没有读。管道日期仍以课堂口述和 McIlroy 备忘录页为准。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 21 页 AIGC 的史料链接。没有读。管道日期仍以课堂口述和 McIlroy 备忘录页为准。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 21 页 AIGC 的史料链接。没有读。管道日期仍以课堂口述和 McIlroy 备忘录页为准。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "kay-smalltalk",
+      "listed_title": "The Early History of Smalltalk",
+      "listed_url": "https://ics.uci.edu/~jajones/INF102-S18/readings/11_KaySmalltalkHistory.pdf",
+      "title": "The Early History of Smalltalk",
+      "source_url": "https://ics.uci.edu/~jajones/INF102-S18/readings/11_KaySmalltalkHistory.pdf",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 21 页 AIGC 的史料链接。没有读，笔记不补充 Smalltalk 史。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 21 页 AIGC 的史料链接。没有读，笔记不补充 Smalltalk 史。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 21 页 AIGC 的史料链接。没有读，笔记不补充 Smalltalk 史。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "cern-web",
+      "listed_title": "A short history of the Web",
+      "listed_url": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/",
+      "title": "A short history of the Web",
+      "source_url": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 21 页 AIGC 的史料链接。没有读。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 21 页 AIGC 的史料链接。没有读。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 21 页 AIGC 的史料链接。没有读。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "android-2008",
+      "listed_title": "Announcing the Android 1.0 SDK",
+      "listed_url": "https://android-developers.googleblog.com/2008/09/announcing-android-10-sdk-release-1.html",
+      "title": "Announcing the Android 1.0 SDK",
+      "source_url": "https://android-developers.googleblog.com/2008/09/announcing-android-10-sdk-release-1.html",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 21 页 AIGC 的史料链接。没有读。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 21 页 AIGC 的史料链接。没有读。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 21 页 AIGC 的史料链接。没有读。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "k8s-10y",
+      "listed_title": "10 Years of Kubernetes",
+      "listed_url": "https://kubernetes.io/blog/2024/06/06/10-years-of-kubernetes/",
+      "title": "10 Years of Kubernetes",
+      "source_url": "https://kubernetes.io/blog/2024/06/06/10-years-of-kubernetes/",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 21 页 AIGC 的史料链接。没有读。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 21 页 AIGC 的史料链接。没有读。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 21 页 AIGC 的史料链接。没有读。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "php-history",
+      "listed_title": "History of PHP",
+      "listed_url": "https://www.php.net/manual/en/history.php.php",
+      "title": "History of PHP",
+      "source_url": "https://www.php.net/manual/en/history.php.php",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 23 页 AIGC 的时间线。没有读，笔记不补充 PHP 年份以外的页上已有句子。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 23 页 AIGC 的时间线。没有读，笔记不补充 PHP 年份以外的页上已有句子。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 23 页 AIGC 的时间线。没有读，笔记不补充 PHP 年份以外的页上已有句子。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "asp-1996",
+      "listed_title": "Microsoft ships IIS 3.0",
+      "listed_url": "https://news.microsoft.com/source/1996/12/10/microsoft-ships-internet-information-server-3-0/",
+      "title": "Microsoft ships IIS 3.0",
+      "source_url": "https://news.microsoft.com/source/1996/12/10/microsoft-ships-internet-information-server-3-0/",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 23 页 AIGC 用来标注 ASP 1996。没有读新闻稿，笔记不补充稿件内容。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 23 页 AIGC 用来标注 ASP 1996。没有读新闻稿，笔记不补充稿件内容。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 23 页 AIGC 用来标注 ASP 1996。没有读新闻稿，笔记不补充稿件内容。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "jsp-10-api",
+      "listed_title": "JSP 1.0 API",
+      "listed_url": "https://docs.oracle.com/cd/E13222_01/wls/docs45/classdocs/API_jsp.html",
+      "title": "JSP 1.0 API",
+      "source_url": "https://docs.oracle.com/cd/E13222_01/wls/docs45/classdocs/API_jsp.html",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 23 页 AIGC 的时间线链接。没有读 API 文档。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 23 页 AIGC 的时间线链接。没有读 API 文档。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 23 页 AIGC 的时间线链接。没有读 API 文档。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "jstl-jsr52",
+      "listed_title": "JSR 52",
+      "listed_url": "https://jcp.org/en/jsr/detail?id=52",
+      "title": "JSR 52",
+      "source_url": "https://jcp.org/en/jsr/detail?id=52",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 24 页 AIGC 用来标注 JSTL。JSR 页没有读，笔记不补充规范流程。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 24 页 AIGC 用来标注 JSTL。JSR 页没有读，笔记不补充规范流程。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 24 页 AIGC 用来标注 JSTL。JSR 页没有读，笔记不补充规范流程。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "jsp20-jsr152",
+      "listed_title": "JSR 152",
+      "listed_url": "https://jcp.org/en/jsr/detail?id=152",
+      "title": "JSR 152",
+      "source_url": "https://jcp.org/en/jsr/detail?id=152",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 24 页 AIGC 用来标注 JSP 2.0。JSR 页没有读。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 24 页 AIGC 用来标注 JSP 2.0。JSR 页没有读。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 24 页 AIGC 用来标注 JSP 2.0。JSR 页没有读。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "spring-seq",
+      "listed_title": "Spring Web MVC sequence",
+      "listed_url": "https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-servlet/sequence.html",
+      "title": "Spring Web MVC sequence",
+      "source_url": "https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-servlet/sequence.html",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 26 页 AIGC 链到 Spring Framework 当前文档。抓取页的规范版本是 7.0，正文没有读到序列说明。笔记不把现行 Spring 步骤写成课堂内容。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 26 页 AIGC 链到 Spring Framework 当前文档。抓取页的规范版本是 7.0，正文没有读到序列说明。笔记不把现行 Spring 步骤写成课堂内容。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 26 页 AIGC 链到 Spring Framework 当前文档。抓取页的规范版本是 7.0，正文没有读到序列说明。笔记不把现行 Spring 步骤写成课堂内容。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "vue-props",
+      "listed_title": "Props, one-way data flow",
+      "listed_url": "https://vuejs.org/guide/components/props.html#one-way-data-flow",
+      "title": "Props, one-way data flow",
+      "source_url": "https://vuejs.org/guide/components/props.html#one-way-data-flow",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 30 页 AIGC 链到 Vue 单向 props。这一节没有读。笔记里「从父到子」只依据 Thinking in React 已读的 Step 3，不引用这篇。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 30 页 AIGC 链到 Vue 单向 props。这一节没有读。笔记里「从父到子」只依据 Thinking in React 已读的 Step 3，不引用这篇。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 30 页 AIGC 链到 Vue 单向 props。这一节没有读。笔记里「从父到子」只依据 Thinking in React 已读的 Step 3，不引用这篇。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "react-input",
+      "listed_title": "React DOM input",
+      "listed_url": "https://react.dev/reference/react-dom/components/input",
+      "title": "React DOM input",
+      "source_url": "https://react.dev/reference/react-dom/components/input",
+      "identity_status": "unverified",
+      "identity_note": "slides 第 29 页 AIGC 链到 input 参考页。这一页没有读。受控输入的课堂句子留在 slides 图注里，补充不引用该参考页。",
+      "reading_status": "out_of_scope",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 29 页 AIGC 链到 input 参考页。这一页没有读。受控输入的课堂句子留在 slides 图注里，补充不引用该参考页。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 29 页 AIGC 链到 input 参考页。这一页没有读。受控输入的课堂句子留在 slides 图注里，补充不引用该参考页。"
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [],
+      "required": false,
+      "id": "system-r",
+      "listed_title": "System R: A Relational Approach to Database Management",
+      "listed_url": "https://research.ibm.com/publications/system-r-relational-approach-to-database-management",
+      "title": "System R: A Relational Approach to Database Management",
+      "source_url": "https://research.ibm.com/publications/system-r-relational-approach-to-database-management",
+      "identity_status": "verified",
+      "identity_note": "slides 第 17 页 AIGC 说 System R（1976）把「声明要什么」落实为可选择的执行计划。2026-10-28 再次打开 IBM 页面，仍只有引用元数据和摘要，没有论文正文。出版方 PDF 403，同一 URL 没有可用的 Internet Archive 全文。不把摘要写成实验结果。",
+      "reading_status": "abstract_only",
+      "recommendation_kind": "background_citation",
+      "recommendation_basis": "slides 第 17 页 AIGC 说 System R（1976）把「声明要什么」落实为可选择的执行计划。打开的 IBM 页面只有引用元数据，没有论文正文。不把摘要或元数据写成实验结果。",
+      "source_channels": [
+        "slides AIGC 批注"
+      ],
+      "scope_reason": "slides 第 17 页 AIGC 说 System R（1976）把「声明要什么」落实为可选择的执行计划。打开的 IBM 页面只有引用元数据，没有论文正文。不把摘要或元数据写成实验结果。",
+      "path": "课堂笔记/sources/systemr.html",
+      "sha256": "c5a856c815fad2fb61e3c0be128e7106b775c1fb2241423a8dc92edfb8040680",
+      "known_gaps": [
+        "2026-10-28 重试：IBM 出版物页仍只有摘要和元数据，下载链接指向 https://dl.acm.org/doi/pdf/10.1145/320455.320457。该 PDF 与 DOI 落地页用普通请求打开都是 HTTP 403，没有伪装 User-Agent，也没有用浏览器去过检查。Internet Archive 对这个 PDF URL 没有 status 200 的 PDF 存档；2001 年 ACM 引文页的存档只有摘要，旧 PDF 路径的存档是跳转而不是文件。合作者 Paul McJones 的书目和 Jim Gray 的论文页只列题名，没有放这份 1976 年 TODS 全文。没有使用波士顿大学、卡内基梅隆或麻省理工课程页上的 PDF。"
+      ]
+    },
+    {
+      "related_items": [
+        "课堂笔记"
+      ],
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "read_sections": [],
+      "scope_sections": [],
+      "contributions": [
+        {
+          "item": "课堂笔记",
+          "section": 11,
+          "location": "补充，物理页 6–11；Figure 5–7 与物理页 9 的 connection trap",
+          "claim": "关系语言只声明要什么；沿供应商到零件再到项目的指针走完，一般得不到该供应商供应的项目，除非目标关系正是自然复合并且对所有时间成立",
+          "role": "mechanism",
+          "note_target": "supplements"
+        }
+      ],
+      "required": false,
+      "id": "codd-acm",
+      "listed_title": "A Relational Model of Data for Large Shared Data Banks",
+      "listed_url": "https://dl.acm.org/doi/10.1145/362384.362685",
+      "title": "A Relational Model of Data for Large Shared Data Banks",
+      "source_url": "https://web.archive.org/web/20230927133214/https://dl.acm.org/doi/pdf/10.1145/362384.362685",
+      "identity_status": "verified",
+      "identity_note": "slides 正文的官方入口仍是 https://dl.acm.org/doi/10.1145/362384.362685，2026-10-28 普通请求仍是 HTTP 403。读的是 Internet Archive 对同一 DOI 的出版方 PDF https://dl.acm.org/doi/pdf/10.1145/362384.362685 的 2023-09-27 存档。卷头是 CACM、Information Retrieval、P. Baxendale 编、E. F. Codd、IBM Research Laboratory, San Jose，标题与 listed_title 一致，11 个物理页，印刷页 377–387。没有用这份存档替换掉 slides 上的官方链接。宾大转载仍记在 codd-1970，两份不混成同一个文件。",
+      "reading_status": "full",
+      "recommendation_kind": "core_source",
+      "recommendation_basis": "同一篇 Codd 1970 的 ACM 落地页。正文没有从这里读到，所以单独标 blocked，不把 403 页面当成论文。",
+      "source_channels": [
+        "slides 正文"
+      ],
+      "scope_reason": "全文 11 个物理页都读了。课堂用到的数据独立性仍在第 1 节；这一轮把此前没读的 1.5、1.6 和第 2 节也读完，因为它们仍是这篇论文的正文，不是与课堂无关的附录。",
+      "kind": "pdf",
+      "version": "E. F. Codd, CACM Vol. 13 No. 6, June 1970, pp. 377–387；Internet Archive 2023-09-27 对出版方 PDF 的存档",
+      "path": "课堂笔记/sources/codd-acm.pdf",
+      "sha256": "0bbd44d0bcb12ba46af629eaf91ff2a6e0e078adbf6f3c2c477a31e7e6fabaa3",
+      "total_pages": 11,
+      "visual_checks": [
+        {
+          "page": 7,
+          "detail": "看了 Figure 5、6、7。R 为 (1,1)、(2,1)、(2,2)，S 为 (1,1)、(1,2)、(2,1)。自然连接五行，另一个连接只有 (1,1,2)、(2,1,1)、(2,2,1)。part 的 1 被正文称为歧义点。"
+        },
+        {
+          "page": 9,
+          "detail": "看了 Figure 10、11 和 connection trap 那段正文。自然复合是 (project, supplier) 的四行 (1,1)、(1,2)、(2,1)、(2,2)；来自 Figure 7 的另一个复合只剩 (1,2)、(2,1)。connection trap 没有单独的表，是指针路径那段。"
+        }
+      ]
+    }
+  ]
+}
